@@ -1,0 +1,9 @@
+# Hugo output
+/public/
+
+# OS files
+.DS_Store
+
+# IDE or editor folders
+.vscode/
+*.swp
