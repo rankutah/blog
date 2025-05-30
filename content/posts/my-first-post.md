@@ -13,6 +13,8 @@ Here is another one.
 
 
 
-![alt text](/Profile-1.png)
+![alt text](Profile.png)
+
+![alt text](./Profile.png)
 
 ![Showing Nothing](Profile-1.png)
