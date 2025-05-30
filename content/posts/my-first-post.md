@@ -15,4 +15,4 @@ Here is another one.
 
 ![alt text](/Profile-1.png)
 
-![alt text](Profile-1.png)
+![Showing Nothing](Profile-1.png)
