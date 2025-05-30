@@ -13,4 +13,4 @@ Here is another one.
 
 
 
-![alt text](Profile-1.png)
+![alt text](/Profile-1.png)
