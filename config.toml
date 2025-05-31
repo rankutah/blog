@@ -1,6 +1,6 @@
 baseURL       = "https://blog.rankutah.com/"
 languageCode  = "en-us"
-title         = "Rank Utah Blog"
+title         = "Spotlight Utah"
 theme         = "PaperMod"
 
 # Tell Hugo to produce a JSON index for search
@@ -19,25 +19,30 @@ theme         = "PaperMod"
 
   [[menu.main]]
     name       = "Home"
-    url        = "https://rankutah.com"
+    url        = "/"
     weight     = 1
-
-  [[menu.main]]
-    name       = "Posts"
-    url        = "/posts/"
+  
+  [[menu.about]]
+    name       = "About"
+    url        = "/about/"
     weight     = 2
 
-  [[menu.main]]
-    name       = "Tags"
-    url        = "/tags/"
-    weight     = 3
+#  [[menu.main]]
+#    name       = "Posts"
+#    url        = "/posts/"
+#    weight     = 2
 
-  [[menu.main]]
-    name       = "Archives"
-    url        = "/archives/"
-    weight     = 4
+#  [[menu.main]]
+#    name       = "Tags"
+#    url        = "/tags/"
+#    weight     = 3
+
+#  [[menu.main]]
+#    name       = "Archives"
+#    url        = "/archives/"
+#    weight     = 4
 
   [[menu.main]]
     name       = "Search"
     url        = "/search/"
-    weight     = 5
+    weight     = 3
