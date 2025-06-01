@@ -39,11 +39,9 @@ While all quality (non-spammy) backlinks are helpful, local backlinks from busin
 
 Another factor that influences the prominence of your website is technical SEO, which focuses on the structure and performance of your website:
 
-Faster load times: Improves user experience and rankings
-
-Mobile-friendly design: Google prioritizes this
-
-Clear structure: Helps search engines crawl and index effectively
+- Faster load times: Improves user experience and rankings
+- Mobile-friendly design: Google prioritizes this
+- Clear structure: Helps search engines crawl and index effectively
 
 For your Google Business Profile, prominence is determined by how engaging your profile is to the public, the number of reviews you have, and your average rating. The top three GBP listings often appear above websites in local searches, making it a powerful tool.
 
@@ -54,15 +52,13 @@ Proximity refers to how close a potential customer is to your business. You'll n
 ## Analytics 📈
 
 SEO rank tracking tools and Google Analytics are essential for understanding what's working in your SEO strategy.
+
 You'll be able to see:
 
-How you rank for specific keywords
-
-Which pages are the most popular
-
-Where your traffic is coming from (search, social, direct, etc.)
-
-Where your users are located
+- How you rank for specific keywords
+- Which pages are the most popular
+- Where your traffic is coming from (search, social, direct, etc.)
+- Where your users are located
 
 ## Summary
 
