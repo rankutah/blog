@@ -15,7 +15,7 @@ Help businesses generate high-quality leads using this 4-step process:
 3. Secure high quality citations and links that help drive targeted traffic and leads
 4. Track rankings, traffic, and conversions, make adjustments, and repeat the cycle
 
-# What is SEO?
+## What is SEO?
 
 SEO, or *Search Engine Optimization*, is the process of optimizing your website to rank higher in search engine results when users search for keywords related to your business or services.
 
