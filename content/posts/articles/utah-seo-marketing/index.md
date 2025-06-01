@@ -1,8 +1,8 @@
 +++
 date = '2025-05-31T22:53:10-06:00'
-draft = true
+draft = false
 title = 'Utah SEO Marketing'
-tags = []
+tags = ["seo"]
 description = ""
 +++
 
