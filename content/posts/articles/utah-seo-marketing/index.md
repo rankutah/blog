@@ -27,13 +27,10 @@ The title tag and H1 tag are the clearest indicators to Google of what your webp
 On your Google Business Profile (GBP), your relevance is determined primarily by your primary category (this is the most critical relevance signal).
 Other relevance factors include:
 
-Secondary categories
-
-Business name
-
-Services/products listed
-
-Your website content, which Google uses to assess GBP relevance
+- Secondary categories
+- Business name
+- Services/products listed
+- Your website content, which Google uses to assess GBP relevance
 
 ## 2. Prominence 🔗
 
