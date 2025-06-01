@@ -1,7 +1,7 @@
 +++
 date = '2025-05-31T22:53:10-06:00'
 draft = false
-title = 'Utah Seo Marketing'
+title = 'Utah SEO Marketing'
 tags = []
 description = ""
 +++
@@ -16,6 +16,8 @@ The chart below shows the factors that influence lead generation for local busin
 ![alt text](image.png)
 
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
+
+![alt text](image-1.png)
 
 ## 1. Relevance 🔍
 
@@ -50,9 +52,11 @@ Clear structure: Helps search engines crawl and index effectively
 For your Google Business Profile, prominence is determined by how engaging your profile is to the public, the number of reviews you have, and your average rating. The top three GBP listings often appear above websites in local searches, making it a powerful tool.
 
 ## 3. Proximity 📍
+
 Proximity refers to how close a potential customer is to your business. You'll naturally rank higher in search results for users who are physically closer to your location. However, high relevance and prominence can extend your reach.
 
 ## Analytics 📈
+
 SEO rank tracking tools and Google Analytics are essential for understanding what's working in your SEO strategy.
 You'll be able to see:
 
@@ -65,8 +69,10 @@ Where your traffic is coming from (search, social, direct, etc.)
 Where your users are located
 
 ## Summary
+
 Relevance, prominence, and proximity are the three pillars of local SEO. Your website and Google Business Profile are two of the most powerful tools you have. When combined with SEO rank tracking tools and analytics, you'll know where to improve and grow.
 
-Let Me Help You! 😊
-If you need help with your SEO marketing, a new website, or improving your current site, I'm here to help.
+## Let Me Help You! 😊
+
+If you need help with your SEO marketing please [reach out](https://rankutah.com/#contact).
 
