@@ -17,8 +17,6 @@ The chart below shows the factors that influence lead generation for local busin
 
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
-![alt text](image-1.png)
-
 ## 1. Relevance 🔍
 
 Relevance is how well your content aligns with what the user is searching for. When setting up your website, we want each page to match search intent. We do this by researching the keywords your customers are using and aligning them with your offerings.
