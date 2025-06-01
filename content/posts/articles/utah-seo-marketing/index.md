@@ -7,6 +7,12 @@ description = ""
 +++
 # What is SEO?
 
+SEO, or *Search Engine Optimization*, is the process of optimizing your website to rank higher in search engine results when users search for keywords related to your business or services.
+
+Local SEO is different from broad SEO and focuses on three core areas: **Relevance, Prominence, and Proximity**.
+
+The chart below shows the factors that influence lead generation for local businesses.
+
 ![alt text](image.png)
 
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
