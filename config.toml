@@ -22,7 +22,7 @@ theme         = "PaperMod"
     url        = "/"
     weight     = 1
   
-  [[menu.about]]
+  [[menu.main]]
     name       = "About"
     url        = "/about/"
     weight     = 2
