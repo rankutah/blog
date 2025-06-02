@@ -108,37 +108,49 @@
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
   {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
+    {{- partial "toc.html" . }}
   {{- end }}
 
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
+      {{- partial "anchored_headings.html" .Content -}}
     {{- else }}
-    {{ .Content }}
+      {{ .Content }}
     {{- end }}
   </div>
   {{- end }}
 
+  {{- /* ── TAG BADGES AT BOTTOM OF SINGLE POST ── */}}
+  {{- with .Params.tags }}
+    {{- $sortedTags := sort . }}
+    {{- if gt (len $sortedTags) 0 }}
+      <div class="post-tags-badges flex flex-wrap gap-2 mt-8">
+        {{- range $tag := $sortedTags }}
+          {{- $tagSlug := $tag | urlize }}
+          <a
+            href="{{ (printf "/tags/%s/" $tagSlug) | relURL }}"
+            class="badge badge-{{ $tagSlug }}"
+          >
+            {{ $tag }}
+          </a>
+        {{- end }}
+      </div>
+    {{- end }}
+  {{- end }}
+
   <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
     {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
+      {{- partial "post_nav_links.html" . }}
     {{- end }}
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}}
+      {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>
 
   {{- if (.Param "comments") }}
-  {{- partial "comments.html" . }}
+    {{- partial "comments.html" . }}
   {{- end }}
 </article>
 
-{{- end }}{{/* end main */}}
+{{- end }}

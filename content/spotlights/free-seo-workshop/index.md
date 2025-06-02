@@ -17,7 +17,7 @@ organizer:
 availability: "https://rankutah.com/rsvp"
 price: "$20 per adult"
 image: "image.png"
-tags: ["event"]
+tags: ["event","helo","another","three","one","two","four","sixsix"]
 draft: false
 ---
 This ithe full event description. Why doesn't this show. Hello 

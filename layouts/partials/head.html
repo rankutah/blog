@@ -74,6 +74,9 @@
 <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
 {{- end }}
 
+{{- /* ── Add taxonomy badge CSS here ── */}}
+{{ partial "taxonomy-badges.html" . }}
+
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
 <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
@@ -155,7 +158,6 @@
 {{- partial "templates/twitter_cards.html" . }}
 {{- partial "templates/schema_json.html" . }}
 
-
 {{ if .Params.eventDate }}
 <script type="application/ld+json">
 {
@@ -194,7 +196,5 @@
 }
 </script>
 {{ end }}
-
-
 
 {{- end -}}
