@@ -1,0 +1,41 @@
+<style>
+  {{/* 1) Manually collect all tag names into a slice, then sort alphabetically */}}
+  {{ $allTags := slice }}
+  {{ range $tagName, $_ := .Site.Taxonomies.tags }}
+    {{ $allTags = $allTags | append $tagName }}
+  {{ end }}
+  {{ $allTags = sort $allTags }}
+
+  {{/* 2) Define a small color palette (hex values) */}}
+  {{ $palette := slice
+       "#E57373"
+       "#81C784"
+       "#64B5F6"
+       "#FFB74D"
+       "#9575CD"
+       "#4DD0E1"
+       "#F06292"
+       "#AED581"
+       "#7986CB"
+       "#FF8A65"
+       "#BA68C8"
+       "#4DB6AC"
+       "#FFD54F"
+       "#90A4AE"
+  }}
+
+  {{/* 3) Loop over each sorted tag, assign a palette color by (index mod palette-length) */}}
+  {{ range $i, $tagName := $allTags }}
+    {{ $color := index $palette (mod $i (len $palette)) }}
+    .badge-{{ $tagName | urlize }} {
+      background-color: {{ $color }};
+      color: white;
+      border-radius: 0.25rem;
+      padding: 0.125rem 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-block;
+      text-transform: capitalize;
+    }
+  {{ end }}
+</style>

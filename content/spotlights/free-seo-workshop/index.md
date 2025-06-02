@@ -1,8 +1,7 @@
 ---
-title: "Free Seo Workshop"
+title: "Free Seo Workshop 2"
 date: 2025-06-02T00:41:29-06:00
-eventDate: 2025-06-15T19:00:00
-summary: "Brief description of your event."
+eventDateTime: "2025-06-15T19:00:00"
 location:
   name: "Venue Name"
   address: "123 Main St"
@@ -12,10 +11,12 @@ location:
   country: "US"
 organizer:
   name: "Rank Utah"
-  url: "https://rankutah.com"
+  contactEmail: "info@rankutah.com"
+  contactPhone: "(801) 444-2242"
+  url: ""
 availability: "https://rankutah.com/rsvp"
-price: "1.00"
-image: "/uploads/sample.jpg"
+price: "$20 per adult"
+image: "image.png"
 tags: ["event"]
 draft: false
 ---

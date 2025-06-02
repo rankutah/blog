@@ -156,7 +156,7 @@
 {{- partial "templates/schema_json.html" . }}
 
 
-{{ if eq .Section "events" }}
+{{ if .Params.eventDate }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
