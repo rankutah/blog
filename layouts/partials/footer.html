@@ -16,7 +16,7 @@
 
     <span>
         &copy; {{ now.Year }} 
-        <a href="https://rankutah.com" rel="noopener" target="_blank">Rank Utah</a>
+        <a href="{{ .Site.Params.clientURL }}" rel="noopener" target="_blank"> {{ .Site.Params.clientName }}</a>
     </span>
 </footer>
 {{- end }}

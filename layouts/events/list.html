@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="max-w-4xl mx-auto px-6 py-12">
+  <h1 class="text-3xl font-bold mb-8">Upcoming Events</h1>
+
+  <div class="space-y-8">
+    {{ range .Pages.ByParam "eventDate" }}
+      <article class="border rounded p-6 shadow">
+        <h2 class="text-xl font-semibold mb-1">
+          <a href="{{ .RelPermalink }}" class="text-blue-600 hover:underline">
+            {{ .Title }}
+          </a>
+        </h2>
+        <p class="text-sm text-gray-600 mb-2">
+          {{ .Params.eventDate | time.Format "Monday, Jan 2, 2006 @ 3:04 PM" }}<br>
+          📍 {{ .Params.location.name }}, {{ .Params.location.city }}
+        </p>
+        <p class="text-gray-700">{{ .Params.summary }}</p>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

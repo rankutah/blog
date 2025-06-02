@@ -11,6 +11,8 @@ theme         = "PaperMod"
   accentColor     = "#f3844b"
   showReadingTime = true
   enableSearch    = true
+  clientName = "Rank Utah"
+  clientURL = "https://rankutah.com"
 
 [taxonomies]
   tag = "tags"
@@ -18,29 +20,30 @@ theme         = "PaperMod"
 [menu]
 
   [[menu.main]]
-    name       = "Home"
+    name       = "Spotlights"
     url        = "/"
     weight     = 1
+
   
   [[menu.main]]
     name       = "About"
     url        = "/about/"
-    weight     = 2
+    weight     = 4
 
 #  [[menu.main]]
 #    name       = "Posts"
 #    url        = "/posts/"
 #    weight     = 2
 
-  [[menu.main]]
-    name       = "Tags"
-    url        = "/tags/"
-    weight     = 3
+#  [[menu.main]]
+#    name       = "Tags"
+#    url        = "/tags/"
+#    weight     = 3
 
-  [[menu.main]]
-    name       = "Archives"
-    url        = "/archives/"
-    weight     = 4
+#  [[menu.main]]
+#    name       = "Archives"
+#    url        = "/archives/"
+#    weight     = 4
 
   [[menu.main]]
     name       = "Search"
