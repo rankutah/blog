@@ -36,10 +36,10 @@ theme         = "PaperMod"
 #    url        = "/highlights/"
 #    weight     = 2
 
-#  [[menu.main]]
-#    name       = "Tags"
-#    url        = "/tags/"
-#    weight     = 3
+  [[menu.main]]
+    name       = "Tags"
+    url        = "/tags/"
+    weight     = 3
 
 #  [[menu.main]]
 #    name       = "Archives"
@@ -49,4 +49,4 @@ theme         = "PaperMod"
   [[menu.main]]
     name       = "Search"
     url        = "/search/"
-    weight     = 3
+    weight     = 4

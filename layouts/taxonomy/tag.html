@@ -10,7 +10,7 @@
         role="button"
         aria-label="Go back"
       >
-        ← Back
+        ← All Posts
       </span>
     </div>
     <h1>{{ .Title }} Posts</h1>
@@ -44,33 +44,24 @@
             </div>
           {{- end }}
 
-          {{- if not ($page.Param "hideMeta") }}
-            <footer class="entry-footer">
-              {{- if $page.Params.eventDateTime }}
-                {{- $ed := $page.Params.eventDateTime | time }}
-                <span class="post-meta">
-                  <time datetime="{{ $ed.Format "2006-01-02T15:04:05Z07:00" }}">
-                    {{ $ed.Format "Jan 2, 2006, 3:04 PM" }}
-                  </time>
-                </span>
-              {{- else }}
-                <span class="post-meta">{{ $page.ReadingTime }} min read</span>
+          <footer class="entry-footer">
+            {{- with sort $page.Params.tags }}
+              {{- if gt (len .) 0 }}
+                <div class="flex flex-wrap gap-2">
+                  {{- range $tag := . }}
+                    {{- $tagSlug := $tag | urlize }}
+                    <a
+                      href="{{ (printf "/tags/%s/" $tagSlug) | relURL }}"
+                      class="badge badge-{{ $tagSlug }}"
+                      style="font-size: 0.875rem; padding: 0.25rem 0.75rem; position: relative; z-index: 1;"
+                    >
+                      {{ $tag }}
+                    </a>
+                  {{- end }}
+                </div>
               {{- end }}
-
-              {{- with sort $page.Params.tags }}
-                {{- range $tag := . }}
-                  {{- $tagSlug := $tag | urlize }}
-                  <a
-                    href="{{ (printf "/tags/%s/" $tagSlug) | relURL }}"
-                    class="badge badge-{{ $tagSlug }}"
-                    style="position: relative; z-index: 1;"
-                  >
-                    {{ $tag }}
-                  </a>
-                {{- end }}
-              {{- end }}
-            </footer>
-          {{- end }}
+            {{- end }}
+          </footer>
 
           <a class="entry-link" aria-label="post link to {{ $page.Title | plainify }}" href="{{ $page.Permalink }}"></a>
         </article>

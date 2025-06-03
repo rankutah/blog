@@ -1,0 +1,32 @@
+{{/* File: layouts/taxonomy/terms.html */}}
+{{- define "main" }}
+
+  <header class="page-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>All Tags</h1>
+  </header>
+
+  <div class="all-tags-list">
+    {{/* Build a sorted slice of tag names */}}
+    {{ $allTerms := .Data.Terms }}
+    {{ $tagNames := slice }}
+    {{ range $name, $_ := $allTerms }}
+      {{ $tagNames = $tagNames | append $name }}
+    {{ end }}
+    {{ $sortedNames := sort $tagNames }}
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      {{ range $tag := $sortedNames }}
+        {{ $slug := $tag | urlize }}
+        <a
+          href="{{ (printf "/tags/%s/" $slug) | relURL }}"
+          class="badge badge-{{ $slug }}"
+          style="font-size: 0.875rem; padding: 0.25rem 0.75rem;"
+        >
+          {{ $tag }} ({{ len (index $allTerms $tag) }})
+        </a>
+      {{ end }}
+    </div>
+  </div>
+
+{{- end }}

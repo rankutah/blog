@@ -92,7 +92,7 @@
       {{- end }}
 
     {{- else }}
-      {{- if not (.Param "hideMeta") }}
+      {{- if and (ne .File.BaseFileName "about") (not (.Param "hideMeta")) }}
       <div class="post-meta mb-4">
         {{- partial "post_meta.html" . -}}
         {{- partial "translation_list.html" . -}}
@@ -108,20 +108,19 @@
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
   {{- if (.Param "ShowToc") }}
-    {{- partial "toc.html" . }}
+  {{- partial "toc.html" . }}
   {{- end }}
 
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
-      {{- partial "anchored_headings.html" .Content -}}
+    {{- partial "anchored_headings.html" .Content -}}
     {{- else }}
-      {{ .Content }}
+    {{ .Content }}
     {{- end }}
   </div>
   {{- end }}
 
-  {{- /* ── TAG BADGES AT BOTTOM OF SINGLE POST ── */}}
   {{- with .Params.tags }}
     {{- $sortedTags := sort . }}
     {{- if gt (len $sortedTags) 0 }}
@@ -131,6 +130,7 @@
           <a
             href="{{ (printf "/tags/%s/" $tagSlug) | relURL }}"
             class="badge badge-{{ $tagSlug }}"
+            style="font-size: 0.875rem; padding: 0.25rem 0.75rem;"
           >
             {{ $tag }}
           </a>
@@ -139,7 +139,7 @@
     {{- end }}
   {{- end }}
 
-  <footer class="post-footer">
+  <footer class="post-footer mt-8">
     {{- if (.Param "ShowPostNavLinks") }}
       {{- partial "post_nav_links.html" . }}
     {{- end }}
