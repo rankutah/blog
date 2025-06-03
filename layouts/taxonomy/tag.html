@@ -7,10 +7,11 @@
       <span
         onclick="history.back()"
         class="text-gray-600 hover:text-gray-800 cursor-pointer"
+        style="cursor: pointer;"
         role="button"
         aria-label="Go back"
       >
-        ← All Posts
+        ← Back
       </span>
     </div>
     <h1>{{ .Title }} Posts</h1>
@@ -45,22 +46,7 @@
           {{- end }}
 
           <footer class="entry-footer">
-            {{- with sort $page.Params.tags }}
-              {{- if gt (len .) 0 }}
-                <div class="flex flex-wrap gap-2">
-                  {{- range $tag := . }}
-                    {{- $tagSlug := $tag | urlize }}
-                    <a
-                      href="{{ (printf "/tags/%s/" $tagSlug) | relURL }}"
-                      class="badge badge-{{ $tagSlug }}"
-                      style="font-size: 0.875rem; padding: 0.25rem 0.75rem; position: relative; z-index: 1;"
-                    >
-                      {{ $tag }}
-                    </a>
-                  {{- end }}
-                </div>
-              {{- end }}
-            {{- end }}
+            {{ partial "tag-badges.html" $page }}
           </footer>
 
           <a class="entry-link" aria-label="post link to {{ $page.Title | plainify }}" href="{{ $page.Permalink }}"></a>

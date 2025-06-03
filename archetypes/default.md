@@ -30,6 +30,6 @@ price: ""
 # Auto Generated (Leave alone)
 draft: false
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }} 
+date: {{ .Date }}
 
 +++
