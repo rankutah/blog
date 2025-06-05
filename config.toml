@@ -18,9 +18,6 @@ pruneTaxonomies = true
   clientName = "Rank Utah"
   clientURL = "https://rankutah.com"
 
-[permalinks]
-  spotlights = "/:slug/"
-
 [taxonomies]
   tag = "tags"
 
