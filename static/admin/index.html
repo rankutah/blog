@@ -5,30 +5,6 @@
     <title>Content Manager</title>
     <!-- Netlify Identity widget (no change) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<!--
-      Fix for the Publish dropdown being cut off:
-      1) Allow the parent wrapper to show overflow
-      2) Ensure dropdown is positioned absolutely and has a high z-index
-    -->
-    <style>
-      /* Allow the Publish control wrapper to expand so dropdown isn’t clipped */
-      .nc-control__wrapper {
-        overflow: visible !important;
-      }
-
-      /* Permit overflow on higher-level containers just in case */
-      .nc-core-root,
-      .nc-page {
-        overflow: visible !important;
-      }
-
-      /* Make the dropdown fully visible and on top of other elements */
-      .nc-control__dropdown {
-        position: absolute !important;
-        overflow: visible !important;
-        z-index: 9999 !important;
-      }
-    </style>
   </head>
   <body>
     <!-- Mount point for CMS -->
