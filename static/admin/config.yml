@@ -14,10 +14,27 @@ collections:
     create: true
     slug: "{{slug}}/index"
     fields:
-      - { label: "Title",     name: "title",     widget: "string" }
-      - { label: "Date",      name: "date",      widget: "datetime" }
-      - { label: "Draft",     name: "draft",     widget: "boolean", default: false }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image",   required: false }
+      - { label: "Title",           name: "title",         widget: "string" }
+      - { label: "Date",            name: "date",          widget: "datetime" }
+      - { label: "Draft",           name: "draft",         widget: "boolean", default: false }
+      - { label: "Thumbnail",       name: "thumbnail",     widget: "image",    required: false }
       - label: "Body"
         name: "body"
         widget: "markdown"
+
+      # Optional Event Fields
+      - { label: "Event Date",      name: "eventDate",     widget: "string",   required: false }
+      - { label: "Event DateTime",  name: "eventDateTime", widget: "datetime", required: false }
+      - { label: "Location Name",   name: "location.name", widget: "string",   required: false }
+      - { label: "Address",         name: "location.address", widget: "string", required: false }
+      - { label: "City",            name: "location.city", widget: "string",      required: false }
+      - { label: "Region",          name: "location.region", widget: "string",    required: false }
+      - { label: "Postal Code",     name: "location.postalCode", widget: "string", required: false }
+      - { label: "Country",         name: "location.country", widget: "string",   required: false }
+
+      - { label: "Organizer Name",      name: "organizer.name",        widget: "string", required: false }
+      - { label: "Organizer Email",     name: "organizer.contactEmail", widget: "string", required: false }
+      - { label: "Organizer Phone",     name: "organizer.contactPhone", widget: "string", required: false }
+      - { label: "Organizer URL",       name: "organizer.url",         widget: "string", required: false }
+
+      - { label: "Price",           name: "price",         widget: "string", required: false }
