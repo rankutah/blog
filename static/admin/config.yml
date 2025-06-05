@@ -6,9 +6,7 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 media_library:
-  name: uploadcare
-  config:
-    publicKey: "YOUR_UPLOADCARE_PUBLIC_KEY"
+  name: "git"
 
 collections:
   - name: "spotlights"
