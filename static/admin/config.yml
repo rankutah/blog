@@ -2,6 +2,14 @@ backend:
   name: git-gateway
   branch: main
 
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "YOUR_UPLOADCARE_PUBLIC_KEY"
+
 collections:
   - name: "spotlights"
     label: "Spotlights"
@@ -11,11 +19,11 @@ collections:
     identifier_field: "title"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
       - label: "Tags (optional)"
         name: "tags"
         widget: "list"
         required: false
         default: []
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
