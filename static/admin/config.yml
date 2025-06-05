@@ -8,7 +8,7 @@ public_folder: "/images/uploads"
 collections:
   - name: "spotlights"
     label: "Spotlights"
-    folder: "content/spotlights"
+    folder: "content"
     create: true
     slug: "{{slug}}/index.md"
     identifier_field: "title"

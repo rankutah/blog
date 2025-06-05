@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <!-- Load Netlify Identity widget first -->
+    <!-- Netlify Identity widget (no change) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Mount point for Netlify CMS -->
+    <!-- Mount point for CMS -->
     <div id="ncms-root"></div>
 
-    <!-- Load Netlify CMS only after the mount point exists -->
+    <!-- Pin to 2.10.192 so the built-in git uploader remains included -->
     <script src="https://unpkg.com/netlify-cms@2.10.192/dist/netlify-cms.js"></script>
 
-    <!-- Initialize Netlify Identity -->
+    <!-- Initialize Identity (CMS will auto-mount once #ncms-root exists) -->
     <script>
       if (window.netlifyIdentity) {
-        netlifyIdentity.on("init", function(user) {
+        window.netlifyIdentity.on("init", function(user) {
           if (!user) {
-            netlifyIdentity.on("login", function() {
+            window.netlifyIdentity.on("login", function() {
               window.location.href = "/admin/";
             });
           }
         });
-        netlifyIdentity.init();
+        window.netlifyIdentity.init();
       }
     </script>
   </body>
