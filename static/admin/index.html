@@ -5,18 +5,17 @@
     <title>Content Manager</title>
     <!-- 1) Load Netlify Identity widget first -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- 2) Load Netlify CMS *after* Identity widget -->
-    <script src="https://cdn.jsdelivr.net/npm/netlify-cms@^2.15.72/dist/netlify-cms.js"></script>
+    <!-- 2) Load Netlify CMS from unpkg (correct path) -->
+    <script src="https://unpkg.com/netlify-cms@^2.15.72/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <!-- 3) Mount point for CMS Must Exist Before It Initializes -->
+    <!-- 3) Mount point for CMS -->
     <div id="ncms-root"></div>
 
     <!-- 4) Initialize Identity (CMS will auto-mount once it sees #ncms-root) -->
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", function(user) {
-          // If you want to automatically redirect on login:
           if (!user) {
             window.netlifyIdentity.on("login", function() {
               document.location.href = "/admin/";
