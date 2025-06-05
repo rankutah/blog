@@ -8,16 +8,16 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "posts"
-    label: "Blog Posts"
-    folder: "content/posts"
+  - name: "spotlights"
+    label: "Spotlights"
+    folder: "content/spotlights"
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}/index"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
+      - { label: "Title",     name: "title",     widget: "string" }
+      - { label: "Date",      name: "date",      widget: "datetime" }
+      - { label: "Draft",     name: "draft",     widget: "boolean", default: false }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image",   required: false }
       - label: "Body"
         name: "body"
         widget: "markdown"
