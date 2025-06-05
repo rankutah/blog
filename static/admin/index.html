@@ -5,11 +5,11 @@
     <title>Content Manager</title>
     <!-- 1) Load Netlify Identity widget first -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- 2) Load Netlify CMS from unpkg (correct path) -->
-    <script src="https://unpkg.com/netlify-cms@^2.15.72/dist/netlify-cms.js"></script>
+    <!-- 2) Load Netlify CMS (version 2.10.192) so the file is found -->
+    <script src="https://unpkg.com/netlify-cms@2.10.192/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <!-- 3) Mount point for CMS -->
+    <!-- 3) Mount point for CMS (must exist before CMS initializes) -->
     <div id="ncms-root"></div>
 
     <!-- 4) Initialize Identity (CMS will auto-mount once it sees #ncms-root) -->
