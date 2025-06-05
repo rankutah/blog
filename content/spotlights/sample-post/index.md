@@ -16,6 +16,6 @@ organizer:
 price: "$5 per adult"
 image: "event.jpg"
 tags: ["event","helo","another","three","one","two","four","sixsix"]
-draft: true
+draft: false
 ---
 This is the full event description. Hello.

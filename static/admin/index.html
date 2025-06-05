@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <!-- 1) Load Netlify Identity widget first -->
+    <!-- Load Netlify Identity widget first -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- 2) Load Netlify CMS (version 2.10.192) so the file is found -->
-    <script src="https://unpkg.com/netlify-cms@2.10.192/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <!-- 3) Mount point for CMS (must exist before CMS initializes) -->
+    <!-- Mount point for Netlify CMS -->
     <div id="ncms-root"></div>
 
-    <!-- 4) Initialize Identity (CMS will auto-mount once it sees #ncms-root) -->
+    <!-- Load Netlify CMS only after the mount point exists -->
+    <script src="https://unpkg.com/netlify-cms@2.10.192/dist/netlify-cms.js"></script>
+
+    <!-- Initialize Netlify Identity -->
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", function(user) {
+        netlifyIdentity.on("init", function(user) {
           if (!user) {
-            window.netlifyIdentity.on("login", function() {
-              document.location.href = "/admin/";
+            netlifyIdentity.on("login", function() {
+              window.location.href = "/admin/";
             });
           }
         });
-        window.netlifyIdentity.init();
+        netlifyIdentity.init();
       }
     </script>
   </body>
