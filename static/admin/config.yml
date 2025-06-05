@@ -10,7 +10,7 @@ collections:
     label: "Spotlights"
     folder: "content/spotlights"
     create: true
-    slug: "{{slug}}/index"
+    slug: "{{slug}}/index.md"
     identifier_field: "title"
     fields:
       - { label: "Title", name: "title", widget: "string" }
