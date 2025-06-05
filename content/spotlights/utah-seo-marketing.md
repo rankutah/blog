@@ -1,10 +1,10 @@
 ---
-date: '2025-05-31T22:53:10-06:00'
+date: 2025-05-31T22:53:10-06:00
 draft: false
-title: 'Utah SEO Marketing'
-tags: ["SEO"]
+title: Utah SEO Marketing
+tags:
+  - SEO
 ---
-
 ## What is Local SEO?
 
 SEO, or *Search Engine Optimization*, is the process of optimizing your website to rank higher in search engine results when users search for keywords related to your business or services.
@@ -13,7 +13,7 @@ Local SEO is different from broad SEO and focuses on three core areas: **Relevan
 
 The chart below shows the factors that influence lead generation for local businesses.
 
-![Local SEO Lead-Generation Factors Pie Chart](image.png)
+![Local SEO Lead-Generation Factors Pie Chart](/images/uploads/image.png)
 
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
@@ -26,10 +26,10 @@ The title tag and H1 tag are the clearest indicators to Google of what your webp
 On your Google Business Profile (GBP), your relevance is determined primarily by your primary category (this is the most critical relevance signal).
 Other relevance factors include:
 
-- Secondary categories
-- Business name
-- Services/products listed
-- Your website content, which Google uses to assess GBP relevance
+* Secondary categories
+* Business name
+* Services/products listed
+* Your website content, which Google uses to assess GBP relevance
 
 ## 2. Prominence 🔗
 
@@ -38,9 +38,9 @@ While all quality (non-spammy) backlinks are helpful, local backlinks from busin
 
 Another factor that influences the prominence of your website is technical SEO, which focuses on the structure and performance of your website:
 
-- Faster load times: Improves user experience and rankings
-- Mobile-friendly design: Google prioritizes this
-- Clear structure: Helps search engines crawl and index effectively
+* Faster load times: Improves user experience and rankings
+* Mobile-friendly design: Google prioritizes this
+* Clear structure: Helps search engines crawl and index effectively
 
 For your Google Business Profile, prominence is determined by how engaging your profile is to the public, the number of reviews you have, and your average rating. The top three GBP listings often appear above websites in local searches, making it a powerful tool.
 
@@ -54,10 +54,10 @@ SEO rank tracking tools and Google Analytics are essential for understanding wha
 
 You'll be able to see:
 
-- How you rank for specific keywords
-- Which pages are the most popular
-- Where your traffic is coming from (search, social, direct, etc.)
-- Where your users are located
+* How you rank for specific keywords
+* Which pages are the most popular
+* Where your traffic is coming from (search, social, direct, etc.)
+* Where your users are located
 
 ## Summary
 
@@ -66,4 +66,3 @@ Relevance, prominence, and proximity are the three pillars of local SEO. Your we
 ## Let Me Help You! 😊
 
 If you need help with your SEO marketing please [reach out](https://rankutah.com/#contact).
-
