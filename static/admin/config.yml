@@ -14,7 +14,9 @@ collections:
     create: true
     slug: "{{slug}}/index"
     fields:
-      - { label: "Title", name: "title",   widget: "string" }
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body",  name: "body",  widget: "markdown" }
+      - label: "Tags"
+        name: "tags"
+        widget: "tags"
+        required: false
