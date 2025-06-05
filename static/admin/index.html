@@ -3,39 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-
-    <!-- 1) Load the Identity widget first so users can log in -->
+    <!-- 1) Load Netlify Identity widget first -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-    <!-- 2) Tell CMS to wait for manual init (prevents auto-mount before <div> exists) -->
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
-
-    <!-- 3) Load Netlify CMS from a reliable CDN (avoid unpkg rate limits) -->
+    <!-- 2) Load Netlify CMS *after* Identity widget -->
     <script src="https://cdn.jsdelivr.net/npm/netlify-cms@^2.15.72/dist/netlify-cms.js"></script>
   </head>
   <body>
-    <!-- 4) The mount point must be present *before* we call CMS.init() -->
+    <!-- 3) Mount point for CMS Must Exist Before It Initializes -->
     <div id="ncms-root"></div>
 
-    <!-- 5) After the Identity widget has loaded, initialize CMS -->
+    <!-- 4) Initialize Identity (CMS will auto-mount once it sees #ncms-root) -->
     <script>
-      // When Identity is ready, initialize CMS
-      function initCMS() {
-        // If Identity wasn’t enabled, this still calls CMS.init()
-        CMS.init({ config: window.CMS_CONFIG });
-      }
-
       if (window.netlifyIdentity) {
-        // Wait for the Identity widget to be ready
-        window.netlifyIdentity.on("init", function (user) {
-          initCMS();
+        window.netlifyIdentity.on("init", function(user) {
+          // If you want to automatically redirect on login:
+          if (!user) {
+            window.netlifyIdentity.on("login", function() {
+              document.location.href = "/admin/";
+            });
+          }
         });
         window.netlifyIdentity.init();
-      } else {
-        // Fallback: if Identity is unavailable, still init CMS
-        document.addEventListener("DOMContentLoaded", initCMS);
       }
     </script>
   </body>
