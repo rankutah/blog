@@ -13,8 +13,8 @@ collections:
     slug: "{{slug}}"
     identifier_field: "title"
     fields:
-      - { label: "Title (Please add city or landmark for local SEO)", name: "title", widget: "string" }
-      - label: "Tags (Add comma with no space for additional tags)"
+      - { label: "Title (Please add a city or landmark to your title for local SEO)", name: "title", widget: "string" }
+      - label: "Tags (Add commas, with no spaces, to add additional tags)"
         name: "tags"
         widget: "list"
         required: false
