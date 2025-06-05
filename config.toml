@@ -1,7 +1,10 @@
-baseURL       = ""
+# ─────────────────────────────────────────────────────────────────────────────
+# STEP 1:  Set your actual site URL here (include “https://” and trailing slash)
+baseURL       = "https://blog.rankutah.com/"
 languageCode  = "en-us"
 title         = "Spotlight Utah"
 theme         = "PaperMod"
+# ─────────────────────────────────────────────────────────────────────────────
 
 pruneTaxonomies = true
 
@@ -19,7 +22,6 @@ pruneTaxonomies = true
 [permalinks]
   spotlights = "/:slug/"
 
-
 [taxonomies]
   tag = "tags"
 
@@ -30,10 +32,10 @@ pruneTaxonomies = true
     url        = "/"
     weight     = 1
 
-#  [[menu.main]]
-#    name       = "Posts"
-#    url        = "/highlights/"
-#    weight     = 2
+  # [[menu.main]]
+  #   name       = "Posts"
+  #   url        = "/highlights/"
+  #   weight     = 2
 
   [[menu.main]]
     name       = "Tags"
@@ -41,14 +43,14 @@ pruneTaxonomies = true
     weight     = 2
 
   [[menu.main]]
-   name       = "About"
+    name       = "About"
     url        = "/about/"
     weight     = 3
 
-#  [[menu.main]]
-#    name       = "Archives"
-#    url        = "/archives/"
-#    weight     = 4
+  # [[menu.main]]
+  #   name       = "Archives"
+  #   url        = "/archives/"
+  #   weight     = 4
 
   [[menu.main]]
     name       = "Search"
