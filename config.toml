@@ -1,6 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# STEP 1:  Set your actual site URL here (include “https://” and trailing slash)
-baseURL       = "https://blog.rankutah.com/"
+baseURL       = "https://spotlight.rankutah.com/"
 languageCode  = "en-us"
 title         = "Spotlight Utah"
 theme         = "PaperMod"
