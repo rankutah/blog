@@ -15,8 +15,11 @@ collections:
     slug: "{{slug}}/index"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body",  name: "body",  widget: "markdown" }
-      - label: "Tags"
+      - label: "Tags (comma-separated)"
         name: "tags"
-        widget: "tags"
+        widget: "list"
         required: false
+        default: []
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
