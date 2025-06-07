@@ -1,20 +1,6 @@
-# First, serve the real config.yml so CMS can load it
-[[redirects]]
-  from   = "/admin/config.yml"
-  to     = "/admin/config.yml"
-  status = 200
-  force  = false
+[build]
+  command   = "hugo"
+  publish   = "public"
+  environment = { HUGO_ENV = "production" }
 
-# Normalize /admin → the index
-[[redirects]]
-  from   = "/admin"
-  to     = "/admin/index.html"
-  status = 200
-  force  = true
-
-# Catch-all for other admin subpaths
-[[redirects]]
-  from   = "/admin/*"
-  to     = "/admin/index.html"
-  status = 200
-  force  = true
+# No redirects for /admin — let Netlify serve its default CMS UI
