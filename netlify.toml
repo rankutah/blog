@@ -5,3 +5,15 @@
 [build.environment]
   HUGO_VERSION = "0.147.6"
   HUGO_ENV     = "production"
+
+[[redirects]]
+  from = "/admin"
+  to   = "/admin/"
+  status = 200
+  force  = true
+
+[[redirects]]
+  from = "/admin/*"
+  to   = "/admin/index.html"
+  status = 200
+  force  = true
