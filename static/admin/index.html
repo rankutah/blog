@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin</title>
+
+  <!-- Auth0 SPA SDK -->
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
+  <!-- Netlify CMS core (manual init) -->
+  <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+</head>
+<body>
+  <button id="btn-login">Log in</button>
+  <button id="btn-logout" style="display:none">Log out</button>
+  <div id="cms-root"></div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    // 1. Initialize Auth0 client
+    const auth0 = await createAuth0Client({
+      domain:   "{{ getenv "AUTH0_DOMAIN" }}",
+      client_id:"{{ getenv "AUTH0_CLIENT_ID" }}",
+      cacheLocation: "localstorage"
+    });
+
+    // 2. Handle redirect callback
+    if (window.location.search.includes("code=")) {
+      await auth0.handleRedirectCallback();
+      window.history.replaceState({}, document.title, "/admin/");
+    }
+
+    // 3. Show/hide login/logout
+    const isAuth = await auth0.isAuthenticated();
+    document.getElementById("btn-login").style.display  = isAuth ? "none" : "inline";
+    document.getElementById("btn-logout").style.display = isAuth ? "inline" : "none";
+
+    document.getElementById("btn-login").onclick = () =>
+      auth0.loginWithRedirect({ redirect_uri: window.location.origin + "/admin/" });
+
+    document.getElementById("btn-logout").onclick = () =>
+      auth0.logout({ returnTo: window.location.origin + "/admin/" });
+
+    // 4. If authenticated, boot Netlify CMS
+    if (isAuth) {
+      const token = await auth0.getTokenSilently();
+      CMS.init({
+        config: {
+          backend: {
+            name: "github",
+            repo: "rank-utah/blog",
+            branch: "main",
+            auth_type: "bearer",
+            auth_token: token
+          },
+          media_folder: "static/images/uploads",
+          public_folder: "/images/uploads",
+          load_config_file: false,
+          local_backend: false,
+          collections: [
+            {
+              name: "spotlights",
+              label: "Spotlights",
+              folder: "content/spotlights",
+              create: true,
+              slug: "{{slug}}",
+              identifier_field: "title",
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Body",  name: "body",  widget: "markdown" }
+              ]
+            }
+            // …add your other collections here
+          ]
+        }
+      });
+    }
+  });
+  </script>
+</body>
+</html>
