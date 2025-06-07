@@ -1,6 +1,3 @@
 [build]
-  command   = "hugo"
-  publish   = "public"
-  environment = { HUGO_ENV = "production" }
-
-# No redirects for /admin — let Netlify serve its default CMS UI
+  command = "hugo"
+  publish = "public"
