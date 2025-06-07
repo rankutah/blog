@@ -18,8 +18,8 @@
   document.addEventListener("DOMContentLoaded", async () => {
     // 1. Initialize Auth0 client
     const auth0 = await createAuth0Client({
-      domain:   "{{ getenv "AUTH0_DOMAIN" }}",
-      client_id:"{{ getenv "AUTH0_CLIENT_ID" }}",
+      domain:   "dev-bwg8nm15tfgvv2y3.us.auth0.com",
+      client_id:"ISjY4NKaKmsBOZbyp97lMP9FPW3eumcb",
       cacheLocation: "localstorage"
     });
 
@@ -40,37 +40,12 @@
     document.getElementById("btn-logout").onclick = () =>
       auth0.logout({ returnTo: window.location.origin + "/admin/" });
 
-    // 4. If authenticated, boot Netlify CMS
+    // 4. If authenticated, boot Netlify CMS from static/admin/config.yml
     if (isAuth) {
-      const token = await auth0.getTokenSilently();
       CMS.init({
         config: {
-          backend: {
-            name: "github",
-            repo: "rank-utah/blog",
-            branch: "main",
-            auth_type: "bearer",
-            auth_token: token
-          },
-          media_folder: "static/images/uploads",
-          public_folder: "/images/uploads",
-          load_config_file: false,
-          local_backend: false,
-          collections: [
-            {
-              name: "spotlights",
-              label: "Spotlights",
-              folder: "content/spotlights",
-              create: true,
-              slug: "{{slug}}",
-              identifier_field: "title",
-              fields: [
-                { label: "Title", name: "title", widget: "string" },
-                { label: "Body",  name: "body",  widget: "markdown" }
-              ]
-            }
-            // …add your other collections here
-          ]
+          load_config_file: true,
+          local_backend: false
         }
       });
     }
