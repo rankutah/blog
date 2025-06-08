@@ -36,9 +36,10 @@
   {{ partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
   {{- /* Featured image from front matter, optimized via Hugo Pipes */}}
+  {{- $page := . }}                          <!-- capture the page context -->
   {{- with .Params.image }}
     <div class="mb-6">
-      {{ partial "optimized-image.html" (dict "Page" .Page "Src" .) }}
+      {{ partial "optimized-image.html" (dict "Page" $page "Src" .) }}
     </div>
     <p>&nbsp;</p>
   {{- end }}
@@ -147,12 +148,12 @@
     {{- if (.Param "ShowPostNavLinks") }}
       {{ partial "post_nav_links.html" . }}
     {{- end }}
-    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- if and site.Params.ShowShareButtons (not .Params.disableShare) }}
       {{ partial "share_icons.html" . }}
     {{- end }}
   </footer>
 
-  {{- if (.Param "comments") }}
+  {{- if .Param "comments" }}
     {{ partial "comments.html" . }}
   {{- end }}
 </article>
