@@ -1,9 +1,13 @@
 # Hugo output
 /public/
+sites/*/public/
+
+# Hugo build locks
+**/*.hugo_build.lock
 
 # OS files
-.DS_Store
+**/.DS_Store
 
-# IDE or editor folders
+# IDE/editor folders
 .vscode/
 *.swp
