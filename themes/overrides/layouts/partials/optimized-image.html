@@ -1,0 +1,24 @@
+{{/* themes/overrides/layouts/partials/optimized-image.html */}}
+{{- $srcPath := printf "media/%s" .Src -}}
+{{- with resources.GetMatch $srcPath -}}
+  {{- $orig    := . -}}
+  {{- /* Resize to max 1200px width, but don’t upscale smaller images */ -}}
+  {{- $resized := cond (gt $orig.Width 1200) ($orig.Resize "1200x") $orig -}}
+
+  {{- /* Encode optimized formats */ -}}
+  {{- $avif     := $resized | resources.Format "avif" | resources.Quality 65 -}}
+  {{- $webp     := $resized | resources.Format "webp" | resources.Quality 75 -}}
+  {{- $fallback := $resized | resources.Quality 100 -}}
+
+  <picture>
+    <source type="image/avif" srcset="{{ $avif.RelPermalink }}">
+    <source type="image/webp" srcset="{{ $webp.RelPermalink }}">
+    <img
+      src="{{ $fallback.RelPermalink }}"
+      width="{{ $resized.Width }}"
+      height="{{ $resized.Height }}"
+      loading="lazy"
+      decoding="async"
+      alt="{{ .Page.Title }}">
+  </picture>
+{{- end -}}

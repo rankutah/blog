@@ -9,8 +9,7 @@
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+          <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
         </svg>
       </span>
       {{- end }}
@@ -25,27 +24,23 @@
     {{- /* Only show standard metadata when NOT an event */}}
     {{- if and (ne .File.BaseFileName "about") (not (.Param "hideMeta")) (not .Params.eventDateTime) }}
       <div class="post-meta mb-6">
-        {{- partial "post_meta.html" . -}}
-        {{- partial "translation_list.html" . -}}
-        {{- partial "edit_post.html" . -}}
-        {{- partial "post_canonical.html" . -}}
+        {{ partial "post_meta.html" . }}
+        {{ partial "translation_list.html" . }}
+        {{ partial "edit_post.html" . }}
+        {{ partial "post_canonical.html" . }}
       </div>
     {{- end }}
   </header>
 
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+  {{ partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
-  {{- /* Featured image from front matter, placed at top of body */}}
+  {{- /* Featured image from front matter, optimized via Hugo Pipes */}}
   {{- with .Params.image }}
-    {{- $img := $.Resources.GetMatch . }}
-    {{- if $img }}
-      <div class="mb-6">
-        <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" class="w-full h-auto rounded-lg shadow-sm" />
-      </div>
-      {{/* Blank line between image and event details */}}
-      <p>&nbsp;</p>
-    {{- end }}
+    <div class="mb-6">
+      {{ partial "optimized-image.html" (dict "Page" .Page "Src" .) }}
+    </div>
+    <p>&nbsp;</p>
   {{- end }}
 
   {{- /* Event details + JSON-LD schema */}}
@@ -128,38 +123,37 @@
       {{- end }}
     </div>
 
-    {{/* Extra blank line between event details and the body */}}
+    {{- /* Extra blank line between event details and the body */}}
     <p>&nbsp;</p>
   {{- end }}
 
   {{- if (.Param "ShowToc") }}
-    {{- partial "toc.html" . }}
+    {{ partial "toc.html" . }}
   {{- end }}
 
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
-      {{- partial "anchored_headings.html" .Content -}}
+      {{ partial "anchored_headings.html" .Content }}
     {{- else }}
       {{ .Content }}
     {{- end }}
   </div>
   {{- end }}
 
-  {{- /* Replace inline badge code with the partial call */}}
   {{ partial "tag-badges.html" . }}
 
   <footer class="post-footer mt-8">
     {{- if (.Param "ShowPostNavLinks") }}
-      {{- partial "post_nav_links.html" . }}
+      {{ partial "post_nav_links.html" . }}
     {{- end }}
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-      {{- partial "share_icons.html" . -}}
+      {{ partial "share_icons.html" . }}
     {{- end }}
   </footer>
 
   {{- if (.Param "comments") }}
-    {{- partial "comments.html" . }}
+    {{ partial "comments.html" . }}
   {{- end }}
 </article>
 
