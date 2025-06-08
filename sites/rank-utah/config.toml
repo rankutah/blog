@@ -2,6 +2,7 @@
 baseURL       = "https://spotlight.rankutah.com/"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
+themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 
 pruneTaxonomies = true
