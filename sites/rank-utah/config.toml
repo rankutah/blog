@@ -1,9 +1,8 @@
 # ─────────────────────────────────────────────────────────────────────────────
 baseURL       = "https://spotlight.rankutah.com/"
 languageCode  = "en-us"
-theme         = "PaperMod"
+theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
-layoutDir     = "../../layouts"
 # ─────────────────────────────────────────────────────────────────────────────
 
 pruneTaxonomies = true
