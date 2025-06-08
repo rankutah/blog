@@ -1,0 +1,166 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+
+    <h1 class="post-title entry-hint-parent mb-4">
+      {{ .Title }}
+      {{- if .Draft }}
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+      {{- end }}
+    </h1>
+
+    {{- if .Description }}
+    <div class="post-description mb-6">
+      {{ .Description }}
+    </div>
+    {{- end }}
+
+    {{- /* Only show standard metadata when NOT an event */}}
+    {{- if and (ne .File.BaseFileName "about") (not (.Param "hideMeta")) (not .Params.eventDateTime) }}
+      <div class="post-meta mb-6">
+        {{- partial "post_meta.html" . -}}
+        {{- partial "translation_list.html" . -}}
+        {{- partial "edit_post.html" . -}}
+        {{- partial "post_canonical.html" . -}}
+      </div>
+    {{- end }}
+  </header>
+
+  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+
+  {{- /* Featured image from front matter, placed at top of body */}}
+  {{- with .Params.image }}
+    {{- $img := $.Resources.GetMatch . }}
+    {{- if $img }}
+      <div class="mb-6">
+        <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" class="w-full h-auto rounded-lg shadow-sm" />
+      </div>
+      {{/* Blank line between image and event details */}}
+      <p>&nbsp;</p>
+    {{- end }}
+  {{- end }}
+
+  {{- /* Event details + JSON-LD schema */}}
+  {{- if .Params.eventDateTime }}
+    {{- $ed := .Params.eventDateTime | time -}}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": {{ .Title | jsonify }},
+      "startDate": "{{ $ed.Format "2006-01-02T15:04:05Z07:00" }}",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": {{ with .Params.location.name }}{{ . | jsonify }}{{ else }}"TBD"{{ end }},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": {{ with .Params.location.address }}{{ . | jsonify }}{{ else }}""{{ end }},
+          "addressLocality": {{ with .Params.location.city }}{{ . | jsonify }}{{ else }}""{{ end }},
+          "addressRegion": {{ with .Params.location.region }}{{ . | jsonify }}{{ else }}""{{ end }},
+          "postalCode": {{ with .Params.location.postalCode }}{{ . | jsonify }}{{ else }}""{{ end }},
+          "addressCountry": {{ with .Params.location.country }}{{ . | jsonify }}{{ else }}""{{ end }}
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": {{ with .Params.organizer.name }}{{ . | jsonify }}{{ else }}"TBD"{{ end }},
+        "url": {{ with .Params.organizer.url }}{{ . | jsonify }}{{ else }}""{{ end }}
+      },
+      "description": {{ .Summary | default .Description | plainify | jsonify }},
+      "url": "{{ .Permalink }}"
+    }
+    </script>
+
+    <div class="mb-6">
+      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
+        <strong>When:</strong>
+        <time datetime="{{ $ed.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ $ed.Format "Mon, Jan 2, 2006, 3:04 PM" }}
+        </time>
+      </p>
+      {{- with .Params.location }}
+      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
+        <strong>Where:</strong>
+        {{ if .name }}{{ .name }}{{ end }}
+        {{ if .address }}, {{ .address }}{{ end }}
+        {{ if .city }}, {{ .city }}{{ end }}
+        {{ if .region }} {{ .region }}{{ end }}
+        {{ if .postalCode }} {{ .postalCode }}{{ end }}
+        {{ if .country }}, {{ .country }}{{ end }}
+      </p>
+      {{- end }}
+      {{- if or .Params.organizer.name .Params.organizer.contactEmail .Params.organizer.contactPhone .Params.organizer.url }}
+      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
+        <strong>Organizer:</strong> {{ .Params.organizer.name }}
+      </p>
+      {{- end }}
+      {{- with .Params.organizer.contactEmail }}
+      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
+        <strong>Email:</strong>
+        <a href="mailto:{{ . }}" class="text-blue-600 hover:underline">{{ . }}</a>
+      </p>
+      {{- end }}
+      {{- with .Params.organizer.contactPhone }}
+      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
+        <strong>Phone:</strong> {{ . }}
+      </p>
+      {{- end }}
+      {{- with .Params.organizer.url }}
+      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
+        <strong>Website:</strong>
+        <a href="{{ . }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ . }}</a>
+      </p>
+      {{- end }}
+      {{- with .Params.price }}
+      <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">
+        <strong>Price:</strong> {{ . }}
+      </p>
+      {{- end }}
+    </div>
+
+    {{/* Extra blank line between event details and the body */}}
+    <p>&nbsp;</p>
+  {{- end }}
+
+  {{- if (.Param "ShowToc") }}
+    {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}
+      {{ .Content }}
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- /* Replace inline badge code with the partial call */}}
+  {{ partial "tag-badges.html" . }}
+
+  <footer class="post-footer mt-8">
+    {{- if (.Param "ShowPostNavLinks") }}
+      {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+      {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+    {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}

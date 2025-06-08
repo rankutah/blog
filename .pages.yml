@@ -1,0 +1,23 @@
+media:
+  - label: "Rank Utah Media"
+    name: rankUtahMedia
+    input: sites/rank-utah/static/media
+    output: /media/rank-utah
+
+content:
+  - name: rankUtah
+    label: "Rank Utah Content"
+    type: collection
+    path: sites/rank-utah/content
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+      - name: image
+        label: Image
+        type: image
+        options:
+          media: rankUtahMedia

@@ -1,0 +1,35 @@
+<style>
+  {{ $allTags := slice }}
+  {{ range $tagName, $_ := .Site.Taxonomies.tags }}
+    {{ $allTags = $allTags | append $tagName }}
+  {{ end }}
+  {{ $allTags = sort $allTags }}
+
+  {{ $palette := slice
+       "#A0D3D9"
+       "#CAABD0"
+       "#C5E1A5"
+       "#FFCC80"
+       "#FFF59D"
+       "#F48FB1"
+       "#FFAB91"
+       "#B39DDB"
+       "#A5D6A7"
+       "#FFE082"
+  }}
+
+  {{ range $i, $tagName := $allTags }}
+    {{ $idx := mod $i (len $palette) }}
+    {{ $color := index $palette $idx }}
+    .badge-{{ $tagName | urlize }} {
+      background-color: {{ $color }};
+      color: #000;
+      border-radius: 0.25rem;
+      padding: 0.125rem 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-block;
+      text-transform: capitalize;
+    }
+  {{ end }}
+</style>
