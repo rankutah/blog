@@ -21,7 +21,6 @@
     </div>
     {{- end }}
 
-    {{- /* Only show standard metadata when NOT an event */}}
     {{- if and (ne .File.BaseFileName "about") (not (.Param "hideMeta")) (not .Params.eventDateTime) }}
       <div class="post-meta mb-6">
         {{ partial "post_meta.html" . }}
@@ -36,15 +35,14 @@
   {{ partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
   {{- /* Featured image from front matter, optimized via Hugo Pipes */}}
-  {{- $page := . }}                          <!-- capture the page context -->
+  {{- $page := . }}
   {{- with .Params.image }}
     <div class="mb-6">
-      {{ partial "optimized-image.html" (dict "Page" $page "Src" .) }}
+      {{ partial "optimized-image.html" (dict "Page" $page "Src" . "Alt" $.Title) }}
     </div>
     <p>&nbsp;</p>
   {{- end }}
 
-  {{- /* Event details + JSON-LD schema */}}
   {{- if .Params.eventDateTime }}
     {{- $ed := .Params.eventDateTime | time -}}
     <script type="application/ld+json">
@@ -124,7 +122,6 @@
       {{- end }}
     </div>
 
-    {{- /* Extra blank line between event details and the body */}}
     <p>&nbsp;</p>
   {{- end }}
 
