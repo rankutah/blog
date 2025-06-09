@@ -1,24 +1,38 @@
-{{/* themes/overrides/layouts/partials/optimized-image.html */}}
-{{- $srcPath := printf "media/%s" .Src -}}
-{{- with resources.GetMatch $srcPath -}}
-  {{- $orig    := . -}}
-  {{- /* Resize to max 1200px width, but don’t upscale smaller images */ -}}
-  {{- $resized := cond (gt $orig.Width 1200) ($orig.Resize "1200x") $orig -}}
+{{/* layouts/partials/optimized-image.html */}}
+{{/* Expects a dict with "Page" (.Page), "Src" (string, may include leading slash), and optional "Alt" */}}
 
-  {{- /* Encode optimized formats */ -}}
-  {{- $avif     := $resized | resources.Format "avif" | resources.Quality 65 -}}
-  {{- $webp     := $resized | resources.Format "webp" | resources.Quality 75 -}}
-  {{- $fallback := $resized | resources.Quality 100 -}}
+{{ $page := .Page }}
+{{ $raw  := .Src }}
+{{/* Strip a leading slash if present so GetMatch/resources.Get can find it */}}
+{{ $src  := replaceRE "^/" "" $raw }}
+{{ $alt  := or .Alt $page.Title }}
+
+// Try as a page resource (leaf bundle)
+{{ $orig := $page.Resources.GetMatch $src }}
+
+{{ if not $orig }}
+  {{/* If not in a bundle, try site assets */}}
+  {{ $orig = resources.Get $src }}
+{{ end }}
+
+{{ if $orig }}
+  {{/* Convert to AVIF */}}
+  {{ $avif := $orig.Convert "avif" }}
 
   <picture>
-    <source type="image/avif" srcset="{{ $avif.RelPermalink }}">
-    <source type="image/webp" srcset="{{ $webp.RelPermalink }}">
+    <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
+    <source srcset="{{ $orig.RelPermalink }}" type="{{ $orig.MediaType.Type }}">
     <img
-      src="{{ $fallback.RelPermalink }}"
-      width="{{ $resized.Width }}"
-      height="{{ $resized.Height }}"
+      src="{{ $avif.RelPermalink }}"
+      alt="{{ $alt }}"
       loading="lazy"
-      decoding="async"
-      alt="{{ .Page.Title }}">
+      decoding="async" />
   </picture>
-{{- end -}}
+{{ else }}
+  {{/* Fallback for external or missing files */}}
+  <img
+    src="{{ .Src }}"
+    alt="{{ $alt }}"
+    loading="lazy"
+    decoding="async" />
+{{ end }}
