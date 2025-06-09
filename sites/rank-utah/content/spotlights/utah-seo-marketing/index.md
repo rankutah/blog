@@ -1,5 +1,7 @@
 ---
 title: Utah SEO Marketing
+tags:
+    - SEO
 ---
 ## What is Local SEO?
 
