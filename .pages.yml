@@ -8,7 +8,7 @@ content:
   - name: rankUtah
     label: "Rank Utah Content"
     type: collection
-    path: sites/rank-utah/content
+    path: sites/rank-utah/content/spotlights
     fields:
       - name: title
         label: Title
