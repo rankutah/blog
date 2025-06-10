@@ -21,8 +21,7 @@ components:
       placeholder: "Add tags…"
       max: 5
     description: >
-      Use as few tags as necessary (lowercase, singular, hyphens for multi-word)
-      to help visitors find related content and keep your site organized.
+      Use as few tags as necessary (lowercase, singular, hyphens for multi-word) to help visitors find related content and keep your site organized.
 
   bodyField:
     label: Body
@@ -47,6 +46,13 @@ content:
 
       - name: tags
         component: tagsField
-
+        options:
+          fetch:
+            url: https://spotlight.rankutah.com/tags/tags.json
+            method: GET
+            results: ""
+            value: ""
+            label: ""
+            
       - name: body
         component: bodyField
