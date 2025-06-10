@@ -50,9 +50,7 @@ components:
     description: |
       Use the `/` command to insert images and headings.
       Highlight text to format or add links.
-      After adding an image, click the image, click ALT, and enter a brief
-      description of the image (e.g. “People watching fireworks in Salt Lake City”)
-      to improve search traffic.
+      After inserting an image, click it, choose ‘ALT,’ and add a short description (e.g. ‘People watching fireworks in Salt Lake City’) to boost search visibility.
       Organize your content under subheadings for clear structure.
 
 content:
