@@ -1,4 +1,3 @@
-<!-- layouts/partials/head.html -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,30 +17,36 @@
     <meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
   {{ end }}
 {{- else }}
-  <meta name="keywords" content="{{- if .Params.keywords }}{{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{ else }}{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{ end }}">
+  <meta name="keywords" content="{{ if .Params.keywords -}}
+      {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}  
+    {{- else -}}
+      {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+    {{- end -}}">
 {{- end }}
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection }}{{ .Summary | default (printf "%s – %s" .Title site.Title) }}{{- else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection }}{{ .Summary | default (printf "%s – %s" .Title site.Title) }}{{- else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
 <meta name="author" content="{{ partial "author.html" . }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL }}{{ .Params.canonicalURL | trim }}{{ else }}{{ .Permalink }}{{ end }}">
 
 {{- if site.Params.analytics.google.SiteVerificationTag }}
-<meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
+  <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
 {{- end }}
 {{- if site.Params.analytics.yandex.SiteVerificationTag }}
-<meta name="yandex-verification" content="{{ site.Params.analytics.yandex.SiteVerificationTag }}">
+  <meta name="yandex-verification" content="{{ site.Params.analytics.yandex.SiteVerificationTag }}">
 {{- end }}
 {{- if site.Params.analytics.bing.SiteVerificationTag }}
-<meta name="msvalidate.01" content="{{ site.Params.analytics.bing.SiteVerificationTag }}">
+  <meta name="msvalidate.01" content="{{ site.Params.analytics.bing.SiteVerificationTag }}">
 {{- end }}
 {{- if site.Params.analytics.naver.SiteVerificationTag }}
-<meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
+  <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
 
 {{- /* Styles */}}
-{{- $includes := slice (resources.FromString "assets/css/includes-blank.css" "") }}
+{{- $includes := slice }}
+{{- $blank := resources.FromString "assets/css/includes-blank.css" "" }}
+{{- $includes = append $includes $blank }}
 {{- if not site.Params.assets.disableScrollBarStyle }}
-  {{- $scroll := resources.Get "css/includes/scroll-bar.css" }}
-  {{- $includes = $scroll | append $includes }}
+  {{- $scrollStyle := resources.Get "css/includes/scroll-bar.css" }}
+  {{- $includes = append $includes $scrollStyle }}
 {{- end }}
 {{- $includesAll := $includes | resources.Concat "assets/css/includes.css" }}
 {{- $themeVars := resources.Get "css/core/theme-vars.css" }}
@@ -92,7 +97,7 @@
 {{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
 {{- end }}
-{{ range .AllTranslations }}
+{{- range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{- end }}
 
@@ -124,7 +129,6 @@
     <meta name="twitter:image" content="{{ $firstImg }}">
   {{- end }}
 
-  {{/* The rest of your OG & Twitter tags */}}
   {{ partial "templates/opengraph.html" . | safeHTML }}
   {{ partial "templates/twitter_cards.html" . }}
 {{- end }}
