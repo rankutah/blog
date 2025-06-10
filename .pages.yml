@@ -47,9 +47,14 @@ content:
       - name: tags
         component: tagsField
         options:
+          multiple: true
+          creatable: true
+          placeholder: "Add tags…"
+          max: 5
           fetch:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
-            
+            results: ""    # root array
+
       - name: body
         component: bodyField
