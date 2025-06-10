@@ -17,8 +17,7 @@ content:
         label: Title 
         type: string 
         description: >
-          **Best practices:**
-          "• Include your city or a nearby landmark in your title to drive more local traffic"
+          "Include your city or a nearby landmark in your title to drive more local traffic"
         required: true
       - name: tags 
         label: Tags
@@ -27,10 +26,11 @@ content:
           multiple: true
           creatable: true
           placeholder: "Add tags…"
-        description: "Use as few tags as necessary. Keep each tag lowercase and singular, and use hyphens for multi-word tags"
+        description: "Use as few tags as necessary (lowercase, singular, hyphers for multi-word) to help viistors find related content and keep your site organized."
       - name: body  
         label: Body
         type: rich-text 
         required: true
+        description: "Use the / command to insert images, tables, and headings. After adding an image, click it and add a brief, descriptive alt-text (e.g. “People watching fireworks in Salt Lake City”) to improve accessibility and search visibility. Structure your content with H2 and H3 headings (your Title is already H1)"  
 
 components: {}
