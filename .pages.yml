@@ -29,11 +29,10 @@ components:
     type: rich-text
     required: true
     description: >
-      Use the `/` command to insert images, embeds, and headings.
-      After adding an image, click it and add a brief alt-text
-      (e.g. “People watching fireworks in Salt Lake City”) to improve
-      accessibility & discoverability.
-      Structure with H2–H3 headings (your Title is already H1).
+      • Use the `/` command to insert images, embeds, and headings.
+      • Highlight text to format or add links.
+      • After adding an image, click it and add a brief alt-text (e.g. “People watching fireworks in Salt Lake City”) to improve accessibility & discoverability.
+      • Structure with H2–H3 headings (your Title is already H1).
 
 content:
   - name: rank-utah
@@ -63,7 +62,9 @@ content:
             - Draft
             - Published
         description: >
-          Select “Draft” to save your post without publishing, or “Published” to make it live, then click “Save”.
+          • Leave as “Draft” (default) to keep the post unpublished.
+          • Select “Published” to make it live, then click “Save”.
+
       - name: tags
         component: tagsField
         options:
