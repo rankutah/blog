@@ -14,10 +14,8 @@ content:
     # new files: 2025-06-10-my-title.md
     filename: "{year}-{month}-{day}-{primary}.md"
     fields:
-      - { name: title, label: Title,        type: string,    required: true }
-      - { name: date,  label: Date,         type: date,      required: true }
-      - { name: draft, label: Draft status, type: boolean }
+      - { name: title, label: Title, type: string, required: true }
       - { name: image, label: Header image, type: file }
-      - { name: body,  label: Body,         type: rich-text }
+      - { name: body,  label: Body, type: rich-text, required: true}
 
 components: {}
