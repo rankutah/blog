@@ -58,15 +58,16 @@ content:
         component: titleField
 
       - name: is_published
-        label: Published?
+        label: Status
         type: select
+        required: true
         options:
           values:
             - Draft
             - Published
           default: Draft
         description: >
-          Select “Published” when your post is ready; leave as “Draft” to keep it unpublished.
+          Select “Published” when your post is ready, then click “Save” to publish.
 
       - name: tags
         component: tagsField
