@@ -81,5 +81,14 @@ content:
             method: GET
             results: ""
 
+      - name: featuredImage
+        label: Featured Image
+        type: image
+        required: false
+        description: |
+          Upload or select a single image to represent this post.
+          Your templates can display it at the top of the article and as
+          the `og:image` for social sharing.
+
       - name: body
         component: bodyField
