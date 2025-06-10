@@ -47,7 +47,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ date, title, draft, tags ]   # show draft & tags in the list
+      fields: [ title, date, published, tags ]   # show published & tags
       sort: [ date ]
       default:
         sort: date
@@ -66,13 +66,13 @@ content:
           Auto-populated to the publish date.  
           Change only if you need to backdate or schedule a future post.
 
-      - name: draft
-        label: Draft?
+      - name: published
+        label: Published?
         type: boolean
-        default: true
+        default: false
         description: >
-          Toggle on to keep this post unpublished (draft).  
-          Uncheck to publish when you hit Save.
+          Toggle on (slide right) when you’re ready to publish this post.  
+          Leave off to keep it unpublished.
 
       - name: tags
         component: tagsField
