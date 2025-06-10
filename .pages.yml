@@ -1,17 +1,22 @@
+media:
+  # where PagesCMS will drop uploads
+  input:  "assets/media"
+  # how they’ll be referenced in your site
+  output: "/media"
+
 content:
-  - name: rankUtah
-    label: "Rank Utah Content"
+  - name: spotlights
+    label: Spotlights
     type: collection
-    path: sites/rank-utah/content/spotlights
+    path: "content/spotlights"
+    create: true
+    # new files: 2025-06-10-my-title.md
+    filename: "{year}-{month}-{day}-{primary}.md"
     fields:
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
-      - name: image
-        label: Image
-        type: image
-        options:
-          media: rankUtahMedia
+      - { name: title, label: Title,        type: string,    required: true }
+      - { name: date,  label: Date,         type: date,      required: true }
+      - { name: draft, label: Draft status, type: boolean }
+      - { name: image, label: Header image, type: file }
+      - { name: body,  label: Body,         type: rich-text }
+
+components: {}
