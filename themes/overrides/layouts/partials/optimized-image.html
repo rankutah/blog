@@ -3,33 +3,43 @@
 
 {{ $page := .Page }}
 {{ $raw  := .Src }}
-{{/* Strip a leading slash if present so GetMatch/resources.Get can find it */}}
+{{/* Strip leading slash so GetMatch/resources.Get can find it */}}
 {{ $src  := replaceRE "^/" "" $raw }}
 {{ $alt  := or .Alt $page.Title }}
 
-// Try as a page resource (leaf bundle)
+// Try as a page bundle resource
 {{ $orig := $page.Resources.GetMatch $src }}
-
 {{ if not $orig }}
-  {{/* If not in a bundle, try site assets */}}
+  {{/* Fallback to site assets */}}
   {{ $orig = resources.Get $src }}
 {{ end }}
 
 {{ if $orig }}
-  {{/* Convert to AVIF */}}
-  {{ $avif := $orig.Convert "avif" }}
+  {{ $mt := $orig.MediaType.Type }}
+  {{ if eq $mt "image" }}
+    {{/* 1) Resize to max 1200px (preserves aspect) 2) Convert that resized image to AVIF */}}
+    {{ $resized := $orig.Fit "1200x" }}
+    {{ $avif    := $resized.Convert "avif" }}
 
-  <picture>
-    <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
-    <source srcset="{{ $orig.RelPermalink }}" type="{{ $orig.MediaType.Type }}">
+    <picture>
+      <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
+      <source srcset="{{ $resized.RelPermalink }}" type="{{ $resized.MediaType.Type }}">
+      <img
+        src="{{ $avif.RelPermalink }}"
+        alt="{{ $alt }}"
+        loading="lazy"
+        decoding="async" />
+    </picture>
+  {{ else }}
+    {{/* Non-image resources just render normally */}}
     <img
-      src="{{ $avif.RelPermalink }}"
+      src="{{ $orig.RelPermalink }}"
       alt="{{ $alt }}"
       loading="lazy"
       decoding="async" />
-  </picture>
+  {{ end }}
 {{ else }}
-  {{/* Fallback for external or missing files */}}
+  {{/* External or missing—just echo the original src */}}
   <img
     src="{{ .Src }}"
     alt="{{ $alt }}"
