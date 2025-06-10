@@ -70,15 +70,15 @@ content:
         order: desc
 
     fields:
-      - name: title
-        component: titleField
-
       - name: date
         component: dateField
 
       - name: is_published
         component: statusField
 
+      - name: title
+        component: titleField
+        
       - name: tags
         component: tagsField
         options:
