@@ -1,7 +1,17 @@
-{{- /* build a slice of `{id, name}` objects for each tag */ -}}
-{{- $tags := slice -}}
-{{- range $name := sort (keys .Site.Taxonomies.tags) -}}
-  {{- $tags = $tags | append (dict "id" $name "name" $name) -}}
+{{- /* Build a slice of all tag names */ -}}
+{{- $tagNames := slice -}}
+{{- range $name, $_ := .Site.Taxonomies.tags -}}
+  {{- $tagNames = $tagNames | append $name -}}
 {{- end -}}
-{{- /* serialize that as JSON */ -}}
-{{- jsonify $tags -}}
+
+{{- /* Sort the names alphabetically */ -}}
+{{- $sorted := sort $tagNames -}}
+
+{{- /* Build an array of {id, name} objects */ -}}
+{{- $out := slice -}}
+{{- range _, $tag := $sorted -}}
+  {{- $out = $out | append (dict "id" $tag "name" $tag) -}}
+{{- end -}}
+
+{{- /* Emit it as JSON */ -}}
+{{- jsonify $out -}}
