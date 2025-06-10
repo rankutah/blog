@@ -20,6 +20,12 @@ components:
       creatable: true
       placeholder: "Add tags…"
       max: 5
+      fetch: 
+        url: https://spotlight.rankutah.com/tags/tags.json
+        method: GET
+        results: "."     # each array item is the result
+        value: "{.}"     # use the string itself as the option value
+        label: "{.}"     # use the string itself as the option label
     description: >
       Use as few tags as necessary (lowercase, singular, hyphens for multi-word) to help visitors find related content and keep your site organized.
 
@@ -46,18 +52,6 @@ content:
 
       - name: tags
         component: tagsField
-        options:
-          multiple: true
-          creatable: true
-          placeholder: "Add tags…"
-          max: 5
-          fetch:
-            url: https://spotlight.rankutah.com/tags/tags.json
-            # pointing at the root array itself:
-            results: "."    
-            # map each string into both value & label
-            value: "{.}"   
-            label: "{.}"   
 
       - name: body
         component: bodyField
