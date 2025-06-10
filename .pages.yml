@@ -29,10 +29,10 @@ components:
     type: rich-text
     required: true
     description: >
-      Use the `/` command to insert images, embeds, and headings.  
+      Use the `/` command to insert images, embeds, and headings.
       After adding an image, click it and add a brief alt-text
       (e.g. “People watching fireworks in Salt Lake City”) to improve
-      accessibility & discoverability.  
+      accessibility & discoverability.
       Structure with H2–H3 headings (your Title is already H1).
 
 content:
@@ -53,7 +53,7 @@ content:
       - name: title
         component: titleField
 
-            - name: is_published
+      - name: is_published
         label: Status
         type: select
         required: true
@@ -63,7 +63,6 @@ content:
             - Draft
             - Published
         description: >
-          Select “Published” when your post is ready, then click “Save” to publish.
           Select “Published” when your post is ready, then click “Save” to publish.
 
       - name: tags
