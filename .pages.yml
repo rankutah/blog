@@ -24,8 +24,8 @@ components:
         url: https://spotlight.rankutah.com/tags/tags.json
         method: GET
         results: "."     # each array item is the result
-        value: "{.}"     # use the string itself as the option value
-        label: "{.}"     # use the string itself as the option label
+        value: "{}"     # use the string itself as the option value
+        label: "{}"     # use the string itself as the option label
     description: >
       Use as few tags as necessary (lowercase, singular, hyphens for multi-word) to help visitors find related content and keep your site organized.
 
