@@ -25,7 +25,7 @@ content:
           multiple: true
           creatable: true
           placeholder: "Create or select..."
-        description: "Use as few tags as necessary (no more than five). Keep each tag lowercase and singular, and use hyphens for multi-word tags"
+        description: "Use as few tags as necessary. Keep each tag lowercase and singular, and use hyphens for multi-word tags"
       - name: body  
         label: Body
         type: rich-text 
