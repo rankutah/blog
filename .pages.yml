@@ -20,10 +20,6 @@ components:
       creatable: true
       placeholder: "Add tags…"
       max: 5
-      fetch:
-        url: https://spotlight.rankutah.com/tags/tags.json
-        method: GET
-        results: ""     # root array of objects
     description: >
       Use as few tags as necessary (lowercase, singular, hyphens for multi-word)
       to help visitors find related content and keep your site organized.
@@ -47,7 +43,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ title, date, is_published, tags ]   # show status & tags
+      fields: [ title, date, is_published, tags ]
       sort: [ date ]
       default:
         sort: date
@@ -61,16 +57,21 @@ content:
         label: Status
         type: select
         required: true
-        default: Draft
         options:
           values:
             - Draft
             - Published
+          default: Draft
         description: >
           Select “Published” when your post is ready, then click “Save” to publish.
 
       - name: tags
         component: tagsField
+        options:
+          fetch:
+            url: https://spotlight.rankutah.com/tags/tags.json
+            method: GET
+            results: ""
 
       - name: body
         component: bodyField
