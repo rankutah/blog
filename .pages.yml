@@ -21,7 +21,7 @@ components:
       multiple: true
       creatable: true
       placeholder: "Add tags…"
-    description: "Use as few tags as necessary (lowercase, singular, hyphers for multi-word) to help viistors find related content and keep your site organized."
+    description: "Use as few tags as necessary (lowercase, singular, hyphers for multi-word) to help vistors find related content and keep your site organized."
 
   bodyField:
     label: Body
