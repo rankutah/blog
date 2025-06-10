@@ -47,7 +47,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ title, date, is_published, tags ]   # show published & tags
+      fields: [ title, date, is_published, tags ]   # show status & tags
       sort: [ date ]
       default:
         sort: date
@@ -61,11 +61,11 @@ content:
         label: Status
         type: select
         required: true
+        default: Draft
         options:
           values:
             - Draft
             - Published
-          default: Draft
         description: >
           Select “Published” when your post is ready, then click “Save” to publish.
 
