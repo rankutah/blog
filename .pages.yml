@@ -54,7 +54,9 @@ content:
           fetch:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
-            results: ""    # root array
+            results: ""     # root array
+            value: "."      # each string → its own value
+            label: "."      # each string → its own label
 
       - name: body
         component: bodyField
