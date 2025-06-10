@@ -63,8 +63,7 @@ content:
             - Draft
             - Published
         description: >
-          Select “Published” when your post is ready, then click “Save” to publish.
-
+          Select “Draft” to save your post without publishing, or “Published” to make it live, then click “Save”.
       - name: tags
         component: tagsField
         options:
