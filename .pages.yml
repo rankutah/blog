@@ -29,10 +29,9 @@ components:
     type: rich-text
     required: true
     description: |
-      Use the `/` command to insert images, embeds, and headings.
+      Use the `/` command to insert images and headings.
       Highlight text to format or add links.
-      After adding an image, click it and add a brief alt-text (e.g. “People watching fireworks in Salt Lake City”) to improve accessibility and discoverability.
-      Structure with H2–H3 headings (your Title is already H1).
+      After adding an image, click the image, click **ALT**, and enter a brief description of the image (e.g. “People watching fireworks in Salt Lake City”) to improve traffic. Use H2 and H3 headings to organize your post (your Title is already the H1). 
 
 content:
   - name: rank-utah
