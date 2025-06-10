@@ -50,7 +50,6 @@ content:
           fetch:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
-            results: ""
             
       - name: body
         component: bodyField
