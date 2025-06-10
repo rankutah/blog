@@ -67,12 +67,11 @@ content:
           Change only if you need to backdate or schedule a future post.
 
       - name: published
-        label: Published?
+        label: Publish
         type: boolean
         default: false
         description: >
-          Toggle on (slide right) when you’re ready to publish this post.  
-          Leave off to keep it unpublished.
+          Toggle on when you’re ready to publish this post and hit save.
 
       - name: tags
         component: tagsField
