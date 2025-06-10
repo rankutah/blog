@@ -20,7 +20,7 @@ components:
       creatable: true
       placeholder: "Add tags…"
       max: 5
-      fetch: 
+      fetch:
         url: https://spotlight.rankutah.com/tags/tags.json
         method: GET
         results: ""     # root array of objects
@@ -47,7 +47,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ title, date, published, tags ]   # show published & tags
+      fields: [ title, date, is_published, tags ]
       sort: [ date ]
       default:
         sort: date
@@ -63,11 +63,11 @@ content:
         required: false
         default: "{{ now }}"
         description: >
-          Auto-populated to the publish date.  
+          Auto-populated to today’s date.
           Change only if you need to backdate a post.
 
-      - name: published
-        label: Publish
+      - name: is_published
+        label: Published?
         type: boolean
         default: false
         description: >
