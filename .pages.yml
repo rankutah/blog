@@ -16,6 +16,7 @@ content:
       - name: title 
         label: Title 
         type: string 
+        placeholder: "Include your city or a nearby landmark to boost local SEO"
         required: true
       - name: tags 
         label: Tags
@@ -23,7 +24,7 @@ content:
         options: 
           multiple: true
           creatable: true
-          placeholder: "Create or select"
+          placeholder: "Create or select..."
       - name: body  
         label: Body
         type: rich-text 
