@@ -67,11 +67,11 @@ content:
           Change only if you need to backdate a post.
 
       - name: is_published
-        label: Publish
+        label: Published?
         type: boolean
         default: false
         description: >
-          Turn this on when your post is ready, then click Save to publish.
+          Slide on when your post is ready, then click Save to publish.
 
       - name: tags
         component: tagsField
