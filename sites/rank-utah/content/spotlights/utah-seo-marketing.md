@@ -3,7 +3,6 @@ title: Utah SEO Marketing
 date: 2025-06-10
 tags:
   - SEO
-  - test
 ---
 ## What is Local SEO?
 
