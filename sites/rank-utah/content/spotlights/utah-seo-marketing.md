@@ -1,14 +1,9 @@
 ---
 title: Utah SEO Marketing
-date: 2025-06-10
-is_published: true
+is_published: Published
 tags:
   - SEO
-  - test2
-  - test3
-  - test5
-  - test6
-  - test7
+date: 2025-06-10
 ---
 ## What is Local SEO?
 
