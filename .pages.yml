@@ -1,9 +1,3 @@
-media:
-  - label: "Rank Utah Media"
-    name: rankUtahMedia
-    input: sites/rank-utah/static/media
-    output: /media/rank-utah
-
 content:
   - name: rankUtah
     label: "Rank Utah Content"
