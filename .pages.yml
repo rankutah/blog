@@ -47,7 +47,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ title, date, is_published, tags ]
+      fields: [ title, date, is_published, tags ]   # show published & tags
       sort: [ date ]
       default:
         sort: date
@@ -57,24 +57,27 @@ content:
       - name: title
         component: titleField
 
-      - name: date
-        label: Date
-        type: date
-        required: false
-        default: "{{ now }}"
-        description: >
-          Auto-populated to today’s date.
-          Change only if you need to backdate a post.
-
       - name: is_published
         label: Published?
-        type: boolean
-        default: false
+        type: select
+        options:
+          values:
+            - Draft
+            - Published
+          default: Draft
         description: >
-          Slide on when your post is ready, then click Save to publish.
+          Select “Published” when your post is ready; leave as “Draft” to keep it unpublished.
 
       - name: tags
         component: tagsField
 
       - name: body
         component: bodyField
+
+      - name: date
+        label: Date
+        type: date
+        required: false
+        default: "{{ now }}"
+        description: >
+          Auto-populated to today’s date. Change only if you need to backdate a post.
