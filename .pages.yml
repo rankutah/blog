@@ -48,7 +48,7 @@ content:
 
     # ───── CMS LIST VIEW CONFIG ─────
     view:
-      fields: [date, title, tags, slug]        # only show Title & Date columns
+      fields: [title, date, tags, slug]        # only show Title & Date columns
       sort: [ date ]                 # allow sorting by date
       default:
         sort: date                   # default sort column
