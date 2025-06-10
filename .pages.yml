@@ -1,33 +1,39 @@
 media:
-  # where PagesCMS will drop uploads
   - name: rank-utah
     label: rank-utah media
-    input:  sites/rank-utah/assets/media
-    # how they’ll be referenced in your site
+    input: sites/rank-utah/assets/media
     output: /media
 
 components:
-
-  titleField:  
-    label: Title 
-    type: string 
+  titleField:
+    label: Title
+    type: string
     required: true
-    description: "Include your city or a nearby landmark in your title to drive more local traffic"
+    description: >
+      Include your city or a nearby landmark in your title to drive more local traffic
 
-  tagsField: 
+  tagsField:
     label: Tags
     type: select
-    options: 
+    options:
       multiple: true
       creatable: true
       placeholder: "Add tags…"
-    description: "Use as few tags as necessary (lowercase, singular, hyphers for multi-word) to help vistors find related content and keep your site organized."
+      max: 5
+    description: >
+      Use as few tags as necessary (lowercase, singular, hyphens for multi-word)
+      to help visitors find related content and keep your site organized.
 
   bodyField:
     label: Body
-    type: rich-text 
+    type: rich-text
     required: true
-    description: "After adding an image, click it, then click ALT, and add a brief image description (e.g. “People watching fireworks in Salt Lake City”) to improve search visibility. Structure your content with H2 and H3 headings (your Title is already H1)"  
+    description: >
+      Use the `/` command to insert images, embeds, and headings.  
+      After adding an image, click it and add a brief alt-text
+      (e.g. “People watching fireworks in Salt Lake City”) to improve
+      accessibility & discoverability.  
+      Structure with H2–H3 headings (your Title is already H1).
 
 content:
   - name: rank-utah
@@ -36,9 +42,11 @@ content:
     path: sites/rank-utah/content/spotlights
     filename: "{primary}.md"
     fields:
-      - name: post 
+      - name: title
         component: titleField
+
       - name: tags
         component: tagsField
+
       - name: body
         component: bodyField
