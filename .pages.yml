@@ -9,7 +9,7 @@ components:
     label: Title
     type: string
     required: true
-    description: >
+    description: |
       Include your city or a nearby landmark in your title to drive more local traffic
 
   tagsField:
@@ -20,7 +20,7 @@ components:
       creatable: true
       placeholder: "Add tags…"
       max: 5
-    description: >
+    description: |
       Use as few tags as necessary (lowercase, singular, hyphens for multi-word)
       to help visitors find related content and keep your site organized.
 
@@ -28,11 +28,11 @@ components:
     label: Body
     type: rich-text
     required: true
-    description: >
-      • Use the `/` command to insert images, embeds, and headings.
-      • Highlight text to format or add links.
-      • After adding an image, click it and add a brief alt-text (e.g. “People watching fireworks in Salt Lake City”) to improve accessibility & discoverability.
-      • Structure with H2–H3 headings (your Title is already H1).
+    description: |
+      Use the `/` command to insert images, embeds, and headings.
+      Highlight text to format or add links.
+      After adding an image, click it and add a brief alt-text (e.g. “People watching fireworks in Salt Lake City”) to improve accessibility and discoverability.
+      Structure with H2–H3 headings (your Title is already H1).
 
 content:
   - name: rank-utah
@@ -61,9 +61,9 @@ content:
           values:
             - Draft
             - Published
-        description: >
-          • Leave as “Draft” (default) to keep the post unpublished.
-          • Select “Published” to make it live, then click “Save”.
+        description: |
+          Leave as “Draft” (default) to keep the post unpublished.
+          Select “Published” to make it live, then click “Save”.
 
       - name: tags
         component: tagsField
@@ -81,5 +81,6 @@ content:
         type: date
         required: false
         default: "{{ now }}"
-        description: >
-          Auto-populated to today’s date. Change only if you need to backdate a post.
+        description: |
+          Auto-populated to today’s date.
+          Change only if you need to backdate a post.
