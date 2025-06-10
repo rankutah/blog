@@ -1,0 +1,7 @@
+{{- /* build a slice of all tag names */ -}}
+{{- $tagNames := slice -}}
+{{- range $name, $_ := .Site.Taxonomies.tags -}}
+  {{- $tagNames = $tagNames | append $name -}}
+{{- end -}}
+{{- /* output it as JSON */ -}}
+{{- jsonify $tagNames -}}
