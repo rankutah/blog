@@ -64,7 +64,7 @@ content:
         default: "{{ now }}"
         description: >
           Auto-populated to the publish date.  
-          Change only if you need to backdate or schedule a future post.
+          Change only if you need to backdate a post.
 
       - name: published
         label: Publish
