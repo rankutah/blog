@@ -43,7 +43,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ title, date, is_published, tags ]
+      fields: [ date, is_published, title, tags ]
       sort: [ date ]
       default:
         sort: date
