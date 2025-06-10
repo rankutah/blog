@@ -1,6 +1,6 @@
 media:
   # where PagesCMS will drop uploads
-  input:  "assets/media"
+  input:  "rank-utah/assets/media"
   # how they’ll be referenced in your site
   output: "/media"
 
