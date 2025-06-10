@@ -71,7 +71,7 @@ content:
         type: boolean
         default: false
         description: >
-          Toggle on when you’re ready to publish this post and hit save.
+          Turn this on when your post is ready, then click Save to publish.
 
       - name: tags
         component: tagsField
