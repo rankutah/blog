@@ -20,7 +20,7 @@ components:
       creatable: true
       placeholder: "Add tags…"
       max: 5
-      fetch:
+      fetch: 
         url: https://spotlight.rankutah.com/tags/tags.json
         method: GET
         results: ""     # root array of objects
@@ -46,13 +46,12 @@ content:
     path: sites/rank-utah/content/spotlights
     filename: "{primary}.md"
 
-    # ───── CMS LIST VIEW CONFIG ─────
     view:
-      fields: [title, date, tags, slug]        # only show Title & Date columns
-      sort: [ date ]                 # allow sorting by date
+      fields: [ date, title, draft, tags ]   # show draft & tags in the list
+      sort: [ date ]
       default:
-        sort: date                   # default sort column
-        order: desc                  # newest first
+        sort: date
+        order: desc
 
     fields:
       - name: title
@@ -62,10 +61,18 @@ content:
         label: Date
         type: date
         required: false
-        default: "{{ now }}"         # auto-filled with today’s date
+        default: "{{ now }}"
         description: >
           Auto-populated to the publish date.  
           Change only if you need to backdate or schedule a future post.
+
+      - name: draft
+        label: Draft?
+        type: boolean
+        default: true
+        description: >
+          Toggle on to keep this post unpublished (draft).  
+          Uncheck to publish when you hit Save.
 
       - name: tags
         component: tagsField
