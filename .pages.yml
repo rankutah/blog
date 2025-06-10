@@ -61,6 +61,7 @@ content:
     type: collection
     path: sites/rank-utah/content/spotlights
     filename: "{primary}.md"
+    preview_url: "https://spotlight.rankutah.com/:slug/"
 
     view:
       fields: [ date, is_published, title, tags ]
