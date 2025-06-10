@@ -1,0 +1,12 @@
+{{/* Only run on taxonomy list pages */}}
+{{- if eq .Kind "taxonomy" -}}
+  {{- /* Build array of {id,name} objects from .Site.Taxonomies.tags */ -}}
+  {{- $out := slice -}}
+  {{- range $name, $_ := .Site.Taxonomies.tags -}}
+    {{- $out = $out | append (dict "id" $name "name" $name) -}}
+  {{- end -}}
+  {{- /* Serialize as JSON */ -}}
+  {{- jsonify $out -}}
+{{- else -}}
+  {{- /* Fallback: nothing or leave blank */ -}}
+{{- end -}}
