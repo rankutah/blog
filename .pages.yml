@@ -20,7 +20,8 @@ content:
         required: true
       - name: tags 
         label: Tags
-        type: select 
+        required: false
+        type: select
         options: 
           multiple: true
           creatable: true
