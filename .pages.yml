@@ -63,8 +63,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      # Added previewUrl here so you can click it right in the list
-      fields: [ date, is_published, title, previewUrl, tags ]
+      fields: [ date, is_published, title, tags ]
       sort:   [ date ]
       default:
         sort:  date
@@ -73,24 +72,6 @@ content:
     fields:
       - name: title
         component: titleField
-
-      # NEW: control your URL slug
-      - name: slug
-        label: Slug
-        type: string
-        required: true
-        description: |
-          The URL path segment for this post.
-          e.g. “my-great-post” → https://spotlight.rankutah.com/my-great-post
-
-      # NEW: one-click preview link (will 404 until you publish & deploy)
-      - name: previewUrl
-        label: Preview URL
-        type: string
-        default: https://spotlight.rankutah.com/{{slug}}
-        description: |
-          Click to open the live version of this post.
-          (It won’t resolve until you flip “Published” and push.)
 
       - name: date
         component: dateField
