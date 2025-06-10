@@ -16,7 +16,7 @@ content:
       - name: title 
         label: Title 
         type: string 
-        description: "Include your city or a nearby landmark to boost local SEO"
+        description: "Include your city or a nearby landmark in your title to drive more local traffic"
         required: true
       - name: tags 
         label: Tags
