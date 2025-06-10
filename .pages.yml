@@ -43,7 +43,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ date, is_published, title, tags ]
+      fields: [ title, date, is_published, tags ]
       sort: [ date ]
       default:
         sort: date
@@ -53,16 +53,17 @@ content:
       - name: title
         component: titleField
 
-      - name: is_published
+            - name: is_published
         label: Status
         type: select
         required: true
+        default: Draft
         options:
           values:
             - Draft
             - Published
-          default: Draft
         description: >
+          Select “Published” when your post is ready, then click “Save” to publish.
           Select “Published” when your post is ready, then click “Save” to publish.
 
       - name: tags
