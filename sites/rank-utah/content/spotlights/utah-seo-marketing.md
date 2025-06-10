@@ -1,7 +1,7 @@
 ---
 title: Utah SEO Marketing
 date: 2025-06-10
-published: false
+is_published: true
 tags:
   - SEO
 ---
