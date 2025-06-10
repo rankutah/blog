@@ -23,6 +23,7 @@ content:
         options: 
           multiple: true
           creatable: true
+          placeholder: "Create or select"
       - name: body  
         label: Body
         type: rich-text 
