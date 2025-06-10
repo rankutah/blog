@@ -24,7 +24,7 @@ content:
         options: 
           multiple: true
           creatable: true
-          placeholder: "Create or select..."
+          placeholder: "Add tags…"
         description: "Use as few tags as necessary. Keep each tag lowercase and singular, and use hyphens for multi-word tags"
       - name: body  
         label: Body
