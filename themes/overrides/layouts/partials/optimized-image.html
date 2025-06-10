@@ -3,15 +3,15 @@
 
 {{ $page := .Page }}
 {{ $raw  := .Src }}
-{{/* Strip leading slash so GetMatch/resources.Get can find it */}}
+{{/* Strip leading slash so GetMatch can find it */}}
 {{ $src  := replaceRE "^/" "" $raw }}
 {{ $alt  := or .Alt $page.Title }}
 
-// Try as a page bundle resource
+// Try leaf-bundle first
 {{ $orig := $page.Resources.GetMatch $src }}
 {{ if not $orig }}
-  {{/* Fallback to site assets */}}
-  {{ $orig = resources.Get $src }}
+  {{/* Fallback to assets/media in Hugo’s assets folder */}}
+  {{ $orig = resources.Get (printf "media/%s" $src) }}
 {{ end }}
 
 {{ if $orig }}
