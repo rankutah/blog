@@ -54,10 +54,9 @@ content:
           fetch:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
-            results: "."    # treat each array item (a string) as an entry
-            value: "."      # use the item itself as the option’s value
-            label: "."      # use the item itself as the option’s label
-
+            results: ""        # root array
+            value: "{.}"       # use the item string as the option’s
+            label: "{.}"       # use the item string as the option’s
 
       - name: body
         component: bodyField
