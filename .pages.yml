@@ -67,7 +67,7 @@ content:
           Change only if you need to backdate a post.
 
       - name: is_published
-        label: Published?
+        label: Publish
         type: boolean
         default: false
         description: >
