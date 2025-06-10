@@ -1,15 +1,16 @@
 media:
   # where PagesCMS will drop uploads
-  input:  "sites/rank-utah/assets/media"
-  # how they’ll be referenced in your site
-  output: "/media"
+  - name: "rank-utah"
+    label: "rank-utah"
+    input:  "sites/rank-utah/assets/media"
+    # how they’ll be referenced in your site
+    output: "/media"
 
 content:
-  - name: spotlights
-    label: Spotlights
+  - name: rank-utah
+    label: rank-utah
     type: collection
     path: "rank-utah/content/spotlights"
-    create: true
     # new files: 2025-06-10-my-title.md
     filename: "{year}-{month}-{day}-{primary}.md"
     fields:
