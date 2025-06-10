@@ -1,6 +1,8 @@
+<!-- layouts/partials/head.html -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 {{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}
@@ -16,15 +18,12 @@
     <meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
   {{ end }}
 {{- else }}
-  <meta name="keywords" content="{{ if .Params.keywords -}}
-      {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{- else -}}
-      {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{- end -}}">
+  <meta name="keywords" content="{{- if .Params.keywords }}{{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{ else }}{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{ end }}">
 {{- end }}
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection }}
-    {{- .Summary | default (printf "%s - %s" .Title site.Title) }}{{- else }}
-    {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection }}{{ .Summary | default (printf "%s – %s" .Title site.Title) }}{{- else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 <meta name="author" content="{{ partial "author.html" . }}">
-<link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+<link rel="canonical" href="{{ if .Params.canonicalURL }}{{ .Params.canonicalURL | trim }}{{ else }}{{ .Permalink }}{{ end }}">
+
 {{- if site.Params.analytics.google.SiteVerificationTag }}
 <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
 {{- end }}
@@ -39,48 +38,46 @@
 {{- end }}
 
 {{- /* Styles */}}
-{{- /* includes */}}
-{{- $includes := slice }}
-{{- $includes = $includes | append (" " | resources.FromString "assets/css/includes-blank.css")}}
-{{- if not (eq site.Params.assets.disableScrollBarStyle true) }}
-  {{- $ScrollStyle := resources.Get "css/includes/scroll-bar.css" }}
-  {{- $includes = (append $ScrollStyle $includes) }}
+{{- $includes := slice (resources.FromString "assets/css/includes-blank.css" "") }}
+{{- if not site.Params.assets.disableScrollBarStyle }}
+  {{- $scroll := resources.Get "css/includes/scroll-bar.css" }}
+  {{- $includes = $scroll | append $includes }}
 {{- end }}
-{{- $includes_all := $includes | resources.Concat "assets/css/includes.css" }}
-{{- $theme_vars := resources.Get "css/core/theme-vars.css" }}
+{{- $includesAll := $includes | resources.Concat "assets/css/includes.css" }}
+{{- $themeVars := resources.Get "css/core/theme-vars.css" }}
 {{- $reset := resources.Get "css/core/reset.css" }}
-{{- $media := resources.Get "css/core/zmedia.css" }}
-{{- $license_css := resources.Get "css/core/license.css" }}
-{{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
-{{- $chroma_styles := resources.Get "css/includes/chroma-styles.css" }}
-{{- $chroma_mod := resources.Get "css/includes/chroma-mod.css" }}
-{{- $core := (slice $theme_vars $reset $common $chroma_styles $chroma_mod $includes_all $media) | resources.Concat "assets/css/core.css" | resources.Minify }}
-{{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
-{{- $stylesheet := (slice (resources.Get "css/core/license.css") $core $extended) | resources.Concat "assets/css/stylesheet.css" }}
+{{- $mediaCss := resources.Get "css/core/zmedia.css" }}
+{{- $licenseCss := resources.Get "css/core/license.css" }}
+{{- $commonCss := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
+{{- $chromaStyles := resources.Get "css/includes/chroma-styles.css" }}
+{{- $chromaMod := resources.Get "css/includes/chroma-mod.css" }}
+{{- $core := (slice $themeVars $reset $commonCss $chromaStyles $chromaMod $includesAll $mediaCss) | resources.Concat "assets/css/core.css" | resources.Minify }}
+{{- $extendedCss := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
+{{- $stylesheet := (slice $licenseCss $core $extendedCss) | resources.Concat "assets/css/stylesheet.css" }}
 {{- if not site.Params.assets.disableFingerprinting }}
   {{- $stylesheet = $stylesheet | fingerprint }}
-  <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+  <link rel="preload stylesheet" as="style" crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}">
 {{- else }}
-  <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+  <link rel="preload stylesheet" as="style" crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}">
 {{- end }}
 
-{{- /* Add taxonomy badge CSS here */}}
+{{- /* Taxonomy badge CSS */}}
 {{ partial "taxonomy-badges.html" . }}
 
-{{- /* Search */}}
-{{- if (eq .Layout `search`) -}}
-  <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+{{- /* Search page */}}
+{{- if eq .Layout "search" }}
+  <link rel="preload" as="fetch" href="../index.json" crossorigin="anonymous">
   {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
   {{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
-  {{- $license_js := resources.Get "js/license.js" }}
+  {{- $licenseJs := resources.Get "js/license.js" }}
   {{- if not site.Params.assets.disableFingerprinting }}
-    {{- $search := (slice $fusejs $license_js $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
-    <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
+    {{- $searchJs := (slice $fusejs $licenseJs $fastsearch) | resources.Concat "assets/js/search.js" | fingerprint }}
+    <script defer crossorigin="anonymous" src="{{ $searchJs.RelPermalink }}" integrity="{{ $searchJs.Data.Integrity }}"></script>
   {{- else }}
-    {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" }}
-    <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}"></script>
+    {{- $searchJs := (slice $fusejs $fastsearch) | resources.Concat "assets/js/search.js" }}
+    <script defer crossorigin="anonymous" src="{{ $searchJs.RelPermalink }}"></script>
   {{- end }}
-{{- end -}}
+{{- end }}
 
 {{- /* Favicons */}}
 <link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">
@@ -91,15 +88,14 @@
 <meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#2e2e33" }}">
 <meta name="msapplication-TileColor" content="{{ site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
 
-{{- /* RSS / Alternate links */}}
-{{ range .AlternativeOutputFormats -}}
+{{- /* RSS / alternate languages */}}
+{{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
-{{- end -}}
-{{- range .AllTranslations -}}
+{{- end }}
+{{ range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-{{- end -}}
+{{- end }}
 
-{{- /* Noscript styles for theme */}}
 <noscript>
   <style>
     #theme-toggle,
@@ -114,21 +110,21 @@
   {{- end }}
 </noscript>
 
-{{- partial "extend_head.html" . -}}
+{{ partial "extend_head.html" . }}
 
-{{- /* Misc: analytics & social previews */}}
+{{- /* Analytics & Social Previews */}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
   {{ partial "google_analytics.html" . }}
 
-  {{- /* Grab the first <img> src from the rendered body HTML */ -}}
+  {{- /* Capture the first <img> src from your post content */ -}}
   {{- $firstImg := replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content }}
 
   {{- if $firstImg }}
-    <meta property="og:image" content="{{ $firstImg }}" />
-    <meta name="twitter:image" content="{{ $firstImg }}" />
+    <meta property="og:image" content="{{ $firstImg }}">
+    <meta name="twitter:image" content="{{ $firstImg }}">
   {{- end }}
 
-  {{- /* Other OG/Twitter tags */ -}}
+  {{/* The rest of your OG & Twitter tags */}}
   {{ partial "templates/opengraph.html" . | safeHTML }}
   {{ partial "templates/twitter_cards.html" . }}
-{{- end -}}
+{{- end }}
