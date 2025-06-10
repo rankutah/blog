@@ -12,6 +12,26 @@ components:
     description: |
       Include your city or a nearby landmark in your title to drive more local traffic
 
+  dateField:
+    label: Date
+    type: date
+    required: true
+    description: |
+      Pick today’s date, or change it if you need to backdate your post.
+
+  statusField:
+    label: Status
+    type: select
+    required: true
+    default: Draft
+    options:
+      values:
+        - Draft
+        - Published
+    description: |
+      Leave as “Draft” (default) to keep the post unpublished.
+      Select “Published” to make it live, then click **Save**.
+
   tagsField:
     label: Tags
     type: select
@@ -54,24 +74,10 @@ content:
         component: titleField
 
       - name: date
-        label: Date
-        type: date
-        required: true
-        description: |
-          Pick today’s date, or change it if you need to backdate your post.
+        component: dateField
 
       - name: is_published
-        label: Status
-        type: select
-        required: true
-        default: Draft
-        options:
-          values:
-            - Draft
-            - Published
-        description: |
-          Leave as “Draft” (default) to keep the post unpublished.
-          Select “Published” to make it live, then click **Save**.
+        component: statusField
 
       - name: tags
         component: tagsField
