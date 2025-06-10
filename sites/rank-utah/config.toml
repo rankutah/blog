@@ -7,8 +7,15 @@ themesDir     = "../../themes"
 
 pruneTaxonomies = true
 
+# add JSON output for tag terms
+[outputFormats.JSON]
+  mediaType    = "application/json"
+  baseName     = "tags"
+  isPlainText  = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home         = ["HTML", "RSS", "JSON"]
+  taxonomyTerm = ["HTML", "JSON"]    # ← tell Hugo to build JSON for all term pages
 
 [params]
   googleAnalyticsID = "G-LGYK5V1CTV"
@@ -20,10 +27,10 @@ pruneTaxonomies = true
   mainSections      = ["spotlights"]
 
 [permalinks]
-  spotlights = "/:slug/"
+  spotlights   = "/:slug/"
 
 [taxonomies]
-  tag = "tags"
+  tag          = "tags"
 
 [menu]
   [[menu.main]]

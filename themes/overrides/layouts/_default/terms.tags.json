@@ -1,0 +1,7 @@
+{{/* Collect every tag key (the name), append to a slice, and emit JSON */}}
+{{- $tagsMap := site.Taxonomies.tags -}}
+{{- $tagList := slice -}}
+{{- range $name, $_ := $tagsMap -}}
+  {{- $tagList = $tagList | append $name -}}
+{{- end -}}
+{{- jsonify $tagList -}}
