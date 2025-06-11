@@ -5,9 +5,41 @@ title: "Business Women's Forum in Salt Lake City 2025: Own Your Life, Own Your C
 tags:
   - event
 ---
-[![Salt Lake Chamber Business Women's Forum Event](https://chambermaster.blob.core.windows.net/images/events/2428/15524/EventPhotoFull_BWF_Placeholder_800x800.jpg)](https://slchamber.chambermaster.com/eventregistration/register/15524)
+![Profile image of Katy blommer, the speaker for this event in Salt Lake City, Utah](https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg)
 
 [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
+
+```
+<a href="https://slchamber.chambermaster.com/eventregistration/register/15524" class="btn-register" role="button" aria-label="Register for the Business Women’s Forum">
+  Register Now
+</a>
+
+<style>
+  .btn-register {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6b5b95 0%, #b8a9c9 100%);
+    text-decoration: none;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn-register:hover,
+  .btn-register:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 0.75em 1.5em rgba(0,0,0,0.15);
+  }
+
+  .btn-register:active {
+    transform: translateY(0);
+    box-shadow: 0 0.25em 0.75em rgba(0,0,0,0.1);
+  }
+</style>
+```
 
 ## Why You Should Attend
 
@@ -46,8 +78,6 @@ To spark new connections, lunch seating is mixed—even if you register with a f
 **Katy Blommer**  
 Founder, Women’s Best Life University  
 Vice President, \[Major Financial Institution\] (24-year banking veteran)
-
-![](https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg)
 
 Katy climbed the ranks from teller to VP, mastering leadership, coaching, and work-life integration. She now empowers women through her flagship program—**The Working Mom Happiness Method**—and hosts the popular podcast of the same name. Recognized as one of Utah Business’s “30 Women to Watch” (2023), Katy lives in Farmington with her husband and two boys, having perfected the art of designing a fulfilling life.
 
