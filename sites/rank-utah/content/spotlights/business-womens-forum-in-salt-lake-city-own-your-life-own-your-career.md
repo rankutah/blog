@@ -113,3 +113,8 @@ InterMountain Business Lending empowers Utah entrepreneurs with flexible financi
 ## Member Registration Help
 
 If you’re a Salt Lake Chamber member but can’t register, we may just need your email on file. Please email [events@slchamber.com](mailto:events@slchamber.com) and they’ll sort it out right away.
+
+## Contact Information
+
+Kat Kaddas (801)-859-8676  
+[Send Email](mailto:kkaddas@slchamber.com?subject=Business%20Women%27s%20Forum%202025%3A%20Own%20Your%20Life%2C%20Own%20Your%20Career%20%E2%80%93%20The%20Unexpected%20Path%20to%20Your%20Career%20Success)
