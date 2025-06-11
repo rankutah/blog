@@ -1,7 +1,7 @@
 ---
 date: 2025-06-11
 is_published: Published
-title: "Business Women's Forum in Salt Lake City: Own Your Life, Own Your Career"
+title: "Business Women's Forum in Salt Lake City 2025: Own Your Life, Own Your Career"
 tags:
   - event
 ---
