@@ -9,38 +9,6 @@ tags:
 
 [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
 
-```
-<a href="https://slchamber.chambermaster.com/eventregistration/register/15524" class="btn-register" role="button" aria-label="Register for the Business Women’s Forum">
-  Register Now
-</a>
-
-<style>
-  .btn-register {
-    display: inline-block;
-    padding: 0.75em 1.5em;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-    background: linear-gradient(135deg, #6b5b95 0%, #b8a9c9 100%);
-    text-decoration: none;
-    border-radius: 0.5em;
-    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .btn-register:hover,
-  .btn-register:focus {
-    transform: translateY(-2px);
-    box-shadow: 0 0.75em 1.5em rgba(0,0,0,0.15);
-  }
-
-  .btn-register:active {
-    transform: translateY(0);
-    box-shadow: 0 0.25em 0.75em rgba(0,0,0,0.1);
-  }
-</style>
-```
-
 ## Why You Should Attend
 
 You spend a third of your waking hours at work—so why treat your personal and professional lives like two separate worlds? At this Forum, you’ll discover how embracing **your whole life** fuels career growth. Beyond the usual tips on skill-building and networking, we’ll:
