@@ -6,15 +6,26 @@ tags:
   - article
   - seo
 ---
-## Need SEO Marketing Services for your UT business?
+## Get More Local Leads for Your Utah Business with SEO
 
-Receive more leads for your business with local SEO focused on your website, blog, and Google Business Profile. Learn more about local SEO by reading below or reach out to [Rank Utah](https://rankutah.com/) to get started.
+Rank Utah helps service businesses in Utah attract a steady stream of customers by optimizing your website, blog, and Google Business Profile.
 
-## Why Local SEO is Powerful?
+## Why Local SEO Works
 
-Unlike paid ads and social media, local SEO doesn't come with a spikes falls. If done well your traffic continues to rise month after month, year after year. It is an ongoing focus on what matters most. Local SEO, or _Local Search Engine Optimization_, is the process of optimizing your website, blog, and Google Business Profile to rank higher in search engine results when users search for keywords related to your business or services.
+*   **Evergreen Growth** - your traffic climbs month after month, without the sudden drops that come with paid ads or social media posts
+    
+*   **Cost-effective** - every optimization brings long-term ongoing results
+    
+*   **Saves Time** - brings organic leads instead of having to spend lots of time running promotions and other campaigns
+    
 
-Local SEO is different from broad SEO and focuses on three core areas: **Relevance, Prominence, and Proximity**.
+## Ready to Grow?
+
+Reach out to [Rank Utah](https://rankutah.com#contact) and start ranking above your competitors.
+
+## How Local SEO Works
+
+Local SEO is different from broad SEO in that it focuses on three core areas: **Relevance, Prominence, and Proximity**.
 
 The chart below shows the factors that influence lead generation for local businesses in Utah.
 
