@@ -4,6 +4,7 @@ is_published: Published
 title: Utah SEO Marketing
 tags:
   - article
+  - seo
 ---
 ## Need SEO Marketing Services for your UT business?
 
