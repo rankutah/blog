@@ -84,6 +84,12 @@ content:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
             results: ""
+      
+      - name: liveUrl
+        label: Live URL
+        type: string
+        description: "Full URL of the live post (e.g. https://spotlight.rankutah.com/your-post-slug)"
+        pattern: ^https?://.*$
 
       - name: body
         component: bodyField
