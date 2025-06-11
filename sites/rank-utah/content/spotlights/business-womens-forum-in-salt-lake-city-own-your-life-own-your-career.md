@@ -7,6 +7,8 @@ tags:
 ---
 [![Salt Lake Chamber Business Women's Forum Event](https://chambermaster.blob.core.windows.net/images/events/2428/15524/EventPhotoFull_BWF_Placeholder_800x800.jpg)](https://slchamber.chambermaster.com/eventregistration/register/15524)
 
+[Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
+
 ## Why You Should Attend
 
 You spend a third of your waking hours at work—so why treat your personal and professional lives like two separate worlds? At this Forum, you’ll discover how embracing **your whole life** fuels career growth. Beyond the usual tips on skill-building and networking, we’ll:
@@ -102,12 +104,12 @@ We’re delighted to partner with Nothing Bundt Cakes at this year’s Forum. St
 
 ### Ruby Sponsor: America First Credit Union
 
-Since 1939, America First has been Utah’s #1 credit union, serving families and businesses with cutting-edge banking solutions. From free checking and mobile banking to low-rate loans and financial counseling, they make money management effortless. Federally insured by NCUA. Visit \[[americafirst.com](http://americafirst.com)\]([https://www.americafirst.com](https://www.americafirst.com)) or call **1-800-999-3916**.
+Since 1939, America First has been Utah’s #1 credit union, serving families and businesses with cutting-edge banking solutions. From free checking and mobile banking to low-rate loans and financial counseling, they make money management effortless. Federally insured by NCUA. Visit [americafirst.com](https://www.americafirst.com) or call **1-800-999-3916**.
 
 ### Pearl Sponsor: InterMountain Business Lending
 
-InterMountain Business Lending empowers Utah entrepreneurs with flexible financing options—equipment loans, working capital, and more—so your business can grow on your terms. Find out how they can support your next project at \[[intermountainlending.com](http://intermountainlending.com)\]([https://www.intermountainlending.com](https://www.intermountainlending.com)).
+InterMountain Business Lending empowers Utah entrepreneurs with flexible financing options—equipment loans, working capital, and more—so your business can grow on your terms. Find out how they can support your next project at [intermountainlending.com](https://www.intermountainlending.com).
 
 ## Member Registration Help
 
-If you’re a Salt Lake Chamber member but can’t register, we may just need your email on file. Please email \[[events@slchamber.com](mailto:events@slchamber.com)\]([mailto:events@slchamber.com](mailto:events@slchamber.com)) and they’ll sort it out right away.
+If you’re a Salt Lake Chamber member but can’t register, we may just need your email on file. Please email [events@slchamber.com](mailto:events@slchamber.com) and they’ll sort it out right away.
