@@ -45,7 +45,7 @@ To spark new connections, lunch seating is mixed—even if you register with a f
 Founder, Women’s Best Life University  
 Vice President, \[Major Financial Institution\] (24-year banking veteran)
 
-[<img src="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg" alt="" style="box-sizing: border-box; border: 6px solid; height: 200px; max-width: 100%; border-radius: 0px; box-shadow: none; vertical-align: middle; width: 200px; margin: 10px; float: left;" width="200" height="200">](https://www.linkedin.com/in/katyblommer/)
+![](https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg)
 
 Katy climbed the ranks from teller to VP, mastering leadership, coaching, and work-life integration. She now empowers women through her flagship program—**The Working Mom Happiness Method**—and hosts the popular podcast of the same name. Recognized as one of Utah Business’s “30 Women to Watch” (2023), Katy lives in Farmington with her husband and two boys, having perfected the art of designing a fulfilling life.
 
@@ -90,24 +90,24 @@ Secure your spot today—this is more than a luncheon; it’s your springboard t
 
 [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
 
-\## Non-Profit Spotlight: Women’s Leadership Institute (WLI)
+## Non-Profit Spotlight: Women’s Leadership Institute (WLI)
 
 The Women’s Leadership Institute (WLI) is a Utah nonprofit on a mission to elevate women in business and politics. Through research-driven programs and strategic partnerships, WLI’s signature ElevateHER Challenge™ inspires hundreds of local companies to build more inclusive cultures. Their annual Career Development, Rising Leader, and Political Development series give women the tools and networks to step into leadership. Learn more at \[[wliut.com](http://wliut.com)\]([https://www.wliut.com](https://www.wliut.com)).
 
-\## Fundraising Partner: Nothing Bundt Cakes
+## Fundraising Partner: Nothing Bundt Cakes
 
 We’re delighted to partner with Nothing Bundt Cakes at this year’s Forum. Stop by their booth for a bundtlet—you’ll satisfy your sweet tooth **and** they’ll donate 20% of proceeds to WLI. It’s a delicious way to give back!
 
-\## Sponsors
+## Sponsors
 
-\### Ruby Sponsor: America First Credit Union
+### Ruby Sponsor: America First Credit Union
 
 Since 1939, America First has been Utah’s #1 credit union, serving families and businesses with cutting-edge banking solutions. From free checking and mobile banking to low-rate loans and financial counseling, they make money management effortless. Federally insured by NCUA. Visit \[[americafirst.com](http://americafirst.com)\]([https://www.americafirst.com](https://www.americafirst.com)) or call **1-800-999-3916**.
 
-\### Pearl Sponsor: InterMountain Business Lending
+### Pearl Sponsor: InterMountain Business Lending
 
 InterMountain Business Lending empowers Utah entrepreneurs with flexible financing options—equipment loans, working capital, and more—so your business can grow on your terms. Find out how they can support your next project at \[[intermountainlending.com](http://intermountainlending.com)\]([https://www.intermountainlending.com](https://www.intermountainlending.com)).
 
-\## Member Registration Help
+## Member Registration Help
 
 If you’re a Salt Lake Chamber member but can’t register, we may just need your email on file. Please email \[[events@slchamber.com](mailto:events@slchamber.com)\]([mailto:events@slchamber.com](mailto:events@slchamber.com)) and they’ll sort it out right away.
