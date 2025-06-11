@@ -7,8 +7,6 @@ tags:
 ---
 ![Profile image of Katy blommer, the speaker for this women's forum event in Salt Lake City, Utah](https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg)
 
-[Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
-
 # The Unexpected Path to Your Career Success
 
 ## Why You Should Attend
@@ -21,6 +19,8 @@ You spend a third of your waking hours at work—so why treat your personal and 
     
 *   **Connect with peers** to build relationships that last well after lunch is over
     
+
+## [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
 
 ### Networking Note
 
@@ -90,7 +90,7 @@ Rice–Eccles Stadium
 
 Secure your spot today—this is more than a luncheon; it’s your springboard to owning both your life and career. Questions or special requests? Reply anytime—can’t wait to see you there! 
 
-[Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
+## [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
 
 ## Non-Profit Spotlight: Women’s Leadership Institute (WLI)
 
