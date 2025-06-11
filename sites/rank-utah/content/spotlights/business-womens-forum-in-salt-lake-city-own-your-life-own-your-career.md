@@ -22,7 +22,7 @@ You spend a third of your waking hours at work—so why treat your personal and 
 *   **Connect with peers** to build relationships that last well after lunch is over
     
 
-## [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
+[Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
 
 ### Networking Note
 
@@ -92,7 +92,7 @@ Rice–Eccles Stadium
 
 Secure your spot today—this is more than a luncheon; it’s your springboard to owning both your life and career. Questions or special requests? Reply anytime—can’t wait to see you there! 
 
-## [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
+[Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
 
 ## Non-Profit Spotlight: Women’s Leadership Institute (WLI)
 
