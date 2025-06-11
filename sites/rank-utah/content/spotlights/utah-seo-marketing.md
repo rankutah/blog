@@ -5,19 +5,23 @@ title: Utah SEO Marketing
 tags:
   - article
 ---
-## What is Local SEO?
+## Need SEO Marketing Services for your UT business?
 
-SEO, or _Search Engine Optimization_, is the process of optimizing your website to rank higher in search engine results when users search for keywords related to your business or services.
+Receive more leads for your business with local SEO focused on your website, blog, and Google Business Profile. Learn more about local SEO by reading below or reach out to [Rank Utah](https://rankutah.com/) to get started.
+
+## Why Local SEO is Powerful?
+
+Unlike paid ads and social media, local SEO doesn't come with a spikes falls. If done well your traffic continues to rise month after month, year after year. It is an ongoing focus on what matters most. Local SEO, or _Local Search Engine Optimization_, is the process of optimizing your website, blog, and Google Business Profile to rank higher in search engine results when users search for keywords related to your business or services.
 
 Local SEO is different from broad SEO and focuses on three core areas: **Relevance, Prominence, and Proximity**.
 
-The chart below shows the factors that influence lead generation for local businesses.
+The chart below shows the factors that influence lead generation for local businesses in Utah.
 
 ![pie chart showing the factors of local SEO lead generation](/media/image.png)Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
 ## 1\. Relevance
 
-Relevance is how well your content aligns with what the user is searching for. When setting up your website, we want each page to match search intent. We do this by researching the keywords your customers are using and aligning them with your offerings. For local SEO, we also use location-based modifiers targeting a specific city or region. This helps you rank higher in that area and shows customers that your content is relevant to their needs. The title tag and H1 tag are the clearest indicators to Google of what your webpage is about. Your other headings and content should support these tags and add depth.
+Relevance is how well your content aligns with what the user is searching for. When setting up your website and/or blog, we want each page to match search intent. We do this by researching the keywords your customers are using and aligning them with your offerings. For local SEO, we also use location-based modifiers targeting a specific city or region. This helps you rank higher in that area and shows customers that your content is relevant to their needs. The title tag and H1 tag are the clearest indicators to Google of what your webpage is about. Your other headings and content should support these tags and add depth.
 
 On your Google Business Profile (GBP), your relevance is determined primarily by your primary category (this is the most critical relevance signal). Other relevance factors include:
 
@@ -32,9 +36,9 @@ On your Google Business Profile (GBP), your relevance is determined primarily by
 
 ## 2\. Prominence
 
-Prominence is the authority of your content. For websites, it's heavily influenced by the quantity and quality of backlinks, citations, and social shares. Links act as popularity votes in the eyes of Google. While all quality (non-spammy) backlinks are helpful, local backlinks from businesses or people in your area are the most impactful. They tie your website to your target location.
+Prominence is the authority of your content. For websites and blogs, it's heavily influenced by the quantity and quality of backlinks, citations, and social shares. Links act as popularity votes in the eyes of Google. While all quality (non-spammy) backlinks are helpful, local backlinks from businesses or people in your area are the most impactful. They tie your website/blog to your target location.
 
-Another factor that influences the prominence of your website is technical SEO, which focuses on the structure and performance of your website:
+Another factor that influences the prominence of your website/blog is technical SEO, which focuses on the structure and performance of your website/blog:
 
 *   Faster load times: Improves user experience and rankings
     
@@ -47,7 +51,7 @@ For your Google Business Profile, prominence is determined by how engaging your 
 
 ## 3\. Proximity
 
-Proximity refers to how close a potential customer is to your business. You'll naturally rank higher in search results for users who are physically closer to your location. However, high relevance and prominence can extend your reach.
+Proximity refers to how close a potential customer is to your business. You'll naturally rank higher in search results for users who are physically closer to your Utah location. However, high relevance and prominence can extend your reach.
 
 ## Analytics
 
@@ -66,7 +70,7 @@ You'll be able to see:
 
 ## Summary
 
-Relevance, prominence, and proximity are the three pillars of local SEO. Your website and Google Business Profile are two of the most powerful tools you have. When combined with SEO rank tracking tools and analytics, you'll know where to improve and grow.
+Relevance, prominence, and proximity are the three pillars of local SEO. Your website, blog, and Google Business Profile are the most powerful tools you have. When combined with SEO rank tracking tools and analytics, you'll know where to improve and grow.
 
 ## Request Help
 
