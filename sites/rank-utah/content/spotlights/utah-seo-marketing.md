@@ -27,7 +27,7 @@ Reach out to [Rank Utah](https://rankutah.com#contact) and start ranking above y
 
 Local SEO is different from broad SEO in that it focuses on three core areas: **Relevance, Prominence, and Proximity**.
 
-The chart below shows the factors that influence lead generation for local businesses in Utah.
+The chart below shows the factors that influence lead generation for local businesses.
 
 ![pie chart showing the factors of local SEO lead generation](/media/image.png)Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
@@ -67,7 +67,7 @@ Proximity refers to how close a potential customer is to your business. You'll n
 
 ## Analytics
 
-SEO rank tracking tools and Google Analytics are essential for understanding what's working in your SEO strategy.
+Google Analytics is essential for understanding what's working in your SEO strategy.
 
 You'll be able to see:
 
