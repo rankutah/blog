@@ -1,13 +1,15 @@
 ---
 date: 2025-06-11
 is_published: Published
-title: "Business Women's Forum in Salt Lake City 2025: Own Your Life, Own Your Career"
+title: "Business Women's Forum in Salt Lake City: Own Your Life, Own Your Career"
 tags:
   - event
 ---
-![Profile image of Katy blommer, the speaker for this event in Salt Lake City, Utah](https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg)
+![Profile image of Katy blommer, the speaker for this women's forum event in Salt Lake City, Utah](https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg)
 
 [Register Here](https://slchamber.chambermaster.com/eventregistration/register/15524)
+
+# The Unexpected Path to Your Career Success
 
 ## Why You Should Attend
 
