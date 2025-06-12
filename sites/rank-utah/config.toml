@@ -1,5 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 baseURL       = "https://spotlight.rankutah.com/"
+title         = "Spotlight Utah"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
