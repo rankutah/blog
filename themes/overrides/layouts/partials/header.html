@@ -1,0 +1,20 @@
+<!-- layouts/partials/header.html -->
+<header class="site-header bg-white shadow-sm">
+  <nav class="site-nav container mx-auto flex items-center justify-between py-6">
+    <!-- BRAND / SITE TITLE (pulled from config.toml) -->
+    <a
+      class="site-title text-2xl font-bold hover:opacity-80"
+      href="{{ "/" | relLangURL }}"
+      aria-label="{{ .Site.Title }}"
+    >
+      {{ .Site.Title }}
+    </a>
+
+    <!-- NAV LINKS -->
+    <ul class="flex space-x-6">
+      <li><a href="{{ "/" | relLangURL }}" class="hover:underline">Home</a></li>
+      <li><a href="{{ "/spotlights/" | relLangURL }}" class="hover:underline">Spotlights</a></li>
+      <!-- add or remove items as needed -->
+    </ul>
+  </nav>
+</header>
