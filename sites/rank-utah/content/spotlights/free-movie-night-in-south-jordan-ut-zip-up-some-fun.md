@@ -7,7 +7,7 @@ tags:
 ---
 ![](/media/Screenshot%202025-06-16%20at%203.30.48%E2%80%AFPM.png)
 
-## Beddy’s Zipper Bedding Big League Movie Night  with Giveaways & Surprises
+## Beddy’s Zipper Bedding Movie Night  with Giveaways & Surprises
 
 RSVP Today! Field Seating for You + up to 5 Friends
 
