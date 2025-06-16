@@ -33,8 +33,6 @@ The Ballpark at America First Square | 11111 Ballpark Drive, South Jordan, UT
 This is a **FREE** event, but **RSVP is required** to reserve your spot.  
 Visit [**Beddy's RSVP**](https://docs.google.com/forms/d/e/1FAIpQLSfqUNRS3SeweZNrzlLMGyYddkl2LOZf2kYEBj4Z7oOwju5Apw/viewform) to claim tickets for up to 6 guests.
 
-* * *
-
 ### Where to Park & Enter
 
 *   **Parking:** West Lot of The Ballpark at America First Square
