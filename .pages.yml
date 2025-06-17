@@ -1,8 +1,11 @@
 media:
   - name: rank-utah
-    label: rank-utah media
     input: sites/rank-utah/assets/media
-    output: /media
+    output: /media/rank-utah
+  # To add another client, duplicate this block and adjust paths
+  - name: client-foo
+    input: sites/client-foo/assets/media
+    output: /media/client-foo
 
 components:
   titleField:
@@ -47,8 +50,6 @@ components:
     label: Main Image
     type: image
     required: false
-    options:
-      media: rank-utah
     description: |
       Upload a featured image for this post or event. If omitted, no image will display in search snippets.
 
@@ -91,7 +92,7 @@ components:
 
   locationAddressField:
     label: Venue Address
-    type: text
+    type: string
     required: false
     description: |
       Full address including street, city, state, ZIP, and country. Example: "123 Main St, Salt Lake City, UT 84101, USA". Leave blank if this post is not an event.
@@ -113,13 +114,10 @@ content:
     fields:
       - name: date
         component: dateField
-
       - name: is_published
         component: statusField
-
       - name: title
         component: titleField
-
       - name: tags
         component: tagsField
         options:
@@ -127,21 +125,55 @@ content:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
             results: ""
-
       - name: image
         component: imageField
-
+        options:
+          media: rank-utah
       - name: body
         component: bodyField
-
       - name: startDate
         component: startDateField
-
       - name: endDate
         component: endDateField
-
       - name: locationName
         component: locationNameField
+      - name: locationAddress
+        component: locationAddressField
 
+  # Example: new client setup
+  - name: client-foo
+    label: client-foo posts
+    type: collection
+    path: sites/client-foo/content/spotlights
+    filename: "{primary}.md"
+
+    view:
+      fields: [ date, is_published, title, tags ]
+      sort:   [ date ]
+      default:
+        sort:  date
+        order: desc
+
+    fields:
+      - name: date
+        component: dateField
+      - name: is_published
+        component: statusField
+      - name: title
+        component: titleField
+      - name: tags
+        component: tagsField
+      - name: image
+        component: imageField
+        options:
+          media: client-foo
+      - name: body
+        component: bodyField
+      - name: startDate
+        component: startDateField
+      - name: endDate
+        component: endDateField
+      - name: locationName
+        component: locationNameField
       - name: locationAddress
         component: locationAddressField
