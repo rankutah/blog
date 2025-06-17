@@ -12,6 +12,13 @@ components:
     description: |
       Include your city or a nearby landmark in your title to drive more local traffic
 
+  slugField:
+    label: Slug
+    type: string
+    required: true
+    description: |
+      URL-friendly slug. Lowercase with hyphens. This determines the filename for the post.
+
   dateField:
     label: Date
     type: date
@@ -50,7 +57,7 @@ components:
     description: |
       Use the `/` command to insert images and headings.
       Highlight text to format or add links.
-      After inserting an image, click it, choose ‘ALT,’ and add a short description (e.g. "People watching fireworks in Salt Lake City") to boost search visibility.
+      After inserting an image, click it, choose ‘ALT,’ and add a short description (e.g. "People watching fireworks in Salt Lake City") to boost accessibility and SEO.
       Organize your content under H2 & H3 subheadings for clear structure (title uses H1 by default).
 
   startDateField:
@@ -61,7 +68,7 @@ components:
       time: true
       format: yyyy-MM-dd'T'HH:mm
     description: |
-      Set the event start date and time in ISO 8601 format. Leave blank for non-events.
+      Set the event start date and time. Leave blank if this post is not an event.
 
   endDateField:
     label: End Date & Time
@@ -71,22 +78,21 @@ components:
       time: true
       format: yyyy-MM-dd'T'HH:mm
     description: |
-      Set the event end date and time in ISO 8601 format. Leave blank for non-events.
+      Set the event end date and time. Leave blank if this post is not an event.
 
   locationNameField:
     label: Venue Name
     type: string
     required: false
     description: |
-      Name of the event venue or host organization. Leave blank for non-events.
+      Name of the event’s physical venue (e.g. theater, park, conference hall). Leave blank if this post is not an event.
 
   locationAddressField:
     label: Venue Address
     type: text
     required: false
     description: |
-      Full address including street, city, state, and ZIP. Country defaults to "USA".
-      Format example: "123 Main St, Salt Lake City, UT 84101, USA". Leave blank for non-events.
+      Full address including street, city, state, ZIP, and country. Example: "123 Main St, Salt Lake City, UT 84101, USA". Leave blank if this post is not an event.
 
   eventImageField:
     label: Event Image
@@ -95,14 +101,14 @@ components:
     options:
       media: rank-utah
     description: |
-      Upload a thumbnail image for the event. If omitted, no image will display in search snippets. Alt text is not required for schema but is recommended for accessibility.
+      Upload a thumbnail image for the event. If omitted, no image will display in search snippets.
 
 content:
   - name: rank-utah
     label: rank-utah posts
     type: collection
-    path: sites-rank-utah/content/spotlights
-    filename: "{primary}.md"
+    path: sites/rank-utah/content/spotlights
+    filename: "{slug}.md"
 
     view:
       fields: [ date, is_published, title, tags ]
@@ -112,6 +118,9 @@ content:
         order: desc
 
     fields:
+      - name: slug
+        component: slugField
+
       - name: date
         component: dateField
 
