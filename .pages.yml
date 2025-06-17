@@ -56,36 +56,37 @@ components:
   startDateField:
     label: Start Date & Time
     type: date
-    required: true
+    required: false
     options:
       time: true
       format: yyyy-MM-dd'T'HH:mm
     description: |
-      Set the event start date and time in ISO 8601 format.
+      Set the event start date and time in ISO 8601 format. Leave blank for non-events.
 
   endDateField:
     label: End Date & Time
     type: date
-    required: true
+    required: false
     options:
       time: true
       format: yyyy-MM-dd'T'HH:mm
     description: |
-      Set the event end date and time in ISO 8601 format.
+      Set the event end date and time in ISO 8601 format. Leave blank for non-events.
 
   locationNameField:
     label: Venue Name
     type: string
-    required: true
+    required: false
     description: |
-      Name of the event venue or host organization.
+      Name of the event venue or host organization. Leave blank for non-events.
 
   locationAddressField:
     label: Venue Address
     type: text
-    required: true
+    required: false
     description: |
-      Full address including street, city, state, ZIP, and country.
+      Full address including street, city, state, and ZIP. Country defaults to "USA".
+      Format example: "123 Main St, Salt Lake City, UT 84101, USA". Leave blank for non-events.
 
   eventImageField:
     label: Event Image
@@ -94,13 +95,13 @@ components:
     options:
       media: rank-utah
     description: |
-      Upload a thumbnail image for the event. If omitted, no image will display in search snippets.
+      Upload a thumbnail image for the event. If omitted, no image will display in search snippets. Alt text is not required for schema but is recommended for accessibility.
 
 content:
   - name: rank-utah
     label: rank-utah posts
     type: collection
-    path: sites/rank-utah/content/spotlights
+    path: sites-rank-utah/content/spotlights
     filename: "{primary}.md"
 
     view:
