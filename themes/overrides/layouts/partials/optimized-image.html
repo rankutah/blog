@@ -7,7 +7,6 @@
 {{ $src  := replaceRE "^/" "" $raw }}
 {{ $alt  := or .Alt $page.Title }}
 
-// Try leaf-bundle first
 {{ $orig := $page.Resources.GetMatch $src }}
 {{ if not $orig }}
   {{/* Fallback to assets/media in Hugo’s assets folder */}}
