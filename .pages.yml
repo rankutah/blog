@@ -12,17 +12,6 @@ components:
     description: |
       Include your city or a nearby landmark in your title to drive more local traffic
 
-  slugField:
-    label: Slug
-    type: slug
-    required: true
-    description: |
-      Auto-generated from the Title. You can edit if needed.
-    options:
-      from: title
-      lower: true
-      separator: '-'
-
   dateField:
     label: Date
     type: date
@@ -112,7 +101,7 @@ content:
     label: rank-utah posts
     type: collection
     path: sites/rank-utah/content/spotlights
-    filename: "{slug}.md"
+    filename: "{primary}.md"
 
     view:
       fields: [ date, is_published, title, tags ]
@@ -122,9 +111,6 @@ content:
         order: desc
 
     fields:
-      - name: slug
-        component: slugField
-
       - name: date
         component: dateField
 
