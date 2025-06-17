@@ -14,10 +14,14 @@ components:
 
   slugField:
     label: Slug
-    type: string
+    type: slug
     required: true
     description: |
-      URL-friendly slug. Lowercase with hyphens. This determines the filename for the post.
+      Auto-generated from the Title. You can edit if needed.
+    options:
+      from: title
+      lower: true
+      separator: '-'
 
   dateField:
     label: Date
