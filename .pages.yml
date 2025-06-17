@@ -1,7 +1,7 @@
 media:
   - name: rank-utah
     input: sites/rank-utah/assets/media
-    output: /media/rank-utah
+    output: /media
   # To add another client, duplicate this block and adjust paths
   - name: client-foo
     input: sites/client-foo/assets/media
