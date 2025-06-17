@@ -43,6 +43,15 @@ components:
       Use as few tags as necessary (lowercase, singular, hyphens for multi-word)
       to help visitors find related content and keep your site organized.
 
+  imageField:
+    label: Main Image
+    type: image
+    required: false
+    options:
+      media: rank-utah
+    description: |
+      Upload a featured image for this post or event. If omitted, no image will display in search snippets.
+
   bodyField:
     label: Body
     type: rich-text
@@ -87,15 +96,6 @@ components:
     description: |
       Full address including street, city, state, ZIP, and country. Example: "123 Main St, Salt Lake City, UT 84101, USA". Leave blank if this post is not an event.
 
-  eventImageField:
-    label: Event Image
-    type: image
-    required: false
-    options:
-      media: rank-utah
-    description: |
-      Upload a thumbnail image for the event. If omitted, no image will display in search snippets.
-
 content:
   - name: rank-utah
     label: rank-utah posts
@@ -119,7 +119,7 @@ content:
 
       - name: title
         component: titleField
-        
+
       - name: tags
         component: tagsField
         options:
@@ -127,6 +127,9 @@ content:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
             results: ""
+
+      - name: image
+        component: imageField
 
       - name: body
         component: bodyField
@@ -142,6 +145,3 @@ content:
 
       - name: locationAddress
         component: locationAddressField
-
-      - name: image
-        component: eventImageField
