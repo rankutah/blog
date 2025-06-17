@@ -116,6 +116,8 @@
 
 {{- partial "extend_head.html" . -}}
 
+{{ partial "schema.html" . }}
+
 {{- /* Misc: analytics & social previews */}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
   {{ partial "google_analytics.html" . }}

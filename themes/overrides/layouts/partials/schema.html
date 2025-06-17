@@ -1,0 +1,37 @@
+{{ $isEvent := .Params.startDate }}
+<script type="application/ld+json">
+{{ if $isEvent }}
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "{{ .Title }}",
+  {{ with .Params.startDate }}"startDate": "{{ . }}",{{ end }}
+  {{ with .Params.endDate }}"endDate": "{{ . }}",{{ end }}
+  "location": {
+    "@type": "Place",
+    "name": {{ with .Params.locationName | safeJS }}"{{ . }}"{{ else }}"{{ "" }}"{{ end }},
+    "address": {{ with .Params.locationAddress | safeJS }}"{{ . }}"{{ else }}"{{ "" }}"{{ end }}
+  },
+  {{ with .Params.image }}
+  "image": ["{{ . | relURL }}"],
+  {{ end }}
+  "description": {{ with .Summary | htmlUnescape | safeJS }}"{{ . }}"{{ else }}"{{ .Params.body | plainify | safeJS }}"{{ end }},
+  "url": "{{ .Permalink }}"
+}
+{{ else }}
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": {{ with .Summary | htmlUnescape | safeJS }}"{{ . }}"{{ else }}"{{ .Params.body | plainify | safeJS }}"{{ end }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ with .Params.image }}
+  "image": ["{{ . | relURL }}"],
+  {{ end }}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+{{ end }}
+</script>
