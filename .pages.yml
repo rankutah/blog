@@ -53,6 +53,49 @@ components:
       After inserting an image, click it, choose ‘ALT,’ and add a short description (e.g. "People watching fireworks in Salt Lake City") to boost search visibility.
       Organize your content under H2 & H3 subheadings for clear structure (title uses H1 by default).
 
+  startDateField:
+    label: Start Date & Time
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm
+    description: |
+      Set the event start date and time in ISO 8601 format.
+
+  endDateField:
+    label: End Date & Time
+    type: date
+    required: true
+    options:
+      time: true
+      format: yyyy-MM-dd'T'HH:mm
+    description: |
+      Set the event end date and time in ISO 8601 format.
+
+  locationNameField:
+    label: Venue Name
+    type: string
+    required: true
+    description: |
+      Name of the event venue or host organization.
+
+  locationAddressField:
+    label: Venue Address
+    type: text
+    required: true
+    description: |
+      Full address including street, city, state, ZIP, and country.
+
+  eventImageField:
+    label: Event Image
+    type: image
+    required: false
+    options:
+      media: rank-utah
+    description: |
+      Upload a thumbnail image for the event. If omitted, no image will display in search snippets.
+
 content:
   - name: rank-utah
     label: rank-utah posts
@@ -87,3 +130,18 @@ content:
 
       - name: body
         component: bodyField
+
+      - name: startDate
+        component: startDateField
+
+      - name: endDate
+        component: endDateField
+
+      - name: locationName
+        component: locationNameField
+
+      - name: locationAddress
+        component: locationAddressField
+
+      - name: image
+        component: eventImageField
