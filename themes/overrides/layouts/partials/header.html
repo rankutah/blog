@@ -1,81 +1,39 @@
 <header class="header">
   <nav class="nav">
+
+    <!-- your logo/title -->
     <div class="logo">
       {{- $label_text := (site.Params.label.text | default site.Title) }}
       {{- if site.Title }}
-      <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-        {{- if site.Params.label.icon }}
-          {{- $img := resources.Get site.Params.label.icon }}
-          {{- if $img }}
-            {{- $processableFormats := slice "jpg" "jpeg" "png" "tif" "bmp" "gif" }}
-            {{- if hugo.IsExtended }}
-              {{- $processableFormats = $processableFormats | append "webp" }}
-            {{- end }}
-            {{- $prod := hugo.IsProduction | or (eq site.Params.env "production") }}
-            {{- if and (in $processableFormats $img.MediaType.SubType) $prod }}
-              {{- if site.Params.label.iconHeight }}
-                {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
-              {{- else }}
-                {{- $img = $img.Resize "x30" }}
-              {{- end }}
-            {{- end }}
-            <img
-              src="{{ $img.Permalink }}"
-              alt=""
-              aria-label="logo"
-              height="{{ site.Params.label.iconHeight | default "30" }}">
-          {{- else }}
-            <img
-              src="{{ site.Params.label.icon | absURL }}"
-              alt=""
-              aria-label="logo"
-              height="{{ site.Params.label.iconHeight | default "30" }}">
-          {{- end }}
-        {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
-          {{ site.Params.label.iconSVG | safeHTML }}
-        {{- end }}
-        {{- $label_text }}
-      </a>
+        <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+          <!-- … your icon logic here … -->
+          {{ $label_text }}
+        </a>
       {{- end }}
 
+      <!-- use PaperMod’s built-in toggle with moon/sun icons -->
       <div class="logo-switches">
         {{- if not site.Params.disableThemeToggle }}
-        <button
-          id="theme-toggle"
-          onclick="toggleTheme()"
-          accesskey="t"
-          title="Toggle theme"
-          aria-label="Toggle theme">
-          <!-- Sun icon -->
-          <svg viewBox="0 0 24 24" width="24" height="24">
-            <circle cx="12" cy="12" r="5"/>
-          </svg>
-          <!-- Moon icon -->
-          <svg viewBox="0 0 24 24" width="24" height="24">
-            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
-          </svg>
-        </button>
+          {{ partial "toggle-mode.html" . }}
         {{- end }}
 
+        <!-- your language selector, no leading separator dot -->
         {{- $lang := .Lang }}
-        {{- $separator := or $label_text (not site.Params.disableThemeToggle) }}
         {{- with site.Home.Translations }}
         <ul class="lang-switch">
-          {{- if $separator }}<li>|</li>{{- end }}
           {{- range . }}
             {{- if ne $lang .Lang }}
-            <li>
-              <a
-                href="{{ .Permalink }}"
-                title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                {{- if and site.Params.displayFullLangName (.Language.LanguageName) -}}
-                  {{ .Language.LanguageName | emojify }}
-                {{- else -}}
-                  {{ .Lang | title }}
-                {{- end }}
-              </a>
-            </li>
+              <li>
+                <a href="{{ .Permalink }}"
+                   title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName) }}"
+                   aria-label="{{ .Language.LanguageName }}">
+                  {{- if and site.Params.displayFullLangName (.Language.LanguageName) -}}
+                    {{ .Language.LanguageName | emojify }}
+                  {{- else -}}
+                    {{ .Lang | title }}
+                  {{- end }}
+                </a>
+              </li>
             {{- end }}
           {{- end }}
         </ul>
@@ -83,39 +41,20 @@
       </div>
     </div>
 
-    {{- $currentPage := . }}
+    <!-- your main menu -->
     <ul id="menu">
+      {{- $currentPage := . }}
       {{- range site.Menus.main }}
-      {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absLangURL }}
-      {{- $page_url := $currentPage.Permalink | absLangURL }}
-      {{- $is_search := eq (site.GetPage .KeyName).Layout "search" }}
       <li>
-        <a
-          href="{{ .URL | absLangURL }}"
-          title="{{ .Title | default .Name }}{{ if $is_search }} (Alt + /){{ end }}"
-          {{ if $is_search }}accesskey="/"{{ end }}>
-          <span{{ if eq $menu_item_url $page_url }} class="active"{{ end }}>
-            {{ .Pre }}{{ .Name }}{{ .Post }}
+        <a href="{{ .URL | absLangURL }}"
+           title="{{ .Title | default .Name }}">
+          <span class="{{ if eq (absLangURL .URL) (absLangURL $currentPage.Permalink) }}active{{ end }}">
+            {{ .Name }}
           </span>
-          {{- if findRE "://" .URL }}&nbsp;
-          <svg
-            fill="none"
-            shape-rendering="geometricPrecision"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2.5"
-            viewBox="0 0 24 24"
-            height="12"
-            width="12">
-            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-            <path d="M15 3h6v6"/>
-            <path d="M10 14L21 3"/>
-          </svg>
-          {{- end }}
         </a>
       </li>
       {{- end }}
     </ul>
+
   </nav>
 </header>
