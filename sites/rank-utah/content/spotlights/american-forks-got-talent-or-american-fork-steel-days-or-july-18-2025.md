@@ -9,9 +9,13 @@ endDate: 2025-07-18T21:00
 locationName: Mary and Art Dy Park
 locationAddress: 1000 N. 550 E., American Fork, UT 84003, USA
 ---
+![](/media/Screenshot%202025-06-19%20at%204.03.33%E2%80%AFPM.png)
+
+![](/media/American%20Fork%20Talent%20Show%202025.jpg)
+
 **AMERICAN FORK’S GOT TALENT**  
 _Presented in conjunction with the Timpanogos Arts Foundation_  
-_Sponsored by Oliver’s Place_
+_Sponsored by_ [_Oliver’s Place_](https://oliversplaceut.com/)
 
 American Fork’s Got Talent is a fun family showcase—no competition, just an opportunity to share your skills and entertain the community! Registration closes on July 1st, and selected acts will be notified by email with all the details.
 
