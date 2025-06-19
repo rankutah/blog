@@ -11,10 +11,6 @@ locationAddress: 555 W 100 N, Suite C & D, Providence, UT, 84332 , USA
 ---
 ![](/media/Screenshot%202025-06-16%20at%202.36.38%E2%80%AFPM.png)
 
-The Vault Salon & Nail Supply Saturday, June 21, 2025 | 12 PM – 4 PM
-
-555 W 100 N, Suite C & D, Providence, UT
-
 ### Why You Can’t Miss This
 
 *   🍦 **Free Ice Cream** for the first 75 guests (2 Sisters Trailers)
