@@ -12,7 +12,7 @@ locationAddress: 1000 N. 550 E., American Fork, UT 84003, USA
 ![](/media/American%20Fork%20Talent%20Show%202025-1.jpg)
 
 **AMERICAN FORK’S GOT TALENT**  
-_Presented in conjunction with the Timpanogos Arts Foundation_  
+_Presented in conjunction with the_ [_Timpanogos Arts Foundation_](https://americanforkarts.com/)  
 _Sponsored by_ [_Oliver’s Place_](https://oliversplaceut.com/)
 
 American Fork’s Got Talent is a fun family showcase—no competition, just an opportunity to share your skills and entertain the community! Registration closes on July 1st, and selected acts will be notified by email with all the details.
