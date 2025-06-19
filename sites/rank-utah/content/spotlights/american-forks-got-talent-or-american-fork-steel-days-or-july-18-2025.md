@@ -9,7 +9,7 @@ endDate: 2025-07-18T21:00
 locationName: Mary and Art Dy Park
 locationAddress: 1000 N. 550 E., American Fork, UT 84003, USA
 ---
-![](/media/Screenshot%202025-06-19%20at%204.03.33%E2%80%AFPM.png)
+![](/media/American%20Fork%20Talent%20Show%202025-1.jpg)
 
 **AMERICAN FORK’S GOT TALENT**  
 _Presented in conjunction with the Timpanogos Arts Foundation_  
