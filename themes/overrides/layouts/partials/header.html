@@ -1,32 +1,52 @@
 <header class="header">
   <nav class="nav">
-
-    <!-- your logo/title -->
     <div class="logo">
       {{- $label_text := (site.Params.label.text | default site.Title) }}
       {{- if site.Title }}
         <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-          <!-- … your icon logic here … -->
-          {{ $label_text }}
+          {{- $label_text }}
         </a>
       {{- end }}
 
-      <!-- use PaperMod’s built-in toggle with moon/sun icons -->
       <div class="logo-switches">
         {{- if not site.Params.disableThemeToggle }}
-          {{ partial "toggle-mode.html" . }}
+        <!-- default PaperMod toggle button -->
+        <button
+          id="theme-toggle"
+          onclick="toggleTheme()"
+          accesskey="t"
+          title="Toggle theme"
+          aria-label="Toggle theme">
+          <!-- Moon icon (shows in light mode) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="moon-icon">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+          </svg>
+          <!-- Sun icon (shows in dark mode) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sun-icon">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2"/>
+            <path d="M12 21v2"/>
+            <path d="M4.22 4.22l1.42 1.42"/>
+            <path d="M18.36 18.36l1.42 1.42"/>
+            <path d="M1 12h2"/>
+            <path d="M21 12h2"/>
+            <path d="M4.22 19.78l1.42-1.42"/>
+            <path d="M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
         {{- end }}
 
-        <!-- your language selector, no leading separator dot -->
+        {{- /* language switch (no dot separator) */}}
         {{- $lang := .Lang }}
         {{- with site.Home.Translations }}
         <ul class="lang-switch">
           {{- range . }}
             {{- if ne $lang .Lang }}
               <li>
-                <a href="{{ .Permalink }}"
-                   title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName) }}"
-                   aria-label="{{ .Language.LanguageName }}">
+                <a
+                  href="{{ .Permalink }}"
+                  title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName) }}"
+                  aria-label="{{ .Language.LanguageName }}">
                   {{- if and site.Params.displayFullLangName (.Language.LanguageName) -}}
                     {{ .Language.LanguageName | emojify }}
                   {{- else -}}
@@ -41,20 +61,21 @@
       </div>
     </div>
 
-    <!-- your main menu -->
+    {{- /* main menu */}}
+    {{- $currentPage := . }}
     <ul id="menu">
-      {{- $currentPage := . }}
       {{- range site.Menus.main }}
       <li>
-        <a href="{{ .URL | absLangURL }}"
-           title="{{ .Title | default .Name }}">
-          <span class="{{ if eq (absLangURL .URL) (absLangURL $currentPage.Permalink) }}active{{ end }}">
+        <a
+          href="{{ .URL | absLangURL }}"
+          title="{{ .Title | default .Name }}">
+          <span
+            {{ if eq (absLangURL .URL) (absLangURL $currentPage.Permalink) }}class="active"{{ end }}>
             {{ .Name }}
           </span>
         </a>
       </li>
       {{- end }}
     </ul>
-
   </nav>
 </header>
