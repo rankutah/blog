@@ -15,9 +15,7 @@ locationAddress: 11111 Ballpark Drive, South Jordan, UT
 
 RSVP Today! Field Seating for You + up to 5 Friends
 
-Thursday, July 17, 2025 | Field opens 7:30 PM | Movie starts 8:30 PM MDT
-
-The Ballpark at America First Square | 11111 Ballpark Drive, South Jordan, UT
+Field opens 7:30 PM | Movie starts 8:30 PM MDT
 
 ### Why You Can't Miss It
 
