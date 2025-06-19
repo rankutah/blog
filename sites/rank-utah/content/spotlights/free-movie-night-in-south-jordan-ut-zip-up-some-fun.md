@@ -10,6 +10,8 @@ endDate: 2025-07-17T23:00
 locationName: The Ballpark at America First Square
 locationAddress: 11111 Ballpark Drive, South Jordan, UT
 ---
+![](/media/Screenshot%202025-06-16%20at%203.30.48%E2%80%AFPM.png)
+
 ## Beddy’s Zipper Bedding Movie Night  with Giveaways & Surprises
 
 RSVP Today! Field Seating for You + up to 5 Friends
