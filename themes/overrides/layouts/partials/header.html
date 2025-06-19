@@ -1,36 +1,4 @@
-{{- /* theme-toggle is enabled */}}
-{{- if (not site.Params.disableThemeToggle) }}
-  {{- if (eq site.Params.defaultTheme "light") }}
-<script>
-  if (localStorage.getItem("pref-theme") === "dark") {
-    document.body.classList.add('dark');
-  }
-</script>
-  {{- else if (eq site.Params.defaultTheme "dark") }}
-<script>
-  if (localStorage.getItem("pref-theme") === "light") {
-    document.body.classList.remove('dark');
-  }
-</script>
-  {{- else }}
-<script>
-  if (localStorage.getItem("pref-theme") === "dark") {
-    document.body.classList.add('dark');
-  } else if (localStorage.getItem("pref-theme") === "light") {
-    document.body.classList.remove('dark');
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.body.classList.add('dark');
-  }
-</script>
-  {{- end }}
-{{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
-<script>
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.body.classList.add('dark');
-  }
-</script>
-{{- end }}
-
+<!-- AFTER: layouts/partials/header.html -->
 <header class="header">
   <nav class="nav">
     <div class="logo">
@@ -66,8 +34,13 @@
       {{- end }}
 
       <div class="logo-switches">
-        {{- if (not site.Params.disableThemeToggle) }}
-        <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+        {{- if not site.Params.disableThemeToggle }}
+        <button
+          id="theme-toggle"
+          onclick="toggleTheme()"
+          accesskey="t"
+          title="Toggle theme"
+          aria-label="Toggle theme">
           <!-- moon & sun SVG icons here -->
         </button>
         {{- end }}
@@ -111,6 +84,7 @@
             {{ .Pre }}{{ .Name }}{{ .Post }}
           </span>
           {{- if findRE "://" .URL }}&nbsp;
+          <!-- external-link icon -->
           <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor"
                stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                viewBox="0 0 24 24" height="12" width="12">
