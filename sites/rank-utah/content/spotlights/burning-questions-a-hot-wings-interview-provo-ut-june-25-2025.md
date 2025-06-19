@@ -24,16 +24,6 @@ United Way of Utah County’s Emerging Leaders Society is back with its 3rd annu
 Co-founder & Co-chairman, BambooHR  
 With years of hands-on experience building one of Utah’s top HR tech companies, Ben will dive into what it takes to lead with purpose and creativity—no matter how fiery the challenge.
 
-### Event Details
-
-**Date & Time**  
-Wednesday, June 25, 2025 · 12:00 PM MDT
-
-**Location**  
-The Kiln  
-412 West Rivers Edge Drive  
-Provo, UT 84604
-
 ### RSVP
 
 Entry is free  
