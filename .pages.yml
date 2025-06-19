@@ -46,13 +46,6 @@ components:
       Use as few tags as necessary (lowercase, singular, hyphens for multi-word)
       to help visitors find related content and keep your site organized.
 
-  imageField:
-    label: Main Image
-    type: image
-    required: false
-    description: |
-      Upload a featured image for this post or event. If omitted, no image will display in search snippets.
-
   bodyField:
     label: Body
     type: rich-text
