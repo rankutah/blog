@@ -9,7 +9,7 @@
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+          <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/>
         </svg>
       </span>
       {{- end }}
@@ -22,55 +22,21 @@
     {{- end }}
 
     {{- if and (ne .File.BaseFileName "about") (not (.Param "hideMeta")) (not .Params.eventDateTime) }}
-      <div class="post-meta mb-6">
-        {{ partial "post_meta.html" . }}
-        {{ partial "translation_list.html" . }}
-        {{ partial "edit_post.html" . }}
-        {{ partial "post_canonical.html" . }}
-      </div>
+    <div class="post-meta mb-6">
+      {{ partial "post_meta.html" . }}
+      {{ partial "translation_list.html" . }}
+      {{ partial "edit_post.html" . }}
+      {{ partial "post_canonical.html" . }}
+    </div>
     {{- end }}
   </header>
 
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{ partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
-  {{- with .Params.image }}
-    <div class="mb-6">
-      <img
-        src="{{ . }}"
-        alt="{{ $.Title }}"
-        class="w-full h-auto object-cover"
-      />
-    </div>
-    <p>&nbsp;</p>
-  {{- end }}
-
-  {{- /* Natural time range with offset for startDate/endDate */ -}}
-  {{- if and .Params.startDate .Params.endDate }}
-    {{- $tz       := "-06:00" -}}
-    {{- $startIso := printf "%s:00%s" .Params.startDate $tz -}}
-    {{- $endIso   := printf "%s:00%s" .Params.endDate   $tz -}}
-
-    {{- $start := time $startIso -}}
-    {{- $end   := time $endIso   -}}
-
-    {{- $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM")    ($start.Format "3:04 PM") -}}
-    {{- $endStr   := cond (eq $end.Minute   0) ($end.Format   "3 PM")    ($end.Format   "3:04 PM") -}}
-    {{- $range    := printf "%s–%s" $startStr $endStr             -}}
-
-    <div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300">
-      <p><strong>When:</strong> {{ $range }}</p>
-      {{- with .Params.locationName }}
-        <p><strong>Where:</strong> {{ . }}</p>
-      {{- end }}
-      {{- with .Params.locationAddress }}
-        <p><strong>Address:</strong> {{ . }}</p>
-      {{- end }}
-    </div>
-  {{- end }}
-
+  {{- /* JSON-LD schema for Event */}}
   {{- if .Params.eventDateTime }}
-    {{- $ed := .Params.eventDateTime | time -}}
+    {{- $ed := .Params.eventDateTime | time }}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -100,80 +66,46 @@
       "url": "{{ .Permalink }}"
     }
     </script>
+  {{- end }}
 
-    <div class="mb-6">
-      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
-        <strong>When:</strong>
-        <time datetime="{{ $ed.Format "2006-01-02T15:04:05Z07:00" }}">
-          {{ $ed.Format "Mon, Jan 2, 2006, 3:04 PM" }}
-        </time>
-      </p>
-      {{- with .Params.location }}
-      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
-        <strong>Where:</strong>
-        {{ if .name }}{{ .name }}{{ end }}
-        {{ if .address }}, {{ .address }}{{ end }}
-        {{ if .city }}, {{ .city }}{{ end }}
-        {{ if .region }} {{ .region }}{{ end }}
-        {{ if .postalCode }} {{ .postalCode }}{{ end }}
-        {{ if .country }}, {{ .country }}{{ end }}
-      </p>
-      {{- end }}
-      {{- if or .Params.organizer.name .Params.organizer.contactEmail .Params.organizer.contactPhone .Params.organizer.url }}
-      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
-        <strong>Organizer:</strong> {{ .Params.organizer.name }}
-      </p>
-      {{- end }}
-      {{- with .Params.organizer.contactEmail }}
-      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
-        <strong>Email:</strong>
-        <a href="mailto:{{ . }}" class="text-blue-600 hover:underline">{{ . }}</a>
-      </p>
-      {{- end }}
-      {{- with .Params.organizer.contactPhone }}
-      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
-        <strong>Phone:</strong> {{ . }}
-      </p>
-      {{- end }}
-      {{- with .Params.organizer.url }}
-      <p class="text-gray-700 dark:text-gray-300 text-sm mb-2">
-        <strong>Website:</strong>
-        <a href="{{ . }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ . }}</a>
-      </p>
-      {{- end }}
-      {{- with .Params.price }}
-      <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">
-        <strong>Price:</strong> {{ . }}
-      </p>
-      {{- end }}
-    </div>
+  {{- /* Prepare human-friendly time range */}}
+  {{- if and .Params.startDate .Params.endDate }}
+    {{- $tz := "-06:00" }}
+    {{- $startIso := printf "%s:00%s" .Params.startDate $tz }}
+    {{- $endIso := printf "%s:00%s" .Params.endDate $tz }}
 
-    <p>&nbsp;</p>
+    {{- $start := time $startIso }}
+    {{- $end := time $endIso }}
+
+    {{- $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM") ($start.Format "3:04 PM") }}
+    {{- $endStr := cond (eq $end.Minute 0) ($end.Format "3 PM") ($end.Format "3:04 PM") }}
+    {{- $range := printf "%s–%s" $startStr $endStr }}
   {{- end }}
 
   {{- if (.Param "ShowToc") }}
     {{ partial "toc.html" . }}
   {{- end }}
 
-  {{- if .Content }}
   <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-      {{ partial "anchored_headings.html" .Content }}
-    {{- else }}
-      {{ .Content }}
+    {{- /* Inject event details below first image in body, with fallback if no image */ }}
+    {{- $eventDetails := printf `<div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300">
+      <p><strong>When:</strong> %s</p>
+      {{- with .Params.locationName }}<p><strong>Where:</strong> %s</p>{{- end }}
+      {{- with .Params.locationAddress }}<p><strong>Address:</strong> %s</p>{{- end }}
+    </div>` $range .Params.locationName .Params.locationAddress }}
+    {{- $content := .Content }}
+    {{- $aug := replaceRE "(?s)(<img[^>]+>)" (printf "${1}\n\n%s" $eventDetails) $content }}
+    {{- if eq $aug $content }}
+      {{- $aug = printf "%s\n\n%s" $eventDetails $content }}
     {{- end }}
+    {{- $aug | safeHTML }}
   </div>
-  {{- end }}
 
   {{ partial "tag-badges.html" . }}
 
   <footer class="post-footer mt-8">
-    {{- if (.Param "ShowPostNavLinks") }}
-      {{ partial "post_nav_links.html" . }}
-    {{- end }}
-    {{- if and site.Params.ShowShareButtons (not .Params.disableShare) }}
-      {{ partial "share_icons.html" . }}
-    {{- end }}
+    {{- if (.Param "ShowPostNavLinks") }}{{ partial "post_nav_links.html" . }}{{- end }}
+    {{- if and site.Params.ShowShareButtons (not .Params.disableShare) }}{{ partial "share_icons.html" . }}{{- end }}
   </footer>
 
   {{- if .Param "comments" }}
