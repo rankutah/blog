@@ -4,6 +4,10 @@ is_published: Published
 title: Business Women’s Forum • Salt Lake City, UT • July 29 2025
 tags:
   - event
+startDate: 2025-06-29T11:00
+endDate: 2025-06-29T13:00
+locationName: Rice–Eccles Stadium
+locationAddress: 451 S 1400 E, Salt Lake City, UT 84112, USA
 ---
 ![Profile image of Katy blommer, the speaker for this women's forum event in Salt Lake City, Utah](https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/2428/Image/Event_Graphics/BWF/2025/729/Headshot2021YellowShirt_square_840227.jpg)
 
