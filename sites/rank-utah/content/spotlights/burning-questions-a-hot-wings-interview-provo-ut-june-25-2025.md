@@ -5,7 +5,7 @@ title: "Burning Questions: A Hot Wings Interview • Provo, UT • June 25, 2025
 tags:
   - event
 ---
-![](https://chamberorganizer.com/afchamber/photos/KILN_FLYER_05152025133131.PNG)
+![](/media/KILN_FLYER_05152025133131.png)
 
 ### Why You Should Join
 
