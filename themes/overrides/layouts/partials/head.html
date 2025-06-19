@@ -1,6 +1,26 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{{/* Theme-init: restore light/dark mode */}}
+<script>
+  ;(() => {
+    const ls = localStorage.getItem("theme");
+    const defaultTheme = "{{ default "auto" .Site.Params.defaultTheme }}";
+    let theme = (ls || defaultTheme) === "auto"
+      ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      : (ls || defaultTheme);
+    document.documentElement.classList.add(`theme-${theme}`);
+    window.toggleTheme = () => {
+      const next = document.documentElement.classList.contains("theme-dark") ? "light" : "dark";
+      document.documentElement.classList.replace(`theme-${theme}`, `theme-${next}`);
+      localStorage.setItem("theme", next);
+      theme = next;
+    };
+  })();
+</script>
+
+
 {{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}
