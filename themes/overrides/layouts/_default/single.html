@@ -34,9 +34,16 @@
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{ partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
-  {{- /* JSON-LD schema for Event */}}
-  {{- if .Params.eventDateTime }}
-    {{- $ed := .Params.eventDateTime | time }}
+  {{ with .Params.image }}
+    <div class="mb-6">
+      <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-auto object-cover" />
+    </div>
+    <p>&nbsp;</p>
+  {{ end }}
+
+  {{/* JSON-LD schema for Event */}}
+  {{ if .Params.eventDateTime }}
+    {{ $ed := time .Params.eventDateTime }}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -66,51 +73,51 @@
       "url": "{{ .Permalink }}"
     }
     </script>
-  {{- end }}
+  {{ end }}
 
-  {{- /* Prepare human-friendly time range */}}
-  {{- if and .Params.startDate .Params.endDate }}
-    {{- $tz := "-06:00" }}
-    {{- $startIso := printf "%s:00%s" .Params.startDate $tz }}
-    {{- $endIso := printf "%s:00%s" .Params.endDate $tz }}
+  {{/* Prepare human-friendly time range */}}
+  {{ if and .Params.startDate .Params.endDate }}
+    {{ $tz := "-06:00" }}
+    {{ $startIso := printf "%s:00%s" .Params.startDate $tz }}
+    {{ $endIso := printf "%s:00%s" .Params.endDate $tz }}
 
-    {{- $start := time $startIso }}
-    {{- $end := time $endIso }}
+    {{ $start := time $startIso }}
+    {{ $end := time $endIso }}
 
-    {{- $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM") ($start.Format "3:04 PM") }}
-    {{- $endStr := cond (eq $end.Minute 0) ($end.Format "3 PM") ($end.Format "3:04 PM") }}
-    {{- $range := printf "%s–%s" $startStr $endStr }}
-  {{- end }}
+    {{ $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM") ($start.Format "3:04 PM") }}
+    {{ $endStr := cond (eq $end.Minute 0) ($end.Format "3 PM") ($end.Format "3:04 PM") }}
+    {{ $range := printf "%s–%s" $startStr $endStr }}
+  {{ end }}
 
-  {{- if (.Param "ShowToc") }}
+  {{ if (.Param "ShowToc") }}
     {{ partial "toc.html" . }}
-  {{- end }}
+  {{ end }}
 
   <div class="post-content">
-    {{- /* Inject event details below first image in body, with fallback if no image */ }}
-    {{- $eventDetails := printf `<div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300">
+    {{/* Inject event details below first image in body, with fallback if no image */}}
+    {{ $eventDetails := printf `<div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300">
       <p><strong>When:</strong> %s</p>
-      {{- with .Params.locationName }}<p><strong>Where:</strong> %s</p>{{- end }}
-      {{- with .Params.locationAddress }}<p><strong>Address:</strong> %s</p>{{- end }}
+      {{ with .Params.locationName }}<p><strong>Where:</strong> %s</p>{{ end }}
+      {{ with .Params.locationAddress }}<p><strong>Address:</strong> %s</p>{{ end }}
     </div>` $range .Params.locationName .Params.locationAddress }}
-    {{- $content := .Content }}
-    {{- $aug := replaceRE "(?s)(<img[^>]+>)" (printf "${1}\n\n%s" $eventDetails) $content }}
-    {{- if eq $aug $content }}
-      {{- $aug = printf "%s\n\n%s" $eventDetails $content }}
-    {{- end }}
-    {{- $aug | safeHTML }}
+    {{ $content := .Content }}
+    {{ $aug := replaceRE "(?s)(<img[^>]+>)" (printf "${1}\n\n%s" $eventDetails) $content }}
+    {{ if eq $aug $content }}
+      {{ $aug = printf "%s\n\n%s" $eventDetails $content }}
+    {{ end }}
+    {{ $aug | safeHTML }}
   </div>
 
   {{ partial "tag-badges.html" . }}
 
   <footer class="post-footer mt-8">
-    {{- if (.Param "ShowPostNavLinks") }}{{ partial "post_nav_links.html" . }}{{- end }}
-    {{- if and site.Params.ShowShareButtons (not .Params.disableShare) }}{{ partial "share_icons.html" . }}{{- end }}
+    {{ if (.Param "ShowPostNavLinks") }}{{ partial "post_nav_links.html" . }}{{ end }}
+    {{ if and site.Params.ShowShareButtons (not .Params.disableShare) }}{{ partial "share_icons.html" . }}{{ end }}
   </footer>
 
-  {{- if .Param "comments" }}
+  {{ if .Param "comments" }}
     {{ partial "comments.html" . }}
-  {{- end }}
+  {{ end }}
 </article>
 
 {{- end }}
