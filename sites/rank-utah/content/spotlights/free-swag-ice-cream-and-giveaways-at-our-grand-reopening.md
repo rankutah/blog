@@ -4,6 +4,10 @@ is_published: Published
 title: "FREE Swag, Ice Cream & Giveaways at Our Grand Reopening! "
 tags:
   - event
+startDate: 2025-06-21T12:00
+endDate: 2025-06-21T16:00
+locationName: The Vault Nail Supply & Salon
+locationAddress: 555 W 100 N, Suite C & D, Providence, UT, 84332 , USA
 ---
 ![](/media/Screenshot%202025-06-16%20at%202.36.38%E2%80%AFPM.png)
 
