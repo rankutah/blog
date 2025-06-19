@@ -27,8 +27,8 @@ pruneTaxonomies = true
   clientName        = "Rank Utah"
   clientURL         = "https://rankutah.com"
   mainSections      = ["spotlights"]
-  defaultTheme      = "auto"
-  disableThemeToggle = false
+  defaultTheme      = "auto" # auto set light/dark mode based on OS preference
+  disableThemeToggle = false # make it so you can toggle the light/dark mode
 
 [permalinks]
   spotlights   = "/:slug/"
