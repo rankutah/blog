@@ -11,8 +11,6 @@ locationAddress: 1000 N. 550 E., American Fork, UT 84003, USA
 ---
 ![](/media/Screenshot%202025-06-19%20at%204.03.33%E2%80%AFPM.png)
 
-![](/media/American%20Fork%20Talent%20Show%202025.jpg)
-
 **AMERICAN FORK’S GOT TALENT**  
 _Presented in conjunction with the Timpanogos Arts Foundation_  
 _Sponsored by_ [_Oliver’s Place_](https://oliversplaceut.com/)
