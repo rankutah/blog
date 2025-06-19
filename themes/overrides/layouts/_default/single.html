@@ -81,7 +81,7 @@
 
   <div class="post-content">
     {{- if and .Params.startDate .Params.endDate }}
-      {{/* Prepare human-friendly time range */}}
+      {{/* Prepare human-friendly date and time range */}}
       {{ $tz := "-06:00" }}
       {{ $startIso := printf "%s:00%s" .Params.startDate $tz }}
       {{ $endIso := printf "%s:00%s" .Params.endDate $tz }}
@@ -89,9 +89,10 @@
       {{ $start := time $startIso }}
       {{ $end := time $endIso }}
 
+      {{ $dateStr := $start.Format "January 2, 2006" }}
       {{ $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM") ($start.Format "3:04 PM") }}
       {{ $endStr := cond (eq $end.Minute 0) ($end.Format "3 PM") ($end.Format "3:04 PM") }}
-      {{ $range := printf "%s–%s" $startStr $endStr }}
+      {{ $range := printf "%s, %s – %s" $dateStr $startStr $endStr }}
 
       {{/* Build conditional Where and Address blocks */}}
       {{ $whereBlock := "" }}
