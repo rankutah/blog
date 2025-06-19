@@ -1,4 +1,7 @@
 {{ $isEvent := .Params.startDate }}
+{{- /* Grab the first <img> src from the rendered body HTML for schema */ -}}
+{{- $firstImg := replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content }}
+
 <script type="application/ld+json">
 {{ if $isEvent }}
 {
@@ -12,9 +15,7 @@
     "name": {{ with .Params.locationName | safeJS }}"{{ . }}"{{ else }}"{{ "" }}"{{ end }},
     "address": {{ with .Params.locationAddress | safeJS }}"{{ . }}"{{ else }}"{{ "" }}"{{ end }}
   },
-  {{ with .Params.image }}
-  "image": ["{{ . | relURL }}"],
-  {{ end }}
+  "image": ["{{ if $firstImg }}{{ $firstImg }}{{ else if .Params.image }}{{ .Params.image | relURL }}{{ end }}"],
   "description": {{ with .Summary | htmlUnescape | safeJS }}"{{ . }}"{{ else }}"{{ .Params.body | plainify | safeJS }}"{{ end }},
   "url": "{{ .Permalink }}"
 }
