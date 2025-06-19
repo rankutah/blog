@@ -6,7 +6,7 @@
 <script>
   ;(() => {
     const ls = localStorage.getItem("theme");
-    const defaultTheme = "{{ default "auto" .Site.Params.defaultTheme }}";
+    const defaultTheme = '{{ default "auto" .Site.Params.defaultTheme }}';
     let theme = (ls || defaultTheme) === "auto"
       ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
       : (ls || defaultTheme);
