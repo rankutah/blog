@@ -27,6 +27,8 @@ pruneTaxonomies = true
   clientName        = "Rank Utah"
   clientURL         = "https://rankutah.com"
   mainSections      = ["spotlights"]
+  defaultTheme      = "auto"
+  disableThemeToggle = false
 
 [permalinks]
   spotlights   = "/:slug/"
