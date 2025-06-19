@@ -1,6 +1,6 @@
 ---
 date: 2025-06-19
-is_published: Draft
+is_published: Published
 title: American Fork's Got Talent | American Fork Steel Days | July 18, 2025
 tags:
   - event
