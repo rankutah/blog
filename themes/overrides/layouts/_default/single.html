@@ -45,12 +45,18 @@
     <p>&nbsp;</p>
   {{- end }}
 
+  {{- /* Natural time range with offset for startDate/endDate */ -}}
   {{- if and .Params.startDate .Params.endDate }}
-    {{- $start := time .Params.startDate }}
-    {{- $end   := time .Params.endDate }}
-    {{- $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM") ($start.Format "3:04 PM") }}
-    {{- $endStr   := cond (eq $end.Minute   0) ($end.Format   "3 PM") ($end.Format   "3:04 PM") }}
-    {{- $range    := printf "%s\u2013%s" $startStr $endStr }}
+    {{- $tz       := "-06:00" -}}
+    {{- $startIso := printf "%s:00%s" .Params.startDate $tz -}}
+    {{- $endIso   := printf "%s:00%s" .Params.endDate   $tz -}}
+
+    {{- $start := time $startIso -}}
+    {{- $end   := time $endIso   -}}
+
+    {{- $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM")    ($start.Format "3:04 PM") -}}
+    {{- $endStr   := cond (eq $end.Minute   0) ($end.Format   "3 PM")    ($end.Format   "3:04 PM") -}}
+    {{- $range    := printf "%s–%s" $startStr $endStr             -}}
 
     <div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300">
       <p><strong>When:</strong> {{ $range }}</p>
@@ -62,8 +68,6 @@
       {{- end }}
     </div>
   {{- end }}
-
-
 
   {{- if .Params.eventDateTime }}
     {{- $ed := .Params.eventDateTime | time -}}
