@@ -2,6 +2,8 @@
 date: 2025-06-19
 is_published: Published
 title: "Grand Opening  Multiple Sclerosis Clinic in Lehi "
+tags:
+  - event
 startDate: 2025-06-26T17:00
 endDate: 2025-06-26T18:30
 locationName: Rocky Mountain Multiple Sclerosis Clinic & Outpatient Infusion Center
