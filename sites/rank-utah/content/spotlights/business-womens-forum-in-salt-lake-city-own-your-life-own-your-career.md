@@ -4,12 +4,13 @@ is_published: Published
 title: Business Women’s Forum • Salt Lake City, UT • July 29 2025
 tags:
   - event
-image: /media/katy-blommer-presenter.jpg
 startDate: 2025-06-29T11:00
 endDate: 2025-06-29T13:00
 locationName: Rice–Eccles Stadium
 locationAddress: 451 S 1400 E, Salt Lake City, UT 84112, USA
 ---
+![](/media/katy-blommer-presenter-1.jpg)
+
 ## Own Your Life, Own Your Career
 
 The Unexpected Path to Your Career Success
