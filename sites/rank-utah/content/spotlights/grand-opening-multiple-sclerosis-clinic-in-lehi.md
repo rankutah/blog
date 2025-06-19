@@ -1,7 +1,7 @@
 ---
 date: 2025-06-19
 is_published: Published
-title: "Grand Opening  Multiple Sclerosis Clinic in Lehi "
+title: Multiple Sclerosis Clinic in Lehi | Grand Opening | June 26, 2025
 tags:
   - event
 startDate: 2025-06-26T17:00
