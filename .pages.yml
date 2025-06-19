@@ -118,10 +118,6 @@ content:
             url: https://spotlight.rankutah.com/tags/tags.json
             method: GET
             results: ""
-      - name: image
-        component: imageField
-        options:
-          media: rank-utah
       - name: body
         component: bodyField
       - name: startDate
@@ -156,10 +152,6 @@ content:
         component: titleField
       - name: tags
         component: tagsField
-      - name: image
-        component: imageField
-        options:
-          media: client-foo
       - name: body
         component: bodyField
       - name: startDate
