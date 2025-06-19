@@ -7,7 +7,6 @@ tags:
 startDate: 2025-06-28T10:00
 endDate: 2025-06-28T14:00
 locationName: Blue Zero Motoring (1484 N. State, Orem) & Kneeders (1960 N. State, Orem)
-locationAddress: 1484 N. State, Orem UT, 84057 • 1960 N. State, Orem UT, 84057
 ---
 ![](/media/carwash.jpg)
 
