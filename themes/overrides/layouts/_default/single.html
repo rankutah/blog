@@ -34,14 +34,36 @@
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{ partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
-  {{- /* Featured image from front matter, optimized via Hugo Pipes */}}
-  {{- $page := . }}
   {{- with .Params.image }}
     <div class="mb-6">
-      {{ partial "optimized-image.html" (dict "Page" $page "Src" . "Alt" $.Title) }}
+      <img
+        src="{{ . }}"
+        alt="{{ $.Title }}"
+        class="w-full h-auto object-cover"
+      />
     </div>
     <p>&nbsp;</p>
   {{- end }}
+
+  {{- if and .Params.startDate .Params.endDate }}
+    {{- $start := time .Params.startDate }}
+    {{- $end   := time .Params.endDate }}
+    {{- $startStr := cond (eq $start.Minute 0) ($start.Format "3 PM") ($start.Format "3:04 PM") }}
+    {{- $endStr   := cond (eq $end.Minute   0) ($end.Format   "3 PM") ($end.Format   "3:04 PM") }}
+    {{- $range    := printf "%s\u2013%s" $startStr $endStr }}
+
+    <div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300">
+      <p><strong>When:</strong> {{ $range }}</p>
+      {{- with .Params.locationName }}
+        <p><strong>Where:</strong> {{ . }}</p>
+      {{- end }}
+      {{- with .Params.locationAddress }}
+        <p><strong>Address:</strong> {{ . }}</p>
+      {{- end }}
+    </div>
+  {{- end }}
+
+
 
   {{- if .Params.eventDateTime }}
     {{- $ed := .Params.eventDateTime | time -}}
