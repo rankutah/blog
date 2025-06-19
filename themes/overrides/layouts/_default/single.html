@@ -93,12 +93,20 @@
       {{ $endStr := cond (eq $end.Minute 0) ($end.Format "3 PM") ($end.Format "3:04 PM") }}
       {{ $range := printf "%s–%s" $startStr $endStr }}
 
-      {{/* Inject event details below first image in body, fallback if no image */}}
-      {{ $eventDetails := printf `<div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300">
-        <p><strong>When:</strong> %s</p>
-        {{ with .Params.locationName }}<p><strong>Where:</strong> %s</p>{{ end }}
-        {{ with .Params.locationAddress }}<p><strong>Address:</strong> %s</p>{{ end }}
-      </div>` $range .Params.locationName .Params.locationAddress }}
+      {{/* Build conditional Where and Address blocks */}}
+      {{ $whereBlock := "" }}
+      {{ if .Params.locationName }}
+        {{ $whereBlock = printf "<p><strong>Where:</strong> %s</p>" .Params.locationName }}
+      {{ end }}
+      {{ $addressBlock := "" }}
+      {{ if .Params.locationAddress }}
+        {{ $addressBlock = printf "<p><strong>Address:</strong> %s</p>" .Params.locationAddress }}
+      {{ end }}
+
+      {{/* Combine into eventDetails string */}}
+      {{ $eventDetails := printf `<div class="event-details mb-6 text-sm text-gray-700 dark:text-gray-300"><p><strong>When:</strong> %s</p>%s%s</div>` $range $whereBlock $addressBlock }}
+
+      {{/* Inject event details below first image, fallback if no image */}}
       {{ $content := .Content }}
       {{ $aug := replaceRE "(?s)(<img[^>]+>)" (printf "${1}\n\n%s" $eventDetails) $content }}
       {{ if eq $aug $content }}
