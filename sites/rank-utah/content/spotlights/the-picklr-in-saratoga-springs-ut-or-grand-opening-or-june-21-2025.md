@@ -5,6 +5,7 @@ title: The Picklr in Saratoga Springs, UT | Grand Opening | June 21 2025
 tags:
   - event
 startDate: 2025-06-21T11:00
+endDate: 2025-06-21T13:00
 locationName: The Picklr
 locationAddress: 629 Saratoga Rd, Saratoga Springs, UT, 84043, USA
 ---
