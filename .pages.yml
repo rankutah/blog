@@ -18,7 +18,6 @@ components:
   dateField:
     label: Date
     type: date
-    required: true
     description: |
       Pick today’s date, or change it if you need to backdate your post.
 
