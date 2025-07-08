@@ -1,10 +1,10 @@
 media:
   - name: rank-utah
     input: sites/rank-utah/assets/media
-    output: /media/rank-utah
+    output: media
   - name: nova-gutter
     input: sites/nova-gutter/assets/media
-    output: /media/nova-gutter
+    output: media
 
 components:
   titleField:
