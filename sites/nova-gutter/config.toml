@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────────────────────
+baseURL       = "https://blog.novagutter.com/"
+title         = "Nova Gutter"
+languageCode  = "en-us"
+theme         = ["overrides", "PaperMod"]
+themesDir     = "../../themes"
+# ─────────────────────────────────────────────────────────────────────────────
+
+pruneTaxonomies = true
+
+# add JSON output for tag terms
+[outputFormats.JSON]
+  mediaType    = "application/json"
+  baseName     = "tags"
+  isPlainText  = true
+
+[outputs]
+  home         = ["HTML", "RSS", "JSON"]
+  taxonomyTerm = ["HTML", "JSON"]    # ← tell Hugo to build JSON for all term pages
+  taxonomy     = ["HTML","JSON"]   # ← ADD this line
+
+[params]
+  googleAnalyticsID = ""
+  accentColor       = "#f3844b"
+  showReadingTime   = true
+  enableSearch      = true
+  clientName        = "Nova Gutter"
+  clientURL         = "https://novagutter.com"
+  mainSections      = ["posts"]
+  defaultTheme      = "auto" # auto set light/dark mode based on OS preference
+  disableThemeToggle = false # make it so you can toggle the light/dark mode
+
+[permalinks]
+  spotlights   = "/:slug/"
+
+[taxonomies]
+  tag          = "tags"
+
+[menu]
+
+  [[menu.main]]
+    name   = "Home"
+    url    = "https://novagutter.com"
+    weight = 1
+
+  [[menu.main]]
+    name   = "Posts"
+    url    = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name   = "Tags"
+    url    = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name   = "Search"
+    url    = "/search/"
+    weight = 4
