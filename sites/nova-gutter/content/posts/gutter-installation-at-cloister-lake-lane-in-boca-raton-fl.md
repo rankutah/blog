@@ -4,7 +4,7 @@ title: Gutter Installation at Cloister Lake Lane in Boca Raton, FL
 tags:
   - residential
 ---
-![](/media/boca-raton-residential-gutter-installation-project1.jpg)
+![](/media/rank-utah/boca-raton-residential-gutter-installation-project1.jpg)
 
 This Boca Raton residence wanted to boost their curb appeal and prevent unneeded maintenance by updating their gutter system. The home was inside a goregous community on Lake Lane in Boca. This [**residential gutter installation**](https://www.novagutter.com/residential-gutter-installation-boca-raton-fl.php) was fairly straightforward. After gathering measurements and materials we were able to easily install these beautiful seamless aluminum gutters in white.
 
