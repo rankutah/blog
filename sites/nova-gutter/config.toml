@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-baseURL       = "https://blog.novagutter.com/"
+baseURL       = "https://nova-gutter.pages.dev/"
 title         = "Nova Gutter"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
