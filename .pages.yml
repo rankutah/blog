@@ -159,6 +159,11 @@ content:
         component: bodyField
         options:
           media: nova-gutter
+      - name: body
+        label: Body
+        type: code
+        options:
+          language: html
       - name: startDate
         component: startDateField
       - name: endDate
