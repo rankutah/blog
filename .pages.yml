@@ -131,7 +131,7 @@ content:
   - name: nova-gutter
     label: nova-gutter posts
     type: collection
-    path: media/nova-gutter
+    path: sites/nova-gutter/content/posts
     filename: "{primary}.md"
 
     view:
@@ -159,7 +159,7 @@ content:
         label: cover
         type: image
         options: 
-          path: sites/nova-gutter/assets/media
+          path: media/nova-gutter
       - name: body
         component: bodyField
       - name: startDate
