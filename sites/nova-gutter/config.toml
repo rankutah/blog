@@ -9,10 +9,15 @@ themesDir     = "../../themes"
 pruneTaxonomies = true
 
 # add JSON output for tag terms
-[outputFormats.JSON]
+[outputFormats.TagsJSON]
   mediaType    = "application/json"
   baseName     = "tags"
   isPlainText  = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [outputs]
   home         = ["HTML", "RSS", "JSON"]
