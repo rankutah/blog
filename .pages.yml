@@ -159,8 +159,8 @@ content:
         component: bodyField
         options:
           media: nova-gutter
-      - name: body
-        label: Body
+      - name: body2
+        label: Body2
         type: code
         options:
           language: html
