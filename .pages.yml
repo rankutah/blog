@@ -159,7 +159,7 @@ content:
         label: cover
         type: image
         options: 
-          path: media/nova-gutter
+          path: sites/nova-gutter/assets/media
       - name: body
         component: bodyField
       - name: startDate
