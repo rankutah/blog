@@ -45,7 +45,7 @@ pruneTaxonomies = true
 
   [[menu.main]]
     name   = "Posts"
-    url    = "/posts/"
+    url    = "/"
     weight = 2
 
   [[menu.main]]
