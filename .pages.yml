@@ -3,9 +3,9 @@ media:
     input: sites/rank-utah/assets/media
     output: /media
   # To add another client, duplicate this block and adjust paths
-  - name: client-foo
-    input: sites/client-foo/assets/media
-    output: /media/client-foo
+  - name: nova-gutter
+    input: sites/nova-gutter/assets/media
+    output: /media
 
 components:
   titleField:
@@ -115,7 +115,7 @@ content:
         component: tagsField
         options:
           fetch:
-            url: https://spotlight.rankutah.com/tags/tags.json
+            url: https://spotlight.rankutah.com/tags/index.json
             method: GET
             results: ""
       - name: body
@@ -130,10 +130,10 @@ content:
         component: locationAddressField
 
   # Example: new client setup
-  - name: client-foo
-    label: client-foo posts
+  - name: nova-gutter
+    label: nova-gutter posts
     type: collection
-    path: sites/client-foo/content/spotlights
+    path: sites/nova-gutter/content/posts
     filename: "{primary}.md"
 
     view:
@@ -152,6 +152,11 @@ content:
         component: titleField
       - name: tags
         component: tagsField
+        options:
+          fetch:
+            url: https://nova-gutter.pages.dev/tags/index.json
+            method: GET
+            results: ""
       - name: body
         component: bodyField
       - name: startDate
