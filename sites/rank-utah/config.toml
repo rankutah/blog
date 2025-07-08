@@ -16,6 +16,7 @@ pruneTaxonomies = true
 
 [outputs]
   home         = ["HTML", "RSS", "JSON"]
+  section      = ["HTML", "JSON"]
   taxonomyTerm = ["HTML", "JSON"]    # ← tell Hugo to build JSON for all term pages
   taxonomy     = ["HTML","JSON"]   # ← ADD this line
 
