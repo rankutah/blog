@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Fort Lauderdale Gutters
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/gutters-fort-lauderdale-fl.jpg)
 

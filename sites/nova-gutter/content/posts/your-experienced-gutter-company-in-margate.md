@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Your Experienced Gutter Company in Margate
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/gutters-margate-fl.jpg)
 

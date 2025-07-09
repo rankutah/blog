@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Unbeatable Gutter Services in Coconut Creek
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/gutters-homestead-fl.jpg)
 

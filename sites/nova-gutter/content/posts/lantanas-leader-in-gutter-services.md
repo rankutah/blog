@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Lantana’s Leader in Gutter Services
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/gutters-jupiter-fl.jpg)
 

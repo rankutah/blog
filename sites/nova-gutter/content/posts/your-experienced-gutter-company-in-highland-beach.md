@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Your Experienced Gutter Company in Highland Beach
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/gutters-jupiter-fl.jpg)
 

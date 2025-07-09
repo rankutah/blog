@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: The Local Experts for Broward County Gutters
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/gutters-jupiter-fl.jpg)
 

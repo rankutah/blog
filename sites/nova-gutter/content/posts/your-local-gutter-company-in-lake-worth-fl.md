@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Your Local Gutter Company in Lake Worth, FL
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/should-you-install-gutters-yourself.jpg)
 

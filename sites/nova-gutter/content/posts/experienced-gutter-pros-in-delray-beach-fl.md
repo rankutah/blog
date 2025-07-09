@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Experienced Gutter Pros in Delray Beach, FL
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/should-you-install-gutters-yourself.jpg)
 

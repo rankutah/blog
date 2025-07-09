@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: The Local Deerfield Beach Gutters Company
 tags:
-  - service-areas
+  - service-area
 ---
 ![](/media/gutters-homestead-fl.jpg)
 

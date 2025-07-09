@@ -3,7 +3,7 @@ date: 2025-07-09
 is_published: Published
 title: Your Source for Parkland Gutters
 tags:
-  - service-areas
+  - service-area
 ---
 ![gutters Parkland fl](https://www.novagutter.com/images/pages/gutters-parkland-fl.jpg)
 
