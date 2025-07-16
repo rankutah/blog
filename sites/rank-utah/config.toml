@@ -53,6 +53,9 @@ pruneTaxonomies = true
   CTAText          = "Book Now"
   CTAURL           = "/contact/"
   logoHeight       = "h-10"
+  phoneNumber        = "+1-800-123-4567"
+  showPhoneOnMobile  = true
+  showPhoneOnDesktop = true
 
 [menu]
   [[menu.main]]
