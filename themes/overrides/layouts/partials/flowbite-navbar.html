@@ -1,0 +1,134 @@
+{{/*
+  Header partial that:
+    - Reads menu from [menu.main]
+    - Pulls logoFile from params.logo (if set) or defaults to "logo.png"
+    - Sizes logo with configurable height via params.header.logoHeight
+    - Supports stickyMobile, stickyDesktop, showCTAOnMobile, showCTAOnDesktop, CTAText, CTAURL under [params.header]
+*/}}
+{{ $stickyMobile     := default true  .Site.Params.header.stickyMobile }}
+{{ $stickyDesktop    := default true  .Site.Params.header.stickyDesktop }}
+{{ $showCTAOnMobile  := default true  .Site.Params.header.showCTAOnMobile }}
+{{ $showCTAOnDesktop := default true  .Site.Params.header.showCTAOnDesktop }}
+{{ $CTAText          := default "Get started" .Site.Params.header.CTAText }}
+{{ $CTAURL           := default "/"       .Site.Params.header.CTAURL }}
+
+// pick the logo filename: use params.logo if set, otherwise default to logo.png
+{{ $logoFile        := default "logo.png" .Site.Params.logo }}
+// pick logo height class: use params.header.logoHeight if set, otherwise default to h-8
+{{ $logoHeightClass := default "h-8" .Site.Params.header.logoHeight }}
+
+<nav class="
+     bg-white dark:bg-gray-900
+     {{ if $stickyMobile }}fixed top-0 start-0 w-full z-20 border-b border-gray-200 dark:border-gray-600{{ end }}
+     {{ if $stickyDesktop }} md:fixed md:top-0 md:start-0{{ end }}
+  ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+    <!-- Logo / Site Title -->
+    <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img
+        src="{{ $logoFile | relURL }}"
+        class="{{ $logoHeightClass }} w-auto"
+        alt="{{ .Site.Title }} logo"
+      />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+        {{ .Site.Title }}
+      </span>
+    </a>
+
+    <!-- CTA + Mobile Toggle -->
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      {{ if or $showCTAOnMobile $showCTAOnDesktop }}
+      <a
+        href="{{ $CTAURL | relURL }}"
+        class="
+          font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none
+          {{ if $showCTAOnMobile }}inline-flex{{ else }}hidden{{ end }}
+          {{ if $showCTAOnDesktop }} md:inline-flex{{ else }} md:hidden{{ end }}
+          text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300
+          dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
+        "
+      >
+        {{ $CTAText }}
+      </a>
+      {{ end }}
+
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg
+               md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200
+               dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+             fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu items -->
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50
+                 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white
+                 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        {{ range .Site.Menus.main }}
+          <li>
+            {{ if .HasChildren }}
+              <!-- Parent with dropdown -->
+              <button
+                id="dropdown-{{ .Identifier }}"
+                data-dropdown-toggle="dropdown-{{ .Identifier }}"
+                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100
+                       md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto
+                       dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white
+                       dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                {{ .Name }}
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                     fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+              <div id="dropdown-{{ .Identifier }}"
+                   class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44
+                          dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdown-{{ .Identifier }}">
+                  {{ range .Children }}
+                    <li>
+                      <a
+                        href="{{ .URL | relURL }}"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        {{ .Name }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ else }}
+              <!-- Simple link -->
+              <a
+                href="{{ .URL | relURL }}"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100
+                       md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0
+                       dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700
+                       dark:hover:text-white md:dark:hover:bg-transparent"
+                {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}
+              >
+                {{ .Name }}
+              </a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

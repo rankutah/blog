@@ -42,6 +42,18 @@ pruneTaxonomies = true
 [taxonomies]
   tag          = "tags"
 
+[build]
+  useResourceCacheWhen = "never"
+
+[params.header]
+  stickyMobile     = true
+  stickyDesktop    = true
+  showCTAOnMobile  = true
+  showCTAOnDesktop = true
+  CTAText          = "Book Now"
+  CTAURL           = "/contact/"
+  logoHeight       = "h-10"
+
 [menu]
   [[menu.main]]
     name   = "Spotlights"

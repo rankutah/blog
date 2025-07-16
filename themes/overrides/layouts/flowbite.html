@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+  {{/* Pull in your compiled Tailwind/Flowbite CSS */}}
+  {{- $flow := resources.Get "css/main.css" | postCSS | resources.Minify }}
+  {{- if not .Site.Params.assets.disableFingerprinting }}
+    {{- $flow = $flow | fingerprint }}
+    <link rel="preload stylesheet"
+          as="style"
+          crossorigin="anonymous"
+          href="{{ $flow.RelPermalink }}"
+          integrity="{{ $flow.Data.Integrity }}">
+  {{- else }}
+    <link rel="preload stylesheet"
+          as="style"
+          crossorigin="anonymous"
+          href="{{ $flow.RelPermalink }}">
+  {{- end }}
+</head>
+
+<body class="flowbite-landing">
+  {{ .Content }}
+
+  <!-- Flowbite JS -->
+  <script src="{{ "js/flowbite.min.js" | relURL }}"></script>
+</body>
+</html>

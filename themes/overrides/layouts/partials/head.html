@@ -57,11 +57,35 @@
 {{- $core := (slice $theme_vars $reset $common $chroma_styles $chroma_mod $includes_all $media) | resources.Concat "assets/css/core.css" | resources.Minify }}
 {{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
 {{- $stylesheet := (slice (resources.Get "css/core/license.css") $core $extended) | resources.Concat "assets/css/stylesheet.css" }}
+
 {{- if not site.Params.assets.disableFingerprinting }}
   {{- $stylesheet = $stylesheet | fingerprint }}
-  <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous"
+        href="{{ $stylesheet.RelPermalink }}"
+        integrity="{{ $stylesheet.Data.Integrity }}"
+        rel="preload stylesheet"
+        as="style">
 {{- else }}
-  <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+  <link crossorigin="anonymous"
+        href="{{ $stylesheet.RelPermalink }}"
+        rel="preload stylesheet"
+        as="style">
+{{- end }}
+
+<!-- Flowbite CSS -->
+{{- $flow := resources.Get "css/main.css" | postCSS | resources.Minify }}
+{{- if not site.Params.assets.disableFingerprinting }}
+  {{- $flow = $flow | fingerprint }}
+  <link crossorigin="anonymous"
+        href="{{ $flow.RelPermalink }}"
+        integrity="{{ $flow.Data.Integrity }}"
+        rel="preload stylesheet"
+        as="style">
+{{- else }}
+  <link crossorigin="anonymous"
+        href="{{ $flow.RelPermalink }}"
+        rel="preload stylesheet"
+        as="style">
 {{- end }}
 
 {{- /* Add taxonomy badge CSS here */}}
@@ -105,7 +129,6 @@
         .top-link {
             display: none;
         }
-
     </style>
     {{- if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark")) }}
     <style>
@@ -116,7 +139,7 @@
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
+                --content: rgb(196, 196,197);
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
@@ -134,13 +157,11 @@
                 border-color: var(--theme);
             }
         }
-
     </style>
     {{- end }}
 </noscript>
 
 {{- partial "extend_head.html" . -}}
-
 {{ partial "schema.html" . }}
 
 {{- /* Misc: analytics & social previews */}}
@@ -155,7 +176,6 @@
     <meta name="twitter:image" content="{{ $firstImg }}" />
   {{- end }}
 
-  {{- /* Other OG/Twitter tags */ -}}
   {{ partial "templates/opengraph.html" . | safeHTML }}
   {{ partial "templates/twitter_cards.html" . }}
 {{- end -}}
