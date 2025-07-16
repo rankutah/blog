@@ -7,6 +7,5 @@ draft: false
 
 {{< navbar >}}
 
-First flowbite page. Testing component soon. 
 
 {{< accordion >}}
