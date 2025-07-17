@@ -27,6 +27,7 @@ pruneTaxonomies = true
 
 [params]
   googleAnalyticsID = "G-LGYK5V1CTV"
+  brandColor        = "rose"
   accentColor       = "#f3844b"
   showReadingTime   = true
   enableSearch      = true
@@ -44,6 +45,11 @@ pruneTaxonomies = true
 
 [build]
   useResourceCacheWhen = "never"
+  [build.processing]
+    [build.processing.css]
+      config = "../../themes/overrides/postcss.config.js"
+    [[build.processing.css.targets]]
+      src = "**/main.css"
 
 [params.header]
   stickyMobile     = true

@@ -1,9 +1,11 @@
 {
   "name": "blog",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah"
   },
   "repository": {
     "type": "git",
@@ -17,14 +19,12 @@
   },
   "homepage": "https://github.com/rankutah/blog#readme",
   "description": "",
-  "dependencies": {
-    "autoprefixer": "^10.4.21",
-    "flowbite": "^3.1.2",
-    "postcss": "^8.5.6"
-  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.21",
+    "flowbite": "^3.1.2",
+    "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.1.11"
   }

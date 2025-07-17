@@ -6,21 +6,24 @@
     - Toggles sticky on mobile/desktop via params.header.stickyMobile & stickyDesktop
     - Supports CTA button via params.header.showCTAOnMobile, showCTAOnDesktop, CTAText, CTAURL
     - Supports phone icon via params.header.showPhoneOnMobile and phoneNumber (US only)
+    - Uses dynamic brandColor for the CTA utilities
 */}}
 
-{{ $stickyMobile  := default true  .Site.Params.header.stickyMobile }}
-{{ $stickyDesktop := default true  .Site.Params.header.stickyDesktop }}
+{{ $stickyMobile    := default true  .Site.Params.header.stickyMobile }}
+{{ $stickyDesktop   := default true  .Site.Params.header.stickyDesktop }}
 
 {{ $showCTAOnMobile  := default true  .Site.Params.header.showCTAOnMobile }}
 {{ $showCTAOnDesktop := default true  .Site.Params.header.showCTAOnDesktop }}
 {{ $CTAText          := default "Get started" .Site.Params.header.CTAText }}
 {{ $CTAURL           := default "/"         .Site.Params.header.CTAURL }}
 
-{{ $showPhoneOnMobile := default true  .Site.Params.header.showPhoneOnMobile }}
-{{ $phoneNumber       := default "800-123-4567" .Site.Params.header.phoneNumber }}
+{{ $showPhoneOnMobile := default false .Site.Params.header.showPhoneOnMobile }}
+{{ $phoneNumber       := default ""    .Site.Params.header.phoneNumber }}
 
 {{ $logoFile        := default "logo.png" .Site.Params.logo }}
 {{ $logoHeightClass := default "h-8"      .Site.Params.header.logoHeight }}
+
+{{ $c := default "blue" .Site.Params.brandColor }}
 
 <nav
   class="bg-white dark:bg-gray-900 h-16
@@ -30,11 +33,7 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img
-        src="{{ $logoFile | relURL }}"
-        class="{{ $logoHeightClass }} w-auto"
-        alt="{{ .Site.Title }} logo"
-      />
+      <img src="{{ $logoFile | relURL }}" class="{{ $logoHeightClass }} w-auto" alt="{{ .Site.Title }} logo" />
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
         {{ .Site.Title }}
       </span>
@@ -42,15 +41,15 @@
 
     <!-- Actions: CTA, Phone (mobile only), Hamburger Toggle -->
     <div class="flex md:order-2 items-center space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <!-- CTA Button -->
+      <!-- CTA Button with dynamic brand color -->
       {{ if or $showCTAOnMobile $showCTAOnDesktop }}
       <a
         href="{{ $CTAURL | relURL }}"
-        class="font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none
+        class="font-medium rounded-lg text-sm px-4 py-2
                {{ if $showCTAOnMobile }}inline-flex{{ else }}hidden{{ end }}
                {{ if $showCTAOnDesktop }} md:inline-flex{{ else }} md:hidden{{ end }}
-               text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300
-               dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+               text-white bg-{{ $c }}-700 hover:bg-{{ $c }}-800 focus:ring-{{ $c }}-300
+               dark:bg-{{ $c }}-600 dark:hover:bg-{{ $c }}-700 dark:focus:ring-{{ $c }}-900"
       >
         {{ $CTAText }}
       </a>
@@ -91,8 +90,7 @@
     <!-- Menu items -->
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50
-                 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white
-                 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         {{ range .Site.Menus.main }}
           <li>
             {{ if .HasChildren }}
@@ -101,8 +99,8 @@
                 id="dropdown-{{ .Identifier }}"
                 data-dropdown-toggle="dropdown-{{ .Identifier }}"
                 class="flex items-center justify-between w-full py-2 px-3 text-gray-900
-                       hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700
-                       md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500
+                       hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-{{ $c }}-700
+                       md:p-0 md:w-auto dark:text-white md:dark:hover:text-{{ $c }}-500
                        dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
               >
                 {{ .Name }}
@@ -129,8 +127,8 @@
               <a
                 href="{{ .URL | relURL }}"
                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100
-                       md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0
-                       dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700
+                       md:hover:bg-transparent md:border-0 md:hover:text-{{ $c }}-700 md:p-0
+                       dark:text-white md:dark:hover:text-{{ $c }}-500 dark:hover:bg-gray-700
                        dark:hover:text-white md:dark:hover:bg-transparent"
                 {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}
               >
