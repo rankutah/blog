@@ -4,8 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah"
+    "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify",
+    "build:rank-utah": "hugo --source ./sites/rank-utah --gc --cleanDestinationDir --minify"
   },
   "repository": {
     "type": "git",
