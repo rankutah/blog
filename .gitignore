@@ -1,16 +1,19 @@
 # Node.js dependencies
 node_modules/
 
-# Hugo output
-/public/
-sites/*/public/
+# Hugo public output (root and inside any site folders)
+public/
+sites/public/
+
+# Hugo‑Pipes generated resources
+sites/*/resources/_gen/
 
 # Hugo build locks
 **/*.hugo_build.lock
 
-# OS files
+# OS metadata
 **/.DS_Store
 
-# IDE/editor folders
+# IDE/editor files
 .vscode/
 *.swp
