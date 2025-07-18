@@ -6,7 +6,7 @@ public/
 sites/public/
 
 # Hugo‑Pipes generated resources
-sites/*/resources/_gen/
+/sites/*/resources/_gen/**
 
 # Hugo build locks
 **/*.hugo_build.lock
