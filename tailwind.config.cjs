@@ -1,7 +1,13 @@
-// tailwind.config.cjs (project root)
-const defaultTheme = require('tailwindcss/defaultTheme');
+// tailwind.config.cjs
+const plugin = require('tailwindcss/plugin');
+const colors = require('tailwindcss/colors');
 
-/** @type {import('tailwindcss').Config} */
+const PALETTES = [
+  'red','orange','amber','yellow','lime','green','emerald',
+  'teal','cyan','sky','blue','indigo','violet','purple',
+  'fuchsia','pink','rose'
+];
+
 module.exports = {
   darkMode: 'class',
   content: [
@@ -13,6 +19,24 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    // 1) Your CSS‑var palette plugin
+    plugin(({ addBase }) => {
+      const base = { ':root': {} };
+      // default primary = rose
+      Object.entries(colors.rose).forEach(([s, hex]) => {
+        base[':root'][`--color-primary-${s}`] = hex;
+      });
+      // override when <html class="PAL">
+      PALETTES.forEach(pal => {
+        const map = {};
+        Object.entries(colors[pal]).forEach(([s, hex]) => {
+          map[`--color-primary-${s}`] = hex;
+        });
+        base[`.${pal}`] = map;
+      });
+      addBase(base);
+    }),
+
     require('flowbite/plugin'),
     require('@tailwindcss/typography'),
   ],

@@ -5,6 +5,21 @@ url:     "/landing/"
 draft: false
 ---
 
+{{< hero
+    title="This is the title"
+    description="Your description here."
+    buttonLink="#"
+    buttonText="Get started today"
+    btnClass="bg-red-700 hover:bg-red-800 focus:ring-red-300 dark:focus:ring-red-900"
+    secondaryButtonLink="#"
+    secondaryButtonText="Speak to Sales"
+    image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+    imageAlt="mockup"
+>}}
+
+
+
+
 {{< accordion >}}
 
 

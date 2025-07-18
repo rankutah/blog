@@ -1,3 +1,4 @@
+{{/* themes/overrides/layouts/flowbite.html */}}
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}">
 <head>
@@ -5,51 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }} | {{ .Site.Title }}</title>
 
-  {{- /* Pull in your compiled Tailwind/Flowbite CSS */ -}}
+  {{- /* Tailwind + Flowbite CSS via Hugo Pipes */ -}}
   {{- $flow := resources.Get "css/main.css" | postCSS }}
-  <link rel="stylesheet"
-        href="{{ $flow.RelPermalink }}"
-        {{ if $flow.Data.Integrity }}integrity="{{ $flow.Data.Integrity }}"{{ end }}
-        crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="{{ $flow.RelPermalink }}"
+    {{ if $flow.Data.Integrity }}integrity="{{ $flow.Data.Integrity }}"{{ end }}
+    crossorigin="anonymous"
+  >
 </head>
 
 <body class="flowbite-landing">
-  {{ partial "flowbite-navbar.html" . }}
-
-
-  <span class="bg-red-700 text-white px-2 py-1">red</span>
-  <span class="bg-orange-700 text-white px-2 py-1">orange</span>
-  <span class="bg-amber-700 text-white px-2 py-1">amber</span>
-  <span class="bg-yellow-700 text-white px-2 py-1">yellow</span>
-  <span class="bg-lime-700 text-white px-2 py-1">lime</span>
-  <span class="bg-green-700 text-white px-2 py-1">green</span>
-  <span class="bg-emerald-700 text-white px-2 py-1">emerald</span>
-  <span class="bg-teal-700 text-white px-2 py-1">teal</span>
-  <span class="bg-cyan-700 text-white px-2 py-1">cyan</span>
-  <span class="bg-sky-700 text-white px-2 py-1">sky</span>
-  <span class="bg-blue-700 text-white px-2 py-1">blue</span>
-  <span class="bg-indigo-700 text-white px-2 py-1">indigo</span>
-  <span class="bg-violet-700 text-white px-2 py-1">violet</span>
-  <span class="bg-purple-700 text-white px-2 py-1">purple</span>
-  <span class="bg-fuchsia-700 text-white px-2 py-1">fuchsia</span>
-  <span class="bg-pink-700 text-white px-2 py-1">pink</span>
-  <span class="bg-rose-700 text-white px-2 py-1">rose</span>
-
-<div class="p-8 space-y-4">
-  <div class="bg-[var(--color-violet-700)] text-white p-4">VIOLET</div>
-  <div class="bg-[var(--color-teal-700)]  text-white p-4">TEAL</div>
-  <div class="bg-[var(--color-rose-700)]  text-white p-4">ROSE</div>
-  <div class="bg-[var(--color-fuchsia-700)] text-white p-4">FUCHSIA</div>
-</div>
+  {{/* ← Navbar goes here, once per site */}}
+  {{ partial "navbar.html" . }}
 
   <main>
-    {{ .Content }}
+    {{ block "main" . }}{{ .Content }}{{ end }}
   </main>
 
-  <!-- Flowbite JS -->
+  {{/* Flowbite JS bundle */}}
   <script src="{{ "js/flowbite.min.js" | relURL }}"></script>
 
 
 
+
+  <script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const darkIcon    = document.getElementById('theme-toggle-dark-icon');
+  const lightIcon   = document.getElementById('theme-toggle-light-icon');
+
+  // on page load, show correct icon
+  if (localStorage.getItem('theme') === 'dark' || 
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+    lightIcon.classList.remove('hidden');
+  } else {
+    darkIcon.classList.remove('hidden');
+  }
+
+  themeToggle.addEventListener('click', function() {
+    darkIcon.classList.toggle('hidden');
+    lightIcon.classList.toggle('hidden');
+
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
 </body>
 </html>
