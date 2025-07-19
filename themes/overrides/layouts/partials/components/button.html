@@ -1,46 +1,21 @@
 {{- /* layouts/partials/components/button.html */ -}}
-{{- /* Unpack contexts */ -}}
+{{- /* 1) Grab contexts */ -}}
 {{ $page := .page }}
 {{ $comp := .comp }}
 
-{{- /* 1) Full‑override takes absolute priority */ -}}
-{{ $full := default "" $comp.classes }}
-{{ if ne $full "" }}
-  {{/* If you set `classes:` in front matter, use it verbatim and skip everything else */}}
-  <a
-    href="{{ default "#" $comp.url }}"
-    class="{{ $full }}"
-  >
-    {{ default "Button" $comp.text }}
-  </a>
-  {{- /* done */ -}}
-{{ else }}
-  {{- /* 2) Otherwise, build from discrete pieces: */ -}}
-  {{- /* defaults for each group */ -}}
-  {{ $bgDefault       := "bg-blue-600 hover:bg-blue-700" }}
-  {{ $ringDefault     := "focus:outline-none focus:ring-4 focus:ring-blue-300" }}
-  {{ $textDefault     := "text-white font-medium" }}
-  {{ $roundDefault    := "rounded-lg" }}
-  {{ $sizeDefault     := "text-sm" }}
-  {{ $padDefault      := "px-5 py-2.5" }}
-  {{ $marginDefault   := "me-2 mb-2" }}
+{{- /* 2) Try front‑matter override */ -}}
+{{ $classes := default "" $comp.classes }}
 
-  {{- /* allow front‑matter to override each group */ -}}
-  {{ $bg       := default $bgDefault       $comp.bgClasses       }}
-  {{ $ring     := default $ringDefault     $comp.ringClasses     }}
-  {{ $text     := default $textDefault     $comp.textClasses     }}
-  {{ $round    := default $roundDefault    $comp.roundClasses    }}
-  {{ $size     := default $sizeDefault     $comp.textSize        }}
-  {{ $pad      := default $padDefault      $comp.paddingClasses  }}
-  {{ $margin   := default $marginDefault   $comp.marginClasses   }}
-
-  {{- /* combine them into one class string */ -}}
-  {{ $classes := printf "%s %s %s %s %s %s %s" $bg $ring $text $round $size $pad $margin }}
-
-  <a
-    href="{{ default "#" $comp.url }}"
-    class="{{ $classes }}"
-  >
-    {{ default "Button" $comp.text }}
-  </a>
+{{- /* 3) If empty, try site‑wide config */ -}}
+{{ if eq $classes "" }}
+  {{ $classes = default "" $page.Site.Params.button.classes }}
 {{ end }}
+
+{{- /* 4) If still empty, use hard‑coded fallback */ -}}
+{{ if eq $classes "" }}
+  {{ $classes = "inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2" }}
+{{ end }}
+
+<a href="{{ default "#" $comp.url }}" class="{{ $classes }}">
+  {{ default "Button" $comp.text }}
+</a>
