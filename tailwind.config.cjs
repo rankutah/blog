@@ -11,7 +11,7 @@ const PALETTES = [
 module.exports = {
   darkMode: 'class',
   content: [
-    './sites/**/*.{html,md,js,ts,jsx,tsx}',
+    './sites/**/*.{html,md,js,ts,jsx,tsx,toml}',
     './themes/overrides/**/*.{html,md,js,ts,jsx,tsx}',
     './node_modules/flowbite/**/*.js',
   ],

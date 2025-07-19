@@ -1,0 +1,14 @@
+{{- /* layouts/partials/components/section.html */ -}}
+{{ $page    := .page }}
+{{ $section := .section }}
+
+{{ if $section.components }}
+  {{ range $section.components }}
+    {{/* pass page + this component */}}
+    {{ partial (printf "components/%s.html" .type) (dict "page" $page "comp" .) }}
+  {{ end }}
+{{ else if $section.button }}
+  {{ partial "components/button.html" (dict "page" $page "comp" $section.button) }}
+{{ else }}
+  {{ $page.Content }}
+{{ end }}
