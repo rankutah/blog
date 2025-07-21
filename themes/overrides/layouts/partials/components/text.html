@@ -28,6 +28,12 @@
 {{- /* 5) Inject classes into <a> */ -}}
 {{- $html = replaceRE `(?i)<a href="([^"]+)"` (printf `<a class="%s" href="$1"` $linkClasses) $html -}}
 
+{{- /* 6) Inject classes into <ul> */ -}}
+{{- $html = replaceRE `(?i)<ul>` `<ul class="list-disc pl-5 space-y-2">` $html -}}
+
+{{- /* 7) Inject classes into <ol> */ -}}
+{{- $html = replaceRE `(?i)<ol>` `<ol class="list-decimal pl-5 space-y-2">` $html -}}
+
 <div class="{{ $wrapper }}">
   {{- $html | safeHTML -}}
 </div>

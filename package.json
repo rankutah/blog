@@ -4,7 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify",
+    "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug --templateMetrics --templateMetricsHints",
     "build:rank-utah": "hugo --source ./sites/rank-utah --gc --cleanDestinationDir --minify",
     "original:rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah"
   },

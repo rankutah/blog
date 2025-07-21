@@ -19,6 +19,12 @@ section:
       text: "testing the span"
     - type: text
       text: |
+            **Testing**
+            - One
+            - Two 
+            - Three
+    - type: text
+      text: |
             testing the **paragraph**. [How](https://rankutah.com) to handle another **paragraph**. This is another paragraph"
 
             "This is another"
@@ -28,4 +34,7 @@ section:
       text: "This is an H1"
     - type: h2
       text: "This is an H2"
+    - type: image
+      src: "images/6181.jpg"
+      alt: "Photos"
 ---

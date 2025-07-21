@@ -1,0 +1,71 @@
+{{- /* layouts/partials/components/image.html */ -}}
+{{- $page := .page -}}
+{{- $comp := .comp -}}
+
+{{- /* 1) Extract src & alt safely */ -}}
+{{- $src := index $comp "src" | default "" -}}
+{{- if eq $src "" -}}
+  {{- errorf "Missing .comp.src for image (got comp=%v)" $comp -}}
+{{- end -}}
+{{- $alt := index $comp "alt" | default "" -}}
+{{- if eq $alt "" -}}
+  {{- errorf "Missing .comp.alt for image (got comp=%v)" $comp -}}
+{{- end -}}
+
+{{- /* 2) Optional title */ -}}
+{{- $title := index $comp "title" | default "" -}}
+
+{{- /* 3) Wrapper classes */ -}}
+{{- $classes := partial "get-classes.html" (dict
+    "page"     $page
+    "comp"     $comp
+    "paramKey" "image"
+    "fallback" "w-full h-auto"
+) -}}
+
+{{- /* 4) Hugo Pipes if asset exists */ -}}
+{{- $orig := resources.Get $src -}}
+
+{{- if $orig }}
+  {{- /* 5) Resize */ -}}
+  {{- $small  := $orig.Resize  "400x"  -}}
+  {{- $medium := $orig.Resize  "800x"  -}}
+  {{- $large  := $orig.Resize  "1200x" -}}
+
+  {{- /* 6) Convert via Process */ -}}
+  {{- $avifSmall  := $small.Process  "avif"  -}}
+  {{- $avifMedium := $medium.Process "avif"  -}}
+  {{- $avifLarge  := $large.Process  "avif"  -}}
+  {{- $webpSmall  := $small.Process  "webp" -}}
+  {{- $webpMedium := $medium.Process "webp" -}}
+  {{- $webpLarge  := $large.Process "webp" -}}
+
+  <picture>
+    <source
+      type="image/avif"
+      srcset="{{ $avifSmall.RelPermalink }} 400w, {{ $avifMedium.RelPermalink }} 800w, {{ $avifLarge.RelPermalink }} 1200w"
+      sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
+    >
+    <source
+      type="image/webp"
+      srcset="{{ $webpSmall.RelPermalink }} 400w, {{ $webpMedium.RelPermalink }} 800w, {{ $webpLarge.RelPermalink }} 1200w"
+      sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
+    >
+    <img
+      src="{{ $medium.RelPermalink }}"
+      srcset="{{ $small.RelPermalink }} 400w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+      sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
+      alt="{{ $alt }}"
+      {{- if not (eq $title "") }} title="{{ $title }}"{{ end }}
+      class="{{ $classes }}"
+    >
+  </picture>
+{{- else }}
+  {{- /* 7) Static fallback */ -}}
+  <img
+    src="/{{ $src }}"
+    alt="{{ $alt }}"
+    {{- if not (eq $title "") }} title="{{ $title }}"{{ end }}
+    class="{{ $classes }}"
+  >
+{{- end }}
