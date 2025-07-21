@@ -1,0 +1,10 @@
+{{ $classes := partial "get-classes.html" (dict
+    "page"     .Page
+    "comp"     .comp
+    "paramKey" "label"
+    "fallback" "text-base text-gray-900 dark:text-white"
+) }}
+
+<span class="{{ $classes }}">
+  {{ default "Your text here" .comp.text }}
+</span>

@@ -15,4 +15,17 @@ section:
       text: "New"
     - type: button
       text: "Looking Awesome"
+    - type: label
+      text: "testing the span"
+    - type: text
+      text: |
+            testing the **paragraph**. [How](https://rankutah.com) to handle another **paragraph**. This is another paragraph"
+
+            "This is another"
+
+            "This is another"
+    - type: h1
+      text: "This is an H1"
+    - type: h2
+      text: "This is an H2"
 ---

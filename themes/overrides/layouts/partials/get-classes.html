@@ -1,0 +1,26 @@
+{{- /* args: 
+      .page      = page context 
+      .comp      = dict with possible keys "classes" and any others 
+      .paramKey  = string, e.g. "button" or "text" 
+      .fallback  = string of hard‑coded default classes 
+*/ -}}
+{{- $page     := .page -}}
+{{- $comp     := .comp -}}
+{{- $paramKey := .paramKey -}}
+{{- $fallback := .fallback -}}
+
+{{- /* 1) front‑matter/comp override */ -}}
+{{- $c := default "" $comp.classes -}}
+
+{{- /* 2) site‑wide default in Site.Params */ -}}
+{{- if eq $c "" -}}
+  {{- $c = default "" (index $page.Site.Params $paramKey).classes -}}
+{{- end -}}
+
+{{- /* 3) fallback */ -}}
+{{- if eq $c "" -}}
+  {{- $c = $fallback -}}
+{{- end -}}
+
+{{- /* return the final string */ -}}
+{{- $c -}}

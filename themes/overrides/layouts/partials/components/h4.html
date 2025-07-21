@@ -1,0 +1,11 @@
+{{- $page := .page -}}
+{{- $comp := .comp -}}
+{{- $classes := partial "get-classes.html" (dict
+    "page"     $page
+    "comp"     $comp
+    "paramKey" "h4"
+    "fallback" "text-xl font-bold dark:text-white"
+) -}}
+<h4 class="{{ $classes }}">
+  {{ default "Your H4 text here" $comp.text }}
+</h4>
