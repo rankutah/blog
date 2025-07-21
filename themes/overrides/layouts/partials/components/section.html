@@ -1,22 +1,38 @@
 {{- /* layouts/partials/components/section.html */ -}}
-{{- $page    := .page -}}
-{{- $section := .section -}}
+{{- $page := .page -}}
+{{- $sec  := .section -}}
 
-{{/* DEBUG: dump the entire section map */}}
-{{ warnf "🔎 section.components = %v" $section.components }}
+{{- /* 1) Wrapper: check sec.classes → params.section.classes → fallback */ -}}
+{{- $wrapper := partial "get-classes.html" (dict
+    "page"     $page
+    "comp"     $sec
+    "paramKey" "section"
+    "fallback" "container mx-auto px-4 sm:px-6 lg:px-8 py-12"
+) -}}
 
-{{- if $section.components }}
-  <div class="grid grid-cols-{{ default 1 $section.cols }} gap-{{ default 4 $section.gap }}">
-    {{- range $section.components }}
-      {{/* DEBUG: show each component’s type and map */}}
-      {{ warnf "🔹 Rendering component type=%s, map=%v" .type . }}
-      {{ partial (printf "components/%s.html" (lower .type)) (dict
-          "page" $page
-          "comp" .
-      ) }}
+{{- /* 2) Grid: first look for a per‑section YAML override */ -}}
+{{- $gridOverride := default "" $sec.gridClasses -}}
+{{- /* then compute: if override is non‑empty, use that; else use helper */ -}}
+{{- $grid := cond
+     (ne $gridOverride "")
+     $gridOverride
+     (partial "get-classes.html" (dict
+         "page"     $page
+         "comp"     $sec
+         "paramKey" "sectionGrid"
+         "fallback" "grid grid-cols-1 lg:grid-cols-1 gap-6 justify-items-center"
+     ))
+ -}}
+
+{{- if $sec.components }}
+<section class="{{ $wrapper }}">
+  <div class="{{ $grid }}">
+    {{- range $sec.components }}
+      {{- partial (printf "components/%s.html" (lower .type)) (dict "page" $page "comp" .) }}
     {{- end }}
   </div>
+</section>
 {{- else }}
-  {{- /* no components, render raw content */ -}}
+  {{- /* fallback to raw page content */ -}}
   {{- $page.Content }}
 {{- end }}
