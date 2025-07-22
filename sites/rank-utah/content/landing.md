@@ -41,5 +41,5 @@ sections:
         text: "This is an H2"
       - type: image
         src: "images/6181.jpg"
-        alt: "Photos"
+        alt: "Photos of stuff"
 ---
