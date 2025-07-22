@@ -3,6 +3,15 @@
 {{- $page := .page -}}
 {{- $comp := .comp -}}
 
+<pre style="background:rgb(0, 0, 0);padding:0.5em">
+COMP.FRONTMATTER = {{ printf "%#v" .comp }}
+</pre>
+
+<pre style="background:#eef;padding:0.5em">
+SITE.PARAMS.text = {{ printf "%#v" .Site.Params.text }}
+SITE.PARAMS.button = {{ printf "%#v" .Site.Params.button }}
+</pre>
+
 {{- /* 2) Try front‑matter override for wrapper */ -}}
 {{- $wrapper := default "" $comp.textClasses -}}
 
