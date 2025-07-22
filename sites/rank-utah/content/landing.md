@@ -5,8 +5,7 @@ url:     "/landing/"
 draft:   false
 
 sections:
-  - classes:    
-    components:
+  - components:
       - type: button
         text: "Get Started"
         url:  "/landing/"
@@ -43,11 +42,4 @@ sections:
       - type: image
         src: "images/6181.jpg"
         alt: "Photos"
-  
-  - 
-    components:
-      - type: h2
-        text: "New Test"
-      - type: text
-        text: "hello"
 ---
