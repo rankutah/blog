@@ -26,6 +26,7 @@ sections:
           - One
           - Two
           - Three
+        boldClasses: "font-semibold text-gray-900 dark:text-yellow-300"
       - type: text
         text: |
           testing the **paragraph**. [How](https://rankutah.com) to handle another **paragraph**. This is another paragraph
