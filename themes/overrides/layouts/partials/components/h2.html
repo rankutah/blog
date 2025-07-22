@@ -1,11 +1,21 @@
+{{- /* layouts/partials/components/h2.html */ -}}
+{{- /* 1) Grab contexts */ -}}
 {{- $page := .page -}}
 {{- $comp := .comp -}}
-{{- $classes := partial "get-classes.html" (dict
-    "page"     $page
-    "comp"     $comp
-    "paramKey" "h2"
-    "fallback" "text-3xl font-bold dark:text-white"
-) -}}
+
+{{- /* 2) Try front‑matter override */ -}}
+{{- $classes := default "" $comp.classes -}}
+
+{{- /* 3) If empty, try site‑wide config */ -}}
+{{- if eq $classes "" -}}
+  {{- $classes = default "" $page.Site.Params.h2.classes -}}
+{{- end -}}
+
+{{- /* 4) If still empty, use hard‑coded fallback */ -}}
+{{- if eq $classes "" -}}
+  {{- $classes = "text-3xl font-bold dark:text-white" -}}
+{{- end -}}
+
 <h2 class="{{ $classes }}">
   {{ default "Your H2 text here" $comp.text }}
 </h2>

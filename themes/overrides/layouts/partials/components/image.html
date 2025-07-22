@@ -1,4 +1,32 @@
 {{- /* layouts/partials/components/image.html */ -}}
+{{- /* 1) Grab contexts */ -}}
+{{- $page := .page -}}
+{{- $comp := .comp -}}
+
+{{- /* 2) Try front‑matter override */ -}}
+{{- $classes := default "" $comp.classes -}}
+
+{{- /* 3) If empty, try site‑wide config */ -}}
+{{- if eq $classes "" -}}
+  {{- $classes = default "" $page.Site.Params.image.classes -}}
+{{- end -}}
+
+{{- /* 4) If still empty, use hard‑coded fallback */ -}}
+{{- if eq $classes "" -}}
+  {{- $classes = "justify-self-center" -}}
+{{- end -}}
+
+{{- /* 5) Render image with computed classes */ -}}
+<img
+  src="{{ .comp.src }}"
+  alt="{{ .comp.alt }}"
+  class="{{ $classes }}"
+  {{- with .comp.title }} title="{{ . }}"{{ end }}
+/>
+
+
+
+<!-- {{- /* layouts/partials/components/image.html */ -}}
 {{- $page := .page -}}
 {{- $comp := .comp -}}
 
@@ -20,7 +48,7 @@
     "page"     $page
     "comp"     $comp
     "paramKey" "image"
-    "fallback" "w-full h-auto mx-auto h-auto"
+    "fallback" "justify-self-center"
 ) -}}
 
 {{- /* 4) Hugo Pipes if asset exists */ -}}
@@ -68,4 +96,4 @@
     {{- if not (eq $title "") }} title="{{ $title }}"{{ end }}
     class="{{ $classes }}"
   >
-{{- end }}
+{{- end }} -->

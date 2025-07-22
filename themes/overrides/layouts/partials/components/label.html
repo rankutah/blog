@@ -1,10 +1,21 @@
-{{ $classes := partial "get-classes.html" (dict
-    "page"     .Page
-    "comp"     .comp
-    "paramKey" "label"
-    "fallback" "text-base text-gray-900 dark:text-white"
-) }}
+{{- /* layouts/partials/components/label.html */ -}}
+{{- /* 1) Grab contexts */ -}}
+{{- $page := .page -}}
+{{- $comp := .comp -}}
+
+{{- /* 2) Try front‑matter override */ -}}
+{{- $classes := default "" $comp.classes -}}
+
+{{- /* 3) If empty, try site‑wide config */ -}}
+{{- if eq $classes "" -}}
+  {{- $classes = default "" $page.Site.Params.label.classes -}}
+{{- end -}}
+
+{{- /* 4) If still empty, use hard‑coded fallback */ -}}
+{{- if eq $classes "" -}}
+  {{- $classes = "text-base text-gray-900 dark:text-white" -}}
+{{- end -}}
 
 <span class="{{ $classes }}">
-  {{ default "Your text here" .comp.text }}
+  {{ default "Your text here" $comp.text }}
 </span>

@@ -1,20 +1,16 @@
-{{- /* args: 
-      .page      = page context 
-      .comp      = dict with possible keys "classes" and any others 
-      .paramKey  = string, e.g. "button" or "text" 
-      .fallback  = string of hard‑coded default classes 
-*/ -}}
-{{- $page     := .page -}}
-{{- $comp     := .comp -}}
-{{- $paramKey := .paramKey -}}
-{{- $fallback := .fallback -}}
+{{/* layouts/partials/get-classes.html */}}
+{{- $comp     := .comp       -}}
+{{- $paramKey := .paramKey   -}}
+{{- $fallback := .fallback   -}}
 
-{{- /* 1) front‑matter/comp override */ -}}
+{{- /* 1) front‑matter override */ -}}
 {{- $c := default "" $comp.classes -}}
 
-{{- /* 2) site‑wide default in Site.Params */ -}}
+{{- /* 2) site‑wide override via root context */ -}}
 {{- if eq $c "" -}}
-  {{- $c = default "" (index $page.Site.Params $paramKey).classes -}}
+  {{- with index $.Site.Params $paramKey -}}
+    {{- $c = default "" .classes -}}
+  {{- end -}}
 {{- end -}}
 
 {{- /* 3) fallback */ -}}
@@ -22,5 +18,4 @@
   {{- $c = $fallback -}}
 {{- end -}}
 
-{{- /* return the final string */ -}}
 {{- $c -}}

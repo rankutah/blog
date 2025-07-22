@@ -1,10 +1,21 @@
-{{ $classes := partial "get-classes.html" (dict 
-    "page"     .Page 
-    "comp"     .comp 
-    "paramKey" "button" 
-    "fallback" "inline-flex self-start items-center justify-left bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2" 
-) }}
+{{- /* layouts/partials/components/button.html */ -}}
+{{- /* 1) Grab contexts */ -}}
+{{ $page := .page }}
+{{ $comp := .comp }}
 
-<a href="{{ default "#" .comp.url }}" class="{{ $classes }}">
-  {{ default "Button" .comp.text }}
+{{- /* 2) Try front‑matter override */ -}}
+{{ $classes := default "" $comp.classes }}
+
+{{- /* 3) If empty, try site‑wide config */ -}}
+{{ if eq $classes "" }}
+  {{ $classes = default "" $page.Site.Params.button.classes }}
+{{ end }}
+
+{{- /* 4) If still empty, use hard‑coded fallback */ -}}
+{{ if eq $classes "" }}
+  {{ $classes = "inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2" }}
+{{ end }}
+
+<a href="{{ default "#" $comp.url }}" class="{{ $classes }}">
+  {{ default "Button" $comp.text }}
 </a>

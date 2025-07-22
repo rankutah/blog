@@ -1,4 +1,44 @@
 {{- /* layouts/partials/components/section.html */ -}}
+{{- /* 1) Grab contexts */ -}}
+{{- $page := .page -}}
+{{- $sec  := .section -}}
+
+{{- /* 2) Try front‑matter override for wrapper */ -}}
+{{- $wrapper := default "" $sec.classes -}}
+{{- /* 3) If empty, try site‑wide params */ -}}
+{{- if eq $wrapper "" -}}
+  {{- $wrapper = default "" $page.Site.Params.section.classes -}}
+{{- end -}}
+{{- /* 4) If still empty, use hard‑coded fallback */ -}}
+{{- if eq $wrapper "" -}}
+  {{- $wrapper = "container mx-auto px-4 sm:px-6 lg:px-8 py-12" -}}
+{{- end -}}
+
+{{- /* Grid classes: analogous override steps */ -}}
+{{- $grid := default "" $sec.gridClasses -}}
+{{- if eq $grid "" -}}
+  {{- $grid = default "" $page.Site.Params.sectionGrid.classes -}}
+{{- end -}}
+{{- if eq $grid "" -}}
+  {{- $grid = "grid grid-cols-1 gap-6 justify-items-start" -}}
+{{- end -}}
+
+{{- if $sec.components }}
+<section class="{{ $wrapper }}">
+  <div class="{{ $grid }}">
+    {{- range $sec.components }}
+      {{- partial (printf "components/%s.html" (lower .type)) (dict "page" $page "comp" .) }}
+    {{- end }}
+  </div>
+</section>
+{{- else }}
+  {{- /* fallback to raw page content */ -}}
+  {{- $page.Content }}
+{{- end }}
+
+
+
+<!-- {{- /* layouts/partials/components/section.html */ -}}
 {{- $page := .page -}}
 {{- $sec  := .section -}}
 
@@ -20,7 +60,7 @@
          "page"     $page
          "comp"     $sec
          "paramKey" "sectionGrid"
-         "fallback" "grid grid-cols-1 lg:grid-cols-1 gap-6 justify-items-center"
+         "fallback" "grid grid-cols-1 gap-6 justify-items-start"
      ))
  -}}
 
@@ -35,4 +75,4 @@
 {{- else }}
   {{- /* fallback to raw page content */ -}}
   {{- $page.Content }}
-{{- end }}
+{{- end }} -->
