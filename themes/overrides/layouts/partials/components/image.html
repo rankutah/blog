@@ -3,11 +3,13 @@
 {{- $page := .page -}}
 {{- $comp := .comp -}}
 
-{{- /* 2) Extract src & alt safely */ -}}
+{{- /* 2) Extract src & alt safely, strip leading slash */ -}}
 {{- $src := index $comp "src" | default "" -}}
 {{- if eq $src "" -}}
   {{- errorf "Missing .comp.src for image (got comp=%v)" $comp -}}
 {{- end -}}
+{{- $src = replaceRE `^/` "" $src -}}
+
 {{- $alt := index $comp "alt" | default "" -}}
 {{- if eq $alt "" -}}
   {{- errorf "Missing .comp.alt for image (got comp=%v)" $comp -}}
@@ -16,35 +18,34 @@
 {{- /* 3) Optional title */ -}}
 {{- $title := index $comp "title" | default "" -}}
 
-{{- /* 4) Try front‑matter override for classes */ -}}
+{{- /* 4) Compute classes */ -}}
 {{- $classes := default "" $comp.classes -}}
-{{- /* 5) If empty, try site‑wide config */ -}}
 {{- if eq $classes "" -}}
   {{- $classes = default "" $page.Site.Params.image.classes -}}
 {{- end -}}
-{{- /* 6) If still empty, use hard‑coded fallback */ -}}
 {{- if eq $classes "" -}}
   {{- $classes = "justify-self-center" -}}
 {{- end -}}
 
-{{- /* 7) Hugo Pipes: process if resource exists */ -}}
+{{- /* 5) Hugo Pipes: process if asset in "assets" dir exists */ -}}
 {{- $orig := resources.Get $src -}}
 
 {{- if $orig }}
-  {{- /* Resize */ -}}
+  <!-- DEBUG: Hugo Pipes branch hit! -->
+  {{- /* 6) Resize */ -}}
   {{- $small  := $orig.Resize  "400x"  -}}
   {{- $medium := $orig.Resize  "800x"  -}}
   {{- $large  := $orig.Resize  "1200x" -}}
 
-  {{- /* Convert */ -}}
+  {{- /* 7) Convert */ -}}
   {{- $avifSmall  := $small.Process  "avif"  -}}
-  {{- $avifMedium := $medium.Process "avif" -}}
-  {{- $avifLarge  := $large.Process  "avif"  -}}
+  {{- $avifMedium := $medium.Process "avif"  -}}
+  {{- $avifLarge  := $large.Process "avif"  -}}
   {{- $webpSmall  := $small.Process  "webp" -}}
   {{- $webpMedium := $medium.Process "webp" -}}
   {{- $webpLarge  := $large.Process "webp" -}}
 
-  <picture>
+  <picture class="{{ $classes }}">
     <source
       type="image/avif"
       srcset="{{ $avifSmall.RelPermalink }} 400w, {{ $avifMedium.RelPermalink }} 800w, {{ $avifLarge.RelPermalink }} 1200w"
@@ -56,20 +57,21 @@
       sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
     >
     <img
-      src="{{ $medium.RelPermalink }}"
-      srcset="{{ $small.RelPermalink }} 400w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+      src="{{ $avifMedium.RelPermalink }}"
+      srcset="{{ $avifSmall.RelPermalink }} 400w, {{ $avifMedium.RelPermalink }} 800w, {{ $avifLarge.RelPermalink }} 1200w"
       sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
       alt="{{ $alt }}"
       {{- if ne $title "" }} title="{{ $title }}"{{ end }}
-      class="{{ $classes }}"
     >
   </picture>
+
 {{- else }}
-  {{- /* Static fallback */ -}}
-  <img
-    src="/{{ $src }}"
-    alt="{{ $alt }}"
-    {{- if ne $title "" }} title="{{ $title }}"{{ end }}
-    class="{{ $classes }}"
-  >
+  <!-- DEBUG: Fallback branch — no pipes! -->
+  <picture class="{{ $classes }}">
+    <img
+      src="/{{ $src }}"
+      alt="{{ $alt }}"
+      {{- if ne $title "" }} title="{{ $title }}"{{ end }}
+    >
+  </picture>
 {{- end }}
