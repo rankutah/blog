@@ -30,9 +30,9 @@ sections:
         text: |
           testing the **paragraph**. [How](https://rankutah.com) to handle another **paragraph**. This is another paragraph
 
-          This is another
+          This is another test
 
-          This is another
+          This is another test
         textClasses: "mb-3 text-gray-500 dark:text-gray-400"
       - type: h1
         text: "This is an H1"
