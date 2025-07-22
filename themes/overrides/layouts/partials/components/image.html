@@ -3,23 +3,73 @@
 {{- $page := .page -}}
 {{- $comp := .comp -}}
 
-{{- /* 2) Try front‑matter override */ -}}
-{{- $classes := default "" $comp.classes -}}
+{{- /* 2) Extract src & alt safely */ -}}
+{{- $src := index $comp "src" | default "" -}}
+{{- if eq $src "" -}}
+  {{- errorf "Missing .comp.src for image (got comp=%v)" $comp -}}
+{{- end -}}
+{{- $alt := index $comp "alt" | default "" -}}
+{{- if eq $alt "" -}}
+  {{- errorf "Missing .comp.alt for image (got comp=%v)" $comp -}}
+{{- end -}}
 
-{{- /* 3) If empty, try site‑wide config */ -}}
+{{- /* 3) Optional title */ -}}
+{{- $title := index $comp "title" | default "" -}}
+
+{{- /* 4) Try front‑matter override for classes */ -}}
+{{- $classes := default "" $comp.classes -}}
+{{- /* 5) If empty, try site‑wide config */ -}}
 {{- if eq $classes "" -}}
   {{- $classes = default "" $page.Site.Params.image.classes -}}
 {{- end -}}
-
-{{- /* 4) If still empty, use hard‑coded fallback */ -}}
+{{- /* 6) If still empty, use hard‑coded fallback */ -}}
 {{- if eq $classes "" -}}
   {{- $classes = "justify-self-center" -}}
 {{- end -}}
 
-{{- /* 5) Render image with computed classes */ -}}
-<img
-  src="{{ .comp.src }}"
-  alt="{{ .comp.alt }}"
-  class="{{ $classes }}"
-  {{- with .comp.title }} title="{{ . }}"{{ end }}
-/>
+{{- /* 7) Hugo Pipes: process if resource exists */ -}}
+{{- $orig := resources.Get $src -}}
+
+{{- if $orig }}
+  {{- /* Resize */ -}}
+  {{- $small  := $orig.Resize  "400x"  -}}
+  {{- $medium := $orig.Resize  "800x"  -}}
+  {{- $large  := $orig.Resize  "1200x" -}}
+
+  {{- /* Convert */ -}}
+  {{- $avifSmall  := $small.Process  "avif"  -}}
+  {{- $avifMedium := $medium.Process "avif" -}}
+  {{- $avifLarge  := $large.Process  "avif"  -}}
+  {{- $webpSmall  := $small.Process  "webp" -}}
+  {{- $webpMedium := $medium.Process "webp" -}}
+  {{- $webpLarge  := $large.Process "webp" -}}
+
+  <picture>
+    <source
+      type="image/avif"
+      srcset="{{ $avifSmall.RelPermalink }} 400w, {{ $avifMedium.RelPermalink }} 800w, {{ $avifLarge.RelPermalink }} 1200w"
+      sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
+    >
+    <source
+      type="image/webp"
+      srcset="{{ $webpSmall.RelPermalink }} 400w, {{ $webpMedium.RelPermalink }} 800w, {{ $webpLarge.RelPermalink }} 1200w"
+      sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
+    >
+    <img
+      src="{{ $medium.RelPermalink }}"
+      srcset="{{ $small.RelPermalink }} 400w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+      sizes="(max-width:400px) 100vw, (max-width:800px) 90vw, 800px"
+      alt="{{ $alt }}"
+      {{- if ne $title "" }} title="{{ $title }}"{{ end }}
+      class="{{ $classes }}"
+    >
+  </picture>
+{{- else }}
+  {{- /* Static fallback */ -}}
+  <img
+    src="/{{ $src }}"
+    alt="{{ $alt }}"
+    {{- if ne $title "" }} title="{{ $title }}"{{ end }}
+    class="{{ $classes }}"
+  >
+{{- end }}
