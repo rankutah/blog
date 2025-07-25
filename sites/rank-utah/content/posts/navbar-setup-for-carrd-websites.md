@@ -11,11 +11,13 @@ Step 2: Choose Your Embed
 
 Drop this in the on-click area for the Hambuger Menu Icon:
 
+```
 if (window.location.hash === '#nav') {
 
 window.history.back();
 
 }
+```
 
 ## Advanced Carrd Nav Menu (Embed)
 
