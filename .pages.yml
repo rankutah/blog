@@ -92,7 +92,7 @@ content:
   - name: rank-utah
     label: rank-utah posts
     type: collection
-    path: sites/rank-utah/content/spotlights
+    path: sites/rank-utah/content/posts
     filename: "{primary}.md"
 
     view:
