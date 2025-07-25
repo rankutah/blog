@@ -113,7 +113,7 @@ content:
         component: tagsField
         options:
           fetch:
-            url: https://spotlight.rankutah.com/tags/index.json
+            url: https://blog.rankutah.com/tags/index.json
             method: GET
             results: ""
       - name: body
