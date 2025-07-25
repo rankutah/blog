@@ -40,7 +40,7 @@
         {{- if site.Params.label.icon }}
         {{- $img := resources.Get site.Params.label.icon }}
         {{- if $img }}
-          {{- $fmts := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") }}
+          {{- $fmts := slice "jpg" "jpeg" "png" "tif" "bmp" "gif" }}
           {{- if hugo.IsExtended }}{{- $fmts = $fmts | append "webp" }}{{- end }}
           {{- $prod := or hugo.IsProduction (eq site.Params.env "production") }}
           {{- if and (in $fmts $img.MediaType.SubType) $prod }}
@@ -108,23 +108,16 @@
       </div>
     </div>
 
-    {{- $currentPage := . }}
     <ul id="menu">
       {{- range site.Menus.main }}
-      {{- $url1 := cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) | absLangURL }}
-      {{- $url2 := $currentPage.Permalink | absLangURL }}
-      {{- $is_search := eq (site.GetPage .KeyName).Layout "search" }}
       <li>
         <a href="{{ .URL | absLangURL }}"
-           title="{{ .Title | default .Name }}{{ if $is_search }} (Alt + /){{ end }}"
-           {{ if $is_search }}accesskey="/"{{ end }}
-           class="inline-flex items-center">
-          <span class="flex-shrink-0{{ if eq $url1 $url2 }} active{{ end }}">
-            {{ .Pre }}{{ .Name }}{{ .Post }}
-          </span>
+           title="{{ .Title | default .Name }}"
+           class="inline-flex items-center whitespace-nowrap">
+          {{ .Pre }}{{ .Name }}{{ .Post }}
           {{- if findRE "://" .URL }}
-            <svg class="ml-1 align-middle flex-shrink-0" fill="none" shape-rendering="geometricPrecision"
-                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+            <svg class="ml-1 inline-block" fill="none" stroke="currentColor"
+                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                  viewBox="0 0 24 24" height="12" width="12">
               <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
               <path d="M15 3h6v6"/>

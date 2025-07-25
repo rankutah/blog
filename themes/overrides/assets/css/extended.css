@@ -1,0 +1,17 @@
+/* ───────────────────────────────────────────────────────────
+   Force menu links to stay inline and center their icon
+   ─────────────────────────────────────────────────────────── */
+#menu li a {
+  display: inline-flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+}
+
+#menu li a span {
+  display: inline-block !important;
+}
+
+#menu li a svg {
+  margin-left: 0.25rem !important;
+  vertical-align: middle !important;
+}
