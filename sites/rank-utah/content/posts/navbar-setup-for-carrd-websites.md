@@ -3,7 +3,7 @@ date: 2025-06-01
 is_published: Published
 title: Navbar Setup for Carrd Websites
 ---
-Step 1: Watch Youtube Video Demo
+Step 1: Watch this [Youtube Video Demo](https://www.youtube.com/watch?v=I6Vopo5VXWQ)
 
 Step 2: Choose Your Embed
 
