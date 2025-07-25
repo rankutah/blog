@@ -36,7 +36,7 @@ pruneTaxonomies = true
   disableThemeToggle = false # make it so you can toggle the light/dark mode
 
 [permalinks]
-  spotlights   = "/:slug/"
+  posts   = "/:slug/"
 
 [taxonomies]
   tag          = "tags"
