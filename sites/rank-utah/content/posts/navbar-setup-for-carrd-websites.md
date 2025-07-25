@@ -7,7 +7,7 @@ Step 1: Watch this [Youtube Video Demo](https://www.youtube.com/watch?v=I6Vopo5V
 
 Step 2: Choose Your Embed
 
-Simple Carrd Nav Menu
+## Simple Carrd Nav Menu
 
 Drop this in the on-click area for the Hambuger Menu Icon:
 
@@ -17,7 +17,7 @@ window.history.back();
 
 }
 
-Advanced Carrd Nav Menu (Embed)
+## Advanced Carrd Nav Menu (Embed)
 
 Drop this in your header as an embed and be sure to uncheck the box that says Defer script tag on the embed options
 
