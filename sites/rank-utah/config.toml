@@ -31,7 +31,7 @@ pruneTaxonomies = true
   enableSearch        = true
   clientName          = "Rank Utah"
   clientURL           = "https://rankutah.com"
-  mainSections        = ["spotlights"]
+  mainSections        = ["blog"]
   defaultTheme        = "auto"
   disableThemeToggle  = false
 
