@@ -1,5 +1,5 @@
-baseURL       = "https://spotlight.rankutah.com/"
-title         = "Spotlight Utah"
+baseURL       = "https://blog.rankutah.com/"
+title         = "Rank Utah"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
@@ -72,8 +72,8 @@ pruneTaxonomies = true
 
 [menu]
   [[menu.main]]
-    name   = "Spotlights"
-    url    = "/"
+    name   = "Home"
+    url    = "https://rankutah.com"
     weight = 1
   [[menu.main]]
     name   = "Tags"
