@@ -17,3 +17,5 @@ sites/public/
 # IDE/editor files
 .vscode/
 *.swp
+
+themes/PaperMod/.github/
