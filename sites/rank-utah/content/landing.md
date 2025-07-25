@@ -2,7 +2,7 @@
 title:   "landing"
 layout:  "flowbite"
 url:     "/landing/"
-draft:   true
+draft:   false
 
 sections:
   - components:
