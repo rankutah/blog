@@ -10,7 +10,7 @@ If you would like help with on-page SEO please visit my website [Rank Utah](http
 
 ## The #1 Most Overlooked Component of On-Page SEO is Keyword Research
 
-If your website is not aligned with what your customers are searching for you won't even show up in the search results. There are a number of free tools you can use to estimate search intent if you want to do it yourself and if you want better results you can [hire me](https://rankutah.com/#contact) to give you the best results using the leading industry paid tools.
+If your website is not aligned with what your customers are searching for you won't even show up in the search results. There are a number of free tools you can use to estimate search interest if you want to do it yourself or you can [hire me](https://rankutah.com/#contact) to give you the best results because of experience and the use of leading industry paid tools.
 
 ## Keyword Research with Free Tools
 
