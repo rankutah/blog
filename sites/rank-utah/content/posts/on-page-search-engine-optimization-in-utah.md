@@ -12,7 +12,7 @@ If you would like help with on-page SEO please visit my website [Rank Utah](http
 
 If your website is not aligned with what your customers are searching for you won't even show up in the search results. There are a number of free tools you can use to estimate search interest if you want to do it yourself or you can [hire me](https://rankutah.com/#contact) to give you the best results because of experience and the use of leading industry paid tools.
 
-## Keyword Research with Free Tools
+## Free Keyword Research Tools
 
 ### Google Search Console
 
