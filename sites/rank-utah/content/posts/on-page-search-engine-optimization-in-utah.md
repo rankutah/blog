@@ -20,6 +20,8 @@ If your website has been around for and is already connected to Google Search Co
 
 In Google Search Console you can click the Performance tab and look at the Queries section to find out which keywords are brining you traffic and clicks. If you click on the pages section you can click and filter on individual pages. Write down the keywords that are brining your page the most clicks and further align your page with those keywords.
 
+One additional benefit of having your website on Google Search Console is you can enter your page url in the top. This will tell you if your URL is on Google. If not, you can click the Request Indexing button to submit it for indexing.
+
 ### Google Autocomplete
 
 One of the easiest ways to see what people are searching for is by using Google Autocomplete. Simple type what people would likely search for and see what Google suggests. Align your page with the related autocomplete queries.
@@ -73,7 +75,9 @@ The Alt-text on your image is used for those who use screen readers to browse yo
 
 The three biggest culprits of slow page loading times are unoptimized images images, too many scripts (javascript or tracking tools), and no caching or slow hosting.
 
-Scripts can be edited to delay loading using defer or a simple timeout function. Here is an example of one using a 4 second delay or user interaction to fire
+Many modern editors let you lazy-load your images. This means they don't load until they come into view. This can greatly improve how fast your pages load.
+
+The same is true for scripts. Scripts can be edited to delay loading using defer. I've found that the most reliable method though is using a simple timeout function. Here is an example of one using a 4 second delay or user interaction to fire the script.
 
 ```
 // Load both scripts after 4 seconds OR on user interaction
@@ -83,4 +87,20 @@ document.addEventListener('mousemove', loadTrackingScripts, { once: true });
 document.addEventListener('touchstart', loadTrackingScripts, { once: true }); 
 ```
 
-... this blogpost in is progress. Please check back later for further progress.
+Enter your page url into [Page Speed Insights](https://pagespeed.web.dev) to test it's page loading speed. In additional to page speed performance, this tool will also give you a score for the accessibility of your site, your use of best practices, and rate your SEO. Helpful tips will be below your scores.
+
+## Linking
+
+Write good link text (anchor text) which is the text part of the link you can see. This helps your users and Google understand what you're linking to. Link between your pages and link to relevant and helpful outside sources.
+
+## Schema Markup
+
+Schema markup are files written specifically written to tell search engines about the page. You might use it to include your business hours, name, address, service areas, reviews, and reviews. This schema is particularly useful for small businesses and allows you to show up in the rich snippet results on Google. There are tools that help you create this schema automatically and you can also you AI bots like chat GPT to help write this markup. This is saved on your page as a json script. Here is Google's documentation for [Local Business structured data.](https://developers.google.com/search/docs/appearance/structured-data/local-business)
+
+Once you have your schema markeup in place you can validate it at [schema.org](http://schema.org) by pasting in your webpage to ensure there are no errors.
+
+## Additional information On-Page Search Engine Optimization
+
+If you would like to have help optimizing your web pages for your Utah business, so you can focus on your business, you can find my [contact information here.](https://rankutah.com/#contact)
+
+If you are doing it all yourself you might enjoy Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
