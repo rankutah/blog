@@ -3,13 +3,15 @@ date: 2025-06-01
 is_published: Published
 title: Navbar Setup for Carrd Websites
 ---
-Step 1: Watch this [Youtube Video Demo](https://www.youtube.com/watch?v=I6Vopo5VXWQ)
+This is a simple guide showing two options for setting up a navigation menu bar on a [Carrd.co website.](http://Carrd.co)
 
-Step 2: Choose Your Embed
+Step 1: Watch the [Youtube Video Demo](https://www.youtube.com/watch?v=I6Vopo5VXWQ)
+
+Step 2: Choose your embed option below:
 
 ## Simple Carrd Nav Menu
 
-Drop this in the on-click area for the Hambuger Menu Icon:
+Drop this in the on-click area of your Hambuger Menu Icon (see video for reference)
 
 ```
 if (window.location.hash === '#nav') {
