@@ -45,9 +45,9 @@ The title tag is the most important signal you provide to Google on what your pa
 
 The meta description is used to summarize your page and is where you speak directly to your audience. Do not worry about using keywords in this description as it does not affect your pages rankings. The only purpose of this description is to help people understand what your page is about and decide if they want to click. The meta description shows up in the search results under your title tag.
 
-## URL Slug
+## URL Slugs
 
-Keep your url slug and keyword-rich. One common practice is to use the same url as your title like is done in this blog post.
+Keep your url slugs simple and keyword-rich. One common practice is to use the same url as your title just like is done in this blog post.
 
 ## Headings (H1-H3)
 
