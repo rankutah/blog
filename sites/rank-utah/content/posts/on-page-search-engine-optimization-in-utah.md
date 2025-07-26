@@ -99,8 +99,8 @@ Schema markup are files written specifically written to tell search engines abou
 
 Once you have your schema markeup in place you can validate it at [schema.org](http://schema.org) by pasting in your webpage to ensure there are no errors.
 
-## Additional information On-Page Search Engine Optimization
+## Additional Information
 
 If you would like to have help optimizing your web pages for your Utah business, so you can focus on your business, you can find my [contact information here.](https://rankutah.com/#contact)
 
-If you are doing it all yourself you might enjoy Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
+If you are doing it all yourself you might also enjoy Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
