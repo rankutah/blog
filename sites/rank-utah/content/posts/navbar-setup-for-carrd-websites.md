@@ -2,6 +2,8 @@
 date: 2025-06-01
 is_published: Published
 title: Navbar Setup for Carrd Websites
+tags:
+  - web-design
 ---
 This is a simple guide showing two options for setting up a navigation menu bar on a [Carrd.co website.](http://Carrd.co)
 
