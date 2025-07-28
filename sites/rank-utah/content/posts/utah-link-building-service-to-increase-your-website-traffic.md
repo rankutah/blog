@@ -26,17 +26,17 @@ For local searches Google provides local results. Goole's goal is to provide the
 
 ### Business Directory Listings (Citations)
 
-Rank Utah uses a simple white-hat strategy to help small businesses in Utah acquire backlinks. First, we focus on helping you get citations (business directory listings). We sync your business info to 150+ platforms, directories, map apps, consumer apps and voice assitants via the five leading data aggregators (Localeze, DataAxle, YP Netowrk, GPS Netowrk, and Foursqure). These listings act as the foundation to to showing up in Google Search Results. Google requires a consistent NAP (name, address, and phone number) for your business accross the web if you want to show up in search results. This service syncs these directories with your busienss and enables us to update all as needed. In adition to a consistent NAP, many of these directories also provide backlinks to your homepage, boosting your homepage authority and potentially brining additional traffic.
+Rank Utah uses a simple white-hat strategy to help small businesses in Utah acquire backlinks. First, we focus on helping you get citations (business directory listings). We sync your business info to 150+ platforms, directories, map apps, consumer apps and voice assistants via the five leading data aggregators (Localeze, DataAxle, YP Network, GPS Network, and Foursquare). These listings act as the foundation to to showing up in Google Search Results. Google requires a consistent NAP (name, address, and phone number) for your business across the web if you want to show up in search results. This service syncs these directories with your busienss and enables us to update all as needed. In addition to a consistent NAP, many of these directories also provide backlinks to your homepage, boosting your homepage authority and potentially brining additional traffic.
 
 ### Business Blog
 
-Rank Utah also provides you with other tools to help you aquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer serach intent and drive traffic, boost SEO, and position yourself as a local authority. The blog enables you to easily set tup a tagging system, allows for searches, light and dark mode,
+Rank Utah also provides you with other tools to help you acquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer search intent and drive traffic, boost SEO, and position yourself as a local authority. The blog enables you to easily set tup a tagging system, allows for searching your posts, light and dark mode that is auto-set based on the users system settings, and a CMS that helps you use local SEO best practices. It will have the same look, feel, and performance, as the current blog you are on.
 
 ![](/media/rank-utah-blog.jpg)
 
 ### Competitor Analysis
 
-Rank Utah also provides you with an analysis of your competitors and the backlinks they have in common. This allows you to even the playing field by aquiring the same backlinks your competitors share.
+Rank Utah also provides you with an analysis of your competitors and the backlinks they have in common. This allows you to even the playing field by acquiring the same backlinks your competitors share.
 
 ![](/media/competitor%20backlink%20analysis.jpg)
 
@@ -44,7 +44,7 @@ Rank Utah also provides you with an analysis of your competitors and the backlin
 
 ### Local Chamber of Commerce
 
-One of the simplest methods for aquiring a backlink is to pay for a membership with your city Chamber of Commerce. This is a powerful link as it ties you to your local area, comes from a reputable source, can potentially drive traffic to your website, while also providing any of the additional benefits the chamber provides.
+One of the simplest methods for acquiring a backlink is to pay for a membership with your city Chamber of Commerce. This is a powerful link as it ties you to your local area, comes from a reputable source, can potentially drive traffic to your website, while also providing any of the additional benefits the chamber provides.
 
 ### Sponsorships
 
