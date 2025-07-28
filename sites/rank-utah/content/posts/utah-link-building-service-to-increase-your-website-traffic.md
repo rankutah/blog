@@ -51,7 +51,7 @@ Sponsoring local events often provides you with a backlink and greater visibilit
 
 ### Partnerships
 
-Consider who would natually make referalls to your business and ask them to link to your website or exchange links if you both share referalls. This might include suppliers or businesses that don't directly compete with you. The places where you would get the traffic you want for your website are the most natural and beneficial places to get a backlink.
+Consider who would naturally make referrals to your business and ask them to link to your website or exchange links if you both share referrals. This might include suppliers or businesses that don't directly compete with you. The places where you would get the traffic you want for your website are the most natural and beneficial places to get a backlink.
 
 ## Reach Out
 
