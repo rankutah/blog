@@ -7,9 +7,9 @@ tags:
 ---
 I specialize in providing local SEO services to small business in Orem, UT. I focus specifically on helping rank your Website and Google Business Profile for the searches that matter most to your business. The details of my process and my rates can be found by visiting my website [RankUtah.com](http://RankUtah.com).
 
-## Where am I located?
+## Where are you located?
 
-I run Rank Utah out of my home in order to provide lower costs to my clients. I can either visit you at your location or we can communicate via phone or video meetings.
+I run Rank Utah out of my home in order to provide lower costs to my clients and am located in Orem, Utah. I can either visit you at your location or we can communicate via phone or video meetings.
 
 ## What is your pricing?
 
