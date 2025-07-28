@@ -56,4 +56,4 @@ Consider who would naturally make referrals to your business and ask them to lin
 
 ## Reach Out
 
-If you have a small business and would like to start services, ask additional quesitons, or otherwise connect, please [reach out](https://rankutah.com/#contact).
+If you have a small business and would like to start services, ask additional questions, or otherwise connect, visit my website [RankUtah.com](http://RankUtah.com).
