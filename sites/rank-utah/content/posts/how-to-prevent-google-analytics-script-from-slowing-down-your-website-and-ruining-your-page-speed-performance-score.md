@@ -6,6 +6,7 @@ title: How to Prevent Google Analytics Script From Slowing Down Your Website and
 tags:
   - google-analytics
   - web-design
+  - script
 ---
 The Google Analytics script is heavy and will slow down your website. I have proven this for myself by going to Page Speed Insights and testing websites with and without the script. Many of the recommendations such as using the defer attribute are not helpful. Other recommendations like turning off enhanced measurement by toggling off outbound clicks, site search, video engagement, and file downloads, marginally help but do not solve the problem.
 
