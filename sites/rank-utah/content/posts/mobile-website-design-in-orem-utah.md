@@ -5,7 +5,7 @@ title: Mobile Website Design in Orem Utah
 tags:
   - web-design
 ---
-Rank Utah builds websites that are mobile-friendly optimized websites for small businesses in Orem Utah. If you are looking for a redesign of a current website or need a website for your new business you can visit [RankUtah.com](http://RankUtah.com) to learn more.
+Rank Utah builds websites that are mobile-friendly and optimized for small businesses in Orem Utah. If you are looking for a redesign of a current website or need a website for your new business you can visit [RankUtah.com](http://RankUtah.com) to learn more.
 
 ## What are 3 important considerations of a mobile-friendly design?
 
