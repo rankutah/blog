@@ -4,7 +4,7 @@ is_published: Published
 title: Utah On-Page Search Engine Optimization
 tags:
   - web-design
-  - SEO
+  - local-SEO
 ---
 If you would like help with on-page SEO please visit my website [Rank Utah](https://rankutah.com/) or [contact me](https://rankutah.com/#contact). If you are doing your own search engine optimization for a Utah business read on.
 
