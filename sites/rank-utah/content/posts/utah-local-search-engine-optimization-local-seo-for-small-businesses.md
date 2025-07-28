@@ -3,7 +3,7 @@ date: 2025-07-28
 is_published: Published
 title: Utah Local Search Engine Optimization (Local SEO) for Small Businesses
 tags:
-  - local-seo
+  - SEO
 ---
 ## Get More Local Leds for Your Business with Local SEO
 
