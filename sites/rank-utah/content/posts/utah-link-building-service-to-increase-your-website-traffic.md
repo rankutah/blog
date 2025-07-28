@@ -29,11 +29,15 @@ Rank Utah uses a simple white-hat strategy to help small businesses in Utah acqu
 
 ### Business Blog
 
-Rank Utah also provides you with other tools to help you aquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer serach intent and drive traffic, boost SEO, and position yourself as a local authority.
+Rank Utah also provides you with other tools to help you aquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer serach intent and drive traffic, boost SEO, and position yourself as a local authority. The blog enables you to easily set tup a tagging system, allows for searches, light and dark mode,
+
+![](/media/rank-utah-blog.jpg)
 
 ### Competitor Analysis
 
 Rank Utah also provides you with an analysis of your competitors and the backlinks they have in common. This allows you to even the playing field by aquiring the same backlinks your competitors share.
+
+![](/media/competitor%20backlink%20analysis.jpg)
 
 ## Additional Tips for Aquiring Backlinks and Building Traffic
 
