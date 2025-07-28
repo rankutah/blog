@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Orem Utah SEO Services for Small Businesses
+title: Orem Utah SEO Services for Small Businesses at Affordable Rates
 tags:
   - local-seo
 ---
@@ -14,6 +14,17 @@ I run Rank Utah out of my home in order to provide lower costs to my clients. I 
 ## What is your pricing?
 
 Because I am currently a one-person team and don't have an office, I can provide high-quality SEO services to you at a fraction of the cost of other agencies. You can check out my latest pricing by visiting [RankUtah.com](http://RankUtah.com).
+
+## What are your qualifications?
+
+I hold a master's degree in software development and a bachelor's degree in business management. I have a huge interest in local SEO and have spent many hours taking classes, listening to podcasts, performing test, masting tools, and striving to focus on what matters most so I can help out my clients. Here are a few of my blog posts of written on the top of local SEO.
+
+*   [Utah Local Search Engine Optimization (Local SEO) for Small Businesses](https://blog.rankutah.com/utah-local-search-engine-optimization-local-seo-for-small-businesses/)
+    
+*   [Utah On-Page Search Engine Optimization](https://blog.rankutah.com/utah-on-page-search-engine-optimization/)
+    
+*   [Utah Link Building Services to Increase Website Traffic](https://blog.rankutah.com/utah-link-building-services-to-increase-website-traffic/)
+    
 
 ## What is your SEO process?
 
