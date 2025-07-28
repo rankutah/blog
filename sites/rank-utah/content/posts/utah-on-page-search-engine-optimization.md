@@ -3,14 +3,14 @@ date: 2025-07-26
 is_published: Published
 title: Utah On-Page Search Engine Optimization
 tags:
-  - SEO
   - web-design
+  - local-seo
 ---
 If you would like help with on-page SEO please visit my website [Rank Utah](https://rankutah.com/) or [contact me](https://rankutah.com/#contact). If you are doing your own search engine optimization for a Utah business read on.
 
 ## The #1 Most Overlooked Component of On-Page SEO: Keyword Research
 
-If your website is not aligned with what your customers are searching for you won't even show up in the search results. Here are some of the best free tools you can use to kick off your research. 
+If your website is not aligned with what your customers are searching for you won't even show up in the search results. Here are some of the best free tools you can use to kick off your research.
 
 ## Free Keyword Research Tools
 
