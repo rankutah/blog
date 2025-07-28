@@ -7,11 +7,11 @@ tags:
   - google-analytics
   - web-design
 ---
-The Google Analytics script is heavy and will slow down your website. I have proven this form myself by going to Page Speed Insights and testing websites with and without the script. Many of the recommendations such as using the defer attribute are not reliable. Other recommendations like turning off enhanced measurement by toggling off outbound clicks, site search, video engagement, and file downloads, marginally help but do not solve the problem.
+The Google Analytics script is heavy and will slow down your website. I have proven this for myself by going to Page Speed Insights and testing websites with and without the script. Many of the recommendations such as using the defer attribute are not helpful. Other recommendations like turning off enhanced measurement by toggling off outbound clicks, site search, video engagement, and file downloads, marginally help but do not solve the problem.
 
-The script below solves the problem. It ensures the script is only loaded when the user interacts with the site by touching the screen (on a phone or tablet) or scrolls (on desktop). If none of this happens it waits 4 seconds and then fires.
+The script below solves the problem. It works by delaying the script from loading in the best way possible. It ensures the script is only loaded when the user interacts with the site by touching the screen (on a phone or tablet) or scrolls (on desktop). If none of this happens it waits 4 seconds and then fires.
 
-You will miss capturing users in your Analytics who land on your site, do not interact in any way, and then drop. However, it is well worth the cost. My tests show this script to improve most websites by at least a half a second.
+The one downside of this script is that you will not capture users data for users who land on your site and drop within 4 seconds without interacting in any way. I think the benefit far outweighs the cost and I use it for all of my websites, especially considering that page load speed is one of the biggest factors in causing users to drop off in the first place. My tests show this script to improve most websites load times by at least a half a second.
 
 To use the script you simple replace the Google Analytics ID with your own script. Try it for yourself and notice the difference.
 
