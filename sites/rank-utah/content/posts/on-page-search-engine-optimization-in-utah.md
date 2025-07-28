@@ -6,8 +6,6 @@ tags:
   - SEO
   - web-design
 ---
-![on-page search engine optimimization highlights](/images/on-page-search-engine-optimimization-for-utah-small-businesses.jpg)
-
 If you would like help with on-page SEO please visit my website [Rank Utah](https://rankutah.com/) or [contact me](https://rankutah.com/#contact). If you are working on search engine optimization yourself for your Utah business read on.
 
 ## The #1 Most Overlooked Component of On-Page SEO is Keyword Research
