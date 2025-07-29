@@ -5,9 +5,9 @@ title: Utah Local Search Engine Optimization (Local SEO) for Small Businesses
 tags:
   - local-seo
 ---
-## Get More Local Leds for Your Business with Local SEO
+## Get More Leads for Your Business with Local SEO
 
-Rank Utah helps service businesses in Orem attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out if you would like \[help with local SEO\]([https://rankutah.com/#contact](https://rankutah.com/#contact)).
+Rank Utah helps service businesses in Orem attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at [RankUtah.com](http://RankUtah.com).
 
 ## Why Local SEO Works
 
