@@ -7,7 +7,7 @@ tags:
 ---
 ## Get More Leads for Your Business with Local SEO
 
-Rank Utah helps service businesses in Orem attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at [RankUtah.com](http://RankUtah.com).
+Rank Utah helps service businesses in Orem attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at [RankUtah.com](https://rankutah.com/).
 
 ## Why Local SEO Works
 
