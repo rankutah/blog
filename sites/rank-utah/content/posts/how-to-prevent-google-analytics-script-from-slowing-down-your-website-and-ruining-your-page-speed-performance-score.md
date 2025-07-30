@@ -16,7 +16,7 @@ The one downside of this script is that you will not capture users data for user
 
 To use the script you simple replace the Google Analytics ID with your own script. Try it for yourself and notice the difference.
 
-If you would like help with SEO or Web Design for your small business, you can contact me at [RankUtah.com](http://RankUtah.com).
+If you would like help with SEO or Web Design for your small business, you can contact me at [RankUtah.com.](https://rankutah.com/)
 
 For additional tips for improving the speed of your website, scroll to the Image Optimization and Page Speed section of my article on \[On-Page Search Engine Optimization\]([https://blog.rankutah.com/utah-on-page-search-engine-optimization/](https://blog.rankutah.com/utah-on-page-search-engine-optimization/)).
 
