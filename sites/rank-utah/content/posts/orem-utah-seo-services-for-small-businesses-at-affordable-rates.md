@@ -5,7 +5,7 @@ title: Orem SEO Expert | Local SEO Services in Orem, Utah
 tags:
   - local-seo
 ---
-Looking for Orem SEO? Get personalized, affordable SEO solutions to grow your business and improve your Google rankings in Orem, Utah. Learn more by visiting [RankUtah.com](http://RankUtah.com).
+Looking for Orem SEO? Get personalized, affordable SEO solutions to grow your business and improve your Google rankings in Orem, Utah. Learn more by visiting [RankUtah.com](https://rankutah.com/).
 
 ## Where are you located?
 
