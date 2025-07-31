@@ -4,9 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug",
-    "build:rank-utah": "hugo --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
-    "original:rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah"
+    "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
+    "build:rank-utah": "hugo --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache"
   },
   "repository": {
     "type": "git",
