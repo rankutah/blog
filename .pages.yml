@@ -1,6 +1,6 @@
 media:
   - name: rank-utah
-    input: sites/rank-utah/assets/media
+    input: sites/rank-utah/media
     output: /media
   - name: nova-gutter
     input: sites/nova-gutter/assets/media
@@ -92,7 +92,7 @@ content:
   - name: rank-utah
     label: rank-utah posts
     type: collection
-    path: sites/rank-utah/content/posts
+    path: sites/rank-utah/posts
     filename: "{primary}.md"
 
     view:
