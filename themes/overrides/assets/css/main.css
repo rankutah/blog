@@ -6,3 +6,15 @@
 
 /* 3) Bring in Flowbite’s own shipped CSS for modals, dropdown shadows, etc. */
 @source "flowbite/dist/flowbite.css";
+
+
+/* ensure list markers show up */
+ul {
+  list-style: disc outside;
+  margin-left: 1.5rem;
+}
+
+ol {
+  list-style: decimal outside;
+  margin-left: 1.5rem;
+}

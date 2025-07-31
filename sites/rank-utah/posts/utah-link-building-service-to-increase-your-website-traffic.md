@@ -8,7 +8,7 @@ tags:
 ---
 ## About Link Building
 
-Link building (aka backlink building) increases the authority of your web pages. In local SEO Google uses authority, [relevance](https://blog.rankutah.com/utah-on-page-search-engine-optimization/), and proximity to determine which websites show up at the top of organic results. Google confirms that authority is page-based, not site-based. This means a backlink won't boost every page on your site, only the authority of the specific page linked to. However, you can use that pages increased authority to increase the authority of other pages through internal links.
+Link building (aka backlink building) **increases** the authority of your web pages. In local SEO Google uses authority, [relevance](https://blog.rankutah.com/utah-on-page-search-engine-optimization/), and proximity to determine which websites show up at the top of organic results. Google confirms that authority is page-based, not site-based. This means a backlink won't boost every page on your site, only the authority of the specific page linked to. However, you can use that pages increased authority to increase the authority of other pages through internal links.
 
 ## The Importance of Backlinks for Local SEO
 
