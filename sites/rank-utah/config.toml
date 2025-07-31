@@ -16,6 +16,15 @@ pruneTaxonomies = true
     [markup.goldmark.renderer]
       unsafe = true
 
+[module]
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+  
+  [[module.mounts]]
+    source = "posts"
+    target = "content/posts"
+
 [outputs]
   home         = ["HTML", "RSS", "JSON"]
   section      = ["HTML", "JSON"]
@@ -57,7 +66,7 @@ pruneTaxonomies = true
   linkClasses = "font-medium text-green-600 underline dark:text-green-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline"
 
 [permalinks]
-  posts = "/:slug/"
+  posts = "/:filename/"
 
 [taxonomies]
   tag = "tags"

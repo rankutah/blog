@@ -1,8 +1,7 @@
 ---
+title: How to Prevent Google Analytics Script From Slowing Down Your Website and Ruining your Page Speed Performance Score
 date: 2025-07-28
 is_published: Published
-title: How to Prevent Google Analytics Script From Slowing Down Your Website and
-  Ruining your Page Speed Performance Score
 tags:
   - google-analytics
   - web-design
