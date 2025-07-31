@@ -1,0 +1,21 @@
+{{/* layouts/shortcodes/button.html */}}
+
+{{- /* 1) Page-level override */ -}}
+{{- $pageClasses    := .Get "classes" }}
+
+{{- /* 2) Site-wide default from config */ -}}
+{{- $siteClasses    := .Site.Params.button.classes }}
+
+{{- /* 3) Built-in fallback */ -}}
+{{- $defaultClasses := "inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2" }}
+
+{{- /* 4) Cascade: page → site → fallback */ -}}
+{{- $classes := default $defaultClasses (default $siteClasses $pageClasses) -}}
+
+{{- /* Text and URL (with their own defaults) */ -}}
+{{- $url  := .Get "url"  | default "#" -}}
+{{- $text := .Get "text" | default "Button" -}}
+
+<a href="{{ $url }}" class="{{ $classes }}">
+  {{ $text }}
+</a>

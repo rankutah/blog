@@ -30,15 +30,8 @@
   {{ partial "navbar.html" . }}
 
   <main class="min-h-screen">
-    {{- $page := . -}}
-    {{- with .Params.sections }}
-      {{- range . }}
-        {{ partial "components/section.html" (dict "page" $page "section" .) }}
-      {{- end }}
-    {{- else }}
-      {{- /* No sections defined → render raw page content */ -}}
-      {{ $page.Content }}
-    {{- end }}
+    {{- /* Render your Markdown content (with shortcodes) here */ -}}
+    {{ .Content }}
   </main>
 
   <script defer src="{{ "js/flowbite.min.js" | relURL }}"></script>
