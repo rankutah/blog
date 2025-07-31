@@ -5,4 +5,4 @@ url:     "/landing/"
 draft:   false
 ---
 
-{{< button text="Get Started Again" url="/landing/" >}}
+How about simple text
