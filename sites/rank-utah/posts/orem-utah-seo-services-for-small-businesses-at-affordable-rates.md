@@ -60,4 +60,4 @@ You will receive a higher standard of care by working one-on-one with me. I do n
 
 ## How do I get started?
 
-You can learn more about my processes and services by visiting [RankUtah.com](http://RankUtah.com) or reach my directly by calling or texting 801-980-2202. If you are visiting this page outside of business hours feel free to leave a message.
+You can learn more about my processes and services by visiting [RankUtah.com](https://RankUtah.com) or reach my directly by calling or texting 801-980-2202. If you are visiting this page outside of business hours feel free to leave a message.

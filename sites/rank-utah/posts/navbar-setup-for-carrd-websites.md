@@ -5,7 +5,7 @@ title: Navbar Setup for Carrd Websites
 tags:
   - web-design
 ---
-This is a simple guide showing two options for setting up a navigation menu bar on a [Carrd.co website.](http://Carrd.co)
+This is a simple guide showing two options for setting up a navigation menu bar on a [Carrd.co website.](https://Carrd.co)
 
 Step 1: Watch the [Youtube Video Demo](https://www.youtube.com/watch?v=I6Vopo5VXWQ)
 

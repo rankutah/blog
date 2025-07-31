@@ -1,0 +1,20 @@
+{{- /* layouts/_default/_markup/render-link.html */ -}}
+{{- $dest := .Destination -}}
+
+{{- /* Only process internal links ending in .md */ -}}
+{{- if and (not (or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://"))) (strings.HasSuffix (lower $dest) ".md") -}}
+  {{- /* Drop .md extension */ -}}
+  {{- $url := replaceRE `(?i)\.md$` "" $dest -}}
+  {{- /* Remove leading ./ or ../ */ -}}
+  {{- $url = replaceRE `^\.{1,2}/` "" $url -}}
+  {{- /* Ensure leading slash */ -}}
+  {{- if not (strings.HasPrefix $url "/") -}} {{- $url = printf "/%s" $url -}} {{- end -}}
+  {{- /* Ensure trailing slash */ -}}
+  {{- if not (strings.HasSuffix $url "/") -}} {{- $url = printf "%s/" $url -}} {{- end -}}
+  {{- /* Collapse duplicate slashes */ -}}
+  {{- $url = replaceRE "/+" "/" $url -}}
+  <a href="{{ $url }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- else -}}
+  {{- /* Leave all other links unchanged */ -}}
+  <a href="{{ .Destination }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}
