@@ -65,7 +65,7 @@ The images for your Utah business should be compressed and optimally use modern 
 
 Here is a free tool you can use to compress your images. You simple drop in your images and the tool will give you a folder with your images in a compressed format. These images are ready to upload to your website.
 
-### [https://tinyjpg.com/](https://tinyjpg.com/)
+- [https://tinyjpg.com/](https://tinyjpg.com/)
 
 ### Image Keywords
 
