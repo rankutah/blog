@@ -2,6 +2,8 @@
 title: Free 30-Minute Google Business Profile Review — Get More Calls in Utah
 tags:
   - local-seo
+date: 2025-08-04
+author: Benjamin Awerkamp
 ---
 ![](../media/google-business-profile-making-call.jpg)
 
