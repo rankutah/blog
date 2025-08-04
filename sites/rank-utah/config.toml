@@ -49,6 +49,8 @@ pruneTaxonomies = true
   mainSections        = ["posts"]
   defaultTheme        = "auto"
   disableThemeToggle  = false
+  author              = "Benjamin Awerkamp"
+  hideMeta            = false
 
 [params.header]
   stickyMobile     = true
