@@ -5,7 +5,7 @@ tags:
 date: 2025-08-04
 author: Benjamin Awerkamp
 ---
-![person looking up local business information from a Google Business Profile to make a phone call with the background as an image of Google Maps](../media/google-business-profile-making-call.jpg)
+![person looking up local business information from a Google Business Profile to make a phone call with the background as an image of Google Maps](../media/google-business-profile-audit.jpg)
 
 Your Google Business Profile (GBP) is one of your most powerful tools for finding local customers in Utah. But with a few simple adjustments, you could be getting even more calls and new business. This free, no-obligation review is a simple 30-minute video chat where we'll work together to optimize your profile. 
 
