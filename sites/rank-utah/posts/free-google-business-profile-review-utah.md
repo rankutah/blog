@@ -13,7 +13,7 @@ If you are in a rush and ready to go you can quickly [schedule here](https://cal
 
 ## What You'll Get in Your Free Google Business Profile Review
 
-During your 30-minute review, we'll compare your Google Business Profile to your competitors and focus on the areas that matter most. 
+During your 30-minute review, we'll compare your Google Business Profile to your competitors and focus on the areas that matter most.
 - Primary and Additional Categories (The #1 ranking factor: how to select)
 - Reviews (How to get more and what to do with the ones you have)
 - Website URL (Using the right page and getting better analytics)
@@ -40,9 +40,8 @@ Your review is based on the latest insights from [Whitespark's local search rank
 
 ## Why is This Free?
 
-I offer this free service to help local businesses get a quick win and to introduce you to me SEO work. There's no pressure to start services, but if you find it helpful, you're welcome to leave a review or [explore my services](https://rankutah.com/#pricing) to boost your visibility. 
+I offer this free service to help local businesses get a quick win and to introduce you to my SEO work. There's no pressure to start services, but if you find it helpful, you're welcome to leave a review or [start local SEO services](https://rankutah.com/#pricing) to boost your visibility. 
 
 ## How do I sign up for my free 30-Minute Review? 
 
 Schedule your [free 30-minute Google Business Profile Review here](https://calendly.com/rankutah/30min). If you have additional questions you can call or text me at 801-980-2202. For more information on my business or services visit [RankUtah.com](https://rankutah.com)
->
