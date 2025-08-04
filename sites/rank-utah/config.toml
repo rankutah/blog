@@ -63,7 +63,7 @@ pruneTaxonomies = true
   logoHeight        = "h-10"
 
 [params.button]
-  classes = "inline-flex w-auto items-center justify-center bg-rose-600 hover:bg-rose-700 focus:ring-4 focus:outline-none focus:ring-green-300 text-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+  classes = "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
 
 [params.h1]
   classes = "text-4xl font-bold dark:text-white-200"

@@ -8,7 +8,6 @@
 @source "flowbite/dist/flowbite.css";
 
 
-/* ensure list markers show up */
 ul {
   list-style: disc outside;
   margin-left: 1.5rem;
