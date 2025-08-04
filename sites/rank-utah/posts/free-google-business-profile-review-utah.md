@@ -40,7 +40,7 @@ Your review is based on the latest insights from [Whitespark's local search rank
 
 ## Why is This Free?
 
-I offer this free service to help local businesses get a quick win and to introduce you to my SEO work. There's no pressure to start services, but if you find it helpful, you're welcome to leave a review or [start local SEO services](https://rankutah.com/#pricing) to boost your visibility. 
+I offer this free service to help local businesses get a quick win and to introduce you to my SEO work. There's no pressure to start services, but if you find it helpful, you're welcome to leave a review or [start local SEO services or Web Design services](https://rankutah.com) to boost your visibility. 
 
 ## How do I sign up for my free 30-Minute Review? 
 
