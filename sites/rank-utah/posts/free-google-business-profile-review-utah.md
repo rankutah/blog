@@ -9,7 +9,7 @@ author: Benjamin Awerkamp
 
 Your Google Business Profile (GBP) is one of your most powerful tools for finding local customers in Utah. But with a few simple adjustments, you could be getting even more calls and new business. This free, no-obligation review is a simple 30-minute video chat where we'll work together to optimize your profile. 
 
-If you are in a rush and ready to go you can quickly [schedule here](https://calendly.com/rankutah/30min). 
+If you are in a rush and ready to go you can [schedule here](https://calendly.com/rankutah/30min). 
 
 ## What You'll Get in Your Free Google Business Profile Review
 
