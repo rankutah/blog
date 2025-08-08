@@ -30,10 +30,11 @@
   {{ partial "navbar.html" . }}
 
   <main class="min-h-screen">
-    {{- /* Render your Markdown content (with shortcodes) here */ -}}
-    {{ .Content }}
+    <article class="prose prose-zinc max-w-none dark:prose-invert">
+      {{ .Content }}
+    </article>
   </main>
-
+  
   <script defer src="{{ "js/flowbite.min.js" | relURL }}"></script>
   <script defer>
     document.addEventListener('DOMContentLoaded', () => {

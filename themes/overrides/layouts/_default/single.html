@@ -81,7 +81,8 @@
     {{ partial "toc.html" . }}
   {{ end }}
 
-  <div class="post-content">
+  <!-- Added Typography wrapper so Markdown (lists, etc.) render correctly -->
+  <div class="post-content prose prose-zinc max-w-none dark:prose-invert">
     {{- if and .Params.startDate .Params.endDate }}
       {{/* Prepare human-friendly date and time range */}}
       {{ $tz := "-06:00" }}

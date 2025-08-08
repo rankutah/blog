@@ -2,13 +2,16 @@
 @import "tailwindcss";
 
 /* 2) Register Flowbite as a Tailwind plugin (your tailwind.config.cjs already has require('flowbite/plugin')) */
+
+@plugin "@tailwindcss/typography";
 @plugin "flowbite/plugin";
+
 
 /* 3) Bring in Flowbite’s own shipped CSS for modals, dropdown shadows, etc. */
 @source "flowbite/dist/flowbite.css";
 
 
-ul {
+/* ul {
   list-style: disc outside;
   margin-left: 1.5rem;
 }
@@ -16,4 +19,7 @@ ul {
 ol {
   list-style: decimal outside;
   margin-left: 1.5rem;
-}
+} */
+
+/* .prose ul { list-style: disc; padding-left: 1.5rem; }
+.prose ol { list-style: decimal; padding-left: 1.5rem; } */
