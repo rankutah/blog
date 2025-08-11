@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Orem SEO Expert | Local SEO Services in Orem, Utah
+title: SEO Services for Small Businesses in Orem, Utah
 tags:
   - local-seo
 ---

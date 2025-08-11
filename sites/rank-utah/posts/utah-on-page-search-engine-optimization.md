@@ -1,7 +1,7 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: Utah On-Page Search Engine Optimization
+title: On-Page SEO for Small Businesses in Orem, Utah
 tags:
   - web-design
   - local-seo

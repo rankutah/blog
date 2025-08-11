@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Utah Local Search Engine Optimization (Local SEO) for Small Businesses
+title: Local SEO for Small Businesses in Orem, Utah
 tags:
   - local-seo
 ---
