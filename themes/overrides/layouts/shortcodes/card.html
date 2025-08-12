@@ -1,0 +1,36 @@
+{{- /* Clickable card (anchor). Uses page > site > fallback classes. */ -}}
+{{- $page := .Page -}}
+
+{{- $href    := .Get "url"   | default "#" | safeURL -}}
+{{- $title   := .Get "title" | default "" -}}
+{{- $text    := .Get "text"  | default "" -}}
+{{- $target  := .Get "target" | default "" -}}
+{{- $rel     := .Get "rel"     | default "" -}}
+
+{{- /* 1) Page-level override */ -}}
+{{- $pageClasses := .Get "classes" | default "" -}}
+
+{{- /* 2) Site-wide default */ -}}
+{{- $siteClasses := $page.Site.Params.card.classes | default "" -}}
+
+{{- /* 3) Fallback (your Flowbite example + no-underline + not-prose) */ -}}
+{{- $fallback := "not-prose no-underline block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" -}}
+
+{{- /* 4) Choose final */ -}}
+{{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
+
+<a href="{{ $href }}" class="{{ $classes }}"{{ with $target }} target="{{ . }}"{{ end }}{{ with $rel }} rel="{{ . }}"{{ end }}>
+  {{- $inner := .InnerDeindent | strings.TrimSpace -}}
+  {{- if $inner -}}
+    <div class="prose">
+      {{- $page.RenderString $inner -}}
+    </div>
+  {{- else -}}
+    {{- if $title -}}
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $title }}</h5>
+    {{- end -}}
+    {{- if $text -}}
+      <p class="font-normal text-gray-700 dark:text-gray-400">{{ $text }}</p>
+    {{- end -}}
+  {{- end -}}
+</a>

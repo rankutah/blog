@@ -1,3 +1,73 @@
-<section class="container mx-auto px-4 py-8 text-sm>">
-  {{ partial "flowbite-accordion.html" .}}
-</section>
+{{- /* Inline Flowbite accordion
+     Usage:
+
+     {{< accordion id="accordion-collapse" type="collapse" openFirst="true" >}}
+     ## What is Flowbite?
+     Flowbite is an open-source library...
+
+     ---
+
+     ## Is there a Figma file available?
+     Yes — see the [Figma design system](https://flowbite.com/figma/).
+
+     ---
+
+     ## What are the differences between Flowbite and Tailwind UI?
+     - Flowbite core is MIT-licensed
+     - Tailwind UI is paid
+     {{< /accordion >}}
+
+     Notes:
+     • Separate items with a line that contains only --- (three dashes)
+     • The first line of each item is the title (usually a Markdown heading)
+*/ -}}
+
+{{- $page      := .Page -}}
+{{- $id        := .Get "id"   | default "accordion-collapse" -}}
+{{- $type      := .Get "type" | default "collapse" -}}  {{/* "collapse" or "accordion" */}}
+{{- $openFirst := eq (lower (.Get "openFirst" | default "false")) "true" -}}
+
+{{- /* Split inner content into items by a line of --- */ -}}
+{{- $raw   := trim .Inner "\r\n\t " -}}
+{{- $items := split $raw "\n---\n" -}}
+{{- $count := len $items -}}
+
+<div id="{{ $id }}" data-accordion="{{ $type }}">
+  {{- range $i, $chunk := $items -}}
+    {{- $n   := add $i 1 -}}
+    {{- $hid := printf "%s-heading-%d" $id $n -}}
+    {{- $bid := printf "%s-body-%d"    $id $n -}}
+
+    {{- /* Title = first line; Body = rest */ -}}
+    {{- $titleLine := replaceRE `(?s)^([^\r\n]+).*` "$1" $chunk -}}
+    {{- $title     := replaceRE `^#+\s*` "" (trim $titleLine " ") -}}
+    {{- $body      := replaceRE `(?s)^[^\r\n]+\s*\r?\n` "" $chunk -}}
+
+    {{- $isOpen := and $openFirst (eq $n 1) -}}
+    {{- $isFirst := eq $n 1 -}}
+    {{- $isLast  := eq $n $count -}}
+
+    <h2 id="{{ $hid }}">
+      <button
+        type="button"
+        class="not-prose flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border {{ if not $isLast }}border-b-0{{ end }} border-gray-200 {{ if $isFirst }}rounded-t-xl{{ end }} focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        data-accordion-target="#{{ $bid }}"
+        aria-expanded="{{ $isOpen }}"
+        aria-controls="{{ $bid }}"
+      >
+        <span>{{ $title }}</span>
+        <svg data-accordion-icon class="w-3 h-3 shrink-0 {{ if $isOpen }}rotate-180{{ end }}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        </svg>
+      </button>
+    </h2>
+
+    <div id="{{ $bid }}" class="{{ if not $isOpen }}hidden{{ end }}" aria-labelledby="{{ $hid }}">
+      <div class="p-5 border {{ if not $isLast }}border-b-0{{ else }}border-t-0{{ end }} border-gray-200 dark:border-gray-700 {{ if $isOpen }}dark:bg-gray-900{{ end }}">
+        <div class="prose">
+          {{- $page.RenderString $body -}}
+        </div>
+      </div>
+    </div>
+  {{- end -}}
+</div>

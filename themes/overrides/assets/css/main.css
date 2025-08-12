@@ -11,5 +11,51 @@
 @source "flowbite/dist/flowbite.css";
 
 
+
+
 .prose a { text-decoration: none; }
 .prose a:hover { text-decoration: underline; }
+
+/* Make images reponsive */
+.prose img { max-width: 100%; height: auto; }
+
+.cols-auto {
+  display: grid;
+  gap: var(--gap, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min, 16rem), 1fr));
+}
+
+
+/* ========== Alignment kit (safe, plain CSS) ========== */
+
+/* Fluid auto-fit columns (you already use this idea) */
+.cols-auto{
+  display:grid;
+  gap: var(--gap, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min, 16rem), 1fr));
+  align-items: var(--v, start); /* start | center | end | stretch */
+}
+.cols-auto.v-center  { --v: center; }
+.cols-auto.v-end     { --v: end; }
+.cols-auto.v-stretch { --v: stretch; }
+
+/* Universal horizontal alignment (works on text AND single items) */
+.left, .prose .left   { text-align:left;  display:block; margin-inline:0; }
+.center, .prose .center { text-align:center; display:block; margin-inline:auto; }
+.right, .prose .right  { text-align:right; display:block; margin-left:auto; margin-right:0; }
+
+/* Universal vertical alignment INSIDE a box (put on container) */
+.vtop    { display:flex; flex-direction:column; justify-content:flex-start; min-height:100%; }
+.vcenter { display:flex; flex-direction:column; justify-content:center;  min-height:100%; }
+.vbottom { display:flex; flex-direction:column; justify-content:flex-end; min-height:100%; }
+
+/* Per-item vertical alignment in grid/flex rows (optional) */
+.self-vtop    { align-self:flex-start; }
+.self-vcenter { align-self:center; }
+.self-vbottom { align-self:flex-end; }
+
+/* Convenience helpers */
+.center-block { display:block; margin-inline:auto; }  /* self-center a single element */
+.centerable   { display:block; }                      /* mark items that should auto-center in a .center wrapper */
+.center .centerable { margin-inline:auto; }
+.right  .centerable { margin-left:auto; }

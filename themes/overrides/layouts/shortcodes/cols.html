@@ -1,0 +1,11 @@
+{{- $min := .Get "min" | default "16rem" -}}
+{{- $gap := .Get "gap" | default "1.5rem" -}}
+{{- $v   := .Get "v"   | default "" -}}
+{{- $vCls := "" -}}
+{{- if eq $v "center"  }}{{ $vCls = " v-center"  }}{{ end -}}
+{{- if eq $v "end"     }}{{ $vCls = " v-end"     }}{{ end -}}
+{{- if eq $v "stretch" }}{{ $vCls = " v-stretch" }}{{ end -}}
+
+<div class="cols-auto{{ $vCls }}" style="--min: {{ $min }}; --gap: {{ $gap }};">
+  {{ .Inner }}
+</div>

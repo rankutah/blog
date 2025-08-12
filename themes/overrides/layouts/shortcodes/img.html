@@ -1,0 +1,51 @@
+{{- /* Simple image shortcode with page > site > fallback classes */ -}}
+{{- $src   := .Get "src" -}}
+{{- $alt   := .Get "alt"   | default "" -}}
+{{- $title := .Get "title" | default "" -}}
+{{- $w     := .Get "width" | default "" -}}
+{{- $h     := .Get "height"| default "" -}}
+{{- $sizes := .Get "sizes" | default "100vw" -}}
+{{- $srcset := .Get "srcset" | default "" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $fetchp  := .Get "fetchpriority" | default "" -}}
+
+{{- if not $src -}}
+  <!-- img shortcode: missing src -->
+{{- else -}}
+  {{- $page := .Page -}}
+  {{- $pageClasses := .Get "classes" | default "" -}}
+  {{- $siteClasses := $page.Site.Params.image.classes | default "" -}}
+  {{- $fallback := "h-auto max-w-full" -}}
+  {{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
+
+  {{- if $title -}}
+    <figure>
+      <img
+        class="{{ $classes }}"
+        src="{{ $src | safeURL }}"
+        alt="{{ $alt }}"
+        {{ with $w }}width="{{ . }}"{{ end }}
+        {{ with $h }}height="{{ . }}"{{ end }}
+        {{ with $sizes }}sizes="{{ . }}"{{ end }}
+        {{ with $srcset }}srcset="{{ . }}"{{ end }}
+        loading="{{ $loading }}"
+        decoding="async"
+        {{ with $fetchp }}fetchpriority="{{ . }}"{{ end }}
+      />
+      <figcaption class="mt-2 text-sm text-gray-500">{{ $title }}</figcaption>
+    </figure>
+  {{- else -}}
+    <img
+      class="{{ $classes }}"
+      src="{{ $src | safeURL }}"
+      alt="{{ $alt }}"
+      {{ with $w }}width="{{ . }}"{{ end }}
+      {{ with $h }}height="{{ . }}"{{ end }}
+      {{ with $sizes }}sizes="{{ . }}"{{ end }}
+      {{ with $srcset }}srcset="{{ . }}"{{ end }}
+      loading="{{ $loading }}"
+      decoding="async"
+      {{ with $fetchp }}fetchpriority="{{ . }}"{{ end }}
+    />
+  {{- end -}}
+{{- end -}}

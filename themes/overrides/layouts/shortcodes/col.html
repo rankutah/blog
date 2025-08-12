@@ -1,0 +1,26 @@
+{{- $page   := .Page -}}
+{{- $inner  := .InnerDeindent | strings.TrimSpace -}}
+{{- $isCard := eq (lower (.Get "card" | default "false")) "true" -}}
+{{- $url    := .Get "url" | default "" -}}
+{{- $extra  := .Get "classes" | default "" -}}
+
+{{- $siteCard := $page.Site.Params.col.cardClasses | default "" -}}
+{{- $fallback := "max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" -}}
+{{- $card := cond (ne $siteCard "") $siteCard $fallback -}}
+{{- if ne $extra "" }}{{ $card = printf "%s %s" $card $extra }}{{ end -}}
+
+{{- if $isCard -}}
+  {{- if $url -}}
+    <a href="{{ $url | safeURL }}" class="centerable block {{ $card }}">
+      {{- $page.RenderString $inner -}}
+    </a>
+  {{- else -}}
+    <div class="centerable {{ $card }}">
+      {{- $page.RenderString $inner -}}
+    </div>
+  {{- end -}}
+{{- else -}}
+  <div{{ with $extra }} class="{{ . }}"{{ end }}>
+    {{- $page.RenderString $inner -}}
+  </div>
+{{- end -}}

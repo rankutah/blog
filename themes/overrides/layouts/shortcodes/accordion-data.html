@@ -1,0 +1,13 @@
+{{- /* Render an accordion from page/front-matter data.
+      Usage in Markdown: {{< accordion-data name="faq" id="faq" type="collapse" >}}
+      Front matter must define .Params.faq.items = [ { title, md, open }, ... ]
+*/ -}}
+
+{{- $page := .Page -}}
+{{- $name := .Get "name" | default "accordion" -}}
+{{- $block := index $page.Params $name -}}
+{{- $id   := .Get "id"   | default (or (index $block "id") (printf "%s" $name)) -}}
+{{- $type := .Get "type" | default (or (index $block "type") "collapse") -}}
+{{- $items := index $block "items" | default slice -}}
+
+{{- partial "components/accordion.html" (dict "page" $page "id" $id "type" $type "items" $items) -}}
