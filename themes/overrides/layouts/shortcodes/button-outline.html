@@ -1,31 +1,27 @@
 {{- /* layouts/shortcodes/button-outline.html */ -}}
 
-{{- $url   := default ""   (.Get "url") -}}          {{/* if set, we render an <a> */}}
-{{- $text  := default "Default" (.Get "text") -}}
-{{- $type  := default "button"  (.Get "type") -}}    {{/* used only for <button> */}}
+{{- $page := .Page -}}
+{{- $url  := (.Get "url") | default "" | safeURL -}}
+{{- $text := .Get "text" | default "Default" -}}
 
-{{- /* Full override from page */ -}}
-{{- $classes := default "" (.Get "classes") -}}
+{{- /* 1) Page-level override */ -}}
+{{- $pageClasses := .Get "classes" | default "" -}}
 
-{{- /* Site-wide default if empty */ -}}
-{{- if eq $classes "" -}}
-  {{- $classes = default "" .Page.Site.Params.buttonOutline.classes -}}
-{{- end -}}
+{{- /* 2) Site-wide override */ -}}
+{{- $siteClasses := $page.Site.Params.button_outline.classes | default "" -}}
 
-{{- /* Fallback if still empty (added `not-prose` so Typography won't underline) */ -}}
-{{- if eq $classes "" -}}
-  {{- $classes = "not-prose text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" -}}
-{{- end -}}
+{{- /* 3) Fallback (your outline example; no 'not-prose' here) */ -}}
+{{- $fallback := "text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" -}}
 
-{{- /* Optional: append-only tweaks (width, margins, etc.) */ -}}
-{{- $extra := default "" (.Get "class") -}}
+{{- /* Cascade: page > site > fallback */ -}}
+{{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
 
 {{- if $url -}}
-  <a href="{{ $url | safeURL }}" class="{{ $classes }}{{ with $extra }} {{ . }}{{ end }}" role="button">
-    {{ $text }}
-  </a>
+  <a href="{{ $url }}" class="not-prose {{ $classes }}" role="button">{{ $text }}</a>
 {{- else -}}
-  <button type="{{ $type }}" class="{{ $classes }}{{ with $extra }} {{ . }}{{ end }}">
-    {{ $text }}
-  </button>
+  <button type="{{ default "button" (.Get "type") }}" class="not-prose {{ $classes }}">{{ $text }}</button>
+{{- end -}}
+
+{{- if hugo.IsServer -}}
+<!-- debug: site.button_outline.classes = {{ printf "%q" $page.Site.Params.button_outline.classes }} -->
 {{- end -}}

@@ -11,3 +11,5 @@
 @source "flowbite/dist/flowbite.css";
 
 
+.prose a { text-decoration: none; }
+.prose a:hover { text-decoration: underline; }

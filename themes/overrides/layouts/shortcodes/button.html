@@ -1,24 +1,16 @@
 {{- /* layouts/shortcodes/button.html */ -}}
 
-{{- /* 1) Grab contexts */ -}}
 {{- $page := .Page -}}
+{{- $url  := (.Get "url") | default "#" | safeURL -}}
+{{- $text := .Get "text" | default "Button" -}}
 
-{{- /* 2) Try front-matter override (passed to shortcode) */ -}}
-{{- $classes := default "" (.Get "classes") -}}
+{{- $pageClasses := .Get "classes" | default "" -}}
+{{- $siteClasses := $page.Site.Params.button.classes | default "" -}}
+{{- $fallback := "text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-rose-600 dark:hover:bg-rose-700 focus:outline-none dark:focus:ring-rose-800" -}}
 
-{{- /* 3) If empty, try site-wide config */ -}}
-{{- if eq $classes "" -}}
-  {{- $classes = default "" $page.Site.Params.button.classes -}}
-{{- end -}}
+{{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
 
-{{- /* 4) If still empty, use hard-coded fallback */ -}}
-{{- if eq $classes "" -}}
-  {{- $classes = "text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-rose-600 dark:hover:bg-rose-700 focus:outline-none dark:focus:ring-rose-800" -}}
-{{- end -}}
-
-<a href="{{ default "#" (.Get "url") }}" class="not-prose {{ $classes }}">
-  {{ default "Button" (.Get "text") }}
-</a>
+<a href="{{ $url }}" class="not-prose {{ $classes }}">{{ $text }}</a>
 
 {{- if hugo.IsServer -}}
 <!-- debug: site.button.classes = {{ printf "%q" $page.Site.Params.button.classes }} -->

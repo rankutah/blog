@@ -1,5 +1,8 @@
 {{- /* layouts/_default/_markup/render-link.html */ -}}
 {{- $dest := .Destination -}}
+{{- $default := `font-medium text-blue-600 dark:text-blue-500 no-underline hover:underline` -}}
+{{- $cls := .Page.Site.Params.text.linkClasses | default $default -}}
+
 
 {{- /* Only process internal links ending in .md */ -}}
 {{- if and (not (or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://"))) (strings.HasSuffix (lower $dest) ".md") -}}
@@ -13,8 +16,8 @@
   {{- if not (strings.HasSuffix $url "/") -}} {{- $url = printf "%s/" $url -}} {{- end -}}
   {{- /* Collapse duplicate slashes */ -}}
   {{- $url = replaceRE "/+" "/" $url -}}
-  <a href="{{ $url }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+  <a href="{{ $url }}" class="{{ $cls }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
 {{- else -}}
-  {{- /* Leave all other links unchanged */ -}}
-  <a href="{{ .Destination }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+  {{- /* Leave destination untouched; just add classes */ -}}
+  <a href="{{ .Destination }}" class="{{ $cls }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
 {{- end -}}
