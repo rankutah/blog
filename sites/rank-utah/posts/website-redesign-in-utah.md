@@ -1,12 +1,12 @@
 ---
-title: Website Redesign for Small Businesses in Utah
+title: Utah Website Redesign for Small Businesses
 date: 2025-09-14
 tags:
   - web-design
 ---
 Get a modern, mobile-friendly website redesign for your Utah business — fast, affordable, and built to grow with you. Is your website outdated, slow, or not showing up on Google? I help Utah businesses rebuild their websites from the ground up — fast, mobile-friendly, and fully optimized for local search. You’ll get a modern design, better visibility, and full control over your site, without the hassle of chasing down your old designer.
 
-## How the Website Resign Works
+## How Does Website Redesign?
 
 1. We Replace Your Existing Site: I recreate your website quickly, using your current content as a base
 2. Your Website is Modern, Fast, and Google-Ready: Your new site is mobile-friendly, loads fast, and shows up in search
@@ -29,6 +29,6 @@ I work directly with business owners to create websites that actually work — n
 
 ## Ready to Fix Your Website? 
 
-[Send me a message](https://rankutah.com#contact) with your website and what you're looking for, and I'll get back to you personally.
+[Contact me at Rank Utah](https://rankutah.com#contact) with your website and what you're looking for, and I'll get back to you personally.
 
 Eliminate the stress over your website. I’ll take care of the redesign and long-term updates, so you can focus on what matters most: running and growing your business — not getting stuck fixing your site.
