@@ -1,16 +1,16 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: On-Page SEO for Small Businesses in Orem, Utah
+title: On-Page SEO Strategy Techniques for Small Businesses in Utah
 tags:
   - web-design
   - local-seo
 ---
-If you would like help with on-page SEO please visit my website [Rank Utah](https://rankutah.com/) or [contact me](https://rankutah.com/#contact). If you are doing your own search engine optimization for a Utah business read on.
+If you would like help with on-page SEO you can visit my company website [Rank Utah](https://rankutah.com/) or [contact me directly](https://rankutah.com/#contact). If you are doing your own search engine optimization for a Utah business read on.
 
-## The #1 Most Overlooked Component of On-Page SEO: Keyword Research
+## The #1 Most Overlooked Technique in On-Page SEO Strategy is Keyword Research
 
-If your website is not aligned with what your customers are searching for you won't even show up in the search results. Here are some of the best free tools you can use to kick off your research.
+If your website is not aligned with what your customers are searching for you won't even show up in the search results. While professional help with paid tools gives you the best results, here are some of the best free tools if you want to strategize yourself. 
 
 ## Free Keyword Research Tools
 
@@ -22,9 +22,10 @@ In Google Search Console you can click the Performance tab and look at the Queri
 
 One additional benefit of having your website on Google Search Console is you can enter your page url in the top. This will tell you if your URL is on Google. If not, you can click the Request Indexing button to submit it for indexing.
 
+One of the best things you can do for your on-page strategy in Google Search Console is explore the impressions and clicks from your Google Business Profile. In order to make this happen you must first ensure the website connected to your Google Business Profile (GBP) is using a UTM code at the end of your GBP url. Add this UTM code to the end of your website url so you know what traffic is coming from your GBP: ?utm_source=GBP&utm_medium=organic. So for rankutah.com the full website on the GBP would be https://rankutah.com?utm_source=GBP&utm_medium=organic. 
 ### Google Autocomplete
 
-One of the easiest ways to see what people are searching for is by using Google Autocomplete. Simple type what people would likely search for and see what Google suggests. Align your page with the related autocomplete queries.
+One of the easiest ways to see what people are searching for is by using Google Autocomplete. Simple type what people would likely search for and see what Google suggests. Align your page with the related autocomplete queries. This doesn't give you search volume but does help you get an idea on what people are interested in. 
 
 ### Use Free Keyword Research Tools
 
@@ -101,6 +102,6 @@ Once you have your schema markeup in place you can validate it at [schema.org](h
 
 ## Additional Information
 
-If you would like to have help optimizing your web pages for your Utah business, so you can focus on your business, you can find my [contact information here.](https://rankutah.com/#contact)
+If you would like to have help optimizing on-page seo strategy for your Utah business you can find my [contact information here.](https://rankutah.com/#contact)
 
 If you are doing it all yourself you might also enjoy Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).

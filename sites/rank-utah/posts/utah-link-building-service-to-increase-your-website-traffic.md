@@ -1,12 +1,14 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Link Building Services for Small Businesses in Orem, Utah
+title: Link Building Services for Small Businesses in Utah
 tags:
   - link-building
   - local-seo
 ---
-## About Link Building
+If you are interested in link building services or getting help with your backlink strategy you can visit my company website at [RankUtah.com](https://rankutah.com).
+
+## How a Link Building Strategy Works
 
 Link building (aka backlink building) **increases** the authority of your web pages. In local SEO Google uses authority, [relevance](https://blog.rankutah.com/utah-on-page-search-engine-optimization/), and proximity to determine which websites show up at the top of organic results. Google confirms that authority is page-based, not site-based. This means a backlink won't boost every page on your site, only the authority of the specific page linked to. However, you can use that pages increased authority to increase the authority of other pages through internal links.
 
@@ -14,7 +16,7 @@ Link building (aka backlink building) **increases** the authority of your web pa
 
 This chart shows the importance of backlinks for local SEO in generating leads for your business. Backlinks are the most difficult part of SEO and the easiest way to differentiate your business from competitors and get ahead in the rankings. While the 18.5% slice in the chart below may not seem as significant as other factors, it’s the hardest slice of the pie to acquire, and it’s what will set you apart. Not only can you receive traffic from visitors clicking those links, but you also receive organic traffic when your page appears in search results.
 
-![](/media/local-seo-lead-generation-factors.jpg)
+![pie chart showing the influence of website backlinks in a local SEO lead-generation strategy](/media/local-seo-lead-generation-factors.jpg)
 
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
@@ -30,17 +32,17 @@ Rank Utah uses a simple white-hat strategy to help small businesses in Utah acqu
 
 ### Business Blog
 
-Rank Utah also provides you with other tools to help you acquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer search intent and drive traffic, boost SEO, and position yourself as a local authority. The blog enables you to easily set tup a tagging system, allows for searching your posts, light and dark mode that is auto-set based on the users system settings, and a CMS that helps you use local SEO best practices. It will have the same look, feel, and performance, as the current blog you are on.
+Rank Utah also provides you with other tools to help you acquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer search intent and drive traffic, boost SEO, and position yourself as a local authority. The blog enables you to easily setup a tagging system, allows for searching your posts, light and dark mode that is auto-set based on the users system settings, and a CMS that helps you use local SEO best practices. It will have the same look, feel, and performance, as the current blog you are on. Creating excellent content that is relevant to what users are searching for is one of the best ways to get backlinks. 
 
-![](/media/rank-utah-blog.jpg)
+![blog post list demonstrating how a blog can be used to acquire backlinks](/media/rank-utah-blog.jpg)
 
 ### Competitor Analysis
 
 Rank Utah also provides you with an analysis of your competitors and the backlinks they have in common. This allows you to even the playing field by acquiring the same backlinks your competitors share.
 
-![](/media/competitor%20backlink%20analysis.jpg)
+![Google Spreadsheet showing competitor's links and how they are they can be used in a link building strategy](/media/competitor%20backlink%20analysis.jpg)
 
-## Additional Tips for Aquiring Backlinks and Building Traffic
+## Additional Tips for Adquiring Backlinks and Building Traffic
 
 ### Local Chamber of Commerce
 
@@ -56,4 +58,4 @@ Consider who would naturally make referrals to your business and ask them to lin
 
 ## Reach Out
 
-If you have a small business and would like to start services, ask additional questions, or otherwise connect, visit my website [RankUtah.com](https://rankutah.com/).
+If you have a small business and would like to start services, ask additional questions, or otherwise connect, visit my website at [RankUtah.com](https://rankutah.com/).

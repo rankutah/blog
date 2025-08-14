@@ -1,13 +1,11 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Local SEO for Small Businesses in Orem, Utah
+title: Get More Leads for Your Small Business in Utah with Local SEO
 tags:
   - local-seo
 ---
-## Get More Leads for Your Business with Local SEO
-
-Rank Utah helps service businesses in Orem attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at [RankUtah.com](https://rankutah.com/).
+Rank Utah helps service businesses in Orem attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at my company website [RankUtah.com](https://rankutah.com/).
 
 ## Why Local SEO Works
 
@@ -22,7 +20,7 @@ Rank Utah helps service businesses in Orem attract a steady stream of customers 
 
 Local SEO is different from broad SEO in that it focuses on three core areas: Relevance, Prominence, and Proximity. The chart below shows the factors that influence lead generation for local businesses.
 
-![local-seo-lead-generation-factors](../media/local-seo-lead-generation-factors.jpg)
+![pie chart showing local SEO lead-generation factors](../media/local-seo-lead-generation-factors.jpg)
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
 ## 1\. Relevance
