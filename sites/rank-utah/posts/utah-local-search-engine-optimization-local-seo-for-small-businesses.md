@@ -59,4 +59,4 @@ Relevance, prominence, and proximity are the three pillars of local SEO. Your we
 
 ## Reach Out
 
-For help with Local SEO or Web Design reach out to \[Rank Utah\]([https://rankutah.com/#contact](https://rankutah.com/#contact))
+For help with Local SEO or Web Design reach out to [Rank Utah]([https://rankutah.com/#contact](https://rankutah.com/#contact)
