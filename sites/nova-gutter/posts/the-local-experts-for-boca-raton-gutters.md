@@ -9,7 +9,7 @@ tags:
 
 For the last ten years, Nova Gutter Corparation has been the preeminent supply and installation company for gutters in Boca Raton, FL. Our highly skilled experts can help you with all your gutter related needs. In addition, our **Boca Raton gutter company** repairs and installs fascia, soffit, and siding. With the assistance of our gutter installation contractors, you can keep your property properly protected at all times.
 
-Call Nova Gutter Corporation today if you are looking for a [**gutter company in Boca Raton**](https://www.novagutter.com/). Our courteous and polite staff would be happy to assist you in any way that we can. Our experts can answer any questions that you may have about our exceptional services and gutters in Boca Raton, FL. We can schedule your appointment today.
+Call Nova Gutter Corporation today if you are looking for a [**gutter company in Boca Raton**](https://novagutter.com/). Our courteous and polite staff would be happy to assist you in any way that we can. Our experts can answer any questions that you may have about our exceptional services and gutters in Boca Raton, FL. We can schedule your appointment today.
 
 ## Why You Need Gutters in Boca Raton, FL
 

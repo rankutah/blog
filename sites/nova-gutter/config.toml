@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-baseURL       = "https://nova-gutter.pages.dev/"
+baseURL       = "https://blog.novagutter.com/"
 title         = "Nova Gutter"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
@@ -48,7 +48,7 @@ pruneTaxonomies = true
   taxonomy     = ["HTML","JSON"]   # ← ADD this line
 
 [params]
-  googleAnalyticsID = ""
+  googleAnalyticsID = "G-3KJ46VMTTB"
   accentColor       = "#f3844b"
   showReadingTime   = true
   enableSearch      = true
