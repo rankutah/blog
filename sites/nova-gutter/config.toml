@@ -53,7 +53,7 @@ pruneTaxonomies = true
   showReadingTime   = true
   enableSearch      = true
   clientName        = "Nova Gutter"
-  clientURL         = "https://novagutter.carrd.co/"
+  clientURL         = "https://novagutter.com"
   mainSections      = ["posts"]
   defaultTheme      = "auto" # auto set light/dark mode based on OS preference
   disableThemeToggle = false # make it so you can toggle the light/dark mode
@@ -68,7 +68,7 @@ pruneTaxonomies = true
 
   [[menu.main]]
     name   = "Home"
-    url    = "https://novagutter.carrd.co/"
+    url    = "https://novagutter.com"
     weight = 1
 
   [[menu.main]]
