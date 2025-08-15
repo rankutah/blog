@@ -10,7 +10,7 @@ tags:
 
 When it comes to commercial properties, every element of the building's exterior must be designed with durability and function in mind - including the gutter system. Choosing the right gutters is essential to protecting your property from water damage, preserving the foundation, and maintaining curb appeal.
 
-If you're a property manager, contractor, or business owner looking to upgrade or install a new gutter system, here's what you need to know about selecting the right materials, sizes, and configurations. Here is some of aht you need to know prior to [**commercial gutter installation**](https://www.novagutter.com/commercial-gutter-installation-boca-raton-fl.php).
+If you're a property manager, contractor, or business owner looking to upgrade or install a new gutter system, here's what you need to know about selecting the right materials, sizes, and configurations. Here is some of what you need to know prior to [**commercial gutter installation**](https://www.novagutter.com/commercial-gutter-installation-boca-raton-fl.php).
 
 ## K-Style vs. Box Gutters: What's Best for Commercial Buildings?
 

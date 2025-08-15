@@ -5,7 +5,7 @@ title: 3 Important Ways That Your Gutters Protect Your Home
 tags:
   - article
 ---
-![](/media/tips-seamless-gutters-boca-raton-fl.jpg)
+![](../media/tips-seamless-gutters-boca-raton-fl.jpg)
 
 What benefit do you think of when you consider your [**gutters**](https://www.novagutter.com/residential-gutter-installation-boca-raton-fl.php) -- if you even consider them at all? Perhaps you think they're a great way to keep your Boca Raton home's porch from turning into a waterfall when the rain comes down in sheets. Certainly, your gutters provide that benefit, but that's not the only benefit they provide.
 

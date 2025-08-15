@@ -18,6 +18,29 @@ pruneTaxonomies = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+
+[module]
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+  
+  [[module.mounts]]
+    source = "posts"
+    target = "content/posts"
 
 [outputs]
   home         = ["HTML", "RSS", "JSON"]

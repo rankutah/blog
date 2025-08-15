@@ -5,14 +5,13 @@ title: Your Local Gutter Company in Boynton Beach, FL
 tags:
   - service-area
 ---
-![](/media/gutters-homestead-fl.jpg)
+![](media/gutters-homestead-fl.jpg)
 
 When it’s time for service from a Boynton Beach [**gutter company**](https://www.novagutter.com/), will you know who to contact? Ask around and the name you’ll hear, time and time again, is Nova Gutter.
 
 We focus on ensuring each of our customers is completely satisfied with the results, it’s how we’ve earned the reputation we have. We don’t just want to meet your expectations, our goal is to exceed them.
 
 Don’t settle for anything less than the best, when it comes to the level of service you get from a Boynton Beach gutter company. Reach out to us today and let’s schedule your consultation.
-
 ## Seamless Gutters, Flawless Home
 
 If you don’t already have [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php), now is the time to start thinking about them. This also means finding the right Boynton Beach gutter company to team up with.
