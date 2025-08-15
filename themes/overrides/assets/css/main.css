@@ -14,7 +14,7 @@
 
 
 .prose a { text-decoration: none; }
-.prose a:hover { text-decoration: underline; }
+
 
 /* Make images reponsive */
 .prose img { max-width: 100%; height: auto; }
