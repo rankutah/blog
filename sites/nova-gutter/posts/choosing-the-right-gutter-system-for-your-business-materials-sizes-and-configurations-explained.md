@@ -1,8 +1,7 @@
 ---
-date: 2025-07-08
+date: 2025-07-10
 is_published: Published
-title: "Choosing the Right Gutter System for Your Business: Materials, Sizes,
-  and Configurations Explained"
+title: "Choosing the Right Gutter System for Your Business: Materials, Sizes, and Configurations Explained"
 tags:
   - article
 ---

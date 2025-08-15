@@ -1,5 +1,5 @@
 ---
-date: 2025-07-08
+date: 2025-07-10
 is_published: Published
 title: Should You Install Gutters Yourself or Leave it to the Pros?
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2025-07-08
+date: 2025-07-11
 is_published: Published
 title: 3 Important Ways That Your Gutters Protect Your Home
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2025-07-08
+date: 2025-07-10
 is_published: Published
 title: What Homeowners Should Know About Gutter Installation in Boca Raton
 tags:
