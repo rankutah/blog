@@ -57,6 +57,7 @@ pruneTaxonomies = true
   mainSections      = ["posts"]
   defaultTheme      = "auto" # auto set light/dark mode based on OS preference
   disableThemeToggle = false # make it so you can toggle the light/dark mode
+  author              = "Nova Gutter Corporation"
 
 [permalinks]
   posts   = "/:slug/"
