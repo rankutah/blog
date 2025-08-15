@@ -11,7 +11,11 @@
 @source "flowbite/dist/flowbite.css";
 
 
-
+/* Hide the small link-out SVG in the blog nav menu  */
+.header .nav #menu li > a > span + svg,
+.header .nav #menu li > a svg.ml-1.inline-block.flex-shrink-0 {
+  display: none !important;
+}
 
 .prose a { text-decoration: none; }
 
