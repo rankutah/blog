@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
+    "nova-gutter": "hugo server --disableFastRender --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
+    "build:nova-gutter": "hugo --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
     "build:rank-utah": "hugo --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache"
   },
   "repository": {
