@@ -9,7 +9,7 @@ tags:
 
 At Nova Gutter Corporation, our **Fort Lauderdale gutter company** has been proudly providing high quality services to the local community for the last ten years. We understand how important your gutters are to keeping you property protected during rain and storms. With our help, you can feel confident knowing that your gutter system is always performing at its absolute best.
 
-Call Nova Gutter Corporation today if you need to hire a professional for [**gutter installation in Fort Lauderdale, FL**](https://www.novagutter.com/gutter-installation-boca-raton-fl.php). Our highly skilled experts can custom design a new gutter system for you. We also work with soffit, fascia, and siding. With our assistance, all of these critical components of your residence will perform their function in the best possible manner. Our [**gutter company**](https://www.novagutter.com/) would be happy to schedule your appointment today.
+Call Nova Gutter Corporation today if you need to hire a professional for gutter installation in Fort Lauderdale, FL. Our highly skilled experts can custom design a new gutter system for you. We also work with soffit, fascia, and siding. With our assistance, all of these critical components of your residence will perform their function in the best possible manner. Our [**gutter company**](https://www.novagutter.com/) would be happy to schedule your appointment today.
 
 ## Fort Lauderdale Gutters Protect Your Home
 

@@ -24,7 +24,7 @@ To avoid these problems, you need to reduce the likelihood that gutter clogs wil
 
 ## Enjoy the Benefits Our Seamless Gutters Offer
 
-Another great way to reduce the likelihood that gutter clogs will occur is to get [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php). Seamless gutters contain fewer joints than seamed gutters do, so they reduce the likelihood that debris will build up. In addition to preventing this problem, seamless gutters can also offer some other great benefits:
+Another great way to reduce the likelihood that gutter clogs will occur is to get [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation). Seamless gutters contain fewer joints than seamed gutters do, so they reduce the likelihood that debris will build up. In addition to preventing this problem, seamless gutters can also offer some other great benefits:
 
 *   Reduced likelihood of leaks
     

@@ -7,11 +7,11 @@ tags:
 ---
 ![](../media/tips-seamless-gutters-boca-raton-fl.jpg)
 
-What benefit do you think of when you consider your [**gutters**](https://www.novagutter.com/residential-gutter-installation-boca-raton-fl.php) -- if you even consider them at all? Perhaps you think they're a great way to keep your Boca Raton home's porch from turning into a waterfall when the rain comes down in sheets. Certainly, your gutters provide that benefit, but that's not the only benefit they provide.
+What benefit do you think of when you consider your [**gutters**](https://novagutter.com/#residential-gutter-installation) -- if you even consider them at all? Perhaps you think they're a great way to keep your Boca Raton home's porch from turning into a waterfall when the rain comes down in sheets. Certainly, your gutters provide that benefit, but that's not the only benefit they provide.
 
 After all, your gutters actually perform many other great protective benefits for your Boca Raton home. Those benefits are vital for maintaining the well-being of your home, and knowing them, you will understand why it's important to stay on top of your gutters' maintenance needs.
 
-Should your gutters need any kind of maintenance or upkeep, then look to the [**Boca Raton gutter pros**](https://www.novagutter.com/) at **Nova Gutter Corporation**. We have the expertise to provide the gutter work you need to continue enjoying all of the great protective benefits your gutters can provide:
+Should your gutters need any kind of maintenance or upkeep, then look to the [**Boca Raton gutter pros**](https://novagutter.com/) at **Nova Gutter Corporation**. We have the expertise to provide the gutter work you need to continue enjoying all of the great protective benefits your gutters can provide:
 
 ## They Prevent Foundational Damage
 

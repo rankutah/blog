@@ -26,6 +26,6 @@ Before you find yourself grappling with these costly and dangerous issues, you n
 
 ## Enjoy All the Great Benefits of Seamless Gutters
 
-At some point, you may find yourself in need of new gutters for your home. Should that time come, you may want to consider [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php). With fewer joints than seamed gutters contain, seamless gutters will greatly reduce the likelihood that a clog will develop.
+At some point, you may find yourself in need of new gutters for your home. Should that time come, you may want to consider [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation). With fewer joints than seamed gutters contain, seamless gutters will greatly reduce the likelihood that a clog will develop.
 
 While offering this perks, seamless gutters also offer some other great benefits. A couple of these benefits include their ease of maintenance and their beauty, which can bolster your home’s curb appeal. Call our Delray Beach team today to enjoy all the great benefits that this installation offers.

@@ -11,7 +11,7 @@ One of the main reasons to add seamless gutters to your home is because they req
 
 ## What You Need to Know
 
-It would be an erroneous cal; to make to neglect to take care of your [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php), once they are in place. While they do not require as much care, and can go for a while between services, there is a minimal amount of care that should be invested.
+It would be an erroneous cal; to make to neglect to take care of your [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation), once they are in place. While they do not require as much care, and can go for a while between services, there is a minimal amount of care that should be invested.
 
 While blockages are less likely to occur, they still can. The more debris that gathers, the more damage that can occur. Your gutters can become weighed down and pull away from the wall. Plus stagnant water creates an excellent breeding ground for mosquitoes.
 

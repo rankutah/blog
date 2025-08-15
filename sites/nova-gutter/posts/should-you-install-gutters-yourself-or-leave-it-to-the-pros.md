@@ -13,7 +13,7 @@ Investing your own sweat equity into your dwelling is part of what makes your ho
 
 ## Where Do Gutters Fit Into All Of This?
 
-Cleaning your gutters is one thing, expertly installing them is quite another. The bottom line is that [**gutter installation**](https://www.novagutter.com/residential-gutter-installation-boca-raton-fl.php) is something that should always be handled by a trained and seasoned pro, no questions asked. Even cleaning them is best handled by an industry expert, but why?
+Cleaning your gutters is one thing, expertly installing them is quite another. The bottom line is that [**gutter installation**](https://novagutter.com/#residential-gutter-installation) is something that should always be handled by a trained and seasoned pro, no questions asked. Even cleaning them is best handled by an industry expert, but why?
 
 Any job that requires a ladder should be passed off to a pro, whenever possible. Too many accidents and injuries, some life threatening, result each year from homeowners attempting to pull off a project that requires a ladder. Even for single story homes, why take the risk?
 

@@ -15,7 +15,7 @@ We believe in going above and beyond when it comes to taking care of our clients
 
 ## What Makes Seamless Gutters the Better Choice
 
-You have two types of gutters to choose from: sectional and [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php). Many customers call us for Lantana gutter company services to get help deciding which kind they should have.
+You have two types of gutters to choose from: sectional and [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation). Many customers call us for Lantana gutter company services to get help deciding which kind they should have.
 
 If you’re curious about the benefits of going seamless, here are some things you should know about.
 

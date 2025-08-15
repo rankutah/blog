@@ -9,7 +9,7 @@ tags:
 
 Having well functioning gutters on your Boca Raton home is highly important. Your gutters protect your property from substantial water damage. Because it rains so much in the local area, you cannot forego the responsibility of having gutters on your residence. At Nova Gutter Corporation, our gutter company is here to help you install high quality **seamless gutters in Boca Raton**.
 
-Our [**Boca Raton gutter company**](https://www.novagutter.com/) has been proudly serving the local community for a decade. During this time, we have made it our rule to only provide our customers with the best possible services, including quality seamless [**gutter installation in Boca Raton**](https://www.novagutter.com/gutter-installation-boca-raton-fl.php). For this reason, we install seamless gutters, which have two distinct advantage over traditional segmented gutters. When you hire our team to install seamless gutters for you, you can feel confident knowing that you will maximize these immense benefits.
+Our [**Boca Raton gutter company**](https://www.novagutter.com/) has been proudly serving the local community for a decade. During this time, we have made it our rule to only provide our customers with the best possible services, including quality seamless [**gutter installation in Boca Raton**](https://novagutter.com/#residential-gutter-installation). For this reason, we install seamless gutters, which have two distinct advantage over traditional segmented gutters. When you hire our team to install seamless gutters for you, you can feel confident knowing that you will maximize these immense benefits.
 
 ## Why Are Gutters Important in the First Place
 

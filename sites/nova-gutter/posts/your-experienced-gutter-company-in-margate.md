@@ -19,7 +19,7 @@ A great way to do that is to get gutter protection for your home. Gutter protect
 
 ## Call about Our Seamless Gutters
 
-If you’re looking for a kind of gutter option that will help to prevent clogs while also offering a number of other benefits, then you need to look into seamless gutters. Because they contain very few joints, [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php) won’t easily accumulate debris. They even go a step further than that by offering a number of other great perks:
+If you’re looking for a kind of gutter option that will help to prevent clogs while also offering a number of other benefits, then you need to look into seamless gutters. Because they contain very few joints, [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation) won’t easily accumulate debris. They even go a step further than that by offering a number of other great perks:
 
 *   Ease of maintenance
     

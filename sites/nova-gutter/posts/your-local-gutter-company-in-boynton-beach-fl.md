@@ -14,7 +14,7 @@ We focus on ensuring each of our customers is completely satisfied with the resu
 Don’t settle for anything less than the best, when it comes to the level of service you get from a Boynton Beach gutter company. Reach out to us today and let’s schedule your consultation.
 ## Seamless Gutters, Flawless Home
 
-If you don’t already have [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php), now is the time to start thinking about them. This also means finding the right Boynton Beach gutter company to team up with.
+If you don’t already have [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation), now is the time to start thinking about them. This also means finding the right Boynton Beach gutter company to team up with.
 
 What makes seamless gutters worth having?
 

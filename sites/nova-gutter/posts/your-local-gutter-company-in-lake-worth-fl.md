@@ -9,7 +9,7 @@ tags:
 
 To make sure you get the best results from your Lake Worth [**gutter company**](https://www.novagutter.com/), make it a point to contact Nova Gutter. You’re going to appreciate the results we’re able to get for you, that’s guaranteed.
 
-We’re the go-to team to trust for gutter protection and [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php) in the Lake Worth area. Contact us now to request a free consultation.
+We’re the go-to team to trust for gutter protection and [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation) in the Lake Worth area. Contact us now to request a free consultation.
 
 We offer superior results because we use American made premium gutter protection. Exceptional results are our specialty and we work hard to deliver optimal results for every job we do.
 

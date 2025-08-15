@@ -15,7 +15,7 @@ Additionally, gutters can enhance the curb appeal of your home by providing a cl
 
 ## Improve Your Lee County Home With Our Residential Gutter Installation
 
-[**Residential gutter installation**](https://www.novagutter.com/residential-gutter-installation-boca-raton-fl.php) is essential for protecting your Lee County home from water damage. Without gutters, rainwater can seep into the soil around your home, causing it to shift and potentially leading to costly repairs. Gutters also prevent water from pooling on your roof, which can cause leaks and damage to your roof's structure. Additionally, gutters can help prevent mold and mildew growth by preventing excess moisture from accumulating around your home.
+[**Residential gutter installation**](https://novagutter.com/#residential-gutter-installation) is essential for protecting your Lee County home from water damage. Without gutters, rainwater can seep into the soil around your home, causing it to shift and potentially leading to costly repairs. Gutters also prevent water from pooling on your roof, which can cause leaks and damage to your roof's structure. Additionally, gutters can help prevent mold and mildew growth by preventing excess moisture from accumulating around your home.
 
 Professional installation is important to ensure that your gutters are installed correctly and effectively. The right type and size of gutters will be recommended to meet your specific needs. A professional installer will also be able to advise you on the best placement for your gutters to ensure maximum effectiveness in directing water away from your home.
 

@@ -28,4 +28,4 @@ To prevent these problems from afflicting your home, you need to prevent your gu
 
 When it comes to form and function, few installations can match what seamless gutters can offer. Containing far fewer joints than many other gutter options do, seamless gutters greatly reduce the likelihood that a clog will occur, making them a great investment for the good of your home.
 
-On top of that practical quality, [**seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php) also offer a beautiful, clean look for your Coconut Creek home. This look will help to bolster your home’s curb appeal, so this gutter installation will prove to be a great investment for your home.
+On top of that practical quality, [**seamless gutters**](https://novagutter.com/#seamless-gutter-installation) also offer a beautiful, clean look for your Coconut Creek home. This look will help to bolster your home’s curb appeal, so this gutter installation will prove to be a great investment for your home.

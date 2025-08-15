@@ -19,6 +19,6 @@ New gutters also provide the opportunity to upgrade to more durable materials, s
 
 ## Superior Seamless Gutters For Your Home In Broward County
 
-[**Seamless gutters**](https://www.novagutter.com/seamless-gutter-installation-boca-raton-fl.php) offer several benefits over traditional sectional gutters. Because they are custom-fit to your home, they reduce the risk of leaks and damage caused by shifting or sagging over time. They also provide a more streamlined appearance, with fewer joints and fasteners visible.
+[**Seamless gutters**](https://novagutter.com/#seamless-gutter-installation) offer several benefits over traditional sectional gutters. Because they are custom-fit to your home, they reduce the risk of leaks and damage caused by shifting or sagging over time. They also provide a more streamlined appearance, with fewer joints and fasteners visible.
 
 Seamless gutters are available in a range of materials and colors, allowing for greater customization to match your home's style. Additionally, they can increase the value of your home and provide added protection against water damage. **For high-quality results from a gutter company in Broward County, call Nova Gutter Corporation today.**

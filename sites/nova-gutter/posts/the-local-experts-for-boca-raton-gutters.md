@@ -15,7 +15,7 @@ Call Nova Gutter Corporation today if you are looking for a [**gutter company in
 
 In Boca Raton, we experience a great deal of precipitation throughout the year. When rain hits your roof, it must be given a safe way to flow off of your home. Without Boca Raton gutters, the water that collects can cascade of the side of your roof and cause substantial problems to your property. Uncontrolled water can damage your fascia, soffit, siding, doors, and windows. It can be absolutely devastating to landscaping, pathways, and driveways. If left unaddressed, water can pool around your home and damage your foundation.
 
-At Nova Gutter Corporation, our [**Boca Raton gutter installation**](https://www.novagutter.com/gutter-installation-boca-raton-fl.php) contractors can protect your home from all of these major problems. When you hire us, we will custom design a gutter system for your specific needs. After we install a new gutter system for you, your property will be protected each time it rains in the local area.
+At Nova Gutter Corporation, our [**Boca Raton gutter installation**](https://novagutter.com/#residential-gutter-installation) contractors can protect your home from all of these major problems. When you hire us, we will custom design a gutter system for your specific needs. After we install a new gutter system for you, your property will be protected each time it rains in the local area.
 
 ## Boca Raton Gutters & Gutter Cleaning Services
 
