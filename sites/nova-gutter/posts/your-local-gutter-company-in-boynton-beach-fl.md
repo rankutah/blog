@@ -5,7 +5,7 @@ title: Your Local Gutter Company in Boynton Beach, FL
 tags:
   - service-area
 ---
-![](media/gutters-homestead-fl.jpg)
+![](/media/gutters-homestead-fl.jpg)
 
 When it’s time for service from a Boynton Beach [**gutter company**](https://www.novagutter.com/), will you know who to contact? Ask around and the name you’ll hear, time and time again, is Nova Gutter.
 
