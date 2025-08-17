@@ -23,7 +23,7 @@ I hold a master's degree in software development and a bachelor's degree in busi
     
 *   [Utah On-Page Search Engine Optimization](https://blog.rankutah.com/utah-on-page-search-engine-optimization/)
     
-*   [Utah Link Building Services to Increase Website Traffic](https://blog.rankutah.com/utah-link-building-services-to-increase-website-traffic/)
+*   [utah-link-building-strategy-to-increase-website-traffic](utah-link-building-strategy-to-increase-website-traffic.md)
     
 
 ## What is your SEO process?
