@@ -33,7 +33,7 @@ Rank Utah uses a simple white-hat strategy to help small businesses in Utah acqu
 
 ### Creating High Quality Content to Build Links
 
-One of the most effective link building strategies is create content that people find useful and naturally want to to link to. This can be done by using SEO keyword research tools to determine what your customers are searching for and what keywords are easy to rank for. Your website is then built and aligned with what your customers are looking for.    
+One of the most effective link building strategies is create content that people find useful and naturally want to to link to. This can be done by using SEO keyword research tools to determine what your customers are searching for and what keywords are easy to rank for. You can learn learn more about keyword research in the article [On-Page SEO Strategy](utah-on-page-search-engine-optimization.md). With this in place, your website is then built and aligned with what your customers are looking for.    
 ### Business Blog
 
 Rank Utah also provides you with other optional tools to help you acquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer search intent and drive traffic, boost SEO, and position yourself as a local authority. This business blog enables you to easily tag your posts, search all posts, has a light and dark mode that is auto-set based on the users device settings, and comes with a CMS that has simple directions helping  you use local SEO best practices. The blog you are on now has the same look, feel, and performance, as the blog you would receive.
