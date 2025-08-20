@@ -7,7 +7,7 @@ tags:
 ---
 ![](/media/gutters-margate-fl.jpg)
 
-If you want to keep your Margate home in the best possible condition, you need to make sure its gutters remain in the best possible condition. To keep your gutters in that kind of shape, leave any work they need in the hands of the experienced [**gutter company**](https://www.novagutter.com/), Nova Gutter Corporation.
+If you want to keep your Margate home in the best possible condition, you need to make sure its gutters remain in the best possible condition. To keep your gutters in that kind of shape, leave any work they need in the hands of the experienced [**gutter company**](https://www.novagutter.com/), NOVA Gutter Corporation.
 
 **Our Margate gutter experts can help keep your gutters going strong thanks to the great products we offer.** These products include both gutter protection and seamless gutters, both of which are guaranteed to keep your gutters clog-free and your home standing strong.
 

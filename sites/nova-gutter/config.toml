@@ -52,12 +52,12 @@ pruneTaxonomies = true
   accentColor       = "#f3844b"
   showReadingTime   = true
   enableSearch      = true
-  clientName        = "Nova Gutter"
+  clientName        = "NOVA Gutter"
   clientURL         = "https://novagutter.com"
   mainSections      = ["posts"]
   defaultTheme      = "auto" # auto set light/dark mode based on OS preference
   disableThemeToggle = false # make it so you can toggle the light/dark mode
-  author              = "Nova Gutter Corporation"
+  author              = "NOVA Gutter Corporation"
 
 [permalinks]
   posts   = "/:slug/"

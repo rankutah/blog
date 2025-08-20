@@ -11,7 +11,7 @@ What benefit do you think of when you consider your [**gutters**](https://novagu
 
 After all, your gutters actually perform many other great protective benefits for your Boca Raton home. Those benefits are vital for maintaining the well-being of your home, and knowing them, you will understand why it's important to stay on top of your gutters' maintenance needs.
 
-Should your gutters need any kind of maintenance or upkeep, then look to the [**Boca Raton gutter pros**](https://novagutter.com/) at **Nova Gutter Corporation**. We have the expertise to provide the gutter work you need to continue enjoying all of the great protective benefits your gutters can provide:
+Should your gutters need any kind of maintenance or upkeep, then look to the [**Boca Raton gutter pros**](https://novagutter.com/) at **NOVA Gutter Corporation**. We have the expertise to provide the gutter work you need to continue enjoying all of the great protective benefits your gutters can provide:
 
 ## They Prevent Foundational Damage
 

@@ -7,7 +7,7 @@ tags:
 ---
 ![](/media/gutters-jupiter-fl.jpg)
 
-Are you looking for a skilled Lee County [**gutter company**](https://www.novagutter.com/)? Then you've come to the right place because Nova Gutter Corporation is the company to trust for all your gutter service needs.
+Are you looking for a skilled Lee County [**gutter company**](https://www.novagutter.com/)? Then you've come to the right place because NOVA Gutter Corporation is the company to trust for all your gutter service needs.
 
 Gutters can enhance your Lee County home in several ways. First and foremost, they protect your home from water damage by directing rainwater away from your foundation and exterior walls. This can prevent erosion and damage to your home's structure.
 
@@ -23,4 +23,4 @@ In short, residential gutter installation is a smart investment that can protect
 
 ## High-Quality Seamless Gutters For Your Lee County Home
 
-Seamless gutters are essential because they have fewer seams, reducing the chance of leaks and improving their overall durability. This also means less maintenance and fewer opportunities for debris to become trapped in the seams. Seamless gutters are custom-made to fit your home's exact measurements, ensuring maximum effectiveness in directing water away from your home. In short, seamless gutters are a smart investment for protecting your home from water damage and improving its overall value. **Contact Nova Gutter Corporation for premium service from a gutter company in Lee County.**
+Seamless gutters are essential because they have fewer seams, reducing the chance of leaks and improving their overall durability. This also means less maintenance and fewer opportunities for debris to become trapped in the seams. Seamless gutters are custom-made to fit your home's exact measurements, ensuring maximum effectiveness in directing water away from your home. In short, seamless gutters are a smart investment for protecting your home from water damage and improving its overall value. **Contact NOVA Gutter Corporation for premium service from a gutter company in Lee County.**

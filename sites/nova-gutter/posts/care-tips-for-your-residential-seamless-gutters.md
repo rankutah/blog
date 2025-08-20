@@ -17,4 +17,4 @@ While blockages are less likely to occur, they still can. The more debris that g
 
 Don't forget that the downspout is also an important aspect of your overall gutter system. While the gutters collect water, the downspout is what sends this water away from your foundation. If anything compromises the structural integrity of your downspout, you will have resulting problems with your gutters.
 
-Above all else, make it a point to hire true industry experts, in order to get superior results. This is where the pros here at Nova Gutter Corporation can get the job done. We will provide you with the finest in quality workmanship in Boca Raton and beyond.
+Above all else, make it a point to hire true industry experts, in order to get superior results. This is where the pros here at NOVA Gutter Corporation can get the job done. We will provide you with the finest in quality workmanship in Boca Raton and beyond.

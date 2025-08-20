@@ -9,7 +9,7 @@ tags:
 
 Choosing a reputable [**gutter company**](https://novagutter.com/) in Collier County is important to ensure that your gutters are installed properly and effectively. Look for a company that has a good reputation in the community and has been in business for several years. Check online reviews and ratings to see what previous customers have to say about their experience with the company.
 
-Make sure the company is licensed and insured and offers a warranty on their work. Ask for references and photos of previous gutter installations to get a sense of the quality of their work. Finally, get multiple quotes to compare prices and services. **In other words, contact Nova Gutter Corporation for the most professional gutter company service in Collier County.**
+Make sure the company is licensed and insured and offers a warranty on their work. Ask for references and photos of previous gutter installations to get a sense of the quality of their work. Finally, get multiple quotes to compare prices and services. **In other words, contact NOVA Gutter Corporation for the most professional gutter company service in Collier County.**
 
 ## Collier County's Finest Resource For Residential Gutter Installation
 
