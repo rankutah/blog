@@ -1,5 +1,5 @@
 ---
-title: Free 30-Minute Google Business Profile Review for Small Businesses in Orem Utah
+title: Free 30-Minute Google Business Profile Review for Small Businesses in Utah County
 tags:
   - local-seo
 date: 2025-08-04

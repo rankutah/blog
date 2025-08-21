@@ -1,10 +1,10 @@
 ---
-title: Utah Website Redesign for Small Businesses
+title: Utah County Website Redesign for Small Businesses
 date: 2025-08-14
 tags:
   - web-design
 ---
-Get a modern, mobile-friendly website redesign for your Utah business — fast, affordable, and built to grow with you. Is your website outdated, slow, or not showing up on Google? I help Utah businesses rebuild their websites from the ground up — fast, mobile-friendly, and fully optimized for local search. You’ll get a modern design, better visibility, and full control over your site, without the hassle of chasing down your old designer.
+Get a modern, mobile-friendly website redesign for your Utah County business — fast, affordable, and built to grow with you. Is your website outdated, slow, or not showing up on Google? I help Utah County businesses rebuild their websites from the ground up — fast, mobile-friendly, and fully optimized for local search. You’ll get a modern design, better visibility, and full control over your site, without the hassle of chasing down your old designer.
 
 ## How Does Website Redesign?
 

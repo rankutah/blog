@@ -47,7 +47,7 @@ pruneTaxonomies = true
 
 [params]
   googleAnalyticsID   = "G-LGYK5V1CTV"
-  brandColor          = "rose"
+  brandColor          = "green"
   primaryColor        = "rose"
   accentColor         = "#f3844b"
   showReadingTime     = true

@@ -1,11 +1,11 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Get More Leads for Your Small Business in Utah with Local SEO
+title: Get More Leads for Your Small Business in Utah County with Local SEO
 tags:
   - local-seo
 ---
-Rank Utah helps service businesses in Orem attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at my company website [RankUtah.com](https://rankutah.com/).
+Rank Utah helps service businesses in Utah County attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at my company website [RankUtah.com](https://rankutah.com/).
 
 ## Why Local SEO Works
 
@@ -59,4 +59,4 @@ Relevance, prominence, and proximity are the three pillars of local SEO. Your we
 
 ## Reach Out
 
-For help with Local SEO or Web Design reach out to [Rank Utah]([https://rankutah.com/#contact](https://rankutah.com/#contact)
+For help with Local SEO or Web Design in Utah County reach out to [Rank Utah]([https://rankutah.com/#contact](https://rankutah.com/#contact)

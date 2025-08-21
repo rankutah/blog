@@ -1,5 +1,5 @@
 ---
-title: How to Prevent Google Analytics Script From Slowing Down Your Website and Ruining your Page Speed Performance Score for Small Businesses in Utah
+title: How to Prevent Google Analytics Script From Slowing Down Your Website and Ruining your Page Speed Performance Score for Small Businesses in Utah County
 date: 2025-07-28
 is_published: Published
 tags:

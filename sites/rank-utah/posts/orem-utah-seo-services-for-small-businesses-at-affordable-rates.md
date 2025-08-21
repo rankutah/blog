@@ -1,15 +1,15 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: SEO Services for Small Businesses in Utah
+title: SEO Services for Small Businesses in Utah County
 tags:
   - local-seo
 ---
-Looking for Orem SEO? Get personalized, affordable SEO solutions to grow your business and improve your Google rankings in Orem, Utah. Learn more by visiting [RankUtah.com](https://rankutah.com/).
+Looking for SEO help in Utah County? Get personalized, affordable SEO solutions to grow your business and improve your Google rankings. Learn more by visiting [RankUtah.com](https://rankutah.com/).
 
 ## Where are you located?
 
-I run Rank Utah out of my home in order to provide lower costs to my clients and am located in Orem, Utah. I can either visit you at your location or we can communicate via phone or video meetings.
+I run Rank Utah out of my home in order to provide lower costs to my clients and am located in Utah County. I can either visit you at your location or we can communicate via phone or video meetings.
 
 ## What is your pricing?
 

@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Utah Link Building Strategy to Increase Website Traffic
+title: Utah County Link Building Strategy to Increase Website Traffic
 tags:
   - link-building
   - local-seo
@@ -11,7 +11,7 @@ If you are interested in link building services or getting help with your backli
 
 ## How a Link Building Strategy Works
 
-Link building (aka backlink building) increases the authority of your web pages. In local SEO, Google uses authority, [relevance](https://blog.rankutah.com/utah-on-page-search-engine-optimization/), and proximity to determine which websites show up at the top of organic results. Google confirms that authority is page-based, not site-based. This means a backlink won't boost every page on your site, only the authority of the specific page linked to. However, you can use that pages increased authority to increase the authority of other pages through internal links. White-hat link building tactics are tactics focused on getting links in a natural way (not paying for links irrelevant to your business or using link network schemes). 
+Link building (aka backlink building) increases the authority of your web pages. In local SEO, Google uses authority, [relevance](https://blog.rankutah.com/utah-on-page-search-engine-optimization/), and proximity to determine which websites show up at the top of organic results. Google confirms that authority is page-based, not site-based. This means a backlink won't boost every page on your site, only the authority of the specific page linked to. However, you can use that page's increased authority to increase the authority of other pages through internal linking. White-hat link building tactics are tactics focused on getting links in a natural way (not paying for links irrelevant to your business or using link network schemes). 
 
 ## The Importance of Backlinks for Local SEO
 
@@ -62,4 +62,4 @@ Consider who would naturally make referrals to your business and ask them if the
 
 ## Reach Out
 
-If you have a small business and are interesting in Rank Utah's link building services, have a question, or want to otherwise connect, visit my website at [RankUtah.com](https://rankutah.com/).
+If you have a small business in Utah County and are interesting in Rank Utah's link building services, have a question, or want to otherwise connect, visit my website at [RankUtah.com](https://rankutah.com/).
