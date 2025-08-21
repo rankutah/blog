@@ -1,11 +1,11 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Get More Leads for Your Small Business in Utah County with Local SEO
+title: Utah County Local Search Engine Optimization
 tags:
   - local-seo
 ---
-Rank Utah helps service businesses in Utah County attract a steady stream of customers by optimizing your website and Google Business Profile for local SEO. Reach out at my company website [RankUtah.com](https://rankutah.com/).
+Rank Utah helps small businesses in Utah County grow your customers organically by optimizing your website and Google Business Profile for local search engine optimization (SEO). Learn more by visiting [RankUtah.com](https://rankutah.com/).
 
 ## Why Local SEO Works
 

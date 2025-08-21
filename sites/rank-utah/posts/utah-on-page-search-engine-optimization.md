@@ -1,12 +1,12 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: On-Page SEO Strategy for Small Businesses in Utah County
+title: Utah County On-Page SEO Strategy
 tags:
   - web-design
   - local-seo
 ---
-If you would like help with on-page SEO you can visit my company website [Rank Utah](https://rankutah.com/) or [contact me directly](https://rankutah.com/#contact). If you are doing your own search engine optimization for a Utah County business read on.
+If you would like help with on-page SEO you can visit [Rank Utah](https://rankutah.com/) or [contact me directly](https://rankutah.com/#contact). 
 
 ## The #1 Most Overlooked Technique in On-Page SEO Strategy is Keyword Research
 

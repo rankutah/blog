@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Mobile Website Design for Small Businesses in Utah County
+title: Utah County Mobile Website Design
 tags:
   - web-design
 ---
