@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Utah County SEO
+title: SEO in Utah County for Small Businesses
 tags:
   - local-seo
 ---

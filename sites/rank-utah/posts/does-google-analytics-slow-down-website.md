@@ -18,7 +18,7 @@ To use the script simply replace the Google Analytics ID with your own Google An
 
 If you would like help with SEO or Web Design, you can contact me at [RankUtah.com.](https://rankutah.com/)
 
-For additional tips for improving the speed of your website, scroll to the Image Optimization and Page Speed section of my article on [On-Page SEO](on-page-seo-strategy.md).
+For additional tips for improving the speed of your website, scroll to the Image Optimization and Page Speed section of my article on [On-Page SEO](on-page-seo-strategy-utah.md).
 
 Hope you enjoy the script below and your Google Analytics without the slow website!
 
