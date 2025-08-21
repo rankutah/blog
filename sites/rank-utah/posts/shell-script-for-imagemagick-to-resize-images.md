@@ -1,25 +1,24 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Shell Script to Resize Images to be Under a Specific File Size
+title: Shell Script for ImageMagick to Resize Images
 tags:
   - script
   - web-design
 ---
-If you work in web publishing you often need to resize images to be under a specific size, or of a different format, without loosing quality. This zsh script uses ImageMagick to:
+If you work in web publishing you often need to resize many images to be under a specific size, or of a different format, without loosing quality. This zsh script uses ImageMagick to:
 
-1.  Convert every image to JPEG or a different image format such as AVIF or WebP
+1.  Convert multiple image to JPEG or a different image format such as AVIF or WebP
     
 2.  Set the width of your images
     
 3.  Resize images so that each on is under a specified size (default of 130 KB)
     
-4.  Organize your originals into an Originals/ folder and outputs into a Resized/ folder
+4.  Organize your original images into an Originals/ folder and resized images into a Resized/ folder
     
-
 ## Prerequisites
 
-Install ImageMagick on a MacOS or Linux Device
+Install ImageMagick on a Mac or Linux computer
 
 *   ImageMagick (brew install bash imagemagick)
     
@@ -40,7 +39,7 @@ or
 
 ## How it works
 
-This script repeatedly resizes and drops quality in 10% steps until it is under your desired file size. All images output at your desired format, width, and file-size.
+This script repeatedly resizes and drops quality in 10% incremental steps until it is under your desired file size. All images output at your desired format, width, and file-size.
 
 ## The script
 
