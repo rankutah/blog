@@ -1,0 +1,9 @@
+{{- /* Minimal wrapper: no maps, no magic, just render Inner as HTML */ -}}
+{{- $tag     := .tag     | default "div" -}}
+{{- $id      := .id      -}}
+{{- $classes := .classes | default "border border-blue-500 p-4 rounded" -}}
+{{- $inner   := .Inner   | markdownify -}}
+
+<{{ $tag }}{{ with $id }} id="{{ . }}"{{ end }} class="{{ $classes }}">
+  {{- $inner | safeHTML -}}
+</{{ $tag }}>

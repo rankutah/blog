@@ -8,18 +8,20 @@ const PALETTES = [
   'fuchsia','pink','rose'
 ];
 
+// Set SITE to the folder name under ./sites (e.g., "rank-utah" or "nova-gutter").
+// When not provided, it falls back to "*" (scan all sites).
+const SITE = process.env.SITE || '*';
+
 module.exports = {
   darkMode: 'class',
   content: [
-    './sites/**/*.{html,md,js,ts,jsx,tsx,toml}',
+    `./sites/${SITE}/**/*.{html,md,js,ts,jsx,tsx,toml}`,
     './themes/overrides/**/*.{html,md,js,ts,jsx,tsx}',
     './node_modules/flowbite/**/*.js',
   ],
-  theme: {
-    extend: {},
-  },
+  theme: { extend: {} },
   plugins: [
-    // 1) Your CSS‑var palette plugin
+    // CSS-var palette plugin (unchanged)
     plugin(({ addBase }) => {
       const base = { ':root': {} };
       // default primary = rose

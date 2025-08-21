@@ -1,0 +1,72 @@
+{{- $id := .id | default "accordion" -}}
+{{- $mode := .mode | default "collapse" -}}
+
+{{- $siteOverride := site.Params.accordion.classes | default "" -}}
+{{- $pageOverride := .classes | default "" -}}
+{{- $wrapperClasses := cond (ne $pageOverride "") $pageOverride (cond (ne $siteOverride "") $siteOverride "not-prose") -}}
+
+{{/* Force evaluation of nested shortcodes without printing them */}}
+{{- $rendered := .Page.RenderString .Inner -}}
+
+{{/* 1) Prefer items gathered by nested acc_item shortcodes */}}
+{{- $listKey := printf "ui_acc_items_%s" $id -}}
+{{- $items := .Page.Scratch.Get $listKey | default (slice) -}}
+
+{{/* 2) If none from children, fall back to src / param / items string */}}
+{{- if eq (len $items) 0 -}}
+  {{- if .src -}}
+    {{- $bucket := index site.Data "ui" | default dict -}}
+    {{- $data := index $bucket .src -}}
+    {{- if $data -}}
+      {{- $items = cond (isset $data "items") $data.items $data -}}
+    {{- end -}}
+  {{- else if .param -}}
+    {{- $s := newScratch -}}
+    {{- $s.Set "v" .Page.Params -}}
+    {{- range (split .param ".") -}}
+      {{- $cur := $s.Get "v" -}}
+      {{- if and $cur (isset $cur .) -}}
+        {{- $s.Set "v" (index $cur .) -}}
+      {{- else -}}
+        {{- $s.Set "v" nil -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $items = $s.Get "v" | default (slice) -}}
+  {{- else if isset . "items" -}}
+    {{- $items = transform.Unmarshal .items | default (slice) -}}
+  {{- end -}}
+{{- end -}}
+
+<div id="{{ $id }}" data-accordion="{{ $mode }}" class="{{ $wrapperClasses }}">
+  {{- if gt (len $items) 0 }}
+    {{- $n := len $items -}}
+    {{- range $i, $it := $items }}
+      {{- $idx := add $i 1 -}}
+      {{- $hid := or $it.id (printf "%s-heading-%d" $id $idx) -}}
+      {{- $bid := printf "%s-body-%d" $id $idx -}}
+      {{- $expanded := cond (and (isset $it "expanded") $it.expanded) true false -}}
+
+      <h2 id="{{ $hid }}">
+        <button type="button"
+          class='flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 {{ if lt $idx $n }}border-b-0{{ end }} {{ if eq $idx 1 }}rounded-t-xl{{ end }} focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3'
+          data-accordion-target="#{{ $bid }}"
+          aria-expanded="{{ $expanded }}"
+          aria-controls="{{ $bid }}">
+          <span>{{ $it.title }}</span>
+          <svg data-accordion-icon class="w-3 h-3 {{ if $expanded }}rotate-180{{ end }} shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+
+      <div id="{{ $bid }}" class="{{ if not $expanded }}hidden{{ end }}" aria-labelledby="{{ $hid }}">
+        <div class='p-5 border border-gray-200 {{ if lt $idx $n }}border-b-0{{ else }}border-t-0{{ end }} dark:border-gray-700'>
+          {{- $it.content | markdownify -}}
+        </div>
+      </div>
+    {{- end }}
+  {{- else }}
+    {{/* Fallback: manual HTML pasted inside ui */}}
+    {{ .Inner | safeHTML }}
+  {{- end }}
+</div>

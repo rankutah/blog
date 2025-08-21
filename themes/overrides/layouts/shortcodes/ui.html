@@ -1,0 +1,16 @@
+{{- /* Universal UI forwarder (pair-friendly) */ -}}
+{{- $name := .Get "name" -}}
+{{- if not $name -}}{{- errorf "ui shortcode: missing required param 'name'" -}}{{- end -}}
+
+{{- /* Build props: pass Page + Inner + all named params except 'name' */ -}}
+{{- $props := dict "Page" .Page "Inner" .Inner -}}
+{{- if .IsNamedParams -}}
+  {{- range $k, $v := .Params -}}
+    {{- if ne $k "name" -}}
+      {{- $props = merge $props (dict $k $v) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $path := printf "components/%s.html" $name -}}
+{{- partial $path $props | safeHTML -}}

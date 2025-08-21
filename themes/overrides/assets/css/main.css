@@ -1,40 +1,25 @@
-/* 1) Pull in Tailwind v4 (all layers & your config/plugins) */
+/* ========== 1) Tailwind v4 layers (uses tailwind.config.cjs) ========== */
 @import "tailwindcss";
 
-/* 2) Register Flowbite as a Tailwind plugin (your tailwind.config.cjs already has require('flowbite/plugin')) */
+/* ========== 2) Flowbite’s shipped CSS (shadows, transitions, etc.) ========== */
+@import "flowbite/dist/flowbite.css";
 
 @plugin "@tailwindcss/typography";
 @plugin "flowbite/plugin";
 
-
-/* 3) Bring in Flowbite’s own shipped CSS for modals, dropdown shadows, etc. */
-@source "flowbite/dist/flowbite.css";
-
-
-/* Hide the small link-out SVG in the blog nav menu  */
+/* ========== 3) PaperMod/menu tweak (safe to remove if/when you drop PaperMod) ========== */
 .header .nav #menu li > a > span + svg,
 .header .nav #menu li > a svg.ml-1.inline-block.flex-shrink-0 {
   display: none !important;
 }
 
+/* ========== 4) Typography touch-ups ========== */
 .prose a { text-decoration: none; }
-
-
-/* Make images reponsive */
 .prose img { max-width: 100%; height: auto; }
 
+/* ========== 5) Fluid auto-fit grid (no breakpoints) ========== */
 .cols-auto {
   display: grid;
-  gap: var(--gap, 1.5rem);
-  grid-template-columns: repeat(auto-fit, minmax(var(--min, 16rem), 1fr));
-}
-
-
-/* ========== Alignment kit (safe, plain CSS) ========== */
-
-/* Fluid auto-fit columns (you already use this idea) */
-.cols-auto{
-  display:grid;
   gap: var(--gap, 1.5rem);
   grid-template-columns: repeat(auto-fit, minmax(var(--min, 16rem), 1fr));
   align-items: var(--v, start); /* start | center | end | stretch */
@@ -43,23 +28,43 @@
 .cols-auto.v-end     { --v: end; }
 .cols-auto.v-stretch { --v: stretch; }
 
-/* Universal horizontal alignment (works on text AND single items) */
-.left, .prose .left   { text-align:left;  display:block; margin-inline:0; }
-.center, .prose .center { text-align:center; display:block; margin-inline:auto; }
-.right, .prose .right  { text-align:right; display:block; margin-left:auto; margin-right:0; }
+/* ========== 6) Universal text alignment (handy inside .prose) ========== */
+.left, .prose .left     { text-align: left;  display: block; margin-inline: 0; }
+.center, .prose .center { text-align: center; display: block; margin-inline: auto; }
+.right, .prose .right   { text-align: right; display: block; margin-left: auto; margin-right: 0; }
 
-/* Universal vertical alignment INSIDE a box (put on container) */
-.vtop    { display:flex; flex-direction:column; justify-content:flex-start; min-height:100%; }
-.vcenter { display:flex; flex-direction:column; justify-content:center;  min-height:100%; }
-.vbottom { display:flex; flex-direction:column; justify-content:flex-end; min-height:100%; }
+/* ========== 7) Vertical alignment inside a box (section/stack use these) ========== */
+.vtop    { display: flex; flex-direction: column; justify-content: flex-start; min-height: 100%; }
+.vcenter { display: flex; flex-direction: column; justify-content: center;      min-height: 100%; }
+.vbottom { display: flex; flex-direction: column; justify-content: flex-end;    min-height: 100%; }
 
-/* Per-item vertical alignment in grid/flex rows (optional) */
-.self-vtop    { align-self:flex-start; }
-.self-vcenter { align-self:center; }
-.self-vbottom { align-self:flex-end; }
+/* Per-item vertical alignment (for children in grid/flex rows) */
+.self-vtop    { align-self: flex-start; }
+.self-vcenter { align-self: center; }
+.self-vbottom { align-self: flex-end; }
 
-/* Convenience helpers */
-.center-block { display:block; margin-inline:auto; }  /* self-center a single element */
-.centerable   { display:block; }                      /* mark items that should auto-center in a .center wrapper */
-.center .centerable { margin-inline:auto; }
-.right  .centerable { margin-left:auto; }
+/* Convenience */
+.center-block { display: block; margin-inline: auto; }
+.centerable   { display: block; }
+.center .centerable { margin-inline: auto; }
+.right  .centerable { margin-left: auto; }
+
+/* ========== 8) NEW: item centering knobs (grid OR flex) ========== */
+/* On containers */
+.ji-left    { justify-items: start; }
+.ji-center  { justify-items: center; }
+.ji-right   { justify-items: end; }
+.ji-stretch { justify-items: stretch; }
+
+.ai-top     { align-items: start; }
+.ai-center  { align-items: center; }
+.ai-end     { align-items: end; }
+.ai-stretch { align-items: stretch; }
+
+/* On individual items (grid) */
+.self-left    { justify-self: start; }
+.self-center  { justify-self: center; }
+.self-right   { justify-self: end; }
+.self-stretch { justify-self: stretch; }
+.self-top     { align-self: start; }
+.self-end     { align-self: end; }

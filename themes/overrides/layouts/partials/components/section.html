@@ -1,37 +1,13 @@
-{{- /* layouts/partials/components/section.html */ -}}
-{{- /* 1) Grab contexts */ -}}
-{{- $page := .page -}}
-{{- $sec  := .section -}}
+{{- /* Minimal Section wrapper (clean slate)
+     Reads data fields (.id, .tag, .classes) from props passed by shortcode/ui.
+     No .Get calls here. Renders Markdown -> safe HTML.
+*/ -}}
 
-{{- /* 2) Try front‑matter override for wrapper */ -}}
-{{- $wrapper := default "" $sec.classes -}}
-{{- /* 3) If empty, try site‑wide params */ -}}
-{{- if eq $wrapper "" -}}
-  {{- $wrapper = default "" $page.Site.Params.section.classes -}}
-{{- end -}}
-{{- /* 4) If still empty, use hard‑coded fallback */ -}}
-{{- if eq $wrapper "" -}}
-  {{- $wrapper = "container mx-auto px-4 sm:px-6 lg:px-8 py-12" -}}
-{{- end -}}
+{{- $tag     := .tag     | default "section" -}}
+{{- $id      := .id -}}
+{{- $classes := .classes | default "border-4 border-emerald-500 p-6" -}}
+{{- $inner   := .Inner   | markdownify -}}
 
-{{- /* Grid classes: analogous override steps */ -}}
-{{- $grid := default "" $sec.gridClasses -}}
-{{- if eq $grid "" -}}
-  {{- $grid = default "" $page.Site.Params.sectionGrid.classes -}}
-{{- end -}}
-{{- if eq $grid "" -}}
-  {{- $grid = "grid grid-cols-1 gap-6 justify-items-start" -}}
-{{- end -}}
-
-{{- if $sec.components }}
-<section class="{{ $wrapper }}">
-  <div class="{{ $grid }}">
-    {{- range $sec.components }}
-      {{- partial (printf "components/%s.html" (lower .type)) (dict "page" $page "comp" .) }}
-    {{- end }}
-  </div>
-</section>
-{{- else }}
-  {{- /* fallback to raw page content */ -}}
-  {{- $page.Content }}
-{{- end }}
+<{{ $tag }}{{ with $id }} id="{{ . }}"{{ end }} class="{{ $classes }}">
+  {{- $inner | safeHTML -}}
+</{{ $tag }}>
