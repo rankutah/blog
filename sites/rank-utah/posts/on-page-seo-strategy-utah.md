@@ -1,7 +1,7 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: On-page SEO Strategy in Utah for Small Businesses
+title: On-Page SEO Strategy in Utah
 tags:
   - web-design
   - local-seo

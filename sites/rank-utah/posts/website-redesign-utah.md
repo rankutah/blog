@@ -1,5 +1,5 @@
 ---
-title: Website Redesign in Utah County for Small Businesses
+title: Website Redesign in Utah
 date: 2025-08-14
 tags:
   - web-design

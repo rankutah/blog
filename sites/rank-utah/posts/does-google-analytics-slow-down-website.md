@@ -1,5 +1,5 @@
 ---
-title: Does Google Analytics slow down your website? Easy Fix.
+title: Does Google Analytics Slow Down Your Website?
 date: 2025-07-28
 is_published: Published
 tags:

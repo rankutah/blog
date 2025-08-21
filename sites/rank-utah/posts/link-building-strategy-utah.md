@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Link Building Strategy in Utah for Small Businesses
+title: Link Building Strategy in Utah
 tags:
   - link-building
   - local-seo
