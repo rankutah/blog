@@ -7,7 +7,7 @@ tags:
 ---
 Rank Utah builds websites that are mobile-friendly and optimized for small businesses in Utah County. If you are looking for a redesign of a current website or need a website for your new business you can visit [RankUtah.com](https://rankutah.com/) to learn more.
 
-## What are 3 important considerations of a mobile-friendly design?
+## What are 3 important considerations of a mobile-friendly design in Utah County?
 
 1.  Responsive layout
     
@@ -44,4 +44,4 @@ It should be just as easy for users to navigate the desktop version of your webs
 
 ## Conclusion
 
-A website that uses responsive layout, is fast loading, and is easy to navigate is the basis for mobile-friendly design. As more and more users turn to their phones for to browse the web this becomes increasingly important. If you would like website that is not only mobile-friendly but one that is focused on optimizing traffic for local SEO, you can visit my website at [RankUtah.com](http://RankUtah.com) to learn more or contact me directly at 801-980-2202.
+A website that uses responsive layout, is fast loading, and is easy to navigate is the basis for mobile-friendly design in Utah county. As more and more users turn to their phones for to browse the web this becomes increasingly important. If you would like website that is not only mobile-friendly but one that is focused on optimizing traffic for local SEO, you can visit my website at [RankUtah.com](http://RankUtah.com) to learn more or contact me directly at 801-980-2202.

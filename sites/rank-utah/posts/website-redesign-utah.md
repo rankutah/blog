@@ -1,5 +1,5 @@
 ---
-title: Website Redesign in Utah
+title: Website Redesign in Utah County
 date: 2025-08-14
 tags:
   - web-design

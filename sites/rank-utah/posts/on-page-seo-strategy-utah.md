@@ -1,7 +1,7 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: On-Page SEO Strategy in Utah
+title: On-Page SEO Strategy in Utah County
 tags:
   - web-design
   - local-seo
@@ -27,7 +27,7 @@ One of the best things you can do for your on-page strategy in Google Search Con
 
 One of the easiest ways to see what people are searching for is by using Google Autocomplete. Simple type what people would likely search for and see what Google suggests. Align your page with the related autocomplete queries. This doesn't give you search volume but does help you get an idea on what people are interested in. 
 
-### Use Free Keyword Research Tools
+### Other Keyword Research Tools
 
 The industry leading keyword research tools also allow users to perform a limited number of searches on their free keyword tools. Once you have an idea of the keywords you might like to align your webpage with, you can check out their traffic volume using these tools. Here are a few of the best. Be sure to include local modifiers in your research (like city, county, or state) to insure your keywords are highly targeted to your audience. **Pay attention to not only the volume of searches but also the KD scores**. KD scores tell you how difficult it will be to rank in the top 10 organic search results for your keywords.
 
@@ -102,6 +102,6 @@ Once you have your schema markeup in place you can validate it at [schema.org](h
 
 ## Additional Information
 
-If you would like to have help optimizing on-page seo strategy for your Utah business you can find my [contact information here.](https://rankutah.com/#contact)
+If you would like to have help optimizing on-page seo strategy for your Utah County business you can find my [contact information here.](https://rankutah.com/#contact)
 
 If you are doing it all yourself you might also enjoy Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
