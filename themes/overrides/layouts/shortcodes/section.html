@@ -1,8 +1,42 @@
-{{- /* section shortcode → forwards to components/section.html (no direct .id/.classes access here) */ -}}
-{{- $props := dict "Page" .Page "Inner" .Inner -}}
-{{- if .IsNamedParams -}}
-  {{- range $k, $v := .Params -}}
-    {{- $props = merge $props (dict $k $v) -}}
-  {{- end -}}
-{{- end -}}
-{{- partial "components/section.html" $props | safeHTML -}}
+{{- /* Section wrapper that does NOT add .prose (your layout already has it)
+     Standalone shortcode: no partials, no external deps.
+     Override order:
+       1) shortcode param: classes="…"
+       2) site.Params.section.classes
+       3) computed fallback (max / pad / y / align)
+*/ -}}
+
+{{- $page := .Page -}}
+
+{{- $pageOverride := .Get "classes" | default "" -}}
+{{- $siteOverride := $page.Site.Params.section.classes | default "" -}}
+
+{{- $max   := .Get "max"   | default "xl"   -}}  {{/* sm|md|lg|xl|2xl|full */}}
+{{- $pad   := .Get "pad"   | default "lg"   -}}  {{/* none|sm|md|lg        */}}
+{{- $y     := .Get "y"     | default "md"   -}}  {{/* none|sm|md|lg|xl     */}}
+{{- $align := .Get "align" | default "start" -}} {{/* start|center         */}}
+
+{{- $maxMap := dict
+  "sm"  "max-w-screen-sm"
+  "md"  "max-w-3xl"
+  "lg"  "max-w-5xl"
+  "xl"  "max-w-7xl"
+  "2xl" "max-w-screen-2xl"
+  "full" "max-w-none"
+-}}
+{{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
+{{- $yMap   := dict "none" "py-0" "sm" "py-6" "md" "py-12" "lg" "py-16" "xl" "py-24" -}}
+{{- $alMap  := dict "start" "text-left" "center" "text-center" -}}
+
+{{- $base := printf "%s mx-auto %s %s %s"
+    (index $maxMap $max   | default "max-w-7xl")
+    (index $padMap $pad   | default "px-8")
+    (index $yMap   $y     | default "py-12")
+    (index $alMap  $align | default "text-left")
+-}}
+
+{{- $classes := cond (ne $pageOverride "") $pageOverride (cond (ne $siteOverride "") $siteOverride $base) -}}
+
+<div class="{{ $classes }}">
+  {{ .Page.RenderString .Inner }}
+</div>
