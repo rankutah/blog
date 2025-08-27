@@ -19,6 +19,7 @@ pruneTaxonomies = true
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
+        inline = true
         title = true
 
 [module]
@@ -48,7 +49,7 @@ pruneTaxonomies = true
 [params]
   googleAnalyticsID   = "G-LGYK5V1CTV"
   brandColor          = "green"
-  primaryColor        = "rose"
+  primaryColor        = "green"
   accentColor         = "#f3844b"
   showReadingTime     = true
   enableSearch        = true
@@ -67,22 +68,50 @@ pruneTaxonomies = true
   showCTAOnDesktop = true
   CTAText          = "Book Now"
   CTAURL           = "/contact/"
-  CTAClasses       = "text-white bg-rose-600 hover:bg-rose-700 focus:ring-rose-300"
+  # CTAClasses       = "text-white bg-rose-600 hover:bg-rose-700 focus:ring-rose-300"
   showPhoneOnMobile = true
   phoneNumber       = "800-123-4567"
   logoHeight        = "h-10"
 
-[params.button]
-  classes = "text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:hover:bg-yellow-700 focus:outline-none dark:focus:ring-yellow-800"
 
-[params.button_outline]
-  classes = "not-prose text-rose-700 hover:text-white border border-rose-700 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-rose-500 dark:text-rose-500 dark:hover:text-white dark:hover:bg-rose-500 dark:focus:ring-rose-800"
+[params.section.defaults]
+  # Container width:
+  #   sm → max-w-screen-sm
+  #   md → max-w-3xl
+  #   lg → max-w-5xl
+  #   xl → max-w-7xl
+  #   2xl → max-w-screen-2xl
+  #   full → max-w-none (edge to edge)
+  max   = "xl"
+
+  # Horizontal padding:
+  #   none → px-0, sm → px-4, md → px-6, lg → px-8
+  pad   = "lg"
+
+  # Vertical padding:
+  #   none → py-0, sm → py-6, md → py-12, lg → py-16, xl → py-24
+  y     = "md"
+
+  # Text align: start | center
+  align = "start"
+
+  # Optional vertical centering:
+  # alignY: "", "start", "center", "end", "between"
+  # minh:   "", "screen", "full"
+  # alignY = "center"
+  # minh   = "screen"
+
+
+
+#  [params.button]
+#    classes = "text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
+
+# [params.button_outline]
 
 [params.h1]
   classes = "text-4xl font-bold dark:text-white-200"
   
 [params.text]
-  linkClasses = "font-medium text-rose-600 dark:text-rose-500 hover:underline"
 
 [permalinks]
   posts = "/:filename/"
@@ -115,3 +144,21 @@ pruneTaxonomies = true
     name   = "Search"
     url    = "/search/"
     weight = 4
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    identifier = "services"
+    weight = 5
+  
+  [[menu.main]]
+    name = "Website Design"
+    url = "/services/website-design/"
+    parent = "services"
+    weight = 10
+
+  [[menu.main]]
+    name = "Another"
+    url = "/test"
+    parent = "services"
+    weight = 20
+

@@ -1,21 +1,33 @@
-{{- /* Section wrapper that does NOT add .prose (your layout already has it)
-     Standalone shortcode: no partials, no external deps.
-     Override order:
-       1) shortcode param: classes="…"
-       2) site.Params.section.classes
-       3) computed fallback (max / pad / y / align)
-*/ -}}
+{{- /* Section wrapper – appendable, bleed-capable, site defaults, simple vertical align */ -}}
 
 {{- $page := .Page -}}
 
+{{- /* Site defaults for knobs (optional) */ -}}
+{{- $sd := $page.Site.Params.section.defaults | default dict -}}
+
+{{- /* Replacements / base selection */ -}}
 {{- $pageOverride := .Get "classes" | default "" -}}
 {{- $siteOverride := $page.Site.Params.section.classes | default "" -}}
 
-{{- $max   := .Get "max"   | default "xl"   -}}  {{/* sm|md|lg|xl|2xl|full */}}
-{{- $pad   := .Get "pad"   | default "lg"   -}}  {{/* none|sm|md|lg        */}}
-{{- $y     := .Get "y"     | default "md"   -}}  {{/* none|sm|md|lg|xl     */}}
-{{- $align := .Get "align" | default "start" -}} {{/* start|center         */}}
+{{- /* Tunables with site defaults */ -}}
+{{- $max    := .Get "max"    | default (or (index $sd "max")    "xl") -}}   {{/* sm|md|lg|xl|2xl|full */}}
+{{- $pad    := .Get "pad"    | default (or (index $sd "pad")    "lg") -}}   {{/* none|sm|md|lg        */}}
+{{- $y      := .Get "y"      | default (or (index $sd "y")      "md") -}}   {{/* none|sm|md|lg|xl     */}}
+{{- $align  := .Get "align"  | default (or (index $sd "align")  "start") -}} {{/* start|center         */}}
 
+{{- /* Simple vertical alignment controls (optional) */ -}}
+{{- $alignY := .Get "alignY" | default (or (index $sd "alignY") "") -}}     {{/* "", start|center|end|between */}}
+{{- $minh   := .Get "minh"   | default (or (index $sd "minh")   "") -}}     {{/* "", screen|full */}}
+
+{{- /* Element / extras */ -}}
+{{- $tag   := .Get "tag"   | default "section" -}}
+{{- $id    := .Get "id"    | default "" -}}
+{{- $add   := .Get "add"   | default "" -}}       {{/* append to INNER */}}
+{{- $bleed := .Get "bleed" | default false -}}
+{{- $outer := .Get "outer" | default "" -}}       {{/* OUTER classes when bleed */}}
+{{- $prose := .Get "prose" | default "" -}}       {{/* "on" | "off" */}}
+
+{{- /* Maps */ -}}
 {{- $maxMap := dict
   "sm"  "max-w-screen-sm"
   "md"  "max-w-3xl"
@@ -27,7 +39,10 @@
 {{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
 {{- $yMap   := dict "none" "py-0" "sm" "py-6" "md" "py-12" "lg" "py-16" "xl" "py-24" -}}
 {{- $alMap  := dict "start" "text-left" "center" "text-center" -}}
+{{- $ayMap  := dict "start" "justify-start" "center" "justify-center" "end" "justify-end" "between" "justify-between" -}}
+{{- $mhMap  := dict "screen" "min-h-screen" "full" "min-h-full" -}}
 
+{{- /* Base inner classes */ -}}
 {{- $base := printf "%s mx-auto %s %s %s"
     (index $maxMap $max   | default "max-w-7xl")
     (index $padMap $pad   | default "px-8")
@@ -35,8 +50,35 @@
     (index $alMap  $align | default "text-left")
 -}}
 
-{{- $classes := cond (ne $pageOverride "") $pageOverride (cond (ne $siteOverride "") $siteOverride $base) -}}
+{{- /* Choose inner classes by priority */ -}}
+{{- $inner := cond (ne $pageOverride "") $pageOverride (cond (ne $siteOverride "") $siteOverride $base) -}}
 
-<div class="{{ $classes }}">
-  {{ .Page.RenderString .Inner }}
-</div>
+{{- /* Append extras */ -}}
+{{- if $add }}{{- $inner = printf "%s %s" $inner $add -}}{{- end -}}
+
+{{- /* Vertical align (add flex container + justify-*) */ -}}
+{{- if $alignY -}}
+  {{- $inner = printf "%s %s %s" $inner "flex flex-col" (index $ayMap $alignY | default "") -}}
+{{- end -}}
+{{- if $minh -}}
+  {{- $inner = printf "%s %s" $inner (index $mhMap $minh | default "") -}}
+{{- end -}}
+
+{{- /* Prose toggle */ -}}
+{{- if eq $prose "on"  }}{{- $inner = printf "%s %s" $inner "prose prose-zinc dark:prose-invert max-w-none" -}}{{- end -}}
+{{- if eq $prose "off" }}{{- $inner = printf "%s %s" $inner "not-prose" -}}{{- end -}}
+
+{{- /* Render inner markdown to HTML */ -}}
+{{- $body := .Page.RenderString .Inner -}}
+
+{{- /* Build final HTML and mark it safe */ -}}
+{{- $idAttr := "" -}}
+{{- if $id }}{{- $idAttr = printf ` id="%s"` $id -}}{{- end -}}
+
+{{- if $bleed -}}
+  {{- $out := printf `<%s%s class="w-full %s"><div class="%s">%s</div></%s>` $tag $idAttr $outer $inner $body $tag -}}
+  {{- $out | safeHTML -}}
+{{- else -}}
+  {{- $out := printf `<%s%s class="%s">%s</%s>` $tag $idAttr $inner $body $tag -}}
+  {{- $out | safeHTML -}}
+{{- end -}}

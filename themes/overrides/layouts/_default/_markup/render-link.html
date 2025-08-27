@@ -1,31 +1,40 @@
-{{- /* layouts/_default/_markup/render-link.html */ -}}
+{{- /* Simplified render-link:
+     - Plain links default to site primary color (or brandColor) via static map
+     - Keeps your .md → pretty URL normalization
+     - No btn/btn-outline magic (use shortcodes for buttons)
+*/ -}}
+
 {{- $dest := .Destination -}}
+{{- $siteColor := lower (or .Page.Site.Params.primaryColor .Page.Site.Params.brandColor "blue") -}}
 
-{{- /* Site defaults for plain links */ -}}
-{{- $default := `font-medium text-blue-600 dark:text-blue-500 no-underline hover:underline` -}}
-{{- $linkClasses := .Page.Site.Params.text.linkClasses | default $default -}}
+{{- $linkMap := dict
+  "red"     "font-medium text-red-600 dark:text-red-500 no-underline hover:underline"
+  "orange"  "font-medium text-orange-600 dark:text-orange-500 no-underline hover:underline"
+  "amber"   "font-medium text-amber-600 dark:text-amber-500 no-underline hover:underline"
+  "yellow"  "font-medium text-yellow-600 dark:text-yellow-500 no-underline hover:underline"
+  "lime"    "font-medium text-lime-600 dark:text-lime-500 no-underline hover:underline"
+  "green"   "font-medium text-green-600 dark:text-green-500 no-underline hover:underline"
+  "emerald" "font-medium text-emerald-600 dark:text-emerald-500 no-underline hover:underline"
+  "teal"    "font-medium text-teal-600 dark:text-teal-500 no-underline hover:underline"
+  "cyan"    "font-medium text-cyan-600 dark:text-cyan-500 no-underline hover:underline"
+  "sky"     "font-medium text-sky-600 dark:text-sky-500 no-underline hover:underline"
+  "blue"    "font-medium text-blue-600 dark:text-blue-500 no-underline hover:underline"
+  "indigo"  "font-medium text-indigo-600 dark:text-indigo-500 no-underline hover:underline"
+  "violet"  "font-medium text-violet-600 dark:text-violet-500 no-underline hover:underline"
+  "purple"  "font-medium text-purple-600 dark:text-purple-500 no-underline hover:underline"
+  "fuchsia" "font-medium text-fuchsia-600 dark:text-fuchsia-500 no-underline hover:underline"
+  "pink"    "font-medium text-pink-600 dark:text-pink-500 no-underline hover:underline"
+  "rose"    "font-medium text-rose-600 dark:text-rose-500 no-underline hover:underline"
+  "slate"   "font-medium text-slate-600 dark:text-slate-500 no-underline hover:underline"
+  "gray"    "font-medium text-gray-600 dark:text-gray-500 no-underline hover:underline"
+  "zinc"    "font-medium text-zinc-600 dark:text-zinc-500 no-underline hover:underline"
+  "neutral" "font-medium text-neutral-600 dark:text-neutral-500 no-underline hover:underline"
+  "stone"   "font-medium text-stone-600 dark:text-stone-500 no-underline hover:underline"
+-}}
+{{- $linkDefault := index $linkMap $siteColor | default (index $linkMap "blue") -}}
+{{- $linkClasses := .Page.Site.Params.text.linkClasses | default $linkDefault -}}
 
-{{- /* Button defaults (site override → fallback). Include `centerable` so wrapper {.center} auto-centers. */ -}}
-{{- $btnSolidDefault := `not-prose centerable text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-rose-600 dark:hover:bg-rose-700 focus:outline-none dark:focus:ring-rose-800` -}}
-{{- $btnSolid := .Page.Site.Params.button.classes | default $btnSolidDefault -}}
-
-{{- $btnOutlineDefault := `not-prose centerable text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800` -}}
-{{- $btnOutline := .Page.Site.Params.button_outline.classes | default $btnOutlineDefault -}}
-
-{{- /* Read any inline classes on the Markdown link */ -}}
-{{- $attrClass := index .Attributes "class" | default "" -}}
-{{- $classPadded := printf " %s " $attrClass -}}
-{{- $isBtn     := in $classPadded " btn " -}}
-{{- $isOutline := in $classPadded " btn-outline " -}}
-
-{{- /* Strip our marker tokens; keep any extra classes (e.g., .center .w-full) */ -}}
-{{- $extra := $attrClass -}}
-{{- range $tok := (slice "btn" "btn-outline") -}}
-  {{- $extra = replaceRE (printf `(?m)(^|\s)%s(\s|$)` $tok) "" $extra -}}
-{{- end -}}
-{{- $extra = trim $extra " " -}}
-
-{{- /* Build href with your existing .md → pretty URL normalization */ -}}
+{{- /* Build href with your .md → pretty URL normalization */ -}}
 {{- $href := .Destination -}}
 {{- if and (not (or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://"))) (strings.HasSuffix (lower $dest) ".md") -}}
   {{- $url := replaceRE `(?i)\.md$` "" $dest -}}
@@ -36,11 +45,4 @@
   {{- $href = $url -}}
 {{- end -}}
 
-{{- /* Choose final classes */ -}}
-{{- $final := $linkClasses -}}
-{{- if $isBtn -}}
-  {{- $base := cond $isOutline $btnOutline $btnSolid -}}
-  {{- $final = print $base (cond (ne $extra "") (print " " $extra) "") -}}
-{{- end -}}
-
-<a href="{{ $href }}" class="{{ $final }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+<a href="{{ $href }}" class="{{ $linkClasses }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>

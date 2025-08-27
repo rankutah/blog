@@ -13,8 +13,9 @@
   display: none !important;
 }
 
+
 /* ========== 4) Typography touch-ups ========== */
-.prose a { text-decoration: none; }
+/* .prose a { text-decoration: none; } */
 .prose img { max-width: 100%; height: auto; }
 
 /* ========== 5) Fluid auto-fit grid (no breakpoints) ========== */

@@ -21,13 +21,14 @@ faq:
         - [Flowbite Pro](https://flowbite.com/pro/)
         - [Tailwind UI](https://tailwindui.com/)
 ---
+
+
 {{< section >}}
+
 # This is an H1 heading 
 {.center}
 
-{{< button 
-
->}}
+{{< button text="hello" url="/landing/">}}
 {.btn .center}
 
 This is another test
@@ -36,9 +37,10 @@ This is another test
 ### This is an H3
 
 Numbered list
-1. One
-2. Two 
-3. Three
+1. One is the **bolb** way
+2. Two is the [link](/test/) test
+3. Inline button? {{<button>}} {{<button-outline text="Button" >}} is the way? 
+4. Three
 
 {{< button
     text="What in the world"
@@ -58,12 +60,6 @@ what is [going]("https://rankutah.com") on?
 - Another list
 - And again
 
-![image](../media/carwash.jpg){.mx-auto}
-
-{{< img
-    src="../media/carwash.jpg"
-    width="100"
->}}
 
 {{< /section >}}
 
