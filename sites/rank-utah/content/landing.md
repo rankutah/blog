@@ -84,7 +84,7 @@ This is a nother thing of text. Common to the end.
 {{< /section >}}
 
 {{< section align="left">}}
-{{< cols min="18rem" gap="2rem" >}}
+{{< cols min="18rem" gap="4rem" >}}
   {{< col >}}  
   ## A title
   Some text…
@@ -100,9 +100,11 @@ This is a nother thing of text. Common to the end.
   When you need to do this, do it
   
   {{< button text="CTA" url="/contact/" >}}
+  {{< button-outline text="CTA" url="/contact/" >}}
+  {.center}
   {{< /col >}}
 
-  {{< col >}}
+  {{< col>}}
   ## This is what needs to happen 
 
   List of things
@@ -128,3 +130,53 @@ This is a nother thing of text. Common to the end.
 {{< /section >}}
 
 
+{{< section align="left" >}}
+
+{{< cols min="18rem" gap="2rem" >}}
+
+  {{< col >}}
+  ## Carded tile
+  This tile uses your site’s card style.
+  
+  {{< button text="Contact us" url="/contact/" >}}
+  {{< /col >}}
+
+  {{< col >}}
+  ## Plain tile
+  This one is not a card. It just renders your Markdown normally.
+  {{< /col >}}
+
+  {{< col card="true" url="/services/" >}}
+  ## Linked card
+  Clicking anywhere in this card goes to **/services/**.
+  {{< /col >}}
+
+{{< /cols >}}
+
+{{< /section >}}
+
+
+
+{{< section >}}
+
+## A heading outside the grid
+This should render as Markdown, **bold**, *italics*, links, etc.
+
+{{< cols min="18rem" gap="2rem" >}}
+
+  {{< col >}}
+  ### Carded tile
+  A paragraph in a card.
+  {{< button text="Contact us" url="/contact/" >}}
+  {{< /col >}}
+
+  {{< col>}}
+  ### Plain tile
+  Just Markdown in a normal tile.
+  {{< /col >}}
+
+{{< /cols >}}
+
+More **Markdown** below the grid should render too.
+
+{{< /section >}}

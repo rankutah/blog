@@ -1,4 +1,4 @@
-{{/* themes/overrides/layouts/flowbite.html */}}
+{{/* themes/overrides/layouts/_default/flowbite.html */}}
 <!DOCTYPE html>
 <html class="{{ .Site.Params.brandColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}">
 <head>
@@ -26,7 +26,10 @@
   >
 </head>
 
-<body class="flowbite-landing bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
+{{- /* Get shared palette once; use for body + navbar */ -}}
+{{- $pal := partial "theme/palette.html" . -}}
+
+<body class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200">
   {{ partial "navbar.html" . }}
 
   <main class="min-h-screen">
@@ -34,7 +37,7 @@
       {{ .Content }}
     </article>
   </main>
-  
+
   <script defer src="{{ "js/flowbite.min.js" | relURL }}"></script>
   <script defer>
     document.addEventListener('DOMContentLoaded', () => {

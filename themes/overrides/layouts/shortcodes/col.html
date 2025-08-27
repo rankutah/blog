@@ -1,26 +1,35 @@
+{{- /* layouts/shortcodes/col.html
+     Single column (renders Markdown once)
+
+     Props:
+       card="true|false"  → if true, just apply card visuals on a wrapper div
+       classes="…"        → extra utility classes on this tile (works in both modes)
+
+     Notes:
+       - No max-width, no auto-centering, no link-wrapping.
+       - Card just adds bg/border/padding/shadow so it behaves like a normal column.
+*/ -}}
+
 {{- $page   := .Page -}}
 {{- $inner  := .InnerDeindent | strings.TrimSpace -}}
 {{- $isCard := eq (lower (.Get "card" | default "false")) "true" -}}
-{{- $url    := .Get "url" | default "" -}}
 {{- $extra  := .Get "classes" | default "" -}}
 
+{{- /* Site override for card style (optional) */ -}}
 {{- $siteCard := $page.Site.Params.col.cardClasses | default "" -}}
-{{- $fallback := "max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" -}}
-{{- $card := cond (ne $siteCard "") $siteCard $fallback -}}
+{{- $cardBase := "w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm p-6 text-left" -}}
+{{- $card := cond (ne $siteCard "") $siteCard $cardBase -}}
 {{- if ne $extra "" }}{{ $card = printf "%s %s" $card $extra }}{{ end -}}
 
+{{- /* Render Markdown (and nested shortcodes) exactly once */ -}}
+{{- $html := $page.RenderString $inner -}}
+
 {{- if $isCard -}}
-  {{- if $url -}}
-    <a href="{{ $url | safeURL }}" class="centerable block {{ $card }}">
-      {{- $page.RenderString $inner -}}
-    </a>
-  {{- else -}}
-    <div class="centerable {{ $card }}">
-      {{- $page.RenderString $inner -}}
-    </div>
-  {{- end -}}
+  <div class="{{ $card }}">
+    {{- $html -}}
+  </div>
 {{- else -}}
   <div{{ with $extra }} class="{{ . }}"{{ end }}>
-    {{- $page.RenderString $inner -}}
+    {{- $html -}}
   </div>
 {{- end -}}

@@ -1,6 +1,14 @@
+{{- /* Simple auto-fit grid
+     Props:
+       min="16rem"  → minimum tile width
+       gap="1.5rem" → gutter
+       v="start|center|end|stretch" → row vertical alignment
+*/ -}}
+
 {{- $min := .Get "min" | default "16rem" -}}
 {{- $gap := .Get "gap" | default "1.5rem" -}}
 {{- $v   := .Get "v"   | default "" -}}
+
 {{- $vCls := "" -}}
 {{- if eq $v "center"  }}{{ $vCls = " v-center"  }}{{ end -}}
 {{- if eq $v "end"     }}{{ $vCls = " v-end"     }}{{ end -}}

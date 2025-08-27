@@ -1,0 +1,95 @@
+{{/* Central color palette (light 50–200, dark 800–950) for any of the 22 palettes.
+     Returns: { bodyBg, bodyText, navBg, navText }
+
+[params]
+  primaryColor    = "rose"        # used by buttons/accents (unchanged)
+  lightBackground = "sky-200"     # any of 22 colors; shade: 50|100|200 (clamped)
+  darkBackground  = "zinc-900"    # any of 22 colors; shade: 800|900|950 (clamped)
+
+Usage in templates (already wired in your flowbite.html/navbar.html):
+  {{ $pal := partial "theme/palette.html" . }}
+  <body class="{{ $pal.bodyBg }} {{ $pal.bodyText }}">
+  <nav  class="{{ $pal.navBg }} {{ $pal.navText }}">
+*/}}
+
+{{- $primary := lower (or .Site.Params.primaryColor "blue") -}}
+{{- $lightRaw := lower (or .Site.Params.lightBackground (print $primary "-100")) -}}
+{{- $darkRaw  := lower (or .Site.Params.darkBackground  "zinc-900") -}}
+
+{{- $colors := slice "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky" "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray" "zinc" "neutral" "stone" -}}
+
+{{/* ---------- LIGHT MAP: shades 50|100|200 for ALL colors (literal classes → purge-safe) ---------- */}}
+{{- $L := dict
+  "red"      (dict "50" "bg-red-50"        "100" "bg-red-100"        "200" "bg-red-200")
+  "orange"   (dict "50" "bg-orange-50"     "100" "bg-orange-100"     "200" "bg-orange-200")
+  "amber"    (dict "50" "bg-amber-50"      "100" "bg-amber-100"      "200" "bg-amber-200")
+  "yellow"   (dict "50" "bg-yellow-50"     "100" "bg-yellow-100"     "200" "bg-yellow-200")
+  "lime"     (dict "50" "bg-lime-50"       "100" "bg-lime-100"       "200" "bg-lime-200")
+  "green"    (dict "50" "bg-green-50"      "100" "bg-green-100"      "200" "bg-green-200")
+  "emerald"  (dict "50" "bg-emerald-50"    "100" "bg-emerald-100"    "200" "bg-emerald-200")
+  "teal"     (dict "50" "bg-teal-50"       "100" "bg-teal-100"       "200" "bg-teal-200")
+  "cyan"     (dict "50" "bg-cyan-50"       "100" "bg-cyan-100"       "200" "bg-cyan-200")
+  "sky"      (dict "50" "bg-sky-50"        "100" "bg-sky-100"        "200" "bg-sky-200")
+  "blue"     (dict "50" "bg-blue-50"       "100" "bg-blue-100"       "200" "bg-blue-200")
+  "indigo"   (dict "50" "bg-indigo-50"     "100" "bg-indigo-100"     "200" "bg-indigo-200")
+  "violet"   (dict "50" "bg-violet-50"     "100" "bg-violet-100"     "200" "bg-violet-200")
+  "purple"   (dict "50" "bg-purple-50"     "100" "bg-purple-100"     "200" "bg-purple-200")
+  "fuchsia"  (dict "50" "bg-fuchsia-50"    "100" "bg-fuchsia-100"    "200" "bg-fuchsia-200")
+  "pink"     (dict "50" "bg-pink-50"       "100" "bg-pink-100"       "200" "bg-pink-200")
+  "rose"     (dict "50" "bg-rose-50"       "100" "bg-rose-100"       "200" "bg-rose-200")
+  "slate"    (dict "50" "bg-slate-50"      "100" "bg-slate-100"      "200" "bg-slate-200")
+  "gray"     (dict "50" "bg-gray-50"       "100" "bg-gray-100"       "200" "bg-gray-200")
+  "zinc"     (dict "50" "bg-zinc-50"       "100" "bg-zinc-100"       "200" "bg-zinc-200")
+  "neutral"  (dict "50" "bg-neutral-50"    "100" "bg-neutral-100"    "200" "bg-neutral-200")
+  "stone"    (dict "50" "bg-stone-50"      "100" "bg-stone-100"      "200" "bg-stone-200")
+-}}
+
+{{/* Parse & clamp light */}}
+{{- $lp := split $lightRaw "-" -}}
+{{- $lc := index $lp 0 -}}
+{{- $ls := cond (ge (len $lp) 2) (index $lp 1) "100" -}}
+{{- $valid := false -}}
+{{- range $colors }}{{ if eq . $lc }}{{ $valid = true }}{{ end }}{{ end -}}
+{{- if not $valid }}{{ $lc = "blue" }}{{ end -}}
+{{- if not (or (eq $ls "50") (eq $ls "100") (eq $ls "200")) }}{{ $ls = "100" }}{{ end -}}
+{{- $lightBg := index (index $L $lc) $ls | default "bg-blue-100" -}}
+
+{{/* ---------- DARK MAP: shades 800|900|950 for ALL colors ---------- */}}
+{{- $D := dict
+  "red"      (dict "800" "dark:bg-red-800"      "900" "dark:bg-red-900"      "950" "dark:bg-red-950")
+  "orange"   (dict "800" "dark:bg-orange-800"   "900" "dark:bg-orange-900"   "950" "dark:bg-orange-950")
+  "amber"    (dict "800" "dark:bg-amber-800"    "900" "dark:bg-amber-900"    "950" "dark:bg-amber-950")
+  "yellow"   (dict "800" "dark:bg-yellow-800"   "900" "dark:bg-yellow-900"   "950" "dark:bg-yellow-950")
+  "lime"     (dict "800" "dark:bg-lime-800"     "900" "dark:bg-lime-900"     "950" "dark:bg-lime-950")
+  "green"    (dict "800" "dark:bg-green-800"    "900" "dark:bg-green-900"    "950" "dark:bg-green-950")
+  "emerald"  (dict "800" "dark:bg-emerald-800"  "900" "dark:bg-emerald-900"  "950" "dark:bg-emerald-950")
+  "teal"     (dict "800" "dark:bg-teal-800"     "900" "dark:bg-teal-900"     "950" "dark:bg-teal-950")
+  "cyan"     (dict "800" "dark:bg-cyan-800"     "900" "dark:bg-cyan-900"     "950" "dark:bg-cyan-950")
+  "sky"      (dict "800" "dark:bg-sky-800"      "900" "dark:bg-sky-900"      "950" "dark:bg-sky-950")
+  "blue"     (dict "800" "dark:bg-blue-800"     "900" "dark:bg-blue-900"     "950" "dark:bg-blue-950")
+  "indigo"   (dict "800" "dark:bg-indigo-800"   "900" "dark:bg-indigo-900"   "950" "dark:bg-indigo-950")
+  "violet"   (dict "800" "dark:bg-violet-800"   "900" "dark:bg-violet-900"   "950" "dark:bg-violet-950")
+  "purple"   (dict "800" "dark:bg-purple-800"   "900" "dark:bg-purple-900"   "950" "dark:bg-purple-950")
+  "fuchsia"  (dict "800" "dark:bg-fuchsia-800"  "900" "dark:bg-fuchsia-900"  "950" "dark:bg-fuchsia-950")
+  "pink"     (dict "800" "dark:bg-pink-800"     "900" "dark:bg-pink-900"     "950" "dark:bg-pink-950")
+  "rose"     (dict "800" "dark:bg-rose-800"     "900" "dark:bg-rose-900"     "950" "dark:bg-rose-950")
+  "slate"    (dict "800" "dark:bg-slate-800"    "900" "dark:bg-slate-900"    "950" "dark:bg-slate-950")
+  "gray"     (dict "800" "dark:bg-gray-800"     "900" "dark:bg-gray-900"     "950" "dark:bg-gray-950")
+  "zinc"     (dict "800" "dark:bg-zinc-800"     "900" "dark:bg-zinc-900"     "950" "dark:bg-zinc-950")
+  "neutral"  (dict "800" "dark:bg-neutral-800"  "900" "dark:bg-neutral-900"  "950" "dark:bg-neutral-950")
+  "stone"    (dict "800" "dark:bg-stone-800"    "900" "dark:bg-stone-900"    "950" "dark:bg-stone-950")
+-}}
+
+{{/* Parse & clamp dark */}}
+{{- $dp := split $darkRaw "-" -}}
+{{- $dc := index $dp 0 -}}
+{{- $ds := cond (ge (len $dp) 2) (index $dp 1) "900" -}}
+{{- $validD := false -}}
+{{- range $colors }}{{ if eq . $dc }}{{ $validD = true }}{{ end }}{{ end -}}
+{{- if not $validD }}{{ $dc = "zinc" }}{{ end -}}
+{{- if not (or (eq $ds "800") (eq $ds "900") (eq $ds "950")) }}{{ $ds = "900" }}{{ end -}}
+{{- $darkBg := index (index $D $dc) $ds | default "dark:bg-zinc-900" -}}
+
+{{- $bodyText := "text-gray-900 dark:text-gray-100" -}}
+{{- $navBg := printf "%s %s border-b border-gray-200 dark:border-gray-700" $lightBg $darkBg -}}
+{{- return (dict "bodyBg" (printf "%s %s" $lightBg $darkBg) "bodyText" $bodyText "navBg" $navBg "navText" "") -}}
