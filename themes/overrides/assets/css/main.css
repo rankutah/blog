@@ -20,15 +20,18 @@
 .prose img { max-width: 100%; height: auto; }
 
 /* ========== 5) Fluid auto-fit grid (no breakpoints) ========== */
-.cols-auto {
+/* Auto-fit columns with independent column/row gaps */
+.cols-auto{
   display: grid;
-  gap: var(--gap, 1.5rem);
   grid-template-columns: repeat(auto-fit, minmax(var(--min, 16rem), 1fr));
-  align-items: var(--v, start); /* start | center | end | stretch */
+  column-gap: var(--gap, 1.5rem);             /* X gap */
+  row-gap: var(--row, var(--gap, 1.5rem));    /* Y gap defaults to X gap */
+  align-items: var(--v, start);               /* start | center | end | stretch */
 }
 .cols-auto.v-center  { --v: center; }
 .cols-auto.v-end     { --v: end; }
 .cols-auto.v-stretch { --v: stretch; }
+
 
 /* ========== 6) Universal text alignment (handy inside .prose) ========== */
 .left, .prose .left     { text-align: left;  display: block; margin-inline: 0; }

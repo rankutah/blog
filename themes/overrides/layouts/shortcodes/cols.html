@@ -1,19 +1,36 @@
-{{- /* Simple auto-fit grid
+{{- /* layouts/shortcodes/cols.html
+     Auto-fit grid (wraps to new rows). Control X/Y gaps separately.
      Props:
-       min="16rem"  → minimum tile width
-       gap="1.5rem" → gutter
-       v="start|center|end|stretch" → row vertical alignment
+       min="16rem"       → minimum tile width
+       gap="1.5rem"      → column gap
+       row="md"          → row gap: none|sm|md|lg|xl or any CSS length (e.g. 2rem)
+       v="start|center|end|stretch" → per-row vertical alignment
+       classes="…"       → extra classes on the grid wrapper
 */ -}}
 
-{{- $min := .Get "min" | default "16rem" -}}
-{{- $gap := .Get "gap" | default "1.5rem" -}}
-{{- $v   := .Get "v"   | default "" -}}
+{{- $min    := .Get "min"    | default "16rem" -}}
+{{- $gap    := .Get "gap"    | default "1.5rem" -}}
+{{- $rowArg := lower (.Get "row" | default "") -}}
+{{- $v      := .Get "v"      | default "" -}}
+{{- $extra  := .Get "classes"| default "" -}}
 
 {{- $vCls := "" -}}
 {{- if eq $v "center"  }}{{ $vCls = " v-center"  }}{{ end -}}
 {{- if eq $v "end"     }}{{ $vCls = " v-end"     }}{{ end -}}
 {{- if eq $v "stretch" }}{{ $vCls = " v-stretch" }}{{ end -}}
 
-<div class="cols-auto{{ $vCls }}" style="--min: {{ $min }}; --gap: {{ $gap }};">
+{{- /* Map section-like tokens to rems so rows can match section Y rhythm */ -}}
+{{- $yMap := dict "none" "0" "sm" "1.5rem" "md" "3rem" "lg" "4rem" "xl" "6rem" -}}
+{{- $row := "" -}}
+{{- if $rowArg -}}
+  {{- if isset $yMap $rowArg -}}
+    {{- $row = index $yMap $rowArg -}}
+  {{- else -}}
+    {{- $row = $rowArg -}} {{/* treat as raw CSS length, e.g. 2rem */}}
+  {{- end -}}
+{{- end -}}
+
+<div class="cols-auto{{ $vCls }}{{ with $extra }} {{ . }}{{ end }}"
+     style="--min: {{ $min }}; --gap: {{ $gap }};{{ if $row }} --row: {{ $row }};{{ end }}">
   {{ .Inner }}
 </div>

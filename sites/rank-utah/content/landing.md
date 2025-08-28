@@ -93,10 +93,7 @@ what is [going]("https://rankutah.com") on?
 - This is some markdown
 - Another list
 - And again
-
-
 {{< /section >}}
-
 
 
 {{< section >}}
@@ -106,7 +103,7 @@ Body copy uses the page’s `.prose` styles. This only sets width/padding.
 2. And another
 {{< /section >}}
 
-{{< section align="center" y="md" >}}
+{{< section align="center" >}}
 ## Centered block
 
 Everything inside is centered, but Typography remains unchanged.
@@ -118,11 +115,9 @@ This is a nother thing of text. Common to the end.
 {{< /section >}}
 
 {{< section align="left">}}
-{{< cols min="18rem" gap="4rem" >}}
+{{< cols min="18rem" gap="4rem" row="none">}}
   {{< col >}}  
   ## A title
-
-  
 
   Some text…
   ![image](../media/carwash.jpg)
@@ -133,6 +128,7 @@ This is a nother thing of text. Common to the end.
   ## Another major text
   More text...
   {{< /col >}}
+  
   {{< col >}}
   ## This is what needs to happen
   When you need to do this, do it
@@ -151,9 +147,6 @@ This is a nother thing of text. Common to the end.
   2. two
   3. three
   
-
-
-
   When you need to do this, do it
   {.text-center} 
   
