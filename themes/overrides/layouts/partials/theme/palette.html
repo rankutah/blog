@@ -1,22 +1,32 @@
-{{/* Central color palette (light 50–200, dark 800–950) for any of the 22 palettes.
-     Returns: { bodyBg, bodyText, navBg, navText }
+{{/* Central color palette (light 50–200, dark 800–950) + card surface.
+     Returns: { bodyBg, bodyText, navBg, navText, cardBg, cardBorder }
 
 [params]
-  primaryColor    = "rose"        # used by buttons/accents (unchanged)
-  lightBackground = "sky-200"     # any of 22 colors; shade: 50|100|200 (clamped)
-  darkBackground  = "zinc-900"    # any of 22 colors; shade: 800|900|950 (clamped)
+  primaryColor        = "rose"        # used by buttons/accents (unchanged)
+  lightBackground     = "slate-50"    # any of 22 colors; shade: 50|100|200 (or "white")
+  darkBackground      = "slate-900"   # any of 22 colors; shade: 800|900|950 (or "black")
 
-Usage in templates (already wired in your flowbite.html/navbar.html):
+  # NEW (optional; these control card surfaces)
+  cardBackground      = "white"       # accepts "white" or "<color>-50|100|200" or "bg-..."
+  cardBackgroundDark  = "zinc-900"    # accepts "black" or "<color>-800|900|950" or "dark:bg-..."
+  cardBorderLight     = "gray-200"    # border color name (no "border-" prefix)
+  cardBorderDark      = "gray-700"    # border color name (no "border-" prefix)
+
+Usage:
   {{ $pal := partial "theme/palette.html" . }}
   <body class="{{ $pal.bodyBg }} {{ $pal.bodyText }}">
-  <nav  class="{{ $pal.navBg }} {{ $pal.navText }}">
+  <nav  class="{{ $pal.navBg  }} {{ $pal.navText  }}">
 */}}
 
-{{- $primary := lower (or .Site.Params.primaryColor "blue") -}}
+{{- $primary  := lower (or .Site.Params.primaryColor "blue") -}}
 {{- $lightRaw := lower (or .Site.Params.lightBackground (print $primary "-100")) -}}
 {{- $darkRaw  := lower (or .Site.Params.darkBackground  "zinc-900") -}}
 
-{{- $colors := slice "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky" "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray" "zinc" "neutral" "stone" -}}
+{{- $colors := slice
+  "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky"
+  "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray"
+  "zinc" "neutral" "stone"
+-}}
 
 {{/* ---------- LIGHT MAP: shades 50|100|200 for ALL colors (literal classes → purge-safe) ---------- */}}
 {{- $L := dict
@@ -44,16 +54,6 @@ Usage in templates (already wired in your flowbite.html/navbar.html):
   "stone"    (dict "50" "bg-stone-50"      "100" "bg-stone-100"      "200" "bg-stone-200")
 -}}
 
-{{/* Parse & clamp light */}}
-{{- $lp := split $lightRaw "-" -}}
-{{- $lc := index $lp 0 -}}
-{{- $ls := cond (ge (len $lp) 2) (index $lp 1) "100" -}}
-{{- $valid := false -}}
-{{- range $colors }}{{ if eq . $lc }}{{ $valid = true }}{{ end }}{{ end -}}
-{{- if not $valid }}{{ $lc = "blue" }}{{ end -}}
-{{- if not (or (eq $ls "50") (eq $ls "100") (eq $ls "200")) }}{{ $ls = "100" }}{{ end -}}
-{{- $lightBg := index (index $L $lc) $ls | default "bg-blue-100" -}}
-
 {{/* ---------- DARK MAP: shades 800|900|950 for ALL colors ---------- */}}
 {{- $D := dict
   "red"      (dict "800" "dark:bg-red-800"      "900" "dark:bg-red-900"      "950" "dark:bg-red-950")
@@ -80,16 +80,110 @@ Usage in templates (already wired in your flowbite.html/navbar.html):
   "stone"    (dict "800" "dark:bg-stone-800"    "900" "dark:bg-stone-900"    "950" "dark:bg-stone-950")
 -}}
 
-{{/* Parse & clamp dark */}}
-{{- $dp := split $darkRaw "-" -}}
+{{/* --- Normalization helpers */}}
+{{- $scr := newScratch -}}
+
+{{/* normalize light */}}
+{{- $scr.Set "normL" $lightRaw -}}
+{{- if strings.HasPrefix ($scr.Get "normL") "dark:bg-" -}}
+  {{- $scr.Set "normL" (replace ($scr.Get "normL") "dark:bg-" "") -}}
+{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "normL") "bg-" -}}
+  {{- $scr.Set "normL" (replace ($scr.Get "normL") "bg-" "") -}}
+{{- end -}}
+{{- $lp := split ($scr.Get "normL") "-" -}}
+{{- $lc := index $lp 0 -}}
+{{- $ls := cond (ge (len $lp) 2) (index $lp 1) "100" -}}
+{{- $isWhite := or (eq $lightRaw "white") (eq $lightRaw "bg-white") -}}
+{{- $validL := false -}}
+{{- range $colors }}{{ if eq . $lc }}{{ $validL = true }}{{ end }}{{ end -}}
+{{- if not $validL }}{{ $lc = "blue" }}{{ end -}}
+{{- if not (or (eq $ls "50") (eq $ls "100") (eq $ls "200")) }}{{ $ls = "100" }}{{ end -}}
+{{- $lightBg := cond $isWhite "bg-white" (index (index $L $lc) $ls | default "bg-blue-100") -}}
+
+{{/* normalize dark */}}
+{{- $scr.Set "normD" $darkRaw -}}
+{{- if strings.HasPrefix ($scr.Get "normD") "dark:bg-" -}}
+  {{- $scr.Set "normD" (replace ($scr.Get "normD") "dark:bg-" "") -}}
+{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "normD") "bg-" -}}
+  {{- $scr.Set "normD" (replace ($scr.Get "normD") "bg-" "") -}}
+{{- end -}}
+{{- $dp := split ($scr.Get "normD") "-" -}}
 {{- $dc := index $dp 0 -}}
 {{- $ds := cond (ge (len $dp) 2) (index $dp 1) "900" -}}
+{{- $isBlack := or (eq $darkRaw "black") (eq $darkRaw "bg-black") (eq $darkRaw "dark:bg-black") -}}
 {{- $validD := false -}}
 {{- range $colors }}{{ if eq . $dc }}{{ $validD = true }}{{ end }}{{ end -}}
 {{- if not $validD }}{{ $dc = "zinc" }}{{ end -}}
 {{- if not (or (eq $ds "800") (eq $ds "900") (eq $ds "950")) }}{{ $ds = "900" }}{{ end -}}
-{{- $darkBg := index (index $D $dc) $ds | default "dark:bg-zinc-900" -}}
+{{- $darkBg := cond $isBlack "dark:bg-black" (index (index $D $dc) $ds | default "dark:bg-zinc-900") -}}
+
+{{/* ---------- CARD SURFACE (NEW) ---------- */}}
+{{- $cardLightRaw := lower (or .Site.Params.cardBackground "white") -}}
+{{- $cardDarkRaw  := lower (or .Site.Params.cardBackgroundDark "zinc-900") -}}
+
+{{/* card light normalize */}}
+{{- $scr.Set "normCL" $cardLightRaw -}}
+{{- if strings.HasPrefix ($scr.Get "normCL") "dark:bg-" -}}
+  {{- $scr.Set "normCL" (replace ($scr.Get "normCL") "dark:bg-" "") -}}
+{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "normCL") "bg-" -}}
+  {{- $scr.Set "normCL" (replace ($scr.Get "normCL") "bg-" "") -}}
+{{- end -}}
+{{- $clIsWhite := or (eq $cardLightRaw "white") (eq $cardLightRaw "bg-white") -}}
+{{- $clp := split ($scr.Get "normCL") "-" -}}
+{{- $clc := index $clp 0 -}}
+{{- $cls := cond (ge (len $clp) 2) (index $clp 1) "100" -}}
+{{- $clValid := false -}}
+{{- range $colors }}{{ if eq . $clc }}{{ $clValid = true }}{{ end }}{{ end -}}
+{{- if not $clValid }}{{ $clc = "slate" }}{{ end -}}
+{{- if not (or (eq $cls "50") (eq $cls "100") (eq $cls "200")) }}{{ $cls = "100" }}{{ end -}}
+{{- $cardLightBg := cond $clIsWhite "bg-white" (index (index $L $clc) $cls | default "bg-slate-100") -}}
+
+{{/* card dark normalize */}}
+{{- $scr.Set "normCD" $cardDarkRaw -}}
+{{- if strings.HasPrefix ($scr.Get "normCD") "dark:bg-" -}}
+  {{- $scr.Set "normCD" (replace ($scr.Get "normCD") "dark:bg-" "") -}}
+{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "normCD") "bg-" -}}
+  {{- $scr.Set "normCD" (replace ($scr.Set "normCD") "bg-" "") -}}
+{{- end -}}
+{{- $cdIsBlack := or (eq $cardDarkRaw "black") (eq $cardDarkRaw "bg-black") (eq $cardDarkRaw "dark:bg-black") -}}
+{{- $cdp := split ($scr.Get "normCD") "-" -}}
+{{- $cdc := index $cdp 0 -}}
+{{- $cds := cond (ge (len $cdp) 2) (index $cdp 1) "900" -}}
+{{- $cdValid := false -}}
+{{- range $colors }}{{ if eq . $cdc }}{{ $cdValid = true }}{{ end }}{{ end -}}
+{{- if not $cdValid }}{{ $cdc = "zinc" }}{{ end -}}
+{{- if not (or (eq $cds "800") (eq $cds "900") (eq $cds "950")) }}{{ $cds = "900" }}{{ end -}}
+{{- $cardDarkBg := cond $cdIsBlack "dark:bg-black" (index (index $D $cdc) $cds | default "dark:bg-zinc-900") -}}
+
+{{/* card border colors (normalize without "border-" prefix) */}}
+{{- $blRaw := lower (or .Site.Params.cardBorderLight "gray-200") -}}
+{{- $bdRaw := lower (or .Site.Params.cardBorderDark  "gray-700") -}}
+{{- if strings.HasPrefix $blRaw "border-" -}}{{ $blRaw = replace $blRaw "border-" "" -}}{{ end -}}
+{{- if strings.HasPrefix $bdRaw "border-" -}}{{ $bdRaw = replace $bdRaw "border-" "" -}}{{ end -}}
+{{- $cardBorder := printf "border border-%s dark:border-%s" $blRaw $bdRaw -}}
 
 {{- $bodyText := "text-gray-900 dark:text-gray-100" -}}
 {{- $navBg := printf "%s %s border-b border-gray-200 dark:border-gray-700" $lightBg $darkBg -}}
-{{- return (dict "bodyBg" (printf "%s %s" $lightBg $darkBg) "bodyText" $bodyText "navBg" $navBg "navText" "") -}}
+
+{{- return (dict
+  "bodyBg"     (printf "%s %s" $lightBg $darkBg)
+  "bodyText"   $bodyText
+  "navBg"      $navBg
+  "navText"    ""
+  "cardBg"     (printf "%s %s" $cardLightBg $cardDarkBg)
+  "cardBorder" $cardBorder
+) -}}
+
+{{- if hugo.IsServer -}}
+<!-- debug palette:
+lightRaw="{{ $lightRaw }}" -> lightBg="{{ $lightBg }}"
+darkRaw="{{ $darkRaw }}"   -> darkBg="{{ $darkBg }}"
+cardLightRaw="{{ $cardLightRaw }}" -> cardLightBg="{{ $cardLightBg }}"
+cardDarkRaw="{{ $cardDarkRaw }}"   -> cardDarkBg="{{ $cardDarkBg }}"
+cardBorder="{{ $cardBorder }}"
+-->
+{{- end -}}

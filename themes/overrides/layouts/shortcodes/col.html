@@ -2,12 +2,10 @@
      Single column (renders Markdown once)
 
      Props:
-       card="true|false"  → if true, just apply card visuals on a wrapper div
-       classes="…"        → extra utility classes on this tile (works in both modes)
-
-     Notes:
-       - No max-width, no auto-centering, no link-wrapping.
-       - Card just adds bg/border/padding/shadow so it behaves like a normal column.
+       card="true|false"           → apply card visuals on a wrapper div
+       classes="…"                 → extra utility classes
+       bg="rose-50|white|…"       → OPTIONAL per-card light bg (maps to bg-*)
+       darkbg="rose-900|black|…"  → OPTIONAL per-card dark bg (maps to dark:bg-*)
 */ -}}
 
 {{- $page   := .Page -}}
@@ -15,13 +13,92 @@
 {{- $isCard := eq (lower (.Get "card" | default "false")) "true" -}}
 {{- $extra  := .Get "classes" | default "" -}}
 
-{{- /* Site override for card style (optional) */ -}}
+{{- /* Palette (has cardBg + cardBorder) */ -}}
+{{- $pal := partial "theme/palette.html" $page -}}
+{{- $cardBg := or $pal.cardBg "bg-gray-100 dark:bg-gray-800" -}}
+{{- $cardBorder := or $pal.cardBorder "border border-gray-200 dark:border-gray-700" -}}
+
+{{- /* Site-level full override (optional) */ -}}
 {{- $siteCard := $page.Site.Params.col.cardClasses | default "" -}}
-{{- $cardBase := "w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm p-6 text-left" -}}
+
+{{- /* Detect if user/site already set bg/border in classes so defaults don't collide */ -}}
+{{- $hasBgClasses     := or (strings.Contains $extra " bg-") (strings.HasPrefix $extra "bg-") (strings.Contains $extra " dark:bg-") -}}
+{{- $hasBorderClasses := or (strings.Contains $extra " border-") (strings.HasPrefix $extra "border-") (strings.Contains $extra " dark:border-") -}}
+{{- $siteHasBg        := or (strings.Contains $siteCard " bg-") (strings.HasPrefix $siteCard "bg-") (strings.Contains $siteCard " dark:bg-") -}}
+{{- $siteHasBorder    := or (strings.Contains $siteCard " border-") (strings.HasPrefix $siteCard "border-") (strings.Contains $siteCard " dark:border-") -}}
+
+{{- /* ---------- Per-card BG PROPS (bg, darkbg) ---------- */ -}}
+{{- $bgRaw     := lower (.Get "bg" | default "") -}}
+{{- $darkBgRaw := lower (.Get "darkbg" | default "") -}}
+
+{{- /* normalize light bg prop */ -}}
+{{- $bgClass := "" -}}
+{{- if ne $bgRaw "" -}}
+  {{- $tmp := $bgRaw -}}
+  {{- if strings.HasPrefix $tmp "dark:bg-" -}}{{ $tmp = replace $tmp "dark:bg-" "" -}}{{ end -}}
+  {{- if strings.HasPrefix $tmp "bg-" -}}{{ $tmp = replace $tmp "bg-" "" -}}{{ end -}}
+  {{- if or (eq $tmp "white") (eq $tmp "bg-white") -}}
+    {{- $bgClass = "bg-white" -}}
+  {{- else -}}
+    {{- $lp := split $tmp "-" -}}
+    {{- $lc := index $lp 0 -}}
+    {{- $ls := cond (ge (len $lp) 2) (index $lp 1) "100" -}}
+    {{- $colors := slice "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky" "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray" "zinc" "neutral" "stone" -}}
+    {{- $valid := false -}}{{- range $colors }}{{ if eq . $lc }}{{ $valid = true }}{{ end }}{{ end -}}
+    {{- if not $valid }}{{ $lc = "slate" }}{{ end -}}
+    {{- if not (or (eq $ls "50") (eq $ls "100") (eq $ls "200")) }}{{ $ls = "100" }}{{ end -}}
+    {{- $bgClass = printf "bg-%s-%s" $lc $ls -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* normalize dark bg prop */ -}}
+{{- $darkBgClass := "" -}}
+{{- if ne $darkBgRaw "" -}}
+  {{- $tmp := $darkBgRaw -}}
+  {{- if strings.HasPrefix $tmp "dark:bg-" -}}{{ $tmp = replace $tmp "dark:bg-" "" -}}{{ end -}}
+  {{- if strings.HasPrefix $tmp "bg-" -}}{{ $tmp = replace $tmp "bg-" "" -}}{{ end -}}
+  {{- if or (eq $tmp "black") (eq $tmp "bg-black") -}}
+    {{- $darkBgClass = "dark:bg-black" -}}
+  {{- else -}}
+    {{- $dp := split $tmp "-" -}}
+    {{- $dc := index $dp 0 -}}
+    {{- $ds := cond (ge (len $dp) 2) (index $dp 1) "900" -}}
+    {{- $colors := slice "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky" "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray" "zinc" "neutral" "stone" -}}
+    {{- $valid := false -}}{{- range $colors }}{{ if eq . $dc }}{{ $valid = true }}{{ end }}{{ end -}}
+    {{- if not $valid }}{{ $dc = "zinc" }}{{ end -}}
+    {{- if not (or (eq $ds "800") (eq $ds "900") (eq $ds "950")) }}{{ $ds = "900" }}{{ end -}}
+    {{- $darkBgClass = printf "dark:bg-%s-%s" $dc $ds -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $bgOverride := "" -}}
+{{- if or (ne $bgClass "") (ne $darkBgClass "") -}}
+  {{- $bgOverride = strings.TrimSpace (printf "%s %s" $bgClass $darkBgClass) -}}
+{{- end -}}
+
+{{- /* Assemble base card classes.
+      Added: h-full flex flex-col so card matches row height and supports mt-auto footers. */ -}}
+{{- $parts := slice "w-full" "h-full" "rounded-lg" "shadow-sm" "p-6" "text-left" "flex" "flex-col" -}}
+
+{{- if or $hasBgClasses $siteHasBg -}}
+  {{/* user/site provided bg in classes → skip defaults */}}
+{{- else if ne $bgOverride "" -}}
+  {{- $parts = $parts | append $bgOverride -}}
+{{- else -}}
+  {{- $parts = $parts | append $cardBg -}}
+{{- end -}}
+
+{{- if or $hasBorderClasses $siteHasBorder -}}
+  {{/* user/site provided border in classes → skip defaults */}}
+{{- else -}}
+  {{- $parts = $parts | append $cardBorder -}}
+{{- end -}}
+
+{{- $cardBase := delimit $parts " " -}}
 {{- $card := cond (ne $siteCard "") $siteCard $cardBase -}}
 {{- if ne $extra "" }}{{ $card = printf "%s %s" $card $extra }}{{ end -}}
 
-{{- /* Render Markdown (and nested shortcodes) exactly once */ -}}
+{{- /* Render Markdown once */ -}}
 {{- $html := $page.RenderString $inner -}}
 
 {{- if $isCard -}}

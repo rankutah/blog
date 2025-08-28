@@ -21,15 +21,52 @@ faq:
         - [Flowbite Pro](https://flowbite.com/pro/)
         - [Tailwind UI](https://tailwindui.com/)
 ---
+{{< section
+  img="../media/carwash.jpg"
+  bleed="true"
+  overlay="true"
+  overlayShade="bg-black/60"
+  imgStyle="height: 30vh"     
+  yBottom="md"                      
+  align="center"
+>}}
+
+# This is the headline
+Some supporting copy for this {{<button>}}
+{.text-white}
+{{< /section >}}
+
+
 
 
 {{< section >}}
 
+# Utah’s Friendly Web & SEO Team
+We grow local businesses with fast, beautiful sites.
+{{< button text="Book Now" url="/contact/" >}}
+{{< /section >}}
+
+{{<section>}}
+
+## New sectionNew 
+
+{{< /section >}}
+
+
+
+{{< section  y="none">}}
+
+  ![image](../media/carwash.jpg)
+
+{{</section>}}
+
+{{<section>}}
+
 # This is an H1 heading 
 {.center}
 
-{{< button text="hello" url="/landing/">}}
-{.btn .center}
+{{< button text="hello" url="/landing/" >}}
+{.center}
 
 This is another test
 {.center}
@@ -87,8 +124,12 @@ This is a nother thing of text. Common to the end.
 {{< cols min="18rem" gap="4rem" >}}
   {{< col >}}  
   ## A title
+
+  
+
   Some text…
   ![image](../media/carwash.jpg)
+  { .rounded-xl}
   {{< /col >}}
   
   {{< col >}}
@@ -134,14 +175,14 @@ This is a nother thing of text. Common to the end.
 
 {{< cols min="18rem" gap="2rem" >}}
 
-  {{< col >}}
+  {{< col card="true" >}}
   ## Carded tile
   This tile uses your site’s card style.
   
   {{< button text="Contact us" url="/contact/" >}}
   {{< /col >}}
 
-  {{< col >}}
+  {{< col card="true" >}}
   ## Plain tile
   This one is not a card. It just renders your Markdown normally.
   {{< /col >}}
@@ -162,15 +203,15 @@ This is a nother thing of text. Common to the end.
 ## A heading outside the grid
 This should render as Markdown, **bold**, *italics*, links, etc.
 
-{{< cols min="18rem" gap="2rem" >}}
+{{< cols min="18rem" gap="2rem">}}
 
-  {{< col >}}
+  {{< col card="True" bg="rose-100" darkbg="rose-900">}}
   ### Carded tile
   A paragraph in a card.
   {{< button text="Contact us" url="/contact/" >}}
   {{< /col >}}
 
-  {{< col>}}
+  {{< col url="test.com">}}
   ### Plain tile
   Just Markdown in a normal tile.
   {{< /col >}}

@@ -48,11 +48,18 @@ pruneTaxonomies = true
 
 [params]
   googleAnalyticsID   = "G-LGYK5V1CTV"
-  brandColor          = "green"
+  brandColor          = "indigo"
   primaryColor        = "rose"
   accentColor         = "#f3844b"
-  lightBackground  = "sky-300"  # any color @ 50|100|200
-  darkBackground   = "slate-950" # neutral @ 800|900|950
+  lightBackground  = "slate-50"  # any color @ 50|100|200
+  darkBackground   = "slate-900" # neutral @ 800|900|950
+  cardBackground     = "gray-100"     # or "slate-100", "rose-50", etc.
+  cardBackgroundDark = "gray-800"  # or "slate-800", "black", etc.
+  cardBorderLight    = "gray-200"  # no "border-" prefix
+  cardBorderDark     = "gray-700"  # no "border-" prefix
+
+
+
   showReadingTime     = true
   enableSearch        = true
   clientName          = "Rank Utah SEO & Web Design"
@@ -75,6 +82,12 @@ pruneTaxonomies = true
   phoneNumber       = "800-123-4567"
   logoHeight        = "h-10"
   theme = "blend" #blend (default), invert, glass
+
+[params.images]
+  defaultClasses = "rounded-lg shadow-sm w-full max-w-2xl mx-auto block object-cover"
+  defaultSizes   = "(min-width:1024px) 800px, 100vw"
+
+
 
 
 [params.section.defaults]

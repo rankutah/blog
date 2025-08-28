@@ -1,0 +1,81 @@
+{{- /* Markdown image render hook: responsive srcset (for Page Resources),
+     site defaults, and an LCP toggle.
+
+   Optional site defaults (config.toml):
+   [params.images]
+     defaultClasses = "rounded-lg shadow-sm w-full max-w-2xl mx-auto block object-cover"
+     defaultSizes   = "(min-width:1024px) 800px, 100vw"
+
+   Usage:
+     ![Alt](carwash.jpg){ .rounded-xl }                         // lazy by default
+     ![Hero](hero.jpg){ lcp="true" class="rounded-xl" }         // eager + high priority
+     [![Alt](pic.jpg){ .rounded-xl } ](/contact/)               // wrapped link via Markdown
+     ![Alt](pic.jpg){ link="/contact/" caption="Caption" }      // link/caption via attrs
+*/ -}}
+
+{{- $site       := .Page.Site -}}
+{{- $imgParams  := $site.Params.images -}}
+{{- $defClasses := cond (isset $imgParams "defaultClasses") $imgParams.defaultClasses "" -}}
+{{- $defSizes   := cond (isset $imgParams "defaultSizes")   $imgParams.defaultSizes   "100vw" -}}
+
+{{- $alt        := or .Text .Title | default "" -}}
+{{- $attrClass  := .Attributes.class | default "" -}}
+{{- $class      := strings.TrimSpace (printf "%s %s" $defClasses $attrClass) -}}
+
+{{- $isLCP      := eq (.Attributes.lcp | default "") "true" -}}
+{{- $loading    := cond $isLCP "eager" (.Attributes.loading | default "lazy") -}}
+{{- $fetchprio  := cond $isLCP "high"  (.Attributes.fetchpriority | default "") -}}
+{{- $decoding   := .Attributes.decoding | default "async" -}}
+{{- $sizesAttr  := .Attributes.sizes    | default $defSizes -}}
+{{- $widthAttr  := .Attributes.width    | default "" -}}
+{{- $heightAttr := .Attributes.height   | default "" -}}
+{{- $linkAttr   := .Attributes.link     | default "" -}}
+{{- $caption    := .Attributes.caption  | default "" -}}
+
+{{- $src        := .Destination -}}
+{{- $srcset := slice -}}
+{{- $wHint  := 0 -}}
+{{- $hHint  := 0 -}}
+
+{{/* Build responsive variants only if the image is a Page Resource */}}
+{{- with .Page.Resources.GetMatch (printf "**%s" (path.Base $src)) -}}
+  {{- $img := . -}}
+  {{- $origW := $img.Width | default 0 -}}
+  {{- $widths := slice 360 720 1080 1440 1920 -}}
+  {{- $last := "" -}}
+  {{- range $w := $widths -}}
+    {{- if or (eq $origW 0) (ge $origW $w) -}}
+      {{- $r := $img.Resize (printf "%dx" $w) -}}
+      {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+      {{- $last = $r.RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if ne $last "" }}{{ $src = $last }}{{ end -}}
+  {{- $wHint = $img.Width | default 0 -}}
+  {{- $hHint = $img.Height | default 0 -}}
+{{- end -}}
+
+{{- /* Build <img> tag */ -}}
+{{- $imgTag := printf `<img src="%s"%s%s alt="%s"%s%s%s%s class="%s" loading="%s" decoding="%s" />`
+  $src
+  (cond (gt (len $srcset) 0) (printf ` srcset="%s"` (delimit $srcset ", ")) "")
+  (cond (gt (len $srcset) 0) (printf ` sizes="%s"` $sizesAttr) "")
+  (printf "%s" $alt)
+  (cond (ne $widthAttr  "") (printf ` width="%s"`  $widthAttr)  (cond (gt $wHint 0) (printf ` width="%d"`  $wHint)  "" ))
+  (cond (ne $heightAttr "") (printf ` height="%s"` $heightAttr) (cond (gt $hHint 0) (printf ` height="%d"`  $hHint) "" ))
+  (cond (ne $fetchprio  "") (printf ` fetchpriority="%s"` $fetchprio) "")
+  (cond (ne $class      "") (printf ` class="%s"`  $class)      "")
+  $loading
+  $decoding
+-}}
+
+{{- if or (ne $linkAttr "") (ne $caption "") -}}
+  <figure>
+    {{- if ne $linkAttr "" -}}<a href="{{ $linkAttr }}">{{ end -}}
+      {{- $imgTag | safeHTML -}}
+    {{- if ne $linkAttr "" -}}</a>{{ end -}}
+    {{- if ne $caption "" -}}<figcaption class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ $caption }}</figcaption>{{ end -}}
+  </figure>
+{{- else -}}
+  {{- $imgTag | safeHTML -}}
+{{- end -}}
