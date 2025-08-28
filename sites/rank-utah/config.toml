@@ -106,7 +106,7 @@ pruneTaxonomies = true
 
   # Vertical padding:
   #   none → py-0, sm → py-6, md → py-12, lg → py-16, xl → py-24
-  y     = "md"
+  y     = "none"
 
   # Text align: start | center
   align = "start"

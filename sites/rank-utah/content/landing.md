@@ -22,26 +22,23 @@ faq:
         - [Tailwind UI](https://tailwindui.com/)
 ---
 {{< section
-  img="../media/carwash.jpg"
+  img="../media/mountain.jpg"
   bleed="true"
   overlay="true"
-  overlayShade="bg-black/60"
-  imgStyle="height: 30vh"     
+  overlayShade="bg-black/40"
+  imgStyle="height: 40vh"     
   yBottom="md"                      
   align="center"
+  spacer="false"
 >}}
 
-# This is the headline
+# Website Design in Utah County
 Some supporting copy for this {{<button>}}
 {.text-white}
 {{< /section >}}
 
-
-
-
 {{< section >}}
-
-# Utah’s Friendly Web & SEO Team
+## Utah’s Friendly Web & SEO Team
 We grow local businesses with fast, beautiful sites.
 {{< button text="Book Now" url="/contact/" >}}
 {{< /section >}}
@@ -62,7 +59,7 @@ We grow local businesses with fast, beautiful sites.
 
 {{<section>}}
 
-# This is an H1 heading 
+## This is an H2 heading 
 {.center}
 
 {{< button text="hello" url="/landing/" >}}
