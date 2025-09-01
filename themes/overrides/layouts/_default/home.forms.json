@@ -1,0 +1,7 @@
+{{- $p := .Site.Params.forms | default (dict) -}}
+{
+  "to": {{ or ($p.to) (slice) | jsonify }},
+  "from": {{ or ($p.from) "" | jsonify }},
+  "subjectPrefix": {{ or ($p.subjectPrefix) "" | jsonify }},
+  "allowedOrigins": {{ or ($p.allowedOrigins) (slice) | jsonify }}
+}

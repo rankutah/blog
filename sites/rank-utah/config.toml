@@ -41,7 +41,7 @@ pruneTaxonomies = true
     target = "content/posts"
 
 [outputFormats.FORMS]
-  mediatType = "application/json"
+  mediaType = "application/json"
   baseName = "forms"
   isPlainText = true
   path = ".well-known"
