@@ -1,132 +1,148 @@
-{{- /* layouts/shortcodes/contact_form.html
-     AJAX (no redirect) Flowbite contact form that posts to a managed provider (Formspark/Basin).
-     Reads endpoint & messages from .Site.Params.forms.
-     Props (optional):
-       id="contact-form-1"    → unique form id on page (default: "contact-form")
-       heading="Contact Us"   → H2 heading text
-       blurb="…"              → small lead paragraph
+{{- /* Contact form → Formspark
+     Requires in site config:
+       [params.forms]
+       action         = "https://submit-form.com/FORM_ID"
+       honeypot       = "_hp"                          # optional (default _hp). Must match Formspark “Custom honeypot”
+       successMessage = "Thanks! Your message was sent."
+       errorMessage   = "Sorry, something went wrong. Please try again."
+
+     Usage in content:
+       {{< contact_form >}}
 */ -}}
 
-{{- $id        := .Get "id"      | default "contact-form" -}}
-{{- $heading   := .Get "heading" | default "Contact Us" -}}
-{{- $blurb     := .Get "blurb"   | default "" -}}
+{{- $cfg := .Page.Site.Params.forms | default (dict) -}}
+{{- $action := (index $cfg "action") | default "" -}}
+{{- $hpName := (index $cfg "honeypot") | default "_hp" -}}
+{{- $okMsg  := (index $cfg "successMessage") | default "Thanks! Your message was sent." -}}
+{{- $erMsg  := (index $cfg "errorMessage")   | default "Sorry, something went wrong. Please try again." -}}
 
-{{- $forms     := .Page.Site.Params.forms | default (dict) -}}
-{{- $endpoint  := index $forms "action" | default "" -}}
-{{- $okMsg     := index $forms "successMessage" | default "Thanks! Your message was sent." -}}
-{{- $errMsg    := index $forms "errorMessage"   | default "Sorry, something went wrong. Please try again." -}}
-{{- $hpName    := index $forms "honeypot"       | default "_hp" -}}
-{{- $btnClass  := index $forms "submitClasses"  | default "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" -}}
+{{- /* Optional ID so multiple forms can exist safely on one page */ -}}
+{{- $id := .Get "id" | default "contact-form" -}}
 
 <section class="bg-white dark:bg-gray-900 not-prose">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">{{ $heading }}</h2>
-    {{- if $blurb }}
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">{{ $blurb }}</p>
-    {{- end }}
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+      Got a technical issue? Need details about a plan? Send us a note.
+    </p>
 
-    <form id="{{ $id }}" class="space-y-8" novalidate>
-      <!-- Honeypot (hidden) -->
-      <input type="text" name="{{ $hpName }}" class="hidden" tabindex="-1" autocomplete="off">
+    <!-- IMPORTANT: action + method POST + proper name attributes -->
+    <form id="{{ $id }}" action="{{ $action }}" method="POST" class="space-y-8">
+      <!-- honeypot (must match Formspark "Custom honeypot" field name) -->
+      <input type="text" name="{{ $hpName }}" tabindex="-1" autocomplete="off"
+             style="position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
 
       <div>
         <label for="{{ $id }}-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
         <input type="email" id="{{ $id }}-email" name="email" required
                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                      focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+                      focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                      dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+               placeholder="name@example.com">
       </div>
 
       <div>
         <label for="{{ $id }}-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
         <input type="text" id="{{ $id }}-subject" name="subject" required
                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
-                      focus:ring-blue-500 focus:border-blue-500
+                      focus:ring-primary-500 focus:border-primary-500
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                      dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+               placeholder="Let us know how we can help you">
+      </div>
+
+      <div>
+        <label for="{{ $id }}-company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company (optional)</label>
+        <input type="text" id="{{ $id }}-company" name="company"
+               class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
+                      focus:ring-primary-500 focus:border-primary-500
+                      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                      dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+               placeholder="Your company">
       </div>
 
       <div class="sm:col-span-2">
         <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
         <textarea id="{{ $id }}-message" name="message" rows="6" required
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
-                         focus:ring-blue-500 focus:border-blue-500
+                         focus:ring-primary-500 focus:border-primary-500
                          dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                         dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                         dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Leave a comment..."></textarea>
       </div>
 
-      <button type="submit" class="{{ $btnClass }}">Send message</button>
+      <button type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700
+                     sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300
+                     dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+        Send message
+      </button>
 
-      <!-- Inline alert -->
-      <div id="{{ $id }}-alert" class="hidden"></div>
+      <p id="{{ $id }}-msg" class="text-sm mt-2"></p>
+
+      <!-- Non-JS fallback: (Formspark will redirect). Remove if you truly never want a redirect. -->
+      <!-- <input type="hidden" name="_redirect" value="{{ .Page.Permalink }}"> -->
     </form>
   </div>
 </section>
 
 <script>
 (() => {
-  const FORM_ID   = {{ $id      | jsonify }};
-  const ENDPOINT  = {{ $endpoint| jsonify }};
-  const OK_MSG    = {{ $okMsg   | jsonify }};
-  const ERR_MSG   = {{ $errMsg  | jsonify }};
-
-  const form  = document.getElementById(FORM_ID);
+  const form = document.getElementById("{{ $id }}");
   if (!form) return;
+  const endpoint = "{{ $action }}";
+  const hp = "{{ $hpName }}";
+  const msgEl = document.getElementById("{{ $id }}-msg");
 
-  // Prevent double-init
-  if (form.dataset.bound === "1") return;
-  form.dataset.bound = "1";
-
-  const alertBox = document.getElementById(FORM_ID + "-alert");
-
-  function showAlert(ok, msg) {
-    alertBox.className = "mt-4 p-4 rounded-lg border " + (ok
-      ? "bg-green-50 text-green-800 border-green-200"
-      : "bg-red-50 text-red-800 border-red-200");
-    alertBox.textContent = msg;
-    alertBox.classList.remove("hidden");
+  if (!endpoint) {
+    console.warn("Formspark: missing params.forms.action");
   }
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    if (!ENDPOINT) {
-      showAlert(false, "Form endpoint is not configured.");
+    // Gather fields
+    const fd = new FormData(form);
+
+    // Honeypot: if filled, pretend success and bail
+    if ((fd.get(hp) || "").toString().trim() !== "") {
+      form.reset();
+      if (msgEl) { msgEl.textContent = ""; }
       return;
     }
 
-    const submitBtn = form.querySelector('[type="submit"]');
-    submitBtn?.setAttribute("disabled", "");
-    submitBtn?.classList.add("opacity-70","cursor-wait");
+    const payload = {};
+    fd.forEach((v, k) => {
+      if (k !== hp) payload[k] = v;
+    });
 
     try {
-      const data = Object.fromEntries(new FormData(form).entries());
-      const res  = await fetch(ENDPOINT, {
+      const res = await fetch(endpoint, {
         method: "POST",
-        mode: "cors",
-        headers: { "Accept":"application/json", "Content-Type":"application/json" },
-        body: JSON.stringify(data)
+        headers: { "Accept": "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
       });
 
       if (res.ok) {
+        if (msgEl) {
+          msgEl.textContent = {{ $okMsg | jsonify }};
+          msgEl.className = "text-green-600";
+        }
         form.reset();
-        showAlert(true, OK_MSG);
       } else {
-        // Attempt to read provider error (optional)
-        let msg = ERR_MSG;
-        try {
-          const j = await res.json();
-          if (j && (j.error || j.message)) msg = j.error || j.message;
-        } catch {}
-        showAlert(false, msg);
+        if (msgEl) {
+          msgEl.textContent = {{ $erMsg | jsonify }};
+          msgEl.className = "text-red-600";
+        }
+        console.error("Formspark submit failed", res.status, await res.text().catch(() => ""));
       }
     } catch (err) {
-      showAlert(false, ERR_MSG);
-    } finally {
-      submitBtn?.removeAttribute("disabled");
-      submitBtn?.classList.remove("opacity-70","cursor-wait");
+      if (msgEl) {
+        msgEl.textContent = {{ $erMsg | jsonify }};
+        msgEl.className = "text-red-600";
+      }
+      console.error("Formspark submit error", err);
     }
   });
 })();
