@@ -90,15 +90,12 @@ pruneTaxonomies = true
   theme = "blend" #blend (default), invert, glass
 
 [params.forms]
-  worker = "https://form-sender.benjamin-0e3.workers.dev"
-  domain = "blog.rankutah.com"
-  to = ["hello@rankutah.com"]
-  from = "no-reply@forms.rankutah.com"
-  subjectPrefix = "[Rank Utah]"
-  allowedOrigins = ["https://blog.rankutah.com", "https://rankutah.com"]
+  action         = "https://submit-form.com/DOH188lWF"
+  honeypot       = "_hp"                # must match Formspark
   successMessage = "Thanks! Your message was sent."
-  errorMessage = "Network error. Please try again.."
-  
+  errorMessage   = "Sorry, something went wrong. Please try again."
+  # submitClasses = "..."               # optional button styling
+
 [params.section.defaults]
   # Container width:
   #   sm → max-w-screen-sm

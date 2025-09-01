@@ -1,41 +1,37 @@
-{{- /* Contact form (Flowbite styles) that posts to your Cloudflare Worker.
-     Reads everything from site config:
-     [params.forms]
-       worker = "https://form-sender.<your-sub>.workers.dev"
-       domain = "blog.rankutah.com"
-       successMessage = "Thanks! Your message was sent."
-       errorMessage   = "Network error. Please try again."
-   */ -}}
+{{- /* layouts/shortcodes/contact_form.html
+     AJAX (no redirect) Flowbite contact form that posts to a managed provider (Formspark/Basin).
+     Reads endpoint & messages from .Site.Params.forms.
+     Props (optional):
+       id="contact-form-1"    → unique form id on page (default: "contact-form")
+       heading="Contact Us"   → H2 heading text
+       blurb="…"              → small lead paragraph
+*/ -}}
 
-{{- $forms := .Page.Site.Params.forms | default (dict) -}}
-{{- $worker := index $forms "worker" | default "" -}}
-{{- $domain := index $forms "domain" | default "" -}}
-{{- $ok     := and $worker $domain -}}
+{{- $id        := .Get "id"      | default "contact-form" -}}
+{{- $heading   := .Get "heading" | default "Contact Us" -}}
+{{- $blurb     := .Get "blurb"   | default "" -}}
 
-<div
-  data-formwrap
-  data-worker="{{ $worker }}"
-  data-domain="{{ $domain }}"
-  data-success="{{ index $forms "successMessage" | default "Thanks! Your message was sent." }}"
-  data-error="{{ index $forms "errorMessage"   | default "Network error. Please try again." }}"
-  class="bg-white dark:bg-gray-900"
->
+{{- $forms     := .Page.Site.Params.forms | default (dict) -}}
+{{- $endpoint  := index $forms "action" | default "" -}}
+{{- $okMsg     := index $forms "successMessage" | default "Thanks! Your message was sent." -}}
+{{- $errMsg    := index $forms "errorMessage"   | default "Sorry, something went wrong. Please try again." -}}
+{{- $hpName    := index $forms "honeypot"       | default "_hp" -}}
+{{- $btnClass  := index $forms "submitClasses"  | default "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" -}}
+
+<section class="bg-white dark:bg-gray-900 not-prose">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-      Got a question? Send us a note and we’ll reply.
-    </p>
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">{{ $heading }}</h2>
+    {{- if $blurb }}
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">{{ $blurb }}</p>
+    {{- end }}
 
-    {{- if not $ok -}}
-      <div class="p-4 mb-6 rounded-lg border border-amber-300 bg-amber-50 text-amber-800">
-        Missing <code>[params.forms.worker]</code> or <code>[params.forms.domain]</code> in your site config.
-      </div>
-    {{- end -}}
+    <form id="{{ $id }}" class="space-y-8" novalidate>
+      <!-- Honeypot (hidden) -->
+      <input type="text" name="{{ $hpName }}" class="hidden" tabindex="-1" autocomplete="off">
 
-    <form id="contact-form" class="space-y-6" novalidate>
       <div>
-        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
-        <input type="text" id="name" name="name" autocomplete="name"
+        <label for="{{ $id }}-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+        <input type="email" id="{{ $id }}-email" name="email" required
                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                       focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
@@ -43,100 +39,95 @@
       </div>
 
       <div>
-        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com"
-               class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                      focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
-                      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-blue-500 dark:focus:border-blue-500">
-      </div>
-
-      <div>
-        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-        <input type="text" id="subject" name="subject" required
+        <label for="{{ $id }}-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+        <input type="text" id="{{ $id }}-subject" name="subject" required
                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
                       focus:ring-blue-500 focus:border-blue-500
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
                       dark:focus:ring-blue-500 dark:focus:border-blue-500">
       </div>
 
-      <div>
-        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-        <textarea id="message" name="message" rows="6" required
+      <div class="sm:col-span-2">
+        <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+        <textarea id="{{ $id }}-message" name="message" rows="6" required
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
                          focus:ring-blue-500 focus:border-blue-500
                          dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                         dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                         dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Leave a comment..."></textarea>
       </div>
 
-      <button type="submit"
-              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800
-                     focus:ring-4 focus:outline-none focus:ring-blue-300
-                     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Send message
-      </button>
+      <button type="submit" class="{{ $btnClass }}">Send message</button>
 
-      <p data-status class="hidden mt-2 text-sm"></p>
+      <!-- Inline alert -->
+      <div id="{{ $id }}-alert" class="hidden"></div>
     </form>
   </div>
-</div>
+</section>
 
 <script>
 (() => {
-  const wrap = document.currentScript.previousElementSibling;
-  if (!wrap || !wrap.matches('[data-formwrap]')) return;
+  const FORM_ID   = {{ $id      | jsonify }};
+  const ENDPOINT  = {{ $endpoint| jsonify }};
+  const OK_MSG    = {{ $okMsg   | jsonify }};
+  const ERR_MSG   = {{ $errMsg  | jsonify }};
 
-  const form   = wrap.querySelector('form#contact-form');
-  const status = wrap.querySelector('[data-status]');
-  const worker = (wrap.dataset.worker || '').trim();
-  const domain = (wrap.dataset.domain || '').trim();
-  const ok     = worker && domain;
+  const form  = document.getElementById(FORM_ID);
+  if (!form) return;
 
-  // Build endpoint like: https://.../submit?domain=example.com
-  const endpoint = ok
-    ? worker.replace(/\/+$/,'') + '/submit?domain=' + encodeURIComponent(domain)
-    : '';
+  // Prevent double-init
+  if (form.dataset.bound === "1") return;
+  form.dataset.bound = "1";
 
-  console.log('Contact form endpoint =', endpoint || '(missing config)');
+  const alertBox = document.getElementById(FORM_ID + "-alert");
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault(); // stop native submit (prevents 405/page reload)
-    if (!ok) {
-      show(wrap.dataset.error || 'Form not configured.');
+  function showAlert(ok, msg) {
+    alertBox.className = "mt-4 p-4 rounded-lg border " + (ok
+      ? "bg-green-50 text-green-800 border-green-200"
+      : "bg-red-50 text-red-800 border-red-200");
+    alertBox.textContent = msg;
+    alertBox.classList.remove("hidden");
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    if (!ENDPOINT) {
+      showAlert(false, "Form endpoint is not configured.");
       return;
     }
-    const fd = new FormData(form);
-    const payload = {
-      name:    fd.get('name')    || '',
-      email:   fd.get('email')   || '',
-      subject: fd.get('subject') || '',
-      message: fd.get('message') || ''
-    };
+
+    const submitBtn = form.querySelector('[type="submit"]');
+    submitBtn?.setAttribute("disabled", "");
+    submitBtn?.classList.add("opacity-70","cursor-wait");
 
     try {
-      const res  = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body:   JSON.stringify(payload)
+      const data = Object.fromEntries(new FormData(form).entries());
+      const res  = await fetch(ENDPOINT, {
+        method: "POST",
+        mode: "cors",
+        headers: { "Accept":"application/json", "Content-Type":"application/json" },
+        body: JSON.stringify(data)
       });
-      const data = await res.json().catch(() => ({}));
-      if (res.ok && data && data.ok) {
-        show(wrap.dataset.success || 'Thanks! Your message was sent.', true);
+
+      if (res.ok) {
         form.reset();
+        showAlert(true, OK_MSG);
       } else {
-        show((data && data.error) || wrap.dataset.error || 'Network error. Please try again.');
+        // Attempt to read provider error (optional)
+        let msg = ERR_MSG;
+        try {
+          const j = await res.json();
+          if (j && (j.error || j.message)) msg = j.error || j.message;
+        } catch {}
+        showAlert(false, msg);
       }
     } catch (err) {
-      console.error('Submit failed:', err);
-      show(wrap.dataset.error || 'Network error. Please try again.');
+      showAlert(false, ERR_MSG);
+    } finally {
+      submitBtn?.removeAttribute("disabled");
+      submitBtn?.classList.remove("opacity-70","cursor-wait");
     }
   });
-
-  function show(msg, good=false){
-    if (!status) return;
-    status.classList.remove('hidden','text-red-600','text-green-600');
-    status.textContent = msg;
-    status.classList.add(good ? 'text-green-600' : 'text-red-600');
-  }
 })();
 </script>
