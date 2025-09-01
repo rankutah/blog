@@ -1,25 +1,9 @@
-{{- /* layouts/shortcodes/contact_form.html
-     Uses site.Params.forms for config:
-       [params.forms]
-         worker = "https://form-sender....workers.dev"
-         domain = "blog.rankutah.com"
-         to = ["hello@rankutah.com"]        # only used in /.well-known/forms.json for your Worker to read
-         from = "no-reply@forms.rankutah.com"
-         subjectPrefix = "[Rank Utah]"
-         allowedOrigins = ["https://blog.rankutah.com","https://rankutah.com"]
-         successMessage = "Thanks! Your message was sent."
-         errorMessage   = "Network error. Please try again."
-*/ -}}
-
 {{- $forms := .Page.Site.Params.forms | default (dict) -}}
 {{- $worker := or ($forms.worker) "" -}}
-{{- /* derive a domain fallback from baseURL if not set */ -}}
 {{- $fallbackDomain := replaceRE `^https?://([^/]+)/?$` "$1" .Page.Site.BaseURL -}}
 {{- $domain := or ($forms.domain) $fallbackDomain -}}
 {{- $okMsg := or ($forms.successMessage) "Thanks! Your message was sent." -}}
 {{- $errMsg := or ($forms.errorMessage) "Something went wrong. Please try again." -}}
-
-{{- /* simple id so we can bind JS; let user override: {{< contact_form id="contact-a" >}} */ -}}
 {{- $id := .Get "id" | default "contact-form" -}}
 
 <section class="bg-white dark:bg-gray-900">
@@ -27,8 +11,8 @@
     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
     <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a question? Send us a message.</p>
 
-    <form id="{{ $id }}" class="space-y-6" novalidate>
-      <!-- Honeypot (spam trap) -->
+    <form id="{{ $id }}" class="space-y-6" novalidate action="javascript:void(0)" method="post" autocomplete="off">
+      <!-- Honeypot -->
       <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" />
 
       <div>
@@ -75,7 +59,6 @@
 
 <script>
 (() => {
-  // These are JS strings (quoted exactly once by Hugo via jsonify):
   const WORKER = {{ $worker | jsonify }};
   const DOMAIN = {{ $domain | jsonify }};
   const OK_MSG = {{ $okMsg | jsonify }};
@@ -83,23 +66,20 @@
 
   const form   = document.getElementById({{ $id | jsonify }});
   const status = document.getElementById({{ printf "%s-status" $id | jsonify }});
-
   if (!form) return;
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Build absolute URL correctly (no extra quotes):
-    const url = WORKER.replace(/\/+$/,'') + '/submit?domain=' + encodeURIComponent(DOMAIN);
-    console.log('Contact form endpoint =', url);
-
-    // Basic honeypot check
     const honey = form.querySelector('input[name="company"]');
     if (honey && honey.value.trim() !== '') {
       status.textContent = 'Thanks!';
       status.className = 'text-sm mt-2 text-gray-500';
       return;
     }
+
+    const url = WORKER.replace(/\/+$/,'') + '/submit?domain=' + encodeURIComponent(DOMAIN);
+    console.log('Contact form endpoint =', url);
 
     const btn = form.querySelector('button[type="submit"]');
     if (btn) btn.disabled = true;
@@ -110,7 +90,6 @@
       email:   (form.querySelector('[name="email"]')   || {}).value || '',
       subject: (form.querySelector('[name="subject"]') || {}).value || '',
       message: (form.querySelector('[name="message"]') || {}).value || '',
-      // You can add more fields here and the Worker will include them in the email body
     };
 
     try {
