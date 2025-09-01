@@ -1,25 +1,46 @@
-{{- $forms := .Page.Site.Params.forms | default (dict) -}}
-{{- $worker := or ($forms.worker) "" -}}
-{{- $fallbackDomain := replaceRE `^https?://([^/]+)/?$` "$1" .Page.Site.BaseURL -}}
-{{- $domain := or ($forms.domain) $fallbackDomain -}}
-{{- $okMsg := or ($forms.successMessage) "Thanks! Your message was sent." -}}
-{{- $errMsg := or ($forms.errorMessage) "Something went wrong. Please try again." -}}
+{{- /* Contact form (Flowbite) — centralized, no external JS file.
+     Reads site params:
+       [params.forms]
+         worker         = "https://<your-worker>.workers.dev"
+         domain         = "blog.rankutah.com"
+         successMessage = "Thanks! Your message was sent."
+         errorMessage   = "Network error. Please try again."
+   */ -}}
+
+{{- $cfg     := .Page.Site.Params.forms | default (dict) -}}
+{{- $worker  := or (index $cfg "worker") "" -}}
+{{- $domain  := or (index $cfg "domain") "" -}}
+{{- $okMsg   := or (index $cfg "successMessage") "Thanks! Your message was sent." -}}
+{{- $errMsg  := or (index $cfg "errorMessage") "Something went wrong. Please try again." -}}
+
+{{- /* Guard rails */ -}}
+{{- if not $worker -}}
+  <div class="text-red-600">Missing <code>params.forms.worker</code> in site config.</div>
+  {{- /* Stop early to avoid broken JS */ -}}
+  {{- return -}}
+{{- end -}}
+{{- if not $domain -}}
+  <div class="text-red-600">Missing <code>params.forms.domain</code> in site config.</div>
+  {{- return -}}
+{{- end -}}
+
+{{- /* Optional unique id if multiple forms on a page */ -}}
 {{- $id := .Get "id" | default "contact-form" -}}
 
-<section class="bg-white dark:bg-gray-900">
+<section class="not-prose">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a question? Send us a message.</p>
+    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+      Got a technical issue? Want to send feedback? Need details about a plan? Let us know.
+    </p>
 
-    <form id="{{ $id }}" class="space-y-6" novalidate action="javascript:void(0)" method="post" autocomplete="off">
-      <!-- Honeypot -->
-      <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" />
-
+    <!-- No action attribute (prevent default via JS), method present for semantics -->
+    <form id="{{ $id }}" method="post" class="space-y-8" novalidate>
       <div>
         <label for="{{ $id }}-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
         <input type="email" id="{{ $id }}-email" name="email" required
                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                      focus:ring-blue-300 focus:border-blue-300 block w-full p-2.5
+                      focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
                       dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                placeholder="you@example.com">
@@ -29,92 +50,95 @@
         <label for="{{ $id }}-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
         <input type="text" id="{{ $id }}-subject" name="subject" required
                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
-                      focus:ring-blue-300 focus:border-blue-300
+                      focus:ring-blue-500 focus:border-blue-500
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
                       dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-               placeholder="How can we help?">
+               placeholder="Let us know how we can help you">
       </div>
 
       <div>
-        <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your message</label>
+        <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
         <textarea id="{{ $id }}-message" name="message" rows="6" required
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
-                         focus:ring-blue-300 focus:border-blue-300
+                         focus:ring-blue-500 focus:border-blue-500
                          dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
                          dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Leave a comment..."></textarea>
       </div>
 
+      <!-- Optional extra fields -->
+      <input type="hidden" name="name"    value="">
+      <input type="hidden" name="company" value="">
+
       <button type="submit"
-              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg
-                     bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800
+                     focus:ring-4 focus:outline-none focus:ring-blue-300
                      dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Send message
       </button>
 
-      <p id="{{ $id }}-status" class="text-sm mt-2"></p>
+      <p data-status class="text-sm mt-3"></p>
     </form>
   </div>
 </section>
 
 <script>
-(() => {
-  const WORKER = {{ $worker | jsonify }};
-  const DOMAIN = {{ $domain | jsonify }};
-  const OK_MSG = {{ $okMsg | jsonify }};
-  const ERR_MSG = {{ $errMsg | jsonify }};
-
-  const form   = document.getElementById({{ $id | jsonify }});
-  const status = document.getElementById({{ printf "%s-status" $id | jsonify }});
+(function() {
+  const form = document.getElementById({{ printf "%q" $id }});
   if (!form) return;
+
+  // Build absolute endpoint safely: NO extra quotes in the URL.
+  const ENDPOINT = {{ printf "%q" (printf "%s/submit?domain=%s" $worker $domain) }};
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const honey = form.querySelector('input[name="company"]');
-    if (honey && honey.value.trim() !== '') {
-      status.textContent = 'Thanks!';
-      status.className = 'text-sm mt-2 text-gray-500';
-      return;
-    }
-
-    const url = WORKER.replace(/\/+$/,'') + '/submit?domain=' + encodeURIComponent(DOMAIN);
-    console.log('Contact form endpoint =', url);
-
-    const btn = form.querySelector('button[type="submit"]');
-    if (btn) btn.disabled = true;
-    status.textContent = '';
-    status.className = 'text-sm mt-2';
-
-    const payload = {
-      email:   (form.querySelector('[name="email"]')   || {}).value || '',
-      subject: (form.querySelector('[name="subject"]') || {}).value || '',
-      message: (form.querySelector('[name="message"]') || {}).value || '',
-    };
+    const btn = form.querySelector('[type="submit"]');
+    const out = form.querySelector('[data-status]');
+    out.textContent = '';
+    out.className = 'text-sm mt-3';
+    btn.disabled = true;
 
     try {
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(payload),
-        mode: 'cors',
-        credentials: 'omit'
-      });
+      const payload = {
+        email:   form.email?.value?.trim()   || '',
+        subject: form.subject?.value?.trim() || '',
+        message: form.message?.value?.trim() || '',
+        name:    form.name?.value?.trim()    || '',
+        company: form.company?.value?.trim() || ''
+      };
 
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || ('HTTP ' + res.status));
+      // Basic client-side check
+      if (!payload.email || !payload.subject || !payload.message) {
+        out.textContent = 'Please fill in all required fields.';
+        out.classList.add('text-red-700');
+        btn.disabled = false;
+        return;
       }
 
-      form.reset();
-      status.textContent = OK_MSG;
-      status.className = 'text-sm mt-2 text-green-700 dark:text-green-400';
+      const res  = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        mode: 'cors',
+        credentials: 'omit',
+        body: JSON.stringify(payload)
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && data && data.ok) {
+        out.textContent = {{ printf "%q" $okMsg }};
+        out.classList.add('text-green-700');
+        form.reset();
+      } else {
+        out.textContent = (data && data.error) ? data.error : {{ printf "%q" $errMsg }};
+        out.classList.add('text-red-700');
+      }
     } catch (err) {
-      console.error('Submit failed:', err);
-      status.textContent = ERR_MSG;
-      status.className = 'text-sm mt-2 text-rose-700 dark:text-rose-400';
+      out.textContent = {{ printf "%q" $errMsg }};
+      out.classList.add('text-red-700');
     } finally {
-      if (btn) btn.disabled = false;
+      btn.disabled = false;
     }
   });
 })();
