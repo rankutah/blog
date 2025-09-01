@@ -84,12 +84,11 @@ pruneTaxonomies = true
   theme = "blend" #blend (default), invert, glass
 
 [params.form]
-  endpoint = "https://form-sender.benjamin-0e3.workers.dev"
-  domain   = "rankutah.com"
-  from     = "no-reply@forms.rankutah.com"
-  subjectPrefix = "New Lead:"
-  to = ["hello@rankutah.com"]
-
+  worker = "https://form-sender.benjamin-0e3.workers.dev"
+  domain   = "blog.rankutah.com"
+  successMassage = "Thanks! Your message was sent."
+  errorMessage = "Network error. Please try again.."
+  
 [params.section.defaults]
   # Container width:
   #   sm → max-w-screen-sm
