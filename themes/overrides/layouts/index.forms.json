@@ -1,8 +1,12 @@
-{{- /* Emits /.well-known/forms.json using [params.form] */ -}}
-{{- $p := .Site.Params.form | default (dict) -}}
-{
-  "to": {{ (index $p "to" | default (slice)) | jsonify }},
-  "from": {{ (index $p "from" | default "") | jsonify }},
-  "subjectPrefix": {{ (index $p "subjectPrefix" | default "") | jsonify }},
-  "allowedOrigins": {{ (index $p "allowedOrigins" | default (slice)) | jsonify }}
-}
+{{- /* themes/overrides/layouts/index.forms.json
+      Outputs site form config as JSON at /.well-known/forms.json
+*/ -}}
+{{- $f := .Site.Params.forms | default (dict) -}}
+{{- $json := dict
+  "to"             ($f.to | default (slice))
+  "from"           ($f.from | default "")
+  "subjectPrefix"  ($f.subjectPrefix | default "")
+  "allowedOrigins" ($f.allowedOrigins | default (slice))
+  "domain"         ($f.domain | default "")
+-}}
+{{ $json | jsonify }}
