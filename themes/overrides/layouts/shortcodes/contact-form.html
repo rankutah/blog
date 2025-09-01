@@ -1,127 +1,85 @@
-{{- $endpoint := site.Params.form.endpoint | default "https://form-sender.benjamin-0e3.workers.dev/submit" -}}
-{{- $btn := site.Params.button.classes | default "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" -}}
+{{- /* Simple contact form that posts to the Worker defined in params.forms.worker.
+      No per-page params needed. Use as:  {{< contact_form >}}
+*/ -}}
+{{- $forms := .Page.Site.Params.forms | default (dict) -}}
+{{- $endpoint := (index $forms "worker") | default "" -}}
 
-<section class="bg-white dark:bg-gray-900 not-prose">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-      Contact Us
-    </h2>
-    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-      Got a question or want a quote? Drop us a line.
-    </p>
+{{- /* Use your site button style for submit; fallback if not set */ -}}
+{{- $btn := .Page.Site.Params.button.classes | default
+    "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+-}}
 
-    {{/* unique ids per-instance so multiple forms can exist on a page */}}
-    {{- $id := printf "cf-%d" .Ordinal -}}
-    {{- $statusId := printf "cf-status-%d" .Ordinal -}}
+<section class="not-prose">
+  <form id="contact-form" class="space-y-6 max-w-screen-md mx-auto" novalidate>
+    <div>
+      <label for="cf-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+      <input type="email" id="cf-email" name="email" required
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+               focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+               dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+               dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
 
-    <form id="{{ $id }}" class="space-y-6" novalidate>
-      <div>
-        <label for="{{ $id }}-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-        <input
-          type="email"
-          id="{{ $id }}-email"
-          name="email"
-          required
-          placeholder="you@example.com"
-          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
-                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
-      </div>
+    <div>
+      <label for="cf-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+      <input type="text" id="cf-subject" name="subject"
+        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
+               focus:ring-blue-500 focus:border-blue-500
+               dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+               dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
 
-      <div>
-        <label for="{{ $id }}-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name (optional)</label>
-        <input
-          type="text"
-          id="{{ $id }}-name"
-          name="name"
-          placeholder="Jane Doe"
-          class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
-                 focus:ring-blue-500 focus:border-blue-500
-                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
-      </div>
+    <div>
+      <label for="cf-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+      <textarea id="cf-message" name="message" rows="6" required
+        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
+               focus:ring-blue-500 focus:border-blue-500
+               dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+               dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Leave a comment..."></textarea>
+    </div>
 
-      <div>
-        <label for="{{ $id }}-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-        <input
-          type="text"
-          id="{{ $id }}-subject"
-          name="subject"
-          placeholder="How can we help?"
-          class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
-                 focus:ring-blue-500 focus:border-blue-500
-                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
-      </div>
+    <button type="submit" class="no-underline {{ $btn }}">Send message</button>
+    <p id="cf-status" class="text-sm mt-2"></p>
+  </form>
 
-      <div class="sm:col-span-2">
-        <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-        <textarea
-          id="{{ $id }}-message"
-          name="message"
-          rows="6"
-          required
-          placeholder="Tell us a bit about your project…"
-          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
-                 focus:ring-blue-500 focus:border-blue-500
-                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                 dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-      </div>
+  <script>
+  (function(){
+    const form   = document.getElementById('contact-form');
+    const status = document.getElementById('cf-status');
+    const endpoint = {{ printf "%s" $endpoint | jsonify }};
+    if(!endpoint){ console.warn("forms.worker endpoint not set in params.forms.worker"); }
 
-      <button type="submit" class="no-underline {{ $btn }}">Send message</button>
-      <p id="{{ $statusId }}" class="text-sm mt-2"></p>
-    </form>
-  </div>
-</section>
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = "Sending…";
 
-<script>
-(() => {
-  const form   = document.getElementById('{{ $id }}');
-  const status = document.getElementById('{{ $statusId }}');
+      const payload = {
+        email:   (form.email?.value || "").trim(),
+        subject: (form.subject?.value || "").trim(),
+        message: (form.message?.value || "").trim()
+      };
 
-  // Build endpoint with ?domain=<host>
-  const endpoint = '{{ $endpoint }}' + '?domain=' + encodeURIComponent(window.location.hostname);
+      const url = endpoint + (endpoint.includes('?') ? '&' : '?') + 'domain=' + encodeURIComponent(location.hostname);
 
-  const setStatus = (text, ok) => {
-    status.textContent = text;
-    status.className = 'text-sm mt-2 ' + (ok ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400');
-  };
+      try {
+        const res  = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json().catch(()=>({}));
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    setStatus('', true);
-
-    const btn = form.querySelector('button[type="submit"]');
-    if (btn) { btn.disabled = true; btn.style.opacity = '0.7'; }
-
-    const fd = new FormData(form);
-    const payload = {
-      name:    (fd.get('name')    || '').toString(),
-      email:   (fd.get('email')   || '').toString(),
-      subject: (fd.get('subject') || 'Website message').toString(),
-      message: (fd.get('message') || '').toString(),
-    };
-
-    try {
-      const res = await fetch(endpoint, {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(payload)
-      });
-      const j = await res.json().catch(() => ({}));
-
-      if (res.ok && j.ok) {
-        setStatus('Thanks! Your message was sent.', true);
-        form.reset();
-      } else {
-        setStatus('Sorry, something went wrong. Please try again.', false);
+        if (res.ok && data.ok) {
+          status.textContent = data.message || "Thanks! We got your message.";
+          form.reset();
+        } else {
+          status.textContent = data.message || "Something went wrong. Please try again.";
+        }
+      } catch (err) {
+        status.textContent = "Network error. Please try again.";
       }
-    } catch (err) {
-      setStatus('Network error. Please try again.', false);
-    } finally {
-      if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
-    }
-  }, { passive: false });
-})();
-</script>
+    });
+  })();
+  </script>
+</section>
