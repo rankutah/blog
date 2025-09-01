@@ -1,12 +1,8 @@
-{{- /* Emits /.well-known/forms.json using site params */ -}}
-{{- $f := site.Params.forms | default (dict) -}}
+{{- /* Emits /.well-known/forms.json using [params.form] */ -}}
+{{- $p := .Site.Params.form | default (dict) -}}
 {
-  "worker": {{ printf "%s" (index $f "worker" | default "") | jsonify }},
-  "to": {{ (index $f "to" | default (slice)) | jsonify }},
-  "from": {{ printf "%s" (index $f "from" | default "") | jsonify }},
-  "subjectPrefix": {{ printf "%s" (index $f "subjectPrefix" | default "") | jsonify }},
-  "allowedOrigins": {{ (index $f "allowedOrigins" | default (slice)) | jsonify }},
-  "successMessage": {{ printf "%s" (index $f "successMessage" | default "Thanks! We got your message.") | jsonify }},
-  "errorMessage": {{ printf "%s" (index $f "errorMessage" | default "Something went wrong. Please try again.") | jsonify }}
-  {{/* You can add more keys here later if needed */}}
+  "to": {{ (index $p "to" | default (slice)) | jsonify }},
+  "from": {{ (index $p "from" | default "") | jsonify }},
+  "subjectPrefix": {{ (index $p "subjectPrefix" | default "") | jsonify }},
+  "allowedOrigins": {{ (index $p "allowedOrigins" | default (slice)) | jsonify }}
 }
