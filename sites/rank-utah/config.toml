@@ -96,6 +96,7 @@ pruneTaxonomies = true
   subjectPrefix = "[Rank Utah]"
   allowedOrigins = ["https://blog.rankutah.com", "https://rankutah.com"]
   domain   = "blog.rankutah.com"
+  endpoint = "https://form-sender.benjamin-0e3.workers.dev/submit"
   successMessage = "Thanks! Your message was sent."
   errorMessage = "Network error. Please try again.."
   

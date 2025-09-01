@@ -1,12 +1,22 @@
-{{/* Contact form → posts to your Worker via JS.
-     Reads site params (endpoint/success/error). No ?domain needed. */}}
+{{/* layouts/shortcodes/contact_form.html
 
-{{- $endpoint := or site.Params.form.endpoint "https://form-sender.benjamin-0e3.workers.dev/submit" -}}
+Contact form → posts to Worker via JS.
+Reads endpoint/success/error from site params.
+Defensively strips accidental wrapping quotes from endpoint.
+*/}}
+
+{{- $raw := or site.Params.form.endpoint "https://form-sender.benjamin-0e3.workers.dev/submit" -}}
+{{- $raw = trim $raw " " -}}
+{{- if strings.HasPrefix $raw "\"" }}{{ $raw = substr $raw 1 }}{{ end -}}
+{{- if strings.HasSuffix $raw "\"" }}{{ $raw = substr $raw 0 (sub (len $raw) 1) }}{{ end -}}
+{{- if strings.HasPrefix $raw "'"  }}{{ $raw = substr $raw 1 }}{{ end -}}
+{{- if strings.HasSuffix $raw "'"  }}{{ $raw = substr $raw 0 (sub (len $raw) 1) }}{{ end -}}
+{{- $endpoint := $raw -}}
+
 {{- $success  := or site.Params.form.successMessage "Thanks! We received your message." -}}
 {{- $error    := or site.Params.form.errorMessage   "Something went wrong. Please try again." -}}
 
 <div class="not-prose">
-  <!-- No action attribute: JS handles submit -->
   <form id="contact-form" class="space-y-6" novalidate>
     <div>
       <label for="cf-email" class="block mb-2 text-sm font-medium">Your email</label>
@@ -39,9 +49,27 @@
 
 <script>
 (function(){
-  // IMPORTANT: jsonify emits a proper JS string (with quotes) INSIDE JS.
-  // Do NOT use this in an HTML attribute.
   const ENDPOINT = {{ $endpoint | jsonify }};
+  const SUCCESS  = {{ $success  | jsonify }};
+  const ERRORMSG = {{ $error    | jsonify }};
+
+  // Extra defense: strip any wrapping quotes that may have sneaked in.
+  function normalizeEndpoint(s){
+    try{
+      let t = (s||"").trim();
+      if ((t.startsWith('"') && t.endsWith('"')) || (t.startsWith("'") && t.endsWith("'"))) {
+        t = t.slice(1, -1);
+      }
+      // Some builds accidentally encode quotes: %22https...%22
+      t = t.replace(/^%22/, "").replace(/%22$/, "");
+      return t;
+    }catch{ return s; }
+  }
+
+  const ep = normalizeEndpoint(ENDPOINT);
+  // Debug line: check what the browser sees. Remove later if you want.
+  console.log("Contact form endpoint =", ep);
+
   const form = document.getElementById('contact-form');
   const msg  = document.getElementById('contact-msg');
 
@@ -51,7 +79,7 @@
     const data = Object.fromEntries(new FormData(form).entries());
 
     try {
-      const res  = await fetch(ENDPOINT, {
+      const res  = await fetch(ep, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         mode: 'cors',
@@ -60,13 +88,13 @@
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
-        msg.textContent = {{ $success | jsonify }};
+        msg.textContent = SUCCESS;
         form.reset();
       } else {
-        msg.textContent = json.error || {{ $error | jsonify }};
+        msg.textContent = json.error || ERRORMSG;
       }
     } catch (err) {
-      msg.textContent = {{ $error | jsonify }};
+      msg.textContent = ERRORMSG;
     }
   });
 })();
