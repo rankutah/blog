@@ -1,74 +1,73 @@
-{{- /* Contact form (Flowbite) — centralized, no external JS file.
-     Reads site params:
-       [params.forms]
-         worker         = "https://<your-worker>.workers.dev"
-         domain         = "blog.rankutah.com"
-         successMessage = "Thanks! Your message was sent."
-         errorMessage   = "Network error. Please try again."
+{{- /* Contact form (Flowbite styles) that posts to your Cloudflare Worker.
+     Reads everything from site config:
+     [params.forms]
+       worker = "https://form-sender.<your-sub>.workers.dev"
+       domain = "blog.rankutah.com"
+       successMessage = "Thanks! Your message was sent."
+       errorMessage   = "Network error. Please try again."
    */ -}}
 
-{{- $cfg     := .Page.Site.Params.forms | default (dict) -}}
-{{- $worker  := or (index $cfg "worker") "" -}}
-{{- $domain  := or (index $cfg "domain") "" -}}
-{{- $okMsg   := or (index $cfg "successMessage") "Thanks! Your message was sent." -}}
-{{- $errMsg  := or (index $cfg "errorMessage") "Something went wrong. Please try again." -}}
+{{- $forms := .Page.Site.Params.forms | default (dict) -}}
+{{- $worker := index $forms "worker" | default "" -}}
+{{- $domain := index $forms "domain" | default "" -}}
+{{- $ok     := and $worker $domain -}}
 
-{{- /* Guard rails */ -}}
-{{- if not $worker -}}
-  <div class="text-red-600">Missing <code>params.forms.worker</code> in site config.</div>
-  {{- /* Stop early to avoid broken JS */ -}}
-  {{- return -}}
-{{- end -}}
-{{- if not $domain -}}
-  <div class="text-red-600">Missing <code>params.forms.domain</code> in site config.</div>
-  {{- return -}}
-{{- end -}}
-
-{{- /* Optional unique id if multiple forms on a page */ -}}
-{{- $id := .Get "id" | default "contact-form" -}}
-
-<section class="not-prose">
+<div
+  data-formwrap
+  data-worker="{{ $worker }}"
+  data-domain="{{ $domain }}"
+  data-success="{{ index $forms "successMessage" | default "Thanks! Your message was sent." }}"
+  data-error="{{ index $forms "errorMessage"   | default "Network error. Please try again." }}"
+  class="bg-white dark:bg-gray-900"
+>
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
     <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-      Got a technical issue? Want to send feedback? Need details about a plan? Let us know.
+      Got a question? Send us a note and we’ll reply.
     </p>
 
-    <!-- No action attribute (prevent default via JS), method present for semantics -->
-    <form id="{{ $id }}" method="post" class="space-y-8" novalidate>
+    {{- if not $ok -}}
+      <div class="p-4 mb-6 rounded-lg border border-amber-300 bg-amber-50 text-amber-800">
+        Missing <code>[params.forms.worker]</code> or <code>[params.forms.domain]</code> in your site config.
+      </div>
+    {{- end -}}
+
+    <form id="contact-form" class="space-y-6" novalidate>
       <div>
-        <label for="{{ $id }}-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-        <input type="email" id="{{ $id }}-email" name="email" required
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name"
                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                       focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-               placeholder="you@example.com">
+                      dark:focus:ring-blue-500 dark:focus:border-blue-500">
       </div>
 
       <div>
-        <label for="{{ $id }}-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-        <input type="text" id="{{ $id }}-subject" name="subject" required
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com"
+               class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                      focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+                      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                      dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      </div>
+
+      <div>
+        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+        <input type="text" id="subject" name="subject" required
                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
                       focus:ring-blue-500 focus:border-blue-500
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-               placeholder="Let us know how we can help you">
+                      dark:focus:ring-blue-500 dark:focus:border-blue-500">
       </div>
 
       <div>
-        <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-        <textarea id="{{ $id }}-message" name="message" rows="6" required
+        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+        <textarea id="message" name="message" rows="6" required
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
                          focus:ring-blue-500 focus:border-blue-500
                          dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                         dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Leave a comment..."></textarea>
+                         dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
       </div>
-
-      <!-- Optional extra fields -->
-      <input type="hidden" name="name"    value="">
-      <input type="hidden" name="company" value="">
 
       <button type="submit"
               class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800
@@ -77,69 +76,67 @@
         Send message
       </button>
 
-      <p data-status class="text-sm mt-3"></p>
+      <p data-status class="hidden mt-2 text-sm"></p>
     </form>
   </div>
-</section>
+</div>
 
 <script>
-(function() {
-  const form = document.getElementById({{ printf "%q" $id }});
-  if (!form) return;
+(() => {
+  const wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.matches('[data-formwrap]')) return;
 
-  // Build absolute endpoint safely: NO extra quotes in the URL.
-  const ENDPOINT = {{ printf "%q" (printf "%s/submit?domain=%s" $worker $domain) }};
+  const form   = wrap.querySelector('form#contact-form');
+  const status = wrap.querySelector('[data-status]');
+  const worker = (wrap.dataset.worker || '').trim();
+  const domain = (wrap.dataset.domain || '').trim();
+  const ok     = worker && domain;
+
+  // Build endpoint like: https://.../submit?domain=example.com
+  const endpoint = ok
+    ? worker.replace(/\/+$/,'') + '/submit?domain=' + encodeURIComponent(domain)
+    : '';
+
+  console.log('Contact form endpoint =', endpoint || '(missing config)');
 
   form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const btn = form.querySelector('[type="submit"]');
-    const out = form.querySelector('[data-status]');
-    out.textContent = '';
-    out.className = 'text-sm mt-3';
-    btn.disabled = true;
+    e.preventDefault(); // stop native submit (prevents 405/page reload)
+    if (!ok) {
+      show(wrap.dataset.error || 'Form not configured.');
+      return;
+    }
+    const fd = new FormData(form);
+    const payload = {
+      name:    fd.get('name')    || '',
+      email:   fd.get('email')   || '',
+      subject: fd.get('subject') || '',
+      message: fd.get('message') || ''
+    };
 
     try {
-      const payload = {
-        email:   form.email?.value?.trim()   || '',
-        subject: form.subject?.value?.trim() || '',
-        message: form.message?.value?.trim() || '',
-        name:    form.name?.value?.trim()    || '',
-        company: form.company?.value?.trim() || ''
-      };
-
-      // Basic client-side check
-      if (!payload.email || !payload.subject || !payload.message) {
-        out.textContent = 'Please fill in all required fields.';
-        out.classList.add('text-red-700');
-        btn.disabled = false;
-        return;
-      }
-
-      const res  = await fetch(ENDPOINT, {
+      const res  = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        mode: 'cors',
-        credentials: 'omit',
-        body: JSON.stringify(payload)
+        body:   JSON.stringify(payload)
       });
-
       const data = await res.json().catch(() => ({}));
-
       if (res.ok && data && data.ok) {
-        out.textContent = {{ printf "%q" $okMsg }};
-        out.classList.add('text-green-700');
+        show(wrap.dataset.success || 'Thanks! Your message was sent.', true);
         form.reset();
       } else {
-        out.textContent = (data && data.error) ? data.error : {{ printf "%q" $errMsg }};
-        out.classList.add('text-red-700');
+        show((data && data.error) || wrap.dataset.error || 'Network error. Please try again.');
       }
     } catch (err) {
-      out.textContent = {{ printf "%q" $errMsg }};
-      out.classList.add('text-red-700');
-    } finally {
-      btn.disabled = false;
+      console.error('Submit failed:', err);
+      show(wrap.dataset.error || 'Network error. Please try again.');
     }
   });
+
+  function show(msg, good=false){
+    if (!status) return;
+    status.classList.remove('hidden','text-red-600','text-green-600');
+    status.textContent = msg;
+    status.classList.add(good ? 'text-green-600' : 'text-red-600');
+  }
 })();
 </script>
