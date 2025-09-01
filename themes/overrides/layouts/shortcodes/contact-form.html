@@ -1,85 +1,73 @@
-{{- /* Simple contact form that posts to the Worker defined in params.forms.worker.
-      No per-page params needed. Use as:  {{< contact_form >}}
-*/ -}}
-{{- $forms := .Page.Site.Params.forms | default (dict) -}}
-{{- $endpoint := (index $forms "worker") | default "" -}}
+{{/* Contact form → posts to your Worker via JS.
+     Reads site params (endpoint/success/error). No ?domain needed. */}}
 
-{{- /* Use your site button style for submit; fallback if not set */ -}}
-{{- $btn := .Page.Site.Params.button.classes | default
-    "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
--}}
+{{- $endpoint := or site.Params.form.endpoint "https://form-sender.benjamin-0e3.workers.dev/submit" -}}
+{{- $success  := or site.Params.form.successMessage "Thanks! We received your message." -}}
+{{- $error    := or site.Params.form.errorMessage   "Something went wrong. Please try again." -}}
 
-<section class="not-prose">
-  <form id="contact-form" class="space-y-6 max-w-screen-md mx-auto" novalidate>
+<div class="not-prose">
+  <!-- No action attribute: JS handles submit -->
+  <form id="contact-form" class="space-y-6" novalidate>
     <div>
-      <label for="cf-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+      <label for="cf-email" class="block mb-2 text-sm font-medium">Your email</label>
       <input type="email" id="cf-email" name="email" required
-        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-               focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
-               dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-               dark:focus:ring-blue-500 dark:focus:border-blue-500">
+             class="block w-full rounded-lg border p-2.5 text-sm" placeholder="you@example.com">
     </div>
-
     <div>
-      <label for="cf-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+      <label for="cf-subject" class="block mb-2 text-sm font-medium">Subject</label>
       <input type="text" id="cf-subject" name="subject"
-        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
-               focus:ring-blue-500 focus:border-blue-500
-               dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-               dark:focus:ring-blue-500 dark:focus:border-blue-500">
+             class="block w-full rounded-lg border p-3 text-sm" placeholder="How can we help?">
     </div>
-
     <div>
-      <label for="cf-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+      <label for="cf-name" class="block mb-2 text-sm font-medium">Your name (optional)</label>
+      <input type="text" id="cf-name" name="name"
+             class="block w-full rounded-lg border p-3 text-sm" placeholder="Jane Doe">
+    </div>
+    <div>
+      <label for="cf-message" class="block mb-2 text-sm font-medium">Your message</label>
       <textarea id="cf-message" name="message" rows="6" required
-        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
-               focus:ring-blue-500 focus:border-blue-500
-               dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-               dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        placeholder="Leave a comment..."></textarea>
+                class="block w-full rounded-lg border p-2.5 text-sm" placeholder="Leave a comment..."></textarea>
     </div>
 
-    <button type="submit" class="no-underline {{ $btn }}">Send message</button>
-    <p id="cf-status" class="text-sm mt-2"></p>
+    <button type="submit" class="py-3 px-5 text-sm font-medium text-white rounded-lg bg-blue-700 hover:bg-blue-800">
+      Send message
+    </button>
+
+    <p id="contact-msg" class="mt-3 text-sm"></p>
   </form>
+</div>
 
-  <script>
-  (function(){
-    const form   = document.getElementById('contact-form');
-    const status = document.getElementById('cf-status');
-    const endpoint = {{ printf "%s" $endpoint | jsonify }};
-    if(!endpoint){ console.warn("forms.worker endpoint not set in params.forms.worker"); }
+<script>
+(function(){
+  // IMPORTANT: jsonify emits a proper JS string (with quotes) INSIDE JS.
+  // Do NOT use this in an HTML attribute.
+  const ENDPOINT = {{ $endpoint | jsonify }};
+  const form = document.getElementById('contact-form');
+  const msg  = document.getElementById('contact-msg');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      status.textContent = "Sending…";
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    msg.textContent = "";
+    const data = Object.fromEntries(new FormData(form).entries());
 
-      const payload = {
-        email:   (form.email?.value || "").trim(),
-        subject: (form.subject?.value || "").trim(),
-        message: (form.message?.value || "").trim()
-      };
-
-      const url = endpoint + (endpoint.includes('?') ? '&' : '?') + 'domain=' + encodeURIComponent(location.hostname);
-
-      try {
-        const res  = await fetch(url, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload)
-        });
-        const data = await res.json().catch(()=>({}));
-
-        if (res.ok && data.ok) {
-          status.textContent = data.message || "Thanks! We got your message.";
-          form.reset();
-        } else {
-          status.textContent = data.message || "Something went wrong. Please try again.";
-        }
-      } catch (err) {
-        status.textContent = "Network error. Please try again.";
+    try {
+      const res  = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        mode: 'cors',
+        credentials: 'omit',
+        body: JSON.stringify(data)
+      });
+      const json = await res.json().catch(() => ({}));
+      if (res.ok && json.ok) {
+        msg.textContent = {{ $success | jsonify }};
+        form.reset();
+      } else {
+        msg.textContent = json.error || {{ $error | jsonify }};
       }
-    });
-  })();
-  </script>
-</section>
+    } catch (err) {
+      msg.textContent = {{ $error | jsonify }};
+    }
+  });
+})();
+</script>
