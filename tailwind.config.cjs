@@ -19,6 +19,13 @@ module.exports = {
     './themes/overrides/**/*.{html,md,js,ts,jsx,tsx}',
     './node_modules/flowbite/**/*.js',
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'],
+      },
+    },
+  },
   theme: { extend: {} },
   plugins: [
     // CSS-var palette plugin (unchanged)

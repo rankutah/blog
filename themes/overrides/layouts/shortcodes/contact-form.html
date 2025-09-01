@@ -1,0 +1,127 @@
+{{- $endpoint := site.Params.form.endpoint | default "https://form-sender.benjamin-0e3.workers.dev/submit" -}}
+{{- $btn := site.Params.button.classes | default "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" -}}
+
+<section class="bg-white dark:bg-gray-900 not-prose">
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+      Contact Us
+    </h2>
+    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+      Got a question or want a quote? Drop us a line.
+    </p>
+
+    {{/* unique ids per-instance so multiple forms can exist on a page */}}
+    {{- $id := printf "cf-%d" .Ordinal -}}
+    {{- $statusId := printf "cf-status-%d" .Ordinal -}}
+
+    <form id="{{ $id }}" class="space-y-6" novalidate>
+      <div>
+        <label for="{{ $id }}-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+        <input
+          type="email"
+          id="{{ $id }}-email"
+          name="email"
+          required
+          placeholder="you@example.com"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+      </div>
+
+      <div>
+        <label for="{{ $id }}-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name (optional)</label>
+        <input
+          type="text"
+          id="{{ $id }}-name"
+          name="name"
+          placeholder="Jane Doe"
+          class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
+                 focus:ring-blue-500 focus:border-blue-500
+                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+      </div>
+
+      <div>
+        <label for="{{ $id }}-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+        <input
+          type="text"
+          id="{{ $id }}-subject"
+          name="subject"
+          placeholder="How can we help?"
+          class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
+                 focus:ring-blue-500 focus:border-blue-500
+                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+      </div>
+
+      <div class="sm:col-span-2">
+        <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+        <textarea
+          id="{{ $id }}-message"
+          name="message"
+          rows="6"
+          required
+          placeholder="Tell us a bit about your project…"
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
+                 focus:ring-blue-500 focus:border-blue-500
+                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                 dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+      </div>
+
+      <button type="submit" class="no-underline {{ $btn }}">Send message</button>
+      <p id="{{ $statusId }}" class="text-sm mt-2"></p>
+    </form>
+  </div>
+</section>
+
+<script>
+(() => {
+  const form   = document.getElementById('{{ $id }}');
+  const status = document.getElementById('{{ $statusId }}');
+
+  // Build endpoint with ?domain=<host>
+  const endpoint = '{{ $endpoint }}' + '?domain=' + encodeURIComponent(window.location.hostname);
+
+  const setStatus = (text, ok) => {
+    status.textContent = text;
+    status.className = 'text-sm mt-2 ' + (ok ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400');
+  };
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    setStatus('', true);
+
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) { btn.disabled = true; btn.style.opacity = '0.7'; }
+
+    const fd = new FormData(form);
+    const payload = {
+      name:    (fd.get('name')    || '').toString(),
+      email:   (fd.get('email')   || '').toString(),
+      subject: (fd.get('subject') || 'Website message').toString(),
+      message: (fd.get('message') || '').toString(),
+    };
+
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+      });
+      const j = await res.json().catch(() => ({}));
+
+      if (res.ok && j.ok) {
+        setStatus('Thanks! Your message was sent.', true);
+        form.reset();
+      } else {
+        setStatus('Sorry, something went wrong. Please try again.', false);
+      }
+    } catch (err) {
+      setStatus('Network error. Please try again.', false);
+    } finally {
+      if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
+    }
+  }, { passive: false });
+})();
+</script>

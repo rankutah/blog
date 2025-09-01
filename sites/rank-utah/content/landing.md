@@ -210,4 +210,11 @@ This should render as Markdown, **bold**, *italics*, links, etc.
 
 More **Markdown** below the grid should render too.
 
+
+
+## Contact Us
+We typically reply within one business day.
+
 {{< /section >}}
+
+{{< contact-form >}}
