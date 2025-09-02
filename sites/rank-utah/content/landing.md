@@ -26,15 +26,18 @@ faq:
   bleed="true"
   overlay="true"
   overlayShade="bg-black/40"
-  imgStyle="height: 40vh"     
+  imgStyle="height: 50vh"     
   yBottom="md"                      
   align="center"
   spacer="false"
 >}}
 
 # Website Design in Utah County
-Some supporting copy for this {{<button>}}
+Some supporting copy for this 
 {.text-white}
+
+{{<button text="hello">}}
+
 {{< /section >}}
 
 {{< section >}}
@@ -213,16 +216,63 @@ More **Markdown** below the grid should render too.
 
 
 ## Contact Us
+{.center}
 We typically reply within one business day.
+{.center}
+
 
 {{< /section >}}
 
-{{< contact-form >}}
 
 {{<section>}}
 
-<!-- Elfsight Form Builder | Untitled Form Builder -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-c9dbaaf6-4e08-4089-ad3a-a57128ae85d6" data-elfsight-app-lazy></div>
+{{< cols render="raw" min="18rem" gap="2rem">}}
+
+{{< col render="raw">}}
+
+## Contact Us
+
+We typically respond within one business day.
+
+{{<contact-form>}}
+
+
+{{< /col >}}
+
+{{< col>}}
+
+## This is markdown
+{{<contact-form>}}
+
+{{<button>}}
+
+{{< /col >}}
+
+
+{{< /cols >}}
+
+
 
 {{</section>}}
+
+
+{{<section max="sm">}}
+
+## This will render
+{.center}
+This will be the message above the form
+{.center}
+
+{{<contact-form
+     name="true" email="true" phone="false" company="false" subject="true" message="false"
+     id="contact"
+>}}
+
+
+{{<button form="contact" text="Submit">}}
+{.center}
+
+
+{{</section>}}
+
+

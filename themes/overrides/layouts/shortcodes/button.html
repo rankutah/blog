@@ -1,14 +1,14 @@
 {{- /* layouts/shortcodes/button.html
-     Solid button using Flowbite classes, color from params.primaryColor|brandColor.
-     Override order:
-       1) shortcode classes="…"
-       2) site.Params.button.classes
-       3) color map by primaryColor|brandColor (fallback blue)
+     Solid button using Flowbite classes.
+     Behavior:
+       - If form="…" is provided → render a <button type="submit" form="…"> (submit inferred)
+       - Else if url="…" → render an <a href="…">
 */ -}}
 
 {{- $page := .Page -}}
 {{- $url  := (.Get "url") | default "#" | safeURL -}}
 {{- $text := .Get "text" | default "Button" -}}
+{{- $form := .Get "form" | default "" -}}
 
 {{- $pageClasses := .Get "classes" | default "" -}}
 {{- $siteClasses := $page.Site.Params.button.classes | default "" -}}
@@ -42,8 +42,12 @@
 {{- $fallback := index $solid $siteColor | default (index $solid "blue") -}}
 {{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
 
-<a href="{{ $url }}" class="not-prose no-underline {{ $classes }}">{{ $text }}</a>
+{{- if ne $form "" -}}
+  <button type="submit" form="{{ $form }}" class="not-prose no-underline {{ $classes }}">{{ $text }}</button>
+{{- else -}}
+  <a href="{{ $url }}" class="not-prose no-underline {{ $classes }}">{{ $text }}</a>
+{{- end -}}
 
 {{- if hugo.IsServer -}}
-<!-- debug: primaryColor="{{ $siteColor }}", chosen="{{ $classes }}" -->
+<!-- debug: mode={{ if $form }}submit{{ else }}link{{ end }}, color={{ $siteColor }} -->
 {{- end -}}

@@ -1,0 +1,23 @@
+{{- /* Minimal renderer used by the button shortcode.
+     Expects a plain dict, not a shortcode context.
+     Keys it uses:
+       .text (string)
+       .href (string)
+       .classes (string)
+       .isSubmit (bool)
+       .form (string, optional)
+*/ -}}
+
+{{- $text    := .text    | default "Button" -}}
+{{- $href    := .href    | default "" -}}
+{{- $classes := .classes | default "" -}}
+{{- $isSubmit:= .isSubmit | default false -}}
+{{- $form    := .form    | default "" -}}
+
+{{- if $isSubmit -}}
+  <button type="submit" {{ if $form }}form="{{ $form }}"{{ end }}
+          class="not-prose no-underline inline-flex items-center {{ $classes }}">{{ $text }}</button>
+{{- else -}}
+  <a href="{{ cond (ne $href "") $href "#" }}"
+     class="not-prose no-underline inline-flex items-center {{ $classes }}">{{ $text }}</a>
+{{- end -}}

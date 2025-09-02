@@ -1,149 +1,95 @@
-{{- /* Contact form → Formspark
-     Requires in site config:
-       [params.forms]
-       action         = "https://submit-form.com/FORM_ID"
-       honeypot       = "_hp"                          # optional (default _hp). Must match Formspark “Custom honeypot”
-       successMessage = "Thanks! Your message was sent."
-       errorMessage   = "Sorry, something went wrong. Please try again."
-
-     Usage in content:
-       {{< contact_form >}}
+{{- /* Contact form (Formspark or similar).
+     Renders ONLY the <form> (no submit button).
+     Pass an id="contact1" (or any id). Then place a {{< button submit="true" form="contact1" >}} outside.
 */ -}}
 
-{{- $cfg := .Page.Site.Params.forms | default (dict) -}}
-{{- $action := (index $cfg "action") | default "" -}}
-{{- $hpName := (index $cfg "honeypot") | default "_hp" -}}
-{{- $okMsg  := (index $cfg "successMessage") | default "Thanks! Your message was sent." -}}
-{{- $erMsg  := (index $cfg "errorMessage")   | default "Sorry, something went wrong. Please try again." -}}
+{{- $page := .Page -}}
+{{- $id     := .Get "id" | default "contact1" -}}
+{{- $action := .Get "action" | default (or $page.Site.Params.formspark.action $page.Site.Params.forms.action) -}}
 
-{{- /* Optional ID so multiple forms can exist safely on one page */ -}}
-{{- $id := .Get "id" | default "contact-form" -}}
+{{- $showName    := ne (lower (.Get "name"    | default "true"))  "false" -}}
+{{- $showEmail   := ne (lower (.Get "email"   | default "true"))  "false" -}}
+{{- $showPhone   := eq (lower (.Get "phone"   | default "false")) "true"  -}}
+{{- $showCompany := eq (lower (.Get "company" | default "false")) "true"  -}}
+{{- $showSubject := ne (lower (.Get "subject" | default "false")) "false" -}}
+{{- $showMessage := ne (lower (.Get "message" | default "true"))  "false" -}}
+{{- $extra       := .Get "classes" | default "" -}}
 
-<section class="bg-white dark:bg-gray-900 not-prose">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-      Got a technical issue? Need details about a plan? Send us a note.
-    </p>
+{{- $brand := lower (or $page.Site.Params.primaryColor $page.Site.Params.brandColor "blue") -}}
+{{- $focus := dict
+  "red"      "focus:ring-red-500 focus:border-red-500 dark:focus:ring-red-500 dark:focus:border-red-500"
+  "orange"   "focus:ring-orange-500 focus:border-orange-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+  "amber"    "focus:ring-amber-500 focus:border-amber-500 dark:focus:ring-amber-500 dark:focus:border-amber-500"
+  "yellow"   "focus:ring-yellow-500 focus:border-yellow-500 dark:focus:ring-yellow-500 dark:focus:border-yellow-500"
+  "lime"     "focus:ring-lime-500 focus:border-lime-500 dark:focus:ring-lime-500 dark:focus:border-lime-500"
+  "green"    "focus:ring-green-500 focus:border-green-500 dark:focus:ring-green-500 dark:focus:border-green-500"
+  "emerald"  "focus:ring-emerald-500 focus:border-emerald-500 dark:focus:ring-emerald-500 dark:focus:border-emerald-500"
+  "teal"     "focus:ring-teal-500 focus:border-teal-500 dark:focus:ring-teal-500 dark:focus:border-teal-500"
+  "cyan"     "focus:ring-cyan-500 focus:border-cyan-500 dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+  "sky"      "focus:ring-sky-500 focus:border-sky-500 dark:focus:ring-sky-500 dark:focus:border-sky-500"
+  "blue"     "focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  "indigo"   "focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-500 dark:focus:border-indigo-500"
+  "violet"   "focus:ring-violet-500 focus:border-violet-500 dark:focus:ring-violet-500 dark:focus:border-violet-500"
+  "purple"   "focus:ring-purple-500 focus:border-purple-500 dark:focus:ring-purple-500 dark:focus:border-purple-500"
+  "fuchsia"  "focus:ring-fuchsia-500 focus:border-fuchsia-500 dark:focus:ring-fuchsia-500 dark:focus:border-fuchsia-500"
+  "pink"     "focus:ring-pink-500 focus:border-pink-500 dark:focus:ring-pink-500 dark:focus:border-pink-500"
+  "rose"     "focus:ring-rose-500 focus:border-rose-500 dark:focus:ring-rose-500 dark:focus:border-rose-500"
+  "slate"    "focus:ring-slate-500 focus:border-slate-500 dark:focus:ring-slate-500 dark:focus:border-slate-500"
+  "gray"     "focus:ring-gray-500 focus:border-gray-500 dark:focus:ring-gray-500 dark:focus:border-gray-500"
+  "zinc"     "focus:ring-zinc-500 focus:border-zinc-500 dark:focus:ring-zinc-500 dark:focus:border-zinc-500"
+  "neutral"  "focus:ring-neutral-500 focus:border-neutral-500 dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+  "stone"    "focus:ring-stone-500 focus:border-stone-500 dark:focus:ring-stone-500 dark:focus:border-stone-500"
+-}}
+{{- $focusCls := index $focus $brand | default (index $focus "blue") -}}
+{{- $inputBase := printf "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white %s" $focusCls -}}
 
-    <!-- IMPORTANT: action + method POST + proper name attributes -->
-    <form id="{{ $id }}" action="{{ $action }}" method="POST" class="space-y-8">
-      <!-- honeypot (must match Formspark "Custom honeypot" field name) -->
-      <input type="text" name="{{ $hpName }}" tabindex="-1" autocomplete="off"
-             style="position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
-
-      <div>
-        <label for="{{ $id }}-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-        <input type="email" id="{{ $id }}-email" name="email" required
-               class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                      focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5
-                      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-               placeholder="name@example.com">
-      </div>
-
-      <div>
-        <label for="{{ $id }}-subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-        <input type="text" id="{{ $id }}-subject" name="subject" required
-               class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
-                      focus:ring-primary-500 focus:border-primary-500
-                      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-               placeholder="Let us know how we can help you">
-      </div>
-
-      <div>
-        <label for="{{ $id }}-company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company (optional)</label>
-        <input type="text" id="{{ $id }}-company" name="company"
-               class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
-                      focus:ring-primary-500 focus:border-primary-500
-                      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                      dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-               placeholder="Your company">
-      </div>
-
-      <div class="sm:col-span-2">
-        <label for="{{ $id }}-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-        <textarea id="{{ $id }}-message" name="message" rows="6" required
-                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
-                         focus:ring-primary-500 focus:border-primary-500
-                         dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                         dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder="Leave a comment..."></textarea>
-      </div>
-
-      <button type="submit"
-              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700
-                     sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300
-                     dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-        Send message
-      </button>
-
-      <p id="{{ $id }}-msg" class="text-sm mt-2"></p>
-
-      <!-- Non-JS fallback: (Formspark will redirect). Remove if you truly never want a redirect. -->
-      <!-- <input type="hidden" name="_redirect" value="{{ .Page.Permalink }}"> -->
-    </form>
+{{- if not $action -}}
+  <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-4 rounded">
+    Missing form action. Pass action="https://submit-form.com/XXXX" or set .Site.Params.formspark.action
   </div>
-</section>
+{{- else -}}
+  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 {{ $extra }}">
+    {{- if $showName }}
+    <div>
+      <label for="name" class="sr-only">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" class="{{ $inputBase }}">
+    </div>
+    {{- end }}
 
-<script>
-(() => {
-  const form = document.getElementById("{{ $id }}");
-  if (!form) return;
-  const endpoint = "{{ $action }}";
-  const hp = "{{ $hpName }}";
-  const msgEl = document.getElementById("{{ $id }}-msg");
+    {{- if $showEmail }}
+    <div>
+      <label for="email" class="sr-only">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required class="{{ $inputBase }}">
+    </div>
+    {{- end }}
 
-  if (!endpoint) {
-    console.warn("Formspark: missing params.forms.action");
-  }
+    {{- if $showPhone }}
+    <div>
+      <label for="phone" class="sr-only">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Phone" class="{{ $inputBase }}">
+    </div>
+    {{- end }}
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+    {{- if $showCompany }}
+    <div>
+      <label for="company" class="sr-only">Company</label>
+      <input type="text" id="company" name="company" placeholder="Company" class="{{ $inputBase }}">
+    </div>
+    {{- end }}
 
-    // Gather fields
-    const fd = new FormData(form);
+    {{- if $showSubject }}
+    <div>
+      <label for="subject" class="sr-only">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" class="{{ $inputBase }}">
+    </div>
+    {{- end }}
 
-    // Honeypot: if filled, pretend success and bail
-    if ((fd.get(hp) || "").toString().trim() !== "") {
-      form.reset();
-      if (msgEl) { msgEl.textContent = ""; }
-      return;
-    }
-
-    const payload = {};
-    fd.forEach((v, k) => {
-      if (k !== hp) payload[k] = v;
-    });
-
-    try {
-      const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Accept": "application/json", "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      });
-
-      if (res.ok) {
-        if (msgEl) {
-          msgEl.textContent = {{ $okMsg | jsonify }};
-          msgEl.className = "text-green-600";
-        }
-        form.reset();
-      } else {
-        if (msgEl) {
-          msgEl.textContent = {{ $erMsg | jsonify }};
-          msgEl.className = "text-red-600";
-        }
-        console.error("Formspark submit failed", res.status, await res.text().catch(() => ""));
-      }
-    } catch (err) {
-      if (msgEl) {
-        msgEl.textContent = {{ $erMsg | jsonify }};
-        msgEl.className = "text-red-600";
-      }
-      console.error("Formspark submit error", err);
-    }
-  });
-})();
-</script>
+    {{- if $showMessage }}
+    <div>
+      <label for="message" class="sr-only">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Message"
+                class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white {{ $focusCls }}"></textarea>
+    </div>
+    {{- end }}
+  </form>
+{{- end }}

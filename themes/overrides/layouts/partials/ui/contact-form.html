@@ -1,0 +1,136 @@
+{{- /* UI Contact Form (Formspark or any POST endpoint)
+     Call from shortcodes or other partials.
+
+     Props (dict):
+       Page          : .Page (required for site params)
+       action        : string (required) e.g. https://submit-form.com/XXXX
+       align         : "start" | "center" | "end"  (button row alignment)
+       full          : bool → true makes the button full width
+       classes       : extra classes on <form>
+       button        : submit button label (default "Send message")
+
+       name          : bool (default true)
+       email         : bool (default true)
+       phone         : bool (default false)
+       company       : bool (default false)
+       subject       : bool (default false)
+       message       : bool (default true)
+
+       honeypot      : string (optional field name; if set, renders hidden trap)
+*/ -}}
+
+{{- $page   := .Page -}}
+{{- $action := .action | default (or $page.Site.Params.formspark.action $page.Site.Params.forms.action) -}}
+{{- $align  := lower (.align | default "start") -}}
+{{- $full   := cond (eq (printf "%T" .full) "bool") .full (eq (lower (printf "%v" .full)) "true") -}}
+{{- $extra  := .classes | default "" -}}
+{{- $btnTxt := .button  | default "Send message" -}}
+
+{{- $showName    := not (eq (lower (printf "%v" (.name    | default true))) "false") -}}
+{{- $showEmail   := not (eq (lower (printf "%v" (.email   | default true))) "false") -}}
+{{- $showPhone   :=      eq (lower (printf "%v" (.phone   | default false))) "true"  -}}
+{{- $showCompany :=      eq (lower (printf "%v" (.company | default false))) "true"  -}}
+{{- $showSubject := not (eq (lower (printf "%v" (.subject | default false))) "false") -}}
+{{- $showMessage := not (eq (lower (printf "%v" (.message | default true)))  "false") -}}
+
+{{- $honeypot := .honeypot | default "" -}}
+
+{{/* Brand → purge-safe focus classes */}}
+{{- $brand := lower (or $page.Site.Params.primaryColor $page.Site.Params.brandColor "blue") -}}
+{{- $focus := dict
+  "red"      "focus:ring-red-500 focus:border-red-500 dark:focus:ring-red-500 dark:focus:border-red-500"
+  "orange"   "focus:ring-orange-500 focus:border-orange-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+  "amber"    "focus:ring-amber-500 focus:border-amber-500 dark:focus:ring-amber-500 dark:focus:border-amber-500"
+  "yellow"   "focus:ring-yellow-500 focus:border-yellow-500 dark:focus:ring-yellow-500 dark:focus:border-yellow-500"
+  "lime"     "focus:ring-lime-500 focus:border-lime-500 dark:focus:ring-lime-500 dark:focus:border-lime-500"
+  "green"    "focus:ring-green-500 focus:border-green-500 dark:focus:ring-green-500 dark:focus:border-green-500"
+  "emerald"  "focus:ring-emerald-500 focus:border-emerald-500 dark:focus:ring-emerald-500 dark:focus:border-emerald-500"
+  "teal"     "focus:ring-teal-500 focus:border-teal-500 dark:focus:ring-teal-500 dark:focus:border-teal-500"
+  "cyan"     "focus:ring-cyan-500 focus:border-cyan-500 dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+  "sky"      "focus:ring-sky-500 focus:border-sky-500 dark:focus:ring-sky-500 dark:focus:border-sky-500"
+  "blue"     "focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  "indigo"   "focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-500 dark:focus:border-indigo-500"
+  "violet"   "focus:ring-violet-500 focus:border-violet-500 dark:focus:ring-violet-500 dark:focus:border-violet-500"
+  "purple"   "focus:ring-purple-500 focus:border-purple-500 dark:focus:ring-purple-500 dark:focus:border-purple-500"
+  "fuchsia"  "focus:ring-fuchsia-500 focus:border-fuchsia-500 dark:focus:ring-fuchsia-500 dark:focus:border-fuchsia-500"
+  "pink"     "focus:ring-pink-500 focus:border-pink-500 dark:focus:ring-pink-500 dark:focus:border-pink-500"
+  "rose"     "focus:ring-rose-500 focus:border-rose-500 dark:focus:ring-rose-500 dark:focus:border-rose-500"
+  "slate"    "focus:ring-slate-500 focus:border-slate-500 dark:focus:ring-slate-500 dark:focus:border-slate-500"
+  "gray"     "focus:ring-gray-500 focus:border-gray-500 dark:focus:ring-gray-500 dark:focus:border-gray-500"
+  "zinc"     "focus:ring-zinc-500 focus:border-zinc-500 dark:focus:ring-zinc-500 dark:focus:border-zinc-500"
+  "neutral"  "focus:ring-neutral-500 focus:border-neutral-500 dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+  "stone"    "focus:ring-stone-500 focus:border-stone-500 dark:focus:ring-stone-500 dark:focus:border-stone-500"
+-}}
+{{- $focusCls := index $focus $brand | default (index $focus "blue") -}}
+
+{{- $inputBase := printf "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white %s" $focusCls -}}
+
+{{- $justify := "justify-start" -}}
+{{- if eq $align "center" }}{{- $justify = "justify-center" -}}{{- end -}}
+{{- if eq $align "end"    }}{{- $justify = "justify-end"    -}}{{- end -}}
+
+{{- if not $action -}}
+  <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-4 rounded">
+    Missing form action. Pass action="https://submit-form.com/XXXX" or set .Site.Params.formspark.action
+  </div>
+{{- else -}}
+  <form action="{{ $action | safeURL }}" method="POST" class="space-y-6 {{ $extra }}">
+    {{- if $honeypot }}
+      <input type="text" name="{{ $honeypot }}" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+    {{- end }}
+
+    {{- if $showName }}
+      <div>
+        <label for="name" class="sr-only">Name</label>
+        <input id="name" name="name" type="text" placeholder="Name" class="{{ $inputBase }}" autocomplete="name">
+      </div>
+    {{- end }}
+
+    {{- if $showEmail }}
+      <div>
+        <label for="email" class="sr-only">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" required class="{{ $inputBase }}" autocomplete="email">
+      </div>
+    {{- end }}
+
+    {{- if $showPhone }}
+      <div>
+        <label for="phone" class="sr-only">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="Phone" class="{{ $inputBase }}" autocomplete="tel">
+      </div>
+    {{- end }}
+
+    {{- if $showCompany }}
+      <div>
+        <label for="company" class="sr-only">Company</label>
+        <input id="company" name="company" type="text" placeholder="Company" class="{{ $inputBase }}" autocomplete="organization">
+      </div>
+    {{- end }}
+
+    {{- if $showSubject }}
+      <div>
+        <label for="subject" class="sr-only">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Subject" class="{{ $inputBase }}">
+      </div>
+    {{- end }}
+
+    {{- if $showMessage }}
+      <div>
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Message" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white {{ $focusCls }}"></textarea>
+      </div>
+    {{- end }}
+
+    <div class="flex {{ $justify }}">
+      {{- /* Use your shared button partial as a real <button> */ -}}
+      {{- $btnClasses := cond $full "w-full justify-center" "" -}}
+      {{- partial "ui/button.html" (dict
+            "Page"    $page
+            "as"      "button"
+            "type"    "submit"
+            "text"    $btnTxt
+            "classes" $btnClasses
+        ) -}}
+    </div>
+  </form>
+{{- end }}

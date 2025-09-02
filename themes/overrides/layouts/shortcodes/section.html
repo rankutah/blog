@@ -1,19 +1,9 @@
 {{- /* Section with optional hero & overlay + site defaults + spacer control.
-
-  Site defaults (config.toml):
-  [params.section.defaults]
-    max   = "xl"     # sm|md|lg|xl|2xl|full
-    pad   = "lg"     # none|sm|md|lg
-    y     = "md"     # none|sm|md|lg|xl
-    align = "start"  # start|center
-    # alignY = "start|center|end|between"
-    # minh   = "screen|full"
-
-  Per-section:
-    max, pad, y, yBottom, align, alignY, minh, classes
-    img, alt, bleed, imgClasses, imgStyle, overlay, overlayShade, overlayClasses
-    spacer="true|false"   ← controls post-hero spacer for bleed+overlay
-
+     Adds render mode:
+       render="md|raw|auto" (default "md")
+       - md   → render Markdown via Page.RenderString
+       - raw  → output inner as-is (safeHTML), for nested shortcodes/components
+       - auto → detect {{< or {{% → raw, else md
 */ -}}
 
 {{- $page   := .Page -}}
@@ -37,9 +27,10 @@
 {{- $y       := .Get "y"       | default $defY -}}
 {{- $yBottom := .Get "yBottom" | default "" -}}
 {{- $align   := .Get "align"   | default $defAlign -}}
-
 {{- $alignY  := .Get "alignY"  | default $defAlignY -}}
 {{- $minh    := .Get "minh"    | default $defMinh -}}
+
+{{- $render  := lower (.Get "render" | default "md") -}} {{/* md | raw | auto */}}
 
 {{/* ---------- Maps ---------- */}}
 {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
@@ -49,7 +40,7 @@
 {{- $ptMap := dict "none" "pt-0" "sm" "pt-6" "md" "pt-12" "lg" "pt-16" "xl" "pt-24" -}}
 {{- $pbMap := dict "none" "pb-0" "sm" "pb-6" "md" "pb-12" "lg" "pb-16" "xl" "pb-24" -}}
 
-{{- $minhMap := dict "" "" "screen" "min-h-screen" "full" "min-h-full" -}}
+{{- $minhMap   := dict "" "" "screen" "min-h-screen" "full" "min-h-full" -}}
 {{- $alignYMap := dict "" "" "start" "justify-start" "center" "justify-center" "end" "justify-end" "between" "justify-between" -}}
 
 {{/* ---------- Hero controls ---------- */}}
@@ -94,6 +85,19 @@
 {{- $base := printf "%s %s" $container $pb -}}
 {{- $classes := cond (ne $pageOverride "") $pageOverride (cond (ne $siteOverride "") $siteOverride $base) -}}
 
+{{/* ---------- Smart renderer ---------- */}}
+{{- $innerRaw := $Inner -}}
+{{- $hasShortcode := gt (len (findRE `{{[%<]` $innerRaw)) 0 -}}
+{{- if eq $render "auto" -}}
+  {{- $render = cond $hasShortcode "raw" "md" -}}
+{{- end -}}
+{{- $innerOut := "" -}}
+{{- if eq $render "raw" -}}
+  {{- $innerOut = $innerRaw | safeHTML -}}
+{{- else -}}
+  {{- $innerOut = $page.RenderString $innerRaw -}}
+{{- end -}}
+
 <section>
   {{- if and $img $bleed -}}
     <!-- Full-bleed hero -->
@@ -105,7 +109,7 @@
           <div class="relative z-10 w-full {{ $container }}">
             <div class="{{ $vWrap }}">
               <div class="{{ $overlayProse }} {{ $overlayAlign }}">
-                {{- $page.RenderString $Inner -}}
+                {{- $innerOut -}}
               </div>
             </div>
           </div>
@@ -130,14 +134,14 @@
             <div class="relative z-10 w-full">
               <div class="{{ $vWrap }}">
                 <div class="{{ $overlayProse }} {{ $overlayAlign }}">
-                  {{ $page.RenderString $Inner }}
+                  {{ $innerOut }}
                 </div>
               </div>
             </div>
           </div>
         {{- else -}}
           <div class="{{ $overlayProse }} {{ $overlayAlign }} mt-6">
-            {{ $page.RenderString $Inner }}
+            {{ $innerOut }}
           </div>
         {{- end }}
       </div>
@@ -147,12 +151,12 @@
     <!-- Regular section -->
     <div class="{{ $classes }}">
       {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end -}}
-        {{ $page.RenderString $Inner }}
+        {{ $innerOut }}
       {{- if $vWrap }}</div>{{ end -}}
     </div>
   {{- end }}
 </section>
 
 {{- if hugo.IsServer -}}
-<!-- debug: y={{$y}} yBottom={{$yBottom}} pb={{$pb}} spacer={{$spacerParam}} -->
+<!-- debug: render={{$render}} hasShortcode={{$hasShortcode}} -->
 {{- end -}}
