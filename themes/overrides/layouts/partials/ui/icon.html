@@ -1,0 +1,14 @@
+{{- /* Expects a dict: name, class (optional), title (optional) */ -}}
+{{- $name  := .name  | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $title := .title | default "" -}}
+
+{{- with resources.Get (printf "icons/%s.svg" $name) -}}
+  <span class="inline-block align-middle {{ $class }}" {{ if not $title }}aria-hidden="true"{{ end }}>
+    {{ .Content | safeHTML }}
+    {{- if $title -}}<span class="sr-only">{{ $title }}</span>{{- end -}}
+  </span>
+{{- else -}}
+  <!-- icon not found: {{ $name }} -->
+  <span class="inline-block align-middle {{ $class }}" aria-hidden="true"></span>
+{{- end -}}

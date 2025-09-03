@@ -1,0 +1,6 @@
+{{- $data := dict
+  "name"  (.Get "name")
+  "class" (.Get "class")
+  "title" (.Get "title")
+-}}
+{{- partial "ui/icon.html" $data -}}

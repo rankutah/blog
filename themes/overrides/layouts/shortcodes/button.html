@@ -1,15 +1,23 @@
-{{- /* layouts/shortcodes/button.html
-     Solid button using Flowbite classes.
-     Behavior:
-       - If form="…" is provided → render a <button type="submit" form="…"> (submit inferred)
-       - Else if url="…" → render an <a href="…">
+{{- /* Solid button with optional icon.
+     Params:
+       text="Button"
+       url="/contact/"             → anchor button (default)
+       form="contact1" submit="true" → submit button bound to form id
+       classes="…"                → extra utility classes
+       icon="arrow-right"         → name of SVG in assets/icons/*.svg
+       iconPos="left|right"       → default: left
+       iconClass="w-4 h-4"        → override size/styling of icon wrapper
 */ -}}
 
 {{- $page := .Page -}}
 {{- $url  := (.Get "url") | default "#" | safeURL -}}
 {{- $text := .Get "text" | default "Button" -}}
-{{- $form := .Get "form" | default "" -}}
 
+{{- /* optional submit mode for external forms */ -}}
+{{- $form   := .Get "form"   | default "" -}}
+{{- $submit := eq (lower (.Get "submit" | default "false")) "true" -}}
+
+{{- /* classes + color map (unchanged) */ -}}
 {{- $pageClasses := .Get "classes" | default "" -}}
 {{- $siteClasses := $page.Site.Params.button.classes | default "" -}}
 {{- $siteColor   := lower ($page.Site.Params.primaryColor | default $page.Site.Params.brandColor | default "blue") -}}
@@ -41,13 +49,34 @@
 
 {{- $fallback := index $solid $siteColor | default (index $solid "blue") -}}
 {{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
+{{- $classes = printf "%s inline-flex items-center" $classes -}} {{/* align icon + text */}}
 
-{{- if ne $form "" -}}
-  <button type="submit" form="{{ $form }}" class="not-prose no-underline {{ $classes }}">{{ $text }}</button>
-{{- else -}}
-  <a href="{{ $url }}" class="not-prose no-underline {{ $classes }}">{{ $text }}</a>
+{{- /* icon params */ -}}
+{{- $icon      := .Get "icon"      | default "" -}}
+{{- $iconPos   := lower (.Get "iconPos" | default "left") -}}
+{{- $iconClass := .Get "iconClass" | default "w-4 h-4" -}}
+
+{{- /* build icon html if provided */ -}}
+{{- $iconHTML := "" -}}
+{{- if $icon -}}
+  {{- $marg := cond (eq $iconPos "right") "ms-2" "me-2" -}}
+  {{- $iconHTML = partial "ui/icon.html" (dict "name" $icon "class" (printf "%s %s" $iconClass $marg) "title" "") -}}
 {{- end -}}
 
-{{- if hugo.IsServer -}}
-<!-- debug: mode={{ if $form }}submit{{ else }}link{{ end }}, color={{ $siteColor }} -->
+{{- /* inner content with optional icon left/right */ -}}
+{{- $inner := "" -}}
+{{- if $icon -}}
+  {{- if eq $iconPos "right" -}}
+    {{- $inner = printf "<span>%s</span>%s" $text $iconHTML -}}
+  {{- else -}}
+    {{- $inner = printf "%s<span>%s</span>" $iconHTML $text -}}
+  {{- end -}}
+{{- else -}}
+  {{- $inner = $text -}}
+{{- end -}}
+
+{{- if or $submit $form -}}
+  <button type="submit" {{ with $form }}form="{{ . }}"{{ end }} class="not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</button>
+{{- else -}}
+  <a href="{{ $url }}" class="not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</a>
 {{- end -}}

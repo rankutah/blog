@@ -13,7 +13,9 @@
   display: none !important;
 }
 
-
+/* Make list markers match the current text color */
+.prose :where(ul > li)::marker { color: currentColor; }
+.prose :where(ol > li)::marker { color: currentColor; }
 
 /* ========== 4) Typography touch-ups ========== */
 /* .prose a { text-decoration: none; } */

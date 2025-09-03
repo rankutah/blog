@@ -272,7 +272,32 @@ This will be the message above the form
 {{<button form="contact" text="Submit">}}
 {.center}
 
+This is an incline phone: {{< icon name="phone">}}
+
 
 {{</section>}}
+
+{{<section>}}
+This is an incline phone: {{< icon name="phone">}}
+
+This is an inline {{< icon name="message">}} message. This is an incline message: {{< icon name="message">}}
+
+{{<button text="Call">}}
+
+
+This is some more ✓ text. ✅ . Another {{< icon name="check">}} box
+
+{{< icon name="check">}} Everything you ever want
+
+{{< icon name="check">}} Everything you ever need
+
+## Call Now 
+
+- {{<icon name="phone">}} Works with text
+- Another point
+
+
+{{</section>}}
+
 
 
