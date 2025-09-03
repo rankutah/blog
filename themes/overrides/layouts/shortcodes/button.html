@@ -76,7 +76,7 @@
 {{- end -}}
 
 {{- if or $submit $form -}}
-  <button type="submit" {{ with $form }}form="{{ . }}"{{ end }} class="not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</button>
+  <button type="submit" {{ with $form }}form="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</button>
 {{- else -}}
-  <a href="{{ $url }}" class="not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</a>
+  <a href="{{ $url }}" class="ui-btn not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</a>
 {{- end -}}

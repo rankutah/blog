@@ -33,16 +33,29 @@ faq:
 >}}
 
 # Website Design in Utah County
-Some supporting copy for this 
-{.text-white}
-
-{{<button text="hello">}}
+Professional business websites. Custom built from scratch. {{<button text="Pick 3 Colors">}}
+{.text-white} 
 
 {{< /section >}}
 
 {{< section >}}
-## Utah’s Friendly Web & SEO Team
-We grow local businesses with fast, beautiful sites.
+
+## Pick Your 3 Website Colors
+
+{{< /section>}}
+
+{{< section render="raw">}}
+
+{{< color-picker>}}
+
+{{< /section >}}
+
+{{<section>}}
+
+Sites are custom built to match your brand. Simply use the toggles and pick your colors. 
+
+
+
 {{< button text="Book Now" url="/contact/" >}}
 {{< /section >}}
 
@@ -296,6 +309,10 @@ This is some more ✓ text. ✅ . Another {{< icon name="check">}} box
 - {{<icon name="phone">}} Works with text
 - Another point
 
+
+- [{{<icon name="square-check-big" >}} Great Value](test.com)
+- {{<icon name="circle-check-big" >}} Good for pieces
+- {{<icon name="badge-check" >}} Pineapples
 
 {{</section>}}
 

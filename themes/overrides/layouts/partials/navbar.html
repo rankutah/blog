@@ -26,7 +26,7 @@
 {{/* Header theme: "blend" (default), "invert", "glass" */}}
 {{ $headerTheme := lower (or .Site.Params.header.theme "blend") }}
 
-{{ $navBlend  := printf "%s text-gray-900 dark:text-gray-100" $pal.navBg }}
+{{ $navBlend  := "text-gray-900 dark:text-gray-100" }} 
 {{ $navInvert := "bg-white/95 dark:bg-gray-900/90 text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-700" }}
 {{ $navGlass  := "bg-white/60 dark:bg-gray-900/40 backdrop-blur supports-[backdrop-filter]:bg-white/40 supports-[backdrop-filter]:dark:bg-gray-900/30 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100" }}
 
@@ -89,7 +89,7 @@
 }}
 {{ $navHoverClasses := index $navHover $siteColor | default (index $navHover "blue") }}
 
-<nav class="{{ $navClasses }} h-16 {{ if $stickyMobile }}sticky top-0 z-20{{ end }} {{ if $stickyDesktop }} md:sticky md:top-0 md:z-20{{ end }}">
+<nav id="site-nav" class="{{ $navClasses }} h-16 {{ if $stickyMobile }}sticky top-0 z-20{{ end }} {{ if $stickyDesktop }} md:sticky md:top-0 md:z-20{{ end }}">
   
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->
@@ -104,7 +104,7 @@
     <div class="flex md:order-2 items-center space-x-3 md:space-x-0 rtl:space-x-reverse">
       {{ if or $showCTAOnMobile $showCTAOnDesktop }}
       <a href="{{ $CTAURL | relURL }}"
-         class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none
+         class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none ui-btn
                 {{ if $showCTAOnMobile }}inline-flex{{ else }}hidden{{ end }}
                 {{ if $showCTAOnDesktop }} md:inline-flex{{ else }} md:hidden{{ end }}
                 text-center {{ $ctaClasses }}">
@@ -143,7 +143,7 @@
               <button id="menu-{{ .Identifier }}-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}"
                       data-dropdown-placement="bottom-start"
-                      class="no-underline hover:underline flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto {{ $navHoverClasses }}">
+                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto {{ $navHoverClasses }}">
                 {{ .Name }}
                 <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -155,7 +155,7 @@
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
                     <li>
-                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
                         {{ .Name }}
                       </a>
                     </li>
