@@ -33,8 +33,9 @@ faq:
 >}}
 
 # Website Design in Utah County
+{.text-white}
 Professional business websites. Custom built from scratch. {{<button text="Pick 3 Colors">}}
-{.text-white} 
+{.text-white}
 
 {{< /section >}}
 
