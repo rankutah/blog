@@ -109,6 +109,9 @@ What it does:
   const add    = (el, list) => list.forEach(c => el.classList.add(c));
   const swap   = (el, rem, add_) => { remove(el, rem); add(el, add_); };
 
+  // Grab the real navbar so its background travels with sticky positioning
+  const NAV = document.querySelector('nav');
+
   // Build button class maps per color
   function btnSet(c){
     return [
@@ -119,7 +122,7 @@ What it does:
   const BTN_BY_COLOR = Object.fromEntries(COLORS.map(c => [c, btnSet(c)]));
   const ALL_BTN_CLASSES = uniq([].concat(...Object.values(BTN_BY_COLOR)));
 
-  // Background palettes on <body>
+  // Background palettes on <body> (and synced onto <nav>)
   const LIGHT_BG_ALL = uniq([].concat(...COLORS.map(c => [`bg-${c}-50`,`bg-${c}-100`,`bg-${c}-200`])));
   const DARK_BG_ALL  = uniq([
     ...NEUTRALS.flatMap(c => [`dark:bg-${c}-800`,`dark:bg-${c}-900`,`dark:bg-${c}-950`]),
@@ -130,8 +133,29 @@ What it does:
     const addList = BTN_BY_COLOR[color] || [];
     document.querySelectorAll('.ui-btn').forEach(el => swap(el, ALL_BTN_CLASSES, addList));
   }
-  function applyLightBg(token){ swap(document.body, LIGHT_BG_ALL, token ? [`bg-${token}`] : []); }
-  function applyDarkBg(token){  swap(document.body, DARK_BG_ALL,  token ? [`dark:bg-${token}`] : []); }
+
+  // Light background: no effect in dark mode; also keep NAV in sync so sticky bg doesn't get "left behind"
+  function applyLightBg(token){
+    const isDark = document.documentElement.classList.contains('dark');
+    // Always remove any lingering light classes
+    remove(document.body, LIGHT_BG_ALL);
+    if (NAV) remove(NAV, LIGHT_BG_ALL);
+
+    if (isDark) {
+      // In dark mode, ignore light bg choices entirely
+      return;
+    }
+    const addList = token ? [`bg-${token}`] : [];
+    add(document.body, addList);
+    if (NAV) add(NAV, addList);
+  }
+
+  // Dark background: apply to both body and NAV (only takes effect when html.dark is present)
+  function applyDarkBg(token){
+    const addList = token ? [`dark:bg-${token}`] : [];
+    swap(document.body, DARK_BG_ALL, addList);
+    if (NAV) swap(NAV, DARK_BG_ALL, addList);
+  }
 
   // Initial paint
   if (brandSel) applyBrand(brandSel.value);

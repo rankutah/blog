@@ -26,7 +26,7 @@
 {{/* Header theme: "blend" (default), "invert", "glass" */}}
 {{ $headerTheme := lower (or .Site.Params.header.theme "blend") }}
 
-{{ $navBlend  := "text-gray-900 dark:text-gray-100" }} 
+{{ $navBlend  := "text-gray-900 dark:text-white" }} 
 {{ $navInvert := "bg-white/95 dark:bg-gray-900/90 text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-700" }}
 {{ $navGlass  := "bg-white/60 dark:bg-gray-900/40 backdrop-blur supports-[backdrop-filter]:bg-white/40 supports-[backdrop-filter]:dark:bg-gray-900/30 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100" }}
 
@@ -89,7 +89,7 @@
 }}
 {{ $navHoverClasses := index $navHover $siteColor | default (index $navHover "blue") }}
 
-<nav id="site-nav" class="{{ $navClasses }} h-16 {{ if $stickyMobile }}sticky top-0 z-20{{ end }} {{ if $stickyDesktop }} md:sticky md:top-0 md:z-20{{ end }}">
+<nav  class="{{ $navClasses }} h-16 {{ if $stickyMobile }}sticky top-0 z-20{{ end }} {{ if $stickyDesktop }} md:sticky md:top-0 md:z-20{{ end }}">
   
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->

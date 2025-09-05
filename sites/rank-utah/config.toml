@@ -87,7 +87,7 @@ pruneTaxonomies = true
   showPhoneOnMobile = true
   phoneNumber       = "800-123-4567"
   logoHeight        = "h-10"
-  theme = "glass" #blend (default), invert, glass
+  theme = "blend" #blend (default), invert, glass
 
 [params.forms]
   action         = "https://submit-form.com/DOH188lWF"
