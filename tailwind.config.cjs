@@ -8,17 +8,67 @@ const PALETTES = [
   'fuchsia','pink','rose'
 ];
 
-// Set SITE to the folder name under ./sites (e.g., "rank-utah" or "nova-gutter").
-// When not provided, it falls back to "*" (scan all sites).
+// choose site at build
 const SITE = process.env.SITE || '*';
+
+// === Color families we allow in the picker (no slate/zinc/stone) ===
+const NEUTRALS = ['gray', 'neutral'];
+const CHROMAS  = ['red','orange','amber','yellow','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'];
+const FAMILIES = [...NEUTRALS, ...CHROMAS];
+
+// We only need these shades for the picker
+const STEPS_LIGHT        = ['50','100','200'];     // light mode choices
+const STEPS_DARK_NEUTRAL = ['800','900','950'];    // dark mode (neutrals)
+const STEPS_DARK_CHROMA  = ['950'];                // dark mode (colors)
+const STEPS = new Set([...STEPS_LIGHT, ...STEPS_DARK_NEUTRAL, ...STEPS_DARK_CHROMA]);
+
+// Build a stable safelist ONLY if you still want class-based buttons (kept here, ok)
+function buildSafelist() {
+  const out = [];
+  for (const c of FAMILIES) {
+    out.push(
+      `bg-${c}-700`,
+      `hover:bg-${c}-800`,
+      `focus:ring-${c}-300`,
+      `dark:bg-${c}-600`,
+      `dark:hover:bg-${c}-700`,
+      `dark:focus:ring-${c}-800`,
+    );
+  }
+  // not needed for backgrounds anymore, but harmless to keep
+  out.push('bg-white');
+  return out;
+}
 
 module.exports = {
   darkMode: 'class',
+  // ... your existing content globs ...
+  safelist: [
+    // Button tints for .ui-btn
+    { pattern: new RegExp(`^(bg|hover:bg|focus:ring)-(${ALL.join('|')})-(700|800|300)$`) },
+    { pattern: new RegExp(`^dark:(bg|hover:bg|focus:ring)-(${ALL.join('|')})-(600|700|800)$`) },
+
+    // Light backgrounds 50/100/200 for all families
+    { pattern: new RegExp(`^bg-(${ALL.join('|')})-(50|100|200)$`) },
+
+    // Dark backgrounds:
+    // - neutrals: 800/900/950
+    { pattern: new RegExp(`^dark:bg-(${NEUTRALS.join('|')})-(800|900|950)$`) },
+
+    // - chromas: 950 only
+    { pattern: new RegExp(`^dark:bg-(${CHROMAS.join('|')})-950$`) },
+
+    // If your layout sets this anywhere, keep it available
+    'bg-white',
+  ],
   content: [
     `./sites/${SITE}/**/*.{html,md,js,ts,jsx,tsx,toml}`,
     './themes/overrides/**/*.{html,md,js,ts,jsx,tsx}',
+    './layouts/**/*.{html,md,js,ts,jsx,tsx}',
+    './assets/**/*.{js,ts,jsx,tsx}',
     './node_modules/flowbite/**/*.js',
   ],
+  safelist: buildSafelist(),
   theme: {
     extend: {
       fontFamily: {
@@ -26,16 +76,13 @@ module.exports = {
       },
     },
   },
-  theme: { extend: {} },
   plugins: [
-    // CSS-var palette plugin (unchanged)
+    // Your existing primary-color CSS vars by palette class (unchanged)
     plugin(({ addBase }) => {
       const base = { ':root': {} };
-      // default primary = rose
       Object.entries(colors.rose).forEach(([s, hex]) => {
         base[':root'][`--color-primary-${s}`] = hex;
       });
-      // override when <html class="PAL">
       PALETTES.forEach(pal => {
         const map = {};
         Object.entries(colors[pal]).forEach(([s, hex]) => {
@@ -44,6 +91,20 @@ module.exports = {
         base[`.${pal}`] = map;
       });
       addBase(base);
+    }),
+
+    // === NEW: expose the exact background tokens as CSS variables ===
+    plugin(({ addBase }) => {
+      const baseVars = { ':root': {} };
+      FAMILIES.forEach(fam => {
+        const clr = colors[fam];
+        Object.keys(clr).forEach(step => {
+          if (STEPS.has(step)) {
+            baseVars[':root'][`--twc-${fam}-${step}`] = clr[step];
+          }
+        });
+      });
+      addBase(baseVars);
     }),
 
     require('flowbite/plugin'),

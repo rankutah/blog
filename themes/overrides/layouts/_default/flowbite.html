@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }} | {{ .Site.Title }}</title>
 
-  {{- /* Inline theme init to prevent FOUC */ -}}
+  <!-- Dark-mode bootstrap:
+       - If <html data-force-theme="dark|light"> is present, use that.
+       - Otherwise follow the OS preference.
+       - Reacts live to changes of data-force-theme AND (optionally) OS changes when not forced. -->
   <script>
-    (function() {
-      const stored = localStorage.getItem('theme');
-      const pref   = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const useDark = stored === 'dark' || (!stored && pref);
-      if (useDark) document.documentElement.classList.add('dark');
-    })();
-  </script>
+  try {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.classList.toggle('dark', prefersDark);
+  } catch (e) {}
+</script>
 
   {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify */ -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify }}
@@ -38,19 +39,45 @@
     </article>
   </main>
 
+  <!-- Flowbite JS for interactive components -->
   <script defer src="{{ "js/flowbite.min.js" | relURL }}"></script>
+
+  <!-- Header toggle (optional):
+       If you have a button with id="theme-toggle" (and two icons with
+       ids theme-toggle-dark-icon / theme-toggle-light-icon), this flips
+       the same data-force-theme attribute the color-picker uses. -->
   <script defer>
     document.addEventListener('DOMContentLoaded', () => {
+      const html      = document.documentElement;
       const btn       = document.getElementById('theme-toggle');
-      if (!btn) return;
       const darkIcon  = document.getElementById('theme-toggle-dark-icon');
       const lightIcon = document.getElementById('theme-toggle-light-icon');
-      btn.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        darkIcon?.classList.toggle('hidden');
-        lightIcon?.classList.toggle('hidden');
-      });
+
+      function syncIcons() {
+        const isDark = html.classList.contains('dark');
+        // Show the icon for the state you can switch TO (common UI pattern)
+        if (darkIcon)  darkIcon.classList.toggle('hidden', isDark);     // show moon in light mode
+        if (lightIcon) lightIcon.classList.toggle('hidden', !isDark);   // show sun in dark mode
+      }
+
+      function flipForcedTheme() {
+        const forced = html.getAttribute('data-force-theme'); // "light" | "dark" | null
+        if (forced === 'dark')      html.setAttribute('data-force-theme', 'light');
+        else if (forced === 'light')html.setAttribute('data-force-theme', 'dark');
+        else {
+          // No override yet: flip away from current OS/effective state
+          const isDark = html.classList.contains('dark');
+          html.setAttribute('data-force-theme', isDark ? 'light' : 'dark');
+        }
+        // Head script will react and toggle html.dark; then update icons
+        syncIcons();
+      }
+
+      // Initial icon state
+      syncIcons();
+
+      // Wire the button if present
+      if (btn) btn.addEventListener('click', flipForcedTheme);
     });
   </script>
 </body>
