@@ -7,18 +7,23 @@ What it does:
   - Lets you pick Primary, Light background, Dark background.
   - Retints ONLY elements with the .ui-btn class (opt-in).
   - Swaps <body> bg classes for light/dark backgrounds.
-  - Does NOT touch any links.
+  - Keeps <nav> in sync so sticky bg follows on scroll.
+  - In dark mode, light-bg choices do nothing.
 
 */ -}}
 
-{{- $neutrals := slice "slate" "gray" "zinc" "neutral" "stone" -}}
+{{/* Allowed palettes
+   - Neutrals: ONLY gray, neutral (no slate/zinc/stone)
+   - Chromas: full set
+*/}}
+{{- $neutrals := slice "gray" "neutral" -}}
 {{- $chromas  := slice "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky" "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" -}}
 {{- $colors := $neutrals -}}
 {{- range $chromas }}{{- $colors = $colors | append . }}{{- end -}}
 
 {{- $brandDefault := lower (or .Page.Site.Params.primaryColor .Page.Site.Params.brandColor "blue") -}}
-{{- $lightDefault := lower (or .Page.Site.Params.lightBackground "slate-50") -}}
-{{- $darkDefault  := lower (or .Page.Site.Params.darkBackground  "zinc-900") -}}
+{{- $lightDefault := lower (or .Page.Site.Params.lightBackground "gray-50") -}}
+{{- $darkDefault  := lower (or .Page.Site.Params.darkBackground  "neutral-900") -}}
 
 <div class="not-prose p-4 rounded-lg border border-gray-200 dark:border-gray-700">
   <div class="grid gap-4 md:grid-cols-3">
@@ -54,6 +59,7 @@ What it does:
     <div>
       <label for="cp-dark" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-100">Dark background</label>
       <select id="cp-dark" class="w-full text-sm rounded-lg p-2.5 bg-gray-50 border border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-100">
+        {{- /* Neutrals keep 800/900/950 */ -}}
         {{- range $neutrals }}
           {{- $c := . -}}
           {{- range (slice "800" "900" "950") }}
@@ -61,13 +67,11 @@ What it does:
             <option value="{{ $val }}" {{ if eq $val $darkDefault }}selected{{ end }}>{{ $val }}</option>
           {{- end }}
         {{- end }}
-        <optgroup label="— Colors (900/950) —"></optgroup>
+        <optgroup label="— Colors (950 only) —"></optgroup>
+        {{- /* Chromas: 950 only (no 900) */ -}}
         {{- range $chromas }}
-          {{- $c := . -}}
-          {{- range (slice "900" "950") }}
-            {{- $val := printf "%s-%s" $c . -}}
-            <option value="{{ $val }}" {{ if eq $val $darkDefault }}selected{{ end }}>{{ $val }}</option>
-          {{- end }}
+          {{- $val := printf "%s-950" . -}}
+          <option value="{{ $val }}" {{ if eq $val $darkDefault }}selected{{ end }}>{{ $val }}</option>
         {{- end }}
       </select>
     </div>
@@ -81,22 +85,28 @@ What it does:
  bg-{{$c}}-700 hover:bg-{{$c}}-800 focus:ring-{{$c}}-300
  dark:bg-{{$c}}-600 dark:hover:bg-{{$c}}-700 dark:focus:ring-{{$c}}-800
 {{- end -}}
+
 {{- /* Light background palette */ -}}
 {{- range $colors -}}{{- $c := . -}}
  bg-{{$c}}-50 bg-{{$c}}-100 bg-{{$c}}-200
 {{- end -}}
-{{- /* Dark background palette */ -}}
+
+{{- /* Dark background palette
+      - neutrals: 800/900/950
+      - chromas: 950 only
+*/ -}}
 {{- range $neutrals -}}{{- $c := . -}}
  dark:bg-{{$c}}-800 dark:bg-{{$c}}-900 dark:bg-{{$c}}-950
 {{- end -}}
 {{- range $chromas -}}{{- $c := . -}}
- dark:bg-{{$c}}-900 dark:bg-{{$c}}-950
+ dark:bg-{{$c}}-950
 {{- end -}}
 "></div>
 
 <script>
 (() => {
-  const NEUTRALS = ["slate","gray","zinc","neutral","stone"];
+  // Only gray + neutral as neutrals
+  const NEUTRALS = ["gray","neutral"];
   const CHROMAS  = ["red","orange","amber","yellow","lime","green","emerald","teal","cyan","sky","blue","indigo","violet","purple","fuchsia","pink","rose"];
   const COLORS   = [...NEUTRALS, ...CHROMAS];
 
@@ -112,7 +122,7 @@ What it does:
   // Grab the real navbar so its background travels with sticky positioning
   const NAV = document.querySelector('nav');
 
-  // Build button class maps per color
+  // Button color maps per color
   function btnSet(c){
     return [
       `bg-${c}-700`,`hover:bg-${c}-800`,`focus:ring-${c}-300`,
@@ -124,10 +134,10 @@ What it does:
 
   // Background palettes on <body> (and synced onto <nav>)
   const LIGHT_BG_ALL = uniq([].concat(...COLORS.map(c => [`bg-${c}-50`,`bg-${c}-100`,`bg-${c}-200`])));
-  const DARK_BG_ALL  = uniq([
-    ...NEUTRALS.flatMap(c => [`dark:bg-${c}-800`,`dark:bg-${c}-900`,`dark:bg-${c}-950`]),
-    ...CHROMAS.flatMap(c => [`dark:bg-${c}-900`,`dark:bg-${c}-950`]),
-  ]);
+  // Dark: neutrals 800/900/950; chromas 950 only
+  const DARK_BG_NEUTRALS = uniq([].concat(...NEUTRALS.map(c => [`dark:bg-${c}-800`,`dark:bg-${c}-900`,`dark:bg-${c}-950`])));
+  const DARK_BG_CHROMAS  = uniq(CHROMAS.map(c => `dark:bg-${c}-950`));
+  const DARK_BG_ALL = uniq([...DARK_BG_NEUTRALS, ...DARK_BG_CHROMAS]);
 
   function applyBrand(color){
     const addList = BTN_BY_COLOR[color] || [];
@@ -150,7 +160,7 @@ What it does:
     if (NAV) add(NAV, addList);
   }
 
-  // Dark background: apply to both body and NAV (only takes effect when html.dark is present)
+  // Dark background: neutrals (800/900/950), chromas (950 only)
   function applyDarkBg(token){
     const addList = token ? [`dark:bg-${token}`] : [];
     swap(document.body, DARK_BG_ALL, addList);
