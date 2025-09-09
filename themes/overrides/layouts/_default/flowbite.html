@@ -11,6 +11,85 @@
        - Otherwise follow the OS preference.
        - Reacts live to changes of data-force-theme AND (optionally) OS changes when not forced. -->
   <script>
+(function(){
+  const html = document.documentElement;
+
+  // Static HEX map (light/dark) — no Tailwind involvement
+  const BRAND_HEX = {
+    gray:{light:"#4b5563",dark:"#6b7280"}, neutral:{light:"#525252",dark:"#737373"},
+    red:{light:"#dc2626",dark:"#ef4444"}, orange:{light:"#ea580c",dark:"#f97316"},
+    amber:{light:"#d97706",dark:"#f59e0b"}, yellow:{light:"#ca8a04",dark:"#eab308"},
+    lime:{light:"#65a30d",dark:"#84cc16"}, green:{light:"#16a34a",dark:"#22c55e"},
+    emerald:{light:"#059669",dark:"#10b981"}, teal:{light:"#0d9488",dark:"#14b8a6"},
+    cyan:{light:"#0891b2",dark:"#06b6d4"}, sky:{light:"#0284c7",dark:"#0ea5e9"},
+    blue:{light:"#2563eb",dark:"#3b82f6"}, indigo:{light:"#4f46e5",dark:"#6366f1"},
+    violet:{light:"#7c3aed",dark:"#8b5cf6"}, purple:{light:"#9333ea",dark:"#a855f7"},
+    fuchsia:{light:"#c026d3",dark:"#d946ef"}, pink:{light:"#db2777",dark:"#ec4899"},
+    rose:{light:"#e11d48",dark:"#f43f5e"}
+  };
+
+  // Brand on first paint: prefer <html data-brand="..."> set by picker; else site param; else blue
+  const SITE_BRAND = "{{- lower (or .Site.Params.primaryColor .Site.Params.brandColor) -}}";
+  function currentBrand(){
+    return (html.getAttribute('data-brand') || SITE_BRAND || "blue").trim();
+  }
+
+  // Color helpers that write inline styles with !important (wins over main.min.css)
+  function setImportant(el, prop, val){
+    if (!el) return;
+    el.style.setProperty(prop, val, 'important');
+  }
+
+  function recolorLinks(){
+    const isDark = html.classList.contains('dark');
+    const pal = BRAND_HEX[currentBrand()] || BRAND_HEX.blue;
+    const hex = isDark ? pal.dark : pal.light;
+    document.querySelectorAll('a.link-brand').forEach(a => setImportant(a, 'color', hex));
+  }
+
+  function recolorNavbar(){
+    const isDark = html.classList.contains('dark');
+    const pal = BRAND_HEX[currentBrand()] || BRAND_HEX.blue;
+    const fg  = isDark ? pal.dark : pal.light;
+
+    // Text color in navbar
+    document.querySelectorAll('nav .nav-brand, [data-brand-nav="fg"]').forEach(el => setImportant(el, 'color', fg));
+
+    // Background accents in navbar (e.g., badges, pills, active underline containers you want solid)
+    document.querySelectorAll('nav .nav-brand-bg, [data-brand-nav="bg"]').forEach(el => setImportant(el, 'background-color', fg));
+
+    // Borders (e.g., active item bottom border)
+    document.querySelectorAll('nav .nav-brand-border, [data-brand-nav="border"]').forEach(el => setImportant(el, 'border-color', fg));
+  }
+
+  function recolorAll(){
+    recolorLinks();
+    recolorNavbar();
+  }
+
+  // Run on first paint
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', recolorAll, { once:true });
+  } else {
+    recolorAll();
+  }
+
+  // Re-run on theme flips (OS or any toggle that adds/removes .dark)
+  new MutationObserver(m => {
+    for (const x of m) if (x.attributeName === 'class') { recolorAll(); break; }
+  }).observe(html, { attributes:true });
+
+  // Listen for brand changes from the picker (you already dispatch this)
+  window.addEventListener('cp:brandchange', e => {
+    if (e && e.detail) html.setAttribute('data-brand', e.detail);
+    recolorAll();
+  });
+})();
+</script>
+
+  
+  
+  <script>
   try {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     document.documentElement.classList.toggle('dark', prefersDark);

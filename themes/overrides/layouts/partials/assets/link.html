@@ -1,0 +1,26 @@
+{{- /* themes/overrides/layouts/partials/assets/link.html */ -}}
+{{- $dest  := .destination -}}
+{{- $text  := .text -}}
+{{- $title := .title -}}
+{{- $page  := .page -}}
+
+{{- /* Build href with .md → pretty URL normalization for internal links */ -}}
+{{- $href := $dest -}}
+{{- $isExternal := or (hasPrefix (lower $dest) "http://") (hasPrefix (lower $dest) "https://") -}}
+{{- $isHash := hasPrefix $dest "#" -}}
+{{- if and (not $isExternal) (not $isHash) (strings.HasSuffix (lower $dest) ".md") -}}
+  {{- $url := replaceRE `(?i)\.md$` "" $dest -}}
+  {{- $url = replaceRE `^\.{1,2}/` "" $url -}}
+  {{- if not (strings.HasPrefix $url "/") -}} {{- $url = printf "/%s" $url -}} {{- end -}}
+  {{- if not (strings.HasSuffix $url "/") -}} {{- $url = printf "%s/" $url -}} {{- end -}}
+  {{- $url = replaceRE "/+" "/" $url -}}
+  {{- $href = $url -}}
+{{- end -}}
+
+{{- /* Always include link-brand; append optional extras from site/page params */ -}}
+{{- $siteExtra := $page.Site.Params.text.linkClasses -}}
+{{- $pageExtra := $page.Params.text.linkClasses -}}
+{{- $base := "link-brand font-semibold no-underline hover:underline" -}}
+{{- $classes := printf "%s%s%s" $base (cond $siteExtra (printf " %s" $siteExtra) "") (cond $pageExtra (printf " %s" $pageExtra) "") -}}
+
+<a href="{{ $href }}" class="{{ $classes }}"{{ with $title }} title="{{ . }}"{{ end }}>{{ $text | safeHTML }}</a>

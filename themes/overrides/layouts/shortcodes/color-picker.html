@@ -1,23 +1,26 @@
 {{- /* layouts/shortcodes/color-picker.html */ -}}
 
-{{/* Palettes (no slate/zinc/stone) */}}
+{{/* Allowed palettes (no slate/zinc/stone) */}}
 {{- $neutrals := slice "gray" "neutral" -}}
 {{- $chromas  := slice "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky" "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" -}}
 {{- $colors := $neutrals -}}
 {{- range $chromas }}{{- $colors = $colors | append . }}{{- end -}}
 
-{{/* Defaults pulled from site params, with fallbacks */}}
+{{/* Defaults from params with fallbacks */}}
 {{- $brandDefault := lower (or .Page.Site.Params.primaryColor .Page.Site.Params.brandColor "blue") -}}
 {{- $lightDefault := lower (or .Page.Site.Params.lightBackground "gray-50") -}}
 {{- $darkDefault  := lower (or .Page.Site.Params.darkBackground  "neutral-900") -}}
 
 <div class="not-prose p-3 rounded-lg border border-gray-200 dark:border-gray-700">
-  <!-- three-up layout: Primary, Light Background, Dark Background -->
   <div class="grid gap-2 md:grid-cols-3 items-end">
     <!-- Primary brand -->
     <div>
       <label for="cp-primary" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Primary color</label>
-      <select id="cp-primary" class="min-w-0 w-full text-xs h-9 rounded-md px-2 bg-gray-50 border border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-100">
+      <select id="cp-primary" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
+                                     bg-gray-50 text-gray-900 border border-gray-300
+                                     dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
+                                     focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-400
+                                     dark:focus:ring-gray-700 dark:focus:border-gray-500">
         {{- range $neutrals }}
           <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
         {{- end }}
@@ -31,7 +34,11 @@
     <!-- Light background -->
     <div>
       <label for="cp-light" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Background</label>
-      <select id="cp-light" class="min-w-0 w-full text-xs h-9 rounded-md px-2 bg-gray-50 border border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-100">
+      <select id="cp-light" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
+                                   bg-gray-50 text-gray-900 border border-gray-300
+                                   dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
+                                   focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-400
+                                   dark:focus:ring-gray-700 dark:focus:border-gray-500">
         {{- range $colors }}
           {{- $c := . -}}
           {{- range (slice "50" "100" "200") }}
@@ -39,13 +46,18 @@
             <option value="{{ $val }}" {{ if eq $val $lightDefault }}selected{{ end }}>{{ $val }}</option>
           {{- end }}
         {{- end }}
+        <option value="white" {{ if eq "white" $lightDefault }}selected{{ end }}>white</option>
       </select>
     </div>
 
     <!-- Dark background -->
     <div>
       <label for="cp-dark" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Background</label>
-      <select id="cp-dark" class="min-w-0 w-full text-xs h-9 rounded-md px-2 bg-gray-50 border border-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-100">
+      <select id="cp-dark" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
+                                  bg-gray-50 text-gray-900 border border-gray-300
+                                  dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
+                                  focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-400
+                                  dark:focus:ring-gray-700 dark:focus:border-gray-500">
         {{- /* Neutrals: 800/900/950 */ -}}
         {{- range $neutrals }}
           {{- $c := . -}}
@@ -64,9 +76,8 @@
   </div>
 </div>
 
-<!-- Manifest of exact classes we swap so Tailwind won't purge them -->
-<div class="hidden sr-only">
-  <!-- Light backgrounds -->
+<!-- Manifest: keep every class we swap in the compiled CSS -->
+<div aria-hidden="true" class="sr-only hidden
   bg-gray-50 bg-gray-100 bg-gray-200
   bg-neutral-50 bg-neutral-100 bg-neutral-200
   bg-red-50 bg-red-100 bg-red-200
@@ -88,7 +99,6 @@
   bg-rose-50 bg-rose-100 bg-rose-200
   bg-white
 
-  <!-- Dark backgrounds (using dark: variant) -->
   dark:bg-gray-800 dark:bg-gray-900 dark:bg-gray-950
   dark:bg-neutral-800 dark:bg-neutral-900 dark:bg-neutral-950
   dark:bg-red-950 dark:bg-orange-950 dark:bg-amber-950 dark:bg-yellow-950 dark:bg-lime-950
@@ -96,7 +106,6 @@
   dark:bg-blue-950 dark:bg-indigo-950 dark:bg-violet-950 dark:bg-purple-950
   dark:bg-fuchsia-950 dark:bg-pink-950 dark:bg-rose-950
 
-  <!-- .ui-btn tints (light + dark states) -->
   bg-gray-700 hover:bg-gray-800 focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800
   bg-neutral-700 hover:bg-neutral-800 focus:ring-neutral-300 dark:bg-neutral-600 dark:hover:bg-neutral-700 dark:focus:ring-neutral-800
   bg-red-700 hover:bg-red-800 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800
@@ -116,7 +125,8 @@
   bg-fuchsia-700 hover:bg-fuchsia-800 focus:ring-fuchsia-300 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-700 dark:focus:ring-fuchsia-800
   bg-pink-700 hover:bg-pink-800 focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800
   bg-rose-700 hover:bg-rose-800 focus:ring-rose-300 dark:bg-rose-600 dark:hover:bg-rose-700 dark:focus:ring-rose-800
-</div>
+"></div>
+
 <script>
 (() => {
   const html = document.documentElement;
@@ -127,33 +137,62 @@
   const lightSel = document.getElementById('cp-light');
   const darkSel  = document.getElementById('cp-dark');
 
-  // --- robust group lookup: find the ancestor that contains both label+select ---
+  // find label+select wrappers
   function findGroup(selectId) {
     const sel = document.getElementById(selectId);
     const lab = document.querySelector(`label[for="${selectId}"]`);
     if (!sel) return null;
     let n = sel;
-    // climb a few levels to catch wrapper div even if there's an inner <div>
-    for (let i = 0; i < 5 && n; i++, n = n.parentElement) {
+    for (let i = 0; i < 4 && n; i++, n = n.parentElement) {
       if (n.querySelector && lab && n.contains(sel) && n.contains(lab)) return n;
     }
-    // fallback: prefer label parent, else select parent
     return (lab && lab.parentElement) || sel.parentElement || null;
   }
   const lightGroup = findGroup('cp-light');
   const darkGroup  = findGroup('cp-dark');
 
-  // palettes (fixed maps; no dynamic class generation)
+  // background targets: body, nav, main, and any element with data-bg-sync
+  const getBgEls = () => [document.body, nav, document.querySelector('main'), ...document.querySelectorAll('[data-bg-sync]')].filter(Boolean);
+
+  // palettes
   const NEUTRALS = ["gray","neutral"];
   const CHROMAS  = ["red","orange","amber","yellow","lime","green","emerald","teal","cyan","sky","blue","indigo","violet","purple","fuchsia","pink","rose"];
   const COLORS   = [...NEUTRALS, ...CHROMAS];
-  const LEGACY   = ["slate","zinc","stone"]; // strip if present
 
   const uniq   = a => Array.from(new Set(a.filter(Boolean)));
   const remove = (el, list) => el && list.forEach(c => el.classList.remove(c));
   const add    = (el, list) => el && list.forEach(c => el.classList.add(c));
 
-  // Brand tint for buttons (targets .ui-btn / .btn / .btn-primary / data hooks)
+  // ----- Brand link coloring (inline style; no Tailwind vars/classes) -----
+  const BRAND_HEX = {
+    gray:    { light:"#4b5563", dark:"#6b7280" },
+    neutral: { light:"#525252", dark:"#737373" },
+    red:     { light:"#dc2626", dark:"#ef4444" },
+    orange:  { light:"#ea580c", dark:"#f97316" },
+    amber:   { light:"#d97706", dark:"#f59e0b" },
+    yellow:  { light:"#ca8a04", dark:"#eab308" },
+    lime:    { light:"#65a30d", dark:"#84cc16" },
+    green:   { light:"#16a34a", dark:"#22c55e" },
+    emerald: { light:"#059669", dark:"#10b981" },
+    teal:    { light:"#0d9488", dark:"#14b8a6" },
+    cyan:    { light:"#0891b2", dark:"#06b6d4" },
+    sky:     { light:"#0284c7", dark:"#0ea5e9" },
+    blue:    { light:"#2563eb", dark:"#3b82f6" },
+    indigo:  { light:"#4f46e5", dark:"#6366f1" },
+    violet:  { light:"#7c3aed", dark:"#8b5cf6" },
+    purple:  { light:"#9333ea", dark:"#a855f7" },
+    fuchsia: { light:"#c026d3", dark:"#d946ef" },
+    pink:    { light:"#db2777", dark:"#ec4899" },
+    rose:    { light:"#e11d48", dark:"#f43f5e" },
+  };
+  function recolorLinks() {
+    const isDark = html.classList.contains('dark');
+    const brand  = (brandSel && COLORS.includes(brandSel.value)) ? brandSel.value : "blue";
+    const hex    = (BRAND_HEX[brand] || BRAND_HEX.blue)[isDark ? "dark" : "light"];
+    document.querySelectorAll('a.link-brand').forEach(a => { a.style.color = hex; });
+  }
+
+  // brand tint (buttons)
   const BRAND_SELECTOR = window.CP_BRAND_SELECTOR || '.ui-btn, .btn, .btn-primary, [data-ui-btn], [data-brand="primary"]';
   const BTN = sel => [
     `bg-${sel}-700`,`hover:bg-${sel}-800`,`focus:ring-${sel}-300`,
@@ -163,71 +202,57 @@
   function applyBrand(color){
     const addList = BTN(color) || [];
     document.querySelectorAll(BRAND_SELECTOR).forEach(el => { remove(el, ALL_BTN); add(el, addList); });
+    recolorLinks(); // update link colors too
   }
 
-  // Background classes we manage on <body>/<nav>
+  // bg class sets
   const LIGHT_BG_ALL = uniq([
     ...COLORS.flatMap(c => [`bg-${c}-50`,`bg-${c}-100`,`bg-${c}-200`]),
-    ...LEGACY.flatMap(c => [`bg-${c}-50`,`bg-${c}-100`,`bg-${c}-200`]),
-    "bg-white"
+    'bg-white'
   ]);
   const DARK_BG_ALL = uniq([
     ...NEUTRALS.flatMap(c => [`dark:bg-${c}-800`,`dark:bg-${c}-900`,`dark:bg-${c}-950`]),
     ...CHROMAS.map(c => `dark:bg-${c}-950`),
-    ...LEGACY.flatMap(c => [`dark:bg-${c}-800`,`dark:bg-${c}-900`,`dark:bg-${c}-950`]),
   ]);
 
   function repaint() {
     const isDark = html.classList.contains('dark');
-
-    // clean slate
-    remove(document.body, LIGHT_BG_ALL); remove(document.body, DARK_BG_ALL);
-    remove(nav,           LIGHT_BG_ALL); remove(nav,           DARK_BG_ALL);
-
-    // light mode: apply chosen light token
+    getBgEls().forEach(el => { remove(el, LIGHT_BG_ALL); remove(el, DARK_BG_ALL); });
     if (!isDark && lightSel?.value) {
       const L = [`bg-${lightSel.value}`];
-      add(document.body, L); add(nav, L);
+      getBgEls().forEach(el => add(el, L));
     }
-
-    // always add chosen dark token (only takes effect when .dark is on <html>)
     if (darkSel?.value) {
       const D = [`dark:bg-${darkSel.value}`];
-      add(document.body, D); add(nav, D);
+      getBgEls().forEach(el => add(el, D));
     }
   }
 
-  // show only the selector that matches current theme
-  function hideGroup(el, hide) {
-    if (!el) return;
-    el.classList.toggle('hidden', hide);
-    if (hide) { el.setAttribute('hidden',''); } else { el.removeAttribute('hidden'); }
-  }
   function syncPickerVisibility() {
     const isDark = html.classList.contains('dark');
-    hideGroup(lightGroup, isDark);
-    lightSel?.toggleAttribute('disabled', isDark);
-    hideGroup(darkGroup, !isDark);
-    darkSel?.toggleAttribute('disabled', !isDark);
+    const lg = lightGroup, dg = darkGroup;
+    if (lg) { lg.classList.toggle('hidden', isDark); lightSel?.toggleAttribute('disabled', isDark); }
+    if (dg) { dg.classList.toggle('hidden', !isDark); darkSel?.toggleAttribute('disabled', !isDark); }
   }
 
-  // React when theme changes elsewhere (OS / header toggle)
+  // react to OS / any external theme toggle
   new MutationObserver(muts => {
     for (const m of muts) if (m.attributeName === 'class' && m.target === html) {
       syncPickerVisibility();
       repaint();
+      recolorLinks(); // recolor on dark/light change
     }
   }).observe(html, { attributes: true });
 
-  // Only repaint when the active selector changes
-  lightSel?.addEventListener('change', () => { if (!html.classList.contains('dark')) repaint(); });
-  darkSel ?.addEventListener('change', () => { if ( html.classList.contains('dark')) repaint(); });
+  // events
   brandSel ?.addEventListener('change', () => applyBrand(brandSel.value));
+  lightSel ?.addEventListener('change', () => { if (!html.classList.contains('dark')) repaint(); });
+  darkSel  ?.addEventListener('change', () => { if ( html.classList.contains('dark')) repaint(); });
 
-  // Init
+  // init
   syncPickerVisibility();
   if (brandSel) applyBrand(brandSel.value);
   repaint();
+  recolorLinks();
 })();
 </script>
-

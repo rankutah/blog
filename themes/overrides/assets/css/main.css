@@ -76,3 +76,10 @@
 .self-top     { align-self: start; }
 .self-end     { align-self: end; }
 
+
+
+@layer utilities {
+  /* keep link-brand behavior simple; JS sets the actual color inline */
+  a.link-brand { text-decoration: underline; }
+  a.link-brand:hover { text-decoration: underline; }
+}

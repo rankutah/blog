@@ -1,41 +1,11 @@
-{{- /* Simplified render-link:
-     - Plain links default to site primary color (or brandColor) via static map
-     - Keeps your .md → pretty URL normalization
-     - No btn/btn-outline magic (use shortcodes for buttons)
-*/ -}}
-
+{{- /* themes/overrides/layouts/_default/_markup/render-link.html */ -}}
 {{- $dest := .Destination -}}
-{{- $siteColor := lower (or .Page.Site.Params.primaryColor .Page.Site.Params.brandColor "blue") -}}
 
-{{- $linkMap := dict
-  "red"     "font-bold text-red-600 dark:text-red-500 no-underline hover:underline"
-  "orange"  "font-bold text-orange-600 dark:text-orange-500 no-underline hover:underline"
-  "amber"   "font-bold text-amber-600 dark:text-amber-500 no-underline hover:underline"
-  "yellow"  "font-bold text-yellow-600 dark:text-yellow-500 no-underline hover:underline"
-  "lime"    "font-bold text-lime-600 dark:text-lime-500 no-underline hover:underline"
-  "green"   "font-bold text-green-600 dark:text-green-500 no-underline hover:underline"
-  "emerald" "font-bold text-emerald-600 dark:text-emerald-500 no-underline hover:underline"
-  "teal"    "font-bold text-teal-600 dark:text-teal-500 no-underline hover:underline"
-  "cyan"    "font-bold text-cyan-600 dark:text-cyan-500 no-underline hover:underline"
-  "sky"     "font-bold text-sky-600 dark:text-sky-500 no-underline hover:underline"
-  "blue"    "font-bold text-blue-600 dark:text-blue-500 no-underline hover:underline"
-  "indigo"  "font-bold text-indigo-600 dark:text-indigo-500 no-underline hover:underline"
-  "violet"  "font-bold text-violet-600 dark:text-violet-500 no-underline hover:underline"
-  "purple"  "font-bold text-purple-600 dark:text-purple-500 no-underline hover:underline"
-  "fuchsia" "font-bold text-fuchsia-600 dark:text-fuchsia-500 no-underline hover:underline"
-  "pink"    "font-bold text-pink-600 dark:text-pink-500 no-underline hover:underline"
-  "rose"    "font-bold text-rose-600 dark:text-rose-500 no-underline hover:underline"
-  "slate"   "font-bold text-slate-600 dark:text-slate-500 no-underline hover:underline"
-  "gray"    "font-bold text-gray-600 dark:text-gray-500 no-underline hover:underline"
-  "zinc"    "font-bold text-zinc-600 dark:text-zinc-500 no-underline hover:underline"
-  "neutral" "font-bold text-neutral-600 dark:text-neutral-500 no-underline hover:underline"
-  "stone"   "font-bold text-stone-600 dark:text-stone-500 no-underline hover:underline"
--}}
-{{- $linkDefault := index $linkMap $siteColor | default (index $linkMap "blue") -}}
-{{- $linkClasses := .Page.Site.Params.text.linkClasses | default $linkDefault -}}
+{{- /* Default to a semantic class; allow override via params if needed */ -}}
+{{- $linkClasses := .Page.Site.Params.text.linkClasses | default "link-brand font-bold no-underline hover:underline" -}}
 
-{{- /* Build href with your .md → pretty URL normalization */ -}}
-{{- $href := .Destination -}}
+{{- /* .md → pretty URL normalization */ -}}
+{{- $href := $dest -}}
 {{- if and (not (or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://"))) (strings.HasSuffix (lower $dest) ".md") -}}
   {{- $url := replaceRE `(?i)\.md$` "" $dest -}}
   {{- $url = replaceRE `^\.{1,2}/` "" $url -}}

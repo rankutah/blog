@@ -23,12 +23,12 @@ faq:
 {{< section img="../media/mountain.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false" >}}
 # Website Design in Utah County {.text-white}
 
-Professional business websites. Custom built from scratch. 
+Professional business websites. Custom built from scratch. {{<button text="Pick 2 Colors">}}
 {.text-white}
 {{< /section >}}
 
 {{< section >}}
-## Pick Your 3 Website Colors
+## Pick 2 Colors
 {{< /section >}}
 
 {{< section render="raw" >}}
@@ -36,7 +36,7 @@ Professional business websites. Custom built from scratch.
 {{< /section >}}
 
 {{< section >}}
-Sites are custom built to match your brand. Simply use the toggles and pick your colors.
+Sites are [custom built](https://rankutah.com) to match your brand. Simply use the toggles and pick your colors.
 
 {{< button text="Book Now" url="/contact/" >}}
 {{< /section >}}
@@ -46,11 +46,14 @@ Sites are custom built to match your brand. Simply use the toggles and pick your
 {{< /section >}}
 
 {{< section >}}
-## This is an H2 heading {.center}
+## This is an H2 heading 
+{.center}
 
-{{< button text="hello" url="/landing/" >}} {.center}
+{{< button text="hello" url="/landing/" >}} 
+{.center}
 
-This is another test {.center}
+This is another test 
+{.center}
 
 ### This is an H3
 
@@ -63,7 +66,7 @@ Numbered list
 
 How about simple **bold** text — what is [going](https://rankutah.com) on?
 
-{{< button-outline text="Get Started" url="/landing/" >}}
+{{< button text="Get Started" url="/landing/" >}}
 
 - This is some markdown
 - Another list
@@ -95,7 +98,7 @@ Everything inside is centered, but Typography remains unchanged. This is a nothe
 
 Some text…
 
-![image](../media/carwash.jpg){ .rounded-xl}
+![image](../media/carwash.jpg)
 {{< /col >}}
 
 {{< col >}}
@@ -110,7 +113,6 @@ More text...
 When you need to do this, do it
 
 {{< button text="CTA" url="/contact/" >}}
-{{< button-outline text="CTA" url="/contact/" >}} {.center}
 {{< /col >}}
 
 {{< col >}}
@@ -122,9 +124,11 @@ List of things
 2. two
 3. three
 
-When you need to do this, do it {.text-center}
+When you need to do this, do it 
+{.text-center}
 
-{{< button text="CTA" url="/contact/" >}} {.text-center}
+{{< button text="CTA" url="/contact/" >}} 
+{.text-center}
 {{< /col >}}
 
 {{< /cols >}}
@@ -159,7 +163,7 @@ Clicking anywhere in this card goes to **/services/**.
 {{< section >}}
 ## A heading outside the grid
 
-This should render as Markdown, **bold**, *italics*, links, etc.
+This should render as Markdown, **bold**, *italics*, [links](link.com), etc.
 
 {{< cols min="18rem" gap="2rem" >}}
 
