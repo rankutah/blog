@@ -112,7 +112,7 @@
 <body class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg">
   {{ partial "navbar.html" . }}
 
-  <main class="min-h-screen">
+  <main id="content" class="min-h-screen" data-bg-sync>
     <article class="prose prose-zinc max-w-none dark:prose-invert">
       {{ .Content }}
     </article>

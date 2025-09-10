@@ -2,16 +2,32 @@
      Single column (renders Markdown once)
 
      Props:
-       card="true|false"           → apply card visuals on a wrapper div
-       classes="…"                 → extra utility classes
-       bg="rose-50|white|…"       → OPTIONAL per-card light bg (maps to bg-*)
-       darkbg="rose-900|black|…"  → OPTIONAL per-card dark bg (maps to dark:bg-*)
+       card="true|false"             → apply card visuals on a wrapper div
+       classes="…"                   → extra utility classes
+       bg="rose-50|white|…"         → OPTIONAL per-card light bg (maps to bg-*)
+       darkbg="rose-900|black|…"    → OPTIONAL per-card dark bg (maps to dark:bg-*)
+       render="md|raw|auto"         → content rendering (default md)
+       y="start|center|end|between" → vertical align (default center)
 */ -}}
 
 {{- $page   := .Page -}}
 {{- $inner  := .InnerDeindent | strings.TrimSpace -}}
 {{- $isCard := eq (lower (.Get "card" | default "false")) "true" -}}
 {{- $extra  := .Get "classes" | default "" -}}
+{{- $render := lower (.Get "render" | default "md") -}}
+
+{{- /* Vertical align wrapper (applied around the inner content) */ -}}
+{{- $y := lower (.Get "y" | default "center") -}}
+{{- $yMap := dict
+  "start"   "justify-start"
+  "center"  "justify-center"
+  "end"     "justify-end"
+  "between" "justify-between"
+-}}
+{{- $vWrap := "" -}}
+{{- with (index $yMap $y) -}}
+  {{- $vWrap = printf "flex flex-col h-full %s" . -}}
+{{- end -}}
 
 {{- /* Palette (has cardBg + cardBorder) */ -}}
 {{- $pal := partial "theme/palette.html" $page -}}
@@ -76,12 +92,10 @@
   {{- $bgOverride = strings.TrimSpace (printf "%s %s" $bgClass $darkBgClass) -}}
 {{- end -}}
 
-{{- /* Assemble base card classes.
-      Added: h-full flex flex-col so card matches row height and supports mt-auto footers. */ -}}
+{{- /* Base card classes (ensure the column BOX fills row height) */ -}}
 {{- $parts := slice "w-full" "h-full" "rounded-lg" "shadow-sm" "p-6" "text-left" "flex" "flex-col" -}}
 
 {{- if or $hasBgClasses $siteHasBg -}}
-  {{/* user/site provided bg in classes → skip defaults */}}
 {{- else if ne $bgOverride "" -}}
   {{- $parts = $parts | append $bgOverride -}}
 {{- else -}}
@@ -89,7 +103,6 @@
 {{- end -}}
 
 {{- if or $hasBorderClasses $siteHasBorder -}}
-  {{/* user/site provided border in classes → skip defaults */}}
 {{- else -}}
   {{- $parts = $parts | append $cardBorder -}}
 {{- end -}}
@@ -98,15 +111,30 @@
 {{- $card := cond (ne $siteCard "") $siteCard $cardBase -}}
 {{- if ne $extra "" }}{{ $card = printf "%s %s" $card $extra }}{{ end -}}
 
-{{- /* Render Markdown once */ -}}
-{{- $html := $page.RenderString $inner -}}
+{{- /* Render strategy: md (default), raw, auto */ -}}
+{{- $html := "" -}}
+{{- if eq $render "raw" -}}
+  {{- $html = $inner | safeHTML -}}
+{{- else if eq $render "auto" -}}
+  {{- if (findRE `\{\{[<%]` $inner) -}}
+    {{- $html = $inner | safeHTML -}}
+  {{- else -}}
+    {{- $html = $page.RenderString $inner -}}
+  {{- end -}}
+{{- else -}}
+  {{- $html = $page.RenderString $inner -}}
+{{- end -}}
 
 {{- if $isCard -}}
   <div class="{{ $card }}">
-    {{- $html -}}
+    {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end }}
+      {{- $html -}}
+    {{- if $vWrap }}</div>{{ end }}
   </div>
 {{- else -}}
-  <div{{ with $extra }} class="{{ . }}"{{ end }}>
-    {{- $html -}}
+  <div class="h-full{{ with $extra }} {{ . }}{{ end }}">
+    {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end }}
+      {{- $html -}}
+    {{- if $vWrap }}</div>{{ end }}
   </div>
 {{- end -}}

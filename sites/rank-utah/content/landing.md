@@ -23,6 +23,8 @@ faq:
 {{< section img="../media/mountain.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false" >}}
 # Website Design in Utah County {.text-white}
 
+
+
 Professional business websites. Custom built from scratch. {{<button text="Pick 2 Colors">}}
 {.text-white}
 {{< /section >}}
@@ -41,11 +43,43 @@ Sites are [custom built](https://rankutah.com) to match your brand. Simply use t
 {{< button text="Book Now" url="/contact/" >}}
 {{< /section >}}
 
-{{< section y="none" >}}
-![image](../media/carwash.jpg)
+{{< section render="raw" max="sm">}}
+{{< carousel id="hero" radius="md" images="../media/mountain.jpg,../media/carwash.jpg,../media/mountain.jpg" height="h-80 md:h-[34rem]" interval="4000" >}}
 {{< /section >}}
 
-{{< section >}}
+{{< section render="raw" pad="none" align="center">}}
+
+{{< cols min="18rem" gap="4rem" row="none">}}
+
+{{<col render="raw">}}
+  {{< carousel id="hero" radius="none" images="../media/mountain.jpg,../media/carwash.jpg,../media/mountain.jpg" height="h-80 md:h-[34rem]" interval="4000" >}}
+{{</col>}}
+
+{{<col>}}
+## heading
+
+Ther is a lot more text under thisTher is a lot more text under this
+Ther is a lot more text under this
+Ther is a lot more text under thisTher is a lot more text under this
+Ther is a lot more text under this
+Ther is a lot more text under thisTher is a lot more text under this
+Ther is a lot more text under this
+Ther is a lot more text under thisTher is a lot more text under this
+Ther is a lot more text under this
+Ther is a lot more text under this
+
+This is a **bold** part with a [link](https://)
+{{</col>}}
+
+
+{{</cols>}}
+
+{{</section>}}
+
+
+
+
+{{< section>}}
 ## This is an H2 heading 
 {.center}
 
@@ -134,8 +168,8 @@ When you need to do this, do it
 {{< /cols >}}
 {{< /section >}}
 
-{{< section align="left" >}}
-{{< cols min="18rem" gap="2rem" >}}
+{{< section align="center">}}
+{{< cols min="18rem" gap="2rem">}}
 
 {{< col card="true" >}}
 ## Carded tile
@@ -182,6 +216,7 @@ Just Markdown in a normal tile.
 {{< /col >}}
 
 {{< /cols >}}
+
 
 More **Markdown** below the grid should render too.
 
