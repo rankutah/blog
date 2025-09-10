@@ -32,7 +32,6 @@
 
 {{ $navClasses := cond (eq $headerTheme "invert") $navInvert (cond (eq $headerTheme "glass") $navGlass $navBlend) }}
 
-
 {{/* Site primary color for hover text & CTA color map */}}
 {{ $siteColor := lower (or .Site.Params.primaryColor .Site.Params.brandColor "blue") }}
 
@@ -135,15 +134,18 @@
     </div>
 
     <!-- Menu -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1
+                 dark:!bg-gray-900
+                md:bg-transparent md:dark:bg-transparent"
+         id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 bg-white dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent">
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
               <button id="menu-{{ .Identifier }}-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}"
                       data-dropdown-placement="bottom-start"
-                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto {{ $navHoverClasses }}">
+                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto {{ $navHoverClasses }} ">
                 {{ .Name }}
                 <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -151,7 +153,7 @@
               </button>
 
               <div id="menu-{{ .Identifier }}"
-                   class="z-20 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 backdrop-blur">
+                   class="z-20 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
                     <li>
