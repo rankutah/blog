@@ -27,11 +27,11 @@ components:
     label: Status
     type: select
     required: true
-    default: Draft
+    default: true
     options:
       values:
-        - Draft
-        - Published
+        - true
+        - false
     description: |
       Leave as "true" to keep the post as a draft.
       Select "false" when you are ready to make it live, then click Save.
