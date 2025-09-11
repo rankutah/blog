@@ -151,7 +151,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ date, title, tags ]
+      fields: [ date, draft, title, tags ]
       sort:   [ date ]
       default:
         sort:  date
