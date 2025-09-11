@@ -1,0 +1,88 @@
+# ─────────────────────────────────────────────────────────────────────────────
+baseURL       = "https://blog.blueridgeabbey.com/"
+title         = "Blue Ridge Abbey Bed & Breakfast"
+languageCode  = "en-us"
+theme         = ["overrides", "PaperMod"]
+themesDir     = "../../themes"
+# ─────────────────────────────────────────────────────────────────────────────
+
+pruneTaxonomies = true
+
+# add JSON output for tag terms
+[outputFormats.TagsJSON]
+  mediaType    = "application/json"
+  baseName     = "tags"
+  isPlainText  = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+
+[module]
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+  
+  [[module.mounts]]
+    source = "posts"
+    target = "content/posts"
+
+[outputs]
+  home         = ["HTML", "RSS", "JSON"]
+  taxonomyTerm = ["HTML", "JSON"]    # ← tell Hugo to build JSON for all term pages
+  taxonomy     = ["HTML","JSON"]   # ← ADD this line
+
+[params]
+  googleAnalyticsID = "G-3KJ46VMTTB"
+  accentColor       = "#f3844b"
+  showReadingTime   = true
+  enableSearch      = true
+  clientName        = "Blue Ridge Abbey Bed & Breakfast"
+  clientURL         = "https://blueridgeabbey.com"
+  mainSections      = ["posts"]
+  defaultTheme      = "auto" # auto set light/dark mode based on OS preference
+  disableThemeToggle = false # make it so you can toggle the light/dark mode
+  author              = "Blue Ridge Abbey Bed & Breakfast"
+
+[permalinks]
+  posts   = "/:slug/"
+
+[taxonomies]
+  tag          = "tags"
+
+[menu]
+
+  [[menu.main]]
+    name   = "Home"
+    url    = "https://blueridgeabbey.com"
+    weight = 1
+
+  [[menu.main]]
+    name   = "Posts"
+    url    = "/"
+    weight = 2
+
+  [[menu.main]]
+    name   = "Tags"
+    url    = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name   = "Search"
+    url    = "/search/"
+    weight = 4

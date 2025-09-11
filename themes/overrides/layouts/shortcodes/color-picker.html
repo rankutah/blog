@@ -137,7 +137,7 @@
   const lightSel = document.getElementById('cp-light');
   const darkSel  = document.getElementById('cp-dark');
 
-  // find each label+select wrapper reliably
+  // find label+select wrappers
   function findGroup(selectId) {
     const sel = document.getElementById(selectId);
     const lab = document.querySelector(`label[for="${selectId}"]`);
@@ -163,6 +163,35 @@
   const remove = (el, list) => el && list.forEach(c => el.classList.remove(c));
   const add    = (el, list) => el && list.forEach(c => el.classList.add(c));
 
+  // ----- Brand link coloring (inline style; no Tailwind vars/classes) -----
+  const BRAND_HEX = {
+    gray:    { light:"#4b5563", dark:"#6b7280" },
+    neutral: { light:"#525252", dark:"#737373" },
+    red:     { light:"#dc2626", dark:"#ef4444" },
+    orange:  { light:"#ea580c", dark:"#f97316" },
+    amber:   { light:"#d97706", dark:"#f59e0b" },
+    yellow:  { light:"#ca8a04", dark:"#eab308" },
+    lime:    { light:"#65a30d", dark:"#84cc16" },
+    green:   { light:"#16a34a", dark:"#22c55e" },
+    emerald: { light:"#059669", dark:"#10b981" },
+    teal:    { light:"#0d9488", dark:"#14b8a6" },
+    cyan:    { light:"#0891b2", dark:"#06b6d4" },
+    sky:     { light:"#0284c7", dark:"#0ea5e9" },
+    blue:    { light:"#2563eb", dark:"#3b82f6" },
+    indigo:  { light:"#4f46e5", dark:"#6366f1" },
+    violet:  { light:"#7c3aed", dark:"#8b5cf6" },
+    purple:  { light:"#9333ea", dark:"#a855f7" },
+    fuchsia: { light:"#c026d3", dark:"#d946ef" },
+    pink:    { light:"#db2777", dark:"#ec4899" },
+    rose:    { light:"#e11d48", dark:"#f43f5e" },
+  };
+  function recolorLinks() {
+    const isDark = html.classList.contains('dark');
+    const brand  = (brandSel && COLORS.includes(brandSel.value)) ? brandSel.value : "blue";
+    const hex    = (BRAND_HEX[brand] || BRAND_HEX.blue)[isDark ? "dark" : "light"];
+    document.querySelectorAll('a.link-brand').forEach(a => { a.style.color = hex; });
+  }
+
   // brand tint (buttons)
   const BRAND_SELECTOR = window.CP_BRAND_SELECTOR || '.ui-btn, .btn, .btn-primary, [data-ui-btn], [data-brand="primary"]';
   const BTN = sel => [
@@ -173,13 +202,10 @@
   function applyBrand(color){
     const addList = BTN(color) || [];
     document.querySelectorAll(BRAND_SELECTOR).forEach(el => { remove(el, ALL_BTN); add(el, addList); });
-    // also set palette class on <html> so any var-driven UI can follow (optional)
-    const PALETTES = COLORS;
-    html.classList.remove(...PALETTES);
-    if (PALETTES.includes(color)) html.classList.add(color);
+    recolorLinks(); // update link colors too
   }
 
-  // bg class sets
+  // bg class sets (for body/nav/main/opt-in elements)
   const LIGHT_BG_ALL = uniq([
     ...COLORS.flatMap(c => [`bg-${c}-50`,`bg-${c}-100`,`bg-${c}-200`]),
     'bg-white'
@@ -189,36 +215,61 @@
     ...CHROMAS.map(c => `dark:bg-${c}-950`),
   ]);
 
+  // PLAIN dark tokens used ONLY on <html> (since .dark is on <html> itself)
+  const HTML_DARK_BG_ALL = uniq([
+    ...NEUTRALS.flatMap(c => [`bg-${c}-800`,`bg-${c}-900`,`bg-${c}-950`]),
+    ...CHROMAS.map(c => `bg-${c}-950`)
+  ]);
+
   function repaint() {
     const isDark = html.classList.contains('dark');
+    const targets = getBgEls();
+    const root = document.documentElement;
 
-    // clear previous bg classes on all targets
-    getBgEls().forEach(el => { remove(el, LIGHT_BG_ALL); remove(el, DARK_BG_ALL); });
+    // clear old on normal targets
+    targets.forEach(el => { remove(el, LIGHT_BG_ALL); remove(el, DARK_BG_ALL); });
 
-    // light mode background
+    // clear old on <html>: light tokens + any plain dark tokens
+    remove(root, LIGHT_BG_ALL);
+    remove(root, HTML_DARK_BG_ALL);
+
+    // LIGHT mode: apply chosen light token everywhere (including <html>)
     if (!isDark && lightSel?.value) {
       const L = [`bg-${lightSel.value}`];
-      getBgEls().forEach(el => add(el, L));
+      targets.forEach(el => add(el, L));
+      add(root, L);
     }
 
-    // dark background (attached always; only takes effect when .dark is on <html>)
+    // DARK mode:
+    // - add 'dark:bg-*' to normal targets (as before)
+    // - add a plain 'bg-*' to <html> so page edges/overscroll match
     if (darkSel?.value) {
-      const D = [`dark:bg-${darkSel.value}`];
-      getBgEls().forEach(el => add(el, D));
+      const d = darkSel.value; // e.g., "neutral-900" or "rose-950"
+      targets.forEach(el => add(el, [`dark:bg-${d}`]));
+      if (isDark) add(root, [`bg-${d}`]);
     }
   }
 
   function syncPickerVisibility() {
     const isDark = html.classList.contains('dark');
-    if (lightGroup) { lightGroup.classList.toggle('hidden', isDark); lightSel?.toggleAttribute('disabled', isDark); }
-    if (darkGroup)  { darkGroup.classList.toggle('hidden', !isDark); darkSel?.toggleAttribute('disabled', !isDark); }
+    const lg = lightGroup, dg = darkGroup;
+    if (lg) { lg.classList.toggle('hidden', isDark); lightSel?.toggleAttribute('disabled', isDark); }
+    if (dg) { dg.classList.toggle('hidden', !isDark); darkSel?.toggleAttribute('disabled', !isDark); }
   }
 
-  // react to OS / any external theme toggle
+  // react ONLY when the dark-mode flag changes on <html>
+  let lastDark = html.classList.contains('dark');
   new MutationObserver(muts => {
-    for (const m of muts) if (m.attributeName === 'class' && m.target === html) {
-      syncPickerVisibility();
-      repaint();
+    for (const m of muts) {
+      if (m.attributeName === 'class' && m.target === html) {
+        const nowDark = html.classList.contains('dark');
+        if (nowDark !== lastDark) {
+          lastDark = nowDark;
+          syncPickerVisibility();
+          repaint();
+          recolorLinks();
+        }
+      }
     }
   }).observe(html, { attributes: true });
 
@@ -231,5 +282,7 @@
   syncPickerVisibility();
   if (brandSel) applyBrand(brandSel.value);
   repaint();
+  recolorLinks();
 })();
 </script>
+

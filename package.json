@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
   "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
-  "nova-gutter": "hugo server --disableFastRender --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
   "build:rank-utah": "hugo --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
-  "build:nova-gutter": "hugo --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache"
+  "nova-gutter": "hugo server --disableFastRender --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
+  "build:nova-gutter": "hugo --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
+  "blue-ridge-abbey": "hugo server --disableFastRender --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
+  "build:blue-ridge-abbey": "hugo --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache"
+
   },
   "repository": {
     "type": "git",
