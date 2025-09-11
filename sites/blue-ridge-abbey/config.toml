@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-baseURL       = "https://blog.blueridgeabbey.com/"
+baseURL       = "https://blueridgeabbey.pages.dev/"
 title         = "Blue Ridge Abbey Bed & Breakfast"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
