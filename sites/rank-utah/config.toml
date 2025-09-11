@@ -162,15 +162,12 @@ pruneTaxonomies = true
     name   = "Tags"
     url    = "/tags/"
     weight = 3
-  [[menu.main]]
-    name   = "Search"
-    url    = "/search/"
-    weight = 4
+
   [[menu.main]]
     name = "Services"
     url = "/services/"
     identifier = "services"
-    weight = 5
+    weight = 4
   
   [[menu.main]]
     name = "Website Design"
@@ -183,4 +180,8 @@ pruneTaxonomies = true
     url = "/test"
     parent = "services"
     weight = 20
-
+  
+  [[menu.main]]
+    name   = "Search"
+    url    = "/search/"
+    weight = 5

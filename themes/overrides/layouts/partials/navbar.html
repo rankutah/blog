@@ -1,9 +1,8 @@
 {{/*
   Flowbite navbar (hover underline + site primary on hover)
   Colors come from shared palette (theme/palette.html):
-   - params.primaryColor | brandColor  → light bg tint
-   - params.theme.darkNeutral          → dark bg neutral (slate|gray|zinc|neutral|stone)
-   - params.header.theme               → "match" (default), "invert", "glass"
+   - palette keys expected: navBg, navText (solid classes, not rgba)
+   - params.header.theme: "blend" (default), "invert", "glass"
 */}}
 
 {{ $stickyMobile  := default true  .Site.Params.header.stickyMobile }}
@@ -20,16 +19,21 @@
 {{ $logoFile        := default "logo.png" .Site.Params.logo }}
 {{ $logoHeightClass := default "h-8"      .Site.Params.header.logoHeight }}
 
-{{/* Shared palette for backgrounds/text */}}
+{{/* Shared palette for backgrounds/text (must provide navBg, navText) */}}
 {{ $pal := partial "theme/palette.html" . }}
+{{ $navBg   := index $pal "navBg"   | default "bg-white dark:bg-neutral-900" }}
+{{ $navText := index $pal "navText" | default "text-gray-900 dark:text-white" }}
 
 {{/* Header theme: "blend" (default), "invert", "glass" */}}
 {{ $headerTheme := lower (or .Site.Params.header.theme "blend") }}
 
-{{/* CHANGE: add subtle border for the default (blend) theme */}}
-{{ $navBlend  := "text-gray-900 dark:text-white border-b border-gray-200/70 dark:border-white/10" }}
-{{ $navInvert := "bg-white/95 dark:bg-gray-900/90 text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-700" }}
-{{ $navGlass  := "bg-white/60 dark:bg-gray-900/40 backdrop-blur supports-[backdrop-filter]:bg-white/40 supports-[backdrop-filter]:dark:bg-gray-900/30 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100" }}
+{{/* Sticky layer backgrounds
+     - BLEND uses your palette (solid bg so it really looks sticky)
+     - INVERT / GLASS keep the special looks you had
+*/}}
+{{ $navBlend  := printf "%s %s border-b border-gray-200/70 dark:border-white/10 md:border-b-0" $navBg $navText }}
+{{ $navInvert := "bg-white/95 dark:bg-gray-900/90 text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-700 md:border-b-0" }}
+{{ $navGlass  := "bg-white/60 dark:bg-gray-900/40 backdrop-blur supports-[backdrop-filter]:bg-white/40 supports-[backdrop-filter]:dark:bg-gray-900/30 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100 md:border-b-0" }}
 
 {{ $navClasses := cond (eq $headerTheme "invert") $navInvert (cond (eq $headerTheme "glass") $navGlass $navBlend) }}
 
@@ -89,8 +93,7 @@
 }}
 {{ $navHoverClasses := index $navHover $siteColor | default (index $navHover "blue") }}
 
-<nav  class="{{ $navClasses }} h-16 {{ if $stickyMobile }}sticky top-0 z-50{{ end }} {{ if $stickyDesktop }} md:sticky md:top-0 md:z-50{{ end }}">
-  
+<nav class="{{ $navClasses }} h-16 {{ if $stickyMobile }}sticky top-0 z-50{{ end }} {{ if $stickyDesktop }} md:sticky md:top-0 md:z-50{{ end }}">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline">
@@ -135,18 +138,23 @@
     </div>
 
     <!-- Menu -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1
-                bg-white dark:bg-neutral-900
-                md:bg-transparent md:dark:bg-transparent"
-         id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
+    <div id="navbar-sticky"
+        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1
+                {{ if eq $headerTheme "glass" }}bg-white/80 dark:bg-gray-900/80 backdrop-blur
+                {{ else if eq $headerTheme "invert" }}bg-white/95 dark:bg-gray-900/90
+                {{ else }}{{ $navBg }}
+                {{ end }}
+                border-t border-black/10 dark:border-white/10 md:border-0
+                md:bg-transparent md:dark:bg-transparent">
+
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
               <button id="menu-{{ .Identifier }}-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}"
                       data-dropdown-placement="bottom-start"
-                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto {{ $navHoverClasses }} ">
+                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto {{ $navHoverClasses }}">
                 {{ .Name }}
                 <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -154,7 +162,7 @@
               </button>
 
               <div id="menu-{{ .Identifier }}"
-                   class="z-20 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur">
+                   class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
                     <li>
