@@ -1,6 +1,6 @@
 ---
 date: 2025-09-11
-is_published: Draft
+draft: true
 title: Draft Test
 ---
-Hello
+Hello this is a draft
