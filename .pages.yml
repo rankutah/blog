@@ -23,6 +23,19 @@ components:
     description: |
       Pick today’s date, or change it if you need to backdate your post.
 
+  statusField:
+    label: Status
+    type: select
+    required: true
+    default: true
+    options:
+      values:
+        - true
+        - false
+    description: |
+      Leave as "true" to keep the post as a draft.
+      Select "false" when you are ready to make it live, then click Save.
+
   tagsField:
     label: Tags
     type: select
@@ -133,6 +146,8 @@ content:
     fields:
       - name: date
         component: dateField
+      - name: draft
+        component: statusField
       - name: title
         component: titleField
       - name: tags
