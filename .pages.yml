@@ -27,7 +27,7 @@ components:
     label: Status
     type: select
     required: true
-    default: true
+    default: "true"
     options:
       values:
         - "true"
