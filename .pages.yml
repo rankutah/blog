@@ -30,8 +30,8 @@ components:
     default: true
     options:
       values:
-        - true
-        - false
+        - Draft
+        - Published
     description: |
       Leave as "true" to keep the post as a draft.
       Select "false" when you are ready to make it live, then click Save.
