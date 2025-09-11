@@ -27,7 +27,7 @@ components:
     label: Status
     type: select
     required: true
-    default: "true"
+    default: Draft
     options:
       values:
         - Draft
@@ -35,20 +35,6 @@ components:
     description: |
       Leave as "true" to keep the post as a draft.
       Select "false" when you are ready to make it live, then click Save.
-
-  statusField:
-    label: Status
-    type: select
-    required: true
-    default: "true"
-    options:
-      values:
-        - true
-        - false
-    description: |
-      Leave as “Draft” (default) to keep the post unpublished.
-      Select “Published” to make it live, then click Save.
-
 
   tagsField:
     label: Tags
