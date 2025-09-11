@@ -42,6 +42,18 @@ pruneTaxonomies = true
     source = "posts"
     target = "content/posts"
 
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"
+
+[outputs]
+  home         = ["HTML", "RSS", "JSON", "FORMS"]
+  section      = ["HTML", "JSON"]
+  taxonomyTerm = ["HTML", "JSON"]
+  taxonomy     = ["HTML", "JSON"]
+
 [outputs]
   home         = ["HTML", "RSS", "JSON"]
   taxonomyTerm = ["HTML", "JSON"]    # ← tell Hugo to build JSON for all term pages
