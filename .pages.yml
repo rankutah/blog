@@ -24,7 +24,7 @@ components:
       Pick today’s date, or change it if you need to backdate your post.
 
   statusField:
-    label: Status
+    label: Draft
     type: select
     required: true
     default: "true"
