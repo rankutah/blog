@@ -133,8 +133,6 @@ content:
     fields:
       - name: date
         component: dateField
-      - name: is_published
-        component: statusField
       - name: title
         component: titleField
       - name: tags
