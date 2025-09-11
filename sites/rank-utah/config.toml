@@ -180,6 +180,19 @@ pruneTaxonomies = true
     url = "/test"
     parent = "services"
     weight = 20
+
+  [[menu.main]]
+    name = "Test2"
+    url = "/test2"
+    identifier = "test2"
+    parent = "services"
+    weight = 30
+
+  [[menu.main]]
+    name = "Test3"
+    url = "/test3"
+    parent = "test2"
+    weight = 40
   
   [[menu.main]]
     name   = "Search"
