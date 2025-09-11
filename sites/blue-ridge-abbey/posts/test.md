@@ -1,6 +1,6 @@
 ---
 date: 2025-09-11
-draft: "true"
+draft: "false"
 title: Blue Ridge Abbey Test Post
 tags:
   - test
