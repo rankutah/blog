@@ -54,11 +54,6 @@ pruneTaxonomies = true
   taxonomyTerm = ["HTML", "JSON"]
   taxonomy     = ["HTML", "JSON"]
 
-[outputs]
-  home         = ["HTML", "RSS", "JSON"]
-  taxonomyTerm = ["HTML", "JSON"]    # ← tell Hugo to build JSON for all term pages
-  taxonomy     = ["HTML","JSON"]   # ← ADD this line
-
 [params]
   googleAnalyticsID = "G-3KJ46VMTTB"
   accentColor       = "#f3844b"
