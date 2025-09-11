@@ -5,6 +5,9 @@ media:
   - name: nova-gutter
     input: sites/nova-gutter/assets/media
     output: /media
+  - name: blue-ridge-abbey
+    input: sites/blue-ridge-abbey/media
+    output: /media
 
 components:
   titleField:
@@ -118,6 +121,46 @@ content:
             results: ""
       - name: body
         component: bodyField
+      - name: startDate
+        component: startDateField
+      - name: endDate
+        component: endDateField
+      - name: locationName
+        component: locationNameField
+      - name: locationAddress
+        component: locationAddressField
+
+  - name: blue-ridge-abbey
+    label: blue-ridge-abbey posts
+    type: collection
+    path: sites/blue-ridge-abbey/posts
+    filename: "{primary}.md"
+
+    view:
+      fields: [ date, is_published, title, tags ]
+      sort:   [ date ]
+      default:
+        sort:  date
+        order: desc
+
+    fields:
+      - name: date
+        component: dateField
+      - name: is_published
+        component: statusField
+      - name: title
+        component: titleField
+      - name: tags
+        component: tagsField
+        options:
+          fetch:
+            url: https://blog.blueridgeabbey.com/tags/index.json
+            method: GET
+            results: ""
+      - name: body
+        component: bodyField
+        options:
+          media: blue-ridge-abbey
       - name: startDate
         component: startDateField
       - name: endDate
