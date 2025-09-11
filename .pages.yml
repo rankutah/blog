@@ -23,19 +23,6 @@ components:
     description: |
       Pick today’s date, or change it if you need to backdate your post.
 
-  statusField:
-    label: Status
-    type: select
-    required: true
-    default: Draft
-    options:
-      values:
-        - Draft
-        - Published
-    description: |
-      Leave as “Draft” (default) to keep the post unpublished.
-      Select “Published” to make it live, then click Save.
-
   tagsField:
     label: Tags
     type: select
@@ -137,7 +124,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [ date, is_published, title, tags ]
+      fields: [ date, title, tags ]
       sort:   [ date ]
       default:
         sort:  date
