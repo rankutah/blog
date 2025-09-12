@@ -10,33 +10,7 @@ If you would like affordable help with your on-page SEO please visit [Rank Utah]
 
 ## The #1 Most Overlooked Techniques in On-Page SEO Strategy is Keyword Research
 
-If your website is not aligned with what your customers are searching for you won't even show up in the search results. While professional help with paid tools gives you the best results, here are some of the best free tools if you want to strategize yourself. 
-
-## Free Keyword Research Tools
-
-### Google Search Console
-
-If your website has been around for and is already connected to Google Search Console, this will be your best free resource for optimizing your web pages for on-page SEO. If you aren't currently connected to Google Search Console now is the a great time to start. Just visit [Google Search Console](https://search.google.com/) to get started.
-
-In Google Search Console you can click the Performance tab and look at the Queries section to find out which keywords are brining you traffic and clicks. If you click on the pages section you can click and filter on individual pages. Write down the keywords that are brining your page the most clicks and further align your page with those keywords.
-
-One additional benefit of having your website on Google Search Console is you can enter your page url in the top. This will tell you if your URL is on Google. If not, you can click the Request Indexing button to submit it for indexing.
-
-One of the best things you can do for your on-page strategy in Google Search Console is explore the impressions and clicks from your Google Business Profile. In order to make this happen you must first ensure the website connected to your Google Business Profile (GBP) is using a UTM code at the end of your GBP url. Add this UTM code to the end of your website url so you know what traffic is coming from your GBP: ?utm_source=GBP&utm_medium=organic. So for rankutah.com the full website on the GBP would be https://rankutah.com?utm_source=GBP&utm_medium=organic. 
-### Google Autocomplete
-
-One of the easiest ways to see what people are searching for is by using Google Autocomplete. Simple type what people would likely search for and see what Google suggests. Align your page with the related autocomplete queries. This doesn't give you search volume but does help you get an idea on what people are interested in. 
-
-### Other Keyword Research Tools
-
-The industry leading keyword research tools also allow users to perform a limited number of searches on their free keyword tools. Once you have an idea of the keywords you might like to align your webpage with, you can check out their traffic volume using these tools. Here are a few of the best. Be sure to include local modifiers in your research (like city, county, or state) to insure your keywords are highly targeted to your audience. **Pay attention to not only the volume of searches but also the KD scores**. KD scores tell you how difficult it will be to rank in the top 10 organic search results for your keywords.
-
-*   [https://www.semrush.com/analytics/keywordmagic/start](https://www.semrush.com/analytics/keywordmagic/start)
-    
-*   [https://ahrefs.com/keyword-generator](https://ahrefs.com/keyword-generator)
-    
-*   [https://moz.com/explorer](https://moz.com/explorer)
-    
+If your website is not aligned with what your customers are searching for you won't even show up in the search results. The basis of keyword research is finding keywords with high search volume and low competition so you can rank high for those searches. Professional tools give you the best results and Rank Utah uses the industry leading tools to give you the best results. 
 
 ## Title Tag
 
@@ -48,7 +22,7 @@ The meta description is used to summarize your page and is where you speak direc
 
 ## URL Slugs
 
-Keep your url slugs simple and keyword-rich. One common practice is to use the same url as your title just like is done in this blog post.
+URL slugs should be simple and keyword-rich. One common practice is to use the same url as your title.
 
 ## Headings (H1-H3)
 
@@ -60,13 +34,7 @@ Your H1 and H2 and H3 headings have a large impact on your SEO and you want to u
 
 ## Image Optimization
 
-The images for your Utah business should be compressed and optimally use modern formats like AVIF or WebP. Images are one of the largest determinants of your page loading speed. Every image on your page will be downloaded by the browser of the device visiting that page. Ideally you want your images to be less than 150 KB in size.
-
-### Free Tool: Tiny JPG
-
-Here is a free tool you can use to compress your images. You simple drop in your images and the tool will give you a folder with your images in a compressed format. These images are ready to upload to your website.
-
-- [https://tinyjpg.com/](https://tinyjpg.com/)
+The images for your Utah business should be compressed and optimally use modern formats like AVIF or WebP. Images are one of the largest determinants of your page loading speed. Every image on your page will be downloaded by the browser of the device visiting that page. Ideally you want your images to be less than 150 KB in size. 
 
 ### Image Keywords
 
