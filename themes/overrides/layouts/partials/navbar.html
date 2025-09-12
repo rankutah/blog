@@ -93,7 +93,12 @@
 }}
 {{ $navHoverClasses := index $navHover $siteColor | default (index $navHover "blue") }}
 
-<nav class="{{ $navClasses }} h-16 {{ if $stickyMobile }}sticky top-0 z-50{{ end }} {{ if $stickyDesktop }} md:sticky md:top-0 md:z-50{{ end }}">
+<nav class="{{ $navClasses }} h-16
+            {{ if $stickyMobile }}sticky top-0 z-50{{ end }}
+            {{ if $stickyDesktop }} md:sticky md:top-0 md:z-50{{ end }}
+            relative
+            md:after:content-[''] md:after:absolute md:after:inset-x-0 md:after:bottom-0 md:after:h-px
+            md:after:bg-black/15 md:dark:after:bg-white/15 md:after:pointer-events-none">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline">
@@ -154,7 +159,7 @@
               <button id="menu-{{ .Identifier }}-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}"
                       data-dropdown-placement="bottom-start"
-                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto {{ $navHoverClasses }}">
+                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
                 <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -175,7 +180,7 @@
               </div>
             {{ else }}
               <a href="{{ .URL | relURL }}"
-                 class="no-underline hover:underline block py-2 px-3 rounded-sm md:border-0 md:p-0 {{ $navHoverClasses }}"
+                 class="no-underline hover:underline block py-2 px-3 rounded-sm md:border-0 md:p-0"
                  {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}>
                 {{ .Name }}
               </a>

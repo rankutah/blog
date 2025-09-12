@@ -151,8 +151,14 @@
   const lightGroup = findGroup('cp-light');
   const darkGroup  = findGroup('cp-dark');
 
-  // background targets: body, nav, main, and any element with data-bg-sync
-  const getBgEls = () => [document.body, nav, document.querySelector('main'), ...document.querySelectorAll('[data-bg-sync]')].filter(Boolean);
+  // background targets: body, nav, main, navbar panel, and any [data-bg-sync]
+  const getBgEls = () => [
+    document.body,
+    nav,
+    document.querySelector('main'),
+    document.getElementById('navbar-sticky'),          // <— NEW
+    ...document.querySelectorAll('[data-bg-sync]')
+  ].filter(Boolean);
 
   // ---------- Fixed color maps (no dynamic class strings) ----------
   // neutrals allowed
@@ -247,6 +253,40 @@
   const remove = (el, list) => el && list.forEach(c => el.classList.remove(c));
   const add    = (el, list) => el && list.forEach(c => el.classList.add(c));
 
+
+// Navbar hover-only map (keep text white by default; color only on hover)
+const NAV_MAP = {
+  red:     ["hover:text-red-700","md:hover:text-red-700","dark:hover:text-red-500","md:dark:hover:text-red-500"],
+  orange:  ["hover:text-orange-700","md:hover:text-orange-700","dark:hover:text-orange-500","md:dark:hover:text-orange-500"],
+  amber:   ["hover:text-amber-700","md:hover:text-amber-700","dark:hover:text-amber-500","md:dark:hover:text-amber-500"],
+  yellow:  ["hover:text-yellow-700","md:hover:text-yellow-700","dark:hover:text-yellow-500","md:dark:hover:text-yellow-500"],
+  lime:    ["hover:text-lime-700","md:hover:text-lime-700","dark:hover:text-lime-500","md:dark:hover:text-lime-500"],
+  green:   ["hover:text-green-700","md:hover:text-green-700","dark:hover:text-green-500","md:dark:hover:text-green-500"],
+  emerald: ["hover:text-emerald-700","md:hover:text-emerald-700","dark:hover:text-emerald-500","md:dark:hover:text-emerald-500"],
+  teal:    ["hover:text-teal-700","md:hover:text-teal-700","dark:hover:text-teal-500","md:dark:hover:text-teal-500"],
+  cyan:    ["hover:text-cyan-700","md:hover:text-cyan-700","dark:hover:text-cyan-500","md:dark:hover:text-cyan-500"],
+  sky:     ["hover:text-sky-700","md:hover:text-sky-700","dark:hover:text-sky-500","md:dark:hover:text-sky-500"],
+  blue:    ["hover:text-blue-700","md:hover:text-blue-700","dark:hover:text-blue-500","md:dark:hover:text-blue-500"],
+  indigo:  ["hover:text-indigo-700","md:hover:text-indigo-700","dark:hover:text-indigo-500","md:dark:hover:text-indigo-500"],
+  violet:  ["hover:text-violet-700","md:hover:text-violet-700","dark:hover:text-violet-500","md:dark:hover:text-violet-500"],
+  purple:  ["hover:text-purple-700","md:hover:text-purple-700","dark:hover:text-purple-500","md:dark:hover:text-purple-500"],
+  fuchsia: ["hover:text-fuchsia-700","md:hover:text-fuchsia-700","dark:hover:text-fuchsia-500","md:dark:hover:text-fuchsia-500"],
+  pink:    ["hover:text-pink-700","md:hover:text-pink-700","dark:hover:text-pink-500","md:dark:hover:text-pink-500"],
+  rose:    ["hover:text-rose-700","md:hover:text-rose-700","dark:hover:text-rose-500","md:dark:hover:text-rose-500"],
+  gray:    ["hover:text-gray-700","md:hover:text-gray-700","dark:hover:text-gray-500","md:dark:hover:text-gray-500"],
+  neutral: ["hover:text-neutral-700","md:hover:text-neutral-700","dark:hover:text-neutral-500","md:dark:hover:text-neutral-500"],
+};
+const ALL_NAV = Array.from(new Set(Object.values(NAV_MAP).flat()));
+
+// Strip these template backgrounds from <nav> so picker colors can win
+const STATIC_NAV_BGS = [
+  'bg-white/95','bg-white/60',
+  'supports-[backdrop-filter]:bg-white/40',
+  'dark:bg-gray-900/90','dark:bg-gray-900/40',
+  'supports-[backdrop-filter]:dark:bg-gray-900/30'
+];
+
+
   // ----- Brand link coloring (inline style) -----
   const BRAND_HEX = {
     gray:    { light:"#4b5563", dark:"#6b7280" },
@@ -284,10 +324,24 @@
     recolorLinks();
   }
 
+  function stripStaticNavBg(el) {
+    if (!el) return;
+    const keepBP = /^(sm:|md:|lg:|xl:|2xl:)/; // keep breakpoint-specific rules
+    const isBg   = /^(?:supports-\[backdrop-filter]:)?(?:dark:)?bg-/; // bg-*, dark:bg-*, supports:[…]:bg-*
+    for (const cls of Array.from(el.classList)) {
+      if (!keepBP.test(cls) && isBg.test(cls)) el.classList.remove(cls);
+    }
+  }
+
+
   function repaint() {
     const isDark = html.classList.contains('dark');
     const targets = getBgEls();
     const root = document.documentElement;
+
+    // NEW: remove template bg classes that override picker in dark mode
+    stripStaticNavBg(nav);
+    stripStaticNavBg(document.getElementById('navbar-sticky'));
 
     // clear normal targets
     targets.forEach(el => { remove(el, ALL_LIGHT); remove(el, ALL_DARK_OTHERS); });
