@@ -35,4 +35,6 @@ I offer this free service to help local businesses get a quick win and to introd
 
 ## How do I sign up for my free 30-Minute Review? 
 
-Schedule your [free 30-minute Google Business Profile Review here](https://calendly.com/rankutah/30min). If you have additional questions you can call or text me at 801-980-2202. For more information on my business or services visit [RankUtah.com](https://rankutah.com)
+Schedule your [free 30-minute Google Business Profile Review here](https://calendly.com/rankutah/30min). 
+
+For [Utah Search Engine Optimization Services](https://rankutah.com) including on-page SEO, visit RankUtah.com.

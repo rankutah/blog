@@ -1,10 +1,10 @@
 ---
-title: Website Redesign in Utah County
+title: Website Redesign in Utah
 date: 2025-08-14
 tags:
   - web-design
 ---
-If you would like help your outdated or slow website and are in need a mobile-friendly redesign please visit [Rank Utah](https://rankutah.com).  
+If you would like help your outdated or slow website and are in need a mobile-friendly SEO redesign please visit [Rank Utah](https://rankutah.com).  
 
 ## How Does a Website Redesign Work?
 
@@ -29,6 +29,6 @@ I work directly with business owners to create websites that actually work — n
 
 ## Ready to Fix Your Website? 
 
-[Contact me at Rank Utah](https://rankutah.com#contact) with your website and what you're looking for, and I'll get back to you personally.
+For [Utah Search Engine Optimization Services](https://rankutah.com) including website redesign, visit RankUtah.com.
 
 Eliminate the stress over your website. I’ll take care of the redesign and long-term updates, so you can focus on what matters most: running and growing your business — not getting stuck fixing your site.

@@ -1,7 +1,7 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: On-Page SEO Strategy in Utah County
+title: On-Page SEO Strategy in Utah
 tags:
   - web-design
   - local-seo
@@ -102,6 +102,4 @@ Once you have your schema markeup in place you can validate it at [schema.org](h
 
 ## Additional Information
 
-If you would like to have help optimizing on-page seo strategy for your Utah County business you can find my [contact information here.](https://rankutah.com/#contact)
-
-If you are doing it all yourself you might also enjoy Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
+For [Utah Search Engine Optimization Services](https://rankutah.com) including on-page SEO, visit RankUtah.com.
