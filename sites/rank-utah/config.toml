@@ -1,5 +1,5 @@
 baseURL       = "https://blog.rankutah.com/"
-title         = "Rank Utah"
+title         = "Rank Utah | SEO & WEB DESIGN"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
