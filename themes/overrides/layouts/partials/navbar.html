@@ -102,15 +102,27 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline">
-      <img src="{{ $logoFile | relURL }}" class="{{ $logoHeightClass }} w-auto" alt="{{ .Site.Title }} logo" />
-      {{/* Use manual break tokens from config; fallback to .Site.Title */}}
-      {{- $raw := or .Site.Params.header.title .Site.Title -}}
-      {{- $title := replace (replace $raw "|" "<br/>") (printf "\n") "<br/>" | safeHTML -}}
+      <img src="{{ $logoFile | relURL }}" class="{{ $logoHeightClass }} w-auto flex-shrink-0" alt="{{ .Site.Title }} logo" />
+      {{/* --- Title size map (literal classes; no dynamic strings) --- */}}
+      {{- $sizeOpt  := lower (or .Site.Params.header.titleSize "2xl") -}}
+      {{- $sizeMap  := dict
+            "sm"   "text-sm"
+            "base" "text-base"
+            "lg"   "text-lg"
+            "xl"   "text-xl"
+            "2xl"  "text-2xl"
+            "3xl"  "text-3xl"
+            "4xl"  "text-4xl"
+        -}}
+      {{- $titleSizeClass := index $sizeMap $sizeOpt | default "text-2xl" -}}
 
-      <span class="self-center text-2xl font-semibold leading-tight whitespace-normal break-words">
-        {{ $title }}
+      {{/* Manual line break support from earlier (use "|" or newline in config) */}}
+      {{- $rawTitle := or .Site.Params.header.title .Site.Title -}}
+      {{- $titleHTML := replace (replace $rawTitle "|" "<br/>") (printf "\n") "<br/>" | safeHTML -}}
+
+      <span class="self-center {{ $titleSizeClass }} font-semibold leading-tight whitespace-normal break-words">
+        {{ $titleHTML }}
       </span>
-
     </a>
 
     <!-- Actions -->

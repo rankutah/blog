@@ -1,5 +1,5 @@
 baseURL       = "https://blog.rankutah.com/"
-title         = "Rank Utah | SEO & WEB DESIGN"
+title         = "Rank Utah SEO | & Web Design"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
@@ -79,6 +79,8 @@ pruneTaxonomies = true
 [params.header]
   stickyMobile     = true
   stickyDesktop    = true
+  # one of: sm | base | lg | xl | 2xl | 3xl | 4xl
+  titleSize = "2xl"
   showCTAOnMobile  = false
   showCTAOnDesktop = true
   CTAText          = "Book Now"
