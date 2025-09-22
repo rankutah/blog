@@ -1,4 +1,4 @@
-baseURL       = "https://blog.rankutah.com/"
+baseURL       = "blog-aqf.pages.dev"
 # use | to add a second line
 title         = "Quartz Workx"
 languageCode  = "en-us"
