@@ -1,6 +1,6 @@
 baseURL       = "https://blog.rankutah.com/"
 # use | to add a second line
-title         = "Clear Presence"
+title         = "Quartz Workx"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
@@ -69,7 +69,7 @@ pruneTaxonomies = true
 
   showReadingTime     = true
   enableSearch        = true
-  clientName          = "Clear Presence Studio"
+  clientName          = "Quartz Workx"
   clientURL           = "https://rankutah.com"
   mainSections        = ["posts"]
   defaultTheme        = "auto"

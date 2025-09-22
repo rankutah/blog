@@ -9,7 +9,9 @@
   "nova-gutter": "hugo server --disableFastRender --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
   "build:nova-gutter": "hugo --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
   "blue-ridge-abbey": "hugo server --disableFastRender --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
-  "build:blue-ridge-abbey": "hugo --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache"
+  "build:blue-ridge-abbey": "hugo --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
+  "quartz-worx": "hugo server --disableFastRender --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
+  "build:quartz-worx": "hugo --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache"
 
   },
   "repository": {
