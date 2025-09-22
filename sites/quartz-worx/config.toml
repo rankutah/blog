@@ -94,7 +94,7 @@ pruneTaxonomies = true
 
 [params.forms]
   action         = "https://submit-form.com/DOH188lWF"
-  honeypot       = "_hp"                # must match Formspark
+  honeypot       = "_hp"                # must match Formspark ID
   successMessage = "Thanks! Your message was sent."
   errorMessage   = "Sorry, something went wrong. Please try again."
   # submitClasses = "..."               # optional button styling
