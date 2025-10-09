@@ -1,32 +1,72 @@
 ---
-title: "landing"
+title: "Website Design & SEO Marketing"
+description: "Clear Presence builds fast, modern websites and SEO marketing for small businesses—so you show up on Google Search & Maps and get more calls"
 layout: "flowbite"
-url: "/landing/"
-draft: false
-markup: goldmark
-faq:
-  items:
-    - title: "What is Flowbite?"
-      expanded: false
-      content: |
-        Flowbite is an open-source library built on Tailwind. Read the [intro](/docs/getting-started/introduction/).
-    - title: "Is there a Figma file?"
-      content: |
-        Yes. See the [Figma design system](https://flowbite.com/figma/).
-    - title: "Flowbite vs Tailwind UI?"
-      content: |
-        Flowbite is MIT; Tailwind UI is paid. Many people use both. 
-        - [Flowbite Pro](https://flowbite.com/pro/)
-        - [Tailwind UI](https://tailwindui.com/)
+url: "/"
 ---
 
 {{< section img="../media/mountain.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false" >}}
-# Website Design in Utah County {.text-white}
-
-
-
-Professional business websites. Custom built from scratch. {{<button text="Pick 2 Colors">}}
+# Website Design & SEO Marketing {.text-white}
+Professional business websites with powerful online marketing.
 {.text-white}
+{{<button text="Web Design">}}{{<button text="SEO Marketing">}}
+
+{{< /section >}}
+
+{{< section >}}
+
+## Clear Presence vs Others
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="true" bg="blue-100" darkbg="gray-800" y="start" >}}
+## Clear Presence (Your Advantage)
+
+<br>
+
+### 1. Focus on Results
+Beautiful design with a strategic marketing focus. Pages are built with a marketing focus. Once your website is live, you will receive monthly analytic reports telling you how many visitors your site had, which pages they visited, how they found your website, and where they are located.   
+
+### 2. Custom Built
+Websites automatically change between light and dark mode based on the viewers device preferences allowing you please everyone. Websites are completely custom built which means faster page loads without the bloat, cleaner design, and greater flexibility to grow with your business.
+
+### 3. Long-Term Support
+Receive updates as long as you remain a customer. Your webdsite evolves with your business and you can receive support in the way that best fits your needs (calls, email, texts, or meetings). 
+
+### 4. Low Monthly Costs
+You get a high performance website without the high risk. There is no lock-in contract. The low monthly cost keeps Clear Presence countinuously committed to your needs. 
+
+
+{{< /col >}}
+
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Other Companies
+
+<br>
+
+### 1. Focus on Aethetics
+Other web design companies focus on aesthetics. If your site looks nice they have done their job. They take their high costs upfront and then leave or offer limited updates. Many businesses come away frustrated after realizing that their beautiful website will bring zero customers without marketing. 
+
+### 2. Built with Templates
+No light and dark mode. Built with bloated templates that often load slowly, limit functionality, and limit design changes.
+
+### 3. No Long-term Support
+Websites are meant to evolve with your company but many website designers build your website and then turn it over to you. If they do over a maintence package they often limit edits and provide limited forms of communication.     
+
+### 4. High Upfront Costs
+Most web designers require high costs upfront before they will build your website. If you don't like the level of service they provide or the website you are stuck.  
+
+{{< /col >}}
+
+{{< /cols >}}
+
+## What Clients Are Saying
+
+<!-- Elfsight Google Reviews | Rank Utah -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-caff5808-5afd-415b-b8a6-19ebf5a9e552" data-elfsight-app-lazy></div>
+
 {{< /section >}}
 
 {{< section >}}

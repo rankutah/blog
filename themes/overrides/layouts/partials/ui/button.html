@@ -10,7 +10,10 @@
 
 {{- $text    := .text    | default "Button" -}}
 {{- $href    := .href    | default "" -}}
-{{- $classes := .classes | default "" -}}
+{{- $site    := .Site | default .Page.Site -}}
+{{- $brand   := lower (or $site.Params.primaryColor $site.Params.brandColor "blue") -}}
+{{- $defaultClass := printf "bg-%s-600 hover:bg-%s-700 focus:ring-%s-300 text-white" $brand $brand $brand -}}
+{{- $classes := .classes | default $defaultClass -}}
 {{- $isSubmit:= .isSubmit | default false -}}
 {{- $form    := .form    | default "" -}}
 

@@ -17,7 +17,7 @@
 {{- $render := lower (.Get "render" | default "md") -}}
 
 {{- /* Vertical align wrapper (applied around the inner content) */ -}}
-{{- $y := lower (.Get "y" | default "center") -}}
+{{- $y := lower (.Get "y" | default "start") -}}
 {{- $yMap := dict
   "start"   "justify-start"
   "center"  "justify-center"
@@ -47,6 +47,33 @@
 {{- $bgRaw     := lower (.Get "bg" | default "") -}}
 {{- $darkBgRaw := lower (.Get "darkbg" | default "") -}}
 
+{{- /* Static map for supported card backgrounds (light mode) */ -}}
+{{- /* Support color names and color-shade for bg */ -}}
+{{- $bgClass := "" -}}
+{{- if ne $bgRaw "" -}}
+  {{- if or (strings.Contains $bgRaw "-") (strings.HasPrefix $bgRaw "bg-") -}}
+    {{- $bgClass = cond (strings.HasPrefix $bgRaw "bg-") $bgRaw (printf "bg-%s" $bgRaw) -}}
+  {{- else -}}
+    {{- $bgClass = printf "bg-%s-100" $bgRaw -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Static map for supported card backgrounds (dark mode) */ -}}
+{{- /* Support color names and color-shade for darkbg */ -}}
+{{- $darkBgClass := "" -}}
+{{- if ne $darkBgRaw "" -}}
+  {{- if or (strings.Contains $darkBgRaw "-") (strings.HasPrefix $darkBgRaw "dark:bg-") -}}
+    {{- $darkBgClass = cond (strings.HasPrefix $darkBgRaw "dark:bg-") $darkBgRaw (printf "dark:bg-%s" $darkBgRaw) -}}
+  {{- else -}}
+    {{- $darkBgClass = printf "dark:bg-%s-950" $darkBgRaw -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $bgOverride := "" -}}
+{{- if or (ne $bgClass "") (ne $darkBgClass "") -}}
+  {{- $bgOverride = strings.TrimSpace (printf "%s %s" $bgClass $darkBgClass) -}}
+{{- end -}}
+{{- /* Support both color names and full Tailwind shade classes for bg and darkbg */ -}}
 {{- /* normalize light bg prop */ -}}
 {{- $bgClass := "" -}}
 {{- if ne $bgRaw "" -}}

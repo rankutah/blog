@@ -56,10 +56,10 @@ pruneTaxonomies = true
 [params]
   googleAnalyticsID   = "G-LGYK5V1CTV"
   brandColor          = "indigo"
-  primaryColor        = "rose"
+  primaryColor        = "blue"
   accentColor         = "#f3844b"
-  lightBackground  = "slate-50"  # any color @ 50|100|200
-  darkBackground   = "slate-900" # neutral @ 800|900|950
+  lightBackground  = "gray-50"  # any color @ 50|100|200
+  darkBackground   = "gray-900" # neutral @ 800|900|950
   cardBackground     = "gray-100"     # or "slate-100", "rose-50", etc.
   cardBackgroundDark = "gray-800"  # or "slate-800", "black", etc.
   cardBorderLight    = "gray-200"  # no "border-" prefix
@@ -84,7 +84,7 @@ pruneTaxonomies = true
   titleSize = "2xl"
   showCTAOnMobile  = false
   showCTAOnDesktop = true
-  CTAText          = "Book Now"
+  CTAText          = "Get a Quote"
   CTAURL           = "/contact/"
   # CTAClasses       = "text-white bg-rose-600 hover:bg-rose-700 focus:ring-rose-300"
   showPhoneOnMobile = true
@@ -153,51 +153,55 @@ pruneTaxonomies = true
         src = "**/main.css"
 
 [menu]
-  [[menu.main]]
-    name   = "Home"
-    url    = "https://rankutah.com"
-    weight = 1
-  [[menu.main]]
-    name   = "Posts"
-    url    = "/"
-    weight = 2
-  [[menu.main]]
-    name   = "Tags"
-    url    = "/tags/"
-    weight = 3
-
+  
   [[menu.main]]
     name = "Services"
     url = "/services/"
     identifier = "services"
-    weight = 4
+    weight = 10
   
   [[menu.main]]
     name = "Website Design"
-    url = "/services/website-design/"
+    url = "/website-design"
     parent = "services"
-    weight = 10
+    weight = 11
 
   [[menu.main]]
-    name = "Another"
+    name = "SEO"
     url = "/test"
     parent = "services"
-    weight = 20
+    weight = 12
 
   [[menu.main]]
     name = "Test2"
     url = "/test2"
     identifier = "test2"
     parent = "services"
-    weight = 30
+    weight = 13
 
   [[menu.main]]
     name = "Test3"
     url = "/test3"
     parent = "test2"
-    weight = 40
+    weight = 14
+  
   
   [[menu.main]]
-    name   = "Search"
-    url    = "/search/"
-    weight = 5
+    name   = "Portfolio"
+    url    = "/portfolio"
+    weight = 20
+    
+  [[menu.main]]
+    name   = "Pricing"
+    url    = "/pricing"
+    weight = 30
+ 
+  [[menu.main]]
+    name   = "About"
+    url    = "/about"
+    weight = 40
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact"
+    weight = 50

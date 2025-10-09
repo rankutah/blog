@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }} | {{ .Site.Title }}</title>
 
+  <!-- Meta description (page -> site -> summary/content fallback) -->
+  <meta name="description" content='{{- with .Params.description -}}
+    {{ . | plainify | htmlEscape }}
+  {{- else -}}
+    {{- with site.Params.description -}}
+      {{ . | plainify | htmlEscape }}
+    {{- else -}}
+      {{- $auto := cond (gt (len .Summary) 0) (.Summary | plainify) (.Content | plainify) -}}
+      {{- $clean := replace $auto "\n" " " | replace "\r" " " | truncate 160 -}}
+      {{- $clean | htmlEscape -}}
+    {{- end -}}
+  {{- end -}}'>
+
   <!-- Dark-mode bootstrap:
        - If <html data-force-theme="dark|light"> is present, use that.
        - Otherwise follow the OS preference.
@@ -87,8 +100,6 @@
 })();
 </script>
 
-  
-  
   <script>
   try {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
