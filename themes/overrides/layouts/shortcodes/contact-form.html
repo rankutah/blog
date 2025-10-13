@@ -25,6 +25,15 @@
 {{- $showCompany := ne $companyParam "false" -}}
 {{- $companyPlaceholder := cond (eq $companyParam "optional") "Company (Optional)" "Company" -}}
 
+{{- /* Simple custom fields: comma-separated in a single `custom` param.
+  Example: custom="Project,Referrer" customPlaceholder="Project (Optional),How did you hear about us?" customRequired="true,false" */ -}}
+{{- $customRaw := .Get "custom" | default "" -}}
+{{- $customItems := cond (eq $customRaw "") (slice) (split $customRaw ",") -}}
+{{- $phRaw := .Get "customPlaceholder" | default "" -}}
+{{- $phItems := cond (eq $phRaw "") (slice) (split $phRaw ",") -}}
+{{- $reqRaw := .Get "customRequired" | default "" -}}
+{{- $reqItems := cond (eq $reqRaw "") (slice) (split $reqRaw ",") -}}
+
 {{- $subjectParam := lower (.Get "subject" | default "false") -}}
 {{- $showSubject := ne $subjectParam "false" -}}
 {{- $subjectPlaceholder := cond (eq $subjectParam "optional") "Subject (Optional)" "Subject" -}}
@@ -103,6 +112,21 @@
       <label for="company" class="sr-only">Company</label>
   <input type="text" id="company" name="company" placeholder="{{ $companyPlaceholder }}" class="{{ $inputBase }}">
     </div>
+    {{- end }}
+
+    {{- /* Render simple comma-separated custom fields (if any) */ -}}
+    {{- if gt (len $customItems) 0 }}
+      {{- range $i, $label := $customItems }}
+        {{- $label = trim $label " " -}}
+        {{- if eq $label "" }}{{- continue }}{{- end -}}
+        {{- $idName := lower (urlize $label) -}}
+        {{- $ph := cond (lt $i (len $phItems)) (index $phItems $i) $label -}}
+        {{- $req := cond (lt $i (len $reqItems)) (eq (lower (index $reqItems $i)) "true") false -}}
+    <div>
+      <label for="{{ $idName }}" class="sr-only">{{ $label }}</label>
+      <input type="text" id="{{ $idName }}" name="{{ $idName }}" placeholder="{{ $ph }}" {{ if $req }}required{{ end }} class="{{ $inputBase }}">
+    </div>
+      {{- end }}
     {{- end }}
 
     {{- if $showSubject }}

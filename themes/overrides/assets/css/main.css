@@ -130,6 +130,17 @@ main#content.no-top-pad { padding-top: 0 !important; }
   color: #111827 !important;
 }
 
+/* Dark mode: make entered text light so it's legible against dark backgrounds */
+.dark .cp-contact input[type="text"],
+.dark .cp-contact input[type="email"],
+.dark .cp-contact input[type="tel"],
+.dark .cp-contact input[type="search"],
+.dark .cp-contact input[type="url"],
+.dark .cp-contact input[type="password"],
+.dark .cp-contact textarea {
+  color: #f8fafc !important; /* near-white for input text in dark mode */
+}
+
 /* Dark mode placeholders (class) */
 .dark .cp-contact input[type="text"]::placeholder,
 .dark .cp-contact input[type="email"]::placeholder,
@@ -138,7 +149,7 @@ main#content.no-top-pad { padding-top: 0 !important; }
 .dark .cp-contact input[type="url"]::placeholder,
 .dark .cp-contact input[type="password"]::placeholder,
 .dark .cp-contact textarea::placeholder {
-  color: #f8fafc !important; /* near-white for high contrast */
+  color: #9ca3af !important; /* softened placeholder in dark mode */
   opacity: 1 !important;
 }
 
@@ -151,8 +162,18 @@ main#content.no-top-pad { padding-top: 0 !important; }
   .cp-contact input[type="url"]::placeholder,
   .cp-contact input[type="password"]::placeholder,
   .cp-contact textarea::placeholder {
-    color: #f8fafc !important;
+    color: #9ca3af !important;
     opacity: 1 !important;
+  }
+
+  .cp-contact input[type="text"],
+  .cp-contact input[type="email"],
+  .cp-contact input[type="tel"],
+  .cp-contact input[type="search"],
+  .cp-contact input[type="url"],
+  .cp-contact input[type="password"],
+  .cp-contact textarea {
+    color: #f8fafc !important;
   }
 }
 
