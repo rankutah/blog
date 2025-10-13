@@ -9,7 +9,7 @@ url: "/website-design"
 {{< section>}}
 
 # Website Design
-Completely custom websites. Built for small businesses.
+Completely custom websites. Built for your small business.
 
 ## Step 1: Pick your colors
 
@@ -26,7 +26,7 @@ Completely custom websites. Built for small businesses.
 
 <br>
 
-Use this {{< button text="Example Button" >}} and [Example Link]() to help pick your colors
+Use this {{< button text="Example Button" >}} and [Example Link]() to reference when picking your colors
 
 
 {{< /section >}}
@@ -35,14 +35,15 @@ Use this {{< button text="Example Button" >}} and [Example Link]() to help pick 
 
 ## Step 2: Save your Colors
 
-Record your colors and leave a message for next steps.
+Save your colors and leave a message.
 
-{{< contact-form id="contact1" action="https://submit-form.com/your-endpoint" name="true" email="true" custom="Button & Links Color, Background Color" phone="optional" subject="false" message="true" classes="max-w-xl" >}}
+{{< contact-form id="contact1" action="https://submit-form.com/your-endpoint" name="true" email="true" custom="Business, Button & Links Color, Background Color" phone="optional" subject="false" message="true" classes="max-w-xl" >}}
 
-{{< button url="/contact" text="Save Colors" >}}
+{{< button url="/contact" text="Save My Colors" >}}
 
+## Step 3:
 
-
+Decide if you are interested in {{< button url="/seo-marketing" text="SEO Marketing" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
 
 {{< /section >}}
 

@@ -53,7 +53,7 @@
       <button type="button"
         class="{{ delimit $btnClasses " " }}"
         data-accordion-target="#{{ $bid }}"
-        aria-expanded="{{ if $isFirst }}true{{ else }}false{{ end }}"
+  aria-expanded="false"
         aria-controls="{{ $bid }}">
         <span>{{ $title }}</span>
         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -62,7 +62,7 @@
       </button>
     </h2>
 
-    <div id="{{ $bid }}" class="{{ if not $isFirst }}hidden{{ end }}" aria-labelledby="{{ $qid }}">
+  <div id="{{ $bid }}" class="hidden" aria-labelledby="{{ $qid }}">
       {{- $panelBase := "p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900" -}}
       {{- $panelClasses := slice $panelBase -}}
       {{- if not $isLast }}

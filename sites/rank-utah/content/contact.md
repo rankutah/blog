@@ -28,9 +28,9 @@ Whether you have a quick question about a project, need support, or are ready to
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## Leave a Message
 
-Share anything you need help with and the best way to reach you.
+Share what you need help with and the best way to reach you.
 
-{{< contact-form id="contact1" action="https://submit-form.com/your-endpoint" name="true" email="true" phone="optional" subject="false" message="true" classes="max-w-xl" >}}
+{{< contact-form id="contact1" action="https://submit-form.com/your-endpoint" name="true" email="true" phone="optional" custom="Business" subject="false" message="true" classes="max-w-xl" >}}
 
 {{< button submit="true" form="contact1" text="Send Message" >}}
 
