@@ -83,3 +83,26 @@
   a.link-brand { text-decoration: underline; }
   a.link-brand:hover { text-decoration: underline; }
 }
+
+/* Ensure prose H1 uses the same vertical rhythm as H2 (some themes reset H1 margins) */
+.prose h1 { margin-top: 0; margin-bottom: 0.5em; }
+.prose h1 + p { margin-top: 0.25em; }
+
+/* Compensate for the sticky header so the first page element isn't hidden/too close to the nav */
+/* Default top spacing to clear a sticky header */
+main#content { padding-top: 4rem; }
+
+/* If the page starts with a full-bleed hero/section, remove the extra padding so the hero sits flush under the nav.
+   Use :has() in supporting browsers for automatic detection; fallback is the manual `.no-top-pad` class on main. */
+@supports selector(:has) {
+  /* common patterns: a top-level .hero, a section with .bleed, or a relative block with a full-width image */
+  main#content:has(> .hero),
+  main#content:has(> .section.bleed),
+  main#content:has(> .relative > img),
+  main#content:has(> .relative > picture) {
+    padding-top: 0;
+  }
+}
+
+/* Manual override for pages that should start flush under the navbar */
+main#content.no-top-pad { padding-top: 0 !important; }

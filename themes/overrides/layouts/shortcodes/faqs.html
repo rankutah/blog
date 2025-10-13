@@ -1,0 +1,79 @@
+{{/*
+  FAQs Accordion Shortcode — robust, Hugo-friendly implementation
+
+  Usage (in your Markdown):
+  {{< faqs >}}
+  ### Question 1
+  Answer text or markdown
+
+  ### Question 2
+  Another answer
+  {{< /faqs >}}
+
+  Notes:
+  - This splits on "\n### " (safe) and supports Markdown in answers.
+  - First item is open by default; borders are set so panels touch.
+*/}}
+
+{{- $raw := .Inner | default "" -}}
+{{- /* Ensure a leading delimiter so split behaves consistently */ -}}
+{{- $raw2 := printf "\n%s\n" $raw -}}
+{{- $parts := split $raw2 "\n### " -}}
+{{- $faqBlocks := slice -}}
+{{- range $i, $p := $parts }}
+  {{- $trim := trim $p " \n" -}}
+  {{- if ne $trim "" -}}
+    {{- /* If a part still starts with ###, remove it */ -}}
+    {{- $clean := replaceRE "^###\\s*" "" $trim -}}
+    {{- $faqBlocks = $faqBlocks | append $clean -}}
+  {{- end -}}
+{{- end -}}
+
+<div id="accordion-collapse" data-accordion="collapse">
+  {{- $count := len $faqBlocks -}}
+  {{- range $i, $blk := $faqBlocks }}
+    {{- $qid := printf "accordion-collapse-heading-%d" (add $i 1) -}}
+    {{- $bid := printf "accordion-collapse-body-%d" (add $i 1) -}}
+    {{- $lines := split $blk "\n" -}}
+    {{- $title := trim (index $lines 0) " \n" -}}
+    {{- $body := "" -}}
+    {{- if gt (len $lines) 1 -}}
+      {{- /* Remove the first line (the title) and its following newline from the block, then markdownify the remainder. */ -}}
+  {{- $bodyRaw := trim (replaceRE "^[^\\n]+\\n?" "" $blk) " \n" -}}
+      {{- $body = ( $bodyRaw | markdownify ) -}}
+    {{- end -}}
+    {{- $isFirst := eq $i 0 -}}
+    {{- $isLast := eq $i (sub $count 1) -}}
+  {{- $btnBase := "flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3 mb-0" -}}
+    {{- $btnClasses := slice $btnBase -}}
+    {{- if $isFirst }}{{ $btnClasses = $btnClasses | append "rounded-t-xl" }}{{ end -}}
+    {{- if not $isLast }}{{ $btnClasses = $btnClasses | append "border-b-0" }}{{ end -}}
+
+  <h2 id="{{ $qid }}" class="mb-0" style="margin:0;">
+      <button type="button"
+        class="{{ delimit $btnClasses " " }}"
+        data-accordion-target="#{{ $bid }}"
+        aria-expanded="{{ if $isFirst }}true{{ else }}false{{ end }}"
+        aria-controls="{{ $bid }}">
+        <span>{{ $title }}</span>
+        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        </svg>
+      </button>
+    </h2>
+
+    <div id="{{ $bid }}" class="{{ if not $isFirst }}hidden{{ end }}" aria-labelledby="{{ $qid }}">
+      {{- $panelBase := "p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900" -}}
+      {{- $panelClasses := slice $panelBase -}}
+      {{- if not $isLast }}
+        {{- $panelClasses = $panelClasses | append "border-b-0" -}}
+      {{- else -}}
+        {{- /* For the last panel remove the top border and add a rounded bottom so panels visually join */ -}}
+        {{- $panelClasses = $panelClasses | append "border-t-0 rounded-b-xl" -}}
+      {{- end -}}
+      <div class="{{ delimit $panelClasses " " }}">
+        {{ $body }}
+      </div>
+    </div>
+  {{- end }}
+</div>

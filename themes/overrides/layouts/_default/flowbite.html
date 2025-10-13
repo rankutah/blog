@@ -123,7 +123,9 @@
 <body class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg">
   {{ partial "navbar.html" . }}
 
-  <main id="content" class="min-h-screen" data-bg-sync>
+  {{- /* If this is the homepage, or the page declares a hero, or uses a landing layout, remove the top pad */ -}}
+  {{- $isHeroPage := or .IsHome .Params.hero (eq .Params.layout "landing") -}}
+  <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync>
     <article class="prose prose-zinc max-w-none dark:prose-invert">
       {{ .Content }}
     </article>
@@ -170,5 +172,8 @@
       if (btn) btn.addEventListener('click', flipForcedTheme);
     });
   </script>
+
+  <!-- Calculate header height and set --site-header-offset so CSS can align anchors correctly -->
+  <!-- header offset script removed to restore default CSS behavior -->
 </body>
 </html>

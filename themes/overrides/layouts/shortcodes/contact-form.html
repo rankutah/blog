@@ -7,13 +7,39 @@
 {{- $id     := .Get "id" | default "contact1" -}}
 {{- $action := .Get "action" | default (or $page.Site.Params.formspark.action $page.Site.Params.forms.action) -}}
 
-{{- $showName    := ne (lower (.Get "name"    | default "true"))  "false" -}}
-{{- $showEmail   := ne (lower (.Get "email"   | default "true"))  "false" -}}
-{{- $showPhone   := eq (lower (.Get "phone"   | default "false")) "true"  -}}
-{{- $showCompany := eq (lower (.Get "company" | default "false")) "true"  -}}
-{{- $showSubject := ne (lower (.Get "subject" | default "false")) "false" -}}
-{{- $showMessage := ne (lower (.Get "message" | default "true"))  "false" -}}
+{{- /* Support three-state params: "true" | "false" | "optional" */ -}}
+{{- $nameParam := lower (.Get "name" | default "true") -}}
+{{- $showName := ne $nameParam "false" -}}
+{{- $namePlaceholder := cond (eq $nameParam "optional") "Name (Optional)" "Name" -}}
+
+{{- $emailParam := lower (.Get "email" | default "true") -}}
+{{- $showEmail := ne $emailParam "false" -}}
+{{- $emailRequired := eq $emailParam "true" -}}
+{{- $emailPlaceholder := cond (eq $emailParam "optional") "Email (Optional)" "Email" -}}
+
+{{- $phoneParam := lower (.Get "phone" | default "false") -}}
+{{- $showPhone := ne $phoneParam "false" -}}
+{{- $phonePlaceholder := cond (eq $phoneParam "optional") "Phone (Optional)" "Phone" -}}
+
+{{- $companyParam := lower (.Get "company" | default "false") -}}
+{{- $showCompany := ne $companyParam "false" -}}
+{{- $companyPlaceholder := cond (eq $companyParam "optional") "Company (Optional)" "Company" -}}
+
+{{- $subjectParam := lower (.Get "subject" | default "false") -}}
+{{- $showSubject := ne $subjectParam "false" -}}
+{{- $subjectPlaceholder := cond (eq $subjectParam "optional") "Subject (Optional)" "Subject" -}}
+
+{{- $messageParam := lower (.Get "message" | default "true") -}}
+{{- $showMessage := ne $messageParam "false" -}}
+{{- $messagePlaceholder := cond (eq $messageParam "optional") "Message (Optional)" "Message" -}}
 {{- $extra       := .Get "classes" | default "" -}}
+
+{{- /* Consent handling: default to required if phone is enabled (for SMS) unless explicitly overridden */ -}}
+{{- $consentParam := lower (.Get "consent" | default (cond $showPhone "true" "false")) -}}
+{{- $showConsent := ne $consentParam "false" -}}
+{{- $consentRequired := eq $consentParam "true" -}}
+{{- $consentText := .Get "consentText" | default "I agree to receive emails and SMS from Clear Presence about my request. Message & data rates may apply. Reply STOP to opt out of SMS, HELP for help. See" -}}
+{{- $privacyURL := or .Page.Site.Params.privacyURL "/privacy" -}}
 
 {{- $brand := lower (or $page.Site.Params.primaryColor $page.Site.Params.brandColor "blue") -}}
 {{- $focus := dict
@@ -41,54 +67,77 @@
   "stone"    "focus:ring-stone-500 focus:border-stone-500 dark:focus:ring-stone-500 dark:focus:border-stone-500"
 -}}
 {{- $focusCls := index $focus $brand | default (index $focus "blue") -}}
-{{- $inputBase := printf "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white %s" $focusCls -}}
+{{- $inputBase := printf "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 placeholder-gray-500 placeholder-opacity-100 dark:placeholder-gray-400 dark:placeholder-opacity-100 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 %s" $focusCls -}}
 
 {{- if not $action -}}
   <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-4 rounded">
     Missing form action. Pass action="https://submit-form.com/XXXX" or set .Site.Params.formspark.action
   </div>
 {{- else -}}
-  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 {{ $extra }}">
+  <!-- Force identical placeholder/text colors using a stable class so browsers render inputs and textarea the same -->
+  <style>
+    .cp-contact input::placeholder, .cp-contact textarea::placeholder { color: #6b7280 !important; opacity: 1 !important; }
+    .cp-contact input, .cp-contact textarea { color: #111827 !important; }
+    .dark .cp-contact input::placeholder, .dark .cp-contact textarea::placeholder { color: #9ca3af !important; }
+    .dark .cp-contact input, .dark .cp-contact textarea { color: #f3f4f6 !important; }
+    /* vendor prefixes for older browsers */
+    .cp-contact input::-webkit-input-placeholder, .cp-contact textarea::-webkit-input-placeholder { color: #6b7280 !important; }
+    .cp-contact input::-moz-placeholder, .cp-contact textarea::-moz-placeholder { color: #6b7280 !important; }
+    .dark .cp-contact input::-webkit-input-placeholder, .dark .cp-contact textarea::-webkit-input-placeholder { color: #9ca3af !important; }
+    .dark .cp-contact input::-moz-placeholder, .dark .cp-contact textarea::-moz-placeholder { color: #9ca3af !important; }
+  </style>
+
+  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact {{ $extra }}">
     {{- if $showName }}
     <div>
       <label for="name" class="sr-only">Name</label>
-      <input type="text" id="name" name="name" placeholder="Name" class="{{ $inputBase }}">
+  <input type="text" id="name" name="name" placeholder="{{ $namePlaceholder }}" class="{{ $inputBase }}">
     </div>
     {{- end }}
 
     {{- if $showEmail }}
     <div>
       <label for="email" class="sr-only">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email" required class="{{ $inputBase }}">
+  <input type="email" id="email" name="email" placeholder="{{ $emailPlaceholder }}" {{ if $emailRequired }}required{{ end }} class="{{ $inputBase }}">
     </div>
     {{- end }}
 
     {{- if $showPhone }}
     <div>
       <label for="phone" class="sr-only">Phone</label>
-      <input type="tel" id="phone" name="phone" placeholder="Phone" class="{{ $inputBase }}">
+  <input type="tel" id="phone" name="phone" placeholder="{{ $phonePlaceholder }}" class="{{ $inputBase }}">
     </div>
     {{- end }}
 
     {{- if $showCompany }}
     <div>
       <label for="company" class="sr-only">Company</label>
-      <input type="text" id="company" name="company" placeholder="Company" class="{{ $inputBase }}">
+  <input type="text" id="company" name="company" placeholder="{{ $companyPlaceholder }}" class="{{ $inputBase }}">
     </div>
     {{- end }}
 
     {{- if $showSubject }}
     <div>
       <label for="subject" class="sr-only">Subject</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject" class="{{ $inputBase }}">
+  <input type="text" id="subject" name="subject" placeholder="{{ $subjectPlaceholder }}" class="{{ $inputBase }}">
     </div>
     {{- end }}
 
     {{- if $showMessage }}
     <div>
       <label for="message" class="sr-only">Message</label>
-      <textarea id="message" name="message" rows="6" placeholder="Message"
-                class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white {{ $focusCls }}"></textarea>
+  <textarea id="message" name="message" rows="6" placeholder="{{ $messagePlaceholder }}"
+        class="{{ $inputBase }}"></textarea>
+    </div>
+    {{- end }}
+    {{- if $showConsent }}
+    <div class="flex items-start space-x-3">
+      <div class="flex items-center h-5">
+        <input id="{{ printf "%s-consent" $id }}" name="consent" type="checkbox" value="yes" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600" {{ if $consentRequired }}required{{ end }}>
+      </div>
+      <div class="text-sm text-gray-600 dark:text-gray-300">
+        <label for="{{ printf "%s-consent" $id }}" class="cursor-pointer">{{ $consentText }} <a href="{{ $privacyURL }}" target="_blank" class="underline">Privacy Policy.</a></label>
+      </div>
     </div>
     {{- end }}
   </form>
