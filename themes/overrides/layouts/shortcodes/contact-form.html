@@ -74,18 +74,7 @@
     Missing form action. Pass action="https://submit-form.com/XXXX" or set .Site.Params.formspark.action
   </div>
 {{- else -}}
-  <!-- Force identical placeholder/text colors using a stable class so browsers render inputs and textarea the same -->
-  <style>
-    .cp-contact input::placeholder, .cp-contact textarea::placeholder { color: #6b7280 !important; opacity: 1 !important; }
-    .cp-contact input, .cp-contact textarea { color: #111827 !important; }
-    .dark .cp-contact input::placeholder, .dark .cp-contact textarea::placeholder { color: #9ca3af !important; }
-    .dark .cp-contact input, .dark .cp-contact textarea { color: #f3f4f6 !important; }
-    /* vendor prefixes for older browsers */
-    .cp-contact input::-webkit-input-placeholder, .cp-contact textarea::-webkit-input-placeholder { color: #6b7280 !important; }
-    .cp-contact input::-moz-placeholder, .cp-contact textarea::-moz-placeholder { color: #6b7280 !important; }
-    .dark .cp-contact input::-webkit-input-placeholder, .dark .cp-contact textarea::-webkit-input-placeholder { color: #9ca3af !important; }
-    .dark .cp-contact input::-moz-placeholder, .dark .cp-contact textarea::-moz-placeholder { color: #9ca3af !important; }
-  </style>
+  <!-- Placeholder styles centralized in themes/overrides/assets/css/main.css (scoped to .cp-contact) -->
 
   <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact {{ $extra }}">
     {{- if $showName }}

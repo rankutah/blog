@@ -106,3 +106,72 @@ main#content { padding-top: 4rem; }
 
 /* Manual override for pages that should start flush under the navbar */
 main#content.no-top-pad { padding-top: 0 !important; }
+
+/* ========== Contact form placeholders & checkbox (unified) ========== */
+/* Scoped to .cp-contact so it only affects forms that use that class. */
+.cp-contact input[type="text"]::placeholder,
+.cp-contact input[type="email"]::placeholder,
+.cp-contact input[type="tel"]::placeholder,
+.cp-contact input[type="search"]::placeholder,
+.cp-contact input[type="url"]::placeholder,
+.cp-contact input[type="password"]::placeholder,
+.cp-contact textarea::placeholder {
+  color: #9ca3af !important; /* lighter placeholder */
+  opacity: 1 !important;
+}
+
+.cp-contact input[type="text"],
+.cp-contact input[type="email"],
+.cp-contact input[type="tel"],
+.cp-contact input[type="search"],
+.cp-contact input[type="url"],
+.cp-contact input[type="password"],
+.cp-contact textarea {
+  color: #111827 !important;
+}
+
+/* Dark mode placeholders (class) */
+.dark .cp-contact input[type="text"]::placeholder,
+.dark .cp-contact input[type="email"]::placeholder,
+.dark .cp-contact input[type="tel"]::placeholder,
+.dark .cp-contact input[type="search"]::placeholder,
+.dark .cp-contact input[type="url"]::placeholder,
+.dark .cp-contact input[type="password"]::placeholder,
+.dark .cp-contact textarea::placeholder {
+  color: #f8fafc !important; /* near-white for high contrast */
+  opacity: 1 !important;
+}
+
+/* Dark mode placeholders (OS-level) */
+@media (prefers-color-scheme: dark) {
+  .cp-contact input[type="text"]::placeholder,
+  .cp-contact input[type="email"]::placeholder,
+  .cp-contact input[type="tel"]::placeholder,
+  .cp-contact input[type="search"]::placeholder,
+  .cp-contact input[type="url"]::placeholder,
+  .cp-contact input[type="password"]::placeholder,
+  .cp-contact textarea::placeholder {
+    color: #f8fafc !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Vendor-prefixed fallbacks */
+.cp-contact input[type="text"]::-webkit-input-placeholder,
+.cp-contact input[type="email"]::-webkit-input-placeholder,
+.cp-contact input[type="tel"]::-webkit-input-placeholder,
+.cp-contact input[type="search"]::-webkit-input-placeholder,
+.cp-contact input[type="url"]::-webkit-input-placeholder,
+.cp-contact input[type="password"]::-webkit-input-placeholder,
+.cp-contact textarea::-webkit-input-placeholder { color: #9ca3af !important; opacity: 1 !important; }
+.cp-contact input[type="text"]::-moz-placeholder,
+.cp-contact input[type="email"]::-moz-placeholder,
+.cp-contact input[type="tel"]::-moz-placeholder,
+.cp-contact input[type="search"]::-moz-placeholder,
+.cp-contact input[type="url"]::-moz-placeholder,
+.cp-contact input[type="password"]::-moz-placeholder,
+.cp-contact textarea::-moz-placeholder { color: #9ca3af !important; opacity: 1 !important; }
+
+/* Checkbox accent + fallback */
+.cp-contact input[type="checkbox"] { accent-color: currentColor !important; }
+.cp-contact input[type="checkbox"]:checked { background-color: currentColor !important; border-color: currentColor !important; }

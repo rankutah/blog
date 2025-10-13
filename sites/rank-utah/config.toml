@@ -167,24 +167,10 @@ pruneTaxonomies = true
     weight = 11
 
   [[menu.main]]
-    name = "SEO"
+    name = "SEO Marketing"
     url = "/test"
     parent = "services"
     weight = 12
-
-  [[menu.main]]
-    name = "Test2"
-    url = "/test2"
-    identifier = "test2"
-    parent = "services"
-    weight = 13
-
-  [[menu.main]]
-    name = "Test3"
-    url = "/test3"
-    parent = "test2"
-    weight = 14
-  
   
   [[menu.main]]
     name   = "Portfolio"

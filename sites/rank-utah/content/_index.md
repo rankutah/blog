@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< section img="../media/mountain.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false" >}}
+{{< section img="../media/clear-presence-image-of-small-business.png" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false" >}}
 # Website Design & SEO Marketing {.text-white}
 Professional business websites with powerful online marketing.
 {.text-white}
