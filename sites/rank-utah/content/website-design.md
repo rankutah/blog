@@ -39,11 +39,11 @@ Save your colors and leave a message.
 
 {{< contact-form id="contact1" action="https://submit-form.com/your-endpoint" name="true" email="true" custom="Business, Button & Links Color, Background Color" phone="optional" subject="false" message="true" classes="max-w-xl" >}}
 
-{{< button url="/contact" text="Save My Colors" >}}
+{{< button url="/contact" text="Save Colors" >}}
 
 ## Step 3:
 
-Decide if you are interested in {{< button url="/seo-marketing" text="SEO Marketing" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
+Decide if you would like {{< button url="/seo-marketing" text="SEO Marketing" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
 
 {{< /section >}}
 

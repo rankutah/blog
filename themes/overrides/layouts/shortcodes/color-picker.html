@@ -13,24 +13,6 @@
 
 <div class="not-prose p-3 rounded-lg border border-gray-200 dark:border-gray-700">
   <div class="grid gap-2 md:grid-cols-3 items-end">
-    <!-- Primary brand -->
-    <div>
-      <label for="cp-primary" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Buttons & Links</label>
-      <select id="cp-primary" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
-                                     bg-gray-50 text-gray-900 border border-gray-300
-                                     dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
-                                     focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-400
-                                     dark:focus:ring-gray-700 dark:focus:border-gray-500">
-        {{- range $neutrals }}
-          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
-        {{- end }}
-        <optgroup label="— Colors —"></optgroup>
-        {{- range $chromas }}
-          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
-        {{- end }}
-      </select>
-    </div>
-
     <!-- Light background -->
     <div>
       <label for="cp-light" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Background</label>
@@ -70,6 +52,24 @@
         {{- range $chromas }}
           {{- $val := printf "%s-950" . -}}
           <option value="{{ $val }}" {{ if eq $val $darkDefault }}selected{{ end }}>{{ $val }}</option>
+        {{- end }}
+      </select>
+    </div>
+
+    <!-- Primary brand -->
+    <div>
+      <label for="cp-primary" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Buttons & Links</label>
+      <select id="cp-primary" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
+                                     bg-gray-50 text-gray-900 border border-gray-300
+                                     dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
+                                     focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-400
+                                     dark:focus:ring-gray-700 dark:focus:border-gray-500">
+        {{- range $neutrals }}
+          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
+        {{- end }}
+        <optgroup label=" Colors "></optgroup>
+        {{- range $chromas }}
+          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
         {{- end }}
       </select>
     </div>
