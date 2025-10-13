@@ -35,7 +35,13 @@ Share anything you need help with and the best way to reach you.
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## Call or Text
-[(385) 323-8130](tel:13853238130)
+[(385) 323-8130](tel:3853238130)
+
+385-323-8130
+
+(385) 323-8130
+
+
 
 ## Email
 hello@clearpresence.io
