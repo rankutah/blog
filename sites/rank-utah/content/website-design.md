@@ -9,7 +9,7 @@ url: "/website-design"
 {{< section>}}
 
 # Website Design
-Completely custom websites. Built for your small business.
+Completely custom websites. Built for your business.
 
 ## Step 1: Pick your colors
 
@@ -43,7 +43,7 @@ Save your colors and leave a message.
 
 ## Step 3:
 
-Decide if you would like {{< button url="/seo-marketing" text="SEO Marketing" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
+Decide if you are in need of {{< button url="/seo-marketing" text="SEO Marketing" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
 
 {{< /section >}}
 
