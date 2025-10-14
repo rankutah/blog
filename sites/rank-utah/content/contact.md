@@ -8,10 +8,9 @@ url: "/contact"
 
 {{< section >}}
 
+# Get in touch
 
-# Get in Touch
-
-Whether you have a quick question about a project, need support, or are ready to get started, choose the contact method that works best for you.
+Tell us a bit about your project and the best way to reach you. We typically respond within 1 business day.
 
 {{< /section >}}
 
@@ -19,28 +18,40 @@ Whether you have a quick question about a project, need support, or are ready to
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-## Leave a Message
+## Leave a message
 
-Share what you need help with and the best way to reach you.
+Share what you need help with and any relevant links (your website, examples, etc.).
 
-{{< contact-form id="contact" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" phone="optional" custom="Business" subject="false" message="true" classes="max-w-xl" >}}
+{{< contact-form
+	id="contact"
+	action="https://submit-form.com/I4t2OG4uj"
+	name="true"
+	email="true"
+	phone="optional"
+	address="optional"
+	custom="Website URL"
+	subject="false"
+	message="true"
+	order="name,email,phone,address,custom,message,consent"
+	classes="max-w-xl"
+>}}
 
 {{< button submit="true" form="contact" text="Send Message" >}}
+<div class="text-sm opacity-80 mt-2">By submitting, you agree we may contact you about your request. See our <a href="/privacy" class="underline">Privacy Policy</a>.</div>
 
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+## Direct contact
 
-## Direct Contact
+- Phone: <a href="tel:+13853238130">(385) 323-8130</a>
+- Email: <a href="mailto:hello@clearpresence.io">hello@clearpresence.io</a>
+- Hours: Mon–Fri, 9am–5pm (MT)
+- Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-
-### Call or Text
-(385) 323-8130
-### Email
-hello@clearpresence.io <br> Mon-Fri 9am-5pm <br> [348 S 2000 W, Suite B206, Pleasant Grove UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062/@40.3594937,-111.7721235,17z/data=!3m1!4b1!4m5!3m4!1s0x874d83f0906de397:0x3dfccb1823eeb17a!8m2!3d40.3594896!4d-111.7695486?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D)
-
+### Prefer email?
+Include your website URL, goals, and timeline. We’ll follow up with next steps.
 
 {{< /col >}}
 
