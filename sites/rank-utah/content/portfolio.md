@@ -20,7 +20,7 @@ url: "/portfolio"
 
 ![](../media/website-blue-ridge-abbey.png)
 
-{{< button url="/https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" >}}
+{{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 
 Mackenzie G. - March 21, 2025 <br>
 ⭐️⭐️⭐️⭐️⭐️ <br>
@@ -36,7 +36,7 @@ I highly recommend, to anyone who is in need of a website!"
 
 ![](../media/website-nova-gutter.png)
 
-{{< button url="/https://novagutter.com/" text="Visit Nova Gutter" >}}
+{{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
 
 Just Released!
 
@@ -53,7 +53,7 @@ Just Released!
 
 ![](../media/website-blueridgetech.png)
 
-{{< button url="/https://blueridgetech.com/" text="Visit BlueridgeTech" >}}
+{{< button url="https://blueridgetech.com/" text="Visit BlueridgeTech" newtab="true" >}}
 
 Gabriel A. - November 2024 <br>
 ⭐️⭐️⭐️⭐️⭐️ <br>
@@ -68,7 +68,7 @@ Gabriel A. - November 2024 <br>
 
 ![](../media/website-villa-valencia.png)
 
-{{< button url="/https://villavalenciaojai.com/" text="Visit Villa Valencia" >}}
+{{< button url="https://villavalenciaojai.com/" text="Visit Villa Valencia" newtab="true" >}}
 
 Michelle L. - December 27, 2024 <br>
 ⭐️⭐️⭐️⭐️⭐️ <br>
@@ -87,7 +87,7 @@ Michelle L. - December 27, 2024 <br>
 
 ![](../media/website-suggls.png)
 
-{{< button url="/https://suggls.com/" text="Visit Suggls" >}}
+{{< button url="https://suggls.com/" text="Visit Suggls" newtab="true" >}}
 
 {{< /col >}}
 

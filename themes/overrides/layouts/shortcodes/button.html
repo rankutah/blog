@@ -7,6 +7,9 @@
        icon="arrow-right"         → name of SVG in assets/icons/*.svg
        iconPos="left|right"       → default: left
        iconClass="w-4 h-4"        → override size/styling of icon wrapper
+  newtab="true|false"        → if true, opens link in a new tab (adds target="_blank" rel="noopener noreferrer")
+  target="_blank|_self|…"    → optional explicit target; overrides newtab
+  rel="…"                    → optional explicit rel; overrides default rel when target is set
 */ -}}
 
 {{- $page := .Page -}}
@@ -16,6 +19,11 @@
 {{- /* optional submit mode for external forms */ -}}
 {{- $form   := .Get "form"   | default "" -}}
 {{- $submit := eq (lower (.Get "submit" | default "false")) "true" -}}
+
+{{- /* optional target/newtab/rel for anchor links */ -}}
+{{- $newtab := eq (lower (.Get "newtab" | default "false")) "true" -}}
+{{- $target := .Get "target" | default "" -}}
+{{- $rel    := .Get "rel"    | default "" -}}
 
 {{- /* classes + color map (unchanged) */ -}}
 {{- $pageClasses := .Get "classes" | default "" -}}
@@ -78,5 +86,20 @@
 {{- if or $submit $form -}}
   <button type="submit" {{ with $form }}form="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</button>
 {{- else -}}
-  <a href="{{ $url }}" class="ui-btn not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</a>
+  {{- /* Compute target/rel attributes */ -}}
+  {{- $finalTarget := "" -}}
+  {{- if ne $target "" -}}
+    {{- $finalTarget = $target -}}
+  {{- else if $newtab -}}
+    {{- $finalTarget = "_blank" -}}
+  {{- end -}}
+
+  {{- $finalRel := "" -}}
+  {{- if ne $rel "" -}}
+    {{- $finalRel = $rel -}}
+  {{- else if eq $finalTarget "_blank" -}}
+    {{- $finalRel = "noopener noreferrer" -}}
+  {{- end -}}
+
+  <a href="{{ $url }}" class="ui-btn not-prose no-underline {{ $classes }}"{{ with $finalTarget }} target="{{ . }}"{{ end }}{{ with $finalRel }} rel="{{ . }}"{{ end }}>{{ $inner | safeHTML }}</a>
 {{- end -}}
