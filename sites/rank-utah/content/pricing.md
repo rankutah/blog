@@ -16,6 +16,9 @@ url: "/pricing"
 Simple monthly pricing. No contracts. No surprises.
 {.center}
 
+{{< /section >}}
+
+
 {{< section >}}
 
 {{< cols min="18rem" gap="1rem" v="start">}}
@@ -56,6 +59,10 @@ Bundle Website Design with Local SEO to maximize visibility. Unlock the full pot
 
 {{< /section >}}
 
+{{< section >}}
 
+
+{{< button url="/contact" text="Reach Out to Start" >}}
+{.center}
 
 {{< /section >}}

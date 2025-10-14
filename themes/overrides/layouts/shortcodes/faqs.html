@@ -12,7 +12,9 @@
 
   Notes:
   - This splits on "\n### " (safe) and supports Markdown in answers.
-  - First item is open by default; borders are set so panels touch.
+  - All items are collapsed by default; pass openFirst="true" to open the first one.
+    Example:
+      {{< faqs openFirst="true" >}}
 */}}
 
 {{- $raw := .Inner | default "" -}}
@@ -20,6 +22,9 @@
 {{- $raw2 := printf "\n%s\n" $raw -}}
 {{- $parts := split $raw2 "\n### " -}}
 {{- $faqBlocks := slice -}}
+{{- /* Optional: open the first item by default via openFirst="true|yes|1" */ -}}
+{{- $openFirstParam := lower (.Get "openFirst" | default (.Get "firstOpen")) -}}
+{{- $openFirst := or (eq $openFirstParam "true") (eq $openFirstParam "yes") (eq $openFirstParam "1") -}}
 {{- range $i, $p := $parts }}
   {{- $trim := trim $p " \n" -}}
   {{- if ne $trim "" -}}
@@ -43,6 +48,7 @@
       {{- $body = ( $bodyRaw | markdownify ) -}}
     {{- end -}}
     {{- $isFirst := eq $i 0 -}}
+    {{- $expanded := and $isFirst $openFirst -}}
     {{- $isLast := eq $i (sub $count 1) -}}
   {{- $btnBase := "flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3 mb-0" -}}
     {{- $btnClasses := slice $btnBase -}}
@@ -53,7 +59,7 @@
       <button type="button"
         class="{{ delimit $btnClasses " " }}"
         data-accordion-target="#{{ $bid }}"
-        aria-expanded="{{ if $isFirst }}true{{ else }}false{{ end }}"
+        aria-expanded="{{ if $expanded }}true{{ else }}false{{ end }}"
         aria-controls="{{ $bid }}">
         <span>{{ $title }}</span>
         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -62,7 +68,7 @@
       </button>
     </h2>
 
-    <div id="{{ $bid }}" class="{{ if not $isFirst }}hidden{{ end }}" aria-labelledby="{{ $qid }}">
+    <div id="{{ $bid }}" class="{{ if not $expanded }}hidden{{ end }}" aria-labelledby="{{ $qid }}">
       {{- $panelBase := "p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900" -}}
       {{- $panelClasses := slice $panelBase -}}
       {{- if not $isLast }}

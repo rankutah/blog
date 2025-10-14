@@ -3,7 +3,6 @@ title: "Website Design"
 description: "Custom website design for small businesses"
 layout: "flowbite"
 url: "/website-design"
-
 ---
 
 {{< section>}}
