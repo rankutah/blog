@@ -25,9 +25,9 @@ Whether you have a quick question about a project, need support, or are ready to
 
 Share what you need help with and the best way to reach you.
 
-{{< contact-form id="contact1" action="https://submit-form.com/your-endpoint" name="true" email="true" phone="optional" custom="Business" subject="false" message="true" classes="max-w-xl" >}}
+{{< contact-form id="contact" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" phone="optional" custom="Business" subject="false" message="true" classes="max-w-xl" >}}
 
-{{< button submit="true" form="contact1" text="Send Message" >}}
+{{< button submit="true" form="contact" text="Send Message" >}}
 
 {{< /col >}}
 

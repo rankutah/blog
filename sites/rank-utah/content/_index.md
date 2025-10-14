@@ -79,11 +79,11 @@ Most web designers require high costs upfront before they will build your websit
 
 {{< col card="true" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Web Design
+## Website Design
 
 Use the color selector to test out 2 colors for your website and learn how to get started with a custom website designed to help you find leads.
 
-{{<button text="Web Design" url="/web-design" >}}
+{{<button text="Website Design" url="/website-design" >}}
 
 
 {{< /col >}}
@@ -95,7 +95,7 @@ Use the color selector to test out 2 colors for your website and learn how to ge
 
 Discover the full range of solutions for local businesses.  we offer, from start-to-finish projects to specialized consulting. See how our expertise can directly benefit your goals.
 
-{{<button text="SEO Marketing" url="/seo-marketing">}}
+{{<button text="Local SEO" url="/local-seo">}}
 
 {{< /col >}}
 

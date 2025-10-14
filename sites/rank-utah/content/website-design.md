@@ -34,8 +34,9 @@ Use this {{< button text="Example Button" >}} and [Example Link]() to reference 
 
 ## Step 2: Save your colors
 
-{{< contact-form id="contact1" action="https://submit-form.com/your-endpoint" name="true" email="true" custom="Primary Color, Background Color" phone="optional" message="true" classes="max-w-xl"  >}}
-{{< button url="/contact" text="Save Colors" >}}
+{{< contact-form id="colors" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" custom="Primary Color, Background Color" phone="optional" message="true" classes="max-w-xl"  >}}
+{{< button submit="true" form="colors" text="Send Message" >}}
+
 
 ## Step 3:
 

@@ -11,9 +11,9 @@ url: "/local-seo"
 
 Get new customers by showing up in local search results.
 
-{{< button url="/contact" text="Get Started" >}}
+{{< button url="/contact" text="Call Now" >}}
 
-## Do you want more customers?
+## Do you need more customers?
 
 Local SEO is an effective strategy for marketing your business to achieve both short-term and long-term results. It's focus is helping your business show up when people search for what you do.
 
@@ -78,10 +78,17 @@ Clear Presence continuously works to bring you more customers. Local SEO require
 
 ## What do Local SEO Reports look like
 
-Reports compare the last month with two months before so you can easily track how things are progressing. Here is an exmample report from a current customer
+Reports compare the last month with two months before so you can easily track how things are progressing. Here is an report from a current customer. Each indicator displays the % increase or decrease from the previous month.
 
 
-![](../media/)
+![](../media/local-seo-analytics-report.png)
+
+## Have additional questions?
+
+Reach out directly with a quick phone call or text message to get your questions answers.
+
+{{< button url="/contact" text="Reach Out" >}}
 
 
 {{< /section >}}
+
