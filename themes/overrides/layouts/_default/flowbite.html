@@ -120,7 +120,7 @@
 {{- /* Get shared palette once; use for body + navbar */ -}}
 {{- $pal := partial "theme/palette.html" . -}}
 
-<body class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg">
+<body id="top" class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg">
   {{ partial "navbar.html" . }}
 
   {{- /* If this is the homepage, or the page declares a hero, or uses a landing layout, remove the top pad */ -}}
@@ -175,5 +175,8 @@
 
   <!-- Calculate header height and set --site-header-offset so CSS can align anchors correctly -->
   <!-- header offset script removed to restore default CSS behavior -->
+
+  {{/* Footer (supports content/footer.md via partial) */}}
+  {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") }}
 </body>
 </html>

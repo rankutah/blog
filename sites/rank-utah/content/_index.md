@@ -157,23 +157,12 @@ Ready to start a project or just have a few questions? Reach out to us directly 
 {{< section render="raw" >}}
 
 {{< faqs >}}
-### What is your SEO marketing process?
-Help your business generate high-quality leads using this simple and effective process.
+### What is your Local SEO process?
 
-1. Sync your business information with the 5 major data aggregators so you have a clear presence on 1,000+ platforms
-2. Optimize your Google Business Profile to maximize visibility
-3. Conduct keyword research to discover your best keywords based on search volume and competition
-4. Align your website and Google Business Profile with your keywords
-5. Track and report your rankings, visiblity, and clicks
-6. Use the latest reports and research to conduct additional experiments, make optimizations, and continue to expand your visibility
-
+Get the latest on the Clear Presence marketing process by visiting the [Local SEO](/local-seo) page
 ### What is your web design process?
 
-1. Discuss your goals and vision for your website
-2. Build an initial version of your website with your feedback along the way
-3. Release the initial version of your website
-4. Track and report your traffic, organic search results, and key actions on your website with monthly analytic reports
-5. Optimize and continuously improve your website based on customer interactions and your feedback
+Get the latest on the Clear Presence website design process by visiting the [Website Design](/website-design) page
 
 ### How do you compare to other SEO and website design companies?
 You will receive a higher standard of service than larger companies and agencies but at a more affordable rate. I do not lock you into a contract, have hidden fees, limit edits or methods of communication.
