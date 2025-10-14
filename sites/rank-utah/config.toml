@@ -16,7 +16,7 @@ pruneTaxonomies = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-    
+
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
@@ -36,7 +36,7 @@ pruneTaxonomies = true
   [[module.mounts]]
     source = "media"
     target = "static/media"
-  
+
   [[module.mounts]]
     source = "posts"
     target = "content/posts"
@@ -135,7 +135,7 @@ pruneTaxonomies = true
 
 [params.h1]
   classes = "text-4xl font-bold dark:text-white-200"
-  
+
 [params.text]
 
 [permalinks]
@@ -153,13 +153,13 @@ pruneTaxonomies = true
         src = "**/main.css"
 
 [menu]
-  
+
   [[menu.main]]
     name = "Services"
     url = "/services/"
     identifier = "services"
     weight = 10
-  
+
   [[menu.main]]
     name = "Website Design"
     url = "/website-design"
@@ -167,21 +167,21 @@ pruneTaxonomies = true
     weight = 11
 
   [[menu.main]]
-    name = "SEO Marketing"
-    url = "/test"
+    name = "Local SEO"
+    url = "/local-seo"
     parent = "services"
     weight = 12
-  
+
   [[menu.main]]
     name   = "Portfolio"
     url    = "/portfolio"
     weight = 20
-    
+
   [[menu.main]]
     name   = "Pricing"
     url    = "/pricing"
     weight = 30
- 
+
   [[menu.main]]
     name   = "About"
     url    = "/about"

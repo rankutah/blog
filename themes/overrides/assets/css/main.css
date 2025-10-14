@@ -13,6 +13,44 @@
   display: none !important;
 }
 
+/* ===== ULTIMATE OVERRIDE (plain CSS, keep at physical end of file) =====
+  Ensures our desired colors are not reordered by Tailwind's layer processing.
+  Goal: Placeholder same in light/dark (#9ca3af); typed text white in dark mode, dark slate in light.
+*/
+.cp-contact input[type="text"],
+.cp-contact input[type="email"],
+.cp-contact input[type="tel"],
+.cp-contact input[type="search"],
+.cp-contact input[type="url"],
+.cp-contact input[type="password"],
+.cp-contact textarea { color: #111827 !important; }
+
+/* Unified placeholder both modes */
+.cp-contact input[type="text"]::placeholder,
+.cp-contact input[type="email"]::placeholder,
+.cp-contact input[type="tel"]::placeholder,
+.cp-contact input[type="search"]::placeholder,
+.cp-contact input[type="url"]::placeholder,
+.cp-contact input[type="password"]::placeholder,
+.cp-contact textarea::placeholder { color: #9ca3af !important; opacity: 1 !important; }
+
+/* Dark mode text color enforcement (covers .dark class or data-theme attr) */
+.dark .cp-contact input[type="text"],
+.dark .cp-contact input[type="email"],
+.dark .cp-contact input[type="tel"],
+.dark .cp-contact input[type="search"],
+.dark .cp-contact input[type="url"],
+.dark .cp-contact input[type="password"],
+.dark .cp-contact textarea,
+[data-theme="dark"] .cp-contact input[type="text"],
+[data-theme="dark"] .cp-contact input[type="email"],
+[data-theme="dark"] .cp-contact input[type="tel"],
+[data-theme="dark"] .cp-contact input[type="search"],
+[data-theme="dark"] .cp-contact input[type="url"],
+[data-theme="dark"] .cp-contact input[type="password"],
+[data-theme="dark"] .cp-contact textarea { color: #ffffff !important; }
+
+
 /* Make list markers match the current text color */
 .prose :where(ul > li)::marker { color: currentColor; }
 .prose :where(ol > li)::marker { color: currentColor; }
@@ -130,7 +168,7 @@ main#content.no-top-pad { padding-top: 0 !important; }
   color: #111827 !important;
 }
 
-/* Dark mode placeholders (class) */
+/* Dark mode: placeholder should be softened, typed text should be near-white */
 .dark .cp-contact input[type="text"]::placeholder,
 .dark .cp-contact input[type="email"]::placeholder,
 .dark .cp-contact input[type="tel"]::placeholder,
@@ -138,8 +176,18 @@ main#content.no-top-pad { padding-top: 0 !important; }
 .dark .cp-contact input[type="url"]::placeholder,
 .dark .cp-contact input[type="password"]::placeholder,
 .dark .cp-contact textarea::placeholder {
-  color: #f8fafc !important; /* near-white for high contrast */
+  color: #9ca3af !important; /* softened placeholder in dark mode */
   opacity: 1 !important;
+}
+
+.dark .cp-contact input[type="text"],
+.dark .cp-contact input[type="email"],
+.dark .cp-contact input[type="tel"],
+.dark .cp-contact input[type="search"],
+.dark .cp-contact input[type="url"],
+.dark .cp-contact input[type="password"],
+.dark .cp-contact textarea {
+  color: #f8fafc !important; /* near-white for entered text in dark mode */
 }
 
 /* Dark mode placeholders (OS-level) */
@@ -151,12 +199,18 @@ main#content.no-top-pad { padding-top: 0 !important; }
   .cp-contact input[type="url"]::placeholder,
   .cp-contact input[type="password"]::placeholder,
   .cp-contact textarea::placeholder {
-    color: #f8fafc !important;
+    color: #9ca3af !important;
     opacity: 1 !important;
   }
 }
 
 /* Vendor-prefixed fallbacks */
+.cp-contact input[type="text"]::-webkit-input-placeholder,
+.cp-contact input[type="email"]::-webkit-input-placeholder,
+.cp-contact input[type="tel"]::-webkit-input-placeholder,
+.cp-contact input[type="search"]::-webkit-input-placeholder,
+.cp-contact input[type="url"]::-webkit-input-placeholder,
+.cp-contact input[type="password"]::-webkit-input-placeholder,
 .cp-contact input[type="text"]::-webkit-input-placeholder,
 .cp-contact input[type="email"]::-webkit-input-placeholder,
 .cp-contact input[type="tel"]::-webkit-input-placeholder,
@@ -172,6 +226,87 @@ main#content.no-top-pad { padding-top: 0 !important; }
 .cp-contact input[type="password"]::-moz-placeholder,
 .cp-contact textarea::-moz-placeholder { color: #9ca3af !important; opacity: 1 !important; }
 
+/* Vendor-prefixed dark-mode placeholder fallbacks */
+.dark .cp-contact input[type="text"]::-webkit-input-placeholder,
+.dark .cp-contact input[type="email"]::-webkit-input-placeholder,
+.dark .cp-contact input[type="tel"]::-webkit-input-placeholder,
+.dark .cp-contact input[type="search"]::-webkit-input-placeholder,
+.dark .cp-contact input[type="url"]::-webkit-input-placeholder,
+.dark .cp-contact input[type="password"]::-webkit-input-placeholder,
+.dark .cp-contact textarea::-webkit-input-placeholder { color: #9ca3af !important; opacity: 1 !important; }
+.dark .cp-contact input[type="text"]::-moz-placeholder,
+.dark .cp-contact input[type="email"]::-moz-placeholder,
+.dark .cp-contact input[type="tel"]::-moz-placeholder,
+.dark .cp-contact input[type="search"]::-moz-placeholder,
+.dark .cp-contact input[type="url"]::-moz-placeholder,
+.dark .cp-contact input[type="password"]::-moz-placeholder,
+.dark .cp-contact textarea::-moz-placeholder { color: #9ca3af !important; opacity: 1 !important; }
+
 /* Checkbox accent + fallback */
 .cp-contact input[type="checkbox"] { accent-color: currentColor !important; }
 .cp-contact input[type="checkbox"]:checked { background-color: currentColor !important; border-color: currentColor !important; }
+
+/* Reinforce dark-mode colors for browsers that use prefers-color-scheme instead of a `.dark` class.
+   Place this at the end so it wins over earlier prefers-color-scheme blocks in compiled bundles. */
+@media (prefers-color-scheme: dark) {
+  /* Ensure entered text is near-white for readability */
+  .cp-contact input[type="text"],
+  .cp-contact input[type="email"],
+  .cp-contact input[type="tel"],
+  .cp-contact input[type="search"],
+  .cp-contact input[type="url"],
+  .cp-contact input[type="password"],
+  .cp-contact textarea {
+    color: #f8fafc !important;
+  }
+
+  /* Muted, readable placeholder in dark mode (not pure white) */
+  .cp-contact input[type="text"]::placeholder,
+  .cp-contact input[type="email"]::placeholder,
+  .cp-contact input[type="tel"]::placeholder,
+  .cp-contact input[type="search"]::placeholder,
+  .cp-contact input[type="url"]::placeholder,
+  .cp-contact input[type="password"]::placeholder,
+  .cp-contact textarea::placeholder,
+  /* vendor-prefixed */
+  .cp-contact input[type="text"]::-webkit-input-placeholder,
+  .cp-contact input[type="email"]::-webkit-input-placeholder,
+  .cp-contact input[type="tel"]::-webkit-input-placeholder,
+  .cp-contact input[type="search"]::-webkit-input-placeholder,
+  .cp-contact input[type="url"]::-webkit-input-placeholder,
+  .cp-contact input[type="password"]::-webkit-input-placeholder,
+  .cp-contact textarea::-webkit-input-placeholder,
+  .cp-contact input[type="text"]::-moz-placeholder,
+  .cp-contact input[type="email"]::-moz-placeholder,
+  .cp-contact input[type="tel"]::-moz-placeholder,
+  .cp-contact input[type="search"]::-moz-placeholder,
+  .cp-contact input[type="url"]::-moz-placeholder,
+  .cp-contact input[type="password"]::-moz-placeholder,
+  .cp-contact textarea::-moz-placeholder {
+    color: #9ca3af !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ===== FINAL ENFORCEMENT (after Tailwind layers expansion) =====
+   Some build orders can place Tailwind utilities after our earlier rules.
+   These selectors intentionally add slight specificity + come LAST so that
+   dark mode always shows white typed text while placeholders stay #9ca3af. */
+@layer utilities {
+  :is(.dark, [data-theme="dark"]) .cp-contact input[type="text"],
+  :is(.dark, [data-theme="dark"]) .cp-contact input[type="email"],
+  :is(.dark, [data-theme="dark"]) .cp-contact input[type="tel"],
+  :is(.dark, [data-theme="dark"]) .cp-contact input[type="search"],
+  :is(.dark, [data-theme="dark"]) .cp-contact input[type="url"],
+  :is(.dark, [data-theme="dark"]) .cp-contact input[type="password"],
+  :is(.dark, [data-theme="dark"]) .cp-contact textarea { color: #f8fafc !important; }
+
+  /* Placeholders unified for both modes already (#9ca3af); repeat once more to win any late utilities */
+  .cp-contact input[type="text"]::placeholder,
+  .cp-contact input[type="email"]::placeholder,
+  .cp-contact input[type="tel"]::placeholder,
+  .cp-contact input[type="search"]::placeholder,
+  .cp-contact input[type="url"]::placeholder,
+  .cp-contact input[type="password"]::placeholder,
+  .cp-contact textarea::placeholder { color: #9ca3af !important; opacity: 1 !important; }
+}

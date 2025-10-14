@@ -13,27 +13,9 @@
 
 <div class="not-prose p-3 rounded-lg border border-gray-200 dark:border-gray-700">
   <div class="grid gap-2 md:grid-cols-3 items-end">
-    <!-- Primary brand -->
-    <div>
-      <label for="cp-primary" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Primary color</label>
-      <select id="cp-primary" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
-                                     bg-gray-50 text-gray-900 border border-gray-300
-                                     dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
-                                     focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-400
-                                     dark:focus:ring-gray-700 dark:focus:border-gray-500">
-        {{- range $neutrals }}
-          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
-        {{- end }}
-        <optgroup label="— Colors —"></optgroup>
-        {{- range $chromas }}
-          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
-        {{- end }}
-      </select>
-    </div>
-
     <!-- Light background -->
     <div>
-      <label for="cp-light" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Background</label>
+      <label for="cp-light" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Background color</label>
       <select id="cp-light" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
                                    bg-gray-50 text-gray-900 border border-gray-300
                                    dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
@@ -52,7 +34,7 @@
 
     <!-- Dark background -->
     <div>
-      <label for="cp-dark" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Background</label>
+      <label for="cp-dark" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Background color</label>
       <select id="cp-dark" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
                                   bg-gray-50 text-gray-900 border border-gray-300
                                   dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
@@ -70,6 +52,24 @@
         {{- range $chromas }}
           {{- $val := printf "%s-950" . -}}
           <option value="{{ $val }}" {{ if eq $val $darkDefault }}selected{{ end }}>{{ $val }}</option>
+        {{- end }}
+      </select>
+    </div>
+
+    <!-- Primary brand -->
+    <div>
+      <label for="cp-primary" class="block mb-1 text-xs font-medium text-gray-900 dark:text-gray-100">Primary color</label>
+      <select id="cp-primary" class="min-w-0 w-full text-xs h-9 rounded-md px-2 appearance-none
+                                     bg-gray-50 text-gray-900 border border-gray-300
+                                     dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600
+                                     focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-400
+                                     dark:focus:ring-gray-700 dark:focus:border-gray-500">
+        {{- range $neutrals }}
+          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
+        {{- end }}
+        <optgroup label="— Colors —"></optgroup>
+        {{- range $chromas }}
+          <option value="{{ . }}" {{ if eq . $brandDefault }}selected{{ end }}>{{ . }}</option>
         {{- end }}
       </select>
     </div>
@@ -314,6 +314,8 @@ const STATIC_NAV_BGS = [
     const brand  = (brandSel && BTN_MAP[brandSel.value]) ? brandSel.value : "blue";
     const hex    = (BRAND_HEX[brand] || BRAND_HEX.blue)[isDark ? "dark" : "light"];
     document.querySelectorAll('a.link-brand').forEach(a => { a.style.color = hex; });
+    // Notify any global handlers (e.g., the layout's recolorLinks which uses !important)
+    try { window.dispatchEvent(new CustomEvent('cp:brandchange', { detail: brand })); } catch (e) {}
   }
 
   // brand tint (buttons) via map
@@ -391,13 +393,17 @@ const STATIC_NAV_BGS = [
   }).observe(html, { attributes: true });
 
   // events
-  brandSel ?.addEventListener('change', () => applyBrand(brandSel.value));
+  brandSel ?.addEventListener('change', () => { applyBrand(brandSel.value); try { window.dispatchEvent(new CustomEvent('cp:brandchange', { detail: brandSel.value })); } catch (e) {} });
   lightSel ?.addEventListener('change', () => { if (!html.classList.contains('dark')) repaint(); });
   darkSel  ?.addEventListener('change', () => { if ( html.classList.contains('dark')) repaint(); });
 
   // init
   syncPickerVisibility();
-  if (brandSel) applyBrand(brandSel.value);
+  if (brandSel) {
+    applyBrand(brandSel.value);
+    // notify global handlers so they can apply higher-priority styles (e.g., !important)
+    try { window.dispatchEvent(new CustomEvent('cp:brandchange', { detail: brandSel.value })); } catch (e) {}
+  }
   repaint();
   recolorLinks();
 })();

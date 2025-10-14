@@ -13,7 +13,7 @@ url: "/pricing"
 # Pricing
 {.center}
 
-Clear affordable pricing without the contracts and fees.
+Simple monthly pricing. No contracts. No surprises.
 {.center}
 
 {{< section >}}
@@ -48,7 +48,7 @@ $199 per month
 ~~$348~~ $299 per month
 
 
-Bundle Website Design with Local SEO to maximize your visibility. Unlock the full potential of your business for local results.
+Bundle Website Design with Local SEO to maximize visibility. Unlock the full potential of your business for local search results.
 
 {{< /col >}}
 
