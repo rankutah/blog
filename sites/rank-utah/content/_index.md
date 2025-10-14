@@ -9,7 +9,9 @@ url: "/"
 # Website Design & SEO Marketing {.text-white}
 Professional business websites with powerful online marketing.
 {.text-white}
-{{<button text="Web Design">}}{{<button text="SEO Marketing">}}
+{{<button url="/web-design" text="Web Design">}}{{<button url="/local-seo" text="Local SEO">}}
+
+
 
 {{< /section >}}
 
