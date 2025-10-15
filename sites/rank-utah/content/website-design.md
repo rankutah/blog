@@ -40,7 +40,7 @@ Use this {{< button text="Example Button" >}} and [Example Link]() to reference 
 
 ## Step 3:
 
-Decide if you would like {{< button url="/seo-marketing" text="SEO Marketing" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
+Decide if you are in need of {{< button url="/local-seo" text="Local SEO" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
 
 {{< /section >}}
 

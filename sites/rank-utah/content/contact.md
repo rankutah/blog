@@ -10,7 +10,7 @@ url: "/contact"
 
 # Get in touch
 
-Tell us a bit about your project and the best way to reach you. We typically respond within 1 business day.
+Tell us a bit about your project and the best way to reach you. 
 
 {{< /section >}}
 
@@ -19,6 +19,20 @@ Tell us a bit about your project and the best way to reach you. We typically res
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+## Direct contact
+
+- Phone: <a href="tel:+13853238130">(385) 323-8130</a>
+- Email: <a href="mailto:hello@clearpresence.io">hello@clearpresence.io</a>
+- Hours: Mon–Fri, 9am–5pm (MT)
+- Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
+
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+
 ## Leave a message
 
 Share what you need help with and any relevant links (your website, examples, etc.).
@@ -29,8 +43,6 @@ Share what you need help with and any relevant links (your website, examples, et
 	name="true"
 	email="true"
 	phone="optional"
-	address="optional"
-	custom="Website URL"
 	subject="false"
 	message="true"
 	order="name,email,phone,address,custom,message,consent"
@@ -38,20 +50,7 @@ Share what you need help with and any relevant links (your website, examples, et
 >}}
 
 {{< button submit="true" form="contact" text="Send Message" >}}
-<div class="text-sm opacity-80 mt-2">By submitting, you agree we may contact you about your request. See our <a href="/privacy" class="underline">Privacy Policy</a>.</div>
 
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-## Direct contact
-
-- Phone: <a href="tel:+13853238130">(385) 323-8130</a>
-- Email: <a href="mailto:hello@clearpresence.io">hello@clearpresence.io</a>
-- Hours: Mon–Fri, 9am–5pm (MT)
-- Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
-
-### Prefer email?
-Include your website URL, goals, and timeline. We’ll follow up with next steps.
 
 {{< /col >}}
 
