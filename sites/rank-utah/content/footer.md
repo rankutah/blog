@@ -11,10 +11,10 @@ headless: true
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-
-## Clear Presence
+### Ready to Grow Your Business
 {.center}
-Website Design & Local SEO for Small Businesses
+Reach out via call, text, or email <br>
+{{< button url="/contact" text="Contact" >}}
 {.center}
 
 ### Contact
@@ -27,10 +27,9 @@ Website Design & Local SEO for Small Businesses
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Ready to Grow Your Business
+## Clear Presence
 {.center}
-Reach out via call, text, or email <br>
-{{< button url="/contact" text="Contact" >}}
+Website Design & Local SEO for Small Businesses
 {.center}
 
 ### Company
@@ -38,17 +37,14 @@ Reach out via call, text, or email <br>
 [About](/about) • [Portfolio](/portfolio) • [Pricing](/pricing) • [Contact](/contact)
 {.center}
 
-
-
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
 ### Services
 {.center}
 [Website Design](/website-design) • [Local SEO](/local-seo)
 {.center}
 
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ### Legal
 {.center}
