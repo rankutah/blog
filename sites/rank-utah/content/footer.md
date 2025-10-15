@@ -9,14 +9,10 @@ headless: true
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-### Company
-{.center}
-[About](/about) • [Portfolio](/portfolio) • [Pricing](/pricing) • [Contact](/contact)
+### Contact
 {.center}
 
-### Legal
-{.center}
-[Privacy Policy](/privacy) • [Terms of Service](/terms)
+(385) 323-8130  <br> hello@clearpresence.io <br> Mon-Fri 9am-5pm <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062)
 {.center}
 
 
@@ -24,6 +20,10 @@ headless: true
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
+### Company
+{.center}
+[About](/about) • [Portfolio](/portfolio) • [Pricing](/pricing) • [Contact](/contact)
+{.center}
 
 ### Services
 {.center}
@@ -31,16 +31,15 @@ headless: true
 {.center}
 
 
-
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
+### Legal
+{.center}
+[Privacy Policy](/privacy) • [Terms of Service](/terms)
+{.center}
 
-### Contact
-{.center}
-(385) 323-8130 <br> hello@clearpresence.io <br> Mon-Fri 9am-5pm <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062)
-{.center}
 
 {{< /col >}}
 
