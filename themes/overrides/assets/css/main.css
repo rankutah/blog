@@ -89,7 +89,8 @@
   margin-right: auto;
 }
 .footer .prose > :first-child { margin-top: 0 !important; }
-.footer .prose a { text-decoration: underline; }
+/* underline only normal text links; do not underline button-style anchors */
+.footer .prose a:not(.not-prose):not(.ui-btn):not(.no-underline) { text-decoration: underline; }
 
 
 /* Make list markers match the current text color */

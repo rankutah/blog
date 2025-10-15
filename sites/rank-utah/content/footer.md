@@ -5,14 +5,17 @@ headless: true
 
 {{< section >}}
 
-## Clear Presence
-{.center}
-Website Design & SEO for Small Businesses
-{.center}
+
 
 {{< cols min="18rem" gap="0rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+
+## Clear Presence
+{.center}
+Website Design & Local SEO for Small Businesses
+{.center}
 
 ### Contact
 {.center}
@@ -24,20 +27,28 @@ Website Design & SEO for Small Businesses
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
+### Ready to Grow Your Business
+{.center}
+Reach out via call, text, or email <br>
+{{< button url="/contact" text="Contact" >}}
+{.center}
+
 ### Company
 {.center}
 [About](/about) • [Portfolio](/portfolio) • [Pricing](/pricing) • [Contact](/contact)
 {.center}
+
+
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ### Services
 {.center}
 [Website Design](/website-design) • [Local SEO](/local-seo)
 {.center}
 
-
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ### Legal
 {.center}

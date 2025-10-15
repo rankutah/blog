@@ -1,13 +1,13 @@
 ---
-title: "Website Design & SEO Marketing"
-description: "Clear Presence builds fast, modern websites and SEO marketing for small businesses—so you show up on Google Search & Maps and get more calls"
+title: "Website Design & Local SEO"
+description: "Clear Presence builds fast, modern websites with local SEO for small businesses—so you show up on Google Search & Maps and get more calls"
 layout: "flowbite"
 url: "/"
 ---
 
 {{< section img="../media/clear-presence-image-of-small-business.png" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false" >}}
-# Website Design & SEO Marketing {.text-white}
-Professional business websites with powerful online marketing.
+# Website Design & Local SEO {.text-white}
+Professional business websites with powerful local SEO
 {.text-white}
 {{<button url="/website-design" text="Website Design">}}{{<button url="/local-seo" text="Local SEO">}}
 
