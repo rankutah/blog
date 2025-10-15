@@ -10,7 +10,7 @@ url: "/contact"
 
 # Get in touch
 
-Tell us a bit about your project and the best way to reach you. 
+After hours? Leave a voicemail, text or email and we'll get back to you the next business day.
 
 {{< /section >}}
 
@@ -22,10 +22,12 @@ Tell us a bit about your project and the best way to reach you.
 
 ## Direct contact
 
-- Phone: <a href="tel:+13853238130">(385) 323-8130</a>
-- Email: <a href="mailto:hello@clearpresence.io">hello@clearpresence.io</a>
-- Hours: Mon–Fri, 9am–5pm (MT)
+- Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
+- Send an Email: <a href="mailto:hello@clearpresence.io">hello@clearpresence.io</a>
+- Business Hours: Mon–Fri, 9am–5pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
+
+## Schedule a Meeting
 
 
 {{< /col >}}
@@ -35,7 +37,7 @@ Tell us a bit about your project and the best way to reach you.
 
 ## Leave a message
 
-Share what you need help with and any relevant links (your website, examples, etc.).
+Share what you need help with
 
 {{< contact-form
 	id="contact"
@@ -43,9 +45,11 @@ Share what you need help with and any relevant links (your website, examples, et
 	name="true"
 	email="true"
 	phone="optional"
+    business="optional"
 	subject="false"
 	message="true"
-	order="name,email,phone,address,custom,message,consent"
+	custom="Website (Optional)"
+	order="name,email,phone,business,address,custom,message,consent"
 	classes="max-w-xl"
 >}}
 

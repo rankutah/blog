@@ -21,9 +21,16 @@
 {{- $showPhone := ne $phoneParam "false" -}}
 {{- $phonePlaceholder := cond (eq $phoneParam "optional") "Phone (Optional)" "Phone" -}}
 
-{{- $companyParam := lower (.Get "company" | default "false") -}}
-{{- $showCompany := ne $companyParam "false" -}}
-{{- $companyPlaceholder := cond (eq $companyParam "optional") "Company (Optional)" "Company" -}}
+{{- /* Organization field: support business/company aliases; optional/required/false */ -}}
+{{- $businessParam := lower (.Get "business" | default "") -}}
+{{- $companyParam  := lower (.Get "company"  | default "") -}}
+{{- $orgParam := cond (gt (len $businessParam) 0) $businessParam (cond (gt (len $companyParam) 0) $companyParam "false") -}}
+{{- $useBusiness := gt (len $businessParam) 0 -}}
+{{- $orgLabel := cond $useBusiness "Business" "Company" -}}
+{{- $showOrg := ne $orgParam "false" -}}
+{{- $orgRequired := eq $orgParam "true" -}}
+{{- $orgPlaceholder := cond (eq $orgParam "optional") (printf "%s (Optional)" $orgLabel) $orgLabel -}}
+{{- $orgField := cond $useBusiness "business" "company" -}}
 
 {{- /* Address field (short single-line) */ -}}
 {{- $addressParam := lower (.Get "address" | default "false") -}}
@@ -103,7 +110,8 @@
       {{- $cleanOrder := replaceRE "\\s*,\\s*" "," $orderRaw -}}
       {{- $orderItems = split $cleanOrder "," -}}
     {{- else -}}
-      {{- $orderItems = slice "name" "email" "phone" "address" "custom" "company" "subject" "message" "consent" -}}
+      {{- /* Default order: place Business/Company after phone */ -}}
+      {{- $orderItems = slice "name" "email" "phone" "business" "address" "custom" "subject" "message" "consent" -}}
     {{- end -}}
     {{- range $idx, $fld := $orderItems }}
       {{- $k := lower (trim $fld " \t\n\r") -}}
@@ -153,11 +161,11 @@
         </div>
         {{- end }}
 
-      {{- else if eq $k "company" -}}
-        {{- if $showCompany }}
+      {{- else if or (eq $k "company") (eq $k "business") -}}
+        {{- if $showOrg }}
         <div>
-          <label for="company" class="sr-only">Company</label>
-          <input type="text" id="company" name="company" placeholder="{{ $companyPlaceholder }}" class="{{ $inputBase }}">
+          <label for="{{ $orgField }}" class="sr-only">{{ $orgLabel }}</label>
+          <input type="text" id="{{ $orgField }}" name="{{ $orgField }}" placeholder="{{ $orgPlaceholder }}" {{ if $orgRequired }}required{{ end }} class="{{ $inputBase }}">
         </div>
         {{- end }}
 
