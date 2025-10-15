@@ -100,7 +100,7 @@ Discover the full range of solutions for local businesses.  we offer, from start
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Porfolio
+## Portfolio
 
 Explore our best work and see real examples of the results we've delivered for clients like you. Witness the quality and impact of our projects firsthand.
 

@@ -41,7 +41,7 @@ Schedule a phone call, video meeting, or office visit.
 
 ## Leave a message
 
-Share what you need help with
+Share what you need help with and the best way to contact you.
 
 {{< contact-form
 	id="contact"
