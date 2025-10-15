@@ -12,7 +12,6 @@ Professional business websites with powerful local SEO
 {{<button url="/website-design" text="Website Design">}}{{<button url="/local-seo" text="Local SEO">}}
 
 
-
 {{< /section >}}
 
 {{< section >}}

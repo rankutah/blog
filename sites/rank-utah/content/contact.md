@@ -29,6 +29,10 @@ After hours? Leave a voicemail, text or email and we'll get back to you the next
 
 ## Schedule a Meeting
 
+Schedule a phone call, video meeting, or office visit.
+
+{{< button url="https://calendly.com/clearpresence/30min" text="Schedule" >}}
+
 
 {{< /col >}}
 
