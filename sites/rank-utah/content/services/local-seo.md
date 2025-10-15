@@ -2,7 +2,7 @@
 title: "Local SEO"
 description: "Local SEO for small businesses"
 layout: "flowbite"
-url: "/local-seo"
+url: "/services/local-seo"
 ---
 
 {{< section >}}
@@ -11,7 +11,7 @@ url: "/local-seo"
 
 Get new customers by showing up in local search results.
 
-{{< button url="/contact" text="Call Now" >}}
+{{< button url="/contact" text="Contact" >}}
 
 ## Do you need more customers?
 
@@ -81,7 +81,7 @@ Clear Presence continuously works to bring you more customers. Local SEO require
 Reports compare the last month with two months before so you can easily track how things are progressing. Here is an report from a current customer. Each indicator displays the % increase or decrease from the previous month.
 
 
-![](../media/local-seo-analytics-report.png)
+![](../../media/local-seo-analytics-report.png)
 
 ## Have additional questions?
 

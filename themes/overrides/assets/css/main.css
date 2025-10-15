@@ -175,12 +175,12 @@ main#content { padding-top: 4rem; }
 /* If the page starts with a full-bleed hero/section, remove the extra padding so the hero sits flush under the nav.
    Use :has() in supporting browsers for automatic detection; fallback is the manual `.no-top-pad` class on main. */
 @supports selector(:has) {
-  /* common patterns: a top-level .hero, a section with .bleed, or a relative block with a full-width image */
-  main#content:has(> .hero),
-  main#content:has(> .section.bleed),
-  main#content:has(> .relative > img),
-  main#content:has(> .relative > picture) {
-    padding-top: 0;
+  /* If any hero/bleed section exists inside main (even nested in article), remove extra top pad */
+  main#content:has(.hero),
+  main#content:has(.section.bleed),
+  main#content:has(.relative > img),
+  main#content:has(.relative > picture) {
+    padding-top: 0 !important;
   }
 }
 

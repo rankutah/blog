@@ -10,7 +10,7 @@ url: "/contact"
 
 # Get in touch
 
-After hours? Leave a voicemail, text or email and we'll get back to you the next business day.
+After hours? Leave a voicemail, text or email and I'll get back to you the next business day.
 
 {{< /section >}}
 
@@ -57,7 +57,7 @@ Share what you need help with and the best way to contact you.
 	classes="max-w-xl"
 >}}
 
-{{< button submit="true" form="contact" text="Send Message" >}}
+{{< button submit="true" form="contact" text="Submit Message" >}}
 
 
 {{< /col >}}

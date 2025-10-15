@@ -5,6 +5,13 @@ languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
 
+# Remove trailing slashes from generated URLs
+trailingSlash = "never"
+
+# Clean the publish directory before each build to prevent stale files
+cleanDestinationDir = true
+uglyURLs      = true
+
 pruneTaxonomies = true
 
 [outputFormats.TagsJSON]
@@ -139,7 +146,7 @@ pruneTaxonomies = true
 [params.text]
 
 [permalinks]
-  posts = "/:filename/"
+  posts = "/:filename"
 
 [taxonomies]
   tag = "tags"
@@ -162,13 +169,13 @@ pruneTaxonomies = true
 
   [[menu.main]]
     name = "Website Design"
-    url = "/website-design"
+    url = "/services/website-design"
     parent = "services"
     weight = 11
 
   [[menu.main]]
     name = "Local SEO"
-    url = "/local-seo"
+    url = "/services/local-seo"
     parent = "services"
     weight = 12
 

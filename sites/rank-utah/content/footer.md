@@ -33,7 +33,7 @@ Website Design & Local SEO for Small Businesses
 
 ### Services
 {.center}
-[Website Design](/website-design) • [Local SEO](/local-seo)
+[Website Design](/services/website-design) • [Local SEO](/services/local-seo)
 {.center}
 
 {{< /col >}}

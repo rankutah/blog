@@ -2,7 +2,7 @@
 title: "Website Design"
 description: "Custom website design for small businesses"
 layout: "flowbite"
-url: "/website-design"
+url: "/services/website-design"
 ---
 
 {{< section>}}
@@ -34,13 +34,15 @@ Use this {{< button text="Example Button" >}} and [Example Link]() to reference 
 
 ## Step 2: Save your colors
 
+Save your colors by sending a quick message.
+
 {{< contact-form id="colors" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" custom="Primary Color, Background Color" phone="optional" message="true" classes="max-w-xl"  >}}
-{{< button submit="true" form="colors" text="Send Message" >}}
+{{< button submit="true" form="colors" text="Save my Colors" >}}
 
 
 ## Step 3:
 
-Decide if you are in need of {{< button url="/local-seo" text="Local SEO" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
+Decide if you are in need of {{< button url="/services/local-seo" text="Local SEO" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
 
 {{< /section >}}
 

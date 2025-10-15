@@ -9,7 +9,7 @@ url: "/"
 # Website Design & Local SEO {.text-white}
 Professional business websites with powerful local SEO
 {.text-white}
-{{<button url="/website-design" text="Website Design">}}{{<button url="/local-seo" text="Local SEO">}}
+{{<button url="/services/website-design" text="Website Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
 
 
 {{< /section >}}
@@ -82,7 +82,7 @@ Most web designers require high costs upfront before they will build your websit
 
 Use the color selector to test out 2 colors for your website and learn how to get started with a custom website designed to help you find leads.
 
-{{<button text="Website Design" url="/website-design" >}}
+{{<button text="Website Design" url="/services/website-design" >}}
 
 
 {{< /col >}}
@@ -94,7 +94,7 @@ Use the color selector to test out 2 colors for your website and learn how to ge
 
 Discover the full range of solutions for local businesses.  we offer, from start-to-finish projects to specialized consulting. See how our expertise can directly benefit your goals.
 
-{{<button text="Local SEO" url="/local-seo">}}
+{{<button text="Local SEO" url="/services/local-seo">}}
 
 {{< /col >}}
 
@@ -158,16 +158,16 @@ Ready to start a project or just have a few questions? Reach out to us directly 
 {{< faqs >}}
 ### What is your Local SEO process?
 
-Get the latest on the Clear Presence marketing process by visiting the [Local SEO](/local-seo) page
+Get the latest on the Clear Presence marketing process by visiting the [Local SEO](/services/local-seo) page
 ### What is your web design process?
 
-Get the latest on the Clear Presence website design process by visiting the [Website Design](/website-design) page
+Get the latest on the Clear Presence website design process by visiting the [Website Design](/services/website-design) page
 
 ### How do you compare to other SEO and website design companies?
 You will receive a higher standard of service than larger companies and agencies but at a more affordable rate. I do not lock you into a contract, have hidden fees, limit edits or methods of communication.
 
 ### Which locations do you serve?
-I focus on providing in-person service to local businesses in Utah but am happy to help businesses anywhere.
+Clear Presence provides services to clients nationwide.
 
 {{< /faqs >}}
 
