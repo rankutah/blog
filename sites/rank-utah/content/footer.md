@@ -5,6 +5,11 @@ headless: true
 
 {{< section >}}
 
+## Clear Presence
+{.center}
+Website Design & SEO for Small Businesses
+{.center}
+
 {{< cols min="18rem" gap="0rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
@@ -12,9 +17,8 @@ headless: true
 ### Contact
 {.center}
 
-(385) 323-8130  <br> hello@clearpresence.io <br> Mon-Fri 9am-5pm <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062)
+(385) 323-8130  <br> hello@clearpresence.io <br> Mon-Fri 9am-5pm <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062) <br> Serving clients across the nation
 {.center}
-
 
 {{< /col >}}
 
