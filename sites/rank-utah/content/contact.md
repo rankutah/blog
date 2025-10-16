@@ -27,7 +27,7 @@ After hours? Leave a voicemail, text or email and I'll get back to you the next 
 - Business Hours: Mon–Fri, 9am–5pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-## Schedule a Meeting
+## Schedule a meeting
 
 Schedule a phone call, video meeting, or office visit.
 

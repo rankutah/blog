@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
 ---
-{{< section img="/media/pg-high.webp" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false">}}
+{{< section img="/media/pleasant-grove-website-design-local-seo.webp" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false">}}
 # Pleasant Grove Website Design & Local SEO {.text-white}
 Professional business websites with powerful local SEO
 {.text-white}
@@ -50,9 +50,9 @@ Grow your small business in Pleasant Grove with a professional website and local
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-caff5808-5afd-415b-b8a6-19ebf5a9e552" data-elfsight-app-lazy></div>
 
-## Serving Pleasant Grove
+## Serving Pleasant Grove, UT
 
-My mission is to bring you customers and help your business grow. My wife graduated from Pleasant Grove High as a Viking so it is fun having an office in her home town. My web design process is unique from other web designers in that I always maintain my focus on marketing and the actual performance of the site. My sites are custom built so they are fast, beatiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
+My wife graduated from Pleasant Grove High School as a Viking so it is fun having an office in her home town. My web design process is unique from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My sites are custom built so they are fast, beatiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
 
 {{< /section >}}
 

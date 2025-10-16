@@ -13,7 +13,7 @@ url: "/about"
 
 Small businesses are often surprised when a pretty website doesn’t bring in customers. Most web designers focus on looks and call it done. Clear Presence builds completely custom websites that are beautiful, findable, and built to convert—so you get more traffic, more leads, and more sales.
 
-## Meet the Founder
+## Meet the founder
 
 My mission is to bring you customers. I continually spend time researching and understanding web design and local SEO, and investing in the tools, training, and services that give you the best possible results. I believe in open communication without limits or restriction. Before or after you become a client you can reach out at any time via text, phone, email, or schedule a meeting. My clients receive monthly reports to provide complete transparancy on the value they receive and are not locked into a contract. If you have any questions please don't hestitate to [reach out](/contact).
 

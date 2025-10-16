@@ -23,7 +23,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 {{< cols min="18rem" gap="1rem" v="start">}}
 
-{{< col card="true" bg="blue-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## Website Design <br>
 

@@ -57,6 +57,19 @@
 {{- $overlayProse := "prose prose-zinc max-w-none dark:prose-invert" -}}
 {{- $overlayAlign := (index $alMap $align | default "text-left") -}}
 
+{{/* Convenience: brighten flag -> apply a subtle white overlay unless overlayShade explicitly provided.
+    Usage: brighten="sm|md|lg|true" → sm=10%, md=20% (default), lg=30% */}}
+{{- $brightenParam := lower (.Get "brighten" | default "") -}}
+{{- if and (ne $brightenParam "") (eq $overlayShade "") -}}
+  {{- $overlay = true -}}
+  {{- $level := cond (or (eq $brightenParam "true") (eq $brightenParam "md")) "20" (cond (eq $brightenParam "sm") "10" (cond (eq $brightenParam "lg") "30" "")) -}}
+  {{- if ne $level "" -}}
+    {{- $overlayShade = printf "bg-white/%s" $level -}}
+  {{- else -}}
+    {{- $overlayShade = "bg-white/20" -}}
+  {{- end -}}
+{{- end -}}
+
 {{/* Spacer control (only relevant for bleed+overlay) */}}
 {{- $spacerParam := lower (.Get "spacer" | default "true") -}}
 
