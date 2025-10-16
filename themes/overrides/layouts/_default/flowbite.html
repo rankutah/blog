@@ -119,27 +119,11 @@
     {{ partial "google_analytics.html" . }}
   {{- end -}}
 
-  {{- /* LCP image preload: prefer AVIF source; extract only the clean URL */ -}}
-  {{- if or .IsHome .Params.hero -}}
-    {{- $avifTags := findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"[^\"]+\"` .Content -}}
-    {{- $imgTags  := findRE `(?is)<img[^>]+src=\"[^\"]+\"` .Content -}}
-    {{- $lcp := "" -}}
-    {{- if gt (len $avifTags) 0 -}}
-      {{- $first := index $avifTags 0 -}}
-      {{- $lcp = replaceRE `(?is).*srcset=\"([^\", ]+).*` "${1}" $first -}}
-    {{- else if gt (len $imgTags) 0 -}}
-      {{- $first := index $imgTags 0 -}}
-      {{- $lcp = replaceRE `(?is).*src=\"([^\"]+).*` "${1}" $first -}}
-    {{- end -}}
-    {{- with $lcp -}}
-      {{- $clean := . | strings.TrimSpace -}}
-      {{- if $clean }}
-        <link rel="preload" as="image" href="{{ $clean | absURL }}" fetchpriority="high">
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-    {{- /* LCP preload */ -}}
-    {{ partial "lcp-preload.html" . }}
+  {{- /* Favicons (explicit /favicon.ico to ensure live site picks it up) */ -}}
+  <link rel="icon" href="{{ (site.Params.assets.favicon | default "favicon.ico") | absURL }}">
+
+  {{- /* LCP preload */ -}}
+  {{ partial "lcp-preload.html" . }}
 
   {{- /* JSON-LD schema (Event and per-page LocalBusiness) */ -}}
   {{ partial "schema.html" . }}
