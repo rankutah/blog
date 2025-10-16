@@ -189,10 +189,10 @@
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
-              <button id="menu-{{ .Identifier }}-button" type="button"
+        <button id="menu-{{ .Identifier }}-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}"
                       data-dropdown-placement="bottom-start"
-                      class="no-underline hover:underline brand-link flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+          class="no-underline hover:underline brand-link text-white {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
                 <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -212,8 +212,8 @@
                 </ul>
               </div>
             {{ else }}
-              <a href="{{ .URL | relURL }}"
-                 class="no-underline hover:underline block py-2 px-3 rounded-sm md:border-0 md:p-0"
+          <a href="{{ .URL | relURL }}"
+            class="no-underline hover:underline brand-link text-white {{ $navHoverClasses }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
                  {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}>
                 {{ .Name }}
               </a>
