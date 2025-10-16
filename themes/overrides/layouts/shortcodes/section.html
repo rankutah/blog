@@ -125,8 +125,9 @@
   {{- $srcsetAvif := slice -}}
   {{- $fallbackSrc := $imgStr -}}
   {{- $isRaster := gt (len (findRE `\.(jpg|jpeg|png|webp)$` (lower $imgStr))) 0 -}}
-  {{- if and $isRaster (or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/")) -}}
-    {{- $noLead := replaceRE "^/" "" $imgStr -}}
+  {{- $isMedia := or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") (hasPrefix $imgStr "./media/") (hasPrefix $imgStr "../media/") -}}
+  {{- if and $isRaster $isMedia -}}
+    {{- $noLead := replaceRE "^(/|\\./|\\.\\./)" "" $imgStr -}}
     {{- $asset := resources.Get $noLead -}}
     {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
       {{- $origW := $asset.Width | default 0 -}}
@@ -152,6 +153,7 @@
       {{- if fileExists $staticPath -}}
         {{- $srcsetAvif = (slice (printf "/%s 1920w" $avifRel)) -}}
       {{- end -}}
+      {{- $fallbackSrc = printf "/%s" $noLead -}}
     {{- end -}}
   {{- end -}}
   <picture>
@@ -187,8 +189,9 @@
   {{- $srcsetAvif := slice -}}
   {{- $fallbackSrc := $imgStr -}}
   {{- $isRaster := gt (len (findRE `\.(jpg|jpeg|png|webp)$` (lower $imgStr))) 0 -}}
-  {{- if and $isRaster (or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/")) -}}
-    {{- $noLead := replaceRE "^/" "" $imgStr -}}
+  {{- $isMedia := or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") (hasPrefix $imgStr "./media/") (hasPrefix $imgStr "../media/") -}}
+  {{- if and $isRaster $isMedia -}}
+    {{- $noLead := replaceRE "^(/|\\./|\\.\\./)" "" $imgStr -}}
     {{- $asset := resources.Get $noLead -}}
     {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
       {{- $origW := $asset.Width | default 0 -}}

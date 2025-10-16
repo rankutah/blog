@@ -160,11 +160,17 @@
 </noscript>
 
 {{- partial "extend_head.html" . -}}
-{{- /* LCP image preload: prefer AVIF source from the first <picture>, else fallback <img> */ -}}
-{{- $lcpAvif := replaceRE `(?is).*<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\", ]+)` "${1}" .Content -}}
-{{- $lcpImg  := replaceRE `(?is).*<img[^>]+src=\"([^\"]+)\".*` "${1}" .Content -}}
-{{- if and (or $lcpAvif $lcpImg) (or .IsHome .Params.hero) -}}
-  <link rel="preload" as="image" href="{{ (or $lcpAvif $lcpImg) | absURL }}" fetchpriority="high">
+{{- /* LCP image preload: prefer AVIF source; only emit if we find a match */ -}}
+{{- $hasAvif := gt (len (findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\", ]+)` .Content)) 0 -}}
+{{- $hasImg  := gt (len (findRE `(?is)<img[^>]+src=\"([^\"]+)\"` .Content)) 0 -}}
+{{- if and (or $hasAvif $hasImg) (or .IsHome .Params.hero) -}}
+  {{- $lcp := "" -}}
+  {{- if $hasAvif -}}
+    {{- $lcp = replaceRE `(?is).*<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\", ]+)` "${1}" .Content -}}
+  {{- else -}}
+    {{- $lcp = replaceRE `(?is).*<img[^>]+src=\"([^\"]+)\"` "${1}" .Content -}}
+  {{- end -}}
+  <link rel="preload" as="image" href="{{ $lcp | absURL }}" fetchpriority="high">
 {{- end -}}
 {{ partial "schema.html" . }}
 

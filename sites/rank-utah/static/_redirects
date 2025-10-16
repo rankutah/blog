@@ -1,0 +1,2 @@
+# Example redirect rules (Netlify-style)
+# /old-url   /new-url   301!
