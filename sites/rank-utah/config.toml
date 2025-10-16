@@ -81,8 +81,8 @@ uglyURLs      = true
   logoHeight        = "h-10"
   # Optional: explicit pixel dimensions to avoid layout shift on logo
   # Set these to your actual logo intrinsic size
-  logoWidth         = 150
-  logoHeightPx      = 150
+  logoWidth         = 0
+  logoHeightPx      = 40
   theme = "blend" #blend (default), invert, glass
 
 [params.forms]

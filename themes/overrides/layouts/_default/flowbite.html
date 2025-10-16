@@ -131,9 +131,15 @@
     </article>
   </main>
 
-  <!-- Flowbite JS (ESM, only what we need) -->
-  {{- $ui := resources.Get "js/ui.js" | js.Build (dict "minify" true "target" "es2020" ) -}}
-  <script type="module" src="{{ $ui.RelPermalink }}"></script>
+  <!-- Inline tiny UI for navbar collapse/dropdowns (removes JS request chain) -->
+  <script type="module">
+    function ready(fn){if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',fn,{once:true});}else{fn();}}
+    function initCollapse(){document.querySelectorAll('[data-collapse-toggle]').forEach(btn=>{const id=btn.getAttribute('data-collapse-toggle');const target=id&&document.getElementById(id);if(!target)return;btn.addEventListener('click',()=>{const isHidden=target.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!isHidden));});});}
+    function initDropdowns(){const buttons=Array.from(document.querySelectorAll('[data-dropdown-toggle]'));if(!buttons.length)return;function closeAll(exceptId){buttons.forEach(b=>{const id=b.getAttribute('data-dropdown-toggle');const el=id&&document.getElementById(id);if(!el||id===exceptId)return;el.classList.add('hidden');b.setAttribute('aria-expanded','false');});}
+      buttons.forEach(btn=>{const id=btn.getAttribute('data-dropdown-toggle');const menu=id&&document.getElementById(id);if(!menu)return;btn.addEventListener('click',(e)=>{e.stopPropagation();const nowHidden=menu.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!nowHidden));if(!nowHidden)closeAll(id);});});
+      document.addEventListener('click',(e)=>{const inside=e.target.closest&&(e.target.closest('[data-dropdown-toggle]')||e.target.closest('[id^="menu-"]'));if(!inside)closeAll();});}
+    ready(()=>{initCollapse();initDropdowns();});
+  </script>
 
   <!-- Header toggle (optional):
        If you have a button with id="theme-toggle" (and two icons with

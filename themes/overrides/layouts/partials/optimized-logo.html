@@ -1,63 +1,92 @@
-{{/* optimized-logo.html
-  Inputs (dict):
-    - Site: .Site or a Page (we only use . for relURL)
-    - Logo: string path, e.g. "logo.png" or "/logo.png"
-    - Class: optional classes for img
-    - Alt: alt text
-    - Width: optional width (number or string)
-    - Height: optional height (number or string)
-
-  Behavior:
-    - Try to locate the logo in Hugo assets via resources.Get (media/Logo or raw Logo path).
-    - If found and is image: emit <picture> with AVIF + source fallback and explicit width/height.
-    - Else: fall back to a plain <img> referencing the provided logo path (static file).
+{{/* optimized-logo.html (robust, standardized sizing)
+  Inputs: Logo (string), Class, Alt, Width, Height
+  Behavior: Prefer assets/media/logo.* or assets/media/<Logo>.
+         If Height provided (>0), generate 1x/2x by height and set width/height attrs to 1x size.
+         Else if Width provided (>0), generate 1x/2x by width.
+         Else default to 256px width single asset.
+         Emit AVIF+WebP <source> with density srcset and <img> WebP fallback.
+         Fallback to static <img> if Hugo resource not found.
 */}}
 {{- $ctx   := . -}}
 {{- $logo  := $ctx.Logo | default "logo.png" -}}
 {{- $class := $ctx.Class | default "" -}}
 {{- $alt   := $ctx.Alt   | default "logo" -}}
-{{- $w     := $ctx.Width | default "" -}}
-{{- $h     := $ctx.Height | default "" -}}
+{{- $w     := $ctx.Width | default 0 -}}
+{{- $h     := $ctx.Height | default 0 -}}
 
-{{- /* Normalize path for resource lookup */ -}}
-{{- $raw := strings.TrimPrefix "/" $logo -}}
-{{- $orig := resources.Get (printf "media/%s" $raw) -}}
-{{- if not $orig -}}
-  {{- $orig = resources.Get $raw -}}
+{{- /* Prefer assets/media/logo.* */ -}}
+{{- $logoRes := (index (resources.Match "media/logo.*") 0) -}}
+{{- /* If not found, try the configured path under assets/media */ -}}
+{{- if not $logoRes -}}
+  {{- $raw := strings.TrimPrefix "/" $logo -}}
+  {{- $logoRes = resources.Get (printf "media/%s" $raw) -}}
+  {{- if not $logoRes -}}
+    {{- $logoRes = resources.Get $raw -}}
+  {{- end -}}
 {{- end -}}
 
-{{- /* Also detect static fallback presence to avoid 404s when param is set but file is missing */ -}}
-{{- $hasStatic := or (fileExists (printf "static/%s" $raw)) (fileExists $raw) -}}
-
-{{- if and $orig (eq $orig.MediaType.Type "image") -}}
-  {{- /* Resize to target width if provided; default modest width to avoid huge header logos */ -}}
-  {{- $fitW := cond $w (printf "%sx" $w) "512x" -}}
-  {{- $avif  := $orig.Fit (printf "%s avif" $fitW) -}}
-  {{- $webp  := $orig.Fit (printf "%s webp" $fitW) -}}
-  {{- /* Derive width/height if not provided, using the fallback source */ -}}
-  {{- $iw := or $w $webp.Width -}}
-  {{- $ih := or $h (div (mul $webp.Height (int $iw)) $webp.Width) -}}
+{{- if and $logoRes (eq $logoRes.MediaType.Type "image") -}}
+  {{- /* Build density-aware variants based on provided Height or Width */ -}}
+  {{- $avif1x := nil -}}
+  {{- $avif2x := nil -}}
+  {{- $webp1x := nil -}}
+  {{- $webp2x := nil -}}
+  {{- $outW := 0 -}}
+  {{- $outH := 0 -}}
+  {{- if gt (int $h) 0 -}}
+    {{- $h1 := int $h -}}
+    {{- $h2 := mul $h1 2 -}}
+    {{- $avif1x = $logoRes.Fit (printf "x%v avif" $h1) -}}
+    {{- $avif2x = $logoRes.Fit (printf "x%v avif" $h2) -}}
+    {{- $webp1x = $logoRes.Fit (printf "x%v webp" $h1) -}}
+    {{- $webp2x = $logoRes.Fit (printf "x%v webp" $h2) -}}
+    {{- $outW = $webp1x.Width -}}
+    {{- $outH = $h1 -}}
+  {{- else if gt (int $w) 0 -}}
+    {{- $w1 := int $w -}}
+    {{- $w2 := mul $w1 2 -}}
+    {{- $avif1x = $logoRes.Fit (printf "%vx avif" $w1) -}}
+    {{- $avif2x = $logoRes.Fit (printf "%vx avif" $w2) -}}
+    {{- $webp1x = $logoRes.Fit (printf "%vx webp" $w1) -}}
+    {{- $webp2x = $logoRes.Fit (printf "%vx webp" $w2) -}}
+    {{- $outW = $w1 -}}
+    {{- $outH = $webp1x.Height -}}
+  {{- else -}}
+    {{- /* Default single variant, width 256px */ -}}
+    {{- $avif1x = $logoRes.Fit "256x avif" -}}
+    {{- $webp1x = $logoRes.Fit "256x webp" -}}
+    {{- $outW = $webp1x.Width -}}
+    {{- $outH = $webp1x.Height -}}
+  {{- end -}}
   <picture>
-    <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
-    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
-    <img
-      src="{{ $webp.RelPermalink }}"
-      alt="{{ $alt }}"
-      class="{{ $class }}"
-  width="{{ $iw }}"
-  height="{{ $ih }}"
-      loading="eager"
-      fetchpriority="high"
-      decoding="async" />
+    {{- if and $avif1x $avif2x -}}
+      <source srcset="{{ $avif1x.RelPermalink }} 1x, {{ $avif2x.RelPermalink }} 2x" type="image/avif" />
+    {{- else -}}
+      <source srcset="{{ $avif1x.RelPermalink }}" type="image/avif" />
+    {{- end -}}
+    {{- if and $webp1x $webp2x -}}
+      <source srcset="{{ $webp1x.RelPermalink }} 1x, {{ $webp2x.RelPermalink }} 2x" type="image/webp" />
+    {{- else -}}
+      <source srcset="{{ $webp1x.RelPermalink }}" type="image/webp" />
+    {{- end -}}
+    <img src="{{ $webp1x.RelPermalink }}"
+         {{- if and $webp1x $webp2x -}} srcset="{{ $webp1x.RelPermalink }} 1x, {{ $webp2x.RelPermalink }} 2x"{{- end -}}
+         alt="{{ $alt }}"
+         class="{{ $class }}"
+         width="{{ $outW }}"
+         height="{{ $outH }}"
+         loading="eager"
+         fetchpriority="high"
+         decoding="async" />
   </picture>
-{{- else if $hasStatic -}}
-  <img
-    src="{{ $logo | relURL }}"
-    alt="{{ $alt }}"
-    class="{{ $class }}"
-    {{ with $w }}width="{{ . }}"{{ end }}
-    {{ with $h }}height="{{ . }}"{{ end }}
-    loading="eager"
-    fetchpriority="high"
-    decoding="async" />
+{{- else -}}
+  {{- /* Fallback: static image as provided by Logo */ -}}
+  <img src="{{ $logo | relURL }}"
+       alt="{{ $alt }}"
+       class="{{ $class }}"
+       {{ with $w }}{{ if gt (int .) 0 }}width="{{ . }}"{{ end }}{{ end }}
+       {{ with $h }}{{ if gt (int .) 0 }}height="{{ . }}"{{ end }}{{ end }}
+       loading="eager"
+       fetchpriority="high"
+       decoding="async" />
 {{- end -}}

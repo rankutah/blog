@@ -42,6 +42,12 @@ ignoreLogs = ['warning-goldmark-raw-html']
   y     = "none"
   align = "start"
 
+[params.header]
+  # Standardized logo size across sites; navbar uses this height class and intrinsic pixel height
+  logoHeight   = "h-10"   # Tailwind height class for layout sizing
+  logoWidth    = 0         # Let height drive intrinsic dimensions; 2x DPR handled in partial
+  logoHeightPx = 40        # Intrinsic height attribute for CLS prevention (matches h-10)
+
 [module]
   [[module.mounts]]
     source = "static"
