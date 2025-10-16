@@ -19,7 +19,7 @@ Website Design & Local SEO for Small Businesses
 ### Contact
 {.center}
 
-(385) 323-8130  <br> hello@clearpresence.io <br> Mon-Fri 9am-5pm <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062) <br> Serving clients across the nation
+(385) 323-8130  <br> Mon-Fri 9am-5pm <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062) <br> Serving clients across the nation
 {.center}
 
 {{< /col >}}

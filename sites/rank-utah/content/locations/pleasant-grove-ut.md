@@ -4,6 +4,24 @@ description: "Local SEO for small businesses"
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
+schema:
+  localBusiness:
+    enabled: true
+    type: ProfessionalService
+    name: "Clear Presence"
+    address:
+      streetAddress: "348 S 2000 W, Suite B206"
+      addressLocality: "Pleasant Grove"
+      addressRegion: "UT"
+      postalCode: "84062"
+      addressCountry: "US"
+    openingHoursSpecification:
+      - "@type": OpeningHoursSpecification
+        dayOfWeek: [Monday, Tuesday, Wednesday, Thursday, Friday]
+        opens: "09:00"
+        closes: "17:00"
+    hasMap: "https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062"
+    areaServed: "Pleasant Grove, UT"
 ---
 {{< section img="/media/pleasant-grove-website-design-local-seo.webp" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false">}}
 # Pleasant Grove Website Design & Local SEO {.text-white}
@@ -66,7 +84,6 @@ My wife graduated from Pleasant Grove High School as a Viking so it is fun havin
 
 ![](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-48}
-
 **Benjamin Awerkamp** <br>
 Call or Text: (385) 323-8130 <br>
 Web Design Deveoper & Local SEO Specialist <br>

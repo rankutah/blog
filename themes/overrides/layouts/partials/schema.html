@@ -1,23 +1,172 @@
-{{ $isEvent := .Params.startDate }}
-{{- /* Grab the first <img> src from the rendered body HTML for schema */ -}}
-{{- $firstImg := replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content }}
+{{- /* Determine if this page is an Event (via startDate) */ -}}
+{{- $isEvent := .Params.startDate -}}
 
+{{- /* Grab the first <img> src from the rendered body HTML for schema fallbacks */ -}}
+{{- $firstImg := replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content -}}
+
+{{- /* Collect LocalBusiness config from page params (preferred keys) */ -}}
+{{- $lb := false -}}
+{{- with .Params.schema.localBusiness -}}
+  {{- $lb = . -}}
+{{- end -}}
+{{- if not $lb -}}
+  {{- with .Params.localBusiness -}}
+    {{- $lb = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Helper: get value from a map key safely */ -}}
+{{- $lbEnabled := false -}}
+{{- if $lb -}}
+  {{- if (or (eq (printf "%T" $lb) "bool") (eq (printf "%T" $lb) "string")) -}}
+    {{- /* Boolean or string true */ -}}
+    {{- $lbEnabled = or (eq $lb true) (eq (lower (printf "%v" $lb)) "true") -}}
+  {{- else -}}
+    {{- /* Map/object: require enabled=true if present; if not present, treat as enabled */ -}}
+    {{- $lbEnabled = or (and (isset $lb "enabled") (index $lb "enabled")) (not (isset $lb "enabled")) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* -------------------- Output Event schema (if present) -------------------- */}}
+{{- if $isEvent -}}
 <script type="application/ld+json">
-{{ if $isEvent }}
-{
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "{{ .Title }}",
-  {{ with .Params.startDate }}"startDate": "{{ . }}",{{ end }}
-  {{ with .Params.endDate }}"endDate": "{{ . }}",{{ end }}
-  "location": {
-    "@type": "Place",
-    "name": {{ with .Params.locationName | safeJS }}"{{ . }}"{{ else }}"{{ "" }}"{{ end }},
-    "address": {{ with .Params.locationAddress | safeJS }}"{{ . }}"{{ else }}"{{ "" }}"{{ end }}
-  },
-  "image": ["{{ if $firstImg }}{{ $firstImg }}{{ else if .Params.image }}{{ .Params.image | relURL }}{{ end }}"],
-  "description": {{ with .Summary | htmlUnescape | safeJS }}"{{ . }}"{{ else }}"{{ .Params.body | plainify | safeJS }}"{{ end }},
-  "url": "{{ .Permalink }}"
-}
-{{ end }}
+{{- $event := dict "@context" "https://schema.org" "@type" "Event" "name" .Title "url" .Permalink -}}
+{{- with .Params.startDate -}}
+  {{- $event = merge $event (dict "startDate" .) -}}
+{{- end -}}
+{{- with .Params.endDate -}}
+  {{- $event = merge $event (dict "endDate" .) -}}
+{{- end -}}
+{{- $loc := dict "@type" "Place" -}}
+{{- with .Params.locationName -}}
+  {{- $loc = merge $loc (dict "name" .) -}}
+{{- end -}}
+{{- with .Params.locationAddress -}}
+  {{- $loc = merge $loc (dict "address" .) -}}
+{{- end -}}
+{{- $event = merge $event (dict "location" $loc) -}}
+{{- $img := (cond (ne $firstImg "") $firstImg (cond .Params.image (.Params.image | relURL) "")) -}}
+{{- if $img -}}
+  {{- $event = merge $event (dict "image" (slice $img)) -}}
+{{- end -}}
+{{- $desc := (or (.Summary | htmlUnescape) (.Params.body | plainify)) -}}
+{{- if $desc -}}
+  {{- $event = merge $event (dict "description" $desc) -}}
+{{- end -}}
+{{ $event | jsonify }}
 </script>
+{{- end -}}
+
+{{/* --------------- Output LocalBusiness schema (opt-in) ---------------- */}}
+{{- if $lbEnabled -}}
+<script type="application/ld+json">
+{{- $s := newScratch -}}
+{{- $type := "LocalBusiness" -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "type")) -}}
+  {{- $type = (index $lb "type") -}}
+{{- end -}}
+
+{{- $name := .Title -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "name")) -}}
+  {{- $name = (index $lb "name") -}}
+{{- else if .Site.Title -}}
+  {{- $name = cond (ne .Title "") .Title .Site.Title -}}
+{{- end -}}
+
+{{- $obj := dict "@context" "https://schema.org" "@type" $type "@id" .Permalink "url" .Permalink "name" $name -}}
+
+{{- /* image/logo fallbacks: prefer explicit, else page image, else first content image */ -}}
+{{- $image := "" -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "image")) -}}
+  {{- $image = (index $lb "image") -}}
+{{- else if .Params.image -}}
+  {{- $image = (.Params.image | relURL) -}}
+{{- else if $firstImg -}}
+  {{- $image = $firstImg -}}
+{{- end -}}
+{{- if $image -}}
+  {{- $obj = merge $obj (dict "image" (slice $image)) -}}
+{{- end -}}
+
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "logo")) -}}
+  {{- $obj = merge $obj (dict "logo" (index $lb "logo")) -}}
+{{- end -}}
+
+{{- /* phone & priceRange */ -}}
+{{- $phone := "" -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "telephone")) -}}
+  {{- $phone = (index $lb "telephone") -}}
+{{- else if .Site.Params.header.phoneNumber -}}
+  {{- $phone = .Site.Params.header.phoneNumber -}}
+{{- end -}}
+{{- if $phone -}}
+  {{- $obj = merge $obj (dict "telephone" $phone) -}}
+{{- end -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "priceRange")) -}}
+  {{- $obj = merge $obj (dict "priceRange" .) -}}
+{{- end -}}
+
+{{- /* address */ -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "address")) -}}
+  {{- $addr := (index $lb "address") -}}
+  {{- if $addr -}}
+    {{- $paddr := dict "@type" "PostalAddress" -}}
+    {{- with (index $addr "streetAddress") -}}
+      {{- $paddr = merge $paddr (dict "streetAddress" .) -}}
+    {{- end -}}
+    {{- with (index $addr "addressLocality") -}}
+      {{- $paddr = merge $paddr (dict "addressLocality" .) -}}
+    {{- end -}}
+    {{- with (index $addr "addressRegion") -}}
+      {{- $paddr = merge $paddr (dict "addressRegion" .) -}}
+    {{- end -}}
+    {{- with (index $addr "postalCode") -}}
+      {{- $paddr = merge $paddr (dict "postalCode" .) -}}
+    {{- end -}}
+    {{- with (index $addr "addressCountry") -}}
+      {{- $paddr = merge $paddr (dict "addressCountry" .) -}}
+    {{- end -}}
+    {{- $obj = merge $obj (dict "address" $paddr) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* geo */ -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "geo")) -}}
+  {{- $geo := (index $lb "geo") -}}
+  {{- if $geo -}}
+    {{- $g := dict "@type" "GeoCoordinates" -}}
+    {{- with (or (index $geo "lat") (index $geo "latitude")) -}}
+      {{- $g = merge $g (dict "latitude" .) -}}
+    {{- end -}}
+    {{- with (or (index $geo "lng") (index $geo "longitude")) -}}
+      {{- $g = merge $g (dict "longitude" .) -}}
+    {{- end -}}
+    {{- $obj = merge $obj (dict "geo" $g) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* openingHoursSpecification: pass-through array of objects if provided */ -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "openingHoursSpecification")) -}}
+  {{- $oh := (index $lb "openingHoursSpecification") -}}
+  {{- if $oh -}}
+    {{- $obj = merge $obj (dict "openingHoursSpecification" $oh) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* sameAs, areaServed, hasMap, aggregateRating (optional pass-throughs) */ -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "sameAs")) -}}
+  {{- $obj = merge $obj (dict "sameAs" .) -}}
+{{- end -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "areaServed")) -}}
+  {{- $obj = merge $obj (dict "areaServed" .) -}}
+{{- end -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "hasMap")) -}}
+  {{- $obj = merge $obj (dict "hasMap" .) -}}
+{{- end -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "aggregateRating")) -}}
+  {{- $obj = merge $obj (dict "aggregateRating" .) -}}
+{{- end -}}
+
+{{ $obj | jsonify }}
+</script>
+{{- end -}}

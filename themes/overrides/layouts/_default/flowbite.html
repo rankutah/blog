@@ -107,19 +107,27 @@
   } catch (e) {}
 </script>
 
-  {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify */ -}}
+  {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify; async to avoid render-blocking */ -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify }}
-  <link
-    rel="stylesheet"
-    href="{{ $css.RelPermalink }}"
-    {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
-    crossorigin="anonymous"
-  >
+  <link rel="preload" as="style"
+        href="{{ $css.RelPermalink }}"
+        {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
+        crossorigin="anonymous"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="{{ $css.RelPermalink }}"
+          {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
+          crossorigin="anonymous">
+  </noscript>
 
   {{- /* Analytics (match PaperMod behavior: only in production) */ -}}
   {{- if or (hugo.IsProduction) (eq site.Params.env "production") -}}
     {{ partial "google_analytics.html" . }}
   {{- end -}}
+
+  {{- /* JSON-LD schema (Event and per-page LocalBusiness) */ -}}
+  {{ partial "schema.html" . }}
 </head>
 
 {{- /* Get shared palette once; use for body + navbar */ -}}
