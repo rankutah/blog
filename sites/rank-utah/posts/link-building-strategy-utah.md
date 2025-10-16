@@ -17,7 +17,7 @@ Link building (aka backlink building) increases the authority of your web pages.
 
 This chart shows the importance of backlinks for local SEO in generating leads for your business. Backlinks are the most difficult part of a SEO link building strategy and a great way to differentiate your business from competitors and get ahead in the rankings. While the 18.5% slice in the chart below may not seem as significant as other factors, it’s the hardest slice of the pie to acquire, and it’s what will set you apart. Not only can you receive traffic from visitors clicking those links, but you also receive organic traffic when your page appears in search results.
 
-![pie chart showing the influence of website backlinks in a local SEO lead-generation strategy](/media/local-seo-lead-generation-factors.jpg)
+![pie chart showing the influence of website backlinks in a local SEO lead-generation strategy](/media/local-seo-lead-generation-factors.avif)
 
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
@@ -38,7 +38,7 @@ One of the most effective link building strategies is create content that people
 
 Rank Utah also provides you with other optional tools to help you acquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer search intent and drive traffic, boost SEO, and position yourself as a local authority. This business blog enables you to easily tag your posts, search all posts, has a light and dark mode that is auto-set based on the users device settings, and comes with a CMS that has simple directions helping  you use local SEO best practices. The blog you are on now has the same look, feel, and performance, as the blog you would receive.
 
-![blog post list demonstrating how a blog can be used as part of a link building strategy](/media/rank-utah-blog.jpg)
+![blog post list demonstrating how a blog can be used as part of a link building strategy](/media/rank-utah-blog.avif)
 
 ### Utah Competitor Analysis
 

@@ -24,7 +24,7 @@
       <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
       <source srcset="{{ $resized.RelPermalink }}" type="{{ $resized.MediaType.Type }}">
       <img
-        src="{{ $avif.RelPermalink }}"
+        src="{{ $resized.RelPermalink }}"
         alt="{{ $alt }}"
         width="{{ $resized.Width }}"
         height="{{ $resized.Height }}"

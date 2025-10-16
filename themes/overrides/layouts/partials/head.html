@@ -160,10 +160,11 @@
 </noscript>
 
 {{- partial "extend_head.html" . -}}
-{{- /* LCP image preload: first <img> in content for hero/home pages */ -}}
-{{- $lcpImg := replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content -}}
-{{- if and $lcpImg (or .IsHome .Params.hero) -}}
-  <link rel="preload" as="image" href="{{ $lcpImg | absURL }}" fetchpriority="high">
+{{- /* LCP image preload: prefer AVIF source from the first <picture>, else fallback <img> */ -}}
+{{- $lcpAvif := replaceRE `(?is).*<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\", ]+)` "${1}" .Content -}}
+{{- $lcpImg  := replaceRE `(?is).*<img[^>]+src=\"([^\"]+)\".*` "${1}" .Content -}}
+{{- if and (or $lcpAvif $lcpImg) (or .IsHome .Params.hero) -}}
+  <link rel="preload" as="image" href="{{ (or $lcpAvif $lcpImg) | absURL }}" fetchpriority="high">
 {{- end -}}
 {{ partial "schema.html" . }}
 

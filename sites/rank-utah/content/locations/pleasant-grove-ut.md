@@ -23,7 +23,7 @@ schema:
     hasMap: "https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062"
     areaServed: "Pleasant Grove, UT"
 ---
-{{< section img="/media/pleasant-grove-website-design-local-seo.webp" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false">}}
+{{< section img="/media/pleasant-grove-website-design-local-seo.avif" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false">}}
 # Pleasant Grove Website Design & Local SEO {.text-white}
 Professional business websites with powerful local SEO
 {.text-white}
@@ -82,7 +82,7 @@ My wife graduated from Pleasant Grove High School as a Viking so it is fun havin
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 
-![](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
 {.w-48}
 **Benjamin Awerkamp** <br>
 Call or Text: (385) 323-8130 <br>

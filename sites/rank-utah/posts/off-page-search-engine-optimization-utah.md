@@ -20,7 +20,7 @@ Rank Utah helps small businesses in Utah grow their customers organically by opt
 
 Local SEO is different from broad SEO in that it focuses on three core areas: Relevance, Prominence, and Proximity. The chart below shows the factors that influence lead generation for local businesses.
 
-![pie chart showing local SEO lead-generation factors](../media/local-seo-lead-generation-factors.jpg)
+![pie chart showing local SEO lead-generation factors](../media/local-seo-lead-generation-factors.avif)
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
 
 ## 1\. Relevance

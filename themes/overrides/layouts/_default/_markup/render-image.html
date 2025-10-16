@@ -33,13 +33,17 @@
 {{- $caption    := .Attributes.caption  | default "" -}}
 
 {{- $src        := .Destination -}}
-{{- $srcset := slice -}}
+{{- $srcset     := slice -}}
+{{- $srcsetAvif := slice -}}
 {{- $wHint  := 0 -}}
 {{- $hHint  := 0 -}}
+{{- $isPR   := false -}}
 
-{{/* Build responsive variants only if the image is a Page Resource */}}
-{{- with .Page.Resources.GetMatch (printf "**%s" (path.Base $src)) -}}
-  {{- $img := . -}}
+{{/* Build responsive variants only if the image is a Page Resource; include AVIF srcset too */}}
+{{- $match := .Page.Resources.GetMatch (printf "**%s" (path.Base $src)) -}}
+{{- if $match -}}
+  {{- $isPR = true -}}
+  {{- $img := $match -}}
   {{- $origW := $img.Width | default 0 -}}
   {{- $widths := slice 360 720 1080 1440 1920 -}}
   {{- $last := "" -}}
@@ -48,6 +52,8 @@
       {{- $r := $img.Resize (printf "%dx" $w) -}}
       {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
       {{- $last = $r.RelPermalink -}}
+      {{- $ravif := $r.Convert "avif" -}}
+      {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
     {{- end -}}
   {{- end -}}
   {{- if ne $last "" }}{{ $src = $last }}{{ end -}}
@@ -55,7 +61,17 @@
   {{- $hHint = $img.Height | default 0 -}}
 {{- end -}}
 
-{{- /* Build <img> tag */ -}}
+{{- /* Determine if static media with AVIF sibling is available when not a Page Resource */ -}}
+{{- $hasStaticAvif := false -}}
+{{- $avifPath := "" -}}
+{{- if not $isPR -}}
+  {{- if findRE `(^|/)media/[^?#]+\.(jpg|jpeg|png|webp)$` $src -}}
+    {{- $avifPath = replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $src -}}
+    {{- $hasStaticAvif = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Build <img> fallback tag (uses srcset if PR) */ -}}
 {{- $imgTag := printf `<img src="%s"%s%s alt="%s"%s%s%s%s class="%s" loading="%s" decoding="%s" />`
   $src
   (cond (gt (len $srcset) 0) (printf ` srcset="%s"` (delimit $srcset ", ")) "")
@@ -69,13 +85,25 @@
   $decoding
 -}}
 
+{{- /* Build either <picture> with AVIF or plain <img> */ -}}
+{{- $content := "" -}}
+{{- if or (gt (len $srcsetAvif) 0) $hasStaticAvif -}}
+  {{- if gt (len $srcsetAvif) 0 -}}
+    {{- $content = printf `<picture><source type="image/avif" srcset="%s" sizes="%s" />%s</picture>` (delimit $srcsetAvif ", ") $sizesAttr $imgTag -}}
+  {{- else -}}
+    {{- $content = printf `<picture><source type="image/avif" srcset="%s" />%s</picture>` $avifPath $imgTag -}}
+  {{- end -}}
+{{- else -}}
+  {{- $content = $imgTag -}}
+{{- end -}}
+
 {{- if or (ne $linkAttr "") (ne $caption "") -}}
   <figure>
     {{- if ne $linkAttr "" -}}<a href="{{ $linkAttr }}">{{ end -}}
-      {{- $imgTag | safeHTML -}}
+      {{- $content | safeHTML -}}
     {{- if ne $linkAttr "" -}}</a>{{ end -}}
     {{- if ne $caption "" -}}<figcaption class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ $caption }}</figcaption>{{ end -}}
   </figure>
 {{- else -}}
-  {{- $imgTag | safeHTML -}}
+  {{- $content | safeHTML -}}
 {{- end -}}

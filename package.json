@@ -4,14 +4,19 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-  "rank-utah": "hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
-  "build:rank-utah": "hugo --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
-  "nova-gutter": "hugo server --disableFastRender --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
-  "build:nova-gutter": "hugo --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
-  "blue-ridge-abbey": "hugo server --disableFastRender --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
-  "build:blue-ridge-abbey": "hugo --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
-  "quartz-worx": "hugo server --disableFastRender --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache",
-  "build:quartz-worx": "hugo --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache"
+  "rank-utah": "npm run optimize:rank-utah --silent && hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
+  "build:rank-utah": "npm run optimize:rank-utah --silent && hugo --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
+  "nova-gutter": "npm run optimize:nova-gutter --silent && hugo server --disableFastRender --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
+  "build:nova-gutter": "npm run optimize:nova-gutter --silent && hugo --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
+  "blue-ridge-abbey": "npm run optimize:blue-ridge-abbey --silent && hugo server --disableFastRender --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
+  "build:blue-ridge-abbey": "npm run optimize:blue-ridge-abbey --silent && hugo --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
+  "quartz-worx": "npm run optimize:quartz-worx --silent && hugo server --disableFastRender --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache",
+  "build:quartz-worx": "npm run optimize:quartz-worx --silent && hugo --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache",
+  "optimize": "node scripts/optimize-images.mjs",
+  "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/rank-utah/media",
+  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/nova-gutter/media",
+  "optimize:blue-ridge-abbey": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/blue-ridge-abbey/media",
+  "optimize:quartz-worx": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/quartz-worx/media"
 
   },
   "repository": {
@@ -27,6 +32,7 @@
   "homepage": "https://github.com/rankutah/blog#readme",
   "description": "",
   "devDependencies": {
+    "sharp": "^0.33.4",
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.21",

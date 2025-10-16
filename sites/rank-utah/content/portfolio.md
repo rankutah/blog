@@ -18,7 +18,7 @@ url: "/portfolio"
 
 ## Blue Ridge Abbey
 
-![](../media/website-blue-ridge-abbey.png)
+![](../media/website-blue-ridge-abbey.avif)
 
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 
@@ -34,7 +34,7 @@ I highly recommend, to anyone who is in need of a website!"
 
 ## Nova Gutter
 
-![](../media/website-nova-gutter.png)
+![](../media/website-nova-gutter.avif)
 
 {{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
 
@@ -51,7 +51,7 @@ Just Released!
 
 ## BlueridgeTech
 
-![](../media/website-blueridgetech.png)
+![](../media/website-blueridgetech.avif)
 
 {{< button url="https://blueridgetech.com/" text="Visit BlueridgeTech" newtab="true" >}}
 
@@ -66,7 +66,7 @@ Gabriel A. - November 2024 <br>
 
 ## Villa Valencia
 
-![](../media/website-villa-valencia.png)
+![](../media/website-villa-valencia.avif)
 
 {{< button url="https://villavalenciaojai.com/" text="Visit Villa Valencia" newtab="true" >}}
 
@@ -85,7 +85,7 @@ Michelle L. - December 27, 2024 <br>
 
 ## Suggls
 
-![](../media/website-suggls.png)
+![](../media/website-suggls.avif)
 
 {{< button url="https://suggls.com/" text="Visit Suggls" newtab="true" >}}
 
@@ -96,7 +96,7 @@ Michelle L. - December 27, 2024 <br>
 
 ## Dentistry
 
-![](../media/website-rod-maxfield-dds.png)
+![](../media/website-rod-maxfield-dds.avif)
 
 In Progress
 

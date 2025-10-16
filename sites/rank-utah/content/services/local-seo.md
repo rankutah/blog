@@ -81,7 +81,7 @@ Clear Presence continuously works to bring you more customers. Local SEO require
 Reports compare the last month with two months before so you can easily track how things are progressing. Here is an report from a current customer. Each indicator displays the % increase or decrease from the previous month.
 
 
-![](../../media/local-seo-analytics-report.png)
+![](../../media/local-seo-analytics-report.avif)
 
 ## Have additional questions?
 
