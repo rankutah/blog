@@ -7,6 +7,24 @@
 /*.woff
   Cache-Control: public, max-age=31536000, immutable
 
+# CSS/JS
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images
+/*.avif
+  Cache-Control: public, max-age=31536000, immutable
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
 # Favicons/icons
 /favicon.ico
   Cache-Control: public, max-age=604800

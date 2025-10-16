@@ -51,7 +51,7 @@ $199 per month
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## Website Design + Local SEO
-~~$348~~ $299 per month
+~~$348~~ $299 per month (Save $49)
 
 Bundle Website Design with Local SEO to maximize visibility. Unlock the full potential of your business for local search results.
 
@@ -64,9 +64,5 @@ Bundle Website Design with Local SEO to maximize visibility. Unlock the full pot
 {{< /section >}}
 
 {{< section >}}
-
-
-{{< button url="/contact" text="Reach Out to Start" >}}
-{.center}
 
 {{< /section >}}

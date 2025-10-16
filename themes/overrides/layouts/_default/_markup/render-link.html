@@ -2,7 +2,10 @@
 {{- $dest := .Destination -}}
 
 {{- /* Default to a semantic class; allow override via params if needed */ -}}
-{{- $linkClasses := .Page.Site.Params.text.linkClasses | default "link-brand font-bold no-underline hover:underline" -}}
+{{- $baseClasses := .Page.Site.Params.text.linkClasses | default "link-brand font-bold no-underline hover:underline" -}}
+{{- /* Brand-aware text color classes (server-side) */ -}}
+{{- $brandClasses := partial "theme/link-brand-classes.html" .Page -}}
+{{- $linkClasses := printf "%s %s" $baseClasses $brandClasses -}}
 
 {{- /* .md → pretty URL normalization */ -}}
 {{- $href := $dest -}}

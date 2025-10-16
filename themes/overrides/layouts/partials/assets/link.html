@@ -21,6 +21,8 @@
 {{- $siteExtra := $page.Site.Params.text.linkClasses -}}
 {{- $pageExtra := $page.Params.text.linkClasses -}}
 {{- $base := "link-brand font-semibold no-underline hover:underline" -}}
-{{- $classes := printf "%s%s%s" $base (cond $siteExtra (printf " %s" $siteExtra) "") (cond $pageExtra (printf " %s" $pageExtra) "") -}}
+{{- /* Brand-aware text color classes (server-side) */ -}}
+{{- $brand := partial "theme/link-brand-classes.html" $page -}}
+{{- $classes := printf "%s %s%s%s" $base $brand (cond $siteExtra (printf " %s" $siteExtra) "") (cond $pageExtra (printf " %s" $pageExtra) "") -}}
 
 <a href="{{ $href }}" class="{{ $classes }}"{{ with $title }} title="{{ . }}"{{ end }}>{{ $text | safeHTML }}</a>

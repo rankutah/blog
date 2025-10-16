@@ -22,10 +22,11 @@ const STEPS_DARK_NEUTRAL = ['800','900','950'];    // dark mode (neutrals)
 const STEPS_DARK_CHROMA  = ['950'];                // dark mode (colors)
 const STEPS = new Set([...STEPS_LIGHT, ...STEPS_DARK_NEUTRAL, ...STEPS_DARK_CHROMA]);
 
-// Build a stable safelist ONLY if you still want class-based buttons (kept here, ok)
+// Build a stable safelist for brand-colored buttons and links
 function buildSafelist() {
   const out = [];
-  for (const c of FAMILIES) {
+  const linkFamilies = new Set([...FAMILIES, 'slate', 'zinc', 'stone']);
+  for (const c of linkFamilies) {
     out.push(
       `bg-${c}-700`,
       `hover:bg-${c}-800`,
@@ -33,6 +34,10 @@ function buildSafelist() {
       `dark:bg-${c}-600`,
       `dark:hover:bg-${c}-700`,
       `dark:focus:ring-${c}-800`,
+      // Link text colors used by link-brand mapping
+      `text-${c}-600`,
+      `hover:text-${c}-700`,
+      `dark:hover:text-${c}-500`,
     );
   }
   // not needed for backgrounds anymore, but harmless to keep

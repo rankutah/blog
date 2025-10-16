@@ -78,6 +78,10 @@ uglyURLs      = true
   showPhoneOnMobile = true
   phoneNumber       = "385-323-8130"
   logoHeight        = "h-10"
+  # Optional: explicit pixel dimensions to avoid layout shift on logo
+  # Set these to your actual logo intrinsic size
+  logoWidth         = 150
+  logoHeightPx      = 150
   theme = "blend" #blend (default), invert, glass
 
 [params.forms]

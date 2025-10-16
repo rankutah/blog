@@ -41,42 +41,29 @@
     rose:{light:"#e11d48",dark:"#f43f5e"}
   };
 
-  // Brand on first paint: prefer <html data-brand="..."> set by picker; else site param; else blue
-  const SITE_BRAND = "{{- lower (or .Site.Params.primaryColor "blue") -}}";
+  // Brand on first paint: prefer <html data-brand="..."> set by picker; else first class on <html>; else blue
+  const SITE_BRAND = (document.documentElement.getAttribute('data-brand') || (document.documentElement.className || 'blue').split(' ')[0] || 'blue');
   function currentBrand(){
     return (html.getAttribute('data-brand') || SITE_BRAND || "blue").trim();
   }
 
-  // Color helpers that write inline styles with !important (wins over main.min.css)
-  function setImportant(el, prop, val){
-    if (!el) return;
-    el.style.setProperty(prop, val, 'important');
-  }
-
-  function recolorLinks(){
-    const isDark = html.classList.contains('dark');
-    const pal = BRAND_HEX[currentBrand()] || BRAND_HEX.blue;
-    const hex = isDark ? pal.dark : pal.light;
-    document.querySelectorAll('a.link-brand').forEach(a => setImportant(a, 'color', hex));
-  }
-
+  // Minimal navbar recolor hook (kept if you still use data-brand-nav markers)
   function recolorNavbar(){
     const isDark = html.classList.contains('dark');
     const pal = BRAND_HEX[currentBrand()] || BRAND_HEX.blue;
     const fg  = isDark ? pal.dark : pal.light;
 
     // Text color in navbar
-    document.querySelectorAll('nav .nav-brand, [data-brand-nav="fg"]').forEach(el => setImportant(el, 'color', fg));
+    document.querySelectorAll('nav .nav-brand, [data-brand-nav="fg"]').forEach(el => el && (el.style.color = fg));
 
     // Background accents in navbar (e.g., badges, pills, active underline containers you want solid)
-    document.querySelectorAll('nav .nav-brand-bg, [data-brand-nav="bg"]').forEach(el => setImportant(el, 'background-color', fg));
+    document.querySelectorAll('nav .nav-brand-bg, [data-brand-nav="bg"]').forEach(el => el && (el.style.backgroundColor = fg));
 
     // Borders (e.g., active item bottom border)
-    document.querySelectorAll('nav .nav-brand-border, [data-brand-nav="border"]').forEach(el => setImportant(el, 'border-color', fg));
+    document.querySelectorAll('nav .nav-brand-border, [data-brand-nav="border"]').forEach(el => el && (el.style.borderColor = fg));
   }
 
   function recolorAll(){
-    recolorLinks();
     recolorNavbar();
   }
 
