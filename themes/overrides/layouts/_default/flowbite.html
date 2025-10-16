@@ -1,6 +1,6 @@
 {{/* themes/overrides/layouts/_default/flowbite.html */}}
 <!DOCTYPE html>
-<html class="{{ .Site.Params.brandColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}">
+<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,7 +42,7 @@
   };
 
   // Brand on first paint: prefer <html data-brand="..."> set by picker; else site param; else blue
-  const SITE_BRAND = "{{- lower (or .Site.Params.primaryColor .Site.Params.brandColor) -}}";
+  const SITE_BRAND = "{{- lower (or .Site.Params.primaryColor "blue") -}}";
   function currentBrand(){
     return (html.getAttribute('data-brand') || SITE_BRAND || "blue").trim();
   }

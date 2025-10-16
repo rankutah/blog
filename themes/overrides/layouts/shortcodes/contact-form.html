@@ -61,7 +61,7 @@
 {{- $consentText := .Get "consentText" | default "I agree to receive emails and SMS from Clear Presence about my request. Message & data rates may apply. Reply STOP to opt out of SMS, HELP for help. See" -}}
 {{- $privacyURL := or .Page.Site.Params.privacyURL "/privacy" -}}
 
-{{- $brand := lower (or $page.Site.Params.primaryColor $page.Site.Params.brandColor "blue") -}}
+{{- $brand := lower (or $page.Site.Params.primaryColor "blue") -}}
 {{- $focus := dict
   "red"      "focus:ring-red-500 focus:border-red-500 dark:focus:ring-red-500 dark:focus:border-red-500"
   "orange"   "focus:ring-orange-500 focus:border-orange-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"

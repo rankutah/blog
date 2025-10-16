@@ -7,7 +7,7 @@
 {{- range $chromas }}{{- $colors = $colors | append . }}{{- end -}}
 
 {{/* Defaults from params with fallbacks */}}
-{{- $brandDefault := lower (or .Page.Site.Params.primaryColor .Page.Site.Params.brandColor "blue") -}}
+{{- $brandDefault := lower (or .Page.Site.Params.primaryColor "blue") -}}
 {{- $lightDefault := lower (or .Page.Site.Params.lightBackground "gray-50") -}}
 {{- $darkDefault  := lower (or .Page.Site.Params.darkBackground  "neutral-900") -}}
 
