@@ -16,7 +16,7 @@ pruneTaxonomies = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-    
+
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
@@ -36,7 +36,7 @@ pruneTaxonomies = true
   [[module.mounts]]
     source = "media"
     target = "static/media"
-  
+
   [[module.mounts]]
     source = "media"
     target = "assets/media"
@@ -139,7 +139,7 @@ pruneTaxonomies = true
 
 [params.h1]
   classes = "text-4xl font-bold dark:text-white-200"
-  
+
 [params.text]
 
 [permalinks]
@@ -175,7 +175,7 @@ pruneTaxonomies = true
     url = "/services/"
     identifier = "services"
     weight = 4
-  
+
   [[menu.main]]
     name = "Website Design"
     url = "/services/website-design/"
@@ -200,7 +200,7 @@ pruneTaxonomies = true
     url = "/test3"
     parent = "test2"
     weight = 40
-  
+
   [[menu.main]]
     name   = "Search"
     url    = "/search/"

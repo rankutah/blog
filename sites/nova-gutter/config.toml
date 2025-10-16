@@ -18,7 +18,7 @@ pruneTaxonomies = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-    
+
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
@@ -37,7 +37,7 @@ pruneTaxonomies = true
   [[module.mounts]]
     source = "media"
     target = "static/media"
-  
+
   [[module.mounts]]
     source = "media"
     target = "assets/media"
