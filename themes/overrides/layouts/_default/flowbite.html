@@ -141,10 +141,17 @@
   <style>
     /* Enforce flush hero under sticky navbar */
     main#content { padding-top: 0 !important; }
+    /* Remove any residual margins from the first content block */
+    main#content > article { margin-top: 0 !important; }
+    main#content > article > :first-child { margin-top: 0 !important; }
+    /* Ensure hero/bleed sections never introduce top spacing */
+    main#content .section.hero:first-child,
+    main#content .section.bleed:first-child,
+    main#content .section.hero-nonbleed:first-child { margin-top: 0 !important; padding-top: 0 !important; }
   </style>
   {{- end }}
-  <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync>
-    <article class="prose prose-zinc max-w-none dark:prose-invert">
+  <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync{{ if $isHeroPage }} style="padding-top:0"{{ end }}>
+    <article class="prose prose-zinc max-w-none dark:prose-invert"{{ if $isHeroPage }} style="margin-top:0"{{ end }}>
       {{ .Content }}
     </article>
   </main>
