@@ -119,17 +119,24 @@
     {{ partial "google_analytics.html" . }}
   {{- end -}}
 
-  {{- /* LCP image preload: prefer AVIF source; only emit if we find a match */ -}}
-  {{- $hasAvif := gt (len (findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\", ]+)` .Content)) 0 -}}
-  {{- $hasImg  := gt (len (findRE `(?is)<img[^>]+src=\"([^\"]+)\"` .Content)) 0 -}}
-  {{- if and (or $hasAvif $hasImg) (or .IsHome .Params.hero) -}}
+  {{- /* LCP image preload: prefer AVIF source; extract only the clean URL */ -}}
+  {{- if or .IsHome .Params.hero -}}
+    {{- $avifTags := findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"[^\"]+\"` .Content -}}
+    {{- $imgTags  := findRE `(?is)<img[^>]+src=\"[^\"]+\"` .Content -}}
     {{- $lcp := "" -}}
-    {{- if $hasAvif -}}
-      {{- $lcp = replaceRE `(?is).*<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\", ]+)` "${1}" .Content -}}
-    {{- else -}}
-      {{- $lcp = replaceRE `(?is).*<img[^>]+src=\"([^\"]+)\"` "${1}" .Content -}}
+    {{- if gt (len $avifTags) 0 -}}
+      {{- $first := index $avifTags 0 -}}
+      {{- $lcp = replaceRE `(?is).*srcset=\"([^\", ]+).*` "${1}" $first -}}
+    {{- else if gt (len $imgTags) 0 -}}
+      {{- $first := index $imgTags 0 -}}
+      {{- $lcp = replaceRE `(?is).*src=\"([^\"]+).*` "${1}" $first -}}
     {{- end -}}
-    <link rel="preload" as="image" href="{{ $lcp | absURL }}" fetchpriority="high">
+    {{- with $lcp -}}
+      {{- $clean := . | strings.TrimSpace -}}
+      {{- if $clean }}
+        <link rel="preload" as="image" href="{{ $clean | absURL }}" fetchpriority="high">
+      {{- end -}}
+    {{- end -}}
   {{- end -}}
 
   {{- /* JSON-LD schema (Event and per-page LocalBusiness) */ -}}
