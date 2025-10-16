@@ -1,0 +1,56 @@
+{{/* optimized-logo.html
+  Inputs (dict):
+    - Site: .Site or a Page (we only use . for relURL)
+    - Logo: string path, e.g. "logo.png" or "/logo.png"
+    - Class: optional classes for img
+    - Alt: alt text
+    - Width: optional width (number or string)
+    - Height: optional height (number or string)
+
+  Behavior:
+    - Try to locate the logo in Hugo assets via resources.Get (media/Logo or raw Logo path).
+    - If found and is image: emit <picture> with AVIF + source fallback and explicit width/height.
+    - Else: fall back to a plain <img> referencing the provided logo path (static file).
+*/}}
+{{- $ctx   := . -}}
+{{- $logo  := $ctx.Logo | default "logo.png" -}}
+{{- $class := $ctx.Class | default "" -}}
+{{- $alt   := $ctx.Alt   | default "logo" -}}
+{{- $w     := $ctx.Width | default "" -}}
+{{- $h     := $ctx.Height | default "" -}}
+
+{{- /* Normalize path for resource lookup */ -}}
+{{- $raw := strings.TrimPrefix "/" $logo -}}
+{{- $orig := resources.Get (printf "media/%s" $raw) -}}
+{{- if not $orig -}}
+  {{- $orig = resources.Get $raw -}}
+{{- end -}}
+
+{{- if and $orig (eq $orig.MediaType.Type "image") -}}
+  {{- /* Resize to intrinsic or modest size if width provided; otherwise no upscale */ -}}
+  {{- $fitTarget := cond $w (printf "%sx" $w) "512x" -}}
+  {{- $resized := $orig.Fit $fitTarget -}}
+  {{- $avif    := $resized.Convert "avif" -}}
+  <picture>
+    <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
+    <img
+      src="{{ $resized.RelPermalink }}"
+      alt="{{ $alt }}"
+      class="{{ $class }}"
+      {{ with $w }}width="{{ . }}"{{ end }}
+      {{ with $h }}height="{{ . }}"{{ end }}
+      loading="eager"
+      fetchpriority="high"
+      decoding="async" />
+  </picture>
+{{- else -}}
+  <img
+    src="{{ $logo | relURL }}"
+    alt="{{ $alt }}"
+    class="{{ $class }}"
+    {{ with $w }}width="{{ . }}"{{ end }}
+    {{ with $h }}height="{{ . }}"{{ end }}
+    loading="eager"
+    fetchpriority="high"
+    decoding="async" />
+{{- end -}}

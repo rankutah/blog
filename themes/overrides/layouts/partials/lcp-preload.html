@@ -14,6 +14,7 @@
     {{- $url = index (index $imgMatches 0) 1 -}}
   {{- end -}}
   {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
-    <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high">
+    {{- $isAvif := and (gt (len $avifMatches) 0) (in $url ".avif") -}}
+    <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high"{{ if $isAvif }} type="image/avif"{{ end }}>
   {{- end -}}
 {{- end -}}

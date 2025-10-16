@@ -96,6 +96,7 @@
 
   {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify (blocking to prevent FOUC) */ -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify }}
+  <link rel="preload" as="style" href="{{ $css.RelPermalink }}" crossorigin="anonymous">
   <link rel="stylesheet"
     href="{{ $css.RelPermalink }}"
     {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
@@ -130,8 +131,9 @@
     </article>
   </main>
 
-  <!-- Flowbite JS for interactive components -->
-  <script defer src="{{ "js/flowbite.min.js" | relURL }}"></script>
+  <!-- Flowbite JS (ESM, only what we need) -->
+  {{- $ui := resources.Get "js/ui.js" | js.Build (dict "minify" true "target" "es2018") -}}
+  <script type="module" src="{{ $ui.RelPermalink }}" defer></script>
 
   <!-- Header toggle (optional):
        If you have a button with id="theme-toggle" (and two icons with
