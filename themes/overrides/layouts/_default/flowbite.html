@@ -107,19 +107,12 @@
   } catch (e) {}
 </script>
 
-  {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify; async to avoid render-blocking */ -}}
+  {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify (blocking to prevent FOUC) */ -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify }}
-  <link rel="preload" as="style"
-        href="{{ $css.RelPermalink }}"
-        {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
-        crossorigin="anonymous"
-        onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet"
-          href="{{ $css.RelPermalink }}"
-          {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
-          crossorigin="anonymous">
-  </noscript>
+  <link rel="stylesheet"
+    href="{{ $css.RelPermalink }}"
+    {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
+    crossorigin="anonymous">
 
   {{- /* Analytics (match PaperMod behavior: only in production) */ -}}
   {{- if or (hugo.IsProduction) (eq site.Params.env "production") -}}

@@ -120,7 +120,7 @@
   {{- if and $img $bleed -}}
     <!-- Full-bleed hero -->
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
-      <img src="{{ $img | safeURL }}" alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
+  <img src="{{ $img | safeURL }}" alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
       {{- if $overlay -}}
         <div class="{{ $overlayWrap }}">
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
@@ -145,7 +145,7 @@
     <!-- In-container hero -->
     <div class="{{ $classes }}">
       <div class="relative">
-        <img src="{{ $img | safeURL }}" alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
+  <img src="{{ $img | safeURL }}" alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
         {{- if $overlay -}}
           <div class="{{ $overlayWrap }}">
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}

@@ -17,8 +17,8 @@
   {{ $mt := $orig.MediaType.Type }}
   {{ if eq $mt "image" }}
     {{/* 1) Resize to max 1200px (preserves aspect) 2) Convert that resized image to AVIF */}}
-    {{ $resized := $orig.Fit "1200x" }}
-    {{ $avif    := $resized.Convert "avif" }}
+  {{ $resized := $orig.Fit "1200x" }}
+  {{ $avif    := $resized.Convert "avif" }}
 
     <picture>
       <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
@@ -26,6 +26,8 @@
       <img
         src="{{ $avif.RelPermalink }}"
         alt="{{ $alt }}"
+        width="{{ $resized.Width }}"
+        height="{{ $resized.Height }}"
         loading="lazy"
         decoding="async" />
     </picture>
@@ -34,6 +36,8 @@
     <img
       src="{{ $orig.RelPermalink }}"
       alt="{{ $alt }}"
+      width="{{ $orig.Width }}"
+      height="{{ $orig.Height }}"
       loading="lazy"
       decoding="async" />
   {{ end }}
