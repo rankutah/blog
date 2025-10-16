@@ -61,11 +61,31 @@
   {{- $hHint = $img.Height | default 0 -}}
 {{- end -}}
 
-{{- /* Determine if static media with AVIF sibling is available when not a Page Resource */ -}}
+{{- /* If not a Page Resource, try to process static media via assets/media mount */ -}}
 {{- $hasStaticAvif := false -}}
 {{- $avifPath := "" -}}
-{{- if not $isPR -}}
-  {{- if findRE `(^|/)media/[^?#]+\.(jpg|jpeg|png|webp)$` $src -}}
+{{- if and (not $isPR) (findRE `(^|/)media/[^?#]+\.(jpg|jpeg|png|webp)$` $src) -}}
+  {{- $clean := replaceRE `^/` "" $src -}}
+  {{- $asset := resources.Get $clean -}}
+  {{- if $asset -}}
+    {{- $origW := $asset.Width | default 0 -}}
+    {{- $widths := slice 360 720 1080 1440 1920 -}}
+    {{- $last := "" -}}
+    {{- range $w := $widths -}}
+      {{- if or (eq $origW 0) (ge $origW $w) -}}
+        {{- $r := $asset.Resize (printf "%dx" $w) -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+        {{- $last = $r.RelPermalink -}}
+        {{- $ravif := $r.Convert "avif" -}}
+        {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if ne $last "" }}{{ $src = $last }}{{ end -}}
+    {{- $wHint = $asset.Width | default 0 -}}
+    {{- $hHint = $asset.Height | default 0 -}}
+    {{- $hasStaticAvif = gt (len $srcsetAvif) 0 -}}
+  {{- else -}}
+    {{- /* Fallback: just reference potential .avif sibling by path */ -}}
     {{- $avifPath = replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $src -}}
     {{- $hasStaticAvif = true -}}
   {{- end -}}

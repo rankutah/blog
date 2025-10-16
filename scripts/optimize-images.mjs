@@ -32,7 +32,7 @@ const AVIF_QUALITY = parseInt(argMap['avif-quality'] || '45', 10);
 const JPEG_QUALITY_START = parseInt(argMap['jpeg-quality'] || '82', 10);
 const DELETE_ORIGINALS = argMap['delete-originals'] === 'true' || argMap['delete-originals'] === '1';
 const DRY_RUN = argMap['dry-run'] === 'true' || argMap['dry-run'] === '1';
-const REWRITE_REFS = (argMap['rewrite-refs'] || 'true') === 'true';
+const REWRITE_REFS = (argMap['rewrite-refs'] || 'false') === 'true';
 const REWRITE_CONFIG = (argMap['rewrite-config'] || 'false') === 'true';
 const INGEST_CONTENT_IMAGES = (argMap['ingest-content-images'] || 'true') === 'true';
 

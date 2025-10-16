@@ -13,10 +13,10 @@
   "quartz-worx": "npm run optimize:quartz-worx --silent && hugo server --disableFastRender --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache",
   "build:quartz-worx": "npm run optimize:quartz-worx --silent && hugo --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache",
   "optimize": "node scripts/optimize-images.mjs",
-  "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/rank-utah/media",
-  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/nova-gutter/media",
-  "optimize:blue-ridge-abbey": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/blue-ridge-abbey/media",
-  "optimize:quartz-worx": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 --rewrite-refs=true sites/quartz-worx/media"
+  "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/rank-utah/media",
+  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media",
+  "optimize:blue-ridge-abbey": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/blue-ridge-abbey/media",
+  "optimize:quartz-worx": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/quartz-worx/media"
 
   },
   "repository": {

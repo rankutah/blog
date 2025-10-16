@@ -121,18 +121,42 @@
     <!-- Full-bleed hero -->
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
   {{- $imgStr := $img | safeURL -}}
-  {{- $avifSrc := "" -}}
-  {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
+  {{- $srcset := slice -}}
+  {{- $srcsetAvif := slice -}}
+  {{- $fallbackSrc := $imgStr -}}
+  {{- $isRaster := gt (len (findRE `\.(jpg|jpeg|png|webp)$` (lower $imgStr))) 0 -}}
+  {{- if and $isRaster (or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/")) -}}
     {{- $noLead := replaceRE "^/" "" $imgStr -}}
-    {{- $avifRel := replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $noLead -}}
-    {{- $staticPath := printf "static/%s" $avifRel -}}
-    {{- if fileExists $staticPath -}}
-      {{- $avifSrc = printf "/%s" $avifRel -}}
+    {{- $asset := resources.Get $noLead -}}
+    {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
+      {{- $origW := $asset.Width | default 0 -}}
+      {{- $widths := slice 720 1080 1440 1920 -}}
+      {{- $last := "" -}}
+      {{- range $w := $widths -}}
+        {{- if or (eq $origW 0) (ge $origW $w) -}}
+          {{- $r := $asset.Resize (printf "%dx" $w) -}}
+          {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+          {{- $last = $r.RelPermalink -}}
+          {{- $ravif := $r.Convert "avif" -}}
+          {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- /* Fallback: try a static AVIF sibling if present */ -}}
+    {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
+      {{- $noLead := replaceRE "^/" "" $imgStr -}}
+      {{- $avifRel := replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $noLead -}}
+      {{- $staticPath := printf "static/%s" $avifRel -}}
+      {{- if fileExists $staticPath -}}
+        {{- $srcsetAvif = (slice (printf "/%s 1920w" $avifRel)) -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
   <picture>
-    {{- if ne $avifSrc "" -}}<source srcset="{{ $avifSrc }}" type="image/avif">{{- end -}}
-    <img src="{{ $imgStr }}" alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
+    {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
+    <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
   </picture>
       {{- if $overlay -}}
         <div class="{{ $overlayWrap }}">
@@ -159,18 +183,41 @@
     <div class="{{ $classes }}">
       <div class="relative">
   {{- $imgStr := $img | safeURL -}}
-  {{- $avifSrc := "" -}}
-  {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
+  {{- $srcset := slice -}}
+  {{- $srcsetAvif := slice -}}
+  {{- $fallbackSrc := $imgStr -}}
+  {{- $isRaster := gt (len (findRE `\.(jpg|jpeg|png|webp)$` (lower $imgStr))) 0 -}}
+  {{- if and $isRaster (or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/")) -}}
     {{- $noLead := replaceRE "^/" "" $imgStr -}}
-    {{- $avifRel := replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $noLead -}}
-    {{- $staticPath := printf "static/%s" $avifRel -}}
-    {{- if fileExists $staticPath -}}
-      {{- $avifSrc = printf "/%s" $avifRel -}}
+    {{- $asset := resources.Get $noLead -}}
+    {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
+      {{- $origW := $asset.Width | default 0 -}}
+      {{- $widths := slice 720 1080 1440 1920 -}}
+      {{- $last := "" -}}
+      {{- range $w := $widths -}}
+        {{- if or (eq $origW 0) (ge $origW $w) -}}
+          {{- $r := $asset.Resize (printf "%dx" $w) -}}
+          {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+          {{- $last = $r.RelPermalink -}}
+          {{- $ravif := $r.Convert "avif" -}}
+          {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
+      {{- $noLead := replaceRE "^/" "" $imgStr -}}
+      {{- $avifRel := replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $noLead -}}
+      {{- $staticPath := printf "static/%s" $avifRel -}}
+      {{- if fileExists $staticPath -}}
+        {{- $srcsetAvif = (slice (printf "/%s 1920w" $avifRel)) -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
   <picture>
-    {{- if ne $avifSrc "" -}}<source srcset="{{ $avifSrc }}" type="image/avif">{{- end -}}
-    <img src="{{ $imgStr }}" alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
+    {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
+    <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }}>
   </picture>
         {{- if $overlay -}}
           <div class="{{ $overlayWrap }}">

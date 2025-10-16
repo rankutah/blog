@@ -45,6 +45,10 @@ pruneTaxonomies = true
     target = "static/media"
 
   [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+
+  [[module.mounts]]
     source = "posts"
     target = "content/posts"
 
