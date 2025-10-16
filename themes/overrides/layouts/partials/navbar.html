@@ -212,3 +212,21 @@
   </div>
 </nav>
 
+<script>
+  // Dynamically measure the sticky header height and expose it as a CSS var
+  (function(){
+    function setHeaderVar(){
+      var nav = document.querySelector('nav');
+      if (!nav) return;
+      var h = Math.ceil(nav.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--site-header-h', h + 'px');
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setHeaderVar, { once:true });
+    } else {
+      setHeaderVar();
+    }
+    window.addEventListener('resize', setHeaderVar);
+  })();
+  </script>
+

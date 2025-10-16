@@ -59,9 +59,10 @@ pruneTaxonomies = true
   path = ".well-known"
 
 [outputs]
-  home     = ["HTML", "RSS", "JSON", "FORMS"]
-  section  = ["HTML"]
-  taxonomy = ["HTML", "JSON"]
+  home         = ["HTML", "RSS", "JSON", "FORMS"]
+  section      = ["HTML", "JSON"]
+  taxonomyTerm = ["HTML", "JSON"]
+  taxonomy     = ["HTML", "JSON"]
 
 [params]
   googleAnalyticsID   = "G-LGYK5V1CTV"
@@ -169,7 +170,7 @@ pruneTaxonomies = true
 [params.text]
 
 [permalinks]
-  posts = "/:contentbasename"
+  posts = "/:filename"
 
 [taxonomies]
   tag = "tags"
@@ -178,7 +179,7 @@ pruneTaxonomies = true
   useResourceCacheWhen = "never"
   [build.processing]
     [build.processing.css]
-      config = "../../postcss.config.cjs"
+      config = "../../themes/overrides/postcss.config.cjs"
       [[build.processing.css.targets]]
         src = "**/main.css"
 

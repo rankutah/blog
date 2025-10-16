@@ -126,7 +126,7 @@
 {{- if and (ne $img "") (not $bleed) -}}
   {{- $secClass = $secClass | append "hero-nonbleed" -}}
 {{- end -}}
-<section class="{{ delimit $secClass " " }}">
+<section class="{{ delimit $secClass " " }}"{{ if and $isFirstSection (or $isHero (and (ne $img "") (not $bleed))) }} style="margin-top:0;padding-top:0"{{ end }}>
   {{- if and $img $bleed -}}
     <!-- Full-bleed hero -->
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">

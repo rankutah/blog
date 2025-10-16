@@ -143,7 +143,7 @@ pruneTaxonomies = true
 [params.text]
 
 [permalinks]
-  posts = "/:contentbasename/"
+  posts = "/:filename/"
 
 [taxonomies]
   tag = "tags"
@@ -152,7 +152,7 @@ pruneTaxonomies = true
   useResourceCacheWhen = "never"
   [build.processing]
     [build.processing.css]
-      config = "../../postcss.config.cjs"
+      config = "../../themes/overrides/postcss.config.cjs"
       [[build.processing.css.targets]]
         src = "**/main.css"
 
