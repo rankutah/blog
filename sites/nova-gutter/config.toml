@@ -14,6 +14,12 @@ pruneTaxonomies = true
   baseName     = "tags"
   isPlainText  = true
 
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -47,9 +53,9 @@ pruneTaxonomies = true
     target = "content/posts"
 
 [outputs]
-  home         = ["HTML", "RSS", "JSON"]
-  taxonomyTerm = ["HTML", "JSON"]    # ← tell Hugo to build JSON for all term pages
-  taxonomy     = ["HTML","JSON"]   # ← ADD this line
+  home         = ["HTML", "RSS", "JSON", "FORMS"]
+  section      = ["HTML"]
+  taxonomy     = ["HTML","JSON"]
 
 [params]
   googleAnalyticsID = "G-3KJ46VMTTB"
@@ -90,3 +96,11 @@ pruneTaxonomies = true
     name   = "Search"
     url    = "/search/"
     weight = 4
+
+[build]
+  useResourceCacheWhen = "never"
+  [build.processing]
+    [build.processing.css]
+      config = "../../postcss.config.cjs"
+      [[build.processing.css.targets]]
+        src = "**/main.css"

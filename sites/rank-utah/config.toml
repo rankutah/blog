@@ -60,8 +60,7 @@ pruneTaxonomies = true
 
 [outputs]
   home         = ["HTML", "RSS", "JSON", "FORMS"]
-  section      = ["HTML", "JSON"]
-  taxonomyTerm = ["HTML", "JSON"]
+  section      = ["HTML"]
   taxonomy     = ["HTML", "JSON"]
 
 [params]
@@ -170,7 +169,7 @@ pruneTaxonomies = true
 [params.text]
 
 [permalinks]
-  posts = "/:filename"
+  posts = "/:contentbasename"
 
 [taxonomies]
   tag = "tags"
@@ -179,7 +178,7 @@ pruneTaxonomies = true
   useResourceCacheWhen = "never"
   [build.processing]
     [build.processing.css]
-      config = "../../themes/overrides/postcss.config.cjs"
+      config = "../../postcss.config.cjs"
       [[build.processing.css.targets]]
         src = "**/main.css"
 

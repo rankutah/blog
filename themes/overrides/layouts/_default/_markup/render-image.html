@@ -14,7 +14,7 @@
 */ -}}
 
 {{- $site       := .Page.Site -}}
-{{- $imgParams  := $site.Params.images -}}
+{{- $imgParams  := ($site.Params.images | default (dict)) -}}
 {{- $defClasses := cond (isset $imgParams "defaultClasses") $imgParams.defaultClasses "" -}}
 {{- $defSizes   := cond (isset $imgParams "defaultSizes")   $imgParams.defaultSizes   "100vw" -}}
 
@@ -52,7 +52,7 @@
       {{- $r := $img.Resize (printf "%dx" $w) -}}
       {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
       {{- $last = $r.RelPermalink -}}
-      {{- $ravif := $r.Convert "avif" -}}
+      {{- $ravif := $img.Resize (printf "%dx avif" $w) -}}
       {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
     {{- end -}}
   {{- end -}}
@@ -76,7 +76,7 @@
         {{- $r := $asset.Resize (printf "%dx" $w) -}}
         {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
         {{- $last = $r.RelPermalink -}}
-        {{- $ravif := $r.Convert "avif" -}}
+        {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
         {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
       {{- end -}}
     {{- end -}}
