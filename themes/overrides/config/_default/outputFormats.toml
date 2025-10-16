@@ -1,0 +1,10 @@
+[outputFormats.TagsJSON]
+  mediaType   = "application/json"
+  baseName    = "tags"
+  isPlainText = true
+
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"

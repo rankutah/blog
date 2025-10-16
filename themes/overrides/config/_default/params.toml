@@ -1,0 +1,8 @@
+[params]
+  # Shared section defaults (safe to inherit)
+  [params.section]
+    [params.section.defaults]
+      max = "xl"
+      pad = "lg"
+      y   = "none"
+      align = "start"

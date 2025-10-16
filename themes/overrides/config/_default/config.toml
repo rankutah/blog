@@ -1,0 +1,3 @@
+# Shared toggles (sites can override)
+pruneTaxonomies = true
+trailingSlash = "never"

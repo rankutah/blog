@@ -1,0 +1,8 @@
+[build]
+  useResourceCacheWhen = "never"
+  [build.processing]
+    [build.processing.css]
+      # All sites use shared PostCSS config at repo root
+      config = "../../postcss.config.cjs"
+      [[build.processing.css.targets]]
+        src = "**/main.css"

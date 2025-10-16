@@ -1,0 +1,64 @@
+# Shared config applied to all sites via --config flag
+
+# Safe global toggles
+pruneTaxonomies = true
+trailingSlash  = "never"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        inline = true
+        title = true
+
+# Silence noisy raw HTML warnings; content relies on renderer unsafe
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[outputFormats.TagsJSON]
+  mediaType   = "application/json"
+  baseName    = "tags"
+  isPlainText = true
+
+[outputFormats.FORMS]
+  mediaType   = "application/json"
+  baseName    = "forms"
+  isPlainText = true
+  path        = ".well-known"
+
+[outputs]
+  home     = ["HTML", "RSS", "JSON", "FORMS"]
+  section  = ["HTML"]
+  taxonomy = ["HTML", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+
+[params.section.defaults]
+  max   = "xl"
+  pad   = "lg"
+  y     = "none"
+  align = "start"
+
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+
+  [[module.mounts]]
+    source = "posts"
+    target = "content/posts"

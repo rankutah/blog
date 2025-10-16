@@ -1,0 +1,4 @@
+[outputs]
+  home     = ["HTML", "RSS", "JSON", "FORMS"]
+  section  = ["HTML"]
+  taxonomy = ["HTML", "JSON"]

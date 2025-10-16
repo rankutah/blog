@@ -4,19 +4,13 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-  "rank-utah": "npm run optimize:rank-utah --silent && hugo server --disableFastRender --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
-  "build:rank-utah": "npm run optimize:rank-utah --silent && hugo --source ./sites/rank-utah --gc --minify --logLevel debug --ignoreCache",
-  "nova-gutter": "npm run optimize:nova-gutter --silent && hugo server --disableFastRender --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
-  "build:nova-gutter": "npm run optimize:nova-gutter --silent && hugo --source ./sites/nova-gutter --gc --minify --logLevel debug --ignoreCache",
-  "blue-ridge-abbey": "npm run optimize:blue-ridge-abbey --silent && hugo server --disableFastRender --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
-  "build:blue-ridge-abbey": "npm run optimize:blue-ridge-abbey --silent && hugo --source ./sites/blue-ridge-abbey --gc --minify --logLevel debug --ignoreCache",
-  "quartz-worx": "npm run optimize:quartz-worx --silent && hugo server --disableFastRender --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache",
-  "build:quartz-worx": "npm run optimize:quartz-worx --silent && hugo --source ./sites/quartz-worx --gc --minify --logLevel debug --ignoreCache",
+  "rank-utah": "npm run optimize:rank-utah --silent && hugo server --disableFastRender --source ./sites/rank-utah --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+  "build:rank-utah": "npm run optimize:rank-utah --silent && hugo --source ./sites/rank-utah --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+  "nova-gutter": "npm run optimize:nova-gutter --silent && hugo server --disableFastRender --source ./sites/nova-gutter --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+  "build:nova-gutter": "npm run optimize:nova-gutter --silent && hugo --source ./sites/nova-gutter --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
   "optimize": "node scripts/optimize-images.mjs",
   "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/rank-utah/media",
-  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media",
-  "optimize:blue-ridge-abbey": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/blue-ridge-abbey/media",
-  "optimize:quartz-worx": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/quartz-worx/media"
+  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media"
 
   },
   "repository": {

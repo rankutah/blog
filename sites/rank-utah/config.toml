@@ -7,67 +7,26 @@ themesDir     = "../../themes"
 
 # Remove trailing slashes from generated URLs
 trailingSlash = "never"
-
-# Clean the publish directory before each build to prevent stale files
 cleanDestinationDir = true
 uglyURLs      = true
-
-pruneTaxonomies = true
-
-[outputFormats.TagsJSON]
-  mediaType   = "application/json"
-  baseName    = "tags"
-  isPlainText = true
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        inline = true
-        title = true
-
-[module]
-
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-
-  [[module.mounts]]
-    source = "content"
-    target = "content"
-
-  [[module.mounts]]
-    source = "media"
-    target = "static/media"
-
-  [[module.mounts]]
-    source = "media"
-    target = "assets/media"
-
-  [[module.mounts]]
-    source = "posts"
-    target = "content/posts"
-
+# Ensure FORMS format is defined locally so outputs.home can use it reliably
 [outputFormats.FORMS]
   mediaType = "application/json"
   baseName = "forms"
   isPlainText = true
   path = ".well-known"
 
+[module]
+
+
 [outputs]
+  # Inherit defaults; override only if needed
   home         = ["HTML", "RSS", "JSON", "FORMS"]
-  section      = ["HTML"]
-  taxonomy     = ["HTML", "JSON"]
 
 [params]
   googleAnalyticsID   = "G-LGYK5V1CTV"
   brandColor          = "indigo"
   primaryColor        = "blue"
-  accentColor         = "#f3844b"
   lightBackground  = "gray-50"  # any color @ 50|100|200
   darkBackground   = "gray-900" # neutral @ 800|900|950
   cardBackground     = "gray-100"     # or "slate-100", "rose-50", etc.
@@ -163,10 +122,7 @@ pruneTaxonomies = true
 
 # [params.button_outline]
 
-[params.h1]
-  classes = "text-4xl font-bold dark:text-white-200"
 
-[params.text]
 
 [permalinks]
   posts = "/:contentbasename"
@@ -174,13 +130,7 @@ pruneTaxonomies = true
 [taxonomies]
   tag = "tags"
 
-[build]
-  useResourceCacheWhen = "never"
-  [build.processing]
-    [build.processing.css]
-      config = "../../postcss.config.cjs"
-      [[build.processing.css.targets]]
-        src = "**/main.css"
+#[build]  # uses shared build settings from theme; uncomment to override
 
 [menu]
 

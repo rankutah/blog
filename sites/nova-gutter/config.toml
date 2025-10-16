@@ -8,58 +8,24 @@ themesDir     = "../../themes"
 
 pruneTaxonomies = true
 
-# add JSON output for tag terms
-[outputFormats.TagsJSON]
-  mediaType    = "application/json"
-  baseName     = "tags"
-  isPlainText  = true
-
+# Ensure FORMS format exists locally so outputs.home supports it during config load
 [outputFormats.FORMS]
   mediaType = "application/json"
   baseName = "forms"
   isPlainText = true
   path = ".well-known"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        title = true
+#[markup]  # inherit from theme
 
 [module]
 
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-
-  [[module.mounts]]
-    source = "content"
-    target = "content"
-
-  [[module.mounts]]
-    source = "media"
-    target = "static/media"
-
-  [[module.mounts]]
-    source = "media"
-    target = "assets/media"
-
-  [[module.mounts]]
-    source = "posts"
-    target = "content/posts"
 
 [outputs]
+  # Inherit defaults; override only if needed
   home         = ["HTML", "RSS", "JSON", "FORMS"]
-  section      = ["HTML"]
-  taxonomy     = ["HTML","JSON"]
 
 [params]
   googleAnalyticsID = "G-3KJ46VMTTB"
-  accentColor       = "#f3844b"
   showReadingTime   = true
   enableSearch      = true
   clientName        = "NOVA Gutter"
@@ -97,10 +63,4 @@ pruneTaxonomies = true
     url    = "/search/"
     weight = 4
 
-[build]
-  useResourceCacheWhen = "never"
-  [build.processing]
-    [build.processing.css]
-      config = "../../postcss.config.cjs"
-      [[build.processing.css.targets]]
-        src = "**/main.css"
+#[build]  # inherit build settings from theme
