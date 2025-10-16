@@ -107,8 +107,8 @@
     {{ partial "google_analytics.html" . }}
   {{- end -}}
 
-  {{- /* Favicons (explicit /favicon.ico to ensure live site picks it up) */ -}}
-  <link rel="icon" href="{{ (site.Params.assets.favicon | default "favicon.ico") | absURL }}">
+  {{- /* Favicons */ -}}
+  {{ partial "favicons.html" . }}
 
   {{- /* LCP preload */ -}}
   {{ partial "lcp-preload.html" . }}

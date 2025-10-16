@@ -26,6 +26,8 @@ pruneTaxonomies = true
 
 [params]
   googleAnalyticsID = "G-3KJ46VMTTB"
+  primaryColor      = "indigo"
+  logo              = "logo.png"
   showReadingTime   = true
   enableSearch      = true
   clientName        = "NOVA Gutter"
@@ -64,3 +66,17 @@ pruneTaxonomies = true
     weight = 4
 
 #[build]  # inherit build settings from theme
+
+[params.header]
+  stickyMobile     = true
+  stickyDesktop    = true
+  titleSize        = "2xl"
+  showCTAOnMobile  = false
+  showCTAOnDesktop = true
+  CTAText          = "Get a Quote"
+  CTAURL           = "/contact/"
+  showPhoneOnMobile = true
+  phoneNumber       = "(561) 555-1212"
+  logoHeight        = "h-10"
+  logoWidth         = 150
+  logoHeightPx      = 150

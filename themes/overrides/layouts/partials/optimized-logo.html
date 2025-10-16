@@ -26,6 +26,9 @@
   {{- $orig = resources.Get $raw -}}
 {{- end -}}
 
+{{- /* Also detect static fallback presence to avoid 404s when param is set but file is missing */ -}}
+{{- $hasStatic := or (fileExists (printf "static/%s" $raw)) (fileExists $raw) -}}
+
 {{- if and $orig (eq $orig.MediaType.Type "image") -}}
   {{- /* Resize to intrinsic or modest size if width provided; otherwise no upscale */ -}}
   {{- $fitTarget := cond $w (printf "%sx" $w) "512x" -}}
@@ -43,7 +46,7 @@
       fetchpriority="high"
       decoding="async" />
   </picture>
-{{- else -}}
+{{- else if $hasStatic -}}
   <img
     src="{{ $logo | relURL }}"
     alt="{{ $alt }}"

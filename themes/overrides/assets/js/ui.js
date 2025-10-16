@@ -1,6 +1,6 @@
-// Minimal Flowbite imports; expand only as needed
-// We keep this tiny to reduce JS bytes and main-thread work.
-import { initAccordions } from 'flowbite'
+// Initialize all Flowbite components consistently across sites.
+// Using the single initializer keeps behavior uniform as you add components.
+import { initFlowbite } from 'flowbite'
 
 function ready(fn) {
   if (document.readyState === 'loading') {
@@ -11,7 +11,5 @@ function ready(fn) {
 }
 
 ready(() => {
-  try {
-    initAccordions();
-  } catch {}
+  try { initFlowbite(); } catch {}
 });
