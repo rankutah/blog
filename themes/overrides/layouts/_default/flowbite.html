@@ -137,6 +137,12 @@
 
   {{- /* If this is the homepage, or the page declares a hero, or uses a landing layout, remove the top pad */ -}}
   {{- $isHeroPage := or .IsHome .Params.hero (eq .Params.layout "landing") -}}
+  {{- if $isHeroPage }}
+  <style>
+    /* Enforce flush hero under sticky navbar */
+    main#content { padding-top: 0 !important; }
+  </style>
+  {{- end }}
   <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync>
     <article class="prose prose-zinc max-w-none dark:prose-invert">
       {{ .Content }}

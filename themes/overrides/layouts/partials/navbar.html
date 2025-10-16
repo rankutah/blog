@@ -100,11 +100,8 @@
             {{ if $stickyMobile }}sticky top-0 z-50{{ end }}
             {{ if $stickyDesktop }} md:sticky md:top-0 md:z-50{{ end }}
             relative
-            {{ if not $isHeroPage }}
-              md:after:content-[''] md:after:absolute md:after:inset-x-0 md:after:bottom-0 md:after:h-px
-              md:after:bg-black/15 md:dark:after:bg-white/15 md:after:pointer-events-none
-            {{ end }}
-            {{ if $isHeroPage }} border-b-0 md:border-b-0{{ end }}">
+            md:after:content-[''] md:after:absolute md:after:inset-x-0 md:after:bottom-0 md:after:h-px
+            md:after:bg-black/15 md:dark:after:bg-white/15 md:after:pointer-events-none">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline">

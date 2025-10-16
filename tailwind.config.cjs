@@ -15,6 +15,8 @@ const SITE = process.env.SITE || '*';
 const NEUTRALS = ['gray', 'neutral'];
 const CHROMAS  = ['red','orange','amber','yellow','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'];
 const FAMILIES = [...NEUTRALS, ...CHROMAS];
+// Maintain a combined list alias for any legacy references
+const ALL = FAMILIES;
 
 // We only need these shades for the picker
 const STEPS_LIGHT        = ['50','100','200'];     // light mode choices
@@ -42,25 +44,6 @@ function buildSafelist() {
 
 module.exports = {
   darkMode: 'class',
-  // ... your existing content globs ...
-  safelist: [
-    // Button tints for .ui-btn
-    { pattern: new RegExp(`^(bg|hover:bg|focus:ring)-(${ALL.join('|')})-(700|800|300)$`) },
-    { pattern: new RegExp(`^dark:(bg|hover:bg|focus:ring)-(${ALL.join('|')})-(600|700|800)$`) },
-
-    // Light backgrounds 50/100/200 for all families
-    { pattern: new RegExp(`^bg-(${ALL.join('|')})-(50|100|200)$`) },
-
-    // Dark backgrounds:
-    // - neutrals: 800/900/950
-    { pattern: new RegExp(`^dark:bg-(${NEUTRALS.join('|')})-(800|900|950)$`) },
-
-    // - chromas: 950 only
-    { pattern: new RegExp(`^dark:bg-(${CHROMAS.join('|')})-950$`) },
-
-    // If your layout sets this anywhere, keep it available
-    'bg-white',
-  ],
   content: [
     `./sites/${SITE}/**/*.{html,md,js,ts,jsx,tsx,toml}`,
     './themes/overrides/**/*.{html,md,js,ts,jsx,tsx}',
