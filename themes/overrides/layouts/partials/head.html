@@ -166,18 +166,9 @@
   {{- $avifTags := findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"[^\"]+\"` .Content -}}
   {{- $imgTags  := findRE `(?is)<img[^>]+src=\"[^\"]+\"` .Content -}}
   {{- $lcp := "" -}}
-  {{- if gt (len $avifTags) 0 -}}
-    {{- $first := index $avifTags 0 -}}
-    {{- $lcp = replaceRE `(?is).*srcset=\"([^\", ]+).*` "${1}" $first -}}
-  {{- else if gt (len $imgTags) 0 -}}
-    {{- $first := index $imgTags 0 -}}
-    {{- $lcp = replaceRE `(?is).*src=\"([^\"]+).*` "${1}" $first -}}
-  {{- end -}}
-  {{- with $lcp -}}
-    {{- $clean := . | strings.TrimSpace -}}
-    {{- if $clean }}
-      <link rel="preload" as="image" href="{{ $clean | absURL }}" fetchpriority="high">
-    {{- end -}}
+  {{- if or (gt (len $avifTags) 0) (gt (len $imgTags) 0) -}}
+    {{- /* LCP preload */ -}}
+    {{ partial "lcp-preload.html" . }}
   {{- end -}}
 {{- end -}}
 {{ partial "schema.html" . }}

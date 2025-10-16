@@ -138,6 +138,8 @@
       {{- end -}}
     {{- end -}}
   {{- end -}}
+    {{- /* LCP preload */ -}}
+    {{ partial "lcp-preload.html" . }}
 
   {{- /* JSON-LD schema (Event and per-page LocalBusiness) */ -}}
   {{ partial "schema.html" . }}

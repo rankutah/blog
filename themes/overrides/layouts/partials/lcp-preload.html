@@ -1,0 +1,19 @@
+{{- /* Emits a safe LCP preload link by extracting just the first hero image URL.
+      Prefers AVIF <source> srcset URL; falls back to first <img src>.
+      Only runs on hero/landing/home pages. */ -}}
+{{- $ctx := . -}}
+{{- $isHeroPage := or $ctx.IsHome (or $ctx.Params.hero (eq $ctx.Params.layout "landing")) -}}
+{{- if $isHeroPage -}}
+  {{- $html := $ctx.Content -}}
+  {{- $avifMatches := findRESubmatch `(?is)<source[^>]+type="image/avif"[^>]+srcset="([^", ]+)` $html -}}
+  {{- $imgMatches  := findRESubmatch `(?is)<img[^>]+src="([^"]+)"` $html -}}
+  {{- $url := "" -}}
+  {{- if gt (len $avifMatches) 0 -}}
+    {{- $url = index (index $avifMatches 0) 1 -}}
+  {{- else if gt (len $imgMatches) 0 -}}
+    {{- $url = index (index $imgMatches 0) 1 -}}
+  {{- end -}}
+  {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
+    <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high">
+  {{- end -}}
+{{- end -}}

@@ -116,6 +116,10 @@
 {{- $secClass = $secClass | append "section" -}}
 {{- if $isHero }}{{ $secClass = $secClass | append "hero" }}{{ end -}}
 {{- if $bleed }}{{ $secClass = $secClass | append "bleed" }}{{ end -}}
+{{- /* If this page declares hero (img present) but not bleed, still mark section as hero-nonbleed for top-pad removal on landing pages */ -}}
+{{- if and (ne $img "") (not $bleed) -}}
+  {{- $secClass = $secClass | append "hero-nonbleed" -}}
+{{- end -}}
 <section class="{{ delimit $secClass " " }}">
   {{- if and $img $bleed -}}
     <!-- Full-bleed hero -->
