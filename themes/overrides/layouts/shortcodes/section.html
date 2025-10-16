@@ -32,6 +32,11 @@
 
 {{- $render  := lower (.Get "render" | default "md") -}} {{/* md | raw | auto */}}
 
+{{/* ---------- First section detection (to allow flush hero) ---------- */}}
+{{- $seen := $page.Scratch.Get "first_section_seen" | default false -}}
+{{- $isFirstSection := not $seen -}}
+{{- if not $seen -}}{{- $page.Scratch.Set "first_section_seen" true -}}{{- end -}}
+
 {{/* ---------- Maps ---------- */}}
 {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
 {{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
@@ -74,7 +79,8 @@
 {{- $spacerParam := lower (.Get "spacer" | default "true") -}}
 
 {{/* ---------- Compute paddings ---------- */}}
-{{- $pt := cond $bleed "pt-0" (index $ptMap $y | default "pt-12") -}}
+{{- /* If this is the first section and it's a hero (has img), remove top padding to sit flush under the nav. */ -}}
+{{- $pt := cond (or $bleed (and $isFirstSection (ne $img ""))) "pt-0" (index $ptMap $y | default "pt-12") -}}
 {{- $pb := index $pbMap $y | default "pb-12" -}}
 {{- if $yBottom }}{{- $pb = index $pbMap $yBottom | default $pb -}}{{- end -}}
 
