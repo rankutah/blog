@@ -132,8 +132,8 @@
   </main>
 
   <!-- Flowbite JS (ESM, only what we need) -->
-  {{- $ui := resources.Get "js/ui.js" | js.Build (dict "minify" true "target" "es2018") -}}
-  <script type="module" src="{{ $ui.RelPermalink }}" defer></script>
+  {{- $ui := resources.Get "js/ui.js" | js.Build (dict "minify" true "target" "es2020" ) -}}
+  <script type="module" src="{{ $ui.RelPermalink }}"></script>
 
   <!-- Header toggle (optional):
        If you have a button with id="theme-toggle" (and two icons with

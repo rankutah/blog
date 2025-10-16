@@ -30,18 +30,22 @@
 {{- $hasStatic := or (fileExists (printf "static/%s" $raw)) (fileExists $raw) -}}
 
 {{- if and $orig (eq $orig.MediaType.Type "image") -}}
-  {{- /* Resize to intrinsic or modest size if width provided; otherwise no upscale */ -}}
-  {{- $fitTarget := cond $w (printf "%sx" $w) "512x" -}}
-  {{- $resized := $orig.Fit $fitTarget -}}
-  {{- $avif    := $resized.Convert "avif" -}}
+  {{- /* Resize to target width if provided; default modest width to avoid huge header logos */ -}}
+  {{- $fitW := cond $w (printf "%sx" $w) "512x" -}}
+  {{- $avif  := $orig.Fit (printf "%s avif" $fitW) -}}
+  {{- $webp  := $orig.Fit (printf "%s webp" $fitW) -}}
+  {{- /* Derive width/height if not provided, using the fallback source */ -}}
+  {{- $iw := or $w $webp.Width -}}
+  {{- $ih := or $h (div (mul $webp.Height (int $iw)) $webp.Width) -}}
   <picture>
     <source srcset="{{ $avif.RelPermalink }}" type="image/avif">
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
     <img
-      src="{{ $resized.RelPermalink }}"
+      src="{{ $webp.RelPermalink }}"
       alt="{{ $alt }}"
       class="{{ $class }}"
-      {{ with $w }}width="{{ . }}"{{ end }}
-      {{ with $h }}height="{{ . }}"{{ end }}
+  width="{{ $iw }}"
+  height="{{ $ih }}"
       loading="eager"
       fetchpriority="high"
       decoding="async" />
