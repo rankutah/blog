@@ -84,6 +84,26 @@ pruneTaxonomies = true
   author              = "Benjamin Awerkamp"
   hideMeta            = false
 
+[params.analytics]
+  delayMs = 4000
+  loadEvents = ["scroll", "mousemove", "touchstart"]
+
+  [params.analytics.google]
+    id = "G-LGYK5V1CTV"
+    enabled = true
+
+  [params.analytics.clarity]
+    id = "orwqd1fgew"
+    enabled = true
+
+  [params.analytics.googleAds]
+    id = "AW-XXXXXXXXX"   # replace with your Google Ads ID
+    enabled = false        # set true when ready
+
+  [params.analytics.meta]
+    id = ""               # e.g., 123456789012345 (Meta Pixel)
+    enabled = false        # set true when ready
+
 [params.header]
   stickyMobile     = true
   stickyDesktop    = true

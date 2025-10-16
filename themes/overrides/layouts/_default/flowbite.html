@@ -115,6 +115,11 @@
     {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
     crossorigin="anonymous"
   >
+
+  {{- /* Analytics (match PaperMod behavior: only in production) */ -}}
+  {{- if or (hugo.IsProduction) (eq site.Params.env "production") -}}
+    {{ partial "google_analytics.html" . }}
+  {{- end -}}
 </head>
 
 {{- /* Get shared palette once; use for body + navbar */ -}}

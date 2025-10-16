@@ -80,7 +80,7 @@ Bachelor's in Business Management
 
 You can learn more about my website design and local seo services by visiting either of the following pages.
 
-{{< button url="/services/web-design" text="Web Design" >}} {{< button url="/services/local-seo" text="Local SEO" >}}
+{{< button url="/services/website-design" text="Web Design" >}} {{< button url="/services/local-seo" text="Local SEO" >}}
 
 ## Reach Out
 
