@@ -82,6 +82,8 @@
   padding: 1rem 1rem; /* tighter top/bottom */
   border-top: 1px solid #e5e7eb; /* gray-200 */
 }
+
+
 .dark .footer { border-top-color: #374151; /* gray-700 */ }
 .footer .prose {
   max-width: 72rem !important; /* ~1152px */
