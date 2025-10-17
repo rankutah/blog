@@ -20,8 +20,8 @@
       {{- $avifSizes = "100vw" -}}
     {{- end -}}
     {{- /* Choose the first candidate URL as href for broader support */ -}}
-    {{- $first := index (split $avifSrcset ",") 0 | default "" -}}
-    {{- $firstParts := split (trim $first) " " -}}
+  {{- $first := index (split $avifSrcset ",") 0 | default "" -}}
+  {{- $firstParts := split (trim $first " ") " " -}}
     {{- if gt (len $firstParts) 0 -}}
       {{- $url = index $firstParts 0 -}}
     {{- end -}}

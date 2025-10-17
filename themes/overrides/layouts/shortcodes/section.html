@@ -140,24 +140,36 @@
   {{- if and $isRaster $isMedia -}}
     {{- $noLead := replaceRE "^(/|\\./|\\.\\./)" "" $imgStr -}}
     {{- $asset := resources.Get $noLead -}}
+    {{- $last := "" -}}
     {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
-      {{- /* Avoid reading intrinsic width; just generate common widths */ -}}
-      {{- $widths := slice 720 1080 1440 1920 -}}
-      {{- $last := "" -}}
-      {{- range $w := $widths -}}
-        {{- /* Always generate variants; Hugo avoids enlarging when not needed */ -}}
-          {{- $r := $asset.Resize (printf "%dx" $w) -}}
-          {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
-          {{- $last = $r.RelPermalink -}}
-          {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
-          {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
-          {{- $rwebp := $asset.Resize (printf "%dx webp" $w) -}}
-          {{- $srcsetWebp = $srcsetWebp | append (printf "%s %dw" $rwebp.RelPermalink $w) -}}
+      {{- $sub := lower ($asset.MediaType.SubType | default "") -}}
+      {{- $processable := in (slice "jpeg" "jpg" "png") $sub -}}
+      {{- if $processable -}}
+        {{- /* Avoid reading intrinsic width; just generate common widths */ -}}
+        {{- $widths := slice 720 1080 1440 1920 -}}
+        {{- $last = "" -}}
+        {{- range $w := $widths -}}
+          {{- /* Always generate variants; Hugo avoids enlarging when not needed */ -}}
+            {{- $r := $asset.Resize (printf "%dx" $w) -}}
+            {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+            {{- $last = $r.RelPermalink -}}
+            {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
+            {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+            {{- $rwebp := $asset.Resize (printf "%dx webp" $w) -}}
+            {{- $srcsetWebp = $srcsetWebp | append (printf "%s %dw" $rwebp.RelPermalink $w) -}}
+        {{- end -}}
+        {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
+      {{- else -}}
+        {{- /* Unprocessable by Hugo pipeline (e.g., AVIF/WEBP as source). Use original as fallback and provide type-specific source. */ -}}
+        {{- $fallbackSrc = $asset.RelPermalink -}}
+        {{- if eq $sub "avif" -}}
+          {{- $srcsetAvif = (slice $asset.RelPermalink) -}}
+        {{- else if eq $sub "webp" -}}
+          {{- $srcsetWebp = (slice $asset.RelPermalink) -}}
         {{- end -}}
       {{- end -}}
-      {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
-  {{- /* Skip width/height hints to avoid calling methods unsupported on some formats (e.g., AVIF) */ -}}
     {{- end -}}
+    {{- /* Skip width/height hints to avoid calling methods unsupported on some formats (e.g., AVIF) */ -}}
   {{- else -}}
     {{- /* Fallback: try a static AVIF sibling if present */ -}}
     {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
@@ -209,24 +221,34 @@
   {{- if and $isRaster $isMedia -}}
     {{- $noLead := replaceRE "^(/|\\./|\\.\\./)" "" $imgStr -}}
     {{- $asset := resources.Get $noLead -}}
+    {{- $last := "" -}}
     {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
-      {{- $widths := slice 720 1080 1440 1920 -}}
-      {{- $last := "" -}}
-      {{- range $w := $widths -}}
-        {{- /* Always generate variants; Hugo avoids enlarging when not needed */ -}}
-          {{- $r := $asset.Resize (printf "%dx" $w) -}}
-          {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
-          {{- $last = $r.RelPermalink -}}
-          {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
-          {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
-          {{- $rwebp := $asset.Resize (printf "%dx webp" $w) -}}
-          {{- $srcsetWebp = $srcsetWebp | append (printf "%s %dw" $rwebp.RelPermalink $w) -}}
+      {{- $sub := lower ($asset.MediaType.SubType | default "") -}}
+      {{- $processable := in (slice "jpeg" "jpg" "png") $sub -}}
+      {{- if $processable -}}
+        {{- $widths := slice 720 1080 1440 1920 -}}
+        {{- $last = "" -}}
+        {{- range $w := $widths -}}
+          {{- /* Always generate variants; Hugo avoids enlarging when not needed */ -}}
+            {{- $r := $asset.Resize (printf "%dx" $w) -}}
+            {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+            {{- $last = $r.RelPermalink -}}
+            {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
+            {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+            {{- $rwebp := $asset.Resize (printf "%dx webp" $w) -}}
+            {{- $srcsetWebp = $srcsetWebp | append (printf "%s %dw" $rwebp.RelPermalink $w) -}}
+        {{- end -}}
+        {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
+      {{- else -}}
+        {{- $fallbackSrc = $asset.RelPermalink -}}
+        {{- if eq $sub "avif" -}}
+          {{- $srcsetAvif = (slice $asset.RelPermalink) -}}
+        {{- else if eq $sub "webp" -}}
+          {{- $srcsetWebp = (slice $asset.RelPermalink) -}}
         {{- end -}}
       {{- end -}}
-      {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
-  {{- /* Skip width/height hints for same reason as above */ -}}
     {{- end -}}
-  {{- else -}}
+  {{- /* Skip width/height hints for same reason as above */ -}}
     {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
       {{- $noLead := replaceRE "^/" "" $imgStr -}}
       {{- $avifRel := replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $noLead -}}

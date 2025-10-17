@@ -180,6 +180,54 @@
     });
   </script>
 
+  <!-- Lazy-load Elfsight only when needed (below-the-fold + gated) -->
+  <script>
+    (function(){
+      var loaded = false;
+      function loadElfsight(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.src = 'https://static.elfsight.com/platform/platform.js';
+        s.async = true;
+        document.head.appendChild(s);
+      }
+      function onIntersect(entries, obs){
+        for (var i=0;i<entries.length;i++){
+          var e = entries[i];
+          if (e.isIntersecting){ loadElfsight(); obs.disconnect(); break; }
+        }
+      }
+      function setup(){
+        try {
+          var el = document.querySelector('[class^="elfsight-app-"]');
+          if (!el) return; // no widget on this page
+        } catch { return; }
+
+        // Gate on user interaction OR when the widget comes near viewport
+        var once = function(fn){ return function(){ fn();
+          window.removeEventListener('scroll', onUser, {passive:true});
+          window.removeEventListener('mousemove', onUser);
+          window.removeEventListener('touchstart', onUser, {passive:true});
+        }};
+        var onUser = once(loadElfsight);
+        window.addEventListener('scroll', onUser, {passive:true});
+        window.addEventListener('mousemove', onUser);
+        window.addEventListener('touchstart', onUser, {passive:true});
+
+        // IntersectionObserver for the widget container
+        if ('IntersectionObserver' in window){
+          try {
+            var obs = new IntersectionObserver(onIntersect, { root: null, rootMargin: '400px', threshold: 0.01 });
+            document.querySelectorAll('[class^="elfsight-app-"]').forEach(function(node){ obs.observe(node); });
+          } catch { /* noop */ }
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setup, { once:true });
+      } else { setup(); }
+    })();
+  </script>
+
   <!-- Calculate header height and set --site-header-offset so CSS can align anchors correctly -->
   <!-- header offset script removed to restore default CSS behavior -->
 

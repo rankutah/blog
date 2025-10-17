@@ -64,8 +64,7 @@ Most web designers require high costs upfront before they will build your websit
 
 ## What Clients Are Saying
 
-<!-- Elfsight Google Reviews | Rank Utah -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 <div class="elfsight-app-caff5808-5afd-415b-b8a6-19ebf5a9e552" data-elfsight-app-lazy></div>
 
 {{< /section >}}
