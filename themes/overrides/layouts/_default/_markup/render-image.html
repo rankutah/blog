@@ -65,7 +65,8 @@
 {{- $hasStaticAvif := false -}}
 {{- $avifPath := "" -}}
 {{- if and (not $isPR) (findRE `(^|/)media/[^?#]+\.(jpg|jpeg|png|webp)$` $src) -}}
-  {{- $clean := replaceRE `^/` "" $src -}}
+  {{- /* Normalize leading /, ./, ../ so resources.Get resolves against assets/ mounts */ -}}
+  {{- $clean := replaceRE `^(/|\\./|\\\.\./)+` "" $src -}}
   {{- $asset := resources.Get $clean -}}
   {{- if $asset -}}
     {{- $origW := $asset.Width | default 0 -}}
@@ -94,7 +95,8 @@
   {{- $avifPath = $src -}}
   {{- $hasStaticAvif = true -}}
   {{- /* Try to locate a sibling raster file to infer width/height and serve as <img> fallback */ -}}
-  {{- $clean := replaceRE `^/` "" $src -}}
+  {{- /* Normalize leading /, ./, ../ for sibling lookup */ -}}
+  {{- $clean := replaceRE `^(/|\\./|\\\.\./)+` "" $src -}}
   {{- $base := replaceRE `\.avif$` "" $clean -}}
   {{- $candidates := slice "jpg" "jpeg" "png" "webp" -}}
   {{- range $ext := $candidates -}}
