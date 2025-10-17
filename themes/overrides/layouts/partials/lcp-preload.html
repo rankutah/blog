@@ -1,20 +1,38 @@
-{{- /* Emits a safe LCP preload link by extracting just the first hero image URL.
-      Prefers AVIF <source> srcset URL; falls back to first <img src>.
+{{- /* Emits a safe LCP preload link by extracting the hero image and its srcset.
+      Prefers AVIF <source> srcset; falls back to first <img src>.
+      When AVIF srcset is found, also emits imagesrcset/imagesizes to help early selection.
       Only runs on hero/landing/home pages. */ -}}
 {{- $ctx := . -}}
 {{- $isHeroPage := or $ctx.IsHome (or $ctx.Params.hero (eq $ctx.Params.layout "landing")) -}}
 {{- if $isHeroPage -}}
   {{- $html := $ctx.Content -}}
-  {{- $avifMatches := findRESubmatch `(?is)<source[^>]+type="image/avif"[^>]+srcset="([^", ]+)` $html -}}
-  {{- $imgMatches  := findRESubmatch `(?is)<img[^>]+src="([^"]+)"` $html -}}
+  {{- $avifSrcset := "" -}}
+  {{- $avifSizes := "" -}}
   {{- $url := "" -}}
-  {{- if gt (len $avifMatches) 0 -}}
-    {{- $url = index (index $avifMatches 0) 1 -}}
+  {{- $avifSS := findRESubmatch `(?is)<source[^>]+type="image/avif"[^>]+srcset="([^"]+)"` $html -}}
+  {{- $avifSZ := findRESubmatch `(?is)<source[^>]+type="image/avif"[^>]+sizes="([^"]+)"` $html -}}
+  {{- $imgMatches  := findRESubmatch `(?is)<img[^>]+src="([^"]+)"` $html -}}
+  {{- if gt (len $avifSS) 0 -}}
+    {{- $avifSrcset = index (index $avifSS 0) 1 -}}
+    {{- if gt (len $avifSZ) 0 -}}
+      {{- $avifSizes = index (index $avifSZ 0) 1 -}}
+    {{- else -}}
+      {{- $avifSizes = "100vw" -}}
+    {{- end -}}
+    {{- /* Choose the first candidate URL as href for broader support */ -}}
+    {{- $first := index (split $avifSrcset ",") 0 | default "" -}}
+    {{- $firstParts := split (trim $first) " " -}}
+    {{- if gt (len $firstParts) 0 -}}
+      {{- $url = index $firstParts 0 -}}
+    {{- end -}}
   {{- else if gt (len $imgMatches) 0 -}}
     {{- $url = index (index $imgMatches 0) 1 -}}
   {{- end -}}
   {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
-    {{- $isAvif := and (gt (len $avifMatches) 0) (in $url ".avif") -}}
-    <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high"{{ if $isAvif }} type="image/avif"{{ end }}>
+    {{- if ne $avifSrcset "" -}}
+      <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" type="image/avif" imagesrcset="{{ $avifSrcset }}" imagesizes="{{ $avifSizes }}">
+    {{- else -}}
+      <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high">
+    {{- end -}}
   {{- end -}}
 {{- end -}}
