@@ -15,6 +15,7 @@ pruneTaxonomies = true
   isPlainText = true
   path = ".well-known"
 
+
 #[markup]  # inherit from theme
 
 [module]
