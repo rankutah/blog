@@ -21,9 +21,9 @@ Simple monthly pricing. No contracts. No surprises.
 
 {{< section >}}
 
-{{< cols min="18rem" gap="1rem" v="start">}}
+{{< cols min="18rem" gap="1rem" v="stretch">}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
 ## Website Design <br>
 
@@ -36,7 +36,7 @@ $149 per month
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
 ## Local SEO
 
@@ -48,7 +48,7 @@ $199 per month
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
 ## Website Design + Local SEO
 ~~$348~~ $299 per month (Save $49)
