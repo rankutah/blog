@@ -19,8 +19,8 @@
 {{ $logoFile        := .Site.Params.logo }}
 {{ $logoHeightClass := default "h-8"      .Site.Params.header.logoHeight }}
 {{/* Optional explicit dimensions for the logo (PSI: set width/height to avoid CLS) */}}
-{{ $logoW := .Site.Params.header.logoWidth | default "" }}
-{{ $logoH := .Site.Params.header.logoHeightPx | default "" }}
+{{ $logoW := .Site.Params.header.logoWidth | default 0 }}
+{{ $logoH := .Site.Params.header.logoHeightPx | default 0 }}
 
 {{/* Shared palette for backgrounds/text (must provide navBg, navText) */}}
 {{ $pal := partial "theme/palette.html" . }}
