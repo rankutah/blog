@@ -89,10 +89,29 @@
     {{- $avifPath = replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $src -}}
     {{- $hasStaticAvif = true -}}
   {{- end -}}
+{{- else if and (not $isPR) (findRE `(^|/)media/[^?#]+\.avif$` $src) -}}
+  {{- /* Author linked directly to a static AVIF. We cannot read dimensions from AVIF safely. */ -}}
+  {{- $avifPath = $src -}}
+  {{- $hasStaticAvif = true -}}
+  {{- /* Try to locate a sibling raster file to infer width/height and serve as <img> fallback */ -}}
+  {{- $clean := replaceRE `^/` "" $src -}}
+  {{- $base := replaceRE `\.avif$` "" $clean -}}
+  {{- $candidates := slice "jpg" "jpeg" "png" "webp" -}}
+  {{- range $ext := $candidates -}}
+    {{- if and (eq $wHint 0) (eq $hHint 0) -}}
+      {{- $cand := resources.Get (printf "%s.%s" $base $ext) -}}
+      {{- if $cand -}}
+        {{- /* Set intrinsic dimension hints and use the sibling as the <img> fallback src */ -}}
+        {{- $wHint = $cand.Width | default 0 -}}
+        {{- $hHint = $cand.Height | default 0 -}}
+        {{- $src = $cand.RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
 {{- end -}}
 
 {{- /* Build <img> fallback tag (uses srcset if PR) */ -}}
-{{- $imgTag := printf `<img src="%s"%s%s alt="%s"%s%s%s%s class="%s" loading="%s" decoding="%s" />`
+{{- $imgTag := printf `<img src="%s"%s%s alt="%s"%s%s%s%s loading="%s" decoding="%s" />`
   $src
   (cond (gt (len $srcset) 0) (printf ` srcset="%s"` (delimit $srcset ", ")) "")
   (cond (gt (len $srcset) 0) (printf ` sizes="%s"` $sizesAttr) "")
@@ -104,6 +123,7 @@
   $loading
   $decoding
 -}}
+}}
 
 {{- /* Build either <picture> with AVIF or plain <img> */ -}}
 {{- $content := "" -}}
