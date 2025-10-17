@@ -12,8 +12,11 @@
   "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/rank-utah/media",
   "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media",
   "purge:rank-utah": "node scripts/cf-purge.js --urls=https://clearpresence.io/ --warm",
+  "purge:rank-utah:all": "node scripts/cf-purge.js --sitemap=https://clearpresence.io/sitemap.xml --warm",
   "purge:nova-gutter": "node scripts/cf-purge.js --urls=https://novagutter.com/ --warm",
+  "purge:nova-gutter:all": "node scripts/cf-purge.js --sitemap=https://novagutter.com/sitemap.xml --warm",
   "deploy:rank-utah": "npm run build:rank-utah && npm run purge:rank-utah",
+  "deploy:rank-utah:all": "npm run build:rank-utah && npm run purge:rank-utah:all",
   "deploy:nova-gutter": "npm run build:nova-gutter && npm run purge:nova-gutter"
 
   },
