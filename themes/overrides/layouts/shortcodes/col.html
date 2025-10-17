@@ -138,18 +138,20 @@
 {{- $card := cond (ne $siteCard "") $siteCard $cardBase -}}
 {{- if ne $extra "" }}{{ $card = printf "%s %s" $card $extra }}{{ end -}}
 
-{{- /* Render strategy: md (default), raw, auto */ -}}
+{{- /* Render strategy: md (default), raw, auto) with shortcode support */ -}}
 {{- $html := "" -}}
+{{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
 {{- if eq $render "raw" -}}
   {{- $html = $inner | safeHTML -}}
 {{- else if eq $render "auto" -}}
+  {{- /* If the inner contains shortcode tokens, render them; otherwise render as Markdown */ -}}
   {{- if (findRE `\{\{[<%]` $inner) -}}
-    {{- $html = $inner | safeHTML -}}
+    {{- $html = $page.RenderString $opts $inner -}}
   {{- else -}}
-    {{- $html = $page.RenderString $inner -}}
+    {{- $html = $page.RenderString $opts $inner -}}
   {{- end -}}
 {{- else -}}
-  {{- $html = $page.RenderString $inner -}}
+  {{- $html = $page.RenderString $opts $inner -}}
 {{- end -}}
 
 {{- if $isCard -}}

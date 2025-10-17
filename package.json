@@ -4,15 +4,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-  "rank-utah": "npm run optimize:rank-utah --silent && hugo server --disableFastRender --source ./sites/rank-utah --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
-  "build:rank-utah": "npm run optimize:rank-utah --silent && hugo --source ./sites/rank-utah --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
-  "nova-gutter": "npm run optimize:nova-gutter --silent && hugo server --disableFastRender --source ./sites/nova-gutter --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
-  "build:nova-gutter": "npm run optimize:nova-gutter --silent && hugo --source ./sites/nova-gutter --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
-  "optimize": "node scripts/optimize-images.mjs",
-  "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/rank-utah/media",
-  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media"
-
-
+    "rank-utah": "npm run optimize:rank-utah --silent && hugo server --disableFastRender --source ./sites/rank-utah --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+    "build:rank-utah": "npm run optimize:rank-utah --silent && hugo --source ./sites/rank-utah --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+    "nova-gutter": "npm run optimize:nova-gutter --silent && hugo server --disableFastRender --source ./sites/nova-gutter --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+    "build:nova-gutter": "npm run optimize:nova-gutter --silent && hugo --source ./sites/nova-gutter --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+    "optimize": "node scripts/optimize-images.mjs",
+    "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/rank-utah/media",
+    "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media",
+    "import:blue-ridge-abbey": "node scripts/import-blueridgeabbey.mjs",
+    "optimize:blue-ridge-abbey": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/blue-ridge-abbey/media",
+    "blue-ridge-abbey": "npm run optimize:blue-ridge-abbey --silent && hugo server --disableFastRender --source ./sites/blue-ridge-abbey --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+    "build:blue-ridge-abbey": "npm run optimize:blue-ridge-abbey --silent && hugo --source ./sites/blue-ridge-abbey --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
+    "grab:carousel": "node scripts/grab-carousel-headless.mjs"
   },
   "repository": {
     "type": "git",
@@ -27,15 +30,19 @@
   "homepage": "https://github.com/rankutah/blog#readme",
   "description": "",
   "devDependencies": {
-    "sharp": "^0.33.4",
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.21",
     "flowbite": "^3.1.2",
     "flowbite-typography": "^1.0.5",
+    "jsdom": "^24.1.0",
+    "node-fetch": "^3.3.2",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
-    "tailwindcss": "^4.1.11"
+    "puppeteer": "^24.25.0",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^4.1.11",
+    "turndown": "^7.2.0"
   }
 }

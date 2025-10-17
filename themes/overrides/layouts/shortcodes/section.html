@@ -104,17 +104,21 @@
 {{- $base := printf "%s %s" $container $pb -}}
 {{- $classes := cond (ne $pageOverride "") $pageOverride (cond (ne $siteOverride "") $siteOverride $base) -}}
 
-{{/* ---------- Smart renderer ---------- */}}
+{{/* ---------- Smart renderer (with shortcode support) ---------- */}}
 {{- $innerRaw := $Inner -}}
 {{- $hasShortcode := gt (len (findRE `{{[%<]` $innerRaw)) 0 -}}
+{{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
 {{- if eq $render "auto" -}}
-  {{- $render = cond $hasShortcode "raw" "md" -}}
+  {{- /* In auto mode, always render Markdown and allow shortcodes. */ -}}
+  {{- $render = "md" -}}
 {{- end -}}
 {{- $innerOut := "" -}}
 {{- if eq $render "raw" -}}
+  {{- /* Raw preserves the inner HTML exactly (no shortcode rendering). */ -}}
   {{- $innerOut = $innerRaw | safeHTML -}}
 {{- else -}}
-  {{- $innerOut = $page.RenderString $innerRaw -}}
+  {{- /* md → RenderString with shortcode expansion enabled. */ -}}
+  {{- $innerOut = $page.RenderString $opts $innerRaw -}}
 {{- end -}}
 
 {{- $isHero := and (ne $img "") $bleed -}}

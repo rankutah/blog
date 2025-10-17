@@ -28,7 +28,11 @@
 {{ with .Get "images" }}
   {{ range (split . ",") }}
     {{ $src := trim . " " }}
-    {{ if $src }}{{ $imgs = $imgs | append (dict "src" ($src | relURL) "alt" "") }}{{ end }}
+    {{ if $src }}
+      {{- $isAbs := or (hasPrefix $src "http://") (hasPrefix $src "https://") (hasPrefix $src "//") (hasPrefix $src "data:") -}}
+      {{- $final := cond $isAbs $src ($src | relURL) -}}
+      {{ $imgs = $imgs | append (dict "src" $final "alt" "") }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
@@ -43,38 +47,26 @@
   <p class="text-sm text-red-600 dark:text-red-400">carousel: no images found</p>
 {{ else }}
 <div id="{{ $id }}" class="relative w-full" data-carousel="slide" data-carousel-interval="{{ $interval }}">
-  <!-- wrapper -->
-  <div class="relative {{ $height }} overflow-hidden {{ $roundedClass }}">
-    {{ range $i, $img := $imgs }}
-      <div class='{{ if eq $i 0 }}duration-700 ease-in-out{{ else }}hidden duration-700 ease-in-out{{ end }}' data-carousel-item{{ if eq $i 0 }}="active"{{ end }}>
-        <img src='{{ $img.src }}' alt='{{ with $img.alt }}{{ . }}{{ else }}Slide {{ add $i 1 }}{{ end }}'
-             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-      </div>
-    {{ end }}
-  </div>
-
-  <!-- indicators -->
-  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-    {{ range $i, $_ := $imgs }}
-      <button type="button" class="w-3 h-3 rounded-full"
-              aria-label="Slide {{ add $i 1 }}"
-              {{ if eq $i 0 }}aria-current="true"{{ end }}
-              data-carousel-slide-to="{{ $i }}"></button>
-    {{ end }}
-  </div>
-
-  <!-- controls -->
-  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50">
-      <svg class="w-4 h-4 text-white dark:text-white rtl:rotate-180" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="sr-only">Previous</span>
-    </span>
-  </button>
-  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50">
-      <svg class="w-4 h-4 text-white dark:text-white rtl:rotate-180" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="m1 9 4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="sr-only">Next</span>
-    </span>
-  </button>
+<div class="relative {{ $height }} overflow-hidden {{ $roundedClass }}">
+{{- range $i, $img := $imgs }}
+<div class='{{ if eq $i 0 }}duration-700 ease-in-out{{ else }}hidden duration-700 ease-in-out{{ end }}' data-carousel-item{{ if eq $i 0 }}="active"{{ end }}>
+<img src='{{ $img.src }}' alt='{{ with $img.alt }}{{ . }}{{ else }}Slide {{ add $i 1 }}{{ end }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+</div>
+{{- end }}
+</div>
+<div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+{{- range $i, $_ := $imgs }}
+<button type="button" class="w-3 h-3 rounded-full" aria-label="Slide {{ add $i 1 }}" {{ if eq $i 0 }}aria-current="true"{{ end }} data-carousel-slide-to="{{ $i }}"></button>
+{{- end }}
+</div>
+<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50"><svg class="w-4 h-4 text-white dark:text-white rtl:rotate-180" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span class="sr-only">Previous</span>
+</span>
+</button>
+<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50"><svg class="w-4 h-4 text-white dark:text-white rtl:rotate-180" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="m1 9 4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span class="sr-only">Next</span></span>
+</button>
 </div>
 {{ end }}

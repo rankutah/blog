@@ -1,0 +1,73 @@
+baseURL = "https://blueridgeabbey.com/"
+# Use the shared overrides + PaperMod
+title = "Blue Ridge Abbey"
+languageCode = "en-us"
+theme = ["overrides", "PaperMod"]
+themesDir = "../../themes"
+
+# Remove trailing slashes from generated URLs
+trailingSlash = "never"
+cleanDestinationDir = true
+uglyURLs = true
+
+[module]
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        inline = true
+        title = true
+
+[params]
+  primaryColor = "emerald"
+  logo = "media/logo-039966.png"
+  lightBackground = "neutral-200"
+  darkBackground  = "emerald-950"
+
+
+[params.forms]
+  action = "https://submit-form.com/DOH188lWF"
+  honeypot = "_hp"
+
+[params.header]
+  stickyMobile = true
+  stickyDesktop = true
+  CTAText = "Book Now"
+  CTAURL  = "https://secure.thinkreservations.com/blueridgeabbey/reservations"
+  showPhoneOnMobile = true
+  phoneNumber = "385-323-8130"
+  logoHeightPx = 40
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Rooms"
+    url = "/rooms"
+    weight = 20
+
+  [[menu.main]]
+    name = "Weddings"
+    url = "/weddings"
+    weight = 30
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 40

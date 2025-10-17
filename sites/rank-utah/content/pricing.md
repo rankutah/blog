@@ -5,9 +5,6 @@ layout: "flowbite"
 url: "/pricing"
 ---
 
-
-
-
 {{< section >}}
 
 # Pricing

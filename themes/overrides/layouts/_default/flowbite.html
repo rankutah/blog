@@ -265,6 +265,84 @@
     })();
   </script>
 
+  <!-- Lazy video initializer (used by {{`<`}} video {{`>`}} shortcode when lazy=true) -->
+  <script>
+    (function(){
+      function loadVideo(v){
+        if (!v || v.__loaded) return; v.__loaded = true;
+        var src = v.getAttribute('data-src');
+        var sources = v.querySelectorAll('source[data-src]');
+        if (src && !v.getAttribute('src')) v.setAttribute('src', src);
+        sources.forEach(function(s){ s.setAttribute('src', s.getAttribute('data-src')); s.removeAttribute('data-src'); });
+        try { v.load(); } catch(e){}
+        if (v.getAttribute('data-autoplay') === '1'){
+          var p = v.play && v.play(); if (p && p.catch) p.catch(function(){});
+        }
+      }
+      function onIntersect(entries, obs){
+        for (var i=0;i<entries.length;i++){
+          var e = entries[i];
+          if (e.isIntersecting){ loadVideo(e.target); obs.unobserve(e.target); }
+        }
+      }
+      function initLazyVideos(){
+        var vids = document.querySelectorAll('video[data-video-lazy]');
+        if (!vids.length) return;
+        if ('IntersectionObserver' in window){
+          try {
+            var obs = new IntersectionObserver(onIntersect, { root:null, rootMargin:'200px', threshold:0.01 });
+            vids.forEach(function(v){ obs.observe(v); });
+          } catch { vids.forEach(loadVideo); }
+        } else { vids.forEach(loadVideo); }
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initLazyVideos, { once:true });
+      else initLazyVideos();
+    })();
+  </script>
+
+  <!-- Lightweight carousel initializer (data-carousel="slide") -->
+  <script>
+    (function(){
+      function initCarousels(){
+        var carousels = document.querySelectorAll('[data-carousel]');
+        carousels.forEach(function(root){
+          var intervalMs = parseInt(root.getAttribute('data-carousel-interval')||'5000', 10);
+          if (!(intervalMs > 0)) intervalMs = 5000;
+          var items = Array.from(root.querySelectorAll('[data-carousel-item]'));
+          if (!items.length) return;
+          var idx = items.findIndex(function(el){ return el.getAttribute('data-carousel-item') === 'active' || !el.classList.contains('hidden'); });
+          if (idx < 0) idx = 0;
+          function show(i){
+            items.forEach(function(el, j){
+              var active = j === i;
+              el.classList.toggle('hidden', !active);
+              if (active) el.setAttribute('data-carousel-item','active'); else el.setAttribute('data-carousel-item','');
+            });
+            var dots = root.querySelectorAll('[data-carousel-slide-to]');
+            dots.forEach(function(btn, j){ btn.setAttribute('aria-current', j===i ? 'true' : 'false'); });
+            idx = i;
+          }
+          function next(){ show((idx+1) % items.length); }
+          function prev(){ show((idx-1+items.length) % items.length); }
+          var timer = setInterval(next, intervalMs);
+          root.addEventListener('mouseenter', function(){ clearInterval(timer); });
+          root.addEventListener('mouseleave', function(){ timer = setInterval(next, intervalMs); });
+          var prevBtn = root.querySelector('[data-carousel-prev]');
+          var nextBtn = root.querySelector('[data-carousel-next]');
+          if (prevBtn) prevBtn.addEventListener('click', function(e){ e.preventDefault(); prev(); });
+          if (nextBtn) nextBtn.addEventListener('click', function(e){ e.preventDefault(); next(); });
+          root.querySelectorAll('[data-carousel-slide-to]').forEach(function(btn){
+            btn.addEventListener('click', function(){ var i = parseInt(btn.getAttribute('data-carousel-slide-to')||'0',10); show(isNaN(i)?0:i); });
+          });
+          // ensure initial state
+          show(idx);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initCarousels, { once:true });
+      else initCarousels();
+    })();
+  </script>
+
   <!-- Calculate header height and set --site-header-offset so CSS can align anchors correctly -->
   <!-- header offset script removed to restore default CSS behavior -->
 

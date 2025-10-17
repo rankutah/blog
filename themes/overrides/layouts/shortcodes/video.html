@@ -1,0 +1,104 @@
+{{- /*
+  Video embed shortcode (responsive, lazy by default, and autoplay by default).
+  Usage examples:
+    {{< video
+        src="/media/example.mp4"
+        poster="/media/example-poster.jpg"
+        autoplay="true|false" loop="true|false" controls="true|false"
+        preload="auto|metadata|none" lazy="true|false" class="rounded-lg shadow" >}}
+
+    {{< video "blue-ridge-abbey-natural-bridge-wedding.mp4" >}}  <!-- infers /media/... -->
+
+  Params:
+    - src (or first positional)  : required; can be short name or full URL
+    - poster                     : optional poster image
+    - controls=true|false        : default true
+    - autoplay=true|false        : default true; if true, sets muted and playsinline (needed for mobile)
+    - loop=true|false            : default false
+    - preload=auto|metadata|none : default metadata (overridden to none when lazy=true)
+    - lazy=true|false            : default true; defers setting src until near viewport
+    - trim=0..80                 : optional percent of viewport height to crop off (evenly top+bottom). Ex: trim=10 → 90vh visible window.
+    - view=0..100                : vertical focus in %, 0=top, 50=center (default), 100=bottom. Used with object-position.
+    - class                      : extra classes on <video>
+*/ -}}
+
+{{- $p := . -}}
+{{- $srcRaw := or ($p.Get "src") ($p.Get 0) -}}
+{{- $posterRaw := $p.Get "poster" | default "" -}}
+{{- if not $srcRaw -}}
+  <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-4 rounded">video shortcode: missing src</div>
+{{- else -}}
+  {{- /* Normalize paths: if not absolute and not http(s), assume under /media/ */ -}}
+  {{- $norm := (printf "%v" $srcRaw) -}}
+  {{- $isAbs := hasPrefix $norm "/" -}}
+  {{- $isHTTP := or (hasPrefix $norm "http://") (hasPrefix $norm "https://") -}}
+  {{- $isMedia := or (hasPrefix $norm "/media/") (hasPrefix $norm "media/") -}}
+  {{- $src := cond (or $isAbs $isHTTP) $norm (cond $isMedia (printf "/%s" (replaceRE "^/" "" $norm)) (printf "/media/%s" (replaceRE "^/" "" $norm))) -}}
+
+  {{- $poster := "" -}}
+  {{- if $posterRaw -}}
+    {{- $pr := (printf "%v" $posterRaw) -}}
+    {{- $pAbs := hasPrefix $pr "/" -}}
+    {{- $pHTTP := or (hasPrefix $pr "http://") (hasPrefix $pr "https://") -}}
+    {{- $pMedia := or (hasPrefix $pr "/media/") (hasPrefix $pr "media/") -}}
+    {{- $poster = cond (or $pAbs $pHTTP) $pr (cond $pMedia (printf "/%s" (replaceRE "^/" "" $pr)) (printf "/media/%s" (replaceRE "^/" "" $pr))) -}}
+  {{- end -}}
+
+  {{- $controls := eq (lower ($p.Get "controls" | default "true")) "true" -}}
+  {{- $autoplay := eq (lower ($p.Get "autoplay" | default "true")) "true" -}}
+  {{- $loop := eq (lower ($p.Get "loop" | default "false")) "true" -}}
+  {{- $lazy := eq (lower ($p.Get "lazy" | default "true")) "true" -}}
+  {{- $preloadWanted := $p.Get "preload" | default "metadata" -}}
+  {{- $preload := cond $lazy "none" $preloadWanted -}}
+  {{- $class := $p.Get "class" | default "h-auto" -}}
+
+  {{- /* Simple height+focus controls: trim and view */ -}}
+  {{- $trimRaw := $p.Get "trim" | default "" -}}
+  {{- $trim := 0 -}}
+  {{- if gt (len $trimRaw) 0 -}}
+    {{- $tv := int $trimRaw -}}
+    {{- if lt $tv 0 }}{{- $tv = 0 -}}{{- end -}}
+    {{- if gt $tv 80 }}{{- $tv = 80 -}}{{- end -}}
+    {{- $trim = $tv -}}
+  {{- end -}}
+
+  {{- $viewRaw := $p.Get "view" | default "" -}}
+  {{- $view := 50 -}}
+  {{- if gt (len $viewRaw) 0 -}}
+    {{- $vv := int $viewRaw -}}
+    {{- if lt $vv 0 }}{{- $vv = 0 -}}{{- end -}}
+    {{- if gt $vv 100 }}{{- $vv = 100 -}}{{- end -}}
+    {{- $view = $vv -}}
+  {{- end -}}
+
+  {{- $style := "" -}}
+  {{- if gt $trim 0 -}}
+    {{- $vh := sub 100 $trim -}}
+    {{- $style = printf "height:%dvh;" $vh -}}
+    {{- /* ensure cover when trimming so we actually crop to the height window */ -}}
+    {{- $class = printf "%s object-cover" $class -}}
+  {{- end -}}
+  {{- /* apply object-position whenever view is set or trimming is in use */ -}}
+  {{- if or (gt $trim 0) (gt (len $viewRaw) 0) -}}
+    {{- $style = printf "%sobject-position: 50%% %d%%;" $style $view -}}
+  {{- end -}}
+
+  {{- /* Always enforce block + full width so cropping is apparent even if user omits width classes */ -}}
+  {{- $class = printf "block w-full %s" $class -}}
+
+  {{- /* Determine type from extension (simple) */ -}}
+  {{- $lower := lower $src -}}
+  {{- $type := cond (findRE "\\.webm$" $lower) "video/webm" (cond (findRE "\\.ogg$" $lower) "video/ogg" "video/mp4") -}}
+
+  {{- if $lazy -}}
+    <video class="not-prose {{ $class }}" {{ if $poster }}poster="{{ $poster }}"{{ end }} {{ if $controls }}controls{{ end }} preload="{{ $preload }}" {{ if $loop }}loop{{ end }} {{ if $autoplay }}muted playsinline{{ end }} data-video-lazy data-src="{{ $src }}"{{ if $autoplay }} data-autoplay="1"{{ end }}{{ if ne $style "" }} style="{{ $style }}"{{ end }}>
+      <source data-src="{{ $src }}" type="{{ $type }}">
+      Your browser does not support the video tag.
+    </video>
+  {{- else -}}
+    <video src="{{ $src }}" class="not-prose {{ $class }}" {{ if $poster }}poster="{{ $poster }}"{{ end }} {{ if $controls }}controls{{ end }} preload="{{ $preload }}" {{ if $loop }}loop{{ end }} {{ if $autoplay }}autoplay muted playsinline{{ end }}{{ if ne $style "" }} style="{{ $style }}"{{ end }}>
+      <source src="{{ $src }}" type="{{ $type }}">
+      Your browser does not support the video tag.
+    </video>
+  {{- end -}}
+{{- end -}}
