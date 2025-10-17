@@ -61,6 +61,15 @@
   {{- $hHint = $img.Height | default 0 -}}
 {{- end -}}
 
+{{- /* If author provided only width or only height, compute the missing side from intrinsic hints when available */ -}}
+{{- if and (ne $widthAttr "") (eq $heightAttr "") (gt $wHint 0) (gt $hHint 0) -}}
+  {{- /* height = round(width * hHint / wHint) */ -}}
+  {{- $heightAttr = printf "%d" (div (mul (int $widthAttr) $hHint) $wHint) -}}
+{{- else if and (ne $heightAttr "") (eq $widthAttr "") (gt $wHint 0) (gt $hHint 0) -}}
+  {{- /* width = round(height * wHint / hHint) */ -}}
+  {{- $widthAttr = printf "%d" (div (mul (int $heightAttr) $wHint) $hHint) -}}
+{{- end -}}
+
 {{- /* If not a Page Resource, try to process static media via assets/media mount */ -}}
 {{- $hasStaticAvif := false -}}
 {{- $avifPath := "" -}}

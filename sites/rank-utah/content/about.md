@@ -18,7 +18,7 @@ Small businesses are often surprised when a pretty website doesn’t bring in cu
 My mission is to bring you customers. I continually spend time researching and understanding web design and local SEO, and investing in the tools, training, and services that give you the best possible results. I believe in open communication without limits or restriction. Before or after you become a client you can reach out at any time via text, phone, email, or schedule a meeting. My clients receive monthly reports to provide complete transparancy on the value they receive and are not locked into a contract. If you have any questions please don't hestitate to [reach out](/contact).
 
 
-![](../media/utah-seo-specialist-web-design-expert-profile-picture.avif)
+![Benjamin Awerkamp headshot](../media/utah-seo-specialist-web-design-expert-profile-picture.avif){ width="400" }
 {.w-48}
 
 **Benjamin Awerkamp** <br>
