@@ -8,29 +8,59 @@
          Fallback to static <img> if Hugo resource not found.
 */}}
 {{- $ctx   := . -}}
-{{- $logo  := $ctx.Logo | default "logo.png" -}}
+{{- /* Coerce Logo to a safe string to avoid nil/non-string issues */ -}}
+{{- $logo  := printf "%v" (or $ctx.Logo "logo.png") -}}
 {{- $class := $ctx.Class | default "" -}}
 {{- $alt   := $ctx.Alt   | default "logo" -}}
 {{- $w     := $ctx.Width | default 0 -}}
 {{- $h     := $ctx.Height | default 0 -}}
 
-{{- /* Prefer assets/media/logo.* */ -}}
-{{- $logoRes := (index (resources.Match "media/logo.*") 0) -}}
-{{- /* If not found, try the configured path under assets/media */ -}}
-{{- if not $logoRes -}}
-  {{- $raw := strings.TrimPrefix "/" $logo -}}
-  {{- $logoRes = resources.Get (printf "media/%s" $raw) -}}
-  {{- if not $logoRes -}}
-    {{- $logoRes = resources.Get $raw -}}
+{{- /* Prefer a concrete raster source via resources.Get (safe checks) */ -}}
+{{- $logoRes := "" -}}
+{{- $raw := strings.TrimPrefix "/" $logo -}}
+{{- if eq $logoRes "" -}}
+  {{- with resources.Get (printf "media/%s" $raw) -}}
+    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $logoRes "" -}}
+  {{- with resources.Get $raw -}}
+    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $logoRes "" -}}
+  {{- with resources.Get "media/logo.png" -}}
+    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $logoRes "" -}}
+  {{- with resources.Get "media/logo.jpg" -}}
+    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $logoRes "" -}}
+  {{- with resources.Get "media/logo.jpeg" -}}
+    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $logoRes "" -}}
+  {{- with resources.Get "media/logo.webp" -}}
+    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $logoRes "" -}}
+  {{- with resources.Get "media/logo.avif" -}}
+    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- if and $logoRes (eq $logoRes.MediaType.Type "image") -}}
+{{- if ne $logoRes "" -}}
+  {{- if eq $logoRes.MediaType.Type "image" -}}
   {{- /* Build density-aware variants based on provided Height or Width */ -}}
-  {{- $avif1x := nil -}}
-  {{- $avif2x := nil -}}
-  {{- $webp1x := nil -}}
-  {{- $webp2x := nil -}}
+  {{- $avif1x := "" -}}
+  {{- $avif2x := "" -}}
+  {{- $webp1x := "" -}}
+  {{- $webp2x := "" -}}
   {{- $outW := 0 -}}
   {{- $outH := 0 -}}
   {{- if gt (int $h) 0 -}}
@@ -79,6 +109,44 @@
          fetchpriority="high"
          decoding="async" />
   </picture>
+  {{- else -}}
+  {{- /* Not an image resource: fallback to static path */ -}}
+  {{- $raw := strings.TrimPrefix "/" $logo -}}
+  {{- $ext := path.Ext $raw -}}
+  {{- $stem := strings.TrimSuffix $raw $ext -}}
+  {{- $stemMedia := strings.TrimPrefix "media/" $stem -}}
+  {{- $avifRes := resources.Get (printf "media/%s.avif" $stemMedia) -}}
+  {{- $webpRes := resources.Get (printf "media/%s.webp" $stemMedia) -}}
+  {{- $staticAvif := "" -}}
+  {{- $staticWebp := "" -}}
+  {{- with $avifRes -}}{{- $staticAvif = .RelPermalink -}}{{- end -}}
+  {{- with $webpRes -}}{{- $staticWebp = .RelPermalink -}}{{- end -}}
+  {{- $outW := 0 -}}
+  {{- if gt (int $w) 0 -}}{{- $outW = int $w -}}{{- else if gt (int $h) 0 -}}{{- $outW = int $h -}}{{- end -}}
+  {{- if or $staticAvif $staticWebp -}}
+    <picture>
+      {{- if $staticAvif -}}<source srcset="{{ $staticAvif }}" type="image/avif" />{{- end -}}
+      {{- if $staticWebp -}}<source srcset="{{ $staticWebp }}" type="image/webp" />{{- end -}}
+      <img src="{{ $logo | relURL }}"
+           alt="{{ $alt }}"
+           class="{{ $class }}"
+           {{- if gt $outW 0 }} width="{{ $outW }}"{{- end -}}
+           {{- with $h }}{{ if gt (int .) 0 }} height="{{ . }}"{{ end }}{{ end }}
+           loading="eager"
+           fetchpriority="high"
+           decoding="async" />
+    </picture>
+  {{- else -}}
+    <img src="{{ $logo | relURL }}"
+         alt="{{ $alt }}"
+         class="{{ $class }}"
+         {{- if gt $outW 0 }} width="{{ $outW }}"{{- end -}}
+         {{ with $h }}{{ if gt (int .) 0 }} height="{{ . }}"{{ end }}{{ end }}
+         loading="eager"
+         fetchpriority="high"
+         decoding="async" />
+  {{- end -}}
+  {{- end -}}
 {{- else -}}
   {{- /* Fallback: static files. Try to serve AVIF/WebP if present alongside the provided Logo path. */ -}}
   {{- $raw := strings.TrimPrefix "/" $logo -}}
@@ -86,20 +154,13 @@
   {{- $stem := strings.TrimSuffix $raw $ext -}}
   {{- /* Normalize stem for media checks (avoid double 'media/media/...') */ -}}
   {{- $stemMedia := strings.TrimPrefix "media/" $stem -}}
-  {{- /* Try static root first (e.g., /logo.*) */ -}}
-  {{- $staticAvif := cond (fileExists (printf "static/%s.avif" $stem)) (printf "/%s.avif" $stem | relURL) "" -}}
-  {{- $staticWebp := cond (fileExists (printf "static/%s.webp" $stem)) (printf "/%s.webp" $stem | relURL) "" -}}
-  {{- /* Also try media/ mounts (served at /media/*) */ -}}
-  {{- if not $staticAvif -}}
-    {{- if fileExists (printf "media/%s.avif" $stemMedia) -}}
-      {{- $staticAvif = (printf "/media/%s.avif" $stemMedia) | relURL -}}
-    {{- end -}}
-  {{- end -}}
-  {{- if not $staticWebp -}}
-    {{- if fileExists (printf "media/%s.webp" $stemMedia) -}}
-      {{- $staticWebp = (printf "/media/%s.webp" $stemMedia) | relURL -}}
-    {{- end -}}
-  {{- end -}}
+  {{- /* Try media/ mounts via resources to detect AVIF/WebP */ -}}
+  {{- $avifRes := resources.Get (printf "media/%s.avif" $stemMedia) -}}
+  {{- $webpRes := resources.Get (printf "media/%s.webp" $stemMedia) -}}
+  {{- $staticAvif := "" -}}
+  {{- $staticWebp := "" -}}
+  {{- with $avifRes -}}{{- $staticAvif = .RelPermalink -}}{{- end -}}
+  {{- with $webpRes -}}{{- $staticWebp = .RelPermalink -}}{{- end -}}
   {{- /* Compute width attr when only Height is provided (helps PSI). Assumes square if Width unknown. */ -}}
   {{- $outW := 0 -}}
   {{- if gt (int $w) 0 -}}

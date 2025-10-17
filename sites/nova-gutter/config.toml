@@ -27,7 +27,7 @@ pruneTaxonomies = true
 [params]
   googleAnalyticsID = "G-3KJ46VMTTB"
   primaryColor      = "indigo"
-  logo              = "logo.png"
+  logo              = "media/logo.png"
   showReadingTime   = true
   enableSearch      = true
   clientName        = "NOVA Gutter"
