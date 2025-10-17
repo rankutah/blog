@@ -94,8 +94,8 @@
   } catch (e) {}
 </script>
 
-  {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify (blocking to prevent FOUC) */ -}}
-  {{- $css := resources.Get "css/main.css" | postCSS | minify }}
+  {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify + fingerprint (blocking to prevent FOUC) */ -}}
+  {{- $css := resources.Get "css/main.css" | postCSS | minify | fingerprint "sha384" }}
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}" crossorigin="anonymous">
   <link rel="stylesheet"
     href="{{ $css.RelPermalink }}"
