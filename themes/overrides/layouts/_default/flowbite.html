@@ -138,7 +138,44 @@
     function initDropdowns(){const buttons=Array.from(document.querySelectorAll('[data-dropdown-toggle]'));if(!buttons.length)return;function closeAll(exceptId){buttons.forEach(b=>{const id=b.getAttribute('data-dropdown-toggle');const el=id&&document.getElementById(id);if(!el||id===exceptId)return;el.classList.add('hidden');b.setAttribute('aria-expanded','false');});}
       buttons.forEach(btn=>{const id=btn.getAttribute('data-dropdown-toggle');const menu=id&&document.getElementById(id);if(!menu)return;btn.addEventListener('click',(e)=>{e.stopPropagation();const nowHidden=menu.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!nowHidden));if(!nowHidden)closeAll(id);});});
       document.addEventListener('click',(e)=>{const inside=e.target.closest&&(e.target.closest('[data-dropdown-toggle]')||e.target.closest('[id^="menu-"]'));if(!inside)closeAll();});}
-    ready(()=>{initCollapse();initDropdowns();});
+    function initAccordions(){
+      document.querySelectorAll('[data-accordion]').forEach(acc=>{
+        const mode = (acc.getAttribute('data-accordion')||'').toLowerCase();
+        const alwaysOpen = mode === 'open'; // Flowbite: "open" allows multiple; others collapse
+        const buttons = Array.from(acc.querySelectorAll('[data-accordion-target]'));
+        // Helper to update one item
+        function update(btn, expanded){
+          const selector = btn.getAttribute('data-accordion-target');
+          const id = selector && selector.replace(/^#/, '');
+          const panel = id && document.getElementById(id);
+          const icon = btn.querySelector('[data-accordion-icon]');
+          btn.setAttribute('aria-expanded', String(!!expanded));
+          if(panel) panel.classList.toggle('hidden', !expanded);
+          if(icon) icon.classList.toggle('rotate-180', !expanded);
+        }
+        // Initial state sync (respect server-rendered aria-expanded/hidden)
+        buttons.forEach(btn=>{
+          const sel = btn.getAttribute('data-accordion-target');
+          const id = sel && sel.replace(/^#/, '');
+          const panel = id && document.getElementById(id);
+          const expanded = btn.getAttribute('aria-expanded') === 'true' || (panel && !panel.classList.contains('hidden'));
+          update(btn, expanded);
+        });
+        // Click wiring
+        buttons.forEach(btn=>{
+          btn.addEventListener('click', ()=>{
+            const currentlyExpanded = btn.getAttribute('aria-expanded') === 'true';
+            const next = !currentlyExpanded;
+            if(!alwaysOpen && next){
+              // Close others in this accordion
+              buttons.forEach(other=>{ if(other===btn) return; update(other, false); });
+            }
+            update(btn, next);
+          });
+        });
+      });
+    }
+    ready(()=>{initCollapse();initDropdowns();initAccordions();});
   </script>
 
   <!-- Header toggle (optional):
