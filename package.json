@@ -10,7 +10,11 @@
   "build:nova-gutter": "npm run optimize:nova-gutter --silent && hugo --source ./sites/nova-gutter --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --logLevel debug --ignoreCache",
   "optimize": "node scripts/optimize-images.mjs",
   "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/rank-utah/media",
-  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media"
+  "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media",
+  "purge:rank-utah": "node scripts/cf-purge.js --urls=https://clearpresence.io/ --warm",
+  "purge:nova-gutter": "node scripts/cf-purge.js --urls=https://novagutter.com/ --warm",
+  "deploy:rank-utah": "npm run build:rank-utah && npm run purge:rank-utah",
+  "deploy:nova-gutter": "npm run build:nova-gutter && npm run purge:nova-gutter"
 
   },
   "repository": {
