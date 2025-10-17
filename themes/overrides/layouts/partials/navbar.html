@@ -109,10 +109,19 @@
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline">
       {{ with $logoFile }}
+        {{/* If a WebP exists in media, prefer it as the provided Logo path so the fallback can pick up next-gen too */}}
+        {{ $raw := strings.TrimPrefix "/" . }}
+        {{ $stem := strings.TrimSuffix $raw (path.Ext $raw) }}
+        {{ $logoPath := . }}
+        {{ if fileExists (printf "media/%s.avif" $stem) }}
+          {{ $logoPath = printf "media/%s.avif" $stem }}
+        {{ else if fileExists (printf "media/%s.webp" $stem) }}
+          {{ $logoPath = printf "media/%s.webp" $stem }}
+        {{ end }}
         {{/* Optimized logo with AVIF where possible, explicit width/height if provided */}}
         {{ partial "optimized-logo.html" (dict
             "Site" $.Site
-            "Logo" .
+            "Logo" $logoPath
             "Class" (printf "%s w-auto flex-shrink-0" $logoHeightClass)
             "Alt" (printf "%s logo" $.Site.Title)
             "Width" $logoW

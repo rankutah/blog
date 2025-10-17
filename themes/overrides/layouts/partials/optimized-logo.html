@@ -80,13 +80,54 @@
          decoding="async" />
   </picture>
 {{- else -}}
-  {{- /* Fallback: static image as provided by Logo */ -}}
-  <img src="{{ $logo | relURL }}"
-       alt="{{ $alt }}"
-       class="{{ $class }}"
-       {{ with $w }}{{ if gt (int .) 0 }}width="{{ . }}"{{ end }}{{ end }}
-       {{ with $h }}{{ if gt (int .) 0 }}height="{{ . }}"{{ end }}{{ end }}
-       loading="eager"
-       fetchpriority="high"
-       decoding="async" />
+  {{- /* Fallback: static files. Try to serve AVIF/WebP if present alongside the provided Logo path. */ -}}
+  {{- $raw := strings.TrimPrefix "/" $logo -}}
+  {{- $ext := path.Ext $raw -}}
+  {{- $stem := strings.TrimSuffix $raw $ext -}}
+  {{- /* Normalize stem for media checks (avoid double 'media/media/...') */ -}}
+  {{- $stemMedia := strings.TrimPrefix "media/" $stem -}}
+  {{- /* Try static root first (e.g., /logo.*) */ -}}
+  {{- $staticAvif := cond (fileExists (printf "static/%s.avif" $stem)) (printf "/%s.avif" $stem | relURL) "" -}}
+  {{- $staticWebp := cond (fileExists (printf "static/%s.webp" $stem)) (printf "/%s.webp" $stem | relURL) "" -}}
+  {{- /* Also try media/ mounts (served at /media/*) */ -}}
+  {{- if not $staticAvif -}}
+    {{- if fileExists (printf "media/%s.avif" $stemMedia) -}}
+      {{- $staticAvif = (printf "/media/%s.avif" $stemMedia) | relURL -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $staticWebp -}}
+    {{- if fileExists (printf "media/%s.webp" $stemMedia) -}}
+      {{- $staticWebp = (printf "/media/%s.webp" $stemMedia) | relURL -}}
+    {{- end -}}
+  {{- end -}}
+  {{- /* Compute width attr when only Height is provided (helps PSI). Assumes square if Width unknown. */ -}}
+  {{- $outW := 0 -}}
+  {{- if gt (int $w) 0 -}}
+    {{- $outW = int $w -}}
+  {{- else if gt (int $h) 0 -}}
+    {{- $outW = int $h -}}
+  {{- end -}}
+  {{- if or $staticAvif $staticWebp -}}
+    <picture>
+      {{- if $staticAvif -}}<source srcset="{{ $staticAvif }}" type="image/avif" />{{- end -}}
+      {{- if $staticWebp -}}<source srcset="{{ $staticWebp }}" type="image/webp" />{{- end -}}
+      <img src="{{ $logo | relURL }}"
+           alt="{{ $alt }}"
+           class="{{ $class }}"
+           {{- if gt $outW 0 }} width="{{ $outW }}"{{- end -}}
+           {{- with $h }}{{ if gt (int .) 0 }} height="{{ . }}"{{ end }}{{ end }}
+           loading="eager"
+           fetchpriority="high"
+           decoding="async" />
+    </picture>
+  {{- else -}}
+    <img src="{{ $logo | relURL }}"
+         alt="{{ $alt }}"
+         class="{{ $class }}"
+         {{- if gt $outW 0 }} width="{{ $outW }}"{{- end -}}
+         {{ with $h }}{{ if gt (int .) 0 }} height="{{ . }}"{{ end }}{{ end }}
+         loading="eager"
+         fetchpriority="high"
+         decoding="async" />
+  {{- end -}}
 {{- end -}}
