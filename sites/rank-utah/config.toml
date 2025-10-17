@@ -5,6 +5,16 @@ languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        inline = true
+        title = true
+
 # Remove trailing slashes from generated URLs
 trailingSlash = "never"
 cleanDestinationDir = true
