@@ -18,6 +18,14 @@ uglyURLs      = true
 
 [module]
 
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
 
 [outputs]
   # Inherit defaults; override only if needed
