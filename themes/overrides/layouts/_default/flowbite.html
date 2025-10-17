@@ -96,9 +96,9 @@
 
   {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify + fingerprint (blocking to prevent FOUC) */ -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify | fingerprint "sha384" }}
-  <link rel="preload" as="style" href="{{ $css.RelPermalink }}" crossorigin="anonymous">
+  <link rel="preload" as="style" href="{{ $css.RelPermalink }}?v={{ $css.Data.Integrity | urlquery }}" crossorigin="anonymous">
   <link rel="stylesheet"
-    href="{{ $css.RelPermalink }}"
+    href="{{ $css.RelPermalink }}?v={{ $css.Data.Integrity | urlquery }}"
     {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
     crossorigin="anonymous">
 
