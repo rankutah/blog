@@ -19,6 +19,7 @@ My mission is to bring you customers. I continually spend time researching and u
 
 
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
+{.w-48}
 
 **Benjamin Awerkamp** <br>
 Web Design Deveoper & Local SEO Specialist <br>
