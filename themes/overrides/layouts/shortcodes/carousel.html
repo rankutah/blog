@@ -22,6 +22,7 @@
 {{ $id       := .Get "id" | default (printf "carousel-%s" (substr (md5 .Page.RelPermalink) 0 8)) }}
 {{ $height   := .Get "height"   | default "h-56 md:h-96" }}
 {{ $interval := .Get "interval" | default "5000" }}
+{{ $duration := .Get "duration" | default "500" }}
 
 {{/* Build list of image URLs */}}
 {{ $imgs := slice }}
@@ -49,7 +50,7 @@
 <div id="{{ $id }}" class="relative w-full" data-carousel="slide" data-carousel-interval="{{ $interval }}">
 <div class="relative {{ $height }} overflow-hidden {{ $roundedClass }}">
 {{- range $i, $img := $imgs }}
-<div class='{{ if eq $i 0 }}duration-700 ease-in-out{{ else }}hidden duration-700 ease-in-out{{ end }}' data-carousel-item{{ if eq $i 0 }}="active"{{ end }}>
+<div class='absolute inset-0 transition-opacity duration-500 ease-in-out {{ if eq $i 0 }}opacity-100 pointer-events-auto{{ else }}opacity-0 pointer-events-none{{ end }}' style="transition-duration: {{ $duration }}ms" data-carousel-item{{ if eq $i 0 }}="active"{{ end }}>
 <img src='{{ $img.src }}' alt='{{ with $img.alt }}{{ . }}{{ else }}Slide {{ add $i 1 }}{{ end }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
 </div>
 {{- end }}

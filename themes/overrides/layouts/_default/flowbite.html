@@ -315,7 +315,11 @@
           function show(i){
             items.forEach(function(el, j){
               var active = j === i;
-              el.classList.toggle('hidden', !active);
+              // Fade via opacity and pointer events; leave in DOM stack for smooth crossfade
+              el.classList.toggle('opacity-100', active);
+              el.classList.toggle('opacity-0', !active);
+              el.classList.toggle('pointer-events-auto', active);
+              el.classList.toggle('pointer-events-none', !active);
               if (active) el.setAttribute('data-carousel-item','active'); else el.setAttribute('data-carousel-item','');
             });
             var dots = root.querySelectorAll('[data-carousel-slide-to]');

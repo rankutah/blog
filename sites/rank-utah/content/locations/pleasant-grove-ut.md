@@ -80,7 +80,7 @@ My wife graduated from Pleasant Grove High School as a Viking so it is fun havin
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 
-![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg){ width="400" height="400" }
+![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-48}
 **Benjamin Awerkamp** <br>
 Call or Text: (385) 323-8130 <br>

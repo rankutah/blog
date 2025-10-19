@@ -1,0 +1,98 @@
+{{/*
+  table shortcode
+
+  Usage (CSV lines for rows):
+
+  {{< table headers="Product name,Color,Category,Price" >}}
+  Apple MacBook Pro 17",Silver,Laptop,$2999
+  Microsoft Surface Pro,White,Laptop PC,$1999
+  Magic Mouse 2,Black,Accessories,$99
+  {{< /table >}}
+
+  Params:
+  - headers: comma-separated column headers (optional). If omitted, no thead is rendered.
+  - delim: column delimiter for rows (default ",").
+  - firstColTh: whether first column should render as <th scope="row"> (default true)
+*/}}
+
+{{- $delim := .Get "delim" | default "," -}}
+{{- $headersRaw := .Get "headers" | default "" -}}
+{{- $headers := slice -}}
+{{- if $headersRaw -}}
+  {{- $sep := $delim -}}
+  {{- if in $headersRaw $delim -}}
+    {{- /* use provided delimiter */ -}}
+  {{- else if in $headersRaw "," -}}
+    {{- $sep = "," -}}
+  {{- end -}}
+  {{- range $h := split $headersRaw $sep -}}
+    {{- $headers = $headers | append (trim $h " \t\r\n") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $firstColThParam := .Get "firstColTh" | default "true" | lower -}}
+{{- $firstColTh := ne $firstColThParam "false" -}}
+
+{{- $rowsRaw := .Inner | chomp -}}
+{{- $lines := split $rowsRaw "\n" -}}
+{{- $rows := slice -}}
+{{- range $lines -}}
+  {{- $line := trim . " \t\r\n" -}}
+  {{- if ne $line "" -}}
+    {{- $rows = $rows | append $line -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Determine column count from headers or first data row */ -}}
+{{- $colCount := 0 -}}
+{{- if gt (len $headers) 0 -}}
+  {{- $colCount = len $headers -}}
+{{- else -}}
+  {{- range $rows -}}
+    {{- if in . $delim -}}
+      {{- $colCount = len (split . $delim) -}}
+      {{- break -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $colCount 0 -}}{{- $colCount = 1 -}}{{- end -}}
+
+{{- $radius := .Get "radius" | default "lg" -}}
+<div class="relative overflow-x-auto rounded-{{$radius}} overflow-hidden">
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+    {{- if gt (len $headers) 0 -}}
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <tr>
+        {{- range $headers -}}
+          <th scope="col" class="px-6 py-4">{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) . }}</th>
+        {{- end -}}
+      </tr>
+    </thead>
+    {{- end -}}
+    <tbody>
+      {{- $total := len $rows -}}
+      {{- range $ri, $row := $rows -}}
+        {{- if in $row $delim -}}
+          {{- $cells := split $row $delim -}}
+          {{- $isLast := eq (add $ri 1) $total -}}
+          <tr class="bg-white {{ if not $isLast }}border-b border-gray-200 dark:border-gray-700{{ end }} dark:bg-gray-800">
+            {{- range $ci, $cell := $cells -}}
+              {{- $val := trim $cell " \t\r\n" -}}
+              {{- if and $firstColTh (eq $ci 0) -}}
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $val }}</th>
+              {{- else -}}
+                <td class="px-6 py-4">{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $val }}</td>
+              {{- end -}}
+            {{- end -}}
+          </tr>
+        {{- else -}}
+          <tr class="bg-gray-50 dark:bg-gray-700 border-t border-gray-200 dark:border-gray-700">
+            <th colspan="{{ $colCount }}" class="px-6 py-4 text-xs uppercase text-gray-700 dark:text-gray-400 text-left">
+              {{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $row }}
+            </th>
+          </tr>
+        {{- end -}}
+      {{- end -}}
+    </tbody>
+  </table>
+  </div>
