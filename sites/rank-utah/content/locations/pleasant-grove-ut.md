@@ -25,12 +25,10 @@ schema:
 ---
 
 {{< section img="/media/pleasant-grove-website-design-local-seo.avif" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 50vh" yBottom="md" align="center" spacer="false">}}
-<br>
 # Pleasant Grove Website Design & Local SEO {.text-white}
 Professional business websites with powerful local SEO
 {.text-white}
 {{<button url="/services/website-design" text="Web Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
-
 {{< /section >}}
 
 
