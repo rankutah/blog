@@ -56,6 +56,17 @@
 {{- $imgClasses := .Get "imgClasses" | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
 {{- $imgStyle   := .Get "imgStyle"   | default "" -}}
 {{- $vhMode     := lower (.Get "vh" | default "") -}} {{/* "vh" | "svh" | "dvh" or empty */}}
+{{- /* If author provided a vh-based inline height, append an svh duplicate so it wins on mobile. */ -}}
+{{- $hasVhInStyle := and (ne $imgStyle "") (gt (len (findRE `\b[0-9.]+vh\b` $imgStyle)) 0) -}}
+{{- if and (ne $img "") $hasVhInStyle -}}
+  {{- /* Convert 50vh -> 50svh, 100vh -> 100svh, etc., and append so it overrides. */ -}}
+  {{- $svhStyle := replaceRE `([0-9.]+)vh` `${1}svh` $imgStyle -}}
+  {{- $imgStyle = printf "%s; %s" $imgStyle $svhStyle -}}
+{{- end -}}
+{{- /* If no explicit vh in style and no param, default to svh on the first hero. */ -}}
+{{- if and (eq $vhMode "") (ne $img "") $isFirstSection (not $hasVhInStyle) -}}
+  {{- $vhMode = "svh" -}}
+{{- end -}}
 {{- if and (ne $vhMode "") (ne $img "") -}}
   {{- /* Allow users to request viewport units without JS: we’ll prefer 100svh with 100vh fallback. */ -}}
   {{- if eq $vhMode "svh" -}}
@@ -200,7 +211,7 @@
   <picture>
     {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
     {{- if gt (len $srcsetWebp) 0 -}}<source type="image/webp" srcset="{{ delimit $srcsetWebp ", " }}" sizes="100vw">{{- end -}}
-    <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
   </picture>
       {{- if $overlay -}}
         <div class="{{ $overlayWrap }}">
@@ -276,7 +287,7 @@
   <picture>
     {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
     {{- if gt (len $srcsetWebp) 0 -}}<source type="image/webp" srcset="{{ delimit $srcsetWebp ", " }}" sizes="100vw">{{- end -}}
-    <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
   </picture>
         {{- if $overlay -}}
           <div class="{{ $overlayWrap }}">

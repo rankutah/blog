@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/contact"
 ---
 
-{{< section max="lg" y="md" align="center" >}}
+{{< section align="center" >}}
 # Contact Us
 {{< /section>}}
 

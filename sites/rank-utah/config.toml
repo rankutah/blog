@@ -64,16 +64,33 @@ uglyURLs      = true
   author              = "Benjamin Awerkamp"
   hideMeta            = false
 
+  # Footer/socials
+  [[params.social]]
+    name = "instagram"
+    url  = "https://www.instagram.com/clearpresenceio/"
+    icon = "media/instagram.avif"
+    alt  = "Instagram"
+
+  [[params.social]]
+    name = "facebook"
+    url  = "https://www.facebook.com/people/Clear-Presence/61571958571893/"
+    icon = "media/facebook.avif"
+    alt  = "Facebook"
+
+[params.socialDefaults]
+  size = "w-8 h-8"
+  gap  = "gap-3"
+
 [params.analytics]
   delayMs = 4000
   loadEvents = ["scroll", "mousemove", "touchstart"]
 
   [params.analytics.google]
-    id = "G-LGYK5V1CTV"
+    id = "G-763E3FZE0G"
     enabled = true
 
   [params.analytics.clarity]
-    id = "orwqd1fgew"
+    id = "q5u05bcffe"
     enabled = true
 
   [params.analytics.googleAds]

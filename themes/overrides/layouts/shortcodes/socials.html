@@ -1,0 +1,46 @@
+{{- /* Renders social icons from site params in a horizontal row.
+Usage: {{< socials >}} or {{< socials size="w-8 h-8" gap="gap-3" align="center|start|end" >}}
+
+Config shape (in site config):
+  [[params.social]]
+    name = "instagram"
+    url  = "https://..."
+    icon = "media/instagram.avif"  # path under /media or absolute
+    alt  = "Instagram"
+
+Optional defaults:
+  [params.socialDefaults]
+    size = "w-8 h-8"
+    gap  = "gap-3"
+*/ -}}
+
+{{- $site := .Page.Site -}}
+{{- $items := $site.Params.social | default (slice) -}}
+{{- if not (gt (len $items) 0) -}}
+  {{- /* Nothing to render */ -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $size := .Get "size" | default ($site.Params.socialDefaults.size | default "w-8 h-8") -}}
+{{- $gap  := .Get "gap"  | default ($site.Params.socialDefaults.gap  | default "gap-3") -}}
+{{- $align := lower (.Get "align" | default "center") -}}
+{{- $justify := cond (eq $align "start") "justify-start" (cond (eq $align "end") "justify-end" "justify-center") -}}
+
+<div class="not-prose flex items-center {{ $justify }} {{ $gap }}">
+  {{- range $i, $it := $items -}}
+    {{- $url  := (index $it "url")  | default "#" -}}
+    {{- $name := (index $it "name") | default (printf "social-%d" $i) -}}
+    {{- $alt  := (index $it "alt")  | default (title $name) -}}
+    {{- $icon := (index $it "icon") | default "" -}}
+    {{- if eq (substr $url 0 4) "http" -}}
+      <a href="{{ $url }}" target="_blank" rel="noopener" aria-label="{{ $alt }}" class="inline-flex">
+        {{- /* Do not force transforms; respect AVIF/PNG/etc as-is. Apply consistent render size via utility classes. */ -}}
+        <img src="{{ $icon | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
+      </a>
+    {{- else -}}
+      <a href="{{ $url }}" aria-label="{{ $alt }}" class="inline-flex">
+        <img src="{{ $icon | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
+      </a>
+    {{- end -}}
+  {{- end -}}
+</div>
