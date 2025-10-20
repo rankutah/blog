@@ -42,6 +42,13 @@ function buildSafelist() {
   }
   // not needed for backgrounds anymore, but harmless to keep
   out.push('bg-white');
+
+  // Ensure height utilities used by carousels are always emitted
+  out.push(
+    'h-56', 'h-64', 'h-96', 'h-140',
+    'md:h-96', 'md:h-[28rem]', 'md:h-[36rem]', 'md:h-[44rem]',
+    'md:h-[60vh]', 'lg:h-[70vh]'
+  );
   return out;
 }
 

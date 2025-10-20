@@ -116,6 +116,13 @@
 .cols-auto.v-end     { --v: end; }
 .cols-auto.v-stretch { --v: stretch; }
 
+/* Mobile-only reverse order for two-column stacks: move last child to top on mobile, restore order on md+ */
+.cols-auto.cols-reverse-mobile > * { order: 2; }
+.cols-auto.cols-reverse-mobile > *:last-child { order: 1; }
+@media (min-width: 768px) {
+  .cols-auto.cols-reverse-mobile > * { order: 0; }
+}
+
 
 /* ========== 6) Universal text alignment (handy inside .prose) ========== */
 .left, .prose .left     { text-align: left;  display: block; margin-inline: 0; }
@@ -363,6 +370,11 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
   .cp-contact input[type="url"]::placeholder,
   .cp-contact input[type="password"]::placeholder,
   .cp-contact textarea::placeholder { color: #9ca3af !important; opacity: 1 !important; }
+
+  /* Responsive height helpers for components like the carousel */
+  /* Note: no base rule so mobile classes like h-64 remain effective */
+  @media (min-width: 768px) { .h-md-70vh { height: 70vh !important; } }
+  @media (min-width: 1024px) { .h-lg-80vh { height: 80vh !important; } }
 }
 
 /* ========== Smooth scrolling & anchor offset ========== */

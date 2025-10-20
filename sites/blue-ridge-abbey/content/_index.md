@@ -5,40 +5,27 @@ layout: "flowbite"
 url: "/"
 ---
 
-
-{{< section img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh; height: 100svh" yBottom="md" align="center" spacer="false" >}}
+{{< section img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
 # Bed & Breakfast in Buena Vista, Virginia {.text-white}
 Your hotel alternative near the Blue Ridge Parkway, Natural Bridge, and Safari Park
 {.text-white}
 {{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Reach Out">}}
-
 {{< /section >}}
 
-
-
 {{< section>}}
-
-{{< cols min="18rem" gap="2rem" v="start">}}
+{{< cols min="18rem" gap="2rem" v="start" order="reverse" >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-{{< carousel id="bkg-hero" images="https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-642e5703.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" height="h-[40svh] md:h-[55svh]" interval="3000" radius="lg" >}}
+{{< carousel id="bkg-hero" images="https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-642e5703.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" height="h-64 h-md-70vh h-lg-80vh" interval="3000" radius="lg" >}}
 
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Cozy Rooms -- A 5-Star Guest Experience
+## Cozy Rooms & Spaces
 
 All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and shampoo, conditioner, and body wash.
-
-
-
-
-
-<!-- Elfsight Google Reviews | Blue Ridge Abbey -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-352976f6-7c94-43f8-b5c1-6ecbfcc43a69" data-elfsight-app-lazy></div>
 
 
 {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Check Availability" >}}
@@ -51,7 +38,6 @@ All rooms are furnished with linens and amenities, including Wifi, TV, mini frid
 
 {{< /section >}}
 
-
 {{< section >}}
 
 ## A 5-Star Guest Experience
@@ -61,7 +47,6 @@ All rooms are furnished with linens and amenities, including Wifi, TV, mini frid
 <div class="elfsight-app-352976f6-7c94-43f8-b5c1-6ecbfcc43a69" data-elfsight-app-lazy></div>
 
 {{< /section >}}
-
 
 {{< section >}}
 
@@ -101,10 +86,10 @@ D So Local Guide<br>
 
 
 
-
+<br>
 {{< section >}}
 
-{{< cols min="18rem" gap="8rem" v="start">}}
+{{< cols min="18rem" gap="2rem" v="start" order="reverse">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
@@ -208,8 +193,21 @@ Yes. Please request a room refresh with your innkeeper or place the housekeeping
 
 Texts received between the hours of 7PM to 7AM will not be seen/addressed by your innkeeper until the following morning. In the even of an emergency, please call our overnight phone number: 540-319-3889
 
-
-
 {{< /faqs >}}
+
+{{< section align="center" >}}
+
+## Get Started
+
+Ready to start your adventure?
+
+{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability">}}{{<button url="/contact" text="Reach Out">}}
+
+
+
+
+
+
+{{< /section >}}
 
 {{< /section >}}

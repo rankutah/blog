@@ -8,6 +8,7 @@
        darkbg="rose-900|black|…"    → OPTIONAL per-card dark bg (maps to dark:bg-*)
        render="md|raw|auto"         → content rendering (default md)
        y="start|center|end|between" → vertical align (default center)
+  order="N|first|last|none"    → MOBILE-ONLY visual order. Applies base order and resets to DOM order on md+.
 */ -}}
 
 {{- $page   := .Page -}}
@@ -15,6 +16,24 @@
 {{- $isCard := eq (lower (.Get "card" | default "false")) "true" -}}
 {{- $extra  := .Get "classes" | default "" -}}
 {{- $render := lower (.Get "render" | default "md") -}}
+
+{{- /* Mobile-only order: apply `order-*` at base and reset to DOM order on md+ with `md:order-none` */ -}}
+{{- $orderRaw := lower (.Get "order" | default "") -}}
+{{- $orderCls := "" -}}
+{{- if ne $orderRaw "" -}}
+  {{- if or (eq $orderRaw "none") (eq $orderRaw "0") -}}
+    {{- $orderCls = "order-none md:order-none" -}}
+  {{- else if or (eq $orderRaw "first") (eq $orderRaw "-1") -}}
+    {{- $orderCls = "order-first md:order-none" -}}
+  {{- else if eq $orderRaw "last" -}}
+    {{- $orderCls = "order-last md:order-none" -}}
+  {{- else -}}
+    {{- /* numeric 1..12 (fallback to 1 if unparsable) */ -}}
+    {{- $num := replaceRE `[^0-9]` "" $orderRaw -}}
+    {{- if eq $num "" -}}{{ $num = "1" }}{{ end -}}
+    {{- $orderCls = printf "order-%s md:order-none" $num -}}
+  {{- end -}}
+{{- end -}}
 
 {{- /* Vertical align wrapper (applied around the inner content) */ -}}
 {{- $y := lower (.Get "y" | default "start") -}}
@@ -136,6 +155,7 @@
 
 {{- $cardBase := delimit $parts " " -}}
 {{- $card := cond (ne $siteCard "") $siteCard $cardBase -}}
+{{- if ne $orderCls "" }}{{ $card = printf "%s %s" $card $orderCls }}{{ end -}}
 {{- if ne $extra "" }}{{ $card = printf "%s %s" $card $extra }}{{ end -}}
 
 {{- /* Render strategy: md (default), raw, auto) with shortcode support */ -}}
@@ -161,7 +181,7 @@
     {{- if $vWrap }}</div>{{ end }}
   </div>
 {{- else -}}
-  <div class="h-full{{ with $extra }} {{ . }}{{ end }}">
+  <div class="h-full{{ if ne $orderCls "" }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}">
     {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end }}
       {{- $html -}}
     {{- if $vWrap }}</div>{{ end }}

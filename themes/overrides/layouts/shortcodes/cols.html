@@ -18,6 +18,7 @@
 {{- $gap    := .Get "gap"    | default "1.5rem" -}}
 {{- $rowArg := lower (.Get "row" | default "") -}}
 {{- $v      := lower (.Get "v"   | default "stretch") -}}
+{{- $order  := lower (.Get "order" | default "") -}}
 {{- $extra  := .Get "classes"| default "" -}}
 
 {{- $vMap := dict
@@ -38,7 +39,13 @@
   {{- end -}}
 {{- end -}}
 
-<div class="cols-auto {{ $vCls }}{{ with $extra }} {{ . }}{{ end }}"
+{{- $orderCls := "" -}}
+{{- if eq $order "reverse" -}}
+  {{- /* Reverse visual order on mobile by switching to a flex column-reverse layout under md, then grid at md+ */ -}}
+  {{- $orderCls = "cols-reverse-mobile" -}}
+{{- end -}}
+
+<div class="cols-auto {{ $vCls }}{{ if $orderCls }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"
      style="--min: {{ $min }}; --gap: {{ $gap }};{{ if $row }} --row: {{ $row }};{{ end }}">
   {{ .Inner }}
 </div>

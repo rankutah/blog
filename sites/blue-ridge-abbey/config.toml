@@ -47,7 +47,7 @@ uglyURLs = true
   stickyDesktop = true
   CTAText = "Book Now"
   CTAURL  = "https://secure.thinkreservations.com/blueridgeabbey/reservations"
-  showPhoneOnMobile = true
+  showPhoneOnMobile = false
   phoneNumber = "385-323-8130"
   logoHeightPx = 40
 
@@ -67,7 +67,7 @@ uglyURLs = true
 
   # Vertical padding:
   #   none → py-0, sm → py-6, md → py-12, lg → py-16, xl → py-24
-  y = "md"
+  y = "none"
 
   # Text align: start | center
   align = "start"

@@ -8,7 +8,7 @@
 {{ $stickyMobile  := default true  .Site.Params.header.stickyMobile }}
 {{ $stickyDesktop := default true  .Site.Params.header.stickyDesktop }}
 
-{{ $showCTAOnMobile  := default true  .Site.Params.header.showCTAOnMobile }}
+{{ $showCTAOnMobile  := default false .Site.Params.header.showCTAOnMobile }}
 {{ $showCTAOnDesktop := default true  .Site.Params.header.showCTAOnDesktop }}
 {{ $CTAText          := default "Get started" .Site.Params.header.CTAText }}
 {{ $CTAURL           := default "/"          .Site.Params.header.CTAURL }}
