@@ -15,6 +15,8 @@
   - All items are collapsed by default; pass openFirst="true" to open the first one.
     Example:
       {{< faqs openFirst="true" >}}
+  - Alignment: headings inherit text alignment; to avoid unintended centering, this shortcode
+    now defaults to text-left. You can override with align="center".
 */}}
 
 {{- $page := .Page -}}
@@ -27,6 +29,11 @@
 {{- /* Optional: open the first item by default via openFirst="true|yes|1" */ -}}
 {{- $openFirstParam := lower (.Get "openFirst" | default (.Get "firstOpen")) -}}
 {{- $openFirst := or (eq $openFirstParam "true") (eq $openFirstParam "yes") (eq $openFirstParam "1") -}}
+
+{{- /* Alignment control (start|center). Default to start to prevent inherited centering */ -}}
+{{- $alignParam := lower (.Get "align" | default "start") -}}
+{{- $alMap := dict "start" "text-left" "center" "text-center" -}}
+{{- $alClass := (index $alMap $alignParam) | default "text-left" -}}
 {{- range $i, $p := $parts }}
   {{- $trim := trim $p " \n" -}}
   {{- if ne $trim "" -}}
@@ -34,7 +41,7 @@
   {{- end -}}
 {{- end -}}
 
-<div id="accordion-collapse" data-accordion="collapse">
+<div id="accordion-collapse" data-accordion="collapse" class="{{ $alClass }}">
   {{- $count := len $faqBlocks -}}
   {{- range $i, $blk := $faqBlocks }}
     {{- $qid := printf "accordion-collapse-heading-%d" (add $i 1) -}}
@@ -58,14 +65,16 @@
     {{- $isFirst := eq $i 0 -}}
     {{- $expanded := and $isFirst $openFirst -}}
     {{- $isLast := eq $i (sub $count 1) -}}
-  {{- $btnBase := "flex items-center justify-between w-full p-5 rtl:text-right text-inherit border border-black dark:border-white focus:outline-none focus:ring-0 gap-3 mb-0" -}}
+  {{- /* Use text-left (not text-inherit) to defeat parent centering on mobile */ -}}
+  {{- $btnBase := "flex items-center justify-between w-full p-5 rtl:text-right text-left border border-black dark:border-white focus:outline-none focus:ring-0 gap-3 mb-0" -}}
     {{- $btnClasses := slice $btnBase -}}
     {{- if $isFirst }}{{ $btnClasses = $btnClasses | append "rounded-t-xl" }}{{ end -}}
     {{- if not $isLast }}{{ $btnClasses = $btnClasses | append "border-b-0" }}{{ end -}}
 
   {{- /* Choose heading tag based on the level parsed (default h3). Clamp between 2 and 6. */ -}}
   {{- $h := cond (lt $level 2) 3 (cond (gt $level 6) 3 $level) -}}
-  {{- printf "<h%d id=\"%s\" class=\"mt-0 mb-0\">" $h $qid | safeHTML -}}
+  {{- /* not-prose prevents Typography plugin heading rules (like center) from applying; add text-left explicitly */ -}}
+  {{- printf "<h%d id=\"%s\" class=\"mt-0 mb-0 not-prose text-left\">" $h $qid | safeHTML -}}
       <button type="button"
         class="{{ delimit $btnClasses " " }}"
         data-accordion-target="#{{ $bid }}"
@@ -79,7 +88,8 @@
   {{- printf "</h%d>" $h | safeHTML -}}
 
     <div id="{{ $bid }}" class="{{ if not $expanded }}hidden{{ end }}" aria-labelledby="{{ $qid }}">
-  {{- $panelBase := "p-5 border border-black dark:border-white bg-transparent dark:bg-transparent" -}}
+  {{- /* Ensure panel content is left-aligned even if surrounding section is centered */ -}}
+  {{- $panelBase := "p-5 text-left border border-black dark:border-white bg-transparent dark:bg-transparent" -}}
       {{- $panelClasses := slice $panelBase -}}
       {{- if not $isLast }}
         {{- $panelClasses = $panelClasses | append "border-b-0" -}}

@@ -9,7 +9,7 @@ url: "/"
 # Bed & Breakfast in Buena Vista, Virginia {.text-white}
 Your hotel alternative near the Blue Ridge Parkway, Natural Bridge, and Safari Park
 {.text-white}
-{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Reach Out">}}
+{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Contact">}}
 {{< /section >}}
 
 {{< section>}}
@@ -23,7 +23,7 @@ Your hotel alternative near the Blue Ridge Parkway, Natural Bridge, and Safari P
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Cozy Rooms & Spaces
+## Cozy Rooms & Abbey
 
 All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and shampoo, conditioner, and body wash.
 
@@ -102,7 +102,7 @@ D So Local Guide<br>
 
 ## About Blue Ridge Abbey
 
-Why stay in a hotel? Step into quiet comfort of Blue Ridge Abbey Bed & Breakfast, a beautifully restored Queen Anne-style home in Buena Vista, Virginia.
+Step into quiet comfort of Blue Ridge Abbey Bed & Breakfast, a beautifully restored Queen Anne-style home in Buena Vista, Virginia.
 Just minutes from the Blue Ridge Parkway, Natural Bridge, Safari Park, and historic downtown Lexington, our bed and breakfast blends vintage elegance with modern comfort. Enjoy an unforgettable Blue Ridge Mountain getaway.
 
 The Blue Ridge Abbey has stood as a welcoming presence in Buena Vista for well over a century. Originally known as the Jordan House, this beautiful home has been a part of the town’s story since its earliest days. Some records date its construction to 1898, while local stories consistently suggest it may have been completed in 1903.
@@ -120,7 +120,7 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 {{< section align="center">}}
 
-## Nearby Adventures and Restaurants {#adventures .scroll-mt-24}
+## Nearby Adventures {#adventures .scroll-mt-24}
 
 {{< /section >}}
 
@@ -147,6 +147,8 @@ As we’ve restored this home and opened it once more to guests, we have been de
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Nearby Restaurants
 
 {{< table headers="Restaurants|Distance" delim="|" >}}
 [The BeeVe Ice Cream](https://www.thebeeve.com/)|1 min
@@ -201,7 +203,7 @@ Texts received between the hours of 7PM to 7AM will not be seen/addressed by you
 
 Ready to start your adventure?
 
-{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability">}}{{<button url="/contact" text="Reach Out">}}
+{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability">}}{{<button url="/contact" text="Contact">}}
 
 
 

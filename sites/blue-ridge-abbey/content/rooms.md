@@ -5,6 +5,12 @@ layout: "flowbite"
 url: "/rooms"
 ---
 
+
+
+
+
+
+
 [![logo of a lantern](/media/image01.png)](https://blueridgeabbey.com/)
 
 BLUE RIDGE ABBEY
