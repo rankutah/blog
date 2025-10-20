@@ -138,6 +138,27 @@
     function initDropdowns(){const buttons=Array.from(document.querySelectorAll('[data-dropdown-toggle]'));if(!buttons.length)return;function closeAll(exceptId){buttons.forEach(b=>{const id=b.getAttribute('data-dropdown-toggle');const el=id&&document.getElementById(id);if(!el||id===exceptId)return;el.classList.add('hidden');b.setAttribute('aria-expanded','false');});}
       buttons.forEach(btn=>{const id=btn.getAttribute('data-dropdown-toggle');const menu=id&&document.getElementById(id);if(!menu)return;btn.addEventListener('click',(e)=>{e.stopPropagation();const nowHidden=menu.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!nowHidden));if(!nowHidden)closeAll(id);});});
       document.addEventListener('click',(e)=>{const inside=e.target.closest&&(e.target.closest('[data-dropdown-toggle]')||e.target.closest('[id^="menu-"]'));if(!inside)closeAll();});}
+    // Auto-close the mobile menu when a menu link is clicked
+    function initAutoCloseMobileMenu(){
+      const btn = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+      const menu = document.getElementById('navbar-sticky');
+      if(!btn||!menu) return;
+      const isMobile = () => window.matchMedia('(max-width: 767.98px)').matches; // Tailwind md breakpoint
+      // Delegate to all anchors inside the collapsible menu
+      menu.querySelectorAll('a[href]').forEach(a=>{
+        a.addEventListener('click',()=>{
+          if(!isMobile()) return;
+          // Hide the collapsible and reset aria state
+          menu.classList.add('hidden');
+          btn.setAttribute('aria-expanded','false');
+          // Also close any open dropdowns within the menu
+          document.querySelectorAll('[id^="menu-"]')
+            .forEach(el=>el.classList.add('hidden'));
+          document.querySelectorAll('[data-dropdown-toggle]')
+            .forEach(b=>b.setAttribute('aria-expanded','false'));
+        }, { passive:true });
+      });
+    }
     function initAccordions(){
       document.querySelectorAll('[data-accordion]').forEach(acc=>{
         const mode = (acc.getAttribute('data-accordion')||'').toLowerCase();
@@ -175,7 +196,7 @@
         });
       });
     }
-    ready(()=>{initCollapse();initDropdowns();initAccordions();});
+    ready(()=>{initCollapse();initDropdowns();initAutoCloseMobileMenu();initAccordions();});
   </script>
 
   <!-- Header toggle (optional):

@@ -120,8 +120,6 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 {{< section align="center">}}
 
-## Nearby Adventures {#adventures .scroll-mt-24}
-
 {{< /section >}}
 
 {{< section >}}
@@ -130,6 +128,7 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
+## Nearby Adventures {#adventures .scroll-mt-24}
 
 {{< table headers="Adventures|Distance" delim="|" >}}
 [SVU](https://svu.edu/)|2 min

@@ -40,24 +40,54 @@
         }
     }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                        const href = this.getAttribute("href") || "";
+                        const raw = href.replace(/^#/, "");
+                        const id = decodeURIComponent(raw);
+                        const target = document.getElementById(id);
+                        if (!id || !target) return; // let browser handle if no target
+
+                        e.preventDefault();
+
+                        // Helper: measure current header height and expose CSS var
+                        function setHeaderVar(){
+                            var nav = document.querySelector('nav');
+                            if (!nav) return;
+                            var h = Math.ceil(nav.getBoundingClientRect().height);
+                            document.documentElement.style.setProperty('--site-header-h', h + 'px');
+                        }
+
+                        const btn = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+                        const menu = document.getElementById('navbar-sticky');
+                        const isMobile = window.matchMedia('(max-width: 767.98px)').matches; // Tailwind md breakpoint
+                        const menuOpen = !!(menu && !menu.classList.contains('hidden'));
+
+                        function performScroll(){
+                            // Recalculate header height before scrolling so scroll-margin-top is correct
+                            setHeaderVar();
+                            const smoothOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                            try {
+                                target.scrollIntoView(smoothOk ? { behavior: 'smooth', block: 'start' } : { block: 'start' });
+                            } catch { target.scrollIntoView(); }
+                            if (id === 'top') history.replaceState(null, null, ' ');
+                            else history.pushState(null, null, `#${id}`);
+                        }
+
+                        if (menuOpen && isMobile) {
+                            // Close the mobile menu first so header shrinks, then scroll
+                            menu.classList.add('hidden');
+                            if (btn) btn.setAttribute('aria-expanded','false');
+                            // Also close any open dropdowns inside the menu
+                            document.querySelectorAll('[id^="menu-"]').forEach(el=>el.classList.add('hidden'));
+                            document.querySelectorAll('[data-dropdown-toggle]').forEach(b=>b.setAttribute('aria-expanded','false'));
+                            // Wait a couple frames to ensure layout updates, then scroll
+                            requestAnimationFrame(()=>requestAnimationFrame(performScroll));
+                        } else {
+                            performScroll();
+                        }
+                }, { passive: false });
         });
-    });
 
 </script>
 
