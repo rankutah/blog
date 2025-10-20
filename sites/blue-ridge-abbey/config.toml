@@ -58,8 +58,8 @@ uglyURLs = true
     weight = 10
 
   [[menu.main]]
-    name = "Rooms"
-    url = "/rooms"
+    name = "Adventures"
+    url = "#adventures"
     weight = 20
 
   [[menu.main]]
@@ -71,3 +71,8 @@ uglyURLs = true
     name = "Contact"
     url = "/contact"
     weight = 40
+
+  [[menu.main]]
+    name = "Book"
+    url = "https://secure.thinkreservations.com/blueridgeabbey/reservations"
+    weight = 50

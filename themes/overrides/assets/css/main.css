@@ -364,3 +364,15 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
   .cp-contact input[type="password"]::placeholder,
   .cp-contact textarea::placeholder { color: #9ca3af !important; opacity: 1 !important; }
 }
+
+/* ========== Smooth scrolling & anchor offset ========== */
+/* Prefer smooth scrolling for hash links. Respect reduced motion preferences. */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+/* Ensure anchored headings don't tuck under the sticky header. Uses CSS var fallback. */
+:where(h1,h2,h3,h4,h5,h6)[id],
+:target {
+  scroll-margin-top: calc(var(--site-header-h, 64px) + 16px);
+}
