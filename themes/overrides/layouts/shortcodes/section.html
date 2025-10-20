@@ -55,6 +55,17 @@
 {{- $bleed      := cond (ne $img "") (ne (lower $bleedStr) "false") false -}}
 {{- $imgClasses := .Get "imgClasses" | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
 {{- $imgStyle   := .Get "imgStyle"   | default "" -}}
+{{- $vhMode     := lower (.Get "vh" | default "") -}} {{/* "vh" | "svh" | "dvh" or empty */}}
+{{- if and (ne $vhMode "") (ne $img "") -}}
+  {{- /* Allow users to request viewport units without JS: we’ll prefer 100svh with 100vh fallback. */ -}}
+  {{- if eq $vhMode "svh" -}}
+    {{- $imgStyle = printf "height: 100vh; height: 100svh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+  {{- else if eq $vhMode "dvh" -}}
+    {{- $imgStyle = printf "height: 100vh; height: 100dvh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+  {{- else if eq $vhMode "vh" -}}
+    {{- $imgStyle = printf "height: 100vh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+  {{- end -}}
+{{- end -}}
 
 {{- $overlay      := eq (lower (.Get "overlay" | default "false")) "true" -}}
 {{- $overlayShade := .Get "overlayShade" | default "" -}}

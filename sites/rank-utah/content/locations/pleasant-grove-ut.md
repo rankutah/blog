@@ -24,7 +24,7 @@ schema:
     areaServed: "Pleasant Grove, UT"
 ---
 
-{{< section img="/media/pleasant-grove-website-design-local-seo.avif" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 70vh" yBottom="md" align="center" spacer="false">}}
+{{< section img="/media/pleasant-grove-website-design-local-seo.avif" alt="Pleasant Grove website design and local SEO" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 60vh" yBottom="md" align="center" spacer="false">}}
 # Pleasant Grove Website Design & Local SEO {.text-white}
 Professional business websites with powerful local SEO
 {.text-white}

@@ -51,7 +51,7 @@ Clear Presence focuses on maximizing your Google Business Profile visibility by 
 2. Strategizing with you to get more reviews and what to do with the ones you have
 3. Updating your website URL to include UTM parameters so we can track your Google Business Profile performance in Google Analytics and Google Search Console
 4. Improving your description to increase the number of clicks your profile receives
-5. Adding photos and videos to optimizing for visibility
+5. Adding photos and videos to optimize for visibility
 6. Ensuring your business hours are accurate and explaining the impact on visibility
 7. Adding your services to improve profile engagement and visibility
 8. Ensuring you have an ongoing promotional post to increase engagement and visibility
@@ -60,11 +60,11 @@ Clear Presence focuses on maximizing your Google Business Profile visibility by 
 
 ### 3. Align Your Website and GBP with keywords that bring you traffic
 
-Clear Presence conducts keyword research using Semrush, the #1 SEO Agency tool for accurate keyword research in the United States. This tool is used to research and find high volume low competition keywords that you can rank for. After building a keyword strategy for your business we align your website and Google Business Profile with those keywords.
+Clear Presence conducts keyword research using Semrush, the #1 SEO Agency tool for accurate keyword research in the United States. This tool is used to research and find high volume low competition keywords that you can rank for. After building a keyword strategy for your business we align your online content with these keywords.
 
 ### 4. Track and report your rankings, visibility, and clicks
 
-Everything that happes on your website is tracked and analyzed using Google Search Console which tells us the number of impressions you received for your keywords, where you rank, and how many times your website or Google Business Profile were clicked. This is a continual process of analyzing the latest results, testing new keyword strategies, and optimizing your content around the keywords that are performing well.
+Everything that happens on your website is tracked and analyzed using Google Search Console which tells us the number of impressions you received for your keywords, where you rank, and how many times your website or Google Business Profile were clicked. This is a continual process of analyzing the latest results, testing new keyword strategies, and optimizing your content around the keywords that are performing well.
 
 ### 5. Continuously work to bring you more customers
 
