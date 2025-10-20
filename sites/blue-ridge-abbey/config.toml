@@ -51,6 +51,33 @@ uglyURLs = true
   phoneNumber = "385-323-8130"
   logoHeightPx = 40
 
+[params.section.defaults]
+  # Container width:
+  #   sm   → max-w-screen-sm
+  #   md   → max-w-3xl
+  #   lg   → max-w-5xl
+  #   xl   → max-w-7xl
+  #   2xl  → max-w-screen-2xl
+  #   full → max-w-none (edge to edge)
+  max = "full"
+
+  # Horizontal padding:
+  #   none → px-0, sm → px-4, md → px-6, lg → px-8
+  pad = "sm"
+
+  # Vertical padding:
+  #   none → py-0, sm → py-6, md → py-12, lg → py-16, xl → py-24
+  y = "md"
+
+  # Text align: start | center
+  align = "start"
+
+  # Optional vertical centering and min-height
+  # alignY: "", "start", "center", "end", "between"
+  # minh:   "", "screen", "full"
+  # alignY = "center"
+  # minh   = "screen"
+
 [menu]
   [[menu.main]]
     name = "Home"
