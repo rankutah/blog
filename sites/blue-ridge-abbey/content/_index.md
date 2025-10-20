@@ -1,6 +1,6 @@
 ---
-title: "Home"
-description: ""
+title: "Bed & Breakfast in Buena Vista, Virginia"
+description: "Quiet B&B hotel alternative in Buena Vista, VA. Private rooms, hot breakfast, easy parking. Minutes to SVU, Lexington, and Natural Bridge. Book direct."
 layout: "flowbite"
 url: "/"
 ---
@@ -17,7 +17,7 @@ Your hotel alternative near the Blue Ridge Parkway, Natural Bridge, and Safari P
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-{{< carousel id="bkg-hero" images="https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-642e5703.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,https://blueridgeabbey.com/assets/images/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" height="h-64 h-md-70vh h-lg-80vh" interval="3000" radius="lg" >}}
+{{< carousel id="bkg-hero" images="/media/carousel/bed-and-breakfast-hotel-places-to-stay-642e5703.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" height="h-64 h-md-70vh h-lg-80vh" interval="3000" radius="lg" >}}
 
 {{< /col >}}
 
@@ -132,7 +132,7 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 
 {{< table headers="Adventures|Distance" delim="|" >}}
-[Southern Virginia University (SVU)](https://svu.edu/)|2 min
+[SVU](https://svu.edu/)|2 min
 [Glen Maury Park](https://www.buenavistava.org/residents/recreation/glen-maury-park/)|6 min
 [Blue Ridge Parkway](https://www.blueridgeparkway.org/)|10 min
 [Lexington](https://lexingtonvirginia.com/)|13 min

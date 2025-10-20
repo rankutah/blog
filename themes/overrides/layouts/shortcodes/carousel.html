@@ -50,9 +50,70 @@
 <div id="{{ $id }}" class="relative w-full" data-carousel="slide" data-carousel-interval="{{ $interval }}">
 <div class="relative {{ $height }} overflow-hidden {{ $roundedClass }}">
 {{- range $i, $img := $imgs }}
-<div class='absolute inset-0 transition-opacity duration-500 ease-in-out {{ if eq $i 0 }}opacity-100 pointer-events-auto{{ else }}opacity-0 pointer-events-none{{ end }}' style="transition-duration: {{ $duration }}ms" data-carousel-item{{ if eq $i 0 }}="active"{{ end }}>
-<img src='{{ $img.src }}' alt='{{ with $img.alt }}{{ . }}{{ else }}Slide {{ add $i 1 }}{{ end }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-</div>
+  {{- $srcStr := $img.src -}}
+  {{- $altTxt := (cond (ne ($img.alt | default "") "") $img.alt (printf "Slide %d" (add $i 1))) -}}
+  {{- /* Build responsive picture only for local media or page resources; external URLs stay plain <img>. */ -}}
+  {{- $isLocal := or (hasPrefix $srcStr "/media/") (hasPrefix $srcStr "media/") -}}
+  {{- $srcset := slice -}}
+  {{- $srcsetAvif := slice -}}
+  {{- $avifStatic := "" -}}
+  {{- $fallback := $srcStr -}}
+  {{- if $isLocal -}}
+    {{- $clean := replaceRE "^/" "" $srcStr -}}
+    {{- $asset := resources.Get $clean -}}
+    {{- if not $asset -}}
+      {{- /* Try page resources (e.g., bundles) */ -}}
+      {{- with $.Page.Resources.GetMatch (printf "**%s" (path.Base $clean)) -}}
+        {{- $asset = . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
+      {{- $sub := lower ($asset.MediaType.SubType | default "") -}}
+      {{- $processable := in (slice "jpeg" "jpg" "png") $sub -}}
+      {{- if $processable -}}
+        {{- $widths := slice 720 1080 1440 1920 -}}
+        {{- $last := "" -}}
+        {{- range $w := $widths -}}
+          {{- $r := $asset.Resize (printf "%dx" $w) -}}
+          {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+          {{- $last = $r.RelPermalink -}}
+          {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
+          {{- if eq (lower ($ravif.MediaType.SubType | default "")) "avif" -}}
+            {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if ne $last "" }}{{- $fallback = $last -}}{{- end -}}
+      {{- else if eq $sub "avif" -}}
+        {{- /* Source is already AVIF; provide AVIF source and keep AVIF as fallback */ -}}
+        {{- $srcsetAvif = (slice (printf "%s 1920w" $asset.RelPermalink)) -}}
+        {{- $fallback = $asset.RelPermalink -}}
+      {{- end -}}
+
+      {{- /* If we didn't manage to build an AVIF srcset (encoder unavailable, etc.), try a static AVIF sibling */ -}}
+      {{- if eq (len $srcsetAvif) 0 -}}
+        {{- /* Build candidate path for a sibling .avif under assets/media */ -}}
+        {{- $base := replaceRE `\.(jpg|jpeg|png|webp)$` "" $clean -}}
+        {{- with resources.Get (printf "%s.avif" $base) -}}
+          {{- $avifStatic = .RelPermalink -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  <div class='absolute inset-0 transition-opacity duration-500 ease-in-out {{ if eq $i 0 }}opacity-100 pointer-events-auto{{ else }}opacity-0 pointer-events-none{{ end }}' style="transition-duration: {{ $duration }}ms" data-carousel-item{{ if eq $i 0 }}="active"{{ end }}>
+    {{- if gt (len $srcsetAvif) 0 -}}
+      <picture>
+        <source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">
+        <img src='{{ $fallback }}'{{ if gt (len $srcset) 0 }} srcset='{{ delimit $srcset ", " }}' sizes='100vw'{{ end }} alt='{{ $altTxt }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+      </picture>
+    {{- else if ne $avifStatic "" -}}
+      <picture>
+        <source type="image/avif" srcset="{{ $avifStatic }}" sizes="100vw">
+        <img src='{{ $fallback }}'{{ if gt (len $srcset) 0 }} srcset='{{ delimit $srcset ", " }}' sizes='100vw'{{ end }} alt='{{ $altTxt }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+      </picture>
+    {{- else -}}
+      <img src='{{ $fallback }}' alt='{{ $altTxt }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+    {{- end -}}
+  </div>
 {{- end }}
 </div>
 <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
