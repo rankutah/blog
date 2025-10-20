@@ -14,7 +14,7 @@
 */ -}}
 
 {{- $site       := .Page.Site -}}
-{{- $imgParams  := ($site.Params.images | default (dict)) -}}
+{{- $imgParams  := ($site.Params.imageDefaults | default (dict)) -}}
 {{- $defClasses := cond (isset $imgParams "defaultClasses") $imgParams.defaultClasses "" -}}
 {{- $defSizes   := cond (isset $imgParams "defaultSizes")   $imgParams.defaultSizes   "100vw" -}}
 
@@ -32,6 +32,20 @@
 {{- $linkAttr   := .Attributes.link     | default "" -}}
 {{- $caption    := .Attributes.caption  | default "" -}}
 
+{{- /* Optional: override sizes via semantic class tokens when author hasn't provided sizes */ -}}
+{{- if and (eq (.Attributes.sizes | default "") "") (ne $attrClass "") -}}
+  {{- $cls := printf " %s " (lower $attrClass) -}}
+  {{- if in $cls " img-xs " -}}
+    {{- $sizesAttr = "(min-width:1024px) 320px, (min-width:768px) 280px, 90vw" -}}
+  {{- else if in $cls " img-sm " -}}
+    {{- $sizesAttr = "(min-width:1024px) 420px, (min-width:768px) 360px, 92vw" -}}
+  {{- else if in $cls " img-md " -}}
+    {{- $sizesAttr = "(min-width:1024px) 560px, (min-width:768px) 480px, 94vw" -}}
+  {{- else if in $cls " img-lg " -}}
+    {{- $sizesAttr = "(min-width:1536px) 800px, (min-width:1024px) 640px, (min-width:768px) 560px, 96vw" -}}
+  {{- end -}}
+{{- end -}}
+
 {{- $src        := .Destination -}}
 {{- $srcset     := slice -}}
 {{- $srcsetAvif := slice -}}
@@ -45,7 +59,7 @@
   {{- $isPR = true -}}
   {{- $img := $match -}}
   {{- $origW := $img.Width | default 0 -}}
-  {{- $widths := slice 360 720 1080 1440 1920 -}}
+  {{- $widths := slice 240 360 480 720 960 1080 1440 1920 -}}
   {{- $last := "" -}}
   {{- range $w := $widths -}}
     {{- if or (eq $origW 0) (ge $origW $w) -}}
@@ -79,7 +93,7 @@
   {{- $asset := resources.Get $clean -}}
   {{- if $asset -}}
     {{- $origW := $asset.Width | default 0 -}}
-    {{- $widths := slice 360 720 1080 1440 1920 -}}
+  {{- $widths := slice 240 360 480 720 960 1080 1440 1920 -}}
     {{- $last := "" -}}
     {{- range $w := $widths -}}
       {{- if or (eq $origW 0) (ge $origW $w) -}}
