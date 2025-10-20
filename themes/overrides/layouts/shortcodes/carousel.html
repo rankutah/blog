@@ -23,6 +23,8 @@
 {{ $height   := .Get "height"   | default "h-56 md:h-96" }}
 {{ $interval := .Get "interval" | default "5000" }}
 {{ $duration := .Get "duration" | default "500" }}
+{{ $loading  := lower (.Get "loading" | default "lazy") }}
+{{ $fetchpri := cond (eq $loading "eager") "high" "low" }}
 
 {{/* Build list of image URLs */}}
 {{ $imgs := slice }}
@@ -103,15 +105,15 @@
     {{- if gt (len $srcsetAvif) 0 -}}
       <picture>
         <source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">
-        <img src='{{ $fallback }}'{{ if gt (len $srcset) 0 }} srcset='{{ delimit $srcset ", " }}' sizes='100vw'{{ end }} alt='{{ $altTxt }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        <img src='{{ $fallback }}'{{ if gt (len $srcset) 0 }} srcset='{{ delimit $srcset ", " }}' sizes='100vw'{{ end }} alt='{{ $altTxt }}' loading='{{ $loading }}' decoding='async' fetchpriority='{{ $fetchpri }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
       </picture>
     {{- else if ne $avifStatic "" -}}
       <picture>
         <source type="image/avif" srcset="{{ $avifStatic }}" sizes="100vw">
-        <img src='{{ $fallback }}'{{ if gt (len $srcset) 0 }} srcset='{{ delimit $srcset ", " }}' sizes='100vw'{{ end }} alt='{{ $altTxt }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        <img src='{{ $fallback }}'{{ if gt (len $srcset) 0 }} srcset='{{ delimit $srcset ", " }}' sizes='100vw'{{ end }} alt='{{ $altTxt }}' loading='{{ $loading }}' decoding='async' fetchpriority='{{ $fetchpri }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
       </picture>
     {{- else -}}
-      <img src='{{ $fallback }}' alt='{{ $altTxt }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+      <img src='{{ $fallback }}' alt='{{ $altTxt }}' loading='{{ $loading }}' decoding='async' fetchpriority='{{ $fetchpri }}' class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     {{- end -}}
   </div>
 {{- end }}
