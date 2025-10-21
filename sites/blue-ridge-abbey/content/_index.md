@@ -6,8 +6,8 @@ url: "/"
 ---
 
 {{< section img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
-# Bed & Breakfast in Buena Vista, Virginia {.text-white}
-Your hotel alternative near the Blue Ridge Parkway, Natural Bridge, and Safari Park
+# Bed & Breakfast in Buena Vista, VA {.text-white}
+Near Blue Ridge Parkway, Natural Bridge, and Safari Park
 {.text-white}
 {{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Contact">}}
 {{< /section >}}
@@ -178,19 +178,19 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 {{< faqs >}}
 
-### What are the Breakfast Details?
+### What are the breakfast details?
 
 Breakfast is served between 8AM-10AM. Let your innkeeper know what time you'd like to reserve. Please have your menus filled out and on the Front Desk of the main foyer before bed. Limited options are available if your innkeeper does not have access to your menu before morning.
 
-### Can Guests Adjust the Temperature?
+### Can guests adjust the temperature?
 
 Yes. Your comfort is our priority. Your room is outfitted with a heating/cooling unit. We encourage you to adjust the temperature to your liking.
 
-### Do you Refresh Rooms?
+### Do you refresh rooms?
 
 Yes. Please request a room refresh with your innkeeper or place the housekeeping sign on the door handle of your room. Room refreshes will empty trash cans, restock toilet paper, towels, water bottles, and make the bed. Room refreshes are complementary and will be completed between 11AM-1PM
 
-### Do you Have an Emergency Number?
+### Do you rave an emergency number?
 
 Texts received between the hours of 7PM to 7AM will not be seen/addressed by your innkeeper until the following morning. In the even of an emergency, please call our overnight phone number: 540-319-3889
 

@@ -12,6 +12,9 @@ uglyURLs = true
 
 [module]
   [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
     source = "media"
     target = "assets/media"
   [[module.mounts]]

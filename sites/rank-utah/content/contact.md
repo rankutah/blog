@@ -8,7 +8,7 @@ url: "/contact"
 
 {{< section >}}
 
-# Get in touch
+# Contact
 
 After hours? Leave a voicemail, text or email and I'll get back to you the next business day.
 

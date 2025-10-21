@@ -1,5 +1,5 @@
-{{- /* Markdown image render hook: responsive srcset (for Page Resources),
-     site defaults, and an LCP toggle.
+{{- /* Markdown image render hook: standardized manifest-based responsive images.
+     This routes all Markdown images through the prebuilt derivatives manifest (Option B).
 
    Optional site defaults (config.toml):
    [params.images]
@@ -7,10 +7,10 @@
      defaultSizes   = "(min-width:1024px) 800px, 100vw"
 
    Usage:
-     ![Alt](carwash.jpg){ .rounded-xl }                         // lazy by default
-     ![Hero](hero.jpg){ lcp="true" class="rounded-xl" }         // eager + high priority
-     [![Alt](pic.jpg){ .rounded-xl } ](/contact/)               // wrapped link via Markdown
-     ![Alt](pic.jpg){ link="/contact/" caption="Caption" }      // link/caption via attrs
+     ![Alt](carwash.jpg){ .rounded-xl }
+     ![Hero](hero.jpg){ lcp="true" class="rounded-xl" }
+     [![Alt](pic.jpg){ .rounded-xl } ](/contact/)
+     ![Alt](pic.jpg){ link="/contact/" caption="Caption" }
 */ -}}
 
 {{- $site       := .Page.Site -}}
@@ -24,13 +24,12 @@
 
 {{- $isLCP      := eq (.Attributes.lcp | default "") "true" -}}
 {{- $loading    := cond $isLCP "eager" (.Attributes.loading | default "lazy") -}}
-{{- $fetchprio  := cond $isLCP "high"  (.Attributes.fetchpriority | default "") -}}
 {{- $decoding   := .Attributes.decoding | default "async" -}}
 {{- $sizesAttr  := .Attributes.sizes    | default $defSizes -}}
-{{- $widthAttr  := .Attributes.width    | default "" -}}
-{{- $heightAttr := .Attributes.height   | default "" -}}
 {{- $linkAttr   := .Attributes.link     | default "" -}}
 {{- $caption    := .Attributes.caption  | default "" -}}
+{{- $object     := lower (.Attributes.object | default "cover") -}}
+{{- $objectPos  := .Attributes.objectposition | default .Attributes.objectPosition | default "center" -}}
 
 {{- /* Optional: override sizes via semantic class tokens when author hasn't provided sizes */ -}}
 {{- if and (eq (.Attributes.sizes | default "") "") (ne $attrClass "") -}}
@@ -43,131 +42,36 @@
     {{- $sizesAttr = "(min-width:1024px) 560px, (min-width:768px) 480px, 94vw" -}}
   {{- else if in $cls " img-lg " -}}
     {{- $sizesAttr = "(min-width:1536px) 800px, (min-width:1024px) 640px, (min-width:768px) 560px, 96vw" -}}
-  {{- end -}}
-{{- end -}}
-
-{{- $src        := .Destination -}}
-{{- $srcset     := slice -}}
-{{- $srcsetAvif := slice -}}
-{{- $wHint  := 0 -}}
-{{- $hHint  := 0 -}}
-{{- $isPR   := false -}}
-
-{{/* Build responsive variants only if the image is a Page Resource; include AVIF srcset too */}}
-{{- $match := .Page.Resources.GetMatch (printf "**%s" (path.Base $src)) -}}
-{{- if $match -}}
-  {{- $isPR = true -}}
-  {{- $img := $match -}}
-  {{- $origW := $img.Width | default 0 -}}
-  {{- $widths := slice 240 360 480 720 960 1080 1440 1920 -}}
-  {{- $last := "" -}}
-  {{- range $w := $widths -}}
-    {{- if or (eq $origW 0) (ge $origW $w) -}}
-      {{- $r := $img.Resize (printf "%dx" $w) -}}
-      {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
-      {{- $last = $r.RelPermalink -}}
-      {{- $ravif := $img.Resize (printf "%dx avif" $w) -}}
-      {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
-    {{- end -}}
-  {{- end -}}
-  {{- if ne $last "" }}{{ $src = $last }}{{ end -}}
-  {{- $wHint = $img.Width | default 0 -}}
-  {{- $hHint = $img.Height | default 0 -}}
-{{- end -}}
-
-{{- /* If author provided only width or only height, compute the missing side from intrinsic hints when available */ -}}
-{{- if and (ne $widthAttr "") (eq $heightAttr "") (gt $wHint 0) (gt $hHint 0) -}}
-  {{- /* height = round(width * hHint / wHint) */ -}}
-  {{- $heightAttr = printf "%d" (div (mul (int $widthAttr) $hHint) $wHint) -}}
-{{- else if and (ne $heightAttr "") (eq $widthAttr "") (gt $wHint 0) (gt $hHint 0) -}}
-  {{- /* width = round(height * wHint / hHint) */ -}}
-  {{- $widthAttr = printf "%d" (div (mul (int $heightAttr) $wHint) $hHint) -}}
-{{- end -}}
-
-{{- /* If not a Page Resource, try to process static media via assets/media mount */ -}}
-{{- $hasStaticAvif := false -}}
-{{- $avifPath := "" -}}
-{{- if and (not $isPR) (findRE `(^|/)media/[^?#]+\.(jpg|jpeg|png|webp)$` $src) -}}
-  {{- /* Normalize leading /, ./, ../ so resources.Get resolves against assets/ mounts */ -}}
-  {{- $clean := replaceRE `^(/|\./|\.\./)+` "" $src -}}
-  {{- $asset := resources.Get $clean -}}
-  {{- if $asset -}}
-    {{- $origW := $asset.Width | default 0 -}}
-  {{- $widths := slice 240 360 480 720 960 1080 1440 1920 -}}
-    {{- $last := "" -}}
-    {{- range $w := $widths -}}
-      {{- if or (eq $origW 0) (ge $origW $w) -}}
-        {{- $r := $asset.Resize (printf "%dx" $w) -}}
-        {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
-        {{- $last = $r.RelPermalink -}}
-        {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
-        {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
-      {{- end -}}
-    {{- end -}}
-    {{- if ne $last "" }}{{ $src = $last }}{{ end -}}
-    {{- $wHint = $asset.Width | default 0 -}}
-    {{- $hHint = $asset.Height | default 0 -}}
-    {{- $hasStaticAvif = gt (len $srcsetAvif) 0 -}}
   {{- else -}}
-    {{- /* Fallback: just reference potential .avif sibling by path */ -}}
-    {{- $avifPath = replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $src -}}
-    {{- $hasStaticAvif = true -}}
-  {{- end -}}
-{{- else if and (not $isPR) (findRE `(^|/)media/[^?#]+\.avif$` $src) -}}
-  {{- /* Author linked directly to a static AVIF. We cannot read dimensions from AVIF safely. */ -}}
-  {{- $avifPath = $src -}}
-  {{- $hasStaticAvif = true -}}
-  {{- /* Try to locate a sibling raster file to infer width/height and serve as <img> fallback */ -}}
-  {{- /* Normalize leading /, ./, ../ for sibling lookup */ -}}
-  {{- $clean := replaceRE `^(/|\./|\.\./)+` "" $src -}}
-  {{- $base := replaceRE `\.avif$` "" $clean -}}
-  {{- $candidates := slice "jpg" "jpeg" "png" "webp" -}}
-  {{- range $ext := $candidates -}}
-    {{- if and (eq $wHint 0) (eq $hHint 0) -}}
-      {{- $cand := resources.Get (printf "%s.%s" $base $ext) -}}
-      {{- if $cand -}}
-        {{- /* Set intrinsic dimension hints and use the sibling as the <img> fallback src */ -}}
-        {{- $wHint = $cand.Width | default 0 -}}
-        {{- $hHint = $cand.Height | default 0 -}}
-        {{- $src = $cand.RelPermalink -}}
+    {{- /* Heuristic: detect common Tailwind fixed widths (w-16, w-24, w-32, w-48, w-64, w-72, w-80, w-96) and set a fixed sizes value. */ -}}
+    {{- $fixedMap := dict "w-16" 64 "w-20" 80 "w-24" 96 "w-28" 112 "w-32" 128 "w-36" 144 "w-40" 160 "w-44" 176 "w-48" 192 "w-56" 224 "w-64" 256 "w-72" 288 "w-80" 320 "w-96" 384 -}}
+    {{- range $k, $px := $fixedMap -}}
+      {{- if and (eq $sizesAttr $defSizes) (in $cls (printf " %s " $k)) -}}
+        {{- $sizesAttr = printf "%dpx" $px -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- /* Build <img> fallback tag (uses srcset if PR) */ -}}
-{{- $imgTag := printf `<img src="%s"%s%s alt="%s"%s%s%s%s loading="%s" decoding="%s" />`
-  $src
-  (cond (gt (len $srcset) 0) (printf ` srcset="%s"` (delimit $srcset ", ")) "")
-  (cond (gt (len $srcset) 0) (printf ` sizes="%s"` $sizesAttr) "")
-  (printf "%s" $alt)
-  (cond (ne $widthAttr  "") (printf ` width="%s"`  $widthAttr)  (cond (gt $wHint 0) (printf ` width="%d"`  $wHint)  "" ))
-  (cond (ne $heightAttr "") (printf ` height="%s"` $heightAttr) (cond (gt $hHint 0) (printf ` height="%d"`  $hHint) "" ))
-  (cond (ne $fetchprio  "") (printf ` fetchpriority="%s"` $fetchprio) "")
-  (cond (ne $class      "") (printf ` class="%s"`  $class)      "")
-  $loading
-  $decoding
-}}
-
-{{- /* Build either <picture> with AVIF or plain <img> */ -}}
-{{- $content := "" -}}
-{{- if or (gt (len $srcsetAvif) 0) $hasStaticAvif -}}
-  {{- if gt (len $srcsetAvif) 0 -}}
-    {{- $content = printf `<picture><source type="image/avif" srcset="%s" sizes="%s" />%s</picture>` (delimit $srcsetAvif ", ") $sizesAttr $imgTag -}}
-  {{- else -}}
-    {{- $content = printf `<picture><source type="image/avif" srcset="%s" />%s</picture>` $avifPath $imgTag -}}
-  {{- end -}}
-{{- else -}}
-  {{- $content = $imgTag -}}
-{{- end -}}
+{{- $src := .Destination -}}
+{{- $picture := partial "img.manifest" (dict
+    "src" $src
+    "alt" $alt
+    "class" $class
+    "loading" $loading
+    "decoding" $decoding
+    "sizes" $sizesAttr
+    "object" $object
+    "objectPosition" $objectPos
+  ) -}}
 
 {{- if or (ne $linkAttr "") (ne $caption "") -}}
   <figure>
     {{- if ne $linkAttr "" -}}<a href="{{ $linkAttr }}">{{ end -}}
-      {{- $content | safeHTML -}}
+      {{- $picture | safeHTML -}}
     {{- if ne $linkAttr "" -}}</a>{{ end -}}
     {{- if ne $caption "" -}}<figcaption class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ $caption }}</figcaption>{{ end -}}
   </figure>
 {{- else -}}
-  {{- $content | safeHTML -}}
+  {{- $picture | safeHTML -}}
 {{- end -}}

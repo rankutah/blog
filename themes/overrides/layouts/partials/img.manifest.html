@@ -1,0 +1,109 @@
+{{/* Render a responsive image using a prebuilt manifest (Option B). */}}
+{{- $src := .src | default .Src | default "" -}}
+{{- $alt := .alt | default .Alt | default "" -}}
+{{- $class := .class | default .Class | default "" -}}
+{{- $loading := lower (.loading | default .Loading | default "lazy") -}}
+{{- $decoding := lower (.decoding | default .Decoding | default "async") -}}
+{{- $sizes := .sizes | default .Sizes | default "100vw" -}}
+{{- $fetchpri := cond (eq $loading "eager") "high" "low" -}}
+{{- $style := .style | default .Style | default "" -}}
+{{- $object := .object | default .Object | default "cover" -}}
+{{- $objectPos := .objectPosition | default .object_position | default .objectposition | default "center" -}}
+{{- $classes := (printf "object-%s object-%s %s" $object $objectPos $class) -}}
+
+{{- /* Access site data via the global 'site' (since '.' is a dict when called from partials/shortcodes).
+  The manifest filename includes a dot, so use index() with the full basename. */ -}}
+{{- $m := index site.Data "images.manifest" -}}
+{{- /* Normalize the key: strip protocol/host if present, ensure leading slash */ -}}
+{{- $key := $src -}}
+{{- if $key -}}
+  {{- $key = (replaceRE "^https?://[^/]+" "" $key) -}}
+  {{- /* Normalize relative path segments like ../ and ./ that can appear in content */ -}}
+  {{- /* Remove any leading ../ segments */ -}}
+  {{- $key = (replace $key "../" "") -}}
+  {{- /* Remove any ./ segments */ -}}
+  {{- $key = (replace $key "./" "") -}}
+  {{- if not (hasPrefix $key "/") -}}
+    {{- $key = (printf "/%s" $key) -}}
+  {{- end -}}
+{{- end -}}
+{{- $entry := (cond $m (index $m $key) nil) -}}
+{{- if not $entry -}}
+  {{- /* Try swapping between .jpg and .avif keys if manifest was keyed by the other */ -}}
+  {{- if (hasSuffix $key ".jpg") -}}
+    {{- $altKey := replace $key ".jpg" ".avif" -}}
+    {{- if and $m (isset $m $altKey) -}}
+      {{- $entry = index $m $altKey -}}
+    {{- end -}}
+  {{- else if (hasSuffix $key ".jpeg") -}}
+    {{- $altKey := replace $key ".jpeg" ".avif" -}}
+    {{- if and $m (isset $m $altKey) -}}
+      {{- $entry = index $m $altKey -}}
+    {{- end -}}
+  {{- else if (hasSuffix $key ".avif") -}}
+    {{- $altKey := replace $key ".avif" ".jpg" -}}
+    {{- if and $m (isset $m $altKey) -}}
+      {{- $entry = index $m $altKey -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $entry -}}
+  {{/* Fallback: render plain image (debug: print key) */}}
+  <img src="{{ $src | relURL }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="{{ $decoding }}" fetchpriority="{{ $fetchpri }}" class="{{ $classes }}" {{ with $style }}style="{{ . | safeCSS }}"{{ end }}>
+{{- else -}}
+  {{- $avif := $entry.variants.avif | default slice -}}
+  {{- $webp := $entry.variants.webp | default slice -}}
+  {{- $jpeg := $entry.variants.jpeg | default slice -}}
+  {{- $w := $entry.width | default 0 -}}
+  {{- $h := $entry.height | default 0 -}}
+  {{- $placeholder := $entry.placeholder | default "" -}}
+  {{- /* Choose a reasonable default src: largest JPEG */ -}}
+  {{- $srcFallback := (cond (gt (len $jpeg) 0) (index $jpeg (sub (len $jpeg) 1)).url $src) -}}
+  {{- $styleAttr := $style -}}
+  {{- $imgStyle := "" -}}
+  {{- /* If used in hero context (absolute inset, w-full h-full), skip aspect-ratio to allow full viewport fill */ -}}
+  {{- $isHero := in $class "absolute" | and (in $class "inset-0") | and (in $class "w-full") | and (in $class "h-full") -}}
+  {{- /* Detect explicit height in the provided style (50vh, 100svh, 100dvh, etc.). If present, skip aspect-ratio to avoid the browser computing an oversized width from height. */ -}}
+  {{- $hasHeightInStyle := and (ne $style "") (gt (len (findRE `\b[0-9.]+(?:vh|svh|dvh)\b` $style)) 0) -}}
+  {{- /* If we have an explicit viewport height or this is a hero, make the picture a block so height applies. */ -}}
+  {{- if or $hasHeightInStyle $isHero -}}
+    {{- /* If the style contains a viewport-height token, move that style to the inner <img> so object-cover crops correctly (matches upstream). */ -}}
+    {{- if $hasHeightInStyle -}}
+      {{- $imgStyle = $style -}}
+      {{- /* ensure picture is still display:block but don't duplicate the height on the picture */ -}}
+      {{- $styleAttr = "display:block;" -}}
+    {{- else -}}
+      {{- /* hero without explicit viewport token: keep display:block on picture and any other styles */ -}}
+      {{- $styleAttr = (printf "display:block; %s" $styleAttr) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- /* Only add aspect-ratio if we don't have a hero or an explicit height in style (we already prefixed display:block above when needed). */ -}}
+  {{- if and (not $isHero) (not $hasHeightInStyle) $w $h -}}
+    {{- $styleAttr = (printf "aspect-ratio:%v/%v; %s" $w $h $styleAttr) -}}
+  {{- end -}}
+  <picture {{ with $styleAttr }}style="{{ . | safeCSS }}"{{ end }}>
+    {{- if gt (len $avif) 0 -}}<source type="image/avif" srcset="{{- range $i, $v := $avif -}}{{ if $i }}, {{ end }}{{ $v.url | safeURL }} {{ $v.w }}w{{- end -}}" sizes="{{ $sizes }}">{{- end -}}
+    {{- if gt (len $webp) 0 -}}<source type="image/webp" srcset="{{- range $i, $v := $webp -}}{{ if $i }}, {{ end }}{{ $v.url | safeURL }} {{ $v.w }}w{{- end -}}" sizes="{{ $sizes }}">{{- end -}}
+    {{- /* Combine placeholder background style and any moved img styles */ -}}
+    {{- $imgStyleAttr := $imgStyle -}}
+    {{- if $placeholder -}}
+      {{- $ph := printf "background-image:url('%s');background-size:cover;background-position:center;" $placeholder -}}
+      {{- if ne $imgStyleAttr "" -}}
+        {{- $imgStyleAttr = printf "%s %s" $ph $imgStyleAttr -}}
+      {{- else -}}
+        {{- $imgStyleAttr = $ph -}}
+      {{- end -}}
+    {{- end -}}
+    <img src="{{ $srcFallback }}"
+         alt="{{ $alt }}"
+         loading="{{ $loading }}"
+         decoding="{{ $decoding }}"
+         fetchpriority="{{ $fetchpri }}"
+         sizes="{{ $sizes }}"
+         {{ if gt (len $jpeg) 0 }}srcset="{{- range $i, $v := $jpeg -}}{{ if $i }}, {{ end }}{{ $v.url | safeURL }} {{ $v.w }}w{{- end -}}"{{ end }}
+         {{ if $w }}width="{{ $w }}"{{ end }} {{ if $h }}height="{{ $h }}"{{ end }}
+         class="block {{ $classes }}"
+         {{ with $imgStyleAttr }}style="{{ . | safeCSS }}"{{ end }}>
+  </picture>
+{{- end -}}

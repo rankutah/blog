@@ -64,9 +64,17 @@
       {{- $src := $img.src -}}
       {{- $alt := (cond (ne ($img.alt | default "") "") $img.alt (printf "Slide %d" (add $i 1))) -}}
       <div class="lite-slide" data-index="{{ $i }}" style="position:absolute;inset:0;transition:transform {{ $duration }}ms ease-in-out;will-change:transform;">
-        <img src="{{ $src }}" alt="{{ $alt }}"
-             loading="{{ $loading }}" decoding="async" fetchpriority="{{ $fetchpri }}"
-             class="absolute inset-0 w-full h-full object-cover object-center">
+        {{- /* Always try manifest-based responsive rendering; partial will fallback to plain <img> when manifest key is missing */ -}}
+        {{- partial "img.manifest" (dict
+            "src" $src
+            "alt" $alt
+            "class" "absolute inset-0 w-full h-full"
+            "object" "cover"
+            "objectPosition" "center"
+            "loading" $loading
+            "decoding" "async"
+            "sizes" "100vw"
+          ) -}}
       </div>
     {{- end -}}
     <div class="lite-dots" style="position:absolute;left:50%;transform:translateX(-50%);bottom:1.25rem;z-index:30;display:flex;gap:0.75rem;">

@@ -1,0 +1,4658 @@
+{
+  "/media/carwash.jpg": {
+    "width": 1439,
+    "height": 806,
+    "aspect": 1.7853598014888337,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAnEAABAwMCBQUBAAAAAAAAAAABAgMRAAQhEhMFIjJBYRQxQlNxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABkRAQEBAQEBAAAAAAAAAAAAAAEAMRECUf/aAAwDAQACEQMRAD8AXsr11iN9BdaSI1AzpFbX7zV0A6lSV6VZnsD7CPFYh5p1p1phLZcVjlk11u0cYUlanGhImDIKh/cVPyBR3wC+doYOBFUE37Fi0hIYUv8ATAmhz0iiUK1Na/rVqFKXdohtMpdMT8gazz0p4z/DeRuU8p8YpjjK173UroHeiik7RlLJOy9k4VA8UxbkwEydJSMdqKKRjF0v/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carwash__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carwash__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carwash__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carwash__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carwash__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/carwash__w1200.avif"
+        },
+        {
+          "w": 1439,
+          "url": "/media-deriv/carwash__w1439.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carwash__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carwash__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carwash__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carwash__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carwash__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/carwash__w1200.webp"
+        },
+        {
+          "w": 1439,
+          "url": "/media-deriv/carwash__w1439.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carwash__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carwash__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carwash__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carwash__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carwash__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/carwash__w1200.jpg"
+        },
+        {
+          "w": 1439,
+          "url": "/media-deriv/carwash__w1439.jpg"
+        }
+      ]
+    }
+  },
+  "/media/carwash.avif": {
+    "width": 1439,
+    "height": 806,
+    "aspect": 1.7853598014888337,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAnEAABAwMCBQUBAAAAAAAAAAABAgMRAAQhEhMFIjJBYRQxQlNxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABkRAQEBAQEBAAAAAAAAAAAAAAEAMRECUf/aAAwDAQACEQMRAD8AXsr11iN9BdaSI1AzpFbX7zV0A6lSV6VZnsD7CPFYh5p1p1phLZcVjlk11u0cYUlanGhImDIKh/cVPyBR3wC+doYOBFUE37Fi0hIYUv8ATAmhz0iiUK1Na/rVqFKXdohtMpdMT8gazz0p4z/DeRuU8p8YpjjK173UroHeiik7RlLJOy9k4VA8UxbkwEydJSMdqKKRjF0v/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carwash__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carwash__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carwash__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carwash__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carwash__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/carwash__w1200.avif"
+        },
+        {
+          "w": 1439,
+          "url": "/media-deriv/carwash__w1439.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carwash__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carwash__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carwash__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carwash__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carwash__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/carwash__w1200.webp"
+        },
+        {
+          "w": 1439,
+          "url": "/media-deriv/carwash__w1439.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carwash__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carwash__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carwash__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carwash__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carwash__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/carwash__w1200.jpg"
+        },
+        {
+          "w": 1439,
+          "url": "/media-deriv/carwash__w1439.jpg"
+        }
+      ]
+    }
+  },
+  "/media/clear-presence-image-of-small-business.jpg": {
+    "width": 1021,
+    "height": 499,
+    "aspect": 2.0460921843687374,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAgQBAwb/xAAgEAACAgIBBQEAAAAAAAAAAAABAgMRACEEEhNBcqGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQISIf/aAAwDAQACEQMRAD8AzIaXdR/MainmbjyIEAIphr8OCijXVGx9Rd5dw5OKZAZXZALBULesTXSuRNmmGyvzBMreUF465R3JRx2VNW1DIpWFhCwOrTeHQyf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w960.avif"
+        },
+        {
+          "w": 1021,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w1021.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w960.webp"
+        },
+        {
+          "w": 1021,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w1021.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w960.jpg"
+        },
+        {
+          "w": 1021,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w1021.jpg"
+        }
+      ]
+    }
+  },
+  "/media/clear-presence-image-of-small-business.avif": {
+    "width": 1021,
+    "height": 499,
+    "aspect": 2.0460921843687374,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAgQBAwb/xAAgEAACAgIBBQEAAAAAAAAAAAABAgMRACEEEhNBcqGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQISIf/aAAwDAQACEQMRAD8AzIaXdR/MainmbjyIEAIphr8OCijXVGx9Rd5dw5OKZAZXZALBULesTXSuRNmmGyvzBMreUF465R3JRx2VNW1DIpWFhCwOrTeHQyf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w960.avif"
+        },
+        {
+          "w": 1021,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w1021.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w960.webp"
+        },
+        {
+          "w": 1021,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w1021.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w960.jpg"
+        },
+        {
+          "w": 1021,
+          "url": "/media-deriv/clear-presence-image-of-small-business__w1021.jpg"
+        }
+      ]
+    }
+  },
+  "/media/competitor backlink analysis.jpg": {
+    "width": 1200,
+    "height": 283,
+    "aspect": 4.240282685512367,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECESExJEHw/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDWXyJRemiopW79gAaFUsYDiq10ABf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/competitor backlink analysis__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/competitor backlink analysis__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/competitor backlink analysis__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/competitor backlink analysis__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/competitor backlink analysis__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/competitor backlink analysis__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/competitor backlink analysis__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/competitor backlink analysis__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/competitor backlink analysis__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/competitor backlink analysis__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/competitor backlink analysis__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/competitor backlink analysis__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/competitor backlink analysis__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/competitor backlink analysis__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/competitor backlink analysis__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/competitor backlink analysis__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/competitor backlink analysis__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/competitor backlink analysis__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/competitor backlink analysis.avif": {
+    "width": 1200,
+    "height": 283,
+    "aspect": 4.240282685512367,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECESExJEHw/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDWXyJRemiopW79gAaFUsYDiq10ABf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/competitor backlink analysis__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/competitor backlink analysis__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/competitor backlink analysis__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/competitor backlink analysis__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/competitor backlink analysis__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/competitor backlink analysis__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/competitor backlink analysis__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/competitor backlink analysis__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/competitor backlink analysis__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/competitor backlink analysis__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/competitor backlink analysis__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/competitor backlink analysis__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/competitor backlink analysis__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/competitor backlink analysis__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/competitor backlink analysis__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/competitor backlink analysis__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/competitor backlink analysis__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/competitor backlink analysis__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/google-business-profile-audit.jpg": {
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAgQBBQMGB//EACUQAAIBAwQCAgMBAAAAAAAAAAECAwAEERIhMVEFEyJBFLHw8f/EABYBAQEBAAAAAAAAAAAAAAAAAAQCAf/EABsRAAICAwEAAAAAAAAAAAAAAAABAhIDETEh/9oADAMBAAIRAxEAPwDXkDal0Z1E7Y7rpVussdnEsrBpVjAZj9nFUPhPHem3iWdB7C/sIP0eP1Vt5C4NvJEUgknJB+KNistZ6RUo1Xo1pLqmpl143xwe6MbbHY0nZyflAzel43jJUK+xzimEJliDONLc46qedJXNitqFk1FT8hyDQ++MyMZSo4C6h/d0srFGypwexQLZrc3OozSRSEbFTtRcGaLaUhWTG/Wi2tpEcyesgrkYx1gVKHXM5VmCr8CpGBnul7XAd1BAbH+1nZsnnikX2HmqvR//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-business-profile-audit__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-business-profile-audit__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-business-profile-audit__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-business-profile-audit__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-business-profile-audit__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/google-business-profile-audit__w1024.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-business-profile-audit__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-business-profile-audit__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-business-profile-audit__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-business-profile-audit__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-business-profile-audit__w960.webp"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/google-business-profile-audit__w1024.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-business-profile-audit__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-business-profile-audit__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-business-profile-audit__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-business-profile-audit__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-business-profile-audit__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/google-business-profile-audit__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/google-business-profile-audit.avif": {
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAgQBBQMGB//EACUQAAIBAwQCAgMBAAAAAAAAAAECAwAEERIhMVEFEyJBFLHw8f/EABYBAQEBAAAAAAAAAAAAAAAAAAQCAf/EABsRAAICAwEAAAAAAAAAAAAAAAABAhIDETEh/9oADAMBAAIRAxEAPwDXkDal0Z1E7Y7rpVussdnEsrBpVjAZj9nFUPhPHem3iWdB7C/sIP0eP1Vt5C4NvJEUgknJB+KNistZ6RUo1Xo1pLqmpl143xwe6MbbHY0nZyflAzel43jJUK+xzimEJliDONLc46qedJXNitqFk1FT8hyDQ++MyMZSo4C6h/d0srFGypwexQLZrc3OozSRSEbFTtRcGaLaUhWTG/Wi2tpEcyesgrkYx1gVKHXM5VmCr8CpGBnul7XAd1BAbH+1nZsnnikX2HmqvR//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-business-profile-audit__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-business-profile-audit__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-business-profile-audit__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-business-profile-audit__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-business-profile-audit__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/google-business-profile-audit__w1024.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-business-profile-audit__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-business-profile-audit__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-business-profile-audit__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-business-profile-audit__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-business-profile-audit__w960.webp"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/google-business-profile-audit__w1024.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-business-profile-audit__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-business-profile-audit__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-business-profile-audit__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-business-profile-audit__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-business-profile-audit__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/google-business-profile-audit__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/lit-g.jpg": {
+    "width": 1000,
+    "height": 231,
+    "aspect": 4.329004329004329,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EACEQAAIBAwMFAAAAAAAAAAAAAAECAAMRIQQFMQYSE1Fx/8QAFgEBAQEAAAAAAAAAAAAAAAAABAED/8QAGxEBAAIDAQEAAAAAAAAAAAAAAQACESExAxL/2gAMAwEAAhEDEQA/AOCmpNML4yRbnNxLLuBPKkkejERB6WNDCNK9xNVDeKlMYRT9UGUfqbUDKoi2zbtveIk+l2zXgYn/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lit-g__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lit-g__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lit-g__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lit-g__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lit-g__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/lit-g__w1000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lit-g__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lit-g__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lit-g__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lit-g__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lit-g__w960.webp"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/lit-g__w1000.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lit-g__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lit-g__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lit-g__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lit-g__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lit-g__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/lit-g__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/lit-g.avif": {
+    "width": 1000,
+    "height": 231,
+    "aspect": 4.329004329004329,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EACEQAAIBAwMFAAAAAAAAAAAAAAECAAMRIQQFMQYSE1Fx/8QAFgEBAQEAAAAAAAAAAAAAAAAABAED/8QAGxEBAAIDAQEAAAAAAAAAAAAAAQACESExAxL/2gAMAwEAAhEDEQA/AOCmpNML4yRbnNxLLuBPKkkejERB6WNDCNK9xNVDeKlMYRT9UGUfqbUDKoi2zbtveIk+l2zXgYn/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lit-g__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lit-g__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lit-g__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lit-g__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lit-g__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/lit-g__w1000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lit-g__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lit-g__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lit-g__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lit-g__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lit-g__w960.webp"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/lit-g__w1000.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lit-g__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lit-g__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lit-g__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lit-g__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lit-g__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/lit-g__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-seo-analytics-report.jpg": {
+    "width": 2049,
+    "height": 1582,
+    "aspect": 1.2951959544879899,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABsQAQACAwEBAAAAAAAAAAAAAAEAAhEhMUFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDrQ++7m3ByRrkXD2BZ8OwyWybisD3UAspVa9lRWg2MKbIkpUMoSkV//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-analytics-report__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-analytics-report__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-analytics-report__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-analytics-report__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-analytics-report__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-analytics-report__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-analytics-report__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-seo-analytics-report__w2000.avif"
+        },
+        {
+          "w": 2049,
+          "url": "/media-deriv/local-seo-analytics-report__w2049.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-analytics-report__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-analytics-report__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-analytics-report__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-analytics-report__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-analytics-report__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-analytics-report__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-analytics-report__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-seo-analytics-report__w2000.webp"
+        },
+        {
+          "w": 2049,
+          "url": "/media-deriv/local-seo-analytics-report__w2049.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-analytics-report__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-analytics-report__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-analytics-report__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-analytics-report__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-analytics-report__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-analytics-report__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-analytics-report__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-seo-analytics-report__w2000.jpg"
+        },
+        {
+          "w": 2049,
+          "url": "/media-deriv/local-seo-analytics-report__w2049.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-seo-analytics-report.avif": {
+    "width": 2049,
+    "height": 1582,
+    "aspect": 1.2951959544879899,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABsQAQACAwEBAAAAAAAAAAAAAAEAAhEhMUFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDrQ++7m3ByRrkXD2BZ8OwyWybisD3UAspVa9lRWg2MKbIkpUMoSkV//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-analytics-report__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-analytics-report__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-analytics-report__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-analytics-report__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-analytics-report__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-analytics-report__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-analytics-report__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-seo-analytics-report__w2000.avif"
+        },
+        {
+          "w": 2049,
+          "url": "/media-deriv/local-seo-analytics-report__w2049.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-analytics-report__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-analytics-report__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-analytics-report__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-analytics-report__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-analytics-report__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-analytics-report__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-analytics-report__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-seo-analytics-report__w2000.webp"
+        },
+        {
+          "w": 2049,
+          "url": "/media-deriv/local-seo-analytics-report__w2049.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-analytics-report__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-analytics-report__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-analytics-report__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-analytics-report__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-analytics-report__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-analytics-report__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-analytics-report__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-seo-analytics-report__w2000.jpg"
+        },
+        {
+          "w": 2049,
+          "url": "/media-deriv/local-seo-analytics-report__w2049.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-seo-lead-generation-factors.jpg": {
+    "width": 667,
+    "height": 371,
+    "aspect": 1.797843665768194,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGAQL/xAAiEAABBAEDBQEAAAAAAAAAAAABAAIDEQQFITESMlGRoVL/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAgME/8QAGxEAAwACAwAAAAAAAAAAAAAAAAECAyEREjH/2gAMAwEAAhEDEQA/AK7ck7H2UrPqMEM4ht7n3Ro7BO26+0e1Jarh5mPmSydEjo3vLmvYCRv5rhRbaWiKbXhRY+pwzPEZuN7tmhx5TfU78/VG6Zp+XlZ0UhZIGMeHOkeCODe18qyp193xdGSZXHViKbWzpYUIWRYBahCA/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w640.avif"
+        },
+        {
+          "w": 667,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w667.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w640.webp"
+        },
+        {
+          "w": 667,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w667.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w640.jpg"
+        },
+        {
+          "w": 667,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w667.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-seo-lead-generation-factors.avif": {
+    "width": 667,
+    "height": 371,
+    "aspect": 1.797843665768194,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGAQL/xAAiEAABBAEDBQEAAAAAAAAAAAABAAIDEQQFITESMlGRoVL/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAgME/8QAGxEAAwACAwAAAAAAAAAAAAAAAAECAyEREjH/2gAMAwEAAhEDEQA/AK7ck7H2UrPqMEM4ht7n3Ro7BO26+0e1Jarh5mPmSydEjo3vLmvYCRv5rhRbaWiKbXhRY+pwzPEZuN7tmhx5TfU78/VG6Zp+XlZ0UhZIGMeHOkeCODe18qyp193xdGSZXHViKbWzpYUIWRYBahCA/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w640.avif"
+        },
+        {
+          "w": 667,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w667.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w640.webp"
+        },
+        {
+          "w": 667,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w667.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w640.jpg"
+        },
+        {
+          "w": 667,
+          "url": "/media-deriv/local-seo-lead-generation-factors__w667.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-seo-report.jpg": {
+    "width": 1713,
+    "height": 1586,
+    "aspect": 1.080075662042875,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAeACADASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAQACAwb/xAAgEAACAgICAgMAAAAAAAAAAAAAAREhEjECUQNhQXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDr1xUroYVQKS+whZTPxoBb6dg8XTf4KW32CW3OwEMuOWOSyjRezB+NPyLndXHuIKjZQUlBERX/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-report__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-report__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-report__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-report__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-report__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-report__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-report__w1600.avif"
+        },
+        {
+          "w": 1713,
+          "url": "/media-deriv/local-seo-report__w1713.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-report__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-report__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-report__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-report__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-report__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-report__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-report__w1600.webp"
+        },
+        {
+          "w": 1713,
+          "url": "/media-deriv/local-seo-report__w1713.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-report__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-report__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-report__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-report__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-report__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-report__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-report__w1600.jpg"
+        },
+        {
+          "w": 1713,
+          "url": "/media-deriv/local-seo-report__w1713.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-seo-report.avif": {
+    "width": 1713,
+    "height": 1586,
+    "aspect": 1.080075662042875,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAeACADASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAQACAwb/xAAgEAACAgICAgMAAAAAAAAAAAAAAREhEjECUQNhQXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDr1xUroYVQKS+whZTPxoBb6dg8XTf4KW32CW3OwEMuOWOSyjRezB+NPyLndXHuIKjZQUlBERX/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-report__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-report__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-report__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-report__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-report__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-report__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-report__w1600.avif"
+        },
+        {
+          "w": 1713,
+          "url": "/media-deriv/local-seo-report__w1713.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-report__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-report__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-report__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-report__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-report__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-report__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-report__w1600.webp"
+        },
+        {
+          "w": 1713,
+          "url": "/media-deriv/local-seo-report__w1713.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-seo-report__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-seo-report__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-seo-report__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-seo-report__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-seo-report__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-seo-report__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-seo-report__w1600.jpg"
+        },
+        {
+          "w": 1713,
+          "url": "/media-deriv/local-seo-report__w1713.jpg"
+        }
+      ]
+    }
+  },
+  "/media/logo.jpg": {
+    "width": 150,
+    "height": 150,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAwQFAAEG/8QAKhAAAgEDAgQGAgMAAAAAAAAAAQIDBAURABITITFRMjNBUmFxBiKhwdH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAwH/xAAZEQACAwEAAAAAAAAAAAAAAAAAMgECIWH/2gAMAwEAAhEDEQA/AOetdsWpR6qrcxUkZwSPE7e1fn59NVhXwUnBSjpKeHiEYJUO23OMknvz1q4majgpqSmVtsMK52pnLEZJ6fOgzzV63KONUfYpjXyQR0GeePvVspHSbBzcIKrjR1lLTz8MnOECNtzjkR25alXS2JTxrVUbmWkkOAT4o29rf766ehmrmuckbI/DYyL5I7HHp9aNbDNWRz0dSrbZ4mHNMYYDKnp3GmXjoUy5Casip6umZts8K+F8YYDBHXuNAnhr2uccis+xjG3mjHQZ9fvSVruaQRtSVqGSkc5/XxRt7h/Y1WW2JViF6KeGpEbDG1gG25zzU8wRz0y8dCi8MFctzkkZn2KZG80Y6HHr9aYtcdRRxzVlTv2QQs2WbILEYA69zp23WNI6iaWvaONXJyGdc7c5/nlpH8qvdNPEtvt23gKcyOo5MR0A7/esQMf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 150,
+          "url": "/media-deriv/logo__w150.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 150,
+          "url": "/media-deriv/logo__w150.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 150,
+          "url": "/media-deriv/logo__w150.jpg"
+        }
+      ]
+    }
+  },
+  "/media/logo.avif": {
+    "width": 150,
+    "height": 150,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAwQFAAEG/8QAKhAAAgEDAgQGAgMAAAAAAAAAAQIDBAURABITITFRMjNBUmFxBiKhwdH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAwH/xAAZEQACAwEAAAAAAAAAAAAAAAAAMgECIWH/2gAMAwEAAhEDEQA/AOetdsWpR6qrcxUkZwSPE7e1fn59NVhXwUnBSjpKeHiEYJUO23OMknvz1q4majgpqSmVtsMK52pnLEZJ6fOgzzV63KONUfYpjXyQR0GeePvVspHSbBzcIKrjR1lLTz8MnOECNtzjkR25alXS2JTxrVUbmWkkOAT4o29rf766ehmrmuckbI/DYyL5I7HHp9aNbDNWRz0dSrbZ4mHNMYYDKnp3GmXjoUy5Casip6umZts8K+F8YYDBHXuNAnhr2uccis+xjG3mjHQZ9fvSVruaQRtSVqGSkc5/XxRt7h/Y1WW2JViF6KeGpEbDG1gG25zzU8wRz0y8dCi8MFctzkkZn2KZG80Y6HHr9aYtcdRRxzVlTv2QQs2WbILEYA69zp23WNI6iaWvaONXJyGdc7c5/nlpH8qvdNPEtvt23gKcyOo5MR0A7/esQMf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 150,
+          "url": "/media-deriv/logo__w150.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 150,
+          "url": "/media-deriv/logo__w150.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 150,
+          "url": "/media-deriv/logo__w150.jpg"
+        }
+      ]
+    }
+  },
+  "/media/mountain.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMEBgECBf/EACYQAAICAgAEBgMAAAAAAAAAAAECAxEABAUSITETFCJRYZFCcYH/xAAYAQACAwAAAAAAAAAAAAAAAAACAwABBP/EABsRAAMAAgMAAAAAAAAAAAAAAAABAgMxERMh/9oADAMBAAIRAxEAPwCTobEWylyIYzy2bIK/edBdSM9mH6rKrNG+qfEiFwuKZT+PuPjLZw/e19vWEnpQ9ip60cF5mlywuuTU6sSmiR/Mx5RW6IDXvWOfZiU+kofoYltyIGxMi/HNknO3ot4UVrhO5LJspBIeYP0BPcZO4RTeZIAWmIodBYwwxdINEPZdxM6liaNWcQXIwwzTOhNP0//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mountain__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mountain__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mountain__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mountain__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mountain__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/mountain__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mountain__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mountain__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mountain__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mountain__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mountain__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/mountain__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mountain__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mountain__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mountain__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mountain__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mountain__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/mountain__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/mountain.avif": {
+    "width": 1200,
+    "height": 800,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMEBgECBf/EACYQAAICAgAEBgMAAAAAAAAAAAECAxEABAUSITETFCJRYZFCcYH/xAAYAQACAwAAAAAAAAAAAAAAAAACAwABBP/EABsRAAMAAgMAAAAAAAAAAAAAAAABAgMxERMh/9oADAMBAAIRAxEAPwCTobEWylyIYzy2bIK/edBdSM9mH6rKrNG+qfEiFwuKZT+PuPjLZw/e19vWEnpQ9ip60cF5mlywuuTU6sSmiR/Mx5RW6IDXvWOfZiU+kofoYltyIGxMi/HNknO3ot4UVrhO5LJspBIeYP0BPcZO4RTeZIAWmIodBYwwxdINEPZdxM6liaNWcQXIwwzTOhNP0//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mountain__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mountain__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mountain__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mountain__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mountain__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/mountain__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mountain__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mountain__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mountain__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mountain__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mountain__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/mountain__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mountain__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mountain__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mountain__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mountain__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mountain__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/mountain__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-ut-website-design-and-local-seo.jpg": {
+    "width": 2042,
+    "height": 499,
+    "aspect": 4.092184368737475,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAID/8QAIBAAAgICAgIDAAAAAAAAAAAAAgMAAREhEjIEUTFCsf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDBbVJ3jkV32vcpPkhzMjHOc5qta9REDJ7BY4WJ+nv8kMoWB1ujG8j8auIgf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2000.avif"
+        },
+        {
+          "w": 2042,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2042.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2000.webp"
+        },
+        {
+          "w": 2042,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2042.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2000.jpg"
+        },
+        {
+          "w": 2042,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2042.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-ut-website-design-and-local-seo.avif": {
+    "width": 2042,
+    "height": 499,
+    "aspect": 4.092184368737475,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAID/8QAIBAAAgICAgIDAAAAAAAAAAAAAgMAAREhEjIEUTFCsf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDBbVJ3jkV32vcpPkhzMjHOc5qta9REDJ7BY4WJ+nv8kMoWB1ujG8j8auIgf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2000.avif"
+        },
+        {
+          "w": 2042,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2042.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2000.webp"
+        },
+        {
+          "w": 2042,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2042.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2000.jpg"
+        },
+        {
+          "w": 2042,
+          "url": "/media-deriv/pleasant-grove-ut-website-design-and-local-seo__w2042.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-and-local-seo.jpg": {
+    "width": 1980,
+    "height": 392,
+    "aspect": 5.051020408163265,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAGACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EAB8QAAICAQQDAAAAAAAAAAAAAAECABEDBCExURIUQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDm9k4wAoAHPEmHVOrsRV3ZJ3iIGcuY6prYAV19ltt1bxNjqIgf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1600.avif"
+        },
+        {
+          "w": 1980,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1980.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1600.webp"
+        },
+        {
+          "w": 1980,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1980.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1600.jpg"
+        },
+        {
+          "w": 1980,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1980.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-and-local-seo.avif": {
+    "width": 1980,
+    "height": 392,
+    "aspect": 5.051020408163265,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAGACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBP/EAB8QAAICAQQDAAAAAAAAAAAAAAECABEDBCExURIUQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDm9k4wAoAHPEmHVOrsRV3ZJ3iIGcuY6prYAV19ltt1bxNjqIgf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1600.avif"
+        },
+        {
+          "w": 1980,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1980.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1600.webp"
+        },
+        {
+          "w": 1980,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1980.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1600.jpg"
+        },
+        {
+          "w": 1980,
+          "url": "/media-deriv/pleasant-grove-website-design-and-local-seo__w1980.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-local-seo-office.jpg": {
+    "width": 3014,
+    "height": 1304,
+    "aspect": 2.311349693251534,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAOACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAwUBAgT/xAAjEAABAwMDBQEAAAAAAAAAAAABAgMRAAQSBjFBBSEyUWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAQIh/9oADAMBAAIRAxEAPwCR4H1IFI1qJv3EicQ6QBMCm4cKSEnlR2+UJnpDz9wpzJsArJ8jO/5RDvsYXskqxyxARt77ih3Sgm4KAJMDin7unnHVhS7hIERGJMD53q40+lT2bjoWkcRBpS//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2400.avif"
+        },
+        {
+          "w": 3014,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w3014.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2000.webp"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2400.webp"
+        },
+        {
+          "w": 3014,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w3014.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2400.jpg"
+        },
+        {
+          "w": 3014,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w3014.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-local-seo-office.avif": {
+    "width": 3014,
+    "height": 1304,
+    "aspect": 2.311349693251534,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAOACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAwUBAgT/xAAjEAABAwMDBQEAAAAAAAAAAAABAgMRAAQSBjFBBSEyUWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAQIh/9oADAMBAAIRAxEAPwCR4H1IFI1qJv3EicQ6QBMCm4cKSEnlR2+UJnpDz9wpzJsArJ8jO/5RDvsYXskqxyxARt77ih3Sgm4KAJMDin7unnHVhS7hIERGJMD53q40+lT2bjoWkcRBpS//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2400.avif"
+        },
+        {
+          "w": 3014,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w3014.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2000.webp"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2400.webp"
+        },
+        {
+          "w": 3014,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w3014.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w2400.jpg"
+        },
+        {
+          "w": 3014,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo-office__w3014.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-local-seo.jpg": {
+    "width": 1000,
+    "height": 481,
+    "aspect": 2.079002079002079,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EACUQAAIBAwIFBQAAAAAAAAAAAAECEQADIQQSBQZBUXExYWKBkf/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/EABoRAQACAwEAAAAAAAAAAAAAAAEAAgMTITH/2gAMAwEAAhEDEQA/AJh5guGN1pDHpimPMOoAxbVR+VLWFAZRGJmc47ULqFbJncenU/dacdV6S3WDjKB49qTnaPMmstzi2quTNxh4MUrMot4Yk9T29qRX2LLorD5CkKh5Dciz/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w1000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w960.webp"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w1000.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-local-seo.avif": {
+    "width": 1000,
+    "height": 481,
+    "aspect": 2.079002079002079,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EACUQAAIBAwIFBQAAAAAAAAAAAAECEQADIQQSBQZBUXExYWKBkf/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/EABoRAQACAwEAAAAAAAAAAAAAAAEAAgMTITH/2gAMAwEAAhEDEQA/AJh5guGN1pDHpimPMOoAxbVR+VLWFAZRGJmc47ULqFbJncenU/dacdV6S3WDjKB49qTnaPMmstzi2quTNxh4MUrMot4Yk9T29qRX2LLorD5CkKh5Dciz/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w1000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w960.webp"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w1000.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-local-seo__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-seo-marketing.jpg": {
+    "width": 1000,
+    "height": 481,
+    "aspect": 2.079002079002079,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFAP/EACQQAAIABQMEAwAAAAAAAAAAAAECAAMREiEEBmEFIjFBcYGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQACAxMhMf/aAAwDAQACEQMRAD8AQO5JxpfLQ04gjuPVAYlqPyJQtQBgpGLrq5+oy6lWqxqSfNPJPJjTiqvSTbYOSgdw6s5tX5zCs3q+rmg3TWpwaQLMol0DEt7PocCAV7BWZLRwc9whSoeQ27af/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w1000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w960.webp"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w1000.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/pleasant-grove-website-design-seo-marketing.avif": {
+    "width": 1000,
+    "height": 481,
+    "aspect": 2.079002079002079,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFAP/EACQQAAIABQMEAwAAAAAAAAAAAAECAAMREiEEBmEFIjFBcYGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQACAxMhMf/aAAwDAQACEQMRAD8AQO5JxpfLQ04gjuPVAYlqPyJQtQBgpGLrq5+oy6lWqxqSfNPJPJjTiqvSTbYOSgdw6s5tX5zCs3q+rmg3TWpwaQLMol0DEt7PocCAV7BWZLRwc9whSoeQ27af/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w1000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w960.webp"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w1000.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/pleasant-grove-website-design-seo-marketing__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/rank-utah-blog.jpg": {
+    "width": 1200,
+    "height": 731,
+    "aspect": 1.6415868673050615,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAATACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQb/xAAlEAACAgECBAcAAAAAAAAAAAABAgAREgMhQVFhkRMiMTJicaH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOb071XCs21cTUbHS+XeLoY+KMrrot/ks+IPkQsOqVKJ46XC7+5NzRoHaULAn29pN/WAISGsSmbc4QgZm3OI5s7whA//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rank-utah-blog__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rank-utah-blog__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rank-utah-blog__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rank-utah-blog__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rank-utah-blog__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rank-utah-blog__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rank-utah-blog__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rank-utah-blog__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rank-utah-blog__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rank-utah-blog__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rank-utah-blog__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rank-utah-blog__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rank-utah-blog__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rank-utah-blog__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rank-utah-blog__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rank-utah-blog__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rank-utah-blog__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rank-utah-blog__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/rank-utah-blog.avif": {
+    "width": 1200,
+    "height": 731,
+    "aspect": 1.6415868673050615,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAATACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQb/xAAlEAACAgECBAcAAAAAAAAAAAABAgAREgMhQVFhkRMiMTJicaH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOb071XCs21cTUbHS+XeLoY+KMrrot/ks+IPkQsOqVKJ46XC7+5NzRoHaULAn29pN/WAISGsSmbc4QgZm3OI5s7whA//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rank-utah-blog__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rank-utah-blog__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rank-utah-blog__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rank-utah-blog__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rank-utah-blog__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rank-utah-blog__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rank-utah-blog__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rank-utah-blog__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rank-utah-blog__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rank-utah-blog__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rank-utah-blog__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rank-utah-blog__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rank-utah-blog__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rank-utah-blog__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rank-utah-blog__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rank-utah-blog__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rank-utah-blog__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rank-utah-blog__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/the-g.jpg": {
+    "width": 1017,
+    "height": 232,
+    "aspect": 4.383620689655173,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAfEAACAgEEAwAAAAAAAAAAAAABAgARAwQTITEjUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAwDAQACEQMRAD8AxxnbXyAOG6euRK6nEEXcwObIsjvj7ESRO5rdFBIFEXcjHqmViGavURKjjFNv/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/the-g__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/the-g__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/the-g__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/the-g__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/the-g__w960.avif"
+        },
+        {
+          "w": 1017,
+          "url": "/media-deriv/the-g__w1017.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/the-g__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/the-g__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/the-g__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/the-g__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/the-g__w960.webp"
+        },
+        {
+          "w": 1017,
+          "url": "/media-deriv/the-g__w1017.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/the-g__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/the-g__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/the-g__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/the-g__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/the-g__w960.jpg"
+        },
+        {
+          "w": 1017,
+          "url": "/media-deriv/the-g__w1017.jpg"
+        }
+      ]
+    }
+  },
+  "/media/the-g.avif": {
+    "width": 1017,
+    "height": 232,
+    "aspect": 4.383620689655173,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAfEAACAgEEAwAAAAAAAAAAAAABAgARAwQTITEjUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAwDAQACEQMRAD8AxxnbXyAOG6euRK6nEEXcwObIsjvj7ESRO5rdFBIFEXcjHqmViGavURKjjFNv/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/the-g__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/the-g__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/the-g__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/the-g__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/the-g__w960.avif"
+        },
+        {
+          "w": 1017,
+          "url": "/media-deriv/the-g__w1017.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/the-g__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/the-g__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/the-g__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/the-g__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/the-g__w960.webp"
+        },
+        {
+          "w": 1017,
+          "url": "/media-deriv/the-g__w1017.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/the-g__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/the-g__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/the-g__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/the-g__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/the-g__w960.jpg"
+        },
+        {
+          "w": 1017,
+          "url": "/media-deriv/the-g__w1017.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-seo-specialist-web-design-expert-profile-picture.jpg": {
+    "width": 400,
+    "height": 400,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgMFAQQG/8QAJRAAAgEDBAEEAwAAAAAAAAAAAQIDAAQRBRIhMUEGEyJRMkKR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECESEi/9oADAMBAAIRAxEAPwBpAAB81Nn1C7VibeP4g9hc5qm6kEZFYBFukabWO7yvOKaGJ0TZSPdxv70RikUZXA4b7onHHFNtpQ80mVKqgPJ/agx39iqSqcKEq73+IAxSLggbVBHB5x4rnrj1DdTsdm2FT0FGT/apadcQnRFmkfBhyGPeTmt16XDMVjHxzRxOwkcKpYBS3HJ8VsTQImMHupF9NBc6LPMmSSwGCPx5qdBrNzHEilgwQbcMOxQli6N1rP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w320.avif"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w400.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w320.webp"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w400.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w320.jpg"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w400.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-seo-specialist-web-design-expert-profile-picture.avif": {
+    "width": 400,
+    "height": 400,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgMFAQQG/8QAJRAAAgEDBAEEAwAAAAAAAAAAAQIDAAQRBRIhMUEGEyJRMkKR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECESEi/9oADAMBAAIRAxEAPwBpAAB81Nn1C7VibeP4g9hc5qm6kEZFYBFukabWO7yvOKaGJ0TZSPdxv70RikUZXA4b7onHHFNtpQ80mVKqgPJ/agx39iqSqcKEq73+IAxSLggbVBHB5x4rnrj1DdTsdm2FT0FGT/apadcQnRFmkfBhyGPeTmt16XDMVjHxzRxOwkcKpYBS3HJ8VsTQImMHupF9NBc6LPMmSSwGCPx5qdBrNzHEilgwQbcMOxQli6N1rP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w320.avif"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w400.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w320.webp"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w400.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w320.jpg"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w400.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-blue-ridge-abbey.jpg": {
+    "width": 2067,
+    "height": 1636,
+    "aspect": 1.2634474327628362,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQQCAwUG/8QAMBAAAQIFAAcFCQAAAAAAAAAAAQIDAAQFESEGEhMiMUFRIzI0gdE1YWNxc4SRsbL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQISQRFR/9oADAMBAAIRAxEAPwBc0WWSd5xY6ZGYiimygUSl7INu8MGF6k5NLFj2gCiLDl5e/rEpFksFT022sFJGqnGb8zDvHEZVfpJ2SlEhSiXVEZNhaH2KUHZXUQ6rYkYGqk358bXguz+6AWgpKxwIvBdmngddkltZSSQBghJt5RFJahVNY6OU5J3W3Bb4qvWCdH5BRGsHT83l+saa++YEEfDnKjTqZIzNnNtYtghO0V148Yo2NIASopdso2HaLyfzF+kftD7ZP9GET4SS+sr9QGVJH//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blue-ridge-abbey__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blue-ridge-abbey__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blue-ridge-abbey__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blue-ridge-abbey__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blue-ridge-abbey__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2000.avif"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2067.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blue-ridge-abbey__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blue-ridge-abbey__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blue-ridge-abbey__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blue-ridge-abbey__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blue-ridge-abbey__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2000.webp"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2067.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blue-ridge-abbey__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blue-ridge-abbey__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blue-ridge-abbey__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blue-ridge-abbey__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blue-ridge-abbey__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2000.jpg"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2067.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-blue-ridge-abbey.avif": {
+    "width": 2067,
+    "height": 1636,
+    "aspect": 1.2634474327628362,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQQCAwUG/8QAMBAAAQIFAAcFCQAAAAAAAAAAAQIDAAQFESEGEhMiMUFRIzI0gdE1YWNxc4SRsbL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQISQRFR/9oADAMBAAIRAxEAPwBc0WWSd5xY6ZGYiimygUSl7INu8MGF6k5NLFj2gCiLDl5e/rEpFksFT022sFJGqnGb8zDvHEZVfpJ2SlEhSiXVEZNhaH2KUHZXUQ6rYkYGqk358bXguz+6AWgpKxwIvBdmngddkltZSSQBghJt5RFJahVNY6OU5J3W3Bb4qvWCdH5BRGsHT83l+saa++YEEfDnKjTqZIzNnNtYtghO0V148Yo2NIASopdso2HaLyfzF+kftD7ZP9GET4SS+sr9QGVJH//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blue-ridge-abbey__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blue-ridge-abbey__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blue-ridge-abbey__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blue-ridge-abbey__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blue-ridge-abbey__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2000.avif"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2067.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blue-ridge-abbey__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blue-ridge-abbey__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blue-ridge-abbey__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blue-ridge-abbey__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blue-ridge-abbey__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2000.webp"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2067.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blue-ridge-abbey__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blue-ridge-abbey__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blue-ridge-abbey__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blue-ridge-abbey__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blue-ridge-abbey__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blue-ridge-abbey__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2000.jpg"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-blue-ridge-abbey__w2067.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-blueridgetech.jpg": {
+    "width": 2066,
+    "height": 1634,
+    "aspect": 1.2643818849449204,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgMAAQQG/8QAJBAAAwACAQIGAwAAAAAAAAAAAQIDABEEEhMFITEyQWEVYqH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/xAAZEQEAAwEBAAAAAAAAAAAAAAAAAREhMUH/2gAMAwEAAhEDEQA/AOnWiKxYaUn1JOZvy02vKTTPVQlQfgY23Bk8yKO5X6zLPwOKXFpk9QOwS5/uOI9ubVWPQstfBJOWvas4taczUHyI35a9MCnhhq22vRR+jax68FVUL3KHQ1snZOORwApQ9BwZ2IAG9/W8F/acXP3jNqgHck1pErKhR/LRyuMaykFrTuNsneXkxoe2/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blueridgetech__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blueridgetech__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blueridgetech__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blueridgetech__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blueridgetech__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blueridgetech__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blueridgetech__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blueridgetech__w2000.avif"
+        },
+        {
+          "w": 2066,
+          "url": "/media-deriv/website-blueridgetech__w2066.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blueridgetech__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blueridgetech__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blueridgetech__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blueridgetech__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blueridgetech__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blueridgetech__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blueridgetech__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blueridgetech__w2000.webp"
+        },
+        {
+          "w": 2066,
+          "url": "/media-deriv/website-blueridgetech__w2066.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blueridgetech__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blueridgetech__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blueridgetech__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blueridgetech__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blueridgetech__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blueridgetech__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blueridgetech__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blueridgetech__w2000.jpg"
+        },
+        {
+          "w": 2066,
+          "url": "/media-deriv/website-blueridgetech__w2066.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-blueridgetech.avif": {
+    "width": 2066,
+    "height": 1634,
+    "aspect": 1.2643818849449204,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgMAAQQG/8QAJBAAAwACAQIGAwAAAAAAAAAAAQIDABEEEhMFITEyQWEVYqH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/xAAZEQEAAwEBAAAAAAAAAAAAAAAAAREhMUH/2gAMAwEAAhEDEQA/AOnWiKxYaUn1JOZvy02vKTTPVQlQfgY23Bk8yKO5X6zLPwOKXFpk9QOwS5/uOI9ubVWPQstfBJOWvas4taczUHyI35a9MCnhhq22vRR+jax68FVUL3KHQ1snZOORwApQ9BwZ2IAG9/W8F/acXP3jNqgHck1pErKhR/LRyuMaykFrTuNsneXkxoe2/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blueridgetech__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blueridgetech__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blueridgetech__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blueridgetech__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blueridgetech__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blueridgetech__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blueridgetech__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blueridgetech__w2000.avif"
+        },
+        {
+          "w": 2066,
+          "url": "/media-deriv/website-blueridgetech__w2066.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blueridgetech__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blueridgetech__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blueridgetech__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blueridgetech__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blueridgetech__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blueridgetech__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blueridgetech__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blueridgetech__w2000.webp"
+        },
+        {
+          "w": 2066,
+          "url": "/media-deriv/website-blueridgetech__w2066.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-blueridgetech__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-blueridgetech__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-blueridgetech__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-blueridgetech__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-blueridgetech__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-blueridgetech__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-blueridgetech__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-blueridgetech__w2000.jpg"
+        },
+        {
+          "w": 2066,
+          "url": "/media-deriv/website-blueridgetech__w2066.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-nova-gutter.jpg": {
+    "width": 2069,
+    "height": 1636,
+    "aspect": 1.2646699266503667,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgMBBQYE/8QALRAAAgEDAQUFCQAAAAAAAAAAAQIDAAQREwUSITFCFVFxgcEiMzVBUlOChJH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAbEQACAwADAAAAAAAAAAAAAAAAARESUSGBkf/aAAwDAQACEQMRAD8AO02tI6zastuCfdDRwfOnC8mLRLPHE6upYOi7uPEV0y2cByMMmRxKHFJTZ9uGJYahP3GJ9aLg1Z6F2gqEgyQD8AantBW64Rx56YFEbOBkKaMIB7l40tdj2vy1eWMb9W7xGe36XmlGegfyl6Ub5woXHdin0EfV41AUtttyweXTf2WLbozgjPkKutJPpFYi1+F/up61ujzNSZB//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-nova-gutter__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-nova-gutter__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-nova-gutter__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-nova-gutter__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-nova-gutter__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-nova-gutter__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-nova-gutter__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-nova-gutter__w2000.avif"
+        },
+        {
+          "w": 2069,
+          "url": "/media-deriv/website-nova-gutter__w2069.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-nova-gutter__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-nova-gutter__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-nova-gutter__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-nova-gutter__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-nova-gutter__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-nova-gutter__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-nova-gutter__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-nova-gutter__w2000.webp"
+        },
+        {
+          "w": 2069,
+          "url": "/media-deriv/website-nova-gutter__w2069.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-nova-gutter__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-nova-gutter__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-nova-gutter__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-nova-gutter__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-nova-gutter__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-nova-gutter__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-nova-gutter__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-nova-gutter__w2000.jpg"
+        },
+        {
+          "w": 2069,
+          "url": "/media-deriv/website-nova-gutter__w2069.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-nova-gutter.avif": {
+    "width": 2069,
+    "height": 1636,
+    "aspect": 1.2646699266503667,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgMBBQYE/8QALRAAAgEDAQUFCQAAAAAAAAAAAQIDAAQREwUSITFCFVFxgcEiMzVBUlOChJH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAbEQACAwADAAAAAAAAAAAAAAAAARESUSGBkf/aAAwDAQACEQMRAD8AO02tI6zastuCfdDRwfOnC8mLRLPHE6upYOi7uPEV0y2cByMMmRxKHFJTZ9uGJYahP3GJ9aLg1Z6F2gqEgyQD8AantBW64Rx56YFEbOBkKaMIB7l40tdj2vy1eWMb9W7xGe36XmlGegfyl6Ub5woXHdin0EfV41AUtttyweXTf2WLbozgjPkKutJPpFYi1+F/up61ujzNSZB//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-nova-gutter__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-nova-gutter__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-nova-gutter__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-nova-gutter__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-nova-gutter__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-nova-gutter__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-nova-gutter__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-nova-gutter__w2000.avif"
+        },
+        {
+          "w": 2069,
+          "url": "/media-deriv/website-nova-gutter__w2069.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-nova-gutter__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-nova-gutter__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-nova-gutter__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-nova-gutter__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-nova-gutter__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-nova-gutter__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-nova-gutter__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-nova-gutter__w2000.webp"
+        },
+        {
+          "w": 2069,
+          "url": "/media-deriv/website-nova-gutter__w2069.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-nova-gutter__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-nova-gutter__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-nova-gutter__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-nova-gutter__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-nova-gutter__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-nova-gutter__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-nova-gutter__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-nova-gutter__w2000.jpg"
+        },
+        {
+          "w": 2069,
+          "url": "/media-deriv/website-nova-gutter__w2069.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-rod-maxfield-dds.jpg": {
+    "width": 2062,
+    "height": 1618,
+    "aspect": 1.2744128553770087,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAwECBQAE/8QAKhAAAgEDAwIDCQAAAAAAAAAAAQIDAAQREiExBYEiMkETFCMzUYLB0fD/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRElH/2gAMAwEAAhEDEQA/ANd7KzdkK2MBXT6jO3pRDp9v7MMLaHTjOdC8VYTqpjCaQFTSSpyBn9YoPeDDIY03jIK4J71rMr6cWlPTrYZV4IRtnOhc4pVsbJEVTawENsPBzQy3qSSCRVbIjwN8YJz+KrHexhhIynEa4UfU/wATTdOK0mt4Qp+Eo7VCW0Gn5KZ44pYODSNwKzTdeZraDgQoM8+GuW2gZBmFD9tM3mXvUR+QVTdf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-rod-maxfield-dds__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-rod-maxfield-dds__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-rod-maxfield-dds__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-rod-maxfield-dds__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-rod-maxfield-dds__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2000.avif"
+        },
+        {
+          "w": 2062,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2062.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-rod-maxfield-dds__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-rod-maxfield-dds__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-rod-maxfield-dds__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-rod-maxfield-dds__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-rod-maxfield-dds__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2000.webp"
+        },
+        {
+          "w": 2062,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2062.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-rod-maxfield-dds__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-rod-maxfield-dds__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-rod-maxfield-dds__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-rod-maxfield-dds__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-rod-maxfield-dds__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2000.jpg"
+        },
+        {
+          "w": 2062,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2062.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-rod-maxfield-dds.avif": {
+    "width": 2062,
+    "height": 1618,
+    "aspect": 1.2744128553770087,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAwECBQAE/8QAKhAAAgEDAwIDCQAAAAAAAAAAAQIDAAQREiExBYEiMkETFCMzUYLB0fD/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRElH/2gAMAwEAAhEDEQA/ANd7KzdkK2MBXT6jO3pRDp9v7MMLaHTjOdC8VYTqpjCaQFTSSpyBn9YoPeDDIY03jIK4J71rMr6cWlPTrYZV4IRtnOhc4pVsbJEVTawENsPBzQy3qSSCRVbIjwN8YJz+KrHexhhIynEa4UfU/wATTdOK0mt4Qp+Eo7VCW0Gn5KZ44pYODSNwKzTdeZraDgQoM8+GuW2gZBmFD9tM3mXvUR+QVTdf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-rod-maxfield-dds__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-rod-maxfield-dds__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-rod-maxfield-dds__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-rod-maxfield-dds__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-rod-maxfield-dds__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2000.avif"
+        },
+        {
+          "w": 2062,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2062.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-rod-maxfield-dds__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-rod-maxfield-dds__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-rod-maxfield-dds__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-rod-maxfield-dds__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-rod-maxfield-dds__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2000.webp"
+        },
+        {
+          "w": 2062,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2062.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-rod-maxfield-dds__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-rod-maxfield-dds__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-rod-maxfield-dds__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-rod-maxfield-dds__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-rod-maxfield-dds__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-rod-maxfield-dds__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2000.jpg"
+        },
+        {
+          "w": 2062,
+          "url": "/media-deriv/website-rod-maxfield-dds__w2062.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-suggls.jpg": {
+    "width": 2056,
+    "height": 1569,
+    "aspect": 1.3103887826641172,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAKxAAAgEDAgMGBwAAAAAAAAAAAQIDAAQRBSEVMdESIkFRYYEjM1JUkZOx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//EABgRAQEBAQEAAAAAAAAAAAAAAAABEQIS/9oADAMBAAIRAxEAPwDUew1dVybi1I9IR0peY39syCW4t++cKVgBB2yd8Vtas4jsi7OERWBYnxHiPeudi1OOZt/lA9kJkE7jc8/LbNTbjSdWnhb6m6qyXFvhgCPgA8/arOHav9zafpHSnbSeKGCIJFKAY1OAjNjYY35finY5BIgYBgD9QINXlzS91G4gS4haKQAg+gP9pXhNuMYyMeQHSiikg4ihe6NgoAFSFFFAf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-suggls__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-suggls__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-suggls__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-suggls__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-suggls__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-suggls__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-suggls__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-suggls__w2000.avif"
+        },
+        {
+          "w": 2056,
+          "url": "/media-deriv/website-suggls__w2056.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-suggls__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-suggls__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-suggls__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-suggls__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-suggls__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-suggls__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-suggls__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-suggls__w2000.webp"
+        },
+        {
+          "w": 2056,
+          "url": "/media-deriv/website-suggls__w2056.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-suggls__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-suggls__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-suggls__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-suggls__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-suggls__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-suggls__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-suggls__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-suggls__w2000.jpg"
+        },
+        {
+          "w": 2056,
+          "url": "/media-deriv/website-suggls__w2056.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-suggls.avif": {
+    "width": 2056,
+    "height": 1569,
+    "aspect": 1.3103887826641172,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAKxAAAgEDAgMGBwAAAAAAAAAAAQIDAAQRBSEVMdESIkFRYYEjM1JUkZOx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//EABgRAQEBAQEAAAAAAAAAAAAAAAABEQIS/9oADAMBAAIRAxEAPwDUew1dVybi1I9IR0peY39syCW4t++cKVgBB2yd8Vtas4jsi7OERWBYnxHiPeudi1OOZt/lA9kJkE7jc8/LbNTbjSdWnhb6m6qyXFvhgCPgA8/arOHav9zafpHSnbSeKGCIJFKAY1OAjNjYY35finY5BIgYBgD9QINXlzS91G4gS4haKQAg+gP9pXhNuMYyMeQHSiikg4ihe6NgoAFSFFFAf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-suggls__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-suggls__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-suggls__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-suggls__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-suggls__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-suggls__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-suggls__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-suggls__w2000.avif"
+        },
+        {
+          "w": 2056,
+          "url": "/media-deriv/website-suggls__w2056.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-suggls__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-suggls__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-suggls__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-suggls__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-suggls__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-suggls__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-suggls__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-suggls__w2000.webp"
+        },
+        {
+          "w": 2056,
+          "url": "/media-deriv/website-suggls__w2056.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-suggls__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-suggls__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-suggls__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-suggls__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-suggls__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-suggls__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-suggls__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-suggls__w2000.jpg"
+        },
+        {
+          "w": 2056,
+          "url": "/media-deriv/website-suggls__w2056.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-villa-valencia.jpg": {
+    "width": 2067,
+    "height": 1632,
+    "aspect": 1.2665441176470589,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQIABQYE/8QAKBAAAQMCBAUFAQAAAAAAAAAAAQAEEQIDBRIhUQYjMUHRExYiQlKC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGREBAAIDAAAAAAAAAAAAAAAAABJRAQIR/9oADAMBAAIRAxEAPwDNWrgzUmqYkTGy1zPGmNHxbtLxzmT0lL7RY0jS65P9DwuhvgLZrOSq+diSNFJUR6r8exRg4tm1XavC5TWAQQIgHodVUUVjSOnZaZxw+0dDmetI+wIlCnhpmAOZfEbkeFcbWRXFQJOhQy1bp1FhsuU/pECO8oqIP//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-villa-valencia__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-villa-valencia__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-villa-valencia__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-villa-valencia__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-villa-valencia__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-villa-valencia__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-villa-valencia__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-villa-valencia__w2000.avif"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-villa-valencia__w2067.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-villa-valencia__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-villa-valencia__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-villa-valencia__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-villa-valencia__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-villa-valencia__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-villa-valencia__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-villa-valencia__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-villa-valencia__w2000.webp"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-villa-valencia__w2067.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-villa-valencia__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-villa-valencia__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-villa-valencia__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-villa-valencia__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-villa-valencia__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-villa-valencia__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-villa-valencia__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-villa-valencia__w2000.jpg"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-villa-valencia__w2067.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-villa-valencia.avif": {
+    "width": 2067,
+    "height": 1632,
+    "aspect": 1.2665441176470589,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQIABQYE/8QAKBAAAQMCBAUFAQAAAAAAAAAAAQAEEQIDBRIhUQYjMUHRExYiQlKC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGREBAAIDAAAAAAAAAAAAAAAAABJRAQIR/9oADAMBAAIRAxEAPwDNWrgzUmqYkTGy1zPGmNHxbtLxzmT0lL7RY0jS65P9DwuhvgLZrOSq+diSNFJUR6r8exRg4tm1XavC5TWAQQIgHodVUUVjSOnZaZxw+0dDmetI+wIlCnhpmAOZfEbkeFcbWRXFQJOhQy1bp1FhsuU/pECO8oqIP//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-villa-valencia__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-villa-valencia__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-villa-valencia__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-villa-valencia__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-villa-valencia__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-villa-valencia__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-villa-valencia__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-villa-valencia__w2000.avif"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-villa-valencia__w2067.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-villa-valencia__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-villa-valencia__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-villa-valencia__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-villa-valencia__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-villa-valencia__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-villa-valencia__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-villa-valencia__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-villa-valencia__w2000.webp"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-villa-valencia__w2067.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-villa-valencia__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-villa-valencia__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-villa-valencia__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-villa-valencia__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-villa-valencia__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-villa-valencia__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-villa-valencia__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/website-villa-valencia__w2000.jpg"
+        },
+        {
+          "w": 2067,
+          "url": "/media-deriv/website-villa-valencia__w2067.jpg"
+        }
+      ]
+    }
+  }
+}
