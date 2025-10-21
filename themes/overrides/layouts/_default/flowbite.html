@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }} | {{ .Site.Title }}</title>
 
+  {{ partial "seo-meta.html" . }}
+
   <!-- Brand/Theme recolor on first paint -->
   <script>
     (function(){

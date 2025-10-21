@@ -32,7 +32,7 @@ Call or Text: (540) 319-3889
 
 ### Company
 {.center}
-[Home](https://blueridgeabbey.com) • [Rooms](/rooms) • [Weddings](/weddings) • [Contact](/contact) • [Book]("https://secure.thinkreservations.com/blueridgeabbey/reservations")
+[Home](https://blueridgeabbey.com) • [Rooms](/rooms) • [Weddings](/weddings) • [Contact](/contact) • [Book](https://secure.thinkreservations.com/blueridgeabbey/reservations)
 {.center}
 
 {{< /col >}}

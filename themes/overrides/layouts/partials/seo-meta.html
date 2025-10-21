@@ -1,0 +1,132 @@
+{{/*
+  SEO meta for Flowbite layout only.
+  - Robots meta (index/follow in production unless page opts out)
+  - Meta description with strong fallbacks
+  - Canonical URL
+  - Open Graph + Twitter tags with homepage-first-image fallback
+
+  Description fallback logic:
+    1) .Description (front matter)
+    2) If .IsHome and .Site.Home.Description is set → use that
+    3) Else generate from this page: .Summary (plain) truncated ~160 chars
+    4) Final fallback: "<Title> – <Site.Title>"
+
+  OG image fallback logic:
+    1) .Params.images (array) | .Params.image | .Params.cover
+    2) First image resource in page bundle (best-effort)
+    3) First <img src> in this page’s content
+    4) First major image on the homepage (parse .Site.Home.Content)
+    5) Site logo (as a last resort)
+*/}}
+
+{{- $ctx := . -}}
+{{- $isProd := or (hugo.IsProduction) (eq site.Params.env "production") -}}
+
+{{/* Robots */}}
+{{- if and $isProd (ne .Params.robotsNoIndex true) -}}
+<meta name="robots" content="index, follow">
+{{- else -}}
+<meta name="robots" content="noindex, nofollow">
+{{- end -}}
+
+{{/* Helper: plain, trimmed, ~160 chars */}}
+{{- $max := 160 -}}
+
+{{/* Site-level homepage description (if provided on home) */}}
+{{- $home := site.Home -}}
+{{- $homeDesc := "" -}}
+{{- with $home.Description -}}
+  {{- $homeDesc = trim (plainify (htmlUnescape .)) " \n\r\t" -}}
+{{- end -}}
+
+{{/* Page description resolution */}}
+{{- $desc := "" -}}
+{{- if .Description -}}
+  {{- $desc = trim (plainify (htmlUnescape .Description)) " \n\r\t" -}}
+{{- else if $homeDesc -}}
+  {{- $desc = $homeDesc -}}
+{{- else -}}
+  {{- $gen := trim (plainify (htmlUnescape (.Summary | default (printf "%s – %s" .Title site.Title)))) " \n\r\t" -}}
+  {{- if gt (len $gen) $max -}}
+    {{- $desc = printf "%s…" (substr $gen 0 (sub $max 1)) -}}
+  {{- else -}}
+    {{- $desc = $gen -}}
+  {{- end -}}
+{{- end -}}
+<meta name="description" content="{{ $desc }}">
+
+{{/* Canonical */}}
+<link rel="canonical" href="{{ if .Params.canonicalURL }}{{ trim .Params.canonicalURL " " }}{{ else }}{{ replaceRE `index\.html$` `` .Permalink }}{{ end }}">
+
+{{/* --- Open Graph & Twitter --- */}}
+{{- $title := cond (and (not .IsHome) .Title) (printf "%s | %s" .Title site.Title) site.Title -}}
+{{- $ogtype := cond .IsHome "website" (cond .IsPage "article" "website") -}}
+
+{{/* Resolve OG image with fallbacks (prefer per-page; else use homepage first image) */}}
+{{- $img := "" -}}
+{{- if .Params.images }}
+  {{- $img = index .Params.images 0 -}}
+{{- else if .Params.image -}}
+  {{- $img = .Params.image -}}
+{{- else if .Params.cover -}}
+  {{- $img = .Params.cover -}}
+{{- else -}}
+  {{/* Try page bundle resources */}}
+  {{- with .Resources.GetMatch "*feature*" -}}
+    {{- $img = .RelPermalink -}}
+  {{- else -}}
+    {{- with .Resources.GetMatch "*cover*" -}}
+      {{- $img = .RelPermalink -}}
+    {{- else -}}
+      {{- with .Resources.GetMatch "*hero*" -}}
+        {{- $img = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $img -}}
+    {{/* First <img> in this page content */}}
+    {{- $match := findRE `(?is)<img[^>]+src="([^"]+)"` .Content -}}
+    {{- if gt (len $match) 0 -}}
+      {{- $img = replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "$1" (index $match 0) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $img -}}
+  {{/* Fallback to homepage first main image */}}
+  {{- $homeImg := "" -}}
+  {{- $avif := findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\"]+)\"` $home.Content -}}
+  {{- if gt (len $avif) 0 -}}
+    {{- $homeImg = replaceRE `(?is).*srcset=\"([^\"]+)\".*` "$1" (index $avif 0) -}}
+  {{- end -}}
+  {{- if not $homeImg -}}
+    {{- $homeImgTags := findRE `(?is)<img[^>]+src=\"([^\"]+)\"` $home.Content -}}
+    {{- if gt (len $homeImgTags) 0 -}}
+      {{- $homeImg = replaceRE `(?is).*src=\"([^\"]+)\".*` "$1" (index $homeImgTags 0) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $img = $homeImg -}}
+{{- end -}}
+
+{{- if not $img -}}
+  {{/* Last resort: site logo if available */}}
+  {{- with site.Params.logo -}}
+    {{- $img = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $img -}}
+  {{- $abs := absURL $img -}}
+  <meta property="og:image" content="{{ $abs }}">
+  <meta name="twitter:image" content="{{ $abs }}">
+{{- end -}}
+
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ $ogtype }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
