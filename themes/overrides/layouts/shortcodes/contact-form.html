@@ -103,6 +103,11 @@
   <!-- Placeholder styles centralized in themes/overrides/assets/css/main.css (scoped to .cp-contact) -->
 
   <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact {{ $extra }}">
+    {{- /* Formspark honeypot: field name configured as `_hp`. Use an offscreen text input so basic bots fill it. */ -}}
+    <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+      <label for="{{ $id }}-hp">Leave this field empty</label>
+      <input id="{{ $id }}-hp" type="text" name="_hp" tabindex="-1" autocomplete="off" value="">
+    </div>
     {{- /* Determine render order: user can pass order="name,email,custom,message" (csv). */ -}}
     {{- $orderRaw := .Get "order" | default "" -}}
     {{- $orderItems := slice -}}

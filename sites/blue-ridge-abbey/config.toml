@@ -101,8 +101,8 @@ uglyURLs = true
     weight = 10
 
   [[menu.main]]
-    name = "Adventures"
-    url = "#adventures"
+    name = "Rooms"
+    url = "/rooms"
     weight = 20
 
   [[menu.main]]

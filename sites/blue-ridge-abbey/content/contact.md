@@ -5,9 +5,6 @@ layout: "flowbite"
 url: "/contact"
 ---
 
-{{< section align="center" >}}
-# Contact Us
-{{< /section>}}
 
 {{< section >}}
 
@@ -21,8 +18,14 @@ Send us a message or give us a call <br>
 
 ## Leave a Message
 
-{{< contact-form id="contact1" phone="optional" consent="false" >}}
-{{< button submit="true" form="contact1" text="Send Message" >}}
+{{< contact-form
+    id="contact"
+    action="https://submit-form.com/v9hVDQiYl"
+    phone="optional"
+    consent="false"
+>}}
+
+{{< button submit="true" form="contact" text="Submit Message" >}}
 
 
 {{< /col >}}

@@ -32,14 +32,18 @@ Optional defaults:
     {{- $name := (index $it "name") | default (printf "social-%d" $i) -}}
     {{- $alt  := (index $it "alt")  | default (title $name) -}}
     {{- $icon := (index $it "icon") | default "" -}}
+    {{- /* Normalize icon path to root-relative so it works on subpages */ -}}
+    {{- $iconSrc := $icon -}}
+    {{- if not (or (hasPrefix $icon "http://") (hasPrefix $icon "https://") (hasPrefix $icon "/")) -}}
+      {{- $iconSrc = printf "/%s" (strings.TrimPrefix "/" $icon) -}}
+    {{- end -}}
     {{- if eq (substr $url 0 4) "http" -}}
       <a href="{{ $url }}" target="_blank" rel="noopener" aria-label="{{ $alt }}" class="inline-flex">
-        {{- /* Do not force transforms; respect AVIF/PNG/etc as-is. Apply consistent render size via utility classes. */ -}}
-        <img src="{{ $icon | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
+        <img src="{{ $iconSrc | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
       </a>
     {{- else -}}
       <a href="{{ $url }}" aria-label="{{ $alt }}" class="inline-flex">
-        <img src="{{ $icon | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
+        <img src="{{ $iconSrc | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
       </a>
     {{- end -}}
   {{- end -}}

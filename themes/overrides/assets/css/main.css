@@ -80,7 +80,8 @@
 .footer {
   margin-top: 1.5rem;
   padding: 1rem 1rem; /* tighter top/bottom */
-  border-top: 1px solid #e5e7eb; /* gray-200 */
+  /* Darken divider in light mode so it doesn't blend with light bg */
+  border-top: 1px solid #4b5563; /* gray-600 */
 }
 
 

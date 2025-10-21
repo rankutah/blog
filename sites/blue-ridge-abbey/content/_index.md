@@ -17,18 +17,18 @@ Your hotel alternative near the Blue Ridge Parkway, Natural Bridge, and Safari P
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-{{< carousel id="bkg-hero" images="/media/carousel/bed-and-breakfast-hotel-places-to-stay-642e5703.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" height="h-64 h-md-70vh h-lg-80vh" interval="3000" radius="lg" >}}
+{{< carousel id="bkg-hero" images="/media/carousel/bed-and-breakfast-hotel-places-to-stay-642e5703.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" mobilepxheight="350" mdpxheight="700" duration="800" interval="3000" radius="lg" >}}
 
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Cozy Rooms & Abbey
+## Cozy Rooms
 
 All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and shampoo, conditioner, and body wash.
 
 
-{{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Check Availability" >}}
+{{< button url="/rooms" text="Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
 {{< /col >}}
 
@@ -128,7 +128,7 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Nearby Adventures {#adventures .scroll-mt-24}
+## Nearby Adventures
 
 {{< table headers="Adventures|Distance" delim="|" >}}
 [SVU](https://svu.edu/)|2 min

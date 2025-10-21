@@ -10,6 +10,8 @@ headless: true
 Website Design & Local SEO for Small Businesses
 {.center}
 
+{{< socials size="w-8 h-8" gap="gap-3" align="center" >}}
+
 {{< cols min="18rem" gap="0rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}

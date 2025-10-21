@@ -1,4 +1,7 @@
-{{/* Lightweight, dependency-free carousel (renamed from carousel_lite). */}}
+{{/* Lightweight, dependency-free carousel (no Flowbite), designed for exact pixel heights and centered overlays.
+   Usage example:
+   {{< carousel_lite id="foxglove" images="/media/a.jpg,/media/b.jpg" pxheight="520" mobilepxheight="640" mdpxheight="520" radius="lg" duration="500" >}}
+*/}}
 
 {{/* Corner radius mapping */}}
 {{- $radius := lower (.Get "radius" | default "lg") -}}
@@ -20,7 +23,6 @@
 {{- $mdpx      := .Get "mdpxheight"     | default "" -}}
 {{- $lgpx      := .Get "lgpxheight"     | default "" -}}
 {{- $duration  := .Get "duration" | default "500" -}}
-{{- $interval  := .Get "interval" | default "" -}}
 {{- $loading   := lower (.Get "loading" | default "lazy") -}}
 {{- $fetchpri  := cond (eq $loading "eager") "high" "low" -}}
 
@@ -45,7 +47,7 @@
 {{- end -}}
 
 {{- if eq (len $imgs) 0 -}}
-  <p class="text-sm text-red-600 dark:text-red-400">carousel: no images found</p>
+  <p class="text-sm text-red-600 dark:text-red-400">carousel_lite: no images found</p>
 {{- else -}}
 {{- $hasResp := or (ne (printf "%v" $mobilepx) "") (or (ne (printf "%v" $mdpx) "") (ne (printf "%v" $lgpx) "")) -}}
 {{- $mobileOrPx := cond (ne (printf "%v" $mobilepx) "") $mobilepx $pxheight -}}
@@ -58,7 +60,7 @@
   {{- $rootStyle = (printf " style=\"--lc-h-mobile:%vpx;--lc-h-md:%vpx;\"" $mob $md) | safeHTMLAttr -}}
 {{- end -}}
 
-<div id="{{ $id }}" class="relative w-full not-prose my-0 [&+p]:mt-3" data-lite-carousel data-carousel-ver="lite-1"{{ if ne (printf "%v" $interval) "" }} data-auto-interval="{{ $interval }}"{{ end }}{{ $rootStyle }}>
+<div id="{{ $id }}" class="relative w-full not-prose my-0 [&+p]:mt-3" data-lite-carousel data-carousel-ver="lite-1"{{ $rootStyle }}>
   <div class="relative overflow-hidden {{ $roundedClass }}" data-carousel-viewport>
     {{- range $i, $img := $imgs -}}
       {{- $src := $img.src -}}
@@ -74,13 +76,13 @@
         <button type="button" class="lite-dot" aria-label="Slide {{ add $i 1 }}" {{ if eq $i 0 }}aria-current="true"{{ end }} data-go-to="{{ $i }}"></button>
       {{- end -}}
     </div>
-    <button type="button" class="lite-prev" aria-label="Previous" style="position:absolute;top:50%;transform:translateY(-50%);left:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;">
+  <button type="button" class="lite-prev" aria-label="Previous" style="position:absolute;top:50%;transform:translateY(-50%);left:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;">
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lite-nav-bg">
         <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="sr-only">Previous</span>
       </span>
     </button>
-    <button type="button" class="lite-next" aria-label="Next" style="position:absolute;top:50%;transform:translateY(-50%);right:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;">
+  <button type="button" class="lite-next" aria-label="Next" style="position:absolute;top:50%;transform:translateY(-50%);right:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;">
       <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lite-nav-bg">
         <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="m1 9 4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="sr-only">Next</span>
