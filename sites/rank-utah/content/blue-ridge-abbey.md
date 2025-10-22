@@ -21,7 +21,7 @@ Tests were conducted and can be verified using Google's Page Speed Insights tool
 
 ## Blue Ridge Abbey
 
-![alt text](</media/Screenshot 2025-10-22 at 11.19.51 AM.jpg>)
+![alt text](</media/Screenshot-2025-10-22-at-11.19.51-AM.jpg>)
 
 {{< /col >}}
 
@@ -30,7 +30,7 @@ Tests were conducted and can be verified using Google's Page Speed Insights tool
 ## Competitors
 
 {{< carousel id="competitors"
-	images="/media/Screenshot 2025-10-22 at 11.19.34 AM.jpg, /media/Screenshot 2025-10-22 at 11.19.00 AM.jpg, /media/Screenshot 2025-10-22 at 11.18.43 AM.jpg, /media/Screenshot 2025-10-22 at 11.17.37 AM.jpg, /media/Screenshot 2025-10-22 at 11.16.52 AM.jpg, /media/Screenshot 2025-10-22 at 11.15.30 AM.jpg, /media/Screenshot 2025-10-22 at 11.13.58 AM.jpg"
+	images="/media/Screenshot-2025-10-22-at-11.19.34-AM.jpg, /media/Screenshot-2025-10-22-at-11.19.00-AM.jpg, /media/Screenshot-2025-10-22-at-11.18.43-AM.jpg, /media/Screenshot-2025-10-22-at-11.17.37-AM.jpg, /media/Screenshot-2025-10-22-at-11.16.52-AM.jpg, /media/Screenshot-2025-10-22-at-11.15.30-AM.jpg, /media/Screenshot-2025-10-22-at-11.13.58-AM.jpg"
 	mobilepxheight="360" mdpxheight="700" radius="md" duration="600" >}}
 
 {{< /col >}}

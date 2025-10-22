@@ -32,6 +32,11 @@ const WIDTHS = (argMap['widths'] || '320,480,640,768,960,1200,1600,2000,2400,320
 const AVIF_Q = parseInt(argMap['avif-quality'] || '45', 10);
 const WEBP_Q = parseInt(argMap['webp-quality'] || '82', 10);
 const JPEG_Q = parseInt(argMap['jpeg-quality'] || '82', 10);
+// Select output formats (comma-separated): avif, webp, jpeg
+const FORMATS = new Set((argMap['formats'] || 'avif,webp,jpeg')
+  .split(',')
+  .map(s => s.trim().toLowerCase())
+  .filter(Boolean));
 const DRY_RUN = ['true','1','yes'].includes(String(argMap['dry-run'] || 'false'));
 
 const IMG_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif']);
@@ -158,9 +163,15 @@ async function processOneImage(fileAbs, mediaDirAbs) {
 
   // Generate all variants
   for (const w of useWidths) {
-    common.variants.avif.push(await ensureOutput(w, 'avif'));
-    common.variants.webp.push(await ensureOutput(w, 'webp'));
-    common.variants.jpeg.push(await ensureOutput(w, 'jpg'));
+    if (FORMATS.has('avif')) {
+      common.variants.avif.push(await ensureOutput(w, 'avif'));
+    }
+    if (FORMATS.has('webp')) {
+      common.variants.webp.push(await ensureOutput(w, 'webp'));
+    }
+    if (FORMATS.has('jpeg') || FORMATS.has('jpg')) {
+      common.variants.jpeg.push(await ensureOutput(w, 'jpg'));
+    }
   }
 
   // Assign to both keys so either .jpg or .avif lookups resolve

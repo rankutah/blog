@@ -139,7 +139,73 @@
 {{- end -}}
 
 {{- if $img -}}
-  {{- $abs := absURL $img -}}
+  {{/* Prefer a JPEG for social compatibility (FB/LinkedIn often ignore AVIF). Try to resolve via site images manifest. */}}
+  {{- $ogimg := $img -}}
+  {{- /* Access data file with a dot in its basename via index() */ -}}
+  {{- $data := (index site.Data "images.manifest") -}}
+  {{- if $data -}}
+    {{- /* Normalize key: strip protocol/host, collapse relative segments, ensure leading slash */ -}}
+    {{- $key := $img -}}
+    {{- if $key -}}
+      {{- $key = (replaceRE "^https?://[^/]+" "" $key) -}}
+      {{- $key = (replace $key "../" "") -}}
+      {{- $key = (replace $key "./" "") -}}
+      {{- if not (hasPrefix $key "/") -}}
+        {{- $key = (printf "/%s" $key) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $entry := index $data $key -}}
+    {{- if not $entry -}}
+      {{/* Try extension swaps to find manifest entry */}}
+      {{- $alt := "" -}}
+      {{- if (hasSuffix $key ".avif") -}}
+        {{- $alt = replaceRE `\.avif$` `.jpg` $key -}}
+      {{- else if (hasSuffix $key ".webp") -}}
+        {{- $alt = replaceRE `\.webp$` `.jpg` $key -}}
+      {{- else if (hasSuffix $key ".png") -}}
+        {{- $alt = replaceRE `\.png$` `.jpg` $key -}}
+      {{- else if or (hasSuffix $key ".jpeg") (hasSuffix $key ".jpg") -}}
+        {{- $alt = $key -}}
+      {{- end -}}
+      {{- if $alt -}}
+        {{- $entry = index $data $alt -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if not $entry -}}
+      {{- /* Try whitespace variants (normal space vs thin space vs NBSP) */ -}}
+      {{- $thin := " " -}} {{/* U+202F NARROW NO-BREAK SPACE */}}
+      {{- $nbsp := " " -}} {{/* U+00A0 NO-BREAK SPACE */}}
+      {{- $alts := slice (replace $key " " $thin) (replace $key " " $nbsp) (replace $key $thin " ") (replace $key $nbsp " ") -}}
+      {{- range $i, $ak := $alts -}}
+        {{- if and (not $entry) (isset $data $ak) -}}
+          {{- $entry = index $data $ak -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if not $entry -}}
+      {{/* As a robust fallback, try a base-name match across manifest keys (ignore extension). */}}
+      {{- $base := replaceRE `(?i)\.(avif|webp|jpe?g|png)$` `` $key -}}
+      {{- range $k, $v := $data -}}
+        {{- $kb := replaceRE `(?i)\.(avif|webp|jpe?g|png)$` `` $k -}}
+        {{- if eq $kb $base -}}
+          {{- $entry = $v -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if $entry -}}
+      {{/* Use map indexing to access nested JSON keys reliably */}}
+      {{- $variants := index $entry "variants" -}}
+      {{- $jv := cond $variants (index $variants "jpeg") (slice) -}}
+      {{- if gt (len $jv) 0 -}}
+        {{- $last := index $jv (sub (len $jv) 1) -}}
+        {{- $url := index $last "url" -}}
+        {{- if $url -}}
+          {{- $ogimg = $url -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $abs := absURL $ogimg -}}
   <meta property="og:image" content="{{ $abs }}">
   <meta name="twitter:image" content="{{ $abs }}">
 {{- end -}}
