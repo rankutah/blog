@@ -71,6 +71,13 @@
 {{- else if .Params.cover -}}
   {{- $img = .Params.cover -}}
 {{- else -}}
+  {{/* Prefer an eager/fetchpriority=high image within this page (hero/LCP) */}}
+  {{- if not $img -}}
+    {{- $eager := findRE `(?is)<img[^>]+(?:fetchpriority\s*=\s*"high"|loading\s*=\s*"eager")[^>]*src=\"([^\"]+)\"` .Content -}}
+    {{- if gt (len $eager) 0 -}}
+      {{- $img = replaceRE `(?is).*src="([^"]+)".*` "$1" (index $eager 0) -}}
+    {{- end -}}
+  {{- end -}}
   {{/* Try page bundle resources */}}
   {{- with .Resources.GetMatch "*feature*" -}}
     {{- $img = .RelPermalink -}}
@@ -95,14 +102,21 @@
 {{- if not $img -}}
   {{/* Fallback to homepage first main image */}}
   {{- $homeImg := "" -}}
-  {{- $avif := findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\"]+)\"` $home.Content -}}
-  {{- if gt (len $avif) 0 -}}
-    {{- $homeImg = replaceRE `(?is).*srcset=\"([^\"]+)\".*` "$1" (index $avif 0) -}}
-  {{- end -}}
-  {{- if not $homeImg -}}
-    {{- $homeImgTags := findRE `(?is)<img[^>]+src=\"([^\"]+)\"` $home.Content -}}
-    {{- if gt (len $homeImgTags) 0 -}}
-      {{- $homeImg = replaceRE `(?is).*src=\"([^\"]+)\".*` "$1" (index $homeImgTags 0) -}}
+  {{- /* Prefer eager/high-priority image on home (likely hero) */ -}}
+  {{- $homeEager := findRE `(?is)<img[^>]+(?:fetchpriority\s*=\s*\"high\"|loading\s*=\s*\"eager\")[^>]*src=\"([^\"]+)\"` $home.Content -}}
+  {{- if gt (len $homeEager) 0 -}}
+    {{- $homeImg = replaceRE `(?is).*src=\"([^\"]+)\".*` "$1" (index $homeEager 0) -}}
+  {{- else -}}
+    {{- /* Fallback: first AVIF source or first <img> */ -}}
+    {{- $avif := findRE `(?is)<source[^>]+type=\"image/avif\"[^>]+srcset=\"([^\"]+)\"` $home.Content -}}
+    {{- if gt (len $avif) 0 -}}
+      {{- $homeImg = replaceRE `(?is).*srcset=\"([^\"]+)\".*` "$1" (index $avif 0) -}}
+    {{- end -}}
+    {{- if not $homeImg -}}
+      {{- $homeImgTags := findRE `(?is)<img[^>]+src=\"([^\"]+)\"` $home.Content -}}
+      {{- if gt (len $homeImgTags) 0 -}}
+        {{- $homeImg = replaceRE `(?is).*src=\"([^\"]+)\".*` "$1" (index $homeImgTags 0) -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
   {{- $img = $homeImg -}}
