@@ -26,6 +26,7 @@
   "build:blueridgeTech": "SITE=blueridgeTech npm run optimize:blueridgeTech --silent && npm run deriv:blueridgeTech --silent && SITE=blueridgeTech hugo --source ./sites/blueridgeTech --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
   "blueridgetech": "SITE=blueridgeTech npm run optimize:blueridgetech --silent && npm run deriv:blueridgetech --silent && node scripts/run-hugo-server.mjs --site=blueridgeTech --source=./sites/blueridgeTech --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
   "build:blueridgetech": "SITE=blueridgeTech npm run optimize:blueridgetech --silent && npm run deriv:blueridgetech --silent && SITE=blueridgeTech hugo --source ./sites/blueridgeTech --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
+  "build": "node scripts/build-site.mjs",
 
     "grab:carousel": "node scripts/grab-carousel-headless.mjs",
     "localize:carousel": "node scripts/localize-carousel-images.mjs"
