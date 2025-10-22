@@ -4,17 +4,18 @@ layout: "flowbite"
 url: "/contact"
 ---
 
-{{< section >}}
+{{< section align="center" >}}
+
+# Get help now
 
 <div class="text-center max-w-3xl mx-auto">
-	<h2 class="text-2xl font-semibold mb-2">Get help now</h2>
 	<p class="mb-4">Fast, honest computer repair. Call or book a time that works for you.</p>
 	<div class="flex flex-wrap items-center justify-center gap-3">
 		{{< button url="tel:+15404581021" text="Call Now" >}}
 		{{< button url="https://calendly.com/support-blueridgetech" text="Schedule" >}}
 	</div>
-	<p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Typical response time: same day during business hours.</p>
 </div>
+Typical response time: same day during business hours.
 
 {{< /section >}}
 
