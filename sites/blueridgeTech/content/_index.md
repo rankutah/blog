@@ -38,17 +38,35 @@ Call now or schedule a time that works for you.
 
 {{< /section >}}
 
+<br>
+
 {{< section >}}
+
+{{< cols min="20rem" gap="2rem" v="start">}}
+
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Find us in Buena Vista
+Photos of the office and signs so you know you’re in the right place.
+
+{{< carousel_lite id="location" images="/media/office.jpg,/media/fence-sign.jpg,/media/street-sign.jpg" pxheight="400" mobilepxheight="400" radius="xl" >}}
+
+{{< /col >}}
+
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## What I fix most
 
-{{< cols min="16rem" gap="1.25rem" v="start">}}
+{{< cols min="14rem" gap="1rem" v="start" >}}
+{{< col card="true" bg="white" darkbg="gray-900" y="start" >}}Laptop screens, batteries, keyboards, and charging{{< /col >}}
+{{< col card="true" bg="white" darkbg="gray-900" y="start" >}}Virus and malware removal, pop‑ups, browser cleanup{{< /col >}}
+{{< col card="true" bg="white" darkbg="gray-900" y="start" >}}Windows install & upgrades, driver issues{{< /col >}}
+{{< col card="true" bg="white" darkbg="gray-900" y="start" >}}Data recovery and reliable backups{{< /col >}}
+{{< col card="true" bg="white" darkbg="gray-900" y="start" >}}Wi‑Fi dead zones, printer and network sharing{{< /col >}}
+{{< col card="true" bg="white" darkbg="gray-900" y="start" >}}Hardware upgrades (SSD/RAM), tune‑ups{{< /col >}}
+{{< /cols >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}Laptop screens, batteries, keyboards, and charging{{< /col >}}
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}Virus and malware removal, pop‑ups, browser cleanup{{< /col >}}
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}Windows install & upgrades, driver issues{{< /col >}}
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}Data recovery and reliable backups{{< /col >}}
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}Wi‑Fi dead zones, printer and network sharing{{< /col >}}
+{{< /col >}}
 
 {{< /cols >}}
 
@@ -67,6 +85,10 @@ See what customers are saying
 
 {{< section >}}
 
+{{< cols min="20rem" gap="2rem" v="start">}}
+
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+
 ## Why neighbors choose BlueridgeTech
 
 - Fast turnaround and clear communication
@@ -74,9 +96,13 @@ See what customers are saying
 - Patient, one‑on‑one support for non‑technical folks
 - On‑site or remote help—whatever is easiest
 
-{{< /section >}}
+### Service area
 
-{{< section >}}
+Buena Vista and nearby communities.
+
+{{< /col >}}
+
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## How I work
 
@@ -85,13 +111,9 @@ See what customers are saying
 3. Repair, test, and tune‑up (backups when needed)
 4. Follow‑up and simple tips to prevent repeat issues
 
-{{< /section >}}
+{{< /col >}}
 
-{{< section >}}
-
-### Service area
-
-Buena Vista and nearby communities.
+{{< /cols >}}
 
 {{< /section >}}
 

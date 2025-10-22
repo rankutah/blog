@@ -219,6 +219,250 @@
       ]
     }
   },
+  "/media/fence-sign.jpg": {
+    "width": 2048,
+    "height": 1542,
+    "aspect": 1.3281452658884565,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAADAf/EACgQAAICAgECBAcBAAAAAAAAAAECAxEABCESIjFBUaEFFDIzU2GB4f/EABgBAAMBAQAAAAAAAAAAAAAAAAEDBAAC/8QAHBEAAwACAwEAAAAAAAAAAAAAAAECESEDEkET/9oADAMBAAIRAxEAPwB0k00nS0WvHQH5f8wo02EZjGprhWvgyMb9s5qbLSwSHWA6lZbsGq5zrRu0wmZXZ1PaC7V4c8VlU7nIjCWkaSRbboq1AoUggC/LCudnSZ+5A0ygUo5AF8jn94mN50C0p6QD2tZI9OazH4g32ZJCA5FV/T684Kn0Kfgbc0zNGo1wkLBrNcWK8OML8jMid0kJ8rLNftllkc8lLSHuUzJ9Gd6CtCvP1BnvER6ba+tczh26+KYnjLLOvrVNJm6pI//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/fence-sign__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/fence-sign__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/fence-sign__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/fence-sign__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/fence-sign__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/fence-sign__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/fence-sign__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/fence-sign__w2000.avif"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/fence-sign__w2048.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/fence-sign__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/fence-sign__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/fence-sign__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/fence-sign__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/fence-sign__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/fence-sign__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/fence-sign__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/fence-sign__w2000.webp"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/fence-sign__w2048.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/fence-sign__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/fence-sign__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/fence-sign__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/fence-sign__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/fence-sign__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/fence-sign__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/fence-sign__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/fence-sign__w2000.jpg"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/fence-sign__w2048.jpg"
+        }
+      ]
+    }
+  },
+  "/media/fence-sign.avif": {
+    "width": 2048,
+    "height": 1542,
+    "aspect": 1.3281452658884565,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAADAf/EACgQAAICAgECBAcBAAAAAAAAAAECAxEABCESIjFBUaEFFDIzU2GB4f/EABgBAAMBAQAAAAAAAAAAAAAAAAEDBAAC/8QAHBEAAwACAwEAAAAAAAAAAAAAAAECESEDEkET/9oADAMBAAIRAxEAPwB0k00nS0WvHQH5f8wo02EZjGprhWvgyMb9s5qbLSwSHWA6lZbsGq5zrRu0wmZXZ1PaC7V4c8VlU7nIjCWkaSRbboq1AoUggC/LCudnSZ+5A0ygUo5AF8jn94mN50C0p6QD2tZI9OazH4g32ZJCA5FV/T684Kn0Kfgbc0zNGo1wkLBrNcWK8OML8jMid0kJ8rLNftllkc8lLSHuUzJ9Gd6CtCvP1BnvER6ba+tczh26+KYnjLLOvrVNJm6pI//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/fence-sign__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/fence-sign__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/fence-sign__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/fence-sign__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/fence-sign__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/fence-sign__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/fence-sign__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/fence-sign__w2000.avif"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/fence-sign__w2048.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/fence-sign__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/fence-sign__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/fence-sign__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/fence-sign__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/fence-sign__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/fence-sign__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/fence-sign__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/fence-sign__w2000.webp"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/fence-sign__w2048.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/fence-sign__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/fence-sign__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/fence-sign__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/fence-sign__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/fence-sign__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/fence-sign__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/fence-sign__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/fence-sign__w2000.jpg"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/fence-sign__w2048.jpg"
+        }
+      ]
+    }
+  },
   "/media/image.jpg": {
     "width": 800,
     "height": 532,
@@ -467,6 +711,250 @@
       ]
     }
   },
+  "/media/office.jpg": {
+    "width": 2048,
+    "height": 1542,
+    "aspect": 1.3281452658884565,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEAgUG/8QAJxAAAgEDAwIGAwAAAAAAAAAAAQIDAAQREhMhBTEUFSJBUWEjcYH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAXEQEBAQEAAAAAAAAAAAAAAAAAATFB/9oADAMBAAIRAxEAPwDUF1cwspVUIPHrHanOZGJZ9lcjUfVgCobaV5LD8txbxqmTulwXH8Bz8e1Nk6l0uYjciadim2z4KZXOeB+6IFqmRUV0McisMhlPBp/irlFOrAQKTiud0+96alqsUbiMqchXOOfo0ecQXVrcBAV0jSM9zxWsVHlY433CNst9HgVdHvR2xhQrpLajke9FFKWmnfajidY1CDGoryRSrUKZH0nCZ7fNFFFyqnH/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/office__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/office__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/office__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/office__w2000.avif"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/office__w2048.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/office__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/office__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/office__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/office__w2000.webp"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/office__w2048.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/office__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/office__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/office__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/office__w2000.jpg"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/office__w2048.jpg"
+        }
+      ]
+    }
+  },
+  "/media/office.avif": {
+    "width": 2048,
+    "height": 1542,
+    "aspect": 1.3281452658884565,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEAgUG/8QAJxAAAgEDAwIGAwAAAAAAAAAAAQIDAAQREhMhBTEUFSJBUWEjcYH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAXEQEBAQEAAAAAAAAAAAAAAAAAATFB/9oADAMBAAIRAxEAPwDUF1cwspVUIPHrHanOZGJZ9lcjUfVgCobaV5LD8txbxqmTulwXH8Bz8e1Nk6l0uYjciadim2z4KZXOeB+6IFqmRUV0McisMhlPBp/irlFOrAQKTiud0+96alqsUbiMqchXOOfo0ecQXVrcBAV0jSM9zxWsVHlY433CNst9HgVdHvR2xhQrpLajke9FFKWmnfajidY1CDGoryRSrUKZH0nCZ7fNFFFyqnH/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/office__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/office__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/office__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/office__w2000.avif"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/office__w2048.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/office__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/office__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/office__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/office__w2000.webp"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/office__w2048.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/office__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/office__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/office__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/office__w2000.jpg"
+        },
+        {
+          "w": 2048,
+          "url": "/media-deriv/office__w2048.jpg"
+        }
+      ]
+    }
+  },
   "/media/profile.jpg": {
     "width": 1200,
     "height": 1594,
@@ -635,6 +1123,202 @@
         {
           "w": 1200,
           "url": "/media-deriv/profile__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/street-sign.jpg": {
+    "width": 1205,
+    "height": 1161,
+    "aspect": 1.0378983634797587,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwL/xAAnEAACAQQCAQMEAwAAAAAAAAABAgMABBEhBRJBEzEyIlFhgXGhsf/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/EABcRAQEBAQAAAAAAAAAAAAAAAAABETH/2gAMAwEAAhEDEQA/AGYeQW8fpaRNMo+bDx+qLYXS3IU2sqxb2y+KmcL1SO7z1A6oxG94b8fzTey4UXfXscdcNvOd/wB1W0kh6aa4Rz6NpJIG2D1IqSIrmNXluEdJWY+/mmW69wTOG32XLHJXIP8AgNKcgxS1t0aTuSztnf3FTdbJOMOJldXuVidUlaBghYgDtkY99U6rcqIdvE8gU+U0f1UJMYLt49q4LaJAFNFqc8r6Q6Roz6HwQ5FZcyXaS3SRURxHlljP0gk+KknWxqgEk68U0f/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/street-sign__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/street-sign__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/street-sign__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/street-sign__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/street-sign__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/street-sign__w1200.avif"
+        },
+        {
+          "w": 1205,
+          "url": "/media-deriv/street-sign__w1205.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/street-sign__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/street-sign__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/street-sign__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/street-sign__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/street-sign__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/street-sign__w1200.webp"
+        },
+        {
+          "w": 1205,
+          "url": "/media-deriv/street-sign__w1205.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/street-sign__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/street-sign__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/street-sign__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/street-sign__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/street-sign__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/street-sign__w1200.jpg"
+        },
+        {
+          "w": 1205,
+          "url": "/media-deriv/street-sign__w1205.jpg"
+        }
+      ]
+    }
+  },
+  "/media/street-sign.avif": {
+    "width": 1205,
+    "height": 1161,
+    "aspect": 1.0378983634797587,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwL/xAAnEAACAQQCAQMEAwAAAAAAAAABAgMABBEhBRJBEzEyIlFhgXGhsf/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/EABcRAQEBAQAAAAAAAAAAAAAAAAABETH/2gAMAwEAAhEDEQA/AGYeQW8fpaRNMo+bDx+qLYXS3IU2sqxb2y+KmcL1SO7z1A6oxG94b8fzTey4UXfXscdcNvOd/wB1W0kh6aa4Rz6NpJIG2D1IqSIrmNXluEdJWY+/mmW69wTOG32XLHJXIP8AgNKcgxS1t0aTuSztnf3FTdbJOMOJldXuVidUlaBghYgDtkY99U6rcqIdvE8gU+U0f1UJMYLt49q4LaJAFNFqc8r6Q6Roz6HwQ5FZcyXaS3SRURxHlljP0gk+KknWxqgEk68U0f/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/street-sign__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/street-sign__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/street-sign__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/street-sign__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/street-sign__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/street-sign__w1200.avif"
+        },
+        {
+          "w": 1205,
+          "url": "/media-deriv/street-sign__w1205.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/street-sign__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/street-sign__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/street-sign__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/street-sign__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/street-sign__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/street-sign__w1200.webp"
+        },
+        {
+          "w": 1205,
+          "url": "/media-deriv/street-sign__w1205.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/street-sign__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/street-sign__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/street-sign__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/street-sign__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/street-sign__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/street-sign__w1200.jpg"
+        },
+        {
+          "w": 1205,
+          "url": "/media-deriv/street-sign__w1205.jpg"
         }
       ]
     }
