@@ -64,7 +64,7 @@ Grow your small business in Pleasant Grove with a professional website and local
 ## What Clients Are Saying
 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
-<div class="elfsight-app-caff5808-5afd-415b-b8a6-19ebf5a9e552" data-elfsight-app-lazy></div>
+{{< elfsight id="caff5808-5afd-415b-b8a6-19ebf5a9e552" >}}
 
 ## Serving Pleasant Grove, UT
 

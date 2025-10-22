@@ -42,9 +42,8 @@ All rooms are furnished with linens and amenities, including Wifi, TV, mini frid
 
 ## A 5-Star Guest Experience
 
-<!-- Elfsight Google Reviews | Blue Ridge Abbey -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-352976f6-7c94-43f8-b5c1-6ecbfcc43a69" data-elfsight-app-lazy></div>
+<!-- Elfsight Google Reviews | Blue Ridge Abbey (lazy-loaded globally) -->
+{{< elfsight id="352976f6-7c94-43f8-b5c1-6ecbfcc43a69" >}}
 
 {{< /section >}}
 
