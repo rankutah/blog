@@ -7,9 +7,9 @@ url: "/portfolio/blue-ridge-abbey"
 
 {{< section >}}
 
-# Website Performance - Blue Ridge Abbey vs Competitors
+# Website Performance - Blue Ridge Abbey
 
-Website performance tests were conducted and can be verified using Google's Page Speed Insights tool https://pagespeed.web.dev/. Competitors were found using Google Maps and searching for "Bed & Breakfast".
+Tests were conducted and can be verified using Google's Page Speed Insights tool https://pagespeed.web.dev/. Competitors were found using Google Maps and searching for "Bed & Breakfast".
 
 {{< /section >}}
 
