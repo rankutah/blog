@@ -1,0 +1,78 @@
+# ─────────────────────────────────────────────────────────────────────────────
+baseURL       = "https://blueridgetech.com/"  # Update if different
+title         = "BlueRidgeTech"
+languageCode  = "en-us"
+theme         = ["overrides", "PaperMod"]
+themesDir     = "../../themes"
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Keep URLs tidy
+trailingSlash = "never"
+cleanDestinationDir = true
+uglyURLs = true
+
+# Ensure FORMS format exists locally so outputs.home supports it
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block  = true
+        inline = true
+        title  = true
+
+[params]
+  primaryColor       = "indigo"
+  logo               = "media/logo.png"     # optional; add when ready
+  lightBackground    = "neutral-100"
+  darkBackground     = "neutral-900"
+  enableSearch       = true
+  clientName         = "BlueRidgeTech"
+  clientURL          = "https://blueridgetech.com"
+  mainSections       = ["posts"]
+  defaultTheme       = "auto"
+  disableThemeToggle = false
+
+[params.header]
+  stickyMobile      = true
+  stickyDesktop     = true
+  CTAText           = "Contact"
+  CTAURL            = "/contact"
+  showPhoneOnMobile = false
+  logoHeightPx      = 40
+
+[menu]
+  [[menu.main]]
+    name   = "Home"
+    url    = "/"
+    weight = 10
+
+  [[menu.main]]
+    name   = "About"
+    url    = "/about"
+    weight = 20
+
+  [[menu.main]]
+    name   = "Services"
+    url    = "/services"
+    weight = 30
+
+  [[menu.main]]
+    name   = "Reviews"
+    url    = "/reviews"
+    weight = 40
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact"
+    weight = 50

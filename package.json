@@ -11,14 +11,18 @@
     "optimize": "node scripts/optimize-images.mjs",
     "optimize:rank-utah": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/rank-utah/media",
     "optimize:nova-gutter": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/nova-gutter/media",
+    "optimize:blueridgeTech": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/blueridgeTech/media",
     "import:blue-ridge-abbey": "node scripts/import-blueridgeabbey.mjs",
   "optimize:blue-ridge-abbey": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/blue-ridge-abbey/media",
   "deriv": "node scripts/build-image-derivatives.mjs",
   "deriv:blue-ridge-abbey": "node scripts/build-image-derivatives.mjs sites/blue-ridge-abbey/media",
   "deriv:nova-gutter": "node scripts/build-image-derivatives.mjs sites/nova-gutter/media",
   "deriv:rank-utah": "node scripts/build-image-derivatives.mjs --formats=avif,jpeg sites/rank-utah/media",
+  "deriv:blueridgeTech": "node scripts/build-image-derivatives.mjs sites/blueridgeTech/media",
   "blue-ridge-abbey": "SITE=blue-ridge-abbey npm run optimize:blue-ridge-abbey --silent && npm run deriv:blue-ridge-abbey --silent && node scripts/run-hugo-server.mjs --site=blue-ridge-abbey --source=./sites/blue-ridge-abbey --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
   "build:blue-ridge-abbey": "SITE=blue-ridge-abbey npm run optimize:blue-ridge-abbey --silent && npm run deriv:blue-ridge-abbey --silent && SITE=blue-ridge-abbey hugo --source ./sites/blue-ridge-abbey --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
+  "blueridgeTech": "SITE=blueridgeTech npm run optimize:blueridgeTech --silent && npm run deriv:blueridgeTech --silent && node scripts/run-hugo-server.mjs --site=blueridgeTech --source=./sites/blueridgeTech --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
+  "build:blueridgeTech": "SITE=blueridgeTech npm run optimize:blueridgeTech --silent && npm run deriv:blueridgeTech --silent && SITE=blueridgeTech hugo --source ./sites/blueridgeTech --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
 
     "grab:carousel": "node scripts/grab-carousel-headless.mjs",
     "localize:carousel": "node scripts/localize-carousel-images.mjs"
