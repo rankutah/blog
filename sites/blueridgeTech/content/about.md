@@ -1,12 +1,84 @@
 ---
 title: "About"
 layout: "flowbite"
+url: "/about"
 ---
 
-## About BlueRidgeTech
+{{< section >}}
 
-We’re a local team focused on clear communication and practical technology. Our goal is to keep your systems simple, dependable, and cost‑effective.
+# Your Computer Technician
+{.center}
 
-- Decades of combined experience
-- Straightforward recommendations
-- Ongoing support options
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+![Profile Picture](/media/profile.png)
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+{{< section >}}
+
+## Why neighbors choose BlueridgeTech
+
+- Fast turnaround and clear communication
+- Fair pricing with options explained up front
+- Patient, one‑on‑one support for non‑technical folks
+- On‑site or remote help—whatever is easiest
+
+{{< /section >}}
+
+{{< section >}}
+
+## How I work
+
+1. Quick diagnosis and estimate
+2. You approve the plan—no surprises
+3. Repair, test, and tune‑up (backups when needed)
+4. Follow‑up and simple tips to prevent repeat issues
+
+{{< /section >}}
+
+{{< section >}}
+
+## What I fix most
+
+- Laptop screens, batteries, keyboards, and charging
+- Virus and malware removal, browser cleanup
+- Windows installs and upgrades, driver issues
+- Data recovery and backup setup you can trust
+- Wi‑Fi, printers, and small‑office/home networks
+
+{{< /section >}}
+
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< /section >}}
+
+
+{{< section >}}
+
+## About Gabriel Antigua
+
+With years of hands‑on experience, I help neighbors in Buena Vista keep their computers running fast and reliable. From slow startups and pop‑ups to broken screens and Wi‑Fi issues, I provide practical fixes and honest advice—no upsells, just what you need.
+
+{{< /section >}}
+
+{{< section >}}
+
+<div class="text-center max-w-3xl mx-auto">
+	<h3 class="text-2xl font-semibold mb-2">Have a question or need a quick quote?</h3>
+	<p class="mb-4">Call, book a time, or send a message and I’ll get right back to you.</p>
+	<div class="flex flex-wrap items-center justify-center gap-3">
+		{{< button url="tel:+15404581021" text="Call (540) 458-1021" >}}
+		{{< button url="https://calendly.com/support-blueridgetech" text="Book a Time" >}}
+		{{< button url="/contact" text="Message or Directions" >}}
+	</div>
+</div>
+
+{{< /section >}}
+

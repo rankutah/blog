@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
-baseURL       = "https://blueridgetech.com/"  # Update if different
-title         = "BlueRidgeTech"
+baseURL       = "https://blueridgetech.pages.dev/"  # Update if different
+title         = "BlueridgeTech"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
 themesDir     = "../../themes"
@@ -32,12 +32,12 @@ uglyURLs = true
         title  = true
 
 [params]
-  primaryColor       = "indigo"
+  primaryColor       = "blue"
   logo               = "media/logo.png"     # optional; add when ready
   lightBackground    = "neutral-100"
-  darkBackground     = "neutral-900"
+  darkBackground     = "gray-900"
   enableSearch       = true
-  clientName         = "BlueRidgeTech"
+  clientName         = "BlueridgeTech"
   clientURL          = "https://blueridgetech.com"
   mainSections       = ["posts"]
   defaultTheme       = "auto"
@@ -60,17 +60,17 @@ uglyURLs = true
   [[menu.main]]
     name   = "About"
     url    = "/about"
-    weight = 20
+    weight = 40
 
   [[menu.main]]
     name   = "Services"
     url    = "/services"
-    weight = 30
+    weight = 20
 
   [[menu.main]]
     name   = "Reviews"
     url    = "/reviews"
-    weight = 40
+    weight = 30
 
   [[menu.main]]
     name   = "Contact"

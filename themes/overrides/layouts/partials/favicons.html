@@ -1,42 +1,64 @@
 {{/*
   Generate and link favicons from a source image when available.
   Strategy:
-    - Prefer a site-provided source at params.assets.faviconSource (path relative to assets/ or media/)
-    - Else try media/logo.(png|jpg|jpeg|webp|avif|svg)
+    - Prefer an explicit site-provided source at params.assets.faviconSource (path relative to assets/ or starting with media/)
+    - Else try to reuse the configured navbar logo at params.logo (relative to site root), resolving through Hugo Pipes when possible
+    - Else try media/logo.(png|jpg|jpeg|webp|avif|svg) under the Hugo assets pipeline
     - If we find a raster image, emit 32x32 and 16x16 PNG favicons and a 180x180 apple-touch-icon
-    - If we find an SVG, link it as a vector favicon in addition to PNG fallbacks
-    - Always include a legacy /favicon.ico link as a fallback
+    - If we find an SVG, link it as a vector favicon and still keep a legacy ICO fallback
 
   Notes:
     - Files are built via Hugo Pipes (cache-busted URLs) and do not need to exist under static/
-    - If no source image is found, the partial still emits the /favicon.ico fallback
+    - If no source image is found, we still emit the /favicon.ico fallback (sourced from static/ if present)
 */}}
 
-{{- /* Try site logo variants in assets/media first */ -}}
 {{- $img := (resources.Get "media/__none__") -}}
-{{- $candidates := slice "logo.png" "logo.jpg" "logo.jpeg" "logo.webp" "logo.avif" "logo.svg" -}}
-{{- range $candidates -}}
+{{- /* 1) Explicit favicon source override */ -}}
+{{- $favSrc := site.Params.assets.faviconSource | default "" -}}
+{{- if and (not $img) (ne (printf "%v" $favSrc) "") -}}
+  {{- $raw := strings.TrimPrefix "/" (printf "%v" $favSrc) -}}
+  {{- with resources.Get $raw -}}{{- $img = . -}}{{- end -}}
   {{- if not $img -}}
-    {{- $try := resources.Get (printf "media/%s" .) -}}
-    {{- if $try -}}{{- $img = $try -}}{{- end -}}
+    {{- with resources.Get (printf "media/%s" $raw) -}}{{- $img = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 2) Reuse navbar logo when available */ -}}
+{{- if and (not $img) (ne (printf "%v" .Site.Params.logo) "") -}}
+  {{- $logoPath := strings.TrimPrefix "/" (printf "%v" .Site.Params.logo) -}}
+  {{- with resources.Get $logoPath -}}{{- $img = . -}}{{- end -}}
+  {{- if not $img -}}
+    {{- with resources.Get (printf "media/%s" $logoPath) -}}{{- $img = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 3) Fallback to conventional names under assets/media */ -}}
+{{- if not $img -}}
+  {{- $candidates := slice "logo.png" "logo.jpg" "logo.jpeg" "logo.webp" "logo.avif" "logo.svg" -}}
+  {{- range $candidates -}}
+    {{- if not $img -}}
+      {{- $try := resources.Get (printf "media/%s" .) -}}
+      {{- if $try -}}{{- $img = $try -}}{{- end -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
 {{- $isSVG := and $img (eq $img.MediaType.SubType "svg") -}}
-
+{{- $p32 := "" -}}
 {{- if and $img (not $isSVG) -}}
   {{/* Raster pipeline: build PNG sizes */}}
-  {{- $p32 := $img.Fit "32x32 png" -}}
+  {{- $p32 = $img.Fit "32x32 png" -}}
   {{- $p16 := $img.Fit "16x16 png" -}}
   {{- $apple := $img.Fit "180x180 png" -}}
   <link rel="icon" type="image/png" sizes="32x32" href="{{ $p32.RelPermalink }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ $p16.RelPermalink }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $apple.RelPermalink }}">
 {{- else if and $img $isSVG -}}
-  {{/* Vector source: link SVG directly; keep PNG fallbacks minimal via conversion */}}
+  {{/* Vector source: link SVG directly */}}
   <link rel="icon" type="image/svg+xml" href="{{ $img.RelPermalink }}">
-  {{- /* PNG fallbacks are not generated from SVG here; legacy ICO link remains below. */ -}}
 {{- end -}}
 
-{{/* Legacy fallback: keep a root /favicon.ico for older browsers and crawlers */}}
+{{/* Legacy fallback: keep a root /favicon.ico for older browsers and crawlers.
+     If we built a 32x32 PNG, also include it as a final generic rel=icon. */}}
+{{- if $p32 -}}<link rel="icon" href="{{ $p32.RelPermalink }}">{{- end -}}
 <link rel="icon" href="{{ (site.Params.assets.favicon | default "favicon.ico") | absURL }}">

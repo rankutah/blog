@@ -1,1 +1,642 @@
-{}
+{
+  "/media/computer-repair-hero.jpg": {
+    "width": 1920,
+    "height": 1280,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQG/8QAJhAAAQMDAwIHAAAAAAAAAAAAAQACEQMxQQQSIVFhBSIycYGR8P/EABYBAQEBAAAAAAAAAAAAAAAAAAIDAf/EABkRAQEBAAMAAAAAAAAAAAAAAAABAiExUf/aAAwDAQACEQMRAD8A5JrzG2kNs8F2StNDSZcJ98KdNSAExK2tA4AiSeGxE9ynmejSXUQAAB+6pTqZ+7LU6YMyRMEzcpVS0k+Y37J6vASL+IaUaAh9FxLCfQcfKqKm5okIQjVtRBdA6gWCUCXuAOTCELNdJv/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/computer-repair-hero__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/computer-repair-hero__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/computer-repair-hero__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/computer-repair-hero__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/computer-repair-hero__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/computer-repair-hero__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/computer-repair-hero__w1600.avif"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/computer-repair-hero__w1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/computer-repair-hero__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/computer-repair-hero__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/computer-repair-hero__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/computer-repair-hero__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/computer-repair-hero__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/computer-repair-hero__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/computer-repair-hero__w1600.webp"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/computer-repair-hero__w1920.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/computer-repair-hero__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/computer-repair-hero__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/computer-repair-hero__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/computer-repair-hero__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/computer-repair-hero__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/computer-repair-hero__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/computer-repair-hero__w1600.jpg"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/computer-repair-hero__w1920.jpg"
+        }
+      ]
+    }
+  },
+  "/media/computer-repair-hero.avif": {
+    "width": 1920,
+    "height": 1280,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQG/8QAJhAAAQMDAwIHAAAAAAAAAAAAAQACEQMxQQQSIVFhBSIycYGR8P/EABYBAQEBAAAAAAAAAAAAAAAAAAIDAf/EABkRAQEBAAMAAAAAAAAAAAAAAAABAiExUf/aAAwDAQACEQMRAD8A5JrzG2kNs8F2StNDSZcJ98KdNSAExK2tA4AiSeGxE9ynmejSXUQAAB+6pTqZ+7LU6YMyRMEzcpVS0k+Y37J6vASL+IaUaAh9FxLCfQcfKqKm5okIQjVtRBdA6gWCUCXuAOTCELNdJv/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/computer-repair-hero__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/computer-repair-hero__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/computer-repair-hero__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/computer-repair-hero__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/computer-repair-hero__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/computer-repair-hero__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/computer-repair-hero__w1600.avif"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/computer-repair-hero__w1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/computer-repair-hero__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/computer-repair-hero__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/computer-repair-hero__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/computer-repair-hero__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/computer-repair-hero__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/computer-repair-hero__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/computer-repair-hero__w1600.webp"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/computer-repair-hero__w1920.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/computer-repair-hero__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/computer-repair-hero__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/computer-repair-hero__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/computer-repair-hero__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/computer-repair-hero__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/computer-repair-hero__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/computer-repair-hero__w1600.jpg"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/computer-repair-hero__w1920.jpg"
+        }
+      ]
+    }
+  },
+  "/media/image.jpg": {
+    "width": 800,
+    "height": 532,
+    "aspect": 1.5037593984962405,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIEBQMG/8QAJRAAAgEDAwQCAwAAAAAAAAAAAQIDAAQhBRESEzFBUSKBkbHB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/EABkRAAMBAQEAAAAAAAAAAAAAAAABAhESIf/aAAwDAQACEQMRAD8A9Na8ZLeOQAfJQcCpzdPaSzILd5QW5AqQNht2zUWl6rAmnAyvuwPxUDJ3zgfmkupmeQXE8zw8SCIUYDA9+zRAvfC5tRnMZcWEgUZJMyipl1trmASxWkbLtuQ9woI+tqz55UngKxzDkw7Sdj/Kx5YLyMHjAgT2oXNZPQ0nI+kdXhI8UgRlxlA2Dnz2p72eUKOfSYjsQhU/uiikdPrBplcaZ0k7MxbA38DArmZpOCjmdh43ooqqIUz/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/image__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/image__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/image__w768.avif"
+        },
+        {
+          "w": 800,
+          "url": "/media-deriv/image__w800.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/image__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/image__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/image__w768.webp"
+        },
+        {
+          "w": 800,
+          "url": "/media-deriv/image__w800.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/image__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/image__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/image__w768.jpg"
+        },
+        {
+          "w": 800,
+          "url": "/media-deriv/image__w800.jpg"
+        }
+      ]
+    }
+  },
+  "/media/image.avif": {
+    "width": 800,
+    "height": 532,
+    "aspect": 1.5037593984962405,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIEBQMG/8QAJRAAAgEDAwQCAwAAAAAAAAAAAQIDAAQhBRESEzFBUSKBkbHB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/EABkRAAMBAQEAAAAAAAAAAAAAAAABAhESIf/aAAwDAQACEQMRAD8A9Na8ZLeOQAfJQcCpzdPaSzILd5QW5AqQNht2zUWl6rAmnAyvuwPxUDJ3zgfmkupmeQXE8zw8SCIUYDA9+zRAvfC5tRnMZcWEgUZJMyipl1trmASxWkbLtuQ9woI+tqz55UngKxzDkw7Sdj/Kx5YLyMHjAgT2oXNZPQ0nI+kdXhI8UgRlxlA2Dnz2p72eUKOfSYjsQhU/uiikdPrBplcaZ0k7MxbA38DArmZpOCjmdh43ooqqIUz/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/image__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/image__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/image__w768.avif"
+        },
+        {
+          "w": 800,
+          "url": "/media-deriv/image__w800.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/image__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/image__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/image__w768.webp"
+        },
+        {
+          "w": 800,
+          "url": "/media-deriv/image__w800.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/image__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/image__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/image__w768.jpg"
+        },
+        {
+          "w": 800,
+          "url": "/media-deriv/image__w800.jpg"
+        }
+      ]
+    }
+  },
+  "/media/logo.jpg": {
+    "width": 495,
+    "height": 179,
+    "aspect": 2.7653631284916202,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQMEAgb/xAAiEAACAgEEAQUAAAAAAAAAAAABAgMRAAQSMUEhIlFhgeH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAZEQEBAQEBAQAAAAAAAAAAAAABAgARITH/2gAMAwEAAhEDEQA/AOPjieVtsalj8Zbp9Ahmp5FcAXS9/mQiRxVMRRsUcLSuz7ifUeSPF5tFRPqdwop+ObqIwJytCNr+szPp2iCsCHRuGHGKZi5tjZ98IdgpUMdp66wtS981BN//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/logo__w480.avif"
+        },
+        {
+          "w": 495,
+          "url": "/media-deriv/logo__w495.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/logo__w480.webp"
+        },
+        {
+          "w": 495,
+          "url": "/media-deriv/logo__w495.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/logo__w480.jpg"
+        },
+        {
+          "w": 495,
+          "url": "/media-deriv/logo__w495.jpg"
+        }
+      ]
+    }
+  },
+  "/media/logo.avif": {
+    "width": 495,
+    "height": 179,
+    "aspect": 2.7653631284916202,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQMEAgb/xAAiEAACAgEEAQUAAAAAAAAAAAABAgMRAAQSMUEhIlFhgeH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAZEQEBAQEBAQAAAAAAAAAAAAABAgARITH/2gAMAwEAAhEDEQA/AOPjieVtsalj8Zbp9Ahmp5FcAXS9/mQiRxVMRRsUcLSuz7ifUeSPF5tFRPqdwop+ObqIwJytCNr+szPp2iCsCHRuGHGKZi5tjZ98IdgpUMdp66wtS981BN//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/logo__w480.avif"
+        },
+        {
+          "w": 495,
+          "url": "/media-deriv/logo__w495.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/logo__w480.webp"
+        },
+        {
+          "w": 495,
+          "url": "/media-deriv/logo__w495.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/logo__w480.jpg"
+        },
+        {
+          "w": 495,
+          "url": "/media-deriv/logo__w495.jpg"
+        }
+      ]
+    }
+  },
+  "/media/profile.jpg": {
+    "width": 1200,
+    "height": 1594,
+    "aspect": 0.7528230865746549,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAABAUBAwACBv/EACgQAAIBAwMEAQQDAAAAAAAAAAECAwAEEQUSIRMiMUFRMpGhsRRh8P/EABYBAQEBAAAAAAAAAAAAAAAAAAECAP/EABgRAQEBAQEAAAAAAAAAAAAAAAARIQEx/9oADAMBAAIRAxEAPwAASuOCPxWdc/FM7+406KdoXLLIvnsOPvSx7myDEdQAYzkg+aClZQ3k4rcOvzWQQxXDKRLtjbOGAzmqJoCrMFO5QcZxii7DOyo1tZBqs+2NmHHIBPqlMqSHjptk/wBV3z20MrFnQk/OSKTanaxpI628RaTollGT53c/iqwb0rgvjbWtskSkugIfJwDn1xzVq6hyRNlyeS4/WDRug2i3lnJvhjJjbBLKN3I9cVXr8MFmkSpAis4Lbh7AOP8AcUQ3IF/mMZVNw9xKMd/fj16A8US1xJPCTa2ty4I2yMTkqvwGxRWtWVtYWgltYVR9/wBR7v3muZkuJnhRWlcrn6dxx9qPW8XRTyQuTG7xHPhXIxW091LcMjTyvIV8bjnHNDnzUVSX/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/profile__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/profile__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/profile__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/profile__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/profile__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/profile__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/profile__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/profile__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/profile__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/profile__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/profile__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/profile__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/profile__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/profile__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/profile__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/profile__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/profile__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/profile__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/profile.avif": {
+    "width": 1200,
+    "height": 1594,
+    "aspect": 0.7528230865746549,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAABAUBAwACBv/EACgQAAIBAwMEAQQDAAAAAAAAAAECAwAEEQUSIRMiMUFRMpGhsRRh8P/EABYBAQEBAAAAAAAAAAAAAAAAAAECAP/EABgRAQEBAQEAAAAAAAAAAAAAAAARIQEx/9oADAMBAAIRAxEAPwAASuOCPxWdc/FM7+406KdoXLLIvnsOPvSx7myDEdQAYzkg+aClZQ3k4rcOvzWQQxXDKRLtjbOGAzmqJoCrMFO5QcZxii7DOyo1tZBqs+2NmHHIBPqlMqSHjptk/wBV3z20MrFnQk/OSKTanaxpI628RaTollGT53c/iqwb0rgvjbWtskSkugIfJwDn1xzVq6hyRNlyeS4/WDRug2i3lnJvhjJjbBLKN3I9cVXr8MFmkSpAis4Lbh7AOP8AcUQ3IF/mMZVNw9xKMd/fj16A8US1xJPCTa2ty4I2yMTkqvwGxRWtWVtYWgltYVR9/wBR7v3muZkuJnhRWlcrn6dxx9qPW8XRTyQuTG7xHPhXIxW091LcMjTyvIV8bjnHNDnzUVSX/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/profile__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/profile__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/profile__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/profile__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/profile__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/profile__w1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/profile__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/profile__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/profile__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/profile__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/profile__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/profile__w1200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/profile__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/profile__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/profile__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/profile__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/profile__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/profile__w1200.jpg"
+        }
+      ]
+    }
+  }
+}
