@@ -42,12 +42,8 @@ Share what you need help with and the best way to contact you.
 	name="true"
 	email="true"
 	phone="optional"
-	subject="optional"
-	custom="Device, Issue"
-	address="optional"
 	message="true"
 	consent="false"
-	order="name,email,phone,custom,subject,address,message,consent"
 	classes="max-w-xl"
 >}}
 

@@ -49,11 +49,7 @@ Computer repair and IT support in Buena Vista, VA
 {{< /section >}}
 
 
-
 {{< section >}}
-
-
-
 
 
 <div class="text-center text-sm opacity-80 mt-4">
