@@ -77,6 +77,9 @@
     /* Lite carousel (custom) styles */
     /* Lite carousel base positioning */
     [data-lite-carousel] [data-carousel-viewport] { position: relative; }
+  /* Initial offscreen positioning so only the first slide is in view before JS runs */
+  [data-lite-carousel] .lite-slide { transform: translateX(100%); }
+  [data-lite-carousel] .lite-slide[data-index="0"] { transform: translateX(0); }
     /* Uniform heights via CSS variables (set on the carousel root) */
     /* Slightly lower default on mobile to keep controls within frame */
     [data-lite-carousel] [data-carousel-viewport] { height: var(--lc-h-mobile, 520px); }
