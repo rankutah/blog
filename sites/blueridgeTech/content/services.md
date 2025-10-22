@@ -15,7 +15,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="blue-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## PC Desktop Repair
 

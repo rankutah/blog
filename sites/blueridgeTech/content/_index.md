@@ -20,7 +20,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 ## Fast Honest Computer Repair
 
-One‑person, local support for desktops and laptops. Quick diagnostics, clear pricing, and real fixes—no upsells.
+One‑person, local support for desktops and laptops. Quick diagnostics, clear pricing, and real fixes.
 
 {{< /col >}}
 
