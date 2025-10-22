@@ -22,6 +22,8 @@
 {{- $duration  := .Get "duration" | default "500" -}}
 {{- $interval  := .Get "interval" | default "" -}}
 {{- $loading   := lower (.Get "loading" | default "lazy") -}}
+{{- /* Allow overriding object-position for cropping focal point (e.g., "center", "top", "bottom", or "50% 40%") */ -}}
+{{- $pos       := .Get "pos" | default (.Get "focus" | default "center") -}}
 {{- /* If the carousel is above the fold, allow opting-in to eager LCP for the first slide */ -}}
 {{- $priority  := .Get "priority" | default "" -}}
 {{- $fetchpri  := cond (eq $loading "eager") "high" "low" -}}
@@ -63,7 +65,7 @@
 {{- end -}}
 
 <div id="{{ $id }}" class="relative w-full not-prose my-0 [&+p]:mt-3" data-lite-carousel data-carousel-ver="lite-1"{{ if ne (printf "%v" $interval) "" }} data-auto-interval="{{ $interval }}"{{ end }}{{ if ne (printf "%v" $priority) "" }} data-priority="1"{{ end }}{{ $rootStyle }}>
-  <div class="relative overflow-hidden {{ $roundedClass }} flex items-center justify-center h-full md:h-[70vh] lg:h-[80vh]" data-carousel-viewport>
+  <div class="relative overflow-hidden {{ $roundedClass }}" data-carousel-viewport>
     {{- range $i, $img := $imgs -}}
       {{- $src := $img.src -}}
       {{- $alt := (cond (ne ($img.alt | default "") "") $img.alt (printf "Slide %d" (add $i 1))) -}}
@@ -76,30 +78,32 @@
             "alt" $alt
             "class" "absolute inset-0 w-full h-full"
             "object" "cover"
-            "objectPosition" "center"
+            "objectPosition" $pos
             "loading" $slideLoading
             "decoding" "async"
             "sizes" $sizes
           ) -}}
       </div>
     {{- end -}}
-    <div class="lite-dots" style="position:absolute;left:50%;transform:translateX(-50%);bottom:1.25rem;z-index:30;display:flex;gap:0.75rem;">
-      {{- range $i, $_ := $imgs -}}
-        <button type="button" class="lite-dot" aria-label="Slide {{ add $i 1 }}" {{ if eq $i 0 }}aria-current="true"{{ end }} data-go-to="{{ $i }}"></button>
-      {{- end -}}
+    <div class="lite-controls" style="position:absolute;inset:0;z-index:30;pointer-events:none;">
+  <div class="lite-dots" style="position:absolute;left:0;right:0;display:flex;gap:0.75rem;justify-content:center;align-items:center;bottom:clamp(0.5rem,2.5vh,1.25rem);pointer-events:auto;">
+        {{- range $i, $_ := $imgs -}}
+          <button type="button" class="lite-dot" aria-label="Slide {{ add $i 1 }}" {{ if eq $i 0 }}aria-current="true"{{ end }} data-go-to="{{ $i }}"></button>
+        {{- end -}}
+      </div>
+      <button type="button" class="lite-prev" aria-label="Previous" style="position:absolute;top:50%;transform:translateY(-50%);left:0;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;pointer-events:auto;">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lite-nav-bg">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="lite-next" aria-label="Next" style="position:absolute;top:50%;transform:translateY(-50%);right:0;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;pointer-events:auto;">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lite-nav-bg">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="m1 9 4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
     </div>
-    <button type="button" class="lite-prev" aria-label="Previous" style="position:absolute;top:50%;transform:translateY(-50%);left:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;">
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lite-nav-bg">
-        <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span class="sr-only">Previous</span>
-      </span>
-    </button>
-    <button type="button" class="lite-next" aria-label="Next" style="position:absolute;top:50%;transform:translateY(-50%);right:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:0 0.5rem;cursor:pointer;">
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full lite-nav-bg">
-        <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none" aria-hidden="true"><path d="m1 9 4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span class="sr-only">Next</span>
-      </span>
-    </button>
   </div>
 </div>
 {{- end -}}

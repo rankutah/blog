@@ -78,26 +78,33 @@
     /* Lite carousel base positioning */
     [data-lite-carousel] [data-carousel-viewport] { position: relative; }
     /* Uniform heights via CSS variables (set on the carousel root) */
-    [data-lite-carousel] [data-carousel-viewport] { height: var(--lc-h-mobile, 640px); }
+    /* Slightly lower default on mobile to keep controls within frame */
+    [data-lite-carousel] [data-carousel-viewport] { height: var(--lc-h-mobile, 520px); }
     @media (min-width: 768px) {
       [data-lite-carousel] [data-carousel-viewport] { height: var(--lc-h-md, var(--lc-h-mobile, 520px)); }
     }
     [data-lite-carousel] .lite-dots {
-      position: absolute; left: 50%; transform: translateX(-50%);
-      bottom: 1.25rem; z-index: 30; display: flex; gap: 0.75rem;
+      position: absolute; left: 0; right: 0;
+      display: flex; gap: 0.75rem; justify-content: center; align-items: center;
+      bottom: clamp(0.5rem, 2.5vh, 1.25rem);
     }
-    /* Dots: larger contrast + active state */
+    /* Dots: match arrow colors; unselected = dark pill, selected = solid white */
     [data-lite-carousel] .lite-dot {
       width: 0.8rem; height: 0.8rem; border-radius: 9999px;
-      background-color: rgba(255,255,255,0.55);
-      border: 1px solid rgba(0,0,0,0.35);
-      box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 0 0 2px rgba(0,0,0,0.08) inset;
+      background-color: rgba(0,0,0,0.45); /* same as .lite-nav-bg base */
+      border: 1px solid rgba(255,255,255,0.75); /* subtle white border for visibility */
+      box-shadow: none; /* solid circle, no extra ring */
     }
     [data-lite-carousel] .lite-dot[aria-current="true"] {
-      background-color: rgba(255,255,255,0.98);
-      border-color: rgba(0,0,0,0.5);
+      background-color: rgba(255,255,255,0.98); /* bright white like arrow icon */
     }
     [data-lite-carousel] .lite-dot:focus-visible { outline: 2px solid rgba(255,255,255,0.9); outline-offset: 2px; }
+
+  /* Controls overlay (ensures all controls anchor to viewport bounds) */
+  [data-lite-carousel] .lite-controls { position: absolute; inset: 0; z-index: 30; pointer-events: none; display:grid; grid-template-rows: 1fr auto; grid-template-columns: 1fr; }
+    [data-lite-carousel] .lite-controls .lite-prev,
+    [data-lite-carousel] .lite-controls .lite-next,
+    [data-lite-carousel] .lite-controls .lite-dots { pointer-events: auto; }
 
     /* Nav buttons: darker pill with subtle border and shadow for visibility */
     [data-lite-carousel] .lite-prev > .lite-nav-bg,
