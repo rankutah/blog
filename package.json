@@ -19,10 +19,13 @@
   "deriv:nova-gutter": "node scripts/build-image-derivatives.mjs sites/nova-gutter/media",
   "deriv:rank-utah": "node scripts/build-image-derivatives.mjs --formats=avif,jpeg sites/rank-utah/media",
   "deriv:blueridgeTech": "node scripts/build-image-derivatives.mjs sites/blueridgeTech/media",
+  "deriv:blueridgetech": "node scripts/build-image-derivatives.mjs sites/blueridgeTech/media",
   "blue-ridge-abbey": "SITE=blue-ridge-abbey npm run optimize:blue-ridge-abbey --silent && npm run deriv:blue-ridge-abbey --silent && node scripts/run-hugo-server.mjs --site=blue-ridge-abbey --source=./sites/blue-ridge-abbey --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
   "build:blue-ridge-abbey": "SITE=blue-ridge-abbey npm run optimize:blue-ridge-abbey --silent && npm run deriv:blue-ridge-abbey --silent && SITE=blue-ridge-abbey hugo --source ./sites/blue-ridge-abbey --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
   "blueridgeTech": "SITE=blueridgeTech npm run optimize:blueridgeTech --silent && npm run deriv:blueridgeTech --silent && node scripts/run-hugo-server.mjs --site=blueridgeTech --source=./sites/blueridgeTech --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
   "build:blueridgeTech": "SITE=blueridgeTech npm run optimize:blueridgeTech --silent && npm run deriv:blueridgeTech --silent && SITE=blueridgeTech hugo --source ./sites/blueridgeTech --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
+  "blueridgetech": "SITE=blueridgeTech npm run optimize:blueridgetech --silent && npm run deriv:blueridgetech --silent && node scripts/run-hugo-server.mjs --site=blueridgeTech --source=./sites/blueridgeTech --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
+  "build:blueridgetech": "SITE=blueridgeTech npm run optimize:blueridgetech --silent && npm run deriv:blueridgetech --silent && SITE=blueridgeTech hugo --source ./sites/blueridgeTech --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
 
     "grab:carousel": "node scripts/grab-carousel-headless.mjs",
     "localize:carousel": "node scripts/localize-carousel-images.mjs"
