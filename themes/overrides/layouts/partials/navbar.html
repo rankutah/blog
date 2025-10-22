@@ -189,9 +189,9 @@
       </a>
       {{ end }}
 
-      <button data-collapse-toggle="navbar-sticky" type="button"
+      <button data-collapse-toggle="navbar-drawer" type="button"
               class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 no-underline"
-              aria-controls="navbar-sticky" aria-expanded="false">
+              aria-controls="navbar-drawer" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M1 1h15M1 7h15M1 13h15"/>
@@ -199,7 +199,68 @@
       </button>
     </div>
 
-    <!-- Menu -->
+    <!-- Mobile drawer overlay -->
+    <div id="nav-drawer-overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-200 md:hidden z-40" aria-hidden="true"></div>
+
+    <!-- Mobile off-canvas drawer -->
+    <div id="navbar-drawer"
+        class="fixed inset-y-0 right-0 z-50 w-72 max-w-[85vw] md:hidden
+               translate-x-full transition-transform duration-200 ease-out pointer-events-none
+               {{ if eq $headerTheme "glass" }}bg-white/80 dark:bg-gray-900/80 backdrop-blur
+               {{ else if eq $headerTheme "invert" }}bg-white/95 dark:bg-gray-900/90
+               {{ else }}{{ $navBg }}
+               {{ end }} shadow-lg border-l border-black/10 dark:border-white/10"
+        data-drawer="right" aria-hidden="true" role="dialog" aria-label="Main menu">
+
+      <!-- Drawer header (mobile only) -->
+      <div class="flex items-center justify-between p-4 border-b border-black/10 dark:border-white/10">
+        <span class="font-semibold">Menu</span>
+        <button type="button" class="p-2 rounded hover:bg-black/5 dark:hover:bg-white/10" data-drawer-close aria-label="Close menu">
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="flex flex-col p-4 mt-2 font-medium rounded-lg space-y-1">
+        {{ range .Site.Menus.main }}
+          <li class="relative">
+            {{ if .HasChildren }}
+        <button id="menu-{{ .Identifier }}-button" type="button"
+                      data-dropdown-toggle="menu-{{ .Identifier }}"
+                      data-dropdown-placement="bottom-start"
+          class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+                {{ .Name }}
+                <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+
+              <div id="menu-{{ .Identifier }}"
+                   class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur">
+                <ul class="py-2 text-sm">
+                  {{ range .Children }}
+                    <li>
+                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                        {{ .Name }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ else }}
+          <a href="{{ .URL | relURL }}"
+            class="no-underline hover:underline brand-link {{ $navHoverClasses }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
+                 {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}>
+                {{ .Name }}
+              </a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Desktop inline menu (unchanged from original) -->
     <div id="navbar-sticky"
         class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1
                 {{ if eq $headerTheme "glass" }}bg-white/80 dark:bg-gray-900/80 backdrop-blur
