@@ -357,6 +357,7 @@
         if(!slides.length) return;
         let index = 0;
         let timer = 0;
+        const autoStartMode = (root.getAttribute('data-auto-start')||'load').toLowerCase(); // load | interact | visible
 
         function apply(){
           slides.forEach((el,i)=>{
@@ -393,6 +394,40 @@
           if (interval) timer = setInterval(goNext, interval);
         }
         function stopAuto(){ if (timer) { clearInterval(timer); timer = 0; } }
+        function setupAutoStart(){
+          if (!root.getAttribute('data-auto-interval')) return; // nothing to do if no interval set
+          switch(autoStartMode){
+            case 'interact': {
+              let fired = false;
+              const onUser = ()=>{ if(fired) return; fired = true; startAuto(); cleanup(); };
+              const cleanup = ()=>{
+                window.removeEventListener('scroll', onUser, { passive:true });
+                window.removeEventListener('mousemove', onUser);
+                window.removeEventListener('touchstart', onUser, { passive:true });
+                window.removeEventListener('keydown', onUser);
+              };
+              window.addEventListener('scroll', onUser, { passive:true });
+              window.addEventListener('mousemove', onUser);
+              window.addEventListener('touchstart', onUser, { passive:true });
+              window.addEventListener('keydown', onUser);
+              break;
+            }
+            case 'visible': {
+              if ('IntersectionObserver' in window){
+                try {
+                  const obs = new IntersectionObserver((entries)=>{
+                    for(const e of entries){ if(e.isIntersecting){ startAuto(); obs.disconnect(); break; } }
+                  }, { root:null, rootMargin:'0px', threshold:0.25 });
+                  obs.observe(root);
+                } catch { startAuto(); }
+              } else { startAuto(); }
+              break;
+            }
+            case 'load':
+            default:
+              startAuto();
+          }
+        }
 
         // Pause on hover/focus within, resume on leave when appropriate
         root.addEventListener('mouseenter', stopAuto);
@@ -402,7 +437,7 @@
 
         // Initial positions then maybe autoplay
         apply();
-        startAuto();
+        setupAutoStart();
       });
     }
 

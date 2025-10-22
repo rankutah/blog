@@ -22,6 +22,7 @@
 {{- $duration  := .Get "duration" | default "500" -}}
 {{- $interval  := .Get "interval" | default "" -}}
 {{- $loading   := lower (.Get "loading" | default "lazy") -}}
+{{- $autostart := lower (.Get "autostart" | default "") -}} {{/* "load" | "interact" | "visible" (empty=theme default) */}}
 {{- /* Allow overriding object-position for cropping focal point (e.g., "center", "top", "bottom", or "50% 40%") */ -}}
 {{- $pos       := .Get "pos" | default (.Get "focus" | default "center") -}}
 {{- /* If the carousel is above the fold, allow opting-in to eager LCP for the first slide */ -}}
@@ -64,7 +65,7 @@
   {{- $rootStyle = (printf " style=\"--lc-h-mobile:%vpx;--lc-h-md:%vpx;\"" $mob $md) | safeHTMLAttr -}}
 {{- end -}}
 
-<div id="{{ $id }}" class="relative w-full not-prose my-0 [&+p]:mt-3" data-lite-carousel data-carousel-ver="lite-1"{{ if ne (printf "%v" $interval) "" }} data-auto-interval="{{ $interval }}"{{ end }}{{ if ne (printf "%v" $priority) "" }} data-priority="1"{{ end }}{{ $rootStyle }}>
+<div id="{{ $id }}" class="relative w-full not-prose my-0 [&+p]:mt-3" data-lite-carousel data-carousel-ver="lite-1"{{ if ne (printf "%v" $interval) "" }} data-auto-interval="{{ $interval }}"{{ end }}{{ if ne (printf "%v" $autostart) "" }} data-auto-start="{{ $autostart }}"{{ end }}{{ if ne (printf "%v" $priority) "" }} data-priority="1"{{ end }}{{ $rootStyle }}>
   <div class="relative overflow-hidden {{ $roundedClass }}" data-carousel-viewport>
     {{- range $i, $img := $imgs -}}
       {{- $src := $img.src -}}

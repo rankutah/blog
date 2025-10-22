@@ -19,7 +19,7 @@
   "deriv:rank-utah": "node scripts/build-image-derivatives.mjs sites/rank-utah/media",
   "blue-ridge-abbey": "SITE=blue-ridge-abbey npm run optimize:blue-ridge-abbey --silent && npm run deriv:blue-ridge-abbey --silent && node scripts/run-hugo-server.mjs --site=blue-ridge-abbey --source=./sites/blue-ridge-abbey --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
   "build:blue-ridge-abbey": "SITE=blue-ridge-abbey npm run optimize:blue-ridge-abbey --silent && npm run deriv:blue-ridge-abbey --silent && SITE=blue-ridge-abbey hugo --source ./sites/blue-ridge-abbey --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel debug --ignoreCache",
-    
+
     "grab:carousel": "node scripts/grab-carousel-headless.mjs",
     "localize:carousel": "node scripts/localize-carousel-images.mjs"
   },
