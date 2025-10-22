@@ -441,7 +441,41 @@
       });
     }
 
-    ready(()=>{initCollapse();initDropdowns();initMobileDrawer();initAutoCloseMobileMenu();initAccordions();initCarouselHeights();initLiteCarousels();});
+    // Defer carousel initialization until user scroll/interaction or when near-viewport
+    function setupCarouselLoader(){
+      const roots = Array.from(document.querySelectorAll('[data-lite-carousel]'));
+      if(!roots.length) return; // no carousels on page
+      let fired = false;
+      function run(){ if(fired) return; fired = true; cleanup(); initLiteCarousels(); }
+      function cleanup(){
+        window.removeEventListener('scroll', onUser, { passive:true });
+        window.removeEventListener('mousemove', onUser);
+        window.removeEventListener('touchstart', onUser, { passive:true });
+        window.removeEventListener('keydown', onUser);
+        document.removeEventListener('pointerdown', onPointerWithin, true);
+        if (obs) try { obs.disconnect(); } catch {}
+      }
+      function onUser(){ run(); }
+      function onPointerWithin(e){ if (e && e.target && e.target.closest && e.target.closest('[data-lite-carousel]')) run(); }
+      // Gate on user interaction (like analytics/scripts)
+      window.addEventListener('scroll', onUser, { passive:true });
+      window.addEventListener('mousemove', onUser);
+      window.addEventListener('touchstart', onUser, { passive:true });
+      window.addEventListener('keydown', onUser);
+      document.addEventListener('pointerdown', onPointerWithin, true);
+      // Or when any carousel comes near viewport
+      let obs = null;
+      if ('IntersectionObserver' in window){
+        try {
+          obs = new IntersectionObserver((entries)=>{
+            for (const e of entries){ if (e.isIntersecting) { run(); break; } }
+          }, { root:null, rootMargin:'400px', threshold:0.01 });
+          roots.forEach(r=>obs.observe(r));
+        } catch { /* noop */ }
+      }
+    }
+
+    ready(()=>{initCollapse();initDropdowns();initMobileDrawer();initAutoCloseMobileMenu();initAccordions();initCarouselHeights();setupCarouselLoader();});
   </script>
 
   <!-- Header toggle (optional):
