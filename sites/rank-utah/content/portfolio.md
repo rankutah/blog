@@ -21,6 +21,7 @@ url: "/portfolio"
 ![](../media/website-blue-ridge-abbey.avif)
 
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
+{{< button url="/portfolio/blue-ridge-abbey" text="Performance Results" >}}
 
 Mackenzie G. - March 21, 2025 <br>
 ⭐️⭐️⭐️⭐️⭐️ <br>

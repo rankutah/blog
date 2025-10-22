@@ -29,6 +29,17 @@
 {{- end -}}
 {{- $entry := (cond $m (index $m $key) nil) -}}
 {{- if not $entry -}}
+  {{- /* Try alternative keys that differ only by whitespace variants (normal space vs thin space vs NBSP) */ -}}
+  {{- $thin := " " -}} {{/* U+202F NARROW NO-BREAK SPACE */}}
+  {{- $nbsp := " " -}} {{/* U+00A0 NO-BREAK SPACE */}}
+  {{- $alts := slice (replace $key " " $thin) (replace $key " " $nbsp) (replace $key $thin " ") (replace $key $nbsp " ") -}}
+  {{- range $i, $alt := $alts -}}
+    {{- if and (not $entry) $m (isset $m $alt) -}}
+      {{- $entry = index $m $alt -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $entry -}}
   {{- /* Try swapping between .jpg and .avif keys if manifest was keyed by the other */ -}}
   {{- if (hasSuffix $key ".jpg") -}}
     {{- $altKey := replace $key ".jpg" ".avif" -}}
