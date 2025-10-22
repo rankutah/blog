@@ -37,7 +37,7 @@ uglyURLs = true
 [params]
   primaryColor = "emerald"
   logo = "media/logo-039966.png"
-  lightBackground = "neutral-200"
+  lightBackground = "neutral-100"
   darkBackground  = "emerald-950"
 
   [[params.social]]

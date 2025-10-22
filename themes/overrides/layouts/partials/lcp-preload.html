@@ -4,7 +4,9 @@
       Only runs on hero/landing/home pages. */ -}}
 {{- $ctx := . -}}
 {{- $isHeroPage := or $ctx.IsHome (or $ctx.Params.hero (eq $ctx.Params.layout "landing")) -}}
-{{- if $isHeroPage -}}
+{{- /* Also preload when a priority carousel is present on the page */ -}}
+{{- $hasPriorityCarousel := gt (len (findRE `(?is)data-priority="1"` $ctx.Content)) 0 -}}
+{{- if or $isHeroPage $hasPriorityCarousel -}}
   {{- $html := $ctx.Content -}}
   {{- $avifSrcset := "" -}}
   {{- $avifSizes := "" -}}

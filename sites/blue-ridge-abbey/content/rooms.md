@@ -11,7 +11,7 @@ url: "/rooms"
 {{< col card="false" y="start" >}}
 ## Sweet Briar
 
-{{< carousel id="bkg-hero" images="/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-b9d21d15.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-a1df117d.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-1a12f0a8.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-155eb407.jpg" pxheight="350" mobilepxheight="350" mdpxheight="350" radius="lg" >}}
+{{< carousel id="bkg-hero" images="/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-b9d21d15.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-a1df117d.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-1a12f0a8.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-briar-bedroom-155eb407.jpg" pxheight="350" mobilepxheight="350" mdpxheight="350" radius="lg" priority="true" >}}
 
 Situated on the main floor, Sweet Briar offers a fresh, welcoming resort with wheelchair accessibility.
 

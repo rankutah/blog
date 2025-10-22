@@ -173,8 +173,10 @@
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
   {{ partial "google_analytics.html" . }}
 
-  {{- /* Grab the first <img> src from the rendered body HTML */ -}}
-  {{- $firstImg := replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content }}
+  {{- /* Prefer a full-bleed hero/carousel image (our hero/carousel imgs use absolute inset-0 w-full h-full) */ -}}
+  {{- $heroImg := replaceRE `(?is).*<img[^>]+class="[^"]*absolute[^"]*inset-0[^"]*w-full[^"]*h-full[^"]*"[^>]+src="([^"]+)".*` "${1}" .Content -}}
+  {{- /* Fallback to the first <img> if no full-bleed match is found */ -}}
+  {{- $firstImg := cond (ne $heroImg "") $heroImg (replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content) -}}
 
   {{- if $firstImg }}
     <meta property="og:image" content="{{ $firstImg }}" />
