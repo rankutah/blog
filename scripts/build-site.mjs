@@ -2,6 +2,7 @@
 // Cross-site build dispatcher: runs optimize, derivatives, then Hugo build for SITE
 
 import { spawn } from 'child_process';
+import path from 'path';
 
 function run(cmd, args, opts={}){
   return new Promise((resolve, reject)=>{
@@ -37,7 +38,10 @@ async function main(){
     '--config', '\"../../themes/overrides/config.shared.toml,config.toml\"',
     '--gc', '--minify', '--cleanDestinationDir', '--logLevel', 'debug', '--ignoreCache'
   ];
-  if (publishDir) { hugoArgs.push('-d', publishDir); }
+  if (publishDir) {
+    const absDest = path.resolve(process.cwd(), publishDir);
+    hugoArgs.push('-d', absDest);
+  }
   await run('hugo', hugoArgs, { shell: true });
 
   console.log('[build-site] Done');
