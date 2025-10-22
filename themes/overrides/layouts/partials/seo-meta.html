@@ -62,7 +62,7 @@
 {{- $title := cond (and (not .IsHome) .Title) (printf "%s | %s" .Title site.Title) site.Title -}}
 {{- $ogtype := cond .IsHome "website" (cond .IsPage "article" "website") -}}
 
-{{/* Resolve OG image with fallbacks (prefer per-page; else use homepage first image) */}}
+{{/* Resolve OG image with fallbacks (prefer per-page; ensure homepage hero wins) */}}
 {{- $img := "" -}}
 {{- if .Params.images }}
   {{- $img = index .Params.images 0 -}}
@@ -71,6 +71,15 @@
 {{- else if .Params.cover -}}
   {{- $img = .Params.cover -}}
 {{- else -}}
+  {{/* On the homepage, first try to extract the hero image from the section shortcode (img="...") */}}
+  {{- if and .IsHome (not $img) -}}
+    {{- /* Look for {{< section ... img="/path" ... >}} in the raw Markdown to get the declared hero */ -}}
+    {{- $heroMatch := findRE `(?is)\{\{<\s*section[^>]*img\s*=\s*"([^"]+)"[^>]*>\}\}` .RawContent -}}
+    {{- if gt (len $heroMatch) 0 -}}
+      {{- $img = replaceRE `(?is).*img\s*=\s*"([^"]+)".*` "$1" (index $heroMatch 0) -}}
+    {{- end -}}
+  {{- end -}}
+
   {{/* Prefer an eager/fetchpriority=high image within this page (hero/LCP) */}}
   {{- if not $img -}}
     {{- $eager := findRE `(?is)<img[^>]+(?:fetchpriority\s*=\s*"high"|loading\s*=\s*"eager")[^>]*src=\"([^\"]+)\"` .Content -}}
