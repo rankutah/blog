@@ -226,8 +226,8 @@
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
-        <button id="menu-{{ .Identifier }}-button" type="button"
-                      data-dropdown-toggle="menu-{{ .Identifier }}"
+        <button id="menu-{{ .Identifier }}-m-button" type="button"
+                      data-dropdown-toggle="menu-{{ .Identifier }}-m"
                       data-dropdown-placement="bottom-start"
           class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
@@ -236,7 +236,7 @@
                 </svg>
               </button>
 
-              <div id="menu-{{ .Identifier }}"
+              <div id="menu-{{ .Identifier }}-m"
                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
@@ -274,8 +274,8 @@
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
-        <button id="menu-{{ .Identifier }}-button" type="button"
-                      data-dropdown-toggle="menu-{{ .Identifier }}"
+        <button id="menu-{{ .Identifier }}-d-button" type="button"
+                      data-dropdown-toggle="menu-{{ .Identifier }}-d"
                       data-dropdown-placement="bottom-start"
           class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
@@ -284,7 +284,7 @@
                 </svg>
               </button>
 
-              <div id="menu-{{ .Identifier }}"
+              <div id="menu-{{ .Identifier }}-d"
                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
