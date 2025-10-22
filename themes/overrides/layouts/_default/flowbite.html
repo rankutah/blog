@@ -362,6 +362,10 @@
           slides.forEach((el,i)=>{
             const offset = (i - index) * 100;
             el.style.transform = `translateX(${offset}%)`;
+            // Keep only current and immediate neighbors unhidden; hide others to prevent eager loads
+            const near = (i === index) || (i === (index + 1) % slides.length) || (i === (index - 1 + slides.length) % slides.length);
+            if (near) { el.removeAttribute('hidden'); el.setAttribute('aria-hidden', String(i!==index)); }
+            else { el.setAttribute('hidden',''); el.setAttribute('aria-hidden','true'); }
           });
           dots.forEach((d,i)=>{
             d.setAttribute('aria-current', String(i===index));
