@@ -23,6 +23,8 @@
 {{- $interval  := .Get "interval" | default "" -}}
 {{- $loading   := lower (.Get "loading" | default "lazy") -}}
 {{- $fetchpri  := cond (eq $loading "eager") "high" "low" -}}
+{{- /* Responsive sizes hint: allow override; default assumes 2-col on md+, single-col on mobile */ -}}
+{{- $sizes     := .Get "sizes" | default "(min-width:1280px) 40vw, (min-width:1024px) 45vw, (min-width:768px) 50vw, 100vw" -}}
 
 {{/* Build list of image URLs */}}
 {{- $imgs := slice -}}
@@ -59,7 +61,7 @@
 {{- end -}}
 
 <div id="{{ $id }}" class="relative w-full not-prose my-0 [&+p]:mt-3" data-lite-carousel data-carousel-ver="lite-1"{{ if ne (printf "%v" $interval) "" }} data-auto-interval="{{ $interval }}"{{ end }}{{ $rootStyle }}>
-  <div class="relative overflow-hidden {{ $roundedClass }}" data-carousel-viewport>
+  <div class="relative overflow-hidden {{ $roundedClass }} flex items-center justify-center h-full md:h-[70vh] lg:h-[80vh]" data-carousel-viewport>
     {{- range $i, $img := $imgs -}}
       {{- $src := $img.src -}}
       {{- $alt := (cond (ne ($img.alt | default "") "") $img.alt (printf "Slide %d" (add $i 1))) -}}
@@ -73,7 +75,7 @@
             "objectPosition" "center"
             "loading" $loading
             "decoding" "async"
-            "sizes" "100vw"
+            "sizes" $sizes
           ) -}}
       </div>
     {{- end -}}
