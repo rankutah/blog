@@ -13,7 +13,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 {{<button url="https://calendly.com/support-blueridgetech" text="Schedule">}}{{<button url="/contact" text="Contact">}}
 {{< /section >}}
 
-{{< section render="raw">}}
+{{< section >}}
 
 {{< color-picker >}}
 
