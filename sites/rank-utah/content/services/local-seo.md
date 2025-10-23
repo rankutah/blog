@@ -17,7 +17,7 @@ Get new customers by showing up in local search results.
 
 Local SEO is an effective strategy for marketing your business to achieve both short-term and long-term results. It's focus is helping your business show up when people search for what you do.
 
-Clear Presence strives to focus on Local SEO strategies that help your business generate high-quality leads using this simple and effective process.
+Clear Presence focuses on Local SEO strategies that help your business generate high-quality leads using this simple and effective process.
 
 {{< /section >}}
 
