@@ -40,7 +40,9 @@ Simple monthly pricing. No contracts. No surprises.
 
 ✓ Listings on 100+ Sites <br>  ✓ Google Business Management <br> ✓ Keyword Research & Strategy <br> ✓ Content Keyword Alignment <br> ✓ Monthly Analytics Reports
 
-Content keyword alignment focuses on your Google Business Profile + Listings
+Content keyword alignment focuses on your Google Business Profile + Listings.
+
+Website Design is not included in this package.
 
 {{< button url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Subscribe" >}} {{< button url="/services/local-seo" text="Learn More" >}}
 
@@ -54,7 +56,6 @@ Content keyword alignment focuses on your Google Business Profile + Listings
 ✓ Fast Secure Hosting <br> ✓ Domain & Yearly Renewals <br> ✓ Unlimited Content Updates <br> ✓ Regular Backups <br> ✓ Listings on 100+ Sites <br>  ✓ Google Business Management <br> ✓ Keyword Research & Strategy <br> ✓ Content Keyword Alignment <br> ✓ Monthly Analytics Reports
 
 Content keyword alignment focuses on your Website + Google Business Profile + Listings
-
 
 {{< button url="https://buy.stripe.com/6oUbIV9ZP0JFfNR6G31sQ02" text="Subscribe" >}}
 
