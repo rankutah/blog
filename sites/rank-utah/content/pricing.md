@@ -29,7 +29,7 @@ $149 per month
 
 ✓ Fast Secure Hosting <br> ✓ Domain & Yearly Renewals <br> ✓ Unlimited Content Updates <br> ✓ Regular Backups <br> ✓ Monthly Analytics Reports
 
-{{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Subscribe" >}}
+{{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Subscribe" >}} {{< button url="/services/website-design" text="Pick Colors" >}}
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
