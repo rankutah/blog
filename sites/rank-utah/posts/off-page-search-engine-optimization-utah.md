@@ -10,11 +10,11 @@ Rank Utah helps small businesses in Utah grow their customers organically by opt
 ## Why Off Page Search Engine Optimization Works for Small Business in Utah
 
 1.  Evergreen Growth - your traffic climbs month after month, without the sudden drops that come with paid ads or social media posts
-    
+
 2.  Cost-effective - every optimization brings long-term ongoing results
-    
+
 3.  Saves Time - brings organic leads instead of having to spend lots of time running promotions and marketing campaigns
-    
+
 
 ## The 3 Pillars of Effective Off Page Search Engine Optimization
 
@@ -25,29 +25,29 @@ Source: Percentages are based on the average percentages given by ChatGPT (o4-mi
 
 ## 1\. Relevance
 
-Relevance is how well your content aligns with what the user is searching for. When setting up your website and/or blog, we want each page to match search intent. We do this by researching the keywords your customers are using and aligning them with your offerings. For local SEO, we also use location-based modifiers targeting a specific city or region. This helps you rank higher in that area and shows customers that your content is relevant to their needs. The title tag and H1 tag are the clearest indicators to Google of what your webpage is about. Your other headings and content should support these tags and add depth.On your Google Business Profile (GBP), your relevance is determined primarily by your primary category (this is the most critical relevance signal). Other relevance factors include:
+Relevance is how well your content aligns with what the user is searching for. When setting up your website and/or blog, we want each page to match search intent. We do this by researching the keywords your customers are using and aligning them with your offerings. For local SEO, we also use location-based modifiers targeting a specific city or region. This helps you rank higher in that area and shows customers that your content is relevant to their needs. The title tag and H1 tag are the clearest indicators to Google of what your webpage is about. Your other headings and content should support these tags and add depth. On your Google Business Profile, your relevance is determined primarily by your primary category (this is the most critical relevance signal). Other relevance factors include:
 
 1.  Secondary categories
-    
+
 2.  Business name
-    
+
 3.  Services/products listed
-    
-4.  Your website content, which Google uses to assess GBP relevance
-    
+
+4.  Your website content, which Google uses to assess Google Business Profile relevance
+
 
 ## 2\. Prominence
 
 Prominence is the authority of your content. For websites and blogs, it’s heavily influenced by the quantity and quality of backlinks, citations, and social shares. Links act as popularity votes in the eyes of Google. While all quality (non-spammy) backlinks are helpful, local backlinks from businesses or people in your area are the most impactful. They tie your website/blog to your target location.Another factor that influences the prominence of your website/blog is technical SEO, which focuses on the structure and performance of your website/blog:
 
 1.  Faster load times: Improves user experience and rankings
-    
-2.  Mobile-friendly design: Google prioritizes this
-    
-3.  Clear structure: Helps search engines crawl and index effectively
-    
 
-For your Google Business Profile, prominence is determined by how engaging your profile is to the public, the number of reviews you have, and your average rating. The top three GBP listings often appear above websites in local searches, making it a powerful tool.
+2.  Mobile-friendly design: Google prioritizes this
+
+3.  Clear structure: Helps search engines crawl and index effectively
+
+
+For your Google Business Profile, prominence is determined by how engaging your profile is to the public, the number of reviews you have, and your average rating. The top three Google Business Profile listings often appear above websites in local searches, making it a powerful tool.
 
 ## 3\. Proximity
 
@@ -59,4 +59,4 @@ Relevance, prominence, and proximity are the three pillars of local SEO in Utah.
 
 ## Reach Out
 
-Visit Rank Utah for [Utah Search Engine Optimization Services](https://rankutah.com). 
+Visit Rank Utah for [Utah Search Engine Optimization Services](https://rankutah.com).

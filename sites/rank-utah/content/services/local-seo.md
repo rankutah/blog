@@ -43,7 +43,7 @@ Clear Presence syncs your business information to over 100+ sites including webs
 
 In short, this step helps your business enter the arena for local search.
 
-### 2. Maximize Your Google Business Profile (GBP) Visibility
+### 2. Maximize Your Google Business Profile Visibility
 
 Clear Presence focuses on maximizing your Google Business Profile visibility by taking the following steps
 
