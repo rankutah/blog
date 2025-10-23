@@ -7,13 +7,13 @@ url: "/services/local-seo"
 
 {{< section >}}
 
-# Local SEO Services for Small Businesses
+# Local SEO (Search Engine Optimization)
 
 Get new customers by showing up in local search results.
 
 {{< button url="/contact" text="Contact" >}}
 
-## Do you need more customers?
+## Do you need more customers or want to raise your prices?
 
 Local SEO is an effective strategy for marketing your business to achieve both short-term and long-term results. It's focus is helping your business show up when people search for what you do.
 
@@ -23,7 +23,7 @@ Clear Presence strives to focus on Local SEO strategies that help your business 
 
 {{< section >}}
 
-## What is your SEO marketing process?
+## What is your Local SEO process?
 
 {{< /section >}}
 
