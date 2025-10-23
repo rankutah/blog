@@ -38,7 +38,7 @@ $149 per month
 
 $199 per month
 
-✓ Listings on 1,000+ Platforms <br>  ✓ Google Business Management <br> ✓ Keyword Research & Strategy <br> ✓ Content Keyword Alignment <br> ✓ Monthly Analytics Reports
+✓ Listings on 100+ Sites <br>  ✓ Google Business Management <br> ✓ Keyword Research & Strategy <br> ✓ Content Keyword Alignment <br> ✓ Monthly Analytics Reports
 
 {{< button url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Subscribe" >}} {{< button url="/services/local-seo" text="Learn More" >}}
 

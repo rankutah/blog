@@ -34,12 +34,12 @@ Clear Presence strives to focus on Local SEO strategies that help your business 
 
 ### 1. Get Your Business Listed on 1,000+ Platforms
 
-Clear Presence syncs your business information to over 1,000+ platforms including websites, directories, map apps, consuer apps and voice assistents. This is done by submitting and syncing your business information with the five leading data aggregators (Localeze, Data Axle, YP Network, GPT Network, and Foursquare). This serves a number of purposes inluding:
+Clear Presence syncs your business information to over 100+ sites including websites, directories, map apps, consumer apps, and voice assistants. This is done by submitting and syncing your business information with the five leading data aggregators (Localeze, Data Axle, YP Network, GPT Network, and Foursquare). This serves a number of purposes including:
 
 1. Increasing opportunities for people to find your business
-2. Maintaining a consistent NAP (name, address, phone number) accross the web to build trust, visibility, and credibility for search engines and visitors
+2. Maintaining a consistent NAP (name, address, phone number) across the web to build trust, visibility, and credibility for search engines and visitors
 3. Increase the number of links pointing to your website which improves search rankings
-4. Eatablish a foundation for being part of the local search ecosystem across the entire digital map
+4. Establish a foundation for being part of the local search ecosystem across the entire digital map
 
 In short, this step helps your business enter the arena for local search.
 
