@@ -60,7 +60,7 @@ Clear Presence focuses on maximizing your Google Business Profile visibility by 
 
 ### 3. Align your online content with keywords that bring you traffic
 
-Clear Presence conducts keyword research using Semrush, the #1 SEO Agency tool for accurate keyword research in the United States. This tool is used to research and find high volume low competition keywords that you can rank for. After building a keyword strategy for your business we align your online content with these keywords.
+Clear Presence conducts keyword research using Semrush, the #1 SEO Agency tool for accurate keyword research in the United States. This tool is used to research and find high volume low competition keywords that you can rank for. After building a keyword strategy for your business we align your Google Business Profile and online listings with these keywords.
 
 ### 4. Track and report your rankings, visibility, and clicks
 
