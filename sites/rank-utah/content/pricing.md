@@ -43,7 +43,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Local SEO (search engine optimization)
+## Local SEO
 
 {{< badge text="Have a website, ready to grow" >}}
 
