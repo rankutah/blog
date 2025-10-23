@@ -96,7 +96,7 @@ Website Design is not included in this package.
 {{< faqs >}}
 
 ### What does Local SEO mean?
-You can learn more about local SEO by visiting the [Local SEO](/services/local-seo) page.
+Local SEO (search engine optimization) means showing up online when people search for your services or products in your local area. You can learn more about local SEO by visiting the [Local SEO](/services/local-seo) page.
 
 ### Can I change plans later?
 Yes. Plans can be changed at any time. The next invoice is adjusted accordingly and services continue without interruption.
