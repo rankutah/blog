@@ -32,18 +32,7 @@ Clear Presence focuses on Local SEO strategies that help your business generate 
 
 {{< faqs >}}
 
-### 1. Get Your Business Listed on 100+ Platforms
-
-Clear Presence syncs your business information to over 100+ sites including websites, directories, map apps, consumer apps, and voice assistants. This is done by submitting and syncing your business information with the five leading data aggregators (Localeze, Data Axle, YP Network, GPT Network, and Foursquare). This serves a number of purposes including:
-
-1. Increasing opportunities for people to find your business
-2. Maintaining a consistent NAP (name, address, phone number) across the web to build trust, visibility, and credibility for search engines and visitors
-3. Increase the number of links pointing to your website which improves search rankings
-4. Establish a foundation for being part of the local search ecosystem across the entire digital map
-
-In short, this step helps your business enter the arena for local search.
-
-### 2. Maximize Your Google Business Profile Visibility
+### 1. Maximize Your Google Business Profile Visibility
 
 Clear Presence focuses on maximizing your Google Business Profile visibility by taking the following steps
 
@@ -57,6 +46,17 @@ Clear Presence focuses on maximizing your Google Business Profile visibility by 
 8. Ensuring you have an ongoing promotional post to increase engagement and visibility
 9. Ensuring your social media links are included
 10. Showing your service area (if applicable)
+
+### 2. Get Your Business Consistently Listed on Google, Apple, Bing + 100+ sites
+
+Clear Presence syncs your business information to over 100+ sites including websites, directories, map apps, consumer apps, and voice assistants. This is done by submitting and syncing your business information with the five leading data aggregators (Localeze, Data Axle, YP Network, GPT Network, and Foursquare). This serves a number of purposes including:
+
+1. Increasing opportunities for people to find your business
+2. Maintaining a consistent NAP (name, address, phone number) across the web to build trust, visibility, and credibility for search engines and visitors
+3. Increase the number of links pointing to your website which improves search rankings
+4. Establish a foundation for being part of the local search ecosystem across the entire digital map
+
+In short, this step helps your business enter the arena for local search.
 
 ### 3. Align your online content with keywords that bring you traffic
 
