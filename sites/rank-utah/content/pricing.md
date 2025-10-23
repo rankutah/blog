@@ -110,7 +110,7 @@ No further charges after cancellation. The site stays online through the current
 No. Setup is included in your monthly price.
 
 ### What does “unlimited content updates” include?
-No hard cap. Requests typical of a small‑business website are included—submit copy and images via email or the contact form for routine edits, image swaps, and new standard pages/sections. Blog posts you provide are published as well.
+No hard cap. Requests typical of a small‑business website are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Blog posts you provide are published as well.
 
 Included examples:
 - Update text, photos, hours, services, menus, pricing, or FAQs
