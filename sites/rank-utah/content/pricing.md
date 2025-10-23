@@ -30,7 +30,6 @@ $149 per month
 ✓ Fast Secure Hosting <br> ✓ Domain & Yearly Renewals <br> ✓ Ongoing On-Page SEO <br> ✓ Regular Backups <br> ✓ Monthly Analytics Reports
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Subscribe" >}}
-
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
@@ -41,13 +40,13 @@ $199 per month
 
 ✓ Listings on 1,000+ Platforms <br>  ✓ Google Business Management <br> ✓ Keyword Research & Strategy <br> ✓ Content Keyword Alignment <br> ✓ Monthly Analytics Reports
 
-{{< button url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Subscribe" >}}
+{{< button url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Subscribe" >}} {{< button url="/services/local-seo" text="Learn More" >}}
 
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
-## Website Design + Local SEO
+## Website Design + Local Search Engine Optimization (SEO)
 ~~$348~~ $299 per month (Save $49)
 
 Bundle Website Design with Local SEO to maximize visibility. Unlock the full potential of your business for local search results.
