@@ -26,7 +26,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 **$149 per month**
 
-*Get a professional custom designed website.*
+*Get a professional website, custom-designed for your business.*
 
 ✓ Fast Secure Hosting <br> ✓ Domain & Yearly Renewals <br> ✓ Unlimited Content Updates <br> ✓ Regular Backups <br> ✓ Monthly Analytics Reports
 
@@ -53,6 +53,8 @@ Website Design is not included in this package.
 
 ## Website Design + Local SEO (Search Engine Optimization)
 **~~$348~~ $299 per month (save $49 by bundling)**
+
+*Bundle Website Design and Local SEO to maximize the visibility of your business*
 
 ✓ Fast Secure Hosting <br> ✓ Domain & Yearly Renewals <br> ✓ Unlimited Content Updates <br> ✓ Regular Backups <br> ✓ Listings on 100+ Sites <br>  ✓ Google Business Management <br> ✓ Keyword Research & Strategy <br> ✓ Content Keyword Alignment <br> ✓ Monthly Analytics Reports
 
