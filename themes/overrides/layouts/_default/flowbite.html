@@ -8,6 +8,40 @@
 
   {{ partial "seo-meta.html" . }}
 
+  <!-- Dark-mode bootstrap: ensure html.dark matches forced attr, saved pref, or OS on first paint -->
+  <script>
+    (function(){
+      var html = document.documentElement;
+      function getStored(){ try { return localStorage.getItem('pref-theme'); } catch(e){ return null; } }
+      function prefersDark(){ try { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; } catch(e){ return false; } }
+      function wantDark(){
+        var forced = html.getAttribute('data-force-theme');
+        if (forced === 'dark') return true;
+        if (forced === 'light') return false;
+        var stored = getStored();
+        if (stored === 'dark') return true;
+        if (stored === 'light') return false;
+        return prefersDark();
+      }
+      function apply(){ var d = wantDark(); if (d) html.classList.add('dark'); else html.classList.remove('dark'); }
+      // Initial apply before CSS to avoid FOUC
+      apply();
+      // React to changes of data-force-theme
+      try {
+        new MutationObserver(function(muts){ for (var i=0;i<muts.length;i++){ if (muts[i].attributeName === 'data-force-theme'){ apply(); break; } } })
+          .observe(html, { attributes:true });
+      } catch(e){}
+      // React to OS changes
+      try {
+        var mql = window.matchMedia('(prefers-color-scheme: dark)');
+        if (mql && mql.addEventListener) mql.addEventListener('change', apply);
+        else if (mql && mql.addListener) mql.addListener(apply);
+      } catch(e){}
+      // React to localStorage changes (other tabs)
+      try { window.addEventListener('storage', function(e){ if (e && e.key === 'pref-theme') apply(); }); } catch(e){}
+    })();
+  </script>
+
   <!-- Brand/Theme recolor on first paint -->
   <script>
     (function(){

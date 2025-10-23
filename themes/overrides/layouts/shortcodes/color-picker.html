@@ -131,6 +131,14 @@
 (() => {
   const html = document.documentElement;
   const nav  = document.querySelector('nav');
+  const body = document.body;
+
+  // Effective dark-mode detector: honor either html.dark or body.dark, or OS dark
+  const isDarkMode = () => (
+    html.classList.contains('dark') ||
+    (body && body.classList.contains('dark')) ||
+    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  );
 
   // selects
   const brandSel = document.getElementById('cp-primary');
@@ -361,7 +369,7 @@ const STATIC_NAV_BGS = [
 
 
   function repaint() {
-    const isDark = html.classList.contains('dark');
+    const isDark = isDarkMode();
     const targets = getBgEls();
     const root = document.documentElement;
 
@@ -394,18 +402,18 @@ const STATIC_NAV_BGS = [
   }
 
   function syncPickerVisibility() {
-    const isDark = html.classList.contains('dark');
+    const isDark = isDarkMode();
     const lg = lightGroup, dg = darkGroup;
     if (lg) { lg.classList.toggle('hidden', isDark); lightSel?.toggleAttribute('disabled', isDark); }
     if (dg) { dg.classList.toggle('hidden', !isDark); darkSel?.toggleAttribute('disabled', !isDark); }
   }
 
   // react ONLY when the dark-mode flag changes on <html>
-  let lastDark = html.classList.contains('dark');
-  new MutationObserver(muts => {
+  let lastDark = isDarkMode();
+  const onMut = (muts) => {
     for (const m of muts) {
-      if (m.attributeName === 'class' && m.target === html) {
-        const nowDark = html.classList.contains('dark');
+      if (m.attributeName === 'class' && (m.target === html || m.target === body)) {
+        const nowDark = isDarkMode();
         if (nowDark !== lastDark) {
           lastDark = nowDark;
           syncPickerVisibility();
@@ -414,12 +422,29 @@ const STATIC_NAV_BGS = [
         }
       }
     }
-  }).observe(html, { attributes: true });
+  };
+  new MutationObserver(onMut).observe(html, { attributes: true });
+  if (body) new MutationObserver(onMut).observe(body, { attributes: true });
+  // Also react to OS appearance changes
+  try {
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
+    const onMql = () => {
+      const nowDark = isDarkMode();
+      if (nowDark !== lastDark) {
+        lastDark = nowDark;
+        syncPickerVisibility();
+        repaint();
+        recolorLinks();
+      }
+    };
+    if (mql && mql.addEventListener) mql.addEventListener('change', onMql);
+    else if (mql && mql.addListener) mql.addListener(onMql);
+  } catch(e){}
 
   // events
   brandSel ?.addEventListener('change', () => { applyBrand(brandSel.value); try { window.dispatchEvent(new CustomEvent('cp:brandchange', { detail: brandSel.value })); } catch (e) {} });
-  lightSel ?.addEventListener('change', () => { if (!html.classList.contains('dark')) repaint(); });
-  darkSel  ?.addEventListener('change', () => { if ( html.classList.contains('dark')) repaint(); });
+  lightSel ?.addEventListener('change', () => { if (!isDarkMode()) repaint(); });
+  darkSel  ?.addEventListener('change', () => { if ( isDarkMode()) repaint(); });
 
   // init
   syncPickerVisibility();
@@ -430,6 +455,10 @@ const STATIC_NAV_BGS = [
   }
   repaint();
   recolorLinks();
+
+  // Schedule post-paint syncs in case upstream scripts toggle classes after our first run
+  try { requestAnimationFrame(() => { syncPickerVisibility(); repaint(); recolorLinks(); }); } catch(e){}
+  setTimeout(() => { syncPickerVisibility(); repaint(); recolorLinks(); }, 0);
 })();
 </script>
 
