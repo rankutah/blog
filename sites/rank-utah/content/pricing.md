@@ -49,7 +49,7 @@ Content keyword alignment focuses on your Google Business Profile + Listings
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
 ## Website Design + Local SEO (Search Engine Optimization)
-**~~$348~~ $299 per month (Save $49)**
+**~~$348~~ $299 per month (save $49 by bundling)**
 
 ✓ Fast Secure Hosting <br> ✓ Domain & Yearly Renewals <br> ✓ Unlimited Content Updates <br> ✓ Regular Backups <br> ✓ Listings on 100+ Sites <br>  ✓ Google Business Management <br> ✓ Keyword Research & Strategy <br> ✓ Content Keyword Alignment <br> ✓ Monthly Analytics Reports
 
