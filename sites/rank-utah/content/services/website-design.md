@@ -23,11 +23,6 @@ Completely custom websites. Built for performance.
 
 {{< section >}}
 
-<br>
-
-Use this {{< button text="Example Button" >}} and [Example Link]() to reference when picking your colors
-
-
 {{< /section >}}
 
 {{< section >}}

@@ -35,7 +35,7 @@ $149 per month
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
-## Local SEO
+## Local Search Engine Optimization (SEO)
 
 $199 per month
 
