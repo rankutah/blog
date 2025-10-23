@@ -4,21 +4,13 @@ layout: "flowbite"
 description: "Computer Repair Shop in Buena Vista, VA. Providing both virtual and onsite computer repair services for businesses and individuals. BlueridgeTech offers expert IT repair and support services."
 ---
 
-
-
 {{< section img="/media/computer-repair-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
 # Computer Repair Shop in Buena Vista, VA {.text-white}
 Computer repair services and IT support for individuals and businesses near Buena Vista, Virginia
 {.text-white}
 {{<button url="https://calendly.com/support-blueridgetech" text="Schedule">}}{{<button url="/contact" text="Contact">}}
-{{< /section >}}
-
-{{< section >}}
-
-{{< color-picker >}}
 
 {{< /section >}}
-
 
 {{< section >}}
 
