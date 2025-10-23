@@ -35,8 +35,6 @@ Simple monthly pricing. No contracts. No surprises.
 - Unlimited content updates
 - Regular backups
 - Monthly analytics reports
-- Basic on-page SEO recommendations
-- Privacy policy & cookie notice templates
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
 {{< /col >}}
@@ -52,7 +50,7 @@ Simple monthly pricing. No contracts. No surprises.
 *Get found on Google Maps, Apple Maps, Google, and "near me" searches.*
 
 - Google Business Profile management
-- Consistent listings on **Google, Apple, Bing + 100+ sites**
+- Listings on **Google, Apple, Bing + 100+ sites**
 - Local keyword research & strategy
 - Website keyword recommendations
 - Monthly analytics reports
@@ -77,7 +75,7 @@ Website Design is not included in this package.
 - Domain & yearly renewals
 - Unlimited content updates
 - Regular backups
-- Consistent listings on **Google, Apple, Bing + 100+ sites**
+- Listings on **Google, Apple, Bing + 100+ sites**
 - Google Business Profile management
 - Local keyword research & strategy
 - **Content keyword alignment** across your website, Google Business Profile, and listings
