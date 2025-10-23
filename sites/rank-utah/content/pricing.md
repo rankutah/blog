@@ -26,6 +26,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 **$149 per month**
 
+*Get a professional custom designed website.*
 
 ✓ Fast Secure Hosting <br> ✓ Domain & Yearly Renewals <br> ✓ Unlimited Content Updates <br> ✓ Regular Backups <br> ✓ Monthly Analytics Reports
 
@@ -40,7 +41,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 *Get found on Google Maps and "near me" searches.*
 
-✓ Google Business Profile Management <br> ✓ Consistent listings on Google, Apple, Bing + 100+ sites <br> ✓ Local keyword research & strategy <br> ✓ Website keyword recommendations <br> ✓ Monthly Analytics Reports
+✓ Google Business Profile Management <br> ✓ Listings on Google, Apple, Bing, and 100+ other sites <br> ✓ Local keyword research & strategy <br> ✓ Website keyword recommendations <br> ✓ Monthly Analytics Reports
 
 Website Design is not included in this package.
 
