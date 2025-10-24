@@ -1,4 +1,968 @@
 {
+  "/media/after-workout.jpg": {
+    "width": 1080,
+    "height": 867,
+    "aspect": 1.245674740484429,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABAUDAgb/xAAoEAACAQMCBAYDAAAAAAAAAAABAgMABBESIQUxQVETFCJhccEzodH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgQD/8QAGhEAAwEBAQEAAAAAAAAAAAAAAAECEQMhEv/aAAwDAQACEQMRAD8AlpeW3V/1SS6pAk8g0wvsrdz8UC14cngJcXkixRyY8NM+p/f4qtLAnl44HQNFEcgE9aXCrnydrQF7bSTWPmFChFfBGd+1HYxQwQu6azo2y2BzPSrJijCCMRqFByQM4J7kGpXFoY0kjYkpGQQNK7e9GBfKoWnFrOVUW8wBh5gHfQe4rcSyAKvjhkJ3AfOfuhN/Pus5fxn5p0vDBU5PRW4JhUDnpG9D4jqltZ7c+oxlZE9gdjU2CR0RdLsu3Q0lXZrGYsxOVOcnn6hQ14UX0+4zD//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/after-workout__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/after-workout__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/after-workout__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/after-workout__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/after-workout__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/after-workout__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/after-workout__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/after-workout__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/after-workout__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/after-workout__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/after-workout__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/after-workout__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/after-workout__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/after-workout__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/after-workout__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/after-workout__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/after-workout__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/after-workout__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/after-workout.avif": {
+    "width": 1080,
+    "height": 867,
+    "aspect": 1.245674740484429,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABAUDAgb/xAAoEAACAQMCBAYDAAAAAAAAAAABAgMABBESIQUxQVETFCJhccEzodH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgQD/8QAGhEAAwEBAQEAAAAAAAAAAAAAAAECEQMhEv/aAAwDAQACEQMRAD8AlpeW3V/1SS6pAk8g0wvsrdz8UC14cngJcXkixRyY8NM+p/f4qtLAnl44HQNFEcgE9aXCrnydrQF7bSTWPmFChFfBGd+1HYxQwQu6azo2y2BzPSrJijCCMRqFByQM4J7kGpXFoY0kjYkpGQQNK7e9GBfKoWnFrOVUW8wBh5gHfQe4rcSyAKvjhkJ3AfOfuhN/Pus5fxn5p0vDBU5PRW4JhUDnpG9D4jqltZ7c+oxlZE9gdjU2CR0RdLsu3Q0lXZrGYsxOVOcnn6hQ14UX0+4zD//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/after-workout__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/after-workout__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/after-workout__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/after-workout__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/after-workout__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/after-workout__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/after-workout__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/after-workout__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/after-workout__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/after-workout__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/after-workout__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/after-workout__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/after-workout__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/after-workout__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/after-workout__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/after-workout__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/after-workout__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/after-workout__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/carry-cement-ball.jpg": {
+    "width": 1080,
+    "height": 1615,
+    "aspect": 0.6687306501547987,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgQFAAMB/8QAJhAAAgEEAgIBBAMAAAAAAAAAAQIDAAQRIQUSIjFBE0JRYRRxsf/EABcBAQEBAQAAAAAAAAAAAAAAAAIBAAP/xAAYEQEBAQEBAAAAAAAAAAAAAAABACERMf/aAAwDAQACEQMRAD8An8cDcIO8DDR88+JqtHCqj1U7jJktrJVlbZlKiqrllTxXJPrOhTCj2KKSNZEhYEM+SuRo0jx9qi8nfIo0mAP9rhMvJibtHCrqASGj3iunB3aPdXbyuqNJg4ZvxnPukbRzyCK5toUY/wAZyuex+cGiuOVjil6hOrlfHv8AH7pCe87KyFgCwxik75hMiuc9xoZ+RWaDP33LzvCY4rjyJ2UGMCg4qC2mSUXJBIIwS2PzU17cpGXR8gfbjdNWY6q2wfVENkvSIIq7ULWLr9wx/VYIfhtV45EXoAn97NdIRLHG0YYnea4rJ0ZwgDk6B+BWkb6g6+lznA1Q5CjVGt//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-cement-ball__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-cement-ball__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-cement-ball__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-cement-ball__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-cement-ball__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/carry-cement-ball__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-cement-ball__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-cement-ball__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-cement-ball__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-cement-ball__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-cement-ball__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/carry-cement-ball__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-cement-ball__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-cement-ball__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-cement-ball__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-cement-ball__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-cement-ball__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/carry-cement-ball__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/carry-cement-ball.avif": {
+    "width": 1080,
+    "height": 1615,
+    "aspect": 0.6687306501547987,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgQFAAMB/8QAJhAAAgEEAgIBBAMAAAAAAAAAAQIDAAQRIQUSIjFBE0JRYRRxsf/EABcBAQEBAQAAAAAAAAAAAAAAAAIBAAP/xAAYEQEBAQEBAAAAAAAAAAAAAAABACERMf/aAAwDAQACEQMRAD8An8cDcIO8DDR88+JqtHCqj1U7jJktrJVlbZlKiqrllTxXJPrOhTCj2KKSNZEhYEM+SuRo0jx9qi8nfIo0mAP9rhMvJibtHCrqASGj3iunB3aPdXbyuqNJg4ZvxnPukbRzyCK5toUY/wAZyuex+cGiuOVjil6hOrlfHv8AH7pCe87KyFgCwxik75hMiuc9xoZ+RWaDP33LzvCY4rjyJ2UGMCg4qC2mSUXJBIIwS2PzU17cpGXR8gfbjdNWY6q2wfVENkvSIIq7ULWLr9wx/VYIfhtV45EXoAn97NdIRLHG0YYnea4rJ0ZwgDk6B+BWkb6g6+lznA1Q5CjVGt//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-cement-ball__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-cement-ball__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-cement-ball__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-cement-ball__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-cement-ball__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/carry-cement-ball__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-cement-ball__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-cement-ball__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-cement-ball__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-cement-ball__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-cement-ball__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/carry-cement-ball__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-cement-ball__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-cement-ball__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-cement-ball__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-cement-ball__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-cement-ball__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/carry-cement-ball__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/carry-medicine-ball.jpg": {
+    "width": 1063,
+    "height": 908,
+    "aspect": 1.170704845814978,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQQAAgUG/8QAJhAAAQMDAwIHAAAAAAAAAAAAAQACAwQRMRIhUQVBExQVIzJhgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAEAEQIx/9oADAMBAAIRAxEAPwDkAPoI6RwEBlPUxp5Y2wvh9wu+d8hFckGx8hHHReLKSJHjUxo45KRLRbCd6iyWCpe12ww2x2sk+yjy3oxyoCrBxG4yqHKnZKNoTVEM1A0Ek1Gq5Ns/qRutGoA9LjNhckXNlmFHmfarrf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-medicine-ball__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-medicine-ball__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-medicine-ball__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-medicine-ball__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-medicine-ball__w960.avif"
+        },
+        {
+          "w": 1063,
+          "url": "/media-deriv/carry-medicine-ball__w1063.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-medicine-ball__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-medicine-ball__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-medicine-ball__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-medicine-ball__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-medicine-ball__w960.webp"
+        },
+        {
+          "w": 1063,
+          "url": "/media-deriv/carry-medicine-ball__w1063.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-medicine-ball__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-medicine-ball__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-medicine-ball__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-medicine-ball__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-medicine-ball__w960.jpg"
+        },
+        {
+          "w": 1063,
+          "url": "/media-deriv/carry-medicine-ball__w1063.jpg"
+        }
+      ]
+    }
+  },
+  "/media/carry-medicine-ball.avif": {
+    "width": 1063,
+    "height": 908,
+    "aspect": 1.170704845814978,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAQQAAgUG/8QAJhAAAQMDAwIHAAAAAAAAAAAAAQACAwQRMRIhUQVBExQVIzJhgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAEAEQIx/9oADAMBAAIRAxEAPwDkAPoI6RwEBlPUxp5Y2wvh9wu+d8hFckGx8hHHReLKSJHjUxo45KRLRbCd6iyWCpe12ww2x2sk+yjy3oxyoCrBxG4yqHKnZKNoTVEM1A0Ek1Gq5Ns/qRutGoA9LjNhckXNlmFHmfarrf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-medicine-ball__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-medicine-ball__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-medicine-ball__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-medicine-ball__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-medicine-ball__w960.avif"
+        },
+        {
+          "w": 1063,
+          "url": "/media-deriv/carry-medicine-ball__w1063.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-medicine-ball__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-medicine-ball__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-medicine-ball__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-medicine-ball__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-medicine-ball__w960.webp"
+        },
+        {
+          "w": 1063,
+          "url": "/media-deriv/carry-medicine-ball__w1063.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-medicine-ball__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-medicine-ball__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-medicine-ball__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-medicine-ball__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-medicine-ball__w960.jpg"
+        },
+        {
+          "w": 1063,
+          "url": "/media-deriv/carry-medicine-ball__w1063.jpg"
+        }
+      ]
+    }
+  },
+  "/media/carry-weighted-sacks.jpg": {
+    "width": 1059,
+    "height": 1707,
+    "aspect": 0.6203866432337434,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA0ACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwQAAgYF/8QALRAAAgEDAwIEBAcAAAAAAAAAAQIDAAQREiExBUETFCKRMlFxgTNCYYKhscH/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgAD/8QAGxEAAgMBAQEAAAAAAAAAAAAAAAECESExIgP/2gAMAwEAAhEDEQA/ANLoXPA9qT6hfw2K4Kh5SMhcfyaE/WYSzLCrOezEYFcTqU0s9xrPrfTt2FLlmGirYC/u5JyXlySdgBwKWtmyWPLAb57ii3EUgh1OuB9aQSU6jpOMc1yeml02MEJleWJeqwyGMjUoj4/SgXNpHbJCJ7wSFgVYpHgnk529qVS2gUAZdsDHxGg3rw29q8kK6ZQRhg24+9U9WCsdjd40R9CscAqq+nBwRt/VZgIwumBU7lu31rQwzGWBS0pdyAWLE5BxxVlKK2XCv3IIqY2lQy3Ssk0hRsZzj8u1JeDqibLOTjGhwMGuk2V0hAORk/IUs9leeM7lQUY5DlgFxVW1wv5xhJ+mXsvLypLGFdZxg5xyOKY8ui/Hj9x/yk4oRbXQd5PFLIVxHtj7nmjSXBT8NVQfMbn3oJkop+eF6qxO29SpSSCc1QjNSpQJ/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-weighted-sacks__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-weighted-sacks__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-weighted-sacks__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-weighted-sacks__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-weighted-sacks__w960.avif"
+        },
+        {
+          "w": 1059,
+          "url": "/media-deriv/carry-weighted-sacks__w1059.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-weighted-sacks__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-weighted-sacks__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-weighted-sacks__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-weighted-sacks__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-weighted-sacks__w960.webp"
+        },
+        {
+          "w": 1059,
+          "url": "/media-deriv/carry-weighted-sacks__w1059.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-weighted-sacks__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-weighted-sacks__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-weighted-sacks__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-weighted-sacks__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-weighted-sacks__w960.jpg"
+        },
+        {
+          "w": 1059,
+          "url": "/media-deriv/carry-weighted-sacks__w1059.jpg"
+        }
+      ]
+    }
+  },
+  "/media/carry-weighted-sacks.avif": {
+    "width": 1059,
+    "height": 1707,
+    "aspect": 0.6203866432337434,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA0ACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwQAAgYF/8QALRAAAgEDAwIEBAcAAAAAAAAAAQIDAAQREiExBUETFCKRMlFxgTNCYYKhscH/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgAD/8QAGxEAAgMBAQEAAAAAAAAAAAAAAAECESExIgP/2gAMAwEAAhEDEQA/ANLoXPA9qT6hfw2K4Kh5SMhcfyaE/WYSzLCrOezEYFcTqU0s9xrPrfTt2FLlmGirYC/u5JyXlySdgBwKWtmyWPLAb57ii3EUgh1OuB9aQSU6jpOMc1yeml02MEJleWJeqwyGMjUoj4/SgXNpHbJCJ7wSFgVYpHgnk529qVS2gUAZdsDHxGg3rw29q8kK6ZQRhg24+9U9WCsdjd40R9CscAqq+nBwRt/VZgIwumBU7lu31rQwzGWBS0pdyAWLE5BxxVlKK2XCv3IIqY2lQy3Ssk0hRsZzj8u1JeDqibLOTjGhwMGuk2V0hAORk/IUs9leeM7lQUY5DlgFxVW1wv5xhJ+mXsvLypLGFdZxg5xyOKY8ui/Hj9x/yk4oRbXQd5PFLIVxHtj7nmjSXBT8NVQfMbn3oJkop+eF6qxO29SpSSCc1QjNSpQJ/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-weighted-sacks__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-weighted-sacks__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-weighted-sacks__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-weighted-sacks__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-weighted-sacks__w960.avif"
+        },
+        {
+          "w": 1059,
+          "url": "/media-deriv/carry-weighted-sacks__w1059.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-weighted-sacks__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-weighted-sacks__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-weighted-sacks__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-weighted-sacks__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-weighted-sacks__w960.webp"
+        },
+        {
+          "w": 1059,
+          "url": "/media-deriv/carry-weighted-sacks__w1059.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/carry-weighted-sacks__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/carry-weighted-sacks__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/carry-weighted-sacks__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/carry-weighted-sacks__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/carry-weighted-sacks__w960.jpg"
+        },
+        {
+          "w": 1059,
+          "url": "/media-deriv/carry-weighted-sacks__w1059.jpg"
+        }
+      ]
+    }
+  },
+  "/media/facebook.jpg": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgMFB//EACcQAAIBBAAEBgMAAAAAAAAAAAECAwAEBRESITFBBjJRcZGhE2HB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIFA//EABwRAAEFAQEBAAAAAAAAAAAAAAIAAQMRITESQf/aAAwDAQACEQMRAD8AN4zHG7bjkJWFTrl1Y+gpBBbwwALDEq+w2TUrZBBbxxjlwqPnvWphAHyKcQ3wqSPeqYxtEF1qlmZTHV4oz4eSaItNZ7XWySACP7RbJY42jB4yWhY8t9VPoae5nIzW8xt4wvCycyRs890duUE1tJGee1Pz2pPDyhbtvxP6aE6F8+qVvMJYEcHqB80nwuSSURWYjYMiebY1yrn1lem3PC2zGfqlPhm4ikyalZFO0bvQRhLFvWWggUcmcdbObySwLJafjJd4/NsaG6L3EwigkcnoprR8UXMUeR20ijUY7/s0Uvb03B4V2Ix90CYRRZ10EBSSbxl//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.jpg"
+        }
+      ]
+    }
+  },
+  "/media/facebook.avif": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgMFB//EACcQAAIBBAAEBgMAAAAAAAAAAAECAwAEBRESITFBBjJRcZGhE2HB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIFA//EABwRAAEFAQEBAAAAAAAAAAAAAAIAAQMRITESQf/aAAwDAQACEQMRAD8AN4zHG7bjkJWFTrl1Y+gpBBbwwALDEq+w2TUrZBBbxxjlwqPnvWphAHyKcQ3wqSPeqYxtEF1qlmZTHV4oz4eSaItNZ7XWySACP7RbJY42jB4yWhY8t9VPoae5nIzW8xt4wvCycyRs890duUE1tJGee1Pz2pPDyhbtvxP6aE6F8+qVvMJYEcHqB80nwuSSURWYjYMiebY1yrn1lem3PC2zGfqlPhm4ikyalZFO0bvQRhLFvWWggUcmcdbObySwLJafjJd4/NsaG6L3EwigkcnoprR8UXMUeR20ijUY7/s0Uvb03B4V2Ix90CYRRZ10EBSSbxl//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.jpg"
+        }
+      ]
+    }
+  },
+  "/media/font-of-strongman-arnold-statue.jpg": {
+    "width": 1080,
+    "height": 1440,
+    "aspect": 0.75,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAgMEAAX/xAAoEAEAAQMDAwIHAQAAAAAAAAABAgADERIhMQQTUUGhIiMyQnGBkfD/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAbEQADAAIDAAAAAAAAAAAAAAAAARECIQMxUf/aAAwDAQACEQMRAD8A6YqrndoLjiLLx4oRT+0nqLmJGGRKPAepQlNOhsbkZ5DIx5E4oF+b+qXYnGAbfWuXxTGJ3XbbSVGoxbmyePVSwvwZ281pdVPTJYR4xkHNVgY39qV1Jd2jahkTfenEZVkkZHaBd0ph1TFBhwY4aRchfeba6DGa6MMSgLFMnmpEPLkyaS8FjF9fajMJtOo12zx+KDvXBxqqwFLzWfdmtql/ipNcvNEXrhjEqNLD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/font-of-strongman-arnold-statue.avif": {
+    "width": 1080,
+    "height": 1440,
+    "aspect": 0.75,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAgMEAAX/xAAoEAEAAQMDAwIHAQAAAAAAAAABAgADERIhMQQTUUGhIiMyQnGBkfD/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAbEQADAAIDAAAAAAAAAAAAAAAAARECIQMxUf/aAAwDAQACEQMRAD8A6YqrndoLjiLLx4oRT+0nqLmJGGRKPAepQlNOhsbkZ5DIx5E4oF+b+qXYnGAbfWuXxTGJ3XbbSVGoxbmyePVSwvwZ281pdVPTJYR4xkHNVgY39qV1Jd2jahkTfenEZVkkZHaBd0ph1TFBhwY4aRchfeba6DGa6MMSgLFMnmpEPLkyaS8FjF9fajMJtOo12zx+KDvXBxqqwFLzWfdmtql/ipNcvNEXrhjEqNLD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/font-of-strongman-arnold-statue__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/instagram.jpg": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABgMAAgUE/8QAJBAAAQQCAwABBQEAAAAAAAAAAQIDBAUAERIhMXETIkGRoRX/xAAXAQADAQAAAAAAAAAAAAAAAAADBAUB/8QAIxEAAQQCAAYDAAAAAAAAAAAAEQABAgMxQQQSEyFxwYGx0f/aAAwDAQACEQMRAD8AO09Q9aPhKBpA9J6GI2qavYHH/QZSR7xb3/cymSGKicE9FLSRv53vKR2Y0eEiXMQp0ukhtsHQOvSTjcJRhh1VroavzjRIO1o5UVzw4meyonzkjX9w5c1DtW/xV2g+Ed4sQthMV2bAaCFIHB1pz7gAfyM8l0gPVEHl2VNKTv41rB2S5srbKur2fONEg6VKYCRUTCk7LjST+id5dptl+EiLKUpv6SiW3EjegfQRhihu11T+l7Uyr0DvWMo9hXy08mUMr3+Er0f1kq2Uq3Lv9+kKPEPLvvPyAufKWxEhLixStwukF11Q0NDwAZG5WGaiBy6KWlK18kazozZ1fFSVOsMAjwKXv+YNubZy0kFSj9g6A1rr4xii3nY/vtElxDRY7z5cBf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.jpg"
+        }
+      ]
+    }
+  },
+  "/media/instagram.avif": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABgMAAgUE/8QAJBAAAQQCAwABBQEAAAAAAAAAAQIDBAUAERIhMXETIkGRoRX/xAAXAQADAQAAAAAAAAAAAAAAAAADBAUB/8QAIxEAAQQCAAYDAAAAAAAAAAAAEQABAgMxQQQSEyFxwYGx0f/aAAwDAQACEQMRAD8AO09Q9aPhKBpA9J6GI2qavYHH/QZSR7xb3/cymSGKicE9FLSRv53vKR2Y0eEiXMQp0ukhtsHQOvSTjcJRhh1VroavzjRIO1o5UVzw4meyonzkjX9w5c1DtW/xV2g+Ed4sQthMV2bAaCFIHB1pz7gAfyM8l0gPVEHl2VNKTv41rB2S5srbKur2fONEg6VKYCRUTCk7LjST+id5dptl+EiLKUpv6SiW3EjegfQRhihu11T+l7Uyr0DvWMo9hXy08mUMr3+Er0f1kq2Uq3Lv9+kKPEPLvvPyAufKWxEhLixStwukF11Q0NDwAZG5WGaiBy6KWlK18kazozZ1fFSVOsMAjwKXv+YNubZy0kFSj9g6A1rr4xii3nY/vtElxDRY7z5cBf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.jpg"
+        }
+      ]
+    }
+  },
   "/media/logo.jpg": {
     "width": 361,
     "height": 350,
@@ -339,6 +1303,522 @@
         {
           "w": 3200,
           "url": "/media-deriv/outdoor-gym-cedar-city-workout__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/powerlifting bar.jpg": {
+    "width": 1075,
+    "height": 1644,
+    "aspect": 0.6538929440389294,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAxACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQEG/8QALRAAAgEDAgUCBAcAAAAAAAAAAQIDAAQREiEFEzFBUSJxFCOBsTIzNDVykdH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAdEQACAgIDAQAAAAAAAAAAAAAAAQIRITESMkFR/9oADAMBAAIRAxEAPwDyTHG6+keKdAUeCTWPWDkH6HauSJGbESA/NEgBGeoIq3hPLNu4dUI1ZYHqRio3WRRVuiFUBGd/6pgjXFVXFvE0jNDcqwJ7jHbzSHQqpU9cdjmqFks0bRqhGdLqGplskDShWldQdiRtmnIh5Whu+1TiRrdmjUd+pou3oSpGhcQ262TmMkuBkEuPsK4trNHwhbmbGnXpTB36Z3qF7iR05erY1rh0+AmspZFVkAdVPcjx9DUXJbLhibSwnaZ2aFwxPpAB3qO/tpku5C0MgUEb6D4rQEVzay8y3u90HUiiPi3ExG45+tX8sdvanYabMLJDePevVPZPDxK25csRM0YBYgEEYz/oqI8Sv4ZSJQrE74OD1qn47ihjR3sY5I23XMakVDL6Jf8ALb2NSRfhH0ooqSFAdxD9Qv8AEVqx/tMXsfvRRU9Eup//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/powerlifting bar__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/powerlifting bar__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/powerlifting bar__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/powerlifting bar__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/powerlifting bar__w960.avif"
+        },
+        {
+          "w": 1075,
+          "url": "/media-deriv/powerlifting bar__w1075.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/powerlifting bar__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/powerlifting bar__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/powerlifting bar__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/powerlifting bar__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/powerlifting bar__w960.webp"
+        },
+        {
+          "w": 1075,
+          "url": "/media-deriv/powerlifting bar__w1075.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/powerlifting bar__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/powerlifting bar__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/powerlifting bar__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/powerlifting bar__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/powerlifting bar__w960.jpg"
+        },
+        {
+          "w": 1075,
+          "url": "/media-deriv/powerlifting bar__w1075.jpg"
+        }
+      ]
+    }
+  },
+  "/media/powerlifting bar.avif": {
+    "width": 1075,
+    "height": 1644,
+    "aspect": 0.6538929440389294,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAxACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQEG/8QALRAAAgEDAgUCBAcAAAAAAAAAAQIDAAQREiEFEzFBUSJxFCOBsTIzNDVykdH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAdEQACAgIDAQAAAAAAAAAAAAAAAQIRITESMkFR/9oADAMBAAIRAxEAPwDyTHG6+keKdAUeCTWPWDkH6HauSJGbESA/NEgBGeoIq3hPLNu4dUI1ZYHqRio3WRRVuiFUBGd/6pgjXFVXFvE0jNDcqwJ7jHbzSHQqpU9cdjmqFks0bRqhGdLqGplskDShWldQdiRtmnIh5Whu+1TiRrdmjUd+pou3oSpGhcQ262TmMkuBkEuPsK4trNHwhbmbGnXpTB36Z3qF7iR05erY1rh0+AmspZFVkAdVPcjx9DUXJbLhibSwnaZ2aFwxPpAB3qO/tpku5C0MgUEb6D4rQEVzay8y3u90HUiiPi3ExG45+tX8sdvanYabMLJDePevVPZPDxK25csRM0YBYgEEYz/oqI8Sv4ZSJQrE74OD1qn47ihjR3sY5I23XMakVDL6Jf8ALb2NSRfhH0ooqSFAdxD9Qv8AEVqx/tMXsfvRRU9Eup//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/powerlifting bar__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/powerlifting bar__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/powerlifting bar__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/powerlifting bar__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/powerlifting bar__w960.avif"
+        },
+        {
+          "w": 1075,
+          "url": "/media-deriv/powerlifting bar__w1075.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/powerlifting bar__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/powerlifting bar__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/powerlifting bar__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/powerlifting bar__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/powerlifting bar__w960.webp"
+        },
+        {
+          "w": 1075,
+          "url": "/media-deriv/powerlifting bar__w1075.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/powerlifting bar__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/powerlifting bar__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/powerlifting bar__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/powerlifting bar__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/powerlifting bar__w960.jpg"
+        },
+        {
+          "w": 1075,
+          "url": "/media-deriv/powerlifting bar__w1075.jpg"
+        }
+      ]
+    }
+  },
+  "/media/straight-arm-weight-lift.jpg": {
+    "width": 1080,
+    "height": 886,
+    "aspect": 1.2189616252821671,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABQIDBgD/xAAqEAACAQQAAwYHAAAAAAAAAAABAgMABBEhEiJBBRMyYXGRFTE0QlFygf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Azq9nyNCziSDAGcce6Ts7KWK00tjJ93Oct6Yrlgc2jH4faYx4xJsedUXsklrFCUsoITpu9HMToa8qKvuLaXuU4hYxniHKNMNj5iqpo2Rd3diP0XNQtJprtnL28Ep4wxkYcJGSNeYpCeOZY/puzY9fnJoCLdreSYx8EapjTZOc+9LGzs5YIo5bmJFTaENv+1l4/GPWlbEloXDHOEOM9KBVbGygUrFdRYfTF95GentRsxtROiIsLKQc8m+vXNQuJHNtCC7EAaGaNQkK2CaD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/straight-arm-weight-lift__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/straight-arm-weight-lift__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/straight-arm-weight-lift__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/straight-arm-weight-lift__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/straight-arm-weight-lift__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/straight-arm-weight-lift__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/straight-arm-weight-lift__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/straight-arm-weight-lift__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/straight-arm-weight-lift__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/straight-arm-weight-lift__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/straight-arm-weight-lift__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/straight-arm-weight-lift__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/straight-arm-weight-lift__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/straight-arm-weight-lift__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/straight-arm-weight-lift__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/straight-arm-weight-lift__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/straight-arm-weight-lift__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/straight-arm-weight-lift__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/straight-arm-weight-lift.avif": {
+    "width": 1080,
+    "height": 886,
+    "aspect": 1.2189616252821671,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABQIDBgD/xAAqEAACAQQAAwYHAAAAAAAAAAABAgMABBEhEiJBBRMyYXGRFTE0QlFygf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Azq9nyNCziSDAGcce6Ts7KWK00tjJ93Oct6Yrlgc2jH4faYx4xJsedUXsklrFCUsoITpu9HMToa8qKvuLaXuU4hYxniHKNMNj5iqpo2Rd3diP0XNQtJprtnL28Ep4wxkYcJGSNeYpCeOZY/puzY9fnJoCLdreSYx8EapjTZOc+9LGzs5YIo5bmJFTaENv+1l4/GPWlbEloXDHOEOM9KBVbGygUrFdRYfTF95GentRsxtROiIsLKQc8m+vXNQuJHNtCC7EAaGaNQkK2CaD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/straight-arm-weight-lift__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/straight-arm-weight-lift__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/straight-arm-weight-lift__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/straight-arm-weight-lift__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/straight-arm-weight-lift__w960.avif"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/straight-arm-weight-lift__w1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/straight-arm-weight-lift__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/straight-arm-weight-lift__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/straight-arm-weight-lift__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/straight-arm-weight-lift__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/straight-arm-weight-lift__w960.webp"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/straight-arm-weight-lift__w1080.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/straight-arm-weight-lift__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/straight-arm-weight-lift__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/straight-arm-weight-lift__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/straight-arm-weight-lift__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/straight-arm-weight-lift__w960.jpg"
+        },
+        {
+          "w": 1080,
+          "url": "/media-deriv/straight-arm-weight-lift__w1080.jpg"
+        }
+      ]
+    }
+  },
+  "/media/working-out.jpg": {
+    "width": 1057,
+    "height": 1732,
+    "aspect": 0.6102771362586605,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA0ACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABAUAAQMCBv/EACsQAAICAQMCBAUFAAAAAAAAAAECAxEABBIhIjETQVGRBTJSYbFxcqHw8f/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwQA/8QAHBEAAgMAAwEAAAAAAAAAAAAAAAECAxESEyEx/9oADAMBAAIRAxEAPwBZK5l07gIoAYj+TjNtAR8PgZ9t+G3ccWw/OJxLfj1W3cSvvnodJ4k2hjilADhEYftP+ZBeaaGuWGWokI00CokbFgw9KpTeBoSNc6SBNzRqoCg+QGF62O4pnsOkNqEPJB2/N7nBY9YItZIGhu2AoEdIoZRJNEXsWJUDLuDbgT3FDvjiZZW10GmjLxiKNUeRWqh54HBBG88YlPTusntm76dpJpJVnZSxuiOM6WI0Uxc0wz4dCsU04R91rUhJJDWeK/pxUdQV1kj+HFIVc0zCzhukSSESu0qEqh2r9RxWx2yMpq78sMWC6HGKRbswG0Gye/Bse+Fwai4QjDrXz9RmJs2zG2PJ++c2RyOD+MZrURqscJaGTTJHpmlJ6hwo+o4BqQH1RMZBDBTwb7jLYFyC5sjtmunKRzKxUc0LPpgUcHuu7H58IB0t9s4HOTJjmcmUfmH65MmcE//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/working-out__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/working-out__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/working-out__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/working-out__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/working-out__w960.avif"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/working-out__w1057.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/working-out__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/working-out__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/working-out__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/working-out__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/working-out__w960.webp"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/working-out__w1057.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/working-out__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/working-out__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/working-out__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/working-out__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/working-out__w960.jpg"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/working-out__w1057.jpg"
+        }
+      ]
+    }
+  },
+  "/media/working-out.avif": {
+    "width": 1057,
+    "height": 1732,
+    "aspect": 0.6102771362586605,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA0ACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABAUAAQMCBv/EACsQAAICAQMCBAUFAAAAAAAAAAECAxEABBIhIjETQVGRBTJSYbFxcqHw8f/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwQA/8QAHBEAAgMAAwEAAAAAAAAAAAAAAAECAxESEyEx/9oADAMBAAIRAxEAPwBZK5l07gIoAYj+TjNtAR8PgZ9t+G3ccWw/OJxLfj1W3cSvvnodJ4k2hjilADhEYftP+ZBeaaGuWGWokI00CokbFgw9KpTeBoSNc6SBNzRqoCg+QGF62O4pnsOkNqEPJB2/N7nBY9YItZIGhu2AoEdIoZRJNEXsWJUDLuDbgT3FDvjiZZW10GmjLxiKNUeRWqh54HBBG88YlPTusntm76dpJpJVnZSxuiOM6WI0Uxc0wz4dCsU04R91rUhJJDWeK/pxUdQV1kj+HFIVc0zCzhukSSESu0qEqh2r9RxWx2yMpq78sMWC6HGKRbswG0Gye/Bse+Fwai4QjDrXz9RmJs2zG2PJ++c2RyOD+MZrURqscJaGTTJHpmlJ6hwo+o4BqQH1RMZBDBTwb7jLYFyC5sjtmunKRzKxUc0LPpgUcHuu7H58IB0t9s4HOTJjmcmUfmH65MmcE//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/working-out__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/working-out__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/working-out__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/working-out__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/working-out__w960.avif"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/working-out__w1057.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/working-out__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/working-out__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/working-out__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/working-out__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/working-out__w960.webp"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/working-out__w1057.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/working-out__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/working-out__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/working-out__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/working-out__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/working-out__w960.jpg"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/working-out__w1057.jpg"
         }
       ]
     }
