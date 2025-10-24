@@ -9,6 +9,7 @@ url: "/"
 # Beautiful Countertops, Expertly Installed
 {.text-white}
 ## Quartz • Granite • Quartzite • Marble
+{.text-white}
 Fabricated in our state of the art shop in Grand Junction, CO. Serving Western Colorado and Eastern Utah.
 {.text-white}
 {{<button url="/contact" text="Contact">}}
