@@ -64,7 +64,7 @@ uglyURLs = true
   stickyDesktop     = true
   CTAText           = "Contact"
   CTAURL            = "/contact"
-  showPhoneOnMobile = true
+  showPhoneOnMobile = false
   phoneNumber       = "209-534-0270"
   logoHeightPx      = 40
 
