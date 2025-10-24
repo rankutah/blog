@@ -1,0 +1,104 @@
+# ─────────────────────────────────────────────────────────────────────────────
+baseURL       = "https://example.com/" # TODO: update to live domain
+title         = "Quartz Worx"
+languageCode  = "en-us"
+theme         = ["overrides", "PaperMod"]
+themesDir     = "../../themes"
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Keep URLs tidy
+trailingSlash = "never"
+cleanDestinationDir = true
+uglyURLs = true
+
+# Ensure FORMS format exists locally so outputs.home supports it
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block  = true
+        inline = true
+        title  = true
+
+[params]
+  primaryColor       = "green"
+  logo               = "media/logo.png"     # optional; add when ready
+  lightBackground    = "gray-200"
+  darkBackground     = "gray-900"
+  enableSearch       = true
+  clientName         = "Quartz Worx"
+  clientURL          = "https://example.com" # TODO: update
+  mainSections       = ["posts"]
+  defaultTheme       = "auto"
+  disableThemeToggle = false
+
+[params.header]
+  stickyMobile      = true
+  stickyDesktop     = true
+  CTAText           = "Contact"
+  CTAURL            = "/contact"
+  showPhoneOnMobile = true
+  phoneNumber       = "(970) 628-1508"
+  logoHeightPx      = 40
+
+[menu]
+  [[menu.main]]
+    name   = "Home"
+    url    = "/"
+    weight = 10
+
+  [[menu.main]]
+    name   = "Countertops"
+    url    = "/countertops/"
+    identifier = "countertops"
+    weight = 20
+
+  [[menu.main]]
+    name   = "Quartz"
+    url    = "/countertops/quartz"
+    parent = "countertops"
+    weight = 21
+
+  [[menu.main]]
+    name   = "Granite"
+    url    = "/countertops/granite"
+    parent = "countertops"
+    weight = 22
+
+  [[menu.main]]
+    name   = "Quartzite"
+    url    = "/countertops/quartzite"
+    parent = "countertops"
+    weight = 23
+
+  [[menu.main]]
+    name   = "Marble"
+    url    = "/countertops/marble"
+    parent = "countertops"
+    weight = 24
+
+  [[menu.main]]
+    name   = "Compare"
+    url    = "/countertops/"
+    weight = 30
+
+  [[menu.main]]
+    name   = "About"
+    url    = "/about"
+    weight = 40
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact"
+    weight = 50

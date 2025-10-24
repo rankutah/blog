@@ -6,6 +6,10 @@
 {{- $page := .Page -}}
 {{- $id     := .Get "id" | default "contact1" -}}
 {{- $action := .Get "action" | default (or $page.Site.Params.formspark.action $page.Site.Params.forms.action) -}}
+{{- /* Cloudflare Turnstile controls: enable via param or site params */ -}}
+{{- $turnstileParam := lower (.Get "turnstile" | default "") -}}
+{{- $tsEnabled := or (eq $turnstileParam "true") (and (ne $turnstileParam "false") (and (isset $page.Site.Params "turnstile") (or $page.Site.Params.turnstile.enable false))) -}}
+{{- $tsSiteKey := cond (and (isset $page.Site.Params "turnstile") (isset $page.Site.Params.turnstile "sitekey")) $page.Site.Params.turnstile.sitekey "" -}}
 
 {{- /* Support three-state params: "true" | "false" | "optional" */ -}}
 {{- $nameParam := lower (.Get "name" | default "true") -}}
@@ -204,6 +208,18 @@
 
       {{- end }}
     {{- end }}
+
+    {{- /* Cloudflare Turnstile widget (if enabled and sitekey present). The widget injects cf-turnstile-response into the form POST */ -}}
+    {{- if $tsEnabled -}}
+      {{- if $tsSiteKey -}}
+        <div class="cf-turnstile" data-sitekey="{{ $tsSiteKey }}" data-theme="auto"></div>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+      {{- else -}}
+        <div class="text-amber-700 bg-amber-50 dark:bg-amber-900/30 dark:text-amber-300 p-3 rounded text-sm">
+          Turnstile is enabled but no site key configured. Set [params.turnstile.sitekey] in config.toml.
+        </div>
+      {{- end -}}
+    {{- end -}}
 
   </form>
 {{- end }}

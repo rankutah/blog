@@ -82,8 +82,7 @@ Photos of the office and signs so you know you’re in the right place.
 
 {{< section >}}
 
-## Reviews
-See what customers are saying
+## What Our Customers Say
 
 {{< elfsight id="269a9350-d76a-4819-ad56-ef05296b1bd4">}}
 

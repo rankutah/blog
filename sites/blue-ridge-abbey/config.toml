@@ -61,6 +61,12 @@ uglyURLs = true
   action = "https://submit-form.com/DOH188lWF"
   honeypot = "_hp"
 
+[params.turnstile]
+  # Enable Turnstile widget on forms using the contact-form shortcode
+  enable = true
+  # Cloudflare Turnstile site key (public) — safe to expose client-side
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
 [params.header]
   stickyMobile = true
   stickyDesktop = true

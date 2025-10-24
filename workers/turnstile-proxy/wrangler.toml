@@ -1,0 +1,12 @@
+name = "turnstile-proxy"
+main = "src/index.js"
+compatibility_date = "2025-10-01"
+# Fill in your account_id from Cloudflare dashboard
+account_id = "YOUR_ACCOUNT_ID"
+
+[vars]
+# Non-secret: set your Formspark endpoint here or via dashboard.
+FORMSPARK_ENDPOINT = "https://submit-form.com/v9hVDQiYl"
+
+# Secret must be set via `wrangler secret put TURNSTILE_SECRET`
+# TURNSTILE_SECRET
