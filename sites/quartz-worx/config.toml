@@ -44,6 +44,7 @@ uglyURLs = true
   disableThemeToggle = false
 
 [params.header]
+  title            = "QUARTZ WORX"
   stickyMobile      = true
   stickyDesktop     = true
   CTAText           = "Contact"
@@ -93,6 +94,11 @@ uglyURLs = true
     url    = "/countertops/"
     parent = "countertops"
     weight = 25
+
+  [[menu.main]]
+    name   = "Process"
+    url    = "/process/"
+    weight = 30
 
   [[menu.main]]
     name   = "About"

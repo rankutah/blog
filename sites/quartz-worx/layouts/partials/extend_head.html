@@ -1,0 +1,20 @@
+{{/* Quartz Worx site-only head extensions: navbar font override */}}
+
+<!-- Import brand-like font (adjust if you change brand typography) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Navbar typography override (Quartz Worx only) */
+  /* Targets menu links in both desktop (#navbar-sticky) and mobile drawer (#navbar-drawer) */
+  #navbar-sticky .brand-link,
+  #navbar-drawer .brand-link,
+  /* Also target the site title text next to the logo */
+  nav a > span.self-center.font-semibold {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+  }
+</style>
