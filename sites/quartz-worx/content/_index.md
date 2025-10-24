@@ -36,28 +36,28 @@ Fabricated in our state of the art shop in Grand Junction, CO. Serving Western C
 
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 
-{{< col card="true" bg="neutral-50" darkbg="neutral-800" y="start" >}}
+{{< col card="true" bg="neutral-50" darkbg="gray-800" y="start" >}}
 ## Quartz
 Durable, low‑maintenance, and available in many consistent colors and patterns.
 
 {{< button url="/countertops/quartz" text="Explore Quartz" >}}
 {{< /col >}}
 
-{{< col card="true" bg="neutral-50" darkbg="neutral-800" y="start" >}}
+{{< col card="true" bg="neutral-50" darkbg="gray-800" y="start" >}}
 ## Granite
 Natural stone with unique movement and character in every slab.
 
 {{< button url="/countertops/granite" text="Explore Granite" >}}
 {{< /col >}}
 
-{{< col card="true" bg="neutral-50" darkbg="neutral-800" y="start" >}}
+{{< col card="true" bg="neutral-50" darkbg="gray-800" y="start" >}}
 ## Quartzite
 Harder than granite with striking, marble‑like veining.
 
 {{< button url="/countertops/quartzite" text="Explore Quartzite" >}}
 {{< /col >}}
 
-{{< col card="true" bg="neutral-100" darkbg="neutral-800" y="start" >}}
+{{< col card="true" bg="neutral-100" darkbg="gray-800" y="start" >}}
 ## Marble
 Timeless beauty with soft veining—ideal for baking and light‑use areas.
 
