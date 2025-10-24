@@ -1,0 +1,10 @@
+{{- /* Elfsight widget embed
+   Usage: {{< elfsight-widget id="e5e1836b-e649-43fe-bd19-5d7792c2c087" >}}
+*/ -}}
+{{- $id := .Get "id" -}}
+{{- if not $id -}}
+  <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-3 rounded">Missing id for elfsight-widget shortcode.</div>
+{{- else -}}
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-{{ $id }}" data-elfsight-app-lazy></div>
+{{- end -}}

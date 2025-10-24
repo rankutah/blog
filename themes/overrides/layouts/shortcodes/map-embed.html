@@ -1,0 +1,18 @@
+{{- /* Google Maps embed wrapper
+   Usage: {{< map-embed src="https://www.google.com/maps/embed?..." height="450" >}}
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $height := .Get "height" | default "450" -}}
+{{- if not $src -}}
+  <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-3 rounded">Missing src for map-embed shortcode.</div>
+{{- else -}}
+  <div class="w-full overflow-hidden rounded-lg shadow">
+    <iframe src="{{ $src | safeURL }}"
+            class="w-full"
+            height="{{ $height }}"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+{{- end -}}

@@ -1,0 +1,346 @@
+{
+  "/media/logo.jpg": {
+    "width": 361,
+    "height": 350,
+    "aspect": 1.0314285714285714,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwUGAQT/xAApEAACAgEEAQIFBQAAAAAAAAABAgMRBAAFElEhIjEUMkGBsWFxkaHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAED/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEREjEh/9oADAMBAAIRAxEAPwCc2zbXzCZGBEQNXXu3WqCGDFgASNSORICovY9ix99DXhBtMECTpG4i5lK5F2Iuq60pMucWDEy33Ws0rdZB06Y2UI0nRR6Sqhq8gGvB78fXSDddrbBIkS2hJq6+U9a0fFK5cCXlVXR9utOqSbap8eSdZHMfIIRTIwF1+2jVeoAseaPJ2uNxAskoTgCvhlIFXf8ABrQM3CyYZpRHK/FSSq8mJrkBX96VYGfJgy2vqQ/Mt1f6jo6pMXdcXJSlFt9QwII83+RpNdwC/Cw8meWHnK/BiCV5G65V/mumeWPF22SRscRylCnIm2JPi/v5OjZW542KnE10OIPIi7/OpzcM+TOlsjigPpW7+57Ok2zAf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.avif"
+        },
+        {
+          "w": 361,
+          "url": "/media-deriv/logo__w361.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.webp"
+        },
+        {
+          "w": 361,
+          "url": "/media-deriv/logo__w361.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.jpg"
+        },
+        {
+          "w": 361,
+          "url": "/media-deriv/logo__w361.jpg"
+        }
+      ]
+    }
+  },
+  "/media/logo.avif": {
+    "width": 361,
+    "height": 350,
+    "aspect": 1.0314285714285714,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwUGAQT/xAApEAACAgEEAQIFBQAAAAAAAAABAgMRBAAFElEhIjEUMkGBsWFxkaHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAED/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEREjEh/9oADAMBAAIRAxEAPwCc2zbXzCZGBEQNXXu3WqCGDFgASNSORICovY9ix99DXhBtMECTpG4i5lK5F2Iuq60pMucWDEy33Ws0rdZB06Y2UI0nRR6Sqhq8gGvB78fXSDddrbBIkS2hJq6+U9a0fFK5cCXlVXR9utOqSbap8eSdZHMfIIRTIwF1+2jVeoAseaPJ2uNxAskoTgCvhlIFXf8ABrQM3CyYZpRHK/FSSq8mJrkBX96VYGfJgy2vqQ/Mt1f6jo6pMXdcXJSlFt9QwII83+RpNdwC/Cw8meWHnK/BiCV5G65V/mumeWPF22SRscRylCnIm2JPi/v5OjZW542KnE10OIPIi7/OpzcM+TOlsjigPpW7+57Ok2zAf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.avif"
+        },
+        {
+          "w": 361,
+          "url": "/media-deriv/logo__w361.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.webp"
+        },
+        {
+          "w": 361,
+          "url": "/media-deriv/logo__w361.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.jpg"
+        },
+        {
+          "w": 361,
+          "url": "/media-deriv/logo__w361.jpg"
+        }
+      ]
+    }
+  },
+  "/media/outdoor-gym-cedar-city-workout.jpg": {
+    "width": 3425,
+    "height": 1803,
+    "aspect": 1.8996117581808099,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAARACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABAABAgMF/8QAKRAAAgEDAwIEBwAAAAAAAAAAAQIDAAQREiExEzMFFHFyIjRBQ4Gxwf/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAYEQEAAwEAAAAAAAAAAAAAAAAAARExAv/aAAwDAQACEQMRAD8ANdHT0lIxhTtSLN9EOTsC3NIQW13Ck0ts6uw41YxXCW3t2fo27vHMRqUB8naq1QMyuHVUzlm+nO9KltrkeGSqqiQBD8QYHOTt+6ylksqLM9xM0pXUTkb+taSvNchcjy6ZKumQ2eMGiJNGz9w+leD938GqqmME6XD8pc+wU6y7b+7+CqqsOvWv/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w3200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2000.webp"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2400.webp"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w3200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/outdoor-gym-cedar-city-workout.avif": {
+    "width": 3425,
+    "height": 1803,
+    "aspect": 1.8996117581808099,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAARACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABAABAgMF/8QAKRAAAgEDAwIEBwAAAAAAAAAAAQIDAAQREiExEzMFFHFyIjRBQ4Gxwf/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAYEQEAAwEAAAAAAAAAAAAAAAAAARExAv/aAAwDAQACEQMRAD8ANdHT0lIxhTtSLN9EOTsC3NIQW13Ck0ts6uw41YxXCW3t2fo27vHMRqUB8naq1QMyuHVUzlm+nO9KltrkeGSqqiQBD8QYHOTt+6ylksqLM9xM0pXUTkb+taSvNchcjy6ZKumQ2eMGiJNGz9w+leD938GqqmME6XD8pc+wU6y7b+7+CqqsOvWv/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w3200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w320.webp"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w480.webp"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w640.webp"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w768.webp"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w960.webp"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1200.webp"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1600.webp"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2000.webp"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2400.webp"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w3200.webp"
+        }
+      ],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoor-gym-cedar-city-workout__w3200.jpg"
+        }
+      ]
+    }
+  }
+}

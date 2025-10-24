@@ -1,0 +1,95 @@
+# ─────────────────────────────────────────────────────────────────────────────
+baseURL       = "https://cedarcitystrength.com/"  # Update when deploying
+title         = "Cedar City Strength  |  & Conditioning"
+languageCode  = "en-us"
+theme         = ["overrides", "PaperMod"]
+themesDir     = "../../themes"
+# ─────────────────────────────────────────────────────────────────────────────
+
+# URLs and build hygiene
+trailingSlash = "never"
+cleanDestinationDir = true
+uglyURLs = true
+
+# Ensure FORMS format exists locally so outputs.home supports it
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block  = true
+        inline = true
+        title  = true
+
+[params]
+  primaryColor       = "lime"           # brand accent (buttons/links)
+  logo               = "media/logo.png" # optional; add when ready
+  lightBackground    = "neutral-100"    # page background (light)
+  darkBackground     = "neutral-800"    # page background (dark)
+  enableSearch       = false             # no blog/search for now
+  clientName         = "Cedar City Strength"
+  clientURL          = "https://cedarcitystrength.com"
+  defaultTheme       = "auto"
+  disableThemeToggle = false
+
+  # Footer/socials
+  [[params.social]]
+    name = "facebook"
+    url  = "https://www.facebook.com/cedarcitystrengthandconditioning"
+    icon = "/media/facebook.png"
+    alt  = "Facebook"
+
+  [[params.social]]
+    name = "instagram"
+    url  = "https://www.instagram.com/cedarcitystrengthconditioning/"
+    icon = "/media/instagram.png"
+    alt  = "Instagram"
+
+[params.socialDefaults]
+  size = "w-7 h-7"
+  gap  = "gap-3"
+
+[params.header]
+  stickyMobile      = true
+  stickyDesktop     = true
+  CTAText           = "Contact"
+  CTAURL            = "/contact"
+  showPhoneOnMobile = true
+  phoneNumber       = "209-534-0270"
+  logoHeightPx      = 40
+
+[menu]
+  [[menu.main]]
+    name   = "Home"
+    url    = "/"
+    weight = 10
+
+  [[menu.main]]
+    name   = "Services"
+    url    = "/services"
+    weight = 20
+
+  [[menu.main]]
+    name   = "Gallery"
+    url    = "/gallery"
+    weight = 30
+
+  [[menu.main]]
+    name   = "About"
+    url    = "/about"
+    weight = 40
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact"
+    weight = 50
