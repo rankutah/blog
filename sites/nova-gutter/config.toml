@@ -20,6 +20,10 @@ pruneTaxonomies = true
 
 [module]
 
+  [[module.mounts]]
+    source = "posts"
+    target = "content/posts"
+
 
 [outputs]
   # Inherit defaults; override only if needed
