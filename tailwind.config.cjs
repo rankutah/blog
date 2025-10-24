@@ -43,6 +43,26 @@ function buildSafelist() {
   // not needed for backgrounds anymore, but harmless to keep
   out.push('bg-white');
 
+  // Ensure base background utilities we toggle on <html> are always emitted.
+  // Light backgrounds for all families used by the palette
+  for (const fam of linkFamilies) {
+    for (const step of STEPS_LIGHT) {
+      out.push(`bg-${fam}-${step}`);
+    }
+  }
+  // Dark backgrounds (neutrals: 800/900/950; chromas: 950)
+  const NEU_ALL = ['slate','gray','zinc','neutral','stone'];
+  for (const fam of NEU_ALL) {
+    for (const step of STEPS_DARK_NEUTRAL) {
+      out.push(`bg-${fam}-${step}`);
+    }
+  }
+  for (const fam of CHROMAS) {
+    for (const step of STEPS_DARK_CHROMA) {
+      out.push(`bg-${fam}-${step}`);
+    }
+  }
+
   // Ensure height utilities used by carousels are always emitted
   out.push(
     'h-56', 'h-64', 'h-96', 'h-140',

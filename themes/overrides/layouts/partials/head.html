@@ -72,19 +72,7 @@
         as="style">
 {{- end }}
 
-<!-- Flowbite/Tailwind CSS (blocking to avoid FOUC/unstyled icons) -->
-{{- $flow := resources.Get "css/main.css" | postCSS | resources.Minify }}
-{{- if not site.Params.assets.disableFingerprinting }}
-  {{- $flow = $flow | fingerprint }}
-  <link crossorigin="anonymous"
-        href="{{ $flow.RelPermalink }}"
-        integrity="{{ $flow.Data.Integrity }}"
-        rel="stylesheet">
-{{- else }}
-  <link crossorigin="anonymous"
-        href="{{ $flow.RelPermalink }}"
-        rel="stylesheet">
-{{- end }}
+{{/* PaperMod pages should not include Tailwind/Flowbite CSS here. Flowbite CSS is loaded exclusively by flowbite.html base. */}}
 
 {{- /* Add taxonomy badge CSS here */}}
 {{ partial "taxonomy-badges.html" . }}
