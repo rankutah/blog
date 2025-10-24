@@ -8,7 +8,9 @@ url: "/"
 {{< section img="/media/granite-quartz-countertop-kitchen.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
 # Beautiful Countertops, Expertly Installed
 {.text-white}
-Quartz • Granite • Quartzite • Marble — crafted and installed in and around Grand Junction, CO
+## Quartz • Granite • Quartzite • Marble
+Fabricated in our state of the art shop in Grand Junction, CO
+Serving Western Colorado and Eastern Utah
 {.text-white}
 {{<button url="/contact" text="Contact">}}
 
