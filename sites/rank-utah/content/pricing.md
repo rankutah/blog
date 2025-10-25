@@ -119,9 +119,6 @@ Fair use and scope:
 - Majorly customized or out‑of‑the‑ordinary work (e.g., complex tools, custom integrations, web apps, or bulk content migrations) is quoted separately
 - Heavy request bursts may be queued to maintain quality
 
-### Is Website Design included in the Local SEO plan?
-No. Local SEO is a separate service. If you need both, choose the bundle to save $49/month.
-
 ### How long does a new site take?
 Sites can be built in 2-3 weeks with your frequent coordination.
 
