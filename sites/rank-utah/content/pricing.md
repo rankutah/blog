@@ -123,7 +123,7 @@ Fair use and scope:
 No. Local SEO is a separate service. If you need both, choose the bundle to save $49/month.
 
 ### How long does a new site take?
-Typically 1–2 weeks depending on content and review cycles. Timelines are set at kickoff.
+Sites can be built in 2-3 weeks with your frequent coordination.
 
 {{< /faqs >}}
 
