@@ -43,6 +43,11 @@ uglyURLs = true
   defaultTheme       = "auto"
   disableThemeToggle = false
 
+[params.turnstile]
+  enable  = true
+  # Reuse Blue Ridge Abbey site key (must be authorized for blueridgetech.com in Cloudflare Turnstile settings)
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
 [params.header]
   stickyMobile      = true
   stickyDesktop     = true
