@@ -42,6 +42,10 @@ uglyURLs = true
   defaultTheme       = "auto"
   disableThemeToggle = false
 
+[params.turnstile]
+  enable  = true
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
   # Footer/socials
   [[params.social]]
     name = "facebook"

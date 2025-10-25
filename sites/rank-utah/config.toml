@@ -131,6 +131,12 @@ uglyURLs      = true
   errorMessage   = "Sorry, something went wrong. Please try again."
   # submitClasses = "..."               # optional button styling
 
+[params.turnstile]
+  # Enable Cloudflare Turnstile on forms rendered via the contact-form shortcode
+  enable  = true
+  # Reuse Blue Ridge Abbey site key (make sure blueridgetech.com and rankutah domains are allowed in CF)
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
 [params.section.defaults]
   # Container width:
   #   sm → max-w-screen-sm
