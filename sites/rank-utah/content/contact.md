@@ -57,7 +57,6 @@ Share what you need help with and the best way to contact you.
 
 {{< button submit="true" form="contact" text="Submit Message" >}}
 
-
 {{< /col >}}
 
 {{< /cols >}}
