@@ -48,11 +48,11 @@ Share what you need help with and the best way to contact you.
 	name="true"
 	email="true"
 	phone="optional"
-    business="optional"
+	business="false"
 	subject="false"
 	message="true"
-	custom="Website (Optional)"
-	order="name,email,phone,business,address,custom,message,consent"
+	consent="false"
+	order="name,email,phone,message"
 	classes="max-w-xl"
 >}}
 
