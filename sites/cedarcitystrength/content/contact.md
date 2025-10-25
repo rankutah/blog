@@ -13,7 +13,7 @@ summary: "Get in touch"
 
 ## Direct Contact
 
-**Phone:** [209-534-0270](tel:+12095340270)  
+**Phone:** [209-534-0270](tel:+12095340270)
 **Address:** [690 West Industrial Rd. Suite 3110, Cedar City, UT 84721](https://www.google.com/maps?q=690+West+Industrial+Rd.+Suite+3110,+Cedar+City,+UT+84721)
 
 {{< socials align="start" >}}

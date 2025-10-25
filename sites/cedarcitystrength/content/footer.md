@@ -19,7 +19,7 @@ Strength and conditioning gym in Cedar City, Utah
 ### Contact
 {.center}
 
-[209-534-0270](tel:+12095340270)  
+[209-534-0270](tel:+12095340270)
 [690 West Industrial Rd. Suite 3110, Cedar City, UT 84721](https://www.google.com/maps?q=690+West+Industrial+Rd.+Suite+3110,+Cedar+City,+UT+84721)
 {.center}
 

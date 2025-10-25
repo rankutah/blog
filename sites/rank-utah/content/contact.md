@@ -52,7 +52,6 @@ Share what you need help with and the best way to contact you.
 	subject="false"
 	message="true"
 	consent="false"
-	order="name,email,phone,message"
 	classes="max-w-xl"
 >}}
 
