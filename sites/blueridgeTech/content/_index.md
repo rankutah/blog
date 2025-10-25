@@ -12,14 +12,6 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /section >}}
 
-{{< section render="raw" >}}
-
-{{< color-picker>}}
-
-<br>
-
-{{< /section >}}
-
 {{< section >}}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
