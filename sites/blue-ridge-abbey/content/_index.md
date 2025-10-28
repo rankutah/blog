@@ -162,13 +162,18 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 {{< /col >}}
 
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Explore Buena Vista
+A guide to the top scenic drives, hikes, orchards, and photo spots for peak color near Blue Ridge Abbey. <br><br>
+{{< button url="/blog/fall-in-buena-vista" text="Fall in Buena Vista" >}}
+
+{{< /col >}}
+
+
 {{< /cols >}}
 
 {{< /section >}}
-
-
-
-
 
 
 {{< section >}}
