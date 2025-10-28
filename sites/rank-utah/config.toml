@@ -46,7 +46,7 @@ uglyURLs      = true
   home         = ["HTML", "RSS", "JSON", "FORMS"]
 
 [params]
-  googleAnalyticsID   = "G-LGYK5V1CTV"
+  googleAnalyticsID   = "G-7240SPB67L"
   primaryColor        = "blue"
   logo = "media/logo.png"
   lightBackground  = "gray-50"  # any color @ 50|100|200
@@ -60,8 +60,8 @@ uglyURLs      = true
 
   showReadingTime     = true
   enableSearch        = true
-  clientName          = "Clear Presence Studio"
-  clientURL           = "https://rankutah.com"
+  clientName          = "Clear Presence"
+  clientURL           = "https://clearpresence.io"
   mainSections        = ["posts"]
   defaultTheme        = "auto"
   disableThemeToggle  = false
