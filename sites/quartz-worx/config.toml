@@ -32,6 +32,8 @@ uglyURLs = true
         title  = true
 
 [params]
+  # Force production gating for analytics in any deploy environment
+  env                = "production"
   primaryColor       = "green"
   logo               = "media/logo.png"     # optional; add when ready
   lightBackground    = "neutral-100"
@@ -42,6 +44,12 @@ uglyURLs = true
   mainSections       = ["posts"]
   defaultTheme       = "auto"
   disableThemeToggle = false
+
+[params.analytics]
+  # Use GA4 for Quartz Worx
+  [params.analytics.google]
+    id = "G-N152WYDEKX"
+    enabled = true
 
 [params.turnstile]
   enable  = true

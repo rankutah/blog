@@ -46,7 +46,11 @@ uglyURLs      = true
   home         = ["HTML", "RSS", "JSON", "FORMS"]
 
 [params]
-  googleAnalyticsID   = "G-7240SPB67L"
+  # Ensure analytics and other prod-only features are included regardless of CI env
+  env = "production"
+  # Note: Analytics partial prefers [params.analytics.google].id over this legacy key.
+  # Leaving this empty to avoid confusion and double-config. Use params.analytics.google.id below.
+  # googleAnalyticsID   = "G-7240SPB67L"
   primaryColor        = "blue"
   logo = "media/logo.png"
   lightBackground  = "gray-50"  # any color @ 50|100|200
@@ -86,9 +90,6 @@ uglyURLs      = true
   gap  = "gap-3"
 
 [params.analytics]
-  delayMs = 4000
-  loadEvents = ["scroll", "mousemove", "touchstart"]
-
   [params.analytics.google]
     id = "G-763E3FZE0G"
     enabled = true

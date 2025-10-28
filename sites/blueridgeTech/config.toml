@@ -32,6 +32,8 @@ uglyURLs = true
         title  = true
 
 [params]
+  # Force production gating for analytics in any deploy environment
+  env                = "production"
   primaryColor       = "blue"
   logo               = "media/logo.png"     # optional; add when ready
   lightBackground    = "neutral-100"
@@ -42,6 +44,12 @@ uglyURLs = true
   mainSections       = ["posts"]
   defaultTheme       = "auto"
   disableThemeToggle = false
+
+[params.analytics]
+  # GA4 for BlueridgeTech
+  [params.analytics.google]
+    id = "G-RWSQCRS25V"
+    enabled = true
 
 [params.turnstile]
   enable  = true

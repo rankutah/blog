@@ -25,7 +25,7 @@
 -}}
 
 
-<script id="cp-analytics-config" type="application/json">{{ $cfg | jsonify }}</script>
+<script id="cp-analytics-config" type="application/json">{{ $cfg | jsonify | safeJS }}</script>
 <script>
 // 0) Stubs: safe no-ops that collect calls before real libs load
 window.dataLayer = window.dataLayer || [];
