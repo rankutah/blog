@@ -91,7 +91,7 @@ uglyURLs      = true
 
 [params.analytics]
   [params.analytics.google]
-    id = "G-763E3FZE0G"
+    id = "G-QZZY3SWWKY"
     enabled = true
 
   [params.analytics.clarity]

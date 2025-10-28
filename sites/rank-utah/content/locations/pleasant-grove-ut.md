@@ -43,6 +43,9 @@ Professional business websites with powerful local SEO
 - Business Hours: Mon–Fri, 9am–5pm
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
+![Clear Presence Storefront Sign in Pleasant Grove, UT](/media/storefront-sign-business-web-design-local-seo.jpeg)
+
+
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
@@ -52,6 +55,10 @@ Professional business websites with powerful local SEO
 Grow your small business in Pleasant Grove with a professional website and local SEO. Reach out via call, text, or email.
 
 {{< button url="/contact" text="Contact" >}} {{< button url="/portfolio" text="Portfolio" >}}
+
+<br>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.2270534319678!2d-111.77212352186059!3d40.359489571448805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d83518bf2d615%3A0x7743ab4d90b06212!2sClear%20Presence!5e0!3m2!1sen!2sus!4v1761685916027!5m2!1sen!2sus" width="600" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 {{< /col >}}
 
