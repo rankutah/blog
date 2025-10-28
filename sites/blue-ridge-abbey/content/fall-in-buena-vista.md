@@ -6,6 +6,8 @@ description: "A simple, guest-friendly guide to the best fall color around Buena
 url: "/blog/fall-in-buena-vista"
 ---
 
+![alt text](blue-ridge-parkway.jpg)
+
 {{< section >}}
 
 # 5 Breathtaking Ways to Experience Fall in Buena Vista, VA
@@ -42,7 +44,7 @@ Follow **Route 39** west from Buena Vista and you’ll wind through **Goshen Pas
 
 Fall is the perfect time to visit some of Virginia’s hidden cascades! Cooler temps, bright foliage, and fewer crowds make it an ideal season.
 
-* [**Panther Falls**](https://www.virginia.org/listing/panther-falls/7037/): A local favorite just off the Blue Ridge Parkway, this small but stunning waterfall is accessible by a short, family-friendly hike along the Pedlar River.  
+* [**Panther Falls**](https://www.virginia.org/listing/panther-falls/7037/): A local favorite just off the Blue Ridge Parkway, this small but stunning waterfall is accessible by a short, family-friendly hike along the Pedlar River.
 * [**Statons Creek Falls**](https://blueridgecountry.com/locations/statons-creek-falls/): A 140-foot waterfall tucked into the George Washington National Forest. Little to no hiking is required, making it great for a quick stop and some photos surrounded by fall color.
 
 {{< /section >}}
@@ -53,8 +55,8 @@ Fall is the perfect time to visit some of Virginia’s hidden cascades! Cooler t
 
 Autumn above, adventure below! The Shenandoah Valley is home to some of the oldest and most dramatic caverns in the country, perfect for a fall day when the weather is less agreeable.
 
-* [**Grand Caverns**](https://grandcaverns.com): The oldest continually operating show cave in the U.S., offering walking and adventure tours.  
-* [**Shenandoah Caverns**](https://shenandoahcaverns.com): Known for its wild formations and quirky “bacon” flowstone features.  
+* [**Grand Caverns**](https://grandcaverns.com): The oldest continually operating show cave in the U.S., offering walking and adventure tours.
+* [**Shenandoah Caverns**](https://shenandoahcaverns.com): Known for its wild formations and quirky “bacon” flowstone features.
 * [**Luray Caverns**](https://luraycaverns.com): The largest and most famous caverns in Virginia, ideal for travelers who want a full underground experience.
 
 {{< /section >}}
@@ -69,9 +71,9 @@ Fall in Buena Vista isn’t just about the sights, it’s about the feeling! Str
 
 {{< section align="center" >}}
 
-## Planning a Trip? Here's a Mid-Week Bonus
+## Planning a Trip? Consider the Mid-Week Bonus
 
-If you're ready to visit the beautiful Shenandoah Valley, weekdays are a best-kept secret: less traffic, more peace, and better rates. Stay with us at **Blue Ridge Abbey Bed & Breakfast,** where we offer a *Fall Explorer Package* that includes 15% off of mid-week stays and daily homemade breakfast!
+If you're ready to visit the beautiful Shenandoah Valley, weekdays are a best-kept secret: less traffic, more peace, and more personalized attention. Stay with us at **Blue Ridge Abbey Bed & Breakfast,** where we offer cozy rooms and a daily homemade breakfast!
 
 {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Your Fall Stay" >}} {{< button url="/contact" text="Ask a Question" >}}
 
