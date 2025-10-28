@@ -6,9 +6,10 @@ description: "A simple, guest-friendly guide to the best fall color around Buena
 url: "/blog/fall-in-buena-vista"
 ---
 
-![alt text](blue-ridge-parkway.jpg)
-
 {{< section >}}
+
+![Blue Ridge Parkway in fall](/media/blue-ridge-parkway.avif)
+
 
 # 5 Breathtaking Ways to Experience Fall in Buena Vista, VA
 
