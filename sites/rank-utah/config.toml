@@ -46,11 +46,7 @@ uglyURLs      = true
   home         = ["HTML", "RSS", "JSON", "FORMS"]
 
 [params]
-  # Ensure analytics and other prod-only features are included regardless of CI env
   env = "production"
-  # Note: Analytics partial prefers [params.analytics.google].id over this legacy key.
-  # Leaving this empty to avoid confusion and double-config. Use params.analytics.google.id below.
-  # googleAnalyticsID   = "G-7240SPB67L"
   primaryColor        = "blue"
   logo = "media/logo.png"
   lightBackground  = "gray-50"  # any color @ 50|100|200
@@ -72,18 +68,6 @@ uglyURLs      = true
   author              = "Benjamin Awerkamp"
   hideMeta            = false
 
-  # Footer/socials
-  [[params.social]]
-    name = "instagram"
-    url  = "https://www.instagram.com/clearpresenceio/"
-    icon = "media/instagram.avif"
-    alt  = "Instagram"
-
-  [[params.social]]
-    name = "facebook"
-    url  = "https://www.facebook.com/people/Clear-Presence/61571958571893/"
-    icon = "media/facebook.avif"
-    alt  = "Facebook"
 
 [params.socialDefaults]
   size = "w-8 h-8"
@@ -91,7 +75,7 @@ uglyURLs      = true
 
 [params.analytics]
   [params.analytics.google]
-    id = "G-QZZY3SWWKY"
+    id = "G-7240SPB67L"
     enabled = true
 
   [params.analytics.clarity]

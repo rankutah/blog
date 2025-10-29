@@ -52,6 +52,11 @@ uglyURLs = true
     icon = "media/c5f06ace.avif"
     alt  = "Facebook"
 
+[params.analytics]
+  [params.analytics.google]
+    id = "G-763E3FZE0G"
+    enabled = true
+
 [params.socialDefaults]
   size = "w-8 h-8"
   gap  = "gap-3"
