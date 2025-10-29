@@ -30,10 +30,7 @@ After hours? Leave a voicemail, text or email and I'll get back to you the next 
 
 Schedule a phone call, video meeting, or office visit.
 
-{{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_term=booking-form" text="Schedule" >}}
-
-?utm_source=google-business-profile&utm_medium=organic&utm_term=pleasant-grove-ut
-
+{{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment" text="Schedule" >}}
 
 {{< /col >}}
 

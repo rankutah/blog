@@ -9,7 +9,7 @@ author: Benjamin Awerkamp
 
 Your Google Business Profile is one of your most powerful tools for finding local customers. But with a few simple adjustments, you could be getting even more calls and new business. This free, no-obligation review is a simple 30-minute video chat where we'll work together to optimize your profile.
 
-If you are in a rush and ready to go you can [schedule here](https://cal.com/clearpresence/30min?utm_source=website&utm_term=booking-form).
+If you are in a rush and ready to go you can [schedule here](https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment).
 
 ## What You'll Get in Your Free Google Business Profile Review
 
@@ -35,6 +35,6 @@ I offer this free service to help local businesses get a quick win and to introd
 
 ## How do I sign up for my free 30-Minute Review?
 
-Schedule your [free 30-minute Google Business Profile Review here](https://cal.com/clearpresence/30min?utm_source=website&utm_term=booking-form).
+Schedule your [free 30-minute Google Business Profile Review here](https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment).
 
 For [Utah Search Engine Optimization Services](https://rankutah.com) including on-page SEO, visit RankUtah.com.
