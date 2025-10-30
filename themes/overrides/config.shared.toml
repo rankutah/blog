@@ -48,6 +48,13 @@ ignoreLogs = ['warning-goldmark-raw-html']
   logoWidth    = 0         # Let height drive intrinsic dimensions; 2x DPR handled in partial
   logoHeightPx = 40        # Intrinsic height attribute for CLS prevention (matches h-10)
 
+[params.analytics]
+  # Standardized lazy-load behavior for analytics across all sites
+  # Load GA/Clarity/etc after first interaction or small delay to improve Core Web Vitals.
+  # We include "click" to minimize the chance of losing the first navigation click.
+  delayMs = 3000
+  loadEvents = ["scroll", "mousemove", "touchstart", "click"]
+
 [params.imageDefaults]
   # Reasonable default presentation for content images rendered via Markdown
   # - Keep images responsive but capped so the browser doesn’t pick over-large candidates
