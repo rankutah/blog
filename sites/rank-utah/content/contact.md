@@ -42,7 +42,7 @@ Schedule a phone call, video meeting, or office visit.
 Share what you need help with and the best way to contact you.
 
 {{< contact-form
-	id="contact"
+	id="contact1"
 	action="https://submit-form.com/I4t2OG4uj"
 	name="true"
 	email="true"
@@ -54,7 +54,7 @@ Share what you need help with and the best way to contact you.
 	classes="max-w-xl"
 >}}
 
-{{< button submit="true" form="contact" text="Submit Message" >}}
+{{< button submit="true" form="contact1" text="Submit Message" >}}
 
 {{< /col >}}
 

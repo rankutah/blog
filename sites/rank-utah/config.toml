@@ -80,7 +80,7 @@ uglyURLs      = true
 
   [params.analytics.clarity]
     id = "q5u05bcffe"
-    enabled = true
+    enabled = false
 
   [params.analytics.googleAds]
     id = "AW-XXXXXXXXX"   # replace with your Google Ads ID
