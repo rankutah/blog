@@ -75,8 +75,8 @@ Website Design is not included in this package.
 - Domain & yearly renewals
 - Unlimited content updates
 - Regular backups
-- Listings on **Google, Apple, Bing + 100+ sites**
 - Google Business Profile management
+- Listings on **Google, Apple, Bing + 100+ sites**
 - Local keyword research & strategy
 - **Content keyword alignment** across your website, Google Business Profile, and listings
 - Monthly analytics reports
