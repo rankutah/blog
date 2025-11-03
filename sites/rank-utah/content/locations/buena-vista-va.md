@@ -54,7 +54,7 @@ BlueridgeTech needed clear calls-to-action and appointment booking while keeping
 
 ## About the Owner
 
-I graduated from Southern Virginia University in 2011 and fell in love with Buena Vista. I’ve since left Virginia, but thanks to friends like Daniel De Soto (Blue Ridge Abbey) and Gabriel Antigua (Blue Ridge Tech), I’ve stayed connected to the community. I built this page to help more local businesses get online and grow. Have a new venture or need a better site? Call or text me at [(385) 323-8130](tel:+13853238130).
+I graduated from Southern Virginia University in 2011 and fell in love with Buena Vista. I’ve since left Virginia, but thanks to friends like Gabriel Antigua (Blue Ridge Tech) and Daniel De Soto (Blue Ridge Abbey), I’ve stayed connected to the community. I built this page to help more local businesses get online and grow. Have a new venture or need a better site? Call or text me at [(385) 323-8130](tel:+13853238130).
 
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
 {.w-48}
