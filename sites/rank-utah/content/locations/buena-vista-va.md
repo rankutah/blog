@@ -19,7 +19,7 @@ Custom websites and performance-driven design for Buena Vista businesses and bey
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Blue Ridge Abbey — Bed & Breakfast in Buena Vista, VA
+## Blue Ridge Abbey Website — Bed & Breakfast in Buena Vista, VA
 
 Blue Ridge Abbey website was built to showcase bookings, rooms, and local attractions while keeping load times super fast and the booking flow simple.
 
@@ -34,7 +34,7 @@ Blue Ridge Abbey website was built to showcase bookings, rooms, and local attrac
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## BlueridgeTech — Computer Repair Shop in Buena Vista, VA
+## BlueridgeTech Website — Computer Repair Shop in Buena Vista, VA
 
 BlueridgeTech needed clear calls-to-action and appointment booking while keeping a compact, fast-loading webiste. The result is a focused website for service booking and support resources.
 
