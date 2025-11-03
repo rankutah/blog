@@ -64,7 +64,8 @@
   <img src="{{ $src | relURL }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="{{ $decoding }}" fetchpriority="{{ $fetchpri }}" class="{{ $classes }}" {{ with $style }}style="{{ . | safeCSS }}"{{ end }}>
 {{- else -}}
   {{- $avif := $entry.variants.avif | default slice -}}
-  {{- $webp := $entry.variants.webp | default slice -}}
+  {{- /* WebP intentionally not used in output to keep formats to AVIF+JPEG only */ -}}
+  {{- $webp := slice -}}
   {{- $jpeg := $entry.variants.jpeg | default slice -}}
   {{- $w := $entry.width | default 0 -}}
   {{- $h := $entry.height | default 0 -}}
@@ -95,7 +96,7 @@
   {{- end -}}
   <picture {{ with $styleAttr }}style="{{ . | safeCSS }}"{{ end }}>
     {{- if gt (len $avif) 0 -}}<source type="image/avif" srcset="{{- range $i, $v := $avif -}}{{ if $i }}, {{ end }}{{ $v.url | safeURL }} {{ $v.w }}w{{- end -}}" sizes="{{ $sizes }}">{{- end -}}
-    {{- if gt (len $webp) 0 -}}<source type="image/webp" srcset="{{- range $i, $v := $webp -}}{{ if $i }}, {{ end }}{{ $v.url | safeURL }} {{ $v.w }}w{{- end -}}" sizes="{{ $sizes }}">{{- end -}}
+  {{- /* No WebP <source>; keep outputs to AVIF + JPEG */ -}}
     {{- /* Combine placeholder background style and any moved img styles */ -}}
     {{- $imgStyleAttr := $imgStyle -}}
     {{- if $placeholder -}}

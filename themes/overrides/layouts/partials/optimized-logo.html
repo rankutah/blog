@@ -4,7 +4,7 @@
          If Height provided (>0), generate 1x/2x by height and set width/height attrs to 1x size.
          Else if Width provided (>0), generate 1x/2x by width.
          Else default to 256px width single asset.
-         Emit AVIF+WebP <source> with density srcset and <img> WebP fallback.
+         Emit AVIF + JPEG <source>/<img> with density srcset.
          Fallback to static <img> if Hugo resource not found.
 */}}
 {{- $ctx   := . -}}
@@ -44,9 +44,7 @@
   {{- end -}}
 {{- end -}}
 {{- if eq $logoRes "" -}}
-  {{- with resources.Get "media/logo.webp" -}}
-    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
-  {{- end -}}
+  {{- /* Do not prefer .webp explicitly; AVIF or raster are preferred */ -}}
 {{- end -}}
 {{- if eq $logoRes "" -}}
   {{- with resources.Get "media/logo.avif" -}}
@@ -59,8 +57,8 @@
   {{- /* Build density-aware variants based on provided Height or Width */ -}}
   {{- $avif1x := "" -}}
   {{- $avif2x := "" -}}
-  {{- $webp1x := "" -}}
-  {{- $webp2x := "" -}}
+  {{- $jpeg1x := "" -}}
+  {{- $jpeg2x := "" -}}
   {{- $outW := 0 -}}
   {{- $outH := 0 -}}
   {{- if gt (int $h) 0 -}}
@@ -68,25 +66,25 @@
     {{- $h2 := mul $h1 2 -}}
     {{- $avif1x = $logoRes.Fit (printf "x%v avif" $h1) -}}
     {{- $avif2x = $logoRes.Fit (printf "x%v avif" $h2) -}}
-    {{- $webp1x = $logoRes.Fit (printf "x%v webp" $h1) -}}
-    {{- $webp2x = $logoRes.Fit (printf "x%v webp" $h2) -}}
-    {{- $outW = $webp1x.Width -}}
+    {{- $jpeg1x = $logoRes.Fit (printf "x%v jpg" $h1) -}}
+    {{- $jpeg2x = $logoRes.Fit (printf "x%v jpg" $h2) -}}
+    {{- $outW = $jpeg1x.Width -}}
     {{- $outH = $h1 -}}
   {{- else if gt (int $w) 0 -}}
     {{- $w1 := int $w -}}
     {{- $w2 := mul $w1 2 -}}
     {{- $avif1x = $logoRes.Fit (printf "%vx avif" $w1) -}}
     {{- $avif2x = $logoRes.Fit (printf "%vx avif" $w2) -}}
-    {{- $webp1x = $logoRes.Fit (printf "%vx webp" $w1) -}}
-    {{- $webp2x = $logoRes.Fit (printf "%vx webp" $w2) -}}
+    {{- $jpeg1x = $logoRes.Fit (printf "%vx jpg" $w1) -}}
+    {{- $jpeg2x = $logoRes.Fit (printf "%vx jpg" $w2) -}}
     {{- $outW = $w1 -}}
-    {{- $outH = $webp1x.Height -}}
+    {{- $outH = $jpeg1x.Height -}}
   {{- else -}}
     {{- /* Default single variant, width 256px */ -}}
     {{- $avif1x = $logoRes.Fit "256x avif" -}}
-    {{- $webp1x = $logoRes.Fit "256x webp" -}}
-    {{- $outW = $webp1x.Width -}}
-    {{- $outH = $webp1x.Height -}}
+    {{- $jpeg1x = $logoRes.Fit "256x jpg" -}}
+    {{- $outW = $jpeg1x.Width -}}
+    {{- $outH = $jpeg1x.Height -}}
   {{- end -}}
   <picture>
     {{- if and $avif1x $avif2x -}}
@@ -94,13 +92,14 @@
     {{- else -}}
       <source srcset="{{ $avif1x.RelPermalink }}" type="image/avif" />
     {{- end -}}
-    {{- if and $webp1x $webp2x -}}
-      <source srcset="{{ $webp1x.RelPermalink }} 1x, {{ $webp2x.RelPermalink }} 2x" type="image/webp" />
+    {{- /* JPEG fallback */ -}}
+    {{- if and $jpeg1x $jpeg2x -}}
+      <source srcset="{{ $jpeg1x.RelPermalink }} 1x, {{ $jpeg2x.RelPermalink }} 2x" type="image/jpeg" />
     {{- else -}}
-      <source srcset="{{ $webp1x.RelPermalink }}" type="image/webp" />
+      <source srcset="{{ $jpeg1x.RelPermalink }}" type="image/jpeg" />
     {{- end -}}
-    <img src="{{ $webp1x.RelPermalink }}"
-         {{- if and $webp1x $webp2x -}} srcset="{{ $webp1x.RelPermalink }} 1x, {{ $webp2x.RelPermalink }} 2x"{{- end -}}
+    <img src="{{ $jpeg1x.RelPermalink }}"
+         {{- if and $jpeg1x $jpeg2x -}} srcset="{{ $jpeg1x.RelPermalink }} 1x, {{ $jpeg2x.RelPermalink }} 2x"{{- end -}}
          alt="{{ $alt }}"
          class="{{ $class }}"
          width="{{ $outW }}"
@@ -116,17 +115,21 @@
   {{- $stem := strings.TrimSuffix $raw $ext -}}
   {{- $stemMedia := strings.TrimPrefix "media/" $stem -}}
   {{- $avifRes := resources.Get (printf "media/%s.avif" $stemMedia) -}}
-  {{- $webpRes := resources.Get (printf "media/%s.webp" $stemMedia) -}}
+  {{- /* No WebP preferred here */ -}}
   {{- $staticAvif := "" -}}
-  {{- $staticWebp := "" -}}
+  {{- $staticJpeg := "" -}}
   {{- with $avifRes -}}{{- $staticAvif = .RelPermalink -}}{{- end -}}
-  {{- with $webpRes -}}{{- $staticWebp = .RelPermalink -}}{{- end -}}
+  {{- /* Try to find a JPEG sibling for fallback */ -}}
+  {{- with resources.Get (printf "media/%s.jpg" $stemMedia) -}}{{- $staticJpeg = .RelPermalink -}}{{- end -}}
+  {{- if and (eq $staticJpeg "") (resources.Get (printf "media/%s.jpeg" $stemMedia)) -}}
+    {{- $staticJpeg = (resources.Get (printf "media/%s.jpeg" $stemMedia)).RelPermalink -}}
+  {{- end -}}
   {{- $outW := 0 -}}
   {{- if gt (int $w) 0 -}}{{- $outW = int $w -}}{{- else if gt (int $h) 0 -}}{{- $outW = int $h -}}{{- end -}}
-  {{- if or $staticAvif $staticWebp -}}
+  {{- if or $staticAvif $staticJpeg -}}
     <picture>
       {{- if $staticAvif -}}<source srcset="{{ $staticAvif }}" type="image/avif" />{{- end -}}
-      {{- if $staticWebp -}}<source srcset="{{ $staticWebp }}" type="image/webp" />{{- end -}}
+      {{- if $staticJpeg -}}<source srcset="{{ $staticJpeg }}" type="image/jpeg" />{{- end -}}
       <img src="{{ $logo | relURL }}"
            alt="{{ $alt }}"
            class="{{ $class }}"
@@ -156,11 +159,14 @@
   {{- $stemMedia := strings.TrimPrefix "media/" $stem -}}
   {{- /* Try media/ mounts via resources to detect AVIF/WebP */ -}}
   {{- $avifRes := resources.Get (printf "media/%s.avif" $stemMedia) -}}
-  {{- $webpRes := resources.Get (printf "media/%s.webp" $stemMedia) -}}
+  {{- /* No WebP preferred in static fallback */ -}}
   {{- $staticAvif := "" -}}
-  {{- $staticWebp := "" -}}
+  {{- $staticJpeg := "" -}}
   {{- with $avifRes -}}{{- $staticAvif = .RelPermalink -}}{{- end -}}
-  {{- with $webpRes -}}{{- $staticWebp = .RelPermalink -}}{{- end -}}
+  {{- with resources.Get (printf "media/%s.jpg" $stemMedia) -}}{{- $staticJpeg = .RelPermalink -}}{{- end -}}
+  {{- if and (eq $staticJpeg "") (resources.Get (printf "media/%s.jpeg" $stemMedia)) -}}
+    {{- $staticJpeg = (resources.Get (printf "media/%s.jpeg" $stemMedia)).RelPermalink -}}
+  {{- end -}}
   {{- /* Compute width attr when only Height is provided (helps PSI). Assumes square if Width unknown. */ -}}
   {{- $outW := 0 -}}
   {{- if gt (int $w) 0 -}}
@@ -168,10 +174,10 @@
   {{- else if gt (int $h) 0 -}}
     {{- $outW = int $h -}}
   {{- end -}}
-  {{- if or $staticAvif $staticWebp -}}
+  {{- if or $staticAvif $staticJpeg -}}
     <picture>
       {{- if $staticAvif -}}<source srcset="{{ $staticAvif }}" type="image/avif" />{{- end -}}
-      {{- if $staticWebp -}}<source srcset="{{ $staticWebp }}" type="image/webp" />{{- end -}}
+      {{- if $staticJpeg -}}<source srcset="{{ $staticJpeg }}" type="image/jpeg" />{{- end -}}
       <img src="{{ $logo | relURL }}"
            alt="{{ $alt }}"
            class="{{ $class }}"

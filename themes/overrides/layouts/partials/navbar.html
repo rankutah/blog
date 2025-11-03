@@ -114,8 +114,7 @@
   {{ $ext  := path.Ext $base }}
   {{ $name := replace $base $ext "" }}
         {{ $avifRes := resources.Get (printf "media/%s.avif" $name) }}
-        {{ $webpRes := resources.Get (printf "media/%s.webp" $name) }}
-        {{ if or $avifRes $webpRes }}
+  {{ if $avifRes }}
           {{ $widthAttr := 0 }}
           {{ if gt (int $logoW) 0 }}
             {{ $widthAttr = int $logoW }}
@@ -124,7 +123,7 @@
           {{ end }}
           <picture>
             {{- with $avifRes -}}<source srcset="{{ .RelPermalink }}" type="image/avif" />{{- end -}}
-            {{- with $webpRes -}}<source srcset="{{ .RelPermalink }}" type="image/webp" />{{- end -}}
+            {{- /* No WebP source; only AVIF + fallback <img> */ -}}
             <img src="{{ . | relURL }}"
                  alt="{{ printf "%s logo" $.Site.Title }}"
                  class="{{ printf "%s w-auto flex-shrink-0" $logoHeightClass }}"

@@ -197,9 +197,29 @@ uglyURLs      = true
     weight = 30
 
   [[menu.main]]
-    name   = "About"
-    url    = "/about"
-    weight = 40
+    name        = "Locations"
+    identifier  = "locations"
+    url         = "/locations"
+    weight      = 15
+
+  # Dropdown items under Locations
+  [[menu.main]]
+    name    = "Pleasant Grove, UT"
+    url     = "/locations/pleasant-grove-ut"
+    parent  = "locations"
+    weight  = 41
+
+  [[menu.main]]
+    name    = "Buena Vista, VA"
+    url     = "/locations/buena-vista-va"
+    parent  = "locations"
+    weight  = 42
+
+  [[menu.main]]
+    name    = "All Locations"
+    url     = "/locations"
+    parent  = "locations"
+    weight  = 49
 
   [[menu.main]]
     name   = "Contact"

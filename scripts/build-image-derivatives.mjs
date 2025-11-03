@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Pre-generate responsive image derivatives (AVIF/WebP/JPEG) per site and emit a Hugo-readable manifest.
+// Pre-generate responsive image derivatives (AVIF/JPEG) per site and emit a Hugo-readable manifest.
 
 import fs from 'fs/promises';
 import path from 'path';
@@ -30,10 +30,11 @@ const INPUT_DIRS = args.filter(a => !a.startsWith('--'));
 const MAX_WIDTH = parseInt(argMap['max-width'] || '3200', 10);
 const WIDTHS = (argMap['widths'] || '320,480,640,768,960,1200,1600,2000,2400,3200').split(',').map(n => parseInt(n.trim(), 10)).filter(Boolean);
 const AVIF_Q = parseInt(argMap['avif-quality'] || '45', 10);
-const WEBP_Q = parseInt(argMap['webp-quality'] || '82', 10);
+// WebP quality no longer used (we don't generate WebP derivatives)
+// const WEBP_Q = parseInt(argMap['webp-quality'] || '82', 10);
 const JPEG_Q = parseInt(argMap['jpeg-quality'] || '82', 10);
-// Select output formats (comma-separated): avif, webp, jpeg
-const FORMATS = new Set((argMap['formats'] || 'avif,webp,jpeg')
+// Select output formats (comma-separated): avif, jpeg (WebP disabled by default)
+const FORMATS = new Set((argMap['formats'] || 'avif,jpeg')
   .split(',')
   .map(s => s.trim().toLowerCase())
   .filter(Boolean));
@@ -165,9 +166,6 @@ async function processOneImage(fileAbs, mediaDirAbs) {
   for (const w of useWidths) {
     if (FORMATS.has('avif')) {
       common.variants.avif.push(await ensureOutput(w, 'avif'));
-    }
-    if (FORMATS.has('webp')) {
-      common.variants.webp.push(await ensureOutput(w, 'webp'));
     }
     if (FORMATS.has('jpeg') || FORMATS.has('jpg')) {
       common.variants.jpeg.push(await ensureOutput(w, 'jpg'));

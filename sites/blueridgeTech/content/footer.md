@@ -53,7 +53,7 @@ Computer repair and IT support in Buena Vista, VA
 
 
 <div class="text-center text-sm opacity-80 mt-4">
-	© {{< year >}} BlueridgeTech •  <a href="https://clearpresence.io" target="_blank" rel="noopener">Website Design and SEO by Clear Presence</a>
+	© {{< year >}} BlueridgeTech •  <a href="https://clearpresence.io/locations/buena-vista-va" target="_blank" rel="noopener">Website Design in Buena Vista, VA</a>
 </div>
 
 {{< /section >}}
