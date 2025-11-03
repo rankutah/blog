@@ -18,4 +18,4 @@
   {{- $href = $url -}}
 {{- end -}}
 
-<a href="{{ $href }}" class="{{ $linkClasses }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+<a href="{{ $href | safeURL }}" class="{{ $linkClasses }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>

@@ -178,7 +178,9 @@
       {{ end }}
 
       {{ if and $showPhoneOnMobile (ne $phoneNumber "") }}
-      <a href="tel:+1{{ replace $phoneNumber "-" "" }}"
+      {{/* Strip all non-digits from the configured phone number and prefix +1 */}}
+      {{ $digits := replaceRE `[^0-9]` "" $phoneNumber }}
+      <a href="{{ printf "tel:+1%s" $digits | safeURL }}"
          class="inline-flex md:hidden items-center justify-center p-2 text-lg
                 focus:ring-2 focus:outline-none hover:bg-black/5 dark:hover:bg-white/10 no-underline"
          aria-label="Call us">
