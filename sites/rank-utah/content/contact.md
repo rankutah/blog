@@ -22,7 +22,7 @@ After hours? Leave a voicemail, text or email and I'll get back to you the next 
 
 ## Direct contact
 
-- Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
+- Call or Text: [(385) 323-8130](tel:+13853238130)
 - Business Hours: Mon–Fri, 9am–5pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 

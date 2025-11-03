@@ -23,7 +23,7 @@ headless: true
 ### Contact
 {.center}
 
-Call or Text: (540) 319-3889
+Call or Text: [(540) 319-3889](tel:+15403193889)
 {.center}
 
 {{< /col >}}

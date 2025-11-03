@@ -14,7 +14,7 @@ url: "/contact"
 
 ## Direct Contact
 Send us a message or give us a call <br>
-(540) 319-3889
+[(540) 319-3889](tel:+15403193889)
 
 ## Leave a Message
 

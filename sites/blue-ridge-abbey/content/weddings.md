@@ -11,7 +11,7 @@ url: "/weddings"
 
 Every wedding is unique and special. Please call us to discuss what we can do to make your wedding unforgettable
 
-(540) 319-3889
+[(540) 319-3889](tel:+15403193889)
 
 
 Note that we have an outdoor curfew 10:00 pm.

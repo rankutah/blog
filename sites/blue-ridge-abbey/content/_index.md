@@ -196,7 +196,7 @@ Yes. Please request a room refresh with your innkeeper or place the housekeeping
 
 ### Do you rave an emergency number?
 
-Texts received between the hours of 7PM to 7AM will not be seen/addressed by your innkeeper until the following morning. In the even of an emergency, please call our overnight phone number: 540-319-3889
+Texts received between the hours of 7PM to 7AM will not be seen/addressed by your innkeeper until the following morning. In the even of an emergency, please call our overnight phone number: [540-319-3889](tel:+15403193889)
 
 {{< /faqs >}}
 

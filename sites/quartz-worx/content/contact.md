@@ -25,7 +25,7 @@ url: "/contact"
 
 ## Direct contact
 
-- Phone: <a href="tel:+19706281508">(970) 628-1508</a>
+- Phone: [(970) 628-1508](tel:+19706281508)
 - Address: 2502 W Pinyon Ave, Grand Junction, CO 81505
 
 ## Leave a message
