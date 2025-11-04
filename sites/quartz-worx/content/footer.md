@@ -20,7 +20,7 @@ Countertops in Grand Junction, CO
 ### Contact
 {.center}
 
-[(970) 628-1508](tel:+19706281508)  <br> 2502 W Pinyon Ave, Grand Junction, CO 81505
+[(970) 628-1508](tel:+19706281508)  <br> [2502 W Pinyon Ave, Grand Junction, CO 81505](https://www.google.com/maps/dir/?api=1&destination=2502+W+Pinyon+Ave,+Grand+Junction,+CO+81505)
 {.center}
 
 {{< /col >}}
