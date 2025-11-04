@@ -54,7 +54,7 @@ Just Released!
 
 ![](../media/website-blueridgetech.avif)
 
-{{< button url="https://blueridgetech.com/" text="Visit BlueridgeTech" newtab="true" >}}
+{{< button url="https://blueridgetech.pro/" text="Visit BlueridgeTech" newtab="true" >}}
 
 Gabriel A. - November 2024 <br>
 ⭐️⭐️⭐️⭐️⭐️ <br>

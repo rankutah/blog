@@ -40,7 +40,7 @@ BlueridgeTech needed clear calls-to-action and appointment booking while keeping
 
 ![](/media/website-blueridgetech.avif)
 
-{{< button url="https://blueridgetech.com/" text="Visit BlueridgeTech" newtab="true" >}}
+{{< button url="https://blueridgetech.pro/" text="Visit BlueridgeTech" newtab="true" >}}
 
 "I recommend 100% working with Benjamin. He is very professional, gets the job done, and is my go-to for my website!" — Gabriel A.
 
