@@ -1,5 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
-baseURL       = "https://blueridgetech.pages.dev/"  # Update if different
+# IMPORTANT: Use the primary custom domain so sitemap/canonicals are correct
+baseURL       = "https://blueridgetech.pro/"
 title         = "BlueridgeTech"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]
@@ -66,9 +67,7 @@ uglyURLs = true
 
 [menu]
   [[menu.main]]
-    name   = "Home"
-    url    = "/"
-    weight = 10
+    # Home removed from menu (remain accessible via logo)
 
   [[menu.main]]
     name   = "About"
@@ -79,6 +78,25 @@ uglyURLs = true
     name   = "Services"
     url    = "/services"
     weight = 20
+
+  # Locations dropdown (after Services)
+  [[menu.main]]
+    name       = "Locations"
+    identifier = "locations"
+    url        = "/#"
+    weight     = 25
+
+  [[menu.main]]
+    name   = "Buena Vista, VA"
+    url    = "/"
+    parent = "locations"
+    weight = 26
+
+  [[menu.main]]
+    name   = "Lexington, VA"
+    url    = "/locations/lexington-va"
+    parent = "locations"
+    weight = 27
 
   [[menu.main]]
     name   = "Reviews"

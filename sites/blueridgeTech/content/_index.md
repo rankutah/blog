@@ -2,6 +2,29 @@
 title: "Computer Repair Shop in Buena Vista, VA"
 layout: "flowbite"
 description: "Computer Repair Shop in Buena Vista, VA. Providing both virtual and onsite computer repair services for businesses and individuals. BlueridgeTech offers expert IT repair and support services."
+schema:
+  localBusiness:
+    enabled: true
+    type: LocalBusiness
+    name: "BlueridgeTech"
+    address:
+      streetAddress: "1412 Magnolia Ave"
+      addressLocality: "Buena Vista"
+      addressRegion: "VA"
+      postalCode: "24416"
+      addressCountry: "US"
+    telephone: "+1-540-458-1021"
+    openingHoursSpecification:
+      - "@type": OpeningHoursSpecification
+        dayOfWeek: [Monday, Tuesday, Wednesday, Thursday, Friday]
+        opens: "11:00"
+        closes: "16:30"
+      - "@type": OpeningHoursSpecification
+        dayOfWeek: [Saturday]
+        opens: "11:00"
+        closes: "13:00"
+    hasMap: "https://www.google.com/maps/place/1412+Magnolia+Ave,+Buena+Vista,+VA+24416"
+    areaServed: "Buena Vista, VA"
 ---
 
 {{< section img="/media/computer-repair-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}

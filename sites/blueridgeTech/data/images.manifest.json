@@ -153,6 +153,144 @@
       ]
     }
   },
+  "/media/disk-drive.jpg": {
+    "width": 1280,
+    "height": 857,
+    "aspect": 1.4935822637106184,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBgX/xAAkEAACAgIBAwQDAAAAAAAAAAABAgADBBEhBUFREiJhkRQxcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDMpgsK1ttSw1t3C8Trjo5FIsx8f1DWwLVC8a873Iem534t9deV6jWHBHJ19d5qL7Q+KbEfafslTvYgYS2s1uQdbB512+Ikvy8iu617Kqwi6+z5kTEED26IAHECt1Fi6Yfz4i4Vtq2ipbGVGYKQD5MIQJ7fbYy74BIiQhA//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/disk-drive__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/disk-drive__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/disk-drive__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/disk-drive__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/disk-drive__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/disk-drive__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/disk-drive__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/disk-drive__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/disk-drive__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/disk-drive__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/disk-drive__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/disk-drive__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/disk-drive__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/disk-drive__w1280.jpg"
+        }
+      ]
+    }
+  },
+  "/media/disk-drive.avif": {
+    "width": 1280,
+    "height": 857,
+    "aspect": 1.4935822637106184,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBgX/xAAkEAACAgIBAwQDAAAAAAAAAAABAgADBBEhBUFREiJhkRQxcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDMpgsK1ttSw1t3C8Trjo5FIsx8f1DWwLVC8a873Iem534t9deV6jWHBHJ19d5qL7Q+KbEfafslTvYgYS2s1uQdbB512+Ikvy8iu617Kqwi6+z5kTEED26IAHECt1Fi6Yfz4i4Vtq2ipbGVGYKQD5MIQJ7fbYy74BIiQhA//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/disk-drive__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/disk-drive__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/disk-drive__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/disk-drive__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/disk-drive__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/disk-drive__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/disk-drive__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/disk-drive__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/disk-drive__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/disk-drive__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/disk-drive__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/disk-drive__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/disk-drive__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/disk-drive__w1280.jpg"
+        }
+      ]
+    }
+  },
   "/media/fence-sign.jpg": {
     "width": 2048,
     "height": 1542,
@@ -425,6 +563,346 @@
         {
           "w": 800,
           "url": "/media-deriv/image__w800.jpg"
+        }
+      ]
+    }
+  },
+  "/media/laptop.jpg": {
+    "width": 4076,
+    "height": 2712,
+    "aspect": 1.5029498525073746,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAmEAACAQMEAQMFAAAAAAAAAAABAgMABCEFERIxQRMiUWGBkbHB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/EABoRAAMBAQEBAAAAAAAAAAAAAAABAhESITH/2gAMAwEAAhEDEQA/AOmteMlvHIAPcoPVTm6e0lmQW7ygtyBUgbDbrNRaXqsCacDK+7A+1QMnfOB+aS6mZ5BcTzPDxIIhRgMfX5NEH3wubUZ2jLiwkCjJJmUVMmttdQCWK1iZQNyHuFBH22rPnlSeBljmHJh1J0f5WRLBdxg8YECfKhc1k9DScjaR6vCR4pAjLjKBsHPnqnvZ5Qo5+mxHRCFT+6KKR0+sGmVxpnSTszFsDfwMCkM0nBRzOw8b0UVVEKZ//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/laptop__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/laptop__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/laptop__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/laptop__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/laptop__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/laptop__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/laptop__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/laptop__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/laptop__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/laptop__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/laptop__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/laptop__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/laptop__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/laptop__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/laptop__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/laptop__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/laptop__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/laptop__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/laptop__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/laptop__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/laptop.avif": {
+    "width": 4076,
+    "height": 2712,
+    "aspect": 1.5029498525073746,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQb/xAAmEAACAQMEAQMFAAAAAAAAAAABAgMABCEFERIxQRMiUWGBkbHB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/EABoRAAMBAQEBAAAAAAAAAAAAAAABAhESITH/2gAMAwEAAhEDEQA/AOmteMlvHIAPcoPVTm6e0lmQW7ygtyBUgbDbrNRaXqsCacDK+7A+1QMnfOB+aS6mZ5BcTzPDxIIhRgMfX5NEH3wubUZ2jLiwkCjJJmUVMmttdQCWK1iZQNyHuFBH22rPnlSeBljmHJh1J0f5WRLBdxg8YECfKhc1k9DScjaR6vCR4pAjLjKBsHPnqnvZ5Qo5+mxHRCFT+6KKR0+sGmVxpnSTszFsDfwMCkM0nBRzOw8b0UVVEKZ//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/laptop__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/laptop__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/laptop__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/laptop__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/laptop__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/laptop__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/laptop__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/laptop__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/laptop__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/laptop__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/laptop__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/laptop__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/laptop__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/laptop__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/laptop__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/laptop__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/laptop__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/laptop__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/laptop__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/laptop__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/lexington.jpg": {
+    "width": 1920,
+    "height": 1316,
+    "aspect": 1.458966565349544,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAWACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAlEAABAwMDBAMBAAAAAAAAAAABAgMRAAQSBSExIkFRYRNxgfH/xAAYAQACAwAAAAAAAAAAAAAAAAAAAgEDBP/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAgMRQf/aAAwDAQACEQMRAD8AYbvpYDjZEKPHcfldm7tx1ARyqdvFRdOvFWzhhtJBEDITP3Vu21SzSJKMSRMxNKbD2rtW9w2ovBfWpB2iNx/Zp5JS4SnEDEcAbVDYdZZuFYEJKhykAkCabYvcX05FARO5VIoNnWdx5IjR7JJnrB9VtOmW0Qlx5IHYRFFFZesBZurNwLLjWEYBAJJBgefdTLq4eJLfzKAI4A2NFFOUN//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lexington__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lexington__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lexington__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lexington__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lexington__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lexington__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/lexington__w1600.avif"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/lexington__w1920.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lexington__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lexington__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lexington__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lexington__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lexington__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lexington__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/lexington__w1600.jpg"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/lexington__w1920.jpg"
+        }
+      ]
+    }
+  },
+  "/media/lexington.avif": {
+    "width": 1920,
+    "height": 1316,
+    "aspect": 1.458966565349544,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAWACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAlEAABAwMDBAMBAAAAAAAAAAABAgMRAAQSBSExIkFRYRNxgfH/xAAYAQACAwAAAAAAAAAAAAAAAAAAAgEDBP/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAgMRQf/aAAwDAQACEQMRAD8AYbvpYDjZEKPHcfldm7tx1ARyqdvFRdOvFWzhhtJBEDITP3Vu21SzSJKMSRMxNKbD2rtW9w2ovBfWpB2iNx/Zp5JS4SnEDEcAbVDYdZZuFYEJKhykAkCabYvcX05FARO5VIoNnWdx5IjR7JJnrB9VtOmW0Qlx5IHYRFFFZesBZurNwLLjWEYBAJJBgefdTLq4eJLfzKAI4A2NFFOUN//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lexington__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lexington__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lexington__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lexington__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lexington__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lexington__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/lexington__w1600.avif"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/lexington__w1920.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lexington__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lexington__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lexington__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lexington__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lexington__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lexington__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/lexington__w1600.jpg"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/lexington__w1920.jpg"
         }
       ]
     }

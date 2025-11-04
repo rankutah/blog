@@ -53,7 +53,7 @@
 {{- if $desc -}}
   {{- $event = merge $event (dict "description" $desc) -}}
 {{- end -}}
-{{ $event | jsonify }}
+{{ $event | jsonify | safeJS }}
 </script>
 {{- end -}}
 
@@ -167,6 +167,6 @@
   {{- $obj = merge $obj (dict "aggregateRating" .) -}}
 {{- end -}}
 
-{{ $obj | jsonify }}
+{{ $obj | jsonify | safeJS }}
 </script>
 {{- end -}}
