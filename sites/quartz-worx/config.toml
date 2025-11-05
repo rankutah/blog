@@ -2,7 +2,7 @@
 baseURL       = "https://quartzworx.com/" # TODO: update to live domain
 title         = "Quartz Worx"
 languageCode  = "en-us"
-theme         = ["overrides", "PaperMod"]
+theme         = ["overrides"]
 themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -10,6 +10,7 @@ themesDir     = "../../themes"
 trailingSlash = "never"
 cleanDestinationDir = true
 uglyURLs = true
+disableKinds = ["taxonomy", "term"]
 
 # Ensure FORMS format exists locally so outputs.home supports it
 [outputFormats.FORMS]
