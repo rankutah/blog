@@ -1855,6 +1855,192 @@
       ]
     }
   },
+  "/media/blue-ridge-abbey-outside.jpg": {
+    "width": 5000,
+    "height": 3333,
+    "aspect": 1.5001500150015001,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAmEAACAgICAQQBBQAAAAAAAAABAgMRAAQSIRMFFDFBUWFxobHR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEE/8QAGxEAAwEBAAMAAAAAAAAAAAAAAAECESEDEiL/2gAMAwEAAhEDEQA/AH9L1eWaOpSC9gqLq+837nY23plMAjsWe7a+iPyM5+LYSEIY15stHl39/pjw35F5geIBQvH7u6/rBiefQltbwp6k+8NlveiN0KADxdUb+SDlGSG/jIkU887t4vG1KLYL/Hzim76rvLxha0YGmpuh1i++BudH9b0TXi4SSkykkUAOIH+5RfRhjUEIrBvp1usMMG25ltCJLRZtePWRjAqxmu+Iq/3yH7qDY3Wjn1Edie35G8MMx+Nuk9Za5h//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/blue-ridge-abbey-outside.avif": {
+    "width": 5000,
+    "height": 3333,
+    "aspect": 1.5001500150015001,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAmEAACAgICAQQBBQAAAAAAAAABAgMRAAQSIRMFFDFBUWFxobHR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEE/8QAGxEAAwEBAAMAAAAAAAAAAAAAAAECESEDEiL/2gAMAwEAAhEDEQA/AH9L1eWaOpSC9gqLq+837nY23plMAjsWe7a+iPyM5+LYSEIY15stHl39/pjw35F5geIBQvH7u6/rBiefQltbwp6k+8NlveiN0KADxdUb+SDlGSG/jIkU887t4vG1KLYL/Hzim76rvLxha0YGmpuh1i++BudH9b0TXi4SSkykkUAOIH+5RfRhjUEIrBvp1usMMG25ltCJLRZtePWRjAqxmu+Iq/3yH7qDY3Wjn1Edie35G8MMx+Nuk9Za5h//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/blue-ridge-abbey-outside__w3200.jpg"
+        }
+      ]
+    }
+  },
   "/media/blue-ridge-parkway.jpg": {
     "width": 4860,
     "height": 3240,
