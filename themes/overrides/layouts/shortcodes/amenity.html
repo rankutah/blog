@@ -1,0 +1,11 @@
+{{/* Shortcode: amenity
+Usage: {{< amenity name="bed" text="King-Size Bed" size="18" >}}
+Renders an icon + text inline, with monochrome SVG icon that follows current text color.
+*/}}
+{{- $name := .Get "name" | default "bed" -}}
+{{- $text := .Get "text" | default "" -}}
+{{- $size := .Get "size" | default 18 -}}
+<span class="amenity-item" style="display:inline-flex;align-items:center;gap:.5em;vertical-align:middle;line-height:1.3;">
+  {{- partial "ui/icon-simple.html" (dict "name" $name "size" $size) -}}
+  <span>{{ $text }}</span>
+</span><br/>

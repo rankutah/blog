@@ -36,9 +36,18 @@ uglyURLs = true
 
 [params]
   primaryColor = "emerald"
-  logo = "media/logo-039966.png"
+  logo = "media/logo.png"
   lightBackground = "neutral-100"
   darkBackground  = "emerald-950"
+  # Custom brand color for buttons/links
+  brandHex = "#6a8d6f"
+
+  [params.fonts]
+    # Not loading external fonts; use Times New Roman for headings and brand
+    heading  = "\"Times New Roman\", Times, serif"
+    navBrand = "inherit"   # inherit from heading
+    navLink  = "inherit"   # inherit from body
+    button   = "inherit"   # inherit from body
 
   [[params.social]]
     name = "instagram"

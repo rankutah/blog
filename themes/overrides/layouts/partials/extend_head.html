@@ -1,0 +1,8 @@
+{{/* Theme-level head extension: include config-driven fonts first */}}
+{{ partial "fonts.html" . }}
+
+{{/* Config-driven brand color overrides */}}
+{{ partial "brand-colors.html" . }}
+
+{{/* Additional site/theme overrides can be conditionally added below if ever needed.
+     Intentionally left blank for now to avoid hard-coded per-site CSS. */}}

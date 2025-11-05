@@ -55,20 +55,20 @@ All rooms are furnished with linens and amenities, including Wifi, TV, mini frid
 
 ## Homemade Breakfast to Start Your Day
 
-Heather Strong <br>
-⭐️⭐️⭐️⭐️⭐️ <br>
+**Heather Strong** <br>
+{{< stars >}} <br>
 "The crepes looked and smelled amazing- these were not freezer crepes but homemade!"
 
-Lilya De Souza<br>
-⭐️⭐️⭐️⭐️⭐️<br>
+**Lilya De Souza**<br>
+{{< stars >}}<br>
 "I was treated to a phenomenal and satisfying breakfast, with gluten-free and dairy-free options a thoughtful touch that was greatly appreciated."
 
-Kim Hurt<br>
-⭐️⭐️⭐️⭐️⭐️<br>
+**Kim Hurt**<br>
+{{< stars >}}<br>
 "We absolutely loved the breakfast! With a variety of delicious choices, I wanted to try them all."
 
-D So Local Guide<br>
-⭐️⭐️⭐️⭐️⭐️<br>
+**D So Local Guide**<br>
+{{< stars >}}<br>
 "breakfast was a delicious highlight, clearly prepared with care and featuring fresh, high-quality ingredients."
 
 {{< /col >}}

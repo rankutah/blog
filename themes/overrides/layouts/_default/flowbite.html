@@ -114,6 +114,12 @@
     {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }}
     crossorigin="anonymous">
 
+  {{/* Config-driven font overrides (site-wide) */}}
+  {{ partial "fonts.html" . }}
+
+  {{/* Config-driven brand color overrides (buttons/links) */}}
+  {{ partial "brand-colors.html" . }}
+
 
   <!-- Carousel v2 scoped polish (fallbacks for visibility/positioning) -->
   <style>

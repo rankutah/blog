@@ -15,9 +15,7 @@ url: "/rooms"
 
 Situated on the main floor, Sweet Briar offers a fresh, welcoming resort with wheelchair accessibility.
 
-🛏️ King-Size Bed <br>
-❄️ Mini-Fridge <br>
-🖥️ Smart-TV <br>
+{{< amenity name="bed" text="King-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}}
 
 {{< /col >}}
 
@@ -29,9 +27,7 @@ Situated on the main floor, Sweet Briar offers a fresh, welcoming resort with wh
 
 Primrose is both cheerful and elegant, with a luxurious free-standing bath in addition to the shower.
 
-🛏️ King-Size Bed <br>
-❄️ Mini-Fridge <br>
-🖥️ Smart-TV <br>
+{{< amenity name="bed" text="King-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}}
 
 {{< /col >}}
 
@@ -43,9 +39,7 @@ Primrose is both cheerful and elegant, with a luxurious free-standing bath in ad
 
 With thoughtful details and a peaceful atmosphere, Foxglove is a restful retreat for recharging.
 
-🛏️ King-Size Bed <br>
-❄️ Mini-Fridge <br>
-🖥️ Smart-TV <br>
+{{< amenity name="bed" text="King-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}}
 
 {{< /col >}}
 
@@ -57,9 +51,7 @@ With thoughtful details and a peaceful atmosphere, Foxglove is a restful retreat
 
 Available on its own or paired with Oak & Ivy as a two-bedroom suite with a shared bath, Marigold is an inviting, beautiful space.
 
-🛏️ King-Size Bed <br>
-❄️ Mini-Fridge <br>
-🖥️ Smart-TV <br>
+{{< amenity name="bed" text="King-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}}
 
 {{< /col >}}
 
@@ -71,9 +63,7 @@ Available on its own or paired with Oak & Ivy as a two-bedroom suite with a shar
 
 Available on its own or paired with Marigold as a two-bedroom suite with a shared bath, Oak & Ivy is a rich, comfortable room.
 
-🛏️ King-Size Bed <br>
-❄️ Mini-Fridge <br>
-🖥️ Smart-TV <br>
+{{< amenity name="bed" text="King-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}}
 
 {{< /col >}}
 

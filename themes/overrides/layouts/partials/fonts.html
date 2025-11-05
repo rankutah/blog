@@ -1,0 +1,63 @@
+{{/*
+  Config-driven font overrides
+
+  Usage in site config (TOML):
+  [params.fonts]
+    # Optional: raw Google Fonts CSS2 query string (everything after `css2?`)
+    # Example: "family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;700&display=swap"
+    load   = ""
+    body   = "ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+    heading= "ui-serif,Georgia,Times New Roman,Times,serif"
+    navBrand = "inherit"  # falls back to heading if set to "inherit"
+    navLink  = "inherit"  # falls back to body if set to "inherit"
+    button   = "inherit"  # falls back to body if set to "inherit"
+
+  This partial emits (1) optional font <link> and (2) a <style> with CSS variables and targeted overrides.
+*/}}
+
+{{- $fonts := .Site.Params.fonts | default dict -}}
+{{- $load  := (index $fonts "load") | default "" -}}
+{{- $body  := (index $fonts "body") | default `ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` -}}
+{{- $heading := (index $fonts "heading") | default `ui-serif,Georgia,Times New Roman,Times,serif` -}}
+{{- $navBrand := (index $fonts "navBrand") | default "inherit" -}}
+{{- $navLink  := (index $fonts "navLink")  | default "inherit" -}}
+{{- $button   := (index $fonts "button")   | default "inherit" -}}
+
+{{- if $load }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?{{ $load }}" rel="stylesheet">
+{{- end }}
+
+<style>
+  :root{
+    --font-body: {{ printf "%s" $body | safeCSS }};
+    --font-heading: {{ printf "%s" $heading | safeCSS }};
+    --font-nav-brand: {{ if eq $navBrand "inherit" }}var(--font-heading){{ else }}{{ printf "%s" $navBrand | safeCSS }}{{ end }};
+    --font-nav-link: {{ if eq $navLink "inherit" }}var(--font-body){{ else }}{{ printf "%s" $navLink | safeCSS }}{{ end }};
+    --font-button: {{ if eq $button "inherit" }}var(--font-body){{ else }}{{ printf "%s" $button | safeCSS }}{{ end }};
+  }
+
+  /* Apply body and heading families broadly */
+  body { font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif; }
+
+  :where(h1,h2,h3,h4,h5,h6),
+  .prose :where(h1,h2,h3,h4,h5,h6) {
+    font-family: var(--font-heading), ui-serif, Georgia, Times New Roman, Times, serif !important;
+  }
+
+  /* Navbar brand title (span right after logo) */
+  nav a > span.font-semibold {
+    font-family: var(--font-nav-brand), var(--font-heading), ui-serif, Georgia, Times New Roman, Times, serif !important;
+  }
+
+  /* Navbar links (brand-link class used in navbar.html) */
+  nav .brand-link { font-family: var(--font-nav-link), var(--font-body), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif; }
+
+  /* Buttons: our UI button class plus native buttons (safe) */
+  .ui-btn,
+  button,
+  [role="button"],
+  a.button,
+  a.btn { font-family: var(--font-button), var(--font-body), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif; }
+</style>

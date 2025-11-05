@@ -1,0 +1,33 @@
+{{- /* Partial: ui/icon-simple.html
+     Inputs: dict { "name": string, "size": int|string }
+     Renders a simple, monochrome SVG icon using currentColor for stroke.
+  */ -}}
+{{- $name := lower (printf "%v" (or (index . "name") "bed")) -}}
+{{- /* Hugo doesn't have atoi; cast via int after stringifying */ -}}
+{{- $size := int (printf "%v" (or (index . "size") 20)) -}}
+{{- if lt $size 8 -}}{{- $size = 16 -}}{{- end -}}
+{{- $w := $size -}}
+{{- $h := $size -}}
+{{- if eq $name "tv" -}}
+  <svg xmlns="http://www.w3.org/2000/svg" width="{{ $w }}" height="{{ $h }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true">
+    <rect x="3" y="5" width="18" height="12" rx="2"/>
+    <line x1="12" y1="17" x2="12" y2="20"/>
+    <line x1="8" y1="20" x2="16" y2="20"/>
+  </svg>
+{{- else if or (eq $name "fridge") (eq $name "mini-fridge") -}}
+  <svg xmlns="http://www.w3.org/2000/svg" width="{{ $w }}" height="{{ $h }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true">
+    <rect x="6" y="3" width="12" height="18" rx="2"/>
+    <line x1="6" y1="10" x2="18" y2="10"/>
+    <line x1="9" y1="7" x2="10" y2="7"/>
+    <line x1="9" y1="14" x2="10" y2="14"/>
+  </svg>
+{{- else if or (eq $name "bed") (eq $name "king-bed") -}}
+  <svg xmlns="http://www.w3.org/2000/svg" width="{{ $w }}" height="{{ $h }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true">
+    <rect x="3" y="11" width="18" height="6" rx="1"/>
+    <line x1="6" y1="11" x2="6" y2="7"/>
+  </svg>
+{{- else -}}
+  <svg xmlns="http://www.w3.org/2000/svg" width="{{ $w }}" height="{{ $h }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true">
+    <circle cx="12" cy="12" r="9"/>
+  </svg>
+{{- end -}}
