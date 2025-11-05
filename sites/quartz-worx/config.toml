@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-baseURL       = "https://example.com/" # TODO: update to live domain
+baseURL       = "https://quartzworx.com/" # TODO: update to live domain
 title         = "Quartz Worx"
 languageCode  = "en-us"
 theme         = ["overrides", "PaperMod"]

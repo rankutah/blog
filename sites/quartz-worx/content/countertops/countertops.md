@@ -14,8 +14,8 @@ A quick guide to quartz, granite, quartzite, and marble—how they differ, how t
 
 {{< table share="true" delim="|" headers="Material|Nature|Look & Pattern|Care & Staining|Scratch Resistance|Heat Resistance|Best for" >}}
 Quartz|Engineered|Consistent, many color options|Very low maintenance|Good|Good (avoid hot pans)|Kitchens, baths, busy homes
-Granite|Natural stone|Unique movement, natural variation|Seal as needed (often annually)|Excellent|Very good|Statement kitchens, durability
-Quartzite|Natural stone|Marble‑like veining, vivid patterns|Seal as needed (often annually)|Excellent|Excellent|High‑end kitchens, luxury look
+Granite|Natural stone|Unique movement, natural variation|Seal as needed|Excellent|Very good|Statement kitchens, durability
+Quartzite|Natural stone|Marble‑like veining, vivid patterns|Seal as needed|Excellent|Excellent|High‑end kitchens, luxury look
 Marble|Natural stone|Classic veining, soft elegance|Develops patina; can etch with acids|Fair|Good|Bathrooms, baking, low‑traffic
 {{< /table >}}
 
