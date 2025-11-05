@@ -30,10 +30,10 @@ Every wedding is unique and special. Please call us to discuss what we can do to
 
 {{< /col >}}
 
-{{< col classes="max-w-[42rem] md:max-w-[48rem] lg:max-w-[44rem] mx-auto" >}}
+{{< col >}}
 {{< carousel id="wedding-gallery"
 	images="/media/wedding-bride.jpg,/media/wedding-ceremony.jpg,/media/wedding-party.jpg,/media/wedding-kids-on-swing.jpg,/media/wedding-refreshments-2.jpg,/media/wedding-sign.jpg,/media/wedding-outside.jpg"
-	radius="xl" priority="true" >}}
+	mobilepxheight="520" mdpxheight="1000" radius="xl" pos="bottom" priority="true" >}}
 
 {{< /col >}}
 
