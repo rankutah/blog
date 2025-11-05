@@ -6542,5 +6542,1227 @@
         }
       ]
     }
+  },
+  "/media/wedding-bride.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgMFBAEA/8QAJxAAAgEDBAIBBAMAAAAAAAAAAQIDAAQRBRIhMRNRIhUlMkFhgZH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARExIf/aAAwDAQACEQMRAD8AYprnhVp1kKncOjnqlb/2KBrvxo7bWOwgH9ZzWeFRVTR4JHIqeL4gz4XIhHPPdFNfeCHyyEhMDoZPNBdjhjnkl8QORywByP6pGpWJS2WW2YtvGJFYgfIY5/wU5JI7UzpGHgCDai4GGHvPZrXqcf2eKdBhl2Ma0p1PhEN49z48IwtiH5zuORgD+RW69sx9LQq2H2KSpAw3HINRdGjt5LiYTgBAesdc1WRtPkEsNtd/Mk/DfnkehVZi3aZd2S3B3EnfjBJPdaJDI+nrbCNQNu07jnNeY0JYjbg+6EiafZ3EGpTCWEhHJIbsd+63RaRbw3TTQhgzA4y2RzVNfxoCTWr6H//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-bride__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-bride__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-bride__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-bride__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-bride__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-bride__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-bride__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-bride__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-bride__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-bride__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-bride__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-bride__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-bride__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-bride__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-bride__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-bride__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-bride__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-bride__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-bride.avif": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgMFBAEA/8QAJxAAAgEDBAIBBAMAAAAAAAAAAQIDAAQRBRIhMRNRIhUlMkFhgZH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARExIf/aAAwDAQACEQMRAD8AYprnhVp1kKncOjnqlb/2KBrvxo7bWOwgH9ZzWeFRVTR4JHIqeL4gz4XIhHPPdFNfeCHyyEhMDoZPNBdjhjnkl8QORywByP6pGpWJS2WW2YtvGJFYgfIY5/wU5JI7UzpGHgCDai4GGHvPZrXqcf2eKdBhl2Ma0p1PhEN49z48IwtiH5zuORgD+RW69sx9LQq2H2KSpAw3HINRdGjt5LiYTgBAesdc1WRtPkEsNtd/Mk/DfnkehVZi3aZd2S3B3EnfjBJPdaJDI+nrbCNQNu07jnNeY0JYjbg+6EiafZ3EGpTCWEhHJIbsd+63RaRbw3TTQhgzA4y2RzVNfxoCTWr6H//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-bride__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-bride__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-bride__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-bride__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-bride__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-bride__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-bride__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-bride__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-bride__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-bride__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-bride__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-bride__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-bride__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-bride__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-bride__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-bride__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-bride__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-bride__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-ceremony.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABQQBAgMG/8QALhAAAgEDAgQEBAcAAAAAAAAAAQIDAAQRIUEFEiIxE2FxgQYUQtEjMjVRkbHh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGREBAQADAQAAAAAAAAAAAAAAAQACESEx/9oADAMBAAIRAxEAPwDfasA1ZPAAhPbG4FRRqZAxQhgNxUbquw0GTWkg8WSOMfUapW2JiBxvXK3DNxdIWX8MIX/g/wC1h3F34hxK0gimV3IKFVOm5/ujRxWBI5XVS3M5VcajTf3qWSFrO5Z7kNNBINHZSMn0/ep5bOS+lK2yxqoOdTy59qeVBLSfEkSEIsbEeJgk6YTHf18qo4bcfN3LXA7GLTyy32AoWKyEsnhtBhoz14H5venuDWKW4ldM4cjAP0+VJiHk5YIbYtFSRwJyWUkHNWXHCo3i54ebOMqCe/2qMgUzG7NbKzHJwNaCNp0gYZJbM9Abv1aZ2r0dpKY7BZpNWbqI9dqKhHfzNJTfp8Y20qizkvt//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-ceremony__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-ceremony__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-ceremony__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-ceremony__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-ceremony__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-ceremony__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-ceremony__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-ceremony__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-ceremony__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-ceremony__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-ceremony__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-ceremony__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-ceremony__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-ceremony__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-ceremony__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-ceremony__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-ceremony__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-ceremony__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-ceremony.avif": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABQQBAgMG/8QALhAAAgEDAgQEBAcAAAAAAAAAAQIDAAQRIUEFEiIxE2FxgQYUQtEjMjVRkbHh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGREBAQADAQAAAAAAAAAAAAAAAQACESEx/9oADAMBAAIRAxEAPwDfasA1ZPAAhPbG4FRRqZAxQhgNxUbquw0GTWkg8WSOMfUapW2JiBxvXK3DNxdIWX8MIX/g/wC1h3F34hxK0gimV3IKFVOm5/ujRxWBI5XVS3M5VcajTf3qWSFrO5Z7kNNBINHZSMn0/ep5bOS+lK2yxqoOdTy59qeVBLSfEkSEIsbEeJgk6YTHf18qo4bcfN3LXA7GLTyy32AoWKyEsnhtBhoz14H5venuDWKW4ldM4cjAP0+VJiHk5YIbYtFSRwJyWUkHNWXHCo3i54ebOMqCe/2qMgUzG7NbKzHJwNaCNp0gYZJbM9Abv1aZ2r0dpKY7BZpNWbqI9dqKhHfzNJTfp8Y20qizkvt//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-ceremony__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-ceremony__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-ceremony__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-ceremony__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-ceremony__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-ceremony__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-ceremony__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-ceremony__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-ceremony__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-ceremony__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-ceremony__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-ceremony__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-ceremony__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-ceremony__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-ceremony__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-ceremony__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-ceremony__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-ceremony__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-kids-on-swing.jpg": {
+    "width": 2856,
+    "height": 2142,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCBAH/xAAnEAACAgEDAgUFAAAAAAAAAAABAgMRAAQSIRMxQVFhcYEUIjOx0f/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABgRAQADAQAAAAAAAAAAAAAAAAABERIh/9oADAMBAAIRAxEAPwAkUnVd2QqncRg2DXaye2ajDzSJ9Rpti92KmyD2ofGYaPaKoMwF+Q/pyc5RV2M5gdRu6jcL7euZZmeNLg1ZXTNshEjqU4Ljke+X0kmilhETGmAAbqcBj6ZzaAvqIrnfds+1htoi+Rz48fvKzxLDUkduF52kXjmp6l2RR7eW5PmTZyGr0/XJO4g1QBo1jGWEqkH5GDN4kCrzxrI7/GMZNG3/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-kids-on-swing__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-kids-on-swing__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-kids-on-swing__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-kids-on-swing__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-kids-on-swing__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-kids-on-swing__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-kids-on-swing__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-kids-on-swing__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-kids-on-swing__w2400.avif"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-kids-on-swing__w2856.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-kids-on-swing__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-kids-on-swing__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-kids-on-swing__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-kids-on-swing__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-kids-on-swing__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-kids-on-swing__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-kids-on-swing__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-kids-on-swing__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-kids-on-swing__w2400.jpg"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-kids-on-swing__w2856.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-kids-on-swing.avif": {
+    "width": 2856,
+    "height": 2142,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCBAH/xAAnEAACAgEDAgUFAAAAAAAAAAABAgMRAAQSIRMxQVFhcYEUIjOx0f/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABgRAQADAQAAAAAAAAAAAAAAAAABERIh/9oADAMBAAIRAxEAPwAkUnVd2QqncRg2DXaye2ajDzSJ9Rpti92KmyD2ofGYaPaKoMwF+Q/pyc5RV2M5gdRu6jcL7euZZmeNLg1ZXTNshEjqU4Ljke+X0kmilhETGmAAbqcBj6ZzaAvqIrnfds+1htoi+Rz48fvKzxLDUkduF52kXjmp6l2RR7eW5PmTZyGr0/XJO4g1QBo1jGWEqkH5GDN4kCrzxrI7/GMZNG3/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-kids-on-swing__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-kids-on-swing__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-kids-on-swing__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-kids-on-swing__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-kids-on-swing__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-kids-on-swing__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-kids-on-swing__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-kids-on-swing__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-kids-on-swing__w2400.avif"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-kids-on-swing__w2856.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-kids-on-swing__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-kids-on-swing__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-kids-on-swing__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-kids-on-swing__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-kids-on-swing__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-kids-on-swing__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-kids-on-swing__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-kids-on-swing__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-kids-on-swing__w2400.jpg"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-kids-on-swing__w2856.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-outside.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAwQG/8QAIhAAAgICAgICAwAAAAAAAAAAAQIAAwQREjEhUQVhIjKR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/8QAGhEBAQADAQEAAAAAAAAAAAAAAQACERIxQf/aAAwDAQACEQMRAD8A41RsxriNUmPYr18mYfifRipQxIC+SehGeNgXAA2K++9AScjErlbFeBy6P8lBjl8S1Tta2P0R4mKzAtA2a2BJ9iHsfZcPyrxyqWV2E/qwbWo8r+VpcHbcCdaBMIQ62y8KbctCFIcEb75D2Iuz8quxVUHkV++jCE0CPTf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-outside__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-outside__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-outside__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-outside__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-outside__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-outside__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-outside__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-outside__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-outside__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-outside__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-outside__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-outside__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-outside__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-outside__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-outside__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-outside__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-outside__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-outside__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-outside.avif": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAwQG/8QAIhAAAgICAgICAwAAAAAAAAAAAQIAAwQREjEhUQVhIjKR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/8QAGhEBAQADAQEAAAAAAAAAAAAAAQACERIxQf/aAAwDAQACEQMRAD8A41RsxriNUmPYr18mYfifRipQxIC+SehGeNgXAA2K++9AScjErlbFeBy6P8lBjl8S1Tta2P0R4mKzAtA2a2BJ9iHsfZcPyrxyqWV2E/qwbWo8r+VpcHbcCdaBMIQ62y8KbctCFIcEb75D2Iuz8quxVUHkV++jCE0CPTf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-outside__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-outside__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-outside__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-outside__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-outside__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-outside__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-outside__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-outside__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-outside__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-outside__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-outside__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-outside__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-outside__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-outside__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-outside__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-outside__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-outside__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-outside__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-party.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUAAgQB/8QAKxAAAgIBAwMBBwUAAAAAAAAAAQIDEQAEEiEFMUEiE1FhcaGxwRUygZHw/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDBP/EAB0RAAIDAAIDAAAAAAAAAAAAAAABAgMREkEhIjH/2gAMAwEAAhEDEQA/AGO9VO1FA8Zm1+oESKON78gfC8P7dZeEUsPJI4zsajczSGNmah+4CgMtOzPCJxj2wIlSRd0dH3i+2UOorwP7zcYYJKIjQNVH1DnMP6bM+vDzuq6c8lVHJP4wjcs9kDrfQCVzopQJEHqvaaBvmvN5H6sQtIXRge/p+1YXqgSbWaUMLVFJY12sk4r1MkEbONwDBlA4sWR3+uZ8Kobp1lKNo5/kH8ZcdTh2JIVIViQKUePkRiezDAZZoEAdQ1biOKoV9MDFq416ZxFI/s5DyaA55I+mLBsY6p5GDMwogUNvY4u1K+00pZzumMpa65oUAPvjSXuPlgJCbyasf0MJr3WXpxjjG8tp1F0fSR4/3vwHSJIodG8csYkDMCVI7Gsjk7h8TlT2x8mxn//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-party__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-party__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-party__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-party__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-party__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-party__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-party__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-party__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-party__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-party__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-party__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-party__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-party__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-party__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-party__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-party__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-party__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-party__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-party.avif": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUAAgQB/8QAKxAAAgIBAwMBBwUAAAAAAAAAAQIDEQAEEiEFMUEiE1FhcaGxwRUygZHw/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDBP/EAB0RAAIDAAIDAAAAAAAAAAAAAAABAgMREkEhIjH/2gAMAwEAAhEDEQA/AGO9VO1FA8Zm1+oESKON78gfC8P7dZeEUsPJI4zsajczSGNmah+4CgMtOzPCJxj2wIlSRd0dH3i+2UOorwP7zcYYJKIjQNVH1DnMP6bM+vDzuq6c8lVHJP4wjcs9kDrfQCVzopQJEHqvaaBvmvN5H6sQtIXRge/p+1YXqgSbWaUMLVFJY12sk4r1MkEbONwDBlA4sWR3+uZ8Kobp1lKNo5/kH8ZcdTh2JIVIViQKUePkRiezDAZZoEAdQ1biOKoV9MDFq416ZxFI/s5DyaA55I+mLBsY6p5GDMwogUNvY4u1K+00pZzumMpa65oUAPvjSXuPlgJCbyasf0MJr3WXpxjjG8tp1F0fSR4/3vwHSJIodG8csYkDMCVI7Gsjk7h8TlT2x8mxn//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-party__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-party__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-party__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-party__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-party__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-party__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-party__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-party__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-party__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-party__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-party__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-party__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-party__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-party__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-party__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-party__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-party__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-party__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-refreshments-2.jpg": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAwQFAAECBv/EACYQAAICAgICAgEFAQAAAAAAAAECAxEABBIhBTFBUWETFSIjMpH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAZEQADAAMAAAAAAAAAAAAAAAAAARECEiH/2gAMAwEAAhEDEQA/ANgj4xB3nbQRCOPkxRm6uvZ+BWDHyVyre1JBzPJRwU6OqnNMOs5k2BGp6s10Mrotjd5SNsL/AF0KodAk4FQHT8vtyb8KEmSJpAOLr9n7yZsSL+4yxsCi8if1OVd2esfx8atMrMa4sDR6yPvwRwNLKzU0soIL3Qo/ArK2oJGHiY3kDtS8SSw6onIHkXaOTiJCVCqwIax6sYu67pGIgx5ydUvof8yvYPKyIT2AATXuspKOg3Ues2tXWRaZOFfIYjrISajeQSo5pIoFum+x94kkjbmx45dk81lLcxVBqFi6y5KgqVrqvjrJGlZFo6oaN1QlkFhz7HWcv4vWaQysrBuPf8vzibLFGl4n/KdfjFjFbEKi6MVEX+czrpc4f//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-refreshments-2__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-refreshments-2__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-refreshments-2__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-refreshments-2__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-refreshments-2__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-refreshments-2__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-refreshments-2__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-refreshments-2__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-refreshments-2__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-refreshments-2__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-refreshments-2__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-refreshments-2__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-refreshments-2__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-refreshments-2__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-refreshments-2__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-refreshments-2__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-refreshments-2__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-refreshments-2__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-refreshments-2.avif": {
+    "width": 2016,
+    "height": 1512,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAwQFAAECBv/EACYQAAICAgICAgEFAQAAAAAAAAECAxEABBIhBTFBUWETFSIjMpH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAZEQADAAMAAAAAAAAAAAAAAAAAARECEiH/2gAMAwEAAhEDEQA/ANgj4xB3nbQRCOPkxRm6uvZ+BWDHyVyre1JBzPJRwU6OqnNMOs5k2BGp6s10Mrotjd5SNsL/AF0KodAk4FQHT8vtyb8KEmSJpAOLr9n7yZsSL+4yxsCi8if1OVd2esfx8atMrMa4sDR6yPvwRwNLKzU0soIL3Qo/ArK2oJGHiY3kDtS8SSw6onIHkXaOTiJCVCqwIax6sYu67pGIgx5ydUvof8yvYPKyIT2AATXuspKOg3Ues2tXWRaZOFfIYjrISajeQSo5pIoFum+x94kkjbmx45dk81lLcxVBqFi6y5KgqVrqvjrJGlZFo6oaN1QlkFhz7HWcv4vWaQysrBuPf8vzibLFGl4n/KdfjFjFbEKi6MVEX+czrpc4f//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-refreshments-2__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-refreshments-2__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-refreshments-2__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-refreshments-2__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-refreshments-2__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-refreshments-2__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-refreshments-2__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-refreshments-2__w2000.avif"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-refreshments-2__w2016.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-refreshments-2__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-refreshments-2__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-refreshments-2__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-refreshments-2__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-refreshments-2__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-refreshments-2__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-refreshments-2__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-refreshments-2__w2000.jpg"
+        },
+        {
+          "w": 2016,
+          "url": "/media-deriv/wedding-refreshments-2__w2016.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-sign.jpg": {
+    "width": 2856,
+    "height": 2142,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAwQCBQYAAf/EAC0QAAIBAwIFAgQHAAAAAAAAAAECAwAEERIhBRMxQWEUUQYVcYEiI0JykqHw/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/EABkRAAMBAQEAAAAAAAAAAAAAAAABETEhQf/aAAwDAQACEQMRAD8A5b65W4WOXGNWnJXBxVhJgr9qI0a5GAR9DS11PDbxprZiWzhVGTgd6nLg9E5GWO5TUCUIOQFyfFQkcgErEQo3yzAYr24Nu89sDIuH/GHYY074wd9qHE/qra5BYAIhOffO2KF6bwvXYA1ScVI/Lbb9Q/uivNfXE8sNuiIBgrIW7eRSHEZr/hZjVrvIcFsKo6/eqIRoUvlleG25S6gA2f5VC3aQFoyNBYFdHT/d6mOJSTsjXBLnpnPTeonM7vJ7Ng08UoE3hYi+ljvZI7ROc+kLp1bL9TQOKw39xGJ7nlsEBBjjHQe/mlfhwn15/aa16IpUZAqTthRJQwqgI47gbgiiESQkh1ZGO+CMUZ40+ecvSNHqMafGa0c6LLCwkVWHXBHmjQM//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-sign__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-sign__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-sign__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-sign__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-sign__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-sign__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-sign__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-sign__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-sign__w2400.avif"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-sign__w2856.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-sign__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-sign__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-sign__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-sign__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-sign__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-sign__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-sign__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-sign__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-sign__w2400.jpg"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-sign__w2856.jpg"
+        }
+      ]
+    }
+  },
+  "/media/wedding-sign.avif": {
+    "width": 2856,
+    "height": 2142,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAwQCBQYAAf/EAC0QAAIBAwIFAgQHAAAAAAAAAAECAwAEERIhBRMxQWEUUQYVcYEiI0JykqHw/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDAP/EABkRAAMBAQEAAAAAAAAAAAAAAAABETEhQf/aAAwDAQACEQMRAD8A5b65W4WOXGNWnJXBxVhJgr9qI0a5GAR9DS11PDbxprZiWzhVGTgd6nLg9E5GWO5TUCUIOQFyfFQkcgErEQo3yzAYr24Nu89sDIuH/GHYY074wd9qHE/qra5BYAIhOffO2KF6bwvXYA1ScVI/Lbb9Q/uivNfXE8sNuiIBgrIW7eRSHEZr/hZjVrvIcFsKo6/eqIRoUvlleG25S6gA2f5VC3aQFoyNBYFdHT/d6mOJSTsjXBLnpnPTeonM7vJ7Ng08UoE3hYi+ljvZI7ROc+kLp1bL9TQOKw39xGJ7nlsEBBjjHQe/mlfhwn15/aa16IpUZAqTthRJQwqgI47gbgiiESQkh1ZGO+CMUZ40+ecvSNHqMafGa0c6LLCwkVWHXBHmjQM//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-sign__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-sign__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-sign__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-sign__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-sign__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-sign__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-sign__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-sign__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-sign__w2400.avif"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-sign__w2856.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/wedding-sign__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/wedding-sign__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/wedding-sign__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/wedding-sign__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/wedding-sign__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/wedding-sign__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/wedding-sign__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/wedding-sign__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/wedding-sign__w2400.jpg"
+        },
+        {
+          "w": 2856,
+          "url": "/media-deriv/wedding-sign__w2856.jpg"
+        }
+      ]
+    }
   }
 }
