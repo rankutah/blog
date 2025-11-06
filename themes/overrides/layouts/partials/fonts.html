@@ -54,6 +54,9 @@
   /* Navbar links (brand-link class used in navbar.html) */
   nav .brand-link { font-family: var(--font-nav-link), var(--font-body), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif; }
 
+  /* Ensure any Tailwind "font-serif" usages pick up the heading family instead of default Times */
+  .font-serif { font-family: var(--font-heading), ui-serif, Georgia, Times New Roman, Times, serif !important; }
+
   /* Buttons: our UI button class plus native buttons (safe) */
   .ui-btn,
   button,

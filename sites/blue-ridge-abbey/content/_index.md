@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< section img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< section img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white}
 Near Blue Ridge Parkway, Natural Bridge, and Safari Park
 {.text-white}

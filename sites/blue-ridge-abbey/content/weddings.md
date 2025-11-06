@@ -32,7 +32,7 @@ Every wedding is unique and special. Please call us to discuss what we can do to
 
 {{< col >}}
 {{< carousel id="wedding-gallery"
-	images="/media/wedding-bride.jpg,/media/wedding-ceremony.jpg,/media/wedding-kids-on-swing.jpg,/media/wedding-refreshments-2.jpg,/media/wedding-outside.jpg"
+	images="/media/wedding-bride.jpg,/media/wedding-cake.jpg,/media/wedding-cake-2.jpg,/media/wedding-ceremony.jpg,/media/wedding-kids-on-swing.jpg,/media/wedding-refreshments-2.jpg,/media/wedding-outside.jpg"
 	mobilepxheight="520" mdpxheight="1000" radius="xl" pos="bottom" priority="true" >}}
 
 {{< /col >}}

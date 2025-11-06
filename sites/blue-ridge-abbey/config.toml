@@ -43,8 +43,9 @@ uglyURLs = true
   brandHex = "#6a8d6f"
 
   [params.fonts]
-    # Not loading external fonts; use Times New Roman for headings and brand
-    heading  = "\"Times New Roman\", Times, serif"
+    # Load Playfair Display for headings/brand
+    load     = "family=Playfair+Display:wght@400;500;600;700&display=swap"
+    heading  = "'Playfair Display', ui-serif, Georgia, Times New Roman, Times, serif"
     navBrand = "inherit"   # inherit from heading
     navLink  = "inherit"   # inherit from body
     button   = "inherit"   # inherit from body
