@@ -1,6 +1,6 @@
 ---
 title: "Locations & Service Areas"
-description: "Areas we serve — Pleasant Grove, UT and Buena Vista, VA — website design and local services."
+description: "Areas we serve — Pleasant Grove, UT • Buena Vista, VA • Grand Junction, CO • Boca Raton, FL — website design and local services."
 layout: "flowbite"
 url: "/locations"
 ---
@@ -34,6 +34,26 @@ Local website design and SEO services for small businesses in Pleasant Grove. Le
 Website design projects and SEO services spotlighting Blue Ridge Abbey and BlueridgeTech.
 
 {{< button url="/locations/buena-vista-va" text="Learn More" >}}
+
+{{< /col >}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+## Grand Junction, CO
+
+Website design for small businesses on the Western Slope — featuring Quartz Worx countertops site.
+
+{{< button url="/locations/grand-junction-co" text="Learn More" >}}
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Boca Raton, FL
+
+Fast, mobile‑first websites and local SEO in Palm Beach County — featuring the NOVA Gutter site.
+
+{{< button url="/locations/boca-raton-fl" text="Learn More" >}}
 
 {{< /col >}}
 

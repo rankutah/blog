@@ -222,6 +222,12 @@ uglyURLs      = true
     weight  = 43
 
   [[menu.main]]
+    name    = "Boca Raton, FL"
+    url     = "/locations/boca-raton-fl"
+    parent  = "locations"
+    weight  = 44
+
+  [[menu.main]]
     name    = "All Locations"
     url     = "/locations"
     parent  = "locations"

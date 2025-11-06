@@ -45,6 +45,10 @@ Website Design & Local SEO for Small Businesses
 [Privacy Policy](/privacy) • [Terms of Service](/terms)
 {.center}
 
+### Locations
+{.center}
+[Pleasant Grove](/locations/pleasant-grove-ut) • [All Locations](/locations)
+{.center}
 
 {{< /col >}}
 
@@ -63,7 +67,7 @@ Website Design & Local SEO for Small Businesses
 
 
 <div class="text-center text-sm opacity-80 mt-4">
-	© {{< year >}} Clear Presence LLC •  <a href="https://clearpresence.io" target="_blank" rel="noopener">Web Design by Clear Presence</a>
+	© {{< year >}} Clear Presence LLC •  <a href="https://clearpresence.io" target="_blank" rel="noopener">Website Design by Clear Presence</a>
 </div>
 
 {{< /section >}}
