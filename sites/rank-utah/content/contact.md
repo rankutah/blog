@@ -32,6 +32,10 @@ Schedule a phone call, video meeting, or office visit.
 
 {{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment" text="Schedule" >}}
 
+### Locations
+
+[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl)
+
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
