@@ -75,7 +75,7 @@ Grow your small business in Pleasant Grove with a professional website and local
 
 ## Serving Pleasant Grove, UT
 
-My wife graduated from Pleasant Grove High School as a Viking so it is fun having an office in her home town. My web design process is unique from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My sites are custom built so they are fast, beatiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
+My wife graduated from Pleasant Grove High School as a Viking so it is fun having an office in her home town. My web design process is unique from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My sites are custom built so they are fast, beautiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
 
 {{< /section >}}
 
@@ -91,7 +91,7 @@ My wife graduated from Pleasant Grove High School as a Viking so it is fun havin
 {.w-48}
 **Benjamin Awerkamp** <br>
 Call or Text: (385) 323-8130 <br>
-Web Design Deveoper & Local SEO Specialist <br>
+Web Design Developer & Local SEO Specialist <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
 {{< /col >}}
