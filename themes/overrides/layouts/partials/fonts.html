@@ -22,11 +22,18 @@
 {{- $navBrand := (index $fonts "navBrand") | default "inherit" -}}
 {{- $navLink  := (index $fonts "navLink")  | default "inherit" -}}
 {{- $button   := (index $fonts "button")   | default "inherit" -}}
-
 {{- if $load }}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?{{ $load }}" rel="stylesheet">
+  {{/* Inline Google Fonts CSS (previous working behavior) */}}
+  {{- $gfUrl := printf "https://fonts.googleapis.com/css2?%s" $load -}}
+  {{- $gf     := resources.GetRemote $gfUrl -}}
+  {{- if $gf -}}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>{{ $gf.Content | safeCSS }}</style>
+  {{- else -}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?{{ $load }}" rel="stylesheet">
+  {{- end -}}
 {{- end }}
 
 <style>
@@ -44,11 +51,13 @@
   :where(h1,h2,h3,h4,h5,h6),
   .prose :where(h1,h2,h3,h4,h5,h6) {
     font-family: var(--font-heading), ui-serif, Georgia, Times New Roman, Times, serif !important;
+    font-weight: 400 !important; /* enforce regular weight for all headings */
   }
 
   /* Navbar brand title (span right after logo) */
   nav a > span.font-semibold {
     font-family: var(--font-nav-brand), var(--font-heading), ui-serif, Georgia, Times New Roman, Times, serif !important;
+    font-weight: 400 !important; /* regular weight for brand */
   }
 
   /* Navbar links (brand-link class used in navbar.html) */
@@ -63,4 +72,9 @@
   [role="button"],
   a.button,
   a.btn { font-family: var(--font-button), var(--font-body), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif; }
+
+  /* Utility: Cinzel regular */
+  .font-cinzel { font-family: 'Cinzel', ui-serif, Georgia, 'Times New Roman', Times, serif !important; font-weight: 400 !important; }
+  /* Increase specificity for content inside .prose blocks */
+  .prose .font-cinzel { font-family: 'Cinzel', ui-serif, Georgia, 'Times New Roman', Times, serif !important; font-weight: 400 !important; }
 </style>

@@ -43,10 +43,11 @@ uglyURLs = true
   brandHex = "#6a8d6f"
 
   [params.fonts]
-    # Load Playfair Display for headings/brand
-    load     = "family=Playfair+Display:wght@400;500;600;700&display=swap"
-    heading  = "'Playfair Display', ui-serif, Georgia, Times New Roman, Times, serif"
-    navBrand = "inherit"   # inherit from heading
+    # Load Cinzel only for headings/brand; system fonts for body
+    load     = "family=Cinzel:wght@400&display=swap"
+    heading  = "'Cinzel', ui-serif, Georgia, Times New Roman, Times, serif"
+    # Use Cinzel for site name (navbar brand)
+    navBrand = "'Cinzel', ui-serif, Georgia, Times New Roman, Times, serif"
     navLink  = "inherit"   # inherit from body
     button   = "inherit"   # inherit from body
 
