@@ -216,6 +216,12 @@ uglyURLs      = true
     weight  = 42
 
   [[menu.main]]
+    name    = "Grand Junction, CO"
+    url     = "/locations/grand-junction-co"
+    parent  = "locations"
+    weight  = 43
+
+  [[menu.main]]
     name    = "All Locations"
     url     = "/locations"
     parent  = "locations"

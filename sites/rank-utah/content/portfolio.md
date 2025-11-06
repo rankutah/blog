@@ -14,6 +14,37 @@ url: "/portfolio"
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Quartz Worx
+
+![](../media/website-design-quartz-worx.avif)
+
+{{< button url="https://quartzworx.com/" text="Visit Quartz Worx" newtab="true" >}}
+
+Darin Hinton — 5 stars <br>
+⭐️⭐️⭐️⭐️⭐️ <br>
+"Best and quickest customer service I have ever experienced with any website design company I have worked with over many years. They got our business's email and website servers switched over in a matter of minutes from our old one, and the website up and running in a few hours. Benjamin always answers my phone calls and gives a fast response to my texts and emails, and has helped us with a few technical difficulties that were beyond our skill set. A breath of fresh air compared to the tech companies I've worked with before."
+
+{{< /col >}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+## Cedar City Strength & Conditioning
+
+![](../media/website-design-cedar-city-strength.avif)
+
+{{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}}
+
+In progress. Releasing soon.
+
+{{< /col >}}
+
+{{< /cols >}}
+
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Blue Ridge Abbey
@@ -23,11 +54,9 @@ url: "/portfolio"
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 {{< button url="/portfolio/blue-ridge-abbey" text="Performance Results" >}}
 
-Mackenzie G. - March 21, 2025 <br>
+Daniel De Souza — 5 stars <br>
 ⭐️⭐️⭐️⭐️⭐️ <br>
-"Such a joy to work with, we had many unknowns and shifting deadlines and he worked with us diligently to complete any task we needed done!!
-The website design is beautiful and easy for customers too use!!
-I highly recommend, to anyone who is in need of a website!"
+"Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients."
 
 {{< /col >}}
 

@@ -53,7 +53,7 @@ Countertops in Grand Junction, CO
 
 
 <div class="text-center text-sm opacity-80 mt-4">
-	© {{< year >}} Quartz Worx •  <a href="https://clearpresence.io" target="_blank" rel="noopener">Website Design and SEO by Clear Presence</a>
+	© {{< year >}} Quartz Worx •  <a href="https://clearpresence.io/locations/grand-junction-co" target="_blank" rel="noopener"> Website Design in Grand Junction, CO | Clear Presence </a>
 </div>
 
 {{< /section >}}

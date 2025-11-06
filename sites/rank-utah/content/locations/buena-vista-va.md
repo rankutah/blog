@@ -28,7 +28,7 @@ Blue Ridge Abbey website was built to showcase bookings, rooms, and local attrac
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 {{< button url="/portfolio/blue-ridge-abbey" text="Performance Results" >}}
 
-"The website design is beautiful and easy for customers to use! I highly recommend." — Mackenzie G.
+"Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients." — Daniel De Souza
 
 {{< /col >}}
 

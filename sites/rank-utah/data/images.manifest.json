@@ -4313,6 +4313,468 @@
       ]
     }
   },
+  "/media/website-design-cedar-city-strength.jpg": {
+    "width": 1915,
+    "height": 982,
+    "aspect": 1.95010183299389,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgQBAwUG/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQIRAAMEEiEiMUFhE5Gx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEBAAMBAAAAAAAAAAAAAAAAAAECERL/2gAMAwEAAhEDEQA/AOX+dwegAH0KeuW9sMuqkuVkNrBJo0W4uu1lFgQQTz4qHyGJcqoUAg6zzU1qKs+6L1tAbm6mT3Xj7qzFW62Sq3QxGvO3in3yLOVtM9wBI4kcj8osnMdEVlVXgdRJ7TxHumnL/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-cedar-city-strength__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-cedar-city-strength__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-cedar-city-strength__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-cedar-city-strength__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-cedar-city-strength__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1600.avif"
+        },
+        {
+          "w": 1915,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1915.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-cedar-city-strength__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-cedar-city-strength__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-cedar-city-strength__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-cedar-city-strength__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-cedar-city-strength__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1600.jpg"
+        },
+        {
+          "w": 1915,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1915.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-cedar-city-strength.avif": {
+    "width": 1915,
+    "height": 982,
+    "aspect": 1.95010183299389,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAgQBAwUG/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQIRAAMEEiEiMUFhE5Gx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEBAAMBAAAAAAAAAAAAAAAAAAECERL/2gAMAwEAAhEDEQA/AOX+dwegAH0KeuW9sMuqkuVkNrBJo0W4uu1lFgQQTz4qHyGJcqoUAg6zzU1qKs+6L1tAbm6mT3Xj7qzFW62Sq3QxGvO3in3yLOVtM9wBI4kcj8osnMdEVlVXgdRJ7TxHumnL/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-cedar-city-strength__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-cedar-city-strength__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-cedar-city-strength__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-cedar-city-strength__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-cedar-city-strength__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1600.avif"
+        },
+        {
+          "w": 1915,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1915.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-cedar-city-strength__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-cedar-city-strength__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-cedar-city-strength__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-cedar-city-strength__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-cedar-city-strength__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1600.jpg"
+        },
+        {
+          "w": 1915,
+          "url": "/media-deriv/website-design-cedar-city-strength__w1915.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-grand-junction-colorado-mountain.jpg": {
+    "width": 1912,
+    "height": 903,
+    "aspect": 2.1173864894795127,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgMCBP/EACQQAAIBAwQBBQEAAAAAAAAAAAECAwAEEQUSIUGBFTFicaGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAYEQEBAAMAAAAAAAAAAAAAAAAAEgERE//aAAwDAQACEQMRAD8AQRX9rOgeGUOPiCSPFc8mrRRvteCZffkgDgd0DSWVXLxuVI5yDirrqV8DgXMp+2z/AGqc9J2ajVrVlON4bpWXBNZ9WsypJLjAzyv5QybVL2VNjygrjpQKhFfXFu+6OQ57B5B8GiDWX//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1600.avif"
+        },
+        {
+          "w": 1912,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1912.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1600.jpg"
+        },
+        {
+          "w": 1912,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1912.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-grand-junction-colorado-mountain.avif": {
+    "width": 1912,
+    "height": 903,
+    "aspect": 2.1173864894795127,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgMCBP/EACQQAAIBAwQBBQEAAAAAAAAAAAECAwAEEQUSIUGBFTFicaGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAYEQEBAAMAAAAAAAAAAAAAAAAAEgERE//aAAwDAQACEQMRAD8AQRX9rOgeGUOPiCSPFc8mrRRvteCZffkgDgd0DSWVXLxuVI5yDirrqV8DgXMp+2z/AGqc9J2ajVrVlON4bpWXBNZ9WsypJLjAzyv5QybVL2VNjygrjpQKhFfXFu+6OQ57B5B8GiDWX//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1600.avif"
+        },
+        {
+          "w": 1912,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1912.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1600.jpg"
+        },
+        {
+          "w": 1912,
+          "url": "/media-deriv/website-design-grand-junction-colorado-mountain__w1912.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-quartz-worx.jpg": {
+    "width": 1911,
+    "height": 981,
+    "aspect": 1.9480122324159022,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAABAUBAgP/xAAjEAACAQMDBAMAAAAAAAAAAAABAgMABBESEzEFIVFhFCKS/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ABY7eALq0r+RWqwo3dLeI5PJUClrTTta7kZ4bAHJPuoi6lLGv2hSQA4yhxQMzZq/McSD0oNDyxWcLhZNJceVq/zht7hRkUnHk0vulFzciSN4X47OcNQf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-quartz-worx__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-quartz-worx__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-quartz-worx__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-quartz-worx__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-quartz-worx__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-quartz-worx__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-quartz-worx__w1600.avif"
+        },
+        {
+          "w": 1911,
+          "url": "/media-deriv/website-design-quartz-worx__w1911.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-quartz-worx__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-quartz-worx__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-quartz-worx__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-quartz-worx__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-quartz-worx__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-quartz-worx__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-quartz-worx__w1600.jpg"
+        },
+        {
+          "w": 1911,
+          "url": "/media-deriv/website-design-quartz-worx__w1911.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-quartz-worx.avif": {
+    "width": 1911,
+    "height": 981,
+    "aspect": 1.9480122324159022,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAABAUBAgP/xAAjEAACAQMDBAMAAAAAAAAAAAABAgMABBESEzEFIVFhFCKS/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ABY7eALq0r+RWqwo3dLeI5PJUClrTTta7kZ4bAHJPuoi6lLGv2hSQA4yhxQMzZq/McSD0oNDyxWcLhZNJceVq/zht7hRkUnHk0vulFzciSN4X47OcNQf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-quartz-worx__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-quartz-worx__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-quartz-worx__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-quartz-worx__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-quartz-worx__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-quartz-worx__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-quartz-worx__w1600.avif"
+        },
+        {
+          "w": 1911,
+          "url": "/media-deriv/website-design-quartz-worx__w1911.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-quartz-worx__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-quartz-worx__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-quartz-worx__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-quartz-worx__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-quartz-worx__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-quartz-worx__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-quartz-worx__w1600.jpg"
+        },
+        {
+          "w": 1911,
+          "url": "/media-deriv/website-design-quartz-worx__w1911.jpg"
+        }
+      ]
+    }
+  },
   "/media/website-nova-gutter.jpg": {
     "width": 2069,
     "height": 1636,
