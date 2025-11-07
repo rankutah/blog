@@ -43,7 +43,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 ## Local SEO
 
-{{< badge text="I need marketing" >}}
+{{< badge text="I need local marketing" >}}
 
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
@@ -66,7 +66,7 @@ This package does not include a business website.
 
 ## Business Website + Local SEO
 
-{{< badge text="I need a website and marketing" >}}
+{{< badge text="I need a website and local marketing" >}}
 
 {{< plan_price old="$348" price="299" per="mo" sr="$299 per month bundle (was $348)" >}}
 
