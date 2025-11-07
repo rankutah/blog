@@ -24,7 +24,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 ## Business Website <br>
 
-{{< badge text="No website yet, not ready to market" >}}
+{{< badge text="I need a website" >}}
 
 {{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
@@ -43,7 +43,8 @@ Simple monthly pricing. No contracts. No surprises.
 
 ## Local SEO
 
-{{< badge text="Have a website, ready to grow" >}}
+{{< badge text="I need marketing" >}}
+
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
@@ -52,7 +53,7 @@ Simple monthly pricing. No contracts. No surprises.
 - Google Business Profile management
 - Listings on **Google, Apple, Bing + 100+ sites**
 - Local keyword research & strategy
-- Website keyword recommendations
+- Business listings keyword alignment
 - Monthly analytics reports
 
 This package does not include a business website.
@@ -65,7 +66,7 @@ This package does not include a business website.
 
 ## Business Website + Local SEO
 
-{{< badge text="No website yet, ready to grow" >}}
+{{< badge text="I need a website and marketing" >}}
 
 {{< plan_price old="$348" price="299" per="mo" sr="$299 per month bundle (was $348)" >}}
 
