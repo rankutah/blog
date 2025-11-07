@@ -31,9 +31,12 @@ Quartz Worx needed a website to explain the different types of countertop option
 
 ![Quartz Worx website preview](/media/website-design-quartz-worx.jpg)
 
-Darin Hinton — 5 stars <br>
-⭐️⭐️⭐️⭐️⭐️ <br>
+**Darin Hinton** <br>
+{{<stars>}}<br>
 "Best and quickest customer service I have ever experienced with any website design company I have worked with over many years. They got our business's email and website servers switched over in a matter of minutes from our old one, and the website up and running in a few hours. Benjamin always answers my phone calls and gives a fast response to my texts and emails, and has helped us with a few technical difficulties that were beyond our skill set. A breath of fresh air compared to the tech companies I've worked with before."
+
+{{< button url="https://quartzworx.com/" text="Visit Quartz Worx" newtab="true" >}}
+
 
 {{< /col >}}
 

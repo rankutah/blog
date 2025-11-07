@@ -23,12 +23,16 @@ Custom websites and performance-driven design for Buena Vista businesses and bey
 
 Blue Ridge Abbey website was built to showcase bookings, rooms, and local attractions while keeping load times super fast and the booking flow simple.
 
-![blue ridge abbey front page](/media/website-blue-ridge-abbey.avif)
+![Blue Ridge Abbey Website Design](../media/website-design-blue-ridge-abbey.jpg)
+
+
+
+**Daniel De Souza** <br>
+{{< stars >}} <br>
+"Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients."
 
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 {{< button url="/services/website-design" text="Performance Results" >}}
-
-"Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients." — Daniel De Souza
 
 {{< /col >}}
 
@@ -36,13 +40,17 @@ Blue Ridge Abbey website was built to showcase bookings, rooms, and local attrac
 
 ## BlueridgeTech Website — Computer Repair Shop in Buena Vista, VA
 
-BlueridgeTech needed clear calls-to-action and appointment booking while keeping a compact, fast-loading webiste. The result is a focused website for service booking and support resources.
+BlueridgeTech website was build with clear calls-to-action and appointment booking while keeping a compact, fast-loading pages.
 
-![](/media/website-blueridgetech.avif)
+![Blue Ridge Tech Website Design](../media/website-design-blueridge-tech.avif)
+
+
+**Gabriel Antigua** <br>
+{{< stars >}} <br>
+"Benjamin with Clear Presence has been great to work with. He is doing website design for me and local SEO including running my Google Business Profile. I am continuing to get more customers from working with him."
 
 {{< button url="https://blueridgetech.pro/" text="Visit BlueridgeTech" newtab="true" >}}
 
-"I recommend 100% working with Benjamin. He is very professional, gets the job done, and is my go-to for my website!" — Gabriel A.
 
 {{< /col >}}
 

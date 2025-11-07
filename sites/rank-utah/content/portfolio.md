@@ -22,8 +22,8 @@ url: "/portfolio"
 
 {{< button url="https://quartzworx.com/" text="Visit Quartz Worx" newtab="true" >}}
 
-Darin Hinton — 5 stars <br>
-⭐️⭐️⭐️⭐️⭐️ <br>
+**Darin Hinton** <br>
+{{< stars >}} <br>
 "Best and quickest customer service I have ever experienced with any website design company I have worked with over many years. They got our business's email and website servers switched over in a matter of minutes from our old one, and the website up and running in a few hours. Benjamin always answers my phone calls and gives a fast response to my texts and emails, and has helped us with a few technical difficulties that were beyond our skill set. A breath of fresh air compared to the tech companies I've worked with before."
 
 {{< /col >}}
@@ -54,8 +54,8 @@ In progress. Releasing soon.
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 {{< button url="/portfolio/blue-ridge-abbey" text="Performance Results" >}}
 
-Daniel De Souza — 5 stars <br>
-⭐️⭐️⭐️⭐️⭐️ <br>
+**Daniel De Souza** <br>
+{{<stars>}}<br>
 "Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients."
 
 {{< /col >}}
@@ -68,8 +68,8 @@ Daniel De Souza — 5 stars <br>
 
 {{< button url="https://blueridgetech.pro/" text="Visit BlueridgeTech" newtab="true" >}}
 
-Gabriel Antigua — 5 stars <br>
-⭐️⭐️⭐️⭐️⭐️ <br>
+**Gabriel Antigua** <br>
+{{<stars>}}<br>
 "Benjamin with Clear Presence has been great to work with. He is doing website design for me and local SEO including running my Google Business Profile. I am continuing to get more customers from working with him."
 
 {{< /col >}}
@@ -100,8 +100,8 @@ Just Released!
 
 {{< button url="https://villavalenciaojai.com/" text="Visit Villa Valencia" newtab="true" >}}
 
-Michelle L. - December 27, 2024 <br>
-⭐️⭐️⭐️⭐️⭐️ <br>
+**Michelle L.**<br>
+{{<stars>}}<br>
 "Benjamin sorted through a mess of past websites with lost passcodes and outdated design and voila —now we have a beautiful working website. Highly recommend!"
 
 {{< /col >}}
