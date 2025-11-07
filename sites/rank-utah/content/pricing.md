@@ -24,7 +24,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 ## Website Design <br>
 
-{{< badge text="No website yet, not marketing yet" >}}
+{{< badge text="No website yet, not ready to grow" >}}
 
 {{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
