@@ -23,7 +23,6 @@ Build a fast, SEO‑ready website that turns visits into calls and form fills. C
 
 - Loads fast on mobile and Core Web Vitals–friendly
 - Clear, conversion‑focused page structure and copy
-- Local SEO baked in (titles, schema, internal links)
 - Lightweight, custom build—no bloated templates
 - Easy updates and ongoing support
 - Analytics and call tracking ready
@@ -106,9 +105,9 @@ Build a fast, SEO‑ready website that turns visits into calls and form fills. C
 
 1. Discovery — goals, audience, and sitemap
 2. Design — content structure, look & feel, and copy guidance
-3. Build — fast, accessible pages with local SEO baked in
+3. Build — fast, accessible pages with no bloat
 4. Launch — tracking, QA, and go‑live checklist
-5. Grow — updates, SEO, and reporting as you scale
+5. Grow — updates, pages, and reporting as you scale
 
 {{< /section >}}
 
@@ -150,7 +149,7 @@ Decide if you are in need of {{< button url="/services/local-seo" text="Local SE
 
 ## Locations
 
-Clear Presence provides website design and SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
+Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 

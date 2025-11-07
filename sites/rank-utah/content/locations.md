@@ -1,6 +1,6 @@
 ---
 title: "Locations"
-description: "Clear Presence provides website design and SEO services for businesses across the United States with an office in Pleasant Grove, Ut."
+description: "Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, Ut."
 layout: "flowbite"
 url: "/locations"
 ---
@@ -9,7 +9,7 @@ url: "/locations"
 
 # Locations
 
-Clear Presence provides website design and SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
+Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
 
 {{< /section >}}
 
@@ -21,7 +21,7 @@ Clear Presence provides website design and SEO services for businesses across th
 
 ## Pleasant Grove, UT
 
-Local website design and SEO services for small businesses in Pleasant Grove. Learn more about this location and reach out for questions or to get started.
+Local website design and local local SEO services for small businesses in Pleasant Grove. Learn more about this location and reach out for questions or to get started.
 
 {{< button url="/locations/pleasant-grove-ut" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 
@@ -31,7 +31,7 @@ Local website design and SEO services for small businesses in Pleasant Grove. Le
 
 ## Buena Vista, VA
 
-Website design projects and SEO services spotlighting Blue Ridge Abbey and BlueridgeTech.
+Website design projects and local SEO services spotlighting Blue Ridge Abbey and BlueridgeTech.
 
 {{< button url="/locations/buena-vista-va" text="Learn More" >}}
 
