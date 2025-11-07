@@ -189,7 +189,9 @@ Clear Presence provides services to clients nationwide.
 ## Ready for the Next Step?
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 
-{{<button text="Contact" url="/contact" >}}
+{{<button text="Website Design" url="/services/website-design" >}}
+{{<button text="Local SEO" url="/services/local-seo" >}}
+{{<button text="Reach Out" url="/contact" >}}
 
 
 {{< /section >}}
