@@ -7,7 +7,7 @@ headless: true
 
 ## Clear Presence
 {.center}
-Website Design & Local SEO for Small Businesses
+Website Design for Small Businesses
 {.center}
 
 {{< cols min="18rem" gap="0rem" v="start">}}
