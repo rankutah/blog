@@ -1,15 +1,15 @@
 ---
-title: "Locations & Service Areas"
-description: "Areas we serve — Pleasant Grove, UT • Buena Vista, VA • Grand Junction, CO • Boca Raton, FL — website design and local services."
+title: "Locations"
+description: "Clear Presence provides website design and SEO services for businesses across the United States with an office in Pleasant Grove, Ut."
 layout: "flowbite"
 url: "/locations"
 ---
 
 {{< section >}}
 
-# Locations & Service Areas
+# Locations
 
-Clear Presence provides website design and SEO services for business across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
+Clear Presence provides website design and SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
 
 {{< /section >}}
 
