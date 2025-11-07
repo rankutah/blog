@@ -22,7 +22,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Website Design <br>
+## Business Website <br>
 
 {{< badge text="No website yet, not ready to grow" >}}
 
@@ -55,7 +55,7 @@ Simple monthly pricing. No contracts. No surprises.
 - Website keyword recommendations
 - Monthly analytics reports
 
-Website Design is not included in this package.
+This package does not include a business website.
 
 {{< button url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
 
@@ -63,7 +63,7 @@ Website Design is not included in this package.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
-## Website Design + Local SEO
+## Business Website + Local SEO
 
 {{< badge text="No website yet, ready to grow" >}}
 
