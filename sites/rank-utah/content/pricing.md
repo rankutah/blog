@@ -69,7 +69,7 @@ This package does not include a business website.
 
 {{< plan_price old="$348" price="299" per="mo" sr="$299 per month bundle (was $348)" >}}
 
-*Bundle Website Design and Local SEO to maximize your visibility.*
+*Bundle Business Website and Local SEO to maximize your visibility.*
 
 - Fast, secure hosting
 - Domain & yearly renewals
@@ -119,8 +119,8 @@ Fair use and scope:
 - Majorly customized or out‑of‑the‑ordinary work (e.g., complex tools, custom integrations, web apps, or bulk content migrations) is quoted separately
 - Heavy request bursts may be queued to maintain quality
 
-### How long does a new site take?
-Sites can be built in 2-3 weeks with regular coordination.
+### How long does a new website take?
+Websites can be built in 2-3 weeks with regular coordination.
 
 {{< /faqs >}}
 
