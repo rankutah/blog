@@ -120,7 +120,7 @@ Fair use and scope:
 - Heavy request bursts may be queued to maintain quality
 
 ### How long does a new site take?
-Sites can be built in 2-3 weeks with your frequent coordination.
+Sites can be built in 2-3 weeks with regular coordination.
 
 {{< /faqs >}}
 
