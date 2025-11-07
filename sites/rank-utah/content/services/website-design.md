@@ -10,7 +10,7 @@ url: "/services/website-design"
 # Website Design
 Completely custom websites. Built for performance.
 
-Build a fast, SEO‑ready website that turns visits into calls and form fills. Clear messaging, strong visuals, and lightweight code designed to perform on mobile.
+Build a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and lightweight code designed to perform on mobile.
 
 {{< button url="/contact" text="Get a Quote" >}}
 {{< button url="/portfolio" text="See Work" >}}
