@@ -24,7 +24,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 ## Business Website <br>
 
-{{< badge text="No website yet, not ready to grow" >}}
+{{< badge text="No website yet, not ready to market" >}}
 
 {{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
