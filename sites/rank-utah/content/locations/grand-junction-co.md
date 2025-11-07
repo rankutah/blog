@@ -16,7 +16,7 @@ schema:
 # Website Design in Grand Junction, CO {.text-white}
 Custom websites and performance-driven design for Western Slope businesses.
 {.text-white}
-{{<button url="/portfolio" text="View Portfolio" >}}{{<button url="/contact" text="Contact" >}}
+{{<button url="/services/website-design" text="View Portfolio" >}}{{<button url="/contact" text="Contact" >}}
 {{< /section >}}
 
 {{< section >}}
@@ -47,6 +47,6 @@ Darin Hinton — 5 stars <br>
 
 Your website should be fast, mobile‑first, and easy to find — so people on the Western Slope can call, request a quote, or visit. I build custom sites that load quickly, look great, and help you win local searches in Grand Junction.
 
-{{< button url="/contact" text="Get a Free Quote" >}} {{< button url="/portfolio" text="See Work" >}}
+{{< button url="/contact" text="Get a Free Quote" >}} {{< button url="/services/website-design" text="See Work" >}}
 
 {{< /section >}}

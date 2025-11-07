@@ -10,7 +10,7 @@ hero: true
 # Website Design in Buena Vista, VA {.text-white}
 Custom websites and performance-driven design for Buena Vista businesses and beyond.
 {.text-white}
-{{<button url="/portfolio" text="View Portfolio" >}}{{<button url="/contact" text="Contact" >}}
+{{<button url="/services/website-design" text="View Portfolio" >}}{{<button url="/contact" text="Contact" >}}
 {{< /section >}}
 
 {{< section >}}
@@ -26,7 +26,7 @@ Blue Ridge Abbey website was built to showcase bookings, rooms, and local attrac
 ![blue ridge abbey front page](/media/website-blue-ridge-abbey.avif)
 
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
-{{< button url="/portfolio/blue-ridge-abbey" text="Performance Results" >}}
+{{< button url="/services/website-design" text="Performance Results" >}}
 
 "Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients." — Daniel De Souza
 

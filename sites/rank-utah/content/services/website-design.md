@@ -42,11 +42,9 @@ Build a fast, SEO‑ready website that turns visits into calls and form fills. C
 
 ![](../../media/website-design-quartz-worx.avif)
 
-{{< button url="/portfolio" text="See Portfolio" >}}
-
 {{< /col >}}
 
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}} 
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ### Cedar City Strength – Fitness
 
@@ -66,7 +64,7 @@ Build a fast, SEO‑ready website that turns visits into calls and form fills. C
 
 {{< /col >}}
 
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}} 
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ### BlueridgeTech – IT Services
 
