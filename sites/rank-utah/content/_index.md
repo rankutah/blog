@@ -71,6 +71,16 @@ Most web designers require high costs upfront before they will build your websit
 
 {{< section >}}
 
+## Locations
+
+Clear Presence provides website design and SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
+
+[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
+
+{{< /section >}}
+
+{{< section >}}
+
 ## Quick Links
 
 {{< cols min="18rem" gap="2rem" v="start">}}

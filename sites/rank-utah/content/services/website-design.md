@@ -146,12 +146,13 @@ Decide if you are in need of {{< button url="/services/local-seo" text="Local SE
 {{< /section >}}
 
 
-
 {{< section >}}
 
-## Areas we serve
+## Locations
 
-[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl)
+Clear Presence provides website design and SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
+
+[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 
 {{< /section >}}
 
@@ -163,8 +164,6 @@ Decide if you are in need of {{< button url="/services/local-seo" text="Local SE
 {{< button url="/pricing" text="See Pricing" >}}
 
 {{< /section >}}
-
-
 
 
 
