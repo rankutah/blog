@@ -47,9 +47,9 @@ Clear Presence focuses on maximizing your Google Business Profile visibility by 
 9. Ensuring your social media links are included
 10. Showing your service area (if applicable)
 
-### 2. Get Your Business Consistently Listed on Google, Apple, Bing + 100+ sites
+### 2. Get Your Business Consistently Listed on Google, Apple Maps & Bing and synced to 100+ other directories
 
-Clear Presence syncs your business information to over 100+ sites including websites, directories, map apps, consumer apps, and voice assistants. This is done by submitting and syncing your business information with the five leading data aggregators (Localeze, Data Axle, YP Network, GPT Network, and Foursquare). This serves a number of purposes including:
+Clear Presence directly manages your listing with Google, Apple Mpas, & Bing and then syncs your business information to over 100+ sites including websites, directories, map apps, consumer apps, and voice assistants. This is done by submitting and syncing your business information with the five leading data aggregators (Localeze, Data Axle, YP Network, GPT Network, and Foursquare). This serves a number of purposes including:
 
 1. Increasing opportunities for people to find your business
 2. Maintaining a consistent NAP (name, address, phone number) across the web to build trust, visibility, and credibility for search engines and visitors

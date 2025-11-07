@@ -33,7 +33,7 @@ Simple monthly pricing. No contracts. No surprises.
 - Fast, secure hosting
 - Domain & yearly renewals
 - Unlimited content updates
-- Regular backups
+- Mobile-Friendly Design
 - Monthly analytics reports
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
@@ -51,7 +51,7 @@ Simple monthly pricing. No contracts. No surprises.
 *Get found on Google Maps, Apple Maps, Google, and "near me" searches.*
 
 - Google Business Profile management
-- Listings on **Google, Apple, Bing + 100+ sites**
+- Manage Google, Apple Maps & Bing directly and sync to 100+ other directories
 - Local keyword research & strategy
 - Business listings keyword alignment
 - Monthly analytics reports
@@ -75,9 +75,9 @@ This package does not include a business website.
 - Fast, secure hosting
 - Domain & yearly renewals
 - Unlimited content updates
-- Regular backups
+- Mobile-Friendly Design
 - Google Business Profile management
-- Listings on **Google, Apple, Bing + 100+ sites**
+- Manage Google, Apple Maps & Bing directly and sync to 100+ other directories
 - Local keyword research & strategy
 - **Content keyword alignment** across your website, Google Business Profile, and listings
 - Monthly analytics reports
