@@ -92,3 +92,11 @@ Reach out directly with a quick phone call or text message to get your questions
 
 {{< /section >}}
 
+{{< section >}}
+
+## Areas we serve
+
+[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl)
+
+{{< /section >}}
+

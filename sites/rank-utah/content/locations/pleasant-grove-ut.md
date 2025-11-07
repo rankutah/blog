@@ -54,7 +54,7 @@ Professional business websites with powerful local SEO
 
 Grow your small business in Pleasant Grove with a professional website and local SEO. Reach out via call, text, or email.
 
-{{< button url="/contact" text="Contact" >}} {{< button url="/services/website-design" text="Portfolio" >}}
+{{< button url="/contact" text="Contact" >}} {{< button url="/services/website-design" text="Website Design" >}}
 
 <br>
 

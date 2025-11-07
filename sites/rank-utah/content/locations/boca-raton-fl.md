@@ -16,7 +16,7 @@ schema:
 # Website Design in Boca Raton, FL {.text-white}
 Custom websites and local SEO for Palm Beach County businesses.
 {.text-white}
-{{<button url="/services/website-design" text="View Portfolio" >}}{{<button url="/contact" text="Contact" >}}
+{{<button url="/services/website-design" text="Website Design" >}}{{<button url="/contact" text="Contact" >}}
 {{< /section >}}
 
 {{< section >}}

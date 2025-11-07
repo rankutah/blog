@@ -10,7 +10,7 @@ hero: true
 # Website Design in Buena Vista, VA {.text-white}
 Custom websites and performance-driven design for Buena Vista businesses and beyond.
 {.text-white}
-{{<button url="/services/website-design" text="View Portfolio" >}}{{<button url="/contact" text="Contact" >}}
+{{<button url="/services/website-design" text="Website Design" >}}{{<button url="/contact" text="Contact" >}}
 {{< /section >}}
 
 {{< section >}}
