@@ -4313,6 +4313,314 @@
       ]
     }
   },
+  "/media/website-design-blue-ridge-abbey.jpg": {
+    "width": 1916,
+    "height": 980,
+    "aspect": 1.9551020408163264,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAgABAwQF/8QAIhAAAQQCAQQDAAAAAAAAAAAAAQIDESEABBIFIjFBcYHw/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAESIv/aAAwDAQACEQMRAD8AynXNdmwhCp88YrAZdbeXxQykqJr4wnuk7LgppSZMzIsYbfT9jXSsMhRJsmq/XltmJQ7uoviqA1MUALyZLTAp9KAuB5Ej6ygrYmO8g+6OJew2tPElREH17msUxk//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1600.avif"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1916.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1600.jpg"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1916.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-blue-ridge-abbey.avif": {
+    "width": 1916,
+    "height": 980,
+    "aspect": 1.9551020408163264,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAgABAwQF/8QAIhAAAQQCAQQDAAAAAAAAAAAAAQIDESEABBIFIjFBcYHw/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAESIv/aAAwDAQACEQMRAD8AynXNdmwhCp88YrAZdbeXxQykqJr4wnuk7LgppSZMzIsYbfT9jXSsMhRJsmq/XltmJQ7uoviqA1MUALyZLTAp9KAuB5Ej6ygrYmO8g+6OJew2tPElREH17msUxk//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1600.avif"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1916.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1600.jpg"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blue-ridge-abbey__w1916.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-blueridge-tech.jpg": {
+    "width": 1916,
+    "height": 980,
+    "aspect": 1.9551020408163264,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwQBBv/EACAQAAICAgICAwAAAAAAAAAAAAECABEDIRIxQWFRgbH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A5FS7Hs/Upx4mI5HkfcPDValCuVrZHseJcFY+M1sUITLvff5FZiRZN/AhuRVRtGP/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blueridge-tech__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blueridge-tech__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blueridge-tech__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blueridge-tech__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blueridge-tech__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blueridge-tech__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blueridge-tech__w1600.avif"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blueridge-tech__w1916.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blueridge-tech__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blueridge-tech__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blueridge-tech__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blueridge-tech__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blueridge-tech__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blueridge-tech__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blueridge-tech__w1600.jpg"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blueridge-tech__w1916.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-blueridge-tech.avif": {
+    "width": 1916,
+    "height": 980,
+    "aspect": 1.9551020408163264,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwQBBv/EACAQAAICAgICAwAAAAAAAAAAAAECABEDIRIxQWFRgbH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A5FS7Hs/Upx4mI5HkfcPDValCuVrZHseJcFY+M1sUITLvff5FZiRZN/AhuRVRtGP/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blueridge-tech__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blueridge-tech__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blueridge-tech__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blueridge-tech__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blueridge-tech__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blueridge-tech__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blueridge-tech__w1600.avif"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blueridge-tech__w1916.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-blueridge-tech__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-blueridge-tech__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-blueridge-tech__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-blueridge-tech__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-blueridge-tech__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-blueridge-tech__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-blueridge-tech__w1600.jpg"
+        },
+        {
+          "w": 1916,
+          "url": "/media-deriv/website-design-blueridge-tech__w1916.jpg"
+        }
+      ]
+    }
+  },
   "/media/website-design-boca-raton-florida.jpg": {
     "width": 1920,
     "height": 1440,

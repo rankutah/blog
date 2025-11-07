@@ -49,7 +49,7 @@ In progress. Releasing soon.
 
 ## Blue Ridge Abbey
 
-![](../media/website-blue-ridge-abbey.avif)
+![](../media/website-design-blue-ridge-abbey.jpg)
 
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 {{< button url="/portfolio/blue-ridge-abbey" text="Performance Results" >}}
@@ -62,13 +62,15 @@ Daniel De Souza — 5 stars <br>
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Nova Gutter
+## BlueridgeTech
 
-![](../media/website-nova-gutter.avif)
+![](../media/website-design-blueridge-tech.avif)
 
-{{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
+{{< button url="https://blueridgetech.pro/" text="Visit BlueridgeTech" newtab="true" >}}
 
-Just Released!
+Gabriel Antigua — 5 stars <br>
+⭐️⭐️⭐️⭐️⭐️ <br>
+"Benjamin with Clear Presence has been great to work with. He is doing website design for me and local SEO including running my Google Business Profile. I am continuing to get more customers from working with him."
 
 {{< /col >}}
 
@@ -79,15 +81,13 @@ Just Released!
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## BlueridgeTech
+## Nova Gutter
 
-![](../media/website-blueridgetech.avif)
+![](../media/website-nova-gutter.avif)
 
-{{< button url="https://blueridgetech.pro/" text="Visit BlueridgeTech" newtab="true" >}}
+{{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
 
-Gabriel A. - November 2024 <br>
-⭐️⭐️⭐️⭐️⭐️ <br>
-"I recommend 100% working with Benjamin. He is very professional, gets the job done, and is my go-to for my website!"
+Just Released!
 
 {{< /col >}}
 
