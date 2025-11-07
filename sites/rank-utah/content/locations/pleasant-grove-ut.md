@@ -37,7 +37,7 @@ Professional business websites that bring you customers
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Clear Presence
+## Clear Presence Near You
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Fri, 9am–5pm
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
