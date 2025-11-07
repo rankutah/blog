@@ -67,7 +67,7 @@ Website Design & Local SEO for Small Businesses
 
 
 <div class="text-center text-sm opacity-80 mt-4">
-	© {{< year >}} Clear Presence LLC •  <a href="https://clearpresence.io" target="_blank" rel="noopener">Website Design by Clear Presence</a>
+	© {{< year >}} Clear Presence LLC •  <a href="https://clearpresence.io" target="_blank" rel="nofollow noopener">Website by Clear Presence</a>
 </div>
 
 {{< /section >}}
