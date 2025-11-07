@@ -45,6 +45,6 @@ Nova Gutter needed a fast, modern site to showcase residential and commercial gu
 
 Get a site that’s fast, mobile‑first, and built to rank — so Boca Raton customers can find you, call, and request a quote.
 
-{{< button url="/contact" text="Get a Free Quote" >}} {{< button url="/services/website-design" text="See Work" >}}
+{{< button url="/contact" text="Contact" >}} {{< button url="/services/website-design" text="See Work" >}}
 
 {{< /section >}}

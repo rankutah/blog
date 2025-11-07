@@ -12,8 +12,8 @@ Completely custom websites. Built for performance.
 
 Build a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and lightweight code designed to perform on mobile.
 
-{{< button url="/contact" text="Get a Quote" >}}
-{{< button url="/portfolio" text="See Work" >}}
+{{< button url="/contact" text="Contact" >}}
+{{< button url="/portfolio" text="See Portfolio" >}}
 
 {{< /section>}}
 
@@ -159,7 +159,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 ## Ready to get started?
 
-{{< button url="/contact" text="Get a Quote" >}}
+{{< button url="/contact" text="Contact" >}}
 {{< button url="/pricing" text="See Pricing" >}}
 
 {{< /section >}}

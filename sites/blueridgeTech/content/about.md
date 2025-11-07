@@ -71,7 +71,7 @@ With years of hands‑on experience, I help neighbors in Buena Vista keep their 
 {{< section >}}
 
 <div class="text-center max-w-3xl mx-auto">
-	<h3 class="text-2xl font-semibold mb-2">Have a question or need a quick quote?</h3>
+	<h3 class="text-2xl font-semibold mb-2">Have a question?</h3>
 	<p class="mb-4">Call, book a time, or send a message and I’ll get right back to you.</p>
 	<div class="flex flex-wrap items-center justify-center gap-3">
 		{{< button url="tel:+15404581021" text="Call (540) 458-1021" >}}
