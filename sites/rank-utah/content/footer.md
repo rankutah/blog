@@ -5,7 +5,7 @@ headless: true
 
 {{< section >}}
 
-## Clear Presence
+## Clear Presence Near You
 {.center}
 Website Design for Small Businesses
 {.center}
