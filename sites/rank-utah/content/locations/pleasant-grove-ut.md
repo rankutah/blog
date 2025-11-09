@@ -61,7 +61,55 @@ Grow your small business in Pleasant Grove with a professional website and local
 
 <br>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.2270534319678!2d-111.77212352186059!3d40.359489571448805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d83518bf2d615%3A0x7743ab4d90b06212!2sClear%20Presence!5e0!3m2!1sen!2sus!4v1761685916027!5m2!1sen!2sus" width="600" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="map-placeholder" id="pg-map-placeholder" style="position:relative;width:100%;max-width:640px;aspect-ratio:4/3;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;margin-bottom:1rem">
+  <button type="button" style="all:unset;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.5rem;font-family:inherit;color:#0f172a">
+    <strong>Load Interactive Map</strong>
+    <span style="font-size:.8rem;color:#475569">Click or scroll to load Google Maps for Pleasant Grove</span>
+  </button>
+</div>
+<script>
+  (function(){
+    var loaded=false;
+    var ph=document.getElementById('pg-map-placeholder');
+    if(!ph) return;
+    function inject(){
+      if(loaded) return; loaded=true;
+      var iframe=document.createElement('iframe');
+      iframe.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.2270534319678!2d-111.77212352186059!3d40.359489571448805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d83518bf2d615%3A0x7743ab4d90b06212!2sClear%20Presence!5e0!3m2!1sen!2sus!4v1761685916027!5m2!1sen!2sus";
+      iframe.width="600";
+      iframe.height="440";
+      iframe.style.border="0";
+      iframe.setAttribute('allowfullscreen','');
+      iframe.setAttribute('loading','lazy');
+      iframe.referrerPolicy='no-referrer-when-downgrade';
+      iframe.style.width='100%';
+      iframe.style.height='100%';
+      ph.innerHTML='';
+      ph.appendChild(iframe);
+    }
+    ph.addEventListener('click', inject, {once:true});
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){
+            inject();
+            io.disconnect();
+          }
+        });
+      }, {root:null,rootMargin:'200px'});
+      io.observe(ph);
+    } else {
+      // Fallback: load after a gentle timeout if no IO support
+      setTimeout(inject, 8000);
+    }
+  })();
+</script>
+<noscript>
+  <p>
+    View the map on Google Maps:
+    <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" rel="noopener" target="_blank">Clear Presence, Pleasant Grove, UT</a>
+  </p>
+</noscript>
 
 {{< /col >}}
 

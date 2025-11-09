@@ -14,6 +14,7 @@
 {{- $metaEnabled := not (eq (index $metaConf "enabled") false) -}}
 {{- $delayMs := (index $analytics "delayMs") | default 4000 -}}
 {{- $events := (index $analytics "loadEvents") | default (slice "scroll" "mousemove" "touchstart") -}}
+{{- $onlyOnInteraction := (index $analytics "onlyOnInteraction") | default false -}}
 
 {{- $cfg := dict
   "gaId"        (cond $gaEnabled $gaId "")
@@ -22,6 +23,7 @@
   "metaPixelId" (cond $metaEnabled $metaId "")
   "delayMs"     $delayMs
   "loadEvents"  $events
+  "onlyOnInteraction" $onlyOnInteraction
 -}}
 
 
@@ -46,6 +48,7 @@ window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   var META_ID = (cfg.metaPixelId || '').trim();
   var DELAY_MS = (parseInt(cfg.delayMs, 10) || 4000);
   var LOAD_EVENTS = Array.isArray(cfg.loadEvents) ? cfg.loadEvents : [];
+  var ONLY_ON_INTERACTION = !!cfg.onlyOnInteraction;
 
   function ensureGtagLoaded(id){
     if (!id) return;
@@ -103,7 +106,9 @@ window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
     initMeta();
   }
 
-  try { setTimeout(loadAll, Math.max(0, DELAY_MS|0)); } catch(_) { setTimeout(loadAll, 4000); }
+  if (!ONLY_ON_INTERACTION) {
+    try { setTimeout(loadAll, Math.max(0, DELAY_MS|0)); } catch(_) { setTimeout(loadAll, 4000); }
+  }
   try {
     LOAD_EVENTS.forEach(function(evt){
       if (typeof evt === 'string' && evt) {
