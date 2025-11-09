@@ -74,7 +74,7 @@ Grow your small business in Pleasant Grove with a professional website and local
 
 ## Serving Pleasant Grove, UT
 
-My name is Benjamin Awerkamp and my passion is helping small businesses grow. My wife graduated from Pleasant Grove High School as a Viking so has been fun having an office in her home town. I love helping small businesses in Pleasant Grove grow. 
+My name is Benjamin Awerkamp and my passion is helping small businesses grow. My wife graduated from Pleasant Grove High School as a Viking so has been fun having an office in her home town and helping businesses in this area.
 
 ### Website Design
 
