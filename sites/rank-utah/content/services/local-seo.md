@@ -13,7 +13,7 @@ Get new customers by showing up in local search results.
 
 {{< button url="/contact" text="Contact" >}}
 
-## Do you need more customers or want to raise your prices?
+## Do you need more customers?
 
 Local SEO is an effective strategy for marketing your business to achieve both short-term and long-term results. It's focus is helping your business show up when people search for what you do.
 
@@ -23,7 +23,7 @@ Clear Presence focuses on Local SEO strategies that help your business generate 
 
 {{< section >}}
 
-## What is your Local SEO process?
+## Local SEO 5-Step Process
 
 {{< /section >}}
 
@@ -76,7 +76,7 @@ Clear Presence continuously works to bring you more customers. Local SEO require
 
 {{< section >}}
 
-## What do Local SEO Reports look like
+## SEO Reports
 
 Reports compare the last month with two months before so you can easily track how things are progressing. Here is an report from a current customer. Each indicator displays the % increase or decrease from the previous month.
 
@@ -95,11 +95,13 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 
-## Have additional questions?
+## Check out pricing or ask a question
 
-Reach out directly with a quick phone call or text message to get your questions answers.
+Check ou the pricing page or reach out directly with a phone call or text message to get your questions answers.
 
-{{< button url="/contact" text="Reach Out" >}}
+
+{{< button url="/pricing" text="Pricing" >}}
+{{< button url="/contact" text="Contact" >}}
 
 
 {{< /section >}}
