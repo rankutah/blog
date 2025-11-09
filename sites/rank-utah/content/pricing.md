@@ -51,7 +51,7 @@ Simple monthly pricing. No contracts. No surprises.
 *Get found on Google Maps, Apple Maps, Google, and "near me" searches.*
 
 - Google Business Profile management
-- Manage Google, Apple Maps & Bing directly and sync to 100+ other directories
+- Apple Maps & Bing Places management, plus listings on 100+ directories
 - Local keyword research & strategy
 - Business listings keyword alignment
 - Monthly analytics reports
@@ -77,7 +77,7 @@ This package does not include a business website.
 - Unlimited content updates
 - Mobile-Friendly Design
 - Google Business Profile management
-- Manage Google, Apple Maps & Bing directly and sync to 100+ other directories
+- Apple Maps & Bing Places management, plus listings on 100+ directories
 - Local keyword research & strategy
 - **Content keyword alignment** across your website, Google Business Profile, and listings
 - Monthly analytics reports
