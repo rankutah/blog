@@ -6,7 +6,7 @@ url: "/"
 ---
 
 {{< section img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
-# Website Design & Local SEO {.text-white}
+# Website Design & Local SEO for Small Businesses {.text-white}
 Professional business websites with powerful local SEO
 {.text-white}
 {{<button url="/services/website-design" text="Website Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
