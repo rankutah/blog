@@ -15,14 +15,14 @@ Small businesses are often surprised when a pretty website doesn’t bring in cu
 
 ## Meet the founder
 
-My mission is to bring you customers. I continually spend time researching and understanding web design and local SEO (search engine optimization), and investing in the tools, training, and services that give you the best possible results. I believe in open communication without limits or restriction. Before or after you become a client you can reach out at any time via text, phone, email, or schedule a meeting. My clients receive monthly reports to provide complete transparancy on the value they receive and are not locked into a contract. If you have any questions please don't hestitate to [reach out](/contact).
+My mission is to bring you customers. I continually spend time researching and understanding web design and local SEO (search engine optimization), and investing in the tools, training, and services that give you the best possible results. I believe in open communication without limits or restrictions. Before or after you become a client, you can reach out at any time via text, phone, email, or schedule a meeting. My clients receive monthly reports to provide complete transparency on the value they receive and are not locked into a contract. If you have any questions, please don't hesitate to [reach out](/contact).
 
 
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Web Design Deveoper & Local SEO Specialist <br>
+Web Design Developer & Local SEO Specialist <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
@@ -33,7 +33,7 @@ Bachelor's in Business Management
 
 ## Locations
 
-Clear Presence provides website design and local SEO services for business across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
+Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 

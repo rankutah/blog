@@ -32,10 +32,10 @@ Beautiful design with a strategic marketing focus. Pages are built with a market
 Websites automatically change between light and dark mode based on the viewers device preferences allowing you please everyone. Websites are completely custom built which means faster page loads without the bloat, cleaner design, and greater flexibility to grow with your business.
 
 ### 3. Long-Term Support
-Receive updates as long as you remain a customer. Your webdsite evolves with your business and you can receive support in the way that best fits your needs (calls, email, texts, or meetings).
+Receive updates as long as you remain a customer. Your website evolves with your business and you can receive support in the way that best fits your needs (calls, email, texts, or meetings).
 
 ### 4. Low Monthly Costs
-You get a high performance website without the high risk. There is no lock-in contract. The low monthly cost keeps Clear Presence countinuously committed to your needs.
+You get a high performance website without the high risk. There is no lock-in contract. The low monthly cost keeps Clear Presence continuously committed to your needs.
 
 
 {{< /col >}}

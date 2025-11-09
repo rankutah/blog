@@ -170,3 +170,70 @@
 {{ $obj | jsonify | safeJS }}
 </script>
 {{- end -}}
+
+{{/* --------------- Organization schema (site-wide) ---------------- */}}
+{{- $org := false -}}
+{{- with site.Params.schema.organization -}}
+  {{- if or (and (isset . "enabled") (index . "enabled")) (not (isset . "enabled")) -}}
+    {{- $org = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $org -}}
+<script type="application/ld+json">
+{{- $o := dict "@context" "https://schema.org" "@type" "Organization" "@id" (printf "%s#organization" site.BaseURL) "url" site.BaseURL -}}
+{{- with (index $org "name") -}}{{- $o = merge $o (dict "name" .) -}}{{- end -}}
+{{- with (index $org "legalName") -}}{{- $o = merge $o (dict "legalName" .) -}}{{- end -}}
+{{- with (index $org "logo") -}}{{- $o = merge $o (dict "logo" .) -}}{{- end -}}
+{{- with (index $org "sameAs") -}}{{- $o = merge $o (dict "sameAs" .) -}}{{- end -}}
+{{ $o | jsonify | safeJS }}
+</script>
+{{- end -}}
+
+{{/* --------------- Service schema (per-page opt-in) ---------------- */}}
+{{- $svc := false -}}
+{{- with .Params.schema.service -}}
+  {{- if or (and (isset . "enabled") (index . "enabled")) (not (isset . "enabled")) -}}
+    {{- $svc = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $svc -}}
+<script type="application/ld+json">
+{{- $sobj := dict "@context" "https://schema.org" "@type" "Service" "@id" (printf "%s#%s-service" .Permalink (.File.BaseFileName)) "url" .Permalink -}}
+{{- with (index $svc "serviceType") -}}{{- $sobj = merge $sobj (dict "serviceType" .) -}}{{- end -}}
+{{- with (index $svc "description") -}}{{- $sobj = merge $sobj (dict "description" .) -}}{{- else -}}{{- $sobj = merge $sobj (dict "description" (.Summary | default .Description)) -}}{{- end -}}
+{{- with (index $svc "areaServed") -}}{{- $sobj = merge $sobj (dict "areaServed" .) -}}{{- end -}}
+{{- with (index $svc "provider") -}}{{- $sobj = merge $sobj (dict "provider" (dict "@id" (index $svc "provider"))) -}}{{- else -}}
+  {{- if $org -}}{{- $sobj = merge $sobj (dict "provider" (dict "@id" (printf "%s#organization" site.BaseURL))) -}}{{- end -}}
+{{- end -}}
+{{- with (index $svc "offers") -}}{{- $sobj = merge $sobj (dict "offers" .) -}}{{- end -}}
+{{ $sobj | jsonify | safeJS }}
+</script>
+{{- end -}}
+
+{{/* --------------- FAQPage schema (pricing or other pages) ---------------- */}}
+{{- $faq := false -}}
+{{- with .Params.schema.faq -}}
+  {{- if or (and (isset . "enabled") (index . "enabled")) (not (isset . "enabled")) -}}
+    {{- $faq = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $faq -}}
+<script type="application/ld+json">
+{{- $faqItems := slice -}}
+{{- range (index $faq "items") -}}
+  {{- $faqItems = $faqItems | append (dict "@type" "Question" "name" (index . "question") "acceptedAnswer" (dict "@type" "Answer" "text" (index . "answer"))) -}}
+{{- end -}}
+{{- $fobj := dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $faqItems -}}
+{{ $fobj | jsonify | safeJS }}
+</script>
+{{- end -}}
+
+{{/* --------------- WebSite schema with optional SearchAction ---------------- */}}
+{{- if site.Params.enableSearch -}}
+<script type="application/ld+json">
+{{- $w := dict "@context" "https://schema.org" "@type" "WebSite" "url" site.BaseURL "name" site.Title -}}
+{{- $searchURL := printf "%ssearch/?q={search_term_string}" site.BaseURL -}}
+{{- $w = merge $w (dict "potentialAction" (dict "@type" "SearchAction" "target" $searchURL "query-input" "required name=search_term_string")) -}}
+{{ $w | jsonify | safeJS }}
+</script>
+{{- end -}}

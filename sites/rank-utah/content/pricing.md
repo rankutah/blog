@@ -3,6 +3,22 @@ title: "Pricing"
 description: "Pricing"
 layout: "flowbite"
 url: "/pricing"
+schema:
+  faq:
+    enabled: true
+    items:
+      - question: "What does Local SEO mean?"
+        answer: "Local SEO (search engine optimization) means showing up online when people search for your services or products in your local area."
+      - question: "Can I change plans later?"
+        answer: "Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption."
+      - question: "What happens if I cancel?"
+        answer: "No further charges after cancellation. The site stays online through the current billing period. On request, a content export is provided and the domain can be transferred."
+      - question: "Do you charge setup fees?"
+        answer: "No. Setup is included in your monthly price."
+      - question: "What does ‘unlimited content updates’ include?"
+        answer: "Requests typical of a small-business website: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish blog posts you provide. Large custom app-like features are quoted separately."
+      - question: "How long does a new website take?"
+        answer: "Websites can be built in 2–3 weeks with regular coordination."
 ---
 
 {{< section >}}
@@ -121,7 +137,7 @@ Fair use and scope:
 - Heavy request bursts may be queued to maintain quality
 
 ### How long does a new website take?
-Websites can be built in 2-3 weeks with regular coordination.
+Websites can be built in 2–3 weeks with regular coordination.
 
 {{< /faqs >}}
 

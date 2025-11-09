@@ -56,7 +56,7 @@ In progress. Releasing soon.
 
 **Daniel De Souza** <br>
 {{<stars>}}<br>
-"Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients."
+"Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professionals who care about their clients."
 
 {{< button url="https://blueridgeabbey.com/" text="Visit Blue Ridge Abbey" newtab="true" >}}
 {{< button url="/portfolio/blue-ridge-abbey" text="Performance Results" >}}
@@ -103,7 +103,7 @@ Just Released!
 
 **Michelle L.**<br>
 {{<stars>}}<br>
-"Benjamin sorted through a mess of past websites with lost passcodes and outdated design and voila —now we have a beautiful working website. Highly recommend!"
+"Benjamin sorted through a mess of past websites with lost passcodes and outdated design and voilà—now we have a beautiful, working website. Highly recommend!"
 
 {{< button url="https://villavalenciaojai.com/" text="Visit Villa Valencia" newtab="true" >}}
 

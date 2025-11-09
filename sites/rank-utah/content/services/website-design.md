@@ -3,6 +3,23 @@ title: "Website Design"
 description: "Custom website design for small businesses"
 layout: "flowbite"
 url: "/services/website-design"
+schema:
+  service:
+    enabled: true
+    serviceType: "Website Design"
+    description: "Custom, fast, conversion-focused business websites built for performance and leads."
+    areaServed: "United States"
+    offers:
+      - "@type": "Offer"
+        priceCurrency: "USD"
+        price: "149"
+        url: "https://clearpresence.io/pricing"
+        availability: "https://schema.org/InStock"
+      - "@type": "Offer"
+        priceCurrency: "USD"
+        price: "299"
+        url: "https://clearpresence.io/pricing"
+        availability: "https://schema.org/InStock"
 ---
 
 {{< section>}}
@@ -140,7 +157,7 @@ Save your colors by sending a quick message.
 
 ## Step 3:
 
-Decide if you are in need of {{< button url="/services/local-seo" text="Local SEO" >}} and then pick your {{< button url="/pricing" text="Pricing Package">}}
+Decide whether you also need {{< button url="/services/local-seo" text="Local SEO" >}} and then choose your {{< button url="/pricing" text="Pricing Package">}}
 
 {{< /section >}}
 

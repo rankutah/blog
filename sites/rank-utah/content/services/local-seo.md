@@ -3,6 +3,23 @@ title: "Local SEO"
 description: "Local SEO for small businesses"
 layout: "flowbite"
 url: "/services/local-seo"
+schema:
+  service:
+    enabled: true
+    serviceType: "Local SEO"
+    description: "Local SEO strategy to increase visibility in maps and local search, driving high-quality leads."
+    areaServed: "United States"
+    offers:
+      - "@type": "Offer"
+        priceCurrency: "USD"
+        price: "199"
+        url: "https://clearpresence.io/pricing"
+        availability: "https://schema.org/InStock"
+      - "@type": "Offer"
+        priceCurrency: "USD"
+        price: "299"
+        url: "https://clearpresence.io/pricing"
+        availability: "https://schema.org/InStock"
 ---
 
 {{< section >}}
@@ -15,7 +32,7 @@ Get new customers by showing up in local search results.
 
 ## Do you need more customers?
 
-Local SEO is an effective strategy for marketing your business to achieve both short-term and long-term results. It's focus is helping your business show up when people search for what you do.
+Local SEO is an effective strategy for marketing your business to achieve both short-term and long-term results. Its focus is helping your business show up when people search for what you do.
 
 Clear Presence focuses on Local SEO strategies that help your business generate high-quality leads using this simple and effective process.
 
@@ -78,7 +95,7 @@ Clear Presence continuously works to bring you more customers. Local SEO require
 
 ## SEO Reports
 
-Reports compare the last month with two months before so you can easily track how things are progressing. Here is an report from a current customer. Each indicator displays the % increase or decrease from the previous month.
+Reports compare the last month with the two months before so you can easily track how things are progressing. Below is a report from a current customer. Each indicator displays the percentage increase or decrease from the previous month.
 
 
 ![](../../media/local-seo-analytics-report.avif)
@@ -97,7 +114,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 ## Check out pricing or ask a question
 
-Check ou the pricing page or reach out directly with a phone call or text message to get your questions answers.
+Check out the pricing page or reach out directly with a phone call or text message to get your questions answered.
 
 
 {{< button url="/pricing" text="Pricing" >}}

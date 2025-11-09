@@ -68,6 +68,14 @@ uglyURLs      = true
   author              = "Benjamin Awerkamp"
   hideMeta            = false
 
+[params.schema.organization]
+enabled = true
+name = "Clear Presence LLC"
+legalName = "Clear Presence LLC"
+url = "https://clearpresence.io/"
+logo = "/media/logo.png"
+sameAs = []
+
 
 [params.socialDefaults]
   size = "w-8 h-8"

@@ -21,6 +21,10 @@ schema:
         opens: "09:00"
         closes: "17:00"
     hasMap: "https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062"
+    geo:
+      latitude: "40.35949"
+      longitude: "-111.77212"
+    priceRange: "$149–$299/mo"
 ---
 
 {{< section img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
@@ -74,15 +78,15 @@ Grow your small business in Pleasant Grove with a professional website and local
 
 ## Serving Pleasant Grove, UT
 
-My name is Benjamin Awerkamp and my passion is helping small businesses grow. My wife graduated from Pleasant Grove High School as a Viking so has been fun having an office in her home town and helping businesses in this area.
+My name is Benjamin Awerkamp and my passion is helping small businesses grow. My wife graduated from Pleasant Grove High School as a Viking, so it's been fun having an office in her hometown and helping businesses in this area.
 
 ### Website Design
 
-My web design process is unique from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My websites are custom built so they are fast, beautiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
+My web design process is different from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My websites are custom built so they are fast, beautiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do a low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
 
 ### Local SEO
 
-My local SEO process is unique from other marketing companies in that it is affordable, has no lock-in contracts, and you receive clear monthly reports so you always are up to date on how the SEO efforts are improving your business. I have an open communication policy so you can contact me any time. My method is low-risk allowing you to come and see for yourself.
+My local SEO process is different from other marketing companies in that it is affordable, has no lock-in contracts, and you receive clear monthly reports so you are always up-to-date on how the SEO efforts are improving your business. I have an open communication policy so you can contact me any time. My method is low-risk, allowing you to come and see for yourself.
 
 {{< /section >}}
 
