@@ -93,7 +93,7 @@ My local SEO process is unique from other marketing companies in that it is affo
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 
-![Benjamin Awerkamp headshot Web Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![Headshot of Benjamin Awerkamp, the Website Designer & Local SEO Expert](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-48}
 **Benjamin Awerkamp** <br>
 Call or Text: (385) 323-8130 <br>
@@ -115,8 +115,6 @@ You can learn more about my website design process and local SEO process by visi
 I'm available 9am-5pm Mon-Fri but feel free to leave me a text or voicemail after hours.
 
 {{< button url="/contact" text="Contact" >}}
-
-
 
 {{< /col >}}
 
