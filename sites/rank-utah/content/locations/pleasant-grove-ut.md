@@ -1,6 +1,6 @@
 ---
-title: "Website Design in Pleasant Grove, UT"
-description: "Custom website design for small businesses in Pleasant Grove, Utah"
+title: "Website Design & Local SEO in Pleasant Grove, UT"
+description: "Custom website design and local SEO for small businesses in Pleasant Grove, Utah"
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -24,10 +24,10 @@ schema:
 ---
 
 {{< section img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Pleasant Grove Website Design for Small Businesses {.text-white}
-Professional business websites that bring you customers
+# Pleasant Grove Website Design & Local SEO for Small Businesses {.text-white}
+Professional business websites & local SEO that bring you customers
 {.text-white}
-{{<button url="/services/website-design" text="Web Design">}}{{<button url="/contact" text="Contact">}}
+{{<button url="/services/website-design" text="Web Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
 {{< /section >}}
 
 
@@ -42,18 +42,18 @@ Professional business websites that bring you customers
 - Business Hours: Mon–Fri, 9am–5pm
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-![Clear Presence Website Design Storefront Sign in Pleasant Grove, UT](/media/storefront-sign-business-web-design-local-seo.jpeg)
+![Clear Presence Website Design & Local SEO Storefront Sign in Pleasant Grove, UT](/media/storefront-sign-business-web-design-local-seo.jpeg)
 
 
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Website Design in Pleasant Grove
+## Website Design & Local SEO in Pleasant Grove, UT
 
-Grow your small business in Pleasant Grove with a professional website. Reach out via call, text, or email.
+Grow your small business in Pleasant Grove with a professional website and local SEO. Reach out via call, text, or email.
 
-{{< button url="/services/website-design" text="Website Design" >}} {{< button url="/contact" text="Contact" >}}
+{{< button url="/pricing" text="Pricing" >}} {{< button url="/contact" text="Contact" >}}
 
 <br>
 
@@ -74,10 +74,17 @@ Grow your small business in Pleasant Grove with a professional website. Reach ou
 
 ## Serving Pleasant Grove, UT
 
-My wife graduated from Pleasant Grove High School as a Viking so it is fun having an office in her home town. My web design process is unique from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My websites are custom built so they are fast, beautiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
+My name is Benjamin Awerkamp. My passion is helping small businesses grow. My wife graduated from Pleasant Grove High School as a Viking so it is fun having an office in her home town.
+
+### Website Design
+
+My web design process is unique from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My websites are custom built so they are fast, beautiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
+
+### Local SEO
+
+My local SEO process is unique from other marketing companies in that it is affordable, has no lock-in contracts, and you receive clear monthly reports so you always are up to date on how the SEO efforts are improving your business. I have an open communication policy so you can contact me any time. My method is low-risk allowing you to come and see for yourself.
 
 {{< /section >}}
-
 
 {{< section >}}
 
@@ -90,7 +97,7 @@ My wife graduated from Pleasant Grove High School as a Viking so it is fun havin
 {.w-48}
 **Benjamin Awerkamp** <br>
 Call or Text: (385) 323-8130 <br>
-Web Designer / Web Developer <br>
+Website Designer / Website Developer <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
 {{< /col >}}
@@ -99,9 +106,9 @@ Bachelor's in Business Management
 
 ## Learn More
 
-You can learn more about my website design process by visiting the following page.
+You can learn more about my website design process and local SEO process by visiting the following pages.
 
-{{< button url="/services/website-design" text="Web Design" >}}
+{{< button url="/services/website-design" text="Web Design" >}} {{< button url="/services/local-seo" text="Local SEO" >}}
 
 ## Reach Out
 
