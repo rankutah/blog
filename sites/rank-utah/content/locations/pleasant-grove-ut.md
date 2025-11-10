@@ -28,10 +28,17 @@ schema:
 ---
 
 {{< section img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Pleasant Grove Website Design for Small Businesses {.text-white}
-Professional business websites that bring you customers
+# Website Design in Pleasant Grove {.text-white}
+Professional Small Business Websites
 {.text-white}
-{{<button url="/services/website-design" text="Website Design">}}{{<button url="/portfolio" text="Website Portfolio">}}
+
+
+
+{{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
+{{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
+
+{{< lead-form id="pg-hero-lead" contact="true" button="Get a Free Quote" >}}
+<div class="mt-6"></div>
 {{< /section >}}
 
 
@@ -58,7 +65,7 @@ Professional business websites that bring you customers
 Grow your small business in Pleasant Grove with a professional website. Reach out via call, text, or email.
 
 {{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/pricing" text="Website Pricing" >}} {{< button url="/contact" text="Get Started" >}}
+{{< button url="/pricing" text="Website Pricing" >}}
 
 <br>
 
@@ -120,16 +127,14 @@ Grow your small business in Pleasant Grove with a professional website. Reach ou
 
 {{< section >}}
 
-## What Clients Are Saying
+## Customer Website Design Experiences
 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## Serving Pleasant Grove, UT
+## About Website Design in Pleasant Grove, UT
 
 My name is Benjamin Awerkamp and my passion is helping small businesses grow. My wife graduated from Pleasant Grove High School as a Viking, so it's been fun having an office in her hometown and helping businesses in this area.
-
-### Website Design
 
 My web design process is different from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My websites are custom built so they are fast, beautiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do a low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
 
@@ -153,7 +158,7 @@ Bachelor's in Business Management
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Learn More
+## Website Design Process
 
 You can learn more about my website design process by visiting the following pages.
 
@@ -164,7 +169,11 @@ You can learn more about my website design process by visiting the following pag
 
 I'm available 9am-5pm Mon-Fri but feel free to leave me a text or voicemail after hours.
 
-{{< button url="/contact" text="Contact" >}}
+{{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
+{{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
+
+{{< lead-form id="pg-hero-lead" contact="true" button="Get a Free Quote" >}}
+
 
 {{< /col >}}
 

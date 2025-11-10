@@ -1,0 +1,62 @@
+{{- /* Minimal hero lead form (independent of full contact-form shortcode) */ -}}
+{{- $page := .Page -}}
+{{- $id := .Get "id" | default "hero-lead" -}}
+{{- $action := or (.Get "action") (or $page.Site.Params.formspark.action $page.Site.Params.forms.action) -}}
+{{- $phoneParam := lower (.Get "phone" | default "true") -}}
+{{- $showPhone := ne $phoneParam "false" -}}
+{{- $phoneRequired := eq $phoneParam "true" -}}
+{{- $phoneOptional := eq $phoneParam "optional" -}}
+{{- $showEmail := ne (lower (.Get "email" | default "optional")) "false" -}}
+{{- $emailRequired := eq (lower (.Get "email" | default "optional")) "true" -}}
+{{- $buttonText := .Get "button" | default "Get Quote" -}}
+{{- $brand := lower (or $page.Site.Params.primaryColor "blue") -}}
+{{- $turnstileParam := lower (.Get "turnstile" | default "true") -}}
+{{- $tsEnabled := or (eq $turnstileParam "true") (and (ne $turnstileParam "false") (and (isset $page.Site.Params "turnstile") (or $page.Site.Params.turnstile.enable false))) -}}
+{{- $tsSiteKey := cond (and (isset $page.Site.Params "turnstile") (isset $page.Site.Params.turnstile "sitekey")) $page.Site.Params.turnstile.sitekey "" -}}
+{{- /* Combined contact field param (true|optional) overrides individual email/phone fields */ -}}
+{{- $contactParam := lower (.Get "contact" | default "") -}}
+{{- $showContact := or (eq $contactParam "true") (eq $contactParam "optional") -}}
+{{- $contactRequired := eq $contactParam "true" -}}
+{{- $contactOptional := eq $contactParam "optional" -}}
+
+{{- if not $action -}}
+  <div class="text-red-700 bg-red-50/80 p-4 rounded text-sm">Missing form action. Configure [params.formspark.action] or pass action="...".</div>
+{{- else -}}
+  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="cp-contact space-y-3 text-left backdrop-blur-sm bg-white/90 dark:bg-gray-900/80 p-4 rounded-lg shadow max-w-sm w-full mx-auto">
+    <input type="hidden" name="page_url" value="{{ $page.Permalink }}">
+    <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;">
+      <label for="{{ $id }}-hp">Leave this field empty</label>
+      <input id="{{ $id }}-hp" type="text" name="_hp" tabindex="-1" autocomplete="off" value="">
+    </div>
+    <div>
+      <label for="{{ $id }}-name" class="sr-only">Name</label>
+      <input id="{{ $id }}-name" name="name" type="text" placeholder="Name" class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
+    </div>
+    {{- if and (not $showContact) $showEmail }}
+    <div>
+      <label for="{{ $id }}-email" class="sr-only">Email</label>
+      <input id="{{ $id }}-email" name="email" type="email" placeholder="Email{{ if not $emailRequired }} (Optional){{ end }}" {{ if $emailRequired }}required{{ end }} class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
+    </div>
+    {{- end }}
+    {{- if and (not $showContact) $showPhone }}
+    <div>
+      <label for="{{ $id }}-phone" class="sr-only">Phone</label>
+      <input id="{{ $id }}-phone" name="phone" type="tel" placeholder="Phone{{ if $phoneOptional }} (Optional){{ end }}" {{ if $phoneRequired }}required{{ end }} class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600" inputmode="tel" pattern="[0-9()+\-\s]*">
+    </div>
+    {{- end }}
+    {{- if $showContact }}
+    <div>
+      <label for="{{ $id }}-contact" class="sr-only">Contact</label>
+      <input id="{{ $id }}-contact" name="contact" type="text" placeholder="Email or Phone{{ if $contactOptional }} (Optional){{ end }}" {{ if $contactRequired }}required{{ end }} class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600" autocomplete="off" inputmode="email" />
+    </div>
+    {{- end }}
+    {{- if and $tsEnabled $tsSiteKey }}
+      <div class="cf-turnstile" data-sitekey="{{ $tsSiteKey }}" data-theme="auto"></div>
+      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    {{- end }}
+    {{- /* Build color classes safely to avoid template parse issues with hyphen subtraction */ -}}
+    {{- $btnClasses := printf "w-full inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-%s-600 hover:bg-%s-700 focus:ring-4 focus:ring-%s-300 dark:focus:ring-%s-800 rounded-lg px-5 py-2.5 transition" $brand $brand $brand $brand -}}
+    <button type="submit" class="{{ $btnClasses }}">{{ $buttonText }}</button>
+    <p class="text-[11px] text-gray-500 dark:text-gray-400 leading-snug">By submitting you agree we may contact you about your request. <a href="/privacy" class="underline">Privacy</a>.</p>
+  </form>
+{{- end -}}
