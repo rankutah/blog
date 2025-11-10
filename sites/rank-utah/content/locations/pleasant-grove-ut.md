@@ -181,8 +181,6 @@ I'm available 9am-5pm Mon-Fri but feel free to leave me a text or voicemail afte
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
 
-{{< lead-form id="pg-hero-lead" name="false" contact="true" button="Get a Free Quote" >}}
-
 
 {{< /col >}}
 
