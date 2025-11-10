@@ -58,8 +58,7 @@
     </div>
     {{- end }}
     {{- if and $tsEnabled $tsSiteKey }}
-      <div class="cf-turnstile" data-sitekey="{{ $tsSiteKey }}" data-theme="auto"></div>
-      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <div class="cf-turnstile" data-sitekey="{{ $tsSiteKey }}" data-theme="auto" data-auto="false" data-lazy="true"></div>
     {{- end }}
     {{- /* Build color classes safely to avoid template parse issues with hyphen subtraction */ -}}
     {{- $btnClasses := printf "w-full inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-%s-600 hover:bg-%s-700 focus:ring-4 focus:ring-%s-300 dark:focus:ring-%s-800 rounded-lg px-5 py-2.5 transition" $brand $brand $brand $brand -}}

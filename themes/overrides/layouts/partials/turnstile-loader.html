@@ -1,0 +1,52 @@
+<script>
+(function(){
+  var SELECTOR = '.cf-turnstile';
+  // Use explicit render mode to prevent auto-render conflicts
+  var SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+  var loading = false, loaded = false;
+
+  function renderAll(){
+    try {
+      if (!window.turnstile || typeof window.turnstile.render !== 'function') return;
+      document.querySelectorAll(SELECTOR).forEach(function(el){
+        if (!el.dataset.tsRendered) {
+          try { window.turnstile.render(el); el.dataset.tsRendered = '1'; } catch(_){}
+        }
+      });
+    } catch(_){}
+  }
+
+  function inject(){
+    if (loading || loaded) return;
+    loading = true;
+    var s = document.createElement('script');
+    s.src = SRC; s.async = true; s.defer = true;
+    s.onload = function(){ loaded = true; renderAll(); };
+    s.onerror = function(){ loading = false; };
+    document.head.appendChild(s);
+  }
+
+  function setup(){
+    var nodes = document.querySelectorAll(SELECTOR);
+    if (!nodes.length) return;
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting) { inject(); io.disconnect(); }
+        });
+      }, { root: null, rootMargin: '200px' });
+      nodes.forEach(function(n){ io.observe(n); });
+    } else {
+      // Fallback: user interaction or timeout
+      window.addEventListener('scroll', inject, { once: true, passive: true });
+      window.addEventListener('mousemove', inject, { once: true, passive: true });
+      window.addEventListener('touchstart', inject, { once: true, passive: true });
+      setTimeout(inject, 6000);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setup);
+  } else { setup(); }
+})();
+</script>

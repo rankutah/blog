@@ -30,6 +30,8 @@
 {{- end }}
 
 {{- partial "extend_footer.html" . }}
+{{- /* Lazy loader for Cloudflare Turnstile widgets (only injects script when a widget nears viewport) */ -}}
+{{- partial "turnstile-loader.html" . }}
 
 {{/* Global click tracker (GA4). Safe to include always; no-ops if GA isn’t present. */}}
 <script defer src="{{ "js/click-tracker.js" | relURL }}"></script>

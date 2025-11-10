@@ -211,11 +211,10 @@
       {{- end }}
     {{- end }}
 
-    {{- /* Cloudflare Turnstile widget (if enabled and sitekey present). The widget injects cf-turnstile-response into the form POST */ -}}
+    {{- /* Cloudflare Turnstile widget (if enabled and sitekey present). Lazy-loaded via global loader */ -}}
     {{- if $tsEnabled -}}
       {{- if $tsSiteKey -}}
-        <div class="cf-turnstile" data-sitekey="{{ $tsSiteKey }}" data-theme="auto"></div>
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <div class="cf-turnstile" data-sitekey="{{ $tsSiteKey }}" data-theme="auto" data-auto="false" data-lazy="true"></div>
       {{- else -}}
         <div class="text-amber-700 bg-amber-50 dark:bg-amber-900/30 dark:text-amber-300 p-3 rounded text-sm">
           Turnstile is enabled but no site key configured. Set [params.turnstile.sitekey] in config.toml.
