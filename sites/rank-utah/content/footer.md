@@ -19,9 +19,6 @@ Website Design & Local SEO for Small Businesses
 
 {{< lead-form id="pg-hero-lead" name="false" contact="true" button="Get a Free Quote" >}}
 
-
-
-
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
