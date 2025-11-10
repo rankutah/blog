@@ -29,7 +29,7 @@ schema:
 
 {{< section img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design in Pleasant Grove {.text-white}
-Professional Small Business Websites
+Professional websites that bring you customers
 {.text-white}
 
 
@@ -37,7 +37,7 @@ Professional Small Business Websites
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
 
-{{< lead-form id="pg-hero-lead" contact="true" button="Get a Free Quote" >}}
+{{< lead-form id="pg-hero-lead" name="false" contact="true" button="Get a Free Quote" >}}
 <div class="mt-6"></div>
 {{< /section >}}
 
@@ -132,11 +132,20 @@ Grow your small business in Pleasant Grove with a professional website. Reach ou
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## About Website Design in Pleasant Grove, UT
+## Website Design in Pleasant Grove, UT
 
-My name is Benjamin Awerkamp and my passion is helping small businesses grow. My wife graduated from Pleasant Grove High School as a Viking, so it's been fun having an office in her hometown and helping businesses in this area.
+Get a website that brings you more calls, quotes, and bookings—not just a pretty homepage. You’ll get a fast, mobile-friendly site built for local search and clear CTAs, plus ongoing help by call, text, or email whenever you need it.
 
-My web design process is different from other website designers in that I always maintain my focus on marketing and the actual performance of the site. My websites are custom built so they are fast, beautiful, mobile-friendly, and you enjoy long-term support in the way that best fits your needs (calls, texts, emails, or meetings). Instead of large upfront fees I do a low monthly subscription with no lock-in contract so your website evolves with your business and allows you to focus on what you do best.
+### What you get
+
+- Custom design that fits your brand and looks great on phones.
+- Built-in local SEO basics (titles, schema, speed, GBP best practices) so you’re easier to find in Pleasant Grove and Utah County.
+- Conversion-focused pages with clear “Call” and “Text” options to turn visitors into leads.
+- Month-to-month support—no lock-in—so your site keeps improving as your business grows.
+- Simple pricing (low monthly subscription) instead of a big upfront fee.
+
+### Local & responsive
+I’m based here in Pleasant Grove, so you get quick responses and local context. Need a change? Send a text and it’s handled.
 
 {{< /section >}}
 
@@ -172,7 +181,7 @@ I'm available 9am-5pm Mon-Fri but feel free to leave me a text or voicemail afte
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
 
-{{< lead-form id="pg-hero-lead" contact="true" button="Get a Free Quote" >}}
+{{< lead-form id="pg-hero-lead" name="false" contact="true" button="Get a Free Quote" >}}
 
 
 {{< /col >}}

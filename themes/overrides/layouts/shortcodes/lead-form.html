@@ -1,6 +1,11 @@
 {{- /* Minimal hero lead form (independent of full contact-form shortcode) */ -}}
 {{- $page := .Page -}}
 {{- $id := .Get "id" | default "hero-lead" -}}
+{{- /* Name field control: true|optional|false (default true) */ -}}
+{{- $nameParam := lower (.Get "name" | default "true") -}}
+{{- $showName := ne $nameParam "false" -}}
+{{- $nameOptional := eq $nameParam "optional" -}}
+{{- $nameRequired := eq $nameParam "true" -}}
 {{- $action := or (.Get "action") (or $page.Site.Params.formspark.action $page.Site.Params.forms.action) -}}
 {{- $phoneParam := lower (.Get "phone" | default "true") -}}
 {{- $showPhone := ne $phoneParam "false" -}}
@@ -28,10 +33,12 @@
       <label for="{{ $id }}-hp">Leave this field empty</label>
       <input id="{{ $id }}-hp" type="text" name="_hp" tabindex="-1" autocomplete="off" value="">
     </div>
+    {{- if $showName }}
     <div>
       <label for="{{ $id }}-name" class="sr-only">Name</label>
-      <input id="{{ $id }}-name" name="name" type="text" placeholder="Name" class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
+      <input id="{{ $id }}-name" name="name" type="text" placeholder="Name{{ if $nameOptional }} (Optional){{ end }}" {{ if $nameRequired }}required{{ end }} class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
     </div>
+    {{- end }}
     {{- if and (not $showContact) $showEmail }}
     <div>
       <label for="{{ $id }}-email" class="sr-only">Email</label>
