@@ -130,6 +130,7 @@ As we’ve restored this home and opened it once more to guests, we have been de
 ## Nearby Adventures
 
 {{< table headers="Adventures|Distance" delim="|" >}}
+[Leaf & Lore Store](https://leafandlorestore.com/)|1 min
 [SVU](https://svu.edu/)|2 min
 [Glen Maury Park](https://www.buenavistava.org/residents/recreation/glen-maury-park/)|6 min
 [Blue Ridge Parkway](https://www.blueridgeparkway.org/)|10 min
