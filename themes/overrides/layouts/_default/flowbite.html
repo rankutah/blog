@@ -213,8 +213,11 @@
 <body id="top" class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg">
   {{ partial "navbar.html" . }}
 
-  {{- /* If this is the homepage, or the page declares a hero, or uses a landing layout, remove the top pad */ -}}
-  {{- $isHeroPage := or .IsHome .Params.hero (eq .Params.layout "landing") -}}
+  {{- /* Determine if page should flush against navbar.
+    Previous logic flushed ALL homepages which broke non-hero home designs.
+    New rule: only flush if (homepage AND not plainHome flag) OR explicit hero param OR landing layout.
+    Add `plainHome = true` in front matter to keep normal top spacing on a homepage without a hero image. */ -}}
+  {{- $isHeroPage := or (and .IsHome (not .Params.plainHome)) .Params.hero (eq .Params.layout "landing") -}}
   <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync{{ if $isHeroPage }} style="padding-top:0;margin-top:0"{{ end }}>
     <article class="prose prose-zinc max-w-none dark:prose-invert"{{ if $isHeroPage }} style="margin-top:0"{{ end }}>
       {{ .Content }}

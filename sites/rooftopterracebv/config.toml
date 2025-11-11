@@ -1,0 +1,58 @@
+baseURL = "https://rooftopterracebv.com/"
+languageCode = "en-us"
+title = "Rooftop Terrace BV"
+theme = ["overrides", "PaperMod"]
+themesDir = "../../themes"
+
+# Match other single page simplifications but allow sitemap/robots later; keep minimal for now.
+disableKinds = ["taxonomy", "term"]
+# Single-page site: keep only home output types (HTML + JSON + FORMS for form handling consistency)
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"
+
+[outputs]
+  home = ["HTML", "JSON", "FORMS"]
+
+[cascade]
+  layout = "flowbite"
+
+# No menu / nav links for now; omit [[menu.main]] entries
+
+[params]
+  description = "Invest in possibility: join the movement to restore vibrancy and spark growth in a city on the rise."
+  keywords = ["investment", "redevelopment", "buena vista", "rooftop terrace"]
+  primaryColor = "gray"
+  # Navbar logo image (placed under this site's media/ and mounted via shared config)
+  logo = "media/logo.jpg"
+  lightBackground = "neutral-100"
+  darkBackground = "neutral-800"
+  cardBackground = "white"
+  cardBackgroundDark = "neutral-900"
+  cardBorderLight = "gray-200"
+  cardBorderDark = "gray-700"
+  # Turnstile/analytics intentionally omitted for now; inherits lazy loaders but no IDs means no tracking
+
+  # Formspark placeholder (replace before launch). Keeping key name consistent with other sites.
+  [params.formspark]
+    action = "https://submit-form.com/REPLACE_ME"  # TODO: supply real endpoint
+
+  # Header minimal: hide default menu / set compact logo logic if needed later
+  [params.header]
+    titleSize = "2xl"
+    showTitle = true
+    hideNav = true
+    stickyMobile = true
+    stickyDesktop = true
+
+  # SEO / Open Graph fallbacks
+  [params.seo]
+    title = "Rooftop Terrace BV — Join the Movement"
+    description = "Join a movement to restore vibrancy, spark growth, and shape the future of a city on the rise. Your investment isn’t just in property—it’s in possibility."
+
+[permalinks]
+  posts = "/:slug/"
+
+

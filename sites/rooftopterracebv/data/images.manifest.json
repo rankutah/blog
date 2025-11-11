@@ -1,0 +1,182 @@
+{
+  "/media/logo.jpg": {
+    "width": 338,
+    "height": 248,
+    "aspect": 1.3629032258064515,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQYAAv/EACsQAAIBAwMDAgUFAAAAAAAAAAECAwAEEQUGEiExYUGRExQjUVJxobHR4f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCzrl3VFLOwVR3JOAKMuNbX4729hby3s6HiwQYRT5Y9Kld1xa04Wa+Ci2zhUhbKqfPnzQIa3uoxalbR6Y4mWM/U49Vkz04j+6qreVpoVd4nhYjqj4yPaona23br56K9vImhiiPJFfoWPp0+3rV3QA3O7NJtciORpj3xEnr+pwKD1HepuYnhgslCMMcpWz+wrVqAs7o1bK8bsqF7AKMf7Sljvm4TC3tuko/KM8T7dv4rVqD/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.avif"
+        },
+        {
+          "w": 338,
+          "url": "/media-deriv/logo__w338.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.jpg"
+        },
+        {
+          "w": 338,
+          "url": "/media-deriv/logo__w338.jpg"
+        }
+      ]
+    }
+  },
+  "/media/logo.avif": {
+    "width": 338,
+    "height": 248,
+    "aspect": 1.3629032258064515,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQYAAv/EACsQAAIBAwMDAgUFAAAAAAAAAAECAwAEEQUGEiExYUGRExQjUVJxobHR4f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCzrl3VFLOwVR3JOAKMuNbX4729hby3s6HiwQYRT5Y9Kld1xa04Wa+Ci2zhUhbKqfPnzQIa3uoxalbR6Y4mWM/U49Vkz04j+6qreVpoVd4nhYjqj4yPaona23br56K9vImhiiPJFfoWPp0+3rV3QA3O7NJtciORpj3xEnr+pwKD1HepuYnhgslCMMcpWz+wrVqAs7o1bK8bsqF7AKMf7Sljvm4TC3tuko/KM8T7dv4rVqD/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.avif"
+        },
+        {
+          "w": 338,
+          "url": "/media-deriv/logo__w338.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/logo__w320.jpg"
+        },
+        {
+          "w": 338,
+          "url": "/media-deriv/logo__w338.jpg"
+        }
+      ]
+    }
+  },
+  "/media/rooftop-terrace.jpg": {
+    "width": 1101,
+    "height": 476,
+    "aspect": 2.313025210084034,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAOACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEC/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIRAAMEBRIhMRNBUXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEC/9oADAMBAAIRAxEAPwAd/WMgGLRj0Sy1izqWaxZVL3GjceuKGzkPuhe+o4peMtu8pYKQ3RmmNR1lVztR3s5YwQDyogD6p76kbSIWXeSJhV5NEawpA2klh6bqPypkP4MfiSegfigNKl//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rooftop-terrace__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rooftop-terrace__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rooftop-terrace__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rooftop-terrace__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rooftop-terrace__w960.avif"
+        },
+        {
+          "w": 1101,
+          "url": "/media-deriv/rooftop-terrace__w1101.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rooftop-terrace__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rooftop-terrace__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rooftop-terrace__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rooftop-terrace__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rooftop-terrace__w960.jpg"
+        },
+        {
+          "w": 1101,
+          "url": "/media-deriv/rooftop-terrace__w1101.jpg"
+        }
+      ]
+    }
+  },
+  "/media/rooftop-terrace.avif": {
+    "width": 1101,
+    "height": 476,
+    "aspect": 2.313025210084034,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAOACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEC/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIRAAMEBRIhMRNBUXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEC/9oADAMBAAIRAxEAPwAd/WMgGLRj0Sy1izqWaxZVL3GjceuKGzkPuhe+o4peMtu8pYKQ3RmmNR1lVztR3s5YwQDyogD6p76kbSIWXeSJhV5NEawpA2klh6bqPypkP4MfiSegfigNKl//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rooftop-terrace__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rooftop-terrace__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rooftop-terrace__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rooftop-terrace__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rooftop-terrace__w960.avif"
+        },
+        {
+          "w": 1101,
+          "url": "/media-deriv/rooftop-terrace__w1101.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rooftop-terrace__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rooftop-terrace__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rooftop-terrace__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rooftop-terrace__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rooftop-terrace__w960.jpg"
+        },
+        {
+          "w": 1101,
+          "url": "/media-deriv/rooftop-terrace__w1101.jpg"
+        }
+      ]
+    }
+  }
+}
