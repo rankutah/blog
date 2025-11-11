@@ -1,13 +1,13 @@
 ---
-title: "Bed & Breakfast in Buena Vista, Virginia"
-description: "Quiet B&B hotel alternative in Buena Vista, VA. Private rooms, hot breakfast, easy parking. Minutes to SVU, Lexington, and Natural Bridge. Book direct."
+title: "Hotels in Buena Vista, Virginia | Bed & Breakfast Near Lexington, VA"
+description: "Searching for hotels in Buena Vista, Virginia? Come stay at the Blue Ridge Abbey Bed and Breakfast. Private rooms, hot breakfast, easy parking. Minutes to Lexington, SVU, and Natural Bridge."
 layout: "flowbite"
 url: "/"
 ---
 
 {{< section img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
-Near Blue Ridge Parkway, Natural Bridge, and Safari Park
+Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
 {{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Contact">}}
 {{< /section >}}
@@ -167,6 +167,9 @@ As we’ve restored this home and opened it once more to guests, we have been de
 ## Explore Buena Vista
 A guide to the top scenic drives, hikes, orchards, and photo spots for peak color near Blue Ridge Abbey. <br><br>
 {{< button url="/blog/fall-in-buena-vista" text="Fall in Buena Vista" >}}
+
+Holiday magic near Buena Vista, VA: drive-thru lights at Glen Maury, Natural Bridge trees, parades, concerts & shop-small fun. Plan a Blue Ridge getaway. <br><br>
+{{< button url="/blog/holiday-magic-in-the-blue-ridge" text="Blue Ridge Holiday Magic" >}}
 
 {{< /col >}}
 
