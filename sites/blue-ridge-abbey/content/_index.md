@@ -25,7 +25,7 @@ Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 
 ## Cozy Rooms
 
-All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and shampoo, conditioner, and body wash.
+Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and shampoo, conditioner, and body wash.
 
 
 {{< button url="/rooms" text="Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
