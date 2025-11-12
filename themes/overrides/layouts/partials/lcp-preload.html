@@ -35,7 +35,7 @@
   {{- end -}}
   {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
     {{- if ne $avifSrcset "" -}}
-      <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" type="image/avif" imagesrcset="{{ $avifSrcset }}" imagesizes="{{ $avifSizes }}">
+      <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" imagesrcset="{{ $avifSrcset | safeHTMLAttr }}" imagesizes="{{ $avifSizes | safeHTMLAttr }}">
     {{- else -}}
       <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high">
     {{- end -}}

@@ -181,7 +181,10 @@
             {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
             {{- $last = $r.RelPermalink -}}
             {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
-            {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+            {{- /* Only include AVIF candidate if the output truly is .avif */ -}}
+            {{- if (hasSuffix (lower $ravif.RelPermalink) ".avif") -}}
+              {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+            {{- end -}}
             {{- /* No WebP variant generation */ -}}
         {{- end -}}
         {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
@@ -261,7 +264,9 @@
             {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
             {{- $last = $r.RelPermalink -}}
             {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
-            {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+            {{- if (hasSuffix (lower $ravif.RelPermalink) ".avif") -}}
+              {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+            {{- end -}}
             {{- /* No WebP variant generation */ -}}
         {{- end -}}
         {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
