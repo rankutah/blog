@@ -20,7 +20,7 @@ Join a movement to restore vibrancy, spark growth, and shape the future of a cit
 
 We’d love to connect. Share your interest and we’ll reach out with next steps.
 
-{{< contact-form id="interest" name="true" email="true" phone="optional" address="false" message="true" consent="false" >}}
+{{< contact-form id="interest" action="https://submit-form.com/TpO92rlWq" name="true" email="true" phone="optional" address="false" message="true" consent="false" >}}
 
 {{< button submit="true" form="interest" text="Send Message" >}}
 

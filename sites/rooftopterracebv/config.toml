@@ -52,6 +52,11 @@ disableKinds = ["taxonomy", "term"]
     title = "Rooftop Terrace BV — Join the Movement"
     description = "Join a movement to restore vibrancy, spark growth, and shape the future of a city on the rise. Your investment isn’t just in property—it’s in possibility."
 
+  # Cloudflare Turnstile (enable globally for forms on this site)
+  [params.turnstile]
+    enable = true
+    sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
 [permalinks]
   posts = "/:slug/"
 
