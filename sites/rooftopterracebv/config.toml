@@ -52,6 +52,28 @@ disableKinds = ["taxonomy", "term"]
     title = "Rooftop Terrace BV — Join the Movement"
     description = "Join a movement to restore vibrancy, spark growth, and shape the future of a city on the rise. Your investment isn’t just in property—it’s in possibility."
 
+  # Unified analytics (lazy-loaded via interaction like rank-utah)
+  [params.analytics]
+    delayMs = 5000           # retained for parity; interaction gating overrides timer
+    loadEvents = ["scroll", "mousemove", "touchstart", "click", "keydown"]
+    onlyOnInteraction = true
+
+    [params.analytics.google]
+      id = "G-7W15L0C0FY"
+      enabled = true
+
+    [params.analytics.clarity]
+      id = ""       # add Microsoft Clarity ID when ready
+      enabled = false
+
+    [params.analytics.googleAds]
+      id = ""       # e.g. AW-XXXXXXX when campaign conversion tracking needed
+      enabled = false
+
+    [params.analytics.meta]
+      id = ""       # Meta Pixel ID
+      enabled = false
+
   # Cloudflare Turnstile (enable globally for forms on this site)
   [params.turnstile]
     enable = true
