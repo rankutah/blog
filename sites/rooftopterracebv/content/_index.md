@@ -14,7 +14,7 @@ plainHome: true
 Join a movement to restore vibrancy, spark growth, and shape the future of a city on the rise. Your investment isn’t just in property—it’s in possibility.
 
 
-![test](/media/rooftop-terrace.jpg)
+![rooftop terrace image](/media/rooftop-terrace.jpg)
 
 ## Get in Touch
 
