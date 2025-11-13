@@ -47,6 +47,22 @@ disableKinds = ["taxonomy", "term"]
     enable = true
     sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"  # placeholder; replace if a site-specific key is preferred
 
+[params.socialDefaults]
+  size = "w-8 h-8"
+  gap  = "gap-3"
+
+[[params.social]]
+  name = "instagram"
+  url  = "https://www.instagram.com/rodmaxfield.dds/"
+  icon = "media/instagram.avif"
+  alt  = "Instagram"
+
+[[params.social]]
+  name = "facebook"
+  url  = "https://www.facebook.com/rodmaxfield.dds"
+  icon = "media/facebook.avif"
+  alt  = "Facebook"
+
 [menu]
   [[menu.main]]
     name = "Home"

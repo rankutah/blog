@@ -35,6 +35,8 @@
 
 {{/* Global click tracker (GA4). Safe to include always; no-ops if GA isn’t present. */}}
 <script defer src="{{ "js/click-tracker.js" | relURL }}"></script>
+{{/* Linkify plain-text phone numbers into tel: links (client-side, PII-safe) */}}
+<script defer src="{{ "js/linkify-phones.js" | relURL }}"></script>
 
 <script>
     let menu = document.getElementById('menu')

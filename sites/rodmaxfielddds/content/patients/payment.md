@@ -16,20 +16,6 @@ description: "Insurance participation, claims process, and payment options for R
 
 If you don’t have dental insurance (or your plan’s benefits are limited), ask us about our in‑office Discount Dental Services (DDS) membership program. Every year hundreds of patients choose our Discount Dental Services (DDS) plan over other dental insurances, because it’s simply better. Ask us about our DDS plan!
 
-## Insurance We Work With {#insurance}
-
-We participate with and submit claims to many major dental insurance plans. Because plan details (covered services, annual maximums, deductibles) vary widely, we verify eligibility and benefits before or at your appointment when possible.
-
-### What We Do For You
-- Submit electronic claims promptly
-- Provide necessary documentation (x‑rays, narratives) when requested
-- Help you estimate out‑of‑pocket costs before treatment
-
-### What Insurance Typically Does Not Cover Fully
-- Cosmetic/aesthetic services
-- Some implant components
-- Upgraded materials where a standard alternative exists
-
 ## Contracted / In-Network Providers {#in-network}
 
 Below is our current list of contracted providers. Network status can change; existing patient restrictions noted with an asterisk (*). Please call to confirm if you have questions about a specific plan.
@@ -47,6 +33,16 @@ Below is our current list of contracted providers. Network status can change; ex
 - **United Healthcare** <br>
 
 > Not seeing your carrier? Call us — some plans process out-of-network with similar benefits. We’ll help you compare.
+
+### What We Do For You
+- Submit electronic claims promptly
+- Provide necessary documentation (x‑rays, narratives) when requested
+- Help you estimate out‑of‑pocket costs before treatment
+
+### What Insurance Typically Does Not Cover Fully
+- Cosmetic/aesthetic services
+- Some implant components
+- Upgraded materials where a standard alternative exists
 
 ### Your Responsibility
 Insurance rarely pays 100%. You are responsible for the portion insurance does not cover (co‑insurance, deductible, amounts over plan maximum). Final insurance processing may differ from estimates.
@@ -82,8 +78,7 @@ Treatment estimates are based on the information available from your insurer and
 
 We will communicate any material changes before proceeding with optional treatments.
 
-## Questions? {#questions}
-### Need Clarification?
+## Questions?
 Call us at (801) 785-2631. We’re happy to walk you through insurance terms or help you plan payment for upcoming care.
 
 {{< /section >}}
