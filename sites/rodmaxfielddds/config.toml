@@ -30,8 +30,8 @@ disableKinds = ["taxonomy", "term"]
   darkBackground = "gray-900"
   cardBackground = "violet-50"
   cardBackgroundDark = "gray-800"
-  cardBorderLight = "neutral-200"
-  cardBorderDark = "neutral-700"
+  cardBorderLight = "gray-200"
+  cardBorderDark = "gray-700"
 
 
 
