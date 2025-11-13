@@ -7,7 +7,7 @@ url: "/services/infection/"
 
 # Infection Control
 
-Infection controls and precautions protect patients and staff alike. Our office follows procedures recommended by several federal agencies: the Occupational Safety & Health Administration (OSHA), the Environmental Protection Agency (EPA) and the Center for Disease Control (CDC).
+Infection controls and precautions protect patients and staff alike. Our office follows procedures recommended by several federal agencies: the Occupational Safety & Health Administration (OSHA), the Environmental Protection Agency (EPA), and the Centers for Disease Control and Prevention (CDC).
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -15,14 +15,14 @@ Infection controls and precautions protect patients and staff alike. Our office 
 
 
 ## Protective Measures
-- Gloves, protective eye wear, lab coats, and N95 masks
+- Gloves, protective eyewear, lab coats, and N95 masks
 - Sterilization of all equipment before every use
 - Single-use disposable materials
 - Disinfectant hand soap
 - Infection control training and rigorous attention to hand washing and PPE
 - Chemical disinfection of counter tops and surfaces
-- Whole room air and surface ozone disinfection
-- We sterilize all reusable equipment, including dental hand pieces. Ultrasonics and autoclaves are used for equipment sterilization.
+- Whole-room air and surface ozone disinfection
+- We sterilize all reusable equipment, including dental handpieces. Ultrasonics and autoclaves are used for equipment sterilization.
 
 
 

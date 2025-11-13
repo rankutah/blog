@@ -11,13 +11,13 @@ description: "What to bring and what to expect at your first visit with Rod Maxf
 ## What to Bring
 
 - A current, complete list of your medications
-- Your insurance information (if you do not have insurance, or have questions, visit our Insurance Page)
+- Your insurance information (if you do not have insurance, or have questions, visit our [Insurance & Payment](/patients/payment/) page)
 - Any specific questions you may have
 
 ## What to Expect
 
 - A cleaning
-- A full mouth series of X-Rays
+- A full‑mouth series of X‑rays
 - A comprehensive exam
 - A detailed discussion about your dental needs and options
 

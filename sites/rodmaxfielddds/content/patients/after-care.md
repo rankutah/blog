@@ -75,7 +75,6 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 
 - Avoid physical activity for 72 hours.
 - Swelling is normal as the body heals itself.  An ice pack should be placed on the outside of the face in the areas of surgery.  Apply it 20 minutes per hour as needed.  Ice packs are recommended for the first 36 hours, after which moist heat will aid in healing.
-\ No newline at end of file
 - Pain should be controlled with prescription medication or over-the-counter medications.  Avoid driving, alcohol, or working with machinery when on prescription narcotic pain medications.
 - Keep your mouth clean.  Brush gently around the teeth near the surgery site and rinse softly as not to dislodge any clots.  Avoid vigorous mouth rinsing or touching the surgical sites.
 - Antibiotics should be taken as prescribed to prevent infection.
@@ -116,8 +115,8 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 ## Sealants {#sealants}
 
 - It is normal for the bite to feel slightly off after sealant placement. There may also be a slight aftertaste immediately following application. Rinsing with water will help remove the unwanted taste.
-- Sealants may be chewed on right after placement
+- You can chew normally right after sealant placement.
 - Maintain good oral hygiene.
-- Sealants can chip or wear out. The condition of the sealants are checked at each re-care visit.
+- Sealants can chip or wear out. The condition of the sealants is checked at each re-care visit.
 
 {{< /section >}}
