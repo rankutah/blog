@@ -56,8 +56,6 @@ uglyURLs      = true
   cardBorderLight    = "gray-200"  # no "border-" prefix
   cardBorderDark     = "gray-700"  # no "border-" prefix
 
-
-
   showReadingTime     = true
   enableSearch        = true
   clientName          = "Clear Presence"
