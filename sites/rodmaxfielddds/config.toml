@@ -18,7 +18,7 @@ disableKinds = ["taxonomy", "term"]
   lightBackground = "indigo-50"
   darkBackground = "indigo-950"
   cardBackground = "indigo-100"
-  cardBackgroundDark = "indigo-900"
+  cardBackgroundDark = "gray-900"
   cardBorderLight = "neutral-200"
   cardBorderDark = "neutral-700"
 
@@ -34,10 +34,7 @@ disableKinds = ["taxonomy", "term"]
     sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"  # placeholder; replace if a site-specific key is preferred
 
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+
   [[menu.main]]
     name = "Services"
     url = "/services/"

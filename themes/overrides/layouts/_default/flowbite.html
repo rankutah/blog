@@ -38,14 +38,23 @@
       function apply(){
         var d = wantDark();
         if (d) html.classList.add('dark'); else html.classList.remove('dark');
-        // Mirror color-picker behavior: toggle plain bg-* on <html> for robust page bg in dark mode
+        // Mirror color-picker behavior: toggle plain bg-* on <html> AND <body> for robust page bg in dark mode
         try {
           var lightCls = html.getAttribute('data-bg-light');
           var darkCls  = html.getAttribute('data-bg-dark');
+          // Apply to <html>
           if (lightCls) html.classList.remove(lightCls);
           if (darkCls)  html.classList.remove(darkCls);
           if (d) { if (darkCls)  html.classList.add(darkCls); }
           else   { if (lightCls) html.classList.add(lightCls); }
+          // Also apply to <body> so body background isn't left "light" when using media-based dark variants
+          var body = document.body;
+          if (body) {
+            if (lightCls) body.classList.remove(lightCls);
+            if (darkCls)  body.classList.remove(darkCls);
+            if (d) { if (darkCls)  body.classList.add(darkCls); }
+            else   { if (lightCls) body.classList.add(lightCls); }
+          }
         } catch(e){}
       }
       // Initial apply before CSS to avoid FOUC

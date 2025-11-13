@@ -1,8 +1,9 @@
-/* ========== 1) Tailwind v4 layers (uses tailwind.config.cjs) ========== */
-@import "tailwindcss";
-
-/* ========== 2) Flowbite’s shipped CSS (shadows, transitions, etc.) ========== */
+/* ========== 1) Flowbite’s shipped CSS (may include some prebuilt utilities) ========== */
+/* Load Flowbite first so our Tailwind build (below) wins in the cascade. */
 @import "flowbite/dist/flowbite.css";
+
+/* ========== 2) Tailwind v4 layers (uses tailwind.config.cjs) ========== */
+@import "tailwindcss";
 
 @plugin "@tailwindcss/typography";
 @plugin "flowbite/plugin";

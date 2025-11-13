@@ -1,0 +1,6 @@
+{{- $name := .Get "name" -}}
+{{- $alt := .Get "alt" | default $name -}}
+<figure class="inline-block text-center m-4">
+  <img loading="lazy" decoding="async" class="mx-auto w-32 h-32 object-cover rounded-full border border-neutral-300" src="{{ "/media/placeholder-staff.svg" | relURL }}" alt="{{ $alt }}" />
+  <figcaption class="mt-2 text-sm font-medium">{{ $alt }}</figcaption>
+</figure>
