@@ -161,15 +161,23 @@
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
   {{ partial "google_analytics.html" . }}
 
-  {{- /* Prefer a full-bleed hero/carousel image (our hero/carousel imgs use absolute inset-0 w-full h-full) */ -}}
-  {{- $heroImg := replaceRE `(?is).*<img[^>]+class="[^"]*absolute[^"]*inset-0[^"]*w-full[^"]*h-full[^"]*"[^>]+src="([^"]+)".*` "${1}" .Content -}}
-  {{- /* Fallback to the first <img> if no full-bleed match is found */ -}}
-  {{- $firstImg := cond (ne $heroImg "") $heroImg (replaceRE `(?is).*<img[^>]+src="([^"]+)".*` "${1}" .Content) -}}
-
-  {{- if $firstImg }}
-    <meta property="og:image" content="{{ $firstImg }}" />
-    <meta name="twitter:image" content="{{ $firstImg }}" />
-  {{- end }}
+  {{- /* Prefer a full-bleed hero/carousel <img>. */ -}}
+  {{- $heroImg := replaceRE `(?is).*<img[^>]+class=\"[^\"]*absolute[^\"]*inset-0[^\"]*w-full[^\"]*h-full[^\"]*\"[^>]+src=\"([^\"]+)\".*` "${1}" .Content -}}
+  {{- /* Fallback: first <img> anywhere */ -}}
+  {{- $firstImg := cond (ne $heroImg "") $heroImg (replaceRE `(?is).*<img[^>]+src=\"([^\"]+)\".*` "${1}" .Content) -}}
+  {{- /* Homepage hero via section shortcode img="..." if no <img> found */ -}}
+  {{- if and .IsHome (eq $firstImg "") -}}
+    {{- $secMatch := findRE `(?is)\{\{<\s*section[^>]*img\s*=\s*\"([^\"]+)\"[^>]*>\}\}` .RawContent -}}
+    {{- if gt (len $secMatch) 0 -}}
+      {{- $firstImg = replaceRE `(?is).*img\s*=\s*\"([^\"]+)\".*` "${1}" (index $secMatch 0) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- /* Absolute URL for social */ -}}
+  {{- if $firstImg -}}
+    {{- $ogAbs := cond (hasPrefix $firstImg "http") $firstImg (absURL $firstImg) -}}
+    <meta property="og:image" content="{{ $ogAbs }}" />
+    <meta name="twitter:image" content="{{ $ogAbs }}" />
+  {{- end -}}
 
   {{ partial "templates/opengraph.html" . | safeHTML }}
   {{ partial "templates/twitter_cards.html" . }}
