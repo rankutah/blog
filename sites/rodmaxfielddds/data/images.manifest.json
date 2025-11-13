@@ -732,10 +732,10 @@
     }
   },
   "/media/kimber.jpg": {
-    "width": 1200,
-    "height": 972,
-    "aspect": 1.2345679012345678,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAIDBQb/xAAsEAABAwMCAwYHAAAAAAAAAAABAgMRAAQhBTESIkETFCQyUXEzYXKBkbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECMREh/9oADAMBAAIRAxEAPwDl8xzfypCCdjUOQZGftV1sEuPtpgCVUYYXc6ci3s2XuJxSlCVbQn0oUCZzjpW9qqePS23UtwlYCZ9IOf1WGpIBggA9Zol9KtJYVkKBEJA9qZZHs0uKAzG5ojZJETjFIsfhv/QaH6iVou71Pvdi3atNFtLZBJKpk1mFxSglEyEjlMbfKl2o8NcnqOGPzQEeYe1M60VT6j//2Q==",
+    "width": 957,
+    "height": 970,
+    "aspect": 0.98659793814433,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAhACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABAUAAgMGAf/EAC4QAAIABQIDBAsAAAAAAAAAAAECAAMEESEFMRITQRQicoEyMzRCQ1FhcXORwf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABoRAAIDAQEAAAAAAAAAAAAAAAABAhExIUH/2gAMAwEAAhEDEQA/AOX7uM2gqiozW1CSUcLfdjsIHC4ww/UOdAkhnZuKxKmxA+oiN0ixVuhZUUy081pYml+He62jEAXvxYhhrAPaZV2BYqSbDAzaAStveB8oJ2JKnRRJbPMVENyxsPvHQaRJMuqpkuHCMSzLtYgwjlYcANkHqLGDKiqn0s88iY0s7Y6iMPvCwddNte5UrUSqLcAC4GIXTQEI4XDowuD/AAj5xao5jDnTizMQCWbrAy5cjFt8xqOCWl/jHwwVqHrR4REiQXhPD3UPYqX8cAL6flEiQhglp//Z",
     "variants": {
       "avif": [
         {
@@ -755,12 +755,8 @@
           "url": "/media-deriv/kimber__w768.avif"
         },
         {
-          "w": 960,
-          "url": "/media-deriv/kimber__w960.avif"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/kimber__w1200.avif"
+          "w": 957,
+          "url": "/media-deriv/kimber__w957.avif"
         }
       ],
       "webp": [],
@@ -782,21 +778,17 @@
           "url": "/media-deriv/kimber__w768.jpg"
         },
         {
-          "w": 960,
-          "url": "/media-deriv/kimber__w960.jpg"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/kimber__w1200.jpg"
+          "w": 957,
+          "url": "/media-deriv/kimber__w957.jpg"
         }
       ]
     }
   },
   "/media/kimber.avif": {
-    "width": 1200,
-    "height": 972,
-    "aspect": 1.2345679012345678,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAIDBQb/xAAsEAABAwMCAwYHAAAAAAAAAAABAgMRAAQhBTESIkETFCQyUXEzYXKBkbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECMREh/9oADAMBAAIRAxEAPwDl8xzfypCCdjUOQZGftV1sEuPtpgCVUYYXc6ci3s2XuJxSlCVbQn0oUCZzjpW9qqePS23UtwlYCZ9IOf1WGpIBggA9Zol9KtJYVkKBEJA9qZZHs0uKAzG5ojZJETjFIsfhv/QaH6iVou71Pvdi3atNFtLZBJKpk1mFxSglEyEjlMbfKl2o8NcnqOGPzQEeYe1M60VT6j//2Q==",
+    "width": 957,
+    "height": 970,
+    "aspect": 0.98659793814433,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAhACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABAUAAgMGAf/EAC4QAAIABQIDBAsAAAAAAAAAAAECAAMEESEFMRITQRQicoEyMzRCQ1FhcXORwf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABoRAAIDAQEAAAAAAAAAAAAAAAABAhExIUH/2gAMAwEAAhEDEQA/AOX7uM2gqiozW1CSUcLfdjsIHC4ww/UOdAkhnZuKxKmxA+oiN0ixVuhZUUy081pYml+He62jEAXvxYhhrAPaZV2BYqSbDAzaAStveB8oJ2JKnRRJbPMVENyxsPvHQaRJMuqpkuHCMSzLtYgwjlYcANkHqLGDKiqn0s88iY0s7Y6iMPvCwddNte5UrUSqLcAC4GIXTQEI4XDowuD/AAj5xao5jDnTizMQCWbrAy5cjFt8xqOCWl/jHwwVqHrR4REiQXhPD3UPYqX8cAL6flEiQhglp//Z",
     "variants": {
       "avif": [
         {
@@ -816,12 +808,8 @@
           "url": "/media-deriv/kimber__w768.avif"
         },
         {
-          "w": 960,
-          "url": "/media-deriv/kimber__w960.avif"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/kimber__w1200.avif"
+          "w": 957,
+          "url": "/media-deriv/kimber__w957.avif"
         }
       ],
       "webp": [],
@@ -843,12 +831,8 @@
           "url": "/media-deriv/kimber__w768.jpg"
         },
         {
-          "w": 960,
-          "url": "/media-deriv/kimber__w960.jpg"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/kimber__w1200.jpg"
+          "w": 957,
+          "url": "/media-deriv/kimber__w957.jpg"
         }
       ]
     }
@@ -1278,10 +1262,10 @@
     }
   },
   "/media/shauna.jpg": {
-    "width": 1200,
-    "height": 905,
-    "aspect": 1.3259668508287292,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBBQYD/8QAJhAAAgEDAwMEAwAAAAAAAAAAAQIRAAMEBRIhEzFhI0FRkSJCYv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAEAAiEx/9oADAMBAAIRAxEAPwDM+43CT4rvh2FyMhLTEqGPJ9wKXlQZVZpnBvrZzbNwr+IYTA5isarDI0vFRtqO9okcdQzz54qpgKD3rQ60VS0wdmLcbAT371n2ggxH1RyqS2A0Q247o2/U1e6bj2cdU6ggufUP7AfHiiilnsZPU77ZOY26AFO1V+BSj4/oNcIKR2/qiip5wt9v/9k=",
+    "width": 1004,
+    "height": 904,
+    "aspect": 1.1106194690265487,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQQGAf/EACUQAAIBAwQBBAMAAAAAAAAAAAECAwAEEQUSITFBEyIyUYGx8P/EABYBAQEBAAAAAAAAAAAAAAAAAAECAP/EABkRAAMBAQEAAAAAAAAAAAAAAAABEQIhEv/aAAwDAQACEQMRAD8AzPtPmkrDTY7qJpZZXjTO1QoySR3+KOG0j5GtBoB32jhcEo+DuPg1GnEVlVwOuNMEUTyRSbgmcqcZA+6hwFUjJOaV1NWTa/tT1AQQpzRbLwe6cuo2lGcigeWRVjXJY8Vo9JslsvVnMhaMJiVulHWMUXpZCK823nrAOBV88rGymQk7fmQOOf4U+aukpx0MvZTcTkg4UZCqfAzUjh1XkEg9GqAu5yp76ziqLy3FtbMmd248kj9VqlwY30//2Q==",
     "variants": {
       "avif": [
         {
@@ -1305,8 +1289,8 @@
           "url": "/media-deriv/shauna__w960.avif"
         },
         {
-          "w": 1200,
-          "url": "/media-deriv/shauna__w1200.avif"
+          "w": 1004,
+          "url": "/media-deriv/shauna__w1004.avif"
         }
       ],
       "webp": [],
@@ -1332,17 +1316,17 @@
           "url": "/media-deriv/shauna__w960.jpg"
         },
         {
-          "w": 1200,
-          "url": "/media-deriv/shauna__w1200.jpg"
+          "w": 1004,
+          "url": "/media-deriv/shauna__w1004.jpg"
         }
       ]
     }
   },
   "/media/shauna.avif": {
-    "width": 1200,
-    "height": 905,
-    "aspect": 1.3259668508287292,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBBQYD/8QAJhAAAgEDAwMEAwAAAAAAAAAAAQIRAAMEBRIhEzFhI0FRkSJCYv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAEAAiEx/9oADAMBAAIRAxEAPwDM+43CT4rvh2FyMhLTEqGPJ9wKXlQZVZpnBvrZzbNwr+IYTA5isarDI0vFRtqO9okcdQzz54qpgKD3rQ60VS0wdmLcbAT371n2ggxH1RyqS2A0Q247o2/U1e6bj2cdU6ggufUP7AfHiiilnsZPU77ZOY26AFO1V+BSj4/oNcIKR2/qiip5wt9v/9k=",
+    "width": 1004,
+    "height": 904,
+    "aspect": 1.1106194690265487,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQQGAf/EACUQAAIBAwQBBAMAAAAAAAAAAAECAwAEEQUSITFBEyIyUYGx8P/EABYBAQEBAAAAAAAAAAAAAAAAAAECAP/EABkRAAMBAQEAAAAAAAAAAAAAAAABEQIhEv/aAAwDAQACEQMRAD8AzPtPmkrDTY7qJpZZXjTO1QoySR3+KOG0j5GtBoB32jhcEo+DuPg1GnEVlVwOuNMEUTyRSbgmcqcZA+6hwFUjJOaV1NWTa/tT1AQQpzRbLwe6cuo2lGcigeWRVjXJY8Vo9JslsvVnMhaMJiVulHWMUXpZCK823nrAOBV88rGymQk7fmQOOf4U+aukpx0MvZTcTkg4UZCqfAzUjh1XkEg9GqAu5yp76ziqLy3FtbMmd248kj9VqlwY30//2Q==",
     "variants": {
       "avif": [
         {
@@ -1366,8 +1350,8 @@
           "url": "/media-deriv/shauna__w960.avif"
         },
         {
-          "w": 1200,
-          "url": "/media-deriv/shauna__w1200.avif"
+          "w": 1004,
+          "url": "/media-deriv/shauna__w1004.avif"
         }
       ],
       "webp": [],
@@ -1393,8 +1377,8 @@
           "url": "/media-deriv/shauna__w960.jpg"
         },
         {
-          "w": 1200,
-          "url": "/media-deriv/shauna__w1200.jpg"
+          "w": 1004,
+          "url": "/media-deriv/shauna__w1004.jpg"
         }
       ]
     }
