@@ -1,0 +1,25 @@
+phone: "+1-801-785-2631"
+address:
+  line1: "31 West 100 South Suite A"
+  city: "Pleasant Grove"
+  state: "UT"
+  postal: "84062"
+hours:
+  - day: Sun
+    open: Closed
+  - day: Mon
+    open: "7am–3pm"
+  - day: Tue
+    open: "8am–6pm"
+  - day: Wed
+    open: Closed
+  - day: Thu
+    open: "8am–6pm"
+  - day: Fri
+    open: "7am–2pm"
+  - day: Sat
+    open: Closed
+social:
+  facebook: "https://www.facebook.com/rodmaxfield.dds"
+  instagram: "https://www.instagram.com/rodmaxfield.dds/"
+  phone: "tel:+18017852631"

@@ -1,0 +1,82 @@
+baseURL = "https://rodmaxfielddds.com/"
+languageCode = "en-us"
+title = "Rod Maxfield, DDS"
+theme = ["overrides", "PaperMod"]
+themesDir = "../../themes"
+
+# Keep taxonomy off for now; can enable tags/categories later if needed.
+disableKinds = ["taxonomy", "term"]
+
+[cascade]
+  layout = "flowbite"
+
+[params]
+  description = "Dentistry making a difference in Pleasant Grove, Utah. Compassionate care, modern technology, and personalized treatment options."
+  keywords = ["dentist", "dental", "pleasant grove", "utah", "invisalign", "aesthetic dentistry"]
+  primaryColor = "indigo"
+  logo = "media/logo.png"
+  lightBackground = "indigo-50"
+  darkBackground = "indigo-950"
+  cardBackground = "indigo-100"
+  cardBackgroundDark = "indigo-900"
+  cardBorderLight = "neutral-200"
+  cardBorderDark = "neutral-700"
+
+  [params.header]
+    titleSize = "2xl"
+    showTitle = true
+    hideNav = false
+    stickyMobile = true
+    stickyDesktop = true
+
+  [params.turnstile]
+    enable = true
+    sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"  # placeholder; replace if a site-specific key is preferred
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+  [[menu.main]]
+    name = "Patients"
+    url = "/patients/"
+    weight = 3
+  # Patients dropdown
+  [[menu.main]]
+    name = "First Visit"
+    url = "/patients/first-visit/"
+    parent = "Patients"
+    weight = 31
+  [[menu.main]]
+    name = "Post-Op Care"
+    url = "/patients/post-op-care/"
+    parent = "Patients"
+    weight = 32
+  [[menu.main]]
+    name = "Financial"
+    url = "/financial/"
+    weight = 4
+  # Financial dropdown children
+  [[menu.main]]
+    name = "Insurance"
+    url = "/financial/insurance/"
+    parent = "Financial"
+    weight = 41
+  [[menu.main]]
+    name = "Payment"
+    url = "/financial/payment/"
+    parent = "Financial"
+    weight = 42
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
