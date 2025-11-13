@@ -5,8 +5,9 @@ description: "A denture is an appliance that replaces missing teeth."
 ---
 
 {{< section >}}
-{{< cols min="18rem" row="md" >}}
-{{< col >}}
+
+# Dentures
+
 A denture is an appliance that replaces missing teeth. In our office dentures are the last-resort, but they are sometimes necessary.
 
 There are different types of dentures for different scenarios. These include complete dentures, partial dentures, immediate dentures, implant-retained dentures, and temporary flippers.
@@ -22,8 +23,9 @@ There are different types of dentures for different scenarios. These include com
     class="w-full h-full rounded-lg border border-neutral-200 dark:border-neutral-700">
   </iframe>
 </div>
-<img src="/media/dentures-image24.jpg" alt="Dentures" class="mt-4 rounded-lg border border-neutral-200 dark:border-neutral-700" />
-{{< /col >}}
+
+{{< cols min="18rem" row="md" >}}
+
 {{< col >}}
 ### Partial Dentures
 
@@ -36,21 +38,23 @@ Should you lose another tooth, extra teeth can be added to your existing partial
 Implant-retained dentures are complete dentures that attach two or more implants. The [implants](#implants) allow for a more secure fit. The denture will simply “clip” into place, negating the need for denture adhesive.
 
 As with a regular complete denture, we want them to look as natural as possible. To that end we may ask you to bring photos of yourself from before you began losing your teeth.
-{{< /col >}}
-{{< /cols >}}
 
-{{< cols min="18rem" row="md" >}}
+{{< /col >}}
 {{< col >}}
+
 ### Immediate Dentures
 
 An immediate denture replaces all of the teeth on one arch and is made prior to the extractions. It is inserted immediately after the all teeth are extracted, allowing the tissues to heal under the denture.
 
 Immediate dentures are intended to be temporary. They provide protection to healing tissues, and teeth to chew with during the healing process. Once the tissues have healed, the immediate denture will be replaced with a complete denture.
-{{< /col >}}
-{{< col >}}
+
 ### Temporary Flippers
 
 Flippers are used both for aesthetic and to maintain space. If there is a gap where a tooth is missing, the neighboring teeth will naturally drift to close the space. A flipper is an appliance that has a single tooth to fill the gap. They are usually used while waiting for a site to heal where a tooth has been extracted and an implant placed. Flippers are made from acrylic; the fake tooth on the flipper will be matched as closely as possible to the adjacent teeth.
+
+
+
+
 {{< /col >}}
 {{< /cols >}}
 

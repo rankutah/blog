@@ -5,6 +5,9 @@ description: "We always use high quality materials in our office, but there is a
 ---
 
 {{< section >}}
+
+# Upgrades
+
 {{< cols min="18rem" row="md" >}}
 {{< col >}}
 ### Good, Better, Best

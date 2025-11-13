@@ -5,6 +5,9 @@ description: "We know that dental visits can be distressing, but we do everythin
 ---
 
 {{< section >}}
+
+# Sedation
+
 We know that dental visits can be distressing, but we do everything we can to make our patients as comfortable as possible! We have options available to those who may be particularly nervous or have extensive work that needs to be done.
 
 {{< cols min="18rem" row="md" >}}

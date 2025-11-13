@@ -5,6 +5,9 @@ description: "Do you snore at night? Do you wake up still feeling tired? If so, 
 ---
 
 {{< section >}}
+
+# Sleep Apnea (Adult)
+
 Do you snore at night? Do you wake up still feeling tired? If so, you might have sleep apnea. Sleep apnea is a common disorder that happens when your regular breathing is interrupted while you are asleep. There are two types of sleep apnea: Obstructive Sleep Apnea, and Central Sleep Apnea. Both forms are extremely serious, and should not be left untreated.
 
 If you think you may have sleep apnea, please <a href="/contact/">call our office</a> or your general care physician for a possible evaluation.

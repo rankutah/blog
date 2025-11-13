@@ -5,19 +5,41 @@ description: "It is important to see your dentist twice a year for hygiene appoi
 ---
 
 {{< section >}}
+
+# Hygiene Basics
+
+Everyone knows the easy answers for good hygiene: brush, floss, visit your dentist. But do you know how often? Do you know the best techniques for brushing and flossing? Do you know how long to brush?
+
+Since we don’t see you every day, we want to make sure you know how to care for your oral health! Our hygienists and assistants do their best to help teach you the proper techniques for home dental care. Below are some tips we give our patients to make sure your mouth stays healthy.
+
 {{< cols min="18rem" row="md" >}}
 {{< col >}}
+
+### Floss every day!
+
+It’s easy to get cavities between your teeth: your toothbrush can’t clean in between. Flossing daily will keep the sides of your teeth clean and healthy.
+
+Recommended Technique: Floss in a “C” shape. Think about how you would shine your shoes. Would you only shine the tops? Of course not, you shine all the way around! So make sure you do the same with your floss. Go slow! Popping the floss in and out quickly will not do much to keep things clean.
+
+Pro Tip: When shopping, look for waxy floss that has multiple strands and a rougher texture. The rough texture will help catch more of the food and debris between your teeth than smooth floss!
+
+### Brush 2x a day!
+
+The best times to brush are right after breakfast and just before bed. You should spend about two minutes brushing each time.
+
 Recommended Technique: Keep your brush at a 45 degree angle as you brush. Think about brushing your gums and be careful not to “saw” back and forth. Move your brush in small circles instead.
 
 Pro Tip: Set a timer for 1 minute and start brushing your bottom teeth. When it rings, you know it’s time to move to the upper teeth! Reset the timer and clean up top!
+
+{{< /col >}}
+{{< col >}}
 
 ### Brush your tongue
 
 You tongue can collect a lot of bacteria! Make sure you brush your tongue each time you brush your teeth.
 
 Besides helping to keep your mouth clean, this can also minimize bad breath!
-{{< /col >}}
-{{< col >}}
+
 ### Use Mouthwash
 
 Your teeth make up only a small percentage of your mouth. So it is important not to forget about the soft tissues! Mouthwash is not just for bad breath. Using mouthwash at least once a day will help keep those tissues clean and healthy.

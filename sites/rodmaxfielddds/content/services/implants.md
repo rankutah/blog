@@ -5,6 +5,9 @@ description: "Implants are designed as a substitute for the root of a missing to
 ---
 
 {{< section >}}
+
+# Implants
+
 Implants are designed as a substitute for the root of a missing tooth. The [crown](/services/crowns/) that is attached to the implant looks and functions like a natural tooth.
 
 Dental implants are tiny titanium anchors, which are surgically placed into the jawbone. Small posts called “abutments” are then attached to the implant, and protrude through the gums. Abutments provide stable anchors for artificial replacement teeth.
@@ -20,7 +23,6 @@ Dental implants are tiny titanium anchors, which are surgically placed into the 
 		class="w-full h-full rounded-lg border border-neutral-200 dark:border-neutral-700">
 	</iframe>
 </div>
-<img src="/media/implants-image20.jpg" alt="Implants" class="mt-4 rounded-lg border border-neutral-200 dark:border-neutral-700" />
 
 {{< cols min="18rem" row="md" >}}
 {{< col >}}
