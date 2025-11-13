@@ -16,7 +16,7 @@ description: "Explore our dental services, from preventive care and aesthetics t
 
 {{< col card="true" y="start" >}}
 
-## Preventative
+## Preventive
 
 - [Hygiene Basics](/services/hygiene-basics/)
 - [Fluoride](/services/fluoride/)

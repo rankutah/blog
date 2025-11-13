@@ -11,7 +11,7 @@ url: "/services/fluoride/"
 
 # Fluoride
 
-Fluoride is a mineral that is found in all natural water sources. When used correctly, fluoride is a very effective preventative tool. It remineralizes tooth enamel, creating stronger teeth and greater resistance to decay. Fluoride can be used topically or in the form of supplemental tablets. Supplements can be prescribed for kids ages six months to 16 years if they are high risk for decay or if their drinking water is too low in fluoride.
+Fluoride is a mineral that is found in all natural water sources. When used correctly, fluoride is a very effective preventive tool. It remineralizes tooth enamel, creating stronger teeth and greater resistance to decay. Fluoride can be used topically or in the form of supplemental tablets. Supplements can be prescribed for kids ages six months to 16 years if they are high risk for decay or if their drinking water is too low in fluoride.
 
 
 

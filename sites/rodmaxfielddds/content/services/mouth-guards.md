@@ -22,11 +22,11 @@ Custom mouth guards provide much stronger protection than generic ones from the 
 
 ## Purpose
 
-Some of our worst cases are people who were somehow hit in the face while not wearing a mouth guard. Without a mouth guard, teeth can be knocked out or broken. Mouth guards also provide some protection from possibly biting through your lips or cheeks.
+Some of our worst cases are people who were somehow hit in the face while not wearing a mouth guard. Without a mouth guard, teeth can be knocked out or broken. Mouth guards also help prevent biting through your lips or cheeks.
 
 ## When to Wear?
 
-You should always wear a mouth guard while playing sports or during any physical activity. This includes everyone from football players, to wake boarders, to cheerleaders. Athletes who play full-contact sports of course run the risk of facial injury. It is not uncommon for a wake boarder to get hit in the face by their board during a wipe out. Cheerleaders are frequently elbowed or kicked in the face during stunts. Wearing a mouth guard will help prevent any serious oral injury.
+You should always wear a mouth guard while playing sports or during any physical activity. This includes everyone from football players, to wakeboarders, to cheerleaders. Athletes who play full-contact sports of course run the risk of facial injury. It is not uncommon for a wakeboarder to get hit in the face by their board during a wipeout. Cheerleaders are frequently elbowed or kicked in the face during stunts. Wearing a mouth guard will help prevent serious oral injury.
 
 ## Don't have a mouth guard?
 

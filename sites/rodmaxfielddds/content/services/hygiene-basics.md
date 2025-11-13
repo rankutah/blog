@@ -36,7 +36,7 @@ Pro Tip: Set a timer for 1 minute and start brushing your bottom teeth. When it 
 
 ### Brush your tongue
 
-You tongue can collect a lot of bacteria! Make sure you brush your tongue each time you brush your teeth.
+Your tongue can collect a lot of bacteria! Make sure you brush your tongue each time you brush your teeth.
 
 Besides helping to keep your mouth clean, this can also minimize bad breath!
 
@@ -44,11 +44,11 @@ Besides helping to keep your mouth clean, this can also minimize bad breath!
 
 Your teeth make up only a small percentage of your mouth. So it is important not to forget about the soft tissues! Mouthwash is not just for bad breath. Using mouthwash at least once a day will help keep those tissues clean and healthy.
 
-### Regularly See your Dentist
+### Regularly See Your Dentist
 
 It is important to see your dentist twice a year for hygiene appointments. Even if you have great hygiene habits, it is likely that you still have some built up plaque. The only way to get it off is to see your dentist.
 
-Having regular check-ups means that any problems that may exist can be caught early. It is so much better to fix small problems than big problems! Dental problems don’t magically disappear or get cheaper. The longer your wait to fix a problem, the worse it will be — and more expensive!
+Having regular check-ups means that any problems that may exist can be caught early. It is so much better to fix small problems than big problems! Dental problems don’t magically disappear or get cheaper. The longer you wait to fix a problem, the worse it will be — and more expensive!
 
 Pro Tip: When you come in for a cleaning, schedule your next appointment before you leave. Even if you end up needing to change it (because it’s hard to plan six months ahead!), you will be reminded that you are due for a cleaning!
 

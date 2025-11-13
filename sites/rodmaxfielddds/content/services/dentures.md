@@ -8,7 +8,7 @@ description: "A denture is an appliance that replaces missing teeth."
 
 # Dentures
 
-A denture is an appliance that replaces missing teeth. In our office dentures are the last-resort, but they are sometimes necessary.
+A denture is an appliance that replaces missing teeth. In our office, dentures are a last resort, but they are sometimes necessary.
 
 There are different types of dentures for different scenarios. These include complete dentures, partial dentures, immediate dentures, implant-retained dentures, and temporary flippers.
 
@@ -31,11 +31,11 @@ There are different types of dentures for different scenarios. These include com
 
 Partial dentures are appliances used to replace some missing teeth; they are designed to fit around any remaining teeth. These are also frequently made from acrylic, but in some cases a metal framework may be needed for support. Upper partials usually have acrylic that covers the palate (roof of the mouth), while lower partials are horseshoe-shaped to allow room for the tongue.
 
-Should you lose another tooth, extra teeth can be added to your existing partial. All of the teeth on your partial will be matched to your remaining natural teeth to make the partial indiscernible.
+Should you lose another tooth, extra teeth can be added to your existing partial. All of the teeth on your partial will be matched to your remaining natural teeth to make the partial indistinguishable.
 
 ### Implant-Retained Dentures
 
-Implant-retained dentures are complete dentures that attach two or more implants. The [implants](#implants) allow for a more secure fit. The denture will simply “clip” into place, negating the need for denture adhesive.
+Implant-retained dentures are complete dentures that attach to two or more implants. The [implants](#implants) allow for a more secure fit. The denture will simply “clip” into place, negating the need for denture adhesive.
 
 As with a regular complete denture, we want them to look as natural as possible. To that end we may ask you to bring photos of yourself from before you began losing your teeth.
 
@@ -44,13 +44,13 @@ As with a regular complete denture, we want them to look as natural as possible.
 
 ### Immediate Dentures
 
-An immediate denture replaces all of the teeth on one arch and is made prior to the extractions. It is inserted immediately after the all teeth are extracted, allowing the tissues to heal under the denture.
+An immediate denture replaces all of the teeth on one arch and is made prior to the extractions. It is inserted immediately after all teeth are extracted, allowing the tissues to heal under the denture.
 
 Immediate dentures are intended to be temporary. They provide protection to healing tissues, and teeth to chew with during the healing process. Once the tissues have healed, the immediate denture will be replaced with a complete denture.
 
 ### Temporary Flippers
 
-Flippers are used both for aesthetic and to maintain space. If there is a gap where a tooth is missing, the neighboring teeth will naturally drift to close the space. A flipper is an appliance that has a single tooth to fill the gap. They are usually used while waiting for a site to heal where a tooth has been extracted and an implant placed. Flippers are made from acrylic; the fake tooth on the flipper will be matched as closely as possible to the adjacent teeth.
+Flippers are used for aesthetics and to maintain space. If there is a gap where a tooth is missing, the neighboring teeth will naturally drift to close the space. A flipper is an appliance that has a single tooth to fill the gap. They are usually used while waiting for a site to heal where a tooth has been extracted and an implant placed. Flippers are made from acrylic; the replacement tooth on the flipper will be matched as closely as possible to the adjacent teeth.
 
 
 
@@ -58,9 +58,9 @@ Flippers are used both for aesthetic and to maintain space. If there is a gap wh
 {{< /col >}}
 {{< /cols >}}
 
-### I Have Dentures, do I Still Need to See a Dentist?
+### I Have Dentures — Do I Still Need to See a Dentist?
 
-Yes! Since there is no longer the support of natural teeth, the bone will begin to recede, slowly changing how well the denture fits. Over the course of time dentures will wear and need to be relined. Eventually they may need to be replaced in order to keep the jaw alignment normal.
+Yes! Since there is no longer the support of natural teeth, the bone will begin to recede, slowly changing how well the denture fits. Over time, dentures will wear and need to be relined. Eventually they may need to be replaced in order to keep the jaw alignment normal.
 
 Regular dental exams are still important for anyone with dentures so that the health of the oral tissues can be checked.
 

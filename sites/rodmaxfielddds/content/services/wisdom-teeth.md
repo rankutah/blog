@@ -15,7 +15,7 @@ Wisdom teeth are usually extracted between ages 16 to 19. At about age 16, we wi
 
 ## Designated Driver
 
-***Anyone being sedated for any procedure must have a designated driver. Patients who have been sedated can not operate a vehicle or other heavy machinery and should not be left alone. Sedation patients should have someone to assist them when walking and should avoid stairs.***
+***Anyone being sedated for any procedure must have a designated driver. Patients who have been sedated cannot operate a vehicle or other heavy machinery and should not be left alone. Sedation patients should have someone to assist them when walking and should avoid stairs.***
 
 {{< /col >}}
 
@@ -23,7 +23,7 @@ Wisdom teeth are usually extracted between ages 16 to 19. At about age 16, we wi
 
 ## Sedation
 
-Except in rare situations, we sedate patients for wisdom teeth extraction using [oral sedation medication](/services/sedation). The oral medication will make most people extremely tired, but does not always put people to sleep. The patient will not remember the procedure at all, but the medication is light enough that we can still communicate with the patient if needed.
+Except in rare situations, we sedate patients for wisdom teeth extraction using [oral sedation medication](/services/sedation/). The oral medication will make most people extremely tired, but does not always put people to sleep. The patient will not remember the procedure at all, but the medication is light enough that we can still communicate with the patient if needed.
 
 In our office we use nitrous oxide, or “laughing gas”, in conjunction with the oral sedation. This helps the patient to stay relaxed while in their state of semi-consciousness.
 

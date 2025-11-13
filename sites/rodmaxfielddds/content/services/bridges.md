@@ -30,13 +30,13 @@ A bridge fills the gap where a tooth is missing. It includes a pontic (fake toot
 
 If you have a missing tooth, a bridge is not your only option. There are several other treatment options that may be available to you, including:
 
-- [Implants](/implants)
+- [Implants](/services/implants/)
 - Flippers
-- [Partial Dentures](/dentures)
+- [Partial Dentures](/services/dentures/)
 
 Not all of these are possible in every situation. In some cases a bridge may be the best choice. Having a consultation can help determine the best treatment for you.
 
-### How Long is the Procedure?
+### How Long Is the Procedure?
 
 Bridges always take at least two appointments to complete. At the first appointment, Dr. Maxfield will prepare the teeth on either side of the gap by removing any decay that may be present and reshaping the teeth.
 
@@ -52,7 +52,7 @@ At the end of the first appointment, we will place a temporary bridge over the p
 
 Our bridges are typically made from a high-grade porcelain. We will carefully match the shade of the bridge to the shade of your natural teeth. Once the permanent bridge is placed, you should not be able to identify the difference between it and your natural tooth!
 
-### How to Care for a Bridge?
+### How to Care for a Bridge
 
 It is important to note that you must floss under the bridge in addition to regular brushing and flossing. This is critical since the bridge relies on the neighboring teeth for support. Before you leave, we will show you exactly how to thread the floss under your bridge to keep it clean.
 
@@ -60,7 +60,7 @@ If you have an implant-supported bridge, you still need to brush! You may not ha
 
 ### Bridges on Implants
 
-When there are several teeth missing in a row, it is sometimes possible to use a bridge that attaches to implants instead of natural teeth. Implant-supported bridges do take several months to complete, but may be preferable to other treatment options. For more information on implants click here.
+When there are several teeth missing in a row, it is sometimes possible to use a bridge that attaches to implants instead of natural teeth. Implant-supported bridges do take several months to complete, but may be preferable to other treatment options. For more information on implants, see our page on [Implants](/services/implants/).
 
 {{< /col >}}
 

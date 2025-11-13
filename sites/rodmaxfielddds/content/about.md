@@ -8,7 +8,7 @@ description: "Meet Dr. Rod Maxfield and our friendly team providing personalized
 
 # Meet Us
 
-We are proud to say that many of our patients have been with us for decades! With several members of our staff being from the area, we have known our patients personally for years. Our office has always been a family friendly office, treating patients of all ages, and we aim to quickly put you at ease. When you come to our office, you become family!
+We are proud to say that many of our patients have been with us for decades! With several members of our staff being from the area, we have known our patients personally for years. Our office has always been a family-friendly office, treating patients of all ages, and we aim to quickly put you at ease. When you come to our office, you become family!
 
 {{< /section >}}
 
@@ -68,7 +68,7 @@ Kimber has over a decade of experience in dental hygiene. She is the mother of t
 
 <div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">HYGIENIST</div>
 
-Robyn is a returning member of our team. She assisted at our office for several years before taking a break to spend more time with her three beautiful kids. After finishing the dental hygiene program at Fortis College in Salt Lake City, she returned to our office part time. In her free time, Robyn enjoys watching her kids’ football games and cheerleading competitions. Robyn is an active, energetic, and happy person. She makes everyone around her feel valued and loved.
+Robyn is a returning member of our team. She assisted at our office for several years before taking a break to spend more time with her three beautiful kids. After finishing the dental hygiene program at Fortis College in Salt Lake City, she returned to our office part-time. In her free time, Robyn enjoys watching her kids’ football games and cheerleading competitions. Robyn is an active, energetic, and happy person. She makes everyone around her feel valued and loved.
 
 {{< /col >}}
 

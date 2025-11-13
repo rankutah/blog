@@ -21,7 +21,7 @@ Compassionate care, modern technology, and personalized treatment options.
 
 ## Comprehensive Family Dentistry
 
-From preventative care to restorative treatment and oral surgery, we provide thoughtful, personalized care for all ages.
+From preventive care to restorative treatment and oral surgery, we provide thoughtful, personalized care for all ages.
 
 {{< /col >}}
 
@@ -52,7 +52,7 @@ From preventative care to restorative treatment and oral surgery, we provide tho
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="true" y="start" >}}
-## Preventative
+## Preventive
 
 - [Hygiene Basics](/services/hygiene-basics/)
 - [Fluoride](/services/fluoride/)

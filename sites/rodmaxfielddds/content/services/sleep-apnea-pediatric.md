@@ -45,7 +45,7 @@ While the most common sign of sleep apnea in adults is snoring, children sufferi
 - Disturbed or restless sleep
 - Snorting, coughing, or choking
 - Mouth breathing
-- Bed wetting
+- Bedwetting
 - Sleep terrors
 
 ### Treatment

@@ -4,6 +4,17 @@ title = "Rod Maxfield, DDS"
 theme = ["overrides", "PaperMod"]
 themesDir = "../../themes"
 
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
 # Keep taxonomy off for now; can enable tags/categories later if needed.
 disableKinds = ["taxonomy", "term"]
 
@@ -14,11 +25,11 @@ disableKinds = ["taxonomy", "term"]
   description = "Dentistry making a difference in Pleasant Grove, Utah. Compassionate care, modern technology, and personalized treatment options."
   keywords = ["dentist", "dental", "pleasant grove", "utah", "invisalign", "aesthetic dentistry"]
   primaryColor = "violet"
-  logo = "media/logo.png"
+  logo = "media/logo.jpg"
   lightBackground = "violet-100"
-  darkBackground = "violet-950"
+  darkBackground = "gray-800"
   cardBackground = "violet-50"
-  cardBackgroundDark = "indigo-950"
+  cardBackgroundDark = "gray-900"
   cardBorderLight = "neutral-200"
   cardBorderDark = "neutral-700"
 

@@ -8,7 +8,7 @@ description: "Overview of gum disease causes, risks, and treatment options."
 
 # Gum Disease
 
-Fluoride is a mineral that is found in all natural water sources. When used correctly, fluoride is a very effective preventative tool. It remineralizes tooth enamel, creating stronger teeth and greater resistance to decay. Fluoride can be used topically or in the form of supplemental tablets. Supplements can be prescribed for kids ages six months to 16 years if they are high risk for decay or if their drinking water is too low in fluoride.
+Gum disease (periodontal disease) is an infection of the tissues that support your teeth. It is caused by plaque and tartar buildup that irritate the gums. Early detection and consistent home care—combined with professional cleanings—can prevent progression and help protect your teeth and bone.
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -28,12 +28,12 @@ Periodontitis, or Stage 2 gum disease, is irreversible gum disease. At this poin
 
 ## Stage 3: Advanced Periodontitis
 
-Stage 3 of gum disease is Advanced Periodontitis; it has all of the same symptoms of gingivitis and periodontitis. At this point in gum disease, teeth can become mobile and shift–in some cases teeth may even need to be removed.
+Stage 3 of gum disease is Advanced Periodontitis; it has many of the same symptoms of gingivitis and periodontitis. At this point in gum disease, teeth can become mobile and shift—in some cases teeth may even need to be removed.
 
 ## Preventing Gum Disease
 
-In dentistry, prevention is key! Preventing gum disease is simply a matter of creating good hygiene habits. By getting back to basics and scheduling regular cleaning appointments, gum disease can be easily avoided!
-If you have not had a cleaning within the last 6 months please call us!
+In dentistry, prevention is key! Preventing gum disease is simply a matter of creating good hygiene habits. By getting back to basics and scheduling regular cleaning appointments, gum disease can often be avoided.
+If you haven’t had a cleaning within the last six months, please call us!
 {{< /col >}}
 
 {{< /cols >}}

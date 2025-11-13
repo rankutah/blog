@@ -39,7 +39,7 @@ Implants do not decay like natural teeth can, but it is possible to develop [gum
 {{< col >}}
 ### Why Implants?
 
-Implants can help preserve facial structure by preventing bone deterioration which occurs when teeth are missing. Single implants are easier clean than some other restorations, and feel and function more like natural teeth.
+Implants can help preserve facial structure by preventing bone deterioration which occurs when teeth are missing. Single implants are easier to clean than some other restorations, and feel and function more like natural teeth.
 
 Implants can also provide extra stability for dentures. Implant-retained dentures fit more snugly and comfortably than regular dentures. For more about implant-retained dentures click [here](/services/dentures/).
 

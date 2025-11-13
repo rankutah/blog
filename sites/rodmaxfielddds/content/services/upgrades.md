@@ -12,7 +12,7 @@ description: "We always use high quality materials in our office, but there is a
 {{< col >}}
 ### Good, Better, Best
 
-We always use high quality materials in our office, but there is a “good, better, best” in every situation. We refer to the “best” as material upgrades. These are the highest quality materials, but they are not covered by insurance because there are other good materials that would suffice. Material upgrades are optional, but are strongly recommended in most cases.
+We always use high‑quality materials in our office, but there is a “good, better, best” in every situation. We refer to the “best” as material upgrades. These are the highest‑quality materials, but they are not covered by insurance because there are other good materials that would suffice. Material upgrades are optional, but are strongly recommended in most cases.
 
 Typically, insurance will only cover the “Least Expensive Alternative Treatment” (LEAT). Because insurance does not cover the upgrades, and because we need to cover our costs, should you choose to use the upgraded materials there will be a small additional fee that will be charged to you. (e.g. insurance will normally cover up to the cost of a silver amalgam filling, but will not cover the full cost of a white composite filling; therefore you will be responsible to cover the difference.)
 
@@ -20,7 +20,7 @@ Below is a list of upgraded materials used in our office. If you have questions 
 
 ### Fillings
 
-We always use high quality [filling](/services/fillings/) materials, but some are better than others. Insurance will *usually cover at least a portion of a standard filling, but the fee associated with material upgrades is not covered.
+We always use high‑quality [filling](/services/fillings/) materials, but some are better than others. Insurance will usually cover at least a portion of a standard filling, but the fee associated with material upgrades is not covered.
 
 ### Nano-Hybrid Composites
 
@@ -29,7 +29,7 @@ This is a tooth-colored material that is significantly stronger than other filli
 {{< col >}}
 ### Crowns
 
-A variety of materials exist when it comes to [crowns](/services/crowns/), and each has it’s own purpose. Some are stronger than others; some are more aesthetically pleasing; others are a balance of strength and aesthetic. Depending on the case, Dr. Maxfield may recommend one material over another.
+A variety of materials exist when it comes to [crowns](/services/crowns/), and each has its own purpose. Some are stronger than others; some are more aesthetically pleasing; others are a balance of strength and aesthetics. Depending on the case, Dr. Maxfield may recommend one material over another.
 
 As with fillings, there is a base cost for crowns. Any material upgrade will have an additional fee which is not covered by insurance.
 

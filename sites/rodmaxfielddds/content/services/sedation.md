@@ -25,7 +25,7 @@ In our office we use an oral sedation medication. It will make most people extre
 {{< col >}}
 ### PLEASE NOTE
 
-Anyone being sedated for any procedure must have a designated driver. Patients who have been sedated can not operate a vehicle or other heavy machinery and should not be left alone. Sedation patients should have someone to assist them when walking and should avoid stairs.
+Anyone being sedated for any procedure must have a designated driver. Patients who have been sedated cannot operate a vehicle or other heavy machinery and should not be left alone. Sedation patients should have someone to assist them when walking and should avoid stairs.
 
 ### Patient Instructions
 

@@ -10,7 +10,7 @@ description: "Do you snore at night? Do you wake up still feeling tired? If so, 
 
 Do you snore at night? Do you wake up still feeling tired? If so, you might have sleep apnea. Sleep apnea is a common disorder that happens when your regular breathing is interrupted while you are asleep. There are two types of sleep apnea: Obstructive Sleep Apnea, and Central Sleep Apnea. Both forms are extremely serious, and should not be left untreated.
 
-If you think you may have sleep apnea, please <a href="/contact/">call our office</a> or your general care physician for a possible evaluation.
+If you think you may have sleep apnea, please <a href="/contact/">call our office</a> or your primary care physician for a possible evaluation.
 
 {{< cols min="18rem" row="md" >}}
 {{< col >}}
@@ -51,10 +51,10 @@ Central sleep apnea is not a blocked airway, but is actually a neurological prob
 
 There are several treatment options for sleep apnea. These include:
 
-- Continuous Positive Air Pressure (CPAP)- A CPAP is a device which improves breathing while you sleep. The device supplies air through the nasal passages and the air pressure keeps the airway open while sleeping.
-- Oral Appliances- Certain oral devices can shift and support the jaw to prevent the airway from collapsing. Research shows that oral appliances can successfully prevent sleep apnea in some mild to moderate cases.
-- Adjusting Sleeping Habits- This may mean simply not sleeping on your back
-- Surgery- In some cases, upper airwaysurgery may be recommended when other treatment options are unsuccessful in eliminating the symptoms of sleep apnea. The procedure may be minimally invasive or more complex depending on the location and nature of the airway obstruction.
+- Continuous Positive Airway Pressure (CPAP) — A CPAP device improves breathing while you sleep. The device supplies air through the nasal passages and the air pressure keeps the airway open while sleeping.
+- Oral appliances — Certain oral devices can shift and support the jaw to prevent the airway from collapsing. Research shows that oral appliances can successfully prevent sleep apnea in some mild to moderate cases.
+- Adjusting sleeping habits — This may mean simply not sleeping on your back.
+- Surgery — In some cases, upper airway surgery may be recommended when other treatment options are unsuccessful in eliminating the symptoms of sleep apnea. The procedure may be minimally invasive or more complex depending on the location and nature of the airway obstruction.
 {{< /col >}}
 {{< /cols >}}
 
