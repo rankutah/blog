@@ -1,6 +1,6 @@
----
 title: "Payment Options"
 url: "/financial/payment/"
+description: "Ways to pay for treatment, including cards, HSA/FSA, and financing options."
 ---
 
 {{< section >}}

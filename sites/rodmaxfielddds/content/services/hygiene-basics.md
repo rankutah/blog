@@ -1,9 +1,8 @@
-+++
-title = "Hygiene Basics"
-description = "It is important to see your dentist twice a year for hygiene appointments."
-layout = "flowbite"
-url = "/services/hygiene-basics/"
-+++
+---
+title: "Hygiene Basics"
+url: "/services/hygiene-basics/"
+description: "It is important to see your dentist twice a year for hygiene appointments."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}

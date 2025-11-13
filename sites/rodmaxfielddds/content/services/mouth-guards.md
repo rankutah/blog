@@ -1,9 +1,8 @@
-+++
-title = "Mouth Guards"
-description = "Custom mouth guards provide much stronger protection than generic ones from the local drugstore."
-layout = "flowbite"
-url = "/services/mouth-guards/"
-+++
+---
+title: "Mouth Guards"
+url: "/services/mouth-guards/"
+description: "Custom mouth guards provide much stronger protection than generic ones from the local drugstore."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}

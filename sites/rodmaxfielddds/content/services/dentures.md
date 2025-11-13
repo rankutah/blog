@@ -1,9 +1,8 @@
-+++
-title = "Dentures"
-description = "A denture is an appliance that replaces missing teeth."
-layout = "flowbite"
-url = "/services/dentures/"
-+++
+---
+title: "Dentures"
+url: "/services/dentures/"
+description: "A denture is an appliance that replaces missing teeth."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}

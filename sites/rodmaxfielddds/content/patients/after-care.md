@@ -2,24 +2,27 @@
  title = "Post-Op Care"
  layout = "flowbite"
  draft = false
- url = "/patients/post-op-care/"
+ url = "/patients/after-care/"
+ description = "Post‑treatment care instructions for crowns, dentures, fillings, implants, oral surgery, and more."
 +++
 
 {{< section >}}
 
-# Post-Op Care
+# After-Care Instructions
 
-Crowns & Bridges
-Dentures
-Fillings
-Implants
-Oral Sedation
-Oral Surgery
-Periodontal Therapy
-Root Canals
-Sealants
+### Jump to a Topic
 
-## Crowns and Bridges (Also Inlays and Onlays):
+{{< button url="#crowns-bridges" text="Crowns & Bridges" >}}
+{{< button url="#dentures" text="Dentures" >}}
+{{< button url="#fillings" text="Fillings" >}}
+{{< button url="#implants" text="Implants" >}}
+{{< button url="#oral-surgery" text="Oral Surgery" >}}
+{{< button url="#oral-sedation" text="Oral Sedation" >}}
+{{< button url="#periodontal-therapy" text="Periodontal Therapy" >}}
+{{< button url="#root-canal" text="Root Canals" >}}
+{{< button url="#sealants" text="Sealants" >}}
+
+## Crowns & Bridges (Also Inlays and Onlays) {#crowns-bridges}
 
 These restorations require two appointments: first to prep the tooth and place a temporary crown, and second to place the permanent crown.
 
@@ -34,19 +37,19 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 - If your temporary crown/bridge comes off, please call our office and bring the temporary crown with you so we can re-cement it. It is very important that your temporary crown/bridge stays on to avoid tooth movement.
 - If pain swelling, an uneven bite, or anything that you perceive to be abnormal occurs, contact our office immediately.
 
-## Denture Delivery
+## Denture Delivery {#dentures}
 
 - Adjusting to new dentures takes time. The gum tissue supporting the denture may develop sore spots. When this occurs, call for an appointment right away to have your dentures adjusted. Dentures often require a re-line to improve the fit and retention.
 - Dentures placed immediately after the extraction of remaining teeth act as large band-aids, helping the tissue heal. Immediate dentures will definitely require additional re-lines as the extraction sites heal and the gums reduce in size.
 - Dentures must be brushed twice daily to remove plaque and prevent tartar from accumulating. Be sure to take your dentures out at night to help the gums stay healthy. Store in a container or cup with water. All denture wearers must have regular check-ups.
 
-## Fillings
+## Fillings {#fillings}
 
 - Avoid eating or chewing until numbness is completely gone
 - Hot, cold, and pressure sensitivity is normal after your appointment. The injection site may also be sore. Over the counter pain medications should handle any discomfort.
 - If temperature, pressure, bite, or any unexplained sensitivity persists, or gets worse, call our office immediately for an appointment.
 
-## Implants
+## Implants {#implants}
 
 - Avoid the surgery site as much as possible. Avoid rinsing, toughing, or anything that might disturb the implant.
 - Some bleeding may occur. Use gauze to stop any bleeding by simply biting on the gauze for thirty minutes. If bleeding will not stop, call our office immediately.
@@ -56,7 +59,7 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 - Drink plenty of fluids. A diet of soft foods is recommended for the first 72 hours. As the surgery site heals, regular eating habits may be resumed.
 - Good oral hygiene is critical for proper healing. Anti-microbial mouth rinses may be used twice daily. Carefully brush around the surgery site, and not directly on it until healing is complete.
 
-## Oral Surgery
+## Oral Surgery {#oral-surgery}
 
 ### Implants:
 
@@ -80,7 +83,7 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 - Jaw soreness is common and will usually go away with time.
 - Sutures, if used, will usually dissolve on their own unless non-dissolving sutures were used.  In this case they will be removed approximately one week from placement.
 
-## Oral Sedation
+## Oral Sedation {#oral-sedation}
 
 - Patient must not drive for 24 hours after taking sedative drugs.
 - A responsible adult must stay with the patient until the effects of sedative drugs have worn off.
@@ -91,7 +94,7 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 - Assist patient when walking, and be prepared to support all of their weight.
 - Patient should not be left alone with small children who need prenatal care for at least 24 hours.
 
-## Periodontal Therapy, Scaling and Root Planing (Deep Cleaning):
+## Periodontal Therapy, Scaling and Root Planing (Deep Cleaning) {#periodontal-therapy}
 
 - Avoid eating until numbness is gone
 - Avoid eating hard foods, such as tortilla chips, potato chips, popcorn or seeds for 48 hours
@@ -102,14 +105,14 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 - Do not smoke for at least 2-4 days as it can interfere with healing.
 - Sensitivity to hot/cold and/or sweets is normal and should gradually resolve itself within a few weeks with proper home care. Brushing 2-3 times daily with sensitivity reducing toothpaste or using fluoride rinse usually helps. Avoid “whitening” toothpaste as it may aggravate the treated areas.
 
-## Root Canal Treatment
+## Root Canal Treatment {#root-canal}
 
 - During root canal treatment, the nerve, blood vessels and decay in your tooth are removed. Because the tooth loses its vascular supply, it quickly becomes brittle and subject to fracture. Because of this, a crown is highly recommended as soon as possible.
 - Discomfort and swelling of the affected site may occur for several days. Tenderness to chewing may also occur and you should chew on the other side of the mouth.
 - Antibiotics for infection and pain medications may be prescribed. Take them as directed.
 - Drinking alcohol and/or driving should be avoided while taking narcotic pain medication.
 
-## Sealants
+## Sealants {#sealants}
 
 - It is normal for the bit to feel slightly off after sealing placement. There may also be a slight aftertaste immediately following application. Rinsing with water will help remove the unwanted taste.
 - Sealants may be chewed on right after placement

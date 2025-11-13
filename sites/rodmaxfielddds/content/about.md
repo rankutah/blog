@@ -1,5 +1,7 @@
 ---
 title: "About"
+url: "/about/"
+description: "Meet Dr. Rod Maxfield and our friendly team providing personalized dental care in Pleasant Grove, UT."
 ---
 
 {{< section >}}
@@ -12,35 +14,9 @@ We are proud to say that many of our patients have been with us for decades! Wit
 
 {{< section >}}
 
-{{< cols min="16rem" gap="1.25rem" v="start" >}}
+## Your Care Team
 
-{{< col card="true" y="start" >}}
-
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="rod-maxfield" alt="Dr. Rod Maxfield" >}}
-</div>
-
-> “A smile is far more than teeth, and general practice always has something to keep me interested. I am constantly upgrading my skills, materials, equipment, and techniques in order to provide the best care possible. It’s rewarding to see the dentistry we do making a difference in our patients’ lives.”
->
-> – Dr. Rod Maxfield
-
-### Dr. Rod Maxfield
-
-<div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">FAMILY DENTIST</div>
-
-Dr. Maxfield was born and raised in Pleasant Grove, and very much enjoys serving patients who come to him from around the corner and across the country. He has provided thoughtful, personalized oral health care for over twenty years. His professional training was accomplished at Creighton School of Dentistry, one of the nation’s top dental programs, in conjunction with the University of Utah School of Medicine. Dr. Maxfield has earned degrees from Utah Valley University, the University of Utah, and Creighton University. He is a member of the ADA and a member and former president of the Utah Academy of General Dentistry. Outside of the office Dr. Maxfield enjoys all things outdoors, and is very involved with church and scouting activities. He has three daughters, two sons, and a wonderful wife, who all keep him very busy attending dance, cheer, soccer, wrestling, baseball, orchestra concerts, and on and on.
-
-{{< /col >}}
-
-{{< col card="true" y="start" >}}
-
-## Our team
-
-We’re proud to have a friendly, experienced team that loves caring for patients and the community.
-
-{{< /col >}}
-
-{{< /cols >}}
+Below you can get to know the people who greet you, clean and restore your teeth, assist during treatment, and help make every visit comfortable. We work together—and with you—to keep your smile healthy.
 
 {{< /section >}}
 
@@ -50,9 +26,19 @@ We’re proud to have a friendly, experienced team that loves caring for patient
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="shauna" alt="Shauna" >}}
-</div>
+{{< staff-photo name="rod-maxfield" alt="Dr. Rod Maxfield" variant="card" >}}
+
+### Dr. Rod Maxfield
+
+<div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">FAMILY DENTIST</div>
+
+Pleasant Grove native with 20+ years of thoughtful, personalized care. Trained at Creighton School of Dentistry (in collaboration with University of Utah School of Medicine). Former President of the Utah Academy of General Dentistry, active ADA member, and always learning new techniques and technologies. Outdoors enthusiast, devoted husband, proud dad of five, and active in his church community.
+
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+
+{{< staff-photo name="shauna" alt="Shauna" variant="card" >}}
 
 ### Shauna
 
@@ -64,9 +50,7 @@ Shauna loves medicine and is licensed in phlebotomy and medical assisting. Her e
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="kimber" alt="Kimber" >}}
-</div>
+{{< staff-photo name="kimber" alt="Kimber" variant="card" >}}
 
 ### Kimber
 
@@ -78,9 +62,7 @@ Kimber has over a decade of experience in dental hygiene. She is the mother of t
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="robyn" alt="Robyn" >}}
-</div>
+{{< staff-photo name="robyn" alt="Robyn" variant="card" >}}
 
 ### Robyn
 
@@ -92,9 +74,7 @@ Robyn is a returning member of our team. She assisted at our office for several 
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="alicia" alt="Alicia" >}}
-</div>
+{{< staff-photo name="alicia" alt="Alicia" variant="card" >}}
 
 ### Alicia
 
@@ -104,9 +84,7 @@ Robyn is a returning member of our team. She assisted at our office for several 
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="kacey" alt="Kacey" >}}
-</div>
+{{< staff-photo name="kacey" alt="Kacey" variant="card" >}}
 
 ### Kacey
 
@@ -118,9 +96,7 @@ Kacey graduated from Lehi High School, trained in dental assisting at ATS, and i
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="brylee" alt="Brylee" >}}
-</div>
+{{< staff-photo name="brylee" alt="Brylee" variant="card" >}}
 
 ### Brylee
 
@@ -132,9 +108,7 @@ Brylee is the newest member of our team. She is originally from Orem, and she gr
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="lauren" alt="Lauren" >}}
-</div>
+{{< staff-photo name="lauren" alt="Lauren" variant="card" >}}
 
 ### Lauren
 
@@ -146,9 +120,7 @@ Lauren was born and raised in Arizona. She comes from a large family and she lov
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="addie" alt="Addie" >}}
-</div>
+{{< staff-photo name="addie" alt="Addie" variant="card" >}}
 
 ### Addie
 
@@ -158,9 +130,7 @@ Lauren was born and raised in Arizona. She comes from a large family and she lov
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="emery" alt="Emery" >}}
-</div>
+{{< staff-photo name="emery" alt="Emery" variant="card" >}}
 
 ### Emery
 
@@ -170,9 +140,7 @@ Lauren was born and raised in Arizona. She comes from a large family and she lov
 
 {{< col card="true" y="start" >}}
 
-<div class="aspect-square w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
-	{{< staff-photo name="andrea" alt="Andrea" >}}
-</div>
+{{< staff-photo name="andrea" alt="Andrea" variant="card" >}}
 
 ### Andrea
 

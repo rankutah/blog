@@ -1,6 +1,6 @@
----
 title: "Insurance"
 url: "/financial/insurance/"
+description: "Dental insurance information, plan participation, and coverage notes for Rod Maxfield, DDS."
 ---
 
 {{< section >}}

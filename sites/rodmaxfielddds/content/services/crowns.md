@@ -1,9 +1,8 @@
-+++
-title = "Crowns"
-description = "Our goal is to provide dentistry that is undetectable."
-layout = "flowbite"
-url = "/services/crowns/"
-+++
+---
+title: "Crowns"
+url: "/services/crowns/"
+description: "Our goal is to provide dentistry that is undetectable."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}

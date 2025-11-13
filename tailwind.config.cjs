@@ -35,9 +35,14 @@ function buildSafelist() {
       `dark:hover:bg-${c}-700`,
       `dark:focus:ring-${c}-800`,
       // Link text colors used by link-brand mapping
+      // Legacy (v1): base 600
       `text-${c}-600`,
       `hover:text-${c}-700`,
       `dark:hover:text-${c}-500`,
+      // Current (v2): base 500
+      `text-${c}-500`,
+      `hover:text-${c}-600`,
+      `dark:hover:text-${c}-400`,
     );
   }
   // not needed for backgrounds anymore, but harmless to keep

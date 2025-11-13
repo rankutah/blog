@@ -1,9 +1,8 @@
-+++
- title = "First Visit"
- layout = "flowbite"
- draft = false
- url = "/patients/first-visit/"
-+++
+---
+title: "First Visit"
+url: "/patients/first-visit/"
+description: "What to bring and what to expect at your first visit with Rod Maxfield, DDS."
+---
 
 {{< section >}}
 

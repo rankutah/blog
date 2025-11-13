@@ -1,7 +1,7 @@
 ---
 title: "Services"
-layout: "flowbite"
-draft: false
+url: "/services/"
+description: "Explore our dental services, from preventive care and aesthetics to implants and oral surgery."
 ---
 
 {{< section >}}
@@ -21,6 +21,8 @@ draft: false
 - [Hygiene Basics](/services/hygiene-basics/)
 - [Fluoride](/services/fluoride/)
 - [Infection Control](/services/infection/)
+- [Gum Disease](/services/gum-disease/)
+- [Mouth Guards](/services/mouth-guards/)
 
 {{< /col >}}
 
@@ -59,22 +61,15 @@ draft: false
 - [Wisdom Teeth](/services/wisdom-teeth/)
 - [Bone Grafting](/services/bone-grafting/)
 - [PRF](/services/prf/)
-
-{{< /col >}}
-
-{{< col card="true" y="start" >}}
-## Sedation & Periodontal
-
 - [Sedation](/services/sedation/)
-- [Gum Disease](/services/gum-disease/)
 
 {{< /col >}}
 
+
 {{< col card="true" y="start" >}}
-## Other
+## Root Canals (Endodontics)
 
 - [Root Canals](/services/root-canals/)
-- [Mouth Guards](/services/mouth-guards/)
 
 {{< /col >}}
 

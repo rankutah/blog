@@ -1,9 +1,8 @@
-+++
-title = "Sleep Apnea (Pediatric)"
-description = "Pediatric sleep apnea is very similar to adult sleep apnea, however there are a few differences."
-layout = "flowbite"
-url = "/services/sleep-apnea-pediatric/"
-+++
+---
+title: "Sleep Apnea (Pediatric)"
+url: "/services/sleep-apnea-pediatric/"
+description: "Pediatric sleep apnea is very similar to adult sleep apnea, however there are a few differences."
+---
 
 {{< section >}}
 Pediatric sleep apnea is very similar to adult sleep apnea, however there are a few differences. Adults will usually experience daytime sleepiness, while children are more likely to have behavioral issues. Obesity is one major cause of adult sleep apnea and can play a role in pediatric sleep apnea as well. But the most common cause of pediatric sleep apnea is enlarged tonsils and adenoids.

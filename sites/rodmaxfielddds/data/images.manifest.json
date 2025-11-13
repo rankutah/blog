@@ -1,4 +1,428 @@
 {
+  "/media/addie.jpg": {
+    "width": 427,
+    "height": 393,
+    "aspect": 1.0865139949109415,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAeACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwUCBP/EACgQAAIBAwIFAwUAAAAAAAAAAAECAwAEERIhEzFBUXEFFGEiM4Gx4f/EABcBAQADAAAAAAAAAAAAAAAAAAIAAQP/xAAaEQADAAMBAAAAAAAAAAAAAAAAAQIREjFB/9oADAMBAAIRAxEAPwCUEkksw8GWKnDD4rvFjHd2PEhmcypk4O4JA5fFX1hiKERogyOgqFGl3D7lbfQTEo0gDPms0xKV6Zs7e7hVHgcgtuwY42x2qi0t2DhbYtg/VuKWNEuoRNHKrZ546HqKRCyMxA1Z51N2g6gvLheHC2tgcHB5eaD0kzwXsnFAMbqCPitlEmcvgpIBjUpwT571n0+dp4AZPuIdLEDY7/ylDyKlgpMkayMyEDVuV6Z7+ayZMA4H5o2bdT1x+6PUWfFC+lzw/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/addie__w320.avif"
+        },
+        {
+          "w": 427,
+          "url": "/media-deriv/addie__w427.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/addie__w320.jpg"
+        },
+        {
+          "w": 427,
+          "url": "/media-deriv/addie__w427.jpg"
+        }
+      ]
+    }
+  },
+  "/media/addie.avif": {
+    "width": 427,
+    "height": 393,
+    "aspect": 1.0865139949109415,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAeACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwUCBP/EACgQAAIBAwIFAwUAAAAAAAAAAAECAwAEERIhEzFBUXEFFGEiM4Gx4f/EABcBAQADAAAAAAAAAAAAAAAAAAIAAQP/xAAaEQADAAMBAAAAAAAAAAAAAAAAAQIREjFB/9oADAMBAAIRAxEAPwCUEkksw8GWKnDD4rvFjHd2PEhmcypk4O4JA5fFX1hiKERogyOgqFGl3D7lbfQTEo0gDPms0xKV6Zs7e7hVHgcgtuwY42x2qi0t2DhbYtg/VuKWNEuoRNHKrZ546HqKRCyMxA1Z51N2g6gvLheHC2tgcHB5eaD0kzwXsnFAMbqCPitlEmcvgpIBjUpwT571n0+dp4AZPuIdLEDY7/ylDyKlgpMkayMyEDVuV6Z7+ayZMA4H5o2bdT1x+6PUWfFC+lzw/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/addie__w320.avif"
+        },
+        {
+          "w": 427,
+          "url": "/media-deriv/addie__w427.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/addie__w320.jpg"
+        },
+        {
+          "w": 427,
+          "url": "/media-deriv/addie__w427.jpg"
+        }
+      ]
+    }
+  },
+  "/media/andrea.jpg": {
+    "width": 1196,
+    "height": 1166,
+    "aspect": 1.0257289879931388,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQYDAf/EACYQAAIBAwMEAgMBAAAAAAAAAAECAwAEERIhMQUTQVEygQYUQpH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQIE/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAECESEDYf/aAAwDAQACEQMRAD8AXC4BOCQBR15etCcxlpHxhIlO2fe/ikpZ5I7Y50xo2w7m2f8AaIMJF5IzOC4CsAvo85+6wZZpWujC16o1zdRw3EXamVjuCTqz4NNsmTxUr1JUjeGfUe6z7kehVbFIJtTLupAK7YGMUdFStDWOjrssxXUCdLYDZ3Q45xQcrTXv5IBGX0xgqdR/ke/ukIZmEmxIjJZjjyeK3sbNbQSH5PIxYseceKuGk+kx1C0/Y60lqkgJAGTnYeap7RViRUCjugAOeA2KHSxderPckBEBLc5O9JSShUD5OT8ceac4qSoE9P/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/andrea__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/andrea__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/andrea__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/andrea__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/andrea__w960.avif"
+        },
+        {
+          "w": 1196,
+          "url": "/media-deriv/andrea__w1196.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/andrea__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/andrea__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/andrea__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/andrea__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/andrea__w960.jpg"
+        },
+        {
+          "w": 1196,
+          "url": "/media-deriv/andrea__w1196.jpg"
+        }
+      ]
+    }
+  },
+  "/media/andrea.avif": {
+    "width": 1196,
+    "height": 1166,
+    "aspect": 1.0257289879931388,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQYDAf/EACYQAAIBAwMEAgMBAAAAAAAAAAECAwAEERIhMQUTQVEygQYUQpH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQIE/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAECESEDYf/aAAwDAQACEQMRAD8AXC4BOCQBR15etCcxlpHxhIlO2fe/ikpZ5I7Y50xo2w7m2f8AaIMJF5IzOC4CsAvo85+6wZZpWujC16o1zdRw3EXamVjuCTqz4NNsmTxUr1JUjeGfUe6z7kehVbFIJtTLupAK7YGMUdFStDWOjrssxXUCdLYDZ3Q45xQcrTXv5IBGX0xgqdR/ke/ukIZmEmxIjJZjjyeK3sbNbQSH5PIxYseceKuGk+kx1C0/Y60lqkgJAGTnYeap7RViRUCjugAOeA2KHSxderPckBEBLc5O9JSShUD5OT8ceac4qSoE9P/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/andrea__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/andrea__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/andrea__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/andrea__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/andrea__w960.avif"
+        },
+        {
+          "w": 1196,
+          "url": "/media-deriv/andrea__w1196.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/andrea__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/andrea__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/andrea__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/andrea__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/andrea__w960.jpg"
+        },
+        {
+          "w": 1196,
+          "url": "/media-deriv/andrea__w1196.jpg"
+        }
+      ]
+    }
+  },
+  "/media/brylee.jpg": {
+    "width": 1200,
+    "height": 1106,
+    "aspect": 1.0849909584086799,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAABAMFAQIG/8QAIxAAAgEDAwUBAQAAAAAAAAAAAQIDAAQRBRIhEyIxQbFhkf/EABcBAAMBAAAAAAAAAAAAAAAAAAACAwH/xAAcEQACAQUBAAAAAAAAAAAAAAAAAgEREiExQVH/2gAMAwEAAhEDEQA/AJVUHHANPk0wFFVDgtwaBBHmdB45q5Mm6dUWXYUXewA8g8D4ak3hVSK2tntBsDllx/aZaydQGizMqGSRS7vkdueMZrGmOTLKucgMRQs5oDR0qYSAxZyAApOScYp1o8c00dzGwKsmx/fNc/fSsSqeFIzU2hzMt70PKSjJ/CPdMyYuMWeF5cSs2oW0Q4TudgPeBx9rfSgq3Vwq+A5osM3Uvo1K4I3JnNI0F+qs8jDlpX+4pF2M+j//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/brylee__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/brylee__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/brylee__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/brylee__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/brylee__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/brylee__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/brylee__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/brylee__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/brylee__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/brylee__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/brylee__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/brylee__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/brylee.avif": {
+    "width": 1200,
+    "height": 1106,
+    "aspect": 1.0849909584086799,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAABAMFAQIG/8QAIxAAAgEDAwUBAQAAAAAAAAAAAQIDAAQRBRIhEyIxQbFhkf/EABcBAAMBAAAAAAAAAAAAAAAAAAACAwH/xAAcEQACAQUBAAAAAAAAAAAAAAAAAgEREiExQVH/2gAMAwEAAhEDEQA/AJVUHHANPk0wFFVDgtwaBBHmdB45q5Mm6dUWXYUXewA8g8D4ak3hVSK2tntBsDllx/aZaydQGizMqGSRS7vkdueMZrGmOTLKucgMRQs5oDR0qYSAxZyAApOScYp1o8c00dzGwKsmx/fNc/fSsSqeFIzU2hzMt70PKSjJ/CPdMyYuMWeF5cSs2oW0Q4TudgPeBx9rfSgq3Vwq+A5osM3Uvo1K4I3JnNI0F+qs8jDlpX+4pF2M+j//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/brylee__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/brylee__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/brylee__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/brylee__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/brylee__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/brylee__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/brylee__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/brylee__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/brylee__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/brylee__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/brylee__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/brylee__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/emery.jpg": {
+    "width": 1200,
+    "height": 1457,
+    "aspect": 0.8236101578586136,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAnACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQYC/8QAKBAAAgEEAQMEAQUAAAAAAAAAAQIDAAQRIRIFEzEiUWFxQRQjQsHx/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQACA//EABsRAQEAAgMBAAAAAAAAAAAAAAABAhEhIkFR/9oADAMBAAIRAxEAPwBB/cQERZDaO917FtyI5KxH4+BWjBDi1DyoFlOmI+6VBcKDxKnJY7x43XKNybSzW/GIOPUh8j+6U2XMWMqqoAB7n5rQfuOcEDix4sPj3+6iiLSQqzDJXeM+M0U2adDexD9JLgnPHVYC3IW4kt3PFtN41vzVVxdzc1WSXlzOl8DVRond6o4CguBv6p18WPU+SYd2KNDlnO95wBundOsIprydJclUCsBnzn/KmubadbqN1QqBrJ8U3pHUoh1K4jlLL6QvMDI0apDlyjjSO5uC8hZuGlxqtyzso4pO5x9ZXZoorcYov1PbVR/I4rn7CPsdWukJz+Rn2Jooqvpxf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/emery__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/emery__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/emery__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/emery__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/emery__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/emery__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/emery__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/emery__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/emery__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/emery__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/emery__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/emery__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/emery.avif": {
+    "width": 1200,
+    "height": 1457,
+    "aspect": 0.8236101578586136,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAnACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQYC/8QAKBAAAgEEAQMEAQUAAAAAAAAAAQIDAAQRIRIFEzEiUWFxQRQjQsHx/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQACA//EABsRAQEAAgMBAAAAAAAAAAAAAAABAhEhIkFR/9oADAMBAAIRAxEAPwBB/cQERZDaO917FtyI5KxH4+BWjBDi1DyoFlOmI+6VBcKDxKnJY7x43XKNybSzW/GIOPUh8j+6U2XMWMqqoAB7n5rQfuOcEDix4sPj3+6iiLSQqzDJXeM+M0U2adDexD9JLgnPHVYC3IW4kt3PFtN41vzVVxdzc1WSXlzOl8DVRond6o4CguBv6p18WPU+SYd2KNDlnO95wBundOsIprydJclUCsBnzn/KmubadbqN1QqBrJ8U3pHUoh1K4jlLL6QvMDI0apDlyjjSO5uC8hZuGlxqtyzso4pO5x9ZXZoorcYov1PbVR/I4rn7CPsdWukJz+Rn2Jooqvpxf//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/emery__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/emery__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/emery__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/emery__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/emery__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/emery__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/emery__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/emery__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/emery__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/emery__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/emery__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/emery__w1200.jpg"
+        }
+      ]
+    }
+  },
   "/media/hero.jpg": {
     "width": 5616,
     "height": 3744,
@@ -185,6 +609,372 @@
       ]
     }
   },
+  "/media/kacey.jpg": {
+    "width": 1200,
+    "height": 1021,
+    "aspect": 1.1753183153770812,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAEDBQL/xAAmEAACAAYCAAYDAAAAAAAAAAABAgADBBEhMRITBSJCYXGxQVKR/8QAGAEAAgMAAAAAAAAAAAAAAAAAAgMAAQT/xAAbEQADAAIDAAAAAAAAAAAAAAAAARECIQMSQf/aAAwDAQACEQMRAD8A6dC0zmjWF7AHBtEGSxnBQWZs4BF8QhlVjzsT7jftaCVg6Jiz+Uxh+c2tCcW29hRFVZSM0p6gkqRsbudCBVvVKZElFr284J0Y26R5c7slEJ1t6V1ncZtR4QQzjtu18E5v8wfaPbJkjRN0ZVADLy82YNXzOymny9ccD3htWiy3UIOIxr5gM9QaiaSPSPqEcedgcKPBHUMynaMD/cRJ8SmmvaVMIZC/HWoJJJSomcTbX1FczFeLfsI0ROleH//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kacey__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kacey__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kacey__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kacey__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kacey__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kacey__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kacey__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kacey__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kacey__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kacey__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kacey__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kacey__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kacey.avif": {
+    "width": 1200,
+    "height": 1021,
+    "aspect": 1.1753183153770812,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAEDBQL/xAAmEAACAAYCAAYDAAAAAAAAAAABAgADBBEhMRITBSJCYXGxQVKR/8QAGAEAAgMAAAAAAAAAAAAAAAAAAgMAAQT/xAAbEQADAAIDAAAAAAAAAAAAAAAAARECIQMSQf/aAAwDAQACEQMRAD8A6dC0zmjWF7AHBtEGSxnBQWZs4BF8QhlVjzsT7jftaCVg6Jiz+Uxh+c2tCcW29hRFVZSM0p6gkqRsbudCBVvVKZElFr284J0Y26R5c7slEJ1t6V1ncZtR4QQzjtu18E5v8wfaPbJkjRN0ZVADLy82YNXzOymny9ccD3htWiy3UIOIxr5gM9QaiaSPSPqEcedgcKPBHUMynaMD/cRJ8SmmvaVMIZC/HWoJJJSomcTbX1FczFeLfsI0ROleH//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kacey__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kacey__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kacey__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kacey__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kacey__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kacey__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kacey__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kacey__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kacey__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kacey__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kacey__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kacey__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kimber.jpg": {
+    "width": 1200,
+    "height": 972,
+    "aspect": 1.2345679012345678,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAIDBQb/xAAsEAABAwMCAwYHAAAAAAAAAAABAgMRAAQhBTESIkETFCQyUXEzYXKBkbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECMREh/9oADAMBAAIRAxEAPwDl8xzfypCCdjUOQZGftV1sEuPtpgCVUYYXc6ci3s2XuJxSlCVbQn0oUCZzjpW9qqePS23UtwlYCZ9IOf1WGpIBggA9Zol9KtJYVkKBEJA9qZZHs0uKAzG5ojZJETjFIsfhv/QaH6iVou71Pvdi3atNFtLZBJKpk1mFxSglEyEjlMbfKl2o8NcnqOGPzQEeYe1M60VT6j//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kimber__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kimber__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kimber__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kimber__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kimber__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kimber__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kimber__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kimber__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kimber__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kimber__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kimber__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kimber__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kimber.avif": {
+    "width": 1200,
+    "height": 972,
+    "aspect": 1.2345679012345678,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAIDBQb/xAAsEAABAwMCAwYHAAAAAAAAAAABAgMRAAQhBTESIkETFCQyUXEzYXKBkbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECMREh/9oADAMBAAIRAxEAPwDl8xzfypCCdjUOQZGftV1sEuPtpgCVUYYXc6ci3s2XuJxSlCVbQn0oUCZzjpW9qqePS23UtwlYCZ9IOf1WGpIBggA9Zol9KtJYVkKBEJA9qZZHs0uKAzG5ojZJETjFIsfhv/QaH6iVou71Pvdi3atNFtLZBJKpk1mFxSglEyEjlMbfKl2o8NcnqOGPzQEeYe1M60VT6j//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kimber__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kimber__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kimber__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kimber__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kimber__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kimber__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kimber__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kimber__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kimber__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kimber__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kimber__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kimber__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/lauren.jpg": {
+    "width": 1200,
+    "height": 1088,
+    "aspect": 1.1029411764705883,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAgMFBgT/xAAoEAABAwMEAQIHAAAAAAAAAAABAgMRAAQxBRITIUEicQYlQmFikaH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAREhMf/aAAwDAQACEQMRAD8AnWbrjNyhxpBUtM7RHkiK1GjNqsLHdcAJLqgZntPXms00SFg4piXUKsTccg5S9Ez3ExHtFZEmu/Rk/NUKOPUevNVdZJYDrxQotPMFpZT3tP0k/uoDVw9aOF23J3JEEgTAorjVb29Z2Oq9EQYTG73q6p4Q07wQ5ICsiqjvw8yppKrZ0tr5OTvsZn+VDWrjeKVJC0xg1qLF4u2qFxEjE1qGzHDeMhrUFhBgKAPvOaU8QBJQgD7Ud+snUCPxTQEByUmYxmkY/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lauren__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lauren__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lauren__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lauren__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lauren__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lauren__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lauren__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lauren__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lauren__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lauren__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lauren__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lauren__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/lauren.avif": {
+    "width": 1200,
+    "height": 1088,
+    "aspect": 1.1029411764705883,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAgMFBgT/xAAoEAABAwMEAQIHAAAAAAAAAAABAgMRAAQxBRITIUEicQYlQmFikaH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAREhMf/aAAwDAQACEQMRAD8AnWbrjNyhxpBUtM7RHkiK1GjNqsLHdcAJLqgZntPXms00SFg4piXUKsTccg5S9Ez3ExHtFZEmu/Rk/NUKOPUevNVdZJYDrxQotPMFpZT3tP0k/uoDVw9aOF23J3JEEgTAorjVb29Z2Oq9EQYTG73q6p4Q07wQ5ICsiqjvw8yppKrZ0tr5OTvsZn+VDWrjeKVJC0xg1qLF4u2qFxEjE1qGzHDeMhrUFhBgKAPvOaU8QBJQgD7Ud+snUCPxTQEByUmYxmkY/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lauren__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lauren__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lauren__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lauren__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lauren__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lauren__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lauren__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lauren__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lauren__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lauren__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lauren__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/lauren__w1200.jpg"
+        }
+      ]
+    }
+  },
   "/media/logo.jpg": {
     "width": 113,
     "height": 123,
@@ -223,6 +1013,388 @@
         {
           "w": 113,
           "url": "/media-deriv/logo__w113.jpg"
+        }
+      ]
+    }
+  },
+  "/media/robyn.jpg": {
+    "width": 1280,
+    "height": 1257,
+    "aspect": 1.0182975338106603,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAQMCBAX/xAAoEAACAQMDAwMFAQAAAAAAAAABAgMABBESIUEFEzEyUYEiQmGR0fD/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQMCBP/EABsRAAICAwEAAAAAAAAAAAAAAAECABEDEjEh/9oADAMBAAIRAxEAPwAlXO4H7qtZ6b7qEkUoZoofUFzufz/uKdpkAOjbA+6odFhNrcSh3U9z6tYyCx/nmufH2SQgNR7HXipbXEAt4mETlkK4IGQMgioMSxGIyfmj1CRhexNnUkakgZ3yaKh5o9UY8ZyOQPeh+xZGG1RFwrrGWjLN4ORULO5fKzaQVOcg81cs86pWLFjpArHdWikdVOxJ2+aVV7JutUw7L99O0uh+2QpUlQT44Jp/SGikYB98qQAfBPNYpkDkguwPK52YVtdIse+iSPsq+oe59q16Wgo2ezP/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/robyn__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/robyn__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/robyn__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/robyn__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/robyn__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/robyn__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/robyn__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/robyn__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/robyn__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/robyn__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/robyn__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/robyn__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/robyn__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/robyn__w1280.jpg"
+        }
+      ]
+    }
+  },
+  "/media/robyn.avif": {
+    "width": 1280,
+    "height": 1257,
+    "aspect": 1.0182975338106603,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAfACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAQMCBAX/xAAoEAACAQMDAwMFAQAAAAAAAAABAgMABBESIUEFEzEyUYEiQmGR0fD/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQMCBP/EABsRAAICAwEAAAAAAAAAAAAAAAECABEDEjEh/9oADAMBAAIRAxEAPwAlXO4H7qtZ6b7qEkUoZoofUFzufz/uKdpkAOjbA+6odFhNrcSh3U9z6tYyCx/nmufH2SQgNR7HXipbXEAt4mETlkK4IGQMgioMSxGIyfmj1CRhexNnUkakgZ3yaKh5o9UY8ZyOQPeh+xZGG1RFwrrGWjLN4ORULO5fKzaQVOcg81cs86pWLFjpArHdWikdVOxJ2+aVV7JutUw7L99O0uh+2QpUlQT44Jp/SGikYB98qQAfBPNYpkDkguwPK52YVtdIse+iSPsq+oe59q16Wgo2ezP/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/robyn__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/robyn__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/robyn__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/robyn__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/robyn__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/robyn__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/robyn__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/robyn__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/robyn__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/robyn__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/robyn__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/robyn__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/robyn__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/robyn__w1280.jpg"
+        }
+      ]
+    }
+  },
+  "/media/rod-maxfield.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABQYAAwQB/8QAJhAAAQMDAwMFAQAAAAAAAAAAAQIDEQAEBRIhQRMUgTEyUWFx0f/EABcBAQADAAAAAAAAAAAAAAAAAAIAAQP/xAAYEQADAQEAAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8AXO4WRpPpyaJ4/FqurfrqgknZMwB5oTOxEwaYMM+hzHllO7jUzvEg81k20POU2Ccjadk6kSDq8wa6m+U0ktnSSeC2IHmtGaUdTYSg6Sv3xttxPmsNy84hZSmCPwUl0Osxkx9r3j5bK9CQJJiaa8Vj2LdsltPuWEkk7kc7+aAYMBLjqvoCmBTwRYoCTuSR/avkJ2lF8GrtZb0Dop9qfSPv9oLf42FdRLmpPxyKKLdCYHJql9zSkwYUoCD8U3IE/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rod-maxfield__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rod-maxfield__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rod-maxfield__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rod-maxfield__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rod-maxfield__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rod-maxfield__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rod-maxfield__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rod-maxfield__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rod-maxfield__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rod-maxfield__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rod-maxfield__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rod-maxfield__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/rod-maxfield.avif": {
+    "width": 1200,
+    "height": 1200,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABQYAAwQB/8QAJhAAAQMDAwMFAQAAAAAAAAAAAQIDEQAEBRIhQRMUgTEyUWFx0f/EABcBAQADAAAAAAAAAAAAAAAAAAIAAQP/xAAYEQADAQEAAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8AXO4WRpPpyaJ4/FqurfrqgknZMwB5oTOxEwaYMM+hzHllO7jUzvEg81k20POU2Ccjadk6kSDq8wa6m+U0ktnSSeC2IHmtGaUdTYSg6Sv3xttxPmsNy84hZSmCPwUl0Osxkx9r3j5bK9CQJJiaa8Vj2LdsltPuWEkk7kc7+aAYMBLjqvoCmBTwRYoCTuSR/avkJ2lF8GrtZb0Dop9qfSPv9oLf42FdRLmpPxyKKLdCYHJql9zSkwYUoCD8U3IE/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rod-maxfield__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rod-maxfield__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rod-maxfield__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rod-maxfield__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rod-maxfield__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rod-maxfield__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/rod-maxfield__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/rod-maxfield__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/rod-maxfield__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/rod-maxfield__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/rod-maxfield__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/rod-maxfield__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/shauna.jpg": {
+    "width": 1200,
+    "height": 905,
+    "aspect": 1.3259668508287292,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBBQYD/8QAJhAAAgEDAwMEAwAAAAAAAAAAAQIRAAMEBRIhEzFhI0FRkSJCYv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAEAAiEx/9oADAMBAAIRAxEAPwDM+43CT4rvh2FyMhLTEqGPJ9wKXlQZVZpnBvrZzbNwr+IYTA5isarDI0vFRtqO9okcdQzz54qpgKD3rQ60VS0wdmLcbAT371n2ggxH1RyqS2A0Q247o2/U1e6bj2cdU6ggufUP7AfHiiilnsZPU77ZOY26AFO1V+BSj4/oNcIKR2/qiip5wt9v/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/shauna__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/shauna__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/shauna__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/shauna__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/shauna__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/shauna__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/shauna__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/shauna__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/shauna__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/shauna__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/shauna__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/shauna__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/shauna.avif": {
+    "width": 1200,
+    "height": 905,
+    "aspect": 1.3259668508287292,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBBQYD/8QAJhAAAgEDAwMEAwAAAAAAAAAAAQIRAAMEBRIhEzFhI0FRkSJCYv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAEAAiEx/9oADAMBAAIRAxEAPwDM+43CT4rvh2FyMhLTEqGPJ9wKXlQZVZpnBvrZzbNwr+IYTA5isarDI0vFRtqO9okcdQzz54qpgKD3rQ60VS0wdmLcbAT371n2ggxH1RyqS2A0Q247o2/U1e6bj2cdU6ggufUP7AfHiiilnsZPU77ZOY26AFO1V+BSj4/oNcIKR2/qiip5wt9v/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/shauna__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/shauna__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/shauna__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/shauna__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/shauna__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/shauna__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/shauna__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/shauna__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/shauna__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/shauna__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/shauna__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/shauna__w1200.jpg"
         }
       ]
     }

@@ -1,9 +1,8 @@
-+++
-title = "Upgrades"
-description = "We always use high quality materials in our office, but there is a “good, better, best” in every situation."
-layout = "flowbite"
-url = "/services/upgrades/"
-+++
+---
+title: "Upgrades"
+url: "/services/upgrades/"
+description: "We always use high quality materials in our office, but there is a “good, better, best” in every situation."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}

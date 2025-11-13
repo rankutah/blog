@@ -1,9 +1,8 @@
-+++
-title = "Bridges"
-description = "A bridge fills the gap where a tooth is missing."
-layout = "flowbite"
-url = "/services/bridges/"
-+++
+---
+title: "Bridges"
+url: "/services/bridges/"
+description: "A bridge fills the gap where a tooth is missing."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}

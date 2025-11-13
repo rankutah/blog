@@ -1,9 +1,8 @@
-+++
-title = "Sedation"
-description = "We know that dental visits can be distressing, but we do everything we can to make our patients as comfortable as possible!"
-layout = "flowbite"
-url = "/services/sedation/"
-+++
+---
+title: "Sedation"
+url: "/services/sedation/"
+description: "We know that dental visits can be distressing, but we do everything we can to make our patients as comfortable as possible!"
+---
 
 {{< section >}}
 We know that dental visits can be distressing, but we do everything we can to make our patients as comfortable as possible! We have options available to those who may be particularly nervous or have extensive work that needs to be done.

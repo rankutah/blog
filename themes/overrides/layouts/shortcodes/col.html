@@ -139,7 +139,8 @@
 {{- end -}}
 
 {{- /* Base card classes (ensure the column BOX fills row height) */ -}}
-{{- $parts := slice "w-full" "h-full" "rounded-lg" "shadow-sm" "p-6" "text-left" "flex" "flex-col" -}}
+{{- /* Updated rounding from rounded-lg to rounded-xl for consistent image/card corner alignment */ -}}
+{{- $parts := slice "w-full" "h-full" "rounded-xl" "shadow-sm" "p-6" "text-left" "flex" "flex-col" -}}
 
 {{- if or $hasBgClasses $siteHasBg -}}
 {{- else if ne $bgOverride "" -}}

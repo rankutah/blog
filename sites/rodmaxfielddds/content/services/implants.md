@@ -1,9 +1,8 @@
-+++
-title = "Implants"
-description = "Implants are designed as a substitute for the root of a missing tooth."
-layout = "flowbite"
-url = "/services/implants/"
-+++
+---
+title: "Implants"
+url: "/services/implants/"
+description: "Implants are designed as a substitute for the root of a missing tooth."
+---
 
 {{< section >}}
 Implants are designed as a substitute for the root of a missing tooth. The [crown](/services/crowns/) that is attached to the implant looks and functions like a natural tooth.

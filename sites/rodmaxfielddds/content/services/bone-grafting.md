@@ -1,9 +1,8 @@
-+++
-title = "Bone Grafting"
-description = "When a tooth is extracted, bone loss occurs rapidly."
-layout = "flowbite"
-url = "/services/bone-grafting/"
-+++
+---
+title: "Bone Grafting"
+url: "/services/bone-grafting/"
+description: "When a tooth is extracted, bone loss occurs rapidly."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}

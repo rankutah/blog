@@ -1,9 +1,8 @@
-+++
-title = "Fillings"
-description = "Because every case is different, Dr. Maxfield tailors his treatment to meet those individual needs."
-layout = "flowbite"
-url = "/services/fillings/"
-+++
+---
+title: "Fillings"
+url: "/services/fillings/"
+description: "Because every case is different, Dr. Maxfield tailors his treatment to meet those individual needs."
+---
 
 {{< section >}}
 Because every case is different, Dr. Maxfield tailors his treatment to meet those individual needs. When it comes to fillings, this means using different materials depending on strength, durability, longevity, and aesthetic. But in every case we always use the highest quality materials.

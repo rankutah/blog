@@ -1,9 +1,8 @@
-+++
-title = "3D Imaging"
-description = "Some patients have complicated conditions that require additional information to safely plan and successfully treat."
-layout = "flowbite"
-url = "/services/imaging/"
-+++
+---
+title: "3D Imaging"
+url: "/services/imaging/"
+description: "Some patients have complicated conditions that require additional information to safely plan and successfully treat."
+---
 
 {{< section >}}
 {{< cols min="18rem" row="md" >}}
