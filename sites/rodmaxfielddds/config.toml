@@ -27,9 +27,9 @@ disableKinds = ["taxonomy", "term"]
   primaryColor = "violet"
   logo = "media/logo.jpg"
   lightBackground = "violet-100"
-  darkBackground = "gray-900"
+  darkBackground = "gray-950"
   cardBackground = "violet-50"
-  cardBackgroundDark = "gray-800"
+  cardBackgroundDark = "gray-900"
   cardBorderLight = "gray-200"
   cardBorderDark = "gray-700"
 
