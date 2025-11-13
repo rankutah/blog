@@ -141,12 +141,12 @@
   const nav  = document.querySelector('nav');
   const body = document.body;
 
-  // Effective dark-mode detector: honor either html.dark or body.dark, or OS dark
-  const isDarkMode = () => (
-    html.classList.contains('dark') ||
-    (body && body.classList.contains('dark')) ||
-    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
-  );
+  // Dark-mode detector: follow OS preference only, regardless of page theme classes.
+  // This makes the picker show light options when macOS is in Light appearance and dark options when macOS is Dark.
+  const isDarkMode = () => {
+    try { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; }
+    catch(e){ return false; }
+  };
 
   // selects
   const brandSel = document.getElementById('cp-primary');
@@ -416,24 +416,8 @@ const STATIC_NAV_BGS = [
     if (dg) { dg.classList.toggle('hidden', !isDark); darkSel?.toggleAttribute('disabled', !isDark); }
   }
 
-  // react ONLY when the dark-mode flag changes on <html>
+  // Track last known OS preference and react to OS appearance changes
   let lastDark = isDarkMode();
-  const onMut = (muts) => {
-    for (const m of muts) {
-      if (m.attributeName === 'class' && (m.target === html || m.target === body)) {
-        const nowDark = isDarkMode();
-        if (nowDark !== lastDark) {
-          lastDark = nowDark;
-          syncPickerVisibility();
-          repaint();
-          recolorLinks();
-        }
-      }
-    }
-  };
-  new MutationObserver(onMut).observe(html, { attributes: true });
-  if (body) new MutationObserver(onMut).observe(body, { attributes: true });
-  // Also react to OS appearance changes
   try {
     const mql = window.matchMedia('(prefers-color-scheme: dark)');
     const onMql = () => {

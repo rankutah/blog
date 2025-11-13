@@ -20,7 +20,7 @@ Professional business websites with powerful local SEO
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="blue-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Clear Presence ✅
 
 <br>
@@ -85,7 +85,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="blue-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## Website Design
 
@@ -97,7 +97,7 @@ Use the color selector to test out 2 colors for your website and learn how to ge
 {{< /col >}}
 
 
-{{< col card="true" bg="blue-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## SEO Marketing
 
