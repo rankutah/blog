@@ -8,7 +8,7 @@ description: "Family dentist in Pleasant Grove, UT offering comprehensive preven
 # Dentistry Making a Difference {.text-white}
 Compassionate care, modern technology, and personalized treatment options.
 {.text-white}
-{{<button url="tel:+18017852631" text="Call (801) 785-2631">}}{{<button url="/contact" text="Contact">}}
+{{<button url="tel:+18017852631" text="Call (801) 785-2631">}}
 
 {{< /section >}}
 
