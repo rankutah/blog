@@ -22,18 +22,24 @@
 {{- $navBrand := (index $fonts "navBrand") | default "inherit" -}}
 {{- $navLink  := (index $fonts "navLink")  | default "inherit" -}}
 {{- $button   := (index $fonts "button")   | default "inherit" -}}
+{{- $useLocalCinzel := (index $fonts "localCinzel") | default false -}}
+
+{{/* If a site declares fonts.load, prefer the vendored local CSS produced by scripts/vendor-google-fonts.mjs */}}
 {{- if $load }}
-  {{/* Inline Google Fonts CSS (previous working behavior) */}}
-  {{- $gfUrl := printf "https://fonts.googleapis.com/css2?%s" $load -}}
-  {{- $gf     := resources.GetRemote $gfUrl -}}
-  {{- if $gf -}}
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>{{ $gf.Content | safeCSS }}</style>
-  {{- else -}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?{{ $load }}" rel="stylesheet">
-  {{- end -}}
+  <link rel="preload" as="style" href="/fonts/google/fonts.css">
+  <link rel="stylesheet" href="/fonts/google/fonts.css">
+{{- end }}
+
+{{- if $useLocalCinzel }}
+  <style>
+    @font-face {
+      font-family: 'Cinzel';
+      src: url('/fonts/cinzel/Cinzel-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
 {{- end }}
 
 <style>
