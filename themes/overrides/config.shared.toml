@@ -84,3 +84,5 @@ ignoreLogs = ['warning-goldmark-raw-html']
   [[module.mounts]]
     source = "posts"
     target = "content/posts"
+
+# noop: rebuild trigger 2025-11-14
