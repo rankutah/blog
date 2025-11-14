@@ -62,18 +62,6 @@ Kimber has over a decade of experience in dental hygiene. She is the mother of t
 
 {{< col card="true" y="start" >}}
 
-{{< staff-photo name="robyn" alt="Robyn" variant="card" >}}
-
-### Robyn
-
-<div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">HYGIENIST</div>
-
-Robyn is a returning member of our team. She assisted at our office for several years before taking a break to spend more time with her three beautiful kids. After finishing the dental hygiene program at Fortis College in Salt Lake City, she returned to our office part-time. In her free time, Robyn enjoys watching her kids’ football games and cheerleading competitions. Robyn is an active, energetic, and happy person. She makes everyone around her feel valued and loved.
-
-{{< /col >}}
-
-{{< col card="true" y="start" >}}
-
 {{< staff-photo name="alicia" alt="Alicia" variant="card" >}}
 
 ### Alicia
@@ -81,6 +69,17 @@ Robyn is a returning member of our team. She assisted at our office for several 
 <div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">HYGIENIST</div>
 
 {{< /col >}}
+
+{{< col card="true" y="start" >}}
+
+{{< staff-photo name="Michaela" alt="Michaela" variant="card" >}}
+
+### Michaela
+
+<div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">HYGIENIST</div>
+
+{{< /col >}}
+
 
 {{< col card="true" y="start" >}}
 
@@ -108,18 +107,6 @@ Brylee is the newest member of our team. She is originally from Orem, and she gr
 
 {{< col card="true" y="start" >}}
 
-{{< staff-photo name="lauren" alt="Lauren" variant="card" >}}
-
-### Lauren
-
-<div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">ASSISTANT</div>
-
-Lauren was born and raised in Arizona. She comes from a large family and she loves being an aunt. Lauren graduated from the American Institute of Dental Assisting. She loves going on drives with her friends and watching sunsets. Lauren has a sweet spirit that immediately puts everyone around her at ease. We are glad to have her as a member of our staff!
-
-{{< /col >}}
-
-{{< col card="true" y="start" >}}
-
 {{< staff-photo name="addie" alt="Addie" variant="card" >}}
 
 ### Addie
@@ -130,9 +117,9 @@ Lauren was born and raised in Arizona. She comes from a large family and she lov
 
 {{< col card="true" y="start" >}}
 
-{{< staff-photo name="emery" alt="Emery" variant="card" >}}
+{{< staff-photo name="brittney" alt="Brittney" variant="card" >}}
 
-### Emery
+### Brittney
 
 <div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">ASSISTANT</div>
 
@@ -140,13 +127,14 @@ Lauren was born and raised in Arizona. She comes from a large family and she lov
 
 {{< col card="true" y="start" >}}
 
-{{< staff-photo name="andrea" alt="Andrea" variant="card" >}}
+{{< staff-photo name="lexi" alt="Lexi" variant="card" >}}
 
-### Andrea
+### Lexi
 
 <div class="mt-1 text-sm tracking-wide uppercase text-neutral-600 dark:text-neutral-400">ASSISTANT</div>
 
 {{< /col >}}
+
 
 {{< /cols >}}
 

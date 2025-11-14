@@ -27,7 +27,7 @@ From preventive care to restorative treatment and oral surgery, we provide thoug
 
 {{< col card="true" y="start" >}}
 
-## Visit or message us
+## Visit or Message Us
 
 {{< button url="tel:+18017852631" text="Call (801) 785-2631" >}} {{< button url="/contact" text="Contact & Directions" >}}
 
