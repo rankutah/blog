@@ -26,6 +26,17 @@
     {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
 <meta name="author" content="{{ partial "author.html" . }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+{{- /* Networking hints for GA only when loading immediately (no delay) */}}
+{{- $gaDelay := site.Params.analytics.delayMs | default 5000 -}}
+{{- $gaImmediate := eq $gaDelay 0 -}}
+{{- if $gaImmediate -}}
+  {{- with site.Params.analytics.google.id }}
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  {{- end -}}
+{{- end }}
 {{- if site.Params.analytics.google.SiteVerificationTag }}
 <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
 {{- end }}
