@@ -68,6 +68,9 @@ uglyURLs = true
     id = "G-763E3FZE0G"
     enabled = true
 
+  # Load analytics immediately (no delay/gating)
+  delayMs = 0
+
 [params.socialDefaults]
   size = "w-8 h-8"
   gap  = "gap-3"

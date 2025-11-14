@@ -1,0 +1,108 @@
+{{/* Site-specific home template that uses the Flowbite base */}}
+{{/* This copies the Flowbite base so home uses it without PaperMod */}}
+<!DOCTYPE html>
+{{/* Compute lightweight bg class hints for <html> so we can mirror color-picker behavior without JS maps */}}
+{{- $lightParam := lower (or .Site.Params.lightBackground "gray-200") -}}
+{{- $darkParam  := lower (or .Site.Params.darkBackground  "zinc-900") -}}
+{{- if strings.HasPrefix $lightParam "dark:bg-" -}}{{- $lightParam = replace $lightParam "dark:bg-" "" -}}{{- end -}}
+{{- if strings.HasPrefix $lightParam "bg-" -}}{{- $lightParam = replace $lightParam "bg-" "" -}}{{- end -}}
+{{- if strings.HasPrefix $darkParam "dark:bg-" -}}{{- $darkParam = replace $darkParam "dark:bg-" "" -}}{{- end -}}
+{{- if strings.HasPrefix $darkParam "bg-" -}}{{- $darkParam = replace $darkParam "bg-" "" -}}{{- end -}}
+{{- $htmlLight := cond (eq $lightParam "white") "bg-white" (printf "bg-%s" $lightParam) -}}
+{{- $htmlDark  := cond (eq $darkParam  "black") "bg-black" (printf "bg-%s"  $darkParam)  -}}
+
+<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+  {{ partial "seo-meta.html" . }}
+
+  <script>
+    (function(){
+      var html = document.documentElement;
+      function getStored(){ try { return localStorage.getItem('pref-theme'); } catch(e){ return null; } }
+      function prefersDark(){ try { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; } catch(e){ return false; } }
+      function wantDark(){
+        var forced = html.getAttribute('data-force-theme');
+        if (forced === 'dark') return true;
+        if (forced === 'light') return false;
+        var stored = getStored();
+        if (stored === 'dark') return true;
+        if (stored === 'light') return false;
+        return prefersDark();
+      }
+      function apply(){
+        var d = wantDark();
+        if (d) html.classList.add('dark'); else html.classList.remove('dark');
+        try {
+          var lightCls = html.getAttribute('data-bg-light');
+          var darkCls  = html.getAttribute('data-bg-dark');
+          if (lightCls) html.classList.remove(lightCls);
+          if (darkCls)  html.classList.remove(darkCls);
+          if (d) { if (darkCls)  html.classList.add(darkCls); }
+          else   { if (lightCls) html.classList.add(lightCls); }
+          var body = document.body;
+          if (body) {
+            if (lightCls) body.classList.remove(lightCls);
+            if (darkCls)  body.classList.remove(darkCls);
+            if (d) { if (darkCls)  body.classList.add(darkCls); }
+            else   { if (lightCls) body.classList.add(lightCls); }
+          }
+        } catch(e){}
+      }
+      apply();
+      try {
+        new MutationObserver(function(muts){ for (var i=0;i<muts.length;i++){ if (muts[i].attributeName === 'data-force-theme'){ apply(); break; } } })
+          .observe(html, { attributes:true });
+      } catch(e){}
+      try {
+        var mql = window.matchMedia('(prefers-color-scheme: dark)');
+        if (mql && mql.addEventListener) mql.addEventListener('change', apply);
+        else if (mql && mql.addListener) mql.addListener(apply);
+      } catch(e){}
+      try { window.addEventListener('storage', function(e){ if (e && e.key === 'pref-theme') apply(); }); } catch(e){}
+    })();
+  </script>
+
+  {{- $useFlowbite := or (eq .Params.useFlowbiteJS true) (eq site.Params.useFlowbiteJS true) -}}
+  {{- if $useFlowbite -}}
+    <script src='{{ "js/flowbite.min.js" | relURL }}' defer onload="try{window.initCarousels&&window.initCarousels()}catch(e){}"></script>
+  {{- end -}}
+
+  {{- $css := resources.Get "css/main.css" | postCSS | minify | fingerprint "sha384" }}
+  <link rel="preload" as="style" href="{{ $css.RelPermalink }}" {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }} crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }} crossorigin="anonymous">
+
+  {{ partial "fonts.html" . }}
+  {{ partial "brand-colors.html" . }}
+  {{ partial "favicons.html" . }}
+  {{ partial "lcp-preload.html" . }}
+  {{ partial "schema.html" . }}
+</head>
+
+{{- $pal := partial "theme/palette.html" . -}}
+
+<body id="top" class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg">
+  {{ partial "navbar.html" . }}
+
+  {{- $isHeroPage := or (and .IsHome (not .Params.plainHome)) .Params.hero (eq .Params.layout "landing") -}}
+  <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync{{ if $isHeroPage }} style="padding-top:0;margin-top:0"{{ end }}>
+    <article class="prose prose-zinc max-w-none dark:prose-invert"{{ if $isHeroPage }} style="margin-top:0"{{ end }}>
+      {{ .Content }}
+    </article>
+  </main>
+
+  <script type="module">
+    function ready(fn){if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',fn,{once:true});}else{fn();}}
+    function initCollapse(){document.querySelectorAll('[data-collapse-toggle]').forEach(btn=>{const id=btn.getAttribute('data-collapse-toggle');const target=id&&document.getElementById(id);if(!target) return;if (target.hasAttribute('data-drawer')) return;btn.addEventListener('click',()=>{const isHidden=target.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!isHidden));});});}
+    function initDropdowns(){const buttons=Array.from(document.querySelectorAll('[data-dropdown-toggle]'));if(!buttons.length)return;function closeAll(exceptId){buttons.forEach(b=>{const id=b.getAttribute('data-dropdown-toggle');const el=id&&document.getElementById(id);if(!el||id===exceptId)return;el.classList.add('hidden');b.setAttribute('aria-expanded','false');});}
+      buttons.forEach(btn=>{const id=btn.getAttribute('data-dropdown-toggle');const menu=id&&document.getElementById(id);if(!menu)return;btn.addEventListener('click',(e)=>{e.stopPropagation();const nowHidden=menu.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!nowHidden));if(!nowHidden)closeAll(id);});});
+      document.addEventListener('click',(e)=>{const inside=e.target.closest&&(e.target.closest('[data-dropdown-toggle]')||e.target.closest('[id^="menu-"]'));if(!inside)closeAll();});}
+    ready(()=>{initCollapse();initDropdowns();});
+  </script>
+
+  {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") }}
+</body>
+</html>

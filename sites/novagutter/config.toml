@@ -1,0 +1,162 @@
+baseURL = "https://novagutter.com/"
+languageCode = "en-us"
+title = "NOVA Gutter"
+theme = ["overrides"]
+themesDir = "../../themes"
+
+# Use Flowbite layout only (no PaperMod)
+[cascade]
+  layout = "flowbite"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        inline = true
+        title = true
+
+[outputFormats.FORMS]
+  mediaType = "application/json"
+  baseName = "forms"
+  isPlainText = true
+  path = ".well-known"
+
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[params]
+  env = "production"
+  # Match Rank Utah backgrounds; brand is Tailwind red for buttons/links
+  primaryColor        = "red"
+  logo                = "media/logo.png"  # replace when available
+  lightBackground     = "gray-200"
+  darkBackground      = "gray-900"
+  cardBackground      = "gray-100"
+  cardBackgroundDark  = "gray-800"
+  cardBorderLight     = "gray-200"
+  cardBorderDark      = "gray-700"
+
+  defaultTheme        = "auto"
+  disableThemeToggle  = false
+  author              = "NOVA Gutter"
+  hideMeta            = true
+
+[params.socialDefaults]
+  size = "w-8 h-8"
+  gap  = "gap-3"
+
+[[params.social]]
+  name = "facebook"
+  url  = "https://www.facebook.com/novaguttercorp"
+  icon = "media/facebook.avif"   # place icon file in media/
+  alt  = "Facebook"
+
+[[params.social]]
+  name = "instagram"
+  url  = "https://www.instagram.com/novagutter"
+  icon = "media/instagram.avif"  # place icon file in media/
+  alt  = "Instagram"
+
+[params.turnstile]
+  enable  = true
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"  # reuse shared site key; update if needed
+
+[params.header]
+  stickyMobile     = true
+  stickyDesktop    = true
+  titleSize        = "2xl"
+  showCTAOnMobile  = true
+  showCTAOnDesktop = true
+  CTAText          = "Get a Free Quote"
+  CTAURL           = "/contact"
+  showPhoneOnMobile = true
+  phoneNumber       = "954-380-8242"
+  logoHeight        = "h-10"
+  logoWidth         = 0
+  logoHeightPx      = 40
+  theme             = "blend"
+
+[params.forms]
+  action         = "https://submit-form.com/DOH188lWF"
+  honeypot       = "_hp"
+  successMessage = "Thanks! Your message was sent."
+  errorMessage   = "Sorry, something went wrong. Please try again."
+
+[params.section.defaults]
+  max   = "xl"
+  pad   = "lg"
+  y     = "none"
+  align = "start"
+
+[permalinks]
+  posts = "/:contentbasename"
+
+[menu]
+  # Top-level
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    identifier = "services"
+    weight = 10
+
+  # Services dropdown children
+  [[menu.main]]
+    name = "Gutter Installation"
+    url = "/services/gutter-installation"
+    parent = "services"
+    weight = 11
+  [[menu.main]]
+    name = "Commercial Gutter Installation"
+    url = "/services/commercial-gutter-installation"
+    parent = "services"
+    weight = 12
+  [[menu.main]]
+    name = "Residential Gutter Installation"
+    url = "/services/residential-gutter-installation"
+    parent = "services"
+    weight = 13
+  [[menu.main]]
+    name = "Seamless Gutter Installation"
+    url = "/services/seamless-gutter-installation"
+    parent = "services"
+    weight = 14
+  [[menu.main]]
+    name = "Available Gutter Styles"
+    url = "/services/available-gutter-styles"
+    parent = "services"
+    weight = 15
+
+  [[menu.main]]
+    name = "Gallery"
+    url = "/gallery"
+    weight = 20
+
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    identifier = "articles"
+    weight = 30
+
+  [[menu.main]]
+    name = "Reviews"
+    url = "/reviews"
+    weight = 40
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 50

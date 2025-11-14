@@ -80,6 +80,9 @@ sameAs = []
   gap  = "gap-3"
 
 [params.analytics]
+  # Load analytics immediately (no delay/gating)
+  delayMs = 0
+
   [params.analytics.google]
     id = "G-7240SPB67L"
     enabled = true

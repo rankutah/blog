@@ -49,12 +49,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
   logoHeightPx = 40        # Intrinsic height attribute for CLS prevention (matches h-10)
 
 [params.analytics]
-  # Unified analytics lazy-load across all sites
-  # Behavior: load ONLY after first user interaction (scroll/move/touch/click/keydown).
-  # Removing the timer improves performance and avoids counting passive bot views.
-  delayMs = 5000  # retained for possible future use; ignored when onlyOnInteraction=true
-  loadEvents = ["scroll", "mousemove", "touchstart", "click", "keydown"]
-  onlyOnInteraction = true
+  # Shared default: load after a 5s timer OR on first interaction.
+  # Sites can set `params.analytics.delayMs = 0` to force immediate load.
+  delayMs = 5000
+  loadEvents = ["scroll", "mousemove", "touchstart"]
+  onlyOnInteraction = false
 
 [params.imageDefaults]
   # Reasonable default presentation for content images rendered via Markdown
