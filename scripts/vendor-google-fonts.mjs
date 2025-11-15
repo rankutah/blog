@@ -30,14 +30,18 @@ const outDir = path.join(siteRoot, 'static', 'fonts', 'google');
 const outCss = path.join(outDir, 'fonts.css');
 
 function extractLoadParam(tomlText) {
-  // naive extraction: find [params.fonts] block and load = "..."
-  const blockIdx = tomlText.indexOf('\n[params.fonts]');
-  if (blockIdx === -1) return '';
-  const rest = tomlText.slice(blockIdx + 1);
-  // Read until next [section]
-  const nextSec = rest.search(/\n\[/);
-  const body = nextSec === -1 ? rest : rest.slice(0, nextSec);
-  const m = body.match(/\n\s*load\s*=\s*"([^"]+)"/);
+  // Robust extraction: match an indented or non-indented [params.fonts] header line,
+  // then scan until the next TOML header ( [section] or [[array]] ) and look for load = "..."
+  const secStart = tomlText.search(/^\s*\[params\.fonts\]\s*$/m);
+  if (secStart === -1) return '';
+  const rest = tomlText.slice(secStart);
+  // Slice from after the current header line
+  const firstNewline = rest.indexOf('\n');
+  const afterHeader = firstNewline === -1 ? '' : rest.slice(firstNewline + 1);
+  // Find the next section or array-of-tables header within the remaining text
+  const nextSecIdx = afterHeader.search(/^\s*\[{1,2}[^\]]+\]{1,2}\s*$/m);
+  const body = nextSecIdx === -1 ? afterHeader : afterHeader.slice(0, nextSecIdx);
+  const m = body.match(/\n?\s*load\s*=\s*"([^"]+)"/);
   return m ? m[1] : '';
 }
 
@@ -86,5 +90,5 @@ async function download(url, filePath) {
   await ensureDir(outDir);
   await fs.writeFile(outCss, localCss, 'utf8');
   console.log(`✔ Wrote ${path.relative(process.cwd(), outCss)}`);
-  console.log('Next: set params.fonts.vendorCss = "/fonts/google/fonts.css" in your site config.');
+  console.log('Fonts vendored. The shared fonts partial auto-links when params.fonts.load is set.');
 })();
