@@ -1,5 +1,5 @@
 ---
-title: "Buena Vista VA Hotels | Blue Ridge Abbey Bed & Breakfast"
+title: "Buena Vista VA Hotels | Bed & Breakfast"
 description: "Searching for a hotel in Buena Vista, Virginia? Come stay at the Blue Ridge Abbey Bed and Breakfast. Private rooms, hot breakfast, easy parking. Minutes to Lexington, SVU, and Natural Bridge."
 layout: "flowbite"
 url: "/"
