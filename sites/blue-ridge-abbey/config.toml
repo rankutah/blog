@@ -147,3 +147,5 @@ uglyURLs = true
     name = "Book"
     url = "https://secure.thinkreservations.com/blueridgeabbey/reservations"
     weight = 50
+
+# noop: trigger CF build within watch paths (fonts vendoring check)
