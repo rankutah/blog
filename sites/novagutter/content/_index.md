@@ -2,57 +2,94 @@
 title: "The Gold Standard in Gutters & Drainage"
 description: "Expert gutter installation and drainage solutions in South Florida. Licensed • Insured • Quality Guaranteed."
 layout: flowbite
-hero:
-  image: "media/hero.jpg" # Add a hero.jpg to sites/novagutter/media/
-  overlay: true
-  darken: true
-  height: "tall"
-  align: "center"
-  title: "The Gold Standard in Gutters & Drainage"
-  subtitle: "Protect your property with premium seamless gutters, professional installation, and proven drainage solutions."
-cta:
-  primary:
-    text: "Get a Free Quote"
-    url: "/contact"
-  secondary:
-    text: "View Our Work"
-    url: "/gallery"
 ---
 
-### Seamless gutters. Professional installation. Lasting protection.
 
-We serve homeowners and businesses across South Florida with durable, great‑looking gutter systems that move water away from your foundation and landscaping.
 
-- Seamless aluminum and copper gutters
-- K‑style and half‑round profiles, multiple sizes
-- Downspouts, leaders, and drainage solutions
-- Repairs, replacements, and upgrades
+{{< section img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 
-{{< button href="/services/gutter-installation" text="Explore Services" >}}
+# Rain Gutters in Southern Florida  {.text-white}
+The Gold Standard in Gutters & Drainage. Expert Gutter Installation, Every Time.
+{.text-white}
 
-#### Why NOVA Gutter
-**Licensed & Insured • 20‑year materials warranty • 1‑year labor warranty**
+ {{< button url="/contact" text="Get a Free Quote" >}}
 
-Expect clean lines, tight miters, and a careful install that’s built to last.
+{{< /section >}}
 
-#### Featured Projects
-See how new gutters transform curb appeal and protect what matters.
+{{< section >}}
 
-{{< cols >}}
-{{< col >}}
-![Seamless gutters sample](/media/gallery-1.jpg)
+## NOVA Gutter – Serving South Florida Since 2003
+
+
+For more than 20 years, NOVA Gutter has proudly delivered reliable gutter solutions across South Florida. From West Palm Beach to Miami, we specialize in installing, repairing, cleaning, and maintaining gutters for both homes and businesses.
+
+At NOVA Gutter, we take pride in honest service and quality craftsmanship, ensuring your home or business has the dependable protection it needs year after year. Whether you need seamless aluminum gutter installation, elegant copper gutters, repairs or routine maintenance, we got you covered.
+
+Call us today at 954-380-8242 and discover why homeowners and businesses throughout South Florida have trusted us since 2003.
+
+## Services We Proudly Offer
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+<ul class="list-none pl-0 space-y-2">
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>Gutter Installation</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>Gutter Repair</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>Repair Fascia</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>Gutter Cleaning</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>Soffit &amp; Siding Installation</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>Seamless Gutters</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>Copper Gutters</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>And More</span></li>
+ </ul>
+
 {{< /col >}}
-{{< col >}}
-![Downspout detail](/media/gallery-2.jpg)
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+![Rain Gutter Installation](/media/rain-gutter-installation.jpg)
+
 {{< /col >}}
-{{< col >}}
-![Copper half‑round](/media/gallery-3.jpg)
-{{< /col >}}
+
 {{< /cols >}}
 
-{{< button href="/gallery" text="Browse Gallery" >}}
+## What Our Clients are Saying
 
-Ready to protect your property?
+{{< elfsight id="37ca6180-68d3-4224-a061-2a17cb511253" lazy=true >}}
 
-{{< button href="/contact" text="Request Your Free Quote" >}}
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+## A Few of Our Projects
+
+Whether you need seamless stainless-steel channels on a storefront or elegant copper gutters for your home, our team has you covered. As seasoned gutter specialists, we handle every job—with precision, quality materials, and the care your property deserves. Browse our portfolio below to see examples of our recent commercial and residential projects.
+
+{{< button url="/gallery" text="View Rain Gutter Gallery" >}}
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Our Warranty
+
+<ul class="list-none pl-0 space-y-2">
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>20 Year Materials Manufacturer's Warranty</span></li>
+	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>1 Year Labor Warranty</span></li>
+ </ul>
+
+![](/media/stainless-steel-gutters-boca-raton-fl.avif)
+
+{{< /col >}}
+
+{{< /cols >}}
+
+
+
+
+{{< /section >}}
+
+
+
 

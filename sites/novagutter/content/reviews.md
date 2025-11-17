@@ -4,13 +4,20 @@ description: "What customers say about NOVA Gutter."
 layout: flowbite
 ---
 
-### Reviews
+{{< section >}}
+# Reviews
 We’re grateful for every review. Here are a few highlights from recent jobs.
 
-- “Prompt, professional, and the gutters look fantastic.”
-- “They matched our trim perfectly and left the site spotless.”
-- “Great communication and the water finally drains where it should.”
+{{< elfsight id="37ca6180-68d3-4224-a061-2a17cb511253" lazy=true >}}
+{{< /section >}}
 
+{{< section >}}
+### Ready to get started?
+Get a fast, no‑obligation quote for your home or business. We’ll match your trim and install seamless gutters built to last.
 
-Want to leave a review? Find us on {{< button href="https://www.facebook.com/novaguttercorp" text="Facebook" >}} or {{< button href="https://www.instagram.com/novagutter" text="Instagram" >}}.
+{{< button url="/contact" text="Get a Quote" >}}
+
+{{< /section >}}
+
+<!-- Removed legacy raw HTML embed and CTA; shortcode-only layout above -->
 

@@ -1,13 +1,14 @@
-{{/*
+{{- /*
   Shortcode: elfsight
   Usage: {{< elfsight id="YOUR-APP-ID" >}}
-  Renders only the Elfsight container. The platform script is lazy-loaded globally
-  by the base layout when the widget nears viewport or on first user interaction.
-*/}}
+  Optional: {{< elfsight id="YOUR-APP-ID" lazy=true >}}
+  Note: The platform script is lazy-loaded once per page by the Flowbite base layout
+        when an Elfsight container nears the viewport or on first interaction.
+*/ -}}
 {{- $id := .Get "id" -}}
+{{- $lazy := .Get "lazy" | default true -}}
 {{- if not $id -}}
-  {{ errorf "elfsight shortcode requires id parameter (Elfsight app id)" }}
+  <!-- elfsight shortcode: missing id parameter -->
 {{- else -}}
-  <!-- Elfsight widget container (script lazy-loaded globally) -->
-  <div class="elfsight-app-{{ $id }}" data-elfsight-app-lazy></div>
+  <div class="elfsight-app-{{ $id }}" {{ if $lazy }}data-elfsight-app-lazy{{ end }}></div>
 {{- end -}}

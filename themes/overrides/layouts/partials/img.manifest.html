@@ -92,7 +92,12 @@
   {{- end -}}
   {{- /* Only add aspect-ratio if we don't have a hero or an explicit height in style (we already prefixed display:block above when needed). */ -}}
   {{- if and (not $isHero) (not $hasHeightInStyle) $w $h -}}
-    {{- $styleAttr = (printf "aspect-ratio:%v/%v; %s" $w $h $styleAttr) -}}
+    {{- /* Shrink wrapper to intrinsic width so AR height doesn't use full container width */ -}}
+    {{- if eq $styleAttr "" -}}
+      {{- $styleAttr = (printf "display:inline-block; aspect-ratio:%v/%v;" $w $h) -}}
+    {{- else -}}
+      {{- $styleAttr = (printf "display:inline-block; aspect-ratio:%v/%v; %s" $w $h $styleAttr) -}}
+    {{- end -}}
   {{- end -}}
   <picture {{ with $styleAttr }}style="{{ . | safeCSS }}"{{ end }}>
     {{- if gt (len $avif) 0 -}}<source type="image/avif" srcset="{{- range $i, $v := $avif -}}{{ if $i }}, {{ end }}{{ $v.url | safeURL }} {{ $v.w }}w{{- end -}}" sizes="{{ $sizes }}">{{- end -}}

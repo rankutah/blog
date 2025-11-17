@@ -62,13 +62,13 @@ themesDir = "../../themes"
 [[params.social]]
   name = "facebook"
   url  = "https://www.facebook.com/novaguttercorp"
-  icon = "media/facebook.avif"   # place icon file in media/
+  icon = "media/facebook.png"   # shared theme icon
   alt  = "Facebook"
 
 [[params.social]]
   name = "instagram"
   url  = "https://www.instagram.com/novagutter"
-  icon = "media/instagram.avif"  # place icon file in media/
+  icon = "media/instagram.png"  # shared theme icon
   alt  = "Instagram"
 
 [params.turnstile]
@@ -79,7 +79,7 @@ themesDir = "../../themes"
   stickyMobile     = true
   stickyDesktop    = true
   titleSize        = "2xl"
-  showCTAOnMobile  = true
+  showCTAOnMobile  = false
   showCTAOnDesktop = true
   CTAText          = "Get a Free Quote"
   CTAURL           = "/contact"

@@ -425,6 +425,48 @@
       ]
     }
   },
+  "/media/image10.jpg": {
+    "width": 320,
+    "height": 213,
+    "aspect": 1.5023474178403755,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EACcQAAEEAQIDCQAAAAAAAAAAAAEAAgMRBBIhMkHxBTFCUVJhcbHR/8QAFgEBAQEAAAAAAAAAAAAAAAAABAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECAxH/2gAMAwEAAhEDEQA/ANkNSkBrSSaA5pwCjnEhvQwPIGwOw6pdVwKl0p52a3HaXO4vC0d/X6WG+WaXIaTxvNX6R5D9XRwwxyzyPla0yi2keykxuzoYDqa2zexO9Iuipis3KJgnBCEkMVsuAU6dhLJGi7HP5T8XJdPC1zgAbo0hCzpFyf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image10__w320.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image10__w320.jpg"
+        }
+      ]
+    }
+  },
+  "/media/image10.avif": {
+    "width": 320,
+    "height": 213,
+    "aspect": 1.5023474178403755,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EACcQAAEEAQIDCQAAAAAAAAAAAAEAAgMRBBIhMkHxBTFCUVJhcbHR/8QAFgEBAQEAAAAAAAAAAAAAAAAABAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECAxH/2gAMAwEAAhEDEQA/ANkNSkBrSSaA5pwCjnEhvQwPIGwOw6pdVwKl0p52a3HaXO4vC0d/X6WG+WaXIaTxvNX6R5D9XRwwxyzyPla0yi2keykxuzoYDqa2zexO9Iuipis3KJgnBCEkMVsuAU6dhLJGi7HP5T8XJdPC1zgAbo0hCzpFyf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image10__w320.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/image10__w320.jpg"
+        }
+      ]
+    }
+  },
   "/media/seamless-gutters-boca-raton-fl-new-pics1.jpg": {
     "width": 1200,
     "height": 1600,
