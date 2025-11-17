@@ -10,7 +10,7 @@ url: "/countertops/granite"
 
 We stock 20 colors of granite and other natural stone in our yard. The best price that we can give you is from our in-stock slabs. We can also bring in your slab selections from any of the slab suppliers.
 
-Natural stone prized for its unique movement and durability. Every slab is one‑of‑a‑kind, adding character to your space.
+Natural stone prized for its unique movement and durability. Every slab is one‑of‑a‑kind, adding character and a unique look to your space.
 
 **Pros**
 - Highly heat‑resistant; great for active kitchens
@@ -18,11 +18,12 @@ Natural stone prized for its unique movement and durability. Every slab is one�
 - Unique natural patterns and colors
 
 **Cons**
-- Requires periodic sealing (typically 1–2x/year)
+- Requires periodic sealing (typically once every 3 years)
 - Natural variation means pattern/vein selection matters
 
 **Care**
 - Clean with stone‑safe cleaner or mild soap; reseal as recommended
-- Use cutting boards; wipe spills promptly
+- Use cutting boards to protect your knives
+- Wipe spills promptly
 
 {{< /section >}}

@@ -38,28 +38,28 @@ Fabricated in our state of the art shop in Grand Junction, CO. Serving Western C
 
 {{< col card="true" bg="neutral-50" darkbg="gray-800" y="start" >}}
 ## Quartz
-Durable, low‑maintenance, and available in many consistent colors and patterns.
+Factory produced scabs that are durable, low‑maintenance, and available in many consistent colors and patterns. Composed of 93% natural quartz.
 
 {{< button url="/countertops/quartz" text="Explore Quartz" >}}
 {{< /col >}}
 
 {{< col card="true" bg="neutral-50" darkbg="gray-800" y="start" >}}
 ## Granite
-Natural stone with unique movement and character in every slab.
+Natural stone with unique colors, movement and character in every slab.
 
 {{< button url="/countertops/granite" text="Explore Granite" >}}
 {{< /col >}}
 
 {{< col card="true" bg="neutral-50" darkbg="gray-800" y="start" >}}
 ## Quartzite
-Harder than granite with striking, marble‑like veining.
+Harder than granite with striking, marble‑like appearance.
 
 {{< button url="/countertops/quartzite" text="Explore Quartzite" >}}
 {{< /col >}}
 
 {{< col card="true" bg="neutral-100" darkbg="gray-800" y="start" >}}
 ## Marble
-Timeless beauty with soft veining—ideal for baking and light‑use areas.
+Timeless beauty with soft veining—ideal for bathroom vanities and light‑use areas.
 
 {{< button url="/countertops/marble" text="Explore Marble" >}}
 {{< /col >}}

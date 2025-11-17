@@ -12,16 +12,16 @@ Metamorphic natural stone known for its hardness and marble‑like veining—gre
 
 **Pros**
 - Very hard and scratch‑resistant
-- Handles heat better than many man‑made surfaces
+- Handles heat better than man‑made surfaces
 - Elegant, often marble‑like appearance
 
 **Cons**
-- Typically requires sealing
-- Limited color range vs. engineered quartz
+- Requires sealing
+- Limited color range vs. quartz
 - Some varieties can etch with strong acids if not well sealed
 
 **Care**
 - Use a pH‑neutral cleaner; reseal per manufacturer recommendations
-- Use trivets for very hot pots; wipe acidic spills promptly
+- Wipe acidic spills promptly
 
 {{< /section >}}

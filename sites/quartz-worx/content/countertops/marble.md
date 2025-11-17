@@ -18,7 +18,7 @@ Timeless luxury with dramatic veining and a soft sheen. Loved for its patina ove
 **Cons**
 - Softer surface can scratch and etch
 - Sensitive to acids (lemon, vinegar) and some cleaners
-- Needs regular sealing and attentive care
+- Needs regular sealing
 
 **Care**
 - Clean with pH‑neutral stone cleaner; avoid acidic/abrasive products
