@@ -68,10 +68,9 @@ Tell us about your property and we’ll get back with options and an estimate.
 
     const submitBtn = document.querySelector('button[form="contact1"][type="submit"]');
     if (submitBtn) {
-      // Hide the button instead of changing its label.
-      submitBtn.dataset.originalDisplay = submitBtn.style.display || '';
       submitBtn.disabled = true;
-      submitBtn.style.display = 'none';
+      submitBtn.dataset.originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending…';
     }
 
     const serverVal = await fetchCounter();
@@ -125,11 +124,14 @@ Tell us about your property and we’ll get back with options and an estimate.
       success.className = 'p-4 mt-4 rounded bg-green-50 text-green-700 text-sm';
       success.innerHTML = 'Quote request sent. We will contact you soon.';
       form.replaceWith(success);
+      if (submitBtn) {
+        submitBtn.style.display = 'none';
+      }
     } catch (err) {
       console.error('Submission error', err);
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.style.display = submitBtn.dataset.originalDisplay || '';
+        submitBtn.textContent = submitBtn.dataset.originalText || 'Request a Quote';
       }
       alert('Sorry, submission failed. Please try again.');
     }
