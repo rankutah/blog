@@ -16,9 +16,11 @@ Call us directly and receive an estimate for your project.
 Tell us about your property and we’ll get back with options and an estimate.
 
 {{< contact-form id="contact1" phone=true custom="Full Address, Service Needed" message=false consent=false >}}
-{{< /col >}}
 
 {{< button submit="true" form="contact1" text="Request a Quote" >}}
+
+{{< /col >}}
+
 
 
 {{< col >}}
