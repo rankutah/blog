@@ -89,6 +89,14 @@ ignoreFiles = ["^content/articles/"]
   size = "w-8 h-8"
   gap  = "gap-3"
 
+[params.analytics]
+  # Delay script load to after interaction/time. Set to 0 to load immediately.
+  delayMs = 4000
+
+  [params.analytics.google]
+    id = "G-3KJ46VMTTB"
+    enabled = true
+
 [[params.social]]
   name = "facebook"
   url  = "https://www.facebook.com/novaguttercorp"
