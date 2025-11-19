@@ -4,6 +4,7 @@ title = "NOVA Gutter"
 theme = ["overrides"]
 themesDir = "../../themes"
 ignoreFiles = ["^content/articles/"]
+enableRobotsTXT = true
 
 # Use Flowbite layout only for singles and home; let lists/taxonomies use default list templates
 [[cascade]]
@@ -66,7 +67,7 @@ ignoreFiles = ["^content/articles/"]
     target = "content/posts"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "FORMS"]
+  home = ["HTML", "RSS", "JSON", "FORMS", "RobotsTXT"]
 
 [params]
   env = "production"
@@ -91,7 +92,7 @@ ignoreFiles = ["^content/articles/"]
 
 [params.analytics]
   # Delay script load to after interaction/time. Set to 0 to load immediately.
-  delayMs = 4000
+  delayMs = 0
 
   [params.analytics.google]
     id = "G-3KJ46VMTTB"

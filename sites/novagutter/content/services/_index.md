@@ -12,21 +12,23 @@ We design, fabricate, and install seamless gutter systems tailored to your prope
 #### Gutter Installation
 Seamless aluminum and copper gutters in K‑style and half‑round profiles.
 
-{{< button href="/services/gutter-installation" text="Learn more" >}}
+{{< button url="/services/gutter-installation" text="Learn more" >}}
 {{< /col >}}
+
+
 
 {{< col >}}
 #### Commercial Gutter Installation
 High‑capacity systems for plazas, warehouses, and multi‑unit buildings.
 
-{{< button href="/services/commercial-gutter-installation" text="Learn more" >}}
+{{< button url="/services/commercial-gutter-installation" text="Learn more" >}}
 {{< /col >}}
 
 {{< col >}}
 #### Residential Gutter Installation
 Protect your home and landscaping with a clean, durable install.
 
-{{< button href="/services/residential-gutter-installation" text="Learn more" >}}
+{{< button url="/services/residential-gutter-installation" text="Learn more" >}}
 {{< /col >}}
 {{< /cols >}}
 
@@ -35,14 +37,14 @@ Protect your home and landscaping with a clean, durable install.
 #### Seamless Gutter Installation
 Custom‑formed on‑site for a perfect fit with minimal seams.
 
-{{< button href="/services/seamless-gutter-installation" text="Learn more" >}}
+{{< button url="/services/seamless-gutter-installation" text="Learn more" >}}
 {{< /col >}}
 
 {{< col >}}
 #### Available Gutter Styles
 K‑style, half‑round, sizes and materials to match your architecture.
 
-{{< button href="/services/available-gutter-styles" text="See styles" >}}
+{{< button url="/services/available-gutter-styles" text="See styles" >}}
 {{< /col >}}
 {{< /cols >}}
 

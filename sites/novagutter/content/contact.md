@@ -10,7 +10,7 @@ layout: flowbite
 
 Call us directly and receive an estimate for your project.
 
-{{< button href="tel:+19543808242" text="Call (954) 380-8242" >}}
+{{< button url="tel:+19543808242" text="Call (954) 380-8242" >}}
 
 ## Leave a Message
 Tell us about your property and we’ll get back with options and an estimate.

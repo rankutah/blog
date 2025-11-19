@@ -19,5 +19,5 @@ We collect only the information needed to provide quotes and services. We do not
 We use reasonable safeguards to protect personal information.
 
 #### Contact
-Questions? Email us or call {{< button href="tel:19543808242" text="954‑380‑8242" >}}.
+Questions? Email us or call {{< button url="tel:19543808242" text="954‑380‑8242" >}}.
 

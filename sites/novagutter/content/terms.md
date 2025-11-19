@@ -19,5 +19,5 @@ Unless stated otherwise, installations include a 20‑year materials warranty an
 Payment is due upon completion unless specified in writing.
 
 #### Contact
-Questions about these terms? Call {{< button href="tel:19543808242" text="954‑380‑8242" >}}.
+Questions about these terms? Call {{< button url="tel:19543808242" text="954‑380‑8242" >}}.
 
