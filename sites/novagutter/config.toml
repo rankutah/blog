@@ -121,7 +121,7 @@ ignoreFiles = ["^content/articles/"]
   theme             = "blend"
 
 [params.forms]
-  action         = "https://submit-form.com/DOH188lWF"
+  action         = "https://submit-form.com/1asOxsclY"
   honeypot       = "_hp"
   successMessage = "Thanks! Your message was sent."
   errorMessage   = "Sorry, something went wrong. Please try again."
