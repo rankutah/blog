@@ -26,13 +26,13 @@ Tell us about your property and we’ll get back with options and an estimate.
   if (!form) return;
 
   // Set this to your deployed Apps Script URL (must allow GET).
-  const counterEndpoint = 'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYMENT_ID/exec';
+  const counterEndpoint = 'https://script.google.com/macros/s/14eSNXsVE3MlKSEZCW4frGytB4i7OuY7algjk7B_wU-yqOF93eR8nZ0g7/exec';
   const PREFIX = 'NG-';
   const PAD = 6; // e.g. 000040
   const FETCH_TIMEOUT_MS = 4000;
 
   async function fetchCounter() {
-    if (!counterEndpoint || counterEndpoint.includes('REPLACE_WITH_DEPLOYMENT_ID')) return null;
+    if (!counterEndpoint || counterEndpoint.includes('14eSNXsVE3MlKSEZCW4frGytB4i7OuY7algjk7B_wU-yqOF93eR8nZ0g7')) return null;
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
     try {
