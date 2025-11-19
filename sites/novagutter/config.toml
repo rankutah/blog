@@ -67,7 +67,7 @@ enableRobotsTXT = true
     target = "content/posts"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "FORMS", "RobotsTXT"]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
 
 [params]
   env = "production"
