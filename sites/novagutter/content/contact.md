@@ -158,5 +158,3 @@ We serve South Florida and nearby communities. Common areas include:
 - Palm Beach county
 - Broward County
 - Miami-Dade County
-
-If you don’t see your city listed, reach out—we likely serve your area.
