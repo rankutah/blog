@@ -247,7 +247,10 @@
       {{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
       {{- $container := printf "%s mx-auto %s" (index $maxMap $defMax | default "max-w-7xl") (index $padMap $defPad | default "px-8") -}}
       <div class="{{ $container }}"{{ if $isHeroPage }} style="margin-top:0"{{ end }}>
-        {{- if eq .Kind "taxonomyTerm" -}}
+        {{- if and (eq .Kind "section") (or (eq .Section "search") (hasPrefix .RelPermalink "/search")) -}}
+          {{- /* Dedicated search page under flowbite wrapper */ -}}
+          {{- partial "search-page.html" . -}}
+        {{- else if eq .Kind "taxonomyTerm" -}}
           {{- /* All Tags listing: chips only */ -}}
           {{- $all := .Site.Taxonomies.tags -}}
           {{- $names := slice -}}

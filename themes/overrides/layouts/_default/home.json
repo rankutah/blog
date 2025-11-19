@@ -1,0 +1,33 @@
+{{- /*
+  Search index for client-side search.
+  Emits JSON at /index.json (home JSON output).
+  Includes RegularPages with title, permalink, summary, and truncated content.
+*/ -}}
+{{- $items := slice -}}
+
+{{- /* Include the homepage itself in the index so queries match it */ -}}
+{{- with .Site.Home -}}
+  {{- $hTitle := (.Title | htmlUnescape) -}}
+  {{- $hLink  := .RelPermalink -}}
+  {{- $hSummary := (.Summary | plainify | htmlUnescape) -}}
+  {{- $hContent := ((.Plain | plainify | htmlUnescape) | truncate 4000) -}}
+  {{- $items = $items | append (dict
+        "title"     $hTitle
+        "permalink" $hLink
+        "summary"   $hSummary
+        "content"   $hContent
+      ) -}}
+{{- end -}}
+{{- range .Site.RegularPages -}}
+  {{- $title := (.Title | htmlUnescape) -}}
+  {{- $link  := .RelPermalink -}}
+  {{- $summary := (.Summary | plainify | htmlUnescape) -}}
+  {{- $content := ((.Plain | plainify | htmlUnescape) | truncate 4000) -}}
+  {{- $items = $items | append (dict
+        "title"     $title
+        "permalink" $link
+        "summary"   $summary
+        "content"   $content
+      ) -}}
+{{- end -}}
+{{- $items | jsonify -}}

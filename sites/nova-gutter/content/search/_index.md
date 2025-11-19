@@ -1,5 +1,5 @@
 ---
-title: "Search"
+title: Search
 layout: flowbite
 url: "/search/"
 ---

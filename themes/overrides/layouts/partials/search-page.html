@@ -1,0 +1,30 @@
+{{- $pal := partial "theme/palette.html" . -}}
+<section class="{{ $pal.bodyText }} px-4 md:px-8 py-10">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl font-semibold mb-6 text-center">Search</h1>
+    <form id="search-form" class="mb-5">
+      <label for="search-input" class="sr-only">Search</label>
+      <div class="relative max-w-xl mx-auto">
+        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
+        <input id="search-input" type="search" placeholder="Type to search..." autocomplete="off"
+               class="block w-full rounded-lg border border-gray-300 bg-white py-3 pl-10 pr-4 text-base shadow-sm focus:border-gray-400 focus:ring-0 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100" />
+      </div>
+    </form>
+    <p id="search-count" class="text-sm text-gray-600 dark:text-gray-400 mb-3 max-w-xl mx-auto"></p>
+    <ul id="search-results" class="space-y-4 max-w-xl mx-auto"
+      data-card-border="{{ $pal.cardBorder }}" data-card-bg="{{ $pal.cardBg }}">
+    </ul>
+  </div>
+</section>
+
+{{/* Make index URL respect baseURL/subpaths */}}
+<script>window.SEARCH_INDEX_URL = {{ (relURL "index.json") | printf "%q" }};</script>
+{{- $js := resources.Get "js/search.js" | resources.Minify | resources.Fingerprint -}}
+<script src="{{ $js.RelPermalink }}" defer></script>
+
+<style>
+/* Keep result snippets visually consistent: clamp to 2 lines */
+.clamp-2{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+</style>
