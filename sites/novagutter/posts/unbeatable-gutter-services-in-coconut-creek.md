@@ -15,11 +15,11 @@ Are you in the market to upgrade your Coconut Creek home’s current gutter syst
 Your home is a valuable investment -- in fact, it’s likely to be the most important investment you’ll ever make. So, you need to do what you can to keep it standing strong through the years. This effort should involve preventing gutter clogs that could lead to a host of problems for your home:
 
 *   Water damage to its roof
-    
+
 *   Cracks in its foundation
-    
+
 *   TMold growth
-    
+
 
 To prevent these problems from afflicting your home, you need to prevent your gutters from overflowing. To do that, you need to keep them from getting clogged, and with gutter protection, gutter clogs will become a thing of the past.
 

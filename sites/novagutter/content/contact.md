@@ -19,6 +19,96 @@ Tell us about your property and we’ll get back with options and an estimate.
 
 {{< button submit="true" form="contact1" text="Request a Quote" >}}
 
+<script>
+// NOVA Gutter contact form enhancement: add sequential reference + async submission
+(function() {
+	const form = document.getElementById('contact1');
+	if (!form) return;
+
+	// Replace with your deployed Google Apps Script (or other counter) endpoint.
+	const counterEndpoint = 'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYMENT_ID/exec';
+
+	async function getReference() {
+		try {
+			const res = await fetch(counterEndpoint, { cache: 'no-store' });
+			if (!res.ok) throw new Error('Counter fetch failed');
+			const data = await res.json();
+			if (typeof data.value === 'number') {
+				return 'NG-' + String(data.value).padStart(5, '0');
+			}
+		} catch (err) {
+			console.warn('Counter error; falling back to timestamp', err);
+		}
+		return 'NG-' + Date.now();
+	}
+
+	form.addEventListener('submit', async (e) => {
+		// Let browser show native validation messages first.
+		if (!form.checkValidity()) {
+			return;
+		}
+		e.preventDefault();
+
+		const submitBtn = document.querySelector('button[form="contact1"][type="submit"]');
+		if (submitBtn) {
+			submitBtn.disabled = true;
+			submitBtn.textContent = 'Sending…';
+		}
+
+		const reference = await getReference();
+		let refInput = form.querySelector('input[name="reference"]');
+		if (!refInput) {
+			refInput = document.createElement('input');
+			refInput.type = 'hidden';
+			refInput.name = 'reference';
+			form.appendChild(refInput);
+		}
+		refInput.value = reference;
+
+		// Cloudflare Turnstile token (if widget loaded & available)
+		if (window.turnstile) {
+			try {
+				const token = window.turnstile.getResponse();
+				if (token) {
+					let tInput = form.querySelector('input[name="cf-turnstile-response"]');
+					if (!tInput) {
+						tInput = document.createElement('input');
+						tInput.type = 'hidden';
+						tInput.name = 'cf-turnstile-response';
+						form.appendChild(tInput);
+					}
+					tInput.value = token;
+				}
+			} catch (err) {
+				console.warn('Turnstile token retrieval failed', err);
+			}
+		}
+
+		const formData = new FormData(form);
+		try {
+			const resp = await fetch(form.action, {
+				method: 'POST',
+				body: formData,
+				headers: { 'Accept': 'application/json' }
+			});
+			if (!resp.ok) throw new Error('Submit failed');
+
+			const success = document.createElement('div');
+			success.className = 'p-4 mt-4 rounded bg-green-50 text-green-700 text-sm';
+			success.innerHTML = 'Quote request sent. Reference <strong>' + reference + '</strong>. We will contact you soon.';
+			form.replaceWith(success);
+		} catch (err) {
+			console.error('Submission error', err);
+			if (submitBtn) {
+				submitBtn.disabled = false;
+				submitBtn.textContent = 'Request a Quote';
+			}
+			alert('Sorry, submission failed. Please try again.');
+		}
+	});
+})();
+</script>
+
 {{< /col >}}
 
 
