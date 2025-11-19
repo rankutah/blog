@@ -20,39 +20,45 @@ Tell us about your property and we’ll get back with options and an estimate.
 {{< button submit="true" form="contact1" text="Request a Quote" >}}
 
 <script>
-// Submission with external counter (Apps Script) + hidden reference, no reference in success message.
+// Submission with external counter producing zero-padded number (e.g. 000039). Fallback: localStorage.
 (function() {
   const form = document.getElementById('contact1');
   if (!form) return;
 
-  // Set this to your deployed Apps Script URL (must allow GET).
-  const counterEndpoint = 'https://script.google.com/macros/s/14eSNXsVE3MlKSEZCW4frGytB4i7OuY7algjk7B_wU-yqOF93eR8nZ0g7/exec';
-  const PREFIX = 'NG-';
-  const PAD = 6; // e.g. 000040
+  // Your deployed Apps Script URL (MUST be updated to the production deployment id).
+  const counterEndpoint = 'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYMENT_ID/exec';
+  const PAD = 6; // digits width
   const FETCH_TIMEOUT_MS = 4000;
+  const LS_KEY = 'novaCounterLast';
+
+  function pad(n) { return String(n).padStart(PAD, '0'); }
 
   async function fetchCounter() {
-    if (!counterEndpoint || counterEndpoint.includes('14eSNXsVE3MlKSEZCW4frGytB4i7OuY7algjk7B_wU-yqOF93eR8nZ0g7')) return null;
+    if (!counterEndpoint || counterEndpoint.includes('REPLACE_WITH_DEPLOYMENT_ID')) return null;
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
     try {
       const res = await fetch(counterEndpoint, { signal: ctrl.signal, cache: 'no-store' });
       if (!res.ok) throw new Error('Bad status ' + res.status);
       const data = await res.json();
-      if (typeof data.value === 'number') return data.value;
+      if (typeof data.value === 'number' && data.value > 0) return data.value;
     } catch (err) {
       console.warn('Counter fetch failed:', err);
-    } finally {
-      clearTimeout(t);
-    }
+    } finally { clearTimeout(t); }
     return null;
   }
 
-  function buildReference(num) {
-    if (typeof num === 'number' && num > 0) {
-      return PREFIX + String(num).padStart(PAD, '0');
+  function localFallback(incoming) {
+    // If server value present, store & return it.
+    if (typeof incoming === 'number' && incoming > 0) {
+      localStorage.setItem(LS_KEY, String(incoming));
+      return incoming;
     }
-    return PREFIX + 'TMP-' + Date.now();
+    // Else increment local copy (non-authoritative).
+    const prev = parseInt(localStorage.getItem(LS_KEY) || '0', 10);
+    const next = prev + 1;
+    localStorage.setItem(LS_KEY, String(next));
+    return next;
   }
 
   form.addEventListener('submit', async (e) => {
@@ -65,9 +71,9 @@ Tell us about your property and we’ll get back with options and an estimate.
       submitBtn.textContent = 'Sending…';
     }
 
-    // Pre-fetch counter (do not block indefinitely)
-    const counterValue = await fetchCounter();
-    const reference = buildReference(counterValue);
+    const serverVal = await fetchCounter();
+    const finalVal = localFallback(serverVal);
+    const reference = pad(finalVal);
     let refInput = form.querySelector('input[name="reference"]');
     if (!refInput) {
       refInput = document.createElement('input');
@@ -77,11 +83,10 @@ Tell us about your property and we’ll get back with options and an estimate.
     }
     refInput.value = reference;
 
-    // Capture Turnstile token if available
+    // Turnstile token
     if (window.turnstile) {
       try {
         let token = window.turnstile.getResponse();
-        // If empty token and Turnstile supports execute, attempt it.
         if (!token && window.turnstile.execute) {
           try { await window.turnstile.execute(); token = window.turnstile.getResponse(); } catch (ex) {}
         }
@@ -95,12 +100,10 @@ Tell us about your property and we’ll get back with options and an estimate.
           }
           tInput.value = token;
         }
-      } catch (err) {
-        console.warn('Turnstile token retrieval failed', err);
-      }
+      } catch (err) { console.warn('Turnstile token retrieval failed', err); }
     }
 
-    const fd = new FormData(form); // includes new hidden inputs
+    const fd = new FormData(form);
     const body = new URLSearchParams();
     fd.forEach((v, k) => body.append(k, v));
 
@@ -117,7 +120,7 @@ Tell us about your property and we’ll get back with options and an estimate.
 
       const success = document.createElement('div');
       success.className = 'p-4 mt-4 rounded bg-green-50 text-green-700 text-sm';
-      success.innerHTML = 'Quote request sent. We will contact you soon.'; // reference intentionally omitted
+      success.innerHTML = 'Quote request sent. We will contact you soon.';
       form.replaceWith(success);
     } catch (err) {
       console.error('Submission error', err);
