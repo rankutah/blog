@@ -6,7 +6,7 @@
  description = "Post‑treatment care instructions for crowns, dentures, fillings, implants, oral surgery, and more."
 +++
 
-{{< section >}}
+
 
 # After-Care Instructions
 
@@ -119,4 +119,4 @@ TEMPORARY CROWNS AND BRIDGES (also inlays and onlays)
 - Maintain good oral hygiene.
 - Sealants can chip or wear out. The condition of the sealants is checked at each re-care visit.
 
-{{< /section >}}
+

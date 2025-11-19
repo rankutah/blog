@@ -1,0 +1,10 @@
+{{/* Minimal author partial: returns page author, site author, or site title */}}
+{{- with .Params.author -}}
+  {{- . -}}
+{{- else -}}
+  {{- with site.Params.author -}}
+    {{- . -}}
+  {{- else -}}
+    {{- site.Title -}}
+  {{- end -}}
+{{- end -}}

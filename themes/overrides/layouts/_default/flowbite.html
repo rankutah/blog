@@ -129,6 +129,9 @@
   {{/* Config-driven brand color overrides (buttons/links) */}}
   {{ partial "brand-colors.html" . }}
 
+  {{/* Colored tag badges CSS */}}
+  {{ partial "taxonomy-badges.html" . }}
+
 
   <!-- Carousel v2 scoped polish (fallbacks for visibility/positioning) -->
   <style>
@@ -198,7 +201,7 @@
     [data-lite-carousel] .lite-next { position:absolute; top:50%; transform:translateY(-50%); }
 
     /* Reduce top gap before first grid heading on non-hero pages */
-    .section:first-of-type .cols-auto .flex > h2:first-child { margin-top: 0.25rem; }
+    /* (Removed legacy .section heading tweak; section wrappers deprecated) */
   </style>
 
   {{- /* Analytics (match PaperMod behavior: only in production) */ -}}
@@ -224,14 +227,115 @@
 
   {{- /* Determine if page should flush against navbar.
     Previous logic flushed ALL homepages which broke non-hero home designs.
-    New rule: only flush if (homepage AND not plainHome flag) OR explicit hero param OR landing layout.
-    Add `plainHome = true` in front matter to keep normal top spacing on a homepage without a hero image. */ -}}
-  {{- $isHeroPage := or (and .IsHome (not .Params.plainHome)) .Params.hero (eq .Params.layout "landing") -}}
+    New rule: only flush if (homepage AND not plainHome flag) OR explicit hero param/image OR landing layout. */ -}}
+  {{- $heroVal := (index .Params "hero") -}}
+  {{- $heroType := printf "%T" $heroVal -}}
+  {{- $heroIsMap := hasPrefix $heroType "map" -}}
+  {{- $hasHeroDict := and (isset .Params "hero") $heroIsMap -}}
+  {{- $hasHeroImage := or (and $hasHeroDict (isset .Params.hero "image")) (isset .Params "heroImage") -}}
+  {{- $isHeroPage := or (and .IsHome (not .Params.plainHome)) (and (isset .Params "hero") (ne $heroVal nil)) $hasHeroImage (eq .Params.layout "landing") -}}
   <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync{{ if $isHeroPage }} style="padding-top:0;margin-top:0"{{ end }}>
-    <article class="prose prose-zinc max-w-none dark:prose-invert"{{ if $isHeroPage }} style="margin-top:0"{{ end }}>
-      {{ .Content }}
-    </article>
+        {{- /* Render list pages (sections/taxonomies). Some Hugo setups emit tags pages as Kind "page";
+          broaden detection to also catch Type "tags" or URL starting with /tags/. */ -}}
+        {{- $isTagsPath := (hasPrefix .RelPermalink "/tags/") -}}
+        {{- $isList := or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") (eq .Type "tags") $isTagsPath -}}
+        {{- if $isList -}}
+      {{- $defs := .Site.Params.section.defaults | default (dict) -}}
+      {{- $defMax := (index $defs "max") | default "xl" -}}
+      {{- $defPad := (index $defs "pad") | default "lg" -}}
+      {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
+      {{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
+      {{- $container := printf "%s mx-auto %s" (index $maxMap $defMax | default "max-w-7xl") (index $padMap $defPad | default "px-8") -}}
+      <div class="{{ $container }}"{{ if $isHeroPage }} style="margin-top:0"{{ end }}>
+        {{- if eq .Kind "taxonomyTerm" -}}
+          {{- /* All Tags listing: chips only */ -}}
+          {{- $all := .Site.Taxonomies.tags -}}
+          {{- $names := slice -}}
+          {{- range $n, $_ := $all }}{{ $names = $names | append $n }}{{ end -}}
+          {{- $sorted := sort $names -}}
+          {{- if gt (len $sorted) 0 -}}
+            <div style="display:flex;flex-wrap:wrap;gap:0.3rem 0.3rem;margin-top:1rem;">
+              {{- range $t := $sorted -}}
+                {{- $slug := $t | urlize -}}
+                <a href="{{ (printf "/tags/%s/" $slug) | relURL }}" class="badge badge-{{ $slug }}" style="font-size:0.875rem;padding:0.25rem 0.75rem;">
+                  {{ $t }} ({{ len (index $all $t) }})
+                </a>
+              {{- end -}}
+            </div>
+          {{- else -}}
+            <p class="text-gray-600 dark:text-gray-400">No tags found.</p>
+          {{- end -}}
+        {{- else if or (eq .Kind "taxonomy") (or (eq .Type "tags") $isTagsPath) -}}
+          {{- /* Single tag page (or pages routed under /tags): Flowbite cards with contextual heading */ -}}
+          <h2 class="text-xl md:text-2xl font-semibold mb-4">Showing Tag: {{ .Title }}</h2>
+          {{- $tp := .Data.Pages | default .Pages -}}
+          {{- /* Fallback: if not a real taxonomy context, derive from Site.Taxonomies.tags */ -}}
+          {{- if or (not $tp) (eq (len $tp) 0) -}}
+            {{- $tp = (index .Site.Taxonomies.tags .Title) -}}
+          {{- end -}}
+          {{- $pages := sort $tp "Date" "desc" -}}
+          {{- if gt (len $pages) 0 -}}
+            {{- partial "list-posts-cards.html" (dict "ctx" . "pages" $pages "showDate" false "showTags" true "excerpt" 160) -}}
+          {{- else -}}
+            <p class="text-gray-600 dark:text-gray-400">No posts found for this tag.</p>
+          {{- end -}}
+        {{- else if eq .Kind "section" -}}
+          {{- /* Sections render content by default; show child list only when explicitly requested. */ -}}
+          {{- $showListParam := lower (printf "%v" .Params.showList) -}}
+          {{- $listAfterParam := lower (printf "%v" .Params.listAfterContent) -}}
+          {{- $showList := or (eq $showListParam "true") (eq $listAfterParam "true") -}}
+          <article class="prose prose-zinc max-w-none dark:prose-invert">{{ .Content }}</article>
+          {{- if and $showList (gt (len .Pages) 0) -}}
+            {{- $pages := sort .Pages "Date" "desc" -}}
+            {{- partial "list-posts-cards.html" (dict "ctx" . "pages" $pages "showDate" false "showTags" true "excerpt" 160) -}}
+          {{- end -}}
+        {{- else -}}
+          {{- $pages := sort .Pages "Date" "desc" -}}
+          {{- partial "list-posts-cards.html" (dict "ctx" . "pages" $pages "showDate" false "showTags" true "excerpt" 160) -}}
+        {{- end -}}
+      </div>
+    {{- else -}}
+      {{- /* Optional front-matter hero (renders above content if provided). No change unless hero fields exist. */ -}}
+      {{- if or $hasHeroImage $hasHeroDict -}}
+        {{- $hero := dict -}}
+        {{- if $hasHeroDict -}}
+          {{- $hero = .Params.hero -}}
+        {{- else -}}
+          {{- $hero = (dict "image" .Params.heroImage) -}}
+        {{- end -}}
+        {{- $args := dict
+              "page" .
+              "image" (or (index $hero "image") (index $hero "img"))
+              "alt" (index $hero "alt")
+              "bleed" (or (eq (lower (printf "%v" (index $hero "bleed"))) "true") false)
+              "overlay" (or (eq (lower (printf "%v" (index $hero "overlay"))) "true") false)
+              "overlayShade" (index $hero "overlayShade")
+              "imgClasses" (index $hero "imgClasses")
+              "imgStyle" (index $hero "imgStyle")
+              "vh" (index $hero "vh")
+              "brighten" (index $hero "brighten")
+              "max" (index $hero "max")
+              "pad" (index $hero "pad")
+              "align" (index $hero "align")
+              "alignY" (index $hero "alignY")
+              "minh" (index $hero "minh")
+          -}}
+        {{- partial "hero.html" $args -}}
+      {{- end -}}
+      {{- /* Singles: one container + typography; avoid auto-injecting section wrappers */ -}}
+      {{- $defs := .Site.Params.section.defaults | default (dict) -}}
+      {{- $defMax := (index $defs "max") | default "xl" -}}
+      {{- $defPad := (index $defs "pad") | default "lg" -}}
+      {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
+      {{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
+      {{- $container := printf "%s mx-auto %s" (index $maxMap $defMax | default "max-w-7xl") (index $padMap $defPad | default "px-8") -}}
+      <div class="{{ $container }}"{{ if $isHeroPage }} style="margin-top:0"{{ end }}>
+        <article class="prose prose-zinc max-w-none dark:prose-invert">{{ .Content }}</article>
+      </div>
+    {{- end -}}
   </main>
+
+
 
   <!-- Inline tiny UI for navbar collapse/dropdowns (removes JS request chain) -->
   <script type="module">

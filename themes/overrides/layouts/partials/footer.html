@@ -1,23 +1,24 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer border-t border-black/15 dark:border-white/15">
-    {{- /* If a Markdown footer page exists at content/footer.md, render it.
-        Recommended: set headless: true in front matter to avoid creating a public /footer page. */ -}}
-    {{- $footerPage := or (site.GetPage "page" "footer") (site.GetPage "/footer") (site.GetPage "footer") -}}
-    {{- if and $footerPage (gt (len (trim $footerPage.Content " \n\r\t")) 0) -}}
-      <div class="prose prose-sm dark:prose-invert max-w-none">
-        {{ $footerPage.Content }}
-      </div>
-    {{- else -}}
-      <!-- Default footer (shown when no custom Markdown footer is provided) -->
-      <span>
-          © {{ now.Year }}
-          <a href="{{ .Site.Params.clientURL }}" rel="noopener" target="_blank"> {{ .Site.Params.clientName }}</a>
-          •
-      </span>
-      <span>
-          <a href="https://rankutah.com" rel="noopener" target="_blank">Rank Utah SEO & Web Design</a>
-      </span>
-    {{- end }}
+        {{- /* If a Markdown footer page exists at content/footer.md, render it.
+                Recommended: set headless: true in front matter to avoid creating a public /footer page. */ -}}
+        {{- $footerPage := or (site.GetPage "page" "footer") (site.GetPage "/footer") (site.GetPage "footer") -}}
+        {{- if and $footerPage (gt (len (trim $footerPage.Content " \n\r\t")) 0) -}}
+            {{- $footerWide := or (.Param "footerWide") (.Site.Params.footerWide) -}}
+            <div class="prose prose-sm dark:prose-invert{{ if $footerWide }} max-w-none{{ end }}">
+                {{ $footerPage.Content }}
+            </div>
+        {{- else -}}
+            <!-- Default footer (shown when no custom Markdown footer is provided) -->
+            <span>
+                    © {{ now.Year }}
+                    <a href="{{ .Site.Params.clientURL }}" rel="noopener" target="_blank"> {{ .Site.Params.clientName }}</a>
+                    •
+            </span>
+            <span>
+                    <a href="https://rankutah.com" rel="noopener" target="_blank">Rank Utah SEO & Web Design</a>
+            </span>
+        {{- end }}
 </footer>
 {{- end }}
 

@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/rooms"
 ---
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" row="1rem" v="start">}}
 {{< col card="false" y="start" >}}
@@ -69,4 +69,4 @@ Available on its own or paired with Marigold as a two-bedroom suite with a share
 
 {{< /cols >}}
 
-{{< /section >}}
+

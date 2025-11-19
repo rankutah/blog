@@ -12,14 +12,14 @@ schema:
     areaServed: "Grand Junction, CO"
 ---
 
-{{< section img="/media/website-design-grand-junction-colorado-mountain.jpg" alt="Grand Junction website design" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/website-design-grand-junction-colorado-mountain.jpg" alt="Grand Junction website design" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design in Grand Junction, CO {.text-white}
 Custom websites and performance-driven design for Western Slope businesses.
 {.text-white}
 {{<button url="/services/website-design" text="Website Design" >}}{{<button url="/contact" text="Contact" >}}
-{{< /section >}}
+{{< /hero >}}
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -42,9 +42,9 @@ Quartz Worx needed a website to explain the different types of countertop option
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Ready to grow in Grand Junction?
 
@@ -52,4 +52,4 @@ Your website should be fast, mobile‑first, and easy to find — so people on t
 
 {{< button url="/contact" text="Contact" >}} {{< button url="/services/website-design" text="See Work" >}}
 
-{{< /section >}}
+

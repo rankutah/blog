@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/about"
 ---
 
-{{< section >}}
+
 
 # About
 
@@ -27,9 +27,9 @@ Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Locations
 
@@ -37,7 +37,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 
-{{< /section >}}
+
 
 
 

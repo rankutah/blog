@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/privacy"
 ---
 
-{{< section >}}
+
 
 # Privacy Policy
 
@@ -15,9 +15,9 @@ Clear Presence ("we," "us," or "our") is committed to protecting your privacy. T
 
 This Policy applies to our website(s), services, and communications associated with clearpresence.io (and any subdomains) and related properties.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Information We Collect
 
@@ -28,9 +28,9 @@ This Policy applies to our website(s), services, and communications associated w
 
 We do not knowingly collect sensitive personal information unless you voluntarily provide it for a clear purpose (for example, to include in your website content).
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## How We Use Information
 
@@ -43,9 +43,9 @@ We use information to:
 - Protect against fraud, abuse, or security risks.
 - Comply with legal obligations.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Cookies and Analytics
 
@@ -53,9 +53,9 @@ We may use cookies and similar technologies to provide core functionality (e.g.,
 
 You can manage cookies in your browser settings and opt out of Google Analytics by using the Google Analytics opt-out browser add-on.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Legal Bases (EEA/UK Visitors)
 
@@ -66,9 +66,9 @@ If you are in the EEA or UK, our legal bases for processing include:
 - Consent (e.g., non-essential cookies, optional marketing communications)
 - Legal obligations
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Sharing of Information
 
@@ -79,17 +79,17 @@ We do not sell your personal information. We may share information with:
 - Authorities, if required by law or to protect our rights or users.
 - Successors in the event of a merger, acquisition, or reorganization.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Data Retention
 
 We retain information for as long as necessary to fulfill the purposes described above or as required by law. When no longer needed, we take steps to delete, anonymize, or securely store it.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Your Rights and Choices
 
@@ -97,33 +97,33 @@ Depending on your location, you may have rights to access, correct, delete, rest
 
 To exercise your rights, contact us using the information below. We will respond as required by applicable law.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Children’s Privacy
 
 Our services are not directed to children under 13, and we do not knowingly collect personal information from children. If you believe we have collected personal information from a child, please contact us so we can take appropriate action.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## International Transfers
 
 We may process and store information in the United States and other countries, which may have different data protection laws than your country of residence. When we transfer personal data, we implement appropriate safeguards as required by law.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Changes to This Policy
 
 We may update this Privacy Policy from time to time. We will post the updated version and update the “Last updated” date above. Your continued use of the site after an update constitutes acceptance of the revised Policy.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Contact Us
 
@@ -132,4 +132,4 @@ Clear Presence
 Pleasant Grove, UT 84062
 Email: hello@clearpresence.io
 
-{{< /section >}}
+

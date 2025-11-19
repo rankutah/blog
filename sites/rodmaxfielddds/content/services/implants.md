@@ -4,7 +4,7 @@ url: "/services/implants/"
 description: "Implants are designed as a substitute for the root of a missing tooth."
 ---
 
-{{< section >}}
+
 
 # Implants
 
@@ -57,4 +57,4 @@ It will take the lab two weeks to make the crown. At that point Dr. Maxfield wil
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

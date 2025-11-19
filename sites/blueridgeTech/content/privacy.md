@@ -5,7 +5,7 @@ url: "/privacy"
 description: "Privacy Policy for BlueridgeTech in Buena Vista, VA. Learn what information we collect, how we use it, and your choices."
 ---
 
-{{< section >}}
+
 
 # Privacy Policy
 
@@ -50,4 +50,4 @@ We retain information only as long as necessary for the purpose it was collected
 
 Questions about this policy? Contact us at (540) 458‑1021 or visit our [Contact](/contact) page.
 
-{{< /section >}}
+

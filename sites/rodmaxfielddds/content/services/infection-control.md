@@ -3,7 +3,7 @@ title: "Infection Control"
 url: "/services/infection/"
 ---
 
-{{< section >}}
+
 
 # Infection Control
 
@@ -38,4 +38,4 @@ Under the threat of COVID-19, infection control policies and procedures have cha
 
 {{< /cols >}}
 
-{{< /section >}}
+

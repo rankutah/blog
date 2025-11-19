@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/weddings"
 ---
 
-{{< section >}}
+
 
 {{< cols min="22rem" gap="2rem" v="start" >}}
 
@@ -39,13 +39,13 @@ Every wedding is unique and special. Please call us to discuss what we can do to
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section align="center" >}}
+
+
 
 ### Ready to see the space?
 Schedule a quick tour or call with questions—let’s make your day easy.
 
 {{< button url="tel:+15403193889" text="Call (540) 319-3889" >}} {{< button url="/contact" text="Request a Tour" >}}
 
-{{< /section >}}
+

@@ -3,9 +3,6 @@ title: "Quartz Countertops"
 layout: "flowbite"
 url: "/countertops/quartz"
 ---
-
-{{< section >}}
-
 # Quartz Countertops
 
 Engineered stone made from natural quartz and resins. Offers consistent colors and patterns, excellent durability, and low maintenance.
@@ -23,5 +20,3 @@ Engineered stone made from natural quartz and resins. Offers consistent colors a
 **Care**
 - Clean with mild soap and water; avoid abrasive pads
 - Use cutting boards and trivets to protect the surface
-
-{{< /section >}}

@@ -3,7 +3,7 @@ title: "Footer"
 headless: true
 ---
 
-{{< section >}}
+
 
 ## Rod Maxfield DDS
 {.center}
@@ -49,14 +49,14 @@ Dental Office in Pleasant Grove, UT <br>
 
 {{< /cols >}}
 
-{{< /section >}}
 
 
-{{< section >}}
+
+
 
 <div class="text-center text-sm opacity-80 mt-4">
 	© {{< year >}} Rod Maxfield DDS •  <a href="https://clearpresence.io/locations/pleasant-grove-ut" target="_blank" rel="nofollow noopener">Website by Clear Presence</a>
 </div>
 
-{{< /section >}}
+
 

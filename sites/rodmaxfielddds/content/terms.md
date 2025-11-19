@@ -3,7 +3,7 @@ title: "Terms of Service"
 description: "Website terms and conditions for Rod Maxfield, DDS."
 url: "/terms/"
 ---
-{{< section >}}
+
 
 Last updated: {{< year >}}
 
@@ -61,4 +61,4 @@ Pleasant Grove, UT 84062
 Phone: (801) 785-2631
 Email: info@rodmaxfielddds.com (for general inquiries only—do not send sensitive health information by email)
 
-{{< /section >}}
+

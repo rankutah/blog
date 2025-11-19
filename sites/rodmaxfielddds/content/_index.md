@@ -4,16 +4,16 @@ url: "/"
 description: "Family dentist in Pleasant Grove, UT offering comprehensive preventive, restorative, and implant dentistry with compassionate care."
 ---
 
-{{< section img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
 # Dentistry Making a Difference {.text-white}
 Compassionate care, modern technology, and personalized treatment options.
 {.text-white}
 {{<button url="tel:+18017852631" text="Call (801) 785-2631">}}
 
-{{< /section >}}
+{{< /hero >}}
 
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -35,17 +35,17 @@ From preventive care to restorative treatment and oral surgery, we provide thoug
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## What Our Patients Say
 
 {{< elfsight id="d8670cc6-9dfc-4864-96ea-929496ddd5fc" >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Featured Services
 
@@ -89,9 +89,9 @@ From preventive care to restorative treatment and oral surgery, we provide thoug
 {{< button url="/services/" text="View All Services" >}}
 {.center}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Why Patients Choose Us
 
@@ -107,9 +107,9 @@ From preventive care to restorative treatment and oral surgery, we provide thoug
 - Former President – Utah Academy of General Dentistry
 - Ongoing continuing education in implant systems, materials, imaging, and sedation
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 <div class="text-center max-w-3xl mx-auto">
 	<h3 class="text-2xl font-semibold mb-2">Ready for a healthier smile?</h3>
@@ -120,5 +120,5 @@ From preventive care to restorative treatment and oral surgery, we provide thoug
 	</div>
 </div>
 
-{{< /section >}}
+
 

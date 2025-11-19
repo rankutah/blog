@@ -4,7 +4,7 @@ url: "/services/crowns/"
 description: "Our goal is to provide dentistry that is undetectable."
 ---
 
-{{< section >}}
+
 
 # Crowns
 
@@ -41,4 +41,4 @@ If an old filling breaks, and the damage is too great to simply replace it, a cr
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

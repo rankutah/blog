@@ -22,7 +22,7 @@ schema:
         availability: "https://schema.org/InStock"
 ---
 
-{{< section>}}
+
 
 # Website Design
 Completely custom websites. Built for performance.
@@ -32,9 +32,9 @@ Build a fast website that turns visits into calls and form fills. Clear messagin
 {{< button url="/contact" text="Contact" >}}
 {{< button url="/portfolio" text="See Portfolio" >}}
 
-{{< /section>}}
 
-{{< section >}}
+
+
 
 ## Why choose this approach
 
@@ -44,9 +44,9 @@ Build a fast website that turns visits into calls and form fills. Clear messagin
 - Easy updates and ongoing support
 - Analytics and call tracking ready
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Featured work
 
@@ -92,17 +92,17 @@ Build a fast website that turns visits into calls and form fills. Clear messagin
 
 {{< button url="/portfolio" text="See Portfolio" >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## What clients are saying
 
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## What you get
 
@@ -114,9 +114,9 @@ Build a fast website that turns visits into calls and form fills. Clear messagin
 - Accessibility and mobile‑first best practices
 - Training and friendly support
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## How it works
 
@@ -126,26 +126,18 @@ Build a fast website that turns visits into calls and form fills. Clear messagin
 4. Launch — tracking, QA, and go‑live checklist
 5. Grow — updates, pages, and reporting as you scale
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Step 1: Pick your colors
 
-{{< /section >}}
 
-{{< section render="raw">}}
 
 
 {{< color-picker >}}
 
-{{< /section >}}
 
-{{< section >}}
-
-{{< /section >}}
-
-{{< section >}}
 
 ## Step 2: Save your colors
 
@@ -159,10 +151,9 @@ Save your colors by sending a quick message.
 
 Decide whether you also need {{< button url="/services/local-seo" text="Local SEO" >}} and then choose your {{< button url="/pricing" text="Pricing Package">}}
 
-{{< /section >}}
 
 
-{{< section >}}
+
 
 ## Locations
 
@@ -170,16 +161,16 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Ready to get started?
 
 {{< button url="/contact" text="Contact" >}}
 {{< button url="/pricing" text="See Pricing" >}}
 
-{{< /section >}}
+
 
 
 

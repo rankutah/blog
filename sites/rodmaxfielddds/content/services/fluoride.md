@@ -7,7 +7,7 @@ url: "/services/fluoride/"
 <!-- Placeholder: Carrd source text for Fluoride not yet ingested. Will be replaced verbatim; no generated copy added. -->
 
 
-{{< section >}}
+
 
 # Fluoride
 
@@ -43,7 +43,7 @@ Systemic fluorides are those which are ingested. The most common systemic fluori
 
 {{< /cols >}}
 
-{{< /section >}}
+
 
 
 

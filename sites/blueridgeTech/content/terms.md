@@ -5,7 +5,7 @@ url: "/terms"
 description: "Terms of Service for BlueridgeTech in Buena Vista, VA. Learn about scheduling, payments, warranties, and limitations."
 ---
 
-{{< section >}}
+
 
 # Terms of Service
 
@@ -55,4 +55,4 @@ Please read these terms before using BlueridgeTech’s services. By scheduling o
 
 Questions about these terms? Contact us at (540) 458‑1021 or via our [Contact](/contact) page.
 
-{{< /section >}}
+

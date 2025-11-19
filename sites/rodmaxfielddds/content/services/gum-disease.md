@@ -4,7 +4,7 @@ url: "/services/gum-disease/"
 description: "Overview of gum disease causes, risks, and treatment options."
 ---
 
-{{< section >}}
+
 
 # Gum Disease
 
@@ -38,4 +38,4 @@ If you haven’t had a cleaning within the last six months, please call us!
 
 {{< /cols >}}
 
-{{< /section >}}
+

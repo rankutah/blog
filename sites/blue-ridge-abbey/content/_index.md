@@ -5,14 +5,13 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< section img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
 {{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Contact">}}
-{{< /section >}}
+{{< /hero >}}
 
-{{< section>}}
 {{< cols min="18rem" gap="2rem" v="start" order="reverse" >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
@@ -36,18 +35,12 @@ Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens a
 
 {{< /cols >}}
 
-{{< /section >}}
-
-{{< section >}}
-
 ## A 5-Star Guest Experience
 
 <!-- Elfsight Google Reviews | Blue Ridge Abbey (lazy-loaded globally) -->
 {{< elfsight id="352976f6-7c94-43f8-b5c1-6ecbfcc43a69" >}}
 
-{{< /section >}}
 
-{{< section >}}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -81,12 +74,9 @@ Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens a
 
 {{< /cols >}}
 
-{{< /section >}}
-
 
 
 <br>
-{{< section >}}
 
 {{< cols min="18rem" gap="2rem" v="start" order="reverse">}}
 
@@ -114,14 +104,8 @@ As we’ve restored this home and opened it once more to guests, we have been de
 
 {{< /cols >}}
 
-{{< /section >}}
 
 
-{{< section align="center">}}
-
-{{< /section >}}
-
-{{< section >}}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -177,10 +161,6 @@ Holiday magic near Buena Vista, VA: drive-thru lights at Glen Maury, Natural Bri
 
 {{< /cols >}}
 
-{{< /section >}}
-
-
-{{< section >}}
 
 ## FAQs
 
@@ -204,7 +184,7 @@ Texts received between the hours of 7PM to 7AM will not be seen/addressed by you
 
 {{< /faqs >}}
 
-{{< section align="center" >}}
+
 
 ## Get Started
 
@@ -217,6 +197,4 @@ Ready to start your adventure?
 
 
 
-{{< /section >}}
 
-{{< /section >}}

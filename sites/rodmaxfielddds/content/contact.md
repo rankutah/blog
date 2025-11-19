@@ -4,7 +4,7 @@ url: "/contact/"
 description: "Contact Rod Maxfield, DDS in Pleasant Grove, UT. Call, get directions, and see our hours."
 ---
 
-{{< section >}}
+
 
 # Contact
 
@@ -12,9 +12,9 @@ Need to schedule a visit, ask about treatment options, or verify insurance benef
 
 > Dental emergency (severe pain, swelling, trauma)? Call immediately. Outside office hours, seek urgent care or an emergency room if you can’t reach us.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -49,7 +49,7 @@ Need to schedule a visit, ask about treatment options, or verify insurance benef
 
 {{< /cols >}}
 
-{{< /section >}}
+
 
 
 

@@ -5,16 +5,13 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< section img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Website Design & Local SEO for Small Businesses {.text-white}
 Professional business websites with powerful local SEO
 {.text-white}
 {{<button url="/services/website-design" text="Website Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
+{{< /hero >}}
 
-
-{{< /section >}}
-
-{{< section >}}
 
 ## Clear Presence vs Other Companies
 
@@ -22,8 +19,6 @@ Professional business websites with powerful local SEO
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Clear Presence ✅
-
-<br>
 
 ### 1. Focus on Results
 Beautiful design with a strategic marketing focus. Pages are built with a marketing focus. Once your website is live, you will receive monthly analytic reports telling you how many visitors your site had, which pages they visited, how they found your website, and where they are located.
@@ -43,8 +38,6 @@ You get a high performance website without the high risk. There is no lock-in co
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## Other Companies ❌
-
-<br>
 
 ### 1. Focus on Aesthetics
 Other web design companies focus on aesthetics. If your site looks nice they have done their job. They take their high costs upfront and then leave or offer limited updates. Many businesses come away frustrated after realizing that their beautiful website will bring zero customers without marketing.
@@ -67,19 +60,13 @@ Most web designers require high costs upfront before they will build your websit
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-{{< /section >}}
-
-{{< section >}}
-
 ## Locations
 
 Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 
-{{< /section >}}
 
-{{< section >}}
 
 ## Quick Links
 
@@ -153,16 +140,12 @@ Ready to start a project or just have a few questions? Reach out to us directly 
 
 {{< /cols >}}
 
-{{< section >}}
 
 ## FAQS
 
-{{< /section >}}
 
 
-{{< /section >}}
 
-{{< section render="raw" >}}
 
 {{< faqs >}}
 ### What is your Local SEO process?
@@ -180,12 +163,6 @@ Clear Presence provides services to clients nationwide.
 
 {{< /faqs >}}
 
-<br>
-
-{{< /section >}}
-
-{{< section >}}
-
 ## Ready for the Next Step?
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 
@@ -194,4 +171,3 @@ Whether you have a quick question or are ready to launch a project, reach out no
 {{<button text="Reach Out" url="/contact" >}}
 
 
-{{< /section >}}

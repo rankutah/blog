@@ -4,7 +4,7 @@ url: "/services/root-canals/"
 description: "Root canals treat diseased and dying teeth by removing infected pulp, disinfecting the canal, sealing the canal, and protecting the tooth with a crown."
 ---
 
-{{< section >}}
+
 
 # Root Canals
 
@@ -52,4 +52,4 @@ If you experience any of these symptoms, please [contact us](/contact/). Abscess
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

@@ -1,0 +1,186 @@
+{{/*
+  Partial: hero.html
+  Renders a hero (full-bleed or in-container) with optional overlay and responsive images.
+  Accepts a dict with keys:
+    - page        : . (Hugo page context) [required]
+    - image       : string (path to image) [required]
+    - alt         : string
+    - bleed       : bool (full-bleed when true)
+    - overlay     : bool
+    - overlayShade: string (e.g., "bg-black/40")
+    - imgClasses  : string (tailwind classes)
+    - imgStyle    : string (inline style)
+    - vh          : string ("vh" | "svh" | "dvh")
+    - brighten    : string ("sm"|"md"|"lg"|"true")
+    - max         : string (sm|md|lg|xl|2xl|full)
+    - pad         : string (none|sm|md|lg)
+    - align       : string (start|center)
+    - alignY      : string (start|center|end|between)
+    - minh        : string (screen|full|"")
+*/}}
+{{- $p := . -}}
+{{- $page := $p.page -}}
+{{- $img  := ($p.image | default "") -}}
+{{- if eq $img "" -}}{{- return -}}{{- end -}}
+
+{{- $alt         := $p.alt | default "" -}}
+{{- $bleed       := cond (ne $img "") (or ($p.bleed | default false) false) false -}}
+{{- $overlay     := $p.overlay | default false -}}
+{{- $overlayShade:= $p.overlayShade | default "" -}}
+{{- $imgClasses  := $p.imgClasses | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
+{{- $imgStyle    := $p.imgStyle   | default "" -}}
+{{- $vhMode      := lower ($p.vh | default "") -}}
+{{- $brighten    := lower ($p.brighten | default "") -}}
+
+{{- $defs := $page.Site.Params.section.defaults | default (dict) -}}
+{{- $defMax   := (index $defs "max")   | default "xl" -}}
+{{- $defPad   := (index $defs "pad")   | default "lg" -}}
+{{- $defAlign := (index $defs "align") | default "start" -}}
+{{- $defAlignY:= (index $defs "alignY")| default "" -}}
+{{- $defMinh  := (index $defs "minh")  | default "" -}}
+
+{{- $max     := $p.max    | default $defMax -}}
+{{- $pad     := $p.pad    | default $defPad -}}
+{{- $align   := $p.align  | default $defAlign -}}
+{{- $alignY  := $p.alignY | default $defAlignY -}}
+{{- $minh    := $p.minh   | default $defMinh -}}
+
+{{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
+{{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
+{{- $alMap  := dict "start" "text-left" "center" "text-center" -}}
+{{- $alignYMap := dict "" "" "start" "justify-start" "center" "justify-center" "end" "justify-end" "between" "justify-between" -}}
+
+{{- /* Brighten convenience → default overlay shade when not provided */ -}}
+{{- if and (ne $brighten "") (eq $overlayShade "") -}}
+  {{- $overlay = true -}}
+  {{- $level := cond (or (eq $brighten "true") (eq $brighten "md")) "20" (cond (eq $brighten "sm") "10" (cond (eq $brighten "lg") "30" "")) -}}
+  {{- if ne $level "" -}}
+    {{- $overlayShade = printf "bg-white/%s" $level -}}
+  {{- else -}}
+    {{- $overlayShade = "bg-white/20" -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* If author provided a vh-based inline height, append svh so it wins on mobile */ -}}
+{{- $hasVhInStyle := and (ne $imgStyle "") (gt (len (findRE `\b[0-9.]+vh\b` $imgStyle)) 0) -}}
+{{- if and (ne $img "") $hasVhInStyle -}}
+  {{- $svhStyle := replaceRE `([0-9.]+)vh` `${1}svh` $imgStyle -}}
+  {{- $imgStyle = printf "%s; %s" $imgStyle $svhStyle -}}
+{{- end -}}
+{{- if and (eq $vhMode "") (ne $img "") -}}
+  {{- $vhMode = "svh" -}}
+{{- end -}}
+{{- if and (ne $vhMode "") (ne $img "") -}}
+  {{- if eq $vhMode "svh" -}}
+    {{- $imgStyle = printf "height: 100vh; height: 100svh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+  {{- else if eq $vhMode "dvh" -}}
+    {{- $imgStyle = printf "height: 100vh; height: 100dvh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+  {{- else if eq $vhMode "vh" -}}
+    {{- $imgStyle = printf "height: 100vh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $container := printf "%s mx-auto %s %s"
+    (index $maxMap $max   | default "max-w-7xl")
+    (index $padMap $pad   | default "px-8")
+    (index $alMap  $align | default "text-left")
+-}}
+{{- $vWrap := "" -}}
+{{- if or (ne $alignY "") (ne $minh "") -}}
+  {{- $vWrap = printf "flex flex-col w-full %s %s"
+        (cond (eq $minh "screen") "min-h-screen" (cond (eq $minh "full") "min-h-full" ""))
+        (index $alignYMap $alignY | default "")
+  -}}
+{{- end -}}
+
+{{- /* Responsive image pipeline (AVIF + JPEG fallback) */ -}}
+{{- $imgStr := $img | safeURL -}}
+{{- $srcset := slice -}}
+{{- $srcsetAvif := slice -}}
+{{- $fallbackSrc := $imgStr -}}
+{{- $isRaster := gt (len (findRE `\.(jpg|jpeg|png|webp|avif)$` (lower $imgStr))) 0 -}}
+{{- $isMedia := or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") (hasPrefix $imgStr "./media/") (hasPrefix $imgStr "../media/") -}}
+{{- if and $isRaster $isMedia -}}
+  {{- $noLead := replaceRE "^(/|\\./|\\.\\./)" "" $imgStr -}}
+  {{- $asset := resources.Get $noLead -}}
+  {{- $last := "" -}}
+  {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
+    {{- $sub := lower ($asset.MediaType.SubType | default "") -}}
+    {{- $processable := in (slice "jpeg" "jpg" "png") $sub -}}
+    {{- if $processable -}}
+      {{- $widths := slice 720 1080 1440 1920 -}}
+      {{- $last = "" -}}
+      {{- range $w := $widths -}}
+        {{- $r := $asset.Resize (printf "%dx" $w) -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
+        {{- $last = $r.RelPermalink -}}
+        {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
+        {{- if (hasSuffix (lower $ravif.RelPermalink) ".avif") -}}
+          {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
+    {{- else -}}
+      {{- $fallbackSrc = $asset.RelPermalink -}}
+      {{- if eq $sub "avif" -}}
+        {{- $srcsetAvif = (slice $asset.RelPermalink) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
+    {{- $noLead := replaceRE "^/" "" $imgStr -}}
+    {{- $avifRel := replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $noLead -}}
+    {{- $staticPath := printf "static/%s" $avifRel -}}
+    {{- if fileExists $staticPath -}}
+      {{- $srcsetAvif = (slice (printf "/%s 1920w" $avifRel)) -}}
+    {{- end -}}
+    {{- $fallbackSrc = printf "/%s" $noLead -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $bleed -}}
+  <div class="section hero bleed">
+    <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
+      <picture>
+        {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
+        <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+      </picture>
+      {{- if $overlay -}}
+        <div class="absolute inset-0 flex items-center">
+          {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
+          <div class="relative z-10 w-full {{ $container }}">
+            <div class="{{ $vWrap }}">
+              <div class="prose prose-zinc max-w-none dark:prose-invert {{ (index $alMap $align | default "text-left") }}">
+                {{- $page.Scratch.Get "heroInner" -}}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{- end }}
+    </div>
+  </div>
+{{- else -}}
+  <div class="section hero">
+    <div class="{{ $container }}">
+      <div class="relative">
+        <picture>
+          {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
+          <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+        </picture>
+        {{- if $overlay -}}
+          <div class="absolute inset-0 flex items-center">
+            {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
+            <div class="relative z-10 w-full">
+              <div class="{{ $vWrap }}">
+                <div class="prose prose-zinc max-w-none dark:prose-invert {{ (index $alMap $align | default "text-left") }}">
+                  {{- $page.Scratch.Get "heroInner" -}}
+                </div>
+              </div>
+            </div>
+          </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+{{- end -}}

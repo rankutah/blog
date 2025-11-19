@@ -4,7 +4,7 @@ url: "/patients/first-visit/"
 description: "What to bring and what to expect at your first visit with Rod Maxfield, DDS."
 ---
 
-{{< section >}}
+
 
 # First Visit
 
@@ -25,5 +25,3 @@ description: "What to bring and what to expect at your first visit with Rod Maxf
 
 - Please alert our office if you have a medical condition that may be of concern prior to dental care
 - A parent or guardian must accompany all patients under 18
-
-{{< /section >}}

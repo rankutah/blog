@@ -6,15 +6,15 @@ url: "/contact"
 
 ---
 
-{{< section >}}
+
 
 # Contact
 
 After hours? Leave a voicemail, text or email and I'll get back to you the next business day.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -68,4 +68,4 @@ Share what you need help with and the best way to contact you.
 
 {{< /cols >}}
 
-{{< /section >}}
+

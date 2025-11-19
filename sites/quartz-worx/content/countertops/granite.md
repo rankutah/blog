@@ -3,9 +3,6 @@ title: "Granite Countertops"
 layout: "flowbite"
 url: "/countertops/granite"
 ---
-
-{{< section >}}
-
 # Granite Countertops
 
 We stock 20 colors of granite and other natural stone in our yard. The best price that we can give you is from our in-stock slabs. We can also bring in your slab selections from any of the slab suppliers.
@@ -25,5 +22,3 @@ Natural stone prized for its unique movement and durability. Every slab is oneâ€
 - Clean with stoneâ€‘safe cleaner or mild soap; reseal as recommended
 - Use cutting boards to protect your knives
 - Wipe spills promptly
-
-{{< /section >}}

@@ -4,7 +4,7 @@ description: "How we collect, use, and protect your information online and in ou
 url: "/privacy/"
 ---
 
-{{< section >}}
+
 
 Last updated: {{< year >}}
 
@@ -82,4 +82,4 @@ Pleasant Grove, UT 84062
 Phone: (801) 785-2631
 Email: info@rodmaxfielddds.com (for general inquiries only—do not send sensitive health information by email)
 
-{{< /section >}}
+

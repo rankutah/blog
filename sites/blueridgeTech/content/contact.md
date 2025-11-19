@@ -4,7 +4,7 @@ layout: "flowbite"
 url: "/contact"
 ---
 
-{{< section align="center" >}}
+
 
 # Get help now
 
@@ -17,9 +17,9 @@ url: "/contact"
 </div>
 Typical response time: same day during business hours.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -72,4 +72,4 @@ Schedule a phone call, video meeting, or office visit.
 
 {{< /cols >}}
 
-{{< /section >}}
+

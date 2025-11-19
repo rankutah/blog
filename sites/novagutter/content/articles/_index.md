@@ -1,9 +1,12 @@
 ---
-title: "Articles"
-description: "Tips, maintenance, and gutter design guidance."
-layout: flowbite
+title: "Deprecated: Blog at /articles"
+draft: true
+---
+_build:
+	render: never
+	list: never
+	publishResources: false
 ---
 
-### Articles & Guides
-We’ll highlight select posts here. If you have specific articles you want featured in the dropdown, share the links or titles and we’ll wire them up.
 
+{{< blog-list section="posts" limit="0" showDate="false" showTags="true" excerpt="160" variant="cards" >}}

@@ -4,7 +4,7 @@ url: "/services/mouth-guards/"
 description: "Custom mouth guards provide much stronger protection than generic ones from the local drugstore."
 ---
 
-{{< section >}}
+
 
 # Mouth Guards
 
@@ -34,4 +34,4 @@ Please <a href="/contact">call us</a>! We're here to protect your smile!
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

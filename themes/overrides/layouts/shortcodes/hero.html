@@ -1,0 +1,49 @@
+{{- /* Shortcode: hero
+   Usage: {{< hero img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" >}}
+            # Heading
+            {{< /hero >}}
+*/ -}}
+{{- $page := .Page -}}
+{{- $img  := .Get "img" | default "" -}}
+{{- if eq $img "" -}}{{- return -}}{{- end -}}
+
+{{- $alt         := .Get "alt" | default "" -}}
+{{- $bleed       := eq (lower (.Get "bleed" | default "false")) "true" -}}
+{{- $overlay     := eq (lower (.Get "overlay" | default "false")) "true" -}}
+{{- $overlayShade:= .Get "overlayShade" | default "" -}}
+{{- $imgClasses  := .Get "imgClasses" | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
+{{- $imgStyle    := .Get "imgStyle" | default "" -}}
+{{- $vh          := lower (.Get "vh" | default "") -}}
+{{- $brighten    := lower (.Get "brighten" | default "") -}}
+{{- $max         := .Get "max" | default "" -}}
+{{- $pad         := .Get "pad" | default "" -}}
+{{- $align       := .Get "align" | default "" -}}
+{{- $alignY      := .Get "alignY" | default "" -}}
+{{- $minh        := .Get "minh" | default "" -}}
+
+{{- /* Render inner markdown for overlay content if present */ -}}
+{{- $inner := .Inner -}}
+{{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
+{{- $rendered := $page.RenderString $opts $inner -}}
+{{- $page.Scratch.Set "heroInner" $rendered -}}
+
+{{- partial "hero.html" (dict
+  "page" $page
+  "image" $img
+  "alt" $alt
+  "bleed" $bleed
+  "overlay" $overlay
+  "overlayShade" $overlayShade
+  "imgClasses" $imgClasses
+  "imgStyle" $imgStyle
+  "vh" $vh
+  "brighten" $brighten
+  "max" $max
+  "pad" $pad
+  "align" $align
+  "alignY" $alignY
+  "minh" $minh
+) -}}
+
+{{- /* cleanup */ -}}
+{{- $page.Scratch.Delete "heroInner" -}}

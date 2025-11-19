@@ -27,15 +27,15 @@ schema:
     areaServed: "Buena Vista, VA"
 ---
 
-{{< section img="/media/computer-repair-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/computer-repair-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
 # Computer Repair Shop in Buena Vista, VA {.text-white}
 Computer repair services and IT support for individuals and businesses near Buena Vista, Virginia
 {.text-white}
 {{<button url="https://calendly.com/support-blueridgetech" text="Schedule">}}{{<button url="/contact" text="Contact">}}
 
-{{< /section >}}
+{{< /hero >}}
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -59,11 +59,11 @@ Call now or schedule a time that works for you.
 
 {{< /cols >}}
 
-{{< /section >}}
+
 
 <br>
 
-{{< section >}}
+
 
 {{< cols min="20rem" gap="2rem" v="start">}}
 
@@ -93,9 +93,9 @@ Photos of the office and signs so you know you’re in the right place.
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## What Our Customers Say
 
@@ -103,9 +103,9 @@ Photos of the office and signs so you know you’re in the right place.
 
 {{< button url="/reviews" text="Read More Reviews" >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="20rem" gap="2rem" v="start">}}
 
@@ -137,9 +137,9 @@ Buena Vista and nearby communities.
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 <div class="text-center max-w-3xl mx-auto">
 	<h3 class="text-2xl font-semibold mb-2">Need help today?</h3>
@@ -151,4 +151,4 @@ Buena Vista and nearby communities.
 	</div>
 </div>
 
-{{< /section >}}
+

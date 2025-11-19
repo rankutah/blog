@@ -3,7 +3,7 @@ title: "X-Rays"
 url: "/services/x-rays/"
 ---
 
-{{< section >}}
+
 
 # X-Rays
 
@@ -32,4 +32,4 @@ Intraoral photos are required by many insurances for “proof of necessity of ca
 
 {{< /cols >}}
 
-{{< /section >}}
+

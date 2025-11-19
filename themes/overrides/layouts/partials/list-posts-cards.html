@@ -1,0 +1,45 @@
+{{/* Partial: list-posts-cards
+Expects dict with keys:
+- ctx      : page context (for palette)
+- pages    : slice of Page objects to render
+- showDate : bool to show date
+- showTags : bool to show tags
+- excerpt  : int characters for excerpt
+*/}}
+
+{{- $ctx      := .ctx -}}
+{{- $pages    := .pages -}}
+{{- $showDate := .showDate | default false -}}
+{{- $showTags := .showTags | default true -}}
+{{- $excerpt  := .excerpt  | default 160 -}}
+{{- $pal      := partial "theme/palette.html" $ctx -}}
+
+<div class="space-y-5 not-prose">
+  {{- range $p := $pages }}
+    <article class="rounded-lg shadow-sm overflow-hidden {{ $pal.cardBorder }} {{ $pal.cardBg }}">
+      <div class="p-5">
+        <div class="entry-clickable relative">
+          <header class="entry-header">
+            <h3 class="text-xl md:text-2xl font-semibold leading-snug text-gray-900 dark:text-white">
+              {{ $p.Title }}
+            </h3>
+          </header>
+          {{- /* Build excerpt */ -}}
+          {{- $raw := "" -}}
+          {{- with $p.Params.excerpt }}{{ $raw = (plainify .) }}{{ end -}}
+          {{- if eq $raw "" }}{{ with $p.Summary }}{{ $raw = (plainify .) }}{{ end }}{{ end -}}
+          {{- if eq $raw "" }}{{ $raw = (plainify $p.Content) }}{{ end -}}
+          <p class="mt-2 text-[0.95rem] text-gray-700 dark:text-gray-300">{{ truncate $excerpt $raw }}</p>
+          {{- if $showDate }}
+            <p class="mt-1 text-sm text-gray-500">{{ $p.Date.Format "Jan 2, 2006" }}</p>
+          {{- end }}
+          <a class="entry-link" aria-label="post link to {{ $p.Title | plainify }}" href="{{ $p.RelPermalink }}" style="position:absolute;top:0;right:0;bottom:0;left:0;z-index:0"></a>
+        </div>
+        {{- $tags := $p.Params.tags | default (slice) -}}
+        {{- if and $showTags (gt (len $tags) 0) -}}
+          <div class="mt-4">{{ partial "tag-badges.html" $p }}</div>
+        {{- end -}}
+      </div>
+    </article>
+  {{- end }}
+</div>

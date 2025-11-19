@@ -6,14 +6,14 @@ url: "/locations/buena-vista-va"
 hero: true
 ---
 
-{{< section img="/media/virginia-mountains.avif" alt="Buena Vista website design" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/virginia-mountains.avif" alt="Buena Vista website design" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design in Buena Vista, VA {.text-white}
 Custom websites and performance-driven design for Buena Vista businesses and beyond.
 {.text-white}
 {{<button url="/services/website-design" text="Website Design" >}}{{<button url="/contact" text="Contact" >}}
-{{< /section >}}
+{{< /hero >}}
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -56,9 +56,9 @@ BlueridgeTech website was build with clear calls-to-action and appointment booki
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## About the Owner
 
@@ -80,4 +80,4 @@ Bachelor's in Business Management
 
 {{< button url="/services/website-design" text="Website Design Services" >}}
 
-{{< /section >}}
+

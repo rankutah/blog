@@ -4,13 +4,13 @@ layout: "flowbite"
 url: "/portfolio"
 ---
 
-{{< section >}}
+
 
 # Website Portfolio
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -140,9 +140,9 @@ In Progress
 
 
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Locations
 
@@ -150,9 +150,9 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Locations](/locations)
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Ready to start your website?
 
@@ -160,4 +160,4 @@ Get a fast, effective website that helps your business grow.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 
-{{< /section >}}
+

@@ -6,12 +6,12 @@ url: "/locations/lexington-va"
 hero: true
 ---
 
-{{< section img="/media/laptop.avif" alt="Blue Ridge Mountains near Buena Vista and Lexington, VA" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/laptop.avif" alt="Blue Ridge Mountains near Buena Vista and Lexington, VA" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Computer Repair in Lexington, VA {.text-white}
 Fast, honest repairs — just a short drive to our Buena Vista shop.
 {.text-white}
 {{<button url="https://www.google.com/maps/dir/?api=1&destination=1412+Magnolia+Ave,+Buena+Vista,+VA+24416" text="Get Directions" >}}{{<button url="tel:+15404581021" text="Call (540) 458-1021" >}}{{<button url="https://calendly.com/support-blueridgetech" text="Book Service" >}}
-{{< /section >}}
+{{< /hero >}}
 
 <script type="application/ld+json">
 {
@@ -46,7 +46,7 @@ Fast, honest repairs — just a short drive to our Buena Vista shop.
 }
 </script>
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -73,9 +73,9 @@ We are happy to help customers from Lexington. It’s about a ~13‑minute drive
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## What customers say
 
@@ -91,9 +91,9 @@ We are happy to help customers from Lexington. It’s about a ~13‑minute drive
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Get directions
 
@@ -101,4 +101,4 @@ We are happy to help customers from Lexington. It’s about a ~13‑minute drive
 
 Or call: [(540) 458-1021](tel:+15404581021)
 
-{{< /section >}}
+

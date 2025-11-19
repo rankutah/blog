@@ -4,7 +4,7 @@ layout: "flowbite"
 url: "/contact"
 ---
 
-{{< section align="center" >}}
+
 
 # Get a Quote
 
@@ -15,9 +15,9 @@ url: "/contact"
   </div>
 </div>
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -60,4 +60,4 @@ Share what you need help with and the best way to contact you.
 
 {{< /cols >}}
 
-{{< /section >}}
+

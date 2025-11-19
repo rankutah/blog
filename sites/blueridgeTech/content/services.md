@@ -5,7 +5,7 @@ url: "services"
 ---
 
 
-{{< section >}}
+
 
 # Fast Honest Computer Repair Services
 {.center}
@@ -89,7 +89,7 @@ Install and troubleshoot printers and scanners (USB and wireless). I’ll leave 
 
 {{< /cols >}}
 
-{{< section >}}
+
 
 ### What customers say
 
@@ -99,9 +99,9 @@ Install and troubleshoot printers and scanners (USB and wireless). I’ll leave 
 
 Based on recent 5‑star Google reviews.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 <div class="text-center max-w-3xl mx-auto">
 	<h3 class="text-2xl font-semibold mb-2">Need help today?</h3>
@@ -113,6 +113,6 @@ Based on recent 5‑star Google reviews.
 	</div>
 </div>
 
-{{< /section >}}
 
-{{< /section >}}
+
+

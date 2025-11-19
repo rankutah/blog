@@ -3,10 +3,33 @@ languageCode = "en-us"
 title = "NOVA Gutter"
 theme = ["overrides"]
 themesDir = "../../themes"
+ignoreFiles = ["^content/articles/"]
 
-# Use Flowbite layout only (no PaperMod)
-[cascade]
+# Use Flowbite layout only for singles and home; let lists/taxonomies use default list templates
+[[cascade]]
   layout = "flowbite"
+  [cascade._target]
+    kind = "page"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "home"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "taxonomy"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "taxonomyTerm"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "section"
 
 [markup]
   [markup.goldmark]
@@ -26,6 +49,9 @@ themesDir = "../../themes"
 
 [module]
   [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
     source = "static"
     target = "static"
   [[module.mounts]]
@@ -34,6 +60,10 @@ themesDir = "../../themes"
   [[module.mounts]]
     source = "media"
     target = "static/media"
+  # Mount posts folder at project root into this site's content tree
+  [[module.mounts]]
+    source = "posts"
+    target = "content/posts"
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "FORMS"]
@@ -146,9 +176,9 @@ themesDir = "../../themes"
     weight = 20
 
   [[menu.main]]
-    name = "Articles"
-    url = "/articles/"
-    identifier = "articles"
+    name = "Blog"
+    url = "/blog/"
+    identifier = "blog"
     weight = 30
 
   [[menu.main]]

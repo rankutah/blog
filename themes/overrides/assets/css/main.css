@@ -92,6 +92,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+.footer .prose.max-w-none { max-width: none !important; }
 .footer .prose > :first-child { margin-top: 0 !important; }
 /* underline only normal text links; do not underline button-style anchors */
 .footer .prose a:not(.not-prose):not(.ui-btn):not(.no-underline) { text-decoration: underline; }
@@ -179,6 +180,8 @@
 .prose h1 { margin-top: 0; margin-bottom: 0.5em; }
 .prose h1 + p { margin-top: 0.25em; }
 
+/* (Removed) Typography rhythm controls: deleted due to conflicts with FAQs/tables */
+
 /* Compensate for the sticky header so the first page element isn't hidden/too close to the nav */
 /* Default top spacing to clear a sticky header */
 main#content { padding-top: 4rem; }
@@ -188,7 +191,6 @@ main#content { padding-top: 4rem; }
 @supports selector(:has) {
   /* If any hero/bleed section exists inside main (even nested in article), remove extra top pad */
   main#content:has(.hero),
-  main#content:has(.section.bleed),
   main#content:has(.relative > img),
   main#content:has(.relative > picture) {
     padding-top: 0 !important;

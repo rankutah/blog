@@ -5,7 +5,7 @@ url:     "/services"
 summary: "Programs and coaching"
 ---
 
-{{< section >}}
+
 
 Strongman & Woman • Power Lifting • Olympic Weightlifting • Strength & Conditioning • Fitness
 
@@ -33,4 +33,4 @@ Fully individualized programming and accountability.
 
 {{< /cols >}}
 
-{{< /section >}}
+

@@ -1,22 +1,22 @@
 ---
-title: "The Gold Standard in Gutters & Drainage"
-description: "Expert gutter installation and drainage solutions in South Florida. Licensed • Insured • Quality Guaranteed."
+title: "Rain Gutters in Boca Raton, Florida"
+description: "Expert gutter installation and drainage solutions in Boca Raton, Florida. 20+ years of reliable gutter solutions across South Florida."
 layout: flowbite
 ---
 
 
 
-{{< section img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 
-# Rain Gutters in Southern Florida  {.text-white}
+# Rain Gutters in Boca Raton  {.text-white}
 The Gold Standard in Gutters & Drainage. Expert Gutter Installation, Every Time.
 {.text-white}
 
  {{< button url="/contact" text="Get a Free Quote" >}}
 
-{{< /section >}}
+{{< /hero >}}
 
-{{< section >}}
+
 
 ## NOVA Gutter – Serving South Florida Since 2003
 
@@ -88,7 +88,7 @@ Whether you need seamless stainless-steel channels on a storefront or elegant co
 
 
 
-{{< /section >}}
+
 
 
 

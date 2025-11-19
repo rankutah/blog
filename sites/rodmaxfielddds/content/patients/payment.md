@@ -3,14 +3,7 @@ title: "Insurance & Payment"
 url: "/patients/payment/"
 description: "Insurance participation, claims process, and payment options for Rod Maxfield, DDS."
 ---
-
-{{< section >}}
-
 # Insurance & Payment
-
-{{< /section >}}
-
-{{< section >}}
 
 ## No Insurance? Ask about Discount Dental Services (DDS) {#discount-plan}
 
@@ -80,5 +73,3 @@ We will communicate any material changes before proceeding with optional treatme
 
 ## Questions?
 Call us at (801) 785-2631. We’re happy to walk you through insurance terms or help you plan payment for upcoming care.
-
-{{< /section >}}

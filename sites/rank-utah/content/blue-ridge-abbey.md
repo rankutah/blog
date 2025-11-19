@@ -5,15 +5,15 @@ layout: "flowbite"
 url: "/portfolio/blue-ridge-abbey"
 ---
 
-{{< section >}}
+
 
 # Website Performance - Blue Ridge Abbey
 
 Tests were conducted and can be verified using Google's Page Speed Insights tool https://pagespeed.web.dev/. Competitors were found using Google Maps and searching for "Bed & Breakfast" near the client's location.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -37,4 +37,4 @@ Tests were conducted and can be verified using Google's Page Speed Insights tool
 
 {{< /cols >}}
 
-{{< /section >}}
+

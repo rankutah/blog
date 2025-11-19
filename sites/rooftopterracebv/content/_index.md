@@ -7,14 +7,14 @@ plainHome: true
 ---
 
 
-{{< section>}}
+{{< hero img="/media/rooftop-terrace.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
 
 # Join the Movement {.text-white}
 
 Join a movement to restore vibrancy, spark growth, and shape the future of a city on the rise. Your investment isn’t just in property—it’s in possibility.
 
 
-![rooftop terrace image](/media/rooftop-terrace.jpg)
+
 
 ## Get in Touch
 
@@ -25,4 +25,4 @@ We’d love to connect. Share your interest and we’ll reach out with next step
 {{< button submit="true" form="interest" text="Send Message" >}}
 
 
-{{< /section >}}
+{{< /hero >}}

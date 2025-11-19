@@ -1,0 +1,42 @@
+{{/* Partial: list-posts-minimal
+Expects dict with keys:
+- pages    : slice of Page objects to render (already filtered/sorted)
+- showDate : bool to show publish date
+- showTags : bool to render colored tag badges footer
+- excerpt  : int max chars for excerpt
+*/}}
+
+{{- $pages    := .pages -}}
+{{- $showDate := .showDate | default false -}}
+{{- $showTags := .showTags | default true -}}
+{{- $excerpt  := .excerpt  | default 160 -}}
+
+<div class="not-prose divide-y divide-gray-200 dark:divide-gray-700">
+  {{- range $p := $pages }}
+    <article class="post-entry py-6">
+      <div class="entry-clickable" style="position: relative">
+        <header class="entry-header">
+          <h2 class="entry-hint-parent text-2xl md:text-3xl font-semibold leading-snug text-gray-900 dark:text-white">
+            {{ $p.Title }}
+          </h2>
+        </header>
+        {{- /* Summary/excerpt */ -}}
+        {{- $raw := "" -}}
+        {{- with $p.Params.excerpt }}{{ $raw = (plainify .) }}{{ end -}}
+        {{- if eq $raw "" }}{{ with $p.Summary }}{{ $raw = (plainify .) }}{{ end }}{{ end -}}
+        {{- if eq $raw "" }}{{ $raw = (plainify $p.Content) }}{{ end -}}
+        <div class="entry-content">
+          <p class="mt-2 text-[0.95rem] text-gray-700 dark:text-gray-300">{{ truncate $excerpt $raw }}</p>
+        </div>
+        {{- if $showDate }}
+          <p class="mt-1 text-sm text-gray-500">{{ $p.Date.Format "Jan 2, 2006" }}</p>
+        {{- end }}
+        <a class="entry-link" aria-label="post link to {{ $p.Title | plainify }}" href="{{ $p.RelPermalink }}" style="position:absolute;top:0;right:0;bottom:0;left:0;z-index:0"></a>
+      </div>
+      {{- $tags := $p.Params.tags | default (slice) -}}
+      {{- if and $showTags (gt (len $tags) 0) -}}
+        {{ partial "tag-badges.html" $p }}
+      {{- end -}}
+    </article>
+  {{- end }}
+</div>

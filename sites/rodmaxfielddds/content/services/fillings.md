@@ -4,7 +4,7 @@ url: "/services/fillings/"
 description: "Because every case is different, Dr. Maxfield tailors his treatment to meet those individual needs."
 ---
 
-{{< section >}}
+
 
 # Fillings
 
@@ -42,4 +42,4 @@ Amalgam fillings are considered the “least expensive alternative treatment” 
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

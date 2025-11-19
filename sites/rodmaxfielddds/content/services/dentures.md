@@ -4,7 +4,7 @@ url: "/services/dentures/"
 description: "A denture is an appliance that replaces missing teeth."
 ---
 
-{{< section >}}
+
 
 # Dentures
 
@@ -64,4 +64,4 @@ Yes! Since there is no longer the support of natural teeth, the bone will begin 
 
 Regular dental exams are still important for anyone with dentures so that the health of the oral tissues can be checked.
 
-{{< /section >}}
+

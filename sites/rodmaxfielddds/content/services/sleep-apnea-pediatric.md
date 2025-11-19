@@ -4,7 +4,7 @@ url: "/services/sleep-apnea-pediatric/"
 description: "Pediatric sleep apnea is very similar to adult sleep apnea, however there are a few differences."
 ---
 
-{{< section >}}
+
 
 # Sleep Apnea (Pediatric)
 
@@ -54,4 +54,4 @@ If you suspect your child may have sleep apnea, please call our office or your p
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

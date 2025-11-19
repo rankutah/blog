@@ -132,7 +132,7 @@ sameAs = []
   sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
 
 [params.section.defaults]
-  # Container width:
+  # Container width (sitewide content width):
   #   sm → max-w-screen-sm
   #   md → max-w-3xl
   #   lg → max-w-5xl
@@ -141,31 +141,16 @@ sameAs = []
   #   full → max-w-none (edge to edge)
   max   = "xl"
 
-  # Horizontal padding:
+  # Horizontal padding (sitewide gutters):
   #   none → px-0, sm → px-4, md → px-6, lg → px-8
+  # Tip: keep a gutter even on full-width for mobile readability.
   pad   = "lg"
 
-  # Vertical padding:
-  #   none → py-0, sm → py-6, md → py-12, lg → py-16, xl → py-24
-  y     = "none"
+  # Note: Vertical page-edge padding and per-section alignment were removed.
+  # Spacing inside content uses default typography; no extra sitewide controls.
 
-  # Text align: start | center
-  align = "start"
-
-  # Optional vertical centering:
-  # alignY: "", "start", "center", "end", "between"
-  # minh:   "", "screen", "full"
-  # alignY = "center"
-  # minh   = "screen"
-
-
-
-#  [params.button]
-#    classes = "text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
 
 # [params.button_outline]
-
-
 
 [permalinks]
   posts = "/:contentbasename"

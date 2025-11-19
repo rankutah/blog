@@ -21,7 +21,7 @@ schema:
         answer: "Websites can be built in 2–3 weeks with regular coordination."
 ---
 
-{{< section >}}
+
 
 # Pricing
 {.center}
@@ -29,10 +29,10 @@ schema:
 Simple monthly pricing. No contracts. No surprises.
 {.center}
 
-{{< /section >}}
 
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="1rem" v="stretch">}}
 
@@ -104,9 +104,9 @@ This package does not include a business website.
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Frequently asked questions
 
@@ -141,9 +141,9 @@ Websites can be built in 2–3 weeks with regular coordination.
 
 {{< /faqs >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Ready to grow your visibility?
 
@@ -154,4 +154,4 @@ Pick the service you want to explore next or reach out with questions.
 {{< button url="/contact" text="Contact" >}}
 
 
-{{< /section >}}
+

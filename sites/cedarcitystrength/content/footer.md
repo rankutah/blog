@@ -3,7 +3,7 @@ title: "Footer"
 headless: true
 ---
 
-{{< section >}}
+
 
 ## Cedar City Strength & Conditioning
 {.center}
@@ -45,12 +45,12 @@ Strength and conditioning gym in Cedar City, Utah
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 <div class="text-center text-sm opacity-80 mt-4">
 	© {{< year >}} Cedar City Strength & Conditioning •  <a href="https://clearpresence.io" target="_blank" rel="nofollow noopener">Website by Clear Presence</a>
 </div>
 
-{{< /section >}}
+

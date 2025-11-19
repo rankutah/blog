@@ -4,7 +4,7 @@ layout: "flowbite"
 url: "/reviews"
 ---
 
-{{< section >}}
+
 
 # Reviews
 
@@ -68,4 +68,4 @@ Reviews help neighbors find trusted local help. If I’ve earned your 5‑stars,
 }
 </script>
 
-{{< /section >}}
+

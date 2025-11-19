@@ -3,9 +3,6 @@ title: "Commercial Gutter Installation"
 description: "High‑capacity gutter systems for retail, industrial, and multi‑unit buildings."
 layout: flowbite
 ---
-
-{{< section >}}
-
 # Commercial Gutter Installation
 
 ![](/media/image10.jpg)
@@ -34,8 +31,11 @@ Our professionals aim for complete customer satisfaction at every job that we pe
 
 ## Latest Commercial Gutter Installation Projects
 
-Boca Raton Commercial Gutter Installation: Waterstone Resort and Marina Project
+## Boca Raton Commercial Gutter Installation: Waterstone Resort and Marina Project
+
+![](/media/seamless-gutters-boca-raton-fl-new-pics1.jpg)
+{.w-64}
 
 As one of Boca Raton’s premier waterfront properties, the Waterstone Resort and Marina is an iconic fixture in the South Florida region drawing thousands of tourists each and every year. Needless to say, the property managers wanted to be sure they hired the top Boca Raton gutter company.
 
-{{< /section >}}
+

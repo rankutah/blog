@@ -9,6 +9,16 @@
 {{- $page   := .Page -}}
 {{- $Inner  := .Inner -}}
 
+{{/* ---------- No-op for non-hero usage ---------- */}}
+{{- $imgParam := .Get "img" | default "" -}}
+{{- if eq $imgParam "" -}}
+  {{- /* Section without an image should not alter layout: just render inner with shortcode expansion. */ -}}
+  {{- $innerRaw := $Inner -}}
+  {{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
+  {{- $page.RenderString $opts $innerRaw -}}
+  {{- /* Short-circuit: skip the rest of the section logic. */ -}}
+{{- else -}}
+
 {{/* ---------- Read site defaults ---------- */}}
 {{- $defs := $page.Site.Params.section.defaults | default (dict) -}}
 {{- $defMax   := (index $defs "max")   | default "xl" -}}
@@ -23,7 +33,9 @@
 {{- $siteOverride := $page.Site.Params.section.classes | default "" -}}
 
 {{- $max     := .Get "max"     | default $defMax -}}
-{{- $pad     := .Get "pad"     | default $defPad -}}
+{{- $outerPx := $page.Scratch.Get "outer_px_container" | default false -}}
+{{- $padParam := .Get "pad" -}}
+{{- $pad     := cond (ne $padParam nil) $padParam $defPad -}}
 {{- $y       := .Get "y"       | default $defY -}}
 {{- $yBottom := .Get "yBottom" | default "" -}}
 {{- $align   := .Get "align"   | default $defAlign -}}
@@ -31,11 +43,22 @@
 {{- $minh    := .Get "minh"    | default $defMinh -}}
 
 {{- $render  := lower (.Get "render" | default "md") -}} {{/* md | raw | auto */}}
+{{- $isRoot := eq (lower (.Get "root" | default "false")) "true" -}}
+{{- if $isRoot -}}
+  {{- /* Root section: structural wrapper only; signal outer container presence */ -}}
+  {{- $page.Scratch.Set "outer_px_container" true -}}
+{{- end -}}
+{{- /* Suppress horizontal padding for nested (non-root) sections inside an outer container */ -}}
+{{- if and $outerPx (not $isRoot) (eq $padParam nil) -}}
+  {{- $pad = "none" -}}
+{{- end -}}
 
-{{/* ---------- First section detection (to allow flush hero) ---------- */}}
+{{/* ---------- First section detection (skip root wrapper) ---------- */}}
 {{- $seen := $page.Scratch.Get "first_section_seen" | default false -}}
 {{- $isFirstSection := not $seen -}}
-{{- if not $seen -}}{{- $page.Scratch.Set "first_section_seen" true -}}{{- end -}}
+{{- if and (not $seen) (not $isRoot) -}}
+  {{- $page.Scratch.Set "first_section_seen" true -}}
+{{- end -}}
 
 {{/* ---------- Maps ---------- */}}
 {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
@@ -101,9 +124,10 @@
 {{- $spacerParam := lower (.Get "spacer" | default "true") -}}
 
 {{/* ---------- Compute paddings ---------- */}}
-{{- /* If this is the first section and it's a hero (has img), remove top padding to sit flush under the nav. */ -}}
-{{- $pt := cond (or $bleed (and $isFirstSection (ne $img ""))) "pt-0" (index $ptMap $y | default "pt-12") -}}
-{{- $pb := index $pbMap $y | default "pb-12" -}}
+{{- /* Root wrapper removes vertical padding; real sections keep defaults; hero flush still applies. */ -}}
+{{- $effectiveY := cond $isRoot "none" $y -}}
+{{- $pt := cond (or $bleed (and $isFirstSection (ne $img ""))) "pt-0" (index $ptMap $effectiveY | default "pt-12") -}}
+{{- $pb := index $pbMap $effectiveY | default "pb-12" -}}
 {{- if $yBottom }}{{- $pb = index $pbMap $yBottom | default $pb -}}{{- end -}}
 
 {{/* ---------- Container class ---------- */}}
@@ -317,7 +341,11 @@
     <!-- Regular section -->
     <div class="{{ $classes }}">
       {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end -}}
-        {{ $innerOut }}
+        {{- if eq $render "raw" -}}
+          <div class="not-prose">{{ $innerOut }}</div>
+        {{- else -}}
+          <div class="prose prose-zinc max-w-none dark:prose-invert">{{ $innerOut }}</div>
+        {{- end -}}
       {{- if $vWrap }}</div>{{ end -}}
     </div>
   {{- end }}
@@ -326,3 +354,5 @@
 {{- if hugo.IsServer -}}
 <!-- debug: render={{$render}} hasShortcode={{$hasShortcode}} -->
 {{- end -}}
+
+{{- end -}} {{/* end: no-op branch else (hero present) */}}

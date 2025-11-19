@@ -3,15 +3,10 @@ title: "Available Gutter Styles"
 description: "K‑style and half‑round gutters in multiple sizes, materials, and colors."
 layout: flowbite
 ---
-{{< section >}}
 
 ### Styles, Sizes, and Materials
 We’ll help you choose the right profile and size for your roofline and rainfall.
 
-{{< /section >}}
-
-
-{{< section y="sm" >}}
 {{< cols min="16rem" gap="1rem" row="sm" classes="not-prose" >}}
 {{< col >}}<img src="/media/2f830020.avif" alt="beveled box gutters" loading="lazy" class="block w-full rounded-lg" />{{< /col >}}
 {{< col >}}<img src="/media/9a5a0e01.avif" alt="half-round inside bead gutter" loading="lazy" class="block w-full rounded-lg" />{{< /col >}}
@@ -23,5 +18,5 @@ We’ll help you choose the right profile and size for your roofline and rainfal
 
 
 {{< /cols >}}
-{{< /section >}}
+
 

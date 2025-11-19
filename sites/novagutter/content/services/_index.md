@@ -4,8 +4,6 @@ description: "Seamless gutter installation, repairs, and drainage solutions for 
 layout: flowbite
 ---
 
-{{< section >}}
-
 ### Professional Gutter Services
 We design, fabricate, and install seamless gutter systems tailored to your property—both residential and commercial.
 
@@ -47,6 +45,4 @@ K‑style, half‑round, sizes and materials to match your architecture.
 {{< button href="/services/available-gutter-styles" text="See styles" >}}
 {{< /col >}}
 {{< /cols >}}
-
-{{< /section >}}
 

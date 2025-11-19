@@ -4,7 +4,7 @@ url: "/services/sedation/"
 description: "We know that dental visits can be distressing, but we do everything we can to make our patients as comfortable as possible!"
 ---
 
-{{< section >}}
+
 
 # Sedation
 
@@ -41,4 +41,4 @@ Anyone being sedated for any procedure must have a designated driver. Patients w
 - Chances are you will just want to sleep for the rest of the day!
 {{< /col >}}
 {{< /cols >}}
-{{< /section >}}
+

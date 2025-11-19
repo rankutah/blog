@@ -6,7 +6,7 @@ description: "A simple, guest-friendly guide to the best fall color around Buena
 url: "/blog/fall-in-buena-vista"
 ---
 
-{{< section >}}
+
 
 ![Blue Ridge Parkway in fall](/media/blue-ridge-parkway.avif)
 
@@ -17,9 +17,9 @@ The Ultimate Guide to Leaf Peeping, Waterfalls, and Caverns in Virginia’s Blue
 
 Looking for an unforgettable autumn getaway? Nestled between the Blue Ridge Parkway and the Appalachian Trail, **Buena Vista, VA** is a charming mountain town surrounded by some of the most beautiful fall destinations in the region. Whether you're into hiking, photography, scenic drives, or underground adventures, this guide will help you make the most of your trip during peak foliage season.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## 1. Cruise the Blue Ridge Parkway
 
@@ -27,9 +27,9 @@ The [**Blue Ridge Parkway**](https://www.blueridgeparkway.org) is one of America
 
 **Don’t Miss:** Sunset views from one of the many overlooks on the parkway, like Chimney Rock Mountain Overlook (10 minutes) or Irish Creek Valley Overlook (15 minutes). Enjoy a picnic at Yankee Horse Ridge (30 minutes).
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## 2. Explore the Appalachian Waters Scenic Byway
 
@@ -37,9 +37,9 @@ Follow **Route 39** west from Buena Vista and you’ll wind through **Goshen Pas
 
 **Best Stops:** Pull off at picnic areas or explore short trails near the river for an immersive leaf-peeping experience.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## 3. Chase Waterfalls
 
@@ -48,9 +48,9 @@ Fall is the perfect time to visit some of Virginia’s hidden cascades! Cooler t
 * [**Panther Falls**](https://www.virginia.org/listing/panther-falls/7037/): A local favorite just off the Blue Ridge Parkway, this small but stunning waterfall is accessible by a short, family-friendly hike along the Pedlar River.
 * [**Statons Creek Falls**](https://blueridgecountry.com/locations/statons-creek-falls/): A 140-foot waterfall tucked into the George Washington National Forest. Little to no hiking is required, making it great for a quick stop and some photos surrounded by fall color.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## 4. Go Below Ground to Explore Virginia’s Caverns
 
@@ -60,17 +60,17 @@ Autumn above, adventure below! The Shenandoah Valley is home to some of the olde
 * [**Shenandoah Caverns**](https://shenandoahcaverns.com): Known for its wild formations and quirky “bacon” flowstone features.
 * [**Luray Caverns**](https://luraycaverns.com): The largest and most famous caverns in Virginia, ideal for travelers who want a full underground experience.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## 5. Slow Down and Savor the Season
 
 Fall in Buena Vista isn’t just about the sights, it’s about the feeling! Stroll the streets and enjoy a cozy warm drink from Asunder Coffee, or treat yourself to delicious ice cream from The Beeve. Take a scenic walk along the flood wall and enjoy the breathtaking views of the mountains at Glen Maury Park. Whether you're strolling the [**Chessie Nature Trail**](https://dwr.virginia.gov/vbwt/sites/chessie-nature-trail/), hiking [**House Mountain**](https://housemountainva.com), or exploring [**Natural Bridge State Park**](https://naturalbridgestatepark.org), this is a place where you can reset and reconnect.
 
-{{< /section >}}
 
-{{< section align="center" >}}
+
+
 
 ## Planning a Trip? Consider the Mid-Week Bonus
 
@@ -78,4 +78,4 @@ If you're ready to visit the beautiful Shenandoah Valley, weekdays are a best-ke
 
 {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Your Fall Stay" >}} {{< button url="/contact" text="Ask a Question" >}}
 
-{{< /section >}}
+

@@ -4,7 +4,7 @@ url: "/services/bridges/"
 description: "A bridge fills the gap where a tooth is missing."
 ---
 
-{{< section >}}
+
 
 # Bridges
 
@@ -66,4 +66,4 @@ When there are several teeth missing in a row, it is sometimes possible to use a
 
 {{< /cols >}}
 
-{{< /section >}}
+

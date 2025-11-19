@@ -5,7 +5,7 @@ url:     "/contact"
 summary: "Get in touch"
 ---
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -46,4 +46,4 @@ summary: "Get in touch"
 
 {{< /cols >}}
 
-{{< /section >}}
+

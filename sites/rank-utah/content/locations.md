@@ -5,15 +5,15 @@ layout: "flowbite"
 url: "/locations"
 ---
 
-{{< section >}}
+
 
 # Locations
 
 Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few locations where clients are located.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -59,4 +59,4 @@ Fast, mobile‑first websites and local SEO in Palm Beach County — featuring t
 
 {{< /cols >}}
 
-{{< /section >}}
+

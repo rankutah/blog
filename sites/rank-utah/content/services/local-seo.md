@@ -22,7 +22,7 @@ schema:
         availability: "https://schema.org/InStock"
 ---
 
-{{< section >}}
+
 
 # Local SEO (Search Engine Optimization)
 
@@ -36,16 +36,16 @@ Local SEO is an effective strategy for marketing your business to achieve both s
 
 Clear Presence focuses on Local SEO strategies that help your business generate high-quality leads using this simple and effective process.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Local SEO 5-Step Process
 
-{{< /section >}}
 
 
-{{< section render="raw">}}
+
+
 
 {{< faqs >}}
 
@@ -89,9 +89,9 @@ Clear Presence continuously works to bring you more customers. Local SEO require
 
 {{< /faqs >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## SEO Reports
 
@@ -102,9 +102,9 @@ Reports compare the last month with the two months before so you can easily trac
 
 
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Locations
 
@@ -121,5 +121,5 @@ Check out the pricing page or reach out directly with a phone call or text messa
 {{< button url="/contact" text="Contact" >}}
 
 
-{{< /section >}}
+
 

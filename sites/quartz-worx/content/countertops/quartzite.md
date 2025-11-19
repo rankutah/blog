@@ -3,9 +3,6 @@ title: "Quartzite Countertops"
 layout: "flowbite"
 url: "/countertops/quartzite"
 ---
-
-{{< section >}}
-
 # Quartzite Countertops
 
 Metamorphic natural stone known for its hardness and marble‑like veining—great when you want natural stone beauty with added durability.
@@ -23,5 +20,3 @@ Metamorphic natural stone known for its hardness and marble‑like veining—gre
 **Care**
 - Use a pH‑neutral cleaner; reseal per manufacturer recommendations
 - Wipe acidic spills promptly
-
-{{< /section >}}

@@ -6,7 +6,7 @@ description: "Holiday magic near Buena Vista, VA: drive-thru lights at Glen Maur
 url: "/blog/holiday-magic-in-the-blue-ridge"
 ---
 
-{{< section >}}
+
 
 # **Holiday Magic in the Blue Ridge:**
 
@@ -55,4 +55,4 @@ If your idea of holiday magic includes crisp mountain air, twinkle lights, and w
 Mid-week visits are quieter, cozier, and often more affordable\! Call (540) 319-3889 to ask us about our **seasonal specials** or ways to make your stay extra festive.
 
 
-{{< /section >}}
+

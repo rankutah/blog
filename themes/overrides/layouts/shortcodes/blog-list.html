@@ -1,0 +1,74 @@
+{{/* Shortcode: blog-list
+
+Usage examples:
+- {{< blog-list >}}                                # defaults: section="posts", limit=24
+- {{< blog-list section="posts" limit="12" >}}
+- {{< blog-list tag="maintenance" >}}             # only posts with this tag
+- {{< blog-list class="mt-8" showDate="true" showTags="true" >}}
+
+Params:
+- section: which Hugo section to read from (default: "posts").
+- tag: filter by a single tag value (optional).
+- limit: max items to render (default: 24). Use 0 or -1 to show all.
+- class: extra classes on the outer wrapper.
+- showDate: true/false to show published date (default: true).
+- showTags: true/false to show colored tag badges (default: true).
+- excerpt: character length for excerpt (default: 160).
+
+This renders a minimal, single-column list similar to PaperMod:
+- No images, concise excerpt, tags visible.
+- Reuses taxonomy badge CSS via partials/taxonomy-badges.html.
+*/}}
+
+{{- $section   := .Get "section" | default "posts" -}}
+{{- $tagFilter := .Get "tag" | default "" -}}
+{{- $limitStr  := .Get "limit" | default "24" -}}
+{{- $limit     := int $limitStr -}}
+{{- $wrapClass := .Get "class" | default "" -}}
+{{- $showDate  := cond (eq (lower (.Get "showDate" | default "true")) "true") true false -}}
+{{- $showTags   := cond (eq (lower (.Get "showTags" | default "true")) "true") true false -}}
+{{- $excerptStr := .Get "excerpt" | default "160" -}}
+{{- $excerpt    := int $excerptStr -}}
+{{- $variant    := lower (.Get "variant" | default "cards") -}}
+
+{{- /* Collect pages from the chosen section */ -}}
+{{- $all := where site.RegularPages "Section" $section -}}
+{{- $all = where $all "Params.draft" "ne" true -}}
+{{- /* Apply tag filter if provided */ -}}
+{{- if ne $tagFilter "" -}}
+  {{- $all = where $all "Params.tags" "intersect" (slice $tagFilter) -}}
+{{- end -}}
+{{- /* Sort newest first */ -}}
+{{- $dateSorted := sort $all "Date" "desc" -}}
+{{- /* Apply limit if positive */ -}}
+{{- if gt $limit 0 -}}
+  {{- $dateSorted = first $limit $dateSorted -}}
+{{- end -}}
+{{- /* Stable partition: featured (or features) float to top without changing relative date order */ -}}
+{{- $featuredList := slice -}}
+{{- $regularList := slice -}}
+{{- range $p := $dateSorted -}}
+  {{- $isFeatured := or (eq ($p.Params.featured | default false) true) (eq ($p.Params.features | default false) true) -}}
+  {{- if $isFeatured -}}
+    {{- $featuredList = $featuredList | append $p -}}
+  {{- else -}}
+    {{- $regularList = $regularList | append $p -}}
+  {{- end -}}
+{{- end -}}
+{{- $sorted := append $featuredList $regularList -}}
+{{- /* Apply limit after featured partition */ -}}
+{{- if gt $limit 0 -}}
+  {{- $sorted = first $limit $sorted -}}
+{{- end -}}
+
+<div class="{{ $wrapClass }}">
+  {{- if eq (len $sorted) 0 -}}
+    <p class="text-gray-600 dark:text-gray-400">No articles yet.</p>
+  {{- else -}}
+    {{- if eq $variant "cards" -}}
+      {{- partial "list-posts-cards.html" (dict "ctx" .Page "pages" $sorted "showDate" $showDate "showTags" $showTags "excerpt" $excerpt) -}}
+    {{- else -}}
+      {{- partial "list-posts-minimal.html" (dict "pages" $sorted "showDate" $showDate "showTags" $showTags "excerpt" $excerpt) -}}
+    {{- end -}}
+  {{- end }}
+</div>

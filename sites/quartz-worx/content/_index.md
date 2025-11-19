@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< section img="/media/granite-quartz-countertop-kitchen.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/granite-quartz-countertop-kitchen.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
 # Beautiful Countertops, Expertly Installed
 {.text-white}
 ## Quartz • Granite • Quartzite • Marble
@@ -14,22 +14,22 @@ Fabricated in our state of the art shop in Grand Junction, CO. Serving Western C
 {.text-white}
 {{<button url="/contact" text="Contact">}}
 
-{{< /section >}}
+{{< /hero >}}
 
 <!-- removed site-only safelist helper; background utilities are now emitted via tailwind.config.cjs safelist -->
 
-{{< section >}}
+
 
 ## What Our Customers Say
 {.center}
 {{< elfsight id="2ec6572d-5e3d-4909-b7fd-f6b448bd3036">}}
 
 
-{{< /section >}}
 
 
 
-{{< section >}}
+
+
 
 ## Countertops
 {.center}
@@ -66,9 +66,9 @@ Timeless beauty with soft veining—ideal for bathroom vanities and light‑use 
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Not sure which material fits your space?
 
@@ -76,4 +76,4 @@ We’ve put together a simple guide that explains differences, care, and pros/co
 
 {{< button url="/countertops" text="Compare Countertop Materials" >}}
 
-{{< /section >}}
+

@@ -4,8 +4,6 @@ description: "See recent projects and details from NOVA Gutter installs."
 layout: flowbite
 ---
 
-{{< section >}}
-
 # Gallery
 See a few of our rain gutter installation projects
 
@@ -106,7 +104,4 @@ See a few of our rain gutter installation projects
     <img src="/media/stainless-steel-gutters-boca-raton-fl.jpg" alt="Stainless steel gutters Boca Raton" class="rounded-lg border border-gray-200 dark:border-gray-700" loading="lazy" />
   </a>
 </div>
-
-
-{{< /section >}}
 

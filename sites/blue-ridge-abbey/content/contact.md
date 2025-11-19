@@ -6,7 +6,7 @@ url: "/contact"
 ---
 
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -43,4 +43,4 @@ Send us a message or give us a call <br>
 
 {{< /cols >}}
 
-{{< /section >}}
+

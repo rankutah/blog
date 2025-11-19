@@ -4,23 +4,23 @@ url: "/about/"
 description: "Meet Dr. Rod Maxfield and our friendly team providing personalized dental care in Pleasant Grove, UT."
 ---
 
-{{< section >}}
+
 
 # Meet Us
 
 We are proud to say that many of our patients have been with us for decades! With several members of our staff being from the area, we have known our patients personally for years. Our office has always been a family-friendly office, treating patients of all ages, and we aim to quickly put you at ease. When you come to our office, you become family!
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Your Care Team
 
 Below you can get to know the people who greet you, clean and restore your teeth, assist during treatment, and help make every visit comfortable. We work together—and with you—to keep your smile healthy.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="16rem" gap="1.25rem" v="start" >}}
 
@@ -138,5 +138,5 @@ Brylee is the newest member of our team. She is originally from Orem, and she gr
 
 {{< /cols >}}
 
-{{< /section >}}
+
 

@@ -3,19 +3,14 @@ title: "Footer"
 headless: true
 ---
 
-{{< section >}}
-
 ## Quartz Worx
 {.center}
 Countertops in Grand Junction, CO
 {.center}
 
-
 {{< cols min="18rem" gap="0rem" v="start">}}
 
 {{< col card="false" bg="indigo-50" darkbg="gray-800" y="start" >}}
-
-
 
 ### Contact
 {.center}
@@ -46,14 +41,14 @@ Countertops in Grand Junction, CO
 
 {{< /cols >}}
 
-{{< /section >}}
 
 
-{{< section >}}
+
+
 
 
 <div class="text-center text-sm opacity-80 mt-4">
 	© {{< year >}} Quartz Worx •  <a href="https://clearpresence.io/locations/grand-junction-co" target="_blank" rel="nofollow noopener"> Website by Clear Presence </a>
 </div>
 
-{{< /section >}}
+

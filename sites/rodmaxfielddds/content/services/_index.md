@@ -4,13 +4,13 @@ url: "/services/"
 description: "Explore our dental services, from preventive care and aesthetics to implants and oral surgery."
 ---
 
-{{< section >}}
+
+
 
 # Services
 
-{{< /section >}}
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
@@ -75,4 +75,4 @@ description: "Explore our dental services, from preventive care and aesthetics t
 
 {{< /cols >}}
 
-{{< /section >}}
+

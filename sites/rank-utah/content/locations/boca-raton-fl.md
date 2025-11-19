@@ -12,14 +12,14 @@ schema:
     areaServed: "Boca Raton, FL"
 ---
 
-{{< section img="/media/website-design-boca-raton-florida.jpg" alt="Boca Raton website design" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/website-design-boca-raton-florida.jpg" alt="Boca Raton website design" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design in Boca Raton, FL {.text-white}
 Custom websites and local SEO for Palm Beach County businesses.
 {.text-white}
 {{<button url="/services/website-design" text="Website Design" >}}{{<button url="/contact" text="Contact" >}}
-{{< /section >}}
+{{< /hero >}}
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -37,9 +37,9 @@ Nova Gutter needed a fast, modern site to showcase residential and commercial gu
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Ready to grow in Boca Raton?
 
@@ -47,4 +47,4 @@ Get a site that’s fast, mobile‑first, and built to rank — so Boca Raton cu
 
 {{< button url="/contact" text="Contact" >}} {{< button url="/services/website-design" text="See Work" >}}
 
-{{< /section >}}
+

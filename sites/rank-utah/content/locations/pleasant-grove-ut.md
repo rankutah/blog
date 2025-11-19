@@ -27,7 +27,7 @@ schema:
     priceRange: "$149–$299/mo"
 ---
 
-{{< section img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design in Pleasant Grove {.text-white}
 Professional websites that bring you customers
 {.text-white}
@@ -39,10 +39,10 @@ Professional websites that bring you customers
 
 
 <div class="mt-6"></div>
-{{< /section >}}
+{{< /hero >}}
 
 
-{{< section >}}
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -123,9 +123,9 @@ Grow your small business in Pleasant Grove with a professional website. Reach ou
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Customer Website Design Experiences
 
@@ -147,9 +147,9 @@ Get a website that brings you more calls, quotes, and bookings—not just a pret
 ### Local & responsive
 I’m based here in Pleasant Grove, so you get quick responses and local context. Need a change? Send a text and it’s handled.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -186,7 +186,7 @@ I'm available 9am-5pm Mon-Fri but feel free to leave me a text or voicemail afte
 
 {{< /cols >}}
 
-{{< /section >}}
+
 
 
 

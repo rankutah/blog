@@ -5,16 +5,16 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< section img="/media/CCFittest4-23.jpg" alt="Outdoor gym workout in Cedar City" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh;object-position:center;object-fit:cover" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/CCFittest4-23.jpg" alt="Outdoor gym workout in Cedar City" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh;object-position:center;object-fit:cover" yBottom="md" align="center" spacer="false" >}}
 # Get Stronger. Move Better. Feel Unstoppable.
 {.text-white}
 Professional coaching and programs for real-world strength and conditioning.
 {.text-white}
 
 {{<button url="/contact" text="Get Started">}}
-{{< /section >}}
+{{< /hero >}}
 
-{{< section >}}
+
 
 ## What We Offer
 {.center}
@@ -41,22 +41,22 @@ Individualized programming and accountability for faster progress.
 
 {{< /cols >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Reviews
 {.center}
 
 {{< elfsight-widget id="e5e1836b-e649-43fe-bd19-5d7792c2c087" >}}
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## Ready to Start?
 Book a free consultation—we'll map a plan to your goals.
 
 {{< button url="/contact" text="Contact" >}}
 
-{{< /section >}}
+

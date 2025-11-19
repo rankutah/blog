@@ -4,7 +4,7 @@ url: "/services/sleep-apnea-adult/"
 description: "Do you snore at night? Do you wake up still feeling tired? If so, you might have sleep apnea."
 ---
 
-{{< section >}}
+
 
 # Sleep Apnea (Adult)
 
@@ -58,4 +58,4 @@ There are several treatment options for sleep apnea. These include:
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

@@ -4,7 +4,7 @@ url: "/services/bone-grafting/"
 description: "When a tooth is extracted, bone loss occurs rapidly."
 ---
 
-{{< section >}}
+
 
 # Bone Grafting
 
@@ -30,4 +30,4 @@ The graft material used in our office is a particulate collected from a cadaver.
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

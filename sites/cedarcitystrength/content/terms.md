@@ -5,7 +5,7 @@ url: "/terms"
 description: "Terms of Service for Cedar City Strength & Conditioning in Cedar City, UT. Learn about sessions, payments, and policies."
 ---
 
-{{< section >}}
+
 
 # Terms of Service
 
@@ -53,4 +53,4 @@ Please read these terms before using Cedar City Strength & Conditioning’s serv
 
 Questions about these terms? Call us at (209) 534‑0270 or contact us via our [Contact](/contact) page.
 
-{{< /section >}}
+

@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/terms"
 ---
 
-{{< section >}}
+
 
 # Terms of Service
 
@@ -13,4 +13,4 @@ url: "/terms"
 - Lead times vary by material availability and workload; we’ll provide an estimated install window.
 - Final payment due upon completion unless otherwise agreed.
 
-{{< /section >}}
+

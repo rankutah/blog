@@ -3,7 +3,7 @@ title: "PRF"
 url: "/services/prf/"
 ---
 
-{{< section >}}
+
 
 # PRF
 
@@ -40,4 +40,4 @@ Once the procedure is finished, the plasma serum that was siphoned from the vial
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

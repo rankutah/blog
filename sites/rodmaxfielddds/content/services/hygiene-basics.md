@@ -4,7 +4,7 @@ url: "/services/hygiene-basics/"
 description: "It is important to see your dentist twice a year for hygiene appointments."
 ---
 
-{{< section >}}
+
 
 # Hygiene Basics
 
@@ -56,4 +56,4 @@ Have a question that wasn’t answered? [Contact us](/contact/)! We’re happy t
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

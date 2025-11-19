@@ -4,7 +4,7 @@ layout: "flowbite"
 url: "/about"
 ---
 
-{{< section >}}
+
 
 # Your Computer Technician
 {.center}
@@ -19,7 +19,7 @@ url: "/about"
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-{{< section >}}
+
 
 ## Why neighbors choose BlueridgeTech
 
@@ -28,9 +28,9 @@ url: "/about"
 - Patient, one‑on‑one support for non‑technical folks
 - On‑site or remote help—whatever is easiest
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## How I work
 
@@ -39,9 +39,9 @@ url: "/about"
 3. Repair, test, and tune‑up (backups when needed)
 4. Follow‑up and simple tips to prevent repeat issues
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 ## What I fix most
 
@@ -51,24 +51,24 @@ url: "/about"
 - Data recovery and backup setup you can trust
 - Wi‑Fi, printers, and small‑office/home networks
 
-{{< /section >}}
+
 
 {{< /col >}}
 
 {{< /cols >}}
 
-{{< /section >}}
 
 
-{{< section >}}
+
+
 
 ## About Gabriel Antigua
 
 With years of hands‑on experience, I help neighbors in Buena Vista keep their computers running fast and reliable. From slow startups and pop‑ups to broken screens and Wi‑Fi issues, I provide practical fixes and honest advice—no upsells, just what you need.
 
-{{< /section >}}
 
-{{< section >}}
+
+
 
 <div class="text-center max-w-3xl mx-auto">
 	<h3 class="text-2xl font-semibold mb-2">Have a question?</h3>
@@ -80,5 +80,5 @@ With years of hands‑on experience, I help neighbors in Buena Vista keep their 
 	</div>
 </div>
 
-{{< /section >}}
+
 

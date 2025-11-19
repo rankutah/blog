@@ -4,7 +4,7 @@ url: "/services/upgrades/"
 description: "We always use high quality materials in our office, but there is a “good, better, best” in every situation."
 ---
 
-{{< section >}}
+
 
 # Upgrades
 
@@ -62,4 +62,4 @@ Gold crowns are used for their strength and are only placed on the back molars w
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

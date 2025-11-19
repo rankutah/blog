@@ -4,7 +4,7 @@ url: "/services/imaging/"
 description: "Some patients have complicated conditions that require additional information to safely plan and successfully treat."
 ---
 
-{{< section >}}
+
 
 # 3D Imaging
 
@@ -26,4 +26,4 @@ When necessary we use 3D imaging to make decisions about more complicated dental
 {{< /col >}}
 {{< /cols >}}
 
-{{< /section >}}
+

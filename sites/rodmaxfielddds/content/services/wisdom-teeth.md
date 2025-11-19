@@ -3,7 +3,7 @@ title: "Wisdom Teeth"
 url: "/services/wisdom-teeth/"
 ---
 
-{{< section >}}
+
 
 # Wisdom Teeth
 
@@ -31,4 +31,4 @@ In our office we use nitrous oxide, or “laughing gas”, in conjunction with t
 
 {{< /cols >}}
 
-{{< /section >}}
+

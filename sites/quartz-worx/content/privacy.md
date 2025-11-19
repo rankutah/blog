@@ -5,10 +5,10 @@ layout: "flowbite"
 url: "/privacy"
 ---
 
-{{< section >}}
+
 
 # Privacy Policy
 
 We collect only the information needed to provide quotes and installations: contact details you share (name, email, phone) and project details (measurements, materials, address). We do not sell your data.
 
-{{< /section >}}
+
