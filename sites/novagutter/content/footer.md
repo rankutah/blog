@@ -50,10 +50,6 @@ Serving Palm Beach County, Broward County, and Miami-Dade County
 {{< /cols >}}
 
 
-
-
-
-
 <div class="text-center text-sm opacity-80 mt-4">
 	© {{< year >}} NOVA Gutter •  <a href="https://rankutah.com" target="_blank" rel="nofollow noopener">Website by Rank Utah</a>
 </div>

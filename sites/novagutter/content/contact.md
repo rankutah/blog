@@ -30,10 +30,8 @@ Tell us about your property and we’ll get back with options and an estimate.
 ## Service Areas
 We serve South Florida and nearby communities. Common areas include:
 
-- Boca Raton
-- Deerfield Beach
-- Delray Beach
-- Pompano Beach
-- Fort Lauderdale
+- Palm Beach county
+- Broward County
+- Miami-Dade County
 
 If you don’t see your city listed, reach out—we likely serve your area.

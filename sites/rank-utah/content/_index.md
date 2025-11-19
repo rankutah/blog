@@ -3,6 +3,29 @@ title: "Website Design & Local SEO"
 description: "Clear Presence builds fast, modern websites with local SEO for small businesses—so you show up on Google Search & Maps and get more calls"
 layout: "flowbite"
 url: "/"
+schema:
+  localBusiness:
+    enabled: true
+    type: ProfessionalService
+    name: "Clear Presence"
+    address:
+      streetAddress: "348 S 2000 W, Suite B206"
+      addressLocality: "Pleasant Grove"
+      addressRegion: "UT"
+      postalCode: "84062"
+      addressCountry: "US"
+    telephone: "+13853238130"
+    hasMap: "https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062"
+    geo:
+      latitude: "40.35949"
+      longitude: "-111.77212"
+    areaServed:
+      - "Pleasant Grove, UT"
+      - "Lehi, UT"
+      - "American Fork, UT"
+      - "Lindon, UT"
+      - "Orem, UT"
+    priceRange: "$149–$299/mo"
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}

@@ -4,9 +4,6 @@ description: "Clear Presence builds fast, modern websites and SEO marketing for 
 layout: "flowbite"
 url: "/about"
 ---
-
-
-
 # About
 
 ## Pretty websites don't bring customers

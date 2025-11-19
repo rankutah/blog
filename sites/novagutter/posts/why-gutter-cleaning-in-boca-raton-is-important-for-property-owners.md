@@ -10,7 +10,7 @@ As a Boca Raton property owner, you have an obligation to keep every portion of 
 
 Although designing and installing a custom gutter system for your property is integral to ensuring that your home or business is protected during storms, there is some routine gutter maintenance that is required. If your gutters become clogged with debris, they cannot function as intended. For this reason, it is essential for you to routinely clean your gutters. At NOVA Gutter Corporation, our Boca Raton gutter cleaning professionals can help you with this important responsibility.
 
-## What Are Gutters Intended Function
+## What Is the Intended Function of Gutters
 
 First off, it is important to understand why gutters are integral to your home's protection. Although you might not think it, even the lightest rain presents a significant threat to your property. Your roof takes up an immense amount of surface area. As such, rain collects and forms streams that flow off the surface of your roof. Without a properly functioning gutter system, this uncontrolled water will crash against the side of your home, onto your landscaping, and collect at the base of your property.
 
@@ -18,7 +18,7 @@ The results can be extremely bad. Paint can be peeled away from your siding, win
 
 ## Keeping Your Gutters Clean Ensures Proper Performance
 
-Having gutters on your Boca Raton property simply is not enough. Over time, leafs, twigs, and other debris will collect in your gutters. At some point, this accumulation will lead to clogs in both your gutters and down spouts. When the clog becomes severe enough, your gutters will not be able to perform their intended function.
+Having gutters on your Boca Raton property simply is not enough. Over time, leaves, twigs, and other debris will collect in your gutters. At some point, this accumulation will lead to clogs in both your gutters and downspouts. When the clog becomes severe enough, your gutters will not be able to perform their intended function.
 
 Clogged gutters can allow water to cascade off the side of your roof, which in turn can lead to all the damage that they are intended to prevent. In addition, the high moisture concentration can cause pests and rodents to be prevalent on your property.
 
