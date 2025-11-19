@@ -105,7 +105,7 @@
             relative
             after:content-[''] after:absolute after:inset-x-0 after:bottom-0 after:h-px
             after:bg-black/15 dark:after:bg-white/15 after:pointer-events-none">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full p-4">
+  <div class="max-w-screen-xl flex flex-nowrap items-center justify-between mx-auto h-full p-4">
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline">
       {{ with $logoFile }}
@@ -197,8 +197,8 @@
       </a>
       {{ end }}
 
-      <button data-collapse-toggle="navbar-drawer" type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 no-underline"
+            <button data-collapse-toggle="navbar-drawer" type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 no-underline"
               aria-controls="navbar-drawer" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14" stroke="currentColor" stroke-width="2">
@@ -282,15 +282,15 @@
 
     <!-- Desktop inline menu (unchanged from original) -->
     <div id="navbar-sticky"
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1
+      class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1
                 {{ if eq $headerTheme "glass" }}bg-white/80 dark:bg-gray-900/80 backdrop-blur
                 {{ else if eq $headerTheme "invert" }}bg-white/95 dark:bg-gray-900/90
                 {{ else }}{{ $navBg }}
                 {{ end }}
-                border-t border-black/10 dark:border-white/10 md:border-0
-                md:bg-transparent md:dark:bg-transparent">
+          border-t border-black/10 dark:border-white/10 lg:border-0
+          lg:bg-transparent lg:dark:bg-transparent">
 
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse lg:flex-row md:mt-0 whitespace-nowrap">
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
