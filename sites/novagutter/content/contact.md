@@ -68,8 +68,10 @@ Tell us about your property and we’ll get back with options and an estimate.
 
     const submitBtn = document.querySelector('button[form="contact1"][type="submit"]');
     if (submitBtn) {
+      // Hide the button instead of changing its label.
+      submitBtn.dataset.originalDisplay = submitBtn.style.display || '';
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending…';
+      submitBtn.style.display = 'none';
     }
 
     const serverVal = await fetchCounter();
@@ -127,7 +129,7 @@ Tell us about your property and we’ll get back with options and an estimate.
       console.error('Submission error', err);
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Request a Quote';
+        submitBtn.style.display = submitBtn.dataset.originalDisplay || '';
       }
       alert('Sorry, submission failed. Please try again.');
     }
