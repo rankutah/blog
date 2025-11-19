@@ -26,7 +26,8 @@ Tell us about your property and we’ll get back with options and an estimate.
   if (!form) return;
 
   // Your deployed Apps Script URL (MUST be updated to the production deployment id).
-  const counterEndpoint = 'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYMENT_ID/exec';
+  // Real Apps Script counter endpoint (configured also in config.toml).
+  const counterEndpoint = 'https://script.google.com/macros/s/AKfycbwLrCsm00OW-5rtyCHNWwQA8O9q-tMIKA9QP_QEaNsjsXaTnas-_qO4MAyP4NowCY8d/exec';
   const PAD = 6; // digits width
   const FETCH_TIMEOUT_MS = 4000;
   const LS_KEY = 'novaCounterLast';
@@ -34,7 +35,7 @@ Tell us about your property and we’ll get back with options and an estimate.
   function pad(n) { return String(n).padStart(PAD, '0'); }
 
   async function fetchCounter() {
-    if (!counterEndpoint || counterEndpoint.includes('REPLACE_WITH_DEPLOYMENT_ID')) return null;
+    if (!counterEndpoint) return null;
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
     try {
