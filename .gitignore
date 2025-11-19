@@ -21,3 +21,12 @@ sites/public/
 themes/PaperMod/.github/
 
 .obsidian
+
+# Package manager caches and logs
+.npm/
+.pnpm-store/
+npm-debug.log*
+pnpm-debug.log*
+
+# Hugo cache directory (local build speed, not for Git)
+.hugo_cache/
