@@ -29,7 +29,6 @@ We audit, diagnose, and repair gutter & drainage issues: structural support, hyd
 
 {{< problem title="Underground Clogs" icon="underground" img="/media/underground clogs.png" alt="Graphic of underground drain clog scenario" problem="Buried extensions accumulate sediment, leaf slurry, or root intrusion slowing discharge and forcing backup at the gutter outlet." solution="Camera inspection, hydro‑jet or mechanical clean, install accessible clean‑outs & filter boxes, and apply root barrier where intrusion is recurring." >}}
 
-{{< problem title="Exterior Staining" icon="staining" img="/media/exterior staining.png" alt="Gutter exterior with tiger striping stains" problem="Tiger striping (electrostatic particulate + drip pattern) and oxidation dull finish and reduce curb appeal." solution="Targeted brightening chemistry, soft‑wash to remove oxidation without substrate damage, rinse management to prevent repeat striping, optional protectant." >}}
 
 ## How Our Consulting Works
 
