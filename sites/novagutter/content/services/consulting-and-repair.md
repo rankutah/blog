@@ -11,7 +11,7 @@ menu:
     weight: 16
 ---
 
-# Consulting & Repair
+# Consulting & Gutter Repair
 
 We audit, diagnose, and repair gutter & drainage issues: structural support, hydraulic capacity, leak remediation, aesthetic restoration, and preventive upgrades.
 
@@ -36,6 +36,3 @@ We audit, diagnose, and repair gutter & drainage issues: structural support, hyd
 We begin with a full visual + drainage assessment (roof edge, hangers, pitch, downspout termination, underground routing). You receive a prioritized action report: immediate fixes, preventive upgrades, and aesthetic enhancements. Implementation can be phased to match your budget.
 
 **Ready for an expert evaluation?** [Request a consultation](/contact) and we’ll schedule a site visit.
-
----
-*Need a problem not listed here solved?* We handle custom drainage reroutes, copper conversions, paint restoration for oxidized aluminum, and more—just ask.
