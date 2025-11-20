@@ -191,12 +191,12 @@ sameAs = []
     weight = 30
 
   [[menu.main]]
-    name        = "Locations"
+    name        = "Areas"
     identifier  = "locations"
     url         = "/locations"
     weight      = 15
 
-  # Dropdown items under Locations
+  # Dropdown items under Areas
   [[menu.main]]
     name    = "Pleasant Grove, UT"
     url     = "/locations/pleasant-grove-ut"
@@ -222,7 +222,7 @@ sameAs = []
     weight  = 44
 
   [[menu.main]]
-    name    = "All Locations"
+    name    = "All Areas"
     url     = "/locations"
     parent  = "locations"
     weight  = 49

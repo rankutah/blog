@@ -33,9 +33,9 @@ Website Design & Local SEO for Small Businesses
 [Website Design](/services/website-design) • [Local SEO](/services/local-seo)
 {.center}
 
-### Locations
+### Areas
 {.center}
-[Pleasant Grove](/locations/pleasant-grove-ut) • [All Locations](/locations)
+[Pleasant Grove](/locations/pleasant-grove-ut) • [All Areas](/locations)
 {.center}
 
 
