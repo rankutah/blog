@@ -15,8 +15,8 @@ Nova gutters has been providing local residents as the area’s premier [**Boca 
 ## Project Details
 
 *   **Project Type:** Residential Gutter Installation
-    
+
 *   **Products/Equipment Used:** Spectra, seamless aluminum gutters in white
-    
+
 
 * * *
