@@ -11,7 +11,7 @@ url: "/weddings"
 
 {{< col >}}
 
-## Weddings
+# Weddings
 
 Every wedding is unique and special. Please call us to discuss what we can do to make your wedding unforgettable.
 
