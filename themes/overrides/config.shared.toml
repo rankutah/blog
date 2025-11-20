@@ -3,6 +3,7 @@
 # Safe global toggles
 pruneTaxonomies = true
 trailingSlash  = "never"
+theme = ["overrides"]
 
 [markup]
   [markup.goldmark]
@@ -33,6 +34,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
   section  = ["HTML"]
   taxonomy = ["HTML", "JSON"]
 
+[params]
+  # Centralized default theme behavior; sites may override locally.
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
 [taxonomies]
   tag = "tags"
 
@@ -52,7 +58,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # Shared default: load after a 5s timer OR on first interaction.
   # Sites can set `params.analytics.delayMs = 0` to force immediate load.
   delayMs = 5000
-  loadEvents = ["scroll", "mousemove", "touchstart"]
+  loadEvents = ["scroll", "mousemove", "touchstart", "click", "keydown"]
   onlyOnInteraction = false
 
 [params.imageDefaults]

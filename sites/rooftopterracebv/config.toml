@@ -1,7 +1,6 @@
 baseURL = "https://rooftopterracebv.com/"
 languageCode = "en-us"
 title = "Rooftop Terrace BV"
-theme = ["overrides"]
 themesDir = "../../themes"
 
 # Match other single page simplifications but allow sitemap/robots later; keep minimal for now.
@@ -14,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
   path = ".well-known"
 
 [outputs]
-  home = ["HTML", "JSON", "FORMS"]
+  # Inherit shared home outputs (HTML, RSS, JSON, FORMS) by omitting custom override.
 
 [cascade]
   layout = "flowbite"
@@ -54,24 +53,18 @@ disableKinds = ["taxonomy", "term"]
 
   # Unified analytics (lazy-loaded via interaction like rank-utah)
   [params.analytics]
-    delayMs = 5000           # retained for parity; interaction gating overrides timer
-    loadEvents = ["scroll", "mousemove", "touchstart", "click", "keydown"]
-    onlyOnInteraction = true
-
+    delayMs = 5000
     [params.analytics.google]
       id = "G-7W15L0C0FY"
       enabled = true
-
     [params.analytics.clarity]
-      id = ""       # add Microsoft Clarity ID when ready
+      id = ""
       enabled = false
-
     [params.analytics.googleAds]
-      id = ""       # e.g. AW-XXXXXXX when campaign conversion tracking needed
+      id = ""
       enabled = false
-
     [params.analytics.meta]
-      id = ""       # Meta Pixel ID
+      id = ""
       enabled = false
 
   # Cloudflare Turnstile (enable globally for forms on this site)

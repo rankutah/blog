@@ -1,6 +1,9 @@
 baseURL = "https://rodmaxfielddds.com/"
 languageCode = "en-us"
 title = "Rod Maxfield, DDS"
+baseURL = "https://rodmaxfielddds.com/"
+languageCode = "en-us"
+title = "Rod Maxfield, DDS"
 theme = ["overrides"]
 themesDir = "../../themes"
 
@@ -33,6 +36,26 @@ disableKinds = ["taxonomy", "term"]
   cardBorderLight = "gray-200"
   cardBorderDark = "gray-700"
 
+[params.analytics]
+  # Standard 5s delay; override to 0 if immediate load needed.
+  delayMs = 5000
+
+  [params.analytics.google]
+    id = ""      # add GA4 ID when available
+    enabled = false
+
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
+
 
 
 [params.header]
@@ -52,7 +75,7 @@ disableKinds = ["taxonomy", "term"]
   # Set these to your actual logo intrinsic size
   logoWidth         = 0
   logoHeightPx      = 40
-  theme = "blend" #blend (default), invert, glass
+  # theme = "blend" #blend (default), invert, glass
 
   [params.turnstile]
     enable = true

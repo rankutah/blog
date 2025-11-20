@@ -3,7 +3,6 @@
 baseURL       = "https://blueridgetech.pro/"
 title         = "BlueridgeTech"
 languageCode  = "en-us"
-theme         = ["overrides"]
 themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -58,14 +57,27 @@ uglyURLs = true
   clientName         = "BlueridgeTech"
   clientURL          = "https://blueridgetech.com"
   mainSections       = ["posts"]
-  defaultTheme       = "auto"
-  disableThemeToggle = false
+  # defaultTheme/disableThemeToggle centralized
 
 [params.analytics]
-  # GA4 for BlueridgeTech
+  # Standard analytics config
+  delayMs = 5000
+
   [params.analytics.google]
     id = "G-RWSQCRS25V"
     enabled = true
+
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
 
 [params.turnstile]
   enable  = true

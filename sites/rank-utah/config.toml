@@ -2,7 +2,6 @@ baseURL       = "https://clearpresence.io/"
 # use | to add a second line
 title         = "Clear Presence"
 languageCode  = "en-us"
-theme         = ["overrides"]
 themesDir     = "../../themes"
 
 [markup]
@@ -61,8 +60,7 @@ uglyURLs      = true
   clientName          = "Clear Presence"
   clientURL           = "https://clearpresence.io"
   mainSections        = ["posts"]
-  defaultTheme        = "auto"
-  disableThemeToggle  = false
+  # defaultTheme/disableThemeToggle centralized in shared config
   author              = "Benjamin Awerkamp"
   hideMeta            = false
 
@@ -82,6 +80,8 @@ sameAs = []
 [params.analytics]
   # Load analytics immediately (no delay/gating)
   delayMs = 0
+  # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
+  debugMode = true
 
   [params.analytics.google]
     id = "G-7240SPB67L"

@@ -2,7 +2,6 @@
 baseURL       = "https://quartzworx.com/" # TODO: update to live domain
 title         = "Quartz Worx"
 languageCode  = "en-us"
-theme         = ["overrides"]
 themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -58,15 +57,28 @@ disableKinds = ["taxonomy", "term"]
   clientName         = "Quartz Worx"
   clientURL          = "https://example.com" # TODO: update
   mainSections       = ["posts"]
-  defaultTheme       = "auto"
-  disableThemeToggle = false
+  # defaultTheme/disableThemeToggle centralized
   footerWide         = true
 
 [params.analytics]
-  # Use GA4 for Quartz Worx
+  # Standard analytics config
+  delayMs = 5000
+
   [params.analytics.google]
     id = "G-N152WYDEKX"
     enabled = true
+
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
 
 [params.turnstile]
   enable  = true

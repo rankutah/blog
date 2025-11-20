@@ -1,7 +1,6 @@
 baseURL = "https://novagutter.com/"
 languageCode = "en-us"
 title = "NOVA Gutter"
-theme = ["overrides"]
 themesDir = "../../themes"
 ignoreFiles = ["^content/articles/"]
 enableRobotsTXT = true
@@ -81,8 +80,7 @@ enableRobotsTXT = true
   cardBorderLight     = "gray-200"
   cardBorderDark      = "gray-700"
 
-  defaultTheme        = "auto"
-  disableThemeToggle  = false
+  # defaultTheme/disableThemeToggle centralized
   author              = "NOVA Gutter"
   hideMeta            = true
 
@@ -97,6 +95,17 @@ enableRobotsTXT = true
   [params.analytics.google]
     id = "G-3KJ46VMTTB"
     enabled = true
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
 
 [[params.social]]
   name = "facebook"

@@ -2,7 +2,6 @@
 baseURL       = "https://cedarcitystrength.com/"  # Update when deploying
 title         = "Cedar City Strength  |  & Conditioning"
 languageCode  = "en-us"
-theme         = ["overrides"]
 themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -50,8 +49,27 @@ uglyURLs = true
   enableSearch       = false             # no blog/search for now
   clientName         = "Cedar City Strength"
   clientURL          = "https://cedarcitystrength.com"
-  defaultTheme       = "auto"
-  disableThemeToggle = false
+  # defaultTheme/disableThemeToggle centralized
+
+[params.analytics]
+  # Site does not load analytics yet; standard block with default delay.
+  delayMs = 5000
+
+  [params.analytics.google]
+    id = ""      # add GA4 ID when available
+    enabled = false
+
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
 
 [params.turnstile]
   enable  = true

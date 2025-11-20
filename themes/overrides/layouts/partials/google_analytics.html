@@ -15,6 +15,7 @@
 {{- $delayMs := (index $analytics "delayMs") | default 4000 -}}
 {{- $events := (index $analytics "loadEvents") | default (slice "scroll" "mousemove" "touchstart") -}}
 {{- $onlyOnInteraction := (index $analytics "onlyOnInteraction") | default false -}}
+{{- $debugMode := (index $analytics "debugMode") | default false -}}
 
 {{- $cfg := dict
   "gaId"        (cond $gaEnabled $gaId "")
@@ -24,6 +25,7 @@
   "delayMs"     $delayMs
   "loadEvents"  $events
   "onlyOnInteraction" $onlyOnInteraction
+  "debugMode" $debugMode
 -}}
 
 
@@ -65,7 +67,14 @@ window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   function initGA4(){
     if (!GA_ID) return;
     ensureGtagLoaded(GA_ID);
-    try { gtag('js', new Date()); gtag('config', GA_ID); } catch(e) {}
+    try {
+      gtag('js', new Date());
+      if (cfg.debugMode) {
+        gtag('config', GA_ID, { debug_mode: true });
+      } else {
+        gtag('config', GA_ID);
+      }
+    } catch(e) {}
   }
 
   function initGoogleAds(){

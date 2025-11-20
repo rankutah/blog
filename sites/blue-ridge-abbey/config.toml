@@ -1,8 +1,7 @@
 baseURL = "https://blueridgeabbey.com/"
-# Use the shared overrides + PaperMod
+# Theme centralized in shared config
 title = "Blue Ridge Abbey"
 languageCode = "en-us"
-theme = ["overrides"]
 themesDir = "../../themes"
 
 # Remove trailing slashes from generated URLs
@@ -68,12 +67,24 @@ uglyURLs = true
     alt  = "Facebook"
 
 [params.analytics]
+  # Keep immediate load (site-specific override)
+  delayMs = 0
+
   [params.analytics.google]
     id = "G-763E3FZE0G"
     enabled = true
 
-  # Load analytics immediately (no delay/gating)
-  delayMs = 0
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
 
 [params.socialDefaults]
   size = "w-8 h-8"
