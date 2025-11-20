@@ -1,90 +1,12 @@
-{{/* File: layouts/taxonomy/tag.html */}}
+{{/* Simplified tag page using card list partial for consistency */}}
 {{- define "main" }}
-
-  <header class="page-header">
-    {{ partial "breadcrumbs.html" . }}
-    <div class="back-link mb-2">
-      <span
-        onclick="history.back()"
-        class="text-gray-600 hover:text-gray-800 cursor-pointer"
-        style="cursor: pointer;"
-        role="button"
-        aria-label="Go back"
-      >
-        ← Back
-      </span>
-    </div>
-    <h1>{{ .Title }} Posts</h1>
-  </header>
-
-  {{- $pages := .Pages }}
-  {{- if gt (len $pages) 0 }}
-    <div class="tag-list">
-      {{- range $index, $page := $pages }}
-
-        {{- $isHidden := ($page.Param "cover.hiddenInList") | default ($page.Param "cover.hidden") | default false }}
-        {{- partial "cover.html" (dict "cxt" $page "IsSingle" false "isHidden" $isHidden) }}
-
-        <article class="post-entry">
-          <div class="entry-clickable" style="position: relative;">
-            <header class="entry-header">
-              <h2 class="entry-hint-parent">
-                {{ $page.Title }}
-                {{- if $page.Draft }}
-                  <span class="entry-hint" title="Draft">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-                      <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/>
-                    </svg>
-                  </span>
-                {{- end }}
-              </h2>
-            </header>
-
-            {{- if not ($page.Param "hideSummary") }}
-              <div class="entry-content">
-                <p>{{ $page.Summary | plainify | htmlUnescape }}{{ if $page.Truncated }}...{{ end }}</p>
-              </div>
-            {{- end }}
-
-            <a
-              class="entry-link"
-              aria-label="post link to {{ $page.Title | plainify }}"
-              href="{{ $page.Permalink }}"
-              style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0;"
-            ></a>
-          </div>
-
-          <footer class="entry-footer">
-            {{ partial "tag-badges.html" $page }}
-          </footer>
-        </article>
-
-      {{- end }}
-    </div>
-
-    {{- if gt (len $pages) 10 }}
-      {{- $paginator := .Paginate $pages 10 }}
-      <footer class="page-footer">
-        <nav class="pagination">
-          {{- if $paginator.HasPrev }}
-            <a class="prev" href="{{ $paginator.Prev.URL | relURL }}">&laquo; Previous</a>
-          {{- end }}
-          {{- range $p := $paginator.Pagers }}
-            {{- if eq $p $paginator }}
-              <span class="current">{{ $p.PageNumber }}</span>
-            {{- else }}
-              <a href="{{ $p.URL | relURL }}">{{ $p.PageNumber }}</a>
-            {{- end }}
-          {{- end }}
-          {{- if $paginator.HasNext }}
-            <a class="next" href="{{ $paginator.Next.URL | relURL }}">Next &raquo;</a>
-          {{- end }}
-        </nav>
-      </footer>
-    {{- end }}
-
-  {{- else }}
-    <p>No posts found for this tag.</p>
-  {{- end }}
-
+  <div class="max-w-5xl mx-auto px-4 md:px-8 py-10">
+    <h1 class="text-3xl md:text-4xl font-semibold mb-6">Tag: {{ .Title }}</h1>
+    {{- $pages := sort .Pages "Date" "desc" -}}
+    {{- if gt (len $pages) 0 -}}
+      {{- partial "list-posts-cards.html" (dict "ctx" . "pages" $pages "showDate" false "showTags" true "excerpt" 160) -}}
+    {{- else -}}
+      <p class="text-gray-600 dark:text-gray-400">No posts found for this tag.</p>
+    {{- end -}}
+  </div>
 {{- end }}

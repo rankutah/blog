@@ -75,6 +75,8 @@
     const cardBg = list.getAttribute('data-card-bg') || '';
     list.innerHTML = '';
     count.textContent = `${items.length} result${items.length===1?'':'s'}`;
+    // Schedule analytics even on zero results
+    scheduleAnalytics(term, items.length);
     if (!items.length) {
       const li = document.createElement('li');
       li.className = 'text-gray-500 dark:text-gray-400 text-center py-6';
@@ -103,6 +105,47 @@
       frag.appendChild(li);
     }
     list.appendChild(frag);
+  }
+
+  // --- Minimal debounced analytics instrumentation ---
+  let _lastSentSearch = '';
+  let _analyticsTimer = null;
+  const ANALYTICS_DEBOUNCE_MS = 450;
+
+  function scheduleAnalytics(term, count){
+    if (!term) return;
+    const raw = String(term).trim();
+    if (raw.length < 3) return; // ignore very short terms
+    const normalized = normalizeForMatch(raw).trim();
+    if (!normalized) return;
+    // Avoid duplicate consecutive sends for identical normalized term
+    if (normalized === _lastSentSearch) return;
+    if (_analyticsTimer) clearTimeout(_analyticsTimer);
+    _analyticsTimer = setTimeout(()=>{
+      _lastSentSearch = normalized;
+      const payload = {
+        event: 'view_search_results',
+        search_term: raw,
+        normalized_term: normalized,
+        result_count: count,
+        zero_results: count === 0
+      };
+      // gtag style
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'view_search_results', {
+          search_term: payload.search_term,
+          normalized_term: payload.normalized_term,
+          result_count: payload.result_count,
+          zero_results: payload.zero_results
+        });
+      }
+      // GTM / dataLayer style
+      if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push(payload);
+      }
+      // CustomEvent hook for other listeners
+      window.dispatchEvent(new CustomEvent('search:results:view', { detail: payload }));
+    }, ANALYTICS_DEBOUNCE_MS);
   }
 
   function filter(data, term){

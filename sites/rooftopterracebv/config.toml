@@ -1,7 +1,7 @@
 baseURL = "https://rooftopterracebv.com/"
 languageCode = "en-us"
 title = "Rooftop Terrace BV"
-theme = ["overrides", "PaperMod"]
+theme = ["overrides"]
 themesDir = "../../themes"
 
 # Match other single page simplifications but allow sitemap/robots later; keep minimal for now.

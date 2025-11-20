@@ -4,6 +4,8 @@ title: Why You Should Consider Replacing Your Gutters
 tags:
   - article
 ---
+# Why You Should Consider Replacing Your Gutters
+
 ![](/media/gutter-installation-boca-raton-fl.jpg)
 
 Your gutters play a major role in preventing moisture damage to your home, so keeping them in great shape is one of the biggest priorities you have. Unfortunately, there will come a time when you won't be able to repair the damage to your gutters, or when it's more economical to have the system replaced rather than repair it. Although it may seem more expensive to replace your existing gutter system, in the long run, it can be much more beneficial to your home.

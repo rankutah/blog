@@ -3,7 +3,7 @@
 baseURL       = "https://blueridgetech.pro/"
 title         = "BlueridgeTech"
 languageCode  = "en-us"
-theme         = ["overrides", "PaperMod"]
+theme         = ["overrides"]
 themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 

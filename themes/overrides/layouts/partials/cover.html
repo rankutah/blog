@@ -1,1 +1,20 @@
-{{/* No-op cover renderer for list/single pages. */}}
+{{/* Simple cover image partial.
+   Accepts dict: { "cxt": Page, "IsSingle": bool }
+   Uses .Params.image OR .Params.cover.image OR first resource matching featured.*
+*/}}
+{{- $cxt := .cxt -}}
+{{- $isSingle := .IsSingle | default false -}}
+{{- $img := $cxt.Params.image -}}
+{{- if and (not $img) (isset $cxt.Params "cover") -}}
+  {{- $img = (index $cxt.Params.cover "image") -}}
+{{- end -}}
+{{- if not $img -}}
+  {{/* Try first page resource named featured.* */}}
+  {{- $res := first 1 (resources.Match "featured.*") -}}
+  {{- with $res }}{{ $img = (index . 0).RelPermalink }}{{ end -}}
+{{- end -}}
+{{- if $img -}}
+  <figure class="mb-6">
+    <img src="{{ $img }}" alt="{{ $cxt.Title }}" class="w-full h-auto rounded-md shadow-sm" loading="lazy" decoding="async" />
+  </figure>
+{{- end -}}{{/* No-op cover renderer for list/single pages. */}}

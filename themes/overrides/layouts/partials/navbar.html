@@ -184,8 +184,8 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                   </svg>
                 </button>
-                <div id="menu-{{ .Identifier }}-r"
-                     class="z-50 hidden absolute left-0 top-full mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 backdrop-blur">
+                 <div id="menu-{{ .Identifier }}-r"
+                   class="z-50 hidden absolute left-0 top-full mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm bg-white dark:bg-gray-800 backdrop-blur whitespace-normal break-words">
                   <ul class="py-2 text-sm">
                     {{ range .Children }}
                       <li>
@@ -346,8 +346,8 @@
                 </svg>
               </button>
 
-              <div id="menu-{{ .Identifier }}-d"
-                   class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur">
+                  <div id="menu-{{ .Identifier }}-d"
+                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm bg-white dark:bg-gray-800 md:dark:bg-gray-800 backdrop-blur whitespace-normal break-words">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
                     <li>

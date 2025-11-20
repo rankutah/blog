@@ -2,7 +2,7 @@
 baseURL       = "https://blog.novagutter.com/"
 title         = "NOVA Gutter"
 languageCode  = "en-us"
-theme         = ["PaperMod", "overrides"]
+theme         = ["overrides"]
 themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 

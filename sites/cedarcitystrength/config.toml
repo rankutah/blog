@@ -2,7 +2,7 @@
 baseURL       = "https://cedarcitystrength.com/"  # Update when deploying
 title         = "Cedar City Strength  |  & Conditioning"
 languageCode  = "en-us"
-theme         = ["overrides", "PaperMod"]
+theme         = ["overrides"]
 themesDir     = "../../themes"
 # ─────────────────────────────────────────────────────────────────────────────
 

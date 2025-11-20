@@ -2,7 +2,7 @@ baseURL = "https://blueridgeabbey.com/"
 # Use the shared overrides + PaperMod
 title = "Blue Ridge Abbey"
 languageCode = "en-us"
-theme = ["overrides", "PaperMod"]
+theme = ["overrides"]
 themesDir = "../../themes"
 
 # Remove trailing slashes from generated URLs

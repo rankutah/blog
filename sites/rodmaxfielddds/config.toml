@@ -1,7 +1,7 @@
 baseURL = "https://rodmaxfielddds.com/"
 languageCode = "en-us"
 title = "Rod Maxfield, DDS"
-theme = ["overrides", "PaperMod"]
+theme = ["overrides"]
 themesDir = "../../themes"
 
 [module]

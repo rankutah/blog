@@ -1,8 +1,15 @@
-{{/* Minimal breadcrumbs partial to avoid missing-partial errors */}}
-<nav class="breadcrumbs text-sm text-gray-500 mb-4" aria-label="Breadcrumb">
-  <a href="{{ "/" | relURL }}">Home</a>
-  {{- if not .IsHome -}}
-    <span aria-hidden="true"> / </span>
-    <span>{{ .Title }}</span>
-  {{- end -}}
-</nav>
+{{/* Breadcrumbs: hidden on home or when front matter sets breadcrumbs:false */}}
+{{ if and (not .IsHome) (ne .Params.breadcrumbs false) }}
+  {{- $sep := "›" -}}
+  <nav aria-label="Breadcrumb" class="text-sm mb-4">
+    <ol class="flex flex-wrap items-center gap-1 text-gray-600 dark:text-gray-400">
+      <li><a href="/" class="hover:text-gray-800 dark:hover:text-gray-200">Home</a></li>
+      {{- if and .Section (ne .RelPermalink (printf "/%s/" .Section)) -}}
+        <li class="opacity-60">{{ $sep }}</li>
+        <li><a href="/{{ .Section }}/" class="hover:text-gray-800 dark:hover:text-gray-200">{{ humanize .Section }}</a></li>
+      {{- end -}}
+      <li class="opacity-60">{{ $sep }}</li>
+      <li class="font-medium text-gray-900 dark:text-gray-200">{{ .Title }}</li>
+    </ol>
+  </nav>
+{{ end }}

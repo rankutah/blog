@@ -50,80 +50,17 @@
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
 
-{{- /* Styles */}}
-{{- /* Only run PaperMod CSS pipeline when assets exist */}}
-{{- $__pm_has := or (resources.Get "css/core/reset.css") (resources.Get "css/core/theme-vars.css") (gt (len (resources.Match "css/common/*.css")) 0) }}
-{{- if $__pm_has }}
-{{- /* includes */}}
-{{- $includes := slice (" " | resources.FromString "assets/css/includes-blank.css") }}
-{{- if not (eq site.Params.assets.disableScrollBarStyle true) }}
-  {{- $ScrollStyle := resources.Get "css/includes/scroll-bar.css" }}
-  {{- if $ScrollStyle }}
-    {{- $includes = $includes | append $ScrollStyle }}
-  {{- end }}
-{{- end }}
-{{- $includes_all := $includes | resources.Concat "assets/css/includes.css" }}
-{{- $theme_vars := resources.Get "css/core/theme-vars.css" }}
-{{- $reset := resources.Get "css/core/reset.css" }}
-{{- $media := resources.Get "css/core/zmedia.css" }}
-{{- $license_css := resources.Get "css/core/license.css" }}
-{{- $commonMatches := resources.Match "css/common/*.css" }}
-{{- $common := cond (gt (len $commonMatches) 0) ($commonMatches | resources.Concat "assets/css/common.css") (" " | resources.FromString "assets/css/common.css") }}
-{{- $chroma_styles := resources.Get "css/includes/chroma-styles.css" }}
-{{- $chroma_mod := resources.Get "css/includes/chroma-mod.css" }}
-
-{{- /* Build core parts only from existing resources */}}
-{{- $coreParts := slice $includes_all }}
-{{- if $theme_vars }}{{- $coreParts = $coreParts | append $theme_vars }}{{- end }}
-{{- if $reset }}{{- $coreParts = $coreParts | append $reset }}{{- end }}
-{{- $coreParts = $coreParts | append $common }}
-{{- if $chroma_styles }}{{- $coreParts = $coreParts | append $chroma_styles }}{{- end }}
-{{- if $chroma_mod }}{{- $coreParts = $coreParts | append $chroma_mod }}{{- end }}
-{{- if $media }}{{- $coreParts = $coreParts | append $media }}{{- end }}
-{{- $core := $coreParts | resources.Concat "assets/css/core.css" | resources.Minify }}
-
-{{- $extendedMatches := resources.Match "css/extended/*.css" }}
-{{- $extended := cond (gt (len $extendedMatches) 0) ($extendedMatches | resources.Concat "assets/css/extended.css" | resources.Minify) (" " | resources.FromString "assets/css/extended.css") }}
-
-{{- /* Build final stylesheet parts safely */}}
-{{- $sheetParts := slice $core $extended }}
-{{- if $license_css }}{{- $sheetParts = $sheetParts | append $license_css }}{{- end }}
-{{- $stylesheet := $sheetParts | resources.Concat "assets/css/stylesheet.css" }}
-
-{{- if not site.Params.assets.disableFingerprinting }}
-  {{- $stylesheet = $stylesheet | fingerprint }}
-  <link crossorigin="anonymous"
-        href="{{ $stylesheet.RelPermalink }}"
-        integrity="{{ $stylesheet.Data.Integrity }}"
-        rel="preload stylesheet"
-        as="style">
-{{- else }}
-  <link crossorigin="anonymous"
-        href="{{ $stylesheet.RelPermalink }}"
-        rel="preload stylesheet"
-        as="style">
-{{- end }}
-{{- end }}
-
-{{/* PaperMod pages should not include Tailwind/Flowbite CSS here. Flowbite CSS is loaded exclusively by flowbite.html base. */}}
+{{- /* Tailwind + optional compatibility CSS (PaperMod eliminated) */}}
+{{- $main := resources.Get "css/main.css" | postCSS }}
+{{- $compat := resources.Get "css/papermod-compat.css" | default ("" | resources.FromString "/* compat stub */") }}
+{{- $bundle := slice $main $compat | resources.Concat "assets/css/site.css" | minify | fingerprint "sha384" }}
+<link rel="preload" as="style" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
 
 {{- /* Add taxonomy badge CSS here */}}
 {{ partial "taxonomy-badges.html" . }}
 
-{{- /* Search */}}
-{{- if (eq .Layout `search`) -}}
-  <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
-  {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
-  {{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
-  {{- $license_js := resources.Get "js/license.js" }}
-  {{- if not site.Params.assets.disableFingerprinting }}
-    {{- $search := (slice $fusejs $license_js $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
-    <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
-  {{- else }}
-    {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" }}
-    <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}"></script>
-  {{- end }}
-{{- end -}}
+{{/* Search page loads its own custom search.js via search-page partial; fastsearch removed. */}}
 
 {{- /* Favicons */}}
 {{ partial "favicons.html" . }}
