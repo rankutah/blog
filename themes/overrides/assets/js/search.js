@@ -10,6 +10,7 @@
     lastTerm: '',
     lastResultsCount: 0,
     committed: false, // success or abandoned already sent
+    lastNonEmptyTerm: '', // longest non-empty term in current cycle (not overwritten by backspacing)
   };
   const SUCCESS_EMOJI = '✅';
   const ABANDONED_EMOJI = '❌';
@@ -35,7 +36,7 @@
         if (DEBUG_SEARCH && window.console && console.debug) {
           console.debug('[search-analytics] sending view_search_results', payload);
         }
-        window.gtag('event','view_search_results', payload);
+        window.gtag('event', 'view_search_results', payload);
       } catch(e){ if (DEBUG_SEARCH) console.debug('[search-analytics] failed', e); }
     } else if (DEBUG_SEARCH) {
       console.debug('[search-analytics] gtag unavailable; event queued implicitly by stub? term=', eventTerm);
@@ -43,7 +44,11 @@
     searchState.committed = true;
   }
   function markSuccess(){ sendOutcome('success'); }
-  function markAbandoned(){ sendOutcome('abandoned'); }
+  function markAbandoned(){
+    sendOutcome('abandoned');
+    // Reset non-empty tracker to avoid duplicate abandon events on further clears
+    searchState.lastNonEmptyTerm = '';
+  }
 
   function htm(str){
     const d = document.createElement('div');
@@ -193,11 +198,17 @@
 
     function onInput(){
       const term = input.value;
-      // Capture previous term BEFORE render updates state
-      const prev = cleanedTerm(searchState.lastTerm);
+      const cleaned = cleanedTerm(term);
+      // Capture longest typed term (do not shrink when user backspaces)
+      if (cleaned && cleaned.length > searchState.lastNonEmptyTerm.length) {
+        searchState.lastNonEmptyTerm = cleaned;
+      }
+      const longest = searchState.lastNonEmptyTerm;
       render(filter(data, term), term);
-      // If user cleared the field after a meaningful (>=3 chars) prior query and not yet committed -> abandoned
-      if (!term && !searchState.committed && prev && prev.length >= 3) {
+      // Abandon when field becomes empty after a previously typed longest term (>=3 chars)
+      if (!cleaned && !searchState.committed && longest && longest.length >= 3) {
+        // Ensure lastTerm reflects the abandoned query, not empty string
+        searchState.lastTerm = longest;
         markAbandoned();
       }
     }
@@ -205,12 +216,9 @@
     input.addEventListener('input', onInput);
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
+      // Update results and URL parameter, but do NOT record success/abandon.
       onInput();
       history.replaceState(null, '', `?q=${encodeURIComponent(input.value)}`);
-      // Treat Enter submit as success only if we currently have results.
-      if (!searchState.committed) {
-        if (searchState.lastResultsCount > 0) markSuccess(); else markAbandoned();
-      }
     });
 
     // Delegate clicks on result links for success tracking.
