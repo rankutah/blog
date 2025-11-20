@@ -4,11 +4,6 @@ date: 2025-11-20
 description: "Consulting & repair services plus common gutter problems we solve."
 draft: false
 slug: consulting-and-repair
-menu:
-  main:
-    parent: services
-    name: "Consulting & Repair"
-    weight: 16
 ---
 
 # Consulting & Gutter Repair

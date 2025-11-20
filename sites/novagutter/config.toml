@@ -183,7 +183,7 @@ enableRobotsTXT = true
     weight = 15
 
   [[menu.main]]
-    name = "Consulting & Repair"
+    name = "Consulting & Gutter Repair"
     url = "/services/consulting-and-repair"
     parent = "services"
     weight = 16
