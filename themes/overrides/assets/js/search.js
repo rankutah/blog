@@ -193,9 +193,11 @@
 
     function onInput(){
       const term = input.value;
+      // Capture previous term BEFORE render updates state
+      const prev = cleanedTerm(searchState.lastTerm);
       render(filter(data, term), term);
-      // If user cleared the term after typing and not committed -> abandoned
-      if (!term && !searchState.committed && cleanedTerm(searchState.lastTerm)) {
+      // If user cleared the field after a meaningful (>=3 chars) prior query and not yet committed -> abandoned
+      if (!term && !searchState.committed && prev && prev.length >= 3) {
         markAbandoned();
       }
     }
