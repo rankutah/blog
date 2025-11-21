@@ -27,13 +27,10 @@ schema:
 # Website Design
 Completely custom websites. Built for performance.
 
-Build a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and lightweight code designed to perform on mobile.
+Get a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and lightweight code designed to perform on mobile.
 
 {{< button url="/contact" text="Contact" >}}
 {{< button url="/portfolio" text="See Portfolio" >}}
-
-
-
 
 
 ## Why choose this approach
