@@ -38,7 +38,7 @@ Fast, mobile‑first websites that turn Utah visits into calls, bookings & form 
 {{< /hero >}}
 
 ## Why this page
-If you searched for **custom website design Utah**, you likely want a site that does more than look nice. You need pages that load fast, rank, and convert. That’s exactly what I build—without bloated templates or long, expensive rebuild cycles.
+If you searched for **website design in Utah**, you likely want a site that does more than look nice. You need pages that load fast, rank, and convert. That’s exactly what I build—without bloated templates or long, expensive rebuild cycles.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
@@ -114,7 +114,7 @@ Typical turnaround is 2–3 weeks once content is ready. Faster sprints are poss
 Yes. Managed hosting, CDN, automatic SSL, and performance tuning are all included.
 
 ### Is there a big upfront fee?
-No large build fee. Simple monthly subscription keeps cash flow predictable while still getting a custom site.
+No large upfront fee. Simple monthly subscription that includes domain renewals, hosting, and unlimited updates to your site. 
 
 {{< /faqs >}}
 

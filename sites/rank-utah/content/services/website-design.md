@@ -41,10 +41,6 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 - Easy updates and ongoing support
 - Analytics and call tracking ready
 
-
-
-
-
 ## Featured work
 
 {{< cols min="18rem" gap="2rem" v="start">}}
