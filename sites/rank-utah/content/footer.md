@@ -56,16 +56,9 @@ Website Design & Local SEO for Small Businesses
 {.center}
 
 
-
-
-
 {{< /col >}}
 
 {{< /cols >}}
-
-
-
-
 
 
 <div class="text-center text-sm opacity-80 mt-4">
