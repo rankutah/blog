@@ -40,8 +40,7 @@ params:
 ---
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape image for website design hero banners" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Custom Website Design in Utah <span id="dynamic-city" class="whitespace-nowrap"></span> {.text-white}
-<p id="dynamic-city-line" class="text-white text-lg font-medium mt-4">Serving businesses across Utah.</p>
+# Custom Website Design in Utah<br><span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span> {.text-white}
 
 {{<button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{<button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20custom%20website%20quote." text="Text Now">}}
@@ -71,11 +70,12 @@ params:
   if (["location", "city", "locationcity"].includes(cleaned)) return;
   if (cleaned.length < 2 || cleaned.length > 30 || words.length > 3) return; // guard length/word count
   const city = words.map(w=> w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
+  // Inject second heading line dynamically (paid traffic only)
   const span = document.getElementById('dynamic-city');
   if(!span) return;
-  span.textContent = '– Serving ' + city;
-  const line = document.getElementById('dynamic-city-line');
-  if(line) line.textContent = 'Serving businesses in ' + city + ' and across Utah';
+  const displayCity = city.length > 28 ? city.slice(0,25) + '…' : city;
+  span.textContent = 'Serving ' + displayCity;
+  span.classList.remove('hidden');
   if (window.gtag) {
     window.gtag('event','ppc_city_injection',{
       event_category:'landing_variant',
@@ -177,7 +177,7 @@ Share a bit about your business and goals. I’ll reply personally.
 6. Grow – ongoing tweaks, new pages, reporting
 
 ## FAQ
-{{< faqs openFirst="true" >}}
+{{< faqs >}}
 ### How long does a custom site take?
 Typical turnaround is 2–3 weeks once content is ready. Faster sprints are possible for lean builds.
 
