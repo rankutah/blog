@@ -1345,7 +1345,7 @@
     "width": 1439,
     "height": 806,
     "aspect": 1.7853598014888337,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAnEAABAwMCBQUBAAAAAAAAAAABAgMRAAQhEhMFIjJBYRQxQlNxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABkRAQEBAQEBAAAAAAAAAAAAAAEAMRECUf/aAAwDAQACEQMRAD8AXsr11iN9BdaSI1AzpFbX7zV0A6lSV6VZnsD7CPFYh5p1p1phLZcVjlk11u0cYUlanGhImDIKh/cVPyBR3wC+doYOBFUE37Fi0hIYUv8ATAmhz0iiUK1Na/rVqFKXdohtMpdMT8gazz0p4z/DeRuU8p8YpjjK173UroHeiik7RlLJOy9k4VA8UxbkwEydJSMdqKKRjF0v/9k=",
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAnEAABBAIBAgUFAAAAAAAAAAABAAIDEQQhEhMiBRQyQWExQlNxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABkRAQEBAQEBAAAAAAAAAAAAAAEAMRECUf/aAAwDAQACEQMRAD8AXws2WDj12GWJorkDfELbPmiygJWua/i7d+wP0FfCxE0UsUsUDYzI7XbZXY8SSBzXukiFi6NguH90p+QKPOAZz0ho6FKg3PgwomNEDn/s0LRJ5RxLHcouf43cglMvEZG22ymr+4FZ56U8Z/w3sjtvafjSY8Ze8Tep3oHuhCTtGUsk9GbZ06gmMcni1tmi0aQhIxi6X//Z",
     "variants": {
       "avif": [
         {
@@ -1414,7 +1414,7 @@
     "width": 1439,
     "height": 806,
     "aspect": 1.7853598014888337,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAnEAABAwMCBQUBAAAAAAAAAAABAgMRAAQhEhMFIjJBYRQxQlNxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABkRAQEBAQEBAAAAAAAAAAAAAAEAMRECUf/aAAwDAQACEQMRAD8AXsr11iN9BdaSI1AzpFbX7zV0A6lSV6VZnsD7CPFYh5p1p1phLZcVjlk11u0cYUlanGhImDIKh/cVPyBR3wC+doYOBFUE37Fi0hIYUv8ATAmhz0iiUK1Na/rVqFKXdohtMpdMT8gazz0p4z/DeRuU8p8YpjjK173UroHeiik7RlLJOy9k4VA8UxbkwEydJSMdqKKRjF0v/9k=",
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAnEAABBAIBAgUFAAAAAAAAAAABAAIDEQQhEhMiBRQyQWExQlNxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABkRAQEBAQEBAAAAAAAAAAAAAAEAMRECUf/aAAwDAQACEQMRAD8AXws2WDj12GWJorkDfELbPmiygJWua/i7d+wP0FfCxE0UsUsUDYzI7XbZXY8SSBzXukiFi6NguH90p+QKPOAZz0ho6FKg3PgwomNEDn/s0LRJ5RxLHcouf43cglMvEZG22ymr+4FZ56U8Z/w3sjtvafjSY8Ze8Tep3oHuhCTtGUsk9GbZ06gmMcni1tmi0aQhIxi6X//Z",
     "variants": {
       "avif": [
         {
@@ -3729,192 +3729,6 @@
       ]
     }
   },
-  "/media/utah-landscape.jpg": {
-    "width": 6000,
-    "height": 4000,
-    "aspect": 1.5,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAIxAAAgEFAAEEAwAAAAAAAAAAAQIDAAQREiExEyJRcRRB8P/EABUBAQEAAAAAAAAAAAAAAAAAAAIA/8QAGREBAQEBAQEAAAAAAAAAAAAAAQARAgMx/9oADAMBAAIRAxEAPwDHsgC+oxgjuDmtN7KPUPE65IyyE1kWRZOwsu2PBHT9U5+TcoEdpNgfA5z7FHj0AzY9GtfIyW8TdxJqSopO4d5oo5Nsdwfr+NTdXDyS7arn0ioOP3n4rmB53tpICGOBlAByj36L8lyBI28rYAT24PMU3azym4VS5PaKKOG0T50kX3Rqe/FVyWEYiLozLzwegUUU8JJf/9k=",
-    "variants": {
-      "avif": [
-        {
-          "w": 320,
-          "url": "/media-deriv/utah-landscape__w320.avif"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/utah-landscape__w480.avif"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/utah-landscape__w640.avif"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/utah-landscape__w768.avif"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/utah-landscape__w960.avif"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/utah-landscape__w1200.avif"
-        },
-        {
-          "w": 1600,
-          "url": "/media-deriv/utah-landscape__w1600.avif"
-        },
-        {
-          "w": 2000,
-          "url": "/media-deriv/utah-landscape__w2000.avif"
-        },
-        {
-          "w": 2400,
-          "url": "/media-deriv/utah-landscape__w2400.avif"
-        },
-        {
-          "w": 3200,
-          "url": "/media-deriv/utah-landscape__w3200.avif"
-        }
-      ],
-      "webp": [],
-      "jpeg": [
-        {
-          "w": 320,
-          "url": "/media-deriv/utah-landscape__w320.jpg"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/utah-landscape__w480.jpg"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/utah-landscape__w640.jpg"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/utah-landscape__w768.jpg"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/utah-landscape__w960.jpg"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/utah-landscape__w1200.jpg"
-        },
-        {
-          "w": 1600,
-          "url": "/media-deriv/utah-landscape__w1600.jpg"
-        },
-        {
-          "w": 2000,
-          "url": "/media-deriv/utah-landscape__w2000.jpg"
-        },
-        {
-          "w": 2400,
-          "url": "/media-deriv/utah-landscape__w2400.jpg"
-        },
-        {
-          "w": 3200,
-          "url": "/media-deriv/utah-landscape__w3200.jpg"
-        }
-      ]
-    }
-  },
-  "/media/utah-landscape.avif": {
-    "width": 6000,
-    "height": 4000,
-    "aspect": 1.5,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAIxAAAgEFAAEEAwAAAAAAAAAAAQIDAAQREiExEyJRcRRB8P/EABUBAQEAAAAAAAAAAAAAAAAAAAIA/8QAGREBAQEBAQEAAAAAAAAAAAAAAQARAgMx/9oADAMBAAIRAxEAPwDHsgC+oxgjuDmtN7KPUPE65IyyE1kWRZOwsu2PBHT9U5+TcoEdpNgfA5z7FHj0AzY9GtfIyW8TdxJqSopO4d5oo5Nsdwfr+NTdXDyS7arn0ioOP3n4rmB53tpICGOBlAByj36L8lyBI28rYAT24PMU3azym4VS5PaKKOG0T50kX3Rqe/FVyWEYiLozLzwegUUU8JJf/9k=",
-    "variants": {
-      "avif": [
-        {
-          "w": 320,
-          "url": "/media-deriv/utah-landscape__w320.avif"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/utah-landscape__w480.avif"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/utah-landscape__w640.avif"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/utah-landscape__w768.avif"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/utah-landscape__w960.avif"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/utah-landscape__w1200.avif"
-        },
-        {
-          "w": 1600,
-          "url": "/media-deriv/utah-landscape__w1600.avif"
-        },
-        {
-          "w": 2000,
-          "url": "/media-deriv/utah-landscape__w2000.avif"
-        },
-        {
-          "w": 2400,
-          "url": "/media-deriv/utah-landscape__w2400.avif"
-        },
-        {
-          "w": 3200,
-          "url": "/media-deriv/utah-landscape__w3200.avif"
-        }
-      ],
-      "webp": [],
-      "jpeg": [
-        {
-          "w": 320,
-          "url": "/media-deriv/utah-landscape__w320.jpg"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/utah-landscape__w480.jpg"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/utah-landscape__w640.jpg"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/utah-landscape__w768.jpg"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/utah-landscape__w960.jpg"
-        },
-        {
-          "w": 1200,
-          "url": "/media-deriv/utah-landscape__w1200.jpg"
-        },
-        {
-          "w": 1600,
-          "url": "/media-deriv/utah-landscape__w1600.jpg"
-        },
-        {
-          "w": 2000,
-          "url": "/media-deriv/utah-landscape__w2000.jpg"
-        },
-        {
-          "w": 2400,
-          "url": "/media-deriv/utah-landscape__w2400.jpg"
-        },
-        {
-          "w": 3200,
-          "url": "/media-deriv/utah-landscape__w3200.jpg"
-        }
-      ]
-    }
-  },
   "/media/utah-seo-specialist-web-design-expert-profile-picture.jpg": {
     "width": 400,
     "height": 400,
@@ -3969,6 +3783,144 @@
         {
           "w": 400,
           "url": "/media-deriv/utah-seo-specialist-web-design-expert-profile-picture__w400.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-website-design-hero.jpg": {
+    "width": 1280,
+    "height": 853,
+    "aspect": 1.5005861664712778,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAQFAwEC/8QAJBAAAgEEAgEEAwAAAAAAAAAAAQIDAAQRIRIxQQUTUXEigfD/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAaEQEBAAMBAQAAAAAAAAAAAAABAAIDERIx/9oADAMBAAIRAxEAPwCTaAcuGsEbwc1Reyj4h4mXJGWQnqpVmWTcJXljojf68U2Lm5Tg7OGB6GtfYo4bAOdjkdbeQpbxNvD8SQKUuJGmijkDY3g/X8a7dXDyS8uK59oqDjzn4rzA88ltJAQxwuUAGqzPYvyWISNtK2AEwuDrzTdrPKbhVLk7oooAeqKgRHIv5RKd/FZSenoIy8bsuujsCiinwkl//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-website-design-hero__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-website-design-hero__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-website-design-hero__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-website-design-hero__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-website-design-hero__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-website-design-hero__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-website-design-hero__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-website-design-hero__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-website-design-hero__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-website-design-hero__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-website-design-hero__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-website-design-hero__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-website-design-hero__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-website-design-hero__w1280.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-website-design-hero.avif": {
+    "width": 1280,
+    "height": 853,
+    "aspect": 1.5005861664712778,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAQFAwEC/8QAJBAAAgEEAgEEAwAAAAAAAAAAAQIDAAQRIRIxQQUTUXEigfD/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAaEQEBAAMBAQAAAAAAAAAAAAABAAIDERIx/9oADAMBAAIRAxEAPwCTaAcuGsEbwc1Reyj4h4mXJGWQnqpVmWTcJXljojf68U2Lm5Tg7OGB6GtfYo4bAOdjkdbeQpbxNvD8SQKUuJGmijkDY3g/X8a7dXDyS8uK59oqDjzn4rzA88ltJAQxwuUAGqzPYvyWISNtK2AEwuDrzTdrPKbhVLk7oooAeqKgRHIv5RKd/FZSenoIy8bsuujsCiinwkl//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-website-design-hero__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-website-design-hero__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-website-design-hero__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-website-design-hero__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-website-design-hero__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-website-design-hero__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-website-design-hero__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-website-design-hero__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-website-design-hero__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-website-design-hero__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-website-design-hero__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-website-design-hero__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-website-design-hero__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-website-design-hero__w1280.jpg"
         }
       ]
     }

@@ -35,7 +35,7 @@ params:
   # Optional: could add noindex: true if purely paid, leaving indexed for now.
 ---
 
-{{< hero img="/media/utah-landscape.avif" alt="Utah business web design concept" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+{{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape image for website design hero banners" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Custom Website Design in Utah <span id="dynamic-city" class="whitespace-nowrap"></span> {.text-white}
 <p id="dynamic-city-line" class="text-white text-lg font-medium mt-4">Serving businesses across Utah.</p>
 
@@ -160,9 +160,7 @@ Share a bit about your business and goals. I’ll reply personally.
   classes="max-w-xl"
 >}}
 
-{{< button submit="true" form="contact1" text="Request Website Quote" >}}
-{{< button url="tel:+13853238130" text="Call (385) 323-8130" >}}
-{{< button url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20custom%20website%20quote." text="Text Now" >}}
+{{< button submit="true" form="contact1" text="Submit Message" >}}
 {{< /col >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
