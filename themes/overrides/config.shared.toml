@@ -4,6 +4,7 @@
 pruneTaxonomies = true
 trailingSlash  = "never"
 theme = ["overrides"]
+enableRobotsTXT = true
 
 [markup]
   [markup.goldmark]

@@ -29,6 +29,10 @@ schema:
         answer: "Yes. Managed hosting, CDN, automatic SSL, performance tuning, ongoing security updates—all included."
       - question: "Is there a big upfront fee?"
         answer: "No large build fee. Predictable monthly subscription covers hosting, domain renewals, updates, and improvements."
+      - question: "What about Local Search Engine Optimization (SEO)?"
+        answer: "Core on‑page SEO foundations are included (metadata, schema, performance). Expanded Local SEO—citations, Google Business Profile optimization, reviews—is available separately."
+      - question: "Are content updates really unlimited?"
+        answer: "Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees."
 params:
   ppc: true
   hideFooterLinks: false
@@ -143,7 +147,7 @@ Below are a few custom builds (performance + conversion focus).
 ## Ready To Get Started
 ![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
-I was born in St. George, Utah and now live in Orem with my wife and three daughters. I love partnering with entrepreneurs—building fast, conversion‑focused custom websites that help local businesses turn visits into calls, bookings, and messages.
+I was born in St. George, Utah and now live in Orem with my wife and three daughters. I love partnering with business owners—building fast, conversion‑focused custom websites that help local businesses turn visits into calls, bookings, and messages.
 
 Share a bit about your business and goals. I’ll reply personally.
 
@@ -172,11 +176,6 @@ Share a bit about your business and goals. I’ll reply personally.
 5. Launch – QA, tracking, speed checks
 6. Grow – ongoing tweaks, new pages, reporting
 
-## Utah‑Focused Advantages
-- Local context for service & professional industries
-- Fast response by call, text or email
-- Continuous improvement instead of “set & forget”
-
 ## FAQ
 {{< faqs openFirst="true" >}}
 ### How long does a custom site take?
@@ -187,6 +186,12 @@ Yes. Managed hosting, CDN, automatic SSL, and performance tuning are all include
 
 ### Is there a big upfront fee?
 No large upfront fee. Simple monthly subscription that includes domain renewals, hosting, and unlimited updates to your site.
+
+### What about Local Search Engine Optimization (SEO)?
+Core on‑page SEO foundations are included (metadata, schema, performance). Expanded Local SEO—citations, Google Business Profile optimization, reviews—is available separately.
+
+### Are content updates really unlimited?
+Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
 
 {{< /faqs >}}
 

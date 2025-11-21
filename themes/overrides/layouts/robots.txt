@@ -1,7 +1,19 @@
+{{/* Unified robots.txt across all sites.
+		 Uses optional site param overrides:
+			 [params.robots]
+				 disallowAll = true    # forces Disallow: /
+				 extra = ["Disallow: /private/", "Allow: /"]
+*/}}
 User-agent: *
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-Disallow:
-{{- else }}
+{{- $cfg := site.Params.robots -}}
+{{- if and $cfg (isset $cfg "disallowAll") $cfg.disallowAll -}}
 Disallow: /
+{{- else -}}
+Allow: /
 {{- end }}
-Sitemap: {{ "sitemap.xml" | absURL }}
+Sitemap: {{ (print site.BaseURL "sitemap.xml") | replace "//sitemap" "/sitemap" }}
+{{- if and $cfg (isset $cfg "extra") }}
+{{- range $cfg.extra }}
+{{ . }}
+{{- end }}
+{{- end }}
