@@ -71,7 +71,7 @@ params:
   if(!span) return;
   span.textContent = '– Serving ' + city;
   const line = document.getElementById('dynamic-city-line');
-  if(line) line.textContent = 'Serving businesses in ' + city + ' and across Utah.';
+  if(line) line.textContent = 'Serving businesses in ' + city + ' and across Utah';
   if (window.gtag) {
     window.gtag('event','ppc_city_injection',{
       event_category:'landing_variant',
