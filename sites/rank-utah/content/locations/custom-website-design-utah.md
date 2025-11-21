@@ -1,6 +1,6 @@
 ---
 title: "Custom Website Design in Utah"
-description: "Custom website design in Utah – fast, conversion‑focused sites for service and local businesses statewide."
+description: "Custom website design in Utah. Fast, mobile‑first builds that turn visits into calls and bookings with clear CTAs, SEO foundations, and friendly support."
 layout: "flowbite"
 url: "/locations/custom-website-design-utah"
 hero: true
@@ -20,6 +20,15 @@ schema:
         priceCurrency: USD
         price: "299"
         availability: "https://schema.org/InStock"
+  faq:
+    enabled: true
+    items:
+      - question: "How long does a custom site take?"
+        answer: "Typical turnaround is 2–3 weeks once content is ready. Faster sprints are possible for lean builds."
+      - question: "Do you handle hosting & SSL?"
+        answer: "Yes. Managed hosting, CDN, automatic SSL, performance tuning, ongoing security updates—all included."
+      - question: "Is there a big upfront fee?"
+        answer: "No large build fee. Predictable monthly subscription covers hosting, domain renewals, updates, and improvements."
 params:
   ppc: true
   hideFooterLinks: false
@@ -28,8 +37,7 @@ params:
 
 {{< hero img="/media/utah-landscape.avif" alt="Utah business web design concept" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Custom Website Design in Utah <span id="dynamic-city" class="whitespace-nowrap"></span> {.text-white}
-Fast, mobile‑first websites that turn Utah visits into calls, bookings & form fills.
-{.text-white}
+<p id="dynamic-city-line" class="text-white text-lg font-medium mt-4">Serving businesses across Utah.</p>
 
 {{<button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{<button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20custom%20website%20quote." text="Text Now">}}
@@ -43,6 +51,11 @@ Fast, mobile‑first websites that turn Utah visits into calls, bookings & form 
   const raw = p.get('city');
   const isPaid = p.has('gclid') || (p.get('utm_source')||'').toLowerCase()==='google';
   if(!raw || !isPaid) return;
+  // Guard against unresolved Google Ads location macro or generic placeholders
+  const placeholderPattern = /^\s*\{location\(city\)\}\s*$/i;
+  if (placeholderPattern.test(raw)) return; // literal macro not replaced
+  const lowerRaw = raw.toLowerCase().trim();
+  if (["location", "city", "location city", "locationcity"].includes(lowerRaw)) return;
   let cleaned = raw.replace(/[-_]+/g,' ')            // hyphens/underscores to space
                    .replace(/[^a-zA-Z'\s]/g,'')     // keep letters, apostrophes, spaces
                    .trim()
@@ -50,11 +63,15 @@ Fast, mobile‑first websites that turn Utah visits into calls, bookings & form 
                    .replace(/\s{2,}/g,' ');         // collapse whitespace
   if(!cleaned) return;
   const words = cleaned.split(' ');
+  // Additional post-clean guard: if still generic after cleaning
+  if (["location", "city", "locationcity"].includes(cleaned)) return;
   if (cleaned.length < 2 || cleaned.length > 30 || words.length > 3) return; // guard length/word count
   const city = words.map(w=> w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
   const span = document.getElementById('dynamic-city');
   if(!span) return;
   span.textContent = '– Serving ' + city;
+  const line = document.getElementById('dynamic-city-line');
+  if(line) line.textContent = 'Serving businesses in ' + city + ' and across Utah.';
   if (window.gtag) {
     window.gtag('event','ppc_city_injection',{
       event_category:'landing_variant',
@@ -74,7 +91,7 @@ If you searched for **website design in Utah**, you likely want a site that does
 ### What You Get
 - Custom design (no off‑the‑shelf theme)
 - Conversion‑focused structure & CTAs
-- Performance + Core Web Vitals tuning
+- Fast, mobile‑first performance (Core Web Vitals tuned)
 - On‑page SEO foundations (titles, meta, schema)
 - Image optimization + accessibility
 - Forms, spam protection & analytics setup
@@ -120,6 +137,35 @@ Below are a few custom builds (performance + conversion focus).
 ## Reviews & Trust
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
+{{< cols min="18rem" gap="2rem" v="start" >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+## Ready To Get Started
+![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+{.w-40 .mb-4}
+I was born in St. George, Utah and now live in Orem with my wife and three daughters. I love partnering with entrepreneurs—building fast, conversion‑focused custom websites that help local businesses turn visits into calls, bookings, and messages.
+
+Share a bit about your business and goals. I’ll reply personally.
+
+{{< contact-form
+  id="contact1"
+  action="https://submit-form.com/I4t2OG4uj"
+  name="true"
+  email="true"
+  phone="optional"
+  business="false"
+  subject="false"
+  message="true"
+  consent="false"
+  classes="max-w-xl"
+>}}
+
+{{< button submit="true" form="contact1" text="Request Website Quote" >}}
+{{< button url="tel:+13853238130" text="Call (385) 323-8130" >}}
+{{< button url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20custom%20website%20quote." text="Text Now" >}}
+{{< /col >}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## Process (Fast & Lean)
 1. Discovery – goals, audience & key lead actions
 2. Structure – sitemap & conversion pathways
@@ -145,37 +191,6 @@ Yes. Managed hosting, CDN, automatic SSL, and performance tuning are all include
 No large upfront fee. Simple monthly subscription that includes domain renewals, hosting, and unlimited updates to your site.
 
 {{< /faqs >}}
-
-## Ready To Get Started?
-Share a bit about your business and goals. I’ll reply personally.
-
-{{< contact-form
-  id="ppc-custom-web-design-utah"
-  action="https://submit-form.com/I4t2OG4uj"
-  name="true"
-  email="true"
-  phone="optional"
-  subject="false"
-  message="true"
-  consent="false"
-  classes="max-w-xl"
->}}
-
-{{< button submit="true" form="ppc-custom-web-design-utah" text="Request Website Quote" >}}
-
-{{< cols min="18rem" gap="2rem" v="start" >}}
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-![Headshot of Benjamin Awerkamp, Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
-{.w-48}
-**Benjamin Awerkamp**
-Website Designer / Developer
-Master's in Software Development
-Bachelor's in Business Management
-Call/Text: (385) 323-8130
-{{< /col >}}
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-### Still Comparing Options?
-Visit the full service page for broader detail, or explore the portfolio for design variety and performance outcomes.
 
 {{< button url="/services/website-design" text="Website Design Service" >}}
 {{< button url="/portfolio" text="See Portfolio" >}}
