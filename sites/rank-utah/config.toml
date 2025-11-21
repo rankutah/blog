@@ -88,8 +88,8 @@ sameAs = []
     enabled = true
 
   [params.analytics.clarity]
-    id = "q5u05bcffe"
-    enabled = false
+    id = "u9tbqd2kqk"
+    enabled = true
 
   [params.analytics.googleAds]
     id = "AW-XXXXXXXXX"   # replace with your Google Ads ID
