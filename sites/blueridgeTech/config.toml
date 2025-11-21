@@ -109,21 +109,21 @@ uglyURLs = true
 
   # Locations dropdown (after Services)
   [[menu.main]]
-    name       = "Locations"
-    identifier = "locations"
+    name       = "Areas"
+    identifier = "areas"
     url        = "/#"
     weight     = 25
 
   [[menu.main]]
     name   = "Buena Vista, VA"
     url    = "/"
-    parent = "locations"
+    parent = "areas"
     weight = 26
 
   [[menu.main]]
     name   = "Lexington, VA"
     url    = "/locations/lexington-va"
-    parent = "locations"
+    parent = "areas"
     weight = 27
 
   [[menu.main]]
