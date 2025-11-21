@@ -26,8 +26,8 @@ params:
   # Optional: could add noindex: true if purely paid, leaving indexed for now.
 ---
 
-{{< hero img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Utah business web design concept" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Custom Website Design in Utah {.text-white}
+{{< hero img="/media/utah-landscape.avif" alt="Utah business web design concept" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+# Custom Website Design in Utah <span id="dynamic-city" class="whitespace-nowrap"></span> {.text-white}
 Fast, mobile‑first websites that turn Utah visits into calls, bookings & form fills.
 {.text-white}
 
@@ -36,6 +36,34 @@ Fast, mobile‑first websites that turn Utah visits into calls, bookings & form 
 
 <div class="mt-6"></div>
 {{< /hero >}}
+
+<script>
+(function(){
+  const p = new URLSearchParams(location.search);
+  const raw = p.get('city');
+  const isPaid = p.has('gclid') || (p.get('utm_source')||'').toLowerCase()==='google';
+  if(!raw || !isPaid) return;
+  let cleaned = raw.replace(/[-_]+/g,' ')            // hyphens/underscores to space
+                   .replace(/[^a-zA-Z'\s]/g,'')     // keep letters, apostrophes, spaces
+                   .trim()
+                   .toLowerCase()
+                   .replace(/\s{2,}/g,' ');         // collapse whitespace
+  if(!cleaned) return;
+  const words = cleaned.split(' ');
+  if (cleaned.length < 2 || cleaned.length > 30 || words.length > 3) return; // guard length/word count
+  const city = words.map(w=> w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
+  const span = document.getElementById('dynamic-city');
+  if(!span) return;
+  span.textContent = '– Serving ' + city;
+  if (window.gtag) {
+    window.gtag('event','ppc_city_injection',{
+      event_category:'landing_variant',
+      event_label: city,
+      transport_type:'beacon'
+    });
+  }
+})();
+</script>
 
 ## Why this page
 If you searched for **website design in Utah**, you likely want a site that does more than look nice. You need pages that load fast, rank, and convert. That’s exactly what I build—without bloated templates or long, expensive rebuild cycles.
@@ -114,7 +142,7 @@ Typical turnaround is 2–3 weeks once content is ready. Faster sprints are poss
 Yes. Managed hosting, CDN, automatic SSL, and performance tuning are all included.
 
 ### Is there a big upfront fee?
-No large upfront fee. Simple monthly subscription that includes domain renewals, hosting, and unlimited updates to your site. 
+No large upfront fee. Simple monthly subscription that includes domain renewals, hosting, and unlimited updates to your site.
 
 {{< /faqs >}}
 
