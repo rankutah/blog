@@ -41,7 +41,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 *Get a fast website custom built for your business.*
 
-- Custom design
+- Custom website design
 - Fast, secure hosting
 - Domain & yearly renewals
 - Mobile-Friendly Design
@@ -84,10 +84,12 @@ This package does not include a business website.
 
 *Bundle both to maximize visibility and save.*
 
+- Custom website design
 - Fast, secure hosting
 - Domain & yearly renewals
-- Unlimited content updates
 - Mobile-Friendly Design
+- Monthly visitor reports
+- Ongoing updates and support
 - Google Business Profile management
 - Apple Maps & Bing Places management, plus listings on 100+ sites, maps, and apps
 - Local keyword research & strategy
