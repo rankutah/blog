@@ -3,11 +3,6 @@ title: "Footer"
 headless: true
 ---
 
-
-
-
-
-
 {{< cols min="18rem" gap="0rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}

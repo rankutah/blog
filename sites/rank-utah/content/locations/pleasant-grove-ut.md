@@ -144,11 +144,8 @@ Get a website that brings you more calls, quotes, and bookings—not just a pret
 - Month-to-month support—no lock-in—so your site keeps improving as your business grows.
 - Simple pricing (low monthly subscription) instead of a big upfront fee.
 
-### Local & responsive
-I’m based here in Pleasant Grove, so you get quick responses and local context. Need a change? Send a text and it’s handled.
-
-
-
+### Ready to Get Started
+I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
 
 {{< cols min="18rem" gap="2rem" v="start">}}
