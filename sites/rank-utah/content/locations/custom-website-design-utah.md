@@ -1,6 +1,6 @@
 ---
 title: "Custom Website Design in Utah"
-description: "Custom website design in Utah. Fast, mobile‑first builds that turn visits into calls and bookings with clear CTAs, SEO foundations, and friendly support."
+description: "Custom website design in Utah. Fast sites that turn visits into calls and bookings with clear call and message buttons and basic search setup plus friendly support."
 layout: "flowbite"
 url: "/locations/custom-website-design-utah"
 hero: true
@@ -9,7 +9,7 @@ schema:
   service:
     enabled: true
     serviceType: "Custom Website Design"
-    description: "Custom, fast, conversion‑focused business websites built for leads across Utah."
+    description: "Custom, fast business websites built to bring in leads across Utah."
     areaServed: "Utah"
     offers:
       - "@type": Offer
@@ -30,7 +30,7 @@ schema:
       - question: "Is there a big upfront fee?"
         answer: "No large build fee. Predictable monthly subscription covers hosting, domain renewals, updates, and improvements."
       - question: "What about Local Search Engine Optimization (SEO)?"
-        answer: "Core on‑page SEO foundations are included (metadata, schema, performance). Expanded Local SEO—citations, Google Business Profile optimization, reviews—is available separately."
+        answer: "Basic search setup is included (titles, descriptions, fast load). Extra Local SEO—listings, Google Business Profile help, reviews—is available separately."
       - question: "Are content updates really unlimited?"
         answer: "Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees."
 params:
@@ -87,22 +87,22 @@ params:
 </script>
 
 ## Why this page
-If you searched for **website design in Utah**, you likely want a site that does more than look nice. You need pages that load fast, rank, and convert. That’s exactly what I build—without bloated templates or long, expensive rebuild cycles.
+Searching for **website design in Utah**? You want a site that looks good and helps you get calls, bookings, and messages. I build fast, lean sites without heavy templates or long, costly rebuilds.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### What You Get
-- Custom design (no off‑the‑shelf theme)
-- Conversion‑focused structure & CTAs
-- Fast, mobile‑first performance (Core Web Vitals tuned)
-- On‑page SEO foundations (titles, meta, schema)
-- Image optimization + accessibility
-- Forms, spam protection & analytics setup
-- Month‑to‑month improvement & support
+- Custom design (not a generic template)
+- Clear page layout that helps visitors call or message you
+- Fast on phones and computers
+- Basic search setup so people can find you
+- Clean images that load quickly
+- Contact forms with spam protection and simple visitor tracking
+- Ongoing updates and support month to month
 
-### Built For Conversion
-Clear “Call” and “Text” actions, fast mobile render, and content structured for Utah decision‑makers evaluating services quickly.
+### Built For Results
+Easy “Call” and “Text” buttons, fast load on phones, and content arranged so Utah customers quickly see what you offer.
 
 {{< button url="/pricing" text="Pricing" >}}
 {{< button url="/portfolio" text="Portfolio" >}}
@@ -147,7 +147,7 @@ Below are a few custom builds (performance + conversion focus).
 ## Ready To Get Started
 ![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
-I was born in St. George, Utah and now live in Orem with my wife and three daughters. I love partnering with business owners—building fast, conversion‑focused custom websites that help local businesses turn visits into calls, bookings, and messages.
+I was born in St. George, Utah and now live in Orem with my wife and three daughters. I love partnering with business owners—building fast custom websites that turn visits into calls, bookings, and messages.
 
 Share a bit about your business and goals. I’ll reply personally.
 
@@ -168,13 +168,13 @@ Share a bit about your business and goals. I’ll reply personally.
 {{< /col >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-## Process (Fast & Lean)
-1. Discovery – goals, audience & key lead actions
-2. Structure – sitemap & conversion pathways
-3. Design – visual direction & copy guidance
-4. Build – lightweight, accessible, mobile‑first pages
-5. Launch – QA, tracking, speed checks
-6. Grow – ongoing tweaks, new pages, reporting
+## Process (Simple & Fast)
+1. Chat – your goals and who you serve
+2. Plan – page list and outline
+3. Design – look and words
+4. Build – fast, mobile site
+5. Launch – check links, contact forms, speed
+6. Grow – quick changes and new pages
 
 ## FAQ
 {{< faqs >}}
@@ -188,7 +188,7 @@ Yes. Managed hosting, CDN, automatic SSL, and performance tuning are all include
 No large upfront fee. Simple monthly subscription that includes domain renewals, hosting, and unlimited updates to your site.
 
 ### What about Local Search Engine Optimization (SEO)?
-Core on‑page SEO foundations are included (metadata, schema, performance). Expanded Local SEO—citations, Google Business Profile optimization, reviews—is available separately.
+Basic search setup (titles, descriptions, fast load) is included. Extra local SEO—business listings, Google Business Profile help, reviews—is available separately.
 
 ### Are content updates really unlimited?
 Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.

@@ -1,6 +1,6 @@
 ---
 title: "Website Design in Pleasant Grove, UT"
-description: "Custom website design for small businesses in Pleasant Grove, Utah"
+description: "Custom website design in Pleasant Grove. Fast site built to bring you calls and messages."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -29,7 +29,7 @@ schema:
 
 {{< hero img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design in Pleasant Grove {.text-white}
-Professional websites that bring you customers
+Fast custom websites that help you get calls
 {.text-white}
 
 
@@ -134,13 +134,13 @@ Grow your small business in Pleasant Grove with a professional website. Reach ou
 
 ## Website Design in Pleasant Grove, UT
 
-Get a website that brings you more calls, quotes, and bookings—not just a pretty homepage. You’ll get a fast, mobile-friendly site built for local search and clear CTAs, plus ongoing help by call, text, or email whenever you need it.
+Get a website that brings you more calls, quotes, and bookings—not just a pretty homepage. You’ll get a fast, phone‑friendly site built for local search with clear call and text buttons plus ongoing help by call, text, or email whenever you need it.
 
 ### What you get
 
 - Custom design that fits your brand and looks great on phones.
-- Built-in local SEO basics (titles, schema, speed, GBP best practices) so you’re easier to find in Pleasant Grove and Utah County.
-- Conversion-focused pages with clear “Call” and “Text” options to turn visitors into leads.
+- Basic local search setup (titles, fast load, Google Business Profile best practices) so you’re easier to find in Pleasant Grove and Utah County.
+- Pages arranged so visitors call or text you.
 - Month-to-month support—no lock-in—so your site keeps improving as your business grows.
 - Simple pricing (low monthly subscription) instead of a big upfront fee.
 

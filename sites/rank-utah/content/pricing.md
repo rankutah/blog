@@ -1,6 +1,6 @@
 ---
 title: "Pricing"
-description: "Pricing"
+description: "Simple monthly pricing for a website or local SEO. No setup fee or contract."
 layout: "flowbite"
 url: "/pricing"
 schema:
@@ -44,13 +44,13 @@ Simple monthly pricing. No contracts. No surprises.
 
 {{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
-*Get a professional website, custom‑designed for your business.*
+*Get a fast website custom built for your business.*
 
 - Fast, secure hosting
 - Domain & yearly renewals
 - Unlimited content updates
 - Mobile-Friendly Design
-- Monthly analytics reports
+- Monthly visitor reports
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
 {{< /col >}}
@@ -64,13 +64,13 @@ Simple monthly pricing. No contracts. No surprises.
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
-*Get found on Google Maps, Apple Maps, Google, and "near me" searches.*
+*Get found on Google, Google Maps, Apple Maps, and "near me" searches.*
 
 - Google Business Profile management
 - Apple Maps & Bing Places management, plus listings on 100+ sites, maps, and apps
 - Local keyword research & strategy
 - Business listings keyword alignment
-- Monthly analytics reports
+- Monthly visitor reports
 
 This package does not include a business website.
 
@@ -86,7 +86,7 @@ This package does not include a business website.
 
 {{< plan_price old="$348" price="299" per="mo" sr="$299 per month bundle (was $348)" >}}
 
-*Bundle Business Website and Local SEO to maximize your visibility.*
+*Bundle both to maximize visibility and save.*
 
 - Fast, secure hosting
 - Domain & yearly renewals
@@ -96,7 +96,7 @@ This package does not include a business website.
 - Apple Maps & Bing Places management, plus listings on 100+ sites, maps, and apps
 - Local keyword research & strategy
 - Content keyword alignment across your website, Google Business Profile, and listings
-- Monthly analytics reports
+- Monthly visitor reports
 
 {{< button url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
 

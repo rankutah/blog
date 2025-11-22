@@ -1,18 +1,18 @@
 ---
 title: "About Clear Presence"
-description: "Clear Presence builds fast, modern websites and SEO marketing for small businesses—so you show up on Google Search & Maps and get more calls"
+description: "Fast custom websites and local search help for small businesses so you show up on Google and get more calls."
 layout: "flowbite"
 url: "/about"
 ---
 # About
 
-## Pretty websites don't bring customers
+## A pretty site alone won't bring customers
 
-Small businesses are often surprised when a pretty website doesn’t bring in customers. Most web designers focus on looks and call it done. Clear Presence builds completely custom websites that are beautiful, findable, and built to convert—so you get more traffic, more leads, and more sales.
+Many owners are surprised when a nice looking site brings few leads. Clear Presence builds custom websites that are easy to find and built to bring in calls and messages.
 
 ## Meet the founder
 
-My mission is to bring you customers. I continually spend time researching and understanding web design and local SEO (search engine optimization), and investing in the tools, training, and services that give you the best possible results. I believe in open communication without limits or restrictions. Before or after you become a client, you can reach out at any time via text, phone, email, or schedule a meeting. My clients receive monthly reports to provide complete transparency on the value they receive and are not locked into a contract. If you have any questions, please don't hesitate to [reach out](/contact).
+My mission is to bring you customers. I invest in improving web design and local search skills and tools. Communication is open—reach out anytime by text, phone, email, or meeting. Clients get simple monthly visitor reports and are never locked into a contract. Have a question? Please [reach out](/contact).
 
 
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)

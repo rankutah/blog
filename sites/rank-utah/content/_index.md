@@ -1,6 +1,6 @@
 ---
 title: "Website Design & Local SEO"
-description: "Clear Presence builds fast, modern websites with local SEO for small businesses—so you show up on Google Search & Maps and get more calls"
+description: "Fast websites and local search help for small businesses so you show up on Google and get more calls."
 layout: "flowbite"
 url: "/"
 schema:
@@ -30,7 +30,7 @@ schema:
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Website Design & Local SEO for Small Businesses {.text-white}
-Professional business websites with powerful local SEO
+Fast business websites with local search help
 {.text-white}
 {{<button url="/services/website-design" text="Website Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
 {{< /hero >}}
@@ -43,17 +43,17 @@ Professional business websites with powerful local SEO
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Clear Presence ✅
 
-### 1. Focus on Results
-Beautiful design with a strategic marketing focus. Pages are built with a marketing focus. Once your website is live, you will receive monthly analytic reports telling you how many visitors your site had, which pages they visited, how they found your website, and where they are located.
+### 1. Built for Results
+Nice design plus clear wording. After launch you get simple monthly visitor reports showing how people found you and which pages they viewed.
 
 ### 2. Custom Built
-Websites automatically change between light and dark mode based on the viewers device preferences allowing you please everyone. Websites are completely custom built which means faster page loads without the bloat, cleaner design, and greater flexibility to grow with your business.
+Light and dark mode follows the visitor’s device. Custom build means fast load without bloat, clean design, and room to grow.
 
-### 3. Long-Term Support
-Receive updates as long as you remain a customer. Your website evolves with your business and you can receive support in the way that best fits your needs (calls, email, texts, or meetings).
+### 3. Ongoing Support
+Unlimited updates while you’re a customer. Get help by call, text, email, or meeting.
 
-### 4. Low Monthly Costs
-You get a high performance website without the high risk. There is no lock-in contract. The low monthly cost keeps Clear Presence continuously committed to your needs.
+### 4. Low Monthly Cost
+No contract. Low monthly price keeps support responsive.
 
 
 {{< /col >}}
@@ -62,17 +62,17 @@ You get a high performance website without the high risk. There is no lock-in co
 
 ## Other Companies ❌
 
-### 1. Focus on Aesthetics
-Other web design companies focus on aesthetics. If your site looks nice they have done their job. They take their high costs upfront and then leave or offer limited updates. Many businesses come away frustrated after realizing that their beautiful website will bring zero customers without marketing.
+### 1. Looks Only
+Many focus only on visuals. A pretty site without marketing or clear contact options brings few leads.
 
-### 2. Built with Templates
-No light and dark mode. Built with bloated templates that often load slowly, limit functionality, and limit design changes.
+### 2. Bloated Templates
+Cookie‑cutter templates can load slow and limit changes.
 
-### 3. No Long-term Support
-Websites are meant to evolve with your company but many website designers build your website and then turn it over to you. If they do over a maintence package they often limit edits and provide limited forms of communication.
+### 3. Little Ongoing Help
+Many hand off the site and limit edits or ways to reach them.
 
-### 4. High Upfront Costs
-Most web designers require high costs upfront before they will build your website. If you don't like the level of service they provide or the website you are stuck.
+### 4. High Upfront Fee
+Large build fees create risk if service disappoints.
 
 {{< /col >}}
 
@@ -99,7 +99,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 ## Website Design
 
-Use the color selector to test out 2 colors for your website and learn how to get started with a custom website designed to help you find leads.
+Try out colors and see how to start with a custom site built to bring in leads.
 
 {{<button text="Website Design" url="/services/website-design" >}}
 
@@ -109,9 +109,9 @@ Use the color selector to test out 2 colors for your website and learn how to ge
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## SEO Marketing
+## Local SEO
 
-Discover the full range of solutions for local businesses.  we offer, from start-to-finish projects to specialized consulting. See how our expertise can directly benefit your goals.
+See services that help local customers find you on search and maps.
 
 {{<button text="Local SEO" url="/services/local-seo">}}
 
@@ -121,7 +121,7 @@ Discover the full range of solutions for local businesses.  we offer, from start
 
 ## Portfolio
 
-Explore our best work and see real examples of the results we've delivered for clients like you. Witness the quality and impact of our projects firsthand.
+Browse examples of client websites.
 
 {{<button text="Portfolio" url="/portfolio">}}
 
@@ -131,7 +131,7 @@ Explore our best work and see real examples of the results we've delivered for c
 
 ## Pricing
 
-Find transparent details on all our plans, packages, and custom options. Get an instant idea of the investment required to achieve your desired outcome.
+See plan options and monthly cost.
 
 
 {{<button text="Pricing" url="/pricing">}}
@@ -142,7 +142,7 @@ Find transparent details on all our plans, packages, and custom options. Get an 
 
 ## About
 
-Learn our story, meet the team, and understand the core values that drive our work. Find out why we're the trusted partner for businesses across the industry.
+Learn the story and approach behind Clear Presence.
 
 {{<button text="About" url="/about">}}
 
@@ -154,7 +154,7 @@ Learn our story, meet the team, and understand the core values that drive our wo
 
 ## Contact
 
-Ready to start a project or just have a few questions? Reach out to us directly to schedule a demo or get personalized support.
+Reach out with questions or to start a project.
 
 {{<button text="Contact" url="/contact">}}
 

@@ -7,7 +7,7 @@ schema:
   service:
     enabled: true
     serviceType: "Website Design"
-    description: "Custom, fast, conversion-focused business websites built for performance and leads."
+    description: "Custom, fast business websites built to bring in leads."
     areaServed: "United States"
     offers:
       - "@type": "Offer"
@@ -35,11 +35,11 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 
 ## Why choose this approach
 
-- Loads fast on mobile and Core Web Vitals–friendly
-- Clear, conversion‑focused page structure and copy
+- Loads fast on phones and computers
+- Clear page structure and wording that helps visitors contact you
 - Lightweight, custom build—no bloated templates
 - Easy updates and ongoing support
-- Analytics and call tracking ready
+- Set up for tracking calls and visits
 
 ## Featured work
 
@@ -100,11 +100,11 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 ## What you get
 
 - Custom design and build (no templates)
-- On‑page SEO setup (titles, meta, schema, internal links)
+- Basic SEO setup (page titles, descriptions, internal links)
 - Performance optimization and image handling
-- Forms, spam protection, analytics
+- Forms with spam protection and tracking
 - Hosting/CDN and SSL included
-- Accessibility and mobile‑first best practices
+- Accessible and phone‑friendly
 - Training and friendly support
 
 
@@ -113,11 +113,11 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 
 ## How it works
 
-1. Discovery — goals, audience, and sitemap
-2. Design — content structure, look & feel, and copy guidance
+1. Discovery — goals, audience, and pages list
+2. Design — layout, look, and writing guidance
 3. Build — fast, accessible pages with no bloat
-4. Launch — tracking, QA, and go‑live checklist
-5. Grow — updates, pages, and reporting as you scale
+4. Launch — tracking, final checks, and go‑live list
+5. Grow — updates, new pages, and simple reports
 
 
 
