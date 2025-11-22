@@ -148,7 +148,7 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 {.w-40 .mb-4}
 I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
-Share a bit about your business and goals.
+### Share a bit about your business and goals.
 
 {{< contact-form
   id="contact1"
