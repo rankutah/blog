@@ -86,31 +86,30 @@ params:
 })();
 </script>
 
-## Why this page
-Searching for **website design in Utah**? You want a site that looks good and helps you get calls, bookings, and messages. I build fast, lean sites without heavy templates or long, costly rebuilds.
+# Website Design in Utah
+Get a website that brings you more calls, quotes, and bookings—not just a pretty homepage. You’ll get a fast, phone‑friendly site built for local search with clear call and text buttons plus ongoing help by call, text, or email whenever you need it.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### What You Get
-- Custom design (not a generic template)
-- Clear page layout that helps visitors call or message you
-- Fast on phones and computers
-- Basic search setup so people can find you
+- Custom design
+- Clear page layout
+- Fast loading on phones and computers
+- Optimized search setup
 - Clean images that load quickly
-- Contact forms with spam protection and simple visitor tracking
-- Ongoing updates and support month to month
+- Contact forms with visitor tracking
+- Spam protection
+- Ongoing updates and support
 
 ### Built For Results
-Easy “Call” and “Text” buttons, fast load on phones, and content arranged so Utah customers quickly see what you offer.
+Easy contact buttons, quick loading pages, and content clearly arranged.
 
 {{< button url="/pricing" text="Pricing" >}}
-{{< button url="/portfolio" text="Portfolio" >}}
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-### Featured Work (Snapshot)
-Below are a few custom builds (performance + conversion focus).
+### Featured Work &nbsp; &nbsp; &nbsp; {{< button url="/portfolio" text="Portfolio" >}}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
@@ -138,7 +137,7 @@ Below are a few custom builds (performance + conversion focus).
 
 {{< /cols >}}
 
-## Reviews & Trust
+## What Customers are Saying
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
@@ -147,9 +146,9 @@ Below are a few custom builds (performance + conversion focus).
 ## Ready To Get Started
 ![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
-I was born in St. George, Utah and now live in Orem with my wife and three daughters. I love partnering with business owners—building fast custom websites that turn visits into calls, bookings, and messages.
+I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
-Share a bit about your business and goals. I’ll reply personally.
+Share a bit about your business and goals.
 
 {{< contact-form
   id="contact1"
@@ -168,7 +167,7 @@ Share a bit about your business and goals. I’ll reply personally.
 {{< /col >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-## Process (Simple & Fast)
+## How it Works
 1. Chat – your goals and who you serve
 2. Plan – page list and outline
 3. Design – look and words
@@ -179,16 +178,13 @@ Share a bit about your business and goals. I’ll reply personally.
 ## FAQ
 {{< faqs >}}
 ### How long does a custom site take?
-Typical turnaround is 2–3 weeks once content is ready. Faster sprints are possible for lean builds.
+Sites can usually be done in 2–3 weeks with good coordination.
 
-### Do you handle hosting & SSL?
-Yes. Managed hosting, CDN, automatic SSL, and performance tuning are all included.
+### Do you handle hosting & the website url name?
+Yes. Managed hosting and your website name is included.
 
-### Is there a big upfront fee?
-No large upfront fee. Simple monthly subscription that includes domain renewals, hosting, and unlimited updates to your site.
-
-### What about Local Search Engine Optimization (SEO)?
-Basic search setup (titles, descriptions, fast load) is included. Extra local SEO—business listings, Google Business Profile help, reviews—is available separately.
+### Are there upfront fees?
+No, there is one simply monthly subscription that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
 
 ### Are content updates really unlimited?
 Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
