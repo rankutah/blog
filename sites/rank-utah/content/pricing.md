@@ -122,8 +122,8 @@ No further charges after cancellation. The site stays online through the current
 ### Do you charge setup fees?
 No. Setup is included in your monthly price.
 
-### What does “unlimited content updates” include?
-No hard cap. Requests typical of a small‑business website are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Blog posts you provide are published as well.
+### What does “ongoing updates and support” include?
+Requests typical of a small‑business website are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Blog posts you provide are published as well.
 
 Included examples:
 - Update text, photos, hours, services, menus, pricing, or FAQs
