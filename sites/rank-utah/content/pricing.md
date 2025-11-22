@@ -82,7 +82,7 @@ This package does not include a business website.
 
 {{< plan_price old="$348" price="299" per="mo" sr="$299 per month bundle (was $348)" >}}
 
-*Bundle both to maximize visibility and save.*
+*Bundle your website with local SEO to maximize visibility and save $49/mo.*
 
 - Custom website design
 - Fast, secure hosting
