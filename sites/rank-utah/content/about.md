@@ -14,7 +14,7 @@ Many owners are surprised when a nice looking site brings few leads. Clear Prese
 
 I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
-My mission is to bring you customers. I invest in improving web design and local search skills and tools. Communication is open—reach out anytime by text, phone, email, or meeting. Clients get simple monthly visitor reports and are never locked into a contract. 
+My mission is to bring you customers. I invest in improving web design and local search skills and tools. Communication is open—reach out anytime by text, phone, email, or meeting. Clients get simple monthly visitor reports and are never locked into a contract.
 
 
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
@@ -25,10 +25,6 @@ Web Design Developer & Local SEO Specialist <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
-
-
-
-
 
 ## Areas
 

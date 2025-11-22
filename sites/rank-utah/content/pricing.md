@@ -29,11 +29,6 @@ schema:
 Simple monthly pricing. No contracts. No surprises.
 {.center}
 
-
-
-
-
-
 {{< cols min="18rem" gap="1rem" v="stretch">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
@@ -46,11 +41,12 @@ Simple monthly pricing. No contracts. No surprises.
 
 *Get a fast website custom built for your business.*
 
+- Custom design
 - Fast, secure hosting
 - Domain & yearly renewals
-- Unlimited content updates
 - Mobile-Friendly Design
 - Monthly visitor reports
+- Ongoing updates and support
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
 {{< /col >}}

@@ -86,8 +86,8 @@ params:
 })();
 </script>
 
-# Website Design in Utah
-Get a website that brings you more calls, quotes, and bookings—not just a pretty homepage. You’ll get a fast, phone‑friendly site built for local search with clear call and text buttons plus ongoing help by call, text, or email whenever you need it.
+## Website Design in Utah
+Get a website that brings you more calls, quotes, and bookings. You’ll get a fast, phone‑friendly site built for local search with clear call and text buttons plus ongoing help by call, text, or email whenever you need it.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
