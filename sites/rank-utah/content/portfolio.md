@@ -30,7 +30,7 @@ url: "/portfolio"
 
 ![](../media/website-design-cedar-city-strength.avif)
 
-In progress. Releasing soon.
+In progress. Coming soon.
 
 {{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}}
 
@@ -82,7 +82,9 @@ In progress. Releasing soon.
 
 ![](/media/nova-gutter-hero.avif)
 
-Just Released!
+**Davi Souza** <br>
+{{< stars >}} <br>
+
 
 {{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
 
@@ -123,9 +125,9 @@ Just Released!
 
 ## Dentistry
 
-![](/media/website-rod-maxfield-dds.avif)
+![](/media/rodmaxfieddds-hero.avif)
 
-In Progress
+In Progress. Coming soon.
 
 {{< /col >}}
 
