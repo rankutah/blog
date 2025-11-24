@@ -12,9 +12,6 @@ url: "/portfolio/blue-ridge-abbey"
 Tests were conducted and can be verified using Google's Page Speed Insights tool https://pagespeed.web.dev/. Competitors were found using Google Maps and searching for "Bed & Breakfast" near the client's location.
 
 
-
-
-
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="false" y="start" >}}
