@@ -1,0 +1,142 @@
+{{/*
+Lazy YouTube embed with thumbnail image and play button.
+Usage:
+{{< lazy-youtube id="VIDEO_ID" img="/path/to/thumbnail.jpg" alt="Thumbnail alt text" class="optional-extra-classes" >}}
+  (optional inner markdown/HTML for overlay content: headings, buttons, etc.)
+{{< /lazy-youtube >}}
+*/}}
+{{ $page := .Page }}
+{{ $id := .Get "id" }}
+{{ $img := .Get "img" }}
+{{ $alt := .Get "alt" }}
+{{ $class := .Get "class" }}
+{{ $mute := .Get "mute" | default "true" }}
+{{ $inner := $page.RenderString (dict "markup" "goldmark" "renderShortcodes" true) .Inner }}
+{{ if not $id }}{{ errorf "lazy-youtube shortcode: missing id param" }}{{ end }}
+{{ if not $img }}{{ errorf "lazy-youtube shortcode: missing img param" }}{{ end }}
+<div class="section hero bleed">
+  <style data-lazy-youtube-css>
+    [data-lazy-youtube-wrapper]{position:relative;}
+    [data-lazy-youtube-target]{position:relative!important;}
+    [data-lazy-youtube-target] picture,[data-lazy-youtube-target] picture img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;}
+    [data-lazy-youtube-overlay]{position:absolute!important;inset:0!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;}
+  </style>
+  <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen isolate group {{$class}}" data-lazy-youtube-wrapper>
+    <div class="relative w-full overflow-hidden" style="min-height:100vh;min-height:100svh;height:100vh;height:100svh" data-lazy-youtube-target>
+      <picture>
+        <img src="{{$img}}" alt="{{$alt}}" class="h-full w-full object-cover" loading="eager" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="absolute inset-0 bg-black/40 transition-opacity group-hover:bg-black/50"></div>
+      <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 gap-4" data-lazy-youtube-overlay>
+        <div class="mx-auto max-w-7xl px-8 w-full">
+          <div class="prose prose-zinc max-w-none dark:prose-invert">
+            {{ $inner }}
+          </div>
+        </div>
+        <div class="mt-6 flex items-center justify-center">
+          <button type="button" class="inline-flex items-center justify-center rounded-full bg-white/5 hover:bg-white/15 focus:outline-none focus:ring-4 focus:ring-white/30 transition h-20 w-20" data-lazy-youtube-play aria-label="Play video" title="Play video">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
+              <path d="M66.52 7.74a8 8 0 0 0-5.64-5.66C56.73 1 34 1 34 1s-22.73 0-26.88 1.08A8 8 0 0 0 1.48 7.74 83.3 83.3 0 0 0 .4 24a83.3 83.3 0 0 0 1.08 16.26 8 8 0 0 0 5.64 5.66C11.27 47 34 47 34 47s22.73 0 26.88-1.08a8 8 0 0 0 5.64-5.66A83.3 83.3 0 0 0 67.6 24a83.3 83.3 0 0 0-1.08-16.26Z" fill="#ff0000"/>
+              <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var root=document.currentScript.previousElementSibling; // wrapper div
+  if(!root) return;
+  var btn=root.querySelector('[data-lazy-youtube-play]');
+  var target=root.querySelector('[data-lazy-youtube-target]');
+  if(!btn||!target) return;
+  // Avoid nested quotes: output plain string literal
+  var videoId='{{$id}}';
+  var shouldMute={{ if eq (lower $mute) "false" }}false{{ else }}true{{ end }};
+  function fitCover(iframe){
+    try{
+      var cw=target.clientWidth||window.innerWidth;
+      var ch=target.clientHeight||window.innerHeight;
+      var r=16/9;
+      var cr=cw/ch;
+      if(cr>r){
+        // container wider → match width, expand height
+        iframe.style.width=cw+'px';
+        iframe.style.height=(cw/r)+'px';
+      } else {
+        // container taller → match height, expand width
+        iframe.style.height=ch+'px';
+        iframe.style.width=(ch*r)+'px';
+      }
+      iframe.style.position='absolute';
+      iframe.style.top='50%';
+      iframe.style.left='50%';
+      iframe.style.transform='translate(-50%,-50%)';
+    }catch(e){}
+  }
+  function load(){
+    // Prevent double load
+    if(target.getAttribute('data-loaded')) return;
+    target.setAttribute('data-loaded','true');
+    // Build iframe
+    var iframe=document.createElement('iframe');
+    iframe.setAttribute('allowfullscreen','');
+    iframe.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    iframe.setAttribute('loading','lazy');
+    iframe.setAttribute('title','YouTube video player');
+    iframe.className='';
+    var origin=window.location && window.location.origin ? encodeURIComponent(window.location.origin) : '';
+    iframe.src='https://www.youtube-nocookie.com/embed/'+videoId+'?autoplay=1&rel=0&playsinline=1&enablejsapi=1&modestbranding=1'+(origin?('&origin='+origin):'');
+    iframe.setAttribute('frameborder','0');
+    // Remove only the thumbnail <picture> and the play button container; keep shade + overlay text
+    var toRemove=[];
+    Array.prototype.forEach.call(target.children,function(child){
+      if(child.tagName==='PICTURE') { toRemove.push(child); return; }
+      // Remove containers holding the play button ONLY if they are not the overlay itself
+      if(child.querySelector && child.querySelector('[data-lazy-youtube-play]') && !child.hasAttribute('data-lazy-youtube-overlay')) { toRemove.push(child); return; }
+    });
+    toRemove.forEach(function(el){ try{ target.removeChild(el); }catch(e){} });
+    // Insert iframe at beginning
+    target.insertBefore(iframe, target.firstChild);
+    // Hide overlay + shade when playing
+    var overlay=root.querySelector('[data-lazy-youtube-overlay]');
+    var shade=null;
+    // Find shade layer (has bg-black/40 class). Use a contains selector.
+    Array.prototype.forEach.call(target.children,function(ch){
+      if(!shade && ch.className && ch.className.indexOf('bg-black/40')!==-1) shade=ch;
+    });
+    if(overlay){
+      overlay.style.transition='opacity .4s ease';
+      overlay.style.opacity='0';
+      setTimeout(function(){ try{ overlay.remove(); }catch(e){} },450);
+    }
+    if(shade){
+      shade.style.transition='opacity .4s ease';
+      shade.style.opacity='0';
+      setTimeout(function(){ try{ shade.remove(); }catch(e){} },450);
+    }
+    fitCover(iframe);
+    window.addEventListener('resize', function(){ fitCover(iframe); });
+    // Try to start playback via JS API immediately after load (some browsers require this even after a click)
+    iframe.addEventListener('load', function(){
+      try{
+        if(shouldMute){
+          iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'mute',args:[]}), '*');
+        }
+        iframe.contentWindow.postMessage(JSON.stringify({event:'command',func:'playVideo',args:[]}), '*');
+      }catch(e){}
+    });
+    if(window.gtag){
+      try{ window.gtag('event','video_play',{event_category:'engagement',event_label:videoId,transport_type:'beacon'}); }catch(e){}
+    }
+  }
+  btn.addEventListener('click', load, { once:true });
+  // Optional: keyboard accessibility (Enter/Space)
+  btn.addEventListener('keydown', function(e){
+    if(e.key==='Enter' || e.key===' '){ e.preventDefault(); load(); }
+  });
+})();
+</script>

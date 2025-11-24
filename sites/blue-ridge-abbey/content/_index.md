@@ -5,6 +5,13 @@ layout: "flowbite"
 url: "/"
 ---
 
+{{< lazy-youtube id="OUIuHHxdLWI" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" mute="false" >}}
+# Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
+Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
+{.text-white}
+
+{{< /lazy-youtube >}}
+
 {{< hero img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
@@ -76,19 +83,14 @@ Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens a
 
 
 
-<br>
 
 {{< cols min="18rem" gap="2rem" v="start" order="reverse">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-
 {{< video src="blue-ridge-abbey-natural-bridge-wedding.mp4" preload="metadata" loop="true" class="rounded-lg shadow" >}}
-
-
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
 ## About Blue Ridge Abbey
 
 Step into quiet comfort of Blue Ridge Abbey Bed & Breakfast, a beautifully restored Queen Anne-style home in Buena Vista, Virginia.
