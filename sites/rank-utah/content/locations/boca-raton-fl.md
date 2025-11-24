@@ -29,7 +29,7 @@ Custom websites and local SEO for Palm Beach County businesses.
 
 Nova Gutter needed a fast, modern site to showcase residential and commercial gutter services and drive more calls. The site is custom-built with extremely fast load times, mobile‑friendly design, and clear calls‑to‑action.
 
-![Nova Gutter website preview](/media/website-nova-gutter.avif)
+![Nova Gutter website preview](/media/nova-gutter-hero.avif)
 
 {{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
 

@@ -4,13 +4,7 @@ layout: "flowbite"
 url: "/portfolio"
 ---
 
-
-
 # Website Portfolio
-
-
-
-
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -18,7 +12,7 @@ url: "/portfolio"
 
 ## Quartz Worx
 
-![](../media/website-design-quartz-worx.avif)
+![](/media/website-design-quartz-worx.avif)
 
 
 **Darin Hinton** <br>
@@ -52,7 +46,7 @@ In progress. Releasing soon.
 
 ## Blue Ridge Abbey
 
-![](../media/website-design-blue-ridge-abbey.jpg)
+![](/media/website-design-blue-ridge-abbey.jpg)
 
 **Daniel De Souza** <br>
 {{<stars>}}<br>
@@ -67,7 +61,7 @@ In progress. Releasing soon.
 
 ## BlueridgeTech
 
-![](../media/website-design-blueridge-tech.avif)
+![](/media/website-design-blueridge-tech.avif)
 
 **Gabriel Antigua** <br>
 {{<stars>}}<br>
@@ -86,7 +80,7 @@ In progress. Releasing soon.
 
 ## Nova Gutter
 
-![](../media/website-nova-gutter.avif)
+![](/media/nova-gutter-hero.avif)
 
 Just Released!
 
@@ -99,7 +93,7 @@ Just Released!
 
 ## Villa Valencia
 
-![](../media/website-villa-valencia.avif)
+![](/media/website-villa-valencia.avif)
 
 **Michelle L.**<br>
 {{<stars>}}<br>
@@ -118,7 +112,7 @@ Just Released!
 
 ## Suggls
 
-![](../media/website-suggls.avif)
+![](/media/website-suggls.avif)
 
 {{< button url="https://suggls.com/" text="Visit Suggls" newtab="true" >}}
 
@@ -129,7 +123,7 @@ Just Released!
 
 ## Dentistry
 
-![](../media/website-rod-maxfield-dds.avif)
+![](/media/website-rod-maxfield-dds.avif)
 
 In Progress
 
