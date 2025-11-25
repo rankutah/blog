@@ -4,7 +4,7 @@ description: "Searching for a hotel in Buena Vista, Virginia? Come stay at the B
 layout: "flowbite"
 url: "/"
 ---
-<!-- 
+<!--
 {{< lazy-youtube id="OUIuHHxdLWI" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" mute="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
@@ -91,28 +91,6 @@ Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens a
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-## About Blue Ridge Abbey
-
-Step into quiet comfort of Blue Ridge Abbey Bed & Breakfast, a beautifully restored Queen Anne-style home in Buena Vista, Virginia.
-Just minutes from the Blue Ridge Parkway, Natural Bridge, Safari Park, and historic downtown Lexington, our bed and breakfast blends vintage elegance with modern comfort. Enjoy an unforgettable Blue Ridge Mountain getaway.
-
-The Blue Ridge Abbey has stood as a welcoming presence in Buena Vista for well over a century. Originally known as the Jordan House, this beautiful home has been a part of the town’s story since its earliest days. Some records date its construction to 1898, while local stories consistently suggest it may have been completed in 1903.
-
-Whichever date is true, one thing is certain: this home is a cherished piece of Buena Vista’s history and heart.
-Built by Charles Francis Jordan Jr., the son of a respected war veteran, adaptive businessman, trusted leader, and honored statesman, the Jordan House was created to be a gathering place in the community. Improvements to the house, including the iconic wrap-around porch and the Carriage House, were added in the mid-1900s as the needs of the family and community expanded. Ms. Mabelle Jordan, daughter of the builders, witnessed its construction as a child and lived here until she passed away in 1998 at age 104. The property then passed to the Wilhelms, who loved, maintained, and perpetuated the significance of this landmark building until it was purchased by the current owners.
-As we’ve restored this home and opened it once more to guests, we have been delighted to hear so many stories from local residents of events, celebrations, and significant moments shared here over the years. We are careful to preserve the original quality while updating and renovating it to meet the highest standards of comfort, quality, and decor, and we are excited to welcome you to stay and take part in the next chapter in the story of this historic home!
-
-{{< /col >}}
-
-{{< /cols >}}
-
-
-
-
-{{< cols min="18rem" gap="2rem" v="start">}}
-
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-
 ## Nearby Adventures
 
 {{< table headers="Adventures|Distance" delim="|" >}}
@@ -129,10 +107,6 @@ As we’ve restored this home and opened it once more to guests, we have been de
 [Water Falls](https://www.google.com/maps/dir/Blue+Ridge+Abbey+Bed+%26+Breakfast,+Chestnut+Avenue,+Buena+Vista,+VA/Yankee+Horse+Ridge+Trailhead+to+Wigwam+Falls,+Blue+Ridge+Parkway,+Montebello,+VA/Statons+Creek+Falls,+Virginia/Panther+Falls,+Virginia+24521/White+Rock+Falls+Trailhead,+Blue+Ridge+Parkway,+Vesuvius,+VA/Gibbs+Falls,+Virginia/Otter+Lake+Waterfalls,+Monroe,+VA/Apple+Orchard+Falls+Trailhead,+Blue+Ridge+Parkway,+Buchanan,+VA/@37.7339042,-79.6140743,161103m/data=!3m2!1e3!4b1!4m50!4m49!1m5!1m1!1s0x89b3339247dfb61b:0xd6579b582fffe67a!2m2!1d-79.3518583!2d37.7335257!1m5!1m1!1s0x89b3380d0449eb29:0x720e273427c47524!2m2!1d-79.1798019!2d37.8093077!1m5!1m1!1s0x89b336e2f623d57b:0xa0c6495827f8f8c4!2m2!1d-79.2469767!2d37.7687454!1m5!1m1!1s0x89b3317de0f6cc8d:0xc289ff530b0a365d!2m2!1d-79.2889216!2d37.7070794!1m5!1m1!1s0x89b3434596fbef7d:0x5feebb79bcd4da2b!2m2!1d-79.0447325!2d37.8958272!1m5!1m1!1s0x89b34e8b3db6a86f:0xa0c3dab740003c68!2m2!1d-79.2689225!2d37.9481874!1m5!1m1!1s0x89b32b3e1f7897e9:0xbb9acd1d8596ff4c!2m2!1d-79.3579991!2d37.5565984!1m5!1m1!1s0x884d2828d7ede29b:0xbfc335d867f8430f!2m2!1d-79.5241231!2d37.5078195!3e0?entry=ttu&g_ep=EgoyMDI1MDYyOS4wIKXMDSoASAFQAw%3D%3D)|Various
 {{< /table >}}
 
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
 ## Nearby Restaurants
 
 {{< table headers="Restaurants|Distance" delim="|" >}}
@@ -145,11 +119,9 @@ As we’ve restored this home and opened it once more to guests, we have been de
 [Hardens](https://www.facebook.com/p/Hardens-Lexington-61555661081645/)|15 min
 [Blue Sky Bakery](https://www.blueskybakeryandskybar.com/)|15 min
 {{< /table >}}
-
-
 {{< /col >}}
 
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< /cols >}}
 
 ## Explore Buena Vista
 A guide to the top scenic drives, hikes, orchards, and photo spots for peak color near Blue Ridge Abbey. <br><br>
@@ -157,11 +129,6 @@ A guide to the top scenic drives, hikes, orchards, and photo spots for peak colo
 
 Holiday magic near Buena Vista, VA: drive-thru lights at Glen Maury, Natural Bridge trees, parades, concerts & shop-small fun. Plan a Blue Ridge getaway. <br><br>
 {{< button url="/blog/holiday-magic-in-the-blue-ridge" text="Blue Ridge Holiday Magic" >}}
-
-{{< /col >}}
-
-
-{{< /cols >}}
 
 
 ## FAQs
