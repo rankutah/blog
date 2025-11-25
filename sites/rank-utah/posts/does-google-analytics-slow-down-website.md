@@ -12,9 +12,9 @@ Google Analytics is heavy and will slow down your website. I have proven this fo
 
 The free script below solves the problem. It works by delaying Google Analytics from loading until the user interacts with the site by touching the screen (on a phone or tablet) or scrolling (on desktop). If none of this happens it waits 4 seconds and then execute.
 
-The one downside of this script is that you will not capture users data for users who land on your site and drop within 4 seconds without interacting in any way. This is a small cost when considering that page load speed is one of the biggest factors in causing users to drop off in the first place. My tests show this script to improve most websites load times by at least a half a second and I use if for all of my sites. 
+The one downside of this script is that you will not capture users data for users who land on your site and drop within 4 seconds without interacting in any way. This is a small cost when considering that page load speed is one of the biggest factors in causing users to drop off in the first place. My tests show this script to improve most websites load times by at least a half a second and I use if for all of my sites.
 
-To use the script simply replace the Google Analytics ID with your own Google Analytics ID. Try it for yourself and then use [PageSpeed Insights](https://pagespeed.web.dev/) to test the difference. If it helps you out please share it online with others. 
+To use the script simply replace the Google Analytics ID with your own Google Analytics ID. Try it for yourself and then use [PageSpeed Insights](https://pagespeed.web.dev/) to test the difference. If it helps you out please share it online with others.
 
 If you would like help with SEO or Web Design, you can contact me at [ClearPresence.io](https://clearpresence.io/)
 

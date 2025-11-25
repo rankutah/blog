@@ -11,7 +11,7 @@ If you are a small business interested in link building services you can contact
 
 ## How Link Building in Utah Works
 
-Link building (aka backlink building) increases the authority of your web pages. In local SEO, Google uses authority, [relevance](https://blog.rankutah.com/utah-on-page-search-engine-optimization/), and proximity to determine which websites show up at the top of organic results. Google confirms that authority is page-based, not site-based. This means a backlink won't boost every page on your site, only the authority of the specific page linked to. However, you can use that page's increased authority to increase the authority of other pages through internal linking. White-hat link building tactics are tactics focused on getting links in a natural way (not paying for links irrelevant to your business or using link network schemes). 
+Link building (aka backlink building) increases the authority of your web pages. In local SEO, Google uses authority, [relevance](https://blog.rankutah.com/utah-on-page-search-engine-optimization/), and proximity to determine which websites show up at the top of organic results. Google confirms that authority is page-based, not site-based. This means a backlink won't boost every page on your site, only the authority of the specific page linked to. However, you can use that page's increased authority to increase the authority of other pages through internal linking. White-hat link building tactics are tactics focused on getting links in a natural way (not paying for links irrelevant to your business or using link network schemes).
 
 ## The Importance of Backlinks for Utah Local SEO
 
@@ -23,7 +23,7 @@ Source: Percentages are based on the average percentages given by ChatGPT (o4-mi
 
 ## Why Local Links Matter for Utah Local SEO
 
-For local searches Google provides local results. Goole's goal is to provide the most relevant results for your search. Links from local businesses and organizations within your community show your web page is an authority, for the keywords it covers, within your community. 
+For local searches Google provides local results. Goole's goal is to provide the most relevant results for your search. Links from local businesses and organizations within your community show your web page is an authority, for the keywords it covers, within your community.
 
 ## Clear Presence Link Building Services
 
@@ -33,7 +33,7 @@ Rank Utah uses a simple white-hat strategy to help small businesses in Utah acqu
 
 ### Creating High Quality Content to Build Links
 
-One of the most effective link building strategies is create content that people find useful and naturally want to to link to. This can be done by using SEO keyword research tools to determine what your customers are searching for and what keywords are easy to rank for. You can learn learn more about keyword research in the article [On-Page SEO Strategy](on-page-seo-strategy-utah.md). With this in place, your website is then built and aligned with what your customers are looking for.    
+One of the most effective link building strategies is create content that people find useful and naturally want to to link to. This can be done by using SEO keyword research tools to determine what your customers are searching for and what keywords are easy to rank for. You can learn learn more about keyword research in the article [On-Page SEO Strategy](on-page-seo-strategy-utah.md). With this in place, your website is then built and aligned with what your customers are looking for.
 ### Utah Business Blogs
 
 Rank Utah also provides you with other optional tools to help you acquire local backlinks. One of these is a custom business blog with keyword-driven topic lists backed by keyword research customized for your area of business so you can write posts that align with customer search intent and drive traffic, boost SEO, and position yourself as a local authority. This business blog enables you to easily tag your posts, search all posts, has a light and dark mode that is auto-set based on the users device settings, and comes with a CMS that has simple directions helping  you use local SEO best practices. The blog you are on now has the same look, feel, and performance, as the blog you would receive.
@@ -42,7 +42,7 @@ Rank Utah also provides you with other optional tools to help you acquire local 
 
 ### Utah Competitor Analysis
 
-Rank Utah can also provide you with an analysis of your competitors and the backlinks they have in common. This allows you to even the playing field by acquiring the same backlinks your competitors share. The example below is from a customer running a local bed and breakfast. In the intersect column you can see how many of their competitors are on particular sites where they are not listed. This can give you a good idea of how easy it is to get a link from a particular website. The domain traffic and rating help you determine which sites will bring the biggest benefit. 
+Rank Utah can also provide you with an analysis of your competitors and the backlinks they have in common. This allows you to even the playing field by acquiring the same backlinks your competitors share. The example below is from a customer running a local bed and breakfast. In the intersect column you can see how many of their competitors are on particular sites where they are not listed. This can give you a good idea of how easy it is to get a link from a particular website. The domain traffic and rating help you determine which sites will bring the biggest benefit.
 
 ![Google Spreadsheet showing how to use competitor's links in a link building strategy](/media/competitor%20backlink%20analysis.jpg)
 
@@ -58,7 +58,7 @@ Sponsoring local events often provides you with a link to your website and great
 
 ### Partnerships
 
-Consider who would naturally make referrals to your business and ask them if they will link to your website in exchange for something you can offer. The places where you would get the traffic you want for your website are the most natural and beneficial places to get a backlink. Think about websites where your customers would be found and partner with those companies. 
+Consider who would naturally make referrals to your business and ask them if they will link to your website in exchange for something you can offer. The places where you would get the traffic you want for your website are the most natural and beneficial places to get a backlink. Think about websites where your customers would be found and partner with those companies.
 
 ## Reach Out
 

@@ -10,7 +10,7 @@ If you would like affordable help with your on-page SEO please visit [Clear Pres
 
 ## The #1 Most Overlooked Techniques in On-Page SEO Strategy is Keyword Research
 
-If your website is not aligned with what your customers are searching for you won't even show up in the search results. The basis of keyword research is finding keywords with high search volume and low competition so you can rank high for those searches. Professional tools give you the best results and Clear Presence uses industry‑leading tools to give you the best results. 
+If your website is not aligned with what your customers are searching for you won't even show up in the search results. The basis of keyword research is finding keywords with high search volume and low competition so you can rank high for those searches. Professional tools give you the best results and Clear Presence uses industry‑leading tools to give you the best results.
 
 ## Title Tag
 
@@ -34,7 +34,7 @@ Your H1 and H2 and H3 headings have a large impact on your SEO and you want to u
 
 ## Image Optimization
 
-The images for your Utah business should be compressed and optimally use modern formats like AVIF or WebP. Images are one of the largest determinants of your page loading speed. Every image on your page will be downloaded by the browser of the device visiting that page. Ideally you want your images to be less than 150 KB in size. 
+The images for your Utah business should be compressed and optimally use modern formats like AVIF or WebP. Images are one of the largest determinants of your page loading speed. Every image on your page will be downloaded by the browser of the device visiting that page. Ideally you want your images to be less than 150 KB in size.
 
 ### Image Keywords
 
@@ -53,7 +53,7 @@ The same is true for scripts. Scripts can be edited to delay loading using defer
 setTimeout(loadTrackingScripts, 4000);
 document.addEventListener('scroll', loadTrackingScripts, { once: true });
 document.addEventListener('mousemove', loadTrackingScripts, { once: true });
-document.addEventListener('touchstart', loadTrackingScripts, { once: true }); 
+document.addEventListener('touchstart', loadTrackingScripts, { once: true });
 ```
 
 Enter your page url into [Page Speed Insights](https://pagespeed.web.dev) to test it's page loading speed. In additional to page speed performance, this tool will also give you a score for the accessibility of your site, your use of best practices, and rate your SEO. Helpful tips will be below your scores.

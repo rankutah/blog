@@ -63,7 +63,7 @@ enableRobotsTXT = true
   # Mount posts folder at project root into this site's content tree
   [[module.mounts]]
     source = "posts"
-    target = "content/posts"
+    target = "content/blog"
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "FORMS"]
@@ -154,7 +154,7 @@ enableRobotsTXT = true
   align = "start"
 
 [permalinks]
-  posts = "/:contentbasename"
+  blog = "/blog/:contentbasename"
 
 [menu]
   # Top-level

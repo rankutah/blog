@@ -10,11 +10,11 @@ Clear Presence builds websites that are mobile-friendly and optimized for small 
 ## What are 3 important considerations of a mobile-friendly design in Utah?
 
 1.  Responsive layout
-    
+
 2.  Fast loading
-    
+
 3.  Easy navigation
-    
+
 
 ## 1\. Responsive Layout
 

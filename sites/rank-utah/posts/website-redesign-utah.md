@@ -4,7 +4,7 @@ date: 2025-08-14
 tags:
   - web-design
 ---
-If you would like help with an outdated or slow website and need a mobile-friendly SEO redesign please visit [Clear Presence](https://clearpresence.io).  
+If you would like help with an outdated or slow website and need a mobile-friendly SEO redesign please visit [Clear Presence](https://clearpresence.io).
 
 ## How Does a Website Redesign Work?
 
@@ -27,7 +27,7 @@ If you would like help with an outdated or slow website and need a mobile-friend
 
 I work directly with business owners to create websites that actually work — not just look good. You won’t get passed off to a big agency or left in the dark. I make sure you keep full control of your domain, your content, and your site. Every website I build is designed to be fast, mobile-friendly, and easy to update as your business grows. And unlike one-time designers who disappear after launch, I stick around to keep your site evolving with you — so you never fall behind again.
 
-## Ready to Fix Your Website? 
+## Ready to Fix Your Website?
 
 For [Search Engine Optimization Services](https://clearpresence.io) including website redesign, visit ClearPresence.io.
 

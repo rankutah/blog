@@ -88,9 +88,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     source = "media"
     target = "assets/media"
 
-  [[module.mounts]]
-    source = "posts"
-    target = "content/posts"
+  # Do NOT mount project-root posts into all sites; keep per-site mounts
 
 # noop: rebuild trigger 2025-11-14
 # noop: rebuild trigger 2025-11-14 (2)
