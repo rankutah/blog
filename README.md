@@ -117,3 +117,50 @@ These scripts pass `--config "../../themes/overrides/config.shared.toml,config.t
 - No Go/Hugo Modules required. We removed all module imports and go.mod files.
 - If you later want to use Hugo Modules for config stacking, re-introduce module imports and ensure Go is installed. Until then, the flag-based approach is simpler and reliable.
 - Image processing uses the Markdown image render hook in `themes/overrides/layouts/_default/_markup/render-image.html` to generate AVIF sources.
+
+## Adding a blog to a site
+
+Make future blogs easy without sharing content across sites.
+
+- Per-site mounts (required): In `sites/<site>/config.toml`, mount that site’s own `posts` into its blog section, and also mount local `content` when you define mounts:
+
+  ```toml
+  [[module.mounts]]
+  source = "content"
+  target = "content"
+
+  [[module.mounts]]
+  source = "posts"
+  target = "content/blog"
+  ```
+
+- Shared-safe permalinks: Keep the pattern in `themes/overrides/config.shared.toml` so all blogs use `/blog/:contentbasename` unless overridden locally:
+
+  ```toml
+  [permalinks]
+  blog = "/blog/:contentbasename"
+  ```
+
+- Section index: Add `sites/<site>/content/blog/_index.md`:
+
+  ```md
+  ---
+  title: "Blog"
+  layout: "flowbite"
+  ---
+
+  {{< blog-list section="blog" >}}
+  ```
+
+- Shared archetype: Use the archetype at `themes/overrides/archetypes/blog.md` to scaffold posts consistently:
+
+  ```sh
+  hugo new --source ./sites/<site> blog/my-new-post.md
+  ```
+
+- Navigation: Add a menu item to `/blog/` in the site’s `config.toml` if needed.
+
+What belongs in shared config vs per-site:
+
+- Shared (`themes/overrides/config.shared.toml`): permalink patterns, taxonomies, cascade/layout defaults, shortcodes/partials. These do not share content.
+- Per-site (`sites/<site>/config.toml`): module mounts for `content`, `posts`, `static`, `media`, site params, menus. Keep mounts per-site to prevent any cross-site content leakage.

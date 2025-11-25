@@ -6,11 +6,11 @@ tags:
   - web-design
   - local-seo
 ---
-If you would like affordable help with your on-page SEO please visit [Rank Utah](https://rankutah.com/).
+If you would like affordable help with your on-page SEO please visit [Clear Presence](https://clearpresence.io/).
 
 ## The #1 Most Overlooked Techniques in On-Page SEO Strategy is Keyword Research
 
-If your website is not aligned with what your customers are searching for you won't even show up in the search results. The basis of keyword research is finding keywords with high search volume and low competition so you can rank high for those searches. Professional tools give you the best results and Rank Utah uses the industry leading tools to give you the best results. 
+If your website is not aligned with what your customers are searching for you won't even show up in the search results. The basis of keyword research is finding keywords with high search volume and low competition so you can rank high for those searches. Professional tools give you the best results and Clear Presence uses industry‑leading tools to give you the best results. 
 
 ## Title Tag
 
@@ -70,4 +70,4 @@ Once you have your schema markeup in place you can validate it at [schema.org](h
 
 ## Additional Information
 
-For [Utah Search Engine Optimization Services](https://rankutah.com) including on-page SEO, visit RankUtah.com.
+For [Utah Search Engine Optimization Services](https://clearpresence.io) including on-page SEO, visit ClearPresence.io.

@@ -7,7 +7,7 @@ tags:
   - local-seo
 lastmod: 2025-08-16
 ---
-If you are a small business in Utah interested in link building services you can contact me directly at [RankUtah.com](https://rankutah.com#contact).
+If you are a small business interested in link building services you can contact me directly at [ClearPresence.io](https://clearpresence.io/contact).
 
 ## How Link Building in Utah Works
 
@@ -25,7 +25,7 @@ Source: Percentages are based on the average percentages given by ChatGPT (o4-mi
 
 For local searches Google provides local results. Goole's goal is to provide the most relevant results for your search. Links from local businesses and organizations within your community show your web page is an authority, for the keywords it covers, within your community. 
 
-## Rank Utah's Link Building Services
+## Clear Presence Link Building Services
 
 ### Help Businesses Get Directory Listings (Citations)
 
@@ -62,4 +62,4 @@ Consider who would naturally make referrals to your business and ask them if the
 
 ## Reach Out
 
-If you have a small business in Utah County and are interesting in Rank Utah's link building services, have a question, or want to otherwise connect, visit my website at [RankUtah.com](https://rankutah.com/).
+If you have a small business and are interested in Clear Presence link building services, have a question, or want to otherwise connect, visit [ClearPresence.io](https://clearpresence.io/).

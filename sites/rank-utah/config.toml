@@ -17,7 +17,7 @@ themesDir     = "../../themes"
 # Remove trailing slashes from generated URLs
 trailingSlash = "never"
 cleanDestinationDir = true
-uglyURLs      = true
+uglyURLs      = false
 # Ensure FORMS format is defined locally so outputs.home can use it reliably
 [outputFormats.FORMS]
   mediaType = "application/json"
@@ -26,6 +26,11 @@ uglyURLs      = true
   path = ".well-known"
 
 [module]
+
+  # Ensure the site's own content directory is mounted (required when using module mounts)
+  [[module.mounts]]
+    source = "content"
+    target = "content"
 
   [[module.mounts]]
     source = "static"
@@ -38,6 +43,37 @@ uglyURLs      = true
   [[module.mounts]]
     source = "media"
     target = "static/media"
+
+  # Ensure posts are included as site content
+  [[module.mounts]]
+    source = "posts"
+    target = "content/blog"
+
+# Ensure Flowbite layout is used for home and singles (like novagutter)
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "page"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "home"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "taxonomy"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "taxonomyTerm"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "section"
 
 
 [outputs]
@@ -153,7 +189,7 @@ sameAs = []
 # [params.button_outline]
 
 [permalinks]
-  posts = "/:contentbasename"
+  blog = "/blog/:contentbasename"
 
 [taxonomies]
   tag = "tags"
@@ -189,6 +225,11 @@ sameAs = []
     name   = "Pricing"
     url    = "/pricing"
     weight = 30
+
+  [[menu.main]]
+    name   = "Blog"
+    url    = "/blog/"
+    weight = 35
 
   [[menu.main]]
     name        = "Areas"

@@ -5,13 +5,13 @@
 				 extra = ["Disallow: /private/", "Allow: /"]
 */}}
 User-agent: *
-{{- $cfg := site.Params.robots -}}
+{{ $cfg := site.Params.robots }}
 {{- if and $cfg (isset $cfg "disallowAll") $cfg.disallowAll -}}
 Disallow: /
 {{- else -}}
 Allow: /
 {{- end }}
-Sitemap: {{ (print site.BaseURL "sitemap.xml") | replace "//sitemap" "/sitemap" }}
+Sitemap: {{ "sitemap.xml" | absURL }}
 {{- if and $cfg (isset $cfg "extra") }}
 {{- range $cfg.extra }}
 {{ . }}

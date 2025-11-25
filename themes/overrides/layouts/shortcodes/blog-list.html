@@ -31,7 +31,7 @@ This renders a minimal, single-column list similar to PaperMod:
 {{- $excerpt    := int $excerptStr -}}
 {{- $variant    := lower (.Get "variant" | default "cards") -}}
 
-{{- /* Collect pages from the chosen section */ -}}
+{{- /* Collect pages from the chosen section: prefer site.RegularPages for robustness across mounts */ -}}
 {{- $all := where site.RegularPages "Section" $section -}}
 {{- $all = where $all "Params.draft" "ne" true -}}
 {{- /* Apply tag filter if provided */ -}}

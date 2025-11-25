@@ -5,7 +5,7 @@ title: Off Page Search Engine Optimization in Utah
 tags:
   - local-seo
 ---
-Rank Utah helps small businesses in Utah grow their customers organically by optimizing their website and Google Business Profile for local search engine optimization (SEO). Learn more by visiting [RankUtah.com](https://rankutah.com/).
+Clear Presence helps small businesses grow their customers organically by optimizing their website and Google Business Profile for local search engine optimization (SEO). Learn more by visiting [ClearPresence.io](https://clearpresence.io/).
 
 ## Why Off Page Search Engine Optimization Works for Small Business in Utah
 
@@ -59,4 +59,4 @@ Relevance, prominence, and proximity are the three pillars of local SEO in Utah.
 
 ## Reach Out
 
-Visit Rank Utah for [Utah Search Engine Optimization Services](https://rankutah.com).
+Visit Clear Presence for [Utah Search Engine Optimization Services](https://clearpresence.io).

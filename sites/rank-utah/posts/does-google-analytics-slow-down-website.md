@@ -16,7 +16,7 @@ The one downside of this script is that you will not capture users data for user
 
 To use the script simply replace the Google Analytics ID with your own Google Analytics ID. Try it for yourself and then use [PageSpeed Insights](https://pagespeed.web.dev/) to test the difference. If it helps you out please share it online with others. 
 
-If you would like help with SEO or Web Design, you can contact me at [RankUtah.com.](https://rankutah.com/)
+If you would like help with SEO or Web Design, you can contact me at [ClearPresence.io](https://clearpresence.io/)
 
 For additional tips for improving the speed of your website, scroll to the Image Optimization and Page Speed section of my article on [On-Page SEO](on-page-seo-strategy-utah.md).
 

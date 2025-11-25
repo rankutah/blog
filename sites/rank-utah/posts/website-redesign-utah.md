@@ -4,7 +4,7 @@ date: 2025-08-14
 tags:
   - web-design
 ---
-If you would like help your outdated or slow website and are in need a mobile-friendly SEO redesign please visit [Rank Utah](https://rankutah.com).  
+If you would like help with an outdated or slow website and need a mobile-friendly SEO redesign please visit [Clear Presence](https://clearpresence.io).  
 
 ## How Does a Website Redesign Work?
 
@@ -29,6 +29,6 @@ I work directly with business owners to create websites that actually work — n
 
 ## Ready to Fix Your Website? 
 
-For [Utah Search Engine Optimization Services](https://rankutah.com) including website redesign, visit RankUtah.com.
+For [Search Engine Optimization Services](https://clearpresence.io) including website redesign, visit ClearPresence.io.
 
 Eliminate the stress over your website. I’ll take care of the redesign and long-term updates, so you can focus on what matters most: running and growing your business — not getting stuck fixing your site.

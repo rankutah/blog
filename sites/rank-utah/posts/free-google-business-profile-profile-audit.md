@@ -31,10 +31,10 @@ During your 30-minute review, we'll compare your Google Business Profile to your
 About [75% of people](https://www.statista.com/statistics/1260363/consumers-using-search-engines-to-find-local-business-info/) use Google to find local business information. When someone searches for a service, Google shows a map with the top profiles in that area. These also appear in Google Maps, where many customers start their search. A well-optimized profile helps you show up and get more calls.
 ## Why is This Free?
 
-I offer this free service to help local businesses get a quick win and to introduce you to my SEO work. There's no pressure to start services, but if you find it helpful, you're welcome to leave a review or [start local SEO services or Web Design services](https://rankutah.com) to boost your visibility.
+I offer this free service to help local businesses get a quick win and to introduce you to my SEO work. There's no pressure to start services, but if you find it helpful, you're welcome to leave a review or [start local SEO services or Web Design services](https://clearpresence.io) to boost your visibility.
 
 ## How do I sign up for my free 30-Minute Review?
 
 Schedule your [free 30-minute Google Business Profile Review here](https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment).
 
-For [Utah Search Engine Optimization Services](https://rankutah.com) including on-page SEO, visit RankUtah.com.
+For [Search Engine Optimization Services](https://clearpresence.io) including on-page SEO, visit ClearPresence.io.
