@@ -3,6 +3,7 @@ baseURL       = "https://clearpresence.io/"
 title         = "Clear Presence"
 languageCode  = "en-us"
 themesDir     = "../../themes"
+ # noop: 2025-11-25 ensure shared robots.txt in use
 
 [markup]
   [markup.goldmark]
