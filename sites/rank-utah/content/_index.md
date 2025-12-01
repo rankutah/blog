@@ -89,8 +89,6 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
 
-
-
 ## Quick Links
 
 {{< cols min="18rem" gap="2rem" v="start">}}
@@ -165,10 +163,6 @@ Reach out with questions or to start a project.
 
 
 ## FAQS
-
-
-
-
 
 {{< faqs >}}
 ### What is your Local SEO process?

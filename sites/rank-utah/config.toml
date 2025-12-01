@@ -232,42 +232,7 @@ sameAs = []
     url    = "/blog/"
     weight = 35
 
-  [[menu.main]]
-    name        = "Areas"
-    identifier  = "locations"
-    url         = "/locations"
-    weight      = 15
-
-  # Dropdown items under Areas
-  [[menu.main]]
-    name    = "Pleasant Grove, UT"
-    url     = "/locations/pleasant-grove-ut"
-    parent  = "locations"
-    weight  = 41
-
-  [[menu.main]]
-    name    = "Buena Vista, VA"
-    url     = "/locations/buena-vista-va"
-    parent  = "locations"
-    weight  = 42
-
-  [[menu.main]]
-    name    = "Grand Junction, CO"
-    url     = "/locations/grand-junction-co"
-    parent  = "locations"
-    weight  = 43
-
-  [[menu.main]]
-    name    = "Boca Raton, FL"
-    url     = "/locations/boca-raton-fl"
-    parent  = "locations"
-    weight  = 44
-
-  [[menu.main]]
-    name    = "All Areas"
-    url     = "/locations"
-    parent  = "locations"
-    weight  = 49
+  
 
   [[menu.main]]
     name   = "Contact"
