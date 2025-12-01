@@ -26,8 +26,8 @@ params:
 ---
 
 {{< hero img="/media/utah-seo.avif" alt="Utah landscape image for local seo" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO (Search Engine Optimization)
-<span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span>
+# Local SEO
+<span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
 {{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20Local%20SEO." text="Text Now" >}}
