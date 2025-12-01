@@ -3,6 +3,7 @@ title: "Local SEO"
 description: "Local SEO for small businesses"
 layout: "flowbite"
 url: "/services/local-seo"
+hero: true
 schema:
   service:
     enabled: true
@@ -20,106 +21,144 @@ schema:
         price: "299"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
+params:
+  ppc: true
 ---
 
+{{< hero img="/media/utah-seo.avif" alt="Utah landscape image for local seo" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+# Local SEO Marketing
+<span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span>
+
+{{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
+{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20Local%20SEO." text="Text Now" >}}
+
+<div class="mt-6"></div>
+{{< /hero >}}
+
+<script>
+(function(){
+  const p = new URLSearchParams(location.search);
+  const raw = p.get('city');
+  const isPaid = p.has('gclid') || (p.get('utm_source')||'').toLowerCase()==='google';
+  if(!raw || !isPaid) return;
+  const placeholderPattern = /^\s*\{location\(city\)\}\s*$/i;
+  if (placeholderPattern.test(raw)) return;
+  const lowerRaw = raw.toLowerCase().trim();
+  if (["location","city","location city","locationcity"].includes(lowerRaw)) return;
+  let cleaned = raw.replace(/[-_]+/g,' ')
+                   .replace(/[^a-zA-Z'\s]/g,'')
+                   .trim()
+                   .toLowerCase()
+                   .replace(/\s{2,}/g,' ');
+  if(!cleaned) return;
+  const words = cleaned.split(' ');
+  if (["location","city","locationcity"].includes(cleaned)) return;
+  if (cleaned.length < 2 || cleaned.length > 30 || words.length > 3) return;
+  const city = words.map(w=> w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
+  const span = document.getElementById('dynamic-city');
+  if(!span) return;
+  const displayCity = city.length > 28 ? city.slice(0,25) + '…' : city;
+  span.textContent = 'Serving ' + displayCity;
+  span.classList.remove('hidden');
+  if (window.gtag) {
+    window.gtag('event','ppc_city_injection',{event_category:'landing_variant',event_label: city,transport_type:'beacon'});
+  }
+})();
+</script>
+
+## Local SEO Marketing
+Get more calls and messages by showing up in Google’s local results and Maps. I optimize your Google Business Profile, align pages to high‑intent local keywords, and keep your listings and reviews working together to win nearby searches.
+
+## Customer Reviews
+{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
+
+{{< cols min="18rem" gap="2rem" v="start" >}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+### What You Get
+- Google Business Profile optimization
+- Apple Maps & Bing Places setup
+- 100+ listings (data aggregators) sync
+- Keyword research & on‑page local SEO
+- Review strategy & response guidance
+- UTM tracking, GSC & GA4 setup
+- Speed & Core Web Vitals guidance
+- Ongoing updates and monthly reporting
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+### Pricing
+I offer two Local SEO options:
+
+- Local SEO (no website) — $199/mo: Google Business Profile management, Apple/Bing management + 100+ listings, local keyword research & strategy, listings keyword alignment, and monthly visitor reports. Best if you already have a site.
+- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, I can remake/migrate it so it’s clean, fast, and aligned to your local keywords.
+
+Month‑to‑month. No long‑term contract.
+
+{{< button url="/pricing" text="See Pricing Details" >}}
+{{< button url="/contact" text="Get Started" >}}
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< cols min="16rem" gap="1.5rem" v="start" >}}
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+#### Visibility & Clicks
+<img src="/media/local-seo-analytics-report.avif" alt="Local SEO analytics report" />
+{{< /col >}}
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+#### Growth Over Time (Analytics)
+<img src="/media/google-analytics-seo-results.avif" alt="Google Analytics results demonstrating SEO growth" />
+{{< /col >}}
+{{< /cols >}}
 
 
-# Local SEO (Search Engine Optimization)
+{{< cols min="18rem" gap="2rem" v="start" >}}
 
-Get new customers by showing up in local search results.
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+## Ready To Get Started
+<img src="/media/utah-seo-specialist-web-design-expert-profile-picture.jpg" alt="Benjamin Awerkamp – Utah Local SEO" class="w-40 mb-4" />
+I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I partner with Utah businesses to improve local visibility and turn nearby searches into calls and bookings.
 
-{{< button url="/contact" text="Contact" >}}
+### Share a bit about your business and goals.
 
-## Do you need more customers?
+{{< contact-form id="contact1" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" phone="optional" business="false" subject="false" message="true" consent="false" classes="max-w-xl" >}}
 
-Local SEO is an effective strategy for marketing your business to achieve both short-term and long-term results. Its focus is helping your business show up when people search for what you do.
+{{< button submit="true" form="contact1" text="Submit Message" >}}
+{{< /col >}}
 
-Clear Presence focuses on Local SEO strategies that help your business generate high-quality leads using this simple and effective process.
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+## How it Works
+1. Audit – current visibility, Google Business Profile, and listings
+2. Plan – keywords and categories aligned to local intent
+3. Optimize – Google Business Profile and core listings (100+ sites)
+4. Align – business details and keywords across profiles and listings
+5. Track & report – calls, clicks, and local visibility
+6. Grow – reviews and coverage in your service area
 
+## FAQ
+{{< faqs openFirst="true" >}}
+### What is Local SEO?
+Local SEO helps your business show up in Google’s local results and on Maps. It focuses on optimizing your Google Business Profile, citations/listings, local keywords, on‑page content, and reviews so nearby customers can find and contact you.
 
+### How long until I see results?
+You can often see movement in 4–12 weeks, with stronger gains over 3–6 months. Timelines depend on your starting point, competition, and service area. Quick wins typically include GBP fixes, category/keyword alignment, and cleaning up listings.
 
+### What do you do each month?
+I improve your GBP (categories, services, descriptions, photos), sync and correct listings, align pages to local keywords, add/optimize service and location pages, improve internal links and page speed, and track calls/clicks. You get a clear monthly report.
 
+### Do I need a long‑term contract?
+No. Plans are month‑to‑month. I agree on priorities, deliverables, and tracking up front so you know what’s happening and why.
 
-## Local SEO 5-Step Process
+### Will you manage reviews and listings?
+Yes. I set up monitoring, provide response guidance, and keep your core listings (via data aggregators) accurate and in sync. I can also post to your GBP and adjust hours or updates as needed.
 
-
-
-
-
-
-{{< faqs >}}
-
-### 1. Maximize Your Google Business Profile Visibility
-
-Clear Presence focuses on maximizing your Google Business Profile visibility by taking the following steps
-
-1. Updating your Primary Category and adding Additional Categories (The #1 ranking factor)
-2. Strategizing with you to get more reviews and what to do with the ones you have
-3. Updating your website URL to include UTM parameters so we can track your Google Business Profile performance in Google Analytics and Google Search Console
-4. Improving your description to increase the number of clicks your profile receives
-5. Adding photos and videos to optimize for visibility
-6. Ensuring your business hours are accurate and explaining the impact on visibility
-7. Adding your services to improve profile engagement and visibility
-8. Ensuring you have an ongoing promotional post to increase engagement and visibility
-9. Ensuring your social media links are included
-10. Showing your service area (if applicable)
-
-### 2. Apple Maps & Bing Places management, plus listings on 100+ sites, maps, and apps
-
-Clear Presence directly manages your listing with Google, Apple Maps, & Bing Places and then syncs your business information to over 100+ sites including websites, directories, map apps, consumer apps, and voice assistants. This is done by submitting and syncing your business information with the five leading data aggregators (Localeze, Data Axle, YP Network, GPT Network, and Foursquare). This serves a number of purposes including:
-
-1. Increasing opportunities for people to find your business
-2. Maintaining a consistent NAP (name, address, phone number) across the web to build trust, visibility, and credibility for search engines and visitors
-3. Increase the number of links pointing to your website which improves search rankings
-4. Establish a foundation for being part of the local search ecosystem across the entire digital map
-
-In short, this step helps your business enter the arena for local search.
-
-### 3. Align your online content with keywords that bring you traffic
-
-Clear Presence conducts keyword research using Semrush, the #1 SEO Agency tool for accurate keyword research in the United States. This tool is used to research and find high volume low competition keywords that you can rank for. After building a keyword strategy for your business we align your Google Business Profile and online listings with these keywords.
-
-### 4. Track and report your rankings, visibility, and clicks
-
-Everything that happens on your website is tracked and analyzed using Google Search Console which tells us the number of impressions you received for your keywords, where you rank, and how many times your website or Google Business Profile were clicked. This is a continual process of analyzing the latest results, testing new keyword strategies, and optimizing your content around the keywords that are performing well.
-
-### 5. Continuously work to bring you more customers
-
-Clear Presence continuously works to bring you more customers. Local SEO requires constant effort to expand your visibility and reach. The changes and improvements made during this process bring you both short-term and long-term results, making local SEO one of the most valuable forms of marketing your business.
-
+### How much does it cost?
+Plans start at $199/mo, with options based on pace and scope. See the full details on the Pricing page.
 {{< /faqs >}}
-
-
-
-
-
-## SEO Reports
-
-Reports compare the last month with the two months before so you can easily track how things are progressing. Below is a report from a current customer. Each indicator displays the percentage increase or decrease from the previous month.
-
-
-![](../../media/local-seo-analytics-report.avif)
-
-
-
-
-
-
-
-## Areas
-
-Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
-
-[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
-
-## Check out pricing or ask a question
-
-Check out the pricing page or reach out directly with a phone call or text message to get your questions answered.
-
 
 {{< button url="/pricing" text="Pricing" >}}
 {{< button url="/contact" text="Contact" >}}
-
-
-
+{{< /col >}}
+{{< /cols >}}
 
