@@ -142,7 +142,7 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 Local SEO helps your business show up in Google’s local results and on Maps. It focuses on improving your Google Business Profile, business listings and directories, local keywords, your website pages, and reviews so nearby customers can find and contact you.
 
 ### How long until I see results?
-You can often see movement in 4–12 weeks, with stronger gains over 3–6 months. Timelines depend on your starting point, competition, and service area. Quick wins typically include GBP fixes, category/keyword alignment, and cleaning up listings.
+You can often see movement in 4–12 weeks, with stronger gains over 3–6 months. Timelines depend on your starting point, competition, and service area. Quick wins typically include GBP fixes, category/keyword alignment, and getting reviews from previous customers.
 
 ### What do you do each month?
 I improve your Google Business Profile (categories, services, descriptions, photos), keep listings accurate across the major directories, make sure your profiles and content match local keywords, and track calls and clicks. You get a clear monthly report.
@@ -150,11 +150,8 @@ I improve your Google Business Profile (categories, services, descriptions, phot
 ### Do I need a long‑term contract?
 No. Plans are month‑to‑month. I agree on priorities, deliverables, and tracking up front so you know what’s happening and why.
 
-### Will you manage reviews and listings?
-Yes. I set up monitoring, provide response guidance, and keep your core listings accurate and in sync across the major directories. I can also post to your Google Business Profile and adjust hours or updates as needed.
-
 ### How much does it cost?
-Plans start at $199/mo, with options based on pace and scope. See the full details on the Pricing page.
+Plans start at $199/mo. See the full details on the [Pricing](/pricing) page.
 {{< /faqs >}}
 
 {{< button url="/pricing" text="Pricing" >}}
