@@ -88,8 +88,6 @@ Get more calls and messages by showing up in Google’s local results and Maps. 
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
-I offer two Local SEO options:
-
 - Local SEO (no website) — $199/mo: Google Business Profile management, Apple Maps and Bing Places management, plus more than 100 directories, maps, and apps. Includes local keyword research and plan, making sure your business info and keywords match across your profiles, and monthly visitor reports. Best if you already have a site.
 - Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, I can remake or move it so it’s clean, fast, and aligned with local searches.
 
