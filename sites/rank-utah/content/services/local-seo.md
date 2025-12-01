@@ -26,7 +26,7 @@ params:
 ---
 
 {{< hero img="/media/utah-seo.avif" alt="Utah landscape image for local seo" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO
+# Local SEO (Search Engine Optimization)
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
@@ -122,9 +122,9 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 
 ### Share a bit about your business and goals.
 
-{{< contact-form id="contact1" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" phone="optional" business="false" subject="false" message="true" consent="false" classes="max-w-xl" >}}
+{{< contact-form id="contact2" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" phone="optional" business="false" subject="false" message="true" consent="false" classes="max-w-xl" >}}
 
-{{< button submit="true" form="contact1" text="Submit Message" >}}
+{{< button submit="true" form="contact2" text="Submit Message" >}}
 {{< /col >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
