@@ -1,6 +1,6 @@
 baseURL = "https://novagutter.com/"
 languageCode = "en-us"
-title = "NOVA Gutter"
+title = ""
 themesDir = "../../themes"
 ignoreFiles = ["^content/articles/"]
 enableRobotsTXT = true
@@ -72,7 +72,7 @@ enableRobotsTXT = true
   env = "production"
   # Match Rank Utah backgrounds; brand is Tailwind red for buttons/links
   primaryColor        = "red"
-  logo                = "media/logo.png"  # replace when available
+  logo                = "media/logo.jpg"  # replace when available
   lightBackground     = "gray-200"
   darkBackground      = "gray-900"
   cardBackground      = "gray-100"
