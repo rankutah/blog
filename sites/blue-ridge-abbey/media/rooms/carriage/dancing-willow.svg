@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Willow-inspired flowing leaves -->
+  <g transform="translate(600,420)" filter="url(#shadow)">
+    <path d="M-180,-120 C-120,-60 -120,60 -180,120" stroke="#e8f5e9" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M-90,-160 C-30,-80 -30,80 -90,160" stroke="#e8f5e9" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M0,-180 C60,-90 60,90 0,180" stroke="#e8f5e9" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M90,-160 C150,-80 150,80 90,160" stroke="#e8f5e9" stroke-width="18" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="160" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="68" fill="#ffffff" font-weight="700" style="letter-spacing:1px">Dancing Willow</text>
+
+</svg>
