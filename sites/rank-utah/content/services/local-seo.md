@@ -26,7 +26,7 @@ params:
 ---
 
 {{< hero img="/media/utah-seo.avif" alt="Utah landscape image for local seo" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO Marketing
+# Local SEO
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
@@ -66,7 +66,7 @@ params:
 })();
 </script>
 
-## Local SEO Marketing
+## Local SEO (Search Engine Optimization)
 Get more calls and messages by showing up in Google’s local results and Maps. I optimize your Google Business Profile, align pages to high‑intent local keywords, and keep your listings and reviews working together to win nearby searches.
 
 ## Customer Reviews
@@ -77,12 +77,12 @@ Get more calls and messages by showing up in Google’s local results and Maps. 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### What You Get
 - Google Business Profile optimization
-- Apple Maps & Bing Places setup
-- 100+ listings (data aggregators) sync
-- Keyword research & on‑page local SEO
+- Apple Maps and Bing Places setup
+- Keep your business info consistent across 100+ directories, maps, and apps
+- Research local keywords and improve your pages to match
 - Review strategy & response guidance
-- UTM tracking, GSC & GA4 setup
-- Speed & Core Web Vitals guidance
+- Set up tracking and reports so you can see calls and clicks
+- Improve site speed and overall experience
 - Ongoing updates and monthly reporting
 {{< /col >}}
 
@@ -90,8 +90,8 @@ Get more calls and messages by showing up in Google’s local results and Maps. 
 ### Pricing
 I offer two Local SEO options:
 
-- Local SEO (no website) — $199/mo: Google Business Profile management, Apple/Bing management + 100+ listings, local keyword research & strategy, listings keyword alignment, and monthly visitor reports. Best if you already have a site.
-- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, I can remake/migrate it so it’s clean, fast, and aligned to your local keywords.
+- Local SEO (no website) — $199/mo: Google Business Profile management, Apple Maps and Bing Places management, plus more than 100 directories, maps, and apps. Includes local keyword research and plan, making sure your business info and keywords match across your profiles, and monthly visitor reports. Best if you already have a site.
+- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, I can remake or move it so it’s clean, fast, and aligned with local searches.
 
 Month‑to‑month. No long‑term contract.
 
@@ -137,21 +137,21 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 6. Grow – reviews and coverage in your service area
 
 ## FAQ
-{{< faqs openFirst="true" >}}
+{{< faqs openFirst="false" >}}
 ### What is Local SEO?
-Local SEO helps your business show up in Google’s local results and on Maps. It focuses on optimizing your Google Business Profile, citations/listings, local keywords, on‑page content, and reviews so nearby customers can find and contact you.
+Local SEO helps your business show up in Google’s local results and on Maps. It focuses on improving your Google Business Profile, business listings and directories, local keywords, your website pages, and reviews so nearby customers can find and contact you.
 
 ### How long until I see results?
 You can often see movement in 4–12 weeks, with stronger gains over 3–6 months. Timelines depend on your starting point, competition, and service area. Quick wins typically include GBP fixes, category/keyword alignment, and cleaning up listings.
 
 ### What do you do each month?
-I improve your GBP (categories, services, descriptions, photos), sync and correct listings, align pages to local keywords, add/optimize service and location pages, improve internal links and page speed, and track calls/clicks. You get a clear monthly report.
+I improve your Google Business Profile (categories, services, descriptions, photos), keep listings accurate across the major directories, make sure your profiles and content match local keywords, and track calls and clicks. You get a clear monthly report.
 
 ### Do I need a long‑term contract?
 No. Plans are month‑to‑month. I agree on priorities, deliverables, and tracking up front so you know what’s happening and why.
 
 ### Will you manage reviews and listings?
-Yes. I set up monitoring, provide response guidance, and keep your core listings (via data aggregators) accurate and in sync. I can also post to your GBP and adjust hours or updates as needed.
+Yes. I set up monitoring, provide response guidance, and keep your core listings accurate and in sync across the major directories. I can also post to your Google Business Profile and adjust hours or updates as needed.
 
 ### How much does it cost?
 Plans start at $199/mo, with options based on pace and scope. See the full details on the Pricing page.
