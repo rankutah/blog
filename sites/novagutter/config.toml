@@ -73,7 +73,7 @@ enableRobotsTXT = true
   # Match Rank Utah backgrounds; brand is Tailwind red for buttons/links
   primaryColor        = "red"
   logo                = "media/logo.jpg"  # replace when available
-  lightBackground     = "gray-200"
+  lightBackground     = "white"
   darkBackground      = "gray-900"
   cardBackground      = "gray-100"
   cardBackgroundDark  = "gray-800"

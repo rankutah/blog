@@ -529,6 +529,112 @@
       ]
     }
   },
+  "/media/annie.jpg": {
+    "width": 955,
+    "height": 2048,
+    "aspect": 0.46630859375,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABFACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAQMAAgQFBv/EADIQAAIBAgQEAgcJAAAAAAAAAAECAwARBBIhMQVBUpETFCIyYYGhsdEVI0JRU3GiwfD/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABsRAQEAAgMBAAAAAAAAAAAAAAABAhEDITFB/9oADAMBAAIRAxEAPwD0kGOweKQukxyA3zXZR8abJxHCxSeHJJlbLmF1NiP32ryUuM8MYXDrCI1jcAsFtm0Ovc3rXg5FxvBpYtVlSVsp2IF/oTS2fCO43GuH5FbzF1e1iFOt/dSpeM8OjszYgjI2ujf41wPJTKtlkK2O9xWOSExxkEtKAxU3AIWx5n31S5LXHUeo4jw/C8QktLh5Q8egZHUX/Ln/AFWjh2FgwoaOLDul9WeRgSx71ml+0jNI0c0AjLHLtty5U3BtjVmJxU0LR5dLWvftXRePU3uMZl346WRekdqHhp0L2rMss9vSmgJ9gNN8YXH3iW51k0UEWZihWRRtmNrH40BgIwCAzWPtq0pC/gk3OzEUY73zqjXOmsh+RoKjBIBYM1qPk16mpueT9L+QplAghr7S+sdmFVu9/Un0PUv1olo3kyvEdL+kbW+dXEMRsQqmgEaMwuxlWx2YjXtTqCqFFlFgOVGgwZ26j3qZ36j3qVKkTO/U3epnfqbvUqUH/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/annie__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/annie__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/annie__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/annie__w768.avif"
+        },
+        {
+          "w": 955,
+          "url": "/media-deriv/annie__w955.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/annie__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/annie__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/annie__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/annie__w768.jpg"
+        },
+        {
+          "w": 955,
+          "url": "/media-deriv/annie__w955.jpg"
+        }
+      ]
+    }
+  },
+  "/media/annie.avif": {
+    "width": 955,
+    "height": 2048,
+    "aspect": 0.46630859375,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABFACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAQMAAgQFBv/EADIQAAIBAgQEAgcJAAAAAAAAAAECAwARBBIhMQVBUpETFCIyYYGhsdEVI0JRU3GiwfD/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABsRAQEAAgMBAAAAAAAAAAAAAAABAhEDITFB/9oADAMBAAIRAxEAPwD0kGOweKQukxyA3zXZR8abJxHCxSeHJJlbLmF1NiP32ryUuM8MYXDrCI1jcAsFtm0Ovc3rXg5FxvBpYtVlSVsp2IF/oTS2fCO43GuH5FbzF1e1iFOt/dSpeM8OjszYgjI2ujf41wPJTKtlkK2O9xWOSExxkEtKAxU3AIWx5n31S5LXHUeo4jw/C8QktLh5Q8egZHUX/Ln/AFWjh2FgwoaOLDul9WeRgSx71ml+0jNI0c0AjLHLtty5U3BtjVmJxU0LR5dLWvftXRePU3uMZl346WRekdqHhp0L2rMss9vSmgJ9gNN8YXH3iW51k0UEWZihWRRtmNrH40BgIwCAzWPtq0pC/gk3OzEUY73zqjXOmsh+RoKjBIBYM1qPk16mpueT9L+QplAghr7S+sdmFVu9/Un0PUv1olo3kyvEdL+kbW+dXEMRsQqmgEaMwuxlWx2YjXtTqCqFFlFgOVGgwZ26j3qZ36j3qVKkTO/U3epnfqbvUqUH/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/annie__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/annie__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/annie__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/annie__w768.avif"
+        },
+        {
+          "w": 955,
+          "url": "/media-deriv/annie__w955.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/annie__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/annie__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/annie__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/annie__w768.jpg"
+        },
+        {
+          "w": 955,
+          "url": "/media-deriv/annie__w955.jpg"
+        }
+      ]
+    }
+  },
   "/media/boca-raton-gutter-company-new-images-06OCT2019-1.jpg": {
     "width": 600,
     "height": 450,
