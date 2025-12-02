@@ -14,7 +14,8 @@ Our rooms that are currently available for booking can be found here: {{< button
 {{< cols min="18rem" gap="2rem" row="1rem" v="start">}}
 {{< col card="false" y="start" >}}
 ## Maple Grove
-<div class="rounded-lg shadow bg-amber-200 dark:bg-amber-800" style="height:350px" aria-label="Maple Grove room photo placeholder"></div>
+
+![](/media/maple-grove.jpg)
 
 {{< badge text="Booking & Photos Coming Soon" >}}
 
@@ -24,7 +25,8 @@ Our rooms that are currently available for booking can be found here: {{< button
 
 {{< col card="false" y="start" >}}
 ## Morning Glory
-<div class="rounded-lg shadow bg-sky-200 dark:bg-sky-800" style="height:350px" aria-label="Morning Glory room photo placeholder"></div>
+
+![](/media/morning-glory.png)
 
 {{< badge text="Booking & Photos Coming Soon" >}}
 
@@ -34,7 +36,8 @@ Our rooms that are currently available for booking can be found here: {{< button
 
 {{< col card="false" y="start" >}}
 ## Daylily
-<div class="rounded-lg shadow bg-orange-200 dark:bg-orange-800" style="height:350px" aria-label="Daylily room photo placeholder"></div>
+
+![](/media/day-lily.png)
 
 {{< badge text="Booking & Photos Coming Soon" >}}
 
@@ -44,7 +47,8 @@ Our rooms that are currently available for booking can be found here: {{< button
 
 {{< col card="false" y="start" >}}
 ## Edelweiss
-<div class="rounded-lg shadow bg-slate-200 dark:bg-slate-800" style="height:350px" aria-label="Edelweiss room photo placeholder"></div>
+
+![](/media/edelweiss.jpg)
 
 {{< badge text="Booking & Photos Coming Soon" >}}
 
@@ -54,7 +58,8 @@ Our rooms that are currently available for booking can be found here: {{< button
 
 {{< col card="false" y="start" >}}
 ## Dancing Willow
-<div class="rounded-lg shadow bg-emerald-200 dark:bg-emerald-800" style="height:350px" aria-label="Dancing Willow room photo placeholder"></div>
+
+![](/media/dancing-willow.jpg)
 
 {{< badge text="Booking & Photos Coming Soon" >}}
 
