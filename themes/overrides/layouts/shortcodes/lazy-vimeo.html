@@ -1,0 +1,209 @@
+{{/*
+Lazy Vimeo embed with thumbnail image and play button.
+Usage:
+{{< lazy-vimeo id="VIDEO_ID" img="/path/to/thumbnail.jpg" alt="Thumbnail alt text" class="optional-extra-classes" muted="true" >}}
+  (optional inner markdown/HTML for overlay content: headings, buttons, etc.)
+{{< /lazy-vimeo >}}
+*/}}
+{{ $page := .Page }}
+{{ $id := .Get "id" }}
+{{ $img := .Get "img" }}
+{{ $alt := .Get "alt" }}
+{{ $class := .Get "class" }}
+{{ $muted := .Get "muted" | default "true" }}
+{{ $inner := $page.RenderString (dict "markup" "goldmark" "renderShortcodes" true) .Inner }}
+{{ $primary := site.Params.primaryColor | default "emerald" }}
+{{ $btnColorLight := printf "text-%s-600" $primary }}
+{{ $btnColorDark  := printf "dark:text-%s-400" $primary }}
+{{ if not $id }}{{ errorf "lazy-vimeo shortcode: missing id param" }}{{ end }}
+{{ if not $img }}{{ errorf "lazy-vimeo shortcode: missing img param" }}{{ end }}
+<div class="section hero bleed">
+  <style data-lazy-vimeo-css>
+    [data-lazy-vimeo-wrapper]{position:relative;}
+    [data-lazy-vimeo-target]{position:relative!important;}
+    [data-lazy-vimeo-target] picture,[data-lazy-vimeo-target] picture img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;}
+    [data-lazy-vimeo-overlay]{position:absolute!important;inset:0!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;}
+  </style>
+  <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen isolate group {{$class}}" data-lazy-vimeo-wrapper>
+    <div class="relative w-full overflow-hidden" style="min-height:100vh;min-height:100svh;height:100vh;height:100svh" data-lazy-vimeo-target>
+      <picture>
+        <img src="{{$img}}" alt="{{$alt}}" class="h-full w-full object-cover" loading="eager" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="absolute inset-0 bg-black/40 transition-opacity group-hover:bg-black/50"></div>
+      <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 gap-4" data-lazy-vimeo-overlay>
+        <div class="mx-auto max-w-7xl px-8 w-full">
+          <div class="prose prose-zinc max-w-none dark:prose-invert">
+            {{ $inner }}
+          </div>
+        </div>
+        <div class="mt-6 flex items-center justify-center">
+          <button type="button" class="inline-flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30 transition h-20 w-20 {{$btnColorLight}} {{$btnColorDark}}" data-lazy-vimeo-play aria-label="Play video" title="Play video">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
+              <rect x="1" y="1" width="66" height="46" rx="12" fill="currentColor"/>
+              <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var root=document.currentScript.previousElementSibling; // wrapper div
+  if(!root) return;
+  var btn=root.querySelector('[data-lazy-vimeo-play]');
+  var target=root.querySelector('[data-lazy-vimeo-target]');
+  if(!btn||!target) return;
+  var videoId='{{$id}}';
+  var shouldMute={{ if eq (lower $muted) "false" }}false{{ else }}true{{ end }};
+  var player=null; // Vimeo player instance
+  var iframe=null; // iframe element reference
+  var control=null; // overlay control for tap-to-toggle
+  var picture=null, overlay=null, shade=null; // hero elements
+  function fitCover(iframe){
+    try{
+      var cw=target.clientWidth||window.innerWidth;
+      var ch=target.clientHeight||window.innerHeight;
+      var r=16/9;
+      var cr=cw/ch;
+      if(cr>r){
+        iframe.style.width=cw+'px';
+        iframe.style.height=(cw/r)+'px';
+      } else {
+        iframe.style.height=ch+'px';
+        iframe.style.width=(ch*r)+'px';
+      }
+      iframe.style.position='absolute';
+      iframe.style.top='50%';
+      iframe.style.left='50%';
+      iframe.style.transform='translate(-50%,-50%)';
+    }catch(e){}
+  }
+  function load(){
+    if(target.getAttribute('data-loaded')) return;
+    target.setAttribute('data-loaded','true');
+    if(!iframe){ iframe=document.createElement('iframe'); }
+    iframe.setAttribute('allowfullscreen','');
+    iframe.setAttribute('allow','autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share');
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    iframe.setAttribute('loading','lazy');
+    iframe.setAttribute('title','Vimeo video player');
+    iframe.className='';
+    // Start muted only to satisfy autoplay policies; we'll immediately unmute on user click
+    // Hide Vimeo UI chrome (status/controls), remove creator promo, keep inline playback
+    var params='autoplay=1&muted=1&app_id=58479&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1';
+    iframe.src='https://player.vimeo.com/video/'+videoId+'?'+params;
+    iframe.setAttribute('frameborder','0');
+    // Do NOT remove picture or overlay; just hide for replay support
+    picture=picture||target.querySelector('picture');
+    overlay=overlay||root.querySelector('[data-lazy-vimeo-overlay]');
+    shade=shade||null;
+    Array.prototype.forEach.call(target.children,function(ch){
+      if(!shade && ch.className && ch.className.indexOf('bg-black/40')!==-1) shade=ch;
+    });
+    if(picture){ picture.style.transition='opacity .4s ease'; picture.style.opacity='0'; picture.style.pointerEvents='none'; picture.style.visibility='hidden'; }
+    target.insertBefore(iframe, target.firstChild);
+    if(overlay){
+      overlay.style.transition='opacity .4s ease';
+      overlay.style.opacity='0';
+      setTimeout(function(){ overlay.style.pointerEvents='none'; overlay.style.visibility='hidden'; },450);
+    }
+    if(shade){
+      shade.style.transition='opacity .4s ease';
+      shade.style.opacity='0';
+      setTimeout(function(){ shade.style.pointerEvents='none'; shade.style.visibility='hidden'; },450);
+    }
+    fitCover(iframe);
+    window.addEventListener('resize', function(){ fitCover(iframe); });
+    // Load Vimeo Player API if needed
+    function ensureVimeoPlayerScript(cb){
+      if(window.Vimeo && window.Vimeo.Player){ cb(); return; }
+      var existing=document.querySelector('script[data-vimeo-player]');
+      if(existing){ existing.addEventListener('load', function(){ cb(); }); return; }
+      var s=document.createElement('script');
+      s.src='https://player.vimeo.com/api/player.js';
+      s.setAttribute('data-vimeo-player','true');
+      s.async=true;
+      s.onload=function(){ cb(); };
+      document.head.appendChild(s);
+    }
+    // Create a transparent control layer to handle tap-to-toggle
+    if(!control){
+      control=document.createElement('div');
+      control.setAttribute('data-lazy-vimeo-control','');
+      control.style.position='absolute';
+      control.style.inset='0';
+      control.style.zIndex='5';
+      control.style.background='transparent';
+      control.style.cursor='pointer';
+      target.appendChild(control);
+    } else {
+      control.style.visibility='visible';
+      control.style.pointerEvents='auto';
+    }
+    ensureVimeoPlayerScript(function(){
+      try{
+        if(!player){ player=new window.Vimeo.Player(iframe); }
+        // On initial load after user click: unmute if requested and play
+        player.ready().then(function(){
+          if(!shouldMute){
+            // Explicitly unmute on user gesture
+            player.setVolume(1).catch(function(){});
+          } else {
+            // If user wants mute, keep volume low
+            player.setVolume(0).catch(function(){});
+          }
+          player.play().catch(function(){});
+        }).catch(function(){});
+        // Tap-to-toggle play/pause
+        var toggling=false;
+        function togglePlayback(){
+          if(toggling) return; toggling=true;
+          player.getPaused().then(function(paused){
+            if(paused){ player.play(); } else { player.pause(); }
+          }).catch(function(){ /* noop */ }).finally(function(){ toggling=false; });
+        }
+        control.addEventListener('click', function(e){ e.preventDefault(); togglePlayback(); });
+        control.addEventListener('touchend', function(e){ e.preventDefault(); togglePlayback(); }, { passive:false });
+        // On ended: restore hero poster + overlay and show play button again
+        player.on('ended', function(){
+          try{
+            // Pause and hide iframe
+            player.pause().catch(function(){});
+            iframe.style.transition='opacity .4s ease';
+            iframe.style.opacity='0';
+            setTimeout(function(){ iframe.style.pointerEvents='none'; iframe.style.visibility='hidden'; },450);
+            // Show poster and overlay again
+            if(picture){ picture.style.visibility='visible'; picture.style.pointerEvents='auto'; picture.style.opacity='1'; }
+            if(shade){ shade.style.visibility='visible'; shade.style.pointerEvents='auto'; shade.style.opacity='1'; }
+            if(overlay){ overlay.style.visibility='visible'; overlay.style.pointerEvents='auto'; overlay.style.opacity='1'; }
+          }catch(e){}
+        });
+      }catch(e){}
+    });
+    // Optionally ping analytics
+    if(window.gtag){
+      try{ window.gtag('event','video_play',{event_category:'engagement',event_label:videoId,transport_type:'beacon'}); }catch(e){}
+    }
+  }
+  function replayOrLoad(){
+    // If we already have an iframe/player and it's hidden, show and play again
+    if(iframe && iframe.style && (iframe.style.visibility==='hidden' || iframe.style.opacity==='0')){
+      iframe.style.visibility='visible';
+      iframe.style.pointerEvents='auto';
+      iframe.style.opacity='1';
+      if(player){ player.play().catch(function(){}); }
+      if(picture){ picture.style.opacity='0'; picture.style.pointerEvents='none'; picture.style.visibility='hidden'; }
+      if(overlay){ overlay.style.opacity='0'; overlay.style.pointerEvents='none'; overlay.style.visibility='hidden'; }
+      if(shade){ shade.style.opacity='0'; shade.style.pointerEvents='none'; shade.style.visibility='hidden'; }
+      return;
+    }
+    load();
+  }
+  btn.addEventListener('click', replayOrLoad);
+  btn.addEventListener('keydown', function(e){
+    if(e.key==='Enter' || e.key===' '){ e.preventDefault(); replayOrLoad(); }
+  });
+})();
+</script>

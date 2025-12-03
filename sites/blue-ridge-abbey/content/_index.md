@@ -4,20 +4,20 @@ description: "Searching for a hotel in Buena Vista, Virginia? Come stay at the B
 layout: "flowbite"
 url: "/"
 ---
-<!--
-{{< lazy-youtube id="OUIuHHxdLWI" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" mute="false" >}}
+
+{{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
 
-{{< /lazy-youtube >}} -->
-
+{{< /lazy-vimeo >}}
+<!--
 {{< hero img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
 {{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Contact">}}
-{{< /hero >}}
+{{< /hero >}} -->
 
 {{< cols min="18rem" gap="2rem" v="start" order="reverse" >}}
 

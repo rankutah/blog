@@ -5,8 +5,6 @@ url:     "/services"
 summary: "Programs and coaching"
 ---
 
-
-
 ## Services
 
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
