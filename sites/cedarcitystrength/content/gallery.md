@@ -6,7 +6,7 @@ summary: "Inside the gym"
 ---
 
 # Gallery
-Workouts, training, and the vibe at Cedar City Strength.
+Workouts and training at Cedar City Strength & Conditioning.
 
 {{< gallery >}}
   <!-- moved first two photos later in the list -->
