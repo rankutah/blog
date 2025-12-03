@@ -1,9 +1,6 @@
 baseURL = "https://rodmaxfielddds.com/"
 languageCode = "en-us"
 title = "Rod Maxfield, DDS"
-baseURL = "https://rodmaxfielddds.com/"
-languageCode = "en-us"
-title = "Rod Maxfield, DDS"
 themesDir = "../../themes"
 
 [module]
