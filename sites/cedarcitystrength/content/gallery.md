@@ -4,163 +4,101 @@ layout:  "flowbite"
 url:     "/gallery"
 summary: "Inside the gym"
 ---
-<style>
-  .justified-gallery { width: 100%; }
-  .jg-row { display: flex; gap: 12px; margin-bottom: 12px; }
-  .jg-item img { display: block; }
-</style>
 
-<div id="jg" class="justified-gallery">
+# Gallery
+Workouts, training, and the vibe at Cedar City Strength.
 
-  <!-- CCFittest Series -->
-  <a href="/media/CCFittest1-20.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest1-20.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest1-38.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest1-38.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest1-149.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest1-149.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest1-185.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest1-185.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest1-219.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest1-219.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest1-336.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest1-336.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest1-351.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest1-351.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
+<div class="w-full columns-2 md:columns-3 xl:columns-4">
+  <!-- moved first two photos later in the list -->
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest1-149.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest1-149.jpg" alt="CCFittest1-149" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest1-185.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest1-185.jpg" alt="CCFittest1-185" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest1-219.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest1-219.jpg" alt="CCFittest1-219" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest1-336.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest1-336.jpg" alt="CCFittest1-336" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest1-351.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest1-351.jpg" alt="CCFittest1-351" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
 
-  <a href="/media/CCFittest2-24.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-24.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-33.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-33.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-45.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-45.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-57.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-57.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-66.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-66.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-112.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-112.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-121.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-121.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-128.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-128.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-137.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-137.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-164.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-164.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest2-166.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest2-166.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-24.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-24.jpg" alt="CCFittest2-24" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-33.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-33.jpg" alt="CCFittest2-33" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-45.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-45.jpg" alt="CCFittest2-45" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-57.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-57.jpg" alt="CCFittest2-57" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-66.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-66.jpg" alt="CCFittest2-66" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-112.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-112.jpg" alt="CCFittest2-112" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-121.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-121.jpg" alt="CCFittest2-121" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-128.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-128.jpg" alt="CCFittest2-128" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-137.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-137.jpg" alt="CCFittest2-137" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-164.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-164.jpg" alt="CCFittest2-164" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest2-166.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest2-166.jpg" alt="CCFittest2-166" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
 
-  <a href="/media/CCFittest3-12.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest3-12.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest3-13.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest3-13.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest3-102.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest3-102.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest3-105.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest3-105.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest3-12.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest3-12.jpg" alt="CCFittest3-12" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest3-13.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest3-13.jpg" alt="CCFittest3-13" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest3-102.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest3-102.jpg" alt="CCFittest3-102" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest3-105.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest3-105.jpg" alt="CCFittest3-105" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
 
-  <a href="/media/CCFittest4-3.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest4-3.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest4-11.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest4-11.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest4-15.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest4-15.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest4-19.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest4-19.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
-  <a href="/media/CCFittest4-23.jpg" target="_blank" rel="noopener" class="jg-item block overflow-hidden rounded-lg">
-    <img src="/media/CCFittest4-23.jpg" alt="CCFittest session" class="w-full h-auto" loading="lazy" decoding="async">
-  </a>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest4-3.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest4-3.jpg" alt="CCFittest4-3" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest4-11.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest4-11.jpg" alt="CCFittest4-11" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest4-15.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest4-15.jpg" alt="CCFittest4-15" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest4-19.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest4-19.jpg" alt="CCFittest4-19" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest4-23.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest4-23.jpg" alt="CCFittest4-23" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
 
-  <script>
-    (function(){
-      const container = document.getElementById('jg');
-      if(!container) return;
-      const GAP = 12;
-      function targetHeight(){
-        const w = window.innerWidth;
-        if (w >= 1024) return 300;
-        if (w >= 768) return 260;
-        return 220;
-      }
-      function doLayout(){
-        const items = Array.from(container.querySelectorAll('a.jg-item'));
-        if(!items.length) return;
-        const imgs = items.map(a=>a.querySelector('img')).filter(Boolean);
-        const wait = imgs.map(img => img.complete ? Promise.resolve() : new Promise(res=>{ img.addEventListener('load', res, {once:true}); img.addEventListener('error', res, {once:true}); }));
-        Promise.all(wait).then(()=>{
-          const width = container.clientWidth;
-          const rows = [];
-          let row = [];
-          let aspectSum = 0;
-          const tgt = targetHeight();
-          function flush(){
-            const gaps = GAP * Math.max(row.length-1, 0);
-            const rowH = Math.max(120, Math.round((width - gaps) / Math.max(0.0001, aspectSum)));
-            const rowEl = document.createElement('div');
-            rowEl.className = 'jg-row';
-            row.forEach(({el, ratio})=>{
-              const w = Math.round(rowH * ratio);
-              el.style.width = w + 'px';
-              el.style.height = rowH + 'px';
-              const img = el.querySelector('img');
-              if (img) { img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'contain'; }
-              rowEl.appendChild(el);
-            });
-            rows.push(rowEl);
-            row = []; aspectSum = 0;
-          }
-          // Prepare nodes and ratios
-          const prepared = items.map(el=>{
-            const img = el.querySelector('img');
-            const iw = img && (img.naturalWidth || parseInt(img.getAttribute('width')||'0',10));
-            const ih = img && (img.naturalHeight || parseInt(img.getAttribute('height')||'0',10));
-            const ratio = iw && ih ? iw/ih : 1.5;
-            return {el, ratio};
-          });
-          container.innerHTML = '';
-          prepared.forEach((it, idx)=>{
-            row.push(it);
-            aspectSum += it.ratio;
-            const gaps = GAP * Math.max(row.length-1,0);
-            const rowWidthAtTgt = aspectSum * tgt + gaps;
-            if (rowWidthAtTgt >= width || idx === prepared.length-1) {
-              flush();
-            }
-          });
-          rows.forEach(r=>container.appendChild(r));
-        });
-      }
-      let to;
-      function onResize(){ clearTimeout(to); to = setTimeout(doLayout, 150); }
-      doLayout();
-      window.addEventListener('resize', onResize);
-    })();
-  </script>
+  <!-- Added recent photos -->
+  <div class="break-inside-avoid mb-4"><a href="/media/1000010713.jpg" class="group" data-lightbox="gallery"><img src="/media/1000010713.jpg" alt="1000010713" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000010768.jpg" class="group" data-lightbox="gallery"><img src="/media/1000010768.jpg" alt="1000010768" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000010772.jpg" class="group" data-lightbox="gallery"><img src="/media/1000010772.jpg" alt="1000010772" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000010999.jpg" class="group" data-lightbox="gallery"><img src="/media/1000010999.jpg" alt="1000010999" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000012039.jpg" class="group" data-lightbox="gallery"><img src="/media/1000012039.jpg" alt="1000012039" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000012101.jpg" class="group" data-lightbox="gallery"><img src="/media/1000012101.jpg" alt="1000012101" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000012294.jpg" class="group" data-lightbox="gallery"><img src="/media/1000012294.jpg" alt="1000012294" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000012437.jpg" class="group" data-lightbox="gallery"><img src="/media/1000012437.jpg" alt="1000012437" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000012703.jpg" class="group" data-lightbox="gallery"><img src="/media/1000012703.jpg" alt="1000012703" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000012788.jpg" class="group" data-lightbox="gallery"><img src="/media/1000012788.jpg" alt="1000012788" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013001.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013001.jpg" alt="1000013001" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013062.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013062.jpg" alt="1000013062" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013110.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013110.jpg" alt="1000013110" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013116.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013116.jpg" alt="1000013116" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013257.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013257.jpg" alt="1000013257" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013465.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013465.jpg" alt="1000013465" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013467.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013467.jpg" alt="1000013467" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000013873.jpg" class="group" data-lightbox="gallery"><img src="/media/1000013873.jpg" alt="1000013873" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014002.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014002.jpg" alt="1000014002" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014037.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014037.jpg" alt="1000014037" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014052.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014052.jpg" alt="1000014052" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014075.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014075.jpg" alt="1000014075" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014212.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014212.jpg" alt="1000014212" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014395.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014395.jpg" alt="1000014395" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014527.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014527.jpg" alt="1000014527" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014585.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014585.jpg" alt="1000014585" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014652.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014652.jpg" alt="1000014652" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000014666.jpg" class="group" data-lightbox="gallery"><img src="/media/1000014666.jpg" alt="1000014666" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000015184.jpg" class="group" data-lightbox="gallery"><img src="/media/1000015184.jpg" alt="1000015184" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000015202.jpg" class="group" data-lightbox="gallery"><img src="/media/1000015202.jpg" alt="1000015202" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000015241.jpg" class="group" data-lightbox="gallery"><img src="/media/1000015241.jpg" alt="1000015241" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000015786.jpg" class="group" data-lightbox="gallery"><img src="/media/1000015786.jpg" alt="1000015786" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000015790.jpg" class="group" data-lightbox="gallery"><img src="/media/1000015790.jpg" alt="1000015790" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000016352.jpg" class="group" data-lightbox="gallery"><img src="/media/1000016352.jpg" alt="1000016352" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000017062.jpg" class="group" data-lightbox="gallery"><img src="/media/1000017062.jpg" alt="1000017062" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000017158.jpg" class="group" data-lightbox="gallery"><img src="/media/1000017158.jpg" alt="1000017158" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000017164.jpg" class="group" data-lightbox="gallery"><img src="/media/1000017164.jpg" alt="1000017164" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000017584.jpg" class="group" data-lightbox="gallery"><img src="/media/1000017584.jpg" alt="1000017584" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <!-- removed duplicate: 1000017896 (1) / 1000017896.jpg -->
+  <div class="break-inside-avoid mb-4"><a href="/media/1000018710.jpg" class="group" data-lightbox="gallery"><img src="/media/1000018710.jpg" alt="1000018710" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000018750.jpg" class="group" data-lightbox="gallery"><img src="/media/1000018750.jpg" alt="1000018750" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000018776.jpg" class="group" data-lightbox="gallery"><img src="/media/1000018776.jpg" alt="1000018776" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000021684.jpg" class="group" data-lightbox="gallery"><img src="/media/1000021684.jpg" alt="1000021684" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000022307.jpg" class="group" data-lightbox="gallery"><img src="/media/1000022307.jpg" alt="1000022307" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000022324.jpg" class="group" data-lightbox="gallery"><img src="/media/1000022324.jpg" alt="1000022324" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000022353.jpg" class="group" data-lightbox="gallery"><img src="/media/1000022353.jpg" alt="1000022353" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000022354.jpg" class="group" data-lightbox="gallery"><img src="/media/1000022354.jpg" alt="1000022354" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000022369.jpg" class="group" data-lightbox="gallery"><img src="/media/1000022369.jpg" alt="1000022369" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000022371.jpg" class="group" data-lightbox="gallery"><img src="/media/1000022371.jpg" alt="1000022371" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000028088.jpg" class="group" data-lightbox="gallery"><img src="/media/1000028088.jpg" alt="1000028088" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/1000028100.jpg" class="group" data-lightbox="gallery"><img src="/media/1000028100.jpg" alt="1000028100" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+
+  <!-- Additional non-numeric photos -->
+  <div class="break-inside-avoid mb-4"><a href="/media/outdoor-gym-cedar-city-workout.jpg" class="group" data-lightbox="gallery"><img src="/media/outdoor-gym-cedar-city-workout.jpg" alt="outdoor-gym-cedar-city-workout" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <!-- removed per request: after-workout, carry-cement-ball, carry-medicine-ball -->
+  <div class="break-inside-avoid mb-4"><a href="/media/carry-weighted-sacks.jpeg" class="group" data-lightbox="gallery"><img src="/media/carry-weighted-sacks.jpeg" alt="carry-weighted-sacks" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/powerlifting bar.jpeg" class="group" data-lightbox="gallery"><img src="/media/powerlifting bar.jpeg" alt="powerlifting bar" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/working-out.jpeg" class="group" data-lightbox="gallery"><img src="/media/working-out.jpeg" alt="working-out" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <!-- reinsert the first two photos here -->
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest1-20.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest1-20.jpg" alt="CCFittest1-20" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
+  <div class="break-inside-avoid mb-4"><a href="/media/CCFittest1-38.jpg" class="group" data-lightbox="gallery"><img src="/media/CCFittest1-38.jpg" alt="CCFittest1-38" class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" loading="lazy" /></a></div>
 </div>
