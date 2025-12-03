@@ -8,7 +8,8 @@
   Optional:
     {{< gallery class="w-full columns-2 md:columns-3 xl:columns-4" >}}
 */ -}}
-{{- $class := .Get "class" | default "w-full columns-2 md:columns-3 xl:columns-4" -}}
+{{- $default := "not-prose w-full columns-2 md:columns-3 xl:columns-4" -}}
+{{- $class := .Get "class" | default $default -}}
 <div class="{{ $class }}">
   {{- .Inner -}}
   {{- /* keep inner whitespace minimal to avoid gaps in columns */ -}}
