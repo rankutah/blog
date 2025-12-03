@@ -7,7 +7,7 @@ themesDir = "../../themes"
 # Remove trailing slashes from generated URLs
 trailingSlash = "never"
 cleanDestinationDir = true
-uglyURLs = true
+uglyURLs = false
 
 [module]
   [[module.mounts]]

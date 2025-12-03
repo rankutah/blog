@@ -2,8 +2,8 @@ media:
   - name: rank-utah
     input: sites/rank-utah/media
     output: /media
-  - name: nova-gutter
-    input: sites/nova-gutter/assets/media
+  - name: novagutter
+    input: sites/novagutter/assets/media
     output: /media
   - name: blue-ridge-abbey
     input: sites/blue-ridge-abbey/media
@@ -171,10 +171,10 @@ content:
         component: locationAddressField
 
   # Example: new client setup
-  - name: nova-gutter
-    label: nova-gutter posts
+  - name: novagutter
+    label: novagutter posts
     type: collection
-    path: sites/nova-gutter/content/posts
+    path: sites/novagutter/content/posts
     filename: "{primary}.md"
 
     view:
@@ -195,13 +195,13 @@ content:
         component: tagsField
         options:
           fetch:
-            url: https://nova-gutter.pages.dev/tags/index.json
+            url: https://novagutter.com/tags/index.json
             method: GET
             results: ""
       - name: body
         component: bodyField
         options:
-          media: nova-gutter
+          media: novagutter
       - name: startDate
         component: startDateField
       - name: endDate

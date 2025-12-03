@@ -20,7 +20,7 @@ themesDir     = "../../themes"
 # Keep URLs tidy
 trailingSlash = "never"
 cleanDestinationDir = true
-uglyURLs = true
+uglyURLs = false
 
 # Ensure FORMS format exists locally so outputs.home supports it
 [outputFormats.FORMS]

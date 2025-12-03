@@ -41,7 +41,7 @@ If any sections of your gutters or any downspouts are missing from your gutter s
 
 This Boca Raton residence wanted to boost their curb appeal and prevent unneeded maintenance by updating their gutter system. The home was inside a goregous community on Lake Lane in Boca. This residential gutter installation was fairly...
 
-[](/gutter-installation-at-cloister-lake-lane-in-boca-raton-fl)
+[](/blog/gutter-installation-at-cloister-lake-lane-in-boca-raton-fl)
 
 
-{{< button url="/gutter-installation-at-cloister-lake-lane-in-boca-raton-fl" text="See Project Details" >}}
+{{< button url="/blog/gutter-installation-at-cloister-lake-lane-in-boca-raton-fl" text="See Project Details" >}}

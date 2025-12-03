@@ -30,7 +30,7 @@ All sites now use a consistent `[params.analytics]` block patterned after `sites
 ```
 
 ### Migration Notes
-* Legacy `googleAnalyticsID` flat param was removed (e.g. `nova-gutter`). Use nested `[params.analytics.google].id` instead.
+* Legacy `googleAnalyticsID` flat param was removed (e.g. `novagutter`). Use nested `[params.analytics.google].id` instead.
 * Sites with explicit `delayMs = 0` retain immediate load (e.g. `rank-utah`, `novagutter`, `blue-ridge-abbey`). Others received an explicit `delayMs = 5000` (previous implicit default was 4000ms).
 * Sites without tracking previously (`cedarcitystrength`, `rodmaxfielddds`) now have a disabled analytics block for uniformity; this does not enable tracking.
 * Shared config (`themes/overrides/config.shared.toml`) now centralizes: theme declaration, Goldmark unsafe settings, `outputFormats.FORMS`, home outputs (adds RSS to sites that previously omitted), default theme behavior (`defaultTheme = "auto"`, `disableThemeToggle = false`), analytics load events (`scroll, mousemove, touchstart, click, keydown`), and mounts.
@@ -104,13 +104,23 @@ We centralize defaults in `themes/overrides/config.shared.toml` and load it firs
 
 - Dev server:
   - Rank Utah: `npm run rank-utah`
-  - Nova Gutter: `npm run nova-gutter`
+  - Novagutter: `npm run novagutter`
+
+  Dev scripts preflight a quick Hugo build and run an internal link check before starting the server. This makes local dev behavior match production more closely and surfaces broken links immediately.
 
 - Production build:
   - Rank Utah: `npm run build:rank-utah`
-  - Nova Gutter: `npm run build:nova-gutter`
+  - Novagutter: `npm run build:novagutter`
 
 These scripts pass `--config "../../themes/overrides/config.shared.toml,config.toml"` to Hugo so the shared defaults are applied before the site-level overrides.
+
+### Automated Internal Link Checking
+
+- After each production build and whenever you start a dev server, `scripts/check-links.mjs` scans `sites/<site>/public/**/*.html` for internal links and verifies they resolve to files or directories with `index.html`.
+- If any broken internal links are found, the script fails hard, prints the broken URL and the source HTML file it was found in, and exits. This keeps builds and dev consistent and prevents surprises.
+- Manual usage:
+  - `node scripts/check-links.mjs --site=rank-utah`
+  - `node scripts/check-links.mjs --site=novagutter`
 
 ## Notes
 
@@ -164,3 +174,10 @@ What belongs in shared config vs per-site:
 
 - Shared (`themes/overrides/config.shared.toml`): permalink patterns, taxonomies, cascade/layout defaults, shortcodes/partials. These do not share content.
 - Per-site (`sites/<site>/config.toml`): module mounts for `content`, `posts`, `static`, `media`, site params, menus. Keep mounts per-site to prevent any cross-site content leakage.
+
+## Monorepo Philosophy: All Sites Act in Unison
+
+- Uniform behavior: All sites share the same run and build processes, layout cascades, shortcodes, and styling via `themes/overrides`. Differences should be limited to content, branding colors, analytics IDs, and menus.
+- Diagnosis made easy: Standardizing the pipeline across sites reduces surprises and makes debugging straightforward.
+- Dev = Prod: Dev scripts preflight a build and run the automated internal link checker, matching production behavior closely.
+- Avoid site-only config divergences unless absolutely necessary; prefer moving common behavior into shared config.

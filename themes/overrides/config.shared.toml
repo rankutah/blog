@@ -35,6 +35,28 @@ ignoreLogs = ['warning-goldmark-raw-html']
   section  = ["HTML"]
   taxonomy = ["HTML", "JSON"]
 
+## Default layout cascade: use Flowbite across common kinds
+## Sites can override via front matter or local cascades if needed.
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "page"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "home"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "taxonomy"
+
+[[cascade]]
+  layout = "flowbite"
+  [cascade._target]
+    kind = "taxonomyTerm"
+
 [params]
   # Centralized default theme behavior; sites may override locally.
   defaultTheme = "auto"
@@ -70,6 +92,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # Cap effective display width on larger screens; let mobile stay full-viewport
   # Tune these if your sites have different content widths
   defaultSizes   = "(min-width:1536px) 800px, (min-width:1024px) 720px, (min-width:768px) 600px, 100vw"
+
+[permalinks]
+  # Standard blog permalink pattern; applies if a site mounts a blog section.
+  blog = "/blog/:contentbasename"
 
 [module]
   [[module.mounts]]
