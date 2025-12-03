@@ -23,16 +23,6 @@ uglyURLs = false
 [outputs]
   home = ["HTML", "RSS", "JSON", "FORMS"]
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        inline = true
-        title = true
-
 [params]
   primaryColor = "emerald"
   logo = "media/logo.png"

@@ -181,3 +181,9 @@ What belongs in shared config vs per-site:
 - Diagnosis made easy: Standardizing the pipeline across sites reduces surprises and makes debugging straightforward.
 - Dev = Prod: Dev scripts preflight a build and run the automated internal link checker, matching production behavior closely.
 - Avoid site-only config divergences unless absolutely necessary; prefer moving common behavior into shared config.
+
+### Uniform-Site Change Policy
+
+- We do not perform styling, layout, or config changes for only a subset of sites. Changes must be implemented in the shared overrides and shared configuration so every site benefits uniformly.
+- If a site needs a truly unique exception, document the rationale and isolate it behind a parameter or a clearly scoped local override that does not break the shared baseline.
+- Cleanup tasks (CSS, shortcodes, partials, analytics logic) should be applied across all sites. Verify by building at least two representative sites after changes.

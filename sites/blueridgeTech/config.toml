@@ -22,25 +22,11 @@ trailingSlash = "never"
 cleanDestinationDir = true
 uglyURLs = false
 
-# Ensure FORMS format exists locally so outputs.home supports it
-[outputFormats.FORMS]
-  mediaType = "application/json"
-  baseName = "forms"
-  isPlainText = true
-  path = ".well-known"
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "FORMS"]
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block  = true
-        inline = true
-        title  = true
+
 
 [params]
   # Force production gating for analytics in any deploy environment

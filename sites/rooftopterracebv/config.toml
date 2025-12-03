@@ -6,17 +6,8 @@ themesDir = "../../themes"
 # Match other single page simplifications but allow sitemap/robots later; keep minimal for now.
 disableKinds = ["taxonomy", "term"]
 # Single-page site: keep only home output types (HTML + JSON + FORMS for form handling consistency)
-[outputFormats.FORMS]
-  mediaType = "application/json"
-  baseName = "forms"
-  isPlainText = true
-  path = ".well-known"
-
 [outputs]
-  # Inherit shared home outputs (HTML, RSS, JSON, FORMS) by omitting custom override.
-
-[cascade]
-  layout = "flowbite"
+  # Inherit shared home outputs (HTML, RSS, JSON, FORMS) via shared config
 
 # No menu / nav links for now; omit [[menu.main]] entries
 

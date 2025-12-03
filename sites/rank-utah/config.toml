@@ -5,26 +5,9 @@ languageCode  = "en-us"
 themesDir     = "../../themes"
  # noop: 2025-11-25 ensure shared robots.txt in use
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        inline = true
-        title = true
-
-# Remove trailing slashes from generated URLs
 trailingSlash = "never"
 cleanDestinationDir = true
 uglyURLs      = false
-# Ensure FORMS format is defined locally so outputs.home can use it reliably
-[outputFormats.FORMS]
-  mediaType = "application/json"
-  baseName = "forms"
-  isPlainText = true
-  path = ".well-known"
 
 [module]
 
@@ -50,31 +33,7 @@ uglyURLs      = false
     source = "posts"
     target = "content/blog"
 
-# Ensure Flowbite layout is used for home and singles (like novagutter)
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "page"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "home"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "taxonomy"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "taxonomyTerm"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "section"
+# Flowbite layout cascade is provided by shared config
 
 
 [outputs]

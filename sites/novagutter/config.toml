@@ -5,48 +5,6 @@ themesDir = "../../themes"
 ignoreFiles = ["^content/articles/"]
 enableRobotsTXT = true
 
-# Use Flowbite layout only for singles and home; let lists/taxonomies use default list templates
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "page"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "home"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "taxonomy"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "taxonomyTerm"
-
-[[cascade]]
-  layout = "flowbite"
-  [cascade._target]
-    kind = "section"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        inline = true
-        title = true
-
-[outputFormats.FORMS]
-  mediaType = "application/json"
-  baseName = "forms"
-  isPlainText = true
-  path = ".well-known"
-
 [module]
   [[module.mounts]]
     source = "content"
