@@ -1,0 +1,55 @@
+{{/*
+  galleryimg shortcode
+  Usage: {{< galleryimg src="/media/filename.jpg" alt="Alt text" >}}
+  - Generates responsive <img> with srcset, sizes, width/height to avoid CLS
+  - Wraps in the standard gallery wrapper and anchor for lightbox
+*/}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- if not $src -}}
+  {{- errorf "galleryimg shortcode requires src parameter" -}}
+{{- end -}}
+{{- $clean := strings.TrimPrefix $src "/" -}}
+{{- if not (strings.HasPrefix $clean "media/") -}}
+  {{- $clean = (print "media/" $clean) -}}
+{{- end -}}
+{{- $img := resources.Get $clean -}}
+{{- if and $img (eq $img.MediaType.MainType "image") -}}
+  {{- /* Generate responsive set via Hugo Pipes */ -}}
+  {{- $widths := slice 480 768 1024 1440 -}}
+  {{- $variants := slice -}}
+  {{- range $w := $widths -}}
+    {{- $r := $img.Resize (printf "%dx" $w) -}}
+    {{- $variants = $variants | append $r -}}
+  {{- end -}}
+  {{- $srcset := slice -}}
+  {{- range $variants -}}
+    {{- $srcset = $srcset | append (printf "%s %dw" .RelPermalink .Width) -}}
+  {{- end -}}
+  {{- $srcset = delimit $srcset ", " -}}
+  {{- $preferred := index $variants 2 | default (index $variants 1) | default (index $variants 0) -}}
+  {{- $sizes := "(min-width:1280px) 25vw, (min-width:768px) 33vw, (min-width:640px) 50vw, 100vw" -}}
+  <div class="break-inside-avoid mb-4">
+    <a href="{{ $img.RelPermalink }}" class="group" data-lightbox="gallery">
+      <img
+        src="{{ $preferred.RelPermalink }}"
+        srcset="{{ $srcset }}"
+        sizes="{{ $sizes }}"
+        width="{{ $preferred.Width }}" height="{{ $preferred.Height }}"
+        alt="{{ $alt }}"
+        loading="lazy" decoding="async"
+        class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+    </a>
+  </div>
+{{- else -}}
+  {{- /* Fallback: not an image resource (e.g., when shared mounts aren't loaded). Render a plain img without resizing to avoid build errors. */ -}}
+  <div class="break-inside-avoid mb-4">
+    <a href="{{ $src }}" class="group" data-lightbox="gallery">
+      <img
+        src="{{ $src }}"
+        alt="{{ $alt }}"
+        loading="lazy" decoding="async"
+        class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+    </a>
+  </div>
+{{- end -}}
