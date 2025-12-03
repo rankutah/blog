@@ -50,7 +50,7 @@ Strength and conditioning gym in Cedar City, Utah
 
 
 <div class="text-center text-sm opacity-80 mt-4">
-	© {{< year >}} Cedar City Strength & Conditioning •  <a href="https://clearpresence.io" target="_blank" rel="nofollow noopener">Website by Clear Presence</a>
+	© {{< year >}} Cedar City Strength & Conditioning •  <a href="https://clearpresence.io/locations/pleasant-grove-ut/" target="_blank" rel="nofollow noopener">Website by Clear Presence</a>
 </div>
 
 
