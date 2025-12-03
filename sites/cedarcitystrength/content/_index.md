@@ -22,21 +22,15 @@ Professional coaching and programs for real-world strength and conditioning.
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 
 {{< col card="true" bg="neutral-50" darkbg="neutral-900" y="start" >}}
-## Small-Group Strength
-Coached sessions focused on compound lifts and technique.
-{{< button url="/services" text="Learn More" >}}
+### Small Group Training
+Coached small-group classes available Monday through Saturday.
+{{< button url="/contact" text="Get Started" >}}
 {{< /col >}}
 
 {{< col card="true" bg="neutral-50" darkbg="neutral-900" y="start" >}}
-## Conditioning
-Intervals and circuits to build capacity without burning out.
-{{< button url="/services" text="Learn More" >}}
-{{< /col >}}
-
-{{< col card="true" bg="neutral-50" darkbg="neutral-900" y="start" >}}
-## 1:1 Coaching
-Individualized programming and accountability for faster progress.
-{{< button url="/services" text="Learn More" >}}
+### Open Gym Membership
+Open gym access available Monday through Sunday.
+{{< button url="/contact" text="Join Open Gym" >}}
 {{< /col >}}
 
 {{< /cols >}}
