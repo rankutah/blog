@@ -1,0 +1,6 @@
+{{- /* Shared CSS bundle: Tailwind + optional compatibility, minified + fingerprinted; use relative URLs for environment robustness */ -}}
+{{- $main := resources.Get "css/main.css" | postCSS -}}
+{{- $compat := resources.Get "css/papermod-compat.css" | default ("" | resources.FromString "/* compat stub */") -}}
+{{- $bundle := slice $main $compat | resources.Concat "assets/css/site.css" | minify | fingerprint "sha384" -}}
+<link rel="preload" as="style" href="{{ relURL $bundle.RelPermalink }}">
+<link rel="stylesheet" href="{{ relURL $bundle.RelPermalink }}">

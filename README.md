@@ -187,3 +187,35 @@ What belongs in shared config vs per-site:
 - We do not perform styling, layout, or config changes for only a subset of sites. Changes must be implemented in the shared overrides and shared configuration so every site benefits uniformly.
 - If a site needs a truly unique exception, document the rationale and isolate it behind a parameter or a clearly scoped local override that does not break the shared baseline.
 - Cleanup tasks (CSS, shortcodes, partials, analytics logic) should be applied across all sites. Verify by building at least two representative sites after changes.
+
+## Centralized CSS Linking (All Sites)
+
+- We now use a single partial `themes/overrides/layouts/partials/styles.html` to build and link the site stylesheet.
+- The bundle is produced via Hugo Pipes + PostCSS, minified, fingerprinted, and linked with relative URLs for environment robustness.
+- Both `partials/head.html` and the Flowbite layout (`layouts/_default/flowbite.html`) include this shared partial; there is no per-layout CSS link logic anymore.
+- Result: All sites reference the same path pattern (`/assets/css/site.min.<hash>.css`) and behave identically across dev, preview, and production environments.
+
+## Cloudflare Pages: Make Production Match Local
+
+To ensure production matches local builds and avoids fingerprint mismatches causing 404s:
+
+- Build command (per site):
+
+```zsh
+pnpm install
+npm run build:<site>
+```
+
+- Publish directory: `sites/<site>/public`
+- Runtime: Node 18+ (or latest LTS); Hugo extended v0.151+ available in the environment; PostCSS present (installed by `pnpm install`).
+- After switching bundle paths or changing CSS pipeline, purge CDN cache to prevent old HTML referencing new fingerprints:
+
+```zsh
+# Example (manual): purge CSS objects after deploy
+# Cloudflare dashboard → Pages project → Purge → Paths: /assets/css/*
+```
+
+### Notes
+- Microsoft Clarity and GA load via their own absolute URLs; using relative URLs for the stylesheet does not affect them.
+- If a Pages project publishes the wrong directory (e.g. repo root `public/`), HTML and assets will not match; fix the publish dir.
+- Always standardize on `npm run build:<site>` so Hugo Pipes runs PostCSS and emits the fingerprinted bundle expected by the HTML.

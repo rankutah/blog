@@ -114,10 +114,8 @@
     <script src='{{ "js/flowbite.min.js" | relURL }}' defer onload="try{window.initCarousels&&window.initCarousels()}catch(e){}"></script>
   {{- end -}}
 
-  {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify + fingerprint (blocking to prevent FOUC) */ -}}
-  {{- $css := resources.Get "css/main.css" | postCSS | minify | fingerprint "sha384" }}
-  <link rel="preload" as="style" href="{{ relURL $css.RelPermalink }}">
-  <link rel="stylesheet" href="{{ relURL $css.RelPermalink }}">
+  {{- /* Styles: centralized bundle via partial for uniform behavior */ -}}
+  {{ partial "styles.html" . }}
 
   {{/* Config-driven font overrides (site-wide) */}}
   {{ partial "fonts.html" . }}
