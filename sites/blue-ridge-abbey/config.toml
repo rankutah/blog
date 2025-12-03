@@ -75,8 +75,8 @@ uglyURLs = true
     enabled = true
 
   [params.analytics.clarity]
-    id = ""
-    enabled = false
+    id = "ufj4qbu6lg"
+    enabled = true
 
   [params.analytics.googleAds]
     id = ""
