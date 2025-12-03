@@ -116,8 +116,8 @@
 
   {{- /* Tailwind + Flowbite CSS via Hugo Pipes + minify + fingerprint (blocking to prevent FOUC) */ -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify | fingerprint "sha384" }}
-  <link rel="preload" as="style" href="{{ absURL $css.RelPermalink }}">
-  <link rel="stylesheet" href="{{ absURL $css.RelPermalink }}">
+  <link rel="preload" as="style" href="{{ relURL $css.RelPermalink }}">
+  <link rel="stylesheet" href="{{ relURL $css.RelPermalink }}">
 
   {{/* Config-driven font overrides (site-wide) */}}
   {{ partial "fonts.html" . }}

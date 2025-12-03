@@ -191,7 +191,7 @@ sameAs = []
     url    = "/blog/"
     weight = 35
 
-  
+
 
   [[menu.main]]
     name   = "Contact"
