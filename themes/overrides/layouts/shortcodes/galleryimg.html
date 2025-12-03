@@ -13,7 +13,20 @@
 {{- if not (strings.HasPrefix $clean "media/") -}}
   {{- $clean = (print "media/" $clean) -}}
 {{- end -}}
+{{- $clean = (path.Clean $clean) -}}
 {{- $img := resources.Get $clean -}}
+{{- if not $img -}}
+  {{- /* Try alternate lookups if the first fails */ -}}
+  {{- $try1 := (printf "/%s" $clean) -}}
+  {{- $img = resources.Get $try1 -}}
+{{- end -}}
+{{- if not $img -}}
+  {{- $try2 := (path.Join "assets" $clean) -}}
+  {{- $img = resources.Get $try2 -}}
+{{- end -}}
+{{- if not $img -}}
+  {{- warnf "galleryimg could not resolve resource for %q (tried: %q, %q, %q)" $src $clean (printf "/%s" $clean) (path.Join "assets" $clean) -}}
+{{- end -}}
 {{- if and $img (eq $img.MediaType.MainType "image") -}}
   {{- /* Generate responsive set via Hugo Pipes */ -}}
   {{- $widths := slice 480 768 1024 1440 -}}
@@ -38,18 +51,38 @@
         width="{{ $preferred.Width }}" height="{{ $preferred.Height }}"
         alt="{{ $alt }}"
         loading="lazy" decoding="async"
-        class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+        class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
     </a>
   </div>
 {{- else -}}
   {{- /* Fallback: not an image resource (e.g., when shared mounts aren't loaded). Render a plain img without resizing to avoid build errors. */ -}}
+  {{- warnf "galleryimg fallback used for %q (resources.Get returned %v)" $clean (printf "%v" $img) -}}
   <div class="break-inside-avoid mb-4">
     <a href="{{ $src }}" class="group" data-lightbox="gallery">
-      <img
-        src="{{ $src }}"
-        alt="{{ $alt }}"
-        loading="lazy" decoding="async"
-        class="w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+        {{- $ext := (strings.ToLower (path.Ext $clean)) -}}
+        {{- $canProbe := or (eq $ext ".jpg") (or (eq $ext ".jpeg") (or (eq $ext ".png") (or (eq $ext ".gif") (eq $ext ".webp")))) -}}
+        {{- if $canProbe -}}
+          {{- with (imageConfig (print "/" $clean)) -}}
+            <img
+              src="{{ $src }}"
+              width="{{ .Width }}" height="{{ .Height }}"
+              alt="{{ $alt }}"
+              loading="lazy" decoding="async"
+              class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+          {{- else -}}
+            <img
+              src="{{ $src }}"
+              alt="{{ $alt }}"
+              loading="lazy" decoding="async"
+              class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+          {{- end -}}
+        {{- else -}}
+          <img
+            src="{{ $src }}"
+            alt="{{ $alt }}"
+            loading="lazy" decoding="async"
+            class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+        {{- end -}}
     </a>
   </div>
 {{- end -}}
