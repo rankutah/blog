@@ -22,7 +22,7 @@ Usage:
   <style data-lazy-vimeo-css>
     [data-lazy-vimeo-wrapper]{position:relative;}
     /* Default nav height variable (mobile-first); tweak per theme if needed */
-    [data-lazy-vimeo-wrapper]{--nav-h:56px;}
+    [data-lazy-vimeo-wrapper]{--nav-h:56px; --nav-h-desktop:64px;}
     @media (min-width:641px){ [data-lazy-vimeo-wrapper]{--nav-h:64px;} }
     /* Force full-viewport width and align left edge to viewport */
     [data-lazy-vimeo-wrapper]{left:calc(50% - 50vw);width:100vw;max-width:100vw;}
@@ -86,23 +86,42 @@ Usage:
   function fitCover(iframe){
     try{
       var cw=target.clientWidth||window.innerWidth;
+      var ch=target.clientHeight||window.innerHeight;
       var ar=videoAR>0?videoAR:(16/9);
-      iframe.style.width=cw+'px';
-      iframe.style.height=(cw/ar)+'px';
-      iframe.style.position='absolute';
-      iframe.style.left='0';
-      iframe.style.right='auto';
-      // On desktop, anchor to bottom so Vimeo controls are visible
       var desktop = (window.innerWidth||cw) >= 1024;
+      // Compute a slight vertical offset to avoid the sticky navbar
+      var navH = 0;
+      try{
+        var styles = getComputedStyle(root);
+        var varVal = styles.getPropertyValue(desktop ? '--nav-h-desktop' : '--nav-h').trim();
+        if(varVal){ navH = parseInt(varVal,10) || 0; }
+      }catch(e){}
+      // Desktop: size to container height to show more of frame; center vertically
       if(desktop){
-        iframe.style.top='auto';
-        iframe.style.bottom='0';
-        iframe.style.transform='none';
+        // Reserve a little space (~48px) for the control bar inside hero height
+        var controlH = 48;
+        // Slightly reduce height so the top edge sits below the navbar
+        var topClearance = 32; // fine-tune as needed
+        var usableH = Math.max(0, ch - controlH - topClearance);
+        iframe.style.height = usableH + 'px';
+        iframe.style.width  = Math.ceil(usableH * ar) + 'px';
+        iframe.style.top = (Math.floor(ch/2) + Math.min(52, navH + 36)) + 'px';
+        iframe.style.bottom = 'auto';
+        // Center horizontally within hero
+        iframe.style.left = '50%';
+        iframe.style.right = 'auto';
+        iframe.style.transform = 'translate(-50%, -50%)';
       } else {
-        iframe.style.top='50%';
+        // Mobile/tablet: span full width and center
+        iframe.style.width=cw+'px';
+        iframe.style.height=(cw/ar)+'px';
+        iframe.style.top=(Math.floor(ch/2) + Math.min(34, navH + 22)) + 'px';
         iframe.style.bottom='auto';
-        iframe.style.transform='translateY(-50%)';
+        iframe.style.left='50%';
+        iframe.style.right='auto';
+        iframe.style.transform='translate(-50%, -50%)';
       }
+      iframe.style.position='absolute';
       iframe.style.maxWidth='none';
       iframe.style.display='block';
     }catch(e){}
