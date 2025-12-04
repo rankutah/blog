@@ -133,12 +133,14 @@ Usage:
     iframe.setAttribute('allowfullscreen','');
     iframe.setAttribute('allow','autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share');
     iframe.referrerPolicy='strict-origin-when-cross-origin';
+    // Lazy load is fine because iframe is only created on click
     iframe.setAttribute('loading','lazy');
     iframe.setAttribute('title','Vimeo video player');
     iframe.className='';
     // Player params: inline playback, DNT, hide title/byline/portrait; controls toggle; honor muted preference
     var paramsArr=[
-      'autoplay=1',
+      // Do not rely on autoplay param; start via API after ready
+      'autoplay=0',
       'muted='+(shouldMute?1:0),
       'app_id=58479',
       'playsinline=1',
@@ -212,15 +214,40 @@ Usage:
               if(w>0 && h>0){ videoAR=w/h; fitCover(iframe); }
             }).catch(function(){});
           }catch(e){}
-          if(!shouldMute){
-            // Explicitly unmute on user gesture
-            player.setVolume(1).catch(function(){});
-          } else {
-            // If user wants mute, keep volume low
-            player.setVolume(0).catch(function(){});
+          // Mobile autoplay policies: ensure a user-gesture triggers play
+          // Start play and handle failures by temporarily muting
+          function startPlayback(){
+            var wantSound = !shouldMute;
+            if(wantSound){
+              player.setMuted(false).catch(function(){});
+              player.setVolume(1).catch(function(){});
+            } else {
+              player.setMuted(true).catch(function(){});
+              player.setVolume(0).catch(function(){});
+            }
+            // Ensure video is loaded before play to avoid the pause-then-play glitch
+            var p = player.loadVideo(videoId).then(function(){ return player.play(); }).catch(function(err){ return player.play(); });
+            if(p && p.catch){
+              p.catch(function(){
+                // Fallback: mute to satisfy autoplay, then unmute shortly after
+                player.setMuted(true).catch(function(){});
+                player.setVolume(0).catch(function(){});
+                player.loadVideo(videoId).then(function(){ return player.play(); }).then(function(){
+                  if(!shouldMute){ setTimeout(function(){ player.setMuted(false).catch(function(){}); player.setVolume(1).catch(function(){}); }, 400); }
+                }).catch(function(){});
+              });
+            }
           }
-          player.play().catch(function(){});
+          startPlayback();
         }).catch(function(){});
+        // Listen for error events that indicate blocked autoplay; retry muted
+        try{
+          player.on('error', function(){
+            player.setMuted(true).catch(function(){});
+            player.setVolume(0).catch(function(){});
+            player.play().catch(function(){});
+          });
+        }catch(e){}
         // If controls are hidden, enable tap-to-toggle; otherwise don't block native UI
         if(!showControls){
           var toggling=false;
