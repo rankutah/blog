@@ -42,7 +42,10 @@ function extractLoadParam(tomlText) {
   const nextSecIdx = afterHeader.search(/^\s*\[{1,2}[^\]]+\]{1,2}\s*$/m);
   const body = nextSecIdx === -1 ? afterHeader : afterHeader.slice(0, nextSecIdx);
   const m = body.match(/\n?\s*load\s*=\s*"([^"]+)"/);
-  return m ? m[1] : '';
+  if (m && m[1]) return m[1];
+  // Fallback: search globally if section-bound parse fails (handles unusual whitespace/comments)
+  const global = tomlText.match(/\n?\s*load\s*=\s*"([^"]+)"/);
+  return global && global[1] ? global[1] : '';
 }
 
 async function ensureDir(p) { try { await fs.mkdir(p, { recursive: true }); } catch {} }

@@ -53,6 +53,9 @@
 {{- /* Tailwind + optional compatibility CSS: centralized */}}
 {{ partial "styles.html" . }}
 
+{{- /* Local vendored Google Fonts (if configured) */}}
+{{ partial "fonts.html" . }}
+
 {{- /* Add taxonomy badge CSS here */}}
 {{ partial "taxonomy-badges.html" . }}
 

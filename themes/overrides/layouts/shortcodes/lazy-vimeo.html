@@ -206,39 +206,38 @@ Usage:
       try{
         if(!player){ player=new window.Vimeo.Player(iframe); }
         // On initial load after user click: unmute if requested and play
-        player.ready().then(function(){
-          // Try to fetch actual video aspect ratio to avoid side bars
-          try{
-            Promise.all([player.getVideoWidth(), player.getVideoHeight()]).then(function(vals){
-              var w=vals && vals[0]||0; var h=vals && vals[1]||0;
-              if(w>0 && h>0){ videoAR=w/h; fitCover(iframe); }
-            }).catch(function(){});
-          }catch(e){}
-          // Mobile autoplay policies: ensure a user-gesture triggers play
-          // Start play and handle failures by temporarily muting
-          function startPlayback(){
-            var wantSound = !shouldMute;
-            if(wantSound){
-              player.setMuted(false).catch(function(){});
-              player.setVolume(1).catch(function(){});
-            } else {
-              player.setMuted(true).catch(function(){});
-              player.setVolume(0).catch(function(){});
-            }
-            // Ensure video is loaded before play to avoid the pause-then-play glitch
-            var p = player.loadVideo(videoId).then(function(){ return player.play(); }).catch(function(err){ return player.play(); });
-            if(p && p.catch){
-              p.catch(function(){
-                // Fallback: mute to satisfy autoplay, then unmute shortly after
+        // Try immediate play on click to preserve gesture on iOS
+        (function immediateStart(){
+          var wantSound = !shouldMute;
+          if(wantSound){
+            player.setMuted(false).catch(function(){});
+            player.setVolume(1).catch(function(){});
+          } else {
+            player.setMuted(true).catch(function(){});
+            player.setVolume(0).catch(function(){});
+          }
+          var p = player.play();
+          if(p && p.catch){
+            p.catch(function(){
+              // Fallback: load then play; if still blocked, start muted then unmute
+              player.loadVideo(videoId).then(function(){ return player.play(); }).catch(function(){
                 player.setMuted(true).catch(function(){});
                 player.setVolume(0).catch(function(){});
                 player.loadVideo(videoId).then(function(){ return player.play(); }).then(function(){
                   if(!shouldMute){ setTimeout(function(){ player.setMuted(false).catch(function(){}); player.setVolume(1).catch(function(){}); }, 400); }
                 }).catch(function(){});
               });
-            }
+            });
           }
-          startPlayback();
+        })();
+        // Fetch aspect ratio soon after to refine sizing
+        player.ready().then(function(){
+          try{
+            Promise.all([player.getVideoWidth(), player.getVideoHeight()]).then(function(vals){
+              var w=vals && vals[0]||0; var h=vals && vals[1]||0;
+              if(w>0 && h>0){ videoAR=w/h; fitCover(iframe); }
+            }).catch(function(){});
+          }catch(e){}
         }).catch(function(){});
         // Listen for error events that indicate blocked autoplay; retry muted
         try{
