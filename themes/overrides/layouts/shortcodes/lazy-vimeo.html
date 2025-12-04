@@ -11,6 +11,7 @@ Usage:
 {{ $alt := .Get "alt" }}
 {{ $class := .Get "class" }}
 {{ $muted := .Get "muted" | default "true" }}
+{{ $controls := .Get "controls" | default "true" }}
 {{ $inner := $page.RenderString (dict "markup" "goldmark" "renderShortcodes" true) .Inner }}
 {{ $primary := site.Params.primaryColor | default "emerald" }}
 {{ $btnColorLight := printf "text-%s-600" $primary }}
@@ -20,11 +21,30 @@ Usage:
 <div class="section hero bleed">
   <style data-lazy-vimeo-css>
     [data-lazy-vimeo-wrapper]{position:relative;}
+    /* Default nav height variable (mobile-first); tweak per theme if needed */
+    [data-lazy-vimeo-wrapper]{--nav-h:56px;}
+    @media (min-width:641px){ [data-lazy-vimeo-wrapper]{--nav-h:64px;} }
+    /* Force full-viewport width and align left edge to viewport */
+    [data-lazy-vimeo-wrapper]{left:calc(50% - 50vw);width:100vw;max-width:100vw;}
+    @supports (width: 100svw){
+      [data-lazy-vimeo-wrapper]{left:calc(50% - 50svw);width:100svw;max-width:100svw;}
+    }
     [data-lazy-vimeo-target]{position:relative!important;}
     [data-lazy-vimeo-target] picture,[data-lazy-vimeo-target] picture img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;}
     [data-lazy-vimeo-overlay]{position:absolute!important;inset:0!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;}
+    /* Prevent navbar from overlapping hero text (let video tuck slightly under) */
+    @media (max-width:640px){
+      [data-lazy-vimeo-overlay]{padding-top:var(--nav-h);} /* keep headings below nav */
+    }
+    /* Responsive hero heights: shorter on small screens */
+    @media (max-width: 640px){
+      [data-lazy-vimeo-target]{min-height:70vh !important;height:70vh !important}
+    }
+    @media (min-width: 641px) and (max-width: 1024px){
+      [data-lazy-vimeo-target]{min-height:85vh !important;height:85vh !important}
+    }
   </style>
-  <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen isolate group {{$class}}" data-lazy-vimeo-wrapper>
+  <div class="relative w-screen isolate group {{$class}}" data-lazy-vimeo-wrapper>
     <div class="relative w-full overflow-hidden" style="min-height:100vh;min-height:100svh;height:100vh;height:100svh" data-lazy-vimeo-target>
       <picture>
         <img src="{{$img}}" alt="{{$alt}}" class="h-full w-full object-cover" loading="eager" fetchpriority="high" decoding="async" />
@@ -57,27 +77,34 @@ Usage:
   if(!btn||!target) return;
   var videoId='{{$id}}';
   var shouldMute={{ if eq (lower $muted) "false" }}false{{ else }}true{{ end }};
+  var showControls={{ if eq (lower $controls) "false" }}false{{ else }}true{{ end }};
   var player=null; // Vimeo player instance
   var iframe=null; // iframe element reference
   var control=null; // overlay control for tap-to-toggle
   var picture=null, overlay=null, shade=null; // hero elements
+  var videoAR=16/9; // default aspect ratio; updated from Vimeo metadata
   function fitCover(iframe){
     try{
       var cw=target.clientWidth||window.innerWidth;
-      var ch=target.clientHeight||window.innerHeight;
-      var r=16/9;
-      var cr=cw/ch;
-      if(cr>r){
-        iframe.style.width=cw+'px';
-        iframe.style.height=(cw/r)+'px';
-      } else {
-        iframe.style.height=ch+'px';
-        iframe.style.width=(ch*r)+'px';
-      }
+      var ar=videoAR>0?videoAR:(16/9);
+      iframe.style.width=cw+'px';
+      iframe.style.height=(cw/ar)+'px';
       iframe.style.position='absolute';
-      iframe.style.top='50%';
-      iframe.style.left='50%';
-      iframe.style.transform='translate(-50%,-50%)';
+      iframe.style.left='0';
+      iframe.style.right='auto';
+      // On desktop, anchor to bottom so Vimeo controls are visible
+      var desktop = (window.innerWidth||cw) >= 1024;
+      if(desktop){
+        iframe.style.top='auto';
+        iframe.style.bottom='0';
+        iframe.style.transform='none';
+      } else {
+        iframe.style.top='50%';
+        iframe.style.bottom='auto';
+        iframe.style.transform='translateY(-50%)';
+      }
+      iframe.style.maxWidth='none';
+      iframe.style.display='block';
     }catch(e){}
   }
   function load(){
@@ -90,9 +117,17 @@ Usage:
     iframe.setAttribute('loading','lazy');
     iframe.setAttribute('title','Vimeo video player');
     iframe.className='';
-    // Start muted only to satisfy autoplay policies; we'll immediately unmute on user click
-    // Hide Vimeo UI chrome (status/controls), remove creator promo, keep inline playback
-    var params='autoplay=1&muted=1&app_id=58479&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1';
+    // Player params: inline playback, DNT, hide title/byline/portrait; controls toggle; honor muted preference
+    var paramsArr=[
+      'autoplay=1',
+      'muted='+(shouldMute?1:0),
+      'app_id=58479',
+      'playsinline=1',
+      'dnt=1',
+      'title=0','byline=0','portrait=0',
+      'controls='+(showControls?1:0)
+    ];
+    var params=paramsArr.join('&');
     iframe.src='https://player.vimeo.com/video/'+videoId+'?'+params;
     iframe.setAttribute('frameborder','0');
     // Do NOT remove picture or overlay; just hide for replay support
@@ -128,25 +163,36 @@ Usage:
       s.onload=function(){ cb(); };
       document.head.appendChild(s);
     }
-    // Create a transparent control layer to handle tap-to-toggle
-    if(!control){
-      control=document.createElement('div');
-      control.setAttribute('data-lazy-vimeo-control','');
-      control.style.position='absolute';
-      control.style.inset='0';
-      control.style.zIndex='5';
-      control.style.background='transparent';
-      control.style.cursor='pointer';
-      target.appendChild(control);
+    // Create a transparent control layer only if native controls are hidden
+    if(!showControls){
+      if(!control){
+        control=document.createElement('div');
+        control.setAttribute('data-lazy-vimeo-control','');
+        control.style.position='absolute';
+        control.style.inset='0';
+        control.style.zIndex='5';
+        control.style.background='transparent';
+        control.style.cursor='pointer';
+        target.appendChild(control);
+      } else {
+        control.style.visibility='visible';
+        control.style.pointerEvents='auto';
+      }
     } else {
-      control.style.visibility='visible';
-      control.style.pointerEvents='auto';
+      if(control){ control.style.pointerEvents='none'; control.style.visibility='hidden'; }
     }
     ensureVimeoPlayerScript(function(){
       try{
         if(!player){ player=new window.Vimeo.Player(iframe); }
         // On initial load after user click: unmute if requested and play
         player.ready().then(function(){
+          // Try to fetch actual video aspect ratio to avoid side bars
+          try{
+            Promise.all([player.getVideoWidth(), player.getVideoHeight()]).then(function(vals){
+              var w=vals && vals[0]||0; var h=vals && vals[1]||0;
+              if(w>0 && h>0){ videoAR=w/h; fitCover(iframe); }
+            }).catch(function(){});
+          }catch(e){}
           if(!shouldMute){
             // Explicitly unmute on user gesture
             player.setVolume(1).catch(function(){});
@@ -156,16 +202,18 @@ Usage:
           }
           player.play().catch(function(){});
         }).catch(function(){});
-        // Tap-to-toggle play/pause
-        var toggling=false;
-        function togglePlayback(){
-          if(toggling) return; toggling=true;
-          player.getPaused().then(function(paused){
-            if(paused){ player.play(); } else { player.pause(); }
-          }).catch(function(){ /* noop */ }).finally(function(){ toggling=false; });
+        // If controls are hidden, enable tap-to-toggle; otherwise don't block native UI
+        if(!showControls){
+          var toggling=false;
+          function togglePlayback(){
+            if(toggling) return; toggling=true;
+            player.getPaused().then(function(paused){
+              if(paused){ player.play(); } else { player.pause(); }
+            }).catch(function(){ /* noop */ }).finally(function(){ toggling=false; });
+          }
+          control.addEventListener('click', function(e){ e.preventDefault(); togglePlayback(); });
+          control.addEventListener('touchend', function(e){ e.preventDefault(); togglePlayback(); }, { passive:false });
         }
-        control.addEventListener('click', function(e){ e.preventDefault(); togglePlayback(); });
-        control.addEventListener('touchend', function(e){ e.preventDefault(); togglePlayback(); }, { passive:false });
         // On ended: restore hero poster + overlay and show play button again
         player.on('ended', function(){
           try{
