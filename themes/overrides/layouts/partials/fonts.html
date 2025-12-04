@@ -26,8 +26,9 @@
 
 {{/* If a site declares fonts.load, prefer the vendored local CSS produced by scripts/vendor-google-fonts.mjs */}}
 {{- if $load }}
-  <link rel="preload" as="style" href="/fonts/google/fonts.css">
-  <link rel="stylesheet" href="/fonts/google/fonts.css">
+  {{- $ver := printf "%d" (now.Unix) -}}
+  <link rel="preload" as="style" href="/fonts/google/fonts.css?v={{ $ver }}">
+  <link rel="stylesheet" href="/fonts/google/fonts.css?v={{ $ver }}">
 {{- end }}
 
 {{- if $useLocalCinzel }}
