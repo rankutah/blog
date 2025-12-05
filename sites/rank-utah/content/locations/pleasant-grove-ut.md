@@ -43,7 +43,7 @@ schema:
 ---
 
 {{< hero img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Showing view of a city in Utah County and surrounding small businesses" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Custom Website Design & Local SEO for Small Businesses in Utah{.text-white}
+# Custom Website Design & Local SEO (Search Engine Optimization) in Utah{.text-white}
 Helping small businesses in Utah grow with modern, mobile-friendly websites and proven on-page and off-page SEO strategies that bring in more calls, leads, and customers.
 {.text-white}
 
@@ -148,7 +148,7 @@ Grow your small business anywhere in Utah with a fast, custom website and local 
 
 Most small business sites don’t bring enough traffic or leads. I combine custom website design and local SEO so your pages are fast, mobile‑friendly, and structured to convert visitors into calls and bookings. My monthly pricing keeps it affordable.
 
-### On‑page SEO
+### On‑page <abbr title="Search Engine Optimization">SEO</abbr> (on your site)
 - Find the exact phrases people in Utah search for — see my [On‑page SEO guide](/blog/on-page-seo-strategy-utah/)
 - Write clear page titles and headings that match what people search
 - Keep page addresses simple and readable (like "/services/roof-repair")
@@ -156,7 +156,7 @@ Most small business sites don’t bring enough traffic or leads. I combine custo
 - Make pages load fast and feel smooth on phones and computers — see [Mobile Website Design](/blog/mobile-website-design-utah/)
 - Connect related pages with helpful links and include the extra details search engines look for (business info, FAQs)
 
-### Off‑page SEO
+### Off‑page <abbr title="Search Engine Optimization">SEO</abbr> (profiles, listings, reviews)
 - Google Business Profile optimization (categories, services, photos)
 - Apple Maps and Bing Places setup
 - Keep business info consistent across 100+ directories, maps, and apps (citation management)
@@ -164,7 +164,7 @@ Most small business sites don’t bring enough traffic or leads. I combine custo
 - Tracking and monthly reporting so you can see calls and clicks
 - Guidance on local backlinks and visibility
 
-Learn more about my process on the [Local SEO](/services/local-seo) page.
+Learn more about my process on the [Local SEO](/services/local-seo "Local SEO (Search Engine Optimization)") page.
 
 ### What you get
 
@@ -266,6 +266,9 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 ## FAQ
 
 {{< faqs >}}
+### What is SEO?
+SEO stands for Search Engine Optimization — helping people find you on search engines like Google, Maps, AI, Voice Search, ect.
+
 ### How long does a custom site take?
 Sites can usually be done in 2–3 weeks with good coordination.
 

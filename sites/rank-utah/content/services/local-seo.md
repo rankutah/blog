@@ -69,6 +69,10 @@ params:
 ## Local SEO (Search Engine Optimization)
 Get more calls and messages by showing up in Google’s local results and on Maps. I improve your Google Business Profile, line up your pages with what people actually search, and keep your listings and reviews working together so nearby customers can find and contact you.
 
+### In plain English
+Local SEO means showing up when nearby people search for what you do. If someone types “gutter repair near me” or “dentist Pleasant Grove,” you want your business to appear in Google Maps and the local results — with accurate info, photos, services, and reviews.
+
+
 ## Customer Reviews
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
