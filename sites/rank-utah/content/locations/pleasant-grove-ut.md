@@ -250,7 +250,7 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 
 ## Featured Work
 
-{{< button url="/portfolio" text="See Full Website Portfolio" >}}
+{{< button url="/portfolio" text="See Website Portfolio" >}}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
