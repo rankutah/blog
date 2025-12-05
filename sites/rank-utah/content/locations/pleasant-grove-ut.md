@@ -156,7 +156,14 @@ Most small business sites don’t bring enough traffic or leads. I combine custo
 - Clean, fast pages that load quickly and are easy to crawl.
 
 ### Off‑page SEO
-- Off‑page SEO strategies: Google Business Profile optimization, review strategy, and guidance on local citations and trustworthy links.
+- Google Business Profile optimization (categories, services, photos)
+- Apple Maps and Bing Places setup
+- Keep business info consistent across 100+ directories, maps, and apps (citation management)
+- Review strategy and response guidance
+- Tracking and monthly reporting so you can see calls and clicks
+- Guidance on local backlinks and visibility
+
+Learn more about my process on the [Local SEO](/services/local-seo) page.
 
 ### What you get
 
