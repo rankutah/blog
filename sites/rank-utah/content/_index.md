@@ -30,7 +30,7 @@ schema:
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Website Design & Local SEO for Small Businesses {.text-white}
-Fast business websites with local search help
+Fast business websites with local SEO (Search Engine Optimization) Services
 {.text-white}
 {{<button url="/services/website-design" text="Website Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
 {{< /hero >}}
