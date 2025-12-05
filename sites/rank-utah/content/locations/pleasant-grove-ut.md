@@ -248,6 +248,70 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 {{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
 {{< button url="/pricing" text="See Pricing" >}}
 
+## Featured Work
+
+{{< cols min="16rem" gap="1.5rem" v="start" >}}
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+### Quartz Worx – Countertops
+![](/media/website-design-quartz-worx.avif)
+{{< /col >}}
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+### Cedar City Strength – Fitness
+![](/media/website-design-cedar-city-strength.avif)
+{{< /col >}}
+{{< /cols >}}
+
+{{< cols min="16rem" gap="1.5rem" v="start" >}}
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+### Blue Ridge Abbey – Hospitality
+![](/media/website-design-blue-ridge-abbey.jpg)
+{{< /col >}}
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+### BlueridgeTech – IT Services
+![](/media/website-design-blueridge-tech.avif)
+{{< /col >}}
+{{< /cols >}}
+
+## Ready To Get Started
+
+![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+{.w-40 .mb-4}
+I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
+
+### Share a bit about your business and goals.
+
+{{< contact-form
+  id="contact1"
+  action="https://submit-form.com/I4t2OG4uj"
+  name="true"
+  email="true"
+  phone="optional"
+  business="false"
+  subject="false"
+  message="true"
+  consent="false"
+  classes="max-w-xl"
+>}}
+
+{{< button submit="true" form="contact1" text="Submit Message" >}}
+
+## FAQ
+
+{{< faqs >}}
+### How long does a custom site take?
+Sites can usually be done in 2–3 weeks with good coordination.
+
+### Do you handle hosting & the website url name?
+Yes. Managed hosting and your website name is included.
+
+### Are there upfront fees?
+No, there is one simply monthly subscription that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
+
+### Are content updates really unlimited?
+Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
+
+{{< /faqs >}}
+
 
 
 
