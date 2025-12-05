@@ -139,9 +139,6 @@ Grow your small business anywhere in Utah with a fast, custom website and local 
 {{< /cols >}}
 
 
-
-
-
 ## Customer Website Design Experiences
 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
@@ -182,7 +179,7 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 
-![Headshot of Benjamin Awerkamp, the Website Designer & Local SEO Expert](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![Headshot of Benjamin Awerkamp, the Website Designer & Local SEO Specialist](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-48}
 **Benjamin Awerkamp** <br>
 Call or Text: (385) 323-8130 <br>
