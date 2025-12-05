@@ -43,8 +43,8 @@ schema:
 ---
 
 {{< hero img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Showing view of a city in Utah County and surrounding small businesses" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Custom Website Design & Local SEO for Utah Small Businesses {.text-white}
-Helping Utah small businesses grow with modern, mobile-friendly websites and proven on-page and off-page SEO strategies that bring in more calls, leads, and customers.
+# Custom Website Design & Local SEO for Small Businesses in Utah{.text-white}
+Helping small businesses in Utah grow with modern, mobile-friendly websites and proven on-page and off-page SEO strategies that bring in more calls, leads, and customers.
 {.text-white}
 
 
