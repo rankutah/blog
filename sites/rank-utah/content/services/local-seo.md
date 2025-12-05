@@ -67,7 +67,7 @@ params:
 </script>
 
 ## Local SEO (Search Engine Optimization)
-Get more calls and messages by showing up in Google’s local results and Maps. I optimize your Google Business Profile, align pages to high‑intent local keywords, and keep your listings and reviews working together to win nearby searches.
+Get more calls and messages by showing up in Google’s local results and on Maps. I improve your Google Business Profile, line up your pages with what people actually search, and keep your listings and reviews working together so nearby customers can find and contact you.
 
 ## Customer Reviews
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -76,19 +76,19 @@ Get more calls and messages by showing up in Google’s local results and Maps. 
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### What You Get
-- Google Business Profile optimization
-- Apple Maps and Bing Places setup
-- Keep your business info consistent across 100+ directories, maps, and apps
-- Research local keywords and improve your pages to match
-- Review strategy & response guidance
-- Set up tracking and reports so you can see calls and clicks
-- Improve site speed and overall experience
-- Ongoing updates and monthly reporting
+- Better Google Business Profile (categories, services, photos)
+- Apple Maps and Bing Places set up
+- Consistent business info across 100+ directories (no mixed details)
+- Local keyword research and page improvements to match how people search
+- Review strategy and simple ways to reply
+- Clear tracking so you can see calls and clicks
+- Faster pages and a smoother experience
+- Ongoing updates and a simple monthly report
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
-- Local SEO (no website) — $199/mo: Google Business Profile management, Apple Maps and Bing Places management, plus more than 100 directories, maps, and apps. Includes local keyword research and plan, making sure your business info and keywords match across your profiles, and monthly visitor reports. Best if you already have a site.
+- Local SEO (no website) — $199/mo: I manage your Google Business Profile, set up Apple Maps and Bing Places, and keep your info accurate across 100+ directories. Includes local keyword research, a simple plan, and monthly reports. Best if you already have a site.
 - Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, I can remake or move it so it’s clean, fast, and aligned with local searches.
 
 Month‑to‑month. No long‑term contract.

@@ -149,17 +149,12 @@ Grow your small business anywhere in Utah with a fast, custom website and local 
 Most small business sites don’t bring enough traffic or leads. I combine custom website design and local SEO so your pages are fast, mobile‑friendly, and structured to convert visitors into calls and bookings. My monthly pricing keeps it affordable.
 
 ### On‑page SEO
-- Keyword research to target terms with solid volume and achievable difficulty, matched to Utah and Utah County intent. See: [On‑Page SEO Strategy](/blog/on-page-seo-strategy-utah/)
-- Title tag optimization aligned to the primary keyword and intent
-- Clear meta descriptions to improve click‑through (for humans, not ranking)
-- Simple, readable URL slugs (keyword‑aligned)
-- Headings (H1–H3) structured around primary + supporting keywords
-- Image optimization (AVIF/WebP, compression under ~150 KB) with descriptive alt text
-- Page speed improvements (limit scripts, defer/delay tracking, preconnect/preload) and CDN caching; see [Mobile Website Design](/blog/mobile-website-design-utah/)
-- Internal linking between related service and location pages; selective external links to authoritative resources
-- Schema markup (LocalBusiness, Service, FAQ when relevant) validated against Google’s guidelines
-- Mobile‑friendly, responsive layout with easy navigation and clear CTAs
-- Core Web Vitals focus (LCP, CLS, INP) to reinforce quality and rankings
+- Find the exact phrases people in Utah search for — see my [On‑page SEO guide](/blog/on-page-seo-strategy-utah/)
+- Write clear page titles and headings that match what people search
+- Keep page addresses simple and readable (like "/services/roof-repair")
+- Use good‑looking images that still load quickly, with helpful image descriptions
+- Make pages load fast and feel smooth on phones and computers — see [Mobile Website Design](/blog/mobile-website-design-utah/)
+- Connect related pages with helpful links and include the extra details search engines look for (business info, FAQs)
 
 ### Off‑page SEO
 - Google Business Profile optimization (categories, services, photos)
@@ -240,7 +235,7 @@ No hidden fees. No contracts. Unlimited updates.
 
 - Local Utah designer focused on small business results
 - Fast turnaround and personalized support
-- Security and Cloudflare performance stack
+- Secure and fast setup
 - Clean, modern codebase built for speed
 
 ### Affordable Results at a Fraction of Big Agency Costs

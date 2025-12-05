@@ -27,7 +27,7 @@ schema:
 # Website Design
 Completely custom websites. Built for performance.
 
-Get a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and lightweight code designed to perform on mobile.
+Get a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and a lightweight build designed to perform on mobile.
 
 {{< button url="/contact" text="Contact" >}}
 {{< button url="/portfolio" text="See Portfolio" >}}
@@ -85,31 +85,19 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 
 {{< button url="/portfolio" text="See Portfolio" >}}
 
-
-
-
-
 ## What clients are saying
 
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
-
-
-
-
 
 ## What you get
 
 - Custom design and build (no templates)
 - Basic SEO setup (page titles, descriptions, internal links)
-- Performance optimization and image handling
+- Built to load quickly with sharp, lightweight images
 - Forms with spam protection and tracking
-- Hosting/CDN and SSL included
+- Fast hosting and a secure site (SSL) included
 - Accessible and phone‑friendly
 - Training and friendly support
-
-
-
-
 
 ## How it works
 
@@ -119,18 +107,9 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 4. Launch — tracking, final checks, and go‑live list
 5. Grow — updates, new pages, and simple reports
 
-
-
-
-
 ## Step 1: Pick your colors
 
-
-
-
 {{< color-picker >}}
-
-
 
 ## Step 2: Save your colors
 
@@ -139,23 +118,15 @@ Save your colors by sending a quick message.
 {{< contact-form id="colors" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" custom="Primary Color, Background Color" phone="optional" message="true" classes="max-w-xl"  >}}
 {{< button submit="true" form="colors" text="Save my Colors" >}}
 
-
 ## Step 3:
 
 Decide whether you also need {{< button url="/services/local-seo" text="Local SEO" >}} and then choose your {{< button url="/pricing" text="Pricing Package">}}
-
-
-
-
 
 ## Areas
 
 Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
-
-
-
 
 
 ## Ready to get started?
