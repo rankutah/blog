@@ -267,7 +267,7 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 
 {{< faqs >}}
 ### What is SEO?
-SEO stands for Search Engine Optimization — helping people find you on search engines like Google, Maps, AI, Voice Search, ect.
+SEO stands for Search Engine Optimization — helping people find you on search engines like Google, Maps, AI, and Voice Search.
 
 ### How long does a custom site take?
 Sites can usually be done in 2–3 weeks with good coordination.
