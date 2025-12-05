@@ -1,6 +1,6 @@
 ---
-title: "Website Design in Pleasant Grove, UT"
-description: "Custom website design in Pleasant Grove. Fast site built to bring you calls and messages."
+title: "Custom Website Design & Local SEO Services for Small Businesses in Utah | On-page & Off-page Search Engine Optimization"
+description: "Get a custom website and powerful local SEO tailored for Utah small businesses. Clear Presence builds fast, modern sites with on-page and off-page optimization that helps you get found."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -17,19 +17,34 @@ schema:
       addressCountry: "US"
     openingHoursSpecification:
       - "@type": OpeningHoursSpecification
-        dayOfWeek: [Monday, Tuesday, Wednesday, Thursday, Friday]
-        opens: "09:00"
-        closes: "17:00"
+        dayOfWeek: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+        opens: "08:00"
+        closes: "20:00"
     hasMap: "https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062"
     geo:
       latitude: "40.35949"
       longitude: "-111.77212"
     priceRange: "$149–$299/mo"
+    areaServed: ["Utah", "Utah County"]
+  service:
+    enabled: true
+    serviceType: "Custom Website Design & Local SEO"
+    description: "On-page SEO optimization and off-page SEO strategies with custom website design for small businesses across Utah, including Utah County — built to increase calls, messages, quotes, and bookings."
+    areaServed: ["Utah", "Utah County"]
+    offers:
+      - "@type": Offer
+        name: "Monthly Website Plan"
+        price: "149.00"
+        priceCurrency: "USD"
+      - "@type": Offer
+        name: "Website + SEO Package"
+        price: "299.00"
+        priceCurrency: "USD"
 ---
 
-{{< hero img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Pleasant Grove city view showing PG high school and surrounding area" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design in Pleasant Grove {.text-white}
-Fast custom websites that help you get calls
+{{< hero img="/media/pleasant-grove-website-design-seo-marketing.avif" alt="Showing view of a city in Utah County and surrounding small businesses" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Custom Website Design & Local SEO for Utah Small Businesses {.text-white}
+Helping Utah small businesses grow with modern, mobile-friendly websites and proven on-page and off-page SEO strategies that bring in more calls, leads, and customers.
 {.text-white}
 
 
@@ -50,7 +65,7 @@ Fast custom websites that help you get calls
 
 ## Clear Presence Near You
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
-- Business Hours: Mon–Fri, 9am–5pm
+- Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
 ![Clear Presence Website Design Storefront Sign in Pleasant Grove, UT](/media/storefront-sign-business-web-design-local-seo.jpeg)
@@ -60,9 +75,9 @@ Fast custom websites that help you get calls
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Website Design in Pleasant Grove, UT
+## Website Design & Local SEO in Utah
 
-Grow your small business in Pleasant Grove with a professional website. Reach out via call, text, or email.
+Grow your small business anywhere in Utah with a fast, custom website and local SEO that helps you show up and get more calls. I serve Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/pricing" text="Website Pricing" >}}
@@ -132,17 +147,24 @@ Grow your small business in Pleasant Grove with a professional website. Reach ou
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## Website Design in Pleasant Grove, UT
+## Websites Built for Growth — Not Just Looks
 
-Get a website that brings you more calls, quotes, and bookings—not just a pretty homepage. You’ll get a fast, phone‑friendly site built for local search with clear call and text buttons plus ongoing help by call, text, or email whenever you need it.
+Most small business sites don’t bring enough traffic or leads. I combine custom website design and local SEO so your pages are fast, mobile‑friendly, and structured to convert visitors into calls and bookings. My monthly pricing keeps it affordable.
+
+### On‑page SEO
+- On‑page SEO optimization: titles, headings, internal links, and structured data designed around how people search for your services in Utah and Utah County.
+- Clean, fast pages that load quickly and are easy to crawl.
+
+### Off‑page SEO
+- Off‑page SEO strategies: Google Business Profile optimization, review strategy, and guidance on local citations and trustworthy links.
 
 ### What you get
 
-- Custom design that fits your brand and looks great on phones.
-- Basic local search setup (titles, fast load, Google Business Profile best practices) so you’re easier to find in Pleasant Grove and Utah County.
-- Pages arranged so visitors call or text you.
-- Month-to-month support—no lock-in—so your site keeps improving as your business grows.
-- Simple pricing (low monthly subscription) instead of a big upfront fee.
+- Custom website builds with clean modern design that looks great on phones.
+- Basic local search setup (titles, fast load, Google Business Profile best practices) so you’re easier to find across Utah and Utah County.
+- High‑converting small business sites with clear, persistent call and text buttons.
+- Month‑to‑month support—no lock‑in—so your site keeps improving as your business grows.
+- Simple monthly website plans instead of a big upfront fee.
 
 ### Ready to Get Started
 I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
@@ -170,10 +192,11 @@ You can learn more about my website design process by visiting the following pag
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/portfolio" text="Website Portfolio" >}}
+{{< button url="/pricing" text="Simple Monthly Pricing" >}}
 
 ## Reach Out
 
-I'm available 9am-5pm Mon-Fri but feel free to leave me a text or voicemail after hours.
+I'm available 8am–8pm Mon–Sat (MT). Feel free to leave me a text or voicemail after hours.
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
@@ -182,6 +205,44 @@ I'm available 9am-5pm Mon-Fri but feel free to leave me a text or voicemail afte
 {{< /col >}}
 
 {{< /cols >}}
+
+## Areas Served in Utah
+
+- Utah County: Pleasant Grove, Orem, Provo, Lehi, American Fork, Lindon
+- Salt Lake County: Salt Lake City, Sandy, Draper, West Jordan, South Jordan
+- Washington County: St. George, Washington, Santa Clara
+- Davis & Weber Counties: Layton, Bountiful, Ogden
+- Summit & Cache Counties: Park City, Logan
+
+I work remotely and meet locally as needed, so your business can get a high‑performing site and local SEO support anywhere in Utah.
+
+## Simple Monthly Pricing for Small Businesses
+
+- $149/mo Website — fast and mobile‑friendly website design with updates included
+- $299/mo Website + SEO — on‑page optimization, Google Business Profile, and off‑page strategy
+
+No hidden fees. No contracts. Unlimited updates.
+
+## Why Utah Small Businesses Choose Clear Presence
+
+- Local Utah designer focused on small business results
+- Fast turnaround and personalized support
+- Security and Cloudflare performance stack
+- Clean, modern codebase built for speed
+
+### Affordable Results at a Fraction of Big Agency Costs
+
+You’ll get the essentials that move the needle—fast, mobile‑friendly pages, on‑page optimization, Google Business Profile improvements, and a practical off‑page strategy—without paying large‑agency retainers. My simple monthly plans deliver measurable local SEO and web design results at a fraction of the cost.
+
+## Proudly Serving Businesses Across Utah
+
+Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City, Spanish Fork, Saratoga Springs.
+
+## Let’s Build Something Great for Your Business
+
+{{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
+{{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
+{{< button url="/pricing" text="See Pricing" >}}
 
 
 
