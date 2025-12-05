@@ -250,31 +250,33 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 
 ## Featured Work
 
+{{< button url="/portfolio" text="See Full Website Portfolio" >}}
+
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Quartz Worx – Countertops
-![](/media/website-design-quartz-worx.avif)
+![Custom website design featuring a small business](/media/website-design-quartz-worx.avif)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### Cedar City Strength – Fitness
-![](/media/website-design-cedar-city-strength.avif)
+![Custom website design for a small business in Cedar City Utah](/media/website-design-cedar-city-strength.avif)
 {{< /col >}}
 {{< /cols >}}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Blue Ridge Abbey – Hospitality
-![](/media/website-design-blue-ridge-abbey.jpg)
+![Website home page for a small business that is fully optimized with on-page seo](/media/website-design-blue-ridge-abbey.jpg)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### BlueridgeTech – IT Services
-![](/media/website-design-blueridge-tech.avif)
+![Custom website design for a small shop business](/media/website-design-blueridge-tech.avif)
 {{< /col >}}
 {{< /cols >}}
 
 ## Ready To Get Started
 
-![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![Benjamin Awerkamp – Utah Website Designer and SEO Expert](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
 I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
