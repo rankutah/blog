@@ -200,7 +200,7 @@ No hidden fees. No contracts. Unlimited updates.
 - Secure and fast setup
 - Clean, modern codebase built for speed
 
-### Affordable Results at a Fraction of Big Agency Costs
+## Affordable Results at a Fraction of Big Agency Costs
 
 You’ll get the essentials that move the needle—fast, mobile‑friendly pages, on‑page optimization, Google Business Profile improvements, and a practical off‑page strategy—without paying large‑agency retainers. My simple monthly plans deliver measurable local SEO and web design results at a fraction of the cost.
 
