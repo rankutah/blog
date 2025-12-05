@@ -174,45 +174,7 @@ Learn more about my process on the [Local SEO](/services/local-seo) page.
 - Month‑to‑month support—no lock‑in—so your site keeps improving as your business grows.
 - Simple monthly website plans instead of a big upfront fee.
 
-### Ready to Get Started
-I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
-
-{{< cols min="18rem" gap="2rem" v="start">}}
-
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-
-
-![Headshot of Benjamin Awerkamp, the Website Designer & Local SEO Specialist](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
-{.w-48}
-**Benjamin Awerkamp** <br>
-Call or Text: (385) 323-8130 <br>
-Website Designer / Website Developer <br>
-Master's in Software Development <br>
-Bachelor's in Business Management
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-## Website Design Process
-
-You can learn more about my website design process by visiting the following pages.
-
-{{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/portfolio" text="Website Portfolio" >}}
-{{< button url="/pricing" text="Simple Monthly Pricing" >}}
-
-## Reach Out
-
-I'm available 8am–8pm Mon–Sat (MT). Feel free to leave me a text or voicemail after hours.
-
-{{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
-{{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
-
-
-{{< /col >}}
-
-{{< /cols >}}
 
 ## Areas Served in Utah
 
