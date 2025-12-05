@@ -147,7 +147,7 @@ Grow your small business anywhere in Utah with a fast, custom website and local 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## Websites Built for Growth — Not Just Looks
+## Custom Websites Built for Growth — Not Just Looks
 
 Most small business sites don’t bring enough traffic or leads. I combine custom website design and local SEO so your pages are fast, mobile‑friendly, and structured to convert visitors into calls and bookings. My monthly pricing keeps it affordable.
 
