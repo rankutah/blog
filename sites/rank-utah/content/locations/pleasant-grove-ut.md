@@ -149,8 +149,17 @@ Grow your small business anywhere in Utah with a fast, custom website and local 
 Most small business sites don’t bring enough traffic or leads. I combine custom website design and local SEO so your pages are fast, mobile‑friendly, and structured to convert visitors into calls and bookings. My monthly pricing keeps it affordable.
 
 ### On‑page SEO
-- On‑page SEO optimization: titles, headings, internal links, and structured data designed around how people search for your services in Utah and Utah County.
-- Clean, fast pages that load quickly and are easy to crawl.
+- Keyword research to target terms with solid volume and achievable difficulty, matched to Utah and Utah County intent. See: [On‑Page SEO Strategy](/blog/on-page-seo-strategy-utah/)
+- Title tag optimization aligned to the primary keyword and intent
+- Clear meta descriptions to improve click‑through (for humans, not ranking)
+- Simple, readable URL slugs (keyword‑aligned)
+- Headings (H1–H3) structured around primary + supporting keywords
+- Image optimization (AVIF/WebP, compression under ~150 KB) with descriptive alt text
+- Page speed improvements (limit scripts, defer/delay tracking, preconnect/preload) and CDN caching; see [Mobile Website Design](/blog/mobile-website-design-utah/)
+- Internal linking between related service and location pages; selective external links to authoritative resources
+- Schema markup (LocalBusiness, Service, FAQ when relevant) validated against Google’s guidelines
+- Mobile‑friendly, responsive layout with easy navigation and clear CTAs
+- Core Web Vitals focus (LCP, CLS, INP) to reinforce quality and rankings
 
 ### Off‑page SEO
 - Google Business Profile optimization (categories, services, photos)
