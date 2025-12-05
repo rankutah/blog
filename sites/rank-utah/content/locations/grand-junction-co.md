@@ -27,7 +27,7 @@ Custom websites and performance-driven design for Western Slope businesses.
 
 ## Quartz Worx Website — Countertops in Grand Junction, CO
 
-Quartz Worx needed a website to explain the different types of countertop options and help customers contact them for more information. The website is completely custom built with extremely fast load times, mobile friendly design, and easy to navigate menus.
+Quartz Worx needed a website to explain the different types of countertop options and help customers get in touch. The site is custom‑built, loads fast, is easy to use on phones, and keeps navigation simple.
 
 ![Quartz Worx website preview](/media/website-design-quartz-worx.jpg)
 

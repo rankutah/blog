@@ -27,7 +27,7 @@ Custom websites and local SEO for Palm Beach County businesses.
 
 ## Nova Gutter Website — Seamless Gutters in Boca Raton, FL
 
-Nova Gutter needed a fast, modern site to showcase residential and commercial gutter services and drive more calls. The site is custom-built with extremely fast load times, mobile‑friendly design, and clear calls‑to‑action.
+Nova Gutter needed a fast, modern site to showcase residential and commercial gutter services and drive more calls. The site is custom‑built, loads fast, is easy to use on phones, and uses clear calls to action.
 
 ![Nova Gutter website preview](/media/nova-gutter-hero.avif)
 

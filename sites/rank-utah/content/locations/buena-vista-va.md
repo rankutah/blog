@@ -4,6 +4,12 @@ description: "Website design for small businesses in Buena Vista, VA. Highlighti
 layout: "flowbite"
 url: "/locations/buena-vista-va"
 hero: true
+schema:
+  localBusiness:
+    enabled: true
+    type: ProfessionalService
+    name: "Clear Presence"
+    areaServed: "Buena Vista, VA"
 ---
 
 {{< hero img="/media/virginia-mountains.avif" alt="Buena Vista website design" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
@@ -21,7 +27,7 @@ Custom websites and performance-driven design for Buena Vista businesses and bey
 
 ## Blue Ridge Abbey Website — Bed & Breakfast in Buena Vista, VA
 
-Blue Ridge Abbey website was built to showcase bookings, rooms, and local attractions while keeping load times super fast and the booking flow simple.
+Blue Ridge Abbey’s website was built to showcase bookings, rooms, and local attractions while keeping load times fast and the booking flow simple.
 
 ![Blue Ridge Abbey Website Design](../media/website-design-blue-ridge-abbey.jpg)
 
@@ -67,16 +73,16 @@ I graduated from Southern Virginia University in 2011 and fell in love with Buen
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
 {.w-48}
 **Benjamin Awerkamp** <br>
-Web Design Deveoper & Local SEO Specialist <br>
+Web Designer & Local SEO Specialist <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
 
 ## Why Buena Vista clients choose these sites
 
-- Fast, minimal JavaScript and carefully optimized images for quick page loads
-- Clear conversion paths (book, call, message) prioritized above flashy effects
-- Long-term support and iterative improvements — low monthly subscription options
+- Fast sites with carefully optimized images for quick page loads
+- Clear paths to book, call, or message — no busy effects
+- Ongoing support and improvements — with simple monthly pricing
 
 {{< button url="/services/website-design" text="Website Design Services" >}}
 
