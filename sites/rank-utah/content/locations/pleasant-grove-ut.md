@@ -281,7 +281,7 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 ### Share a bit about your business and goals.
 
 {{< contact-form
-  id="contact1"
+  id="contact-pg"
   action="https://submit-form.com/I4t2OG4uj"
   name="true"
   email="true"
@@ -293,7 +293,7 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
   classes="max-w-xl"
 >}}
 
-{{< button submit="true" form="contact1" text="Submit Message" >}}
+{{< button submit="true" form="contact-pg" text="Submit Message" >}}
 
 ## FAQ
 
