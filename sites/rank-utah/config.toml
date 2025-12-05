@@ -102,7 +102,7 @@ sameAs = []
   titleSize = "2xl"
   showCTAOnMobile  = false
   showCTAOnDesktop = true
-  CTAText          = "Free Quote"
+  CTAText          = "Contact"
   CTAURL           = "/contact"
   # CTAClasses       = "text-white bg-rose-600 hover:bg-rose-700 focus:ring-rose-300"
   showPhoneOnMobile = true
@@ -221,9 +221,3 @@ sameAs = []
     parent = "areas"
     weight = 44
 
-
-
-  [[menu.main]]
-    name   = "Contact"
-    url    = "/contact"
-    weight = 50
