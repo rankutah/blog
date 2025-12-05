@@ -1,5 +1,5 @@
 ---
-title: "Website Design & Local SEO"
+title: "Website Design & Local SEO (Search Engine Optimization)"
 description: "Fast websites and local search help for small businesses so you show up on Google and get more calls."
 layout: "flowbite"
 url: "/"
@@ -29,8 +29,8 @@ schema:
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Website Design & Local SEO for Small Businesses {.text-white}
-Fast business websites with local SEO (Search Engine Optimization) Services
+# Website Design & Local SEO (Search Engine Optimization) {.text-white}
+Fast business websites with local SEO services for small businesses
 {.text-white}
 {{<button url="/services/website-design" text="Website Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
 {{< /hero >}}
