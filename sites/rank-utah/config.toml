@@ -119,6 +119,7 @@ sameAs = []
   honeypot       = ""                   # disabled (Turnstile in place)
   successMessage = "Thanks! Your message was sent."
   errorMessage   = "Sorry, something went wrong. Please try again."
+  redirect       = "https://clearpresence.io/thank-you"
   # submitClasses = "..."               # optional button styling
 
 [params.turnstile]
