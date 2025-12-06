@@ -7,22 +7,6 @@ headless: true
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Clear Presence
-{.center}
-Website Design & Local SEO for Small Businesses
-{.center}
-
-{{< lead-form id="pg-hero-lead" name="false" contact="true" button="Get a Free Quote" >}}
-
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-### Company
-{.center}
-[About](/about) • [Portfolio](/portfolio) • [Pricing](/pricing) • [Contact](/contact)
-{.center}
-
 ### Services
 {.center}
 [Website Design](/services/website-design) • [Local SEO](/services/local-seo)
@@ -39,10 +23,27 @@ Website Design & Local SEO for Small Businesses
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Legal
+## Clear Presence
 {.center}
-[Privacy Policy](/privacy) • [Terms of Service](/terms)
+Website Design & Local SEO for Small Businesses
 {.center}
+
+### Company
+{.center}
+[About](/about) • [Portfolio](/portfolio) • [Pricing](/pricing) • [Contact](/contact)
+{.center}
+
+
+
+
+
+
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+
 
 ### Contact
 {.center}
@@ -51,10 +52,15 @@ Website Design & Local SEO for Small Businesses
 {.center}
 
 
+
+
 {{< /col >}}
 
 {{< /cols >}}
 
+{.center}
+[Privacy Policy](/privacy) • [Terms of Service](/terms)
+{.center}
 
 <div class="text-center text-sm opacity-80 mt-4">
 	© {{< year >}} Clear Presence LLC •  <a href="https://clearpresence.io" target="_blank" rel="nofollow noopener">Website by Clear Presence</a>
