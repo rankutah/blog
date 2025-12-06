@@ -285,10 +285,10 @@
     const controller = new AbortController();
     const timeout = setTimeout(()=> controller.abort(), 10000);
     try {
-      const res = await fetch(url, { method:'POST', body: data, signal: controller.signal });
+      // Use no-cors to avoid cross-origin read issues. Treat network success as delivered.
+      await fetch(url, { method:'POST', body: data, signal: controller.signal, mode: 'no-cors' });
       clearTimeout(timeout);
-      if(res.ok){ return { ok:true, status:res.status, body: await res.text() }; }
-      return { ok:false, status:res.status, body: await res.text() };
+      return { ok:true, status: 0, body: '' };
     } catch(e){
       clearTimeout(timeout);
       if(attempts > 1){ return postWithRetry(url, data, attempts-1); }
@@ -297,7 +297,14 @@
   }
 
   // Redirect URL for Google Ads conversion tracking (pageview-based)
-  const submittedUrl = 'https://submitted.formspark.io/?_formId={{ if $action }}{{ (replace $action "https://submit-form.com/" "") }}{{ else }}{{ "" }}{{ end }}&_status=OK&_title=Your%20form%20has%20been%20submitted.&_referer=' + encodeURIComponent(location.origin);
+  // Inline success (stay on page) + optional virtual pageview for Ads mapping
+  const virtualPageview = function(){
+    try {
+      if(window.gtag){
+        window.gtag('event','page_view',{page_title:'Form Submitted',page_location: location.href + '#form-submitted'});
+      }
+    } catch(e){}
+  };
 
   form.addEventListener('submit', async function(ev){
     // Progressive enhancement: intercept and submit via fetch
@@ -327,8 +334,14 @@
     const result = await postWithRetry(action, formData, 3);
     if(result.ok){
       gaEvent('lead_submit_success', { event_category:'lead', event_label: action, value: 1 });
-      // Redirect to a pageview-based confirmation URL so Google Ads tracks reliably
-      window.location.href = submittedUrl;
+      // Inline success UI: reset form and show success message
+      try { form.reset(); } catch(e){}
+      const notice = document.createElement('div');
+      notice.className = 'p-3 rounded bg-green-50 text-green-800 dark:bg-green-900/30 dark:text-green-200';
+      notice.textContent = '{{ $page.Site.Params.forms.successMessage | default "Thanks! Your message was sent." }}';
+      form.parentNode.insertBefore(notice, form);
+      // Optional: virtual pageview for Ads setups that require pageview triggers
+      virtualPageview();
     } else {
       gaEvent('lead_submit_error', { event_category:'lead', event_label: String(result.status), value: 0 });
       alert('{{ $page.Site.Params.forms.errorMessage | default "Sorry, something went wrong. Please try again." }}');
