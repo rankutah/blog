@@ -98,7 +98,7 @@ enableRobotsTXT = true
 
 [params.forms]
   action         = "https://submit-form.com/1asOxsclY"
-  honeypot       = "_hp"
+  honeypot       = ""  # disabled (Turnstile in place)
   successMessage = "Thanks! Your message was sent."
   errorMessage   = "Sorry, something went wrong. Please try again."
   # Server-side sequential counter endpoint (Google Apps Script deployment).

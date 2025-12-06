@@ -116,7 +116,7 @@ sameAs = []
 
 [params.forms]
   action         = "https://submit-form.com/DOH188lWF"
-  honeypot       = "_hp"                # must match Formspark
+  honeypot       = ""                   # disabled (Turnstile in place)
   successMessage = "Thanks! Your message was sent."
   errorMessage   = "Sorry, something went wrong. Please try again."
   # submitClasses = "..."               # optional button styling

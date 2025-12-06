@@ -109,11 +109,14 @@
   <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact {{ $extra }}">
     {{- /* Hidden context field: capture page URL for lead source attribution */ -}}
     <input type="hidden" name="page_url" value="{{ $page.Permalink }}">
-    {{- /* Formspark honeypot: field name configured as `_hp`. Use an offscreen text input so basic bots fill it. */ -}}
+    {{- /* Honeypot (optional): render only if site param `forms.honeypot` is set to a non-empty string. */ -}}
+    {{- $hpName := or $page.Site.Params.forms.honeypot "" -}}
+    {{- if gt (len $hpName) 0 -}}
     <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
       <label for="{{ $id }}-hp">Leave this field empty</label>
-      <input id="{{ $id }}-hp" type="text" name="_hp" tabindex="-1" autocomplete="off" value="">
+      <input id="{{ $id }}-hp" type="text" name="{{ $hpName }}" tabindex="-1" autocomplete="off" value="">
     </div>
+    {{- end -}}
     {{- /* Determine render order: user can pass order="name,email,custom,message" (csv). */ -}}
     {{- $orderRaw := .Get "order" | default "" -}}
     {{- $orderItems := slice -}}
@@ -224,3 +227,112 @@
 
   </form>
 {{- end }}
+
+<script>
+(function(){
+  const form = document.getElementById('{{ $id }}');
+  if(!form) return;
+
+  // IntersectionObserver to render Turnstile when form is visible
+  const tsSelector = '.cf-turnstile';
+  const tsEl = form.querySelector(tsSelector);
+  let tsReady = false;
+  function ensureTurnstile(){
+    if(!tsEl || tsReady) return;
+    if(window.turnstile && typeof window.turnstile.render === 'function'){
+      try {
+        window.turnstile.render(tsEl);
+        tsReady = true;
+      } catch(e) {}
+    }
+  }
+  if('IntersectionObserver' in window && tsEl){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ ensureTurnstile(); io.disconnect(); }});
+    }, {root:null, rootMargin:'200px'});
+    io.observe(form);
+  } else {
+    // Fallback: try after a short delay
+    setTimeout(ensureTurnstile, 1000);
+  }
+
+  async function getTurnstileToken(){
+    // Try to get an existing token; if unavailable, request one
+    if(!(window.turnstile && typeof window.turnstile.getResponse === 'function')) return null;
+    let token = null;
+    try { token = window.turnstile.getResponse(tsEl); } catch(e) {}
+    if(token && token.length > 0) return token;
+    // Request new token if API available
+    if(typeof window.turnstile.reset === 'function'){
+      try { window.turnstile.reset(tsEl); } catch(e) {}
+    }
+    // Poll briefly for token
+    const started = Date.now();
+    while(Date.now() - started < 4000){
+      await new Promise(r=> setTimeout(r, 250));
+      try { token = window.turnstile.getResponse(tsEl); } catch(e) {}
+      if(token && token.length > 0) return token;
+    }
+    return null;
+  }
+
+  function gaEvent(name, payload){
+    try { if(window.gtag){ window.gtag('event', name, payload||{}); } }
+    catch(e){ /* noop */ }
+  }
+
+  async function postWithRetry(url, data, attempts){
+    const controller = new AbortController();
+    const timeout = setTimeout(()=> controller.abort(), 10000);
+    try {
+      const res = await fetch(url, { method:'POST', body: data, signal: controller.signal });
+      clearTimeout(timeout);
+      if(res.ok){ return { ok:true, status:res.status, body: await res.text() }; }
+      return { ok:false, status:res.status, body: await res.text() };
+    } catch(e){
+      clearTimeout(timeout);
+      if(attempts > 1){ return postWithRetry(url, data, attempts-1); }
+      return { ok:false, status:0, body: String(e && e.message || e) };
+    }
+  }
+
+  // Redirect URL for Google Ads conversion tracking (pageview-based)
+  const submittedUrl = 'https://submitted.formspark.io/?_formId={{ if $action }}{{ (replace $action "https://submit-form.com/" "") }}{{ else }}{{ "" }}{{ end }}&_status=OK&_title=Your%20form%20has%20been%20submitted.&_referer=' + encodeURIComponent(location.origin);
+
+  form.addEventListener('submit', async function(ev){
+    // Progressive enhancement: intercept and submit via fetch
+    ev.preventDefault();
+
+    // Fire standard Google Ads-style event before submission
+    try { if(window.gtag){ window.gtag('event','form_submit',{event_category:'lead',event_label: location.pathname}); } } catch(e){}
+
+    // Ensure Turnstile token
+    let token = await getTurnstileToken();
+    if(tsEl && !token){
+      gaEvent('lead_submit_error', { event_category:'lead', event_label:'turnstile_token_missing' });
+      alert('{{ $page.Site.Params.forms.errorMessage | default "Sorry, something went wrong. Please try again." }}');
+      return;
+    }
+
+    const formData = new FormData(form);
+    // Append Turnstile token for server validation if widget present
+    if(tsEl && token){ formData.append('cf-turnstile-response', token); }
+    // Optional: include GA client id if available
+    try {
+      const cid = (window.ga && window.ga.getAll) ? window.ga.getAll()[0].get('clientId') : null;
+      if(cid) formData.append('_ga_cid', cid);
+    } catch(e){}
+
+    const action = form.getAttribute('action');
+    const result = await postWithRetry(action, formData, 3);
+    if(result.ok){
+      gaEvent('lead_submit_success', { event_category:'lead', event_label: action, value: 1 });
+      // Redirect to a pageview-based confirmation URL so Google Ads tracks reliably
+      window.location.href = submittedUrl;
+    } else {
+      gaEvent('lead_submit_error', { event_category:'lead', event_label: String(result.status), value: 0 });
+      alert('{{ $page.Site.Params.forms.errorMessage | default "Sorry, something went wrong. Please try again." }}');
+    }
+  }, { passive:false });
+})();
+</script>

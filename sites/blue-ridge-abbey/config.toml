@@ -83,7 +83,7 @@ uglyURLs = false
 
 [params.forms]
   action = "https://submit-form.com/DOH188lWF"
-  honeypot = "_hp"
+  honeypot = ""  # disabled (Turnstile in place)
 
 [params.turnstile]
   # Enable Turnstile widget on forms using the contact-form shortcode
