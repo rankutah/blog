@@ -222,3 +222,8 @@ sameAs = []
     parent = "areas"
     weight = 44
 
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 50
+
