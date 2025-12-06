@@ -70,6 +70,9 @@ disableKinds = ["taxonomy", "term"]
   enable  = true
   sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
 
+[params.forms]
+  redirect = "https://quartzworx.com/thank-you"
+
 [params.header]
   title            = "QUARTZ WORX"
   stickyMobile      = true

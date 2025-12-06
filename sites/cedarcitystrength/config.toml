@@ -61,6 +61,9 @@ uglyURLs = false
   enable  = true
   sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
 
+[params.forms]
+  redirect = "https://cedarcitystrength.com/thank-you"
+
   # Footer/socials
   [[params.social]]
     name = "facebook"

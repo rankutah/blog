@@ -84,6 +84,7 @@ uglyURLs = false
 [params.forms]
   action = "https://submit-form.com/DOH188lWF"
   honeypot = ""  # disabled (Turnstile in place)
+  redirect = "https://blueridgeabbey.com/thank-you"
 
 [params.turnstile]
   # Enable Turnstile widget on forms using the contact-form shortcode

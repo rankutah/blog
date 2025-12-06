@@ -101,6 +101,7 @@ enableRobotsTXT = true
   honeypot       = ""  # disabled (Turnstile in place)
   successMessage = "Thanks! Your message was sent."
   errorMessage   = "Sorry, something went wrong. Please try again."
+  redirect       = "https://novagutter.com/thank-you"
   # Server-side sequential counter endpoint (Google Apps Script deployment).
   # Returns JSON {"value": <number>} and increments each request.
   counterEndpoint = "https://script.google.com/macros/s/AKfycbwLrCsm00OW-5rtyCHNWwQA8O9q-tMIKA9QP_QEaNsjsXaTnas-_qO4MAyP4NowCY8d/exec"
