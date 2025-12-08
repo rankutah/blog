@@ -195,7 +195,7 @@ sameAs = []
 
   [[menu.main]]
     name = "About"
-    identifier = "/about"
+    url = "/about"
     weight = 40
 
 
