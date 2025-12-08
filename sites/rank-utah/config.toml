@@ -194,33 +194,11 @@ sameAs = []
 
 
   [[menu.main]]
-    name = "Areas"
-    identifier = "areas"
+    name = "About"
+    identifier = "/about"
     weight = 40
 
-  [[menu.main]]
-    name = "Pleasant Grove, UT"
-    url = "/locations/pleasant-grove-ut"
-    parent = "areas"
-    weight = 41
 
-  [[menu.main]]
-    name = "Boca Raton, FL"
-    url = "/locations/boca-raton-fl"
-    parent = "areas"
-    weight = 42
-
-  [[menu.main]]
-    name = "Grand Junction, CO"
-    url = "/locations/grand-junction-co"
-    parent = "areas"
-    weight = 43
-
-  [[menu.main]]
-    name = "Buena Vista, VA"
-    url = "/locations/buena-vista-va"
-    parent = "areas"
-    weight = 44
 
   [[menu.main]]
     name = "Contact"
