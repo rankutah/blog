@@ -224,7 +224,7 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 
 ![Benjamin Awerkamp – Utah Freelance Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
-I love entrepreneurship and working with small businesses. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
+I love helping small businesses in utah with website design and search engine optimization. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
 ### Share a bit about your business and goals.
 
@@ -254,7 +254,7 @@ Sites can usually be done in 2–3 weeks with good coordination.
 Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
 
 ### Do you handle hosting & the website url name?
-Yes. Managed hosting and your website name is included. 
+Yes. Managed hosting and your website name is included.
 
 {{< /faqs >}}
 
