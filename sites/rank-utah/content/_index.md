@@ -162,7 +162,7 @@ Reach out with questions or to start your project.
 
 {{< faqs >}}
 ### What is your experience?
-I built my first professional website for a small business in 2023 and have a Master's degree in Software Development and a Bachelor's in Business Management. I've also worked in cybersecurity at Arctic Wolf and Okta. You can learn more about my background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
+I built my first professional website for a small business in 2023, leveraging my Master's degree in Software Development. My professional experience also includes roles in cybersecurity at industry leaders like Arctic Wolf and Okta. You can learn more about my detailed background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
 
 ### What is your web design process?
 You can learn all about my process for designing and building a custom website for your small business on the [Website Design](/services/website-design) page.

@@ -260,7 +260,7 @@ Bachelor's in Business Management
 {{< faqs >}}
 
 ### What is your experience?
-I built my first professional website for a small business in 2023 and have a Master's degree in Software Development. I've also worked in cybersecurity at Arctic Wolf and Okta. You can learn more about my background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
+I built my first professional website for a small business in 2023, leveraging my Master's degree in Software Development. My professional experience also includes roles in cybersecurity at industry leaders like Arctic Wolf and Okta. You can learn more about my detailed background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
 
 ### How long does a custom site take?
 Sites can usually be done in 2–3 weeks with good coordination.
