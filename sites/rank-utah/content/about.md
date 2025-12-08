@@ -14,7 +14,7 @@ Call or text me for questions or to get started.
 
 ## Meet the Founder
 
-I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
+I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
 {.w-48}
