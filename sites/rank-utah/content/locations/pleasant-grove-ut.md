@@ -44,7 +44,7 @@ schema:
 
 {{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Freelance Website Design Services for Small Businesses in Utah{.text-white}
-Get your custom, high-performance website built for your Utah small business. Your affordable alternative to the big company. Work directly with me, a local expert, dedicated to results-driven design and development. I focus on optimizing your new site to help customers find you on search, helping you get more calls and bookings.
+Affordable custom websites for Utah small businesses, built and managed by a freelance website designer.
 
 {.text-white}
 
