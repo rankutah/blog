@@ -1,27 +1,26 @@
 ---
-title: "About Clear Presence"
-description: "Fast custom websites and local search help for small businesses so you show up on Google and get more calls."
+title: "About Clear Presence | Freelance Website Designer for Utah Small Businesses"
+description: "Clear Presence offers freelance website design for small businesses in Utah. Your affordable alternative to a big web design company, based in Pleasant Grove."
 layout: "flowbite"
 url: "/about"
 ---
-# About
+# Your Freelance Website Designer in Utah
 
-## A pretty site alone won't bring customers
+Clear Presence offers freelance Website Design for Small Businesses in Utah, based in Pleasant Grove, Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development.
 
-Many owners are surprised when a nice looking site brings few leads. Clear Presence builds custom websites that are easy to find and built to bring in calls and messages.
+Work directly with me, a local expert, who personally manages your entire project from planning to launch. Every site is optimized to help customers find you on search, helping you get more calls and bookings. A simple monthly service covers your new website, managed hosting, and unlimited content updates. Partner with me for a clear and powerful online presence in Utah County and statewide.
 
-## Meet the founder
+Call or text me for questions or to get started.
+
+## Meet the Founder
 
 I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
-
-My mission is to bring you customers. I invest in improving web design and local search skills and tools. Communication is open—reach out anytime by text, phone, email, or meeting. Clients get simple monthly visitor reports and are never locked into a contract.
-
 
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Web Design Developer & Local SEO Specialist <br>
+Freelance Website Designer <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
