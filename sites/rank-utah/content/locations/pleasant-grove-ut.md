@@ -29,7 +29,7 @@ schema:
   service:
     enabled: true
     serviceType: "Freelance Website Design"
-    description: "Custom website design for small businesses in Utah with personal, one‑to‑one service from a freelance designer—fast, mobile‑friendly sites built to drive calls, messages, quotes, and bookings."
+    description: "Clear Presence offers freelance Website Design for Small Businesses in Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
     areaServed: ["Utah", "Utah County"]
     offers:
       - "@type": Offer
@@ -64,12 +64,13 @@ Affordable custom websites for Utah small businesses, built and managed by a fre
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Local Freelance Website Designer in Pleasant Grove
+## Local Freelance Website Designer in Utah
+- Serving all of Utah
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-![Clear Presence — freelance website designer serving Pleasant Grove and Utah small businesses](/media/storefront-sign-business-web-design-local-seo.jpeg)
+![Clear Presence — freelance website designer serving Utah small businesses](/media/storefront-sign-business-web-design-local-seo.jpeg)
 
 
 {{< /col >}}
