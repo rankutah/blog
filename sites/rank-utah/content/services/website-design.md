@@ -132,6 +132,23 @@ Clear Presence provides website design and local SEO services for businesses acr
 {{< button url="/contact" text="Contact" >}}
 {{< button url="/pricing" text="See Pricing" >}}
 
+## FAQ
+
+{{< faqs >}}
+
+### What is your experience?
+I built my first professional website for a small business in 2023 and have a Master's degree in Software Development. I've also worked in cybersecurity at Arctic Wolf. You can learn more about my background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
+
+### How long does a custom site take?
+Sites can usually be done in 2–3 weeks with good coordination.
+
+### Are content updates really unlimited?
+Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
+
+### Do you handle hosting & the website url name?
+Yes. Managed hosting and your website name is included.
+
+{{< /faqs >}}
 
 
 
