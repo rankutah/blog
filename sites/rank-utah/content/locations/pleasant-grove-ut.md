@@ -1,6 +1,6 @@
 ---
 title: "Freelance Website Designer for Small Businesses in Utah | Custom Web Design Services Near You"
-description: "Freelance website designer in Utah for small businesses. Get custom web design services near you—affordable, fast, and personal service instead of a big agency or web design company."
+description: "Clear Presence offers freelance Website Design for Small Businesses in Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -42,7 +42,7 @@ schema:
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/freelance-website-designer-small-businesses-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/freelance-website-design-services-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Freelance Website Design Services for Small Businesses in Utah{.text-white}
 Get affordable, custom websites for small businesses across Utah—with personal attention from a Freelance Website Designer. Skip the large web design company or agency and work directly with a Freelance Website Designer who listens, designs fast, and keeps your site updated.
 {.text-white}
@@ -55,9 +55,6 @@ Get affordable, custom websites for small businesses across Utah—with personal
 
 <div class="mt-6"></div>
 {{< /hero >}}
-
-
-
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -172,7 +169,7 @@ I work remotely and meet locally as needed, so your business can get a high‑pe
 ## Simple Monthly Pricing for Small Businesses
 
 - $149/mo Website — fast and mobile‑friendly website design with updates included
-- $299/mo Website + SEO — add search optimization as needed via the Local SEO service
+- $299/mo Website + SEO — add local search engine optimization as needed via the Local SEO service
 
 No hidden fees. No contracts. Unlimited updates.
 
@@ -225,9 +222,9 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 
 ## Ready To Get Started
 
-![Benjamin Awerkamp – Utah Website Designer and SEO Expert](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![Benjamin Awerkamp – Utah Freelance Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
-I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
+I love entrepreneurship and working with small businesses. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
 
 ### Share a bit about your business and goals.
 
@@ -249,20 +246,15 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 ## FAQ
 
 {{< faqs >}}
-### What is SEO?
-SEO stands for Search Engine Optimization — helping people find you on search engines like Google, Apple, Maps, and AI.
 
 ### How long does a custom site take?
 Sites can usually be done in 2–3 weeks with good coordination.
 
-### Do you handle hosting & the website url name?
-Yes. Managed hosting and your website name is included.
-
-### Are there upfront fees?
-No, there is one simply monthly subscription that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
-
 ### Are content updates really unlimited?
 Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
+
+### Do you handle hosting & the website url name?
+Yes. Managed hosting and your website name is included. 
 
 {{< /faqs >}}
 
