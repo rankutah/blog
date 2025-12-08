@@ -233,7 +233,7 @@ I love entrepreneurship and working with small businesses. After growing up in S
 
 
 **Benjamin Awerkamp** <br>
-Web Design Developer & Local SEO Specialist <br>
+Freelance Website Designer <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
