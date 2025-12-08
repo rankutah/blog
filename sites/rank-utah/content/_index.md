@@ -1,13 +1,13 @@
 ---
-title: "Website Design & Local SEO (Search Engine Optimization)"
-description: "Fast websites and local search help for small businesses so you show up on Google and get more calls."
+title: "Freelance Website Designer for Small Businesses | Rank Utah"
+description: "I build custom, affordable websites for small businesses that are fast, look great on any device, and are designed to bring you more customers. As a freelance web designer, I provide personal service without the big agency price tag."
 layout: "flowbite"
 url: "/"
 schema:
   localBusiness:
     enabled: true
     type: ProfessionalService
-    name: "Clear Presence"
+    name: "Rank Utah"
     address:
       streetAddress: "348 S 2000 W, Suite B206"
       addressLocality: "Pleasant Grove"
@@ -20,59 +20,55 @@ schema:
       latitude: "40.35949"
       longitude: "-111.77212"
     areaServed:
-      - "Pleasant Grove, UT"
-      - "Lehi, UT"
-      - "American Fork, UT"
-      - "Lindon, UT"
-      - "Orem, UT"
+      - "United States"
     priceRange: "$149–$299/mo"
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Website Design & Local SEO (Search Engine Optimization) {.text-white}
-Fast business websites with local SEO services for small businesses
+# Freelance Website Designer for Small Businesses {.text-white}
+I build affordable, high-performance websites that help you find more customers.
 {.text-white}
-{{<button url="/services/website-design" text="Website Design">}}{{<button url="/services/local-seo" text="Local SEO">}}
+{{<button url="/services/website-design" text="My Process">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
 
 
-## Clear Presence vs Other Companies
+## Freelancer vs. Agency
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-## Clear Presence ✅
+## Freelancer ✅
 
-### 1. Built for Results
-Nice design plus clear wording. After launch you get simple monthly visitor reports showing how people found you and which pages they viewed.
+### 1. Personal Service & Better Results
+You work directly with me, the person building your site. This direct line means better collaboration, a clearer focus on your business goals, and a final product that actually brings in leads.
 
-### 2. Custom Built
-Light and dark mode follows the visitor’s device. Custom build means fast load without bloat, clean design, and room to grow.
+### 2. Custom-Built for Performance
+Your site is built from the ground up to be fast, lightweight, and perfectly tailored to your needs. No bloated templates or unnecessary features that slow you down.
 
-### 3. Ongoing Support
-Unlimited updates while you’re a customer. Get help by call, text, email, or meeting.
+### 3. Dedicated Ongoing Support
+Need an update? Call, text, or email me directly. You get responsive, ongoing support from the same person who knows your project inside and out.
 
-### 4. Low Monthly Cost
-No contract. Low monthly price keeps support responsive.
+### 4. Affordable Monthly Pricing
+With no agency overhead, you get top-tier work without the shocking price tag. Simple, transparent monthly pricing with no long-term contracts.
 
 
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Other Companies ❌
+## Agency ❌
 
-### 1. Looks Only
-Many focus only on visuals. A pretty site without marketing or clear contact options brings few leads.
+### 1. Slow and Impersonal
+You'll likely be passed between account managers and junior staff. Your message gets lost in translation, leading to a generic site that misses the mark.
 
 ### 2. Bloated Templates
-Cookie‑cutter templates can load slow and limit changes.
+Agencies often rely on cookie-cutter templates that are slow, hard to customize, and full of security holes.
 
-### 3. Little Ongoing Help
-Many hand off the site and limit edits or ways to reach them.
+### 3. Limited Support
+Post-launch, you're often handed off to a support desk, facing slow response times and strict limits on what they'll update.
 
-### 4. High Upfront Fee
-Large build fees create risk if service disappoints.
+### 4. High Upfront & Hidden Fees
+Agencies charge huge upfront fees to cover their overhead, then surprise you with extra costs for basic maintenance and updates.
 
 {{< /col >}}
 
@@ -85,7 +81,7 @@ Large build fees create risk if service disappoints.
 
 ## Areas
 
-Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
+I provide website design and local SEO services for businesses across the United States from my office in Pleasant Grove, UT. Here are a few areas where my clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
 
@@ -97,7 +93,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 ## Website Design
 
-Try out colors and see how to start with a custom site built to bring in leads.
+See my process for building a custom site designed to bring you more customers.
 
 {{<button text="Website Design" url="/services/website-design" >}}
 
@@ -109,7 +105,7 @@ Try out colors and see how to start with a custom site built to bring in leads.
 
 ## Local SEO
 
-See services that help local customers find you on search and maps.
+Learn how I help local customers find your business on search and maps.
 
 {{<button text="Local SEO" url="/services/local-seo">}}
 
@@ -119,7 +115,7 @@ See services that help local customers find you on search and maps.
 
 ## Portfolio
 
-Browse examples of client websites.
+Browse examples of my work for other small businesses.
 
 {{<button text="Portfolio" url="/portfolio">}}
 
@@ -129,7 +125,7 @@ Browse examples of client websites.
 
 ## Pricing
 
-See plan options and monthly cost.
+See affordable, transparent monthly plans.
 
 
 {{<button text="Pricing" url="/pricing">}}
@@ -140,7 +136,7 @@ See plan options and monthly cost.
 
 ## About
 
-Learn the story and approach behind Clear Presence.
+Learn more about my story and approach.
 
 {{<button text="About" url="/about">}}
 
@@ -152,7 +148,7 @@ Learn the story and approach behind Clear Presence.
 
 ## Contact
 
-Reach out with questions or to start a project.
+Reach out with questions or to start your project.
 
 {{<button text="Contact" url="/contact">}}
 
@@ -165,26 +161,22 @@ Reach out with questions or to start a project.
 ## FAQS
 
 {{< faqs >}}
-### What is your Local SEO process?
-
-Get the latest on the Clear Presence marketing process by visiting the [Local SEO](/services/local-seo) page
 ### What is your web design process?
+You can learn all about my process for designing and building a custom website for your small business on the [Website Design](/services/website-design) page.
 
-Get the latest on the Clear Presence website design process by visiting the [Website Design](/services/website-design) page
-
-### How do you compare to other SEO and website design companies?
-You will receive a higher standard of service than larger companies and agencies but at a more affordable rate. I do not lock you into a contract, have hidden fees, limit edits or methods of communication.
+### How do you compare to other website design companies?
+As a freelance web designer, I offer a higher standard of service and more direct communication than you'll find at larger agencies, all at a more affordable rate. I don't lock you into a contract, and there are no hidden fees or strict limits on edits.
 
 ### Which locations do you serve?
-Clear Presence provides services to clients nationwide.
+I provide web design services to clients all across the United States.
 
 {{< /faqs >}}
 
 ## Ready for the Next Step?
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 
-{{<button text="Website Design" url="/services/website-design" >}}
-{{<button text="Local SEO" url="/services/local-seo" >}}
+{{<button text="My Process" url="/services/website-design" >}}
+{{<button text="Pricing" url="/pricing" >}}
 {{<button text="Reach Out" url="/contact" >}}
 
 

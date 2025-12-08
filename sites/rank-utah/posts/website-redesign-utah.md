@@ -1,12 +1,13 @@
 ---
-title: Website Redesign in Utah
+title: Website Redesign in Utah | Freelance Website Designer for Small Businesses
+description: "As a freelance web designer in Utah, I specialize in website redesigns for small businesses. If your site is outdated, slow, or not mobile-friendly, I can help. This post outlines my process for redesigning your website to be modern, fast, and Google-ready, all while providing ongoing support."
 date: 2025-08-14
 tags:
   - web-design
 ---
-If you would like help with an outdated or slow website and need a mobile-friendly SEO redesign please visit [Clear Presence](https://clearpresence.io).
+Is your website holding your business back? As a freelance web designer in Utah, I see many small businesses with outdated, slow, or broken websites. A website redesign can be a powerful way to refresh your online presence, attract more customers, and improve your Google ranking. In this post, I'll walk you through my simple, three-step process for a website redesign that will get your business back on track.
 
-## How Does a Website Redesign Work?
+## How Does a Website Redesign Work for Small Businesses?
 
 1. We Replace Your Existing Site: I recreate your website quickly, using your current content as a base
 2. Your Website is Modern, Fast, and Google-Ready: Your new site is mobile-friendly, loads fast, and shows up in search

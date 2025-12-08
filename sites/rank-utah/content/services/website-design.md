@@ -1,13 +1,13 @@
 ---
-title: "Website Design"
-description: "Custom website design for small businesses"
+title: "Freelance Website Designer for Small Businesses"
+description: "Affordable, custom website design for small businesses from a freelance web designer. Your alternative to a big agency, with personal one-on-one service."
 layout: "flowbite"
 url: "/services/website-design"
 schema:
   service:
     enabled: true
-    serviceType: "Website Design"
-    description: "Custom, fast business websites built to bring in leads."
+    serviceType: "Freelance Website Design"
+    description: "Custom, fast business websites built to bring in leads from a freelance designer."
     areaServed: "United States"
     offers:
       - "@type": "Offer"
@@ -24,8 +24,8 @@ schema:
 
 
 
-# Website Design
-Completely custom websites. Built for performance.
+# Freelance Website Design for Small Businesses
+Work directly with a freelance website designer to get a custom site built for your small business. Skip the high costs and slow timelines of a big agency and get personal, one-on-one service.
 
 Get a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and a lightweight build designed to perform on mobile.
 
@@ -33,13 +33,12 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 {{< button url="/portfolio" text="See Portfolio" >}}
 
 
-## Why choose this approach
+## Why work with a Freelance Web Designer?
 
-- Loads fast on phones and computers
-- Clear page structure and wording that helps visitors contact you
-- Lightweight, custom build—no bloated templates
-- Easy updates and ongoing support
-- Set up for tracking calls and visits
+- **Personal Service:** You work with one person from start to finish.
+- **Lower Cost:** No big agency overhead means more affordable pricing.
+- **Faster Turnaround:** Direct communication means quicker decisions and build times.
+- **Flexibility:** A freelance designer can adapt to your specific needs without corporate red tape.
 
 ## Featured work
 
@@ -92,12 +91,11 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 ## What you get
 
 - Custom design and build (no templates)
-- Basic SEO setup (page titles, descriptions, internal links)
-- Built to load quickly with sharp, lightweight images
+- A site built to load quickly with sharp, lightweight images
 - Forms with spam protection and tracking
 - Fast hosting and a secure site (SSL) included
-- Accessible and phone‑friendly
-- Training and friendly support
+- Accessible and phone‑friendly design
+- Training and friendly, direct support from your designer
 
 ## How it works
 

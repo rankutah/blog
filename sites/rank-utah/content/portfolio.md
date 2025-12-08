@@ -1,10 +1,13 @@
 ---
-title: "Website Portfolio"
+title: "Freelance Website Designer Portfolio | Small Business Projects"
+description: "A portfolio of custom website design projects for small businesses, built by a freelance web designer. See examples of my work and what clients are saying."
 layout: "flowbite"
 url: "/portfolio"
 ---
 
-# Website Portfolio
+# Freelance Website Designer Portfolio
+
+A selection of custom website design projects for small businesses. As a freelance web designer, I work directly with you to build a fast, affordable, and effective website that turns visitors into customers.
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 

@@ -1,14 +1,15 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: On-Page SEO Strategy in Utah
+title: On-Page SEO Strategy in Utah | Freelance Website Designer for Small Businesses
+description: As a freelance web designer for small businesses in Utah, I've found that a solid on-page SEO strategy is crucial. This post covers the most overlooked techniques in on-page SEO, including keyword research, title tags, and more, to help your small business get found on Google.
 tags:
   - web-design
   - local-seo
 ---
-If you would like affordable help with your on-page SEO please visit [Clear Presence](https://clearpresence.io/).
+If you're a small business owner in Utah, you know how important it is to be visible to your local customers. As a freelance web designer, I specialize in helping small businesses like yours improve their online presence. A critical piece of that puzzle is on-page Search Engine Optimization (SEO). This post will walk you through the essential on-page SEO techniques that will help your website rank higher in search results and attract more customers.
 
-## The #1 Most Overlooked Techniques in On-Page SEO Strategy is Keyword Research
+## On-Page SEO Strategy for Small Businesses
 
 If your website is not aligned with what your customers are searching for you won't even show up in the search results. The basis of keyword research is finding keywords with high search volume and low competition so you can rank high for those searches. Professional tools give you the best results and Clear Presence uses industry‑leading tools to give you the best results.
 

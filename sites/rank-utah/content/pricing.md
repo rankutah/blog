@@ -1,6 +1,6 @@
 ---
-title: "Pricing"
-description: "Simple monthly pricing for a website or local SEO. No setup fee or contract."
+title: "Pricing | Freelance Website Designer for Small Businesses"
+description: "Simple, affordable monthly pricing for a custom website from a freelance web designer. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
 schema:
@@ -23,10 +23,10 @@ schema:
 
 
 
-# Pricing
+# Simple Monthly Pricing
 {.center}
 
-Simple monthly pricing. No contracts. No surprises.
+Affordable plans from a freelance web designer. No contracts. No surprises.
 {.center}
 
 {{< cols min="18rem" gap="1rem" v="stretch">}}
@@ -39,7 +39,7 @@ Simple monthly pricing. No contracts. No surprises.
 
 {{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
-*Get a fast website custom built for your business.*
+*Get a fast website custom built for your business by a freelance designer.*
 
 - Custom website design
 - Fast, secure hosting
@@ -84,7 +84,7 @@ This package does not include a business website.
 
 *Bundle your website with local SEO to maximize visibility and save $49/mo.*
 
-- Custom website design
+- Custom website design from a freelance web designer
 - Fast, secure hosting
 - Domain & yearly renewals
 - Mobile-Friendly Design

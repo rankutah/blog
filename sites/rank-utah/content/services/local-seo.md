@@ -1,6 +1,6 @@
 ---
-title: "Local SEO"
-description: "Local SEO for small businesses"
+title: "Local SEO Services for Small Businesses"
+description: "Affordable local SEO services for small businesses. I help you show up in Google Maps and local search results so more customers can find and contact you."
 layout: "flowbite"
 url: "/services/local-seo"
 hero: true
@@ -26,7 +26,7 @@ params:
 ---
 
 {{< hero img="/media/utah-seo.avif" alt="Utah landscape image for local seo" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO (Search Engine Optimization)
+# Local SEO Services for Small Businesses
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
@@ -67,7 +67,7 @@ params:
 </script>
 
 ## Local SEO (Search Engine Optimization)
-Get more calls and messages by showing up in Google’s local results and on Maps. I improve your Google Business Profile, line up your pages with what people actually search, and keep your listings and reviews working together so nearby customers can find and contact you.
+Get more calls and messages by showing up in Google’s local results and on Maps. As a freelance SEO specialist, I improve your Google Business Profile, line up your pages with what people actually search, and keep your listings and reviews working together so nearby customers can find and contact you.
 
 ### In plain English
 Local SEO means showing up when nearby people search for what you do. If someone types “gutter repair near me” or “dentist Pleasant Grove,” you want your business to appear in Google Maps and the local results — with accurate info, photos, services, and reviews.
@@ -93,7 +93,7 @@ Local SEO means showing up when nearby people search for what you do. If someone
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
 - Local SEO (no website) — $199/mo: I manage your Google Business Profile, set up Apple Maps and Bing Places, and keep your info accurate across 100+ directories. Includes local keyword research, a simple plan, and monthly reports. Best if you already have a site.
-- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, I can remake or move it so it’s clean, fast, and aligned with local searches.
+- Website + Local SEO — $299/mo: A fast, secure custom website from a freelance designer plus everything in Local SEO. If you already have a site, I can remake or move it so it’s clean, fast, and aligned with local searches.
 
 Month‑to‑month. No long‑term contract.
 
