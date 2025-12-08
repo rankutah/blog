@@ -42,19 +42,23 @@ schema:
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/freelance-website-design-services-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Freelance Website Design Services for Small Businesses in Utah{.text-white}
-Get affordable, custom websites for small businesses across Utah—with personal attention from a Freelance Website Designer. Skip the large web design company or agency and work directly with a Freelance Website Designer who listens, designs fast, and keeps your site updated.
+Get your custom, high-performance website built for your Utah small business. Your affordable alternative to the big company. Work directly with me, a local expert, dedicated to results-driven design and development. I focus on optimizing your new site to help customers find you on search, helping you get more calls and bookings.
+
 {.text-white}
 
 
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
-{{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
+{{<button id="learn-more" url="#main-content" text="Learn More">}}
 
 
 <div class="mt-6"></div>
 {{< /hero >}}
+
+
+<div id="main-content" class="scroll-mt-24"></div>
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -136,7 +140,7 @@ Grow your small business anywhere in Utah with a fast, custom website that looks
 {{< /cols >}}
 
 
-## Customer Website Design Experiences
+## Freelance Website Designer Reviews from Small Businesses
 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -191,7 +195,6 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 ## Let’s Build Something Great for Your Business
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
-{{<button id="cta-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20website%20quote." text="Text Now">}}
 {{< button url="/pricing" text="See Pricing" >}}
 
 ## Featured Work
@@ -222,9 +225,17 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 
 ## Ready To Get Started
 
+I love entrepreneurship and working with small businesses. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I would love to partner with you and help grow your business.
+
 ![Benjamin Awerkamp – Utah Freelance Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
-I love helping small businesses in utah with website design and search engine optimization. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
+
+
+**Benjamin Awerkamp** <br>
+Web Design Developer & Local SEO Specialist <br>
+Call or Text: [(385) 323-8130](tel:+13853238130) <br>
+Master's in Software Development <br>
+Bachelor's in Business Management
 
 ### Share a bit about your business and goals.
 
