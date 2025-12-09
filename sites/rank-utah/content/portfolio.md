@@ -130,7 +130,11 @@ In progress. Coming soon.
 
 ![](/media/rodmaxfieddds-hero.avif)
 
-In Progress. Coming soon.
+**Liz M..**<br>
+{{<stars>}}<br>
+"I’m SO GLAD I found Clear Presence for my website! Finally, someone who listens to what I want and delivers! After many years with a company who only allowed minimal options that had to fit into their template, it was such a relief when Benjamin saw my vision and made it happen. Definitely deserves more than just five stars!"
+
+Website in Progress. Coming soon.
 
 {{< /col >}}
 
