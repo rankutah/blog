@@ -33,9 +33,7 @@ A selection of custom website design projects for small businesses. As a freelan
 
 ![](../media/website-design-cedar-city-strength.avif)
 
-In progress. Coming soon.
-
-{{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}}
+{{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}} {{<badge text="Website In Progress">}}
 
 
 {{< /col >}}
@@ -100,7 +98,7 @@ In progress. Coming soon.
 
 ![](/media/website-villa-valencia.avif)
 
-**Michelle L.**<br>
+**Michelle Larsen**<br>
 {{<stars>}}<br>
 "Benjamin sorted through a mess of past websites with lost passcodes and outdated design and voilà—now we have a beautiful, working website. Highly recommend!"
 
@@ -130,11 +128,12 @@ In progress. Coming soon.
 
 ![](/media/rodmaxfieddds-hero.avif)
 
-**Liz M..**<br>
+**Liz Maxfield**<br>
 {{<stars>}}<br>
 "I’m SO GLAD I found Clear Presence for my website! Finally, someone who listens to what I want and delivers! After many years with a company who only allowed minimal options that had to fit into their template, it was such a relief when Benjamin saw my vision and made it happen. Definitely deserves more than just five stars!"
 
-Website in Progress. Coming soon.
+{{< button url="[/contact](https://rodmaxfielddds.pages.dev/)" text="Visit Rod Maxfield DDS" >}} {{<badge text="Website In Progress">}}
+
 
 {{< /col >}}
 
