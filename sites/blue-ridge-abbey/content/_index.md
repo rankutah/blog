@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" >}}
+{{< lazy-vimeo id="1143211723" img="/media/new-photos/Blueridge.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
@@ -16,7 +16,9 @@ Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-{{< carousel id="bkg-hero" images="/media/carousel/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" mobilepxheight="350" mdpxheight="700" duration="800" interval="3000" autostart="interact" radius="none" >}}
+<!-- {{< carousel id="bkg-hero" images="/media/carousel/bed-and-breakfast-hotel-places-to-stay-f427c5ca.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-75dee76a.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6fcac247.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b0b708dd.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-3d79efe1.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-114bff57.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-0001f17d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d385f857.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-b159d3c3.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-07653286.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-d45d8b9d.jpg,/media/carousel/bed-and-breakfast-hotel-places-to-stay-6930f087.jpg" mobilepxheight="350" mdpxheight="700" duration="800" interval="3000" autostart="interact" radius="none" >}} -->
+
+{{< carousel id="bkg-hero" images="/media/new-photos/BRA-28.jpg,/media/new-photos/BRA-54.jpg,/media/new-photos/BRA-76.jpg,/media/new-photos/BRA-31.jpg,/media/new-photos/BRA-33.jpg,/media/new-photos/BRA-35.jpg,/media/new-photos/BRA-36.jpg,/media/new-photos/BRA-77.jpg,/media/new-photos/BRA-48.jpg,/media/new-photos/BRA-25.jpg,/media/new-photos/BRA-56.jpg,/media/new-photos/BRA-50.jpg" mobilepxheight="500" mdpxheight="700" duration="800" interval="3000" autostart="interact" radius="none" >}}
 
 {{< /col >}}
 
@@ -101,6 +103,9 @@ Blue Ridge Abbey is pleased to announce the opening of an additional building wi
 [Glen Maury Park](https://www.buenavistava.org/residents/recreation/glen-maury-park/)|6 min
 [Blue Ridge Parkway](https://www.blueridgeparkway.org/)|10 min
 [Lexington](https://lexingtonvirginia.com/)|13 min
+[Washington & Lee](https://www.wlu.edu/)|14 min
+[Virginia Military Institute](https://www.vmi.edu/)|14 min
+[Virginia Horse Center](https://vahorsecenter.org/)|14 min
 [Great Valley Farm Brewery](https://www.greatvalleyfarmbrewery.com/)|18 min
 [Natural Bridge State Park](https://www.dcr.virginia.gov/state-parks/natural-bridge)|19 min
 [Virginia Safari Park](https://www.virginiasafaripark.com/)|23 min

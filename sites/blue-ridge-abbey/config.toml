@@ -29,7 +29,7 @@ uglyURLs = false
   lightBackground = "neutral-100"
   darkBackground  = "emerald-950"
   cardBackground     = "gray-100"     # or "slate-100", "rose-50", etc.
-  cardBackgroundDark = "gray-800"  # or "slate-800", "black", etc.
+  cardBackgroundDark = "emerald-900"  # or "slate-800", "black", etc.
   cardBorderLight    = "gray-200"  # no "border-" prefix
   cardBorderDark     = "gray-700"  # no "border-" prefix
   # Custom brand color for buttons/links
