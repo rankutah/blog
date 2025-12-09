@@ -1,12 +1,10 @@
-/* ========== 1) Flowbite’s shipped CSS (may include some prebuilt utilities) ========== */
-/* Load Flowbite first so our Tailwind build (below) wins in the cascade. */
-@import "flowbite/dist/flowbite.css";
+/* ========== 1) Base CSS imports (Flowbite removed) ========== */
 
 /* ========== 2) Tailwind v4 layers (uses tailwind.config.cjs) ========== */
 @import "tailwindcss";
 
 @plugin "@tailwindcss/typography";
-@plugin "flowbite/plugin";
+/* Flowbite plugin removed */
 
 /* ========== 3) PaperMod/menu tweak (safe to remove if/when you drop PaperMod) ========== */
 .header .nav #menu li > a > span + svg,

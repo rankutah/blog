@@ -15,6 +15,9 @@
 {{- $delayMs := (index $analytics "delayMs") | default 4000 -}}
 {{- $events := (index $analytics "loadEvents") | default (slice "scroll" "mousemove" "touchstart") -}}
 {{- $onlyOnInteraction := (index $analytics "onlyOnInteraction") | default false -}}
+{{- /* Optional per-platform overrides: clarity can be delayed even when global is 0 */ -}}
+{{- $clarityDelayMs := (index $analytics "clarityDelayMs") | default nil -}}
+{{- $clarityOnlyOnInteraction := (index $analytics "clarityOnlyOnInteraction") | default nil -}}
 {{- $debugMode := (index $analytics "debugMode") | default false -}}
 
 {{- $cfg := dict
@@ -25,6 +28,8 @@
   "delayMs"     $delayMs
   "loadEvents"  $events
   "onlyOnInteraction" $onlyOnInteraction
+  "clarityDelayMs" $clarityDelayMs
+  "clarityOnlyOnInteraction" $clarityOnlyOnInteraction
   "debugMode" $debugMode
 -}}
 
@@ -51,6 +56,8 @@ window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   var DELAY_MS = (parseInt(cfg.delayMs, 10) || 4000);
   var LOAD_EVENTS = Array.isArray(cfg.loadEvents) ? cfg.loadEvents : [];
   var ONLY_ON_INTERACTION = !!cfg.onlyOnInteraction;
+  var CLARITY_DELAY_MS = (cfg.clarityDelayMs == null ? null : (parseInt(cfg.clarityDelayMs, 10) || 0));
+  var CLARITY_ONLY_ON_INTERACTION = (cfg.clarityOnlyOnInteraction == null ? null : !!cfg.clarityOnlyOnInteraction);
 
   function ensureGtagLoaded(id){
     if (!id) return;
@@ -111,7 +118,19 @@ window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
     window.__trackingLoaded = true;
     initGA4();
     initGoogleAds();
-    initClarity();
+    // Clarity may have its own delay/interaction rules
+    var clarityDelay = (CLARITY_DELAY_MS == null ? DELAY_MS : CLARITY_DELAY_MS);
+    var clarityOnlyInteract = (CLARITY_ONLY_ON_INTERACTION == null ? ONLY_ON_INTERACTION : CLARITY_ONLY_ON_INTERACTION);
+    if (!clarityOnlyInteract) {
+      try { setTimeout(initClarity, Math.max(0, clarityDelay|0)); } catch(_) { setTimeout(initClarity, 4000); }
+    }
+    try {
+      LOAD_EVENTS.forEach(function(evt){
+        if (typeof evt === 'string' && evt) {
+          document.addEventListener(evt, initClarity, { once:true, passive:true });
+        }
+      });
+    } catch(_) {}
     initMeta();
   }
 

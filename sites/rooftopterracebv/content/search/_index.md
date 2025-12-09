@@ -1,7 +1,1 @@
----
-title: Search
-layout: flowbite
-url: "/search/"
----
-
-{{< search >}}
+<!-- replaced by content/search.md -->

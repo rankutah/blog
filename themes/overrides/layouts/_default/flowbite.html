@@ -108,11 +108,7 @@
     })();
   </script>
 
-  <!-- Load Flowbite JS only when explicitly requested at page or site level -->
-  {{- $useFlowbite := or (eq .Params.useFlowbiteJS true) (eq site.Params.useFlowbiteJS true) -}}
-  {{- if $useFlowbite -}}
-    <script src='{{ "js/flowbite.min.js" | relURL }}' defer onload="try{window.initCarousels&&window.initCarousels()}catch(e){}"></script>
-  {{- end -}}
+  <!-- Flowbite JS removed: no sites enable it, and baseline avoids extra JS. -->
 
   {{- /* Styles: centralized bundle via partial for uniform behavior */ -}}
   {{ partial "styles.html" . }}

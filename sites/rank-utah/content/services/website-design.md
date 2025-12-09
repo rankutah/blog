@@ -48,7 +48,7 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 
 ### Quartz Worx – Countertops
 
-![](../../media/website-design-quartz-worx.avif)
+![Freelance Website Designer for Small Businesses](../../media/website-design-quartz-worx.avif)
 
 {{< /col >}}
 

@@ -60,6 +60,25 @@ The shared `search.js` appends a space + emoji to the GA4 `view_search_results` 
 * Success: `✅`
 * Abandoned: `❌`
 
+
+We now have generic orchestrators so all sites build and serve the same way:
+
+- `build:site` → Generic production build for any site. Uses `SITE=<name>` env var.
+- `dev:site` → Generic local dev run for any site. Uses `SITE=<name>` env var.
+#### Shared Search Page
+
+All sites include a `content/search.md` with a consistent meta description and the search shortcode. This is created or updated automatically during `dev:site` and `build:site` runs.
+
+- Default description: "Search the site for pages, services, and blog posts. Find what you need fast."
+- Override locally by editing `sites/<site>/content/search.md`.
+
+To backfill all sites now:
+
+```zsh
+node scripts/ensure-search-all.mjs
+```
+
+
 Looker Studio Derived Fields:
 ```
 Outcome:
@@ -78,6 +97,19 @@ COUNTIF(Outcome = 'success') / COUNT(Outcome)
 
 ### Appearance & Functionality
 These changes do not alter visual appearance. Behavior change: sites without an explicit delay now use a 5000ms load (was previously default 4000ms). Immediate-load sites remain unchanged.
+
+### Local Workflow Note (npm run <site>)
+
+Your workflow is to only run `npm run <site>` locally, then push (which triggers CI builds you often don’t see). To make sure link issues are visible before you push:
+
+- `npm run <site>` now performs a quick Hugo prebuild to a temporary folder and runs link checks on that built HTML before starting the dev server.
+- To disable the quick link check for faster startup, set `DEV_LINK_CHECK=0`:
+
+```zsh
+DEV_LINK_CHECK=0 SITE=rank-utah npm run dev:site
+```
+
+This keeps dev behavior aligned with production while still being fast. Link checks require a built artifact; doing a quick prebuild inside the dev script ensures you see link issues without changing your workflow.
 
 # Blog monorepo
 
@@ -115,6 +147,19 @@ We centralize defaults in `themes/overrides/config.shared.toml` and load it firs
 These scripts pass `--config "../../themes/overrides/config.shared.toml,config.toml"` to Hugo so the shared defaults are applied before the site-level overrides.
 
 ### Automated Internal Link Checking
+
+### SEO Authoring & Lints
+
+- Archetype: Use `themes/overrides/archetypes/page.md` for new pages. It scaffolds front matter (`title`, `description`, `h1`, `targetKeyword`, `city`, `service`, `canonicalURL`, `heroImage`, `faq[]`, `related[]`) and a proven content outline (intro → benefits → process → differentiators → FAQs → CTA).
+- Lints: `scripts/seo-lint.mjs` runs during dev/build to warn about:
+  - Missing `description` (auto-filled from first paragraph when `--autofix=1`)
+  - Missing `title`
+  - Future: optional checks (multiple H1, orphan pages) can be enabled per site.
+- Usage (runs automatically in site scripts):
+  - `node scripts/seo-lint.mjs --site=<site>`
+  - Add `--autofix=1` to auto-fill empty descriptions from content.
+
+Policy: Keep warnings minimal and actionable. We do not warn on “thin content” by default.
 
 - After each production build and whenever you start a dev server, `scripts/check-links.mjs` scans `sites/<site>/public/**/*.html` for internal links and verifies they resolve to files or directories with `index.html`.
 - If any broken internal links are found, the script fails hard, prints the broken URL and the source HTML file it was found in, and exits. This keeps builds and dev consistent and prevents surprises.
@@ -187,6 +232,15 @@ What belongs in shared config vs per-site:
 - We do not perform styling, layout, or config changes for only a subset of sites. Changes must be implemented in the shared overrides and shared configuration so every site benefits uniformly.
 - If a site needs a truly unique exception, document the rationale and isolate it behind a parameter or a clearly scoped local override that does not break the shared baseline.
 - Cleanup tasks (CSS, shortcodes, partials, analytics logic) should be applied across all sites. Verify by building at least two representative sites after changes.
+
+### Content Indexing Policy (No Section `_index.md` Files)
+
+- Only the homepage should use `_index.md` (e.g., `sites/<site>/content/_index.md`).
+- Do not create additional section `_index.md` files in subdirectories (e.g., `content/locations/_index.md`).
+- Prefer a single top-level file per section for easier discovery and grep:
+  - Use `content/locations.md` (outside the `locations/` directory) instead of `locations/_index.md`.
+  - If a directory is needed for multiple items (e.g., `locations/pleasant-grove-ut.md`), keep the listing page as `locations.md` at the root, not `_index.md` inside the folder.
+- Rationale: Keeps “index” pages centralized and makes searching for files simpler across sites.
 
 ## Centralized CSS Linking (All Sites)
 

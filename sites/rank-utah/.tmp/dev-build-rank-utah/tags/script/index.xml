@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Script on Clear Presence</title><link>https://clearpresence.io/tags/script/</link><description>Recent content in Script on Clear Presence</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 21 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://clearpresence.io/tags/script/index.xml" rel="self" type="application/rss+xml"/><item><title>Does Google Analytics Slow Down Your Website?</title><link>https://clearpresence.io/blog/does-google-analytics-slow-down-website/</link><pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate><guid>https://clearpresence.io/blog/does-google-analytics-slow-down-website/</guid><description>&lt;p&gt;Google Analytics is heavy and will slow down your website. I have proven this for myself by going to Page Speed Insights and testing websites with and without analytics. Some sites recommend using the defer attribute on your script but that does not help. Other sites recommend turning off enhanced measurement by toggling off outbound clicks, site search, video engagement, and file downloads. This marginally helps but does not solve the problem.&lt;/p&gt;</description></item><item><title>Shell Script for ImageMagick to Resize Images</title><link>https://clearpresence.io/blog/shell-script-imagemagick-resize-images/</link><pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate><guid>https://clearpresence.io/blog/shell-script-imagemagick-resize-images/</guid><description>&lt;p&gt;If you work in web publishing you often need to resize many images to be under a specific size, or of a different format, without loosing quality. This zsh script uses ImageMagick to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Convert multiple image to JPEG or a different image format such as AVIF or WebP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the width of your images&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Resize images so that each on is under a specified size (default of 130 KB)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Organize your original images into an Originals/ folder and resized images into a Resized/ folder&lt;/p&gt;</description></item></channel></rss>

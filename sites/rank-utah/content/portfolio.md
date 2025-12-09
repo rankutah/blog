@@ -15,7 +15,7 @@ A selection of custom website design projects for small businesses. As a freelan
 
 ## Quartz Worx
 
-![](/media/website-design-quartz-worx.avif)
+![Freelance Website Designer Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)
 
 
 **Darin Hinton** <br>

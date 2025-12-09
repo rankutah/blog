@@ -76,8 +76,9 @@ sameAs = []
 [params.analytics]
   # Load analytics immediately (no delay/gating)
   delayMs = 0
+  clarityOnlyOnInteraction = true
   # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
-  debugMode = true
+  debugMode = false
 
   [params.analytics.google]
     id = "G-7240SPB67L"
@@ -189,7 +190,7 @@ sameAs = []
 
   [[menu.main]]
     name   = "Blog"
-    url    = "/blog/"
+    url    = "/blog"
     weight = 35
 
 
@@ -197,8 +198,6 @@ sameAs = []
     name = "About"
     url = "/about"
     weight = 40
-
-
 
   [[menu.main]]
     name = "Contact"

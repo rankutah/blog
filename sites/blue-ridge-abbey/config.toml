@@ -59,6 +59,8 @@ uglyURLs = false
 [params.analytics]
   # Keep immediate load (site-specific override)
   delayMs = 0
+  # Gate Microsoft Clarity only on interaction (ignores the immediate global load)
+  clarityOnlyOnInteraction = true
 
   [params.analytics.google]
     id = "G-763E3FZE0G"

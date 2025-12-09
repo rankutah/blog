@@ -114,7 +114,7 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 #### Quartz Worx – Countertops
-![](/media/website-design-quartz-worx.avif)
+![Custom Website Design in Utah](/media/website-design-quartz-worx.avif)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 #### Cedar City Strength – Fitness

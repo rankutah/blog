@@ -11,13 +11,6 @@ Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
 
 {{< /lazy-vimeo >}}
-<!--
-{{< hero img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
-# Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
-Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
-{.text-white}
-{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Now">}}{{<button url="/contact" text="Contact">}}
-{{< /hero >}} -->
 
 {{< cols min="18rem" gap="2rem" v="start" order="reverse" >}}
 
