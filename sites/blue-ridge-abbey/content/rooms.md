@@ -11,7 +11,7 @@ url: "/rooms"
 {{< col card="false" y="start" >}}
 ## Sweet Briar
 
-{{< carousel id="bkg-hero" images="/media/new-photos/BRA-16.avif,/media/new-photos/BRA-18.avif,/media/new-photos/BRA-19.avif,/media/new-photos/BRA-20.avif,/media/new-photos/BRA-21.avif,/media/new-photos/BRA-22.avif,/media/new-photos/BRA-23.avif,/media/new-photos/BRA-24.avif,/media/new-photos/BRA-25.avif" pxheight="350" mobilepxheight="500" mdpxheight="350" radius="lg" priority="true" >}}
+{{< carousel id="bkg-hero" images="/media/new-photos/BRA-16.avif,/media/new-photos/BRA-18.avif,/media/new-photos/BRA-19.avif,/media/new-photos/BRA-20.avif,/media/new-photos/BRA-21.avif,/media/new-photos/BRA-22.avif,/media/new-photos/BRA-23.avif,/media/new-photos/BRA-24.avif,/media/new-photos/BRA-25.avif" pxheight="350" mobilepxheight="500" mdpxheight="600" radius="lg" priority="true" >}}
 
 Situated on the main floor, Sweet Briar offers a fresh, welcoming resort with wheelchair accessibility.
 
@@ -24,7 +24,7 @@ Situated on the main floor, Sweet Briar offers a fresh, welcoming resort with wh
 
 ## Primrose
 
-{{< carousel id="primrose" images="/media/new-photos/BRA-39.avif,/media/new-photos/BRA-40.avif,/media/new-photos/BRA-41.avif,/media/new-photos/BRA-43.avif,/media/new-photos/BRA-44.avif,/media/new-photos/BRA-45.avif,/media/new-photos/BRA-47.avif,/media/new-photos/BRA-48.avif,/media/new-photos/BRA-49.avif,/media/new-photos/BRA-50.avif" pxheight="350" mobilepxheight="500" mdpxheight="350" radius="lg" >}}
+{{< carousel id="primrose" images="/media/new-photos/BRA-39.avif,/media/new-photos/BRA-41.avif,/media/new-photos/BRA-43.avif,/media/new-photos/BRA-44.avif,/media/new-photos/BRA-45.avif,/media/new-photos/BRA-47.avif,/media/new-photos/BRA-48.avif,/media/new-photos/BRA-49.avif,/media/new-photos/BRA-50.avif" pxheight="350" mobilepxheight="500" mdpxheight="600" radius="lg" >}}
 
 Primrose is both cheerful and elegant, with a luxurious free-standing bath in addition to the shower.
 
@@ -37,7 +37,7 @@ Primrose is both cheerful and elegant, with a luxurious free-standing bath in ad
 
 ## Foxglove
 
-{{< carousel id="foxglove" images="/media/new-photos/BRA-51.avif,/media/new-photos/BRA-52.avif,/media/new-photos/BRA-53.avif,/media/new-photos/BRA-54.avif,/media/new-photos/BRA-55.avif" pxheight="350" mobilepxheight="500" mdpxheight="350" radius="lg" >}}
+{{< carousel id="foxglove" images="/media/new-photos/BRA-51.avif,/media/new-photos/BRA-53.avif,/media/new-photos/BRA-54.avif,/media/new-photos/BRA-55.avif" pxheight="350" mobilepxheight="500" mdpxheight="600" radius="lg" >}}
 
 With thoughtful details and a peaceful atmosphere, Foxglove is a restful retreat for recharging.
 
@@ -50,7 +50,7 @@ With thoughtful details and a peaceful atmosphere, Foxglove is a restful retreat
 
 ## Marigold
 
-{{< carousel id="marigold" images="/media/new-photos/BRA-58.avif,/media/new-photos/BRA-65.avif,/media/new-photos/BRA-66.avif,/media/new-photos/BRA-67.avif,/media/new-photos/BRA-56.avif,/media/new-photos/BRA-57.avif" pxheight="350" mobilepxheight="500" mdpxheight="350" radius="lg" >}}
+{{< carousel id="marigold" images="/media/new-photos/BRA-58.avif,/media/new-photos/BRA-65.avif,/media/new-photos/BRA-66.avif,/media/new-photos/BRA-67.avif,/media/new-photos/BRA-56.avif,/media/new-photos/BRA-57.avif" pxheight="350" mobilepxheight="500" mdpxheight="600" radius="lg" >}}
 
 Available on its own or paired with Oak & Ivy as a two-bedroom suite with a shared bath, Marigold is an inviting, beautiful space.
 
@@ -63,7 +63,7 @@ Available on its own or paired with Oak & Ivy as a two-bedroom suite with a shar
 
 ## Oak & Ivy
 
-{{< carousel id="oak-ivy" images="/media/new-photos/BRA-69.avif,/media/new-photos/BRA-72.avif,/media/new-photos/BRA-73.avif,/media/new-photos/BRA-74.avif" pxheight="350" mobilepxheight="500" mdpxheight="350" radius="lg" >}}
+{{< carousel id="oak-ivy" images="/media/new-photos/BRA-69.avif,/media/new-photos/BRA-72.avif,/media/new-photos/BRA-73.avif,/media/new-photos/BRA-74.avif" pxheight="350" mobilepxheight="500" mdpxheight="600" radius="lg" >}}
 
 Available on its own or paired with Marigold as a two-bedroom suite with a shared bath, Oak & Ivy is a rich, comfortable room.
 
