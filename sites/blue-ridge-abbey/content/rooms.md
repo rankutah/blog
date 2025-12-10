@@ -48,7 +48,7 @@ With thoughtful details and a peaceful atmosphere, Foxglove is a restful retreat
 
 ## Marigold
 
-{{< carousel id="marigold" images="/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-89de62ef.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-ccdf504e.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-d7967d16.jpg,/media/new-photos/BRA-65.avif,/media/new-photos/BRA-67.avif,/media/new-photos/BRA-56.avif" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
+{{< carousel id="marigold" images="/media/new-photos/BRA-59.avif,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-89de62ef.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-ccdf504e.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-d7967d16.jpg,/media/new-photos/BRA-65.avif,/media/new-photos/BRA-67.avif,/media/new-photos/BRA-56.avif" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
 
 Available on its own or paired with Oak & Ivy as a two-bedroom suite with a shared bath, Marigold is an inviting, beautiful space.
 
@@ -61,7 +61,7 @@ Available on its own or paired with Oak & Ivy as a two-bedroom suite with a shar
 
 ## Oak & Ivy
 
-{{< carousel id="oak-ivy" images="/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-4a01937a.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-1897c5d7.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-238d5000.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-c52058ba.jpg,/media/new-photos/BRA-72.avif,/media/new-photos/BRA-74.avif" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
+{{< carousel id="oak-ivy" images="/media/new-photos/BRA-71.avif,/media/new-photos/BRA-72.avif,/media/new-photos/BRA-74.avif,/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-4a01937a.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-1897c5d7.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-238d5000.jpg,/media/rooms/blue-ridge-abbey-hotel-sweet-oak-and-ivy-bedroom-c52058ba.jpg" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
 
 Available on its own or paired with Marigold as a two-bedroom suite with a shared bath, Oak & Ivy is a rich, comfortable room.
 
