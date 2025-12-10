@@ -36,7 +36,7 @@ Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens a
 
 {{< button url="/rooms" text="Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
-{{< badge text="No available room? Please call or text 540-319-3889" >}}
+{{< badge text="No rooms available? Please call or text 540-319-3889" >}}
 
 ## New Building & Bedrooms
 
@@ -173,7 +173,7 @@ Ready to start your adventure?
 
 {{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability">}}{{< button url="/gallery" text="Gallery" >}}{{< button url="/rooms" text="Rooms" >}}{{<button url="/contact" text="Contact">}}
 
-{{< badge text="No available room? Please call or text 540-319-3889" >}}
+{{< badge text="No rooms available? Please call or text 540-319-3889" >}}
 
 
 
