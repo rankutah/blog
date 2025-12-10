@@ -14,6 +14,15 @@
   {{- $clean = (print "media/" $clean) -}}
 {{- end -}}
 {{- $clean = (path.Clean $clean) -}}
+{{- /* Prefer AVIF sibling if available */ -}}
+{{- $ext := (strings.ToLower (path.Ext $clean)) -}}
+{{- $basename := (strings.TrimSuffix (path.Base $clean) $ext) -}}
+{{- $dir := (path.Dir $clean) -}}
+{{- $avifClean := (path.Join $dir (print $basename ".avif")) -}}
+{{- $avifRes := resources.Get $avifClean -}}
+{{- if $avifRes -}}
+  {{- $clean = $avifClean -}}
+{{- end -}}
 {{- $img := resources.Get $clean -}}
 {{- if not $img -}}
   {{- /* Try alternate lookups if the first fails */ -}}
@@ -50,7 +59,7 @@
         sizes="{{ $sizes }}"
         width="{{ $preferred.Width }}" height="{{ $preferred.Height }}"
         alt="{{ $alt }}"
-        loading="lazy" decoding="async"
+        loading="lazy" fetchpriority="low" decoding="async"
         class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
     </a>
   </div>
@@ -58,29 +67,44 @@
   {{- /* Fallback: not an image resource (e.g., when shared mounts aren't loaded). Render a plain img without resizing to avoid build errors. */ -}}
   {{- warnf "galleryimg fallback used for %q (resources.Get returned %v)" $clean (printf "%v" $img) -}}
   <div class="break-inside-avoid mb-4">
-    <a href="{{ $src }}" class="group" data-lightbox="gallery">
+    {{- /* Prefer AVIF href if the file exists */ -}}
+    {{- $href := $src -}}
+    {{- $avifPath := (print "/" $avifClean) -}}
+    {{- if (fileExists $avifPath) -}}
+      {{- $href = $avifPath -}}
+    {{- end -}}
+    <a href="{{ $href }}" class="group" data-lightbox="gallery">
         {{- $ext := (strings.ToLower (path.Ext $clean)) -}}
-        {{- $canProbe := or (eq $ext ".jpg") (or (eq $ext ".jpeg") (or (eq $ext ".png") (or (eq $ext ".gif") (eq $ext ".webp")))) -}}
+        {{- $canProbe := or (eq $ext ".jpg") (or (eq $ext ".jpeg") (or (eq $ext ".png") (or (eq $ext ".gif") (or (eq $ext ".webp") (eq $ext ".avif"))))) -}}
         {{- if $canProbe -}}
-          {{- with (imageConfig (print "/" $clean)) -}}
-            <img
-              src="{{ $src }}"
-              width="{{ .Width }}" height="{{ .Height }}"
-              alt="{{ $alt }}"
-              loading="lazy" decoding="async"
-              class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
+          {{- /* Prefer AVIF <picture> if probe succeeds and files exist */ -}}
+          {{- $filePath := (print "/" $clean) -}}
+          {{- if (fileExists $filePath) -}}
+            {{- $imgCfg := (imageConfig $filePath) -}}
+            <picture>
+              {{- if (fileExists $avifPath) -}}
+                <source srcset="{{ $avifPath }}" type="image/avif" />
+              {{- end -}}
+              <img
+                src="{{ $src }}"
+                sizes="(min-width:1280px) 25vw, (min-width:768px) 33vw, (min-width:640px) 50vw, 100vw"
+                width="{{ $imgCfg.Width }}" height="{{ $imgCfg.Height }}"
+                alt="{{ $alt }}"
+                loading="lazy" fetchpriority="low" decoding="async"
+                class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
+            </picture>
           {{- else -}}
             <img
               src="{{ $src }}"
               alt="{{ $alt }}"
-              loading="lazy" decoding="async"
+              loading="lazy" fetchpriority="low" decoding="async"
               class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
           {{- end -}}
         {{- else -}}
           <img
             src="{{ $src }}"
             alt="{{ $alt }}"
-            loading="lazy" decoding="async"
+            loading="lazy" fetchpriority="low" decoding="async"
             class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
         {{- end -}}
     </a>
