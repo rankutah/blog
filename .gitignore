@@ -4,9 +4,10 @@ node_modules/
 # Hugo public output (root and inside any site folders)
 public/
 sites/public/
+sites/**/public/
 
 # Hugo‑Pipes generated resources
-/sites/*/resources/_gen/**
+sites/**/resources/
 
 # Hugo build locks
 **/*.hugo_build.lock
@@ -30,3 +31,7 @@ pnpm-debug.log*
 
 # Hugo cache directory (local build speed, not for Git)
 .hugo_cache/
+
+# Dev temporary builds
+.tmp/
+**/.tmp/

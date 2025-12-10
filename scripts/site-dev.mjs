@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process'
-import { existsSync } from 'node:fs'
-import { join } from 'node:path'
+import { existsSync, rmSync } from 'node:fs'
+import { join, resolve } from 'node:path'
 
 function run(cmd, args = [], env = {}) {
   return new Promise((resolve, reject) => {
@@ -53,7 +53,7 @@ async function main() {
   // Optional quick prebuild for link checks so `npm run <site>` surfaces issues locally
   const doLinkCheck = process.env.DEV_LINK_CHECK !== '0'
   if (doLinkCheck && existsSync('scripts/check-links.mjs')) {
-    const tmpDest = join('.tmp', `dev-build-${SITE}`)
+    const tmpDest = resolve('.tmp', `dev-build-${SITE}`)
     // Run a fast Hugo build to a temp folder, then check links against built HTML
     await run('hugo', [
       '--source', sourceArg,
@@ -64,6 +64,9 @@ async function main() {
     ], { SITE }).catch(() => {})
 
     await run('node', ['scripts/check-links.mjs', `--site=${SITE}`, `--dir=${tmpDest}`], { SITE }).catch(() => {})
+
+    // Clean up temporary build output
+    try { rmSync(tmpDest, { recursive: true, force: true }) } catch {}
   }
 
   // Start dev server

@@ -394,7 +394,7 @@
       const menu = document.getElementById('navbar-sticky');
       if(!btn||!menu) return;
       if (menu.hasAttribute('data-drawer')) return; // handled by drawer logic
-      const isMobile = () => window.matchMedia('(max-width: 767.98px)').matches; // Tailwind md breakpoint
+      const isMobile = () => window.matchMedia('(max-width: 1023.98px)').matches; // Treat tablet as mobile-style drawer (below lg)
       menu.querySelectorAll('a[href]').forEach(a=>{
         a.addEventListener('click',()=>{
           if(!isMobile()) return;
@@ -407,14 +407,12 @@
     }
     // Mobile drawer for navbar (off-canvas)
     function initMobileDrawer(){
-      const btn = document.querySelector('[data-collapse-toggle]');
-      if(!btn) return;
-      const targetId = btn.getAttribute('data-collapse-toggle');
-      const drawer = targetId && document.getElementById(targetId);
+      const btn = document.querySelector('[data-collapse-toggle="navbar-drawer"]');
+      const drawer = document.getElementById('navbar-drawer');
       const overlay = document.getElementById('nav-drawer-overlay');
       if(!btn || !drawer || !overlay) return;
       if (!drawer.hasAttribute('data-drawer')) return; // only if configured as drawer
-      const isMobile = () => window.matchMedia('(max-width: 767.98px)').matches; // Tailwind md breakpoint
+      const isMobile = () => window.matchMedia('(max-width: 1023.98px)').matches; // below lg: include tablet
       let lastFocus = null;
       const focusableSel = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
@@ -463,17 +461,17 @@
         if (rafId) cancelAnimationFrame(rafId);
         rafId = requestAnimationFrame(()=>{
           if (!isMobile()) {
-            // Ensure desktop state
-            drawer.classList.remove('translate-x-full');
-            drawer.classList.add('pointer-events-auto');
-            overlay.classList.remove('opacity-100','pointer-events-auto');
-            drawer.setAttribute('aria-hidden','false');
-            btn.setAttribute('aria-expanded','false');
-            document.body.classList.remove('overflow-hidden');
-          } else {
-            // Ensure closed on mobile by default
+            // Desktop: keep drawer closed and non-interactive
             drawer.classList.add('translate-x-full','pointer-events-none');
             drawer.setAttribute('aria-hidden','true');
+            btn.setAttribute('aria-expanded','false');
+            overlay.classList.remove('opacity-100','pointer-events-auto');
+            document.body.classList.remove('overflow-hidden');
+          } else {
+            // Mobile/Tablet: ensure closed by default
+            drawer.classList.add('translate-x-full','pointer-events-none');
+            drawer.setAttribute('aria-hidden','true');
+            btn.setAttribute('aria-expanded','false');
             overlay.classList.remove('opacity-100','pointer-events-auto');
           }
         });

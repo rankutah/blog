@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 function usage() {
-  console.log('Usage: node scripts/check-links.mjs --site=<siteName>');
+  console.log('Usage: node scripts/check-links.mjs --site=<siteName> [--dir=<builtHtmlDir>]');
 }
 
 function parseArgs() {
@@ -70,8 +70,8 @@ function extractHrefs(html) {
   return hrefs;
 }
 
-function checkSite(site) {
-  const publicDir = path.resolve(`sites/${site}/public`);
+function checkSite(site, overrideDir) {
+  const publicDir = overrideDir ? path.resolve(overrideDir) : path.resolve(`sites/${site}/public`);
   if (!fs.existsSync(publicDir)) {
     console.error(`[link-check] No public output found for site: ${site} at ${publicDir}`);
     process.exitCode = 2;
@@ -109,6 +109,7 @@ function checkSite(site) {
 (function main(){
   const opts = parseArgs();
   const site = opts.site || process.env.SITE;
+  const dir = opts.dir; // optional override for built HTML root
   if (!site) { usage(); process.exit(1); }
-  checkSite(site);
+  checkSite(site, dir);
 })();
