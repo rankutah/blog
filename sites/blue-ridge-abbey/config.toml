@@ -152,6 +152,11 @@ uglyURLs = false
     url = "/weddings"
     weight = 30
 
+    [[menu.main]]
+      name = "Reviews"
+      url = "/reviews"
+      weight = 35
+
   [[menu.main]]
     name = "Contact"
     url = "/contact"

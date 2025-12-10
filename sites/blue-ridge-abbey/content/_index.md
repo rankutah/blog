@@ -24,6 +24,12 @@ Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
+## Blue Ridge Abbey Photo Gallery
+
+Take a visual tour of our guest rooms and shared spaces and get a feel for the warmth, character, and comfort waiting for you.
+
+{{< button url="/gallery" text="Gallery" >}}
+
 ## Cozy Rooms
 
 Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
