@@ -42,7 +42,7 @@ Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens a
 
 Blue Ridge Abbey is pleased to announce the opening of an additional building with 5 additional bedrooms. These new rooms will be available for booking shortly.
 
-{{< button url="/carriage-rooms" text="Carriage Rooms" >}}
+{{< button url="/carriage-rooms" text="Coming Soon" >}}
 
 
 {{< /col >}}
