@@ -140,7 +140,7 @@ uglyURLs = false
   [[menu.main]]
     name = "About"
     url = "/about"
-    weight = 30
+    weight = 40
 
   [[menu.main]]
     name = "Gallery"
@@ -150,7 +150,7 @@ uglyURLs = false
   [[menu.main]]
     name = "Weddings"
     url = "/weddings"
-    weight = 40
+    weight = 30
 
   [[menu.main]]
     name = "Contact"
