@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< lazy-vimeo id="1143211723" img="/media/new-photos/Blueridge-1.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" >}}
+{{< lazy-vimeo id="1143211723" img="/media/new-photos/Blueridge.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
