@@ -28,10 +28,10 @@ uglyURLs = false
   logo = "media/logo.png"
   lightBackground = "neutral-100"
   darkBackground  = "emerald-950"
-  cardBackground     = "gray-100"     # or "slate-100", "rose-50", etc.
+  cardBackground     = "emerald-100"     # or "slate-100", "rose-50", etc.
   cardBackgroundDark = "emerald-900"  # or "slate-800", "black", etc.
-  cardBorderLight    = "gray-200"  # no "border-" prefix
-  cardBorderDark     = "gray-700"  # no "border-" prefix
+  cardBorderLight    = "emerald-200"  # no "border-" prefix
+  cardBorderDark     = "emerald-700"  # no "border-" prefix
   # Custom brand color for buttons/links
   brandHex = "#6a8d6f"
 

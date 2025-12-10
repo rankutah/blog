@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< lazy-vimeo id="1143211723" img="/media/new-photos/Blueridge.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" >}}
+{{< lazy-vimeo id="1143211723" img="/media/new-photos/Blueridge-1.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 {.text-white}
@@ -28,8 +28,7 @@ Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 
 Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
 
-{{< badge text="If you don't see any available rooms, please call or text 540-319-3889" >}}
-
+{{< badge text="No available room? Please call or text 540-319-3889" >}}
 
 {{< button url="/rooms" text="Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
@@ -166,7 +165,7 @@ Texts received between the hours of 7PM to 7AM will not be seen/addressed by you
 
 Ready to start your adventure?
 
-{{< badge text="If you don't see any available rooms, please call or text 540-319-3889" >}}
+{{< badge text="No available room? Please call or text 540-319-3889" >}}
 
 {{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability">}}{{<button url="/contact" text="Contact">}}
 
