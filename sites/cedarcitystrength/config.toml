@@ -102,6 +102,16 @@ uglyURLs = false
     weight = 20
 
   [[menu.main]]
+    name   = "Pricing"
+    url    = "/pricing"
+    weight = 25
+
+  [[menu.main]]
+    name   = "Schedule"
+    url    = "/schedule"
+    weight = 26
+
+  [[menu.main]]
     name   = "Gallery"
     url    = "/gallery"
     weight = 30

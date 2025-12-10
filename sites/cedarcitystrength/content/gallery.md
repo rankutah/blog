@@ -8,7 +8,7 @@ summary: "Inside the gym"
 # Gallery
 Workouts and training at Cedar City Strength & Conditioning.
 
-{{< gallery >}}
+{{< gallery class="not-prose columns-2 sm:columns-3 md:columns-4 gap-3" >}}
   <!-- moved first two photos later in the list -->
   {{< galleryimg src="/media/CCFittest1-149.jpg" alt="CCFittest1-149" >}}
   {{< galleryimg src="/media/CCFittest1-185.jpg" alt="CCFittest1-185" >}}

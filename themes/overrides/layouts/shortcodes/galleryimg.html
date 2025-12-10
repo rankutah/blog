@@ -51,7 +51,7 @@
         width="{{ $preferred.Width }}" height="{{ $preferred.Height }}"
         alt="{{ $alt }}"
         loading="lazy" decoding="async"
-        class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+        class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
     </a>
   </div>
 {{- else -}}
@@ -68,7 +68,7 @@
               width="{{ .Width }}" height="{{ .Height }}"
               alt="{{ $alt }}"
               loading="lazy" decoding="async"
-              class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+              class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
           {{- else -}}
             <img
               src="{{ $src }}"
@@ -81,7 +81,7 @@
             src="{{ $src }}"
             alt="{{ $alt }}"
             loading="lazy" decoding="async"
-            class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+            class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
         {{- end -}}
     </a>
   </div>
