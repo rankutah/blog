@@ -91,10 +91,6 @@ uglyURLs = false
   logoHeightPx      = 40
 
 [menu]
-  [[menu.main]]
-    name   = "Home"
-    url    = "/"
-    weight = 10
 
   [[menu.main]]
     name   = "Services"
