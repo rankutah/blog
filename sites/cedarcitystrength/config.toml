@@ -115,17 +115,17 @@ uglyURLs = false
   [[menu.main]]
     name   = "Pricing"
     url    = "/pricing"
-    weight = 25
+    weight = 30
 
   [[menu.main]]
     name   = "Schedule"
     url    = "/schedule"
-    weight = 26
+    weight = 35
 
   [[menu.main]]
     name   = "Gallery"
     url    = "/gallery"
-    weight = 30
+    weight = 25
 
   [[menu.main]]
     name   = "About"
