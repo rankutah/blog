@@ -90,20 +90,6 @@ uglyURLs = false
   phoneNumber       = "209-534-0270"
   logoHeightPx      = 40
 
-[params.section.defaults]
-  # Container width:
-  #   sm   → max-w-screen-sm
-  #   md   → max-w-3xl
-  #   lg   → max-w-5xl
-  #   xl   → max-w-7xl
-  #   2xl  → max-w-screen-2xl
-  #   full → max-w-none (edge to edge)
-  max = "full"
-
-  # Horizontal padding:
-  #   none → px-0, sm → px-4, md → px-6, lg → px-8
-  pad = "sm"
-
 
 [menu]
 
