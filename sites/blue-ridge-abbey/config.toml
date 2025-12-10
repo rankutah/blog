@@ -135,7 +135,7 @@ uglyURLs = false
   [[menu.main]]
     name = "Rooms"
     url = "/rooms"
-    weight = 10
+    weight = 20
 
   [[menu.main]]
     name = "About"
@@ -145,7 +145,7 @@ uglyURLs = false
   [[menu.main]]
     name = "Gallery"
     url = "/gallery"
-    weight = 20
+    weight = 10
 
   [[menu.main]]
     name = "Weddings"
