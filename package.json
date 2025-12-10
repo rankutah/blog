@@ -5,8 +5,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "cf:build": "node scripts/cf-build.mjs",
     "build:site": "node scripts/site-build.mjs",
     "dev:site": "node scripts/site-dev.mjs",
+    "ci:install": "pnpm install --frozen-lockfile",
+    "ci:build": "pnpm run build:blue-ridge-abbey",
   "quartz-worx": "node scripts/changed-media.mjs sites/quartz-worx/media || (npm run optimize:quartz-worx --silent && npm run deriv:quartz-worx --silent); SITE=quartz-worx node scripts/vendor-google-fonts.mjs --silent || true; SITE=quartz-worx node scripts/seo-lint.mjs --site=quartz-worx; node scripts/run-hugo-server.mjs --site=quartz-worx --source=./sites/quartz-worx --config=\"../../themes/overrides/config.shared.toml,config.toml\"",
   "build:quartz-worx": "[ -n \"$CF_PAGES\" ] && node scripts/has-derivatives.mjs quartz-worx || node scripts/changed-media.mjs sites/quartz-worx/media || (npm run optimize:quartz-worx --silent && npm run deriv:quartz-worx --silent); SITE=quartz-worx node scripts/vendor-google-fonts.mjs --silent || true; SITE=quartz-worx hugo --source ./sites/quartz-worx --config \"../../themes/overrides/config.shared.toml,config.toml\" --gc --minify --cleanDestinationDir --logLevel info --ignoreCache; SITE=quartz-worx node scripts/check-links.mjs --site=quartz-worx",
   "rank-utah": "SITE=rank-utah node scripts/site-dev.mjs",
@@ -65,6 +68,10 @@
   },
   "homepage": "https://github.com/rankutah/blog#readme",
   "description": "",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=10"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.16",

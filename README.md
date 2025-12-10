@@ -256,8 +256,8 @@ To ensure production matches local builds and avoids fingerprint mismatches caus
 - Build command (per site):
 
 ```zsh
-pnpm install
-npm run build:<site>
+pnpm install --frozen-lockfile
+pnpm run build:<site>
 ```
 
 - Publish directory: `sites/<site>/public`
@@ -273,3 +273,24 @@ npm run build:<site>
 - Microsoft Clarity and GA load via their own absolute URLs; using relative URLs for the stylesheet does not affect them.
 - If a Pages project publishes the wrong directory (e.g. repo root `public/`), HTML and assets will not match; fix the publish dir.
 - Always standardize on `npm run build:<site>` so Hugo Pipes runs PostCSS and emits the fingerprinted bundle expected by the HTML.
+
+## CI/Prod Parity (pnpm + Lockfile)
+
+- Use pnpm for installs and builds. In CI, run:
+
+```zsh
+pnpm install --frozen-lockfile
+pnpm run build:<site>
+```
+
+- If dependencies change, refresh and commit `pnpm-lock.yaml` so prod matches local:
+
+```zsh
+pnpm install --lockfile-only
+pnpm install
+pnpm prune
+git add pnpm-lock.yaml
+git commit -m "chore: refresh lockfile after dep changes"
+```
+
+- Node >= 18 and pnpm >= 10 are enforced via `package.json` `engines`.
