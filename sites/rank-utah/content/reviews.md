@@ -16,7 +16,7 @@ Clear Presence helps small businesses feel proud of their online presence — pr
 
 ### What clients appreciate most
 
-- Clear, honest guidance
+- Clear, honest guidance 
 - Fast turnaround and responsive communication
 - Clean, modern design grounded in business goals
 - SEO basics done right from the start
