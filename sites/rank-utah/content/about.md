@@ -25,11 +25,23 @@ Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
 
-## Areas
 
-Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
+{{< cols min="18rem" gap="1rem" v="start" >}}
 
-[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
+{{< col card="false" y="start" >}}
+
+## Ready to get started?
+
+If you want a site that looks professional, loads fast, and helps customers find you, let’s chat. I’ll give you clear, honest recommendations and a simple plan.
+
+<div class="flex flex-wrap gap-3 items-center">
+	{{< button url="/pricing" text="See Pricing" >}}
+	{{< button url="/contact" text="Contact" >}}
+</div>
+
+{{< /col >}}
+
+{{< /cols >}}
 
 
 

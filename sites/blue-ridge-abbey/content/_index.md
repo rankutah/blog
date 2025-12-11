@@ -47,8 +47,6 @@ Blue Ridge Abbey is pleased to announce the opening of an additional building wi
 
 {{< /col >}}
 
-
-
 {{< /cols >}}
 
 ## A 5-Star Guest Experience

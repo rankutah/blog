@@ -30,7 +30,7 @@ Website Design & Local SEO for Small Businesses
 
 ### Company
 {.center}
-[About](/about) • [Portfolio](/portfolio) • [Pricing](/pricing) • [Contact](/contact)
+[About](/about) • [Portfolio](/portfolio) • [Blog](/blog) • [Pricing](/pricing) • [Contact](/contact)
 {.center}
 
 

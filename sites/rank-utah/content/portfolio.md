@@ -160,6 +160,6 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 Get a fast, effective website that helps your business grow.
 
-{{< button url="/services/website-design" text="Website Design" >}}
+{{< button url="/services/website-design" text="Website Design" >}} {{< button url="/contact" text="Contact" >}}
 
 
