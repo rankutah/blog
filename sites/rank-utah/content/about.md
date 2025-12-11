@@ -10,7 +10,7 @@ Clear Presence offers freelance Website Design for Small Businesses in Utah, bas
 
 Work directly with me, a local expert, who personally manages your entire project from planning to launch. Every site is optimized to help customers find you on search, helping you get more calls and bookings. A simple monthly service covers your new website, managed hosting, and unlimited content updates. Partner with me for a clear and powerful online presence in Utah County and statewide.
 
-Call or text me for questions or to get started at (385) 323-8130
+Call or text me for questions or to get started at [(385) 323-8130](tel:+13853238130)
 
 ## Meet Your Web Designer
 
