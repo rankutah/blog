@@ -33,7 +33,10 @@ A selection of custom website design projects for small businesses. As a freelan
 
 ![](../media/website-design-cedar-city-strength.avif)
 
-{{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}} {{<badge text="Website In Progress">}}
+
+{{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}}{{<badge text="Website In Progress">}}
+
+
 
 
 {{< /col >}}
