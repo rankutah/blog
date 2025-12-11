@@ -10,9 +10,9 @@ Clear Presence offers freelance Website Design for Small Businesses in Utah, bas
 
 Work directly with me, a local expert, who personally manages your entire project from planning to launch. Every site is optimized to help customers find you on search, helping you get more calls and bookings. A simple monthly service covers your new website, managed hosting, and unlimited content updates. Partner with me for a clear and powerful online presence in Utah County and statewide.
 
-Call or text me for questions or to get started.
+Call or text me for questions or to get started at (385) 323-8130
 
-## Meet the Founder
+## Meet Your Web Designer
 
 I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
