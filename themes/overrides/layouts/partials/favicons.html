@@ -48,9 +48,11 @@
 {{- if and $img (not $isSVG) -}}
   {{/* Raster pipeline: build PNG sizes */}}
   {{- $p32 = $img.Fit "32x32 png" -}}
+  {{- $p48 := $img.Fit "48x48 png" -}}
   {{- $p16 := $img.Fit "16x16 png" -}}
   {{- $apple := $img.Fit "180x180 png" -}}
   <link rel="icon" type="image/png" sizes="32x32" href="{{ $p32.RelPermalink }}">
+  <link rel="icon" type="image/png" sizes="48x48" href="{{ $p48.RelPermalink }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ $p16.RelPermalink }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $apple.RelPermalink }}">
 {{- else if and $img $isSVG -}}
