@@ -38,7 +38,6 @@ Louise De Souza is, first and foremost, the mother of three beautiful and talent
 {{< col card="true" y="start" >}}
 ## Gary Ludgate
 <img src="/media/new-photos/BRA-2.avif" alt="Blue Ridge Abbey founder" class="w-full aspect-square object-cover rounded-xl mb-4" loading="lazy" decoding="async" />
-
 Gary served as a Vet Tech in the Air Force for six years and later as a Chief Petty Officer and radar specialist in the Navy, from which he retired. After his military career, he returned to his passion—construction. He now works as a Senior Construction Inspector for NXL, a division of Kleinfelder Engineering. With more than 30 years of experience in the construction field, he works closely with contractors to ensure projects are completed to specification and properly documented for payment.
 
 Outside of work, Gary can often be found spending time with his four small dogs or out in the garage restoring an old car and bringing it back to life.
@@ -47,7 +46,6 @@ Outside of work, Gary can often be found spending time with his four small dogs 
 {{< col card="true" y="start" >}}
 ## Mason Ludgate
 <img src="/media/new-photos/BRA-9.avif" alt="Blue Ridge Abbey founder" class="w-full aspect-square object-cover rounded-xl mb-4" loading="lazy" decoding="async" />
-
 Bio coming soon
 {{< /col >}}
 
@@ -55,8 +53,6 @@ Bio coming soon
 ## Booklyn Ludgate
 
 <img src="/media/new-photos/BRA-7.avif" alt="Blue Ridge Abbey founder" class="w-full aspect-square object-cover rounded-xl mb-4" loading="lazy" decoding="async" />
-
-
 Bio coming soon
 {{< /col >}}
 
