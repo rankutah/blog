@@ -48,7 +48,7 @@ With thoughtful details and a peaceful atmosphere, Foxglove is a restful retreat
 
 ## Marigold
 
-{{< carousel id="marigold" images="/media/new-photos/BRA-59.avif,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-89de62ef.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-ccdf504e.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-d7967d16.jpg,/media/new-photos/BRA-65.avif,/media/new-photos/BRA-67.avif,/media/new-photos/BRA-56.avif" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
+{{< carousel id="marigold" images="/media/new-photos/BRA-59.avif,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-89de62ef.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-ccdf504e.jpg,/media/rooms/blue-ridge-abbey-hotel-marigold-bedroom-d7967d16.jpg,/media/new-photos/BRA-65.avif,/media/new-photos/BRA-56.avif" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
 
 Available on its own or paired with Oak & Ivy as a two-bedroom suite with a shared bath, Marigold is an inviting, beautiful space.
 

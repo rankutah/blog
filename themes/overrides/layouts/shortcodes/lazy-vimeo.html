@@ -12,10 +12,14 @@ Usage:
 {{ $class := .Get "class" }}
 {{ $muted := .Get "muted" | default "true" }}
 {{ $controls := .Get "controls" | default "true" }}
+{{ $minh := .Get "minh" | default "" }}
 {{ $inner := $page.RenderString (dict "markup" "goldmark" "renderShortcodes" true) .Inner }}
 {{ $primary := site.Params.primaryColor | default "emerald" }}
+{{ $brandHex := site.Params.brandHex }}
 {{ $btnColorLight := printf "text-%s-600" $primary }}
 {{ $btnColorDark  := printf "dark:text-%s-400" $primary }}
+{{ $btnBgLight := printf "bg-%s-600 hover:bg-%s-700 focus:ring-%s-300" $primary $primary $primary }}
+{{ $btnBgDark  := printf "dark:bg-%s-500 dark:hover:bg-%s-600" $primary $primary }}
 {{ if not $id }}{{ errorf "lazy-vimeo shortcode: missing id param" }}{{ end }}
 {{ if not $img }}{{ errorf "lazy-vimeo shortcode: missing img param" }}{{ end }}
 <div class="section hero bleed">
@@ -36,16 +40,18 @@ Usage:
     @media (max-width:640px){
       [data-lazy-vimeo-overlay]{padding-top:var(--nav-h);} /* keep headings below nav */
     }
-    /* Responsive hero heights: shorter on small screens */
+    /* Responsive hero heights: use defaults only when no explicit minh provided */
+    {{ if not $minh }}
     @media (max-width: 640px){
       [data-lazy-vimeo-target]{min-height:70vh !important;height:70vh !important}
     }
     @media (min-width: 641px) and (max-width: 1024px){
       [data-lazy-vimeo-target]{min-height:85vh !important;height:85vh !important}
     }
+    {{ end }}
   </style>
   <div class="relative w-screen isolate group {{$class}}" data-lazy-vimeo-wrapper>
-    <div class="relative w-full overflow-hidden" style="min-height:100vh;min-height:100svh;height:100vh;height:100svh" data-lazy-vimeo-target>
+    <div class="relative w-full overflow-hidden" style="{{ if $minh }}min-height:{{$minh}};height:{{$minh}}{{ else }}min-height:100vh;min-height:100svh;height:100vh;height:100svh{{ end }}" data-lazy-vimeo-target>
       <picture>
         <img src="{{$img}}" alt="{{$alt}}" class="h-full w-full object-cover" loading="eager" fetchpriority="high" decoding="async" />
       </picture>
@@ -57,12 +63,21 @@ Usage:
           </div>
         </div>
         <div class="mt-6 flex items-center justify-center">
-          <button type="button" class="inline-flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30 transition h-20 w-20 {{$btnColorLight}} {{$btnColorDark}}" data-lazy-vimeo-play aria-label="Play video" title="Play video">
+          {{ if $brandHex }}
+          <button type="button" class="inline-flex items-center justify-center transition focus:outline-none focus:ring-4 p-0 bg-transparent" style="color: {{$brandHex}};" data-lazy-vimeo-play aria-label="Play video" title="Play video">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
               <rect x="1" y="1" width="66" height="46" rx="12" fill="currentColor"/>
               <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
             </svg>
           </button>
+          {{ else }}
+          <button type="button" class="inline-flex items-center justify-center rounded-full transition h-20 w-20 focus:outline-none focus:ring-4 {{$btnBgLight}} {{$btnBgDark}} {{$btnColorLight}} {{$btnColorDark}}" data-lazy-vimeo-play aria-label="Play video" title="Play video">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
+              <rect x="1" y="1" width="66" height="46" rx="12" fill="currentColor"/>
+              <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
+            </svg>
+          </button>
+          {{ end }}
         </div>
       </div>
     </div>

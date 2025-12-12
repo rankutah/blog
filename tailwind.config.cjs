@@ -28,6 +28,9 @@ function buildSafelist() {
   const linkFamilies = new Set([...FAMILIES, 'slate', 'zinc', 'stone']);
   for (const c of linkFamilies) {
     out.push(
+      // Button backgrounds (match ui/button.html default)
+      `bg-${c}-600`,
+      `hover:bg-${c}-700`,
       `bg-${c}-700`,
       `hover:bg-${c}-800`,
       `focus:ring-${c}-300`,
