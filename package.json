@@ -83,6 +83,7 @@
     "postcss-import": "^16.1.1",
     "puppeteer": "^24.25.0",
     "sharp": "^0.33.4",
+    "png-to-ico": "^2.1.8",
     "tailwindcss": "^4.1.11",
     "turndown": "^7.2.0"
   }

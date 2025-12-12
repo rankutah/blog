@@ -48,6 +48,11 @@ async function main() {
   // Vendor fonts (non-fatal)
   await run('node', ['scripts/vendor-google-fonts.mjs', '--silent'], { SITE }).catch(() => {})
 
+  // Generate legacy favicon.ico from logo/source (non-fatal)
+  if (existsSync('scripts/generate-favicon-ico.mjs')) {
+    await run('node', ['scripts/generate-favicon-ico.mjs'], { SITE }).catch(() => {})
+  }
+
   // Pre-build SEO lints (content-level)
   if (existsSync('scripts/seo-lint.mjs')) {
     await run('node', ['scripts/seo-lint.mjs', `--site=${SITE}`], { SITE })
