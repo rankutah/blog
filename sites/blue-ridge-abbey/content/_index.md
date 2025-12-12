@@ -28,7 +28,7 @@ Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
 
 Take a visual tour of our guest rooms and shared spaces and get a feel for the warmth, character, and comfort waiting for you.
 
-{{< button url="/gallery" text="Gallery" >}}
+{{< button url="/gallery" text="Photo Gallery" >}}
 
 ## Cozy Main House Rooms
 

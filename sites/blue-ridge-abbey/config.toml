@@ -134,7 +134,7 @@ uglyURLs = false
 
   [[menu.main]]
     name = "Home"
-    url = "/home"
+    url = "/"
     weight = 5
 
   [[menu.main]]
@@ -157,8 +157,21 @@ uglyURLs = false
 
   [[menu.main]]
     name = "About"
+    identifier = "about"
     url = "/about"
     weight = 40
+
+    [[menu.main]]
+      name = "The Abbey"
+      url = "/about"
+      parent = "about"
+      weight = 41
+
+    [[menu.main]]
+      name = "The Founders"
+      url = "/founders"
+      parent = "about"
+      weight = 42
 
   [[menu.main]]
     name = "Gallery"

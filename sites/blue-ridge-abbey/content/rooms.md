@@ -37,7 +37,7 @@ Primrose is both cheerful and elegant, with a luxurious free-standing bath in ad
 
 ## Foxglove
 
-{{< carousel id="foxglove" images="/media/new-photos/BRA-52.avif,/media/new-photos/BRA-54.avif,/media/rooms/blue-ridge-abbey-hotel-foxglove-bedroom-28902f77.jpg,/media/rooms/blue-ridge-abbey-hotel-foxglove-bedroom-966d9a02.jpg,/media/rooms/blue-ridge-abbey-hotel-foxglove-bedroom-dd141241.jpg" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
+{{< carousel id="foxglove" images="/media/new-photos/BRA-52.avif,/media/new-photos/BRA-53.avif,/media/new-photos/BRA-54.avif,/media/rooms/blue-ridge-abbey-hotel-foxglove-bedroom-28902f77.jpg,/media/rooms/blue-ridge-abbey-hotel-foxglove-bedroom-966d9a02.jpg,/media/rooms/blue-ridge-abbey-hotel-foxglove-bedroom-dd141241.jpg" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
 
 With thoughtful details and a peaceful atmosphere, Foxglove is a restful retreat for recharging.
 
@@ -69,6 +69,17 @@ Available on its own or paired with Marigold as a two-bedroom suite with a share
 
 {{< amenity name="bed" text="King-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}}
 {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Book Oak & Ivy" color="primary" >}}
+
+{{< /col >}}
+
+{{< col card="false" y="start" >}}
+## Floor Map & Parking
+
+
+{{< carousel id="floor-map" images="/media/1stfloor.avif,/media/2ndfloor.avif,/media/parking.avif" pxheight="350" mobilepxheight="500" mdpxheight="700" radius="lg" >}}
+
+Find your room at a glance and see where to park when you arrive. The main house features first and second-floor rooms, with accessible parking on E 21st Street or Chestnut Ave.
+
 
 {{< /col >}}
 
