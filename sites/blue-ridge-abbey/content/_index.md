@@ -30,7 +30,7 @@ Take a visual tour of our guest rooms and shared spaces and get a feel for the w
 
 {{< button url="/gallery" text="Gallery" >}}
 
-## Cozy Rooms
+## Cozy Main House Rooms
 
 Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
 
@@ -38,7 +38,7 @@ Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens a
 
 {{< badge text="No rooms available? Please call or text 540-319-3889" >}}
 
-## New Building & Bedrooms
+## New Carriage House Rooms
 
 Blue Ridge Abbey is pleased to announce the opening of an additional building with 5 additional bedrooms. These new rooms will be available for booking shortly.
 
