@@ -5,11 +5,11 @@ layout: "flowbite"
 url: "/carriage-rooms"
 ---
 
-# Carriage Rooms
+# Carriage House Rooms
 
 Welcome to the new Carriage House at Blue Ridge Abbey. Each room includes a private, comfortable stay with thoughtful amenities.
 
-Our rooms that are currently available for booking can be found here: {{< button url="/rooms" text="Rooms" >}}
+Our rooms that are currently available for booking in the Main House can be found here: {{< button url="/rooms" text="Rooms" >}}
 
 {{< cols min="18rem" gap="2rem" row="1rem" v="start">}}
 {{< col card="false" y="start" >}}

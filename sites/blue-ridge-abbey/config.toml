@@ -139,8 +139,21 @@ uglyURLs = false
 
   [[menu.main]]
     name = "Rooms"
+    identifier = "rooms"
     url = "/rooms"
     weight = 20
+
+    [[menu.main]]
+      name = "Main House"
+      url = "/rooms"
+      parent = "rooms"
+      weight = 21
+
+    [[menu.main]]
+      name = "Carriage House"
+      url = "/carriage-rooms"
+      parent = "rooms"
+      weight = 22
 
   [[menu.main]]
     name = "About"
@@ -150,7 +163,7 @@ uglyURLs = false
   [[menu.main]]
     name = "Gallery"
     url = "/gallery"
-    weight = 10
+    weight = 20
 
   [[menu.main]]
     name = "Weddings"
