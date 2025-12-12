@@ -169,7 +169,7 @@ Texts received between the hours of 7PM to 7AM will not be seen/addressed by you
 
 Ready to start your adventure?
 
-{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability">}}{{< button url="/gallery" text="Gallery" >}}{{< button url="/rooms" text="Rooms" >}}{{<button url="/contact" text="Contact">}}
+{{<button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability">}}{{< button url="/gallery" text="Gallery" >}}{{< button url="/rooms" text="Rooms" >}}
 
 {{< badge text="No rooms available? Please call or text 540-319-3889" >}}
 

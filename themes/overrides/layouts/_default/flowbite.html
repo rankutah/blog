@@ -426,6 +426,8 @@
         const first = drawer.querySelector(focusableSel);
         if (first) try{ first.focus(); }catch(e){}
         document.addEventListener('keydown', onKeydown);
+        // Fallback: also close if user taps/clicks anywhere outside the drawer or toggle
+        document.addEventListener('click', onOutside, true);
       }
       function close(){
         drawer.classList.add('translate-x-full','pointer-events-none');
@@ -434,6 +436,7 @@
         btn.setAttribute('aria-expanded','false');
         document.body.classList.remove('overflow-hidden');
         document.removeEventListener('keydown', onKeydown);
+        document.removeEventListener('click', onOutside, true);
         if (lastFocus && typeof lastFocus.focus === 'function') try{ lastFocus.focus(); }catch(e){}
       }
       function toggle(){ if(!isMobile()) return; const openState = drawer.getAttribute('aria-hidden') !== 'true'; openState ? close() : open(); }
@@ -446,6 +449,13 @@
           if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
           else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
         }
+      }
+      function onOutside(e){
+        // If drawer is open and the click is not within the drawer or on the toggle button, close it
+        if (drawer.getAttribute('aria-hidden') === 'true') return;
+        const insideDrawer = e.target && e.target.closest && e.target.closest('#navbar-drawer');
+        const onToggle = e.target && e.target.closest && e.target.closest('[data-collapse-toggle="navbar-drawer"]');
+        if (!insideDrawer && !onToggle) close();
       }
 
       // Wire up
