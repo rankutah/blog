@@ -133,6 +133,11 @@ uglyURLs = false
 [menu]
 
   [[menu.main]]
+    name = "Home"
+    url = "/home"
+    weight = 5
+
+  [[menu.main]]
     name = "Rooms"
     url = "/rooms"
     weight = 20
