@@ -5,20 +5,37 @@ layout: "flowbite"
 url: "/about"
 ---
 
+# A Historic Queen Anne Home Restored for Warm, Modern Stays
+Nestled in Buena Vista, just minutes from Lexington and the Blue Ridge Parkway.
+
+{{< button url="/rooms" text="See Our Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
+
 {{< cols min="18rem" gap="2rem" v="start" order="normal" >}}
 
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-<img src="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" class="rounded-lg shadow w-full" loading="lazy" />
+{{< col card="false" y="start" >}}
+<img src="/media/new-photos/Blueridge.avif" alt="Blue Ridge Abbey exterior" class="rounded-lg shadow w-full mb-4" loading="lazy" decoding="async" />
+
+## At a Glance
+
+- Bedrooms: Five private rooms with comfy linens and in-room amenities.
+- Breakfast: Hot, made-to-order breakfast with thoughtful dietary options.
+- Parking: Accessible parking near the front entrance; additional guest parking by the Carriage House.
+- Connectivity: Fast WiFi and smart TVs.
+- Historic Details: Wrap-around porch, original woodwork, and classic decor.
+- Nearby: Natural Bridge, Virginia Safari Park, Lexington, and scenic drives.
 {{< /col >}}
 
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-# About Blue Ridge Abbey
+{{< col card="false" y="start" >}}
+### Origins (1898–1903)
+Originally known as the Jordan House, the Abbey has been part of Buena Vista’s story since the town’s early days. Records date its construction to 1898, while local stories suggest it may have been completed around 1903.
 
-Step into quiet comfort of Blue Ridge Abbey Bed & Breakfast, a beautifully restored Queen Anne-style home in Buena Vista, Virginia. Just minutes from the Blue Ridge Parkway, Natural Bridge, Safari Park, and historic downtown Lexington, our bed and breakfast blends vintage elegance with modern comfort. Enjoy an unforgettable Blue Ridge Mountain getaway.
+### A Community Landmark
+The home was built by Charles Francis Jordan Jr., and soon became a gathering place for events and celebrations. The iconic wrap-around porch and the Carriage House were added in the mid-1900s as needs grew. Ms. Mabelle Jordan, daughter of the builders, saw its construction as a child and lived here for over a century.
 
-The Blue Ridge Abbey has stood as a welcoming presence in Buena Vista for well over a century. Originally known as the Jordan House, this beautiful home has been a part of the town’s story since its earliest days. Some records date its construction to 1898, while local stories consistently suggest it may have been completed in 1903.
+### Today’s Abbey
+Lovingly preserved and carefully updated, the Abbey blends the warmth of its history with modern comfort. We’re delighted to welcome guests and to hear local stories of meaningful moments shared here. We continue to restore and improve the property with comfort, quality, and decor in mind.
 
-Whichever date is true, one thing is certain: this home is a cherished piece of Buena Vista’s history and heart. Built by Charles Francis Jordan Jr., the son of a respected war veteran, adaptive businessman, trusted leader, and honored statesman, the Jordan House was created to be a gathering place in the community. Improvements to the house, including the iconic wrap-around porch and the Carriage House, were added in the mid-1900s as the needs of the family and community expanded. Ms. Mabelle Jordan, daughter of the builders, witnessed its construction as a child and lived here until she passed away in 1998 at age 104. The property then passed to the Wilhelms, who loved, maintained, and perpetuated the significance of this landmark building until it was purchased by the current owners. As we’ve restored this home and opened it once more to guests, we have been delighted to hear so many stories from local residents of events, celebrations, and significant moments shared here over the years. We are careful to preserve the original quality while updating and renovating it to meet the highest standards of comfort, quality, and decor, and we are excited to welcome you to stay and take part in the next chapter in the story of this historic home!
+{{< button url="/founders" text="Meet the Founders" >}} {{< button url="/gallery" text="Photo Gallery" >}}
 {{< /col >}}
 
 {{< /cols >}}
