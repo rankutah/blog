@@ -51,8 +51,8 @@
   {{- $srcset = delimit $srcset ", " -}}
   {{- $preferred := index $variants 2 | default (index $variants 1) | default (index $variants 0) -}}
   {{- $sizes := "(min-width:1280px) 25vw, (min-width:768px) 33vw, (min-width:640px) 50vw, 100vw" -}}
-  <div class="break-inside-avoid mb-4">
-    <a href="{{ $img.RelPermalink }}" class="group" data-lightbox="gallery">
+  <div class="mb-4 p-0">
+    <a href="{{ $img.RelPermalink }}" class="group block" data-lightbox="gallery">
       <img
         src="{{ $preferred.RelPermalink }}"
         srcset="{{ $srcset }}"
@@ -66,14 +66,14 @@
 {{- else -}}
   {{- /* Fallback: not an image resource (e.g., when shared mounts aren't loaded). Render a plain img without resizing to avoid build errors. */ -}}
   {{- warnf "galleryimg fallback used for %q (resources.Get returned %v)" $clean (printf "%v" $img) -}}
-  <div class="break-inside-avoid mb-4">
+  <div class="mb-4 p-0">
     {{- /* Prefer AVIF href if the file exists */ -}}
     {{- $href := $src -}}
     {{- $avifPath := (print "/" $avifClean) -}}
     {{- if (fileExists $avifPath) -}}
       {{- $href = $avifPath -}}
     {{- end -}}
-    <a href="{{ $href }}" class="group" data-lightbox="gallery">
+    <a href="{{ $href }}" class="group block" data-lightbox="gallery">
         {{- $ext := (strings.ToLower (path.Ext $clean)) -}}
         {{- $canProbe := or (eq $ext ".jpg") (or (eq $ext ".jpeg") (or (eq $ext ".png") (or (eq $ext ".gif") (or (eq $ext ".webp") (eq $ext ".avif"))))) -}}
         {{- if $canProbe -}}
@@ -98,7 +98,7 @@
               src="{{ $src }}"
               alt="{{ $alt }}"
               loading="lazy" fetchpriority="low" decoding="async"
-              class="block w-full h-auto rounded-base border border-gray-200 dark:border-gray-700" />
+              class="block w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700" />
           {{- end -}}
         {{- else -}}
           <img

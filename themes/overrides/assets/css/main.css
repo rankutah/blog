@@ -59,18 +59,12 @@
   border-radius: 9999px; /* full */
   display: grid;
   place-items: center;
-  background-color: #111827; /* gray-900 */
-  color: #f9fafb; /* gray-50 */
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
   opacity: 0;
   visibility: hidden;
   transition: opacity .2s ease, visibility .2s ease, transform .2s ease;
   transform: translateY(8px);
   z-index: 60;
-}
-.dark .top-link {
-  background-color: #374151; /* gray-700 */
-  color: #e5e7eb; /* gray-200 */
 }
 .top-link:hover { transform: translateY(0); }
 .top-link svg { width: 1rem; height: 1rem; display: block; }
@@ -81,6 +75,10 @@
   padding: 1rem 1rem; /* tighter top/bottom */
   /* Border comes from Tailwind classes on the element (matches navbar) */
 }
+.shortcode-gallery { align-items: start; }
+.shortcode-gallery > div { padding: 0 !important; }
+.shortcode-gallery img { display: block; margin: 0 !important; vertical-align: top; }
+
 
 .dark .footer { }
 .footer .prose {

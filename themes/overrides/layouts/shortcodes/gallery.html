@@ -9,7 +9,7 @@
     {{< gallery class="w-full columns-2 md:columns-3 xl:columns-4" >}}
 */ -}}
 {{- /* Use CSS grid and force items to align to the top edge */ -}}
-{{- $default := "not-prose w-full grid items-start grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4" -}}
+{{- $default := "shortcode-gallery not-prose w-full grid items-start grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4" -}}
 {{- $class := .Get "class" | default $default -}}
 <div class="{{ $class }}">
   {{- .Inner -}}

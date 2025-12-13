@@ -23,7 +23,44 @@
 {{- end }}
 
 {{- if (not site.Params.disableScrollToTop) }}
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+{{- /* Map primaryColor to purge-safe Tailwind classes for the scroll-to-top button */ -}}
+{{- $brand := lower (or .Site.Params.primaryColor "blue") -}}
+{{- $bg := dict
+    "red"      "bg-red-600"
+    "orange"   "bg-orange-600"
+    "amber"    "bg-amber-500"
+    "yellow"   "bg-yellow-500"
+    "lime"     "bg-lime-600"
+    "green"    "bg-green-600"
+    "emerald"  "bg-emerald-600"
+    "teal"     "bg-teal-600"
+    "cyan"     "bg-cyan-600"
+    "sky"      "bg-sky-600"
+    "blue"     "bg-blue-600"
+    "indigo"   "bg-indigo-600"
+    "violet"   "bg-violet-600"
+    "purple"   "bg-purple-600"
+    "fuchsia"  "bg-fuchsia-600"
+    "pink"     "bg-pink-600"
+    "rose"     "bg-rose-600"
+    "slate"    "bg-slate-700"
+    "gray"     "bg-gray-700"
+    "zinc"     "bg-zinc-700"
+    "neutral"  "bg-neutral-700"
+    "stone"    "bg-stone-700"
+ -}}
+{{- $text := dict
+    "yellow"   "text-gray-900"
+    "amber"    "text-gray-900"
+    "slate"    "text-white"
+    "gray"     "text-white"
+    "zinc"     "text-white"
+    "neutral"  "text-white"
+    "stone"    "text-white"
+ -}}
+{{- $bgCls := (index $bg $brand) | default "bg-blue-600" -}}
+{{- $textCls := (index $text $brand) | default "text-white" -}}
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link {{ $bgCls }} {{ $textCls }}" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
