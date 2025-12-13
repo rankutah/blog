@@ -115,6 +115,13 @@ This keeps dev behavior aligned with production while still being fast. Link che
 
 Shared Hugo setup for multiple client sites using a common theme (`themes/overrides` + PaperMod) and a single shared configuration file.
 
+## Styling Consistency
+- Shortcodes, partials, and page components MUST remain visually consistent across all sites.
+- Make UI changes in `themes/overrides/` (layouts, shortcodes, assets/css, assets/js) so they propagate everywhere.
+- Examples: navbar/footers, hero/section overlays, search page, FAQ accordion, dropdown menus, galleries all use the shared palette and utilities.
+- After UI changes, rebuild all sites to verify consistency.
+- Avoid site-specific inline styles unless there is a documented exception.
+
 ## How shared config works
 
 We centralize defaults in `themes/overrides/config.shared.toml` and load it first, followed by each site's `config.toml` so site values override shared defaults.

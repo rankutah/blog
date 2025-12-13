@@ -707,6 +707,21 @@
         close.addEventListener('click', hide);
         prev.addEventListener('click', (e)=>{ e.preventDefault(); e.stopPropagation(); goPrev(); });
         next.addEventListener('click', (e)=>{ e.preventDefault(); e.stopPropagation(); goNext(); });
+        // Touch swipe navigation for lightbox (mobile-friendly)
+        let sx = 0, sy = 0, swiping = false;
+        overlay.addEventListener('touchstart', (e)=>{
+          const t = e.changedTouches && e.changedTouches[0];
+          if (!t) return; sx = t.clientX; sy = t.clientY; swiping = true;
+        }, { passive:true });
+        overlay.addEventListener('touchend', (e)=>{
+          if (!swiping) return; swiping = false;
+          const t = e.changedTouches && e.changedTouches[0];
+          if (!t) return; const dx = t.clientX - sx; const dy = t.clientY - sy;
+          if (Math.abs(dy) > Math.abs(dx)) return; // ignore vertical drags
+          const THRESHOLD = 40;
+          if (dx <= -THRESHOLD) goNext();
+          else if (dx >= THRESHOLD) goPrev();
+        }, { passive:true });
         document.addEventListener('keydown', (e)=>{
           if(overlay.style.display==='flex'){
             if(e.key==='Escape') hide();
@@ -721,7 +736,37 @@
         a.addEventListener('click', (e)=>{ e.preventDefault(); const href=a.getAttribute('href'); if(href) show(href); });
       });
     }
-    ready(()=>{initCollapse();initDropdowns();initMobileDrawer();initAutoCloseMobileMenu();initAccordions();initCarouselHeights();setupCarouselLoader();initLightbox();});
+    function enableCarouselSwipe(){
+      if (!window.Carousel) return;
+      const roots = Array.from(document.querySelectorAll('[data-carousel]'));
+      const THRESHOLD = 40; // px
+      roots.forEach(root=>{
+        let startX = 0, startY = 0, swiping = false;
+        function onTouchStart(e){
+          const t = e.changedTouches && e.changedTouches[0];
+          if (!t) return;
+          startX = t.clientX; startY = t.clientY; swiping = true;
+        }
+        function onTouchEnd(e){
+          if (!swiping) return; swiping = false;
+          const t = e.changedTouches && e.changedTouches[0];
+          if (!t) return;
+          const dx = t.clientX - startX;
+          const dy = t.clientY - startY;
+          // Ignore mostly vertical gestures
+          if (Math.abs(dy) > Math.abs(dx)) return;
+          const inst = window.Carousel.getInstance ? window.Carousel.getInstance(root.id) : null;
+          // Fallback: try to find instance by scanning registered ones
+          const api = inst || (window.Carousel && window.Carousel.instances && window.Carousel.instances.find && window.Carousel.instances.find(i=>i._carouselEl===root));
+          if (!api || typeof api.next !== 'function' || typeof api.prev !== 'function') return;
+          if (dx <= -THRESHOLD) api.next();
+          else if (dx >= THRESHOLD) api.prev();
+        }
+        root.addEventListener('touchstart', onTouchStart, { passive:true });
+        root.addEventListener('touchend', onTouchEnd, { passive:true });
+      });
+    }
+    ready(()=>{initCollapse();initDropdowns();initMobileDrawer();initAutoCloseMobileMenu();initAccordions();initCarouselHeights();setupCarouselLoader();enableCarouselSwipe();initLightbox();});
   </script>
 
   <!-- Header toggle (optional):
