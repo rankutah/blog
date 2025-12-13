@@ -8,7 +8,7 @@ url: "/"
 
 {{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="70vh" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
-Best Hotel Alternative Near Lexington, SVU, & Natural Bridge
+Cozy bed & breakfast near Lexington, the Blue Ridge Mountains, Natural Bridge, and the Blue Ridge Parkway. Enjoy a relaxing stay and explore the Shenandoah Valley.
 {.text-white}
 
 {{< /lazy-vimeo >}}
