@@ -1,5 +1,5 @@
 ---
-title: "Freelance Website Designer for Small Businesses in Pleasant Grove, UT | Custom Web Design Services Near You"
+title: "Clear Presence (Utah) | Website Design & Local SEO Services | Digital Marketing Agency Near You"
 description: "Clear Presence offers freelance Website Design for Small Businesses near Pleasant Grove, Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
