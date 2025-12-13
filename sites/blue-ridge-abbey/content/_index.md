@@ -1,6 +1,7 @@
 ---
-title: "Buena Vista VA Hotels | Bed & Breakfast"
-description: "Searching for a hotel in Buena Vista, Virginia? Come stay at the Blue Ridge Abbey Bed and Breakfast. Private rooms, hot breakfast, easy parking. Minutes to Lexington, SVU, and Natural Bridge."
+
+title: "Bed & Breakfast in Buena Vista, VA | B&B Near Lexington, the Blue Ridge Mountains, Blue Ridge Parkway, Natural Bridge, and the Shenandoah Valley"
+description: "Your cozy bed & breakfast at the foot of the Blue Ridge Mountains. Enjoy a relaxing stay with fresh made-to-order breakfast, cozy rooms, and nearby adventures. Explore Lexington, drive the Blue Ridge Parkway, or hike around Natural Bridge, and enjoy the Shenandoah Valley"
 layout: "flowbite"
 url: "/"
 ---
