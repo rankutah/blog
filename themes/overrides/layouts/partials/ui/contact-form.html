@@ -63,7 +63,11 @@
 -}}
 {{- $focusCls := index $focus $brand | default (index $focus "blue") -}}
 
-{{- $inputBase := printf "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white %s" $focusCls -}}
+{{- /* Palette-driven field styling (inputs only) */ -}}
+{{- $pal := partial "theme/palette.html" $page -}}
+{{- $cardBg     := index $pal "cardBg"     | default "bg-white dark:bg-neutral-900" -}}
+{{- $cardBorder := index $pal "cardBorder" | default "border border-gray-200 dark:border-white/10" -}}
+{{- $inputBase := printf "shadow-sm %s %s text-sm rounded-lg block w-full p-2.5 %s" $cardBg $cardBorder $focusCls -}}
 
 {{- $justify := "justify-start" -}}
 {{- if eq $align "center" }}{{- $justify = "justify-center" -}}{{- end -}}
@@ -74,7 +78,7 @@
     Missing form action. Pass action="https://submit-form.com/XXXX" or set .Site.Params.formspark.action
   </div>
 {{- else -}}
-  <form action="{{ $action | safeURL }}" method="POST" class="space-y-6 {{ $extra }}">
+  <form action="{{ $action | safeURL }}" method="POST" class="space-y-6 rounded-xl p-4 {{ $extra }}">
     {{- if $honeypot }}
       <input type="text" name="{{ $honeypot }}" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
     {{- end }}
@@ -117,7 +121,7 @@
     {{- if $showMessage }}
       <div>
         <label for="message" class="sr-only">Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Message" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white {{ $focusCls }}"></textarea>
+        <textarea id="message" name="message" rows="6" placeholder="Message" class="block w-full text-sm rounded-lg shadow-sm p-2.5 {{ $cardBg }} {{ $cardBorder }} {{ $focusCls }}"></textarea>
       </div>
     {{- end }}
 

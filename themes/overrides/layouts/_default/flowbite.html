@@ -737,15 +737,24 @@
       });
     }
     function enableCarouselSwipe(){
-      if (!window.Carousel) return;
       const roots = Array.from(document.querySelectorAll('[data-carousel]'));
       const THRESHOLD = 40; // px
       roots.forEach(root=>{
-        let startX = 0, startY = 0, swiping = false;
+        let startX = 0, startY = 0, swiping = false, blocked = false;
+        const nextBtn = root.querySelector('[data-carousel-next]');
+        const prevBtn = root.querySelector('[data-carousel-prev]');
         function onTouchStart(e){
           const t = e.changedTouches && e.changedTouches[0];
           if (!t) return;
-          startX = t.clientX; startY = t.clientY; swiping = true;
+          startX = t.clientX; startY = t.clientY; swiping = true; blocked = false;
+        }
+        function onTouchMove(e){
+          if (!swiping) return;
+          const t = e.changedTouches && e.changedTouches[0];
+          if (!t) return;
+          const dx = t.clientX - startX; const dy = t.clientY - startY;
+          // If primarily horizontal, prevent scrolling to allow swipe
+          if (Math.abs(dx) > Math.abs(dy)) { e.preventDefault(); blocked = true; }
         }
         function onTouchEnd(e){
           if (!swiping) return; swiping = false;
@@ -755,14 +764,21 @@
           const dy = t.clientY - startY;
           // Ignore mostly vertical gestures
           if (Math.abs(dy) > Math.abs(dx)) return;
-          const inst = window.Carousel.getInstance ? window.Carousel.getInstance(root.id) : null;
-          // Fallback: try to find instance by scanning registered ones
-          const api = inst || (window.Carousel && window.Carousel.instances && window.Carousel.instances.find && window.Carousel.instances.find(i=>i._carouselEl===root));
-          if (!api || typeof api.next !== 'function' || typeof api.prev !== 'function') return;
-          if (dx <= -THRESHOLD) api.next();
-          else if (dx >= THRESHOLD) api.prev();
+          if (dx <= -THRESHOLD) {
+            if (nextBtn) nextBtn.click();
+            else if (window.Carousel && typeof window.Carousel.default !== 'undefined') {
+              try { const api = window.Carousel.default.getInstance ? window.Carousel.default.getInstance(root) : null; api && api.next && api.next(); } catch {}
+            }
+          } else if (dx >= THRESHOLD) {
+            if (prevBtn) prevBtn.click();
+            else if (window.Carousel && typeof window.Carousel.default !== 'undefined') {
+              try { const api = window.Carousel.default.getInstance ? window.Carousel.default.getInstance(root) : null; api && api.prev && api.prev(); } catch {}
+            }
+          }
         }
+        // Use non-passive move to allow preventDefault when swiping horizontally
         root.addEventListener('touchstart', onTouchStart, { passive:true });
+        root.addEventListener('touchmove', onTouchMove, { passive:false });
         root.addEventListener('touchend', onTouchEnd, { passive:true });
       });
     }

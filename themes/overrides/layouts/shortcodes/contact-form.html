@@ -97,7 +97,11 @@
   so that unified colors in light/dark mode are exclusively controlled by .cp-contact rules in main.css.
   This prevents utility class precedence or ordering from conflicting with our accessibility-focused overrides.
 */}}
-{{- $inputBase := printf "shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 %s" $focusCls -}}
+{{- /* Palette for field backgrounds/borders (applied to inputs only) */ -}}
+{{- $pal := partial "theme/palette.html" $page -}}
+{{- $cardBg     := index $pal "cardBg"     | default "bg-white dark:bg-neutral-900" -}}
+{{- $cardBorder := index $pal "cardBorder" | default "border border-gray-200 dark:border-white/10" -}}
+{{- $inputBase := printf "shadow-sm %s %s text-sm rounded-lg block w-full p-2.5 %s" $cardBg $cardBorder $focusCls -}}
 
 {{- if not $action -}}
   <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-4 rounded">
@@ -106,7 +110,7 @@
 {{- else -}}
   <!-- Placeholder styles centralized in themes/overrides/assets/css/main.css (scoped to .cp-contact) -->
 
-  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact {{ $extra }}">
+  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact rounded-xl p-4 {{ $extra }}">
     {{- /* Hidden context field: capture page URL for lead source attribution */ -}}
     <input type="hidden" name="page_url" value="{{ $page.Permalink }}">
     {{- /* Optional redirect: Formspark supports `_redirect` input to send users to a thank-you page */ -}}
