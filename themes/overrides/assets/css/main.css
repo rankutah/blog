@@ -76,7 +76,8 @@
   /* Border comes from Tailwind classes on the element (matches navbar) */
 }
 .shortcode-gallery { align-items: start; }
-.shortcode-gallery > div { padding: 0 !important; }
+.shortcode-gallery > div { padding: 0 !important; line-height: 0; }
+.shortcode-gallery a { display: block; line-height: 0; }
 .shortcode-gallery img { display: block; margin: 0 !important; vertical-align: top; }
 
 
