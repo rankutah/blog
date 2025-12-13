@@ -57,7 +57,7 @@ Affordable custom websites for small businesses, built and managed by a freelanc
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Local Freelance Website Designer in Utah
+## Local Freelance Website Designer in Pleasant Grove, Utah
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
