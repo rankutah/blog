@@ -1,6 +1,6 @@
 ---
 title: "Utah Website Design & Local SEO Services | Digital Marketing Agency Near You"
-description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering websites at affordable freelancer rates with a focus on local search engine optimization (SEO)"
+description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)"
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -27,8 +27,8 @@ schema:
     priceRange: "$149–$299/mo"
   service:
     enabled: true
-    serviceType: "Freelance Website Design"
-    description: "Clear Presence offers freelance Website Design for Small Businesses near Pleasant Grove, Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
+    serviceType: "Website Design & Local SEO Services"
+    description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Get a custom, high‑performance website built with results‑driven design, local SEO, and digital marketing."
     offers:
       - "@type": Offer
         name: "Monthly Website Plan"
@@ -40,9 +40,9 @@ schema:
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Utah website design & local SEO services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design & Local SEO Services in Utah {.text-white}
-Digital marketing services for small businesses in Utah, built and managed by a professional website design company and SEO agency.
+Digital marketing services for small businesses in Utah. Professional business websites and local search engine optimization (SEO).
 {.text-white}
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
@@ -62,7 +62,7 @@ Digital marketing services for small businesses in Utah, built and managed by a 
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-![Clear Presence — freelance website designer serving Utah small businesses](/media/storefront-sign-business-web-design-local-seo.jpeg)
+![Clear Presence — website design & local SEO company serving Utah small businesses](/media/storefront-sign-business-web-design-local-seo.jpeg)
 
 
 {{< /col >}}
@@ -71,7 +71,7 @@ Digital marketing services for small businesses in Utah, built and managed by a 
 
 ## Website Design & Local SEO Services
 
-Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and turns visitors into calls, messages, and bookings. As a Freelance Website Designer, I serve Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
+Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and turns visitors into calls, messages, and bookings. As a website design & local SEO company, we serve Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/pricing" text="Website Pricing" >}}
@@ -133,16 +133,28 @@ Grow your small business anywhere in Utah with a fast, custom website that looks
 {{< /cols >}}
 
 
-## Freelance Website Designer Reviews from Small Businesses
+## Website Design & Local SEO Reviews from Small Businesses
 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 ## Custom Websites Built for Growth — Not Just Looks
 
-Most small business sites don’t bring enough calls or leads. As a Freelance Website Designer, I focus on clean, modern design that’s fast and mobile‑friendly, with clear calls to action so visitors contact you. My simple monthly plans keep it affordable and hands‑off.
+Most small business sites don’t bring enough calls or leads. As a Utah website design & local SEO company, we focus on clean, modern design that’s fast and mobile‑friendly, with clear calls to action so visitors contact you. Simple monthly plans keep it affordable and hands‑off.
 
-<!-- SEO-specific details removed; see the Local SEO service page for search optimization. -->
+### Local SEO: What’s Included
+
+If you want to show up in Google’s local results and on Maps, we include practical local SEO that aligns with how nearby customers search.
+
+- Google Business Profile optimization (categories, services, descriptions, photos)
+- Apple Maps and Bing Places setup and management
+- Consistent business info across major directories (NAP: name, address, phone)
+- Local keyword research and page alignment to match search intent
+- Review strategy and simple ways to reply
+- Clear tracking so you can see calls and clicks
+- Month‑to‑month plans with a simple report
+
+{{< button url="/services/local-seo" text="Learn More: Local SEO" >}}
 
 ### What you get
 
@@ -171,14 +183,14 @@ No hidden fees. No contracts. Unlimited updates.
 
 ## Why Utah Small Businesses Choose Clear Presence
 
-- Local Utah Freelance Website Designer focused on small business results
+- Local Utah website design & local SEO company focused on small business results
 - Fast turnaround and personalized support
 - Secure and fast setup
 - Clean, modern codebase built for speed
 
 ## Affordable Results at a Fraction of Big Agency or Company Costs
 
-You’ll get the essentials that move the needle—fast, mobile‑friendly pages and clear calls to action—without paying large‑agency retainers. My simple monthly plans deliver measurable results at a fraction of the cost, with the personal attention you expect from a freelancer.
+You’ll get the essentials that move the needle—fast, mobile‑friendly pages and clear calls to action—without paying large‑agency retainers. Our simple monthly plans deliver measurable results at a fraction of the cost, with the personal attention you expect from a dedicated local company.
 
 ## Proudly Serving Businesses Across Utah
 
@@ -219,12 +231,12 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 
 I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
-![Benjamin Awerkamp – Utah Freelance Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![Benjamin Awerkamp – Utah Website Design & Local SEO](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
 
 
 **Benjamin Awerkamp** <br>
-Freelance Website Designer <br>
+Website Design & Local SEO <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management

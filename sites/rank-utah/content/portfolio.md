@@ -1,13 +1,13 @@
 ---
-title: "Freelance Website Designer Portfolio | Small Business Projects"
-description: "A portfolio of custom website design projects for small businesses, built by a freelance web designer. See examples of my work and what clients are saying."
+title: "Website Design & Local SEO Portfolio | Small Business Projects"
+description: "A portfolio of custom website design projects for small businesses by a website design & local SEO company. See examples and client results."
 layout: "flowbite"
 url: "/portfolio"
 ---
 
-# Freelance Website Designer Portfolio
+# Website Design & Local SEO Portfolio
 
-A selection of custom website design projects for small businesses. As a freelance web designer, I work directly with you to build a fast, affordable, and effective website that turns visitors into customers.
+A selection of custom website design projects for small businesses. As a website design & local SEO company, we build fast, effective websites that turn visitors into customers and help you win local searches.
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -15,7 +15,7 @@ A selection of custom website design projects for small businesses. As a freelan
 
 ## Quartz Worx
 
-![Freelance Website Designer Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)
+![Website Design & Local SEO Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)
 
 
 **Darin Hinton** <br>
@@ -151,7 +151,7 @@ A selection of custom website design projects for small businesses. As a freelan
 
 ## Areas
 
-Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
+Clear Presence provides website design and local SEO services for businesses across the United States. Here are a few areas where clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
 

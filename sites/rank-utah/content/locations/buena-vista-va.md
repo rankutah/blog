@@ -1,6 +1,6 @@
 ---
-title: "Freelance Website Design Services for Small Business in Buena Vista, VA"
-description: "Freelance website designer in Buena Vista, VA for small businesses. Get an affordable, custom site with personal service. Your local alternative to a big web design company or agency."
+title: "Website Design & Local SEO Services for Small Business in Buena Vista, VA"
+description: "Website design & local SEO services in Buena Vista, VA for small businesses. Get an affordable, custom site with personal service — your local alternative to a big web design company or agency."
 layout: "flowbite"
 url: "/locations/buena-vista-va"
 hero: true
@@ -12,8 +12,8 @@ schema:
     areaServed: "Buena Vista, VA"
   service:
     enabled: true
-    serviceType: "Freelance Website Design"
-    description: "Custom website design for small businesses in Buena Vista with personal, one‑to‑one service from a freelance designer—fast, mobile‑friendly sites built to drive calls, messages, quotes, and bookings."
+    serviceType: "Website Design & Local SEO Services"
+    description: "Custom website design for small businesses in Buena Vista with personal, one‑to‑one service from a small agency — fast, mobile‑friendly sites built to drive calls, messages, quotes, and bookings."
     areaServed: ["Buena Vista, VA"]
     offers:
       - "@type": Offer
@@ -22,9 +22,9 @@ schema:
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/virginia-mountains.avif" alt="Freelance website designer for Buena Vista small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Freelance Website Design Services in Buena Vista, VA {.text-white}
-Affordable custom websites for Buena Vista small businesses, built and managed by a freelance website designer.
+{{< hero img="/media/virginia-mountains.avif" alt="Website design & local SEO services for Buena Vista small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Website Design & Local SEO Services in Buena Vista, VA {.text-white}
+Affordable custom websites for Buena Vista small businesses, built and managed by a small agency.
 {.text-white}
 {{<button url="/services/website-design" text="Website Design" >}}{{<button id="learn-more" url="#main-content" text="Learn More">}}
 <div class="mt-6"></div>
@@ -38,9 +38,9 @@ Affordable custom websites for Buena Vista small businesses, built and managed b
 
 ## Blue Ridge Abbey Website — Bed & Breakfast in Buena Vista, VA
 
-As a freelance website designer, I built Blue Ridge Abbey’s website to showcase bookings, rooms, and local attractions while keeping load times fast and the booking flow simple.
+As a website design company, I built Blue Ridge Abbey’s website to showcase bookings, rooms, and local attractions while keeping load times fast and the booking flow simple.
 
-![Blue Ridge Abbey Website Design - built by a freelance web designer](../media/website-design-blue-ridge-abbey.jpg)
+![Blue Ridge Abbey Website Design - built by a small agency](../media/website-design-blue-ridge-abbey.jpg)
 
 
 
@@ -57,9 +57,9 @@ As a freelance website designer, I built Blue Ridge Abbey’s website to showcas
 
 ## BlueridgeTech Website — Computer Repair Shop in Buena Vista, VA
 
-As a freelance website designer, I built the BlueridgeTech website with clear calls-to-action and appointment booking while keeping a compact, fast-loading pages.
+As a website design company, I built the BlueridgeTech website with clear calls-to-action and appointment booking while keeping compact, fast-loading pages.
 
-![Blue Ridge Tech Website Design - built by a freelance web designer](../media/website-design-blueridge-tech.avif)
+![Blue Ridge Tech Website Design - built by a small agency](../media/website-design-blueridge-tech.avif)
 
 
 **Gabriel Antigua** <br>
@@ -84,7 +84,7 @@ I graduated from Southern Virginia University in 2011 and fell in love with Buen
 ![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
 {.w-48}
 **Benjamin Awerkamp** <br>
-Freelance Web Designer <br>
+Owner, Website Design & Local SEO Company <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
@@ -93,7 +93,7 @@ Bachelor's in Business Management
 
 - Fast sites with carefully optimized images for quick page loads
 - Clear paths to book, call, or message — no busy effects
-- Ongoing support and improvements — with simple monthly pricing from a freelance web designer
+- Ongoing support and improvements — with simple monthly pricing from a small agency
 
 {{< button url="/services/website-design" text="Website Design Services" >}}
 

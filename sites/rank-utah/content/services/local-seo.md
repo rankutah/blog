@@ -25,7 +25,7 @@ params:
   ppc: true
 ---
 
-{{< hero img="/media/utah-seo.avif" alt="Utah landscape image for local seo" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+{{< hero img="/media/utah-seo.avif" alt="Landscape image for local SEO" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Local SEO Services for Small Businesses
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
@@ -67,7 +67,7 @@ params:
 </script>
 
 ## Local SEO (Search Engine Optimization)
-Get more calls and messages by showing up in Google’s local results and on Maps. As a freelance SEO specialist, I improve your Google Business Profile, line up your pages with what people actually search, and keep your listings and reviews working together so nearby customers can find and contact you.
+Get more calls and messages by showing up in Google’s local results and on Maps. I improve your Google Business Profile, line up your pages with what people actually search, and keep your listings and reviews working together so nearby customers can find and contact you.
 
 ### In plain English
 Local SEO means showing up when nearby people search for what you do. If someone types “gutter repair near me” or “dentist Pleasant Grove,” you want your business to appear in Google Maps and the local results — with accurate info, photos, services, and reviews.
@@ -119,8 +119,8 @@ Month‑to‑month. No long‑term contract.
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Ready To Get Started
-<img src="/media/utah-seo-specialist-web-design-expert-profile-picture.jpg" alt="Benjamin Awerkamp – Utah Local SEO" class="w-40 mb-4" />
-I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I partner with Utah businesses to improve local visibility and turn nearby searches into calls and bookings.
+<img src="/media/utah-seo-specialist-web-design-expert-profile-picture.jpg" alt="Benjamin Awerkamp – Local SEO" class="w-40 mb-4" />
+I enjoy running, audiobooks, and all things tech. I partner with small businesses to improve local visibility and turn nearby searches into calls and bookings.
 
 ### Share a bit about your business and goals.
 

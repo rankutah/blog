@@ -1,13 +1,13 @@
 ---
-title: "Freelance Website Designer for Small Businesses"
-description: "Affordable, custom website design for small businesses from a freelance web designer. Your alternative to a big agency, with personal one-on-one service."
+title: "Website Design for Small Businesses"
+description: "Affordable, custom website design for small businesses from a small agency. Your alternative to a big agency, with personal one-on-one service."
 layout: "flowbite"
 url: "/services/website-design"
 schema:
   service:
     enabled: true
-    serviceType: "Freelance Website Design"
-    description: "Custom, fast business websites built to bring in leads from a freelance designer."
+    serviceType: "Website Design & Local SEO Services"
+    description: "Custom, fast business websites built to bring in leads from a small agency."
     areaServed: "United States"
     offers:
       - "@type": "Offer"
@@ -24,8 +24,8 @@ schema:
 
 
 
-# Freelance Website Design for Small Businesses
-Work directly with a freelance website designer to get a custom site built for your small business. Skip the high costs and slow timelines of a big agency and get personal, one-on-one service.
+# Website Design for Small Businesses
+Work directly with a small agency to get a custom site built for your small business. Skip the high costs and slow timelines of a big agency and get personal, one-on-one service.
 
 Get a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and a lightweight build designed to perform on mobile.
 
@@ -33,12 +33,12 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 {{< button url="/portfolio" text="See Portfolio" >}}
 
 
-## Why work with a Freelance Web Designer?
+## Why choose a small agency?
 
 - **Personal Service:** You work with one person from start to finish.
 - **Lower Cost:** No big agency overhead means more affordable pricing.
 - **Faster Turnaround:** Direct communication means quicker decisions and build times.
-- **Flexibility:** A freelance designer can adapt to your specific needs without corporate red tape.
+- **Flexibility:** A small agency can adapt to your specific needs without corporate red tape.
 
 ## Featured work
 
@@ -48,7 +48,7 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 
 ### Quartz Worx – Countertops
 
-![Freelance Website Designer for Small Businesses](../../media/website-design-quartz-worx.avif)
+![Website Design for Small Businesses](../../media/website-design-quartz-worx.avif)
 
 {{< /col >}}
 
@@ -95,7 +95,7 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 - Forms with spam protection and tracking
 - Fast hosting and a secure site (SSL) included
 - Accessible and phone‑friendly design
-- Training and friendly, direct support from your designer
+- Training and friendly, direct support from your team
 
 ## How it works
 
@@ -122,9 +122,9 @@ Decide whether you also need {{< button url="/services/local-seo" text="Local SE
 
 ## Areas
 
-Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
+Clear Presence provides website design and local SEO services for businesses across the United States. Here are a few areas where clients are located.
 
-[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
+[All Areas](/locations)
 
 
 ## Ready to get started?

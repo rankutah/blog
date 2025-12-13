@@ -1,6 +1,6 @@
 ---
-title: "Freelance Website Designer for Small Businesses | Rank Utah"
-description: "I build custom, affordable websites for small businesses that are fast, look great on any device, and are designed to bring you more customers. As a freelance web designer, I provide personal service without the big agency price tag."
+title: "Website Design & Local SEO Services"
+description: "Clear Presence is a Website Design & Local SEO company. We build fast, mobile‑friendly websites with local SEO and digital marketing to help small businesses get more calls and bookings."
 layout: "flowbite"
 url: "/"
 schema:
@@ -8,36 +8,26 @@ schema:
     enabled: true
     type: ProfessionalService
     name: "Rank Utah"
-    address:
-      streetAddress: "348 S 2000 W, Suite B206"
-      addressLocality: "Pleasant Grove"
-      addressRegion: "UT"
-      postalCode: "84062"
-      addressCountry: "US"
     telephone: "+13853238130"
-    hasMap: "https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062"
-    geo:
-      latitude: "40.35949"
-      longitude: "-111.77212"
     areaServed:
       - "United States"
     priceRange: "$149–$299/mo"
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Freelance Website Designer for Small Businesses {.text-white}
-I build affordable, high-performance websites that help you find more customers.
+# Website Design & Local SEO Services {.text-white}
+We build fast, high‑performance websites with local SEO so more customers find you.
 {.text-white}
 {{<button url="/services/website-design" text="My Process">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
 
 
-## Freelancer vs. Agency
+## Small Agency vs. Big Agency
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-## Freelancer ✅
+## Small Agency ✅
 
 ### 1. Personal Service & Better Results
 You work directly with me, the person building your site. This direct line means better collaboration, a clearer focus on your business goals, and a final product that actually brings in leads.
@@ -81,7 +71,7 @@ Agencies charge huge upfront fees to cover their overhead, then surprise you wit
 
 ## Areas
 
-I provide website design and local SEO services for businesses across the United States from my office in Pleasant Grove, UT. Here are a few areas where my clients are located.
+I provide website design and local SEO services for businesses across the United States. Here are a few areas where my clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
 
@@ -168,7 +158,7 @@ I built my first professional website for a small business in 2023, leveraging m
 You can learn all about my process for designing and building a custom website for your small business on the [Website Design](/services/website-design) page.
 
 ### How do you compare to other website design companies?
-As a freelance web designer, I offer a higher standard of service and more direct communication than you'll find at larger agencies, all at a more affordable rate. I don't lock you into a contract, and there are no hidden fees or strict limits on edits.
+As a local website design & SEO company, we offer direct communication and responsive support without big‑agency overhead. No long‑term contracts, hidden fees, or strict limits on edits.
 
 ### Which locations do you serve?
 I provide web design services to clients all across the United States.
