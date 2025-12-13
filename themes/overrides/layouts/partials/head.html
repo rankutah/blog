@@ -9,7 +9,7 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+<title>{{ site.Title }}{{ if and (not .IsHome) .Title }} | {{ .Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}

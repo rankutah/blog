@@ -1,6 +1,6 @@
 ---
-title: "Clear Presence (Utah) | Website Design & Local SEO Services | Digital Marketing Agency Near You"
-description: "Clear Presence offers freelance Website Design for Small Businesses near Pleasant Grove, Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
+title: "Utah Website Design & Local SEO Services | Digital Marketing Agency Near You"
+description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering websites at affordable freelancer rates with a focus on local search engine optimization (SEO)"
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -41,8 +41,8 @@ schema:
 ---
 
 {{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design for Small Businesses in Pleasant Grove, Utah{.text-white}
-Affordable custom websites for small businesses, built and managed by a freelance website designer.
+# Website Design & Local SEO Services in Utah {.text-white}
+Digital marketing services for small businesses in Utah, built and managed by a professional website design company and SEO agency.
 {.text-white}
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
@@ -57,7 +57,7 @@ Affordable custom websites for small businesses, built and managed by a freelanc
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Local Freelance Website Designer in Pleasant Grove, Utah
+## Clear Presence in Pleasant Grove, Utah
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
@@ -69,7 +69,7 @@ Affordable custom websites for small businesses, built and managed by a freelanc
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Freelance Website Design Near You
+## Website Design & Local SEO Services
 
 Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and turns visitors into calls, messages, and bookings. As a Freelance Website Designer, I serve Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
 
