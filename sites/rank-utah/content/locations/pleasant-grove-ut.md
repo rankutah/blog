@@ -41,7 +41,7 @@ schema:
 ---
 
 {{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Freelance Website Design Services for Small Businesses in Pleasant Grove, Utah{.text-white}
+# Website Design for Small Businesses in Pleasant Grove, Utah{.text-white}
 Affordable custom websites for small businesses, built and managed by a freelance website designer.
 {.text-white}
 
