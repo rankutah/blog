@@ -98,10 +98,8 @@
 }}
 {{ $navHoverClasses := index $navHover $siteColor | default (index $navHover "blue") }}
 
-{{/* Dropdown background classes from config: cardBackground(light) and cardBackgroundDark */}}
-{{ $cardLight := or .Site.Params.cardBackgroundLight .Site.Params.cardBackground }}
-{{ $cardDark  := or .Site.Params.cardBackgroundDark "gray-800" }}
-{{ $dropBg    := printf "bg-%s dark:bg-%s" (or $cardLight "white") $cardDark }}
+{{/* Dropdown background: use normalized card surface from palette */}}
+{{ $dropBg := index $pal "cardBg" }}
 
 {{/* Detect hero/landing/home to allow a seamless, flush hero */}}
 {{ $isHeroPage := or .IsHome (or .Params.hero (eq .Params.layout "landing")) }}
@@ -292,7 +290,7 @@
               </button>
 
                   <div id="menu-{{ .Identifier }}-m"
-                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm {{ $dropBg }} md:{{ $dropBg }} backdrop-blur">
+                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm {{ $dropBg }} backdrop-blur">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
                     <li>
@@ -352,7 +350,7 @@
               </button>
 
                   <div id="menu-{{ .Identifier }}-d"
-                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} md:{{ $dropBg }} backdrop-blur whitespace-normal break-words">
+                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
                     <li>

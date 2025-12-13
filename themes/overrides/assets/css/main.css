@@ -79,12 +79,10 @@
 .footer {
   margin-top: 1.5rem;
   padding: 1rem 1rem; /* tighter top/bottom */
-  /* Darken divider in light mode so it doesn't blend with light bg */
-  border-top: 1px solid #4b5563; /* gray-600 */
+  /* Border comes from Tailwind classes on the element (matches navbar) */
 }
 
-
-.dark .footer { border-top-color: #374151; /* gray-700 */ }
+.dark .footer { }
 .footer .prose {
   max-width: 72rem !important; /* ~1152px */
   margin-left: auto;
@@ -99,6 +97,16 @@
 /* Make list markers match the current text color */
 .prose :where(ul > li)::marker { color: currentColor; }
 .prose :where(ol > li)::marker { color: currentColor; }
+
+/* Ensure hero text overlays render white over images, always */
+.section.hero .prose,
+.section.hero .prose h1,
+.section.hero .prose h2,
+.section.hero .prose h3,
+.section.hero .prose h4,
+.section.hero .prose h5,
+.section.hero .prose h6,
+.section.hero .prose a { color: #ffffff; }
 
 /* ========== 4) Typography touch-ups ========== */
 /* .prose a { text-decoration: none; } */

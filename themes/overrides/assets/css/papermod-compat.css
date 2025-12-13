@@ -4,7 +4,7 @@
 .post-title { @apply text-3xl md:text-4xl font-semibold leading-tight; }
 .post-meta { @apply text-sm text-gray-600 dark:text-gray-400 flex flex-wrap gap-x-4 gap-y-2 items-center mb-6; }
 .post-content { @apply prose prose-zinc dark:prose-invert max-w-none; }
-.post-footer { @apply mt-12 border-t border-gray-200 dark:border-gray-700 pt-6; }
+.post-footer { @apply mt-12 pt-6; }
 .post-entry { @apply mb-10; }
 .entry-hint-parent { @apply relative; }
 .entry-hint { @apply inline-block align-middle ml-2 text-gray-500 dark:text-gray-400; }

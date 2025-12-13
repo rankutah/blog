@@ -104,7 +104,8 @@
 {{- $overlay      := eq (lower (.Get "overlay" | default "false")) "true" -}}
 {{- $overlayShade := .Get "overlayShade" | default "" -}}
 {{- $overlayWrap  := .Get "overlayClasses" | default "absolute inset-0 flex items-center" -}}
-{{- $overlayProse := "prose prose-zinc max-w-none dark:prose-invert" -}}
+{{- /* Force white text on hero overlays and in-image text */ -}}
+{{- $overlayProse := "prose prose-zinc max-w-none text-white prose-headings:text-white prose-a:text-white dark:prose-invert" -}}
 {{- $overlayAlign := (index $alMap $align | default "text-left") -}}
 
 {{/* Convenience: brighten flag -> apply a subtle white overlay unless overlayShade explicitly provided.
