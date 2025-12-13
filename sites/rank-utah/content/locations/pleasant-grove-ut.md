@@ -1,6 +1,6 @@
 ---
-title: "Freelance Website Designer for Small Businesses in Utah | Custom Web Design Services Near You"
-description: "Clear Presence offers freelance Website Design for Small Businesses in Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
+title: "Freelance Website Designer for Small Businesses in Pleasant Grove, UT | Custom Web Design Services Near You"
+description: "Clear Presence offers freelance Website Design for Small Businesses near Pleasant Grove, Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -25,12 +25,10 @@ schema:
       latitude: "40.35949"
       longitude: "-111.77212"
     priceRange: "$149–$299/mo"
-    areaServed: ["Utah", "Utah County"]
   service:
     enabled: true
     serviceType: "Freelance Website Design"
-    description: "Clear Presence offers freelance Website Design for Small Businesses in Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
-    areaServed: ["Utah", "Utah County"]
+    description: "Clear Presence offers freelance Website Design for Small Businesses near Pleasant Grove, Utah. Your affordable alternative to the big web design company. Get a custom, high-performance website built with results-driven design and development."
     offers:
       - "@type": Offer
         name: "Monthly Website Plan"
@@ -43,20 +41,15 @@ schema:
 ---
 
 {{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Freelance website designer for Utah small businesses—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Freelance Website Design Services for Small Businesses in Utah{.text-white}
-Affordable custom websites for Utah small businesses, built and managed by a freelance website designer.
-
+# Freelance Website Design Services for Small Businesses in Pleasant Grove, Utah{.text-white}
+Affordable custom websites for small businesses, built and managed by a freelance website designer.
 {.text-white}
-
-
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{<button id="learn-more" url="#main-content" text="Learn More">}}
 
-
 <div class="mt-6"></div>
 {{< /hero >}}
-
 
 <div id="main-content" class="scroll-mt-24"></div>
 
@@ -158,7 +151,6 @@ Most small business sites don’t bring enough calls or leads. As a Freelance We
 - Clear, persistent call and text buttons so more visitors contact you.
 - Month‑to‑month support—no lock‑in—so your site keeps improving as your business grows.
 - Simple monthly website plans instead of a big upfront fee.
-
 
 
 ## Areas Served in Utah
