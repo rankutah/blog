@@ -1,12 +1,12 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Utah Off-Page Search Engine Optimization | Website Designer for Small Businesses | Digital Marketing Agency Near You
-description: "As a freelance web designer, I help small businesses in Utah with more than just their website. Off-page SEO is a critical part of a complete digital marketing strategy. This post explains why off-page SEO works for small businesses and how to leverage it to grow your customer base organically."
+title: Utah Off-Page Search Engine Optimization | Website Design for Small Businesses | Digital Marketing Agency Near You
+description: "As the owner of a Website Design & Local SEO company in Utah, I help small businesses with more than just their website. Off-page SEO is a critical part of a complete digital marketing strategy. This post explains why off-page SEO works for small businesses and how to leverage it to grow your customer base organically."
 tags:
   - local-seo
 ---
-As a freelance web designer, I'm dedicated to helping small businesses in Utah succeed online. While a great website is the foundation, what happens off your website is just as important. Off-page Search Engine Optimization (SEO) is how you build authority and drive traffic to your site. In this post, we'll explore the three pillars of effective off-page SEO and how they can bring long-term, organic growth to your business.
+As the owner of a website design & local SEO company, I'm dedicated to helping small businesses in Utah succeed online. While a great website is the foundation, what happens off your website is just as important. Off-page Search Engine Optimization (SEO) is how you build authority and drive traffic to your site. In this post, we'll explore the three pillars of effective off-page SEO and how they can bring long-term, organic growth to your business.
 
 ## Why Off-Page SEO Works for Small Businesses in Utah
 
