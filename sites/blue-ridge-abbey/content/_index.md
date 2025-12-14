@@ -1,7 +1,7 @@
 ---
 title: "Bed and Breakfast in Buena Vista, VA | B&B Rooms & Lodging | Boutique Hotel Near Lexington, VA & the Blue Ridge Parkway"
 
-description: "Your cozy bed and breakfast at the foot of the Blue Ridge Mountains. Enjoy a relaxing stay with fresh made-to-order breakfast, cozy rooms, and nearby adventures. Explore Lexington, drive the Blue Ridge Parkway, or hike around Natural Bridge, and enjoy the Shenandoah Valley"
+description: "Boutique bed and breakfast lodging in Buena Vista, VA. Cozy B&B rooms near Lexington, VA and the Blue Ridge Parkway with made-to-order breakfast and friendly service. Explore nearby hikes, scenic drives, Natural Bridge, and the Shenandoah Valley."
 layout: "flowbite"
 url: "/"
 ---
@@ -32,6 +32,7 @@ Take a visual tour of our guest rooms and shared spaces and get a feel for the w
 ## Cozy Main House Rooms
 
 Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
+Hotel comfort with bed & breakfast warmth. Our B&B lodging offers cozy guest rooms furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
 
 {{< button url="/rooms" text="Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
@@ -47,6 +48,10 @@ Blue Ridge Abbey is pleased to announce the opening of an additional building wi
 {{< /col >}}
 
 {{< /cols >}}
+
+## Boutique Hotel Lodging Near Lexington, VA
+
+Stay at a charming boutique hotel and bed & breakfast in Buena Vista, VA — minutes from Lexington and a short drive to the Blue Ridge Parkway. Enjoy peaceful lodging, welcoming service, and cozy rooms designed for comfort.
 
 ## A 5-Star Guest Experience
 
