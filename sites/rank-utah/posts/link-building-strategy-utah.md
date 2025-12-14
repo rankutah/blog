@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Utah Link Building SEO Strategy
+title: Utah Link Building SEO Strategy for Small Businesses
 description: "As a freelance web designer for small businesses in Utah, I know that a solid link building strategy is essential for local SEO. This post breaks down how link building works, why local links are so important, and provides actionable tips for acquiring valuable backlinks to your small business website."
 tags:
   - link-building

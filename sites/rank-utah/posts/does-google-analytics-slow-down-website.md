@@ -1,5 +1,5 @@
 ---
-title: Does Google Analytics Slow Down Your Website?
+title: Free Script to Delay Load Google Analytics to Prevent it from Slowing Down Your Website
 date: 2025-07-28
 is_published: Published
 tags:
