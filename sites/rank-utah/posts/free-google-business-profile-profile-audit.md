@@ -1,5 +1,5 @@
 ---
-title: Free 30-Min Google Business Profile Audit | Freelance Website Designer for Small Businesses
+title: Free 30-Min Google Business Profile SEO Audit
 description: "As a freelance web designer, I offer a free 30-minute Google Business Profile audit to help small businesses in Utah improve their local SEO. In this no-obligation video chat, we'll work together to optimize your profile and help you get more calls and new business."
 tags:
   - local-seo

@@ -1,7 +1,7 @@
 ---
 date: 2025-07-26
 is_published: Published
-title: On-Page SEO Strategy in Utah | Freelance Website Designer for Small Businesses
+title: Utah On-Page SEO Strategy | Website Design for Small Businesses | Digital Marketing Agency
 description: As a freelance web designer for small businesses in Utah, I've found that a solid on-page SEO strategy is crucial. This post covers the most overlooked techniques in on-page SEO, including keyword research, title tags, and more, to help your small business get found on Google.
 tags:
   - web-design

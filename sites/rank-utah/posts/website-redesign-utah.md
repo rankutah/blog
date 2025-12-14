@@ -1,5 +1,5 @@
 ---
-title: Website Redesign in Utah | Freelance Website Designer for Small Businesses
+title: Utah Website Redesign | Website Design for Small Businesses | Digital Marketing Agency Near You
 description: "As a freelance web designer in Utah, I specialize in website redesigns for small businesses. If your site is outdated, slow, or not mobile-friendly, I can help. This post outlines my process for redesigning your website to be modern, fast, and Google-ready, all while providing ongoing support."
 date: 2025-08-14
 tags:

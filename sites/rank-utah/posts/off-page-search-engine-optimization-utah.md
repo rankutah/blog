@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Off-Page Search Engine Optimization in Utah | Freelance Website Designer for Small Businesses
+title: Utah Off-Page Search Engine Optimization | Website Designer for Small Businesses | Digital Marketing Agency Near You
 description: "As a freelance web designer, I help small businesses in Utah with more than just their website. Off-page SEO is a critical part of a complete digital marketing strategy. This post explains why off-page SEO works for small businesses and how to leverage it to grow your customer base organically."
 tags:
   - local-seo
