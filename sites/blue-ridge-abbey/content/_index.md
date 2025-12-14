@@ -31,7 +31,6 @@ Take a visual tour of our guest rooms and shared spaces and get a feel for the w
 
 ## Cozy Main House Rooms
 
-Hotel comfort with bed & breakfast warmth. All rooms are furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
 Hotel comfort with bed & breakfast warmth. Our B&B lodging offers cozy guest rooms furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
 
 {{< button url="/rooms" text="Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
