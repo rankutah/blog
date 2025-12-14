@@ -8,7 +8,7 @@ url: "/"
 
 {{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="70vh" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
-Cozy bed & breakfast near Lexington & the Blue Ridge Parkway. <br>
+Cozy bed & breakfast near Lexington & the Blue Ridge Parkway <br>
 {.text-white}
 
 {{< /lazy-vimeo >}}
