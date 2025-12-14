@@ -1,7 +1,7 @@
 ---
 date: 2025-07-28
 is_published: Published
-title: Utah Mobile Website Design | Website Design for Small Businesses Near You
+title: Utah Mobile Website Design | Website Design Near You for Small Businesses
 description: "As the owner of a Website Design company in Utah, I prioritize creating mobile-friendly websites for small businesses. A responsive, fast-loading, and easy-to-navigate site is essential for capturing and retaining customers on the go. This post covers the three most important considerations for mobile web design."
 tags:
   - web-design
