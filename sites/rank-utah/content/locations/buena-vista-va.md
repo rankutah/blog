@@ -1,5 +1,5 @@
 ---
-title: "Website Design & Local SEO Services for Small Business in Buena Vista, VA"
+title: "Buena Vista, VA | Website Design & Local SEO Services | Digital Marketing Agency"
 description: "Website design & local SEO services in Buena Vista, VA for small businesses. Get an affordable, custom site with personal service — your local alternative to a big web design company or agency."
 layout: "flowbite"
 url: "/locations/buena-vista-va"

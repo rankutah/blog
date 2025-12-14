@@ -1,5 +1,5 @@
 ---
-title: "Case Study "
+title: "Case Study for Blue Ridge Abbey"
 description: "Clear Presence builds fast, modern websites with local SEO for small businesses—so you show up on Google Search & Maps and get more calls"
 layout: "flowbite"
 url: "/portfolio/blue-ridge-abbey"

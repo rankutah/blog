@@ -1,5 +1,5 @@
 ---
-title: "About Clear Presence | Website Design & Local SEO Company"
+title: "About"
 description: "Clear Presence is a Website Design & Local SEO company. We build fast, custom websites with local SEO and digital marketing to grow small businesses."
 layout: "flowbite"
 url: "/about"

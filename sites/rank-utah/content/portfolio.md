@@ -1,5 +1,5 @@
 ---
-title: "Website Design & Local SEO Portfolio | Small Business Projects"
+title: "Portfolio"
 description: "A portfolio of custom website design projects for small businesses by a website design & local SEO company. See examples and client results."
 layout: "flowbite"
 url: "/portfolio"

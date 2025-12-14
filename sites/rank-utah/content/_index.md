@@ -1,5 +1,5 @@
 ---
-title: "Website Design & Local SEO Services"
+title: "Website Design & Local SEO Services | Digital Marketing Agency"
 description: "Clear Presence is a Website Design & Local SEO company. We build fast, mobile‑friendly websites with local SEO and digital marketing to help small businesses get more calls and bookings."
 layout: "flowbite"
 url: "/"

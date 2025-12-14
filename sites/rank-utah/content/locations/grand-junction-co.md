@@ -1,5 +1,5 @@
 ---
-title: "Freelance Website Design Services for Small Business in Grand Junction, CO"
+title: "Grand Junction, CO | Website Design & Local SEO Services | Digital Marketing Agency"
 description: "Freelance website designer in Grand Junction, CO for small businesses. Get an affordable, custom site with personal service. Your local alternative to a big web design company or agency."
 layout: "flowbite"
 url: "/locations/grand-junction-co"

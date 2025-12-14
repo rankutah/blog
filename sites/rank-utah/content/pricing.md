@@ -1,5 +1,5 @@
 ---
-title: "Pricing | Website Design & Local SEO Company"
+title: "Pricing"
 description: "Simple, affordable monthly pricing from a small agency. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
