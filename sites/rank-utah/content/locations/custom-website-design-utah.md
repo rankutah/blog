@@ -1,6 +1,6 @@
 ---
 title: "Custom Website Design in Utah"
-description: "Custom website design in Utah. Fast sites that turn visits into calls and bookings with clear call and message buttons and basic search setup plus friendly support."
+description: "Website design for small businesses across Utah. Fast, phone‑friendly sites built to convert with clear call and message buttons, managed hosting & SSL, and friendly ongoing support. Serving all of Utah."
 layout: "flowbite"
 url: "/locations/custom-website-design-utah"
 hero: true
@@ -35,18 +35,24 @@ schema:
         answer: "Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees."
 params:
   ppc: true
-  hideFooterLinks: false
+  hideFooterLinks: true
   # Optional: could add noindex: true if purely paid, leaving indexed for now.
+
 ---
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape image for website design hero banners" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Custom Website Design in Utah<br><span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span> {.text-white}
+# Custom Website Design for Small Businesses in Utah<br><span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span> {.text-white}
+Affordable websites built by a professional web developer in Utah County
 
 {{<button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
-{{<button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20a%20custom%20website%20quote." text="Text Now">}}
+{{<button id="learn-more" url="#main-content" text="Learn More ↓">}}
 
 <div class="mt-6"></div>
 {{< /hero >}}
+
+<div id="main-content" class="scroll-mt-24"></div>
+
+<div id="main-content" class="scroll-mt-24"></div>
 
 <script>
 (function(){
@@ -101,6 +107,8 @@ Get a website that brings you more calls, quotes, and bookings. You’ll get a f
 - Contact forms with visitor tracking
 - Spam protection
 - Ongoing updates and support
+ - Managed hosting & automatic SSL
+ - Domain renewals included
 
 ### Built For Results
 Easy contact buttons, quick loading pages, and content clearly arranged.
@@ -191,7 +199,8 @@ Yes. Your monthly subscription includes unlimited content updates—send text, i
 
 {{< /faqs >}}
 
-{{< button url="/services/website-design" text="Website Design Service" >}}
-{{< button url="/portfolio" text="See Portfolio" >}}
+{{< button url="/pricing" text="Pricing" >}}
+{{< button url="/contact" text="Contact" >}}
+
 {{< /col >}}
 {{< /cols >}}
