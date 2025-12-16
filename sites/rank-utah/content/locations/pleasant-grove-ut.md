@@ -71,7 +71,7 @@ Digital marketing services for small businesses in Utah. Professional business w
 
 ## Website Design & Local SEO Services
 
-Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and turns visitors into calls, messages, and bookings. As a website design & local SEO company, we serve Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
+Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and turns visitors into calls, messages, and bookings. As a website design & local SEO company, I serve Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/pricing" text="Website Pricing" >}}
@@ -140,7 +140,7 @@ Grow your small business anywhere in Utah with a fast, custom website that looks
 
 ## Custom Websites Built for Growth — Not Just Looks
 
-Most small business sites don’t bring enough calls or leads. As a Utah website design & local SEO company, we focus on clean, modern design that’s fast and mobile‑friendly, with clear calls to action so visitors contact you. Simple monthly plans keep it affordable and hands‑off.
+Most small business sites don’t bring enough calls or leads. As a Utah website design & local SEO company, I focus on clean, modern design that’s fast and mobile‑friendly, with clear calls to action so visitors contact you. Simple monthly plans keep it affordable and hands‑off.
 
 ### Local SEO: What’s Included
 

@@ -45,7 +45,7 @@ params:
 Affordable websites built by a professional web developer in Utah County
 
 {{<button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
-{{<button id="learn-more" url="#main-content" text="Learn More ↓">}}
+{{<button id="learn-more" url="#main-content" text="Learn More">}}
 
 <div class="mt-6"></div>
 {{< /hero >}}
@@ -144,6 +144,17 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 {{< /col >}}
 
 {{< /cols >}}
+
+## Why Utah Small Businesses Choose Clear Presence
+
+- Local Utah website design & local SEO company focused on small business results
+- Fast turnaround and personalized support
+- Secure and fast setup
+- Clean, modern codebase built for speed
+
+## Affordable Results at a Fraction of Big Agency or Company Costs
+
+You’ll get the essentials that move the needle—fast, mobile‑friendly pages and clear calls to action—without paying large‑agency retainers. Our simple monthly plans deliver measurable results at a fraction of the cost, with the personal attention you expect from a dedicated local company.
 
 ## Customer Website Design Experiences
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
