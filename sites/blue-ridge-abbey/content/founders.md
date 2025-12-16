@@ -18,7 +18,7 @@ Warm hospitality, thoughtful details, and a love for this historic home and the 
 
 ## Meet Us
 
-We’re grateful to welcome guests from near and far. Here are a few faces behind the scenes that make your stay comfortable and memorable.
+Restoring this beautiful home so we can share it with others has truly been a labor of love. Along the way, we’ve experienced countless miracles that confirmed we are exactly where we are meant to be, and we’re excited to now open our doors to the many incredible people who will make this home come alive with their stories.
 
 {{< cols min="16rem" gap="1.25rem" v="start" >}}
 
