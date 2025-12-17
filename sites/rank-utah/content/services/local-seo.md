@@ -1,6 +1,6 @@
 ---
 title: "Local SEO Services for Small Businesses"
-description: "Affordable local SEO services for small businesses. I help you show up in Google Maps and local search results so more customers can find and contact you."
+description: "Affordable local SEO services for small businesses. Show up in Google Maps and local search results so more customers can find and contact you."
 layout: "flowbite"
 url: "/services/local-seo"
 hero: true
@@ -67,7 +67,7 @@ params:
 </script>
 
 ## Local SEO (Search Engine Optimization)
-Get more calls and messages by showing up in Google’s local results and on Maps. I improve your Google Business Profile, line up your pages with what people actually search, and keep your listings and reviews working together so nearby customers can find and contact you.
+Get more calls and messages by showing up in Google’s local results and on Maps. Improve your Google Business Profile, align pages with what people actually search, and keep listings and reviews working together so nearby customers can find and contact you.
 
 ### In plain English
 Local SEO means showing up when nearby people search for what you do. If someone types “gutter repair near me” or “dentist Pleasant Grove,” you want your business to appear in Google Maps and the local results — with accurate info, photos, services, and reviews.
@@ -92,8 +92,8 @@ Local SEO means showing up when nearby people search for what you do. If someone
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
-- Local SEO (no website) — $199/mo: I manage your Google Business Profile, set up Apple Maps and Bing Places, and keep your info accurate across 100+ directories. Includes local keyword research, a simple plan, and monthly reports. Best if you already have a site.
-- Website + Local SEO — $299/mo: A fast, secure custom website from a freelance designer plus everything in Local SEO. If you already have a site, I can remake or move it so it’s clean, fast, and aligned with local searches.
+- Local SEO (no website) — $199/mo: Management of your Google Business Profile, Apple Maps and Bing Places setup, and accurate info across 100+ directories. Includes local keyword research, a simple plan, and monthly reports. Best if you already have a site.
+- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, it can be remade or moved so it’s clean, fast, and aligned with local searches.
 
 Month‑to‑month. No long‑term contract.
 
@@ -120,7 +120,7 @@ Month‑to‑month. No long‑term contract.
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Ready To Get Started
 <img src="/media/utah-seo-specialist-web-design-expert-profile-picture.jpg" alt="Benjamin Awerkamp – Local SEO" class="w-40 mb-4" />
-I enjoy running, audiobooks, and all things tech. I partner with small businesses to improve local visibility and turn nearby searches into calls and bookings.
+Partnering with small businesses to improve local visibility and turn nearby searches into calls and bookings.
 
 ### Share a bit about your business and goals.
 
@@ -147,10 +147,10 @@ Local SEO helps your business show up in Google’s local results and on Maps. I
 You can often see movement in 4–12 weeks, with stronger gains over 3–6 months. Timelines depend on your starting point, competition, and service area. Quick wins typically include GBP fixes, category/keyword alignment, and getting reviews from previous customers.
 
 ### What do you do each month?
-I improve your Google Business Profile (categories, services, descriptions, photos), keep listings accurate across the major directories, make sure your profiles and content match local keywords, and track calls and clicks. You get a clear monthly report.
+Monthly work includes improving the Google Business Profile (categories, services, descriptions, photos), keeping listings accurate across major directories, aligning profiles and content to local keywords, and tracking calls and clicks. Clear monthly reporting is provided.
 
 ### Do I need a long‑term contract?
-No. Plans are month‑to‑month. I agree on priorities, deliverables, and tracking up front so you know what’s happening and why.
+No. Plans are month‑to‑month. Priorities, deliverables, and tracking are agreed up front so you know what’s happening and why.
 
 ### How much does it cost?
 Plans start at $199/mo. See the full details on the [Pricing](/pricing) page.

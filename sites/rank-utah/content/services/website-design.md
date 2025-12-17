@@ -114,7 +114,7 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 Save your colors by sending a quick message.
 
 {{< contact-form id="colors" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" custom="Primary Color, Background Color" phone="optional" message="true" classes="max-w-xl"  >}}
-{{< button submit="true" form="colors" text="Save my Colors" >}}
+{{< button submit="true" form="colors" text="Save Colors" >}}
 
 ## Step 3:
 
@@ -137,7 +137,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 {{< faqs >}}
 
 ### What is your experience?
-I built my first professional website for a small business in 2023, leveraging my Master's degree in Software Development. My professional experience also includes roles in cybersecurity at industry leaders like Arctic Wolf and Okta. You can learn more about my detailed background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
+First professional projects launched in 2023, backed by a Master’s in Software Development and experience at industry leaders like Arctic Wolf and Okta. Learn more on <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a custom site take?
 Sites can usually be done in 2–3 weeks with good coordination.

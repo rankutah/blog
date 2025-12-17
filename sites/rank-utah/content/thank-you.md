@@ -1,13 +1,13 @@
 ---
 title: "Thank You"
-description: "Your message was sent. We’ll reach out soon."
+description: "Your message was sent. I’ll reach out soon."
 layout: "flowbite"
 url: "/thank-you"
 ---
 
 # Thank you
 {.center}
-Your message was sent. We’ll reach out soon.
+Your message was sent. I’ll reach out soon.
 {.center}
 
 <div class="text-center">

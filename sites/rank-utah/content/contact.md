@@ -8,7 +8,7 @@ url: "/contact"
 
 # Contact
 
-After hours? Leave a voicemail, text or email and I'll get back to you the next business day.
+After hours? Leave a voicemail, text, or email and you’ll receive a response the next business day.
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 

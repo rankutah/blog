@@ -154,7 +154,7 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 
 ## Affordable Results at a Fraction of Big Agency or Company Costs
 
-You’ll get the essentials that move the needle—fast, mobile‑friendly pages and clear calls to action—without paying large‑agency retainers. Our simple monthly plans deliver measurable results at a fraction of the cost, with the personal attention you expect from a dedicated local company.
+You’ll get the essentials that move the needle—fast, mobile‑friendly pages and clear calls to action—without paying large‑agency retainers. My simple monthly plans deliver measurable results at a fraction of the cost, with the personal attention you expect from a dedicated local company.
 
 ## Customer Website Design Experiences
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}

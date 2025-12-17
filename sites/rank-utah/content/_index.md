@@ -1,6 +1,6 @@
 ---
 title: "Website Design & Local SEO Services | Digital Marketing Agency"
-description: "Clear Presence is a Website Design & Local SEO company. We build fast, mobile‑friendly websites with local SEO and digital marketing to help small businesses get more calls and bookings."
+description: "Website Design & Local SEO for small businesses. Fast, mobile‑friendly websites with local SEO and digital marketing to help small businesses get more calls and bookings."
 layout: "flowbite"
 url: "/"
 schema:
@@ -16,9 +16,9 @@ schema:
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Website Design & Local SEO Services {.text-white}
-We build fast, high‑performance websites with local SEO so more customers find you.
+Fast, high‑performance websites with local SEO so more customers find you.
 {.text-white}
-{{<button url="/services/website-design" text="My Process">}}{{<button url="/pricing" text="Pricing">}}
+{{<button url="/services/website-design" text="Process">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
 
 
@@ -30,13 +30,13 @@ We build fast, high‑performance websites with local SEO so more customers find
 ## Small Agency ✅
 
 ### 1. Personal Service & Better Results
-You work directly with me, the person building your site. This direct line means better collaboration, a clearer focus on your business goals, and a final product that actually brings in leads.
+Work directly with a dedicated expert who builds your site. This direct line means better collaboration, a clearer focus on your business goals, and a final product that brings in leads.
 
 ### 2. Custom-Built for Performance
 Your site is built from the ground up to be fast, lightweight, and perfectly tailored to your needs. No bloated templates or unnecessary features that slow you down.
 
 ### 3. Dedicated Ongoing Support
-Need an update? Call, text, or email me directly. You get responsive, ongoing support from the same person who knows your project inside and out.
+Need an update? Call, text, or email for direct support. Get responsive, ongoing help from the person who knows your project inside and out.
 
 ### 4. Affordable Monthly Pricing
 With no agency overhead, you get top-tier work without the shocking price tag. Simple, transparent monthly pricing with no long-term contracts.
@@ -71,7 +71,7 @@ Agencies charge huge upfront fees to cover their overhead, then surprise you wit
 
 ## Areas
 
-I provide website design and local SEO services for businesses across the United States. Here are a few areas where my clients are located.
+Website design and local SEO services for businesses across the United States. Here are a few areas where clients are located.
 
 [Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
 
@@ -83,7 +83,7 @@ I provide website design and local SEO services for businesses across the United
 
 ## Website Design
 
-See my process for building a custom site designed to bring you more customers.
+See the process for building a custom site designed to bring you more customers.
 
 {{<button text="Website Design" url="/services/website-design" >}}
 
@@ -95,7 +95,7 @@ See my process for building a custom site designed to bring you more customers.
 
 ## Local SEO
 
-Learn how I help local customers find your business on search and maps.
+Learn how local customers find your business on search and maps.
 
 {{<button text="Local SEO" url="/services/local-seo">}}
 
@@ -105,7 +105,7 @@ Learn how I help local customers find your business on search and maps.
 
 ## Portfolio
 
-Browse examples of my work for other small businesses.
+Browse examples of recent work for small businesses.
 
 {{<button text="Portfolio" url="/portfolio">}}
 
@@ -126,7 +126,7 @@ See affordable, transparent monthly plans.
 
 ## About
 
-Learn more about my story and approach.
+Learn more about the story and approach.
 
 {{<button text="About" url="/about">}}
 
@@ -152,16 +152,16 @@ Reach out with questions or to start your project.
 
 {{< faqs >}}
 ### What is your experience?
-I built my first professional website for a small business in 2023, leveraging my Master's degree in Software Development. My professional experience also includes roles in cybersecurity at industry leaders like Arctic Wolf and Okta. You can learn more about my detailed background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
+First professional projects launched in 2023, backed by a Master’s in Software Development and experience at industry leaders like Arctic Wolf and Okta. Learn more on <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### What is your web design process?
 You can learn all about my process for designing and building a custom website for your small business on the [Website Design](/services/website-design) page.
 
 ### How do you compare to other website design companies?
-As a local website design & SEO company, we offer direct communication and responsive support without big‑agency overhead. No long‑term contracts, hidden fees, or strict limits on edits.
+Direct communication and responsive support without big‑agency overhead. No long‑term contracts, hidden fees, or strict limits on edits.
 
 ### Which locations do you serve?
-I provide web design services to clients all across the United States.
+Web design services are available to clients across the United States.
 
 {{< /faqs >}}
 
@@ -169,6 +169,7 @@ I provide web design services to clients all across the United States.
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 
 {{<button text="My Process" url="/services/website-design" >}}
+{{<button text="Process" url="/services/website-design" >}}
 {{<button text="Pricing" url="/pricing" >}}
 {{<button text="Reach Out" url="/contact" >}}
 

@@ -7,7 +7,7 @@ url: "/portfolio"
 
 # Website Design & Local SEO Portfolio
 
-A selection of custom website design projects for small businesses. As a website design & local SEO company, we build fast, effective websites that turn visitors into customers and help you win local searches.
+A selection of custom website design projects for small businesses. Fast, effective websites that turn visitors into customers and help you win local searches.
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 

@@ -59,6 +59,7 @@ uglyURLs      = false
   # defaultTheme/disableThemeToggle centralized in shared config
   author              = "Benjamin Awerkamp"
   hideMeta            = false
+  ariaLabelCall       = "Call me"
 
 [params.schema.organization]
 enabled = true
