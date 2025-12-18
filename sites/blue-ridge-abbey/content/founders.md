@@ -50,7 +50,7 @@ Bio coming soon
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
-## Brooklyn Ludgate
+## Brooklynn Ludgate
 
 <img src="/media/new-photos/BRA-7.avif" alt="Blue Ridge Abbey founder" class="w-full aspect-[3/4] object-cover rounded-xl mb-4" loading="lazy" decoding="async" />
 Bio coming soon
