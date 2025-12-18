@@ -70,12 +70,6 @@ Agencies charge huge upfront fees to cover their overhead, then surprise you wit
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## Areas
-
-Website design and local SEO services for businesses across the United States. Here are a few areas where clients are located.
-
-[Pleasant Grove](/locations/pleasant-grove-ut) • [Buena Vista](/locations/buena-vista-va) • [Grand Junction](/locations/grand-junction-co) • [Boca Raton](/locations/boca-raton-fl) • [All Areas](/locations)
-
 ## Quick Links
 
 {{< cols min="18rem" gap="2rem" v="start">}}

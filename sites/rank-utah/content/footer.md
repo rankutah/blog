@@ -12,26 +12,30 @@ headless: true
 [Website Design](/services/website-design) • [Local SEO](/services/local-seo)
 {.center}
 
-### Areas
+### Legal
 {.center}
-[Pleasant Grove](/locations/pleasant-grove-ut) • [All Areas](/locations)
+[Privacy Policy](/privacy) • [Terms of Service](/terms)
 {.center}
-
 
 
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Clear Presence
+### Clear Presence
 {.center}
 Website Design & Local SEO for Small Businesses
 {.center}
 
 ### Company
 {.center}
-[About](/about) • [Portfolio](/portfolio) • [Blog](/blog) • [Pricing](/pricing) • [Contact](/contact)
+[Portfolio](/portfolio) • [Reviews](/reviews) • [Pricing](/pricing) • [About](/about) • [Contact](/contact)
 {.center}
+
+
+
+
+
 
 
 
@@ -58,8 +62,7 @@ Website Design & Local SEO for Small Businesses
 
 {{< /cols >}}
 
-{.center}
-[Privacy Policy](/privacy) • [Terms of Service](/terms)
+
 {.center}
 
 <div class="text-center text-sm opacity-80 mt-4">

@@ -121,11 +121,6 @@ Save your colors by sending a quick message.
 
 Decide whether you also need {{< button url="/services/local-seo" text="Local SEO" >}} and then choose your {{< button url="/pricing" text="Pricing Package">}}
 
-## Areas
-
-Clear Presence provides website design and local SEO services for businesses across the United States.
-
-
 ## Ready to get started?
 
 {{< button url="/contact" text="Contact" >}}
