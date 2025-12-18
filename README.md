@@ -281,6 +281,28 @@ pnpm run build:<site>
 - If a Pages project publishes the wrong directory (e.g. repo root `public/`), HTML and assets will not match; fix the publish dir.
 - Always standardize on `npm run build:<site>` so Hugo Pipes runs PostCSS and emits the fingerprinted bundle expected by the HTML.
 
+## Anchors with Sticky Header (Learn More Offset)
+
+When linking to in‑page sections from a hero (e.g., a “Learn More” button) and using the sticky header, add scroll offset so the heading isn’t hidden beneath the navbar.
+
+- Pattern: place a small anchor element above the target section with a scroll margin.
+
+Example in content files:
+
+```html
+<span id="learn-more" class="block scroll-mt-24" aria-hidden="true"></span>
+```
+
+- Link buttons/anchors to `#learn-more`.
+- `scroll-mt-24` equals 6rem (~96px). Adjust the value if the header height changes.
+- If Tailwind utilities are unavailable in a specific context, inline style also works:
+
+```html
+<span id="learn-more" style="scroll-margin-top: 96px" aria-hidden="true"></span>
+```
+
+This convention avoids overscrolling caused by the sticky navbar.
+
 ## CI/Prod Parity (pnpm + Lockfile)
 
 - Use pnpm for installs and builds. In CI, run:

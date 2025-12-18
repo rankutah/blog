@@ -11,15 +11,15 @@ url: "/terms"
 
 Last updated: October 14, 2025
 
-Welcome to Clear Presence. By accessing or using my website(s), products, and services (collectively, the “Services”), you agree to these Terms of Service (the “Terms”). If you do not agree to these Terms, do not use the Services.
+Welcome to Clear Presence. By accessing or using Clear Presence websites, products, and services (collectively, the “Services”), you agree to these Terms of Service (the “Terms”). If you do not agree, please discontinue use of the Services.
 
 
 
 
 
-## 1. Who I Am
+## 1. About Clear Presence
 
-“Clear Presence” ("I," "me," or "my") provides web design, SEO, and related services. My primary website is clearpresence.io (including subdomains and related properties).
+“Clear Presence” provides web design, SEO, and related services. The primary website is clearpresence.io (including subdomains and related properties).
 
 
 
@@ -27,7 +27,7 @@ Welcome to Clear Presence. By accessing or using my website(s), products, and se
 
 ## 2. Eligibility and Accounts
 
-You must be at least 18 years old (or the age of majority in your jurisdiction) to use my Services. If you create an account or provide contact information, you agree to provide accurate, current, and complete information.
+You must be at least 18 years old (or the age of majority in your jurisdiction) to use the Services. If you create an account or provide contact information, you agree to provide accurate, current, and complete information.
 
 You are responsible for maintaining the confidentiality of any account credentials and for all activities that occur under your account.
 
@@ -50,9 +50,9 @@ You agree not to misuse the Services or help anyone else do so. Prohibited behav
 
 ## 4. Intellectual Property
 
-The Services, including content, design, and logos, are owned by Clear Presence or my licensors and are protected by applicable intellectual property laws. You may not use my trademarks or content without prior written permission, except as allowed by law.
+The Services, including content, design, and logos, are owned by Clear Presence or its licensors and are protected by applicable intellectual property laws. You may not use Clear Presence trademarks or content without prior written permission, except as allowed by law.
 
-You retain ownership of content you provide to me; you grant me a limited license to use such content solely to provide the Services to you.
+You retain ownership of content you provide; you grant a limited license to use such content solely to deliver the Services.
 
 
 
@@ -68,7 +68,7 @@ Quotes and proposals may include assumptions, scope, and timelines. Fees are due
 
 ## 6. Third-Party Services
 
-My Services may link to or integrate with third-party services (e.g., hosting providers, analytics, email, payment processors). I am not responsible for third-party services and disclaim all liability arising from their use.
+The Services may link to or integrate with third-party services (e.g., hosting providers, analytics, email, payment processors). Clear Presence is not responsible for third-party services and disclaims liability arising from their use.
 
 
 
@@ -76,7 +76,7 @@ My Services may link to or integrate with third-party services (e.g., hosting pr
 
 ## 7. Confidentiality
 
-I will treat non-public information you provide in connection with the Services as confidential and will use it only to deliver the Services or as otherwise permitted by you.
+Non-public information provided in connection with the Services will be treated as confidential and used only to deliver the Services or as otherwise permitted by you.
 
 
 
@@ -84,9 +84,7 @@ I will treat non-public information you provide in connection with the Services 
 
 ## 8. Warranties and Disclaimers
 
-To the maximum extent permitted by law, the Services are provided “as is” and “as available,” without warranties of any kind, whether express, implied, or statutory, including warranties of merchantability, fitness for a particular purpose, and non-infringement.
-
-I do not warrant that the Services will be uninterrupted, error-free, secure, or meet your requirements.
+The Services are provided “as is” and “as available.” While efforts are made to keep the Services reliable and secure, no warranties are made, whether express, implied, or statutory (including warranties of merchantability, fitness for a particular purpose, and non‑infringement). The Services may not be uninterrupted, error‑free, secure, or meet every requirement.
 
 
 
@@ -94,9 +92,7 @@ I do not warrant that the Services will be uninterrupted, error-free, secure, or
 
 ## 9. Limitation of Liability
 
-To the maximum extent permitted by law, Clear Presence and any affiliates, contractors, or agents will not be liable for any indirect, incidental, consequential, special, or punitive damages, or for any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, arising out of or in connection with your use of the Services.
-
-My total liability for any claim arising out of or relating to the Services is limited to the amounts you paid to me for the Services giving rise to the claim in the 12 months preceding the event.
+To the maximum extent permitted by law, Clear Presence and its affiliates, contractors, and agents will not be liable for indirect or consequential damages arising out of or related to use of the Services. Total liability for any claim is limited to the amounts paid for the Services giving rise to the claim in the 12 months preceding the event.
 
 
 
@@ -104,7 +100,7 @@ My total liability for any claim arising out of or relating to the Services is l
 
 ## 10. Indemnification
 
-You agree to indemnify and hold Clear Presence harmless from any claims, damages, losses, liabilities, and expenses (including attorneys’ fees) arising out of or related to your use of the Services or your violation of these Terms or applicable law.
+You agree to use the Services responsibly and, where required by law, to indemnify Clear Presence from claims arising out of your misuse of the Services or violation of these Terms.
 
 
 
@@ -112,7 +108,7 @@ You agree to indemnify and hold Clear Presence harmless from any claims, damages
 
 ## 11. Termination
 
-I may suspend or terminate your access to the Services at any time for any reason, including for violation of these Terms. Upon termination, your right to use the Services will cease immediately.
+Access to the Services may be suspended or terminated if there is a material breach of these Terms, if required by law, or to protect the security and integrity of the Services. Upon termination, the right to use the Services ceases immediately.
 
 
 
@@ -120,7 +116,7 @@ I may suspend or terminate your access to the Services at any time for any reaso
 
 ## 12. Changes to the Terms
 
-I may update these Terms from time to time. I will post the updated Terms and revise the “Last updated” date above. Your continued use of the Services after an update constitutes acceptance of the revised Terms.
+These Terms may be updated from time to time. The updated Terms will be posted with a revised “Last updated” date. Continued use of the Services after an update constitutes acceptance of the revised Terms.
 
 
 
@@ -134,7 +130,7 @@ These Terms are governed by the laws of the State of Utah, without regard to con
 
 
 
-## 14. Contact Me
+## 14. Contact
 
 Clear Presence
 348 S 2000 W, Suite B206

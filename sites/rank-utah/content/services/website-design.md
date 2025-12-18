@@ -2,6 +2,7 @@
 title: "Website Design for Small Businesses"
 description: "Affordable, custom website design for small businesses from a small agency. Your alternative to a big agency, with personal one-on-one service."
 layout: "flowbite"
+hero: true
 url: "/services/website-design"
 schema:
   service:
@@ -22,15 +23,15 @@ schema:
         availability: "https://schema.org/InStock"
 ---
 
+{{< hero img="/media/utah-seo.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+# Website Design for Small Businesses {.text-white}
+Work directly with a small agency to get a custom site built for your small business. Skip the high costs and slow timelines and get personal, one-on-one service.
+{.text-white}
+{{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 
+{{< /hero >}}
 
-# Website Design for Small Businesses
-Work directly with a small agency to get a custom site built for your small business. Skip the high costs and slow timelines of a big agency and get personal, one-on-one service.
-
-Get a fast website that turns visits into calls and form fills. Clear messaging, strong visuals, and a lightweight build designed to perform on mobile.
-
-{{< button url="/contact" text="Contact" >}}
-{{< button url="/portfolio" text="See Portfolio" >}}
+<span id="learn-more" class="block scroll-mt-24" aria-hidden="true"></span>
 
 
 ## Why choose a small agency?
@@ -105,7 +106,7 @@ Get a fast website that turns visits into calls and form fills. Clear messaging,
 4. Launch — tracking, final checks, and go‑live list
 5. Grow — updates, new pages, and simple reports
 
-## Step 1: Pick your colors
+## Step 1: Pick your colors or reach out {{< button url="/contact" text="Contact" >}}
 
 {{< color-picker >}}
 
@@ -122,9 +123,7 @@ Decide whether you also need {{< button url="/services/local-seo" text="Local SE
 
 ## Areas
 
-Clear Presence provides website design and local SEO services for businesses across the United States. Here are a few areas where clients are located.
-
-[All Areas](/locations)
+Clear Presence provides website design and local SEO services for businesses across the United States.
 
 
 ## Ready to get started?

@@ -18,11 +18,12 @@ schema:
 # Website Design & Local SEO Services {.text-white}
 Fast, high‑performance websites with local SEO so more customers find you.
 {.text-white}
-{{<button url="/services/website-design" text="Process">}}{{<button url="/pricing" text="Pricing">}}
+{{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
 
 
 ## Small Agency vs. Big Agency
+<span id="learn-more"></span>
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
