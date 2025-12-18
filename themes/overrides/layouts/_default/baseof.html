@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-force-theme="{{ .Site.Params.forceTheme }}">
 	<head>
 		{{- partial "head.html" . -}}
 	</head>

@@ -39,8 +39,6 @@ enableRobotsTXT = true
   cardBorderDark      = "gray-700"
 
   # defaultTheme/disableThemeToggle centralized
-  defaultTheme        = "light"
-  disableThemeToggle  = true
   author              = "NOVA Gutter"
   hideMeta            = true
 
