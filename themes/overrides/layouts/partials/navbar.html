@@ -170,7 +170,7 @@
     </a>
 
     <!-- Actions -->
-    <div class="flex md:order-2 items-center space-x-3 md:space-x-0 {{ if $rightMenu }}lg:space-x-2{{ end }} rtl:space-x-reverse {{ if and $centerNav (not $rightMenu) }}lg:col-start-3 lg:justify-self-end lg:order-none{{ else if $rightMenu }}lg:col-start-4 lg:justify-self-end lg:order-none lg:min-w-0 lg:flex-nowrap{{ end }}">
+    <div class="flex md:order-2 items-center space-x-3 md:space-x-2 {{ if $rightMenu }}lg:space-x-2{{ end }} rtl:space-x-reverse {{ if and $centerNav (not $rightMenu) }}lg:col-start-3 lg:justify-self-end lg:order-none{{ else if $rightMenu }}lg:col-start-4 lg:justify-self-end lg:order-none lg:min-w-0 lg:flex-nowrap{{ end }}">
       {{ if $rightMenu }}
       <!-- Right-cluster desktop menu (before search/CTA) -->
       <div class="hidden lg:flex items-center whitespace-nowrap">
@@ -211,13 +211,21 @@
         </ul>
       </div>
       {{ end }}
-      <!-- Search (desktop): left of CTA -->
-      <a href="/search/" class="hidden md:inline-flex items-center justify-center p-2 text-lg focus:ring-2 focus:outline-none hover:bg-black/5 dark:hover:bg-white/10 no-underline" aria-label="Search">
-        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="11" cy="11" r="7"/>
-          <path d="M20 20l-3.5-3.5"/>
-        </svg>
-      </a>
+      <!-- Search (desktop): compact search bar linking to dedicated page -->
+      <form action="{{ "/search/" | relURL }}" method="get" role="search"
+            class="hidden md:inline-flex items-center no-underline" aria-label="Site search">
+        <label for="nav-search" class="sr-only">Search</label>
+        <div class="relative">
+          <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+            <svg class="h-4 w-4 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="M20 20l-3.5-3.5"></path>
+            </svg>
+          </div>
+             <input id="nav-search" name="q" type="search" placeholder="Search…" autocomplete="off"
+               class="block w-28 md:w-36 rounded-lg {{ index $pal "cardBorder" }} {{ index $pal "cardBg" }} py-2 pl-8 pr-3 text-sm shadow-sm focus:ring-0 dark:text-gray-100" />
+        </div>
+      </form>
       {{ if or $showCTAOnMobile $showCTAOnDesktop }}
       <a href="{{ $CTAURL | relURL }}"
          class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none ui-btn
