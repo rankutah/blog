@@ -173,7 +173,7 @@
     <div class="flex md:order-2 items-center space-x-3 md:space-x-2 {{ if $rightMenu }}lg:space-x-2{{ end }} rtl:space-x-reverse {{ if and $centerNav (not $rightMenu) }}lg:col-start-3 lg:justify-self-end lg:order-none{{ else if $rightMenu }}lg:col-start-4 lg:justify-self-end lg:order-none lg:min-w-0 lg:flex-nowrap{{ end }}">
       {{ if $rightMenu }}
       <!-- Right-cluster desktop menu (before search/CTA) -->
-      <div class="hidden lg:flex items-center whitespace-nowrap">
+      <div class="hidden lg:flex items-center whitespace-nowrap lg:mx-2">
         <ul class="flex flex-row font-medium space-x-3 lg:space-x-4 rtl:space-x-reverse whitespace-nowrap">
           {{ range .Site.Menus.main }}
             <li class="relative">
@@ -335,7 +335,7 @@
 
     <!-- Desktop inline menu (unchanged from original) -->
     <div id="navbar-sticky"
-      class="items-center justify-between hidden w-full {{ if $rightMenu }}lg:hidden{{ else }}lg:flex{{ end }} lg:w-auto lg:order-1 {{ if and $centerNav (not $rightMenu) }}lg:col-start-2 lg:justify-self-center lg:order-none{{ else if $rightMenu }}lg:col-start-3 lg:justify-self-end lg:order-none lg:mr-2{{ end }}
+      class="items-center justify-between hidden w-full {{ if $rightMenu }}lg:hidden{{ else }}lg:flex{{ end }} lg:w-auto lg:order-1 lg:mx-2 {{ if and $centerNav (not $rightMenu) }}lg:col-start-2 lg:justify-self-center lg:order-none{{ else if $rightMenu }}lg:col-start-3 lg:justify-self-end lg:order-none lg:mr-2{{ end }}
                 {{ if eq $headerTheme "glass" }}bg-white/80 dark:bg-gray-900/80 backdrop-blur
                 {{ else if eq $headerTheme "invert" }}bg-white/95 dark:bg-gray-900/90
                 {{ else }}{{ $navBg }}
