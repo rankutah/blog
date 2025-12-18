@@ -22,8 +22,8 @@ Fast, high‑performance websites with local SEO so more customers find you.
 {{< /hero >}}
 
 
+<span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 ## Small Agency vs. Big Agency
-<span id="learn-more"></span>
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 

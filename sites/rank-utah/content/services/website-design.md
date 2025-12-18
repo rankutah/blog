@@ -31,7 +31,7 @@ Work directly with a small agency to get a custom site built for your small busi
 
 {{< /hero >}}
 
-<span id="learn-more" class="block scroll-mt-24" aria-hidden="true"></span>
+<span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
 
 ## Why choose a small agency?

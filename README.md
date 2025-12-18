@@ -283,25 +283,25 @@ pnpm run build:<site>
 
 ## Anchors with Sticky Header (Learn More Offset)
 
-When linking to in‑page sections from a hero (e.g., a “Learn More” button) and using the sticky header, add scroll offset so the heading isn’t hidden beneath the navbar.
+When linking to in‑page sections from a hero (e.g., a “Learn More” button) and using the sticky header, add a scroll offset so the heading isn’t hidden beneath the navbar.
 
-- Pattern: place a small anchor element above the target section with a scroll margin.
+- Preferred pattern: place a small anchor element above the target section and use the dynamic header height CSS variable set by the navbar (`--site-header-h`).
 
-Example in content files:
+Example in content files (place the anchor immediately ABOVE the target section heading):
 
 ```html
-<span id="learn-more" class="block scroll-mt-24" aria-hidden="true"></span>
+<span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 ```
 
 - Link buttons/anchors to `#learn-more`.
-- `scroll-mt-24` equals 6rem (~96px). Adjust the value if the header height changes.
-- If Tailwind utilities are unavailable in a specific context, inline style also works:
+- The variable `--site-header-h` is set at runtime by the navbar partial; the `+ 8px` provides a small cushion.
+- Fallback (no JS or outside shared navbar):
 
 ```html
-<span id="learn-more" style="scroll-margin-top: 96px" aria-hidden="true"></span>
+<span id="learn-more" class="block" style="scroll-margin-top: 72px" aria-hidden="true"></span>
 ```
 
-This convention avoids overscrolling caused by the sticky navbar.
+This convention avoids over/underscrolling caused by the sticky navbar.
 
 ## CI/Prod Parity (pnpm + Lockfile)
 
