@@ -106,20 +106,6 @@ Work directly with a small agency to get a custom site built for your small busi
 4. Launch — tracking, final checks, and go‑live list
 5. Grow — updates, new pages, and simple reports
 
-## Step 1: Pick your colors or reach out {{< button url="/contact" text="Contact" >}}
-
-{{< color-picker >}}
-
-## Step 2: Save your colors
-
-Save your colors by sending a quick message.
-
-{{< contact-form id="colors" action="https://submit-form.com/I4t2OG4uj" name="true" email="true" custom="Primary Color, Background Color" phone="optional" message="true" classes="max-w-xl"  >}}
-{{< button submit="true" form="colors" text="Save Colors" >}}
-
-## Step 3:
-
-Decide whether you also need {{< button url="/services/local-seo" text="Local SEO" >}} and then choose your {{< button url="/pricing" text="Pricing Package">}}
 
 ## Ready to get started?
 
