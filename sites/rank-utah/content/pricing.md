@@ -41,13 +41,16 @@ Affordable plans from a small agency. No contracts. No surprises.
 
 *Get a fast website custom built for your business by a small agency.*
 
-- Custom branded design
-- Managed hosting & security
-- Domain & yearly renewals
-- Mobile-friendly design
-- Spam protection
-- Ongoing updates and support
-- Monthly performance & lead reports
+- Custom design tailored to your brand
+- Automatic adjustment to any screen size
+- High-speed on phones and computers
+- Premium hosting with advanced security
+- Automatic backups with every change
+- Domain name and annual renewals
+- Contact forms with spam protection
+- Site-wide search for easy navigation
+- Ongoing support via phone, text, or email
+- Monthly performance and lead reports
 
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
@@ -68,8 +71,8 @@ Affordable plans from a small agency. No contracts. No surprises.
 - Apple Maps & Bing Places management & optimization
 - Business details synced to 100+ networks to boost local search rankings
 - Keyword research, strategy, & alignment with how your customers search
-- Ongoing updates and support
-- Monthly performance & lead reports
+- Ongoing support via phone, text, or email
+- Monthly performance and lead reports
 
 
 This package does not include a business website.
@@ -88,17 +91,20 @@ This package does not include a business website.
 
 *Bundle your website with local SEO to maximize visibility and save $49/mo.*
 
-- Custom branded design
-- Managed hosting & security
-- Domain & yearly renewals
-- Mobile-Friendly Design
-- Spam protection
+- Custom design tailored to your brand
+- Automatic adjustment to any screen size
+- High-speed on phones and computers
+- Premium hosting with advanced security
+- Automatic backups with every change
+- Domain name and annual renewals
+- Contact forms with spam protection
+- Site-wide search for easy navigation
 - Google Business Profile management & optimization
 - Apple Maps & Bing Places management & optimization
 - Business details synced to 100+ networks to boost local search rankings
 - Keyword research, strategy, & alignment with how your customers search
-- Ongoing updates and support
-- Monthly performance & lead reports
+- Ongoing support via phone, text, or email
+- Monthly performance and lead reports
 
 
 
