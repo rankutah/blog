@@ -174,7 +174,7 @@
       {{ if $rightMenu }}
       <!-- Right-cluster desktop menu (before search/CTA) -->
       <div class="hidden lg:flex items-center whitespace-nowrap lg:mx-2">
-        <ul class="flex flex-row font-medium space-x-2 lg:space-x-2 rtl:space-x-reverse whitespace-nowrap">
+        <ul class="flex flex-row font-medium space-x-3 lg:space-x-4 rtl:space-x-reverse whitespace-nowrap">
           {{ range .Site.Menus.main }}
             <li class="relative">
               {{ if .HasChildren }}
@@ -343,7 +343,7 @@
           border-t border-black/10 dark:border-white/10 lg:border-0
           lg:bg-transparent lg:dark:bg-transparent">
 
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-4 rtl:space-x-reverse lg:flex-row md:mt-0 whitespace-nowrap lg:px-2">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-6 rtl:space-x-reverse lg:flex-row md:mt-0 whitespace-nowrap">
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
