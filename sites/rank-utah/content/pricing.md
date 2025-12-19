@@ -41,10 +41,11 @@ Affordable plans from a small agency. No contracts. No surprises.
 
 *Get a fast website custom built for your business by a small agency.*
 
-- Custom website design
-- Fast, secure hosting
-- Domain & yearly renewals
-- Mobile-Friendly Design
+- Custom branded design
+- Managed hosting & security
+- Mobile-friendly design
+- Spam protection
+- Yearly domain renewals
 - Monthly visitor reports
 - Ongoing updates and support
 

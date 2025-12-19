@@ -99,7 +99,7 @@ Get a website that brings you more calls, quotes, and bookings. You’ll get a f
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### What You Get
-- Custom design
+- Custom branded design
 - Clear page layout
 - Fast loading on phones and computers
 - Optimized search setup
