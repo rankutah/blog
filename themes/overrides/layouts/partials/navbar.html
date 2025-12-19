@@ -98,6 +98,11 @@
 }}
 {{ $navHoverClasses := index $navHover $siteColor | default (index $navHover "blue") }}
 
+{{/* Light-mode border color for search input: use palette card border (revert from primary-colored) */}}
+{{ $cardBorderLightName := lower (or .Site.Params.cardBorderLight "gray-200") }}
+{{ if strings.HasPrefix $cardBorderLightName "border-" }}{{ $cardBorderLightName = replace $cardBorderLightName "border-" "" }}{{ end }}
+{{ $searchBorderLight := printf "border-%s" $cardBorderLightName }}
+
 {{/* Dropdown background: use normalized card surface from palette */}}
 {{ $dropBg := index $pal "cardBg" }}
 
@@ -223,7 +228,7 @@
             </svg>
           </div>
              <input id="nav-search" name="q" type="search" placeholder="Search…" autocomplete="off"
-               class="block w-28 md:w-36 rounded-lg {{ $pal.cardBorder }} {{ $pal.cardBg }} py-2 pl-8 pr-3 text-sm shadow transition-colors duration-150 focus:outline-none focus:ring-0 {{ $navText }} font-medium placeholder-gray-600 dark:placeholder-gray-400" />
+               class="block w-28 md:w-36 rounded-lg border {{ $searchBorderLight }} dark:border-white {{ $pal.cardBg }} py-2 pl-8 pr-3 text-sm shadow transition-colors duration-150 focus:outline-none focus:ring-0 {{ $navText }} font-medium placeholder-gray-600 dark:placeholder-gray-400" />
         </div>
       </form>
       {{ if or $showCTAOnMobile $showCTAOnDesktop }}
