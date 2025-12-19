@@ -28,6 +28,83 @@ All sites now use a consistent `[params.analytics]` block patterned after `sites
     id = ""            # Meta Pixel ID
     enabled = false
 ```
+## Message Modal & Floating Action Button (FAB)
+
+This adds a site‑wide “Message” FAB that opens a modal to collect a quick inquiry. It is disabled by default across all sites and can be enabled per site via config.
+
+### How It Works
+- Modal and FAB partials: `themes/overrides/layouts/partials/message-modal.html` and `themes/overrides/layouts/partials/text-fab.html`.
+- Rendering is gated in the base layout: `themes/overrides/layouts/_default/flowbite.html`.
+- Styling uses the shared palette (`cardBg`/`cardBorder`) so the modal matches each site’s cards.
+- Visual robustness: fixed overlay with `svh/svw` caps, internal scroll, visualViewport vertical translation, safe‑area paddings.
+
+### Enable/Disable
+- Global default (shared): `[params.messageModal].enable = false` in `themes/overrides/config.shared.toml`.
+- Per‑site: set in `sites/<site>/config.toml`:
+
+  ```toml
+  [params.messageModal]
+  enable = true  # or false to disable
+  ```
+
+- Gating logic: Only renders when `enable = true`. A BaseURL fallback is used only if a site has no `messageModal.enable` param at all; the shared config provides the param, so fallback does not apply in normal builds.
+- Current state: rank‑utah explicitly sets `enable = false` and is disabled.
+
+### Submission & Fields
+- Endpoint: Formspark, configured per site.
+- Per‑site config block (rank‑utah example):
+
+  ```toml
+  [params.forms]
+  action         = "https://submit-form.com/DOH188lWF"
+  honeypot       = ""        # optional; disabled when using Turnstile
+  successMessage = "Thanks! Your message was sent."
+  errorMessage   = "Sorry, something went wrong. Please try again."
+  redirect       = "https://<site>/thank-you"
+  ```
+
+- Optional Cloudflare Turnstile:
+
+  ```toml
+  [params.turnstile]
+  enable  = true
+  sitekey = "<your-site-key>"
+  ```
+
+- Payload sent:
+  - `name`, `contact`, `message`, `page_url`, `source = "desktop_modal"`
+  - If `contact` looks like an email → adds `email`
+  - If `contact` looks like a phone → adds `phone`
+  - When Turnstile is enabled and a token is present → `cf-turnstile-response`
+  - `_subject = "New message via site modal"`
+
+### Client Behavior
+- Validation: Name required; `contact` must be a valid email or phone.
+- Submit: Tries CORS fetch with `Accept: application/json` (detect errors), falls back to `no-cors` when needed.
+- Status UI: Shows “Sending…”, success, or error messages in the modal.
+- Analytics:
+  - On open: `contact_text_click` with `{ method: 'desktop_modal' }`.
+  - On submit: GA event `form_submit` with `{ event_category: 'lead', event_label: location.pathname + '#desktop_modal' }`.
+
+### Troubleshooting / Current Status
+- Current status: Submissions reach Formspark (verified via HTTP 302 to `submitted.formspark.io` with `formspark-status: ok`). Email notifications are not arriving to the inbox yet.
+- Likely resolution steps (Formspark side):
+  - Verify the notification email is configured for form ID and is verified.
+  - Check sender policy / domain settings (SPF/DKIM) if using custom sender.
+  - Inspect spam/junk filters and email rules; whitelist `formspark.io`.
+  - Confirm form ID (`DOH188lWF`) and check the dashboard submissions.
+- Local diagnostics:
+  - Enable modal debug logs: `localStorage.setItem('cp-debug-modal','1')` then open the modal and submit to see console diagnostics.
+  - Use curl to test endpoint:
+
+    ```zsh
+    curl -i -X POST https://submit-form.com/DOH188lWF \
+      -d "name=Test User" -d "contact=test@example.com" -d "message=Hello"
+    ```
+
+### UI Consistency
+- The navbar search input background uses the same card surface as the dedicated search page (`cardBg`/`cardBorder`).
+
 
 ### Migration Notes
 * Legacy `googleAnalyticsID` flat param was removed (e.g. `novagutter`). Use nested `[params.analytics.google].id` instead.
