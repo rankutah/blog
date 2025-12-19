@@ -222,22 +222,4 @@
 {{- end }}
 
 
-<!-- cp-debug: footer.gating messageModal.enable = {{ printf "%v" (and (isset .Site.Params "messageModal") (isset .Site.Params.messageModal "enable") (.Site.Params.messageModal.enable)) }} -->
-{{/* FAB + Modal gating also emitted from footer to ensure inclusion across layouts */}}
-{{ $mm := .Site.Params.messageModal }}
-{{ $fab := .Site.Params.messageFab }}
-{{ if and $mm ($mm.enable) }}
-    {{ partial "text-fab.html" . }}
-    {{ partial "message-modal.html" . }}
-{{ else if and $fab ($fab.enable) }}
-    {{ partial "text-fab.html" . }}
-{{ end }}
-
-<script>try{console.log('cp:fab gate mm={{ if and $mm ($mm.enable) }}true{{ else }}false{{ end }} fab={{ if and $fab ($fab.enable) }}true{{ else }}false{{ end }}');}catch(e){}</script>
-<script>
-try{
-    console.log('cp: params.messageFab = {{ printf "%v" .Site.Params.messageFab }}');
-    console.log('cp: isset messageFab = n/a (using short-circuit)');
-    console.log('cp: raw messageFab.enable = {{ with .Site.Params.messageFab }}{{ printf "%v" .enable }}{{ else }}<unset>{{ end }}');
-}catch(e){}
-</script>
+<!-- Footer end -->
