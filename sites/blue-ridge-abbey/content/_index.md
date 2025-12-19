@@ -33,7 +33,7 @@ Take a visual tour of our guest rooms and shared spaces and get a feel for the w
 
 Hotel comfort with bed & breakfast warmth. Our B&B lodging offers cozy guest rooms furnished with linens and amenities, including Wifi, TV, mini fridge, complimentary coffee and snacks, clothing rack, luggage rack, hair dryer, and Renpure shampoo, conditioner, and body wash.
 
-{{< button url="/rooms" text="Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
+{{< button url="/rooms" text="Main House Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
 {{< badge text="No rooms available? Please call or text 540-319-3889" >}}
 
@@ -42,7 +42,7 @@ Hotel comfort with bed & breakfast warmth. Our B&B lodging offers cozy guest roo
 Blue Ridge Abbey is pleased to announce the opening of an additional building with 5 additional bedrooms.
 
 {{< badge text="Book now • Stays from Feb 9" >}}
-{{< button url="/carriage-rooms" text="Book Carriage Rooms" >}}
+{{< button url="/carriage-rooms" text="Carriage Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
 
 {{< /col >}}

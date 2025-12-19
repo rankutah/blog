@@ -19,7 +19,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 {{< col card="false" y="start" >}}
 ## Maple Grove
 
-![](/media/maple-grove.jpg)
+![Maple Grove room at Blue Ridge Abbey Carriage House](/media/maple-grove.jpg)
 
 {{< badge text="Book now • Stays from Feb 9" >}}
 
@@ -32,7 +32,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 {{< col card="false" y="start" >}}
 ## Morning Glory
 
-![](/media/morning-glory.png)
+![Morning Glory room at Blue Ridge Abbey Carriage House](/media/morning-glory.png)
 
 {{< badge text="Book now • Stays from Feb 9" >}}
 
@@ -45,7 +45,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 {{< col card="false" y="start" >}}
 ## Daylily
 
-![](/media/day-lily.png)
+![Daylily room at Blue Ridge Abbey Carriage House](/media/day-lily.png)
 
 {{< badge text="Book now • Stays from Feb 9" >}}
 
@@ -58,7 +58,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 {{< col card="false" y="start" >}}
 ## Edelweiss
 
-![](/media/edelweiss.jpg)
+![Edelweiss room at Blue Ridge Abbey Carriage House](/media/edelweiss.jpg)
 
 {{< badge text="Book now • Stays from Feb 9" >}}
 
@@ -71,7 +71,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 {{< col card="false" y="start" >}}
 ## Dancing Willow
 
-![](/media/dancing-willow.jpg)
+![Dancing Willow room at Blue Ridge Abbey Carriage House](/media/dancing-willow.jpg)
 
 {{< badge text="Book now • Stays from Feb 9" >}}
 
