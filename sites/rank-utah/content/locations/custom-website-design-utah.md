@@ -147,10 +147,11 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 
 ## Why Utah Small Businesses Choose Clear Presence
 
-- Local Utah website design company focused on small business results
-- Affordable and simple flat rate prices without contracts
-- Unlimited edits and fast long-term support
-- Clean, modern mobile-friendly websites built for speed
+- Local Utah company focused on your success
+- Affordable flat rate prices without lock-in contracts
+- Unlimited support via text, call, email, or meetings
+- Unlimited updates and edits with long-term support
+- A modern mobile-friendly website built for performance
 
 ## Customer Website Design Experiences
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -158,10 +159,19 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
 ## Ready To Get Started
+
+I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
+
 ![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
-I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and I did my masters at the University of Utah in Software Development. I love partnering with business owners and building fast custom websites that turn visits into calls, bookings, and messages.
+
+**Benjamin Awerkamp** <br>
+Website Design & Local SEO <br>
+Call or Text: [(385) 323-8130](tel:+13853238130) <br>
+Master's in Software Development <br>
+Bachelor's in Business Management
 
 ### Share a bit about your business and goals.
 
