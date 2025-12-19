@@ -64,6 +64,9 @@ uglyURLs      = false
 [params.messageModal]
   enable = false
 
+[params.messageFab]
+  enable = true
+
 [params.schema.organization]
 enabled = true
 name = "Clear Presence LLC"

@@ -1,9 +1,10 @@
-{{/* Floating "Text us" button in bottom-right. Uses SMS where available. */}}
-{{ $num := or .Site.Params.contact.smsNumber .Site.Params.header.phoneNumber | default "" }}
-{{ if and (ne $num "") (gt (len (strings.TrimSpace $num)) 0) }}
-  {{/* Strip all non-digits and prefix +1 (US). */}}
-  {{ $digits := replaceRE `[^0-9]` "" $num }}
-  {{ $sms := printf "sms:+1%s" $digits }}
+{{/* Floating Message button in bottom-right. Two modes:
+  - modal: opens message modal (when params.messageModal.enable = true)
+  - link:  navigates to contact page (when params.messageFab.enable = true)
+*/}}
+{{ $pal := partial "theme/palette.html" . }}
+{{ $mode := cond (and (isset .Site.Params "messageModal") (isset .Site.Params.messageModal "enable") (.Site.Params.messageModal.enable)) "modal" "link" }}
+{{ $contactURL := "/contact/" | relURL }}
 
   {{/* Brand color mapping for solid buttons (same pattern as navbar). */}}
   {{ $siteColor := lower (or .Site.Params.primaryColor "blue") }}
@@ -33,11 +34,11 @@
   }}
   {{ $cta := index $solid $siteColor | default (index $solid "blue") }}
 
-        <a href="#message"
+        <a {{ if eq $mode "modal" }}href="#message"{{ else }}href="{{ $contactURL }}"{{ end }}
           class="cp-fab inline-flex items-center justify-center gap-0 md:gap-2 rounded-full shadow-lg no-underline {{ $cta }} w-12 h-12 md:w-auto md:h-auto md:px-4 md:py-2"
-          aria-label="{{ default "Message us" .Site.Params.ariaLabelText }}"
+          aria-label="{{ default "Message" .Site.Params.ariaLabelText }}"
           style="position: fixed; z-index: 10001; bottom: calc(1rem + env(safe-area-inset-bottom)); right: calc(1rem + env(safe-area-inset-right)); transform: translateZ(0); backface-visibility: hidden; will-change: transform;"
-         onclick="try{ if(window.cpOpenMessageModal){ window.cpOpenMessageModal(); } gtag('event','contact_text_click',{method:'modal'}); }catch(e){} return false;">
+         {{ if eq $mode "modal" }}onclick="try{ if(window.cpOpenMessageModal){ window.cpOpenMessageModal(); } gtag('event','contact_text_click',{method:'modal'}); }catch(e){} return false;"{{ else }}onclick="try{ if(window.gtag){ gtag('event','contact_text_click',{method:'contact_page'}); } }catch(e){}"{{ end }}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="w-5 h-5 md:w-4 md:h-4">
       <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z"/>
     </svg>
@@ -121,4 +122,4 @@
       } catch(_){}
     })();
   </script>
-{{ end }}
+ 

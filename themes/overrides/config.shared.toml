@@ -65,6 +65,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [params.messageModal]
   enable = false
 
+[params.messageFab]
+  enable = false
+
 [taxonomies]
   tag = "tags"
 

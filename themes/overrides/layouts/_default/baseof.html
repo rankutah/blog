@@ -9,5 +9,19 @@
 			{{- block "main" . }}{{ end }}
 		</main>
 		{{ partial "footer.html" . }}
+
+		<!-- cp-debug: messageModal.enable = {{ printf "%v" (and (isset .Site.Params "messageModal") (isset .Site.Params.messageModal "enable") (.Site.Params.messageModal.enable)) }} -->
+		{{/* FAB + Modal gating:
+		     - If messageModal.enable = true → include FAB (modal mode) + modal markup
+		     - Else if messageFab.enable = true → include FAB (link mode)
+		   No BaseURL fallback to avoid surprises. */}}
+		{{ $mm := .Site.Params.messageModal }}
+		{{ $fab := .Site.Params.messageFab }}
+		{{ if and $mm ($mm.enable) }}
+			{{ partial "text-fab.html" . }}
+			{{ partial "message-modal.html" . }}
+		{{ else if and $fab ($fab.enable) }}
+			{{ partial "text-fab.html" . }}
+		{{ end }}
 	</body>
 </html>

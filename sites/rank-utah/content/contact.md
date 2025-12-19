@@ -12,7 +12,7 @@ url: "/contact"
 
 ## Send a message
 
-Call or text anytime: [(385) 323-8130](tel:+13853238130)
+Call or text anytime (even after hours): [(385) 323-8130](tel:+13853238130)
 
 {{< contact-form
 	id="contact1"
