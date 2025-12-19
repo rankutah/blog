@@ -107,8 +107,8 @@ Get a website that brings you more calls, quotes, and bookings. You’ll get a f
 - Contact forms with visitor tracking
 - Spam protection
 - Ongoing updates and support
- - Managed hosting & security
- - Domain renewals included
+- Managed hosting & security
+- Domain renewals included
 
 ### Built For Results
 Easy contact buttons, quick loading pages, and content clearly arranged.
