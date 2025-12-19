@@ -20,6 +20,19 @@ Usage:
 {{ $btnColorDark  := printf "dark:text-%s-400" $primary }}
 {{ $btnBgLight := printf "bg-%s-600 hover:bg-%s-700 focus:ring-%s-300" $primary $primary $primary }}
 {{ $btnBgDark  := printf "dark:bg-%s-500 dark:hover:bg-%s-600" $primary $primary }}
+{{/* Video overlay site-wide settings with shortcode overrides */}}
+{{ $vo := site.Params.videoOverlay }}
+{{ $caption := .Get "caption" }}
+{{ if not $caption }}{{ with $vo }}{{ with .caption }}{{ $caption = . }}{{ end }}{{ end }}{{ end }}
+{{ $variant := .Get "overlayVariant" }}
+{{ if not $variant }}{{ with $vo }}{{ with .variant }}{{ $variant = . }}{{ end }}{{ end }}{{ end }}
+{{ if not $variant }}{{ $variant = "ring" }}{{ end }}
+{{ $spotlightClass := .Get "spotlightClass" }}
+{{ if not $spotlightClass }}{{ with $vo }}{{ with .spotlightClass }}{{ $spotlightClass = . }}{{ end }}{{ end }}{{ end }}
+{{ if not $spotlightClass }}{{ $spotlightClass = "ring-2 ring-white/75 shadow-[0_0_20px_rgba(255,255,255,0.35)]" }}{{ end }}
+{{ $spotlightSize := .Get "spotlightSize" }}
+{{ if not $spotlightSize }}{{ with $vo }}{{ with .spotlightSize }}{{ $spotlightSize = . }}{{ end }}{{ end }}{{ end }}
+{{ if not $spotlightSize }}{{ $spotlightSize = "h-20 w-20 md:h-24 md:w-24" }}{{ end }}
 {{ if not $id }}{{ errorf "lazy-vimeo shortcode: missing id param" }}{{ end }}
 {{ if not $img }}{{ errorf "lazy-vimeo shortcode: missing img param" }}{{ end }}
 <div class="section hero bleed">
@@ -63,22 +76,30 @@ Usage:
           </div>
         </div>
         <div class="mt-6 flex items-center justify-center">
-          {{ if $brandHex }}
-          <button type="button" class="inline-flex items-center justify-center transition focus:outline-none focus:ring-4 p-0 bg-transparent" style="color: {{$brandHex}};" data-lazy-vimeo-play aria-label="Play video" title="Play video">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
-              <rect x="1" y="1" width="66" height="46" rx="12" fill="currentColor"/>
-              <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
-            </svg>
-          </button>
-          {{ else }}
-          <button type="button" class="inline-flex items-center justify-center rounded-full transition h-20 w-20 focus:outline-none focus:ring-4 {{$btnBgLight}} {{$btnBgDark}} {{$btnColorLight}} {{$btnColorDark}}" data-lazy-vimeo-play aria-label="Play video" title="Play video">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
-              <rect x="1" y="1" width="66" height="46" rx="12" fill="currentColor"/>
-              <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
-            </svg>
-          </button>
-          {{ end }}
+          <div class="relative inline-flex items-center justify-center">
+            {{ if ne (lower $variant) "none" }}
+            <span aria-hidden="true" class="absolute pointer-events-none z-0 rounded-full {{$spotlightSize}} {{ if eq (lower $variant) "filled" }} bg-white/20 border border-white/50 shadow-[0_0_16px_rgba(255,255,255,0.25)] {{ else }} {{$spotlightClass}} {{ end }}"></span>
+            {{ end }}
+            {{ if $brandHex }}
+            <button type="button" class="relative z-10 inline-flex items-center justify-center transition focus:outline-none focus:ring-4 p-0 bg-transparent" style="color: {{$brandHex}};" data-lazy-vimeo-play aria-label="Play video" title="Play video">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
+                <rect x="1" y="1" width="66" height="46" rx="12" fill="currentColor"/>
+                <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
+              </svg>
+            </button>
+            {{ else }}
+            <button type="button" class="relative z-10 inline-flex items-center justify-center rounded-full transition h-20 w-20 focus:outline-none focus:ring-4 {{$btnBgLight}} {{$btnBgDark}} {{$btnColorLight}} {{$btnColorDark}}" data-lazy-vimeo-play aria-label="Play video" title="Play video">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" class="h-12 w-20 drop-shadow" aria-hidden="true">
+                <rect x="1" y="1" width="66" height="46" rx="12" fill="currentColor"/>
+                <path d="M45 24 27 14v20l18-10z" fill="#fff"/>
+              </svg>
+            </button>
+            {{ end }}
+          </div>
         </div>
+        {{ with $caption }}
+        <div class="mt-2 text-white/95 text-sm md:text-base font-medium">{{ . }}</div>
+        {{ end }}
       </div>
     </div>
   </div>

@@ -82,6 +82,7 @@ uglyURLs = false
   size = "w-8 h-8"
   gap  = "gap-3"
 
+  ## Intentionally no caption here; captions are set inline on the lazy-vimeo shortcode per-page
 
 [params.forms]
   action = "https://submit-form.com/DOH188lWF"

@@ -6,7 +6,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="80vh" >}}
+{{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="80vh" caption="Press Play: Reconnect with Reality (36 seconds)" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Cozy bed & breakfast near Lexington & the Blue Ridge Parkway <br>
 {.text-white}
@@ -39,9 +39,10 @@ Hotel comfort with bed & breakfast warmth. Our B&B lodging offers cozy guest roo
 
 ## New Carriage House Rooms
 
-Blue Ridge Abbey is pleased to announce the opening of an additional building with 5 additional bedrooms. These new rooms will be available for booking shortly.
+Blue Ridge Abbey is pleased to announce the opening of an additional building with 5 additional bedrooms.
 
-{{< button url="/carriage-rooms" text="Coming Soon" >}}
+{{< badge text="Book now • Stays from Feb 9" >}}
+{{< button url="/carriage-rooms" text="Book Carriage Rooms" >}}
 
 
 {{< /col >}}
