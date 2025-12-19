@@ -16,7 +16,7 @@ Call or text me for questions or to get started at [(385) 323-8130](tel:+1385323
 
 I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. I graduated from Southern Virginia University in Business and completed my Master’s degree in Software Development.
 
-![Benjamin Awerkamp headshot](/media/utah-seo-specialist-web-design-expert-profile-picture.avif)
+![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
 {.w-48}
 
 **Benjamin Awerkamp** <br>
