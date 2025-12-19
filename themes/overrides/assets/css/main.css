@@ -111,6 +111,23 @@
 /* .prose a { text-decoration: none; } */
 .prose img { max-width: 100%; height: auto; }
 
+/* Ensure images inside column shortcodes never overflow their container */
+.cols-auto img,
+.cols-auto picture,
+.cols-auto picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Scoped safety: constrain media within main content only (avoid navbar/logo) */
+main#content img,
+main#content picture,
+main#content video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ========== 5) Fluid auto-fit grid (no breakpoints) ========== */
 /* Auto-fit columns with independent column/row gaps */
 .cols-auto{
