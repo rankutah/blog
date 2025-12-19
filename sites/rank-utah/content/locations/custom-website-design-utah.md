@@ -147,14 +147,10 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 
 ## Why Utah Small Businesses Choose Clear Presence
 
-- Local Utah website design & local SEO company focused on small business results
-- Fast turnaround and personalized support
-- Secure and fast setup
-- Clean, modern codebase built for speed
-
-## Affordable Results at a Fraction of Big Agency or Company Costs
-
-You’ll get the essentials that move the needle—fast, mobile‑friendly pages and clear calls to action—without paying large‑agency retainers. My simple monthly plans deliver measurable results at a fraction of the cost, with the personal attention you expect from a dedicated local company.
+- Local Utah website design company focused on small business results
+- Affordable and simple flat rate prices without contracts
+- Unlimited edits and fast long-term support
+- Clean, modern mobile-friendly websites built for speed
 
 ## Customer Website Design Experiences
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -187,17 +183,17 @@ I enjoy running, audiobooks, and all things tech. After growing up in St. George
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## How it Works
-1. Chat – your goals and who you serve
-2. Plan – page list and outline
-3. Design – look and words
-4. Build – fast, mobile site
-5. Launch – check links, contact forms, speed
-6. Grow – quick changes and new pages
+1. Sign up for services
+2. Fill out the onboarding form
+3. Get your website built and set to you for review
+4. Request changes and approve when ready
+5. Go live
+6. Continue to request changes and updates as needed
 
 ## FAQ
 {{< faqs >}}
 ### How long does a custom site take?
-Sites can usually be done in 2–3 weeks with good coordination.
+Sites can usually be done in under 3 weeks with good coordination.
 
 ### Do you handle hosting & the website url name?
 Yes. Managed hosting and your website name is included.
