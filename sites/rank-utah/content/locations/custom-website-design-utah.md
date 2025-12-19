@@ -44,7 +44,7 @@ params:
 # Custom Website Design for Small Businesses in Utah<br><span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl" aria-live="polite"></span> {.text-white}
 Affordable websites built by a professional web developer in Utah County
 
-{{<button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
+{{<button id="ppc-call" url="tel:+13853238130" text="Call or Text: (385) 323-8130">}}
 {{<button id="learn-more" url="#main-content" text="Learn More">}}
 
 <div class="mt-6"></div>
@@ -218,6 +218,13 @@ Yes. Your monthly subscription includes unlimited content updates—send text, i
 
 {{< button url="/pricing" text="Pricing" >}}
 {{< button url="/contact" text="Contact" >}}
+
+## Have Another Question?
+
+Text your question (even during non-business hours) and I will get back to you ASAP.
+
+{{< button url="sms:+13853238130" text="Text (385) 323-8130" >}}
+
 
 {{< /col >}}
 {{< /cols >}}

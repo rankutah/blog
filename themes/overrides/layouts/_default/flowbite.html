@@ -914,5 +914,11 @@
 
   {{/* Footer (supports content/footer.md via partial) */}}
   {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") }}
+  <!-- cp-debug: messageModal.enable = {{ printf "%v" (and (isset .Site.Params "messageModal") (.Site.Params.messageModal.enable)) }} -->
+  {{/* Message modal + FAB: gated by site param; hard-enable for Clear Presence as fallback */}}
+  {{ if or (and (isset .Site.Params "messageModal") (.Site.Params.messageModal.enable)) (eq .Site.BaseURL "https://clearpresence.io/") }}
+    {{ partial "text-fab.html" . }}
+    {{ partial "message-modal.html" . }}
+  {{ end }}
 </body>
 </html>

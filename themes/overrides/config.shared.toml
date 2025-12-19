@@ -62,6 +62,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
   defaultTheme = "auto"
   disableThemeToggle = false
 
+[params.messageModal]
+  enable = false
+
 [taxonomies]
   tag = "tags"
 

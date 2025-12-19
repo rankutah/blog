@@ -1,0 +1,124 @@
+{{/* Floating "Text us" button in bottom-right. Uses SMS where available. */}}
+{{ $num := or .Site.Params.contact.smsNumber .Site.Params.header.phoneNumber | default "" }}
+{{ if and (ne $num "") (gt (len (strings.TrimSpace $num)) 0) }}
+  {{/* Strip all non-digits and prefix +1 (US). */}}
+  {{ $digits := replaceRE `[^0-9]` "" $num }}
+  {{ $sms := printf "sms:+1%s" $digits }}
+
+  {{/* Brand color mapping for solid buttons (same pattern as navbar). */}}
+  {{ $siteColor := lower (or .Site.Params.primaryColor "blue") }}
+  {{ $solid := dict
+    "red" "text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
+    "orange" "text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 focus:outline-none dark:focus:ring-orange-800"
+    "amber" "text-white bg-amber-700 hover:bg-amber-800 focus:ring-4 focus:ring-amber-300 dark:bg-amber-600 dark:hover:bg-amber-700 focus:outline-none dark:focus:ring-amber-800"
+    "yellow" "text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 focus:outline-none dark:focus:ring-yellow-800"
+    "lime" "text-white bg-lime-700 hover:bg-lime-800 focus:ring-4 focus:ring-lime-300 dark:bg-lime-600 dark:hover:bg-lime-700 focus:outline-none dark:focus:ring-lime-800"
+    "green" "text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+    "emerald" "text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 focus:outline-none dark:focus:ring-emerald-800"
+    "teal" "text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:bg-teal-600 dark:hover:bg-teal-700 focus:outline-none dark:focus:ring-teal-800"
+    "cyan" "text-white bg-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800"
+    "sky" "text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800"
+    "blue" "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+    "indigo" "text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800"
+    "violet" "text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 dark:bg-violet-600 dark:hover:bg-violet-700 focus:outline-none dark:focus:ring-violet-800"
+    "purple" "text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+    "fuchsia" "text-white bg-fuchsia-700 hover:bg-fuchsia-800 focus:ring-4 focus:ring-fuchsia-300 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-700 focus:outline-none dark:focus:ring-fuchsia-800"
+    "pink" "text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800"
+    "rose" "text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 dark:bg-rose-600 dark:hover:bg-rose-700 focus:outline-none dark:focus:ring-rose-800"
+    "slate" "text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800"
+    "gray" "text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+    "zinc" "text-white bg-zinc-700 hover:bg-zinc-800 focus:ring-4 focus:ring-zinc-300 dark:bg-zinc-600 dark:hover:bg-zinc-700 focus:outline-none dark:focus:ring-zinc-800"
+    "neutral" "text-white bg-neutral-700 hover:bg-neutral-800 focus:ring-4 focus:ring-neutral-300 dark:bg-neutral-600 dark:hover:bg-neutral-700 focus:outline-none dark:focus:ring-neutral-800"
+    "stone" "text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
+  }}
+  {{ $cta := index $solid $siteColor | default (index $solid "blue") }}
+
+        <a href="#message"
+          class="cp-fab inline-flex items-center justify-center gap-0 md:gap-2 rounded-full shadow-lg no-underline {{ $cta }} w-12 h-12 md:w-auto md:h-auto md:px-4 md:py-2"
+          aria-label="{{ default "Message us" .Site.Params.ariaLabelText }}"
+          style="position: fixed; z-index: 10001; bottom: calc(1rem + env(safe-area-inset-bottom)); right: calc(1rem + env(safe-area-inset-right)); transform: translateZ(0); backface-visibility: hidden; will-change: transform;"
+         onclick="try{ if(window.cpOpenMessageModal){ window.cpOpenMessageModal(); } gtag('event','contact_text_click',{method:'modal'}); }catch(e){} return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="w-5 h-5 md:w-4 md:h-4">
+      <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z"/>
+    </svg>
+           <span class="font-medium hidden md:inline">Message</span>
+  </a>
+  <script>
+    (function(){
+      var fab = document.querySelector('.cp-fab');
+      if (!fab) return;
+      var DBG = false; try { DBG = (window.localStorage && localStorage.getItem('cp-debug-fab') === '1'); } catch(_){}
+      function log(){ if (DBG) { try { console.debug('[cp-fab]', Date.now(), [].slice.call(arguments)); } catch(_){} } }
+      try {
+        // Ensure the FAB is a direct child of <body> to avoid fixed-position bugs
+        if (fab.parentNode && fab.parentNode.tagName && fab.parentNode.tagName.toLowerCase() !== 'body') {
+          document.body.appendChild(fab);
+          log('reparented-to-body');
+        }
+      } catch(e){}
+      // Guard against any accidental visibility toggles or attribute changes
+      function normalize(){
+        try {
+          fab.removeAttribute('hidden');
+          fab.removeAttribute('aria-hidden');
+          // Remove any utility class that might hide it
+          if (fab.classList.contains('hidden')) fab.classList.remove('hidden');
+          // Normalize style values
+          fab.style.visibility = 'visible';
+          fab.style.opacity = '1';
+          fab.style.display = 'inline-flex';
+          fab.style.pointerEvents = 'auto';
+          // Ensure positioning sticks
+          fab.style.position = 'fixed';
+          var cs = window.getComputedStyle ? getComputedStyle(fab) : { display:'', visibility:'', opacity:'', position:'' };
+          log('normalize', { display: cs.display, visibility: cs.visibility, opacity: cs.opacity, position: cs.position });
+        } catch(_){ /* no-op */ }
+      }
+      normalize();
+      window.addEventListener('scroll', normalize, { passive: true });
+      document.addEventListener('visibilitychange', normalize);
+      window.addEventListener('resize', normalize, { passive: true });
+      // Keep FAB anchored to the visual viewport on mobile (Chrome emulation / mobile browsers)
+      try {
+        if (window.visualViewport) {
+          var vv = window.visualViewport;
+          var spacing = 16; // 1rem baseline; safe-area handled by CSS env() on initial render
+          function pinToViewport(){
+            try {
+              var r = fab.getBoundingClientRect();
+              var top = (vv.height - spacing - r.height) + (vv.offsetTop||0);
+              var left = (vv.width  - spacing - r.width)  + (vv.offsetLeft||0);
+              // Explicitly place via top/left to avoid layout-vs-visual viewport mismatches
+              fab.style.top = Math.max(0, Math.round(top)) + 'px';
+              fab.style.left = Math.max(0, Math.round(left)) + 'px';
+              fab.style.bottom = 'auto';
+              fab.style.right  = 'auto';
+            } catch(_){}
+          }
+          pinToViewport();
+          vv.addEventListener('scroll', pinToViewport, { passive:true });
+          vv.addEventListener('resize', pinToViewport, { passive:true });
+        }
+      } catch(_){}
+      // Observe attribute mutations to correct any unexpected hides
+      try {
+        var mo1 = new MutationObserver(function(muts){
+          log('fab-attributes-mutated', muts && muts.length);
+          normalize();
+        });
+        mo1.observe(fab, { attributes:true, attributeFilter:['class','style','hidden','aria-hidden'] });
+        // Also observe the body subtree to detect removal and reattach
+        var mo2 = new MutationObserver(function(muts){
+          try {
+            if (!fab.isConnected || !document.querySelector('.cp-fab')){
+              log('fab-removed-or-missing', muts);
+              document.body.appendChild(fab);
+              normalize();
+            }
+          } catch(_){}
+        });
+        mo2.observe(document.body, { childList:true, subtree:true });
+      } catch(_){}
+    })();
+  </script>
+{{ end }}

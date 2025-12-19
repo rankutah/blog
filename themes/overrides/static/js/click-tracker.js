@@ -116,6 +116,10 @@
       if (href.toLowerCase().startsWith('tel:')){
         return { type:'tel', linkUrl:'', fileExt:'', outboundDomain:'', provider:'' };
       }
+      // SMS links (text messages)
+      if (href.toLowerCase().startsWith('sms:')){
+        return { type:'sms', linkUrl:'', fileExt:'', outboundDomain:'', provider:'' };
+      }
       if (href.toLowerCase().startsWith('mailto:')){
         return { type:'mailto', linkUrl:'', fileExt:'', outboundDomain:'', provider:'' };
       }
@@ -191,6 +195,7 @@
       var base = '';
       // PII-safe mapping for tel/mailto and labels that look like PII
       if (info.type === 'tel' || looksLikePhone(label)) base = 'call';
+      else if (info.type === 'sms') base = 'text';
       else if (info.type === 'mailto' || looksLikeEmail(label)) base = 'email';
       else if (info.type === 'download' && info.fileExt) base = 'download_' + info.fileExt;
       else base = slugify(label) || 'link';

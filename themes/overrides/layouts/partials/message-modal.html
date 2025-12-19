@@ -1,0 +1,240 @@
+{{/* Desktop-only modal for quick message. Posts to Formspark. */}}
+{{ $page := . }}
+{{ $action := or .Site.Params.formspark.action .Site.Params.forms.action }}
+{{ $brand := lower (or .Site.Params.primaryColor "blue") }}
+{{ $focus := dict
+  "red"      "focus:ring-red-500 focus:border-red-500 dark:focus:ring-red-500 dark:focus:border-red-500"
+  "orange"   "focus:ring-orange-500 focus:border-orange-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+  "amber"    "focus:ring-amber-500 focus:border-amber-500 dark:focus:ring-amber-500 dark:focus:border-amber-500"
+  "yellow"   "focus:ring-yellow-500 focus:border-yellow-500 dark:focus:ring-yellow-500 dark:focus:border-yellow-500"
+  "lime"     "focus:ring-lime-500 focus:border-lime-500 dark:focus:ring-lime-500 dark:focus:border-lime-500"
+  "green"    "focus:ring-green-500 focus:border-green-500 dark:focus:ring-green-500 dark:focus:border-green-500"
+  "emerald"  "focus:ring-emerald-500 focus:border-emerald-500 dark:focus:ring-emerald-500 dark:focus:border-emerald-500"
+  "teal"     "focus:ring-teal-500 focus:border-teal-500 dark:focus:ring-teal-500 dark:focus:border-teal-500"
+  "cyan"     "focus:ring-cyan-500 focus:border-cyan-500 dark:focus:ring-cyan-500 dark:focus:border-cyan-500"
+  "sky"      "focus:ring-sky-500 focus:border-sky-500 dark:focus:ring-sky-500 dark:focus:border-sky-500"
+  "blue"     "focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  "indigo"   "focus:ring-indigo-500 focus:border-indigo-500 dark:focus:ring-indigo-500 dark:focus:border-indigo-500"
+  "violet"   "focus:ring-violet-500 focus:border-violet-500 dark:focus:ring-violet-500 dark:focus:border-violet-500"
+  "purple"   "focus:ring-purple-500 focus:border-purple-500 dark:focus:ring-purple-500 dark:focus:border-purple-500"
+  "fuchsia"  "focus:ring-fuchsia-500 focus:border-fuchsia-500 dark:focus:ring-fuchsia-500 dark:focus:border-fuchsia-500"
+  "pink"     "focus:ring-pink-500 focus:border-pink-500 dark:focus:ring-pink-500 dark:focus:border-pink-500"
+  "rose"     "focus:ring-rose-500 focus:border-rose-500 dark:focus:ring-rose-500 dark:focus:border-rose-500"
+  "slate"    "focus:ring-slate-500 focus:border-slate-500 dark:focus:ring-slate-500 dark:focus:border-slate-500"
+  "gray"     "focus:ring-gray-500 focus:border-gray-500 dark:focus:ring-gray-500 dark:focus:border-gray-500"
+  "zinc"     "focus:ring-zinc-500 focus:border-zinc-500 dark:focus:ring-zinc-500 dark:focus:border-zinc-500"
+  "neutral"  "focus:ring-neutral-500 focus:border-neutral-500 dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+  "stone"    "focus:ring-stone-500 focus:border-stone-500 dark:focus:ring-stone-500 dark:focus:border-stone-500"
+}}
+{{ $pal := partial "theme/palette.html" $page }}
+{{ $cardBg     := index $pal "cardBg"     | default "bg-white dark:bg-neutral-900" }}
+{{ $cardBorder := index $pal "cardBorder" | default "border border-gray-200 dark:border-white/10" }}
+{{ $focusCls := index $focus $brand | default (index $focus "blue") }}
+{{ $inputBase := printf "shadow-sm %s %s text-sm rounded-lg block w-full p-2.5 %s" $cardBg $cardBorder $focusCls }}
+
+{{ $siteColor := lower (or .Site.Params.primaryColor "blue") }}
+{{ $solid := dict
+  "red" "text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
+  "orange" "text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 focus:outline-none dark:focus:ring-orange-800"
+  "amber" "text-white bg-amber-700 hover:bg-amber-800 focus:ring-4 focus:ring-amber-300 dark:bg-amber-600 dark:hover:bg-amber-700 focus:outline-none dark:focus:ring-amber-800"
+  "yellow" "text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 focus:outline-none dark:focus:ring-yellow-800"
+  "lime" "text-white bg-lime-700 hover:bg-lime-800 focus:ring-4 focus:ring-lime-300 dark:bg-lime-600 dark:hover:bg-lime-700 focus:outline-none dark:focus:ring-lime-800"
+  "green" "text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+  "emerald" "text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 focus:outline-none dark:focus:ring-emerald-800"
+  "teal" "text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:bg-teal-600 dark:hover:bg-teal-700 focus:outline-none dark:focus:ring-teal-800"
+  "cyan" "text-white bg-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 focus:outline-none dark:focus:ring-cyan-800"
+  "sky" "text-white bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800"
+  "blue" "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+  "indigo" "text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800"
+  "violet" "text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 dark:bg-violet-600 dark:hover:bg-violet-700 focus:outline-none dark:focus:ring-violet-800"
+  "purple" "text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+  "fuchsia" "text-white bg-fuchsia-700 hover:bg-fuchsia-800 focus:ring-4 focus:ring-fuchsia-300 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-700 focus:outline-none dark:focus:ring-fuchsia-800"
+  "pink" "text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800"
+  "rose" "text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 dark:bg-rose-600 dark:hover:bg-rose-700 focus:outline-none dark:focus:ring-rose-800"
+  "slate" "text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800"
+  "gray" "text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+  "zinc" "text-white bg-zinc-700 hover:bg-zinc-800 focus:ring-4 focus:ring-zinc-300 dark:bg-zinc-600 dark:hover:bg-zinc-700 focus:outline-none dark:focus:ring-zinc-800"
+  "neutral" "text-white bg-neutral-700 hover:bg-neutral-800 focus:ring-4 focus:ring-neutral-300 dark:bg-neutral-600 dark:hover:bg-neutral-700 focus:outline-none dark:focus:ring-neutral-800"
+  "stone" "text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
+}}
+{{ $btn := index $solid $siteColor | default (index $solid "blue") }}
+
+<div id="cp-message-modal" class="hidden fixed inset-0 z-50 grid place-items-center" role="dialog" aria-modal="true" aria-labelledby="cp-message-title" style="height: 100svh; padding-left: max(env(safe-area-inset-left), 1rem); padding-right: max(env(safe-area-inset-right), 1rem); overflow-x: hidden;">
+  <div class="absolute inset-0 bg-black/40 dark:bg-black/60" data-close="backdrop"></div>
+  <div id="cp-modal-panel" class="relative my-4" style="box-sizing: border-box; max-height: calc(100svh - 2rem); width: min(calc(100svw - 2rem), 40rem); margin: 0 auto;">
+    <div class="rounded-xl shadow-xl {{ $cardBg }} {{ $cardBorder }} max-h-full overflow-y-auto" style="overscroll-behavior: contain;">
+      <div class="flex items-center justify-between px-5 py-3 border-b border-black/10 dark:border-white/10">
+        <h2 id="cp-message-title" class="text-lg font-semibold">Message</h2>
+        <button type="button" class="px-2 py-1 rounded hover:bg-black/5 dark:hover:bg-white/10" aria-label="Close" data-close="button">✕</button>
+      </div>
+      <div class="p-5">
+        {{ if not $action }}
+          <div class="text-red-700 bg-red-50 dark:bg-red-900/30 dark:text-red-300 p-3 rounded">Missing form action. Set params.formspark.action.</div>
+        {{ else }}
+        <form id="cp-message-form" action="{{ $action | safeURL }}" method="POST" class="space-y-4">
+          <input type="hidden" name="page_url" value="{{ .Permalink }}">
+          {{- $hpName := or .Site.Params.forms.honeypot "" -}}
+          {{- if gt (len $hpName) 0 -}}
+          <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+            <label for="cp-msg-hp">Leave this field empty</label>
+            <input id="cp-msg-hp" type="text" name="{{ $hpName }}" tabindex="-1" autocomplete="off" value="">
+          </div>
+          {{- end -}}
+
+          <div>
+            <label for="cp-msg-name" class="sr-only">Name</label>
+            <input id="cp-msg-name" name="name" type="text" placeholder="Name" required class="{{ $inputBase }}">
+          </div>
+          <div>
+            <label for="cp-msg-contact" class="sr-only">Email or Phone</label>
+            <input id="cp-msg-contact" name="contact" type="text" placeholder="Email or Phone" required class="{{ $inputBase }}">
+          </div>
+          <div>
+            <label for="cp-msg-message" class="sr-only">Message</label>
+            <textarea id="cp-msg-message" name="message" rows="4" placeholder="Message" required class="{{ $inputBase }} min-h-[6rem] resize-y"></textarea>
+          </div>
+          <div class="text-xs text-gray-600 dark:text-gray-300">
+            By submitting, you agree we may contact you about your request. See <a href="{{ or .Site.Params.privacyURL "/privacy" }}" class="underline" target="_blank">Privacy Policy</a>.
+          </div>
+          <div class="flex items-center justify-end gap-3 pt-2">
+            <button type="submit" class="px-4 py-2 rounded {{ $btn }}">Send</button>
+          </div>
+          <p id="cp-msg-status" class="mt-3 text-sm hidden"></p>
+          {{- /* Cloudflare Turnstile (if enabled) */ -}}
+          {{- $tsEnabled := or (and (isset .Site.Params "turnstile") (.Site.Params.turnstile.enable)) false -}}
+          {{- $tsSiteKey := cond (and (isset .Site.Params "turnstile") (isset .Site.Params.turnstile "sitekey")) .Site.Params.turnstile.sitekey "" -}}
+          {{- if and $tsEnabled $tsSiteKey -}}
+          <div class="cf-turnstile" data-sitekey="{{ $tsSiteKey }}" data-theme="auto" data-auto="false" data-lazy="true"></div>
+          {{- end -}}
+        </form>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  function $(sel, root){ return (root||document).querySelector(sel); }
+  function show(){ var m = $('#cp-message-modal'); if(!m) return; m.classList.remove('hidden'); m.classList.remove('flex'); try{ if(window.gtag){ window.gtag('event','contact_text_click',{method:'desktop_modal'}); } }catch(e){} }
+  function hide(){ var m = $('#cp-message-modal'); if(!m) return; m.classList.add('hidden'); }
+  window.cpOpenMessageModal = show;
+  window.cpCloseMessageModal = hide;
+
+    // Align overlay to visual viewport on mobile/emulation to avoid horizontal drift
+    (function(){
+      var vv = window.visualViewport || null;
+      var modal = document.getElementById('cp-message-modal');
+      var panel = document.getElementById('cp-modal-panel');
+      var DBG = false; try { DBG = (window.localStorage && localStorage.getItem('cp-debug-modal') === '1'); } catch(_){}
+      function log(){ if (DBG && window.console && console.debug) { try { console.debug('[cp-modal]', Date.now(), ...arguments); } catch(_){} } }
+      var onVVScroll = null, onVVResize = null;
+      function updateVV(){
+        try {
+          if (!vv || !modal) return;
+          var y = Math.max(0, vv.offsetTop||0);
+          // Only translate vertically; horizontal centering handled by panel translateX(-50%)
+          modal.style.transform = 'translateY(' + y + 'px)';
+          modal.style.willChange = 'transform';
+          if (panel) {
+            var pr = panel.getBoundingClientRect();
+            log('updateVV', { vvTop: vv.offsetTop||0, vvLeft: vv.offsetLeft||0, panelRect: { left: pr.left, right: pr.right, width: pr.width } });
+          }
+        } catch(_){ }
+      }
+      onVVScroll = function(){ updateVV(); };
+      onVVResize = function(){ updateVV(); };
+      // Hook into show/hide to attach/detach listeners
+      var _show = show; var _hide = hide;
+      show = function(){
+        _show();
+        // Prevent background horizontal scroll affecting perceived centering
+        try { document.documentElement.style.overflowX = 'hidden'; document.body.style.overflowX = 'hidden'; } catch(_){}
+        updateVV();
+        if(vv){ vv.addEventListener('scroll', onVVScroll, { passive:true }); vv.addEventListener('resize', onVVResize, { passive:true }); }
+        if (panel) {
+          var pr = panel.getBoundingClientRect();
+          log('show', { vvTop: vv && (vv.offsetTop||0), vvLeft: vv && (vv.offsetLeft||0), panelRect: { left: pr.left, right: pr.right, width: pr.width } });
+        }
+      };
+      hide = function(){
+        _hide();
+        if(vv){ try{ vv.removeEventListener('scroll', onVVScroll); vv.removeEventListener('resize', onVVResize); }catch(_){} }
+        if(modal){ modal.style.transform = ''; modal.style.willChange = ''; }
+        try { document.documentElement.style.overflowX = ''; document.body.style.overflowX = ''; } catch(_){}
+      };
+      window.cpOpenMessageModal = show;
+      window.cpCloseMessageModal = hide;
+    })();
+
+  document.addEventListener('click', function(ev){ var t = ev.target; if(t && (t.getAttribute('data-close')==='button' || t.getAttribute('data-close')==='backdrop')){ hide(); } }, { capture:true });
+  document.addEventListener('keydown', function(ev){ if(ev.key==='Escape'){ hide(); } }, { passive:true });
+
+  var form = document.getElementById('cp-message-form');
+  if(form){
+    // Lazy-render Turnstile if present
+    var tsEl = form.querySelector('.cf-turnstile');
+    var tsReady = false;
+    function ensureTurnstile(){
+      if(!tsEl || tsReady) return;
+      if(window.turnstile && typeof window.turnstile.render === 'function'){
+        try { window.turnstile.render(tsEl); tsReady = true; } catch(e){}
+      }
+    }
+    if('IntersectionObserver' in window && tsEl){
+      try{ var io = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ ensureTurnstile(); io.disconnect(); }}); }, {root:null, rootMargin:'200px'}); io.observe(form); }catch(e){ setTimeout(ensureTurnstile, 500); }
+    } else { setTimeout(ensureTurnstile, 500); }
+
+    async function getTurnstileToken(){
+      if(!(window.turnstile && typeof window.turnstile.getResponse === 'function')) return null;
+      var token = null;
+      try { token = window.turnstile.getResponse(tsEl); } catch(e){}
+      if(token && token.length > 0) return token;
+      if(typeof window.turnstile.reset === 'function'){
+        try { window.turnstile.reset(tsEl); } catch(e){}
+      }
+      var started = Date.now();
+      while(Date.now() - started < 4000){
+        await new Promise(function(r){ setTimeout(r, 250); });
+        try { token = window.turnstile.getResponse(tsEl); } catch(e){}
+        if(token && token.length > 0) return token;
+      }
+      return null;
+    }
+
+    form.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      var status = document.getElementById('cp-msg-status');
+      if(status){ status.classList.remove('hidden'); status.textContent = 'Sending…'; status.className = 'mt-3 text-sm'; }
+      try { if(window.gtag){ window.gtag('event','form_submit',{event_category:'lead',event_label: location.pathname + '#desktop_modal'}); } } catch(e){}
+
+      var data = new FormData(form);
+      data.append('source', 'desktop_modal');
+      // Validate name + contact
+      var nameVal = (document.getElementById('cp-msg-name')||{}).value||'';
+      var contactVal = (document.getElementById('cp-msg-contact')||{}).value||'';
+      var emailOk = /.+@.+\..+/.test(contactVal.trim());
+      var phoneOk = /^[+]?\d[\d\s().-]{6,}$/.test(contactVal.trim());
+      if(!(nameVal.trim().length > 0 && (emailOk || phoneOk))){
+        if(status){ status.textContent = 'Please enter your name and a valid email or phone.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; }
+        return;
+      }
+      // Attach Turnstile token if present
+      (async function(){
+        var url = form.getAttribute('action');
+        var controller = new AbortController();
+        var to = setTimeout(function(){ controller.abort(); }, 10000);
+        var token = await getTurnstileToken();
+        if(tsEl && !token){ if(status){ status.textContent = 'Please complete the security check and try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } return; }
+        if(tsEl && token){ data.append('cf-turnstile-response', token); }
+      var url = form.getAttribute('action');
+      var controller = new AbortController();
+      var to = setTimeout(function(){ controller.abort(); }, 10000);
+      fetch(url, { method:'POST', body:data, signal:controller.signal, mode:'no-cors' })
+        .then(function(){ clearTimeout(to); if(status){ status.textContent = 'Thanks! We\'ll be in touch.'; status.className = 'mt-3 text-sm text-green-700 dark:text-green-400'; } })
+        .catch(function(){ clearTimeout(to); if(status){ status.textContent = 'Sorry, something went wrong. Please try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } });
+      })();
+    }, { passive:false });
+  }
+})();
+</script>
