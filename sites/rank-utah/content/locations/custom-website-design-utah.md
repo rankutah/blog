@@ -149,7 +149,7 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 
 - Local Utah company focused on your success
 - Affordable flat rate prices without lock-in contracts
-- Unlimited support via text, call, email, or meetings
+- Unlimited support via call, text, email, or meetings
 - Unlimited updates and edits with long-term support
 - A modern mobile-friendly website built for performance
 
@@ -195,10 +195,10 @@ Bachelor's in Business Management
 ## How it Works
 1. Sign up for services
 2. Fill out the onboarding form
-3. Get your website built and set to you for review
+3. Have your website sent to you for review
 4. Request changes and approve when ready
 5. Go live
-6. Continue to request changes and updates as needed
+6. Continue to request updates as needed
 
 ## FAQ
 {{< faqs >}}
