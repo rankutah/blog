@@ -46,8 +46,8 @@ Affordable plans from a small agency. No contracts. No surprises.
 - Domain & yearly renewals
 - Mobile-friendly design
 - Spam protection
-- Monthly performance & lead reports
 - Ongoing updates and support
+- Monthly performance & lead reports
 
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
@@ -68,8 +68,9 @@ Affordable plans from a small agency. No contracts. No surprises.
 - Apple Maps & Bing Places management & optimization
 - Business details synced to 100+ networks to boost local search rankings
 - Keyword research, strategy, & alignment with how your customers search
-- Monthly performance & lead reports
 - Ongoing updates and support
+- Monthly performance & lead reports
+
 
 This package does not include a business website.
 
@@ -96,8 +97,8 @@ This package does not include a business website.
 - Apple Maps & Bing Places management & optimization
 - Business details synced to 100+ networks to boost local search rankings
 - Keyword research, strategy, & alignment with how your customers search
-- Monthly performance & lead reports
 - Ongoing updates and support
+- Monthly performance & lead reports
 
 
 
