@@ -43,11 +43,12 @@ Affordable plans from a small agency. No contracts. No surprises.
 
 - Custom branded design
 - Managed hosting & security
+- Domain & yearly renewals
 - Mobile-friendly design
 - Spam protection
-- Yearly domain renewals
-- Monthly visitor reports
+- Monthly performance & lead reports
 - Ongoing updates and support
+
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
 {{< /col >}}
@@ -63,11 +64,12 @@ Affordable plans from a small agency. No contracts. No surprises.
 
 *Get found on Google, Google Maps, Apple Maps, and "near me" searches.*
 
-- Google Business Profile management
-- Apple Maps & Bing Places management, plus listings on 100+ sites, maps, and apps
-- Local keyword research & strategy
-- Business listings keyword alignment
-- Monthly visitor reports
+- Google Business Profile management & optimization
+- Apple Maps & Bing Places management & optimization
+- Business details synced to 100+ networks to boost local search rankings
+- Keyword research, strategy, & alignment with how your customers search
+- Monthly performance & lead reports
+- Ongoing updates and support
 
 This package does not include a business website.
 
@@ -85,17 +87,19 @@ This package does not include a business website.
 
 *Bundle your website with local SEO to maximize visibility and save $49/mo.*
 
-- Custom website design from a small agency
-- Fast, secure hosting
+- Custom branded design
+- Managed hosting & security
 - Domain & yearly renewals
 - Mobile-Friendly Design
-- Monthly visitor reports
+- Spam protection
+- Google Business Profile management & optimization
+- Apple Maps & Bing Places management & optimization
+- Business details synced to 100+ networks to boost local search rankings
+- Keyword research, strategy, & alignment with how your customers search
+- Monthly performance & lead reports
 - Ongoing updates and support
-- Google Business Profile management
-- Apple Maps & Bing Places management, plus listings on 100+ sites, maps, and apps
-- Local keyword research & strategy
-- Content keyword alignment across your website, Google Business Profile, and listings
-- Monthly visitor reports
+
+
 
 {{< button url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
 
@@ -136,7 +140,7 @@ Fair use and scope:
 - Heavy request bursts may be queued to maintain quality
 
 ### How long does a new website take?
-Websites can be built in 2–3 weeks with regular coordination.
+Websites can be built in under 3 weeks with regular coordination.
 
 {{< /faqs >}}
 
