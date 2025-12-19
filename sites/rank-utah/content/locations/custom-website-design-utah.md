@@ -25,8 +25,8 @@ schema:
     items:
       - question: "How long does a custom site take?"
         answer: "Typical turnaround is 2–3 weeks once content is ready. Faster sprints are possible for lean builds."
-      - question: "Do you handle hosting & SSL?"
-        answer: "Yes. Managed hosting, CDN, automatic SSL, performance tuning, ongoing security updates—all included."
+      - question: "Do you handle hosting?"
+        answer: "Yes. Managed hosting, CDN, security, performance tuning, ongoing security updates—all included."
       - question: "Is there a big upfront fee?"
         answer: "No large build fee. Predictable monthly subscription covers hosting, domain renewals, updates, and improvements."
       - question: "What about Local Search Engine Optimization (SEO)?"
@@ -107,7 +107,7 @@ Get a website that brings you more calls, quotes, and bookings. You’ll get a f
 - Contact forms with visitor tracking
 - Spam protection
 - Ongoing updates and support
- - Managed hosting & automatic SSL
+ - Managed hosting & security
  - Domain renewals included
 
 ### Built For Results
