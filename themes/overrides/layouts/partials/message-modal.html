@@ -227,12 +227,37 @@
         var token = await getTurnstileToken();
         if(tsEl && !token){ if(status){ status.textContent = 'Please complete the security check and try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } return; }
         if(tsEl && token){ data.append('cf-turnstile-response', token); }
+      // Improve deliverability: if contact is an email, also send an `email` field; if phone, add `phone`.
+      try {
+        if(emailOk){ data.append('email', contactVal.trim()); }
+        else if(phoneOk){ data.append('phone', contactVal.trim()); }
+      } catch(_){}
+      // Helpful metadata
+      try { data.append('_subject', 'New message via site modal'); } catch(_){}
       var url = form.getAttribute('action');
       var controller = new AbortController();
       var to = setTimeout(function(){ controller.abort(); }, 10000);
-      fetch(url, { method:'POST', body:data, signal:controller.signal, mode:'no-cors' })
-        .then(function(){ clearTimeout(to); if(status){ status.textContent = 'Thanks! We\'ll be in touch.'; status.className = 'mt-3 text-sm text-green-700 dark:text-green-400'; } })
-        .catch(function(){ clearTimeout(to); if(status){ status.textContent = 'Sorry, something went wrong. Please try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } });
+      // Prefer CORS fetch with JSON accept to detect errors; fall back to opaque if needed
+      fetch(url, { method:'POST', body:data, signal:controller.signal, headers:{ 'Accept':'application/json' } })
+        .then(function(resp){
+          clearTimeout(to);
+          if(resp && resp.ok){ if(status){ status.textContent = 'Thanks! We\'ll be in touch.'; status.className = 'mt-3 text-sm text-green-700 dark:text-green-400'; } return; }
+          // Try to parse JSON error if available
+          try {
+            return resp.json().then(function(j){
+              if(status){ status.textContent = (j && j.error) ? ('Sorry, ' + j.error) : 'Sorry, something went wrong. Please try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; }
+            }).catch(function(){ if(status){ status.textContent = 'Sorry, something went wrong. Please try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } });
+          } catch(_){ if(status){ status.textContent = 'Sorry, something went wrong. Please try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } }
+        })
+        .catch(function(err){
+          clearTimeout(to);
+          // Optional fallback attempt with opaque mode
+          try {
+            fetch(url, { method:'POST', body:data, mode:'no-cors' }).then(function(){
+              if(status){ status.textContent = 'Thanks! We\'ll be in touch.'; status.className = 'mt-3 text-sm text-green-700 dark:text-green-400'; }
+            }).catch(function(){ if(status){ status.textContent = 'Sorry, something went wrong. Please try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } });
+          } catch(_){ if(status){ status.textContent = 'Sorry, something went wrong. Please try again.'; status.className = 'mt-3 text-sm text-red-700 dark:text-red-400'; } }
+        });
       })();
     }, { passive:false });
   }

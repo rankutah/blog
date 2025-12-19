@@ -62,7 +62,7 @@ uglyURLs      = false
   ariaLabelCall       = "Call me"
 
 [params.messageModal]
-  enable = true
+  enable = false
 
 [params.schema.organization]
 enabled = true
