@@ -28,11 +28,11 @@ schema:
       - question: "Do you handle hosting?"
         answer: "Yes. Managed hosting, CDN, security, performance tuning, ongoing security updates—all included."
       - question: "Is there a big upfront fee?"
-        answer: "No large build fee. Predictable monthly subscription covers hosting, domain renewals, updates, and improvements."
+        answer: "No large build fee. Predictable monthly flat rate covers hosting, domain renewals, updates, and improvements."
       - question: "What about Local Search Engine Optimization (SEO)?"
         answer: "Basic search setup is included (titles, descriptions, fast load). Extra Local SEO—listings, Google Business Profile help, reviews—is available separately."
       - question: "Are content updates really unlimited?"
-        answer: "Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees."
+        answer: "Yes, you can request changes and updates to your website at any time in the way that works best for you (call, text, or email)"
 params:
   ppc: true
   hideFooterLinks: true
@@ -209,13 +209,13 @@ Sites can usually be done in under 3 weeks with good coordination.
 Yes. Managed hosting and your website name is included.
 
 ### Do I own the site?
-Yes, you own the site from day one. If at any time you cancel services I can work with you to transfer your site to a new developer. 
+Yes, you own the site from day one. If at any time you cancel services I can work with you to transfer your site to a new developer.
 
 ### Are there upfront fees?
 No, there is one flat rate monthly cost that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
 
 ### Are content updates really unlimited?
-Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
+Yes, you can request changes anytime in the way that works best for you (call, text, or email). There are no additional fees for changes or updates.
 
 {{< /faqs >}}
 

@@ -123,7 +123,7 @@ First professional projects launched in 2023, backed by a Master’s in Software
 Sites can usually be done in 2–3 weeks with good coordination.
 
 ### Are content updates really unlimited?
-Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
+Yes, you can request changes to your website at any time in the way that works best for you (call, text, or email).
 
 ### Do you handle hosting & the website url name?
 Yes. Managed hosting and your website name is included.

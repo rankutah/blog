@@ -269,7 +269,7 @@ I built my first professional website for a small business in 2023, leveraging m
 Sites can usually be done in 2–3 weeks with good coordination.
 
 ### Are content updates really unlimited?
-Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
+Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email)
 
 ### Do you handle hosting & the website url name?
 Yes. Managed hosting and your website name is included.
