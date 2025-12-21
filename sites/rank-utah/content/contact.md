@@ -45,7 +45,7 @@ Leave a text or voicemail and I'll get back to you the next business day: [(385)
 
 ## Business Hours
 
-Mon-Fri 9am - 5pm (MT)
+Mon–Sat 8am – 8pm (MT)
 
 
 {{< /col >}}

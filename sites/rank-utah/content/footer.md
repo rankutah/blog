@@ -52,7 +52,7 @@ Website Design & Local SEO for Small Businesses
 ### Contact
 {.center}
 
-[(385) 323-8130](tel:+13853238130)  <br> Mon–Fri 8am–5pm <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062) <br> Serving clients across the U.S.
+[(385) 323-8130](tel:+13853238130)  <br> Mon–Sat 8am–8pm (MT) <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062) <br> Serving clients across the U.S.
 {.center}
 
 
