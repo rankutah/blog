@@ -208,8 +208,11 @@ Sites can usually be done in under 3 weeks with good coordination.
 ### Do you handle hosting & the website url name?
 Yes. Managed hosting and your website name is included.
 
+### Do I own the site?
+Yes, you own the site from day one. If at any time you cancel services I can work with you to transfer your site to a new developer. 
+
 ### Are there upfront fees?
-No, there is one simply monthly subscription that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
+No, there is one flat rate monthly cost that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
 
 ### Are content updates really unlimited?
 Yes. Your monthly subscription includes unlimited content updates—send text, image, and section changes and they’re handled quickly without extra fees.
