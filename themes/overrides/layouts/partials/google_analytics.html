@@ -9,6 +9,8 @@
 {{- $clarityId := (index $clarityConf "id") | default "" -}}
 {{- $clarityEnabled := not (eq (index $clarityConf "enabled") false) -}}
 {{- $adsId := (index $adsConf "id") | default "" -}}
+{{- $adsLabel := (index $adsConf "conversionLabel") | default "" -}}
+{{- $adsCombined := (cond (and (ne $adsId "") (ne $adsLabel "")) (printf "%s/%s" $adsId $adsLabel) $adsId) -}}
 {{- $adsEnabled := not (eq (index $adsConf "enabled") false) -}}
 {{- $metaId := (index $metaConf "id") | default "" -}}
 {{- $metaEnabled := not (eq (index $metaConf "enabled") false) -}}
@@ -19,11 +21,16 @@
 {{- $clarityDelayMs := (index $analytics "clarityDelayMs") | default nil -}}
 {{- $clarityOnlyOnInteraction := (index $analytics "clarityOnlyOnInteraction") | default nil -}}
 {{- $debugMode := (index $analytics "debugMode") | default false -}}
+{{- /* Optional: enable Google Ads website call conversions (forwarding numbers) */ -}}
+{{- $adsPhoneReplace := (index $adsConf "phoneReplace") | default false -}}
+{{- $header := site.Params.header | default (dict) -}}
+{{- $sitePhone := (index $header "phoneNumber") | default "" -}}
 
 {{- $cfg := dict
   "gaId"        (cond $gaEnabled $gaId "")
   "clarityId"   (cond $clarityEnabled $clarityId "")
   "googleAdsId" (cond $adsEnabled $adsId "")
+  "googleAdsCombinedId" (cond $adsEnabled $adsCombined "")
   "metaPixelId" (cond $metaEnabled $metaId "")
   "delayMs"     $delayMs
   "loadEvents"  $events
@@ -31,6 +38,8 @@
   "clarityDelayMs" $clarityDelayMs
   "clarityOnlyOnInteraction" $clarityOnlyOnInteraction
   "debugMode" $debugMode
+  "enableAdsPhoneReplace" (and $adsEnabled $adsPhoneReplace)
+  "sitePhoneNumber" $sitePhone
 -}}
 
 
@@ -52,12 +61,15 @@ window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   var GA_ID = (cfg.gaId || '').trim();
   var CLARITY_ID = (cfg.clarityId || '').trim();
   var ADS_ID = (cfg.googleAdsId || '').trim();
+  var ADS_COMBINED = (cfg.googleAdsCombinedId || '').trim();
   var META_ID = (cfg.metaPixelId || '').trim();
   var DELAY_MS = (parseInt(cfg.delayMs, 10) || 4000);
   var LOAD_EVENTS = Array.isArray(cfg.loadEvents) ? cfg.loadEvents : [];
   var ONLY_ON_INTERACTION = !!cfg.onlyOnInteraction;
   var CLARITY_DELAY_MS = (cfg.clarityDelayMs == null ? null : (parseInt(cfg.clarityDelayMs, 10) || 0));
   var CLARITY_ONLY_ON_INTERACTION = (cfg.clarityOnlyOnInteraction == null ? null : !!cfg.clarityOnlyOnInteraction);
+  var ADS_PHONE_REPLACE = !!cfg.enableAdsPhoneReplace;
+  var SITE_PHONE = (cfg.sitePhoneNumber || '').trim();
 
   function ensureGtagLoaded(id){
     if (!id) return;
@@ -88,7 +100,15 @@ window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
     if (!ADS_ID) return;
     // Make sure gtag script exists even if GA4 is not configured
     ensureGtagLoaded(ADS_ID);
-    try { gtag('config', ADS_ID); } catch(e) {}
+    try {
+      // Base Ads config
+      gtag('config', ADS_ID);
+      // Optional: Website call conversions forwarding number
+      if (ADS_PHONE_REPLACE && SITE_PHONE) {
+        var idForReplace = ADS_COMBINED || ADS_ID;
+        gtag('config', idForReplace, { 'phone_conversion_number': SITE_PHONE });
+      }
+    } catch(e) {}
   }
 
   function initClarity(){

@@ -96,8 +96,10 @@ sameAs = []
     enabled = true
 
   [params.analytics.googleAds]
-    id = "AW-XXXXXXXXX"   # replace with your Google Ads ID
-    enabled = false        # set true when ready
+    id = "AW-17704568736"
+    conversionLabel = "uKziCM6p7tQbEKCPmfpB"
+    enabled = true
+    phoneReplace = true
 
   [params.analytics.meta]
     id = ""               # e.g., 123456789012345 (Meta Pixel)
