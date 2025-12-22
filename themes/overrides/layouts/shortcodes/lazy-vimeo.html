@@ -312,8 +312,8 @@ Usage:
       }catch(e){}
     });
     // Optionally ping analytics
-    if(window.gtag){
-      try{ window.gtag('event','video_play',{event_category:'engagement',event_label:videoId,transport_type:'beacon'}); }catch(e){}
+    if(window.cpTrack){
+      try{ window.cpTrack('video_play',{event_category:'engagement',event_label:videoId,transport_type:'beacon'}); }catch(e){}
     }
   }
   function replayOrLoad(){
