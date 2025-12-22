@@ -60,8 +60,8 @@ params:
   const displayCity = city.length > 28 ? city.slice(0,25) + '…' : city;
   span.textContent = 'Serving ' + displayCity;
   span.classList.remove('hidden');
-  if (window.cpTrack) {
-    window.cpTrack('ppc_city_injection',{event_category:'landing_variant',event_label: city,transport_type:'beacon'});
+  if (window.gtag) {
+    window.gtag('event','ppc_city_injection',{event_category:'landing_variant',event_label: city,transport_type:'beacon'});
   }
 })();
 </script>

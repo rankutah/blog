@@ -90,16 +90,16 @@ sameAs = []
 
   [params.analytics.google]
     id = "G-7240SPB67L"
-    enabled = true
+    enabled = false
 
   [params.analytics.clarity]
     id = "u9tbqd2kqk"
-    enabled = true
+    enabled = false
 
   [params.analytics.googleAds]
     id = "AW-17704568736"
     conversionLabel = "uKziCM6p7tQbEKCPmfpB"
-    enabled = true
+    enabled = false
     phoneReplace = true
 
   [params.analytics.meta]

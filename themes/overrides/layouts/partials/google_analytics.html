@@ -43,58 +43,6 @@
   "enableAdsPhoneReplace" (and $adsEnabled $adsPhoneReplace)
   "sitePhoneNumber" $sitePhone
 -}}
-
-
-<script>
-// cpTrack helper: a stable "track event" function for site code.
-// - In Zaraz mode, this is intentionally tiny.
-// - In non-Zaraz mode, it can fall back to gtag (template-injected).
-(function(){
-  if (window.cpTrack) return;
-
-  {{- if $useZaraz -}}
-  window.cpTrack = function(name, params){
-    try {
-      if (window.zaraz && typeof window.zaraz.track === 'function') {
-        window.zaraz.track(name, params || {});
-      }
-    } catch(e) {}
-  };
-  {{- else -}}
-  var q = [];
-  function hasZaraz(){
-    return (window.zaraz && typeof window.zaraz.track === 'function');
-  }
-  function flush(){
-    if (!hasZaraz()) return false;
-    while (q.length) {
-      var item = q.shift();
-      try { window.zaraz.track(item[0], item[1]); } catch(e) {}
-    }
-    return true;
-  }
-  window.cpTrack = function(name, params){
-    var payload = params || {};
-    if (hasZaraz()) {
-      try { window.zaraz.track(name, payload); } catch(e) {}
-      return;
-    }
-    if (typeof window.gtag === 'function') {
-      try { window.gtag('event', name, payload); } catch(e) {}
-      return;
-    }
-    q.push([name, payload]);
-  };
-  // Best-effort flush for early events while Zaraz finishes booting.
-  var start = Date.now();
-  var iv = setInterval(function(){
-    if (flush() || (Date.now() - start) > 15000) clearInterval(iv);
-  }, 250);
-  {{- end -}}
-})();
-</script>
-
-
 {{- if not $useZaraz -}}
 
 
