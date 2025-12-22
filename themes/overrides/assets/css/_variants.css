@@ -1,4 +1,4 @@
 /* Tailwind v4 custom variants
    Map `dark:` to class-based strategy so toggling `.dark` or `[data-theme="dark"]`
    on <html> immediately applies dark utilities instead of relying on OS media. */
-@custom-variant dark (&:where(.dark, [data-theme="dark"]) &);
+@custom-variant dark (:where(.dark, [data-theme="dark"]) &);

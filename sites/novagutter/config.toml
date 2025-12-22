@@ -38,6 +38,10 @@ enableRobotsTXT = true
   cardBorderLight     = "gray-200"
   cardBorderDark      = "gray-700"
 
+  # Force light mode regardless of OS and disable the user toggle.
+  forceTheme          = "light"
+  disableThemeToggle  = true
+
   # defaultTheme/disableThemeToggle centralized
   author              = "NOVA Gutter"
   hideMeta            = true

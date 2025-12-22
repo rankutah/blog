@@ -11,7 +11,7 @@
 {{- $htmlLight := cond (eq $lightParam "white") "bg-white" (printf "bg-%s" $lightParam) -}}
 {{- $htmlDark  := cond (eq $darkParam  "black") "bg-black" (printf "bg-%s"  $darkParam)  -}}
 
-<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
+<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +22,7 @@
   <script>
     (function(){
       var html = document.documentElement;
+      var defaultTheme = {{ (site.Params.defaultTheme | default "auto") | jsonify }}; // "light" | "dark" | "auto"
       function getStored(){ try { return localStorage.getItem('pref-theme'); } catch(e){ return null; } }
       function prefersDark(){ try { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; } catch(e){ return false; } }
       function wantDark(){
@@ -31,11 +32,27 @@
         var stored = getStored();
         if (stored === 'dark') return true;
         if (stored === 'light') return false;
+        if (defaultTheme === 'dark') return true;
+        if (defaultTheme === 'light') return false;
         return prefersDark();
+      }
+      function setThemeAttrs(d){
+        try {
+          var v = d ? 'dark' : 'light';
+          html.setAttribute('data-theme', v);
+          if (document.body) document.body.setAttribute('data-theme', v);
+        } catch(e){}
       }
       function apply(){
         var d = wantDark();
-        if (d) html.classList.add('dark'); else html.classList.remove('dark');
+        if (d) {
+          html.classList.add('dark');
+          if (document.body) document.body.classList.add('dark');
+        } else {
+          html.classList.remove('dark');
+          if (document.body) document.body.classList.remove('dark');
+        }
+        setThemeAttrs(d);
         try {
           var lightCls = html.getAttribute('data-bg-light');
           var darkCls  = html.getAttribute('data-bg-dark');

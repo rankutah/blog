@@ -163,9 +163,9 @@ Web design services are available to clients across the United States.
 ## Ready for the Next Step?
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 
-{{<button text="My Process" url="/services/website-design" >}}
-{{<button text="Process" url="/services/website-design" >}}
+{{<button text="Contact" url="/contact" >}}
 {{<button text="Pricing" url="/pricing" >}}
-{{<button text="Reach Out" url="/contact" >}}
+{{<button text="Web Design" url="/services/website-design" >}}
+{{<button text="Local SEO" url="/services/local-seo" >}}
 
 

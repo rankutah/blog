@@ -8,7 +8,7 @@
 {{- if strings.HasPrefix $darkParam "bg-" -}}{{- $darkParam = replace $darkParam "bg-" "" -}}{{- end -}}
 {{- $htmlLight := cond (eq $lightParam "white") "bg-white" (printf "bg-%s" $lightParam) -}}
 {{- $htmlDark  := cond (eq $darkParam  "black") "bg-black" (printf "bg-%s"  $darkParam)  -}}
-<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
+<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,50 @@
   <script>
     (function(){
       var html = document.documentElement;
-      function getStored(){ try { return localStorage.getItem('pref-theme'); } catch(e){ return null; } }
+      var defaultTheme = {{ (site.Params.defaultTheme | default "auto") | jsonify | safeJS }}; /* "light" | "dark" | "auto" */
+      {{ $themeSiteKey := os.Getenv "HUGO_SITE" }}
+      {{ if not $themeSiteKey }}
+        {{ $themeHost := "" }}
+        {{ with (urls.Parse site.BaseURL) }}
+          {{ $themeHost = .Host }}
+        {{ end }}
+        {{ $titleSlug := urlize site.Title }}
+        {{ if and $themeHost $titleSlug }}
+          {{ $themeSiteKey = printf "%s|%s" $themeHost $titleSlug }}
+        {{ else if $themeHost }}
+          {{ $themeSiteKey = $themeHost }}
+        {{ else }}
+          {{ $themeSiteKey = $titleSlug }}
+        {{ end }}
+      {{ end }}
+      var siteKey = {{ $themeSiteKey | jsonify | safeJS }};
+      var storageKey = siteKey ? ('pref-theme:' + siteKey) : 'pref-theme';
+      var recoveredKey = siteKey ? ('pref-theme:recovered:' + siteKey) : 'pref-theme:recovered';
+      function getStored(){
+        try {
+          var stored = localStorage.getItem(storageKey);
+
+          // Localhost safety: if a leaked/accidental stored preference forces light in dev,
+          // fall back to OS when defaultTheme=auto and no forceTheme is set.
+          // This avoids requiring manual localStorage deletion.
+          try {
+            var host = (window.location && window.location.hostname) ? window.location.hostname : '';
+            var isLocal = (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0' || host.endsWith('.localhost'));
+            var forced = html.getAttribute('data-force-theme');
+            var recovered = localStorage.getItem(recoveredKey);
+            if (isLocal && recovered !== '1' && !forced && defaultTheme === 'auto' && (stored === 'light' || stored === 'dark')) {
+              var osDark = prefersDark();
+              if ((osDark && stored === 'light') || (!osDark && stored === 'dark')) {
+                localStorage.removeItem(storageKey);
+                localStorage.setItem(recoveredKey, '1');
+                stored = null;
+              }
+            }
+          } catch(e) {}
+
+          return stored;
+        } catch(e){ return null; }
+      }
       function prefersDark(){ try { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; } catch(e){ return false; } }
       function wantDark(){
         var forced = html.getAttribute('data-force-theme');
@@ -26,11 +69,27 @@
         var stored = getStored();
         if (stored === 'dark') return true;
         if (stored === 'light') return false;
+        if (defaultTheme === 'dark') return true;
+        if (defaultTheme === 'light') return false;
         return prefersDark();
+      }
+      function setThemeAttrs(d){
+        try {
+          var v = d ? 'dark' : 'light';
+          html.setAttribute('data-theme', v);
+          if (document.body) document.body.setAttribute('data-theme', v);
+        } catch(e){}
       }
       function apply(){
         var d = wantDark();
-        if (d) html.classList.add('dark'); else html.classList.remove('dark');
+        if (d) {
+          html.classList.add('dark');
+          if (document.body) document.body.classList.add('dark');
+        } else {
+          html.classList.remove('dark');
+          if (document.body) document.body.classList.remove('dark');
+        }
+        setThemeAttrs(d);
         try {
           var lightCls = html.getAttribute('data-bg-light');
           var darkCls  = html.getAttribute('data-bg-dark');
@@ -57,7 +116,7 @@
         if (mql && mql.addEventListener) mql.addEventListener('change', apply);
         else if (mql && mql.addListener) mql.addListener(apply);
       } catch(e){}
-      try { window.addEventListener('storage', function(e){ if (e && e.key === 'pref-theme') apply(); }); } catch(e){}
+      try { window.addEventListener('storage', function(e){ if (e && e.key === storageKey) apply(); }); } catch(e){}
     })();
   </script>
   {{- $useFlowbite := or (eq .Params.useFlowbiteJS true) (eq site.Params.useFlowbiteJS true) -}}

@@ -4,6 +4,7 @@ module.exports = {
     '@tailwindcss/postcss': {
       config: './tailwind.config.cjs'
     },
+    'postcss-nesting': {},
     autoprefixer: {},
   }
 };

@@ -147,7 +147,7 @@ Usage:
   {{- $scr.Set "normCD" (replace ($scr.Get "normCD") "dark:bg-" "") -}}
 {{- end -}}
 {{- if strings.HasPrefix ($scr.Get "normCD") "bg-" -}}
-  {{- $scr.Set "normCD" (replace ($scr.Set "normCD") "bg-" "") -}}
+  {{- $scr.Set "normCD" (replace ($scr.Get "normCD") "bg-" "") -}}
 {{- end -}}
 {{- $cdIsBlack := or (eq $cardDarkRaw "black") (eq $cardDarkRaw "bg-black") (eq $cardDarkRaw "dark:bg-black") -}}
 {{- $cdp := split ($scr.Get "normCD") "-" -}}

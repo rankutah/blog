@@ -9,12 +9,23 @@
 
   Notes:
     - Files are built via Hugo Pipes (cache-busted URLs) and do not need to exist under static/
-    - If no source image is found, we still emit the /favicon.ico fallback (sourced from static/ if present)
+    - If a site provides a `static/favicon.ico` (or sets params.assets.favicon to a static path) and does NOT set params.assets.faviconSource,
+      the static ICO wins and we skip generating PNG/SVG favicons. This makes favicon overrides dead simple and consistent.
 */}}
+
+{{- /* Prefer a static favicon.ico when present (unless faviconSource explicitly requests generation). */ -}}
+{{- $icoPath := site.Params.assets.favicon | default "favicon.ico" -}}
+{{- $icoRel := strings.TrimPrefix "/" (printf "%v" $icoPath) -}}
+{{- $icoExists := fileExists (printf "static/%s" $icoRel) -}}
+{{- $favSrc := site.Params.assets.faviconSource | default "" -}}
+{{- $preferIco := and $icoExists (eq (printf "%v" $favSrc) "") -}}
+
+{{- if $preferIco -}}
+  <link rel="icon" href="{{ $icoPath | absURL }}">
+{{- else -}}
 
 {{- $img := (resources.Get "media/__none__") -}}
 {{- /* 1) Explicit favicon source override */ -}}
-{{- $favSrc := site.Params.assets.faviconSource | default "" -}}
 {{- if and (not $img) (ne (printf "%v" $favSrc) "") -}}
   {{- $raw := strings.TrimPrefix "/" (printf "%v" $favSrc) -}}
   {{- with resources.Get $raw -}}{{- $img = . -}}{{- end -}}
@@ -63,4 +74,6 @@
 {{/* Legacy fallback: keep a root /favicon.ico for older browsers and crawlers.
      If we built a 32x32 PNG, also include it as a final generic rel=icon. */}}
 {{- if $p32 -}}<link rel="icon" href="{{ $p32.RelPermalink }}">{{- end -}}
-<link rel="icon" href="{{ (site.Params.assets.favicon | default "favicon.ico") | absURL }}">
+<link rel="icon" href="{{ $icoPath | absURL }}">
+
+{{- end -}}

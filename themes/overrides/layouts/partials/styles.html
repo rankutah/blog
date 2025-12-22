@@ -1,5 +1,11 @@
 {{- /* Shared CSS bundle: Tailwind + optional compatibility, minified + fingerprinted; use relative URLs for environment robustness */ -}}
-{{- $main := resources.Get "css/main.css" | postCSS -}}
+{{- $postCSSConfigDir := os.Getenv "HUGO_POSTCSS_CONFIG_DIR" -}}
+{{- $main := resources.Get "css/main.css" -}}
+{{- if $postCSSConfigDir -}}
+	{{- $main = $main | postCSS (dict "config" $postCSSConfigDir) -}}
+{{- else -}}
+	{{- $main = $main | postCSS -}}
+{{- end -}}
 {{- $compat := resources.Get "css/papermod-compat.css" | default ("" | resources.FromString "/* compat stub */") -}}
 {{- $bundle := slice $main $compat | resources.Concat "assets/css/site.css" | minify | fingerprint "sha384" -}}
 <link rel="preload" as="style" href="{{ relURL $bundle.RelPermalink }}">

@@ -157,14 +157,56 @@
     (function(){
         var btn = document.getElementById("theme-toggle");
         if (!btn) return;
+                {{- $themeSiteKey := os.Getenv "HUGO_SITE" -}}
+                {{- if not $themeSiteKey -}}
+                    {{- $themeHost := "" -}}
+                    {{- with (urls.Parse site.BaseURL) -}}
+                        {{- $themeHost = .Host -}}
+                    {{- end -}}
+                    {{- $titleSlug := urlize site.Title -}}
+                    {{- if and $themeHost $titleSlug -}}
+                        {{- $themeSiteKey = printf "%s|%s" $themeHost $titleSlug -}}
+                    {{- else if $themeHost -}}
+                        {{- $themeSiteKey = $themeHost -}}
+                    {{- else -}}
+                        {{- $themeSiteKey = $titleSlug -}}
+                    {{- end -}}
+                {{- end -}}
+                var siteKey = {{ $themeSiteKey | jsonify | safeJS }};
+        var storageKey = siteKey ? ('pref-theme:' + siteKey) : 'pref-theme';
         btn.addEventListener("click", function(){
-            if (document.body.classList.contains("dark")) {
-                document.body.classList.remove('dark');
-                localStorage.setItem("pref-theme", 'light');
-            } else {
-                document.body.classList.add('dark');
-                localStorage.setItem("pref-theme", 'dark');
-            }
+            var html = document.documentElement;
+                        var stored;
+                        try { stored = localStorage.getItem(storageKey); } catch(e){ stored = null; }
+
+                        // Cycle preference: auto -> dark -> light -> auto
+                        var current = (stored === 'dark' || stored === 'light') ? stored : 'auto';
+                        var next = (current === 'auto') ? 'dark' : (current === 'dark') ? 'light' : 'auto';
+
+                        try {
+                                if (next === 'auto') localStorage.removeItem(storageKey);
+                                else localStorage.setItem(storageKey, next);
+                        } catch(e){}
+
+                        // Apply immediately (bootstrap also applies on load)
+                        if (next === 'auto') html.setAttribute('data-force-theme', '');
+                        else html.setAttribute('data-force-theme', next);
+
+                        // Minimal immediate sync: set classes/attrs; background sync handled by bootstraps on next paint
+                        var makeDark = (next === 'auto')
+                            ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+                            : (next === 'dark');
+                        if (makeDark) {
+                                html.classList.add('dark');
+                                if (document.body) document.body.classList.add('dark');
+                                html.setAttribute('data-theme', 'dark');
+                                if (document.body) document.body.setAttribute('data-theme', 'dark');
+                        } else {
+                                html.classList.remove('dark');
+                                if (document.body) document.body.classList.remove('dark');
+                                html.setAttribute('data-theme', 'light');
+                                if (document.body) document.body.setAttribute('data-theme', 'light');
+                        }
         });
     })();
 </script>

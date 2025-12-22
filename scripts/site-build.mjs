@@ -69,11 +69,11 @@ async function main() {
     '--config', `"${configArg}"`,
     '--gc', '--minify', '--cleanDestinationDir',
     '--logLevel', 'info', '--ignoreCache',
-  ], { SITE })
+  ], { SITE, HUGO_SITE: SITE, HUGO_POSTCSS_CONFIG_DIR: process.cwd() })
 
   // Post-build link checks (built HTML-level)
   if (existsSync('scripts/check-links.mjs')) {
-    await run('node', ['scripts/check-links.mjs', `--site=${SITE}`], { SITE }).catch(() => {})
+    await run('node', ['scripts/check-links.mjs', `--site=${SITE}`], { SITE })
   }
 }
 

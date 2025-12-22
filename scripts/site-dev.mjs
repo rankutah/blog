@@ -40,6 +40,11 @@ async function main() {
   // Vendor fonts (non-fatal)
   await run('node', ['scripts/vendor-google-fonts.mjs', '--silent'], { SITE }).catch(() => {})
 
+  // Generate/fix legacy favicon.ico from user-provided favicon or logo/source (non-fatal)
+  if (existsSync('scripts/generate-favicon-ico.mjs')) {
+    await run('node', ['scripts/generate-favicon-ico.mjs'], { SITE }).catch(() => {})
+  }
+
   // Pre-dev SEO lints (content-level)
   if (existsSync('scripts/seo-lint.mjs')) {
     await run('node', ['scripts/seo-lint.mjs', `--site=${SITE}`], { SITE })
@@ -61,9 +66,9 @@ async function main() {
       '--gc', '--minify',
       '--logLevel', 'info', '--ignoreCache',
       '--destination', tmpDest,
-    ], { SITE }).catch(() => {})
+    ], { SITE, HUGO_SITE: SITE, HUGO_POSTCSS_CONFIG_DIR: process.cwd() })
 
-    await run('node', ['scripts/check-links.mjs', `--site=${SITE}`, `--dir=${tmpDest}`], { SITE }).catch(() => {})
+    await run('node', ['scripts/check-links.mjs', `--site=${SITE}`, `--dir=${tmpDest}`], { SITE })
 
     // Clean up temporary build output
     try { rmSync(tmpDest, { recursive: true, force: true }) } catch {}
@@ -75,7 +80,7 @@ async function main() {
     `--site=${SITE}`,
     `--source=${sourceArg}`,
     `--config="${configArg}"`,
-  ], { SITE })
+  ], { SITE, HUGO_SITE: SITE, HUGO_POSTCSS_CONFIG_DIR: process.cwd() })
 }
 
 main().catch((err) => {
