@@ -116,17 +116,20 @@ Work directly with a small agency to get a custom site built for your small busi
 
 {{< faqs >}}
 
-### What is your experience?
-First professional projects launched in 2023, backed by a Master’s in Software Development and experience at industry leaders like Arctic Wolf and Okta. Learn more on <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
-
-### How long does a custom site take?
-Sites can usually be done in 2–3 weeks with good coordination.
-
 ### Are content updates really unlimited?
 Yes, you can request changes to your website at any time in the way that works best for you (call, text, or email).
 
 ### Do you handle hosting & the website url name?
 Yes. Managed hosting and your website name is included.
+
+### Do I own the site?
+Yes, you own the site from day one. If at any time you cancel services I can work with you to transfer your site to a new developer.
+
+### Are there upfront fees?
+No, there is one flat rate monthly cost that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
+
+### Are content updates really unlimited?
+Yes, you can request changes anytime in the way that works best for you (call, text, or email). There are no additional fees for changes or updates.
 
 {{< /faqs >}}
 

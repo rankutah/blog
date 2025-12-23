@@ -203,8 +203,6 @@ Bachelor's in Business Management
 
 ## FAQ
 {{< faqs >}}
-### How long does a custom site take?
-Sites can usually be done in under 3 weeks with good coordination.
 
 ### Do you handle hosting & the website url name?
 Yes. Managed hosting and your website name is included.
