@@ -28,7 +28,7 @@ Fast websites with local SEO so more customers find you.
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-## Small Agency ✅
+## Small Team ✅
 
 ### 1. Talk to the person building the site
 Work directly with the person doing the work. That keeps communication simple and helps the website bring in more calls and messages.
@@ -150,7 +150,7 @@ Reach out with questions or to start your project.
 Professional projects launched in 2023, backed by a Master’s in Software Development and experience at companies like Arctic Wolf and Okta. Learn more on <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### What is your web design process?
-You can learn all about my process for designing and building a custom website for your small business on the [Website Design](/services/website-design) page.
+Learn more about the process for designing and building a custom website on the [Website Design](/services/website-design) page.
 
 ### How do you compare to other website design companies?
 Direct communication and responsive support without big‑agency overhead. No long‑term contracts, hidden fees, or strict limits on edits.

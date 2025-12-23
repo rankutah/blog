@@ -130,10 +130,10 @@ Local SEO (search engine optimization) means showing up online when people searc
 Yes. Plans can be changed at any time. The next invoice is adjusted accordingly and services continue without interruption.
 
 ### Do I own the site?
-Yes, you own your website from day one. If you ever need to cancel services I work with you to transfer your website and domain to a new developer.
+Yes, you own your website from day one. If services are canceled, help is provided to transfer the website and domain to a new developer.
 
 ### What happens if I cancel?
-No further charges after cancellation. The site stays online through the current billing period. I work with you to transfer your website and domain to a new developer.
+No further charges after cancellation. The site stays online through the current billing period. Help is provided to transfer the website and domain to a new developer.
 
 ### Do you charge setup fees?
 No. Setup is included in your monthly price.

@@ -1,6 +1,6 @@
 ---
 title: Free 30-Min Google Business Profile SEO Audit in Utah
-description: "As the owner of a Website Design & Local SEO company, I offer a free 30-minute Google Business Profile audit to help small businesses in Utah improve local SEO. In this no-obligation video chat, we'll optimize your profile to help you get more calls and new business."
+description: "Free 30-minute Google Business Profile audit for small businesses in Utah. In a no-obligation video chat, the profile is reviewed and improved so more customers can find the business and call." 
 tags:
   - local-seo
 date: 2025-08-04
@@ -29,7 +29,7 @@ During your 30-minute review, we'll compare your Google Business Profile to your
 
 ## Why a Strong Google Profile Equals More Calls
 
-About [75% of people](https://www.statista.com/statistics/1260363/consumers-using-search-engines-to-find-local-business-info/) use Google to find local business information. When someone searches for a service, Google shows a map with the top profiles in that area. These also appear in Google Maps, where many customers start their search. A well-optimized profile helps you show up and get more calls.
+About [75% of people](https://www.statista.com/statistics/1260363/consumers-using-search-engines-to-find-local-business-info/) use Google to find local business information. When someone searches for a service, Google shows a map with the top profiles in that area. These also appear in Google Maps, where many customers start their search. A complete, accurate profile helps the business show up and get more calls.
 ## Why is This Free?
 
 I offer this free service to help local businesses get a quick win and to introduce you to my SEO work. There's no pressure to start services, but if you find it helpful, you're welcome to leave a review or [start local SEO services or Web Design services](https://clearpresence.io) to boost your visibility.

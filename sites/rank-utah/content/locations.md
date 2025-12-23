@@ -7,7 +7,7 @@ url: "/locations"
 
 # Areas
 
-Clear Presence provides website design and local SEO services for businesses across the United States with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
+Clear Presence provides website design and local SEO services for businesses across the United States, with an office in Pleasant Grove, UT. Here are a few areas where clients are located.
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -15,7 +15,7 @@ Clear Presence provides website design and local SEO services for businesses acr
 
 ## Pleasant Grove, UT
 
-Local website design and local local SEO services for small businesses in Pleasant Grove. Learn more about this location and reach out for questions or to get started.
+Website design and local SEO services for small businesses in Pleasant Grove. Learn more about this location and reach out with questions.
 
 {{< button url="/locations/pleasant-grove-ut" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 

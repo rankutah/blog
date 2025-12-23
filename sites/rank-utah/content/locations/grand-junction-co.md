@@ -38,7 +38,7 @@ Affordable custom websites for Western Slope small businesses, built and managed
 
 ## Quartz Worx Website — Countertops in Grand Junction, CO
 
-As a freelance website designer, I built the Quartz Worx website to explain the different types of countertop options and help customers get in touch. The site is custom‑built, loads fast, is easy to use on phones, and keeps navigation simple.
+The Quartz Worx website explains countertop options and makes it easy for customers to get in touch. The site is custom‑built, loads fast, is easy to use on phones, and keeps navigation simple.
 
 ![Quartz Worx website preview - built by a freelance web designer](/media/website-design-quartz-worx.jpg)
 
@@ -59,7 +59,7 @@ As a freelance website designer, I built the Quartz Worx website to explain the 
 
 ## Ready to grow in Grand Junction?
 
-Your website should be fast, mobile‑first, and easy to find — so people on the Western Slope can call, request a quote, or visit. As a freelance website designer, I build custom sites that load quickly, look great, and help you win local searches in Grand Junction.
+Your website should be fast, mobile‑first, and easy to find — so people on the Western Slope can call, request a quote, or visit. Custom sites load quickly, look great, and support local searches in Grand Junction.
 
 {{< button url="/contact" text="Contact" >}} {{< button url="/services/website-design" text="See Work" >}}
 

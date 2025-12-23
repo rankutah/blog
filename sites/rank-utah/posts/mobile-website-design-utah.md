@@ -23,7 +23,7 @@ Your website should adapt fluidly to any screen size. This means that columns sh
 
 ## 2\. Fast Loading
 
-Websites need to be optimized for cell-phones that are not connected to wifi. Three is the most important things to consider for mobile website design are the optimization of your images, use of scripts, and caching.
+Websites need to work well on phones, even when the connection is slow. The three biggest things to focus on for mobile website design are image size, the number of scripts running on the page, and caching.
 
 ### Images
 
@@ -45,4 +45,4 @@ It should be just as easy for users to navigate the desktop version of your webs
 
 ## Conclusion
 
-A website that uses responsive layout, is fast loading, and is easy to navigate is the basis for mobile-friendly design. As more and more users browse the web on their phones this becomes increasingly important. If you would like a website that is not only mobile-friendly but also set up to bring in leads, visit [ClearPresence.io](https://clearpresence.io/) to learn more or contact me directly at 385-323-8130.
+A website that uses a responsive layout, loads fast, and is easy to navigate is the foundation for mobile-friendly design. As more people browse the web on their phones, this matters more and more. If you want a mobile-friendly website that helps customers call or message, visit [ClearPresence.io](https://clearpresence.io/) or call or text 385-323-8130.

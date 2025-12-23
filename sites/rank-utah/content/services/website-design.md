@@ -8,7 +8,7 @@ schema:
   service:
     enabled: true
     serviceType: "Website Design & Local SEO Services"
-    description: "Custom, fast business websites built to bring in leads from a small agency."
+    description: "Custom, fast business websites built to help customers call, text, or book."
     areaServed: "United States"
     offers:
       - "@type": "Offer"
@@ -123,7 +123,7 @@ Yes, you can request changes to your website at any time in the way that works b
 Yes. Managed hosting and your website name is included.
 
 ### Do I own the site?
-Yes, you own the site from day one. If at any time you cancel services I can work with you to transfer your site to a new developer.
+Yes, you own the site from day one. If services are canceled, help is provided to transfer the site to a new developer.
 
 ### Are there upfront fees?
 No. Pricing is a flat monthly cost that includes domain renewal, hosting, a simple monthly report, and ongoing support and updates. Details are on the [pricing page](/pricing).

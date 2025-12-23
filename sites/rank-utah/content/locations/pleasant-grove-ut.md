@@ -71,7 +71,7 @@ Digital marketing services for small businesses in Utah. Professional business w
 
 ## Website Design & Local SEO Services
 
-Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and turns visitors into calls, messages, and bookings. As a website design & local SEO company, I serve Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
+Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/pricing" text="Website Pricing" >}}
@@ -140,7 +140,7 @@ Grow your small business anywhere in Utah with a fast, custom website that looks
 
 ## Custom Websites Built for Growth — Not Just Looks
 
-A lot of small business websites look fine, but they don’t bring in many calls or leads. I build clean, modern sites that load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). My monthly plans keep things simple and affordable.
+A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Monthly plans keep things simple and affordable.
 
 ### Local SEO: What’s Included
 
@@ -172,7 +172,7 @@ If you want to show up in Google’s local results and on Maps, we include pract
 - Davis & Weber Counties: Layton, Bountiful, Ogden
 - Summit & Cache Counties: Park City, Logan
 
-I work remotely and meet locally as needed, so your business can get a high‑performing site anywhere in Utah.
+Services are available remotely, with local meetings as needed, so businesses can get a high‑performing site anywhere in Utah.
 
 ## Simple Monthly Pricing for Small Businesses
 
@@ -190,8 +190,8 @@ No hidden fees. No contracts. Unlimited updates.
 
 ## Affordable Results at a Fraction of Big Agency or Company Costs
 
-You’ll get what actually matters: a fast, mobile‑friendly site with clear calls to action.
-No big agency retainers—just straightforward monthly pricing and direct support from me.
+You’ll get what actually matters: a fast, mobile‑friendly site with clear call and text buttons.
+No big upfront fees—just simple monthly pricing and direct support.
 
 ## Proudly Serving Businesses Across Utah
 

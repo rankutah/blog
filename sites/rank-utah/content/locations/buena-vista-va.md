@@ -38,7 +38,7 @@ Affordable custom websites for Buena Vista small businesses, built and managed b
 
 ## Blue Ridge Abbey Website — Bed & Breakfast in Buena Vista, VA
 
-As a website design company, I built Blue Ridge Abbey’s website to showcase bookings, rooms, and local attractions while keeping load times fast and the booking flow simple.
+Blue Ridge Abbey’s website showcases rooms, bookings, and local attractions while keeping load times fast and the booking experience simple.
 
 ![Blue Ridge Abbey Website Design - built by a small agency](../media/website-design-blue-ridge-abbey.jpg)
 
@@ -57,7 +57,7 @@ As a website design company, I built Blue Ridge Abbey’s website to showcase bo
 
 ## BlueridgeTech Website — Computer Repair Shop in Buena Vista, VA
 
-As a website design company, I built the BlueridgeTech website with clear calls-to-action and appointment booking while keeping compact, fast-loading pages.
+The BlueridgeTech website makes it easy to book an appointment, call, or send a message, while keeping pages compact and fast-loading.
 
 ![Blue Ridge Tech Website Design - built by a small agency](../media/website-design-blueridge-tech.avif)
 
@@ -91,7 +91,7 @@ Bachelor's in Business Management
 
 ## Why Buena Vista clients choose Clear Presence
 
-- Fast sites with carefully optimized images for quick page loads
+- Fast sites with carefully prepared images for quick page loads
 - Clear paths to book, call, or message — no busy effects
 - Ongoing support and improvements — with simple monthly pricing from a small agency
 

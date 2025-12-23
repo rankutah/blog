@@ -1,6 +1,6 @@
 ---
 title: "Custom Website Design in Utah"
-description: "Website design for small businesses across Utah. Fast, phone‑friendly sites built to convert with clear call and message buttons, managed hosting & SSL, and friendly ongoing support. Serving all of Utah."
+description: "Website design for small businesses across Utah. Fast, phone‑friendly sites with clear call and text buttons, managed hosting & SSL, and friendly ongoing support. Serving all of Utah."
 layout: "flowbite"
 url: "/locations/custom-website-design-utah"
 hero: true
@@ -9,7 +9,7 @@ schema:
   service:
     enabled: true
     serviceType: "Custom Website Design"
-    description: "Custom, fast business websites built to bring in leads across Utah."
+    description: "Custom, fast business websites built to help more customers call, text, or request a quote across Utah."
     areaServed: "Utah"
     offers:
       - "@type": Offer
@@ -26,9 +26,9 @@ schema:
       - question: "How long does a custom site take?"
         answer: "Typical turnaround is 2–3 weeks once content is ready. Faster sprints are possible for lean builds."
       - question: "Do you handle hosting?"
-        answer: "Yes. Managed hosting, CDN, security, performance tuning, ongoing security updates—all included."
+        answer: "Yes. Managed hosting, CDN, security, and ongoing updates are included."
       - question: "Is there a big upfront fee?"
-        answer: "No large build fee. Predictable monthly flat rate covers hosting, domain renewals, updates, and improvements."
+        answer: "No. A predictable monthly price covers hosting, domain renewals, updates, and improvements."
       - question: "What about Local Search Engine Optimization (SEO)?"
         answer: "Basic search setup is included (titles, descriptions, fast load). Extra Local SEO—listings, Google Business Profile help, reviews—is available separately."
       - question: "Are content updates really unlimited?"
@@ -93,7 +93,7 @@ Affordable websites built by a professional web developer in Utah County
 </script>
 
 ## Website Design in Utah
-Get a website that brings you more calls, quotes, and bookings. You’ll get a fast, phone‑friendly site built for local search with clear call and text buttons plus ongoing help by call, text, or email whenever you need it.
+Get a website that helps more customers call, text, and request a quote. Expect a fast, phone‑friendly site built for local search with clear call and text buttons, plus ongoing help by call, text, or email.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
@@ -102,16 +102,16 @@ Get a website that brings you more calls, quotes, and bookings. You’ll get a f
 - Custom branded design
 - Clear page layout
 - Fast loading on phones and computers
-- Optimized search setup
+- Search-friendly setup
 - Clean images that load quickly
-- Contact forms with visitor tracking
+- Contact forms with spam protection and basic reporting
 - Spam protection
 - Ongoing updates and support
 - Managed hosting & security
 - Domain renewals included
 
 ### Built For Results
-Easy contact buttons, quick loading pages, and content clearly arranged.
+Easy contact buttons, quick loading pages, and content that’s easy to scan.
 
 {{< button url="/pricing" text="Pricing" >}}
 {{< /col >}}
@@ -151,7 +151,7 @@ Easy contact buttons, quick loading pages, and content clearly arranged.
 - Affordable flat rate prices without lock-in contracts
 - Unlimited support via call, text, email, or meetings
 - Unlimited updates and edits with long-term support
-- A modern mobile-friendly website built for performance
+- A modern, mobile-friendly website built to load fast
 
 ## Customer Website Design Experiences
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -208,10 +208,10 @@ Bachelor's in Business Management
 Yes. Managed hosting and your website name is included.
 
 ### Do I own the site?
-Yes, you own the site from day one. If at any time you cancel services I can work with you to transfer your site to a new developer.
+Yes, you own the site from day one. If services are canceled, help is provided to transfer the site and domain to a new developer.
 
 ### Are there upfront fees?
-No, there is one flat rate monthly cost that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
+No. Pricing is a flat monthly cost that includes domain renewal, hosting, a simple monthly report, and ongoing support and updates. Details are on the [pricing page](/pricing).
 
 ### Are content updates really unlimited?
 Yes, you can request changes anytime in the way that works best for you (call, text, or email). There are no additional fees for changes or updates.
@@ -223,7 +223,7 @@ Yes, you can request changes anytime in the way that works best for you (call, t
 
 ## Have Another Question?
 
-Text your question (even during non-business hours) and I will get back to you ASAP.
+Text your question (even during non-business hours) and a reply will come as soon as possible.
 
 {{< button url="sms:+13853238130" text="Text (385) 323-8130" >}}
 

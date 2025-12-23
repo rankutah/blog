@@ -14,12 +14,12 @@ As the owner of a website design & local SEO company, I'm dedicated to helping s
 
 2.  Cost-effective - every optimization brings long-term ongoing results
 
-3.  Saves Time - brings organic leads instead of having to spend lots of time running promotions and marketing campaigns
+3.  Saves Time - brings steady website visitors from search instead of relying only on promotions and ads
 
 
 ## The 3 Pillars of Effective Off Page Search Engine Optimization
 
-Local SEO is different from broad SEO in that it focuses on three core areas: Relevance, Prominence, and Proximity. The chart below shows the factors that influence lead generation for local businesses.
+Local SEO is different from broad SEO in that it focuses on three core areas: Relevance, Prominence, and Proximity. The chart below shows the factors that influence calls and contacts for local businesses.
 
 ![pie chart showing local SEO lead-generation factors](../media/local-seo-lead-generation-factors.avif)
 Source: Percentages are based on the average percentages given by ChatGPT (o4-mini-high) and Gemini (2.5 Flash) after performing Deep Research. Their results differed by an average of 6 percentage points for each of the factors.
@@ -39,7 +39,9 @@ Relevance is how well your content aligns with what the user is searching for. W
 
 ## 2\. Prominence
 
-Prominence is the authority of your content. For websites and blogs, it’s heavily influenced by the quantity and quality of backlinks, citations, and social shares. Links act as popularity votes in the eyes of Google. While all quality (non-spammy) backlinks are helpful, local backlinks from businesses or people in your area are the most impactful. They tie your website/blog to your target location.Another factor that influences the prominence of your website/blog is technical SEO, which focuses on the structure and performance of your website/blog:
+Prominence is the trust and credibility of your content. For websites and blogs, it’s influenced by the quantity and quality of backlinks, citations, and social shares. Links act as popularity votes in the eyes of Google. While all quality (non-spammy) backlinks are helpful, local backlinks from businesses or people in your area are often the most impactful.
+
+Another factor that influences prominence is technical SEO. In plain English, that means making sure the website is built in a clean way and loads quickly:
 
 1.  Faster load times: Improves user experience and rankings
 

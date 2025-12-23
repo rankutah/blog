@@ -38,7 +38,7 @@ Affordable custom websites for Boca Raton small businesses, built and managed by
 
 ## Nova Gutter Website — Seamless Gutters in Boca Raton, FL
 
-As a website design company, I built Nova Gutter a fast, modern site to showcase residential and commercial gutter services and drive more calls. The site is custom‑built, loads fast, is easy to use on phones, and uses clear calls to action.
+The Nova Gutter website is a fast, modern site that showcases residential and commercial gutter services and makes it easy for customers to call or request a quote. The site is custom‑built, loads fast, and is easy to use on phones.
 
 ![Nova Gutter website preview - built by a small agency](/media/nova-gutter-hero.avif)
 
@@ -50,7 +50,7 @@ As a website design company, I built Nova Gutter a fast, modern site to showcase
 
 ## Ready to grow in Boca Raton?
 
-Get a site that’s fast, mobile‑first, and built to convert — so Boca Raton customers can find you, call, and request a quote.
+Get a site that’s fast, mobile‑first, and easy to use — so Boca Raton customers can find the business, call, and request a quote.
 
 {{< button url="/contact" text="Contact" >}} {{< button url="/services/website-design" text="See Work" >}}
 

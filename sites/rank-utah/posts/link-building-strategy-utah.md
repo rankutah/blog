@@ -19,7 +19,7 @@ Link building (aka backlink building) increases the authority of your web pages.
 
 ## The Importance of Backlinks for Utah Local SEO
 
-This chart shows the importance of backlinks for local SEO in generating leads for your business. Backlinks are the most difficult part of a SEO link building strategy and a great way to differentiate your business from competitors and get ahead in the rankings. While the 18.5% slice in the chart below may not seem as significant as other factors, it’s the hardest slice of the pie to acquire, and it’s what will set you apart. Not only can you receive traffic from visitors clicking those links, but you also receive organic traffic when your page appears in search results.
+This chart shows the importance of backlinks for local SEO. Backlinks are one of the hardest parts of an SEO link building strategy, and they can help a business stand out from competitors and move up in rankings. While the 18.5% slice in the chart below may not seem as big as other factors, it’s one of the hardest to earn and it can make a real difference. Backlinks can send visitors directly (when people click the link), and they can also help pages show up higher in search results.
 
 ![pie chart showing the influence of website backlinks in a local SEO lead-generation strategy](/media/local-seo-lead-generation-factors.avif)
 
