@@ -25,7 +25,7 @@ schema:
 
 {{< hero img="/media/utah-seo.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Website Design for Small Businesses {.text-white}
-Work directly with a small agency to get a custom site built for your small business. Skip the high costs and slow timelines and get personal, one-on-one service.
+Work directly with the person building the site. Skip the high costs and slow timelines and keep communication simple.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 
@@ -34,12 +34,12 @@ Work directly with a small agency to get a custom site built for your small busi
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
 
-## Why choose a small agency?
+## Why work directly with the builder?
 
-- **Personal Service:** You work with one person from start to finish.
-- **Lower Cost:** No big agency overhead means more affordable pricing.
-- **Faster Turnaround:** Direct communication means quicker decisions and build times.
-- **Flexibility:** A small agency can adapt to your specific needs without corporate red tape.
+- **Clear communication:** One point of contact from start to finish.
+- **Straightforward pricing:** Less overhead usually means lower cost.
+- **Faster turnaround:** Fewer handoffs means quicker decisions.
+- **Flexible:** Changes are easier when there’s less red tape.
 
 ## Featured work
 
@@ -93,17 +93,17 @@ Work directly with a small agency to get a custom site built for your small busi
 
 - Custom design and build (no templates)
 - A site built to load quickly with sharp, lightweight images
-- Forms with spam protection and tracking
+- Forms with spam protection and simple reporting
 - Fast hosting and a secure site (SSL) included
 - Accessible and phone‑friendly design
-- Training and friendly, direct support from your team
+- Training and friendly, direct support
 
 ## How it works
 
 1. Discovery — goals, audience, and pages list
 2. Design — layout, look, and writing guidance
 3. Build — fast, accessible pages with no bloat
-4. Launch — tracking, final checks, and go‑live list
+4. Launch — final checks and go‑live list
 5. Grow — updates, new pages, and simple reports
 
 
@@ -126,10 +126,7 @@ Yes. Managed hosting and your website name is included.
 Yes, you own the site from day one. If at any time you cancel services I can work with you to transfer your site to a new developer.
 
 ### Are there upfront fees?
-No, there is one flat rate monthly cost that includes your yearly domain renewal, hosting, monthly reports, and unlimited support and updates to your site. You can learn more on the [pricing page](/pricing)
-
-### Are content updates really unlimited?
-Yes, you can request changes anytime in the way that works best for you (call, text, or email). There are no additional fees for changes or updates.
+No. Pricing is a flat monthly cost that includes domain renewal, hosting, a simple monthly report, and ongoing support and updates. Details are on the [pricing page](/pricing).
 
 {{< /faqs >}}
 

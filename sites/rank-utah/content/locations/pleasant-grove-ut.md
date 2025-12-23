@@ -140,7 +140,7 @@ Grow your small business anywhere in Utah with a fast, custom website that looks
 
 ## Custom Websites Built for Growth — Not Just Looks
 
-Most small business sites don’t bring enough calls or leads. As a Utah website design & local SEO company, I focus on clean, modern design that’s fast and mobile‑friendly, with clear calls to action so visitors contact you. Simple monthly plans keep it affordable and hands‑off.
+A lot of small business websites look fine, but they don’t bring in many calls or leads. I build clean, modern sites that load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). My monthly plans keep things simple and affordable.
 
 ### Local SEO: What’s Included
 
@@ -190,7 +190,8 @@ No hidden fees. No contracts. Unlimited updates.
 
 ## Affordable Results at a Fraction of Big Agency or Company Costs
 
-You’ll get the essentials that move the needle—fast, mobile‑friendly pages and clear calls to action—without paying large‑agency retainers. Our simple monthly plans deliver measurable results at a fraction of the cost, with the personal attention you expect from a dedicated local company.
+You’ll get what actually matters: a fast, mobile‑friendly site with clear calls to action.
+No big agency retainers—just straightforward monthly pricing and direct support from me.
 
 ## Proudly Serving Businesses Across Utah
 
@@ -263,7 +264,7 @@ Bachelor's in Business Management
 {{< faqs >}}
 
 ### What is your experience?
-I built my first professional website for a small business in 2023, leveraging my Master's degree in Software Development. My professional experience also includes roles in cybersecurity at industry leaders like Arctic Wolf and Okta. You can learn more about my detailed background on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
+I built my first professional website for a small business in 2023, after completing my Master’s in Software Development. I’ve also worked in cybersecurity at companies like Arctic Wolf and Okta. You can see more details on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
 
 ### How long does a custom site take?
 Sites can usually be done in 2–3 weeks with good coordination.

@@ -1,6 +1,6 @@
 ---
 title: "Pricing"
-description: "Simple, affordable monthly pricing from a small agency. No setup fees or long-term contracts."
+description: "Simple, affordable monthly pricing. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
 schema:
@@ -26,7 +26,7 @@ schema:
 # Simple Monthly Pricing
 {.center}
 
-Affordable plans from a small agency. No contracts. No surprises.
+Affordable monthly plans. No contracts. No surprises.
 {.center}
 
 {{< cols min="18rem" gap="1rem" v="stretch">}}
@@ -40,6 +40,7 @@ Affordable plans from a small agency. No contracts. No surprises.
 {{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
 *Get a fast website custom built for your business by a small agency.*
+*Get a fast website built for your business.*
 
 - Custom design tailored to your brand
 - Automatic adjustment to any screen size
@@ -50,7 +51,7 @@ Affordable plans from a small agency. No contracts. No surprises.
 - Contact forms with spam protection
 - Site-wide search for easy navigation
 - Ongoing support via phone, text, or email
-- Monthly performance and lead reports
+- Monthly report on calls, messages, and site activity
 
 
 {{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
@@ -72,7 +73,7 @@ Affordable plans from a small agency. No contracts. No surprises.
 - Business details synced to 100+ networks to boost local search rankings
 - Keyword research, strategy, & alignment with how your customers search
 - Ongoing support via phone, text, or email
-- Monthly performance and lead reports
+- Monthly report on calls, messages, and site activity
 
 
 This package does not include a business website.
@@ -104,7 +105,7 @@ This package does not include a business website.
 - Business details synced to 100+ networks to boost local search rankings
 - Keyword research, strategy, & alignment with how your customers search
 - Ongoing support via phone, text, or email
-- Monthly performance and lead reports
+- Monthly report on calls, messages, and site activity
 
 
 

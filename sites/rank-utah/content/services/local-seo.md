@@ -8,7 +8,7 @@ schema:
   service:
     enabled: true
     serviceType: "Local SEO"
-    description: "Local SEO strategy to increase visibility in maps and local search, driving high-quality leads."
+    description: "Local SEO strategy to increase visibility in maps and local search so more people call or message your business."
     areaServed: "United States"
     offers:
       - "@type": "Offer"
@@ -85,7 +85,7 @@ Local SEO means showing up when nearby people search for what you do. If someone
 - Consistent business info across 100+ directories (no mixed details)
 - Local keyword research and page improvements to match how people search
 - Review strategy and simple ways to reply
-- Clear tracking so you can see calls and clicks
+- Clear monthly reporting so you can see calls and clicks
 - Faster pages and a smoother experience
 - Ongoing updates and a simple monthly report
 {{< /col >}}
@@ -109,7 +109,7 @@ Month‑to‑month. No long‑term contract.
 <img src="/media/local-seo-analytics-report.avif" alt="Local SEO analytics report" />
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-#### Growth Over Time (Analytics)
+#### Growth Over Time
 <img src="/media/google-analytics-seo-results.avif" alt="Google Analytics results demonstrating SEO growth" />
 {{< /col >}}
 {{< /cols >}}
@@ -133,9 +133,9 @@ Partnering with small businesses to improve local visibility and turn nearby sea
 ## How it Works
 1. Audit – current visibility, Google Business Profile, and listings
 2. Plan – keywords and categories aligned to local intent
-3. Optimize – Google Business Profile and core listings (100+ sites)
+3. Improve – Google Business Profile and core listings (100+ sites)
 4. Align – business details and keywords across profiles and listings
-5. Track & report – calls, clicks, and local visibility
+5. Report – calls, clicks, and local visibility
 6. Grow – reviews and coverage in your service area
 
 ## FAQ
@@ -147,10 +147,10 @@ Local SEO helps your business show up in Google’s local results and on Maps. I
 You can often see movement in 4–12 weeks, with stronger gains over 3–6 months. Timelines depend on your starting point, competition, and service area. Quick wins typically include GBP fixes, category/keyword alignment, and getting reviews from previous customers.
 
 ### What do you do each month?
-Monthly work includes improving the Google Business Profile (categories, services, descriptions, photos), keeping listings accurate across major directories, aligning profiles and content to local keywords, and tracking calls and clicks. Clear monthly reporting is provided.
+Monthly work includes improving the Google Business Profile (categories, services, descriptions, photos), keeping listings accurate across major directories, aligning profiles and content to local keywords, and reporting calls and clicks.
 
 ### Do I need a long‑term contract?
-No. Plans are month‑to‑month. Priorities, deliverables, and tracking are agreed up front so you know what’s happening and why.
+No. Plans are month‑to‑month. Priorities and monthly work are agreed up front so it’s clear what’s happening and why.
 
 ### How much does it cost?
 Plans start at $199/mo. See the full details on the [Pricing](/pricing) page.

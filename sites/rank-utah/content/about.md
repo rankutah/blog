@@ -6,11 +6,13 @@ url: "/about"
 ---
 # Your Website Design & Local SEO Company
 
-Clear Presence provides Website Design & Local SEO Services for small businesses. Get a custom, high‑performance website built with results‑driven design, local SEO, and digital marketing.
+Hi, I’m Benjamin.
 
-Work directly with me, a dedicated expert, who personally manages your entire project from planning to launch. Every site is optimized to help customers find you on search, helping you get more calls and bookings. A simple monthly service covers your new website, managed hosting, and unlimited content updates.
+Clear Presence provides website design and local SEO services for small businesses. The goal is simple: a fast, professional website that helps people find your business on Google and then call, text, or send a message.
 
-Call or text me for questions or to get started at [(385) 323-8130](tel:+13853238130)
+You’ll work directly with me from planning to launch. Monthly service keeps things simple and covers your website, managed hosting, and updates.
+
+Call or text anytime with questions: [(385) 323-8130](tel:+13853238130)
 
 ## Meet Your Web Designer
 

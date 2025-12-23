@@ -19,7 +19,7 @@ This Policy applies to Clear Presence websites, services, and communications ass
 
 
 
-## Information I Collect
+## Information Collected
 
 - Contact information, such as your name, email address, phone number, company, and any message you submit via forms.
 - Business information you share when requesting a quote or project (e.g., website URL, goals, service area).
@@ -32,7 +32,7 @@ Sensitive personal information is not knowingly collected unless voluntarily pro
 
 
 
-## How I Use Information
+## How Information Is Used
 
 Information is used to:
 

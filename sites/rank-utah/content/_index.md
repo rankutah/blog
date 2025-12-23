@@ -16,31 +16,31 @@ schema:
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Website Design & Local SEO Services {.text-white}
-Fast, high‑performance websites with local SEO so more customers find you.
+Fast websites with local SEO so more customers find you.
 {.text-white}
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
 
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
-## Small Agency vs. Big Agency
+## Small Team vs. Big Agency
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Small Agency ✅
 
-### 1. Personal Service & Better Results
-Work directly with a dedicated expert who builds your site. This direct line means better collaboration, a clearer focus on your business goals, and a final product that brings in leads.
+### 1. Talk to the person building the site
+Work directly with the person doing the work. That keeps communication simple and helps the website bring in more calls and messages.
 
-### 2. Custom-Built for Performance
-Your site is built from the ground up to be fast, lightweight, and perfectly tailored to your needs. No bloated templates or unnecessary features that slow you down.
+### 2. Built to load fast
+Pages are built to be quick and easy to use on phones and computers. No extra clutter that slows things down.
 
 ### 3. Dedicated Ongoing Support
 Need an update? Call, text, or email for direct support. Get responsive, ongoing help from the person who knows your project inside and out.
 
 ### 4. Affordable Monthly Pricing
-With no agency overhead, you get top-tier work without the shocking price tag. Simple, transparent monthly pricing with no long-term contracts.
+Skip big-agency overhead. Get clear monthly pricing with no long-term contract.
 
 
 {{< /col >}}
@@ -49,8 +49,8 @@ With no agency overhead, you get top-tier work without the shocking price tag. S
 
 ## Agency ❌
 
-### 1. Slow and Impersonal
-You'll likely be passed between account managers and junior staff. Your message gets lost in translation, leading to a generic site that misses the mark.
+### 1. More people, more delays
+Projects often move between multiple people. That can slow things down and lead to a website that feels generic.
 
 ### 2. Bloated Templates
 Agencies often rely on cookie-cutter templates that are slow, hard to customize, and full of security holes.
@@ -147,7 +147,7 @@ Reach out with questions or to start your project.
 
 {{< faqs >}}
 ### What is your experience?
-First professional projects launched in 2023, backed by a Master’s in Software Development and experience at industry leaders like Arctic Wolf and Okta. Learn more on <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+Professional projects launched in 2023, backed by a Master’s in Software Development and experience at companies like Arctic Wolf and Okta. Learn more on <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### What is your web design process?
 You can learn all about my process for designing and building a custom website for your small business on the [Website Design](/services/website-design) page.

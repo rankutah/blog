@@ -41,7 +41,7 @@ Schedule a phone call, video call, or office visit
 
 ## After Hours?
 
-Leave a text or voicemail and I'll get back to you the next business day: [(385) 323-8130](sms:+13853238130)
+Leave a text or voicemail and expect a reply the next business day: [(385) 323-8130](sms:+13853238130)
 
 ## Business Hours
 
