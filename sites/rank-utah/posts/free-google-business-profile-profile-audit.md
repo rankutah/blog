@@ -1,6 +1,6 @@
 ---
 title: Free 30-Min Google Business Profile SEO Audit in Utah
-description: "Free 30-minute Google Business Profile audit for small businesses in Utah. In a no-obligation video chat, the profile is reviewed and improved so more customers can find the business and call." 
+description: "Free 30-minute Google Business Profile audit for small businesses in Utah. In a no-obligation video chat, the profile is reviewed and improved so more customers can find the business and call."
 tags:
   - local-seo
 date: 2025-08-04
