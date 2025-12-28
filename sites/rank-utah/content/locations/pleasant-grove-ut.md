@@ -9,6 +9,21 @@ schema:
     enabled: true
     type: ProfessionalService
     name: "Clear Presence"
+    areaServed:
+      - "Pleasant Grove, UT"
+      - "Lindon, UT"
+      - "Orem, UT"
+      - "Provo, UT"
+      - "American Fork, UT"
+      - "Lehi, UT"
+      - "Draper, UT"
+      - "Sandy, UT"
+      - "Salt Lake City, UT"
+      - "South Jordan, UT"
+      - "West Jordan, UT"
+      - "Murray, UT"
+      - "Utah County, UT"
+      - "Salt Lake County, UT"
     address:
       streetAddress: "348 S 2000 W, Suite B206"
       addressLocality: "Pleasant Grove"
@@ -29,6 +44,21 @@ schema:
     enabled: true
     serviceType: "Website Design & Local SEO Services"
     description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Get a custom, high‑performance website built with results‑driven design, local SEO, and digital marketing."
+    areaServed:
+      - "Pleasant Grove, UT"
+      - "Lindon, UT"
+      - "Orem, UT"
+      - "Provo, UT"
+      - "American Fork, UT"
+      - "Lehi, UT"
+      - "Draper, UT"
+      - "Sandy, UT"
+      - "Salt Lake City, UT"
+      - "South Jordan, UT"
+      - "West Jordan, UT"
+      - "Murray, UT"
+      - "Utah County, UT"
+      - "Salt Lake County, UT"
     offers:
       - "@type": Offer
         name: "Monthly Website Plan"
@@ -71,7 +101,7 @@ Digital marketing services for small businesses in Utah. Professional business w
 
 ## Website Design & Local SEO Services
 
-Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork), Salt Lake City, as well as businesses statewide.
+Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/pricing" text="Website Pricing" >}}
@@ -166,13 +196,10 @@ If you want to show up in Google’s local results and on Maps, we include pract
 
 ## Areas Served in Utah
 
-- Utah County: Pleasant Grove, Orem, Provo, Lehi, American Fork, Lindon
-- Salt Lake County: Salt Lake City, Sandy, Draper, West Jordan, South Jordan
-- Washington County: St. George, Washington, Santa Clara
-- Davis & Weber Counties: Layton, Bountiful, Ogden
-- Summit & Cache Counties: Park City, Logan
+- Utah County: Pleasant Grove, Lindon, American Fork, Lehi, Orem, Provo
+- Salt Lake County: Salt Lake City, Sandy, Draper, South Jordan, West Jordan, Murray
 
-Services are available remotely, with local meetings as needed, so businesses can get a high‑performing site anywhere in Utah.
+Services are available remotely, with local meetings as needed, so businesses can get a high‑performing site across Utah County and Salt Lake County.
 
 ## Simple Monthly Pricing for Small Businesses
 
@@ -226,7 +253,7 @@ No big upfront fees—just simple monthly pricing and direct support.
 
 ## Ready To Get Started
 
-I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Provo and Logan, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
+I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in Santa Clara (near St. George) and living in Provo and Logan, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
 ![Benjamin Awerkamp – Utah Website Design & Local SEO](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
