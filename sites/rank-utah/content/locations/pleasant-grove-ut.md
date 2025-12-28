@@ -173,26 +173,49 @@ Grow your small business across Utah County and Salt Lake County with a fast, cu
 
 A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Monthly plans keep things simple and affordable.
 
-### Local SEO: What’s Included
+### What’s included
 
-If you want to show up in Google’s local results and on Maps, we include practical local SEO that aligns with how nearby customers search.
+{{< cols min="18rem" gap="2rem" v="start" >}}
 
-- Google Business Profile optimization (categories, services, descriptions, photos)
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+#### Website Design: What’s Included
+
+- Custom design and build (no templates)
+- Mobile‑friendly and accessible layout
+- Fast load times with optimized images
+- Secure hosting with an encrypted connection (HTTPS)
+- Automatic backups with every change
+- Domain name and annual renewals included
+- Contact forms with spam protection
+- Site‑wide search for easy navigation
+- Ongoing support via phone, text, or email
+- Monthly report on calls, messages, and site activity
+
+{{< button url="/services/website-design" text="Learn More: Website Design" >}}
+
+{{< /col >}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+#### Local SEO: What’s Included
+
+If you want to show up in Google’s local results and on Maps, local SEO focuses on the places people search first.
+
+- Google Business Profile management and improvements
 - Apple Maps and Bing Places setup and management
-- Consistent business info across major directories (NAP: name, address, phone)
-- Local keyword research and page alignment to match search intent
+- Business info synced across major directories (100+ networks)
+- Local keyword research aligned with how people search
+- Page alignment so key services match common searches
 - Review strategy and simple ways to reply
-- Clear tracking so you can see calls and clicks
-- Month‑to‑month plans with a simple report
+- Ongoing support via phone, text, or email
+- Monthly report on calls, messages, and site activity
 
 {{< button url="/services/local-seo" text="Learn More: Local SEO" >}}
 
-### What you get
+{{< /col >}}
 
-- Custom website builds with clean modern design that looks great on phones.
-- Clear, persistent call and text buttons so more visitors contact you.
-- Month‑to‑month support—no lock‑in—so your site keeps improving as your business grows.
-- Simple monthly website plans instead of a big upfront fee.
+{{< /cols >}}
 
 
 ## Areas Served in Utah
@@ -213,7 +236,7 @@ No hidden fees. No contracts. Unlimited updates.
 
 - Local Utah website design & local SEO company focused on small business results
 - Fast turnaround and personalized support
-- Secure and fast setup
+- Secure and fast setup (encrypted website connection / HTTPS)
 - Clean, modern codebase built for speed
 
 ## Affordable Results at a Fraction of Big Agency or Company Costs
@@ -288,16 +311,34 @@ Bachelor's in Business Management
 {{< faqs >}}
 
 ### What is your experience?
-I built my first professional website for a small business in 2023, after completing my Master’s in Software Development. I’ve also worked in cybersecurity at companies like Arctic Wolf and Okta. You can see more details on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn profile</a> or on the <a href="/about">About page</a>.
+I built my first professional small‑business website in 2023 after completing my Master’s in Software Development. Unlike many builders who start from a template, I custom‑code sites for speed and performance. Every change is versioned, so it’s easy to roll back or restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and the business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a custom site take?
 Sites can usually be done in 2–3 weeks with good coordination.
 
 ### Are content updates really unlimited?
-Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email)
+Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
 
-### Do you handle hosting & the website url name?
-Yes. Managed hosting and your website name is included.
+### Do you handle hosting and the domain name?
+Yes. Managed hosting and your domain name are included.
+
+### Do I own the website?
+Yes. You own the site from day one. If services are canceled, help is provided to transfer the site to a new developer.
+
+### Are there upfront fees?
+No. Pricing is a flat monthly cost that includes hosting, your domain renewal, updates, and support.
+
+### Can I change plans later?
+Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption.
+
+### What happens if I cancel?
+No further charges after cancellation. The site stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
+
+### Do I need a long‑term contract?
+No. Plans are month‑to‑month.
+
+### What does Local SEO mean?
+Local SEO (search engine optimization) means showing up online when people search for your services or products in your local area.
 
 {{< /faqs >}}
 

@@ -1,6 +1,6 @@
 ---
 title: "Custom Website Design in Utah"
-description: "Website design for small businesses across Utah. Fast, phone‑friendly sites with clear call and text buttons, managed hosting & SSL, and friendly ongoing support. Serving all of Utah."
+description: "Website design for small businesses across Utah. Fast, phone‑friendly sites with clear call and text buttons, managed hosting, an encrypted (HTTPS) connection, and friendly ongoing support. Serving all of Utah."
 layout: "flowbite"
 url: "/locations/custom-website-design-utah"
 hero: true

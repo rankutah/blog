@@ -94,7 +94,7 @@ Work directly with the person building the site. Skip the high costs and slow ti
 - Custom design and build (no templates)
 - A site built to load quickly with sharp, lightweight images
 - Forms with spam protection and simple reporting
-- Fast hosting and a secure site (SSL) included
+- Fast hosting and a secure site (encrypted / HTTPS) included
 - Accessible and phone‑friendly design
 - Training and friendly, direct support
 

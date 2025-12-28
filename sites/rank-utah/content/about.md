@@ -16,7 +16,11 @@ Call or text anytime with questions: [(385) 323-8130](tel:+13853238130)
 
 ## Meet Your Web Designer
 
-I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. I graduated from Southern Virginia University in Business and completed my Master’s degree in Software Development.
+I specialize in building fast, custom‑coded websites that help turn visits into calls, texts, and bookings. Unlike many builders who rely on templates, I build for performance and clean code from the start. Every change is versioned, so it’s easy to restore a previous version if needed.
+
+I also understand both sides of the work: I earned a Bachelor’s degree in Business and a Master’s degree in Software Development, and I’ve worked in cybersecurity at companies like Arctic Wolf and Okta.
+
+Personally, I enjoy running, audiobooks, and all things tech.
 
 ![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
 {.w-48}
