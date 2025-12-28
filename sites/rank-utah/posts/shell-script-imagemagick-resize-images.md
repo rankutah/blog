@@ -12,19 +12,19 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 If you work in web publishing you often need to resize many images to be under a specific size, or of a different format, without loosing quality. This zsh script uses ImageMagick to:
 
 1.  Convert multiple image to JPEG or a different image format such as AVIF or WebP
-    
+
 2.  Set the width of your images
-    
+
 3.  Resize images so that each on is under a specified size (default of 130 KB)
-    
+
 4.  Organize your original images into an Originals/ folder and resized images into a Resized/ folder
-    
+
 ## Prerequisites
 
 Install ImageMagick on a Mac or Linux computer
 
 *   ImageMagick (brew install bash imagemagick)
-    
+
 
 Save the script below and make it executable by running
 
@@ -139,5 +139,5 @@ if ! $image_found; then
 else
     echo "All done! Check Resized/ and Originals/."
 fi
-   
+
 ```

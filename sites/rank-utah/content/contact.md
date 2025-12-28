@@ -57,7 +57,7 @@ Mon–Sat 8am – 8pm (MT)
 
 ## Office Address
 
-348 S 2000 W, Suite B206  
+348 S 2000 W, Suite B206
 Pleasant Grove, UT 84062
 
 - Learn more about the Utah office: [Pleasant Grove, Utah](/locations/pleasant-grove-ut)
