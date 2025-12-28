@@ -6,8 +6,6 @@ url: "/contact"
 
 ---
 
-Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S.
-
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
@@ -53,5 +51,18 @@ Mon–Sat 8am – 8pm (MT)
 {{< /col >}}
 
 {{< /cols >}}
+
+
+---
+
+## Office Address
+
+348 S 2000 W, Suite B206  
+Pleasant Grove, UT 84062
+
+- Learn more about the Utah office: [Pleasant Grove, Utah](/locations/pleasant-grove-ut)
+- Get directions on Google Maps: https://maps.app.goo.gl/uPi6ijNoRyDvUA738
+
+Serving customers across the U.S.
 
 
