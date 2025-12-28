@@ -71,7 +71,7 @@ Digital marketing services for small businesses in Utah. Professional business w
 
 ## Website Design & Local SEO Services
 
-Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork) as well as businesses statewide.
+Grow your small business anywhere in Utah with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and Utah County (Orem, Provo, Lehi, American Fork), Salt Lake City, as well as businesses statewide.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/pricing" text="Website Pricing" >}}
