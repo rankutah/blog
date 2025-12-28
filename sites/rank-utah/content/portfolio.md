@@ -7,6 +7,8 @@ url: "/portfolio"
 
 # Website Design & Local SEO Portfolio
 
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 A selection of custom website design projects for small businesses. Fast websites that help customers find the business and then call, text, or send a message.
 
 {{< cols min="18rem" gap="2rem" v="start">}}

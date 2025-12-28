@@ -7,6 +7,9 @@ tags:
   - web-design
   - local-seo
 ---
+
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 If you're a small business owner in Utah, you know how important it is to be visible to your local customers. As the owner of a website design & local SEO company, I help small businesses improve their online presence. A critical piece of that puzzle is on-page Search Engine Optimization (SEO). This post walks through essential on-page SEO techniques that help your website rank higher and attract more customers.
 
 ## On-Page SEO Strategy for Small Businesses

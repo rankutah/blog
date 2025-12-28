@@ -6,6 +6,9 @@ tags:
   - script
   - web-design
 ---
+
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 If you work in web publishing you often need to resize many images to be under a specific size, or of a different format, without loosing quality. This zsh script uses ImageMagick to:
 
 1.  Convert multiple image to JPEG or a different image format such as AVIF or WebP

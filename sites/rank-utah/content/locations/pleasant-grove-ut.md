@@ -91,7 +91,7 @@ Digital marketing services for small businesses in Utah. Professional business w
 - Serving Small Businesses in Utah & Salt Lake County
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
-- Office: <a href="https://www.google.com/maps/place/348+S+2000+W+b206,+Pleasant+Grove,+UT+84062" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
+- Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
 ![Clear Presence — website design & local SEO company serving Utah small businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)
 

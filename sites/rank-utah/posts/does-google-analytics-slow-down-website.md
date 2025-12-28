@@ -8,6 +8,9 @@ tags:
   - script
 lastmod: 2025-08-21
 ---
+
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 Google Analytics is heavy and will slow down your website. I have proven this for myself by going to Page Speed Insights and testing websites with and without analytics. Some sites recommend using the defer attribute on your script but that does not help. Other sites recommend turning off enhanced measurement by toggling off outbound clicks, site search, video engagement, and file downloads. This marginally helps but does not solve the problem.
 
 The free script below solves the problem. It works by delaying Google Analytics from loading until the user interacts with the site by touching the screen (on a phone or tablet) or scrolling (on desktop). If none of this happens it waits 4 seconds and then execute.

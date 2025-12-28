@@ -6,6 +6,9 @@ description: "As the owner of a Website Design company in Utah, I prioritize cre
 tags:
   - web-design
 ---
+
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 In today's world, most of your customers will visit your website on a mobile device. As the owner of a website design & local SEO company in Utah, I specialize in creating websites for small businesses that look great and function perfectly on any screen size. A mobile-friendly website is no longer a luxury—it's a necessity. This post covers the three most important aspects of mobile web design to ensure your customers have a great experience, whether they're on a phone, tablet, or desktop.
 
 ## 3 Important Considerations for Mobile-Friendly Design in Utah

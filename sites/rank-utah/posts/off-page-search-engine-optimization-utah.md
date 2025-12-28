@@ -6,6 +6,9 @@ description: "As the owner of a Website Design & Local SEO company in Utah, I he
 tags:
   - local-seo
 ---
+
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 As the owner of a website design & local SEO company, I'm dedicated to helping small businesses in Utah succeed online. While a great website is the foundation, what happens off your website is just as important. Off-page Search Engine Optimization (SEO) is how you build authority and drive traffic to your site. In this post, we'll explore the three pillars of effective off-page SEO and how they can bring long-term, organic growth to your business.
 
 ## Why Off-Page SEO Works for Small Businesses in Utah

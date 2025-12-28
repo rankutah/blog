@@ -5,6 +5,9 @@ date: 2025-08-14
 tags:
   - web-design
 ---
+
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 Is your website holding your business back? As the owner of a website design & local SEO company in Utah, I see many small businesses with outdated, slow, or broken websites. A website redesign can be a powerful way to refresh your online presence, attract more customers, and improve your Google ranking. In this post, I'll walk you through my simple, three-step process for a website redesign that will get your business back on track.
 
 ## How Does a Website Redesign Work for Small Businesses?

@@ -9,6 +9,8 @@ tags:
 lastmod: 2025-08-16
 ---
 
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 # Link Building Strategy in Utah
 
 For small businesses in Utah, getting noticed online can be a challenge. As the owner of a website design & local SEO company, I help clients with both their website design and off-page SEO. A crucial part of that is link building. Quality backlinks are like votes of confidence for your website in the eyes of Google, and they are a powerful way to increase your authority and climb the search rankings. This post explains how link building works and why it's a game-changer for local SEO.

@@ -30,6 +30,8 @@ Affordable custom websites for Buena Vista small businesses, built and managed b
 <div class="mt-6"></div>
 {{< /hero >}}
 
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 <div id="main-content" class="scroll-mt-24"></div>
 
 {{< cols min="18rem" gap="2rem" v="start">}}

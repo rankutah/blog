@@ -6,6 +6,8 @@ url: "/contact"
 
 ---
 
+Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S.
+
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}

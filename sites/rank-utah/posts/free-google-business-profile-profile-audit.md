@@ -6,6 +6,9 @@ tags:
 date: 2025-08-04
 author: Benjamin Awerkamp
 ---
+
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 ![person looking up local business information from a Google Business Profile to make a phone call with the background as an image of Google Maps](../media/google-business-profile-audit.avif)
 
 Your Google Business Profile is one of your most powerful tools for attracting local customers. But are you using it to its full potential? As the owner of a website design & local SEO company in Utah, I'm offering a free, no-obligation 30-minute video chat to audit your Google Business Profile. Together, we'll identify simple adjustments you can make to get more calls and new business.

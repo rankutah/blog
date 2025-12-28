@@ -50,6 +50,8 @@ Affordable websites built by a professional web developer in Utah County
 <div class="mt-6"></div>
 {{< /hero >}}
 
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 <div id="main-content" class="scroll-mt-24"></div>
 
 <div id="main-content" class="scroll-mt-24"></div>

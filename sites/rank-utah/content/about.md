@@ -8,6 +8,8 @@ url: "/about"
 
 Hi, I’m Benjamin.
 
+Clear Presence provides website design and local SEO services for small businesses across the U.S., from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
+
 Clear Presence provides website design and local SEO services for small businesses. The goal is simple: a fast, professional website that helps people find your business on Google and then call, text, or send a message.
 
 You’ll work directly with me from planning to launch. Monthly service keeps things simple and covers your website, managed hosting, and updates.

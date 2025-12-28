@@ -7,6 +7,8 @@ url: "/portfolio/blue-ridge-abbey"
 
 # Website Performance - Blue Ridge Abbey
 
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+
 Tests were conducted and can be verified using Google's Page Speed Insights tool https://pagespeed.web.dev/. Competitors were found using Google Maps and searching for "Bed & Breakfast" near the client's location.
 
 

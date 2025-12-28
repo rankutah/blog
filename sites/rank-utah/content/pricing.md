@@ -20,9 +20,6 @@ schema:
       - question: "How long does a new website take?"
         answer: "Websites can be built in 2–3 weeks with regular coordination."
 ---
-
-
-
 # Simple Monthly Pricing
 {.center}
 
@@ -39,7 +36,6 @@ Affordable monthly plans. No contracts. No surprises.
 
 {{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
-*Get a fast website custom built for your business by a small agency.*
 *Get a fast website built for your business.*
 
 - Custom design tailored to your brand
