@@ -1,5 +1,5 @@
 ---
-title: "Utah Website Design & Local SEO Services | Digital Marketing Agency Near You"
+title: "Utah Website Design & Local SEO Services | Small Business Marketing Agency | Serving Pleasant Grove, Lindon, Orem, Provo, American Fork, Lehi, Draper, Sandy, and Salt Lake City"
 description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)"
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
@@ -230,7 +230,7 @@ Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City,
 
 ## Ready To Get Started
 
-I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
+I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Provo and Logan, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
 ![Benjamin Awerkamp – Utah Website Design & Local SEO](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
 {.w-40 .mb-4}
