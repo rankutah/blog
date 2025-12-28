@@ -193,10 +193,6 @@ No hidden fees. No contracts. Unlimited updates.
 You’ll get what actually matters: a fast, mobile‑friendly site with clear call and text buttons.
 No big upfront fees—just simple monthly pricing and direct support.
 
-## Proudly Serving Businesses Across Utah
-
-Provo, Orem, Lehi, Pleasant Grove, American Fork, Draper, Sandy, Salt Lake City, Spanish Fork, Saratoga Springs.
-
 ## Let’s Build Something Great for Your Business
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
@@ -248,8 +244,8 @@ Bachelor's in Business Management
   id="contact-pg"
   action="https://submit-form.com/I4t2OG4uj"
   name="true"
-  email="true"
-  phone="optional"
+  email="false"
+  custom="Email or Phone"
   business="false"
   subject="false"
   message="true"
