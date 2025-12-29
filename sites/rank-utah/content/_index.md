@@ -93,7 +93,7 @@ See the process for building a custom site designed to bring you more customers.
 
 ## Local SEO
 
-Learn how local customers find your business on search and maps.
+Learn how local customers find your business on search and maps. Local SEO work is guided by a practical [local SEO strategy](/utah-local-seo-strategy).
 
 {{<button text="Local SEO" url="/services/local-seo">}}
 

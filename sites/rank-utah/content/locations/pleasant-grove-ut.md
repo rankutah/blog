@@ -104,8 +104,11 @@ Digital marketing services for small businesses in Utah. Professional business w
 
 Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
 
+Local SEO work is guided by a practical [local SEO strategy](/utah-local-seo-strategy) focused on clear pages, fast load times, and a strong Google Business Profile.
+
 {{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/pricing" text="Website Pricing" >}}
+{{< button url="/local-seo" text="Local SEO" >}}
+{{< button url="/pricing" text="Pricing" >}}
 
 <br>
 
@@ -173,13 +176,24 @@ Grow your small business across Utah County and Salt Lake County with a fast, cu
 
 A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Monthly plans keep things simple and affordable.
 
-### What’s included
+### Website redesigns (when your current site isn’t working)
+
+If your site is outdated, slow, hard to use on mobile, or you’re not getting calls and messages from it, a website redesign can be one of the fastest ways to improve results.
+
+What a redesign typically includes:
+
+- Rebuild using your existing content as a starting point
+- Improve mobile usability and page speed
+- Refresh the design so it looks modern and trustworthy
+- Ongoing support so the site doesn’t fall behind again
+
+## What’s included
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-#### Website Design: What’s Included
+### Website Design
 
 - Custom design and build (no templates)
 - Mobile‑friendly and accessible layout
@@ -198,7 +212,7 @@ A lot of small business websites look fine, but they don’t bring in many calls
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-#### Local SEO: What’s Included
+### Local SEO
 
 If you want to show up in Google’s local results and on Maps, local SEO focuses on the places people search first.
 

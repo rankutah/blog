@@ -3,10 +3,38 @@
 
 /locations/boca-raton-fl      /   301
 /locations/boca-raton-fl/     /   301
+
 /locations/buena-vista-va     /   301
 /locations/buena-vista-va/    /   301
+
 /locations/grand-junction-co  /   301
 /locations/grand-junction-co/ /   301
 
 /locations  /locations/pleasant-grove-ut  301
 /locations/ /locations/pleasant-grove-ut  301
+
+# Blog removal: move key guide to a normal page
+/blog/local-seo-strategy-utah                       /utah-local-seo-strategy 301
+/blog/local-seo-strategy-utah/                      /utah-local-seo-strategy 301
+
+/blog/on-page-seo-strategy-utah                     /utah-local-seo-strategy 301
+/blog/on-page-seo-strategy-utah/                    /utah-local-seo-strategy 301
+/blog/off-page-search-engine-optimization-utah       /utah-local-seo-strategy 301
+/blog/off-page-search-engine-optimization-utah/      /utah-local-seo-strategy 301
+/blog/link-building-strategy-utah                    /utah-local-seo-strategy 301
+/blog/link-building-strategy-utah/                   /utah-local-seo-strategy 301
+/blog/free-google-business-profile-profile-audit     /utah-local-seo-strategy 301
+/blog/free-google-business-profile-profile-audit/    /utah-local-seo-strategy 301
+/blog/mobile-website-design-utah                     /utah-local-seo-strategy 301
+/blog/mobile-website-design-utah/                    /utah-local-seo-strategy 301
+/blog/shell-script-imagemagick-resize-images         /utah-local-seo-strategy 301
+/blog/shell-script-imagemagick-resize-images/        /utah-local-seo-strategy 301
+
+/blog/website-redesign-utah                          /locations/pleasant-grove-ut 301
+/blog/website-redesign-utah/                         /locations/pleasant-grove-ut 301
+/blog/website-redign-utah                            /locations/pleasant-grove-ut 301
+/blog/website-redign-utah/                           /locations/pleasant-grove-ut 301
+
+/blog                                            / 301
+/blog/                                           / 301
+/blog/*                                          / 301

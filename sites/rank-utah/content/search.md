@@ -1,6 +1,6 @@
 ---
 title: "Search"
-description: "Search the site for pages, services, and blog posts. Find what you need fast."
+description: "Search the site for pages and services. Find what you need fast."
 layout: "flowbite"
 url: "/search"
 ---

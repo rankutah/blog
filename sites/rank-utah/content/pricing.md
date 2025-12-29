@@ -16,7 +16,7 @@ schema:
       - question: "Do you charge setup fees?"
         answer: "No. Setup is included in your monthly price."
       - question: "What does ‘unlimited content updates’ include?"
-        answer: "Requests typical of a small-business website: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish blog posts you provide. Large custom app-like features are quoted separately."
+        answer: "Requests typical of a small-business website: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
       - question: "How long does a new website take?"
         answer: "Websites can be built in 2–3 weeks with regular coordination."
 ---
@@ -135,7 +135,7 @@ No further charges after cancellation. The site stays online through the current
 No. Setup is included in your monthly price.
 
 ### What does “ongoing updates and support” include?
-Requests typical of a small‑business website are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Blog posts you provide are published as well.
+Requests typical of a small‑business website are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Articles you provide can be published as site pages as well.
 
 Included examples:
 - Update text, photos, hours, services, menus, pricing, or FAQs

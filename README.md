@@ -24,6 +24,7 @@ Notes:
 - All sites act in unison: shared behavior + shared UI.
 - Styling/layout/UI changes belong in `themes/overrides/`.
 - Avoid site-specific template/CSS edits. If a true exception is required, gate it behind a param and document it.
+- Content convention: avoid `index.md` page bundles except the site homepage (`content/_index.md`). Prefer single-file pages under `content/`.
 
 ## Docs (start here when debugging)
 

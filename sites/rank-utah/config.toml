@@ -8,6 +8,7 @@ themesDir     = "../../themes"
 trailingSlash = "never"
 cleanDestinationDir = true
 uglyURLs      = false
+disableKinds  = ["taxonomy", "term"]
 
 [module]
 
@@ -27,11 +28,6 @@ uglyURLs      = false
   [[module.mounts]]
     source = "media"
     target = "static/media"
-
-  # Ensure posts are included as site content
-  [[module.mounts]]
-    source = "posts"
-    target = "content/blog"
 
 # Flowbite layout cascade is provided by shared config
 
@@ -55,7 +51,7 @@ uglyURLs      = false
   enableSearch        = true
   clientName          = "Clear Presence"
   clientURL           = "https://clearpresence.io"
-  mainSections        = ["posts"]
+  mainSections        = []
   # defaultTheme/disableThemeToggle centralized in shared config
   author              = "Benjamin Awerkamp"
   hideMeta            = false
@@ -159,12 +155,6 @@ sameAs = []
 
 
 # [params.button_outline]
-
-[permalinks]
-  blog = "/blog/:contentbasename"
-
-[taxonomies]
-  tag = "tags"
 
 #[build]  # uses shared build settings from theme; uncomment to override
 
