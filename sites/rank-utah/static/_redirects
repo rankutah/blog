@@ -1,12 +1,12 @@
-# Example redirect rules (Netlify-style)
-# /old-url   /new-url   301!
+# Redirect rules (Cloudflare Pages `_redirects` format)
+# /old-url   /new-url   301
 
-/locations/boca-raton-fl      /   301!
-/locations/boca-raton-fl/     /   301!
-/locations/buena-vista-va     /   301!
-/locations/buena-vista-va/    /   301!
-/locations/grand-junction-co  /   301!
-/locations/grand-junction-co/ /   301!
+/locations/boca-raton-fl      /   301
+/locations/boca-raton-fl/     /   301
+/locations/buena-vista-va     /   301
+/locations/buena-vista-va/    /   301
+/locations/grand-junction-co  /   301
+/locations/grand-junction-co/ /   301
 
-/locations  /locations/pleasant-grove-ut  301!
-/locations/ /locations/pleasant-grove-ut  301!
+/locations  /locations/pleasant-grove-ut  301
+/locations/ /locations/pleasant-grove-ut  301
