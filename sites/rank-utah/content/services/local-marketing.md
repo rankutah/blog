@@ -81,9 +81,6 @@ It includes:
 - **100+ directory listings** (consistent business info across major directories)
 - **Clear monthly reporting** (calls, clicks, and what to improve next)
 
-
-If you only need a website: the Website Design plan includes a **search-ready setup** (clean structure, titles/descriptions, headings, internal links, mobile-friendly layout, and fast loading). Local marketing is the monthly plan for improving local visibility.
-
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
