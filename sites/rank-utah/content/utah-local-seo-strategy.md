@@ -340,4 +340,4 @@ You can’t control proximity, but you can improve relevance and prominence.
 
 ### Next step
 
-If you want help applying this strategy (website + local SEO), visit [ClearPresence.io](https://clearpresence.io/) or reach out on the [contact page](/contact).
+If you want help applying this strategy (website + local SEO), visit [Clear Presence in Utah](https://clearpresence.io/locations/pleasant-grove-ut/) or reach out on the [contact page](/contact).
