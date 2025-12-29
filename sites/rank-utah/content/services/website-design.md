@@ -7,7 +7,7 @@ url: "/services/website-design"
 schema:
   service:
     enabled: true
-    serviceType: "Website Design & Local SEO Services"
+    serviceType: "Website Design & Local Marketing Services"
     description: "Custom, fast business websites built to help customers call, text, or book."
     areaServed: "United States"
     offers:
@@ -23,7 +23,7 @@ schema:
         availability: "https://schema.org/InStock"
 ---
 
-{{< hero img="/media/utah-seo.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+{{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Website Design for Small Businesses {.text-white}
 Work directly with the person building the site. Skip the high costs and slow timelines and keep communication simple.
 {.text-white}
@@ -37,7 +37,7 @@ Work directly with the person building the site. Skip the high costs and slow ti
 ## Why work directly with the builder?
 
 - **Clear communication:** One point of contact from start to finish.
-- **Straightforward pricing:** Less overhead usually means lower cost.
+- **Straightforward pricing:** Less overhead means lower cost.
 - **Faster turnaround:** Fewer handoffs means quicker decisions.
 - **Flexible:** Changes are easier when there’s less red tape.
 

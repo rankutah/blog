@@ -25,6 +25,15 @@ Notes:
 - Styling/layout/UI changes belong in `themes/overrides/`.
 - Avoid site-specific template/CSS edits. If a true exception is required, gate it behind a param and document it.
 - Content convention: avoid `index.md` page bundles except the site homepage (`content/_index.md`). Prefer single-file pages under `content/`.
+- Customer-facing copy: use plain language and avoid tech jargon (e.g., “sprints”, “lean builds”, “workflow”).
+
+## Services naming (Rank Utah / Clear Presence)
+
+When updating copy for the Rank Utah site, keep service names and inclusions consistent:
+
+- **Website Design**: includes basic search setup so the site is ready to be found (fast pages, clean structure, titles/descriptions).
+- **Local Marketing**: the ongoing monthly service (no “SEO” wording in customer copy): keyword research + content alignment, Google Business Profile work, Apple Maps + Bing Places, 100+ directory listings, and reporting.
+- **Do not promise review management/strategy** anywhere in marketing/service copy.
 
 ## Docs (start here when debugging)
 

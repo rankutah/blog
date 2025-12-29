@@ -9,7 +9,7 @@ headless: true
 
 ### Services
 {.center}
-[Website Design](/services/website-design) • [Local SEO](/services/local-seo)
+[Website Design](/services/website-design) • [Local Marketing](/services/local-marketing)
 {.center}
 
 ### Legal
@@ -24,7 +24,7 @@ headless: true
 
 ### Clear Presence
 {.center}
-Website Design & Local SEO for Small Businesses
+Website Design & Local Marketing for Small Businesses
 {.center}
 
 ### Company

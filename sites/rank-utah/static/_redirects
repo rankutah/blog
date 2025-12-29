@@ -38,3 +38,9 @@
 /blog                                            / 301
 /blog/                                           / 301
 /blog/*                                          / 301
+
+# Services rename
+/services/local-seo              /services/local-marketing 301
+/services/local-seo/             /services/local-marketing 301
+/local-seo                       /services/local-marketing 301
+/local-seo/                      /services/local-marketing 301

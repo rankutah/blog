@@ -1,6 +1,6 @@
 ---
-title: "Utah Website Design & Local SEO Services | Small Business Marketing Agency | Serving Pleasant Grove, Lindon, Orem, Provo, American Fork, Lehi, Draper, Sandy, and Salt Lake City"
-description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)"
+title: "Utah Website Design & Local Marketing Services | Small Business Website Design & Marketing Agency | Serving Pleasant Grove, Lindon, Orem, Provo, American Fork, Lehi, Draper, Sandy, and Salt Lake City"
+description: "Clear Presence is a Website Design & Local Marketing company in Pleasant Grove, Utah. Affordable small business websites plus local marketing to help more nearby customers find and contact you."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -42,8 +42,8 @@ schema:
     priceRange: "$149–$299/mo"
   service:
     enabled: true
-    serviceType: "Website Design & Local SEO Services"
-    description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Get a custom, high‑performance website built with results‑driven design, local SEO, and digital marketing."
+    serviceType: "Website Design & Local Marketing Services"
+    description: "Clear Presence is a Website Design company in Pleasant Grove, Utah. Get a fast, high‑performance website plus local marketing to help more people find and contact you."
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
@@ -70,9 +70,9 @@ schema:
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Utah website design & local SEO services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design & Local SEO Services in Utah {.text-white}
-Digital marketing services for small businesses in Utah. Professional business websites and local search engine optimization (SEO).
+{{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Utah website design & local marketing services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Website Design & Local Marketing in Utah {.text-white}
+Digital marketing services for small businesses in Utah. Professional business websites plus local marketing: keyword research + content alignment, Google Business Profile, Apple Maps/Bing, listings, and reporting.
 {.text-white}
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
@@ -93,21 +93,21 @@ Digital marketing services for small businesses in Utah. Professional business w
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-![Clear Presence — website design & local SEO company serving Utah small businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)
+![Clear Presence — website design and local marketing for Utah small businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)
 
 
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Website Design & Local SEO Services
+## Website Design & Local Marketing
 
 Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
 
-Local SEO work is guided by a practical [local SEO strategy](/utah-local-seo-strategy) focused on clear pages, fast load times, and a strong Google Business Profile.
+Local marketing follows a practical [local marketing strategy](/utah-local-seo-strategy): keyword research + content alignment, Google Business Profile work, Apple Maps/Bing, directory listings, and reporting.
 
 {{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/local-seo" text="Local SEO" >}}
+{{< button url="/services/local-marketing" text="Local Marketing" >}}
 {{< button url="/pricing" text="Pricing" >}}
 
 <br>
@@ -167,7 +167,7 @@ Local SEO work is guided by a practical [local SEO strategy](/utah-local-seo-str
 {{< /cols >}}
 
 
-## Website Design & Local SEO Reviews from Small Businesses
+## Website Design & Local Marketing Reviews from Small Businesses
 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -180,7 +180,7 @@ A lot of small business websites look fine, but they don’t bring in many calls
 
 If your site is outdated, slow, hard to use on mobile, or you’re not getting calls and messages from it, a website redesign can be one of the fastest ways to improve results.
 
-What a redesign typically includes:
+What a redesign includes:
 
 - Rebuild using your existing content as a starting point
 - Improve mobile usability and page speed
@@ -212,20 +212,18 @@ What a redesign typically includes:
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-### Local SEO
+### Local Marketing
 
-If you want to show up in Google’s local results and on Maps, local SEO focuses on the places people search first.
+If you want to show up when people search online and on maps, local marketing includes the ongoing work that supports it.
 
-- Google Business Profile management and improvements
-- Apple Maps and Bing Places setup and management
-- Business info synced across major directories (100+ networks)
-- Local keyword research aligned with how people search
-- Page alignment so key services match common searches
-- Review strategy and simple ways to reply
+- Google Business Profile improvements (categories, services, photos)
+- Apple Maps and Bing Places setup and cleanup
+- Business info kept consistent across major directories (100+)
+- Figure out what people search for and update your profile/pages to match
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
-{{< button url="/services/local-seo" text="Learn More: Local SEO" >}}
+{{< button url="/services/local-marketing" text="Learn More: Local Marketing" >}}
 
 {{< /col >}}
 
@@ -242,13 +240,13 @@ Services are available remotely, with local meetings as needed, so businesses ca
 ## Simple Monthly Pricing for Small Businesses
 
 - $149/mo Website — fast and mobile‑friendly website design with updates included
-- $299/mo Website + SEO — add local search engine optimization as needed via the Local SEO service
+- $299/mo Website + Local Marketing — includes Google Business Profile help, listings, and reporting
 
 No hidden fees. No contracts. Unlimited updates.
 
 ## Why Utah Small Businesses Choose Clear Presence
 
-- Local Utah website design & local SEO company focused on small business results
+- Local Utah website design & local marketing focused on small business results
 - Fast turnaround and personalized support
 - Secure and fast setup (encrypted website connection / HTTPS)
 - Clean, modern codebase built for speed
@@ -293,12 +291,12 @@ No big upfront fees—just simple monthly pricing and direct support.
 
 I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in Santa Clara (next to St. George) and living in Provo and Logan, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
-![Benjamin Awerkamp – Utah Website Design & Local SEO](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![Benjamin Awerkamp – Utah Website Design & Local Marketing](/media/benjamin-awerkamp-profile.jpg)
 {.w-40 .mb-4}
 
 
 **Benjamin Awerkamp** <br>
-Website Design & Local SEO <br>
+Website Design & Local Marketing <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
@@ -328,7 +326,7 @@ Bachelor's in Business Management
 I built my first professional small‑business website in 2023 after completing my Master’s in Software Development. Unlike many web designers who use template builders, I custom‑code sites for speed and performance. Every change is versioned, so it’s easy to roll back or restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and the business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a custom site take?
-Sites can usually be done in 2–3 weeks with good coordination.
+Sites can be done in 3–4 weeks with good coordination.
 
 ### Are content updates really unlimited?
 Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
@@ -351,8 +349,8 @@ No further charges after cancellation. The site stays online through the current
 ### Do I need a long‑term contract?
 No. Plans are month‑to‑month.
 
-### What does Local SEO mean?
-Local SEO (search engine optimization) means showing up online when people search for your services or products in your local area.
+### What does Local Marketing mean?
+Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and reporting.
 
 {{< /faqs >}}
 

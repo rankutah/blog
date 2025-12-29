@@ -1,6 +1,6 @@
 ---
-title: "Website Design & Local SEO Services | Digital Marketing Agency"
-description: "Website Design & Local SEO for small businesses. Fast, mobile‑friendly websites with local SEO and digital marketing to help small businesses get more calls and bookings."
+title: "Website Design & Local Marketing Services"
+description: "Website design and local marketing for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out."
 url: "/"
 schema:
   localBusiness:
@@ -14,8 +14,8 @@ schema:
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Website Design & Local SEO Services {.text-white}
-Fast websites with local SEO so more customers find you.
+# Website Design & Local Marketing {.text-white}
+Fast websites plus local marketing so more customers find you.
 {.text-white}
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
@@ -52,13 +52,13 @@ Skip big-agency overhead. Get clear monthly pricing with no long-term contract.
 ## Agency ❌
 
 ### 1. More people, more delays
-Projects often move between multiple people. That can slow things down and lead to a website that feels generic.
+Projects move between multiple people. That can slow things down and lead to a website that feels generic.
 
 ### 2. Bloated Templates
-Agencies often rely on cookie-cutter templates that are slow, hard to customize, and full of security holes.
+Agencies rely on cookie-cutter templates that are slow, hard to customize, and full of security holes.
 
 ### 3. Limited Support
-Post-launch, you're often handed off to a support desk, facing slow response times and strict limits on what they'll update.
+Post-launch, you're handed off to a support desk, facing slow response times and strict limits on what they'll update.
 
 ### 4. High Upfront & Hidden Fees
 Agencies charge huge upfront fees to cover their overhead, then surprise you with extra costs for basic maintenance and updates.
@@ -90,11 +90,11 @@ See the process for building a custom site designed to bring you more customers.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Local SEO
+## Local Marketing
 
-Learn how local customers find your business on search and maps. Local SEO work is guided by a practical [local SEO strategy](/utah-local-seo-strategy).
+Help local customers find you on search and maps. Local marketing includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting. It’s guided by a practical [local marketing strategy](/utah-local-seo-strategy).
 
-{{<button text="Local SEO" url="/services/local-seo">}}
+{{<button text="Local Marketing" url="/services/local-marketing">}}
 
 {{< /col >}}
 
@@ -168,6 +168,6 @@ Whether you have a quick question or are ready to launch a project, reach out no
 {{<button text="Contact" url="/contact" >}}
 {{<button text="Pricing" url="/pricing" >}}
 {{<button text="Web Design" url="/services/website-design" >}}
-{{<button text="Local SEO" url="/services/local-seo" >}}
+{{<button text="Local Marketing" url="/services/local-marketing" >}}
 
 

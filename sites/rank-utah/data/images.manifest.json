@@ -1341,6 +1341,64 @@
       ]
     }
   },
+  "/media/benjamin-awerkamp-profile.jpg": {
+    "width": 400,
+    "height": 400,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgMFAQQG/8QAJRAAAgEEAgIBBQEAAAAAAAAAAQIDAAQRIRIxBUETBiIyUWGR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAGhEAAwEAAwAAAAAAAAAAAAAAAAECESEiMf/aAAwDAQACEQMRAD8AaQAAfdTZ/IXasTbx/aD2FzmqbqQRkVgEW6RpxY8va7xTQwtE2Uj3cb/NEYpFGVwNN+6JxrVNtpQ80mVKqgOz7oMd/wAqkqnChKvN8KAMUi4IHFQRo7x6rnrj6hup2PDjCp6Cjf8AtUvHXEJ8Is0j4MOQx7yc1uuy4MxWMfHNHE7fI4VSwCltbPqtiaBExg97qRfTQXPhZ5kySWAwR+O6nQeZuY4kUkMEHHDDsUJZ6N1rP//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w320.avif"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w400.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w320.jpg"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w400.jpg"
+        }
+      ]
+    }
+  },
+  "/media/benjamin-awerkamp-profile.avif": {
+    "width": 400,
+    "height": 400,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgMFAQQG/8QAJRAAAgEEAgIBBQEAAAAAAAAAAQIDAAQRIRIxBUETBiIyUWGR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAGhEAAwEAAwAAAAAAAAAAAAAAAAECESEiMf/aAAwDAQACEQMRAD8AaQAAfdTZ/IXasTbx/aD2FzmqbqQRkVgEW6RpxY8va7xTQwtE2Uj3cb/NEYpFGVwNN+6JxrVNtpQ80mVKqgOz7oMd/wAqkqnChKvN8KAMUi4IHFQRo7x6rnrj6hup2PDjCp6Cjf8AtUvHXEJ8Is0j4MOQx7yc1uuy4MxWMfHNHE7fI4VSwCltbPqtiaBExg97qRfTQXPhZ5kySWAwR+O6nQeZuY4kUkMEHHDDsUJZ6N1rP//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w320.avif"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w400.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w320.jpg"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/benjamin-awerkamp-profile__w400.jpg"
+        }
+      ]
+    }
+  },
   "/media/carwash.jpg": {
     "width": 1439,
     "height": 806,
@@ -2169,6 +2227,160 @@
       ]
     }
   },
+  "/media/google-analytics-results.jpg": {
+    "width": 2000,
+    "height": 1612,
+    "aspect": 1.2406947890818858,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EAB0QAAICAgMBAAAAAAAAAAAAAAABESECMRJRYSL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A12OLbtzHhSxTbrQJfTDi+W6gBrtEtPK5cdMqFPoRTASnk1Oh62NaACW6cdBcIoWQH//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-analytics-results__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-analytics-results__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-analytics-results__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-analytics-results__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-analytics-results__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/google-analytics-results__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/google-analytics-results__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/google-analytics-results__w2000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-analytics-results__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-analytics-results__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-analytics-results__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-analytics-results__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-analytics-results__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/google-analytics-results__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/google-analytics-results__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/google-analytics-results__w2000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/google-analytics-results.avif": {
+    "width": 2000,
+    "height": 1612,
+    "aspect": 1.2406947890818858,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAaACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EAB0QAAICAgMBAAAAAAAAAAAAAAABESECMRJRYSL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A12OLbtzHhSxTbrQJfTDi+W6gBrtEtPK5cdMqFPoRTASnk1Oh62NaACW6cdBcIoWQH//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-analytics-results__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-analytics-results__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-analytics-results__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-analytics-results__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-analytics-results__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/google-analytics-results__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/google-analytics-results__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/google-analytics-results__w2000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-analytics-results__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-analytics-results__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-analytics-results__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-analytics-results__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/google-analytics-results__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/google-analytics-results__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/google-analytics-results__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/google-analytics-results__w2000.jpg"
+        }
+      ]
+    }
+  },
   "/media/google-analytics-seo-results.jpg": {
     "width": 2998,
     "height": 2416,
@@ -2595,6 +2807,160 @@
         {
           "w": 1000,
           "url": "/media-deriv/lit-g__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-marketing-analytics-report.jpg": {
+    "width": 2000,
+    "height": 1544,
+    "aspect": 1.2953367875647668,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABsQAQEAAwEBAQAAAAAAAAAAAAEAAhEhMUFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDrQ/fvbbo8o5L32CX4b3GzLY7lYNd5AZqYrj7WCuA5GlOknlVQ1FUV/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-marketing-analytics-report__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-marketing-analytics-report__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-marketing-analytics-report__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-marketing-analytics-report__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-marketing-analytics-report__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-marketing-analytics-report__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-marketing-analytics-report__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-marketing-analytics-report__w2000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-marketing-analytics-report__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-marketing-analytics-report__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-marketing-analytics-report__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-marketing-analytics-report__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-marketing-analytics-report__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-marketing-analytics-report__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-marketing-analytics-report__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-marketing-analytics-report__w2000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/local-marketing-analytics-report.avif": {
+    "width": 2000,
+    "height": 1544,
+    "aspect": 1.2953367875647668,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQACBv/EABsQAQEAAwEBAQAAAAAAAAAAAAEAAhEhMUFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDrQ/fvbbo8o5L32CX4b3GzLY7lYNd5AZqYrj7WCuA5GlOknlVQ1FUV/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-marketing-analytics-report__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-marketing-analytics-report__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-marketing-analytics-report__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-marketing-analytics-report__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-marketing-analytics-report__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-marketing-analytics-report__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-marketing-analytics-report__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-marketing-analytics-report__w2000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/local-marketing-analytics-report__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/local-marketing-analytics-report__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/local-marketing-analytics-report__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/local-marketing-analytics-report__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/local-marketing-analytics-report__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/local-marketing-analytics-report__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/local-marketing-analytics-report__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/local-marketing-analytics-report__w2000.jpg"
         }
       ]
     }
@@ -4915,6 +5281,144 @@
         {
           "w": 1017,
           "url": "/media-deriv/the-g__w1017.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-landscape.jpg": {
+    "width": 1280,
+    "height": 853,
+    "aspect": 1.5005861664712778,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAjEAACAQUAAQQDAAAAAAAAAAABAgMABBESITEFQVFxEyLw/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/8QAGhEBAAMBAQEAAAAAAAAAAAAAAQACEQMSMf/aAAwDAQACEQMRAD8AlWgBbUYwR3BzVB7KPUPEy5IyyE1KsyydhZdseCOn69qbFxcpo7SbA+Bzn2KynQDNhsazeQrbxN7PqSBSlw7TRRybY7g/X8aLq4eSXbVc/iKg498/FcgeeS2kgIY4GUAHKN+i/IqhEbaViAEwmDzFN2s8puFUuT2iijh6kSgdJF/aNT34rOT0+MRl0Zl54PQKKKWEST//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-landscape__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-landscape__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-landscape__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-landscape__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-landscape__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-landscape__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-landscape__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-landscape__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-landscape__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-landscape__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-landscape__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-landscape__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-landscape__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-landscape__w1280.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-landscape.avif": {
+    "width": 1280,
+    "height": 853,
+    "aspect": 1.5005861664712778,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwH/xAAjEAACAQUAAQQDAAAAAAAAAAABAgMABBESITEFQVFxEyLw/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/8QAGhEBAAMBAQEAAAAAAAAAAAAAAQACEQMSMf/aAAwDAQACEQMRAD8AlWgBbUYwR3BzVB7KPUPEy5IyyE1KsyydhZdseCOn69qbFxcpo7SbA+Bzn2KynQDNhsazeQrbxN7PqSBSlw7TRRybY7g/X8aLq4eSXbVc/iKg498/FcgeeS2kgIY4GUAHKN+i/IqhEbaViAEwmDzFN2s8puFUuT2iijh6kSgdJF/aNT34rOT0+MRl0Zl54PQKKKWEST//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-landscape__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-landscape__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-landscape__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-landscape__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-landscape__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-landscape__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-landscape__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-landscape__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-landscape__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-landscape__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-landscape__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-landscape__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/utah-landscape__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/utah-landscape__w1280.jpg"
         }
       ]
     }

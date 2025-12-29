@@ -7,8 +7,10 @@ schema:
   faq:
     enabled: true
     items:
-      - question: "What does Local SEO mean?"
-        answer: "Local SEO (search engine optimization) means showing up online when people search for your services or products in your local area."
+      - question: "What does Local Marketing mean?"
+        answer: "Local marketing helps you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, 100+ directory listings, and reporting."
+      - question: "Is SEO included in Website Design?"
+        answer: "Yes. Website Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local Marketing is the monthly service for Google Business Profile work, Maps visibility, listings, and reporting."
       - question: "Can I change plans later?"
         answer: "Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption."
       - question: "What happens if I cancel?"
@@ -18,7 +20,7 @@ schema:
       - question: "What does ‘unlimited content updates’ include?"
         answer: "Requests typical of a small-business website: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
       - question: "How long does a new website take?"
-        answer: "Websites can be built in 2–3 weeks with regular coordination."
+        answer: "Websites can be built in 3–4 weeks with regular coordination."
 ---
 # Simple Monthly Pricing
 {.center}
@@ -46,6 +48,7 @@ Affordable monthly plans. No contracts. No surprises.
 - Domain name and annual renewals
 - Contact forms with spam protection
 - Site-wide search for easy navigation
+- Foundational technical + on-page SEO (search-ready setup)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
@@ -55,7 +58,7 @@ Affordable monthly plans. No contracts. No surprises.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Local SEO
+## Local Marketing
 
 {{< badge text="I need local marketing" >}}
 
@@ -64,10 +67,10 @@ Affordable monthly plans. No contracts. No surprises.
 
 *Get found on Google, Google Maps, Apple Maps, and "near me" searches.*
 
-- Google Business Profile improvements (categories, services, photos)
-- Apple Maps and Bing Places setup and cleanup
-- Business info kept consistent across 100+ directories (no mixed details)
-- Figure out what people search for and update your profile to match
+- Keyword research and content alignment (services + cities)
+- Google Business Profile management and optimization
+- Apple Maps and Bing Places management and optimization
+- Citation listings on 100+ sites (consistent business info)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
@@ -80,13 +83,13 @@ This package does not include a business website.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
-## Business Website + Local SEO
+## Business Website + Local Marketing
 
 {{< badge text="I need a website and local marketing" >}}
 
 {{< plan_price old="$348" price="299" per="mo" sr="$299 per month bundle (was $348)" >}}
 
-*Bundle your website with local SEO to maximize visibility and save $49/mo.*
+*Bundle your website with local marketing to maximize visibility and save $49/mo.*
 
 - Custom design tailored to your brand
 - Automatic adjustment to any screen size
@@ -96,10 +99,11 @@ This package does not include a business website.
 - Domain name and annual renewals
 - Contact forms with spam protection
 - Site-wide search for easy navigation
-- Google Business Profile improvements (categories, services, photos)
-- Apple Maps and Bing Places setup and cleanup
-- Business info kept consistent across 100+ directories (no mixed details)
-- Figure out what people search for and update your profile/site to match
+- Foundational technical + on-page SEO (search-ready setup)
+- Keyword research and content alignment (services + cities)
+- Google Business Profile management and optimization
+- Apple Maps and Bing Places management and optimization
+- Citation listings on 100+ sites (consistent business info)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
@@ -118,9 +122,17 @@ This package does not include a business website.
 ## Frequently asked questions
 
 {{< faqs >}}
+### What does Local Marketing mean?
+Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and citation listings.
 
-### What does Local SEO mean?
-Local SEO (search engine optimization) means showing up online when people search for your services or products in your local area. You can learn more about local SEO by visiting the [Local SEO](/services/local-seo) page.
+### Is SEO included in Website Design?
+Yes.
+
+Every website includes foundational technical + on-page SEO so it’s search-ready (clean structure, titles, descriptions, and fast pages).
+
+Local Marketing is the monthly service for Maps visibility and nearby searches, plus keyword research/content alignment, your Google Business Profile, Apple Maps/Bing Places, 100+ citations, and reporting.
+
+If you want the details, see the [Local Marketing](/services/local-marketing) page.
 
 ### Can I change plans later?
 Yes. Plans can be changed at any time. The next invoice is adjusted accordingly and services continue without interruption.
@@ -147,7 +159,7 @@ Fair use and scope:
 - Heavy request bursts may be queued to maintain quality
 
 ### How long does a new website take?
-Websites can be built in under 3 weeks with regular coordination.
+Websites can be built in 3–4 weeks with regular coordination.
 
 {{< /faqs >}}
 
@@ -160,7 +172,7 @@ Websites can be built in under 3 weeks with regular coordination.
 Pick the service you want to explore next or reach out with questions.
 
 {{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/services/local-seo" text="Local SEO" >}}
+{{< button url="/services/local-marketing" text="Local Marketing" >}}
 {{< button url="/contact" text="Contact" >}}
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Services"
-description: "Website design and local SEO services for small businesses."
+description: "Website design and local marketing services for small businesses."
 layout: "flowbite"
 ---
 
@@ -18,10 +18,10 @@ Fast, mobile-friendly websites built to convert.
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-### Local SEO
-Help local customers find you on search and maps.
+### Local Marketing
+Help local customers find you on Search + Maps with keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, listings, and reporting.
 
-{{< button url="/services/local-seo" text="Local SEO" >}}
+{{< button url="/services/local-marketing" text="Local Marketing" >}}
 {{< /col >}}
 
 {{< /cols >}}

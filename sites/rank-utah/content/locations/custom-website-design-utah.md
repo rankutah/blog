@@ -24,13 +24,13 @@ schema:
     enabled: true
     items:
       - question: "How long does a custom site take?"
-        answer: "Typical turnaround is 2–3 weeks once content is ready. Faster sprints are possible for lean builds."
+        answer: "Typical turnaround is 3–4 weeks once content is ready. Smaller sites can be done faster."
       - question: "Do you handle hosting?"
         answer: "Yes. Managed hosting, CDN, security, and ongoing updates are included."
       - question: "Is there a big upfront fee?"
         answer: "No. A predictable monthly price covers hosting, domain renewals, updates, and improvements."
       - question: "What about Local Search Engine Optimization (SEO)?"
-        answer: "Basic search setup is included (page titles/descriptions and fast loading). Extra local SEO—listings, Google Business Profile help, and reviews—is available separately."
+        answer: "Basic search setup is included (page titles/descriptions and fast loading). Extra local marketing—keyword research/content alignment, Google Business Profile, Apple Maps/Bing, 100+ listings, and reporting—is available separately."
       - question: "Are content updates really unlimited?"
         answer: "Yes. Request changes any time by call, text, or email."
 params:
@@ -163,11 +163,11 @@ Easy contact buttons, quick loading pages, and content that’s easy to scan.
 
 I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in various parts of the state, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
-![Benjamin Awerkamp – Utah Website Designer](/media/utah-seo-specialist-web-design-expert-profile-picture.jpg)
+![Benjamin Awerkamp – Utah Website Designer](/media/benjamin-awerkamp-profile.jpg)
 {.w-40 .mb-4}
 
 **Benjamin Awerkamp** <br>
-Website Design & Local SEO <br>
+Website Design & Local Marketing <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management

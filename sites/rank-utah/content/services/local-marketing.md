@@ -1,14 +1,14 @@
 ---
-title: "Local SEO Services for Small Businesses"
-description: "Affordable local SEO services for small businesses. Show up in Google Maps and local search results so more customers can find and contact you."
+title: "Local Marketing for Small Businesses"
+description: "Local marketing for small businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
 layout: "flowbite"
-url: "/services/local-seo"
+url: "/services/local-marketing"
 hero: true
 schema:
   service:
     enabled: true
-    serviceType: "Local SEO"
-    description: "Local SEO strategy to increase visibility in maps and local search so more people call or message your business."
+    serviceType: "Local Marketing"
+    description: "Local marketing to increase visibility in Google Search and Maps using keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and consistent business info across directories, with clear monthly reporting."
     areaServed: "United States"
     offers:
       - "@type": "Offer"
@@ -25,12 +25,12 @@ params:
   ppc: true
 ---
 
-{{< hero img="/media/utah-seo.avif" alt="Landscape image for local SEO" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO Services for Small Businesses
+{{< hero img="/media/utah-landscape.avif" alt="Landscape image for local marketing" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+# Local Marketing for Small Businesses
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
-{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20Local%20SEO." text="Text Now" >}}
+{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20local%20marketing." text="Text Now" >}}
 
 <div class="mt-6"></div>
 {{< /hero >}}
@@ -66,32 +66,39 @@ params:
 })();
 </script>
 
-## Local SEO (Show up in Google Maps)
-Get more calls and messages by showing up in Google’s local results and on Maps. This focuses on your Google Business Profile, your main business listings, your website pages, and your reviews—so nearby customers can find you and contact you.
+## Local marketing
 
-If someone types “gutter repair near me” or “dentist Pleasant Grove,” the goal is to show up with accurate info, real photos, clear services, and strong reviews.
+Local marketing helps your business show up when nearby customers search online.
+
+That includes places like Google Search, Google Maps, Apple Maps, Bing, and AI assistants.
+
+It includes:
+
+- **Search + Maps visibility** (Google, Apple Maps, Bing, and more)
+- **Keyword research + content alignment** (services + cities)
+- **Google Business Profile management** (categories, services, photos, descriptions)
+- **Apple Maps and Bing Places management**
+- **100+ directory listings** (consistent business info across major directories)
+- **Clear monthly reporting** (calls, clicks, and what to improve next)
 
 
-## Customer Reviews
-{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
+If you only need a website: the Website Design plan includes a **search-ready setup** (clean structure, titles/descriptions, headings, internal links, mobile-friendly layout, and fast loading). Local marketing is the monthly plan for improving local visibility.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### What You Get
-- Better Google Business Profile (categories, services, photos)
-- Apple Maps and Bing Places set up
-- Consistent business info across 100+ directories (no mixed details)
-- Figure out what people search for and update your profile/pages to match
-- Review strategy and simple ways to reply
-- Clear monthly reporting so you can see calls and clicks
-- Faster pages and a smoother experience
+- Google Business Profile management (categories, services, photos)
+- Apple Maps and Bing Places setup and ongoing updates
+- Consistent business info across 100+ directories
+- Keyword research + content alignment (services + cities)
+- Clear monthly reporting (calls, clicks, visibility)
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
-- Local SEO (no website) — $199/mo: Management of your Google Business Profile, Apple Maps and Bing Places setup, and accurate info across 100+ directories. Includes local keyword research, a simple plan, and monthly reports. Best if you already have a site.
-- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO. If you already have a site, it can be remade or moved so it’s clean, fast, and aligned with local searches.
+- Local Marketing (no website) — $199/mo: Keyword research + content alignment, Google Business Profile management, Apple Maps and Bing Places, 100+ directory listings, plus clear monthly reporting.
+- Website + Local Marketing — $299/mo: A fast, secure custom website plus everything in Local Marketing.
 
 Month‑to‑month. No long‑term contract.
 
@@ -104,20 +111,19 @@ Month‑to‑month. No long‑term contract.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 #### Visibility & Clicks
-<img src="/media/local-seo-analytics-report.avif" alt="Local SEO analytics report" />
+<img src="/media/local-marketing-analytics-report.avif" alt="Local marketing analytics report" />
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 #### Growth Over Time
-<img src="/media/google-analytics-seo-results.avif" alt="Google Analytics results demonstrating SEO growth" />
+<img src="/media/google-analytics-results.avif" alt="Analytics results demonstrating growth" />
 {{< /col >}}
 {{< /cols >}}
-
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Ready To Get Started
-<img src="/media/utah-seo-specialist-web-design-expert-profile-picture.jpg" alt="Benjamin Awerkamp – Local SEO" class="w-40 mb-4" />
+<img src="/media/benjamin-awerkamp-profile.jpg" alt="Benjamin Awerkamp" class="w-40 mb-4" />
 Partnering with small businesses to improve local visibility and turn nearby searches into calls and bookings.
 
 ### Share a bit about your business and goals.
@@ -129,26 +135,21 @@ Partnering with small businesses to improve local visibility and turn nearby sea
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## How it Works
-1. Check where you show up today (Maps, listings, and your profile)
-2. Pick the main searches to focus on (services + cities)
-3. Fix and improve your Google Business Profile
-4. Clean up key listings so your info matches everywhere
-5. Send a simple monthly report (calls, clicks, visibility)
-6. Keep building trust with reviews and better coverage
+You don’t have to manage anything. This is done for you.
+
+1. We review where you show up today (maps, listings, and your profiles)
+2. We choose the main searches to focus on (services + cities)
+3. We update and improve your Google Business Profile
+4. We update Apple Maps/Bing and clean up key listings so your info matches everywhere
+5. We send a simple monthly report (calls, clicks, visibility)
 
 ## FAQ
 {{< faqs openFirst="false" >}}
-### What is Local SEO?
-Local SEO helps your business show up in Google’s local results and on Maps. It focuses on improving your Google Business Profile, business listings and directories, local keywords, your website pages, and reviews so nearby customers can find and contact you.
-
-### How long until I see results?
-You can often see movement in 4–12 weeks, with stronger gains over 3–6 months. Timelines depend on your starting point, competition, and service area. Quick wins typically include GBP fixes, category/keyword alignment, and getting reviews from previous customers.
-
 ### What do you do each month?
-Monthly work includes improving the Google Business Profile (categories, services, descriptions, photos), keeping listings accurate across major directories, aligning profiles and content to local keywords, and reporting calls and clicks.
+Monthly work is done for you. It includes ongoing keyword research and optimization based on rankings, updates and improvements to your Google Business Profile, Apple Maps, Bing Places, and directory listings, plus a monthly report so you can see how things are progressing.
 
 ### Do I need a long‑term contract?
-No. Plans are month‑to‑month. Priorities and monthly work are agreed up front so it’s clear what’s happening and why.
+No. Plans are month‑to‑month.
 
 ### How much does it cost?
 Plans start at $199/mo. See the full details on the [Pricing](/pricing) page.
@@ -158,4 +159,3 @@ Plans start at $199/mo. See the full details on the [Pricing](/pricing) page.
 {{< button url="/contact" text="Contact" >}}
 {{< /col >}}
 {{< /cols >}}
-

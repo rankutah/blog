@@ -2,6 +2,30 @@ import { spawn } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 
+function assertForbiddenRankUtahPagesAbsent(SITE) {
+  if (SITE !== 'rank-utah') return
+
+  const forbiddenSlugs = ['boca-raton-fl', 'buena-vista-va', 'grand-junction-co']
+  const forbiddenPaths = forbiddenSlugs.flatMap((slug) => [
+    join('sites', SITE, 'content', 'locations', `${slug}.md`),
+    join('sites', SITE, 'content', 'locations', slug, 'index.md'),
+    join('sites', SITE, 'content', 'locations', slug, '_index.md'),
+  ])
+
+  // Old service URL is redirect-only; do not reintroduce content at this path.
+  forbiddenPaths.push(
+    join('sites', SITE, 'content', 'services', 'local-seo.md'),
+    join('sites', SITE, 'content', 'services', 'local-seo', 'index.md'),
+    join('sites', SITE, 'content', 'services', 'local-seo', '_index.md'),
+  )
+
+  const present = forbiddenPaths.filter((p) => existsSync(p))
+  if (present.length > 0) {
+    const hint = 'These pages are intentionally deleted and must remain redirect-only.'
+    throw new Error(`[guard] Forbidden Rank Utah content file(s) found:\n- ${present.join('\n- ')}\n${hint}`)
+  }
+}
+
 function run(cmd, args = [], env = {}) {
   return new Promise((resolve, reject) => {
     const child = spawn(cmd, args, {
@@ -62,6 +86,9 @@ async function main() {
   if (existsSync('scripts/ensure-search-page.mjs')) {
     await run('node', ['scripts/ensure-search-page.mjs'], { SITE }).catch(()=>{})
   }
+
+  // Guardrails: prevent reintroducing intentionally-deleted pages
+  assertForbiddenRankUtahPagesAbsent(SITE)
 
   // Build with Hugo
   await run('hugo', [

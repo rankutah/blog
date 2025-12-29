@@ -1,11 +1,11 @@
 ---
 title: "Portfolio"
-description: "A portfolio of custom website design projects for small businesses by a website design & local SEO company. See examples and client results."
+description: "A portfolio of custom website design projects for small businesses by a website design & local marketing company. See examples and client results."
 layout: "flowbite"
 url: "/portfolio"
 ---
 
-# Website Design & Local SEO Portfolio
+# Website Design & Local Marketing Portfolio
 
 A selection of custom website design projects for small businesses. Fast websites that help customers find the business and then call, text, or send a message.
 
@@ -15,7 +15,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Quartz Worx
 
-![Website Design & Local SEO Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)
+![Website Design & Local Marketing Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)
 
 
 **Darin Hinton** <br>
@@ -69,7 +69,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 **Gabriel Antigua** <br>
 {{<stars>}}<br>
-"Benjamin with Clear Presence has been great to work with. He is doing website design for me and local SEO including running my Google Business Profile. I am continuing to get more customers from working with him."
+"Benjamin with Clear Presence has been great to work with. He is doing website design for me and local marketing, including running my Google Business Profile. I am continuing to get more customers from working with him."
 
 {{< button url="https://blueridgetech.pro/" text="Visit BlueridgeTech" newtab="true" >}}
 
