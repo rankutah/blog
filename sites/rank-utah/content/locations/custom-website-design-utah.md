@@ -30,9 +30,9 @@ schema:
       - question: "Is there a big upfront fee?"
         answer: "No. A predictable monthly price covers hosting, domain renewals, updates, and improvements."
       - question: "What about Local Search Engine Optimization (SEO)?"
-        answer: "Basic search setup is included (titles, descriptions, fast load). Extra Local SEO—listings, Google Business Profile help, reviews—is available separately."
+        answer: "Basic search setup is included (page titles/descriptions and fast loading). Extra local SEO—listings, Google Business Profile help, and reviews—is available separately."
       - question: "Are content updates really unlimited?"
-        answer: "Yes, you can request changes and updates to your website at any time in the way that works best for you (call, text, or email)"
+        answer: "Yes. Request changes any time by call, text, or email."
 params:
   ppc: true
   hideFooterLinks: true
@@ -51,8 +51,6 @@ Affordable websites built by a professional web developer in Utah County
 {{< /hero >}}
 
 _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
-
-<div id="main-content" class="scroll-mt-24"></div>
 
 <div id="main-content" class="scroll-mt-24"></div>
 
@@ -107,7 +105,6 @@ Get a website that helps more customers call, text, and request a quote. Expect 
 - Search-friendly setup
 - Clean images that load quickly
 - Contact forms with spam protection and basic reporting
-- Spam protection
 - Ongoing updates and support
 - Managed hosting & security
 - Domain renewals included

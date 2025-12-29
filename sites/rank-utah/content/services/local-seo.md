@@ -66,8 +66,10 @@ params:
 })();
 </script>
 
-## Local SEO (Search Engine Optimization)
-Get more calls and messages by showing up in Google’s local results and on Maps. Improve your Google Business Profile, align pages with what people actually search, and keep listings and reviews working together so nearby customers can find and contact you. Local SEO means showing up when nearby people search for what you do. If someone types “gutter repair near me” or “dentist Pleasant Grove,” you want your business to appear in Google Maps and the local results — with accurate info, photos, services, and reviews.
+## Local SEO (Show up in Google Maps)
+Get more calls and messages by showing up in Google’s local results and on Maps. This focuses on your Google Business Profile, your main business listings, your website pages, and your reviews—so nearby customers can find you and contact you.
+
+If someone types “gutter repair near me” or “dentist Pleasant Grove,” the goal is to show up with accurate info, real photos, clear services, and strong reviews.
 
 
 ## Customer Reviews
@@ -80,11 +82,10 @@ Get more calls and messages by showing up in Google’s local results and on Map
 - Better Google Business Profile (categories, services, photos)
 - Apple Maps and Bing Places set up
 - Consistent business info across 100+ directories (no mixed details)
-- Local keyword research and page improvements to match how people search
+- Figure out what people search for and update your profile/pages to match
 - Review strategy and simple ways to reply
 - Clear monthly reporting so you can see calls and clicks
 - Faster pages and a smoother experience
-- Ongoing updates and a simple monthly report
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
@@ -128,12 +129,12 @@ Partnering with small businesses to improve local visibility and turn nearby sea
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## How it Works
-1. Audit – current visibility, Google Business Profile, and listings
-2. Plan – keywords and categories aligned to local intent
-3. Improve – Google Business Profile and core listings (100+ sites)
-4. Align – business details and keywords across profiles and listings
-5. Report – calls, clicks, and local visibility
-6. Grow – reviews and coverage in your service area
+1. Check where you show up today (Maps, listings, and your profile)
+2. Pick the main searches to focus on (services + cities)
+3. Fix and improve your Google Business Profile
+4. Clean up key listings so your info matches everywhere
+5. Send a simple monthly report (calls, clicks, visibility)
+6. Keep building trust with reviews and better coverage
 
 ## FAQ
 {{< faqs openFirst="false" >}}

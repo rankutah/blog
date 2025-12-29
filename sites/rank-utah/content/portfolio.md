@@ -135,7 +135,7 @@ A selection of custom website design projects for small businesses. Fast website
 {{<stars>}}<br>
 "I’m SO GLAD I found Clear Presence for my website! Finally, someone who listens to what I want and delivers! After many years with a company who only allowed minimal options that had to fit into their template, it was such a relief when Benjamin saw my vision and made it happen. Definitely deserves more than just five stars!"
 
-{{< button url="[/contact](https://rodmaxfielddds.pages.dev/)" text="Visit Rod Maxfield DDS" >}} {{<badge text="Website In Progress">}}
+{{< button url="https://rodmaxfielddds.pages.dev/" text="Visit Rod Maxfield DDS" newtab="true" >}} {{<badge text="Website In Progress">}}
 
 
 {{< /col >}}

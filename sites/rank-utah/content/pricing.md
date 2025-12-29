@@ -64,10 +64,10 @@ Affordable monthly plans. No contracts. No surprises.
 
 *Get found on Google, Google Maps, Apple Maps, and "near me" searches.*
 
-- Google Business Profile management & optimization
-- Apple Maps & Bing Places management & optimization
-- Business details synced to 100+ networks to boost local search rankings
-- Keyword research, strategy, & alignment with how your customers search
+- Google Business Profile improvements (categories, services, photos)
+- Apple Maps and Bing Places setup and cleanup
+- Business info kept consistent across 100+ directories (no mixed details)
+- Figure out what people search for and update your profile to match
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
@@ -96,10 +96,10 @@ This package does not include a business website.
 - Domain name and annual renewals
 - Contact forms with spam protection
 - Site-wide search for easy navigation
-- Google Business Profile management & optimization
-- Apple Maps & Bing Places management & optimization
-- Business details synced to 100+ networks to boost local search rankings
-- Keyword research, strategy, & alignment with how your customers search
+- Google Business Profile improvements (categories, services, photos)
+- Apple Maps and Bing Places setup and cleanup
+- Business info kept consistent across 100+ directories (no mixed details)
+- Figure out what people search for and update your profile/site to match
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 

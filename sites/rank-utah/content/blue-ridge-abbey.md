@@ -1,6 +1,6 @@
 ---
 title: "Case Study for Blue Ridge Abbey"
-description: "Clear Presence builds fast, modern websites with local SEO for small businesses—so you show up on Google Search & Maps and get more calls"
+description: "A website performance case study for Blue Ridge Abbey, with before/after screenshots and PageSpeed Insights results."
 layout: "flowbite"
 url: "/portfolio/blue-ridge-abbey"
 ---
@@ -9,7 +9,9 @@ url: "/portfolio/blue-ridge-abbey"
 
 _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
 
-Tests were conducted and can be verified using Google's Page Speed Insights tool https://pagespeed.web.dev/. Competitors were found using Google Maps and searching for "Bed & Breakfast" near the client's location.
+These screenshots and results can be verified with Google’s PageSpeed Insights tool: https://pagespeed.web.dev/
+
+Competitors were found by searching Google Maps for nearby “Bed & Breakfast” results.
 
 
 {{< cols min="18rem" gap="2rem" v="start">}}
@@ -18,7 +20,7 @@ Tests were conducted and can be verified using Google's Page Speed Insights tool
 
 ## Blue Ridge Abbey
 
-![alt text](</media/Screenshot-2025-10-22-at-11.19.51-AM.jpg>)
+![Blue Ridge Abbey website screenshot](/media/Screenshot-2025-10-22-at-11.19.51-AM.jpg)
 
 {{< /col >}}
 

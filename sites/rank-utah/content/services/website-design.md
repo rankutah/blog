@@ -120,7 +120,7 @@ Work directly with the person building the site. Skip the high costs and slow ti
 Yes, you can request changes to your website at any time in the way that works best for you (call, text, or email).
 
 ### Do you handle hosting & the website url name?
-Yes. Managed hosting and your website name is included.
+Yes. Hosting is included, and domain renewals are included in the monthly plan.
 
 ### Do I own the site?
 Yes, you own the site from day one. If services are canceled, help is provided to transfer the site to a new developer.
