@@ -352,6 +352,13 @@ No. Plans are month‑to‑month.
 ### What does Local Marketing mean?
 Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and reporting.
 
+### What results should I expect from Local Marketing?
+Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
+
+Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing builds a stronger foundation so you show up more often when nearby customers search.
+
+Results depend on what you have to offer, the level of search interest in your area, and your competition.
+
 {{< /faqs >}}
 
 

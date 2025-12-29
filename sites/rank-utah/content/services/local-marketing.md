@@ -145,6 +145,13 @@ You don’t have to manage anything. This is done for you.
 ### What do you do each month?
 Monthly work is done for you. It includes ongoing keyword research and optimization based on rankings, updates and improvements to your Google Business Profile, Apple Maps, Bing Places, and directory listings, plus a monthly report so you can see how things are progressing.
 
+### What results should I expect?
+Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+
+Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing builds a stronger foundation so you show up more often when nearby customers search.
+
+Results depend on what you have to offer, the level of search interest in your area, and your competition.
+
 ### Do I need a long‑term contract?
 No. Plans are month‑to‑month.
 
