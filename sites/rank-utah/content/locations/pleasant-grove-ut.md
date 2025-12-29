@@ -281,7 +281,7 @@ No big upfront fees—just simple monthly pricing and direct support.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Blue Ridge Abbey – Hospitality
-![Website home page for a small business that is fully optimized with on-page seo](/media/website-design-blue-ridge-abbey.jpg)
+![Small business website homepage built to load fast and show up in local search](/media/website-design-blue-ridge-abbey.jpg)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### BlueridgeTech – IT Services

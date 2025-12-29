@@ -1,7 +1,6 @@
 ---
 title: "Website Design & Local SEO Services | Digital Marketing Agency"
 description: "Website Design & Local SEO for small businesses. Fast, mobile‑friendly websites with local SEO and digital marketing to help small businesses get more calls and bookings."
-layout: "flowbite"
 url: "/"
 schema:
   localBusiness:

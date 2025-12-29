@@ -1,11 +1,7 @@
 ---
 title: Local SEO Strategy for Small Businesses in Utah
-description: "A practical local SEO strategy for Utah small businesses: on-page SEO (including keyword research, mobile friendliness, and PageSpeed Insights) plus off-page SEO (Google Business Profile and link building)."
-layout: "flowbite"
+description: "A simple local SEO plan for Utah small businesses: what to do on your website (keywords, mobile, speed) plus Google Business Profile, reviews, and local links."
 url: "/utah-local-seo-strategy"
-date: 2025-12-29
-lastmod: 2025-12-29
-author: Benjamin Awerkamp
 ---
 
 # Local SEO Strategy for Small Businesses in Utah
@@ -14,20 +10,20 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 
 Local SEO helps a business show up when people search for services nearby (especially in Google Search and Google Maps). A good strategy has two parts:
 
-- **On-page SEO**: what you do on your website.
-- **Off-page SEO**: signals outside your website (Google Business Profile, reviews, citations, and links).
+- **On-page SEO**: what you do on your website (your pages, titles, speed, and content).
+- **Off-page SEO**: what happens off your website (your Google Business Profile, reviews, directory listings, and links from other sites).
 
 Below is a simple approach you can use for your small business in Utah.
 
 ## On-Page SEO
 
-On-page SEO is about making sure your website is easy to understand (for customers and search engines), fast, and mobile-friendly.
+On-page SEO is about making sure your website is easy to understand, fast, and easy to use on a phone.
 
-### 1) Start with search intent + keyword targets
+### 1) Start with what people type into Google
 
 Keyword research is one of the most important parts of on-page SEO.
 
-It’s how you align each page of your website with what real people are searching for. If a page doesn’t match the words and intent customers use in Google, it won’t rank — even if the page is beautiful and fast.
+It’s how you line up each page of your website with what real people are actually searching for. If the page doesn’t match the words customers use, it usually won’t rank — even if the page looks great.
 
 Pick one primary topic per page.
 
@@ -35,13 +31,13 @@ Pick one primary topic per page.
 - Service pages: one core service per page.
 - Location pages (if you have them): one location per page.
 
-When you choose keywords, focus on what customers actually type and include your service area:
+When you choose keywords, focus on what customers actually type, and make it local:
 
 - Service + city (example: “roof repair Provo”)
 - Service + county (example: “website design Utah County”)
 - Service + near me (your Google Business Profile helps a lot here)
 
-**A strong option: Google Keyword Planner (inside Google Ads)**
+**Easy option: Google Keyword Planner (inside Google Ads)**
 
 Google Ads has a keyword tool that’s hard to beat for local keyword discovery:
 
@@ -52,12 +48,12 @@ Google Ads has a keyword tool that’s hard to beat for local keyword discovery:
 
 This is one of the best ways to discover what people are searching for in your local market so you can build pages that match demand.
 
-**Other keyword research options**
+**Other ways to get keyword ideas**
 
 - **Google Autocomplete**: start typing a service + city and note the suggestions.
-- **Paid tools**: If you have the budget for it and are willing to learn new tools, Semrush and Ahrefs are considered the best paid keyword research tools.
+- **Paid tools** (optional): Semrush and Ahrefs.
 
-**Google Search Console (find keywords you already rank for)**
+**Google Search Console (see what you already show up for)**
 
 If your site is verified in Google Search Console, it’s one of the best ways to find keywords you’re *already showing up for*.
 
@@ -65,9 +61,9 @@ If your site is verified in Google Search Console, it’s one of the best ways t
 - Look at **Queries** (the exact searches people used) and **Pages** (which page showed).
 - Filter by **country** (United States) and, if helpful, compare **mobile vs. desktop**.
 - Find opportunities like:
-  - Queries with high impressions and an average position around **8–20** (close to page 1).
-  - Queries where you’re getting impressions but a low click-through rate (CTR).
-  - A page that ranks for several related queries but doesn’t fully answer them.
+  - Searches where you’re showing up a lot, but you’re sitting around positions **8–20** (almost page 1).
+  - Searches where people see your result but don’t click it much (low CTR).
+  - A page that shows up for a bunch of related searches but doesn’t fully answer them.
 
 Then expand the page that’s already ranking:
 
@@ -76,9 +72,9 @@ Then expand the page that’s already ranking:
 - Improve headings so the page is easier to scan.
 - Add a short FAQ for common questions.
 
-This “upgrade what already works” approach is often faster than publishing a brand new page.
+This “upgrade what already works” approach is often faster than creating a brand new page from scratch.
 
-**Make it local on purpose**
+**Make the page clearly local**
 
 Once you pick a keyword theme for a page, make the content local in natural ways:
 
@@ -90,16 +86,16 @@ Once you pick a keyword theme for a page, make the content local in natural ways
 
 These are some of the strongest “what is this page about?” signals.
 
-- **Title tag**: include the service + a city/state (or a very specific niche topic) when it makes sense.
-  - If you leave the location out, you’re often competing nationally, which is much harder for a local business.
-  - Adding the city, county, or state helps tie the page to the local area you actually serve.
-  - It’s fine if your title is longer than ~60 characters. That “limit” is more about what typically shows in results, not a rule.
-  - The title tag and meta description are usually what people see in Google search results, so write them for humans (clear, specific, and click-worthy).
+- **Title tag**: include the service + your city/state (or a very specific niche topic) when it makes sense.
+  - If you leave the location out, you’re usually competing nationally.
+  - Adding the city/county/state helps Google (and customers) connect the page to your local area.
+  - Going over ~60 characters is fine. That number is about what often *fits on screen*, not a rule.
+  - The title tag and meta description are what people usually see in search results, so write them for humans.
 - **H1**: should match the main promise of the page.
 - **H2/H3 headings**: organize the page into scannable sections.
 - **URL slug**: short and readable (avoid stuffing).
 
-### 3) Write for humans first (then tidy for SEO)
+### 3) Write like a real person
 
 The best-performing local pages usually do three things:
 
@@ -109,7 +105,7 @@ The best-performing local pages usually do three things:
 
 **Avoid thin content (and consolidate when pages overlap)**
 
-One strong, useful page usually beats several thin pages targeting slightly different keywords.
+One strong, helpful page usually beats several thin pages that are basically saying the same thing.
 
 If multiple pages (or old blog posts) cover the same topic, combine them into one deeper page:
 
@@ -117,7 +113,7 @@ If multiple pages (or old blog posts) cover the same topic, combine them into on
 - Keep one URL as the “main” page.
 - Redirect the old URLs to the main page so you don’t lose existing signals.
 
-Google generally favors pages that are clear, helpful, and comprehensive for the query. Aim to make each page the best answer someone could find.
+Google generally favors pages that are clear, helpful, and thorough. Aim to make each page the best answer someone could find.
 
 Reference: Google’s SEO Starter Guide is a solid baseline for what Google expects from a well-built site: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 
@@ -139,12 +135,12 @@ A mobile-friendly website typically has:
 
 Google’s free tool [PageSpeed Insights](https://pagespeed.web.dev/) is one of the fastest ways to spot problems.
 
-What to look for:
+What to look at:
 
-- **Mobile score and “Core Web Vitals”**: focus on mobile first.
-- **Largest Contentful Paint (LCP)**: often fixed by optimizing the hero image and reducing render-blocking CSS.
-- **Interaction to Next Paint (INP)**: often fixed by reducing heavy JavaScript.
-- **Cumulative Layout Shift (CLS)**: often fixed by setting image/video dimensions and avoiding late-loading banners.
+- **Mobile score and “Core Web Vitals”**: Google’s basic speed/usability checks (mobile matters most).
+- **Largest Contentful Paint (LCP)**: how fast the main content shows up (often the hero image).
+- **Interaction to Next Paint (INP)**: how “snappy” the page feels when someone taps/clicks.
+- **Cumulative Layout Shift (CLS)**: whether the page jumps around while loading.
 
 Common fixes that usually matter most:
 
@@ -153,14 +149,14 @@ Common fixes that usually matter most:
 - **Limit scripts** (especially third-party scripts)
 - **Cache static files** (a CDN helps)
 
-### 6) Image basics that affect SEO
+### 6) Images: keep them small and fast
 
 Images are one of the most common reasons a mobile page is slow.
 
-**Lazy load below-the-fold images**
+**Lazy-load images lower on the page**
 
 - Add `loading="lazy"` to images that aren’t part of the first screen.
-- Set image dimensions (width/height or an aspect ratio) so the page doesn’t “jump” while images load (helps CLS).
+- Set image dimensions (width/height or an aspect ratio) so the page doesn’t jump while images load.
 
 **Compress before you upload**
 
@@ -232,11 +228,11 @@ To install ImageMagick on macOS: `brew install imagemagick`.
 - Add helpful alt text (describe the image; don’t spam keywords).
 - Keep images small enough to load quickly on mobile.
 
-### 7) Third-party scripts: load less, and load later
+### 7) Third-party scripts: load fewer, load later
 
 Third-party scripts can slow a site down on mobile (analytics, chat widgets, heatmaps, embedded maps, schedulers, etc.).
 
-When possible, delay loading scripts until someone interacts with the page (or after a short timeout). This approach often improves mobile performance and Core Web Vitals.
+When possible, delay loading scripts until someone interacts with the page (or after a short timeout). This often improves mobile speed.
 
 ```html
 <script>
@@ -259,9 +255,9 @@ When possible, delay loading scripts until someone interacts with the page (or a
 
 Tip: This same pattern can be used for analytics, chat widgets, schedulers, and embedded map scripts.
 
-### 8) Add basic schema markup
+### 8) Structured data (optional)
 
-For local businesses, simple structured data can help search engines understand your business details.
+For local businesses, a little structured data can help search engines understand your business details.
 
 Common schema types:
 
@@ -273,9 +269,11 @@ Common schema types:
 
 Off-page SEO is about building trust signals that Google can see. For local results, the biggest levers are usually:
 
+Off-page SEO is about showing Google that your business is real and trusted.
+
 - Google Business Profile
 - Reviews
-- Citations (business directory listings)
+- Citations (directory listings)
 - Local links (backlinks)
 
 ### 1) Google Business Profile (GBP)
@@ -302,9 +300,9 @@ A simple system:
 - Make it easy (send the review link).
 - Respond to reviews (short, professional replies are fine).
 
-### 3) Citations (directory listings)
+### 3) Directory listings (citations)
 
-A citation is your business listed on other sites.
+A “citation” is just your business listed on other sites (like directories).
 
 The most important rule is consistency:
 
@@ -314,9 +312,9 @@ The most important rule is consistency:
 
 Keep these consistent across platforms.
 
-### 4) Link building (earn local authority)
+### 4) Links from other sites
 
-Links are still one of the strongest “trust” signals. For local SEO, quality matters much more than volume.
+Links are still one of the strongest trust signals. For local SEO, quality matters much more than volume.
 
 Ideas that work for Utah small businesses:
 
@@ -328,15 +326,15 @@ Ideas that work for Utah small businesses:
 
 Avoid “shortcut” link tactics. They can create short-term gains but long-term problems.
 
-### 5) A simple way to think about local rankings
+### 5) What usually affects local rankings
 
-Local SEO often comes down to three ideas:
+Local SEO often comes down to three things:
 
-- **Relevance**: do your pages and your GBP match what someone searched?
-- **Prominence**: do other trusted sources talk about you (reviews, links, mentions)?
-- **Proximity**: how close is the searcher to your location?
+- **Match** (relevance): do your pages and Google Business Profile match what someone searched?
+- **Trust** (prominence): do reviews, links, and mentions show that you’re a legit business?
+- **Distance** (proximity): how close is the searcher to your location?
 
-You can’t control proximity, but you can improve relevance and prominence.
+You can’t control distance, but you can improve match and trust.
 
 ### Next step
 

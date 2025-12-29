@@ -1,7 +1,6 @@
 ---
 title: "Thank You"
 description: "Your message was sent. A reply will come soon."
-layout: "flowbite"
 url: "/thank-you"
 ---
 

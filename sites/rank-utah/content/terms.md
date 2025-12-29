@@ -1,7 +1,6 @@
 ---
 title: "Terms of Service"
 description: "The terms and conditions for using Clear Presence’s website and services."
-layout: "flowbite"
 url: "/terms"
 ---
 
