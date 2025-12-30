@@ -238,7 +238,7 @@ Local marketing is the work that helps nearby customers find and choose your bus
 
 ## Custom Websites Built for Growth — Not Just Looks
 
-A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Monthly plans keep things simple and affordable.
+A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local marketing to get in front of your ideal customers. Monthly plans keep things simple and affordable.
 
 ## Website redesigns (when your current website isn’t working)
 
