@@ -68,14 +68,20 @@
     window.zaraz = window.zaraz || {};
   </script>
   <script type="module">
-    // Cloudflare-recommended endpoint (same-origin). This is typically less likely to be blocked
-    // than the static.cloudflareinsights.com host.
-    const ZARAZ_SRC = '/cdn-cgi/zaraz/i.js';
-    let loaded = false;
+    const w = window;
+    if (w.__cpZarazLoaderInstalled) {
+      // Prevent double-install (e.g. if the partial is included twice).
+    } else {
+      w.__cpZarazLoaderInstalled = true;
 
-    function inject() {
-      if (loaded) return;
-      loaded = true;
+      // Cloudflare-recommended endpoint (same-origin). This is typically less likely to be blocked
+      // than the static.cloudflareinsights.com host.
+      const ZARAZ_SRC = '/cdn-cgi/zaraz/i.js';
+      let loaded = false;
+
+      function inject() {
+        if (loaded) return;
+        loaded = true;
       // Local/dev: Cloudflare endpoints don't exist, so don't 404-spam.
       try {
         const host = (window.location && window.location.hostname) ? window.location.hostname : '';
@@ -88,71 +94,76 @@
       try {
         if (document.querySelector('script[src^="/cdn-cgi/zaraz/"]')) return;
       } catch {}
+      try {
+        if (document.getElementById('cp-zaraz-script')) return;
+      } catch {}
 
       const s = document.createElement('script');
+      s.id = 'cp-zaraz-script';
       s.src = ZARAZ_SRC;
       s.referrerPolicy = 'origin';
       s.async = true;
       document.head.appendChild(s);
-    }
-
-    function injectSoon() {
-      try {
-        if ('requestIdleCallback' in window) requestIdleCallback(inject, { timeout: 2000 });
-        else setTimeout(inject, 1);
-      } catch {
-        setTimeout(inject, 1);
       }
-    }
+
+      function injectSoon() {
+        try {
+          if ('requestIdleCallback' in window) requestIdleCallback(inject, { timeout: 2000 });
+          else setTimeout(inject, 1);
+        } catch {
+          setTimeout(inject, 1);
+        }
+      }
 
     // Conversions-first: if the user is interacting (likely to click a CTA, call, submit a form),
     // load Zaraz immediately rather than waiting for LCP.
     // This still avoids hurting LCP for "no interaction" users.
-    function onConversionIntent() {
-      injectSoon();
+      function onConversionIntent() {
+        injectSoon();
+        try {
+          window.removeEventListener('pointerdown', onConversionIntent, true);
+          window.removeEventListener('touchstart', onConversionIntent, true);
+          window.removeEventListener('click', onConversionIntent, true);
+          window.removeEventListener('submit', onConversionIntent, true);
+          window.removeEventListener('keydown', onConversionIntent, true);
+        } catch {}
+      }
       try {
-        window.removeEventListener('pointerdown', onConversionIntent, true);
-        window.removeEventListener('touchstart', onConversionIntent, true);
-        window.removeEventListener('click', onConversionIntent, true);
-        window.removeEventListener('submit', onConversionIntent, true);
-        window.removeEventListener('keydown', onConversionIntent, true);
-      } catch {}
-    }
-    try {
-      window.addEventListener('pointerdown', onConversionIntent, { capture: true, passive: true });
-      window.addEventListener('touchstart', onConversionIntent, { capture: true, passive: true });
-      window.addEventListener('click', onConversionIntent, { capture: true, passive: true });
-      window.addEventListener('submit', onConversionIntent, { capture: true, passive: true });
-      window.addEventListener('keydown', (e) => {
-        const k = e && (e.key || e.code);
-        if (k === 'Enter' || k === ' ') onConversionIntent();
-      }, { capture: true, passive: true });
-    } catch {
-      // noop
-    }
+        window.addEventListener('pointerdown', onConversionIntent, { capture: true, passive: true });
+        window.addEventListener('touchstart', onConversionIntent, { capture: true, passive: true });
+        window.addEventListener('click', onConversionIntent, { capture: true, passive: true });
+        window.addEventListener('submit', onConversionIntent, { capture: true, passive: true });
+        window.addEventListener('keydown', (e) => {
+          const k = e && (e.key || e.code);
+          if (k === 'Enter' || k === ' ') onConversionIntent();
+        }, { capture: true, passive: true });
+      } catch {
+        // noop
+      }
 
     // Hard fallback (never wait forever)
-    setTimeout(injectSoon, 6000);
+      setTimeout(injectSoon, 6000);
 
     // Prefer: wait for LCP to settle, then inject on idle.
-    let quietTimer = null;
-    try {
-      if ('PerformanceObserver' in window) {
-        const po = new PerformanceObserver((list) => {
-          // Any LCP update restarts the quiet window.
-          for (const _ of list.getEntries()) {
-            if (quietTimer) clearTimeout(quietTimer);
-            quietTimer = setTimeout(injectSoon, 350);
-          }
-        });
-        po.observe({ type: 'largest-contentful-paint', buffered: true });
+      let quietTimer = null;
+      try {
+        if ('PerformanceObserver' in window) {
+          const po = new PerformanceObserver((list) => {
+            // Any LCP update restarts the quiet window.
+            for (const _ of list.getEntries()) {
+              if (quietTimer) clearTimeout(quietTimer);
+              quietTimer = setTimeout(injectSoon, 350);
+            }
+          });
+          po.observe({ type: 'largest-contentful-paint', buffered: true });
+        }
+      } catch {
+        // noop
       }
-    } catch {
-      // noop
-    }
 
     // If LCP observer is blocked/restricted, load after window load.
-    window.addEventListener('load', () => setTimeout(injectSoon, 1500), { once: true });
+      window.addEventListener('load', () => setTimeout(injectSoon, 1500), { once: true });
+    }
   </script>
 
 {{- else -}}
