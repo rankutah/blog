@@ -36,7 +36,7 @@ Affordable monthly plans. No contracts. No surprises.
 
 {{< badge text="I need a website" >}}
 
-{{< plan_price price="149" per="mo" sr="$149 per month" >}}
+{{< plan_price price="150" per="mo" sr="$150 per month" >}}
 
 *Get a fast website built for your business.*
 
@@ -63,11 +63,11 @@ Affordable monthly plans. No contracts. No surprises.
 {{< badge text="I need local marketing" >}}
 
 
-{{< plan_price price="199" per="mo" sr="$199 per month" >}}
+{{< plan_price price="200" per="mo" sr="$200 per month" >}}
 
 *Get found on Google, Google Maps, Apple Maps, and "near me" searches.*
 
-- Keyword research and content alignment (services + cities)
+- Keyword research and content alignment (services + city)
 - Google Business Profile management and optimization
 - Apple Maps and Bing Places management and optimization
 - Citation listings on 100+ sites (consistent business info)
@@ -87,9 +87,13 @@ This package does not include a business website.
 
 {{< badge text="I need a website and local marketing" >}}
 
-{{< plan_price old="$348" price="299" per="mo" sr="$299 per month bundle (was $348)" >}}
+{{< plan_price old="$350" price="299" per="mo" sr="$299 per month bundle (was $350)" >}}
 
-*Bundle your website with local marketing to maximize visibility and save $49/mo.*
+
+
+*Bundle your website with local marketing to maximize leads and **save $51/month**.*
+
+
 
 - Custom design tailored to your brand
 - Automatic adjustment to any screen size
@@ -100,7 +104,7 @@ This package does not include a business website.
 - Contact forms with spam protection
 - Site-wide search for easy navigation
 - Foundational technical + on-page SEO (search-ready setup)
-- Keyword research and content alignment (services + cities)
+- Keyword research and content alignment (services + city)
 - Google Business Profile management and optimization
 - Apple Maps and Bing Places management and optimization
 - Citation listings on 100+ sites (consistent business info)

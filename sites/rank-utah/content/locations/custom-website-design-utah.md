@@ -14,7 +14,7 @@ schema:
     offers:
       - "@type": Offer
         priceCurrency: USD
-        price: "149"
+        price: "150"
         availability: "https://schema.org/InStock"
       - "@type": Offer
         priceCurrency: USD

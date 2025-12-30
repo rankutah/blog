@@ -13,7 +13,7 @@ schema:
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "149"
+        price: "150"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
       - "@type": "Offer"
@@ -25,7 +25,7 @@ schema:
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Custom Website Design to Grow Your Small Businesses {.text-white}
-Lead-generating websites to help you get mor customers. Skip the expensive agency. High-performance websites starting at $149/month.
+Lead-generating websites to help you get mor customers. Skip the expensive agency. High-performance websites starting at $150/month.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 

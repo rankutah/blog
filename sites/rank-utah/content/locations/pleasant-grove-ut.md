@@ -50,7 +50,7 @@ schema:
     geo:
       latitude: "40.35949"
       longitude: "-111.77212"
-    priceRange: "$149–$299/mo"
+    priceRange: "$150–$299/mo"
   service:
     enabled: true
     serviceType: "Website Design & Local Marketing Services"
@@ -84,7 +84,7 @@ schema:
     offers:
       - "@type": Offer
         name: "Monthly Website Plan"
-        price: "149.00"
+        price: "150.00"
         priceCurrency: "USD"
       - "@type": Offer
         name: "Website + Optimization Add‑on"
@@ -94,7 +94,7 @@ schema:
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah website design & local marketing services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Custom Website Design & Local Marketing to Grow Your Utah Business {.text-white}
-Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance websites starting at $149/month.
+Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance websites starting at $150/month.
 
 {.text-white}
 
@@ -261,7 +261,7 @@ Services are available remotely, with local meetings as needed, so businesses ca
 
 ## Simple Monthly Pricing for Small Businesses
 
-- $149/mo Website — fast and mobile‑friendly website design with updates included
+- $150/mo Website — fast and mobile‑friendly website design with updates included
 - $299/mo Website + Local Marketing — includes Google Business Profile help, listings, and reporting
 
 No hidden fees. No contracts. Unlimited updates.
