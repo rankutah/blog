@@ -27,7 +27,7 @@ params:
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for local marketing" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Local Marketing to Grow Your Small Businesses
-Get in front of your ideal customers and grow your business. High-performance local marketing plans starting at $199/month.
+Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local marketing plans starting at $199/month.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}

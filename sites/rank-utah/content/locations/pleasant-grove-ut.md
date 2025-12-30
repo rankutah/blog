@@ -213,7 +213,7 @@ Local marketing is a [local marketing strategy](/utah-local-seo-strategy) that h
 - Contact forms with spam protection
 - Site‑wide search for easy navigation
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
+- Monthly report on calls, messages, and website activity
 
 
 {{< /col >}}
@@ -222,14 +222,14 @@ Local marketing is a [local marketing strategy](/utah-local-seo-strategy) that h
 
 ### Local Marketing
 
-If you want to show up when people search online and on maps, local marketing includes the ongoing work that supports it.
+Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
 - Google Business Profile improvements (categories, services, photos)
 - Apple Maps and Bing Places setup and cleanup
 - Business info kept consistent across major directories (100+)
 - Figure out what people search for and update your profile/pages to match
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
+- Monthly report on calls, messages, and website activity
 
 
 {{< /col >}}
@@ -240,16 +240,16 @@ If you want to show up when people search online and on maps, local marketing in
 
 A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Monthly plans keep things simple and affordable.
 
-## Website redesigns (when your current site isn’t working)
+## Website redesigns (when your current website isn’t working)
 
-If your site is outdated, slow, hard to use on mobile, or you’re not getting calls and messages from it, a website redesign can be one of the fastest ways to improve results.
+If your website is outdated, slow, hard to use on mobile, or you’re not getting calls and messages from it, a website redesign can be one of the fastest ways to improve results.
 
 What a redesign includes:
 
 - Rebuild using your existing content as a starting point
 - Improve mobile usability and page speed
 - Refresh the design so it looks modern and trustworthy
-- Ongoing support so the site doesn’t fall behind again
+- Ongoing support so the website doesn’t fall behind again
 
 
 ## Areas Served in Utah
@@ -257,7 +257,7 @@ What a redesign includes:
 - Utah County: Pleasant Grove, Lindon, Orem, Provo, Lehi, American Fork, Saratoga Springs, Eagle Mountain, Spanish Fork, Springville
 - Salt Lake County: Salt Lake City, West Valley City, Sandy, Draper, South Jordan, West Jordan, Taylorsville, Midvale, Holladay, Cottonwood Heights, Murray, Riverton, Herriman
 
-Services are available remotely, with local meetings as needed, so businesses can get a high‑performing site across Utah County and Salt Lake County.
+Services are available remotely, with local meetings as needed, so businesses can get a high‑performing website across Utah County and Salt Lake County.
 
 ## Simple Monthly Pricing for Small Businesses
 
@@ -275,7 +275,7 @@ No hidden fees. No contracts. Unlimited updates.
 
 ## Affordable Results at a Fraction of Big Agency or Company Costs
 
-You’ll get what actually matters: a fast, mobile‑friendly site with clear call and text buttons.
+You’ll get what actually matters: a fast, mobile‑friendly website with clear call and text buttons.
 No big upfront fees—just simple monthly pricing and direct support.
 
 ## Let’s Build Something Great for Your Business
@@ -357,7 +357,7 @@ Yes. You can request changes or updates to your website at any time in the way t
 Yes. Managed hosting and your domain name are included.
 
 ### Do I own the website?
-Yes. You own the site from day one. If services are canceled, help is provided to transfer the site to a new developer.
+Yes. You own the website from day one. If services are canceled, help is provided to transfer the website to a new developer.
 
 ### Are there upfront fees?
 No. Pricing is a flat monthly cost that includes hosting, your domain renewal, updates, and support.
@@ -366,7 +366,7 @@ No. Pricing is a flat monthly cost that includes hosting, your domain renewal, u
 Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption.
 
 ### What happens if I cancel?
-No further charges after cancellation. The site stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
+No further charges after cancellation. The website stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
 
 ### Do I need a long‑term contract?
 No. Plans are month‑to‑month.
