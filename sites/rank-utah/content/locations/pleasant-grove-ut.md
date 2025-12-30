@@ -107,9 +107,9 @@ Grow your small business across Utah County and Salt Lake County with a fast, cu
 
 Local marketing follows a practical [local marketing strategy](/utah-local-seo-strategy): keyword research + content alignment, Google Business Profile work, Apple Maps/Bing, directory listings, and reporting.
 
-{{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/services/local-marketing" text="Local Marketing" >}}
 {{< button url="/pricing" text="Pricing" >}}
+{{< button url="/porfolio" text="Portfolio" >}}
+{{< button url="/contact" text="Contact" >}}
 
 <br>
 
@@ -207,7 +207,6 @@ What a redesign includes:
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
-{{< button url="/services/website-design" text="Learn More: Website Design" >}}
 
 {{< /col >}}
 
@@ -224,7 +223,6 @@ If you want to show up when people search online and on maps, local marketing in
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
-{{< button url="/services/local-marketing" text="Learn More: Local Marketing" >}}
 
 {{< /col >}}
 
