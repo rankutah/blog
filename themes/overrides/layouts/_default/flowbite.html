@@ -36,7 +36,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Site.Title }}{{ if and .Title (ne .Title .Site.Title) (gt (len (trim .Title " \n\r\t")) 0) }} | {{ .Title }}{{ end }}</title>
+  <title>{{ if and .Title (ne .Title .Site.Title) (gt (len (trim .Title " \n\r\t")) 0) }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
   {{ partial "seo-meta.html" . }}
 

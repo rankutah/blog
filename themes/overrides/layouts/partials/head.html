@@ -16,7 +16,7 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ site.Title }}{{ if and .Title (ne .Title site.Title) (gt (len (trim .Title " \n\r\t")) 0) }} | {{ .Title }}{{ end }}</title>
+<title>{{ if and .Title (ne .Title site.Title) (gt (len (trim .Title " \n\r\t")) 0) }}{{ .Title }} | {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
