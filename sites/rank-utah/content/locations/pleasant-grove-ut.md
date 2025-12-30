@@ -12,15 +12,26 @@ schema:
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
+      - "Saratoga Springs, UT"
+      - "Eagle Mountain, UT"
       - "Orem, UT"
       - "Provo, UT"
       - "American Fork, UT"
       - "Lehi, UT"
+      - "Spanish Fork, UT"
+      - "Springville, UT"
       - "Draper, UT"
       - "Sandy, UT"
       - "Salt Lake City, UT"
+      - "West Valley City, UT"
+      - "Taylorsville, UT"
+      - "Holladay, UT"
+      - "Cottonwood Heights, UT"
+      - "Midvale, UT"
       - "South Jordan, UT"
       - "West Jordan, UT"
+      - "Riverton, UT"
+      - "Herriman, UT"
       - "Murray, UT"
       - "Utah County, UT"
       - "Salt Lake County, UT"
@@ -47,15 +58,26 @@ schema:
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
+      - "Saratoga Springs, UT"
+      - "Eagle Mountain, UT"
       - "Orem, UT"
       - "Provo, UT"
       - "American Fork, UT"
       - "Lehi, UT"
+      - "Spanish Fork, UT"
+      - "Springville, UT"
       - "Draper, UT"
       - "Sandy, UT"
       - "Salt Lake City, UT"
+      - "West Valley City, UT"
+      - "Taylorsville, UT"
+      - "Holladay, UT"
+      - "Cottonwood Heights, UT"
+      - "Midvale, UT"
       - "South Jordan, UT"
       - "West Jordan, UT"
+      - "Riverton, UT"
+      - "Herriman, UT"
       - "Murray, UT"
       - "Utah County, UT"
       - "Salt Lake County, UT"
@@ -232,8 +254,8 @@ What a redesign includes:
 
 ## Areas Served in Utah
 
-- Utah County: Pleasant Grove, Lindon, American Fork, Lehi, Orem, Provo
-- Salt Lake County: Salt Lake City, Sandy, Draper, South Jordan, West Jordan, Murray
+- Utah County: Pleasant Grove, Lindon, Orem, Provo, Lehi, American Fork, Saratoga Springs, Eagle Mountain, Spanish Fork, Springville
+- Salt Lake County: Salt Lake City, West Valley City, Sandy, Draper, South Jordan, West Jordan, Taylorsville, Midvale, Holladay, Cottonwood Heights, Murray, Riverton, Herriman
 
 Services are available remotely, with local meetings as needed, so businesses can get a high‑performing site across Utah County and Salt Lake County.
 
