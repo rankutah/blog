@@ -15,6 +15,83 @@
 
   var cfg = readConfig();
 
+  // LCP-first gating: delay loading third-party until LCP settles.
+  // Defaults to ON so CWV is prioritized.
+  var LCP_GATE = cfg.lcpGate !== false;
+  var LCP_MAX_WAIT_MS = parseInt(cfg.lcpMaxWaitMs, 10);
+  if (!(LCP_MAX_WAIT_MS >= 0)) LCP_MAX_WAIT_MS = 6000;
+  var LCP_QUIET_WINDOW_MS = parseInt(cfg.lcpQuietWindowMs, 10);
+  if (!(LCP_QUIET_WINDOW_MS >= 0)) LCP_QUIET_WINDOW_MS = 350;
+
+  var lcpGateOpened = false;
+  var lcpGateCallbacks = [];
+
+  function openLcpGate() {
+    if (lcpGateOpened) return;
+    lcpGateOpened = true;
+    try {
+      for (var i = 0; i < lcpGateCallbacks.length; i++) {
+        try {
+          lcpGateCallbacks[i]();
+        } catch (e) {}
+      }
+    } finally {
+      lcpGateCallbacks = [];
+    }
+  }
+
+  function afterLcp(cb) {
+    if (!LCP_GATE) return cb();
+    if (lcpGateOpened) return cb();
+    lcpGateCallbacks.push(cb);
+  }
+
+  (function setupLcpGate() {
+    if (!LCP_GATE) {
+      lcpGateOpened = true;
+      return;
+    }
+
+    var quietTimer = null;
+    var sawLcp = false;
+
+    function scheduleOpenSoon() {
+      if (quietTimer) {
+        try {
+          clearTimeout(quietTimer);
+        } catch (e) {}
+      }
+      quietTimer = setTimeout(openLcpGate, LCP_QUIET_WINDOW_MS);
+    }
+
+    try {
+      if ('PerformanceObserver' in window) {
+        var po = new PerformanceObserver(function (list) {
+          var entries = list.getEntries();
+          if (entries && entries.length) {
+            sawLcp = true;
+            scheduleOpenSoon();
+          }
+        });
+        po.observe({ type: 'largest-contentful-paint', buffered: true });
+      }
+    } catch (e) {}
+
+    // If the browser doesn't expose LCP entries, don't block forever: open after load.
+    try {
+      window.addEventListener(
+        'load',
+        function () {
+          if (!sawLcp) scheduleOpenSoon();
+        },
+        { once: true }
+      );
+    } catch (e) {}
+
+    // Hard safety fallback.
+    setTimeout(openLcpGate, Math.max(0, LCP_MAX_WAIT_MS | 0));
+  })();
+
   var GA_ID = (cfg.gaId || '').trim();
   var CLARITY_ID = (cfg.clarityId || '').trim();
   var ADS_ID = (cfg.googleAdsId || '').trim();
@@ -132,16 +209,16 @@
 
     if (!clarityOnlyInteract) {
       try {
-        setTimeout(initClarity, Math.max(0, clarityDelay | 0));
+        setTimeout(requestClarity, Math.max(0, clarityDelay | 0));
       } catch (e) {
-        setTimeout(initClarity, 4000);
+        setTimeout(requestClarity, 4000);
       }
     }
 
     try {
       LOAD_EVENTS.forEach(function (evt) {
         if (typeof evt === 'string' && evt) {
-          document.addEventListener(evt, initClarity, { once: true, passive: true });
+          document.addEventListener(evt, requestClarity, { once: true, passive: true });
         }
       });
     } catch (e) {}
@@ -149,18 +226,40 @@
     initMeta();
   }
 
+  var loadRequested = false;
+  function requestLoadAll() {
+    if (window.__trackingLoaded) return;
+    if (loadRequested) return;
+    loadRequested = true;
+    afterLcp(function () {
+      loadRequested = false;
+      loadAll();
+    });
+  }
+
+  var clarityRequested = false;
+  function requestClarity() {
+    if (!CLARITY_ID) return;
+    if (clarityRequested) return;
+    clarityRequested = true;
+    afterLcp(function () {
+      clarityRequested = false;
+      initClarity();
+    });
+  }
+
   if (!ONLY_ON_INTERACTION) {
     try {
-      setTimeout(loadAll, Math.max(0, DELAY_MS | 0));
+      setTimeout(requestLoadAll, Math.max(0, DELAY_MS | 0));
     } catch (e) {
-      setTimeout(loadAll, 4000);
+      setTimeout(requestLoadAll, 4000);
     }
   }
 
   try {
     LOAD_EVENTS.forEach(function (evt) {
       if (typeof evt === 'string' && evt) {
-        document.addEventListener(evt, loadAll, { once: true, passive: true });
+        document.addEventListener(evt, requestLoadAll, { once: true, passive: true });
       }
     });
   } catch (e) {}
