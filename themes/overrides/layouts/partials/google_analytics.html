@@ -63,10 +63,6 @@
     Module scripts are deferred by default.
   */ -}}
 
-  <script>
-    // Provide a global so any stray references don't throw if Zaraz is delayed.
-    window.zaraz = window.zaraz || {};
-  </script>
   <script type="module">
     const w = window;
     if (w.__cpZarazLoaderInstalled) {
