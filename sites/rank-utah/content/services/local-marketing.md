@@ -26,7 +26,8 @@ params:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for local marketing" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local Marketing for Small Businesses
+# Local Marketing to Grow Your Small Businesses
+Get in front of your ideal customers and grow your business. High-performance local marketing plans starting at $199/month.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
@@ -72,14 +73,14 @@ Local marketing helps your business show up when nearby customers search online.
 
 That includes places like Google Search, Google Maps, Apple Maps, Bing, and AI assistants.
 
-It includes:
+Local Marketing Packages Include:
 
 - **Search + Maps visibility** (Google, Apple Maps, Bing, and more)
 - **Keyword research + content alignment** (services + cities)
 - **Google Business Profile management** (categories, services, photos, descriptions)
 - **Apple Maps and Bing Places management**
 - **100+ directory listings** (consistent business info across major directories)
-- **Clear monthly reporting** (calls, clicks, and what to improve next)
+- **Clear monthly reports** (calls, clicks, and what to improve next)
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
@@ -111,7 +112,7 @@ Month‑to‑month. No long‑term contract.
 <img src="/media/local-marketing-analytics-report.avif" alt="Local marketing analytics report" />
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-#### Growth Over Time
+#### Small Business Growth
 <img src="/media/google-analytics-results.avif" alt="Analytics results demonstrating growth" />
 {{< /col >}}
 {{< /cols >}}
