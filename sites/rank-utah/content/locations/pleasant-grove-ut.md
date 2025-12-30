@@ -72,7 +72,7 @@ schema:
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah website design & local marketing services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Custom Website Design & Local Marketing to Grow Your Utah Business {.text-white}
-Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance sites starting at $149/month.
+Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance websites starting at $149/month.
 
 {.text-white}
 
@@ -105,7 +105,7 @@ Lead-generating websites and local marketing built in Utah County to help you ge
 
 Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
 
-Local marketing follows a practical [local marketing strategy](/utah-local-seo-strategy): keyword research + content alignment, Google Business Profile work, Apple Maps/Bing, directory listings, and reporting.
+Local marketing follows a practical [local marketing strategy](/utah-local-seo-strategy): keyword research + content alignment, Google Business Profile work, Apple Maps/Bing, directory listings, and clear monthly reports.
 
 {{< button url="/pricing" text="Pricing" >}}
 {{< button url="/porfolio" text="Portfolio" >}}
@@ -322,10 +322,10 @@ Bachelor's in Business Management
 {{< faqs >}}
 
 ### What is your experience?
-I built my first professional small‑business website in 2023 after completing my Master’s in Software Development. Unlike many web designers who use template builders, I custom‑code sites for speed and performance. Every change is versioned, so it’s easy to roll back or restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and the business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I built my first professional small‑business website in 2023 after completing my Master’s in Software Development. Unlike many web designers who use template builders, I custom‑code websites for speed and performance. Every change is versioned, so it’s easy to roll back or restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and the business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
-### How long does a custom site take?
-Sites can be done in 3–4 weeks with good coordination.
+### How long does a custom website take?
+Websites can be done in under 4 weeks with good coordination.
 
 ### Are content updates really unlimited?
 Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
