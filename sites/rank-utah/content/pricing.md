@@ -69,7 +69,7 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-*Get found everywhere it matters: Google, Maps, Apple, AI, and 'near me' searches.*
+*Get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.*
 
 - Keyword research and content alignment (services + city)
 - Google Business Profile management and optimization
