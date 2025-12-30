@@ -70,9 +70,10 @@ schema:
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/freelance-website-design-services-small-businesses-utah.avif" alt="Utah website design & local marketing services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design & Local Marketing in Utah {.text-white}
-Digital marketing services for small businesses in Utah. Professional business websites plus local marketing: keyword research + content alignment, Google Business Profile, Apple Maps/Bing, listings, and reporting.
+{{< hero img="/media/utah-website-design-hero.avif" alt="Utah website design & local marketing services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Custom Website Design & Local Marketing to Grow Your Utah Business {.text-white}
+Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance sites starting at $150/month.
+
 {.text-white}
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
