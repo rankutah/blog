@@ -40,6 +40,9 @@
 
   {{ partial "seo-meta.html" . }}
 
+  {{- /* LCP preload: emit as early as possible so the hero image request starts sooner */ -}}
+  {{ partial "lcp-preload.html" . }}
+
   <!-- Theme bootstrap: tiny pre-paint apply to avoid blocking first render/LCP -->
   <script>
     (function(){
@@ -162,9 +165,6 @@
 
   {{- /* Favicons */ -}}
   {{ partial "favicons.html" . }}
-
-  {{- /* LCP preload */ -}}
-  {{ partial "lcp-preload.html" . }}
 
   {{- /* JSON-LD schema (Event and per-page LocalBusiness) */ -}}
   {{ partial "schema.html" . }}
