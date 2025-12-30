@@ -1,10 +1,9 @@
-{{- /* Plan price header with optional old price, savings line, and reassurance */ -}}
+{{- /* Plan price header with optional old price and savings line */ -}}
 {{- $price := .Get "price" | default "0" -}}
 {{- $currency := .Get "currency" | default "$" -}}
 {{- $per := .Get "per" | default "mo" -}}
 {{- $old := .Get "old" | default "" -}}
 {{- $savings := .Get "savings" | default "" -}}
-{{- $reassure := .Get "reassurance" | default "Cancel anytime. No setup fees." -}}
 {{- $sr := .Get "sr" | default "" -}}
 
 {{- /* brand classes for savings pill (white text on brand background) */ -}}
@@ -42,6 +41,5 @@
     <span class="text-base text-gray-500 dark:text-gray-400">/{{ $per }}</span>
   </div>
   {{- if $savings }}<div class="mt-1"><span class="inline-block rounded-sm px-2 py-0.5 text-xs font-semibold {{ $brandClasses }}">{{ $savings }}</span></div>{{ end -}}
-  {{- if $reassure }}<div class="text-sm text-gray-600 dark:text-gray-300">{{ $reassure }}</div>{{ end -}}
   {{- if $sr }}<div class="sr-only">{{ $sr }}</div>{{ end -}}
   </div>

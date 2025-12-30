@@ -22,10 +22,10 @@ schema:
       - question: "How long does a new website take?"
         answer: "Websites can be built in 3–4 weeks with regular coordination."
 ---
-# Simple Monthly Pricing
+# Simple, Transparent Pricing
 {.center}
 
-Affordable monthly plans. No contracts. No surprises.
+High-performance plans with no contracts, no setup fees, and no surprises.
 {.center}
 
 {{< cols min="18rem" gap="1rem" v="stretch">}}
@@ -38,7 +38,9 @@ Affordable monthly plans. No contracts. No surprises.
 
 {{< plan_price price="150" per="mo" sr="$150 per month" >}}
 
-*Get a fast website built for your business.*
+No contracts. No setup fees. Cancel anytime.
+
+*Fast, professional websites built to convert visitors into customers.*
 
 - Custom design tailored to your brand
 - Automatic adjustment to any screen size
@@ -65,7 +67,9 @@ Affordable monthly plans. No contracts. No surprises.
 
 {{< plan_price price="200" per="mo" sr="$200 per month" >}}
 
-*Get found on Google, Google Maps, Apple Maps, and "near me" searches.*
+No contracts. No setup fees. Cancel anytime.
+
+*Get found everywhere it matters: Google, Maps, Apple, AI, and 'near me' searches.*
 
 - Keyword research and content alignment (services + city)
 - Google Business Profile management and optimization
@@ -89,9 +93,10 @@ This package does not include a business website.
 
 {{< plan_price old="$350" price="299" per="mo" sr="$299 per month bundle (was $350)" >}}
 
+No contracts. No setup fees. Cancel anytime.
 
 
-*Bundle your website with local marketing to maximize leads and **save $51/month**.*
+*Maximize leads by bundling your website with local marketing and **save $51/month***
 
 
 
@@ -126,23 +131,13 @@ This package does not include a business website.
 ## Frequently asked questions
 
 {{< faqs >}}
-### What does Local Marketing mean?
-Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and citation listings.
 
-### Is SEO included in Website Design?
-Yes.
 
-Every website includes foundational technical + on-page SEO so it’s search-ready (clean structure, titles, descriptions, and fast pages).
-
-Local Marketing is the monthly service for Maps visibility and nearby searches, plus keyword research/content alignment, your Google Business Profile, Apple Maps/Bing Places, 100+ citations, and reporting.
-
-If you want the details, see the [Local Marketing](/services/local-marketing) page.
+### Do I own the website?
+Yes, you own your website from day one. If services are canceled, help is provided to transfer the website and domain to a new developer.
 
 ### Can I change plans later?
 Yes. Plans can be changed at any time. The next invoice is adjusted accordingly and services continue without interruption.
-
-### Do I own the site?
-Yes, you own your website from day one. If services are canceled, help is provided to transfer the website and domain to a new developer.
 
 ### What happens if I cancel?
 No further charges after cancellation. The site stays online through the current billing period. Help is provided to transfer the website and domain to a new developer.
@@ -150,7 +145,7 @@ No further charges after cancellation. The site stays online through the current
 ### Do you charge setup fees?
 No. Setup is included in your monthly price.
 
-### What does “ongoing updates and support” include?
+### What does ongoing support include?
 Requests typical of a small‑business website are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Articles you provide can be published as site pages as well.
 
 Included examples:
@@ -161,6 +156,10 @@ Included examples:
 Fair use and scope:
 - Majorly customized or out‑of‑the‑ordinary work (e.g., complex tools, custom integrations, web apps, or bulk content migrations) is quoted separately
 - Heavy request bursts may be queued to maintain quality
+
+### What do you do each month for local marketing?
+
+Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, Bing Places, and directory listings. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
 ### How long does a new website take?
 Websites can be built in 3–4 weeks with regular coordination.

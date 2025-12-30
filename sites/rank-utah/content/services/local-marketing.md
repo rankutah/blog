@@ -143,8 +143,10 @@ You don’t have to manage anything. This is done for you.
 
 ## FAQ
 {{< faqs openFirst="false" >}}
-### What do you do each month?
-Monthly work is done for you. It includes ongoing keyword research and optimization based on rankings, updates and improvements to your Google Business Profile, Apple Maps, Bing Places, and directory listings, plus a monthly report so you can see how things are progressing.
+
+### What do you do each month for local marketing?
+
+Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, Bing Places, and directory listings. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
 ### What results should I expect?
 Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
