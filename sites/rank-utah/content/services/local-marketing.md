@@ -1,5 +1,5 @@
 ---
-title: "Local Marketing for Small Businesses"
+title: "Local Marketing to Grow Your Small Business"
 description: "Local marketing for small businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
 layout: "flowbite"
 url: "/services/local-marketing"
@@ -7,7 +7,7 @@ hero: true
 schema:
   service:
     enabled: true
-    serviceType: "Local Marketing"
+    serviceType: "Local Marketing to Grow Your Small Business"
     description: "Local marketing to increase visibility in Google Search and Maps using keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and consistent business info across directories, with clear monthly reporting."
     areaServed: "United States"
     offers:

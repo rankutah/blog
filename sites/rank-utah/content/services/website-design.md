@@ -24,8 +24,8 @@ schema:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Website Design for Small Businesses {.text-white}
-Work directly with the person building the site. Skip the high costs and slow timelines and keep communication simple.
+# Custom Website Design to Grow Your Businesses {.text-white}
+Lead-generating websites to help you get mor customers. Skip the expensive agency. High-performance websites starting at $149/month.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 
@@ -33,13 +33,10 @@ Work directly with the person building the site. Skip the high costs and slow ti
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
+## Website Design
 
-## Why work directly with the builder?
+Grow your small business with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings
 
-- **Clear communication:** One point of contact from start to finish.
-- **Straightforward pricing:** Less overhead means lower cost.
-- **Faster turnaround:** Fewer handoffs means quicker decisions.
-- **Flexible:** Changes are easier when there’s less red tape.
 
 ## Featured work
 
