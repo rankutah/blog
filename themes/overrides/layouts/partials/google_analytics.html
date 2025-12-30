@@ -43,7 +43,19 @@
   "enableAdsPhoneReplace" (and $adsEnabled $adsPhoneReplace)
   "sitePhoneNumber" $sitePhone
 -}}
-{{- if not $useZaraz -}}
+
+{{- if $useZaraz -}}
+  {{- /*
+    Cloudflare Zaraz (manual / delayed loader).
+
+    Important: This only helps if Zaraz is NOT already being auto-injected by Cloudflare.
+    If Cloudflare is injecting zaraz/s.js early, disable/pause that in Cloudflare first,
+    then let this loader inject it after LCP.
+  */ -}}
+  {{- $zarazLoader := resources.Get "js/zaraz-loader.js" | resources.Minify | resources.Fingerprint -}}
+  <script src="{{ $zarazLoader.RelPermalink }}" defer></script>
+
+{{- else -}}
 
 
 <script id="cp-analytics-config" type="application/json">{{ $cfg | jsonify | safeJS }}</script>
