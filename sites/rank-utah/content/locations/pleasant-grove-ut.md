@@ -105,7 +105,7 @@ Lead-generating websites and local marketing built in Utah County to help you ge
 
 Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
 
-Local marketing follows a practical [local marketing strategy](/utah-local-seo-strategy): keyword research + content alignment, Google Business Profile work, Apple Maps/Bing, directory listings, and clear monthly reports.
+Local marketing is a [local marketing strategy](/utah-local-seo-strategy) that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
 {{< button url="/pricing" text="Pricing" >}}
 {{< button url="/porfolio" text="Portfolio" >}}
@@ -349,7 +349,7 @@ No further charges after cancellation. The site stays online through the current
 No. Plans are month‑to‑month.
 
 ### What does Local Marketing mean?
-Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and reporting.
+Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
 ### What results should I expect from Local Marketing?
 Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
