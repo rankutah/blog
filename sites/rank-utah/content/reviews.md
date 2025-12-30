@@ -27,9 +27,9 @@ Clear Presence helps small businesses feel proud of their online presence — pr
 
 {{< col card="false" y="start" >}}
 
-### Ready to improve your website?
+### Ready to grow your business?
 
-Take a quick look at recent work and pricing, then reach out for a friendly, no‑pressure chat.
+Take a quick look at pricing, then reach out for a friendly, no‑pressure chat.
 
 <div class="flex flex-wrap gap-3 items-center">
 	{{< button url="/pricing" text="Pricing" >}}
