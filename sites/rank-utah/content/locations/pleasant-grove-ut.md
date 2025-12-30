@@ -72,7 +72,7 @@ schema:
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah website design & local marketing services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Custom Website Design & Local Marketing to Grow Your Utah Business {.text-white}
-Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance sites starting at $150/month.
+Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance sites starting at $149/month.
 
 {.text-white}
 
@@ -356,7 +356,7 @@ Local marketing is the work that helps nearby customers find and choose your bus
 ### What results should I expect from Local Marketing?
 Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
 
-Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing builds a stronger foundation so you show up more often when nearby customers search.
+Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing build a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and your competition.
 

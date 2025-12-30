@@ -14,8 +14,8 @@ schema:
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Website Design & Local Marketing {.text-white}
-Fast websites plus local marketing so more customers find you.
+# Custom Website Design & Local Marketing to Grow Your Business {.text-white}
+Lead-generating websites and local marketing to help you get more customers. High-performance sites starting at $149/month.
 {.text-white}
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}

@@ -148,7 +148,7 @@ Monthly work is done for you. It includes ongoing keyword research and optimizat
 ### What results should I expect?
 Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
 
-Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing builds a stronger foundation so you show up more often when nearby customers search.
+Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing build a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and your competition.
 
