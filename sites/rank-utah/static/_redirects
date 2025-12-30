@@ -13,6 +13,9 @@
 /locations  /locations/pleasant-grove-ut  301
 /locations/ /locations/pleasant-grove-ut  301
 
+/confirmation    /welcome   301
+/confirmation/   /welcome   301
+
 # Blog removal: move key guide to a normal page
 /blog/local-seo-strategy-utah                       /utah-local-seo-strategy 301
 /blog/local-seo-strategy-utah/                      /utah-local-seo-strategy 301
