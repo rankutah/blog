@@ -173,20 +173,6 @@ Local marketing is a [local marketing strategy](/utah-local-seo-strategy) that h
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## Custom Websites Built for Growth — Not Just Looks
-
-A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Monthly plans keep things simple and affordable.
-
-### Website redesigns (when your current site isn’t working)
-
-If your site is outdated, slow, hard to use on mobile, or you’re not getting calls and messages from it, a website redesign can be one of the fastest ways to improve results.
-
-What a redesign includes:
-
-- Rebuild using your existing content as a starting point
-- Improve mobile usability and page speed
-- Refresh the design so it looks modern and trustworthy
-- Ongoing support so the site doesn’t fall behind again
 
 ## What’s included
 
@@ -227,6 +213,21 @@ If you want to show up when people search online and on maps, local marketing in
 {{< /col >}}
 
 {{< /cols >}}
+
+## Custom Websites Built for Growth — Not Just Looks
+
+A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Monthly plans keep things simple and affordable.
+
+## Website redesigns (when your current site isn’t working)
+
+If your site is outdated, slow, hard to use on mobile, or you’re not getting calls and messages from it, a website redesign can be one of the fastest ways to improve results.
+
+What a redesign includes:
+
+- Rebuild using your existing content as a starting point
+- Improve mobile usability and page speed
+- Refresh the design so it looks modern and trustworthy
+- Ongoing support so the site doesn’t fall behind again
 
 
 ## Areas Served in Utah
@@ -288,7 +289,7 @@ No big upfront fees—just simple monthly pricing and direct support.
 
 ## Ready To Get Started
 
-I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in Santa Clara (next to St. George) and living in Provo and Logan, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
+I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Provo, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
 ![Benjamin Awerkamp – Utah Website Design & Local Marketing](/media/benjamin-awerkamp-profile.jpg)
 {.w-40 .mb-4}
