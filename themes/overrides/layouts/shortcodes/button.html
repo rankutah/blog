@@ -15,6 +15,7 @@
 {{- $page := .Page -}}
 {{- $url  := (.Get "url") | default "#" | safeURL -}}
 {{- $text := .Get "text" | default "Button" -}}
+{{- $id   := .Get "id" | default "" -}}
 
 {{- /* optional submit mode for external forms */ -}}
 {{- $form   := .Get "form"   | default "" -}}
@@ -84,7 +85,7 @@
 {{- end -}}
 
 {{- if or $submit $form -}}
-  <button type="submit" {{ with $form }}form="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</button>
+  <button type="submit"{{ with $id }} id="{{ . }}"{{ end }} {{ with $form }}form="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</button>
 {{- else -}}
   {{- /* Compute target/rel attributes */ -}}
   {{- $finalTarget := "" -}}
@@ -101,5 +102,5 @@
     {{- $finalRel = "noopener noreferrer" -}}
   {{- end -}}
 
-  <a href="{{ $url }}" class="ui-btn not-prose no-underline {{ $classes }}"{{ with $finalTarget }} target="{{ . }}"{{ end }}{{ with $finalRel }} rel="{{ . }}"{{ end }}>{{ $inner | safeHTML }}</a>
+  <a href="{{ $url }}"{{ with $id }} id="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}"{{ with $finalTarget }} target="{{ . }}"{{ end }}{{ with $finalRel }} rel="{{ . }}"{{ end }}>{{ $inner | safeHTML }}</a>
 {{- end -}}

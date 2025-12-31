@@ -55,7 +55,7 @@ No contracts. No setup fees. Cancel anytime.
 - Monthly report on calls, messages, and site activity
 
 
-{{< button url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
+{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
@@ -81,7 +81,7 @@ No contracts. No setup fees. Cancel anytime.
 
 This package does not include a business website.
 
-{{< button url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
+{{< button id="checkout-local-marketing" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
 
 {{< /col >}}
 
@@ -118,7 +118,7 @@ No contracts. No setup fees. Cancel anytime.
 
 
 
-{{< button url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
+{{< button id="checkout-bundle" url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
 
 {{< /col >}}
 
