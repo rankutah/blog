@@ -4,7 +4,7 @@ description: "Your message was sent. A reply will come soon."
 url: "/thank-you"
 robotsNoIndex: true
 sitemap:
-	disable: true
+  disable: true
 ---
 
 # Thank you

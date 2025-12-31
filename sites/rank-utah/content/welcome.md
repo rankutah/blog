@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/welcome"
 robotsNoIndex: true
 sitemap:
-	disable: true
+  disable: true
 ---
 
 # You’re all set
