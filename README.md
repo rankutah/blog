@@ -35,6 +35,43 @@ When updating copy for the Rank Utah site, keep service names and inclusions con
 - **Local Marketing**: the ongoing monthly service (no “SEO” wording in customer copy): keyword research + content alignment, Google Business Profile work, Apple Maps + Bing Places, 100+ directory listings, and reporting.
 - **Do not promise review management/strategy** anywhere in marketing/service copy.
 
+## Recent changes (notes for future debugging)
+
+### Titles: business name last
+
+Page titles were flipped to the standard SEO pattern:
+
+- `Page Title | Site Title` (not `Site Title | Page Title`)
+
+This is implemented in shared theme templates:
+
+- `themes/overrides/layouts/_default/flowbite.html`
+- `themes/overrides/layouts/partials/head.html`
+- `themes/overrides/layouts/search/baseof.html`
+- `themes/overrides/layouts/partials/seo-meta.html` (OG title ordering)
+
+### Rank Utah: Stripe success /welcome page
+
+- New completion page is `/welcome` (intended for Stripe payment link success redirects).
+- Old `/confirmation` URL is kept via `301` redirects in `sites/rank-utah/static/_redirects`.
+- Both `/welcome` and `/thank-you` are marked `robotsNoIndex: true` in front matter.
+
+### Zaraz: manual delayed loader + welcome conversion dedupe
+
+For sites using Cloudflare Zaraz (`site.Params.analytics.provider = "zaraz"`), the theme uses a manual loader in:
+
+- `themes/overrides/layouts/partials/google_analytics.html`
+
+Important behaviors:
+
+- The loader injects Zaraz via same-origin `/cdn-cgi/zaraz/i.js` (less brittle than the public host).
+- It is guarded to avoid double-injection (global `__cpZarazLoaderInstalled` + script id `cp-zaraz-script`).
+- On `/welcome?product=...`, best-effort per-browser dedupe is applied:
+	- stores a `localStorage` key `cp_welcome_conv_<product>`
+	- strips the `product` query param (via `history.replaceState`) after first load so refresh/back won’t re-trigger.
+
+If you see `"zaraz is loaded twice"` in console, note that pre-defining `window.zaraz = {}` can trigger that warning; avoid stubbing `window.zaraz`.
+
 ## Docs (start here when debugging)
 
 - `docs/policies.md` — repo rules and what belongs where
