@@ -2,6 +2,9 @@
 title: "Thank You"
 description: "Your message was sent. A reply will come soon."
 url: "/thank-you"
+robotsNoIndex: true
+sitemap:
+	disable: true
 ---
 
 # Thank you

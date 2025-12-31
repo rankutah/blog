@@ -4,6 +4,8 @@ description: "You’re all set. Welcome to Clear Presence."
 layout: "flowbite"
 url: "/welcome"
 robotsNoIndex: true
+sitemap:
+	disable: true
 ---
 
 # You’re all set
