@@ -1,10 +1,9 @@
-{{/* Unified robots.txt across all sites.
-		 Uses optional site param overrides:
-			 [params.robots]
-				 disallowAll = true    # forces Disallow: /
-				 extra = ["Disallow: /private/", "Allow: /"]
-*/}}
-User-agent: *
+{{- /* Unified robots.txt across all sites.
+				 Uses optional site param overrides:
+					 [params.robots]
+						 disallowAll = true    # forces Disallow: /
+						 extra = ["Disallow: /private/", "Allow: /"]
+*/ -}}User-agent: *
 {{ $cfg := site.Params.robots }}
 {{- if and $cfg (isset $cfg "disallowAll") $cfg.disallowAll -}}
 Disallow: /
