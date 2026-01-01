@@ -166,6 +166,9 @@
 {{- with (and (ne (printf "%T" $lb) "bool") (index $lb "aggregateRating")) -}}
   {{- $obj = merge $obj (dict "aggregateRating" .) -}}
 {{- end -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "review")) -}}
+  {{- $obj = merge $obj (dict "review" .) -}}
+{{- end -}}
 
 {{ $obj | jsonify | safeJS }}
 </script>

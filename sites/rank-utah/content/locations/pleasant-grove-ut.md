@@ -9,6 +9,43 @@ schema:
     enabled: true
     type: ProfessionalService
     name: "Clear Presence"
+    aggregateRating:
+      "@type": "AggregateRating"
+      ratingValue: 5
+      reviewCount: 10
+    review:
+      - "@type": "Review"
+        author:
+          "@type": "Person"
+          name: "Darin Hinton"
+        reviewRating:
+          "@type": "Rating"
+          ratingValue: 5
+          bestRating: 5
+        reviewBody: >-
+          Best and quickest customer service I have ever experienced with any website design company I have worked with over many years. They got our business's email and website servers switched over in a matter of minutes from our old one, and the website up and running in a few hours. Benjamin always answers my phone calls and gives a fast response to my texts and emails, and has helped us with a few technical difficulties that were beyond our skill set. A breath of fresh air compared to the tech companies I've worked with before.
+
+      - "@type": "Review"
+        author:
+          "@type": "Person"
+          name: "Gabriel Antigua"
+        reviewRating:
+          "@type": "Rating"
+          ratingValue: 5
+          bestRating: 5
+        reviewBody: >-
+          Benjamin with Clear Presence has been great to work with. He is doing website design for me and local SEO including running my Google Business Profile. I am continuing to get more customers from working with him.
+
+      - "@type": "Review"
+        author:
+          "@type": "Person"
+          name: "Daniel De Souza"
+        reviewRating:
+          "@type": "Rating"
+          ratingValue: 5
+          bestRating: 5
+        reviewBody: >-
+          Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients.
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
