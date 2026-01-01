@@ -2,6 +2,7 @@
 title: "Contact"
 layout: "flowbite"
 url: "/contact"
+description: "Fast, honest computer repair. Call or book a time that works for you"
 ---
 
 

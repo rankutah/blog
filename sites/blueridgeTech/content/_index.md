@@ -1,5 +1,5 @@
 ---
-title: "Computer Repair Shop in Buena Vista, VA"
+title: "Computer Repair Shop in Buena Vista, VA | Serving Lexington, Glasgow, and Natural Bridge"
 layout: "flowbite"
 description: "Computer Repair Shop in Buena Vista, VA. Providing both virtual and onsite computer repair services for businesses and individuals. BlueridgeTech offers expert IT repair and support services."
 schema:
@@ -24,7 +24,7 @@ schema:
         opens: "11:00"
         closes: "13:00"
     hasMap: "https://www.google.com/maps/place/1412+Magnolia+Ave,+Buena+Vista,+VA+24416"
-    areaServed: "Buena Vista, VA"
+    areaServed: "Buena Vista, VA; Lexington, VA; Glasgow, VA; Natural Bridge, VA"
 ---
 
 {{< hero img="/media/computer-repair-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
@@ -41,7 +41,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Fast Honest Computer Repair
+## Fast Honest Computer Repair Near You
 
 One‑person, local support for desktops and laptops. Quick diagnostics, clear pricing, and real fixes.
 
@@ -120,7 +120,7 @@ Photos of the office and signs so you know you’re in the right place.
 
 ### Service area
 
-Buena Vista and nearby communities.
+Buena Vista, [Lexington](/locations/lexington-va), Glasgow, and Natural Bridge (and nearby communities).
 
 {{< /col >}}
 

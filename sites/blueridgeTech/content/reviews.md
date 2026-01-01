@@ -2,6 +2,7 @@
 title: "Reviews"
 layout: "flowbite"
 url: "/reviews"
+description: "See what customers are saying based on recent 5‑star Google reviews."
 ---
 
 

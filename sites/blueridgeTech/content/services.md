@@ -2,6 +2,7 @@
 title: "Services"
 layout: "flowbite"
 url: "services"
+description: "Services include PC desktop repair, laptop repair, IT support services, data recovery, virus removal, and more!"
 ---
 
 

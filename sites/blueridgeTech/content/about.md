@@ -2,6 +2,7 @@
 title: "About"
 layout: "flowbite"
 url: "/about"
+description: "BlueridgeTech provides computer repair for individuals and businesses from a repair shop in Buena Vista, VA"
 ---
 
 
