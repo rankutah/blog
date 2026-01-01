@@ -120,11 +120,11 @@ schema:
       - "Salt Lake County, UT"
     offers:
       - "@type": Offer
-        name: "Monthly Website Plan"
+        name: "Business Website"
         price: "150.00"
         priceCurrency: "USD"
       - "@type": Offer
-        name: "Website + Optimization Add‑on"
+        name: "Business Website + Local Marketing"
         price: "299.00"
         priceCurrency: "USD"
 ---
