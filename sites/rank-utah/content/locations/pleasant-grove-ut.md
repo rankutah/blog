@@ -352,7 +352,7 @@ Bachelor's in Business Management
 
 ## FAQ
 
-{{< faqs >}}
+{{< faqs schema="true" >}}
 
 ### What is your experience?
 I built my first professional small‑business website in 2023 after completing my Master’s in Software Development. Unlike many web designers who use template builders, I custom‑code websites for speed and performance. Every change is versioned, so it’s easy to roll back or restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and the business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.

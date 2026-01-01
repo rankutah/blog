@@ -30,6 +30,17 @@
 {{- $openFirstParam := lower (.Get "openFirst" | default (.Get "firstOpen")) -}}
 {{- $openFirst := or (eq $openFirstParam "true") (eq $openFirstParam "yes") (eq $openFirstParam "1") -}}
 
+{{- /* Optional: emit FAQPage JSON-LD using the same source content (single source of truth)
+      Enable with: {{< faqs schema="true" >}}
+      Defaults to false to avoid unintentional SEO changes sitewide.
+      If front matter already defines .Params.schema.faq, we skip emitting here to avoid duplicates.
+*/ -}}
+{{- $schemaParam := lower (.Get "schema" | default (.Get "jsonld" | default (.Get "ldjson"))) -}}
+{{- $emitSchema := or (eq $schemaParam "true") (eq $schemaParam "yes") (eq $schemaParam "1") -}}
+{{- if $page.Params.schema.faq -}}
+  {{- $emitSchema = false -}}
+{{- end -}}
+
 {{- /* Alignment control (start|center). Default to start to prevent inherited centering */ -}}
 {{- $alignParam := lower (.Get "align" | default "start") -}}
 {{- $alMap := dict "start" "text-left" "center" "text-center" -}}
@@ -43,6 +54,7 @@
 
 <div id="accordion-collapse" data-accordion="collapse" class="{{ $alClass }}">
   {{- $count := len $faqBlocks -}}
+  {{- $schemaItems := slice -}}
   {{- range $i, $blk := $faqBlocks }}
     {{- $qid := printf "accordion-collapse-heading-%d" (add $i 1) -}}
     {{- $bid := printf "accordion-collapse-body-%d" (add $i 1) -}}
@@ -61,6 +73,17 @@
       {{- /* Remove the first line (the title) and its following newline from the block, then markdownify the remainder. */ -}}
   {{- $bodyRaw = trim (replaceRE "^[^\n]+\n?" "" $blk) " \n" -}}
       {{- $body = ( $bodyRaw | markdownify ) -}}
+    {{- end -}}
+
+    {{- if $emitSchema -}}
+      {{- $answerText := "" -}}
+      {{- if ne $bodyRaw "" -}}
+        {{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
+        {{- $answerText = ($page.RenderString $opts $bodyRaw) | plainify | trim " \n\t" -}}
+      {{- end -}}
+      {{- if and (ne $title "") (ne $answerText "") -}}
+        {{- $schemaItems = $schemaItems | append (dict "@type" "Question" "name" $title "acceptedAnswer" (dict "@type" "Answer" "text" $answerText)) -}}
+      {{- end -}}
     {{- end -}}
     {{- $isFirst := eq $i 0 -}}
     {{- $expanded := and $isFirst $openFirst -}}
@@ -104,3 +127,9 @@
     </div>
   {{- end }}
 </div>
+
+{{- if and $emitSchema (gt (len $schemaItems) 0) -}}
+<script type="application/ld+json">
+{{- dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $schemaItems | jsonify | safeJS -}}
+</script>
+{{- end -}}
