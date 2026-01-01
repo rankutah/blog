@@ -1,6 +1,6 @@
 ---
-title: "Utah Website Design & Local Marketing Services | Small Business Website Design & Marketing Agency | Serving Pleasant Grove, Lindon, Orem, Provo, American Fork, Lehi, Draper, Sandy, and Salt Lake City"
-description: "Clear Presence is a Website Design & Local Marketing company in Pleasant Grove, Utah. Affordable small business websites plus local marketing to help more nearby customers find and contact you."
+title: "Website Design & Development in Pleasant Grove, UT | Local SEO Services Company and Digital Marketing Agency"
+description: "Clear Presence is a Website Design & Local Marketing company in Pleasant Grove, Utah. Websites come with in-depth monthly reports and local marketing to help you get more customers."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -293,7 +293,7 @@ No big upfront fees—just simple monthly pricing and direct support.
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Quartz Worx – Countertops
 <a href="https://quartzworx.com/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-quartz-worx.avif" alt="Custom website design featuring a small business">
+  <img src="/media/website-design-quartz-worx.avif" alt="Custom website design and development featuring a small business">
 </a>
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
