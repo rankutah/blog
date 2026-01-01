@@ -2,6 +2,7 @@
 title: "Quartzite Countertops"
 layout: "flowbite"
 url: "/countertops/quartzite"
+description: "Metamorphic natural stone known for its hardness and marble‑like veining—great when you want natural stone beauty with added durability."
 ---
 # Quartzite Countertops
 

@@ -2,6 +2,7 @@
 title: "Marble Countertops"
 layout: "flowbite"
 url: "/countertops/marble"
+description: "Timeless luxury with dramatic veining and a soft sheen. Loved for its patina over time; best with informed care."
 ---
 # Marble Countertops
 

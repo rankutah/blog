@@ -2,6 +2,7 @@
 title: "Contact"
 layout: "flowbite"
 url: "/contact"
+description: "Reach out or come visit us in Grand Junction, CO."
 ---
 
 

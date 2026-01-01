@@ -2,6 +2,7 @@
 title: "About Quartz Worx"
 layout: "flowbite"
 url: "/about"
+description: "Quartz Worx fabricates and installs premium counter-tops for homes and businesses in Grand Junction, CO."
 ---
 # Our Craft
 

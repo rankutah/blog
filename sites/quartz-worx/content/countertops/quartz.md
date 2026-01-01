@@ -2,6 +2,7 @@
 title: "Quartz Countertops"
 layout: "flowbite"
 url: "/countertops/quartz"
+description: "Engineered stone made from natural quartz and resins. Offers consistent colors and patterns, excellent durability, and low maintenance."
 ---
 # Quartz Countertops
 

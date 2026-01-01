@@ -1,6 +1,7 @@
 ---
 title: "Countertop Materials"
 layout: "flowbite"
+description: "Welcome to our countertop materials section. Explore detailed guides and comparisons to help you choose the right surface for your home.."
 ---
 
 Welcome to our countertop materials section. Explore detailed guides and comparisons to help you choose the right surface for your home.

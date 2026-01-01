@@ -2,6 +2,7 @@
 title: "Granite Countertops"
 layout: "flowbite"
 url: "/countertops/granite"
+description: "Come see 20 colors of granite and other natural stone in our year. The best price that we can give you is from our in-stock slabs. We can also bring in your slab selections from any of the slab suppliers."
 ---
 # Granite Countertops
 

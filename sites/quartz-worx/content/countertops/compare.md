@@ -2,6 +2,7 @@
 title: "Compare Countertop Materials"
 slug: "compare"
 layout: "flowbite"
+description: "A quick guide to quartz, granite, quartzite, and marble—how they differ, how to care for them, and when each makes sense."
 ---
 
 A quick guide to quartz, granite, quartzite, and marble—how they differ, how to care for them, and when each makes sense.

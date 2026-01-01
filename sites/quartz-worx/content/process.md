@@ -2,6 +2,8 @@
 title: "How Quartz Worx"
 layout: "flowbite"
 url: "/process"
+description: "Quartz Worx fabricates and installs premium counter-tops for homes and businesses in Grand Junction, CO. We guide you through material choices, edge profiles, sinks, and backsplashes and deliver precise installation with clean job sites.
+"
 ---
 # Our Craft
 
