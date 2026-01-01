@@ -127,7 +127,7 @@ disableKinds = ["taxonomy", "term"]
 
   [[menu.main]]
     name   = "Process"
-    url    = "/process/"
+    url    = "/process"
     weight = 30
 
   [[menu.main]]
