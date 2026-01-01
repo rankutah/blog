@@ -135,8 +135,8 @@ Lead-generating websites and local marketing to help you get more customers. Sta
 
 {.text-white}
 
-{{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
-{{<button id="learn-more" url="#main-content" text="Learn More">}}
+{{< button url="/pricing" text="Start Service" >}} {{< button url="#main-content" text="Learn More" >}}
+
 
 <div class="mt-6"></div>
 {{< /hero >}}
@@ -234,16 +234,22 @@ Local marketing is a small business [marketing strategy](/utah-local-seo-strateg
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
+## 3 Simple Steps to Get Started
 
-## What’s included
+1. Purchase a plan on the [pricing page](/pricing)
+2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
+3. Coordinate with me however you like (text, email, phone, video chat, or in-person)
+
+
+## What’s included in the Business Website & Local Marketing Plans
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Website Design
+### Business Website
 
-- Custom design and build (no templates)
+- Custom design and development (no templates)
 - Mobile‑friendly and accessible layout
 - Fast load times with optimized images
 - Secure hosting with an encrypted connection (HTTPS)
@@ -275,7 +281,7 @@ Local marketing is the work that helps nearby customers find and choose your bus
 
 {{< /cols >}}
 
-## Custom Websites Built for Growth — Not Just Looks
+## Custom Websites designed for Growth — Not Just Looks
 
 A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local marketing to get in front of your ideal customers. Monthly plans keep things simple and affordable.
 
@@ -317,7 +323,7 @@ No hidden fees. No contracts. Unlimited updates.
 You’ll get what actually matters: a fast, mobile‑friendly website with clear call and text buttons.
 No big upfront fees—just simple monthly pricing and direct support.
 
-## Let’s Build Something Great for Your Business
+## Let’s Design Something Great for Your Business
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{< button url="/pricing" text="See Pricing" >}}
@@ -358,7 +364,7 @@ No big upfront fees—just simple monthly pricing and direct support.
 
 ## Ready To Get Started
 
-I love partnering with business owners and specialize in building fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Provo, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
+I love partnering with business owners and specialize in developing fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Provo, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
 ![Benjamin Awerkamp Profile Picture – Website Designer & SEO Expert](/media/benjamin-awerkamp-profile.jpg)
 {.w-40 .mb-4}
@@ -389,10 +395,58 @@ Bachelor's in Business Management
 
 ## FAQ
 
+<div id="FAQs" class="scroll-mt-24"></div>
+
+
 {{< faqs schema="true" >}}
 
+### What is the process? How do I start?
+
+1. Purchase a plan on the [pricing page](/pricing)
+2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
+3. Meet and coordinate with me via phone calls, text, email, or video calls
+
+### Do I own the website?
+Yes. You own the website from day one. If service is canceled, help is provided to transfer the website to a new developer.
+
+### What does website design cost?
+See the [pricing](/pricing) page for the most up to date pricing on business website packages.
+
+### What does local marketing cost?
+See the [pricing](/pricing) page for the most up to date pricing on local marketing packages
+
+### What does local marketing mean?
+Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
+
+### What results should I expect from local marketing?
+Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
+
+Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing establishes a strong foundation so you show up when nearby customers search.
+
+Results depend on what you have to offer, the level of search interest in your area, and your competition.
+
+### Can I change plans later?
+Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption.
+
+### What happens if I cancel?
+No further charges after cancellation. The website stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
+
+### What makes your business different from others?
+
+1. Your site is designed with a focus on helping you get leads.
+2. Your site will perform better than your competitors. Most developers use a template builder like Wordpress, Wix, or Squarespace. My sites are custom-coded so they load faster and perform better. This can be verified by using [Google's evaluation tool for websites](https://pagespeed.web.dev/) and comparing this website to other businesses web design agency websites.
+3. You will receive long-term personal support. I continue to maintain, update, and improve your website year after year.
+4. You will receive better reports. My monthly reports give you valuable information to help you improve your marketing. Reports include:
+- How many users performed key events on your website (calls, form-fills, bookings, or purchases)
+- How many new users or returning users visited your site
+- Which platforms brought the most key events on your website (social media, Google search, ect)
+- Which pages brought the most key events (contact page, about page, home page, services pages, ect)
+- Which cities brought you the most key events
+- Which buttons and links were clicked on your website (ordered by most frequent)
+- What did users search for on your website
+
 ### What is your experience?
-I built my first professional small‑business website in 2023 after completing my Master’s in Software Development. Unlike many web designers who use template builders, I custom‑code websites for speed and performance. Every change is versioned, so it’s easy to roll back or restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and the business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I started building websites for small‑businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, performance, and flexibility. Every change we make is backed-up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a new website take?
 Websites can be built in 3–4 weeks with regular coordination.
@@ -401,32 +455,9 @@ Websites can be built in 3–4 weeks with regular coordination.
 Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
 
 ### Do you handle hosting and the domain name?
-Yes. Managed hosting and your domain name are included.
+Yes. Managed hosting and your domain name are included. If you want to purchase your own domain you can do that too.
 
-### Do I own the website?
-Yes. You own the website from day one. If services are canceled, help is provided to transfer the website to a new developer.
 
-### Are there upfront fees?
-No. Pricing is a flat monthly cost that includes hosting, your domain renewal, updates, and support.
-
-### Can I change plans later?
-Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption.
-
-### What happens if I cancel?
-No further charges after cancellation. The website stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
-
-### Do I need a long‑term contract?
-No. Plans are month‑to‑month.
-
-### What does Local Marketing mean?
-Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
-
-### What results should I expect from Local Marketing?
-Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
-
-Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing build a strong foundation so you show up when nearby customers search.
-
-Results depend on what you have to offer, the level of search interest in your area, and your competition.
 
 {{< /faqs >}}
 

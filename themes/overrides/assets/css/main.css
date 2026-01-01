@@ -413,3 +413,6 @@ html { scroll-behavior: smooth; }
 :target {
   scroll-margin-top: calc(var(--site-header-h, 64px) + 16px);
 }
+
+/* Prevent mobile scroll jumps when accordions expand/collapse (scroll anchoring). */
+[data-accordion] { overflow-anchor: none; }

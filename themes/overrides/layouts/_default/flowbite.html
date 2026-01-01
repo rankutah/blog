@@ -456,6 +456,7 @@
         const mode = (acc.getAttribute('data-accordion')||'').toLowerCase();
         const alwaysOpen = mode === 'open'; // Flowbite: "open" allows multiple; others collapse
         const buttons = Array.from(acc.querySelectorAll('[data-accordion-target]'));
+        const isMobile = ()=> (window.matchMedia ? window.matchMedia('(max-width: 767px)').matches : false);
         // Helper to update one item
         function update(btn, expanded){
           const selector = btn.getAttribute('data-accordion-target');
@@ -465,6 +466,11 @@
           btn.setAttribute('aria-expanded', String(!!expanded));
           if(panel) panel.classList.toggle('hidden', !expanded);
           if(icon) icon.classList.toggle('rotate-180', !expanded);
+
+          // Visual affordance: highlight the active item
+          btn.classList.toggle('bg-gray-100', !!expanded);
+          btn.classList.toggle('dark:bg-gray-800', !!expanded);
+          btn.classList.toggle('font-semibold', !!expanded);
         }
         // Initial state sync (respect server-rendered aria-expanded/hidden)
         buttons.forEach(btn=>{
@@ -476,7 +482,10 @@
         });
         // Click wiring
         buttons.forEach(btn=>{
-          btn.addEventListener('click', ()=>{
+          btn.addEventListener('click', (e)=>{
+            // Prevent odd mobile scroll jumps when expanding/collapsing (layout reflow + scroll anchoring)
+            const shouldStabilize = isMobile();
+            const topBefore = shouldStabilize ? btn.getBoundingClientRect().top : 0;
             const currentlyExpanded = btn.getAttribute('aria-expanded') === 'true';
             const next = !currentlyExpanded;
             if(!alwaysOpen && next){
@@ -484,6 +493,14 @@
               buttons.forEach(other=>{ if(other===btn) return; update(other, false); });
             }
             update(btn, next);
+
+            if(shouldStabilize){
+              requestAnimationFrame(()=>{
+                const topAfter = btn.getBoundingClientRect().top;
+                const delta = topAfter - topBefore;
+                if (Math.abs(delta) > 1) window.scrollBy(0, delta);
+              });
+            }
           });
         });
       });
