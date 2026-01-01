@@ -89,7 +89,13 @@
 {{- end -}}
 
 {{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "logo")) -}}
-  {{- $obj = merge $obj (dict "logo" (index $lb "logo")) -}}
+  {{- $lbLogo := (index $lb "logo") -}}
+  {{- if eq (printf "%T" $lbLogo) "string" -}}
+    {{- if not (findRE "^https?://" $lbLogo) -}}
+      {{- $lbLogo = $lbLogo | absURL -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $obj = merge $obj (dict "logo" $lbLogo) -}}
 {{- end -}}
 
 {{- /* phone & priceRange */ -}}
@@ -186,7 +192,15 @@
 {{- $o := dict "@context" "https://schema.org" "@type" "Organization" "@id" (printf "%s#organization" site.BaseURL) "url" site.BaseURL -}}
 {{- with (index $org "name") -}}{{- $o = merge $o (dict "name" .) -}}{{- end -}}
 {{- with (index $org "legalName") -}}{{- $o = merge $o (dict "legalName" .) -}}{{- end -}}
-{{- with (index $org "logo") -}}{{- $o = merge $o (dict "logo" .) -}}{{- end -}}
+{{- with (index $org "logo") -}}
+  {{- $orgLogo := . -}}
+  {{- if eq (printf "%T" $orgLogo) "string" -}}
+    {{- if not (findRE "^https?://" $orgLogo) -}}
+      {{- $orgLogo = $orgLogo | absURL -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $o = merge $o (dict "logo" $orgLogo) -}}
+{{- end -}}
 {{- with (index $org "sameAs") -}}{{- $o = merge $o (dict "sameAs" .) -}}{{- end -}}
 {{ $o | jsonify | safeJS }}
 </script>

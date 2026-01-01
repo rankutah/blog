@@ -129,9 +129,9 @@ schema:
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/utah-website-design-hero.avif" alt="Utah website design & local marketing services—custom web design near you" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Custom Website Design & Local Marketing to Grow Your Utah Business {.text-white}
-Lead-generating websites and local marketing built in Utah County to help you get more customers. High-performance websites starting at $150/month.
+{{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape with text overlaid that says Website Design and Local Marketing to Grow your Utah Business" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Website Design & Local Marketing to Grow Your Utah Business {.text-white}
+Lead-generating websites and local marketing to help you get more customers. Starting at $150/month.
 
 {.text-white}
 
@@ -147,7 +147,7 @@ Lead-generating websites and local marketing built in Utah County to help you ge
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Clear Presence in Pleasant Grove, Utah
+## Website Design & Local Marketing in Pleasant Grove, Utah
 - Serving Small Businesses in Utah & Salt Lake County
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)

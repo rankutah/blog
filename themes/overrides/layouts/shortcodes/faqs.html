@@ -79,7 +79,7 @@
       {{- $answerText := "" -}}
       {{- if ne $bodyRaw "" -}}
         {{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
-        {{- $answerText = ($page.RenderString $opts $bodyRaw) | plainify | trim " \n\t" -}}
+        {{- $answerText = trim (($page.RenderString $opts $bodyRaw) | plainify) " \n\t" -}}
       {{- end -}}
       {{- if and (ne $title "") (ne $answerText "") -}}
         {{- $schemaItems = $schemaItems | append (dict "@type" "Question" "name" $title "acceptedAnswer" (dict "@type" "Answer" "text" $answerText)) -}}
