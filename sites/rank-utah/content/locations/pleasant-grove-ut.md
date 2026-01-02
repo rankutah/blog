@@ -230,21 +230,23 @@ Lead-generating websites and local marketing to help you get more customers. Sta
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## Why Utah Small Businesses Choose Clear Presence
+## 7 Reasons to Choose Clear Presence
 
-- Your site is designed with a focus on helping you get leads
-- Your site is custom-coded so it loads faster and performs better
-- You get long-term personal support via text, calls, emails, or meetings
-- You get awesome monthly reports
-  - Key events on your website (calls, forms, bookings, purchases)
-  - New users vs returning users
-  - Platforms that brought you users (social, search, AI, ect)
-  - Which pages performed the best
-  - Where are your visitors located (by city)
-  - Which buttons and links were clicked on the most
-  - What did visitors search for on your site?
-- You get unlimited updates without additional fees
-- You aren't locked into a contract
+1. Your site is designed to help you get leads
+2. Your site is custom-coded so it loads faster and performs better
+3. You get long-term personal support via text, calls, emails, or meetings
+4. You get awesome monthly reports that improve your marketing
+
+    - How many key events happened on your website (calls, forms, bookings, purchases)
+    - How many new and returning visitors did you have
+    - Which platforms brought your visitors (social, search, AI, ect)
+    - Which pages performed the best
+    - Where were your visitors located (by city)
+    - Which buttons and links were clicked on the most
+    - What did visitors search for on your site?
+5. There are no fees for updates and you have a low-risk affordable flat rate cost (no high upfront costs)
+6. You own your website from day one and can change plans or cancel at anytime
+7. You work one-on-one with me instead of with a faceless agency
 
 {{< button url="#FAQs" text="Read FAQs" >}}
 
