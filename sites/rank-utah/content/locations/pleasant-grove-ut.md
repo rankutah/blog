@@ -162,15 +162,11 @@ Lead-generating websites and local marketing to help you get more customers. Sta
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Website Design & Local Marketing
+## 3 Simple Steps to Get Started
 
-Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
-
-Local marketing is a small business [marketing strategy](/utah-local-seo-strategy) that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
-
-{{< button url="/pricing" text="Pricing" >}}
-{{< button url="/portfolio" text="Portfolio" >}}
-{{< button url="/contact" text="Contact" >}}
+1. Purchase a plan on the [pricing page](/pricing)
+2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
+3. Coordinate with me however you like (text, email, phone, video chat, or in-person)
 
 <br>
 
@@ -234,20 +230,32 @@ Local marketing is a small business [marketing strategy](/utah-local-seo-strateg
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-## 3 Simple Steps to Get Started
+## Why Utah Small Businesses Choose Clear Presence
 
-1. Purchase a plan on the [pricing page](/pricing)
-2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
-3. Coordinate with me however you like (text, email, phone, video chat, or in-person)
+- Your site is designed with a focus on helping you get leads
+- Your site is custom-coded so it loads faster and performs better
+- You get long-term personal support via text, calls, emails, or meetings
+- You get awesome monthly reports
+  - Key events on your website (calls, forms, bookings, purchases)
+  - New users vs returning users
+  - Platforms that brought you users (social, search, AI, ect)
+  - Which pages performed the best
+  - Where are your visitors located (by city)
+  - Which buttons and links were clicked on the most
+  - What did visitors search for on your site?
+- You get unlimited updates without additional fees
+- You aren't locked into a contract
+
+{{< button url="#FAQs" text="Read FAQs" >}}
 
 
-## What’s included in the Business Website & Local Marketing Plans
+## What’s included?
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Business Website
+### Business Website Package
 
 - Custom design and development (no templates)
 - Mobile‑friendly and accessible layout
@@ -260,12 +268,14 @@ Local marketing is a small business [marketing strategy](/utah-local-seo-strateg
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and website activity
 
+{{< button url="/pricing" text="Visit Pricing" >}}
+
 
 {{< /col >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-### Local Marketing
+### Local Marketing Package
 
 Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
@@ -280,6 +290,15 @@ Local marketing is the work that helps nearby customers find and choose your bus
 {{< /col >}}
 
 {{< /cols >}}
+
+## Website Design & Local Marketing
+
+Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
+
+Local marketing is a small business [marketing strategy](/utah-local-seo-strategy) that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
+
+{{< button url="/portfolio" text="Portfolio" >}}
+{{< button url="/contact" text="Contact" >}}
 
 ## Custom Websites designed for Growth — Not Just Looks
 
@@ -310,13 +329,6 @@ Services are available remotely, with local meetings as needed, so businesses ca
 - $299/mo Website + Local Marketing — includes Google Business Profile help, listings, and reporting
 
 No hidden fees. No contracts. Unlimited updates.
-
-## Why Utah Small Businesses Choose Clear Presence
-
-- Local Utah website design & local marketing focused on small business results
-- Fast turnaround and personalized support
-- Secure and fast setup (encrypted website connection / HTTPS)
-- Clean, modern codebase built for speed
 
 ## Affordable Results at a Fraction of Big Agency or Company Costs
 
