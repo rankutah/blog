@@ -61,7 +61,7 @@ Mon–Sat 8am – 8pm (MT)
 Pleasant Grove, UT 84062
 
 - Learn more about the Utah office: [Pleasant Grove, Utah](/locations/pleasant-grove-ut)
-- Get directions on Google Maps: https://maps.app.goo.gl/uPi6ijNoRyDvUA738
+- Get directions on [Google Maps](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
 Serving customers across the U.S.
 

@@ -1,5 +1,5 @@
 ---
-title: "Website Design & Local Marketing Services"
+title: "Website Design & Local Digital Marketing Services"
 description: "Website design and local marketing for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out."
 url: "/"
 schema:
