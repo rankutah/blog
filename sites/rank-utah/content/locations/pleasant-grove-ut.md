@@ -131,7 +131,7 @@ schema:
 
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape with text overlaid that says Website Design and Local SEO to Grow your Utah Business" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design & Local SEO to Grow Your Utah Business {.text-white}
+# Website Design & Local Marketing to Grow Your Utah Business {.text-white}
 Lead-generating websites and local search engine optimization (SEO) to help you get more customers. Starting at $150/month.
 
 {{< button url="/pricing" text="Start Service" >}} {{< button url="#main-content" text="Learn More" >}}

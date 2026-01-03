@@ -10,7 +10,8 @@ headless: true
 ### Services
 {.center}
 [Website Design](/services/website-design) • [Local SEO](/services/local-seo)
-{\.center}
+{.center}
+
 ### Legal
 {.center}
 [Privacy Policy](/privacy) • [Terms of Service](/terms)
