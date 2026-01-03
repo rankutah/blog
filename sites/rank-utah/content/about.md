@@ -1,12 +1,12 @@
 ---
 title: "About"
-description: "Clear Presence builds fast, custom websites and local marketing to help small businesses get more calls and bookings."
+description: "Clear Presence builds fast, custom websites and local search engine optimization (SEO) to help small businesses get more calls and bookings."
 layout: "flowbite"
 url: "/about"
 ---
-# Your Website Design & Local Marketing Company
+# Your Website Design & Local SEO Expert
 
-Clear Presence provides website design and local marketing services for small businesses across the U.S., from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
+Clear Presence provides website design and local SEO services for small businesses across the U.S., from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
 
 The goal is simple: a fast, professional website that encourages visitors to call, text, or send a message.
 
@@ -26,7 +26,8 @@ Personally, I enjoy running, audiobooks, and all things tech.
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Website Design & Local Marketing <br>
+Website Design & Local SEO <br>
+Website Design & Local SEO <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management

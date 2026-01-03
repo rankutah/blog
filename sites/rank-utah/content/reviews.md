@@ -19,7 +19,7 @@ Clear Presence helps small businesses feel proud of their online presence — pr
 - Clear, honest guidance
 - Fast turnaround and responsive communication
 - Clean, modern design focused on real business needs
-- Local marketing basics done right
+- Local SEO basics done right
 
 {{< button url="/portfolio" text="See the Portfolio" >}}
 

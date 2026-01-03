@@ -1,6 +1,6 @@
 ---
-title: "Website Design & Development in Pleasant Grove, UT | Local SEO Services Company and Digital Marketing Agency"
-description: "Clear Presence is a Website Design & Local Marketing company in Pleasant Grove, Utah. Websites come with in-depth monthly reports and local marketing to help you get more customers."
+title: "Website Design & Local SEO Services in Pleasant Grove, UT"
+description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Websites come with in-depth monthly reports and local SEO to help you get more customers."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -90,8 +90,8 @@ schema:
     priceRange: "$150–$299/mo"
   service:
     enabled: true
-    serviceType: "Website Design & Local Marketing Services"
-    description: "Clear Presence is a Website Design company in Pleasant Grove, Utah. Get a fast, high‑performance website plus local marketing to help more people find and contact you."
+    serviceType: "Website Design & Local SEO Services"
+    description: "Clear Presence is a Website Design company in Pleasant Grove, Utah. Get a fast, high‑performance website plus local SEO to help more people find and contact you."
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
@@ -124,14 +124,14 @@ schema:
         price: "150.00"
         priceCurrency: "USD"
       - "@type": Offer
-        name: "Business Website + Local Marketing"
+        name: "Business Website + Local SEO"
         price: "299.00"
         priceCurrency: "USD"
 ---
 
-{{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape with text overlaid that says Website Design and Local Marketing to Grow your Utah Business" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design & Local Marketing to Grow Your Utah Business {.text-white}
-Lead-generating websites and local marketing to help you get more customers. Starting at $150/month.
+      {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape with text overlaid that says Website Design and Local SEO to Grow your Utah Business" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+      # Website Design & Local SEO to Grow Your Utah Business {.text-white}
+      Lead-generating websites and local SEO to help you get more customers. Starting at $150/month.
 
 {.text-white}
 
@@ -147,14 +147,14 @@ Lead-generating websites and local marketing to help you get more customers. Sta
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Website Design & Local Marketing in Pleasant Grove, Utah
+## Website Design & Local SEO in Pleasant Grove, Utah
 - Serving Small Businesses in Utah & Salt Lake County
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
 <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener noreferrer">
-  <img src="/media/clearpresence-office-storefront-web-design-local-seo.avif" alt="Clear Presence — website design and local marketing for Utah small businesses">
+  <img src="/media/clearpresence-office-storefront-web-design-local-seo.avif" alt="Clear Presence — website design and local SEO for Utah small businesses">
 </a>
 
 
@@ -225,7 +225,7 @@ Lead-generating websites and local marketing to help you get more customers. Sta
 {{< /cols >}}
 
 
-## Website Design & Local Marketing Reviews from Small Businesses
+## Website Design & Local SEO Reviews from Small Businesses
 
 <!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -277,9 +277,9 @@ Lead-generating websites and local marketing to help you get more customers. Sta
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-### Local Marketing Package
+### Local SEO Package
 
-Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
+Local SEO is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
 - Google Business Profile improvements (categories, services, photos)
 - Apple Maps and Bing Places setup and cleanup
@@ -293,18 +293,18 @@ Local marketing is the work that helps nearby customers find and choose your bus
 
 {{< /cols >}}
 
-## Website Design & Local Marketing
+## Website Design & Local SEO
 
 Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
 
-Local marketing is a small business [marketing strategy](/utah-local-seo-strategy) that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
+Local SEO is a small business [local SEO strategy](/utah-local-seo-strategy) that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
 {{< button url="/portfolio" text="Portfolio" >}}
 {{< button url="/contact" text="Contact" >}}
 
 ## Custom Websites designed for Growth — Not Just Looks
 
-A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local marketing to get in front of your ideal customers. Monthly plans keep things simple and affordable.
+A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO to get in front of your ideal customers. Monthly plans keep things simple and affordable.
 
 ## Website redesigns (when your current website isn’t working)
 
@@ -328,7 +328,7 @@ Services are available remotely, with local meetings as needed, so businesses ca
 ## Simple Monthly Pricing for Small Businesses
 
 - $150/mo Website — fast and mobile‑friendly website design with updates included
-- $299/mo Website + Local Marketing — includes Google Business Profile help, listings, and reporting
+- $299/mo Website + Local SEO — includes Google Business Profile help, listings, and reporting
 
 No hidden fees. No contracts. Unlimited updates.
 
@@ -385,7 +385,7 @@ I love partnering with business owners and specialize in developing fast custom 
 
 
 **Benjamin Awerkamp** <br>
-Website Designer & Local Marketing Expert <br>
+Website Designer & Local SEO Expert <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
@@ -426,16 +426,16 @@ Yes. You own the website from day one. If service is canceled, help is provided 
 ### What does website design cost?
 See the [pricing](/pricing) page for the most up to date pricing on business website packages.
 
-### What does local marketing cost?
-See the [pricing](/pricing) page for the most up to date pricing on local marketing packages
+### What does local SEO cost?
+See the [pricing](/pricing) page for the most up to date pricing on local SEO packages
 
-### What does local marketing mean?
-Local marketing is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
+### What does local SEO mean?
+Local SEO is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
-### What results should I expect from local marketing?
-Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
+### What results should I expect from local SEO?
+Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
 
-Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing establishes a strong foundation so you show up when nearby customers search.
+Social media posts and ads can help, but they stop the moment you stop posting or paying. Local SEO establishes a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and your competition.
 

@@ -1,14 +1,14 @@
 ---
-title: "The Complete 2025 Guide to Local Marketing for Utah Businesses"
-description: "A simple local marketing plan for Utah small businesses: what to do on your website (keywords, mobile, speed) plus Google Business Profile, directory listings, and local links."
+title: "The Complete 2025 Guide to Local SEO for Utah Businesses"
+description: "A simple local SEO plan for Utah small businesses: what to do on your website (keywords, mobile, speed) plus Google Business Profile, directory listings, and local links."
 url: "/utah-local-seo-strategy"
 ---
 
-# Local Marketing Strategy for Small Businesses in Utah
+# Local SEO Strategy for Small Businesses in Utah
 
 _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
 
-Local marketing helps a business show up when people search for services online. A good strategy has two parts:
+Local SEO helps a business show up when people search for services online. A good strategy has two parts:
 
 - **On-page SEO**: what you do on your website (your pages, titles, speed, and content).
 - **Off-page SEO**: what happens off your website (your Google Business Profile, directory listings, and links from other sites).
@@ -324,4 +324,4 @@ You can’t control distance, but you can improve match and trust.
 
 ### Next step
 
-If you want help applying this strategy (website + local marketing), visit [Clear Presence in Utah](https://clearpresence.io/locations/pleasant-grove-ut/) or reach out on the [contact page](/contact).
+If you want help applying this strategy (website + local SEO), visit [Clear Presence in Utah](https://clearpresence.io/locations/pleasant-grove-ut/) or reach out on the [contact page](/contact).

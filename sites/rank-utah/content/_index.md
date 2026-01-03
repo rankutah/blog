@@ -1,6 +1,6 @@
 ---
-title: "Website Design & Local Digital Marketing Services"
-description: "Website design and local marketing for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out."
+title: "Website Design & Local SEO Services"
+description: "Website design and local search engine optimization (SEO) for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out."
 url: "/"
 schema:
   localBusiness:
@@ -14,8 +14,8 @@ schema:
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Custom Website Design & Local Marketing to Grow Your Business {.text-white}
-Lead-generating websites and local marketing to help you get more customers. Skip the expensive agency. High-performance websites starting at $150/month.
+# Custom Website Design & Local SEO to Grow Your Business {.text-white}
+Lead-generating websites and local search engine optimization (SEO) to help you get more customers. Skip the expensive agency. High-performance websites starting at $150/month.
 {.text-white}
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
@@ -90,11 +90,11 @@ See the process for building a custom site designed to bring you more customers.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Local Marketing
+## Local SEO
 
-Help local customers find you on search and maps. Local marketing includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting. It’s guided by a practical [local marketing strategy](/utah-local-seo-strategy).
+Help local customers find you on search and maps. Local SEO includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting. It’s guided by a practical [local SEO strategy](/utah-local-seo-strategy).
 
-{{<button text="Local Marketing" url="/services/local-marketing">}}
+{{<button text="Local SEO" url="/services/local-marketing">}}
 
 {{< /col >}}
 
@@ -168,6 +168,6 @@ Whether you have a quick question or are ready to launch a project, reach out no
 {{<button text="Contact" url="/contact" >}}
 {{<button text="Pricing" url="/pricing" >}}
 {{<button text="Web Design" url="/services/website-design" >}}
-{{<button text="Local Marketing" url="/services/local-marketing" >}}
+{{<button text="Local SEO" url="/services/local-marketing" >}}
 
 

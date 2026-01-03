@@ -7,10 +7,10 @@ schema:
   faq:
     enabled: true
     items:
-      - question: "What does Local Marketing mean?"
-        answer: "Local marketing helps you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, 100+ directory listings, and reporting."
+      - question: "What does Local SEO mean?"
+        answer: "Local Search Engine Optimization (SEO) helps you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, 100+ directory listings, and reporting."
       - question: "Is SEO included in Website Design?"
-        answer: "Yes. Website Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local Marketing is the monthly service for Google Business Profile work, Maps visibility, listings, and reporting."
+        answer: "Yes. Website Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local SEO is the monthly service for Google Business Profile work, Maps visibility, listings, and reporting."
       - question: "Can I change plans later?"
         answer: "Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption."
       - question: "What happens if I cancel?"
@@ -60,9 +60,9 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Local Marketing
+## Local SEO
 
-{{< badge text="I need local marketing" >}}
+{{< badge text="I need local SEO" >}}
 
 
 {{< plan_price price="200" per="mo" sr="$200 per month" >}}
@@ -87,16 +87,16 @@ This package does not include a business website.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
 
-## Business Website + Local Marketing
+## Business Website + Local SEO
 
-{{< badge text="I need a website and local marketing" >}}
+{{< badge text="I need a website and local SEO" >}}
 
 {{< plan_price old="$350" price="299" per="mo" sr="$299 per month bundle (was $350)" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
 
-*Maximize leads by bundling your website with local marketing and **save $51/month***
+*Maximize leads by bundling your website with local SEO and **save $51/month***
 
 
 
@@ -157,7 +157,7 @@ Fair use and scope:
 - Majorly customized or out‑of‑the‑ordinary work (e.g., complex tools, custom integrations, web apps, or bulk content migrations) is quoted separately
 - Heavy request bursts may be queued to maintain quality
 
-### What do you do each month for local marketing?
+### What do you do each month for local SEO?
 
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, Bing Places, and directory listings. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
@@ -175,7 +175,7 @@ Websites can be built in 3–4 weeks with regular coordination.
 Pick the service you want to explore next or reach out with questions.
 
 {{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/services/local-marketing" text="Local Marketing" >}}
+{{< button url="/services/local-marketing" text="Local SEO" >}}
 {{< button url="/contact" text="Contact" >}}
 
 

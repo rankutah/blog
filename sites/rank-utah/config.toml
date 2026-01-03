@@ -173,7 +173,7 @@ sameAs = []
     weight = 11
 
   [[menu.main]]
-    name = "Local Marketing"
+    name = "Local SEO"
     url = "/services/local-marketing"
     parent = "services"
     weight = 12

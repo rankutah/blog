@@ -30,7 +30,7 @@ schema:
       - question: "Is there a big upfront fee?"
         answer: "No. A predictable monthly price covers hosting, domain renewals, updates, and improvements."
       - question: "What about Local Search Engine Optimization (SEO)?"
-        answer: "Basic search setup is included (page titles/descriptions and fast loading). Extra local marketing—keyword research/content alignment, Google Business Profile, Apple Maps/Bing, 100+ listings, and reporting—is available separately."
+        answer: "Basic search setup is included (page titles/descriptions and fast loading). Extra local SEO—keyword research/content alignment, Google Business Profile, Apple Maps/Bing, 100+ listings, and reporting—is available separately."
       - question: "Are content updates really unlimited?"
         answer: "Yes. Request changes any time by call, text, or email."
 params:
@@ -167,7 +167,7 @@ I love partnering with business owners and specialize in building fast custom we
 {.w-40 .mb-4}
 
 **Benjamin Awerkamp** <br>
-Website Design & Local Marketing <br>
+Website Design & Local SEO <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management

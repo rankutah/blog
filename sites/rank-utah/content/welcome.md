@@ -18,7 +18,7 @@ Welcome to Clear Presence — I’m excited to work with you.
 
 ## Next step: share your business info
 
-To get started, please fill out this short form. I’ll use it to set up (and tailor) your website and/or local marketing.
+To get started, please fill out this short form. I’ll use it to set up (and tailor) your website and/or local SEO.
 
 {{< button url="https://forms.gle/5jpKdA9LZEWFXQudA" text="Fill Out Business Info" newtab="true" >}}
 

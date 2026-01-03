@@ -1,14 +1,14 @@
 ---
-title: "Local Marketing to Grow Your Small Business"
-description: "Local marketing for small businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
+title: "Local SEO to Grow Your Small Business"
+description: "Local SEO for small businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
 layout: "flowbite"
 url: "/services/local-marketing"
 hero: true
 schema:
   service:
     enabled: true
-    serviceType: "Local Marketing to Grow Your Small Business"
-    description: "Local marketing to increase visibility in Google Search and Maps using keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and consistent business info across directories, with clear monthly reporting."
+    serviceType: "Local SEO to Grow Your Small Business"
+    description: "Local SEO to increase visibility in Google Search and Maps using keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and consistent business info across directories, with clear monthly reporting."
     areaServed: "United States"
     offers:
       - "@type": "Offer"
@@ -25,13 +25,13 @@ params:
   ppc: true
 ---
 
-{{< hero img="/media/utah-landscape.avif" alt="Landscape image for local marketing" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local Marketing to Grow Your Small Businesses
-Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local marketing plans starting at $200/month.
+{{< hero img="/media/utah-landscape.avif" alt="Landscape image for local SEO" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+# Local SEO to Grow Your Small Businesses
+Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO plans starting at $200/month.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
-{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20local%20marketing." text="Text Now" >}}
+{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20local%20SEO." text="Text Now" >}}
 
 <div class="mt-6"></div>
 {{< /hero >}}
@@ -67,13 +67,13 @@ Get in front of your ideal customers and grow your business. Skip the expensive 
 })();
 </script>
 
-## Local marketing
+## Local SEO
 
-Local marketing helps your business show up when nearby customers search online.
+Local SEO helps your business show up when nearby customers search online.
 
 That includes places like Google Search, Google Maps, Apple Maps, Bing, and AI assistants.
 
-Local Marketing Packages Include:
+Local SEO Packages Include:
 
 - **Search + Maps visibility** (Google, Apple Maps, Bing, and more)
 - **Keyword research + content alignment** (services + cities)
@@ -95,8 +95,8 @@ Local Marketing Packages Include:
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
-- Local Marketing (no website) — $200/mo: Keyword research + content alignment, Google Business Profile management, Apple Maps and Bing Places, 100+ directory listings, plus clear monthly reporting.
-- Website + Local Marketing — $299/mo: A fast, secure custom website plus everything in Local Marketing.
+- Local SEO (no website) — $200/mo: Keyword research + content alignment, Google Business Profile management, Apple Maps and Bing Places, 100+ directory listings, plus clear monthly reporting.
+- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO.
 
 Month‑to‑month. No long‑term contract.
 
@@ -109,7 +109,7 @@ Month‑to‑month. No long‑term contract.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 #### Visibility & Clicks
-<img src="/media/local-marketing-analytics-report.avif" alt="Local marketing analytics report" />
+<img src="/media/local-marketing-analytics-report.avif" alt="Local SEO analytics report" />
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 #### Small Business Growth
@@ -144,14 +144,14 @@ You don’t have to manage anything. This is done for you.
 ## FAQ
 {{< faqs openFirst="false" >}}
 
-### What do you do each month for local marketing?
+### What do you do each month for local SEO?
 
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, Bing Places, and directory listings. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
 ### What results should I expect?
-Local marketing is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
 
-Social media posts and ads can help, but they stop the moment you stop posting or paying. Local marketing build a strong foundation so you show up when nearby customers search.
+Social media posts and ads can help, but they stop the moment you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and your competition.
 

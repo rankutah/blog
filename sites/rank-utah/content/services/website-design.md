@@ -7,7 +7,7 @@ url: "/services/website-design"
 schema:
   service:
     enabled: true
-    serviceType: "Website Design & Local Marketing Services"
+    serviceType: "Website Design & Local SEO Services"
     description: "Custom, fast business websites built to help customers call, text, or book."
     areaServed: "United States"
     offers:
