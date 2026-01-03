@@ -43,7 +43,10 @@
 /blog/*                                          / 301
 
 # Services rename
-/services/local-seo              /services/local-marketing 301
-/services/local-seo/             /services/local-marketing 301
-/local-seo                       /services/local-marketing 301
-/local-seo/                      /services/local-marketing 301
+/services/local-marketing              /services/local-seo 301
+/services/local-marketing/             /services/local-seo 301
+/local-marketing                       /services/local-seo 301
+/local-marketing/                      /services/local-seo 301
+
+/local-seo                             /services/local-seo 301
+/local-seo/                            /services/local-seo 301

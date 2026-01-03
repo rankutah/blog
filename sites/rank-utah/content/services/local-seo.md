@@ -133,13 +133,12 @@ Partnering with small businesses to improve local visibility and turn nearby sea
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## How it Works
-You don’t have to manage anything. This is done for you.
 
-1. We review where you show up today (maps, listings, and your profiles)
-2. We choose the main searches to focus on (services + cities)
-3. We update and improve your Google Business Profile
-4. We update Apple Maps/Bing and clean up key listings so your info matches everywhere
-5. We send a simple monthly report (calls, clicks, visibility)
+1. Review where you show up today (maps, listings, and your profiles)
+2. Determine the main searches to focus on
+3. Update and improve your Google Business Profile
+4. Create Apple Maps/Bing listings and submit your business information to 100+ other sites
+5. Send a monthly report to understand progress and improve your marketing (calls, clicks, visibility, traffic, searches)
 
 ## FAQ
 {{< faqs openFirst="false" >}}

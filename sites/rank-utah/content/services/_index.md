@@ -21,7 +21,7 @@ Fast, mobile-friendly websites built to convert.
 ### Local SEO
 Help local customers find you on Search + Maps with keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, listings, and reporting.
 
-{{< button url="/services/local-marketing" text="Local SEO" >}}
+{{< button url="/services/local-seo" text="Local SEO" >}}
 {{< /col >}}
 
 {{< /cols >}}
