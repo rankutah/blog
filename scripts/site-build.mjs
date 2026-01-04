@@ -14,9 +14,9 @@ function assertForbiddenRankUtahPagesAbsent(SITE) {
 
   // Old service URL is redirect-only; do not reintroduce content at this path.
   forbiddenPaths.push(
-    join('sites', SITE, 'content', 'services', 'local-seo.md'),
-    join('sites', SITE, 'content', 'services', 'local-seo', 'index.md'),
-    join('sites', SITE, 'content', 'services', 'local-seo', '_index.md'),
+    join('sites', SITE, 'content', 'services', 'local-marketing.md'),
+    join('sites', SITE, 'content', 'services', 'local-marketing', 'index.md'),
+    join('sites', SITE, 'content', 'services', 'local-marketing', '_index.md'),
   )
 
   const present = forbiddenPaths.filter((p) => existsSync(p))
