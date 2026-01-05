@@ -32,7 +32,7 @@ Serving Palm Beach County, Broward County, and Miami-Dade County
 
 ### Company
 {.center}
-[Home](/) • [Services](/services) • [Gallery](/gallery) • [Reviews](/reviews) • [Contact](/contact)
+[Home](/) • [Services](/services) • [Gallery](/gallery) • [Blog](/blog) • [Reviews](/reviews) • [Contact](/contact)
 {.center}
 
 {{< /col >}}
