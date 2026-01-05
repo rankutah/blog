@@ -136,6 +136,9 @@ main#content video {
   row-gap: var(--row, var(--gap, 1.5rem));    /* Y gap defaults to X gap */
   align-items: var(--v, start);               /* start | center | end | stretch */
 }
+.prose .cols-auto + .cols-auto {
+  margin-top: var(--gap, 1.5rem);
+}
 .cols-auto.v-center  { --v: center; }
 .cols-auto.v-end     { --v: end; }
 .cols-auto.v-stretch { --v: stretch; }
