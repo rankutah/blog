@@ -167,7 +167,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 {{< /cols >}}
 
 
-## What Our Customers Say
+## What Customers are Saying
 {.center}
 
 {{< elfsight id="269a9350-d76a-4819-ad56-ef05296b1bd4">}}
