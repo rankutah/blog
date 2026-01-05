@@ -6,7 +6,7 @@ layout: flowbite
 
 # Residential Gutter Installation
 
-![](/media/gutters-homestead-fl.jpg)
+![residential rain gutter](/media/gutters-homestead-fl.jpg)
 
 Many homeowners take their gutters for granted, but when there is any amount of inclement weather, gutters are a very important part of keeping your home fully protected. If your gutters aren't properly designed and installed, then serious damage could occur with your home as a result. At NOVA Gutter Corporation, our professional gutters experts can help you design and install a residential gutter system that will be effective, efficient, and durable.
 
@@ -37,7 +37,7 @@ If any sections of your gutters or any downspouts are missing from your gutter s
 ### Boca Raton Residential Gutter Installation Project
 
 
-![](/media/boca-raton-residential-gutter-installation-project1.jpg)
+![Residential rain gutter on home in Boca Raton, FL](/media/boca-raton-residential-gutter-installation-project1.jpg)
 
 This Boca Raton residence wanted to boost their curb appeal and prevent unneeded maintenance by updating their gutter system. The home was inside a goregous community on Lake Lane in Boca. This residential gutter installation was fairly...
 

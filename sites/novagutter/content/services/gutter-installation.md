@@ -29,14 +29,14 @@ Our professionals will personally inspect your property in order to determine th
 ## Gutter Installation: Why Use Aluminum Gutters?
 There are many reasons to choose aluminum gutters in South Florida. For starters, aluminum is inexpensive and non-corrosive — it never rusts! Plus, with aluminum gutters you have a wide range of options when it comes to colors. The electro-static process used to paint is a better choice for the environment versus regular spray painting. It uses a high voltage electrostatic charge which is applied to both the workpiece and the sprayer mechanism. It is incredibly efficient, using 95% of sprayed paint due to reduced over-spray and better wrap-around. After coating, the pieces are then baked so the finish will last for a very long time.
 
-![](/media/image09.avif)
+![Aluminum raingutter color options](/media/image09.avif)
 
 Looking for an environmentally friendly option for your home improvement needs? At NOVA Gutter Corporation our aluminum is 100% recyclable. We never dispose of it in a manner that is harmful to the environment. We recycle our excess and also recycle your old gutters. We can help you save money by installing green products designed for your home or office, such as our great selection of seamless aluminum gutters.
 
 ## Copper Gutters
 Why use copper for your gutters? Copper is used in high-end gutter applications. Its luster and aging properties make it the best choice for homeowners who want to, literally, put a little more sparkle in their homes. Copper gutter installation has been used for gutters in homes since ancient times. It is more expensive than steel and aluminum. If you are interested in having copper gutters installed on your home or business, give our experts a call. We'll be happy to provide you with a free estimate for copper gutters.
 
-![](/media/f13c1b38.avif)
+![copper rain gutters on a house](/media/f13c1b38.avif)
 
 ## Local Gutter Installation & Service Pros
 NOVA Gutter Corporation offers more services than just installing gutters. We also provide gutter cleaning as well as gutter related services such as repairing fascia, installing soffit and siding. The least expensive and best way to keep your gutters in great shape is to periodically clean them. Your car needs a tune-up once in a while, so do your gutters. You will save hundreds, if not thousands, in repairs by periodically checking your gutters and have a professional come and do a total cleaning. Our gutter cleaning prices start at $149 with installation. Call to learn more.

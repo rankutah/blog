@@ -5,7 +5,7 @@ layout: flowbite
 ---
 # Commercial Gutter Installation
 
-![](/media/image10.jpg)
+![Commercial Stainless Steel Rain Gutter](/media/image10.jpg)
 
 Commercial buildings are commonly larger than most residential properties, so they often require specialized gutters. At NOVA Gutter Corporation, our gutter experts will be able to help you select the right gutters for your property, and we'll provide you with a high quality installation. We'll make sure that your gutters are totally effective and as durable as possible.
 
@@ -33,7 +33,7 @@ Our professionals aim for complete customer satisfaction at every job that we pe
 
 ## Boca Raton Commercial Gutter Installation: Waterstone Resort and Marina Project
 
-![](/media/seamless-gutters-boca-raton-fl-new-pics1.jpg)
+![Commercial rain gutter project for Waterstone Resort](/media/seamless-gutters-boca-raton-fl-new-pics1.jpg)
 {.w-64}
 
 As one of Boca Raton’s premier waterfront properties, the Waterstone Resort and Marina is an iconic fixture in the South Florida region drawing thousands of tourists each and every year. Needless to say, the property managers wanted to be sure they hired the top Boca Raton gutter company.
