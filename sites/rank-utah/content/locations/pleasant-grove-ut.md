@@ -1,6 +1,6 @@
 ---
-title: "Website Design & Local SEO Services in Pleasant Grove, UT"
-description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Websites come with in-depth monthly reports and local SEO to help you get more customers."
+title: "Utah Website Design & Local SEO Services | Digital Marketing Agency Near You"
+description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -91,7 +91,7 @@ schema:
   service:
     enabled: true
     serviceType: "Website Design & Local SEO Services"
-    description: "Clear Presence is a Website Design company in Pleasant Grove, Utah. Get a fast, high‑performance website plus local SEO to help more people find and contact you."
+    description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)."
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
@@ -131,8 +131,8 @@ schema:
 
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape with text overlaid that says Website Design and Local SEO to Grow your Utah Business" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design & Local Marketing to Grow Your Utah Business {.text-white}
-Lead-generating websites and local search engine optimization (SEO) to help you get more customers. Starting at $150/month.
+# Website Design & Local SEO Services in Utah {.text-white}
+Digital marketing services for small businesses in Utah. Professional business websites and local search engine optimization (SEO). Starting at $150/month.
 
 {{< button url="/pricing" text="Start Service" >}} {{< button url="#main-content" text="Learn More" >}}
 
