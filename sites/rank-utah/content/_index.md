@@ -92,7 +92,7 @@ See the process for building a custom site designed to bring you more customers.
 
 ## Local SEO
 
-Help local customers find you on search and maps. Local SEO includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting. It’s guided by a practical [local SEO strategy](/utah-local-seo-strategy).
+Help local customers find you on search and maps. Local SEO includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting.
 
 {{<button text="Local SEO" url="/services/local-seo">}}
 

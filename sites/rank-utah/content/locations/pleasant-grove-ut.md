@@ -296,7 +296,7 @@ Local SEO is the work that helps nearby customers find and choose your business.
 
 Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
 
-Local SEO is a small business [local SEO strategy](/utah-local-seo-strategy) that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
+Local SEO helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
 {{< button url="/portfolio" text="Portfolio" >}}
 {{< button url="/contact" text="Contact" >}}
