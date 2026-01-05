@@ -20,7 +20,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
 	<div class="flex items-start gap-3">
-		{{< icon name="square-check-big" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="PC desktop repair" >}}
+		{{< icon name="monitor" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="PC desktop repair" >}}
 		<div>
 			<h2 class="mt-0">PC Desktop Repair</h2>
 			<p>From no‑boot and blue screens to slow machines and noisy fans. Quick fixes and part swaps (PSU, RAM, SSD, cooling) to get your desktop running like new.</p>
@@ -34,7 +34,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
 	<div class="flex items-start gap-3">
-		{{< icon name="check" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Laptop repair" >}}
+		{{< icon name="laptop" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Laptop repair" >}}
 		<div>
 			<h2 class="mt-0">Laptop Repair</h2>
 			<p>Screen, keyboard, hinge, battery, and charging issues fixed. Thermal cleaning and tune‑ups extend the life of your laptop without the upsell.</p>
@@ -62,7 +62,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
 	<div class="flex items-start gap-3">
-		{{< icon name="badge-check" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Data recovery" >}}
+		{{< icon name="hard-drive" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Data recovery" >}}
 		<div>
 			<h2 class="mt-0">Data Recovery</h2>
 			<p>Accidentally deleted files or a failing drive? I use safe, read‑only methods first and will clearly explain what’s possible before any work.</p>
@@ -90,7 +90,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
 	<div class="flex items-start gap-3">
-		{{< icon name="circle-check" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Computer backup" >}}
+		{{< icon name="download" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Computer backup" >}}
 		<div>
 			<h2 class="mt-0">Computer Backup</h2>
 			<p>Set up automatic backups to an external drive or the cloud. I verify restores so you know your files are truly protected.</p>
@@ -118,7 +118,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
 	<div class="flex items-start gap-3">
-		{{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Wi‑Fi and network support" >}}
+		{{< icon name="wifi" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Wi‑Fi and network support" >}}
 		<div>
 			<h2 class="mt-0">Wi‑Fi &amp; Network Support</h2>
 			<p>Stronger Wi‑Fi and faster internet with correct router/modem setup. Coverage fixes, printer/file sharing, and secure networks that just work.</p>
@@ -132,7 +132,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
 	<div class="flex items-start gap-3">
-		{{< icon name="badge-check" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Printer setup" >}}
+		{{< icon name="printer" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Printer setup" >}}
 		<div>
 			<h2 class="mt-0">Printer Setup</h2>
 			<p>Install and troubleshoot printers and scanners (USB and wireless). I’ll leave you with a quick how‑to so everyone can print.</p>
