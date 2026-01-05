@@ -87,7 +87,7 @@ Whether you need seamless stainless-steel channels on a storefront or elegant co
 	<li class="flex items-start gap-2">{{< icon name="check" class="text-[#C10009] h-5 w-5 flex-shrink-0" >}}<span>1 Year Labor Warranty</span></li>
  </ul>
 
-![](/media/stainless-steel-gutters-boca-raton-fl.avif)
+![stainless-steel-rain-gutter](/media/stainless-steel-gutters-boca-raton-fl.avif)
 
 {{< /col >}}
 
