@@ -1,6 +1,6 @@
 baseURL = "https://novagutter.com/"
 languageCode = "en-us"
-title = ""
+title = "NOVA Gutter"
 themesDir = "../../themes"
 ignoreFiles = ["^content/articles/"]
 enableRobotsTXT = true
@@ -46,6 +46,15 @@ enableRobotsTXT = true
   author              = "NOVA Gutter"
   hideMeta            = true
 
+[params.schema.organization]
+  enabled = true
+  name    = "NOVA Gutter"
+  logo    = "/media/google-logo.jpg"
+  sameAs  = [
+    "https://www.facebook.com/novaguttercorp",
+    "https://www.instagram.com/novagutter",
+  ]
+
 [params.socialDefaults]
   size = "w-8 h-8"
   gap  = "gap-3"
@@ -88,6 +97,7 @@ enableRobotsTXT = true
 [params.header]
   stickyMobile     = true
   stickyDesktop    = true
+  showBrandTitle   = false
   titleSize        = "2xl"
   showCTAOnMobile  = false
   showCTAOnDesktop = true

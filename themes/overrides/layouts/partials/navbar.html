@@ -16,6 +16,8 @@
 {{ $showPhoneOnMobile := default true  .Site.Params.header.showPhoneOnMobile }}
 {{ $phoneNumber       := default "800-123-4567" .Site.Params.header.phoneNumber }}
 
+{{ $showBrandTitle := default true .Site.Params.header.showBrandTitle }}
+
 {{ $logoFile        := .Site.Params.logo }}
 {{ $logoHeightClass := default "h-8"      .Site.Params.header.logoHeight }}
 {{/* Optional explicit dimensions for the logo (PSI: set width/height to avoid CLS) */}}
@@ -169,9 +171,11 @@
       {{- $rawTitle := or .Site.Params.header.title .Site.Title -}}
       {{- $titleHTML := replace (replace $rawTitle "|" "<br/>") (printf "\n") "<br/>" | safeHTML -}}
 
-      <span class="self-center {{ $titleSizeClass }} font-semibold leading-tight whitespace-normal break-words">
-        {{ $titleHTML }}
-      </span>
+      {{- if $showBrandTitle -}}
+        <span class="self-center {{ $titleSizeClass }} font-semibold leading-tight whitespace-normal break-words">
+          {{ $titleHTML }}
+        </span>
+      {{- end -}}
     </a>
 
     <!-- Actions -->

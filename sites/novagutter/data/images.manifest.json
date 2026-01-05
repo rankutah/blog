@@ -2471,6 +2471,48 @@
       ]
     }
   },
+  "/media/google-logo.jpg": {
+    "width": 191,
+    "height": 191,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQQGAf/EAC0QAAIABQMBBgYDAAAAAAAAAAECAAMEBRESITFRExQWIjJBBkJhYoGxwdHh/8QAGAEAAwEBAAAAAAAAAAAAAAAAAgMEAAX/xAAdEQEAAgICAwAAAAAAAAAAAAABAAIDERJBISJR/9oADAMBAAIRAxEAPwBO811TTXDTJmsqhVOn294Ut1fLrpOpfLMHrXp/kGXGlFZexJJK6pWx6HeDF7zbKzYFZic9GH9Qnk1d9TqGGmXEVPFtbmyguU9Qb1MQzdUgAnRnjYRXRViVsgTE2PDKeVMQU6nxHUnG2j+BB2d61I8ddcy3ROsx8SouTjsuPwYsuFGKySQrFJg9LD9H6Qfkn4nzg4C4zj7YbjAIjCyrRonwmPlVVVb6vzE6kOGRuCIXttX3q7z3Rj2RlghT7HaKbpbUrUDrtNXgj5h0g+w6VrJiCUUIQ5Lc8wsGtg6lNr0y4m4e2p//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 191,
+          "url": "/media-deriv/google-logo__w191.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 191,
+          "url": "/media-deriv/google-logo__w191.jpg"
+        }
+      ]
+    }
+  },
+  "/media/google-logo.avif": {
+    "width": 191,
+    "height": 191,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQQGAf/EAC0QAAIABQMBBgYDAAAAAAAAAAECAAMEBRESITFRExQWIjJBBkJhYoGxwdHh/8QAGAEAAwEBAAAAAAAAAAAAAAAAAgMEAAX/xAAdEQEAAgICAwAAAAAAAAAAAAABAAIDERJBISJR/9oADAMBAAIRAxEAPwBO811TTXDTJmsqhVOn294Ut1fLrpOpfLMHrXp/kGXGlFZexJJK6pWx6HeDF7zbKzYFZic9GH9Qnk1d9TqGGmXEVPFtbmyguU9Qb1MQzdUgAnRnjYRXRViVsgTE2PDKeVMQU6nxHUnG2j+BB2d61I8ddcy3ROsx8SouTjsuPwYsuFGKySQrFJg9LD9H6Qfkn4nzg4C4zj7YbjAIjCyrRonwmPlVVVb6vzE6kOGRuCIXttX3q7z3Rj2RlghT7HaKbpbUrUDrtNXgj5h0g+w6VrJiCUUIQ5Lc8wsGtg6lNr0y4m4e2p//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 191,
+          "url": "/media-deriv/google-logo__w191.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 191,
+          "url": "/media-deriv/google-logo__w191.jpg"
+        }
+      ]
+    }
+  },
   "/media/gutter-installation-boca-raton-fl.jpg": {
     "width": 300,
     "height": 200,

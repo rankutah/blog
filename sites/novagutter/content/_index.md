@@ -2,9 +2,19 @@
 title: "Rain Gutters in Boca Raton, Florida"
 description: "Expert gutter installation and drainage solutions in Boca Raton, Florida. 20+ years of reliable gutter solutions across South Florida."
 layout: flowbite
+schema:
+  localBusiness:
+    enabled: true
+    type: LocalBusiness
+    name: "NOVA Gutter"
+    telephone: "+19543808242"
+    logo: "/media/google-logo.jpg"
+    image: "/media/hero.jpg"
+    sameAs:
+      - "https://www.facebook.com/novaguttercorp"
+      - "https://www.instagram.com/novagutter"
+    areaServed: "South Florida"
 ---
-
-
 
 {{< hero img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 80vh" yBottom="md" align="center" spacer="false" >}}
 
@@ -15,8 +25,6 @@ The Gold Standard in Gutters & Drainage. Expert Gutter Installation, Every Time.
  {{< button url="/contact" text="Get a Free Quote" >}}
 
 {{< /hero >}}
-
-
 
 ## NOVA Gutter – Serving South Florida Since 2003
 
