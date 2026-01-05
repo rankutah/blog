@@ -22,12 +22,7 @@ headless: true
 
 ### BlueridgeTech
 {.center}
-Computer repair and IT support in Buena Vista, VA
-{.center}
-
-{.center}
-
-
+Computer Repair & IT Support in Buena Vista, VA <br>
 [(540) 458-1021](tel:+15404581021)  <br> Mon–Fri 11am–4:30pm • Sat 11am–1pm <br> [1412 Magnolia Ave, Buena Vista, VA 24416](https://www.google.com/maps/place/1412+Magnolia+Ave,+Buena+Vista,+VA+24416)
 {.center}
 
