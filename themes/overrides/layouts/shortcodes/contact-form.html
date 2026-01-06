@@ -45,6 +45,18 @@
 {{- $showSubject := ne $subjectParam "false" -}}
 {{- $subjectPlaceholder := cond (eq $subjectParam "optional") "Subject (Optional)" "Subject" -}}
 
+{{- /* Preferred contact method: false | optional | true */ -}}
+{{- $preferredParam := lower (.Get "preferredContact" | default (.Get "preferred" | default "false")) -}}
+{{- $showPreferred := ne $preferredParam "false" -}}
+{{- $preferredRequired := eq $preferredParam "true" -}}
+{{- $preferredLabel := .Get "preferredLabel" | default "Preferred Contact Method" -}}
+{{- $preferredOptionsRaw := .Get "preferredOptions" | default "Phone call,Text message,Email" -}}
+{{- $preferredOptions := slice -}}
+{{- if gt (len $preferredOptionsRaw) 0 -}}
+  {{- $cleanPref := replaceRE "\\s*,\\s*" "," $preferredOptionsRaw -}}
+  {{- $preferredOptions = split $cleanPref "," -}}
+{{- end -}}
+
 {{- /* Custom fields: accept comma-separated labels via `custom`, with a couple aliases for older pages */ -}}
 {{- $customRaw := .Get "custom" | default (or (.Get "customFir") (.Get "customField")) -}}
 {{- $customItems := slice -}}
@@ -133,7 +145,7 @@
       {{- $orderItems = split $cleanOrder "," -}}
     {{- else -}}
       {{- /* Default order: place Business/Company after phone */ -}}
-      {{- $orderItems = slice "name" "email" "phone" "business" "address" "custom" "subject" "message" "consent" -}}
+      {{- $orderItems = slice "name" "email" "phone" "preferred" "business" "address" "custom" "subject" "message" "consent" -}}
     {{- end -}}
     {{- range $idx, $fld := $orderItems }}
       {{- $k := lower (trim $fld " \t\n\r") -}}
@@ -172,6 +184,20 @@
         <div>
           <label for="phone" class="sr-only">Phone</label>
           <input type="tel" id="phone" name="phone" placeholder="{{ $phonePlaceholder }}" class="{{ $inputBase }}">
+        </div>
+        {{- end }}
+
+      {{- else if or (eq $k "preferred") (eq $k "preferredcontact") (eq $k "preferred_contact") -}}
+        {{- if $showPreferred }}
+        <div>
+          <label for="preferred_contact_method" class="sr-only">{{ $preferredLabel }}</label>
+          <select id="preferred_contact_method" name="preferred_contact_method" class="{{ $inputBase }}" {{ if $preferredRequired }}required{{ end }}>
+            <option value="">{{ $preferredLabel }}</option>
+            {{- range $opt := $preferredOptions -}}
+              {{- $opt = trim $opt " \t\n\r" -}}
+              {{- if ne $opt "" -}}<option value="{{ $opt }}">{{ $opt }}</option>{{- end -}}
+            {{- end -}}
+          </select>
         </div>
         {{- end }}
 
