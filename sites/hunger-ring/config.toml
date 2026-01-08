@@ -25,8 +25,8 @@ themesDir     = "../../themes"
 
 [params]
   env                = "production"
-  primaryColor       = "slate"
-  lightBackground    = "slate-200"
+  primaryColor       = "teal"
+  lightBackground    = "slate-100"
   darkBackground     = "slate-900"
   cardBackground     = "slate-100"
   cardBackgroundDark = "slate-800"
@@ -46,7 +46,7 @@ themesDir     = "../../themes"
   gap  = "gap-3"
 
 [params.text]
-  linkColor = "white"
+
 
 [params.forms]
   # TODO: Replace with your real submit-form.com endpoint (Formspark or similar)
