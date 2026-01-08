@@ -26,11 +26,11 @@ themesDir     = "../../themes"
 [params]
   env                = "production"
   primaryColor       = "teal"
-  lightBackground    = "slate-100"
+  lightBackground    = "neutral-200"
   darkBackground     = "slate-900"
   cardBackground     = "slate-100"
   cardBackgroundDark = "slate-800"
-  cardBorderLight    = "slate-200"
+  cardBorderLight    = "gray-200"
   cardBorderDark     = "gray-700"
 
   enableSearch       = true
