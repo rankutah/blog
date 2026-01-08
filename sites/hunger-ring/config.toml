@@ -35,6 +35,16 @@ themesDir     = "../../themes"
 
   enableSearch       = true
 
+  [[params.social]]
+    name = "instagram"
+    url  = "https://www.instagram.com/suggls"
+    icon = "/media/instagram.png"
+    alt  = "Instagram"
+
+[params.socialDefaults]
+  size = "w-7 h-7"
+  gap  = "gap-3"
+
 [params.forms]
   # TODO: Replace with your real submit-form.com endpoint (Formspark or similar)
   action         = "https://submit-form.com/REPLACE_ME"

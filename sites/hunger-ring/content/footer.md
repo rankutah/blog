@@ -26,6 +26,8 @@ A product by **Suggls**
 Questions? [info@suggls.com](mailto:info@suggls.com)
 {.center}
 
+{{< socials align="center" >}}
+
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
