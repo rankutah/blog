@@ -9,7 +9,12 @@ url: "/about"
 
 Hunger Ring was created by us, **Courtney** and **Benjamin**.
 
-We've both experienced the gap between knowing what to do and actually doing it. In our own journeys with health and mindfulness, we realized we didn't need more rules or apps—we just needed a simple, consistent reminder to pause and listen to our bodies.
+
+
+![Courtney and Benjamin, founders of Hunger Ring](media/founder-photo-courtney-and-benjamin.jpg)
+{.w-64}
+
+We've both experienced the gap between knowing what to do and actually doing it. In our own journeys with health and mindfulness, we realized we didn't need another rule or app—we just needed a simple, consistent reminder to pause and listen to our bodies.
 
 We wanted a tool that was beautiful, screen-free, and always with us. Something that could serve as a gentle nudge to check in before making a choice. That idea became the Hunger Ring.
 

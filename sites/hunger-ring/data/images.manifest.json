@@ -1,122 +1,244 @@
 {
-  "/media/hunger-ring-intuitive-eating.jpg": {
-    "width": 1120,
-    "height": 928,
-    "aspect": 1.206896551724138,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAABAUGAQID/8QAJhAAAgEDAgYCAwAAAAAAAAAAAQIDAAQREiEFEyIxQWFCcVGB4f/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/EABkRAAIDAQAAAAAAAAAAAAAAAAABAhEhMf/aAAwDAQACEQMRAD8AJac2sF1IpAcRkL90j4agV3kVzrG32aLu5XuFcQOAnr5CtrG2ZXZWYRuw6WxnT+vuiadCxasoeGuwe5BYEawA2O5xvR8kyIQGzk4xSbglwSWglA1dwo8f2mkyPMVBXSBg5B3pIrA5PSVh5ANxy8pFo6A3cbbVm2uGLGWQgAYUe6WQszRRljnKgn3TuFFWOMhRnR5GancLzToYHtpbe8jyeYesDuPwaokkDorAnBGamhK7blvFUFrvZxMe5WtmD//Z",
+  "/media/founder-photo-courtney-and-benjamin.jpg": {
+    "width": 977,
+    "height": 1737,
+    "aspect": 0.5624640184225677,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA5ACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgQFAwAB/8QAMBAAAgEDAgQCCAcAAAAAAAAAAQIDAAQREiEFMUFRE2EUIjIzcoGR0SQ0cXOhscH/xAAXAQEBAQEAAAAAAAAAAAAAAAACAAED/8QAHREAAwACAgMAAAAAAAAAAAAAAAERAjESIRNBYf/aAAwDAQACEQMRAD8ASE7RlisKgHfBOcGhaZpyEfQoJA2HKmntmwRsc9mBpXidxpa2iUK2kaiRggeWaCHFsKWOaS4jhEhbGCC3Tt5V5JAyykSHWw68/pVj8HPfsgKqY11AlwoJbBx54rHisaJLHgrqZdwvXHWse4OfBQsUhLbBsczU66TDCXYMw0sRtqqk19Aw0SxERN6pY9M9aXWxmuIZvEzHJE+MHfV86k4Bps1ueHQCyinjnXXoBkXWCTtviptviKY+KQrYGAx33qhwixSZZmePxHAx4RXcAnGfqKwaN7aZ0DYZTgkd6m1Tr5M+MBmjMkDIDnIOxyDVjhHpd1ZC6mhV9GDErHBLjY5+nWkbMxm6UHJWMF9xvsPvTMfF+JFGit7ZZMMTqIPq9cUV2HG+hjgHjNfXzXI0yAAMO2STUy7JkvZgxIDSNzHIZ50rHHe8Taa5DbjGo6sADGdvkKCGXIAI204OScHzqfQs2t0ajuPR0kZCHd1HtLjrmnOG3KRpMZGCCSYEBumVb+AcVOg9uP8AWitvdt8P+isThzbqhtwuVLaK6tSSWkwExtnYg/3SZidMKxXAzsBup7HtXH3h+GtLf8uv7n2qbCf/2Q==",
     "variants": {
       "avif": [
         {
           "w": 320,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w320.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w320.avif"
         },
         {
           "w": 480,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w480.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w480.avif"
         },
         {
           "w": 640,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w640.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w640.avif"
         },
         {
           "w": 768,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w768.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w768.avif"
         },
         {
           "w": 960,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w960.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w960.avif"
         },
         {
-          "w": 1120,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w1120.avif"
+          "w": 977,
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w977.avif"
         }
       ],
       "webp": [],
       "jpeg": [
         {
           "w": 320,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w320.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w320.jpg"
         },
         {
           "w": 480,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w480.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w480.jpg"
         },
         {
           "w": 640,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w640.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w640.jpg"
         },
         {
           "w": 768,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w768.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w768.jpg"
         },
         {
           "w": 960,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w960.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w960.jpg"
         },
         {
-          "w": 1120,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w1120.jpg"
+          "w": 977,
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w977.jpg"
         }
       ]
     }
   },
-  "/media/hunger-ring-intuitive-eating.avif": {
-    "width": 1120,
-    "height": 928,
-    "aspect": 1.206896551724138,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAABAUGAQID/8QAJhAAAgEDAgYCAwAAAAAAAAAAAQIDAAQREiEFEyIxQWFCcVGB4f/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/EABkRAAIDAQAAAAAAAAAAAAAAAAABAhEhMf/aAAwDAQACEQMRAD8AJac2sF1IpAcRkL90j4agV3kVzrG32aLu5XuFcQOAnr5CtrG2ZXZWYRuw6WxnT+vuiadCxasoeGuwe5BYEawA2O5xvR8kyIQGzk4xSbglwSWglA1dwo8f2mkyPMVBXSBg5B3pIrA5PSVh5ANxy8pFo6A3cbbVm2uGLGWQgAYUe6WQszRRljnKgn3TuFFWOMhRnR5GancLzToYHtpbe8jyeYesDuPwaokkDorAnBGamhK7blvFUFrvZxMe5WtmD//Z",
+  "/media/founder-photo-courtney-and-benjamin.avif": {
+    "width": 977,
+    "height": 1737,
+    "aspect": 0.5624640184225677,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA5ACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgQFAwAB/8QAMBAAAgEDAgQCCAcAAAAAAAAAAQIDAAQREiEFMUFRE2EUIjIzcoGR0SQ0cXOhscH/xAAXAQEBAQEAAAAAAAAAAAAAAAACAAED/8QAHREAAwACAgMAAAAAAAAAAAAAAAERAjESIRNBYf/aAAwDAQACEQMRAD8ASE7RlisKgHfBOcGhaZpyEfQoJA2HKmntmwRsc9mBpXidxpa2iUK2kaiRggeWaCHFsKWOaS4jhEhbGCC3Tt5V5JAyykSHWw68/pVj8HPfsgKqY11AlwoJbBx54rHisaJLHgrqZdwvXHWse4OfBQsUhLbBsczU66TDCXYMw0sRtqqk19Aw0SxERN6pY9M9aXWxmuIZvEzHJE+MHfV86k4Bps1ueHQCyinjnXXoBkXWCTtviptviKY+KQrYGAx33qhwixSZZmePxHAx4RXcAnGfqKwaN7aZ0DYZTgkd6m1Tr5M+MBmjMkDIDnIOxyDVjhHpd1ZC6mhV9GDErHBLjY5+nWkbMxm6UHJWMF9xvsPvTMfF+JFGit7ZZMMTqIPq9cUV2HG+hjgHjNfXzXI0yAAMO2STUy7JkvZgxIDSNzHIZ50rHHe8Taa5DbjGo6sADGdvkKCGXIAI204OScHzqfQs2t0ajuPR0kZCHd1HtLjrmnOG3KRpMZGCCSYEBumVb+AcVOg9uP8AWitvdt8P+isThzbqhtwuVLaK6tSSWkwExtnYg/3SZidMKxXAzsBup7HtXH3h+GtLf8uv7n2qbCf/2Q==",
     "variants": {
       "avif": [
         {
           "w": 320,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w320.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w320.avif"
         },
         {
           "w": 480,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w480.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w480.avif"
         },
         {
           "w": 640,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w640.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w640.avif"
         },
         {
           "w": 768,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w768.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w768.avif"
         },
         {
           "w": 960,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w960.avif"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w960.avif"
         },
         {
-          "w": 1120,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w1120.avif"
+          "w": 977,
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w977.avif"
         }
       ],
       "webp": [],
       "jpeg": [
         {
           "w": 320,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w320.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w320.jpg"
         },
         {
           "w": 480,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w480.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w480.jpg"
         },
         {
           "w": 640,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w640.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w640.jpg"
         },
         {
           "w": 768,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w768.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w768.jpg"
         },
         {
           "w": 960,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w960.jpg"
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w960.jpg"
         },
         {
-          "w": 1120,
-          "url": "/media-deriv/hunger-ring-intuitive-eating__w1120.jpg"
+          "w": 977,
+          "url": "/media-deriv/founder-photo-courtney-and-benjamin__w977.jpg"
+        }
+      ]
+    }
+  },
+  "/media/hunger-ring.jpg": {
+    "width": 1136,
+    "height": 944,
+    "aspect": 1.2033898305084745,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUAAgMG/8QAJxAAAgIBAgUDBQAAAAAAAAAAAQIAAxEEIQUSMUFRFCIycXKBkcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6vEo9tabM6g+MwbijW+m5achmO5HaC06S/lU+0DrucwGS21v8bFP5lsRYdJcqEkK32mb8Ntc1Guw5K9PpA31CNagCtgiL7zfSF5ch++AQD+o0kgJQ2rsbDlyOwGT/IdodO9Cs1hyz7keIZKWsVXI2gf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring__w960.avif"
+        },
+        {
+          "w": 1136,
+          "url": "/media-deriv/hunger-ring__w1136.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring__w960.jpg"
+        },
+        {
+          "w": 1136,
+          "url": "/media-deriv/hunger-ring__w1136.jpg"
+        }
+      ]
+    }
+  },
+  "/media/hunger-ring.avif": {
+    "width": 1136,
+    "height": 944,
+    "aspect": 1.2033898305084745,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUAAgMG/8QAJxAAAgIBAgUDBQAAAAAAAAAAAQIAAxEEIQUSMUFRFCIycXKBkcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6vEo9tabM6g+MwbijW+m5achmO5HaC06S/lU+0DrucwGS21v8bFP5lsRYdJcqEkK32mb8Ntc1Guw5K9PpA31CNagCtgiL7zfSF5ch++AQD+o0kgJQ2rsbDlyOwGT/IdodO9Cs1hyz7keIZKWsVXI2gf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring__w960.avif"
+        },
+        {
+          "w": 1136,
+          "url": "/media-deriv/hunger-ring__w1136.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring__w960.jpg"
+        },
+        {
+          "w": 1136,
+          "url": "/media-deriv/hunger-ring__w1136.jpg"
         }
       ]
     }

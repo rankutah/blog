@@ -25,8 +25,8 @@ themesDir     = "../../themes"
 
 [params]
   env                = "production"
-  primaryColor       = "emerald"
-  lightBackground    = "white"
+  primaryColor       = "teal"
+  lightBackground    = "neutral-200"
   darkBackground     = "gray-900"
   cardBackground     = "gray-100"
   cardBackgroundDark = "gray-800"
@@ -34,6 +34,12 @@ themesDir     = "../../themes"
   cardBorderDark     = "gray-700"
 
   enableSearch       = true
+
+[params.forms]
+  # TODO: Replace with your real submit-form.com endpoint (Formspark or similar)
+  action         = "https://submit-form.com/REPLACE_ME"
+  successMessage = "Thanks! We’ll notify you when Hunger Ring is available."
+  errorMessage   = "Sorry, something went wrong. Please try again."
 
 [params.header]
   stickyMobile      = true

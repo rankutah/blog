@@ -181,10 +181,12 @@
     New rule: only flush if (homepage AND not plainHome flag) OR explicit hero param/image OR landing layout. */ -}}
   {{- $heroVal := (index .Params "hero") -}}
   {{- $heroType := printf "%T" $heroVal -}}
+  {{- $heroIsBool := eq $heroType "bool" -}}
+  {{- $heroDisabled := and (isset .Params "hero") $heroIsBool (not $heroVal) -}}
   {{- $heroIsMap := hasPrefix $heroType "map" -}}
   {{- $hasHeroDict := and (isset .Params "hero") $heroIsMap -}}
   {{- $hasHeroImage := or (and $hasHeroDict (isset .Params.hero "image")) (isset .Params "heroImage") -}}
-  {{- $isHeroPage := or (and .IsHome (not .Params.plainHome)) (and (isset .Params "hero") (ne $heroVal nil)) $hasHeroImage (eq .Params.layout "landing") -}}
+  {{- $isHeroPage := or (and .IsHome (not .Params.plainHome) (not $heroDisabled)) (and (isset .Params "hero") (ne $heroVal nil) (not $heroDisabled)) $hasHeroImage (eq .Params.layout "landing") -}}
   <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync{{ if $isHeroPage }} style="padding-top:0;margin-top:0"{{ end }}>
         {{- /* Render list pages (sections/taxonomies). Some Hugo setups emit tags pages as Kind "page";
           broaden detection to also catch Type "tags" or URL starting with /tags/. */ -}}
