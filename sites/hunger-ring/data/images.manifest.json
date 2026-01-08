@@ -121,11 +121,255 @@
       ]
     }
   },
+  "/media/hunger-ring-2.jpg": {
+    "width": 1120,
+    "height": 928,
+    "aspect": 1.206896551724138,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QAJRAAAgIBAwMEAwAAAAAAAAAAAQIAAxEEEjETIUEFMlFhgZHB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOqxKPdWnucA/HMH9T6p0pSkkMx5HgQSrSXGoY2gfZzAZLbU3tsU/mXxFh0ly1tkKwx4OJt6ZZZ0zVad23g+cZgb6is2ou1iCpyMHECu6lYGQ2/v3C8/qMZJgKFa+zs6u3x2P9heh07UBmsOXfn6hcpaxUDBxA//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-2__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-2__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-2__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-2__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-2__w960.avif"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-2__w1120.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-2__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-2__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-2__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-2__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-2__w960.jpg"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-2__w1120.jpg"
+        }
+      ]
+    }
+  },
+  "/media/hunger-ring-2.avif": {
+    "width": 1120,
+    "height": 928,
+    "aspect": 1.206896551724138,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QAJRAAAgIBAwMEAwAAAAAAAAAAAQIAAxEEEjETIUEFMlFhgZHB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOqxKPdWnucA/HMH9T6p0pSkkMx5HgQSrSXGoY2gfZzAZLbU3tsU/mXxFh0ly1tkKwx4OJt6ZZZ0zVad23g+cZgb6is2ou1iCpyMHECu6lYGQ2/v3C8/qMZJgKFa+zs6u3x2P9heh07UBmsOXfn6hcpaxUDBxA//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-2__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-2__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-2__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-2__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-2__w960.avif"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-2__w1120.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-2__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-2__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-2__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-2__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-2__w960.jpg"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-2__w1120.jpg"
+        }
+      ]
+    }
+  },
+  "/media/hunger-ring-3.jpg": {
+    "width": 1120,
+    "height": 928,
+    "aspect": 1.206896551724138,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgQFAAMG/8QAJBAAAgIBAwMFAQAAAAAAAAAAAQIDEQAEEiEFMUETMlFxgWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6qsB5Y09zgH4xfqfqnSlISQzHuPAxSLSTGMVtH2bwKSyxN7ZFP7h1k06SZY2sKwrwazb0yST0zHKd23sfNXgMaiMyqtNRU2MRnMsajg7+eQDz91lHMwJCtqJGp0Yj9xzRadoAzSG3fv/ADG8CVioFGsD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-3__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-3__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-3__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-3__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-3__w960.avif"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-3__w1120.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-3__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-3__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-3__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-3__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-3__w960.jpg"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-3__w1120.jpg"
+        }
+      ]
+    }
+  },
+  "/media/hunger-ring-3.avif": {
+    "width": 1120,
+    "height": 928,
+    "aspect": 1.206896551724138,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgQFAAMG/8QAJBAAAgIBAwMFAQAAAAAAAAAAAQIDEQAEEiEFMUETMlFxgWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6qsB5Y09zgH4xfqfqnSlISQzHuPAxSLSTGMVtH2bwKSyxN7ZFP7h1k06SZY2sKwrwazb0yST0zHKd23sfNXgMaiMyqtNRU2MRnMsajg7+eQDz91lHMwJCtqJGp0Yj9xzRadoAzSG3fv/ADG8CVioFGsD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-3__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-3__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-3__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-3__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-3__w960.avif"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-3__w1120.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hunger-ring-3__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hunger-ring-3__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hunger-ring-3__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hunger-ring-3__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hunger-ring-3__w960.jpg"
+        },
+        {
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring-3__w1120.jpg"
+        }
+      ]
+    }
+  },
   "/media/hunger-ring.jpg": {
-    "width": 1136,
-    "height": 944,
-    "aspect": 1.2033898305084745,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUAAgMG/8QAJxAAAgIBAgUDBQAAAAAAAAAAAQIAAxEEIQUSMUFRFCIycXKBkcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6vEo9tabM6g+MwbijW+m5achmO5HaC06S/lU+0DrucwGS21v8bFP5lsRYdJcqEkK32mb8Ntc1Guw5K9PpA31CNagCtgiL7zfSF5ch++AQD+o0kgJQ2rsbDlyOwGT/IdodO9Cs1hyz7keIZKWsVXI2gf/2Q==",
+    "width": 1120,
+    "height": 928,
+    "aspect": 1.206896551724138,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgQFAQMG/8QAJBAAAgICAAYCAwAAAAAAAAAAAQIAAwQRBRITMTJBYYEhUZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6rUB7q08nAP67xfinVOLyUkhmPcehFKsS41DXKB8ncCkttT+Nin7h6kxsS5a22FYa9HU28Mts6ZqtPMV/IPvW4DOQjWoAraIiGQba1GlPU9kAjf8lKZgR1bIsbToxH2Y5g4zUBmsO3fv8RuBcxUDR1A//9k=",
     "variants": {
       "avif": [
         {
@@ -149,8 +393,8 @@
           "url": "/media-deriv/hunger-ring__w960.avif"
         },
         {
-          "w": 1136,
-          "url": "/media-deriv/hunger-ring__w1136.avif"
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring__w1120.avif"
         }
       ],
       "webp": [],
@@ -176,17 +420,17 @@
           "url": "/media-deriv/hunger-ring__w960.jpg"
         },
         {
-          "w": 1136,
-          "url": "/media-deriv/hunger-ring__w1136.jpg"
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring__w1120.jpg"
         }
       ]
     }
   },
   "/media/hunger-ring.avif": {
-    "width": 1136,
-    "height": 944,
-    "aspect": 1.2033898305084745,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUAAgMG/8QAJxAAAgIBAgUDBQAAAAAAAAAAAQIAAxEEIQUSMUFRFCIycXKBkcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6vEo9tabM6g+MwbijW+m5achmO5HaC06S/lU+0DrucwGS21v8bFP5lsRYdJcqEkK32mb8Ntc1Guw5K9PpA31CNagCtgiL7zfSF5ch++AQD+o0kgJQ2rsbDlyOwGT/IdodO9Cs1hyz7keIZKWsVXI2gf/2Q==",
+    "width": 1120,
+    "height": 928,
+    "aspect": 1.206896551724138,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAbACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAgQFAQMG/8QAJBAAAgICAAYCAwAAAAAAAAAAAQIAAwQRBRITMTJBYYEhUZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6rUB7q08nAP67xfinVOLyUkhmPcehFKsS41DXKB8ncCkttT+Nin7h6kxsS5a22FYa9HU28Mts6ZqtPMV/IPvW4DOQjWoAraIiGQba1GlPU9kAjf8lKZgR1bIsbToxH2Y5g4zUBmsO3fv8RuBcxUDR1A//9k=",
     "variants": {
       "avif": [
         {
@@ -210,8 +454,8 @@
           "url": "/media-deriv/hunger-ring__w960.avif"
         },
         {
-          "w": 1136,
-          "url": "/media-deriv/hunger-ring__w1136.avif"
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring__w1120.avif"
         }
       ],
       "webp": [],
@@ -237,8 +481,8 @@
           "url": "/media-deriv/hunger-ring__w960.jpg"
         },
         {
-          "w": 1136,
-          "url": "/media-deriv/hunger-ring__w1136.jpg"
+          "w": 1120,
+          "url": "/media-deriv/hunger-ring__w1120.jpg"
         }
       ]
     }

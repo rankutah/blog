@@ -12,8 +12,23 @@ Many of us eat while lost in thought or emotion, **disconnected from the subtle 
 
 By pausing to turn the ring to match the vague sensations in your stomach, you create a **small but powerful moment of awareness** — a pause that reconnects you with your body. The tactile action and visual cue **reinforce that awareness**, helping you honor your body’s signals and supporting intuitive eating — until your body’s cues feel natural and the ring is no longer needed.
 
-![Hunger Ring](media/hunger-ring.avif)
-{.w-64}
+{{< cols min="8rem" gap="1rem" v="center" >}}
+
+{{< col card="false" >}}
+![Hunger Ring](media/hunger-ring-3.jpg)
+
+{{< /col >}}
+
+{{< col card="false" >}}
+![Hunger Ring](media/hunger-ring.jpg)
+
+{{< /col >}}
+
+{{< col card="false" >}}
+![Hunger Ring](media/hunger-ring-2.jpg)
+{{< /col >}}
+
+{{< /cols >}}
 
 Hunger Ring is a quiet, physical reminder to pause, check in with your body, and make a choice that serves you.
 
