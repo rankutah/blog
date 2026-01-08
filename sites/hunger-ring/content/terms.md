@@ -26,7 +26,7 @@ Shipping times may vary due to carrier and processing conditions.
 
 We offer **30‑day returns**. The buyer is responsible for return shipping.
 
-To request a return, contact us at [info@suggls.com](mailto:info@suggls.com).
+To request a return, contact us on our [contact page](/contact).
 
 ## Donation
 
@@ -42,4 +42,4 @@ To the fullest extent permitted by law, Suggls will not be liable for indirect o
 
 ## Contact
 
-Questions about these Terms? Email us at [info@suggls.com](mailto:info@suggls.com).
+Questions about these Terms? Contact us using our [contact page](/contact).

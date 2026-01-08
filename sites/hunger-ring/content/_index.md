@@ -57,7 +57,7 @@ Make a conscious choice to eat or stop
 
 ## In manufacturing
 
-Hunger Ring is currently in the process of being manufactured. It is estimated to be available for pre-order before the end of Jan 2026.
+Hunger Ring is currently in the process of being manufactured. It is estimated to be available for pre-order by the end of Jan 2026.
 
 Want to be notified when it’s available? Leave your email below.
 
@@ -129,6 +129,6 @@ To request a return, email us at [info@suggls.com](mailto:info@suggls.com).
 
 ### How can I contact you?
 
-Message us anytime on our  [Contact Page](/contact) or on [Instagram](https://www.instagram.com/suggls).
+Message us anytime on our [contact page](/contact) or [Instagram](https://www.instagram.com/suggls).
 
 {{< /faqs >}}

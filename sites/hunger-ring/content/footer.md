@@ -23,7 +23,6 @@ headless: true
 A product by **Suggls**
 {.center}
 
-Questions? [info@suggls.com](mailto:info@suggls.com)
 {.center}
 
 {{< socials align="center" >}}

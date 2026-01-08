@@ -37,4 +37,4 @@ We keep information only as long as reasonably necessary for the purposes descri
 
 ## Contact
 
-Questions about this policy? Email us at [info@suggls.com](mailto:info@suggls.com).
+Questions about this policy? Contact us on our [contact page](/contact).

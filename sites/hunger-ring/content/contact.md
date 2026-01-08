@@ -13,8 +13,6 @@ url: "/contact"
 
 ## Send a message
 
-Email: [info@suggls.com](mailto:info@suggls.com)
-
 {{< contact-form
 	id="contact1"
 	custom="Email or Phone"
