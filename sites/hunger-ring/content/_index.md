@@ -129,6 +129,6 @@ To request a return, email us at [info@suggls.com](mailto:info@suggls.com).
 
 ### How can I contact you?
 
-Email us anytime at [info@suggls.com](mailto:info@suggls.com).
+Message us anytime on our  [Contact Page](/contact) or on [Instagram](https://www.instagram.com/suggls).
 
 {{< /faqs >}}
