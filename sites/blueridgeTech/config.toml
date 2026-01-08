@@ -26,8 +26,6 @@ uglyURLs = false
 [outputs]
   home = ["HTML", "RSS", "JSON", "FORMS"]
 
-
-
 [params]
   # Force production gating for analytics in any deploy environment
   env                = "production"

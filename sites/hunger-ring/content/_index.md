@@ -10,7 +10,7 @@ hero: false
 
 Many of us eat while lost in thought or emotion, **disconnected from the subtle signals** of our bodies. This ring is designed to help bridge that gap.
 
-By pausing to turn the ring to match the vague sensations in your stomach, you create a **small but powerful moment of awareness** — a pause that reconnects you with your body. The tactile action and visual cue **reinforce that awareness**, helping you honor your body’s signals and supporting intuitive eating — until your body’s cues feel natural and the ring is no longer needed.
+By pausing to rotate the ring to match the vague sensations in your stomach, you create a **small but powerful moment of awareness** — a pause that reconnects you with your body. The tactile action and visual cue **reinforce that awareness**, helping you honor your body’s signals and supporting intuitive eating — until your body’s cues feel natural and the ring is no longer needed.
 
 {{< cols min="8rem" gap="1rem" v="center" >}}
 
@@ -41,7 +41,7 @@ It’s not another app or a strict plan. It’s a simple tool to help you build 
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ### 1. Pause
 
@@ -49,7 +49,7 @@ Before, during, and after a meal or snack, stop for 3 seconds
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ### 2. Align
 
@@ -57,7 +57,7 @@ Rotate the ring to align with your stomach's current signal.
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ### 3. Honor
 
@@ -78,11 +78,11 @@ Want to be notified when it’s available? Leave your email below.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 {{< contact-form
 	id="notify1"
-	name="false"
+	name="true"
 	email="true"
 	phone="false"
 	subject="false"

@@ -45,6 +45,17 @@
 {{- $alignParam := lower (.Get "align" | default "start") -}}
 {{- $alMap := dict "start" "text-left" "center" "text-center" -}}
 {{- $alClass := (index $alMap $alignParam) | default "text-left" -}}
+
+{{- /* Optional site-level styling overrides
+      [params.faqs]
+        borderClasses = "border border-black/10 dark:border-white/10"
+*/ -}}
+{{- $faqParams := $page.Site.Params.faqs | default (dict) -}}
+{{- $borderClasses := (index $faqParams "borderClasses") | default "border border-black/10 dark:border-white/10" -}}
+
+{{- /* Match expanded/highlighted item background to card surface */ -}}
+{{- $pal := partial "theme/palette.html" $page -}}
+{{- $cardBg := (index $pal "cardBg") | default "bg-gray-100 dark:bg-gray-800" -}}
 {{- range $i, $p := $parts }}
   {{- $trim := trim $p " \n" -}}
   {{- if ne $trim "" -}}
@@ -89,8 +100,9 @@
     {{- $expanded := and $isFirst $openFirst -}}
     {{- $isLast := eq $i (sub $count 1) -}}
   {{- /* Use text-left (not text-inherit) to defeat parent centering on mobile */ -}}
-  {{- $btnBase := "flex items-center justify-between w-full p-5 rtl:text-right text-left border border-black dark:border-white focus:outline-none focus:ring-0 gap-3 mb-0 transition-colors duration-150 hover:bg-black/5 dark:hover:bg-white/10" -}}
+  {{- $btnBase := printf "flex items-center justify-between w-full p-5 rtl:text-right text-left %s focus:outline-none focus:ring-0 gap-3 mb-0 transition-colors duration-150 hover:bg-black/5 dark:hover:bg-white/10" $borderClasses -}}
     {{- $btnClasses := slice $btnBase -}}
+    {{- if $expanded }}{{ $btnClasses = $btnClasses | append $cardBg }}{{ end -}}
     {{- if $isFirst }}{{ $btnClasses = $btnClasses | append "rounded-t-xl" }}{{ end -}}
     {{- if not $isLast }}{{ $btnClasses = $btnClasses | append "border-b-0" }}{{ end -}}
 
@@ -112,7 +124,7 @@
 
     <div id="{{ $bid }}" class="{{ if not $expanded }}hidden{{ end }}" aria-labelledby="{{ $qid }}">
   {{- /* Ensure panel content is left-aligned even if surrounding section is centered */ -}}
-  {{- $panelBase := "p-5 text-left border border-black dark:border-white bg-gray-100 dark:bg-gray-800" -}}
+  {{- $panelBase := printf "p-5 text-left %s %s" $borderClasses $cardBg -}}
       {{- $panelClasses := slice $panelBase -}}
       {{- if not $isLast }}
         {{- $panelClasses = $panelClasses | append "border-b-0" -}}

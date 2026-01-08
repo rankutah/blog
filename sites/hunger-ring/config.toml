@@ -25,12 +25,12 @@ themesDir     = "../../themes"
 
 [params]
   env                = "production"
-  primaryColor       = "teal"
-  lightBackground    = "neutral-200"
-  darkBackground     = "gray-900"
-  cardBackground     = "gray-100"
-  cardBackgroundDark = "gray-800"
-  cardBorderLight    = "gray-200"
+  primaryColor       = "slate"
+  lightBackground    = "slate-200"
+  darkBackground     = "slate-900"
+  cardBackground     = "slate-100"
+  cardBackgroundDark = "slate-800"
+  cardBorderLight    = "slate-200"
   cardBorderDark     = "gray-700"
 
   enableSearch       = true
@@ -44,6 +44,9 @@ themesDir     = "../../themes"
 [params.socialDefaults]
   size = "w-7 h-7"
   gap  = "gap-3"
+
+[params.text]
+  linkColor = "white"
 
 [params.forms]
   # TODO: Replace with your real submit-form.com endpoint (Formspark or similar)
