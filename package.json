@@ -49,9 +49,13 @@
     "build:blueridgeTech": "SITE=blueridgeTech node scripts/site-build.mjs",
     "blueridgetech": "SITE=blueridgeTech node scripts/site-dev.mjs",
     "build:blueridgetech": "SITE=blueridgeTech node scripts/site-build.mjs",
+    "hunger-ring": "SITE=hunger-ring node scripts/site-dev.mjs",
+    "build:hunger-ring": "SITE=hunger-ring node scripts/site-build.mjs",
     "build": "node scripts/build-site.mjs",
     "grab:carousel": "node scripts/grab-carousel-headless.mjs",
-    "localize:carousel": "node scripts/localize-carousel-images.mjs"
+    "localize:carousel": "node scripts/localize-carousel-images.mjs",
+    "optimize:hunger-ring": "node scripts/optimize-images.mjs --max-width=2000 --target-bytes=150000 sites/hunger-ring/media",
+    "deriv:hunger-ring": "node scripts/build-image-derivatives.mjs sites/hunger-ring/media"
   },
   "repository": {
     "type": "git",

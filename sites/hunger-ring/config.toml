@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# IMPORTANT: Update baseURL to the primary custom domain so sitemap/canonicals are correct
+baseURL       = "https://hunger-ring.com/"
+title         = "Hunger Ring"
+languageCode  = "en-us"
+themesDir     = "../../themes"
+# ─────────────────────────────────────────────────────────────────────────────
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[params]
+  env                = "production"
+  primaryColor       = "emerald"
+  lightBackground    = "white"
+  darkBackground     = "gray-900"
+  cardBackground     = "gray-100"
+  cardBackgroundDark = "gray-800"
+  cardBorderLight    = "gray-200"
+  cardBorderDark     = "gray-700"
+
+  enableSearch       = true
+
+[params.header]
+  stickyMobile      = true
+  stickyDesktop     = true
+  CTAText           = "Contact"
+  CTAURL            = "/contact"
+  showPhoneOnMobile = false
+  rightMenu         = false
+
+[menu]
+  [[menu.main]]
+    name   = "Home"
+    url    = "/"
+    weight = 10
+
+  [[menu.main]]
+    name   = "About"
+    url    = "/about"
+    weight = 20
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact"
+    weight = 30
