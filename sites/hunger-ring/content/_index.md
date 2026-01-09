@@ -74,7 +74,7 @@ Make a conscious choice to eat or stop
 
 ## In manufacturing
 
-Hunger Ring is currently in the process of being manufactured. It is estimated to be available for pre-order before the end of Jan 2026.
+Hunger Ring is currently in the process of being manufactured. It is estimated to be **available for pre-order before the end of Jan 2026**.
 
 Want to be notified when it’s available? Leave your email below.
 
