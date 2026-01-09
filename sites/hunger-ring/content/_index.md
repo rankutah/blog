@@ -7,7 +7,7 @@ hero: false
 {{< cols min="18rem" gap="2rem" v="center" >}}
 
 {{< col card="false" >}}
-{{< carousel id="hunger-ring" images="/media/hunger-ring-3.jpg,/media/hunger-ring.jpg,/media/hunger-ring-2.jpg" pxheight="420" mobilepxheight="420" mdpxheight="600" radius="lg" >}}
+{{< carousel id="hunger-ring" images="/media/lady-eating-with-hunger-ring.png,/media/hunger-ring-3.jpg,/media/hunger-ring.jpg,/media/hunger-ring-2.jpg" pxheight="420" mobilepxheight="420" mdpxheight="600" radius="lg" >}}
 {{< /col >}}
 
 {{< col card="false" order="first">}}

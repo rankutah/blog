@@ -486,5 +486,127 @@
         }
       ]
     }
+  },
+  "/media/lady-eating-with-hunger-ring.jpg": {
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAIDBQb/xAAnEAACAQMDAwMFAAAAAAAAAAABAgMABBESEyEFMUEUYYEiI1GR0f/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEC/9oADAMBAAIRAxEAPwDnwGXkc+1b/R02Y2lEhViMaNPig2fTTLEZ3fTH4AHLH2zSJpjYNG8sRMbqPthz9J8H9Vk18GOtd1dS9uMS7jZBVsYrMZyqKfg1pXo1RJIMMAQQo7Yob2VxJbM+0dsnIceP5SK+ifaCT0sAuMxgcaTxx+cVX1FfXXi7al1Y4yB2pEr2spDzFiO2A+CDSYzb2sCrC0iBm1APyTQYy2ujskCBW5XtilriFQq/FGjmOvK8rjtUJrpUnXXkKeBVCQ7f/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w1024.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/lady-eating-with-hunger-ring.avif": {
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAIDBQb/xAAnEAACAQMDAwMFAAAAAAAAAAABAgMABBESEyEFMUEUYYEiI1GR0f/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEC/9oADAMBAAIRAxEAPwDnwGXkc+1b/R02Y2lEhViMaNPig2fTTLEZ3fTH4AHLH2zSJpjYNG8sRMbqPthz9J8H9Vk18GOtd1dS9uMS7jZBVsYrMZyqKfg1pXo1RJIMMAQQo7Yob2VxJbM+0dsnIceP5SK+ifaCT0sAuMxgcaTxx+cVX1FfXXi7al1Y4yB2pEr2spDzFiO2A+CDSYzb2sCrC0iBm1APyTQYy2ujskCBW5XtilriFQq/FGjmOvK8rjtUJrpUnXXkKeBVCQ7f/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w1024.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/lady-eating-with-hunger-ring__w1024.jpg"
+        }
+      ]
+    }
   }
 }
