@@ -16,7 +16,12 @@
 {{- $adsEnabled := not (eq (index $adsConf "enabled") false) -}}
 {{- $metaId := (index $metaConf "id") | default "" -}}
 {{- $metaEnabled := not (eq (index $metaConf "enabled") false) -}}
-{{- $delayMs := (index $analytics "delayMs") | default 4000 -}}
+{{- /* NOTE: Hugo's `default`/`with` treat 0 as "empty". Respect explicit 0 values. */ -}}
+{{- $delayMs := 4000 -}}
+{{- $delayMsRaw := (index $analytics "delayMs") -}}
+{{- if ne $delayMsRaw nil -}}
+  {{- $delayMs = $delayMsRaw -}}
+{{- end -}}
 {{- $events := (index $analytics "loadEvents") | default (slice "scroll" "mousemove" "touchstart") -}}
 {{- $onlyOnInteraction := (index $analytics "onlyOnInteraction") | default false -}}
 {{- /* LCP-first gating (prioritize CWV over maximum analytics coverage) */ -}}

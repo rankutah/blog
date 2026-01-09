@@ -4,7 +4,7 @@ description: "Hunger Ring is a wearable training tool that helps you pause, noti
 hero: false
 ---
 
-# What if you could see your hunger?
+# Hunger Ring - The Visible Hunger Scale
 
 
 

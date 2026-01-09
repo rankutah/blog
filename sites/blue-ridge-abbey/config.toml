@@ -71,8 +71,8 @@ uglyURLs = false
     enabled = true
 
   [params.analytics.googleAds]
-    id = ""
-    enabled = false
+    id = "AW-17719779491"
+    enabled = true
 
   [params.analytics.meta]
     id = ""
