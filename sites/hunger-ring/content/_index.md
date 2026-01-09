@@ -76,7 +76,7 @@ Pause for a moment
 
 ### 2. Turn
 
-Turn the ring to match your hunger level
+Turn the ring to match your hunger
 
 {{< /col >}}
 
@@ -86,7 +86,7 @@ Turn the ring to match your hunger level
 
 ### 3. Honor
 
-Honor your hunger and fullness
+Honor your body's signals
 
 {{< /col >}}
 
