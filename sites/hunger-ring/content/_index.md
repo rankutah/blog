@@ -46,7 +46,7 @@ A wearable hunger scale for intuitive eating — no paper, no screens
 
 Many of us eat while lost in thought or emotion, disconnected from the signals of our bodies. This ring is designed to help you **listen to your body**.
 
-By pausing to **turn the ring to align with your hunger**, you create a small but powerful moment of awareness. Seeing your hunger reflected on your ring anchors you in the moment, helping you honor your body’s signals until listening becomes second nature — and the ring is no longer needed.
+By pausing to **turn the ring to match your hunger**, you create a small but powerful moment of awareness. Seeing your hunger reflected on your ring anchors you in the moment, helping you honor your body’s signals until listening becomes second nature — and the ring is no longer needed.
 
 Hunger Ring is a quiet, physical reminder to pause, check in with your body, and make a choice that serves you.
 
@@ -55,7 +55,7 @@ It’s not another app or a strict plan. It’s a simple tool to help you build 
 - **Provide a Meal**: For every ring sold, we donate **$1** to help feed the hungry.
 - **Try it Out**: Take a month to find your rhythm. If the Hunger Ring isn't for you, we offer **30-day returns** (buyer pays return shipping).
 
-## Whenever you notice a change in your hunger
+## Whenever your hunger changes
 
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
@@ -72,11 +72,11 @@ Pause for a moment
 
 {{< col card="true" y="start" >}}
 
-<img src="/media/align.png" alt="Align" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
+<img src="/media/turn.png" alt="Align" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
 
-### 2. Align
+### 2. Turn
 
-Align the ring with your hunger
+Turn the ring to match your hunger level
 
 {{< /col >}}
 
@@ -86,7 +86,7 @@ Align the ring with your hunger
 
 ### 3. Honor
 
-Honor your hunger or fullness
+Honor your hunger and fullness
 
 {{< /col >}}
 
