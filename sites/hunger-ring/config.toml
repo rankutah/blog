@@ -25,10 +25,10 @@ themesDir     = "../../themes"
 
 [params]
   env                = "production"
-  primaryColor       = "teal"
-  lightBackground    = "neutral-200"
+  primaryColor       = "cyan"
+  lightBackground    = "gray-100"
   darkBackground     = "slate-900"
-  cardBackground     = "slate-100"
+  cardBackground     = "gray-50"
   cardBackgroundDark = "slate-800"
   cardBorderLight    = "gray-200"
   cardBorderDark     = "gray-700"
