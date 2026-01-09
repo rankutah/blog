@@ -25,7 +25,7 @@ themesDir     = "../../themes"
 
 [params]
   env                = "production"
-  primaryColor       = "cyan"
+  primaryColor       = "teal"
   lightBackground    = "gray-100"
   darkBackground     = "slate-900"
   cardBackground     = "gray-50"
@@ -44,8 +44,6 @@ themesDir     = "../../themes"
 [params.socialDefaults]
   size = "w-7 h-7"
   gap  = "gap-3"
-
-[params.text]
 
 
 [params.forms]

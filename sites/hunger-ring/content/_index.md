@@ -1,16 +1,14 @@
 ---
-title: "Hunger Ring | A Mindful Reminder to Check In"
-description: "A simple, wearable reminder to pause and listen to your body's cues. Each purchase helps feed the hungry."
+title: "A Simple Tool for Mindful, Intuitive Eating"
+description: "Hunger Ring is a wearable training tool that helps you pause, notice hunger and fullness, and eat with greater awareness. Each purchase helps feed the hungry."
 hero: false
 ---
 
 # What if you could see your hunger?
 
-## Stop eating on autopilot. Start practicing presence.
+## Stop eating on autopilot. Start eating with presence.
 
-Many of us eat while lost in thought or emotion, **disconnected from the subtle signals** of our bodies. This ring is designed to help bridge that gap.
 
-By pausing to rotate the ring to match the vague sensations in your stomach, you create a **small but powerful moment of awareness** — a pause that reconnects you with your body. The tactile action and visual cue **reinforce that awareness**, helping you honor your body’s signals and supporting intuitive eating — until your body’s cues feel natural and the ring is no longer needed.
 
 {{< cols min="8rem" gap="1rem" v="center" >}}
 
@@ -29,6 +27,10 @@ By pausing to rotate the ring to match the vague sensations in your stomach, you
 {{< /col >}}
 
 {{< /cols >}}
+
+Many of us eat while lost in thought or emotion, **disconnected from the subtle signals** of our bodies. This ring is designed to help bridge that gap.
+
+By pausing to rotate the ring to match the vague sensations in your stomach, you create a **small but powerful moment of awareness** — a moment where you reconnect with your body. **Seeing your hunger reflected on your finger anchors that awareness**, helping you honor your body’s signals and support intuitive eating — until your body’s cues feel natural and the ring is no longer needed.
 
 Hunger Ring is a quiet, physical reminder to pause, check in with your body, and make a choice that serves you.
 
@@ -53,7 +55,7 @@ Before, during, and after a meal or snack, stop for 3 seconds
 
 ### 2. Align
 
-Rotate the ring to align with your stomach's current signal.
+Rotate the ring to align with your stomach's current signal
 
 {{< /col >}}
 
