@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import sharp from 'sharp'
 import pngToIco from 'png-to-ico'
@@ -90,6 +90,16 @@ async function generateIcoFromSource(srcPath, outPath) {
   writeFileSync(outPath, icoBuffer)
 }
 
+function isNewerThan(aPath, bPath) {
+  try {
+    const a = statSync(aPath)
+    const b = statSync(bPath)
+    return a.mtimeMs > b.mtimeMs
+  } catch {
+    return false
+  }
+}
+
 async function main() {
   const SITE = process.env.SITE
   if (!SITE) {
@@ -112,7 +122,20 @@ async function main() {
   //    - If favicon.* exists but not favicon.ico: convert into static/favicon.ico.
   if (staticFavicon && !force) {
     if (staticFavicon === out) {
-      if (isIcoFile(out)) return
+      if (isIcoFile(out)) {
+        // Auto-update behavior: if the configured logo/source is newer than favicon.ico,
+        // regenerate to keep the favicon aligned with the latest branding.
+        const src = await pickSource(SITE)
+        if (src && src !== out && isNewerThan(src, out)) {
+          try {
+            await generateIcoFromSource(src, out)
+            console.log(`[favicons] Updated ${out} from ${src}`)
+          } catch (err) {
+            console.warn(`[favicons] Failed to update ${out} from ${src}: ${err?.message || err}`)
+          }
+        }
+        return
+      }
       try {
         await generateIcoFromSource(out, out)
         console.log(`[favicons] Fixed invalid ${out}`)
@@ -130,8 +153,9 @@ async function main() {
     return
   }
 
-  // 2) If a user provided any favicon in media/, use it to produce static/favicon.ico (only when static/favicon.ico isn't a valid user-provided ico).
-  if (mediaFavicon && (!existsSync(out) || force)) {
+  // 2) If a user provided any favicon in media/, use it to produce static/favicon.ico.
+  //    Update if missing, forced, or if the source is newer than the current output.
+  if (mediaFavicon && (!existsSync(out) || force || isNewerThan(mediaFavicon, out))) {
     try {
       if (mediaFavicon.toLowerCase().endsWith('.ico') && isIcoFile(mediaFavicon)) {
         mkdirSync(dirname(out), { recursive: true })
