@@ -59,6 +59,10 @@ themesDir     = "../../themes"
   showPhoneOnMobile = false
   rightMenu         = false
 
+[params.turnstile]
+  enable  = true
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
 [menu]
   [[menu.main]]
     name   = "Home"
