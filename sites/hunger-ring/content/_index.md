@@ -28,6 +28,8 @@ hero: false
 
 {{< /cols >}}
 
+
+
 ## Stop eating on autopilot. Start eating with presence.
 
 Many of us eat while lost in thought or emotion, disconnected from the subtle signals of our bodies. This ring is designed to help **bring your mind and body back into alignment**.
