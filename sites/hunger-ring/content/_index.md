@@ -28,15 +28,15 @@ hero: false
 
 {{< /cols >}}
 
-Many of us eat while lost in thought or emotion, **disconnected from the subtle signals** of our bodies. This ring is designed to help bridge that gap.
+Many of us eat while lost in thought or emotion, disconnected from the subtle signals of our bodies. This ring is designed to help **bring your mind and body back into alignment**.
 
-By pausing to rotate the ring to match the vague sensations in your stomach, you create a **small but powerful moment of awareness** — a moment where you reconnect with your body. **Seeing your hunger reflected on your finger anchors that awareness**, helping you honor your body’s signals and support intuitive eating — until your body’s cues feel natural and the ring is no longer needed.
+By pausing to rotate the ring to match the sensations in your stomach, you create a small but powerful moment of awareness. Seeing your hunger reflected on your finger anchors that you in that moment, helping you **honor your body’s signals and support intuitive eating** — until your body’s cues are clear and the ring is no longer needed.
 
 Hunger Ring is a quiet, physical reminder to pause, check in with your body, and make a choice that serves you.
 
 It’s not another app or a strict plan. It’s a simple tool to help you build a more intuitive relationship with food and your own well-being.
 
-- **Support a Cause:** Every ring sold donates **$1** to help feed the hungry.
+- **Provide a Meal:** For every ring sold, we donate  **$1** to help feed the hungry.
 - **Try it Risk-Free:** We offer **30-day returns** (buyer pays return shipping).
 
 ## The Process
@@ -74,7 +74,7 @@ Make a conscious choice to eat or stop
 
 ## In manufacturing
 
-Hunger Ring is currently in the process of being manufactured. It is estimated to be available for pre-order by the end of Jan 2026.
+Hunger Ring is currently in the process of being manufactured. It is estimated to be available for pre-order before the end of Jan 2026.
 
 Want to be notified when it’s available? Leave your email below.
 
