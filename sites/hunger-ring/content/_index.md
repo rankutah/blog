@@ -90,7 +90,7 @@ Honor what you notice
 
 <div id="faqs"></div>
 
-## Questions
+## FAQs
 
 {{< faqs schema="true" >}}
 
