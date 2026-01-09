@@ -47,8 +47,7 @@ themesDir     = "../../themes"
 
 
 [params.forms]
-  # TODO: Replace with your real submit-form.com endpoint (Formspark or similar)
-  action         = "https://submit-form.com/REPLACE_ME"
+  action         = "https://submit-form.com/fTauiGyR7"
   successMessage = "Thanks! We’ll notify you when Hunger Ring is available."
   errorMessage   = "Sorry, something went wrong. Please try again."
 

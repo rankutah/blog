@@ -31,7 +31,7 @@ A wearable hunger scale for intuitive eating — no paper, no screens
 	classes="max-w-xl"
 >}}
 
-{{< button url="/contact" text="Notify me" >}}
+{{< button submit="true" form="notify1" text="Notify me" >}}
 
 {{< /col >}}
 
