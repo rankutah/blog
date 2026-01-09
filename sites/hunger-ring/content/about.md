@@ -27,4 +27,4 @@ Our mission is built on two core beliefs:
 
 Hunger Ring is our small contribution to a more mindful and generous world.
 
-If you have questions or want to share your story, we'd love to hear from you. Reach us anytime at [info@suggls.com](mailto:info@suggls.com).
+If you have questions or want to share your story, we'd love to hear from you. Reach us anytime on our [contact page](/contact).

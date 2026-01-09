@@ -140,7 +140,7 @@ We’re committed to giving as a built‑in part of each purchase. Donation dest
 
 We offer **30‑day returns**. The buyer is responsible for return shipping.
 
-To request a return, email us at [info@suggls.com](mailto:info@suggls.com).
+To request a return, send us a message on our [contact page](/contact).
 
 ### How can I contact you?
 
