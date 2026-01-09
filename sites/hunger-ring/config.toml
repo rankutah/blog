@@ -26,6 +26,7 @@ themesDir     = "../../themes"
 [params]
   env                = "production"
   primaryColor       = "teal"
+  logo               = "media/logo.png"
   lightBackground    = "gray-100"
   darkBackground     = "slate-900"
   cardBackground     = "gray-50"
@@ -59,6 +60,9 @@ themesDir     = "../../themes"
   CTAURL            = "/contact"
   showPhoneOnMobile = false
   rightMenu         = false
+  logoHeight        = "h-14"
+  logoWidth         = 0
+  logoHeightPx      = 56
 
 [params.turnstile]
   enable  = true

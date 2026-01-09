@@ -4,21 +4,22 @@ description: "Hunger Ring is a wearable, screen-free hunger scale that helps you
 hero: false
 ---
 
+# Hunger Ring - Listen to Your Body
+
+A wearable hunger scale for intuitive eating — no paper, no screens
+
 {{< cols min="18rem" gap="2rem" v="center" >}}
 
 {{< col card="false" >}}
 {{< carousel id="hunger-ring" images="/media/lady-eating-with-hunger-ring.png,/media/hunger-ring-3.jpg,/media/hunger-ring.jpg,/media/hunger-ring-2.jpg" pxheight="420" mobilepxheight="420" mdpxheight="600" radius="lg" >}}
 {{< /col >}}
 
-{{< col card="false" order="first">}}
+{{< col card="false" >}}
 
-# Hunger Ring - Listen to Your Body
-
-A wearable hunger scale for intuitive eating — no paper, no screens
-
-{{< badge text="Available February 2026">}}
 
 ## Get Notified When Available
+
+{{< badge text="Coming February 2026">}}
 
 {{< contact-form
 	id="notify1"
@@ -33,11 +34,15 @@ A wearable hunger scale for intuitive eating — no paper, no screens
 
 {{< button submit="true" form="notify1" text="Notify me" >}}
 
+
 {{< /col >}}
 
 {{< /cols >}}
 
-## Listen to Your Body
+
+
+
+## Listen to your body
 
 Many of us eat while lost in thought or emotion, disconnected from the signals of our bodies. This ring is designed to help you **listen to your body**.
 
@@ -50,14 +55,14 @@ It’s not another app or a strict plan. It’s a simple tool to help you build 
 - **Provide a Meal**: For every ring sold, we donate **$1** to help feed the hungry.
 - **Try it Out**: Take a month to find your rhythm. If the Hunger Ring isn't for you, we offer **30-day returns** (buyer pays return shipping).
 
-## The Process
-
-Whenever you notice a change in your hunger:
+## Whenever you notice a change in your hunger
 
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="true" y="start" >}}
+
+<img src="/media/pause.png" alt="Pause" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
 
 ### 1. Pause
 
@@ -67,6 +72,8 @@ Pause for a moment
 
 {{< col card="true" y="start" >}}
 
+<img src="/media/align.png" alt="Align" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
+
 ### 2. Align
 
 Align the ring with your hunger
@@ -75,9 +82,11 @@ Align the ring with your hunger
 
 {{< col card="true" y="start" >}}
 
+<img src="/media/honor.png" alt="Honor" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
+
 ### 3. Honor
 
-Honor what you notice
+Honor your hunger or fullness
 
 {{< /col >}}
 
