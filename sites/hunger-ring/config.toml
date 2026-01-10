@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # IMPORTANT: Update baseURL to the primary custom domain so sitemap/canonicals are correct
-baseURL       = "https://hunger-ring.com/"
+baseURL       = "https://hungerring.com/"
 title         = "Hunger Ring"
 languageCode  = "en-us"
 themesDir     = "../../themes"
@@ -51,7 +51,7 @@ themesDir     = "../../themes"
   action         = "https://submit-form.com/fTauiGyR7"
   successMessage = "Thanks! We’ll notify you when Hunger Ring is available."
   errorMessage   = "Sorry, something went wrong. Please try again."
-  redirect       = "https://hunger-ring.com/thank-you"
+  redirect       = "https://hungerring.com/thank-you"
 
 [params.header]
   stickyMobile      = true
