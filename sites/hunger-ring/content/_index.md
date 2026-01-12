@@ -97,7 +97,7 @@ Honor your body's signals
 
 ## The Hunger Scale
 
-Each Hunger Ring has 7 sides representing 7 states of hunger and fullness. Learn what each state means on the Hunger Scale page.
+Each Hunger Ring has 7 sides representing 7 states of hunger and fullness. Learn about these states on the Hunger Scale page.
 
 {{< button url="/hunger-scale/" text="View the Hunger Scale" >}}
 
