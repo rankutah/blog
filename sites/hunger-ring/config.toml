@@ -47,6 +47,27 @@ themesDir     = "../../themes"
   gap  = "gap-3"
 
 
+[params.analytics]
+  # Default deferred load (per docs/analytics.md). Set to 0 for immediate load.
+  delayMs = 5000
+
+  [params.analytics.google]
+    id = "G-GNV7JXGLLZ"
+    enabled = true
+
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
+
+
 [params.forms]
   action         = "https://submit-form.com/fTauiGyR7"
   successMessage = "Thanks! We’ll notify you when Hunger Ring is available."
