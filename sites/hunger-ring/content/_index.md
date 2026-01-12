@@ -120,9 +120,7 @@ Hunger Ring isn’t a diet plan or a weight‑loss product. It's a tool for your
 
 ### Who is it for?
 
-Anyone who wants a simple, screen-free reminder to pause, check in with their body, and eat with intention.
-
-It’s especially helpful if you like tools that are gentle, consistent, and easy to use in everyday life.
+Hunger Ring is for anyone who wants to get better at listening to their body. It’s a simple, wearable hunger scale that helps build awareness and reminds you to pause, check in, and honor your body’s signals.
 
 ### Where does the donation go?
 
