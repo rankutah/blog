@@ -5,7 +5,7 @@ description: "A quick-reference hunger and fullness scale to help you name what 
 
 # Hunger Scale
 
-The hunger ring uses a simple hunger scale to help you name what you’re feeling in the moment. The ring has no numbers—numbers here are just a reference. There’s no “perfect” number or set of numbers; the goal is awareness and then using that awareness to honor your body's signals.
+The hunger ring uses a simple hunger scale to help you name what you’re feeling in the moment. The ring has no numbers—numbers here are just a reference. There’s no “perfect” set of numbers; the goal is awareness and then using that awareness to honor your body's signals.
 
 Negative numbers describe hunger. Positive numbers describe fullness. Most of the time, it helps to eat when you’re hungry and stop when you’re satisfied.
 
@@ -13,11 +13,11 @@ Negative numbers describe hunger. Positive numbers describe fullness. Most of th
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="false" >}}
 
 ## Hunger Scale Chart
 
-{{< table id="hunger-scale" share="true" title="Hunger Scale - 7 States of Hunger & Fullness" delim="|" firstColTh="false" headerClass="text-sm font-semibold normal-case bg-neutral-200 dark:bg-neutral-200 text-neutral-900 dark:text-neutral-900" >}}
+{{< table id="hunger-scale" share="true" title="Hunger Scale - 7 States of Hunger & Fullness" delim="|" firstColTh="false" headerClass="text-sm font-semibold normal-case bg-neutral-200 dark:bg-gray-200 text-neutral-900 dark:text-neutral-900" >}}
 rowClass=bg-red-100 dark:bg-red-900/35|**+3 Stuffed**|Bloated, pressured
 rowClass=bg-yellow-100 dark:bg-yellow-900/35|**+2 Full**|Heavy, tight
 rowClass=bg-green-100 dark:bg-green-900/35|**+1 Satisfied**|Light, settled
@@ -30,7 +30,7 @@ rowClass=bg-red-100 dark:bg-red-900/35|**-3 Starving**|Gnawing, urgent
 
 {{< /col >}}
 
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="false"  >}}
 
 ## How to Use the Hunger Scale
 
