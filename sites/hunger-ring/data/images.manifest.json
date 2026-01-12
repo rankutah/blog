@@ -121,6 +121,192 @@
       ]
     }
   },
+  "/media/founders-family-portrait.jpg": {
+    "width": 7066,
+    "height": 4802,
+    "aspect": 1.4714702207413577,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAWACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EACQQAAIBBAIBBAMAAAAAAAAAAAECAwAEESESQTEFQlFxIsHR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//EABsRAAMAAgMAAAAAAAAAAAAAAAABEQIxEiFx/9oADAMBAAIRAxEAPwDMgQHivPOcDfVV28Zimxnku8HwPNW+l2SQTGVlVsISo4/qi+tlNszqGRowMgn2n+VnKGlTPvIkW4ZhEMfIGB91K0Z6UnfW9VumOCL0uKSSXMfRC5AyfP1U4igA1IwAPxuk3x2HhbAeUZaMlCBs90qOzjjimVMl5gQzvsn5oopWaKHTLHHZraFfwWMLnulzXuNBeJUe0AUUUZNkPo//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/founders-family-portrait__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/founders-family-portrait__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/founders-family-portrait__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/founders-family-portrait__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/founders-family-portrait__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/founders-family-portrait__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/founders-family-portrait__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/founders-family-portrait__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/founders-family-portrait__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/founders-family-portrait__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/founders-family-portrait__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/founders-family-portrait__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/founders-family-portrait__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/founders-family-portrait__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/founders-family-portrait__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/founders-family-portrait__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/founders-family-portrait__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/founders-family-portrait__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/founders-family-portrait__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/founders-family-portrait__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/founders-family-portrait.avif": {
+    "width": 7066,
+    "height": 4802,
+    "aspect": 1.4714702207413577,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAWACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EACQQAAIBBAIBBAMAAAAAAAAAAAECAwAEESESQTEFQlFxIsHR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//EABsRAAMAAgMAAAAAAAAAAAAAAAABEQIxEiFx/9oADAMBAAIRAxEAPwDMgQHivPOcDfVV28Zimxnku8HwPNW+l2SQTGVlVsISo4/qi+tlNszqGRowMgn2n+VnKGlTPvIkW4ZhEMfIGB91K0Z6UnfW9VumOCL0uKSSXMfRC5AyfP1U4igA1IwAPxuk3x2HhbAeUZaMlCBs90qOzjjimVMl5gQzvsn5oopWaKHTLHHZraFfwWMLnulzXuNBeJUe0AUUUZNkPo//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/founders-family-portrait__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/founders-family-portrait__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/founders-family-portrait__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/founders-family-portrait__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/founders-family-portrait__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/founders-family-portrait__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/founders-family-portrait__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/founders-family-portrait__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/founders-family-portrait__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/founders-family-portrait__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/founders-family-portrait__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/founders-family-portrait__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/founders-family-portrait__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/founders-family-portrait__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/founders-family-portrait__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/founders-family-portrait__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/founders-family-portrait__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/founders-family-portrait__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/founders-family-portrait__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/founders-family-portrait__w3200.jpg"
+        }
+      ]
+    }
+  },
   "/media/honor.jpg": {
     "width": 2816,
     "height": 1536,

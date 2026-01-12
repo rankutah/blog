@@ -44,7 +44,7 @@ A wearable hunger scale for intuitive eating — no paper, no screens
 
 ## Listen to your body
 
-Many of us eat while lost in thought or emotion, disconnected from the signals of our bodies. This ring is designed to help you **listen to your body**.
+Many of us eat while lost in thought or emotion, disconnected from the signals of our bodies. This ring is a wearable hunger scale designed to help you **listen to your body**.
 
 By pausing to **turn the ring to match your hunger**, you create a small but powerful moment of awareness. Seeing your hunger reflected on your ring anchors you in the moment, helping you honor your body’s signals until listening becomes second nature — and the ring is no longer needed.
 
@@ -95,6 +95,11 @@ Honor your body's signals
 {{< /cols >}}
 
 
+## The Hunger Scale
+
+Each Hunger Ring has 7 sides representing 7 states of hunger and fullness. Learn what each state means on the Hunger Scale page.
+
+{{< button url="/hunger-scale/" text="View the Hunger Scale" >}}
 
 
 <div id="faqs"></div>

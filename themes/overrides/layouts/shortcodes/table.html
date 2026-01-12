@@ -47,6 +47,7 @@
 {{- $shareParam := .Get "share" | default "false" | lower -}}
 {{- $share := and (ne $shareParam "false") (ne $shareParam "") -}}
 {{- $id := .Get "id" | default (printf "tbl-%s" (md5 $rowsRaw)) -}}
+{{- $title := .Get "title" | default "" -}}
 
 {{- /* Determine column count from headers or first data row */ -}}
 {{- $colCount := 0 -}}
@@ -63,26 +64,73 @@
 {{- if eq $colCount 0 -}}{{- $colCount = 1 -}}{{- end -}}
 
 {{- $radius := .Get "radius" | default "lg" -}}
+{{- $headerClass := .Get "headerClass" | default "text-xs font-semibold text-neutral-900 uppercase bg-neutral-200 dark:bg-neutral-200 dark:text-neutral-900" -}}
 <div id="{{$id}}" class="not-prose relative overflow-x-auto rounded-{{$radius}} overflow-hidden">
-  {{- if $share -}}
-  <div class="absolute top-2 right-2 flex gap-2">
-    <button type="button" title="Share this table"
-      onclick="(async()=>{try{const u=location.origin+location.pathname+'#{{$id}}';if(navigator.share){await navigator.share({title:document.title,url:u})}else if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(u)}else{const t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t)}}catch(e){}})()"
-      class="inline-flex items-center gap-1 rounded-md border border-neutral-300 bg-white/80 backdrop-blur px-2 py-1 text-xs text-neutral-800 hover:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
-        <path d="M13 5.828V16a1 1 0 1 1-2 0V5.828L8.414 8.414A1 1 0 1 1 7 7l5-5 5 5a1 1 0 1 1-1.414 1.414L13 5.828Z"/>
-        <path d="M5 13a1 1 0 0 1 1 1v4h12v-4a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z"/>
-      </svg>
-      <span>Share</span>
-    </button>
-  </div>
+  {{- if and $share (not $title) -}}
+    <div class="absolute top-2 right-2 flex gap-2">
+      <button type="button" title="Share this table"
+        onclick="(async()=>{try{const u=location.origin+location.pathname+'#{{$id}}';if(navigator.share){await navigator.share({title:document.title,url:u})}else if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(u)}else{const t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t)}}catch(e){}})()"
+        class="inline-flex items-center gap-1 rounded-md border border-neutral-300 bg-white/80 backdrop-blur px-2 py-1 text-xs text-neutral-800 hover:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+          <path d="M13 5.828V16a1 1 0 1 1-2 0V5.828L8.414 8.414A1 1 0 1 1 7 7l5-5 5 5a1 1 0 1 1-1.414 1.414L13 5.828Z"/>
+          <path d="M5 13a1 1 0 0 1 1 1v4h12v-4a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z"/>
+        </svg>
+        <span>Share</span>
+      </button>
+    </div>
   {{- end -}}
   <table class="w-full text-sm text-left rtl:text-right text-neutral-600 dark:text-neutral-600">
-    {{- if gt (len $headers) 0 -}}
-    <thead class="text-xs font-semibold text-neutral-900 uppercase bg-neutral-200 dark:bg-neutral-200 dark:text-neutral-900">
+    {{- if or (gt (len $headers) 0) (ne $title "") -}}
+    <thead class="{{ $headerClass }}">
       <tr>
-        {{- range $headers -}}
-          <th scope="col" class="px-6 py-4 text-neutral-900 dark:text-neutral-900">{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) . }}</th>
+        {{- if gt (len $headers) 0 -}}
+          {{- $lastIdx := sub (len $headers) 1 -}}
+          {{- range $hi, $h := $headers -}}
+            <th scope="col" class="px-6 py-4 text-neutral-900 dark:text-neutral-900">
+              {{- if and (eq $hi 0) (ne $title "") -}}
+                <div class="flex items-center gap-2">
+                  <span class="font-semibold">{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $title }}</span>
+                  <span class="opacity-70">—</span>
+                  <span>{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $h }}</span>
+                </div>
+              {{- else if and (eq $hi $lastIdx) $share -}}
+                <div class="flex items-center justify-between gap-3">
+                  <span>{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $h }}</span>
+                  <button type="button" title="Share this table"
+                    onclick="(async()=>{try{const u=location.origin+location.pathname+'#{{$id}}';if(navigator.share){await navigator.share({title:document.title,url:u})}else if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(u)}else{const t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t)}}catch(e){}})()"
+                    class="inline-flex items-center gap-1 rounded-md border border-black/10 dark:border-white/10 bg-white/60 dark:bg-black/10 backdrop-blur px-2 py-1 text-xs hover:bg-white/80 dark:hover:bg-black/20 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+                      <path d="M13 5.828V16a1 1 0 1 1-2 0V5.828L8.414 8.414A1 1 0 1 1 7 7l5-5 5 5a1 1 0 1 1-1.414 1.414L13 5.828Z"/>
+                      <path d="M5 13a1 1 0 0 1 1 1v4h12v-4a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z"/>
+                    </svg>
+                    <span>Share</span>
+                  </button>
+                </div>
+              {{- else -}}
+                {{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $h }}
+              {{- end -}}
+            </th>
+          {{- end -}}
+        {{- else -}}
+          <th scope="col" colspan="{{ $colCount }}" class="px-6 py-4 text-neutral-900 dark:text-neutral-900">
+            <div class="flex items-center gap-3">
+              <span class="w-0"></span>
+              <span class="font-semibold flex-1 text-center whitespace-nowrap truncate text-neutral-900 dark:text-neutral-900">{{ $.Page.RenderString (dict "display" "inline" "renderShortcodes" true) $title }}</span>
+              <div class="flex justify-end">
+                {{- if $share -}}
+                  <button type="button" title="Share this table"
+                    onclick="(async()=>{try{const u=location.origin+location.pathname+'#{{$id}}';if(navigator.share){await navigator.share({title:document.title,url:u})}else if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(u)}else{const t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t)}}catch(e){}})()"
+                    class="inline-flex items-center gap-1 whitespace-nowrap rounded-md border border-black/10 dark:border-white/10 bg-white/60 dark:bg-black/10 backdrop-blur px-2 py-1 text-xs text-neutral-900 dark:text-neutral-900 hover:bg-white/80 dark:hover:bg-black/20 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+                      <path d="M13 5.828V16a1 1 0 1 1-2 0V5.828L8.414 8.414A1 1 0 1 1 7 7l5-5 5 5a1 1 0 1 1-1.414 1.414L13 5.828Z"/>
+                      <path d="M5 13a1 1 0 0 1 1 1v4h12v-4a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z"/>
+                    </svg>
+                    <span>Share</span>
+                  </button>
+                {{- end -}}
+              </div>
+            </div>
+          </th>
         {{- end -}}
       </tr>
     </thead>
@@ -92,8 +140,21 @@
       {{- range $ri, $row := $rows -}}
         {{- if in $row $delim -}}
           {{- $cells := split $row $delim -}}
+          {{- $rowClass := "" -}}
+          {{- if gt (len $cells) 0 -}}
+            {{- $first := trim (index $cells 0) " \t\r\n" -}}
+            {{- if strings.HasPrefix $first "rowClass=" -}}
+              {{- $rowClass = strings.TrimPrefix "rowClass=" $first -}}
+              {{- $cells = after 1 $cells -}}
+            {{- else if strings.HasPrefix $first "class=" -}}
+              {{- $rowClass = strings.TrimPrefix "class=" $first -}}
+              {{- $cells = after 1 $cells -}}
+            {{- end -}}
+          {{- end -}}
           {{- $isLast := eq (add $ri 1) $total -}}
-          <tr class="bg-white {{ if not $isLast }}border-b border-neutral-200 dark:border-neutral-200{{ end }} dark:bg-white">
+          {{- $baseBg := "bg-white dark:bg-white" -}}
+          {{- if $rowClass -}}{{- $baseBg = "" -}}{{- end -}}
+          <tr class="{{ $baseBg }}{{ if not $isLast }} border-b border-neutral-200 dark:border-neutral-200{{ end }}{{ if $rowClass }} {{ $rowClass }}{{ end }}">
             {{- range $ci, $cell := $cells -}}
               {{- $val := trim $cell " \t\r\n" -}}
               {{- if and $firstColTh (eq $ci 0) -}}

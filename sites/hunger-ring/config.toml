@@ -80,6 +80,11 @@ themesDir     = "../../themes"
     weight = 20
 
   [[menu.main]]
+    name   = "Hunger Scale"
+    url    = "/hunger-scale/"
+    weight = 24
+
+  [[menu.main]]
     name   = "FAQs"
     url    = "/#faqs"
     weight = 25
