@@ -5,9 +5,9 @@ description: "A quick-reference hunger and fullness scale to help you name what 
 
 # Hunger Scale
 
-The ring uses a simple scale to help you name what you’re feeling in the moment. The ring has no numbers—numbers here are just a reference. There’s no “perfect” number or set of numbers; the goal is awareness and then using that awareness to honor your body's signals.
+The hunger ring uses a simple hunger scale to help you name what you’re feeling in the moment. The ring has no numbers—numbers here are just a reference. There’s no “perfect” number or set of numbers; the goal is awareness and then using that awareness to honor your body's signals.
 
-Positive numbers describe fullness. Negative numbers describe hunger. Most of the time, it helps to eat when you’re hungry and stop when you’re satisfied.
+Negative numbers describe hunger. Positive numbers describe fullness. Most of the time, it helps to eat when you’re hungry and stop when you’re satisfied.
 
 {{< section >}}
 
@@ -34,11 +34,11 @@ rowClass=bg-red-100 dark:bg-red-900/35|**-3 Starving**|Gnawing, urgent
 
 ## How to Use the Hunger Scale
 
-As you use the ring, practice noticing your most common hunger and fullness states. Keep the ring aligned with the sensations in your stomach. Over time, you’ll build awareness and learn to honor your hunger and fullness cues.
+As you use the ring, practice noticing your most common hunger and fullness states. Keep the ring aligned with the sensations in your stomach. Over time, you’ll build awareness and learn to honor your body's signals.
 
 People typically feel best in the middle green range. Yellow isn’t “wrong”—sometimes it’s practical. For example, if you’ll be without food for a long stretch, stopping at full (instead of satisfied) may help you stay comfortable longer. If you find yourself in the red zones, just notice what led there, look for patterns, and make small adjustments over time.
 
-As your awareness grows, your choices around eating become more natural and aligned with your body’s needs.
+As your awareness grows and you practice honoring your body’s signals, your choices around eating become more natural and aligned with your body’s needs.
 
 {{< /col >}}
 
