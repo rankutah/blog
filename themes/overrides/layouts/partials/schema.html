@@ -187,6 +187,16 @@
     {{- $org = . -}}
   {{- end -}}
 {{- end -}}
+{{- if not $org -}}
+  {{- /* Auto Organization schema when not explicitly configured, using site title + logo if present */ -}}
+  {{- $autoLogo := "" -}}
+  {{- with site.Params.logo -}}
+    {{- $autoLogo = (printf "%v" .) -}}
+  {{- end -}}
+  {{- if $autoLogo -}}
+    {{- $org = dict "name" site.Title "logo" $autoLogo -}}
+  {{- end -}}
+{{- end -}}
 {{- if $org -}}
 <script type="application/ld+json">
 {{- $o := dict "@context" "https://schema.org" "@type" "Organization" "@id" (printf "%s#organization" site.BaseURL) "url" site.BaseURL -}}
