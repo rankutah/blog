@@ -8,7 +8,7 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+<title>{{ site.Title }}{{ if and (not .IsHome) .Title (ne .Title site.Title) (gt (len (trim .Title " \n\r\t")) 0) }} | {{ .Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
