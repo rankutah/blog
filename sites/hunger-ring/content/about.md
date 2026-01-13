@@ -13,7 +13,8 @@ url: "/about"
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-![Courtney and Benjamin, founders of Hunger Ring](media/founders-family-portrait.avif)
+![Courtney and Benjamin, founders of Hunger Ring](media/founder-photo-courtney-and-benjamin.avif)
+{.w-64}
 
 {{< /col >}}
 
@@ -29,9 +30,7 @@ We wanted a tool that was beautiful, screen-free, and always with us. Something 
 
 {{< /col >}}
 
-{{< /cols >}}
-
-{{< /section >}}
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Listen to Your Body, Feed the World
 
@@ -42,4 +41,11 @@ Our mission is built on two core beliefs:
 
 Hunger Ring is our small contribution to a more mindful and generous world.
 
+{{< /col >}}
+
+{{< /cols >}}
+
 If you have questions or want to share your story, we'd love to hear from you. Reach us anytime on our [contact page](/contact).
+
+{{< /section >}}
+
