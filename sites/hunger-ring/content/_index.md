@@ -1,5 +1,5 @@
 ---
-title: "A Wearable Hunger Scale for Intuitive Eating"
+title: "A Wearable Hunger Scale for Intuitive & Mindful Eating"
 description: "Hunger Ring is a wearable, screen-free hunger scale that helps you pause, notice hunger and fullness, and eat with greater awareness. Each purchase helps feed the hungry."
 hero: false
 ---
@@ -46,14 +46,14 @@ A wearable hunger scale for intuitive eating — no paper, no screens
 
 Many of us eat while lost in thought or emotion, disconnected from the signals of our bodies. This ring is a wearable hunger scale designed to help you **listen to your body**.
 
-By pausing to **turn the ring to match your hunger**, you create a small but powerful moment of awareness. Seeing your hunger reflected on your ring anchors you in the moment, helping you honor your body’s signals until listening becomes second nature — and the ring is no longer needed.
+By pausing to **turn the ring to match your hunger**, you create a small but powerful moment of awareness. Seeing your hunger reflected on your ring anchors you in the moment. Over time, honoring your body’s signals becomes second nature — and the ring is no longer needed.
 
 Hunger Ring is a quiet, physical reminder to pause, check in with your body, and make a choice that serves you.
 
 It’s not another app or a strict plan. It’s a simple tool to help you build a more intuitive relationship with food and your own well-being.
 
-- **Provide a Meal**: For every ring sold, we donate **$1** to help feed the hungry.
-- **Try it Out**: Take a month to find your rhythm. If the Hunger Ring isn't for you, we offer **30-day returns** (buyer pays return shipping).
+- **Give Back**: For every ring sold, we donate **$1** to help feed the hungry.
+- **Try it Out**: If the Hunger Ring isn't for you, we offer **30-day returns** (buyer pays return shipping).
 
 ## Whenever your hunger changes
 
@@ -62,7 +62,7 @@ It’s not another app or a strict plan. It’s a simple tool to help you build 
 
 {{< col card="true" y="start" >}}
 
-<img src="/media/pause.png" alt="Pause" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
+<img src="/media/pause.png" alt="Pause symbol" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
 
 ### 1. Pause
 
@@ -72,7 +72,7 @@ Pause for a moment
 
 {{< col card="true" y="start" >}}
 
-<img src="/media/turn.png" alt="Align" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
+<img src="/media/turn.png" alt="Hand with arrow showing the ring can be turned" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
 
 ### 2. Turn
 
@@ -82,7 +82,7 @@ Turn the ring to match your hunger
 
 {{< col card="true" y="start" >}}
 
-<img src="/media/honor.png" alt="Honor" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
+<img src="/media/honor.png" alt="A meter showing where someone is at on a hunger scale" class="not-prose w-full h-auto rounded-lg mb-3" loading="lazy" decoding="async">
 
 ### 3. Honor
 
@@ -97,7 +97,7 @@ Honor your body's signals
 
 ## The Hunger Scale
 
-Each Hunger Ring has 7 sides representing 7 states of hunger and fullness. Learn about these states on the Hunger Scale page.
+Each Hunger Ring has 7 sides representing 7 states of hunger and fullness. See what each side means on the Hunger Scale page.
 
 {{< button url="/hunger-scale/" text="View the Hunger Scale" >}}
 
@@ -121,6 +121,12 @@ Hunger Ring isn’t a diet plan or a weight‑loss product. It's a tool for your
 ### Who is it for?
 
 Hunger Ring is for anyone who wants to get better at listening to their body. It’s a simple, wearable hunger scale that helps build awareness and reminds you to pause, check in, and honor your body’s signals.
+
+### Is Hunger Ring for mindful eating or intuitive eating?
+
+Both. Hunger Ring is designed to support mindful eating by helping you pause and notice what’s happening in your body in the moment. It can also support intuitive eating by strengthening awareness of hunger and fullness cues over time.
+
+Hunger Ring is an independent product and isn’t affiliated with any specific program or book.
 
 ### Where does the donation go?
 
