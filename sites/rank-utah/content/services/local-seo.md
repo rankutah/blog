@@ -13,12 +13,12 @@ schema:
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "200"
+        price: "150"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "299"
+        price: "199"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
 params:
@@ -27,7 +27,7 @@ params:
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for local SEO" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Local SEO to Grow Your Small Businesses
-Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO plans starting at $200/month.
+Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO plans starting at $150/month.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
@@ -95,8 +95,8 @@ Local SEO Packages Include:
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
-- Local SEO (no website) — $200/mo: Keyword research + content alignment, Google Business Profile management, Apple Maps and Bing Places, 100+ directory listings, plus clear monthly reporting.
-- Website + Local SEO — $299/mo: A fast, secure custom website plus everything in Local SEO.
+- Local SEO (no website) — $150/mo: Keyword research + content alignment, Google Business Profile management, Apple Maps and Bing Places, 100+ directory listings, plus clear monthly reporting.
+- Website + Local SEO — $199/mo: A fast, secure custom website plus everything in Local SEO.
 
 Month‑to‑month. No long‑term contract.
 
@@ -159,7 +159,7 @@ Results depend on what you have to offer, the level of search interest in your a
 No. Plans are month‑to‑month.
 
 ### How much does it cost?
-Plans start at $200/mo. See the full details on the [Pricing](/pricing) page.
+Plans start at $150/mo. See the full details on the [Pricing](/pricing) page.
 {{< /faqs >}}
 
 {{< button url="/pricing" text="Pricing" >}}

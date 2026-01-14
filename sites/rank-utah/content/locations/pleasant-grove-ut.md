@@ -87,7 +87,7 @@ schema:
     geo:
       latitude: "40.35949"
       longitude: "-111.77212"
-    priceRange: "$150–$299/mo"
+    priceRange: "$99–$199/mo"
   service:
     enabled: true
     serviceType: "Website Design & Local SEO Services"
@@ -121,18 +121,18 @@ schema:
     offers:
       - "@type": Offer
         name: "Business Website"
-        price: "150.00"
+        price: "99.00"
         priceCurrency: "USD"
       - "@type": Offer
         name: "Business Website + Local SEO"
-        price: "299.00"
+        price: "199.00"
         priceCurrency: "USD"
 ---
 
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape with text overlaid that says Website Design and Local SEO to Grow your Utah Business" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design & Local SEO Services in Utah County & Salt Lake County {.text-white}
-Professional business websites and local search engine optimization (SEO) services for small businesses in Utah. Starting at $150/month.
+Professional business websites and local search engine optimization (SEO) services for small businesses in Utah. Starting at $99/month.
 
 {{< button url="/pricing" text="Start Service" >}} {{< button url="#main-content" text="Learn More" >}}
 
@@ -326,8 +326,8 @@ Services are available remotely, with local meetings as needed, so businesses ca
 
 ## Simple Monthly Pricing for Small Businesses
 
-- $150/mo Website — fast and mobile‑friendly website design with updates included
-- $299/mo Website + Local SEO — includes Google Business Profile help, listings, and reporting
+- $99/mo Website — fast and mobile‑friendly website design with updates included
+- $199/mo Website + Local SEO — includes Google Business Profile help, listings, and reporting
 
 No hidden fees. No contracts. Unlimited updates.
 

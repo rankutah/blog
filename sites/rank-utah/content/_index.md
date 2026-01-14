@@ -10,12 +10,12 @@ schema:
     telephone: "+13853238130"
     areaServed:
       - "United States"
-    priceRange: "$150–$299/mo"
+    priceRange: "$99–$199/mo"
 ---
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Custom Website Design & Local SEO to Grow Your Business {.text-white}
-Lead-generating websites and local search engine optimization (SEO) to help you get more customers. High-performance websites starting at $150/month.
+Lead-generating websites and local search engine optimization (SEO) to help you get more customers. High-performance websites starting at $99/month.
 {.text-white}
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}

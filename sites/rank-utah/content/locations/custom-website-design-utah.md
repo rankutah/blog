@@ -14,11 +14,11 @@ schema:
     offers:
       - "@type": Offer
         priceCurrency: USD
-        price: "150"
+        price: "99"
         availability: "https://schema.org/InStock"
       - "@type": Offer
         priceCurrency: USD
-        price: "299"
+        price: "199"
         availability: "https://schema.org/InStock"
   faq:
     enabled: true

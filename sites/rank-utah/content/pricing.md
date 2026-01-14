@@ -36,7 +36,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< badge text="I need a website" >}}
 
-{{< plan_price price="150" per="mo" sr="$150 per month" >}}
+{{< plan_price price="99" per="mo" sr="$99 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -65,7 +65,7 @@ No contracts. No setup fees. Cancel anytime.
 {{< badge text="I need local marketing" >}}
 
 
-{{< plan_price price="200" per="mo" sr="$200 per month" >}}
+{{< plan_price price="150" per="mo" sr="$150 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -91,12 +91,12 @@ This package does not include a business website.
 
 {{< badge text="I need a website and local marketing" >}}
 
-{{< plan_price old="$350" price="299" per="mo" sr="$299 per month bundle (was $350)" >}}
+{{< plan_price old="$249" price="199" per="mo" sr="$199 per month bundle (was $249)" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
 
-*Maximize leads by bundling your website with local SEO and **save $51/month***
+*Maximize leads by bundling your website with local SEO and **save $50/month***
 
 
 
