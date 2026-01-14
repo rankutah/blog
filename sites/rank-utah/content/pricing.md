@@ -40,7 +40,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 No contracts. No setup fees. Cancel anytime.
 
-*Fast, professional websites **built to convert** visitors into customers.*
+*Fast, professional **websites built to convert** visitors into customers.*
 
 - Custom design tailored to your brand
 - Automatic adjustment to any screen size
@@ -69,12 +69,12 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-***Get found** everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.*
+***Get found everywhere it matters**: Google, Maps, Apple, AI, and "near me" searches.*
 
 - Keyword research + content alignment
 - Google Business Profile management and optimization
 - Apple Maps and Bing Places management and optimization
-- Business listings on 100+ sites (via aggregators)
+- Business listings on 100+ sites (via data aggregators)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
@@ -95,7 +95,7 @@ This package does not include a business website.
 No contracts. No setup fees. Cancel anytime.
 
 
-***Maximize leads** by bundling your website with local SEO and **save $50/month***
+***Maximize leads by bundling** your website with local SEO and **save $50/month***
 
 Everything in Business Website + Local SEO, plus continuous keyword research and optimization—so your website stays aligned with real search behavior and **keeps improving over time.**
 
