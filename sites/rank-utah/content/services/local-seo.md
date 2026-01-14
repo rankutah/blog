@@ -144,22 +144,22 @@ You don’t have to manage anything. This is done for you.
 ## FAQ
 {{< faqs openFirst="false" >}}
 
+### What is Local SEO?
+Local SEO stands for Local Search Engine Optimization. Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+
+Unlike social media posts and ads, local SEO doesn't stop working the moment you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
+
+Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
+
 ### What do you do each month for local SEO?
 
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, Bing Places, and directory listings. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
-
-### What results should I expect?
-Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
-
-Social media posts and ads can help, but they stop the moment you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
-
-Results depend on what you have to offer, the level of search interest in your area, and your competition.
 
 ### Do I need a long‑term contract?
 No. Plans are month‑to‑month.
 
 ### How much does it cost?
-Plans start at $150/mo. See the full details on the [Pricing](/pricing) page.
+See the pricing details on the [Pricing](/pricing) page.
 {{< /faqs >}}
 
 {{< button url="/pricing" text="Pricing" >}}
