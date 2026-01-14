@@ -13,6 +13,13 @@
 {{ $CTAText          := default "Get started" .Site.Params.header.CTAText }}
 {{ $CTAURL           := default "/"          .Site.Params.header.CTAURL }}
 
+{{- /* CTA href: allow tel:/sms:/mailto: without relURL mangling */ -}}
+{{- $ctaRaw := trim (printf "%v" $CTAURL) " \n\r\t" -}}
+{{- $ctaLower := lower $ctaRaw -}}
+{{- $ctaIsSpecial := or (strings.HasPrefix $ctaLower "tel:") (strings.HasPrefix $ctaLower "sms:") (strings.HasPrefix $ctaLower "mailto:") -}}
+{{- $ctaIsAbs := or (strings.HasPrefix $ctaLower "http://") (strings.HasPrefix $ctaLower "https://") -}}
+{{- $ctaHref := cond (or $ctaIsSpecial $ctaIsAbs) ($ctaRaw | safeURL) ($ctaRaw | relURL) -}}
+
 {{ $showPhoneOnMobile := default true  .Site.Params.header.showPhoneOnMobile }}
 {{ $phoneNumber       := default "800-123-4567" .Site.Params.header.phoneNumber }}
 
@@ -236,7 +243,7 @@
         </div>
       </form>
       {{ if or $showCTAOnMobile $showCTAOnDesktop }}
-      <a href="{{ $CTAURL | relURL }}"
+      <a href="{{ $ctaHref }}"
          class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none ui-btn
                 {{ if $showCTAOnMobile }}inline-flex{{ else }}hidden{{ end }}
                 {{ if $showCTAOnDesktop }} md:inline-flex{{ else }} md:hidden{{ end }}
