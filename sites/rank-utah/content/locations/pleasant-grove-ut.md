@@ -462,13 +462,11 @@ I started building websites for small‑businesses in 2023 after completing my M
 ### How long does a new website take?
 Websites can be built in 2–3 weeks with regular coordination.
 
-### Are content updates really unlimited?
-Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
-
 ### Do you handle hosting and the domain name?
 Yes. Managed hosting and your domain name are included. If you want to purchase your own domain you can do that too.
 
-
+### Are content updates really unlimited?
+Yes. All normal small business requests (new pages, updates, changes) are unlimited. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
 
 {{< /faqs >}}
 
