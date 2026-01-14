@@ -71,10 +71,10 @@ No contracts. No setup fees. Cancel anytime.
 
 *Get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.*
 
-- Keyword research and content alignment (services + city)
+- Continuous Keyword research, testing, and content alignment
 - Google Business Profile management and optimization
 - Apple Maps and Bing Places management and optimization
-- Citation listings on 100+ sites (consistent business info)
+- Business listings on 100+ sites (via data aggregators)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
