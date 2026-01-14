@@ -30,6 +30,9 @@
 
 {{- partial "extend_footer.html" . }}
 {{- partial "turnstile-loader.html" . }}
+
+{{- $clickTracker := resources.Get "js/click-tracker.js" | minify | fingerprint -}}
+{{- $linkifyPhones := resources.Get "js/linkify-phones.js" | minify | fingerprint -}}
 <script>
   (function(){
     var DELAY_MS = 4000;
@@ -46,8 +49,8 @@
     }
 
     function injectAll(){
-      injectScript({{ ("js/click-tracker.js" | relURL) | jsonify | safeJS }}, 'cp-click-tracker');
-      injectScript({{ ("js/linkify-phones.js" | relURL) | jsonify | safeJS }}, 'cp-linkify-phones');
+      injectScript({{ $clickTracker.RelPermalink | jsonify | safeJS }}, 'cp-click-tracker');
+      injectScript({{ $linkifyPhones.RelPermalink | jsonify | safeJS }}, 'cp-linkify-phones');
     }
 
     function schedule(){

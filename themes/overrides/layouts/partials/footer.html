@@ -71,6 +71,9 @@
 {{- /* Lazy loader for Cloudflare Turnstile widgets (only injects script when a widget nears viewport) */ -}}
 {{- partial "turnstile-loader.html" . }}
 
+{{- $clickTracker := resources.Get "js/click-tracker.js" | minify | fingerprint -}}
+{{- $linkifyPhones := resources.Get "js/linkify-phones.js" | minify | fingerprint -}}
+
 {{/*
     Delay low-priority first-party scripts slightly to keep the main thread clear.
     These are enhancements only:
@@ -93,8 +96,8 @@
         }
 
         function injectAll(){
-            injectScript({{ ("js/click-tracker.js" | relURL) | jsonify | safeJS }}, 'cp-click-tracker');
-            injectScript({{ ("js/linkify-phones.js" | relURL) | jsonify | safeJS }}, 'cp-linkify-phones');
+            injectScript({{ $clickTracker.RelPermalink | jsonify | safeJS }}, 'cp-click-tracker');
+            injectScript({{ $linkifyPhones.RelPermalink | jsonify | safeJS }}, 'cp-linkify-phones');
         }
 
         function schedule(){

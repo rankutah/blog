@@ -74,7 +74,8 @@
   </script>
   {{- $useFlowbite := or (eq .Params.useFlowbiteJS true) (eq site.Params.useFlowbiteJS true) -}}
   {{- if $useFlowbite -}}
-    <script src='{{ "js/flowbite.min.js" | relURL }}' defer onload="try{window.initCarousels&&window.initCarousels()}catch(e){}"></script>
+    {{- $flowbite := resources.Get "js/flowbite.min.js" | minify | fingerprint -}}
+    <script src='{{ $flowbite.RelPermalink }}' defer onload="try{window.initCarousels&&window.initCarousels()}catch(e){}"></script>
   {{- end -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify | fingerprint "sha384" }}
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}" {{ if $css.Data.Integrity }}integrity="{{ $css.Data.Integrity }}"{{ end }} crossorigin="anonymous">
