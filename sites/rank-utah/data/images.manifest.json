@@ -1967,128 +1967,6 @@
       ]
     }
   },
-  "/media/freelance-website-design-services-small-businesses-utah.jpg": {
-    "width": 1000,
-    "height": 481,
-    "aspect": 2.079002079002079,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFAf/EACQQAAIABQMEAwAAAAAAAAAAAAECAAMREiEEBmEFIjFBcYGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGhEAAgMBAQAAAAAAAAAAAAAAAQIAESEDE//aAAwDAQACEQMRAD8AQO45xpfLQ04gjuPUgYlqPyJItQBgpGLrq5+o1dSjAsalj5A8k8mE3NSdEnq1ZKB3Dqzm1fnMKzer6uaDdMenBpAsyiXQMS3s+hwIBXsFZktHBz3CNQtDIC5M/9k=",
-    "variants": {
-      "avif": [
-        {
-          "w": 320,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w320.avif"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w480.avif"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w640.avif"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w768.avif"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w960.avif"
-        },
-        {
-          "w": 1000,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w1000.avif"
-        }
-      ],
-      "webp": [],
-      "jpeg": [
-        {
-          "w": 320,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w320.jpg"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w480.jpg"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w640.jpg"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w768.jpg"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w960.jpg"
-        },
-        {
-          "w": 1000,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w1000.jpg"
-        }
-      ]
-    }
-  },
-  "/media/freelance-website-design-services-small-businesses-utah.avif": {
-    "width": 1000,
-    "height": 481,
-    "aspect": 2.079002079002079,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFAf/EACQQAAIABQMEAwAAAAAAAAAAAAECAAMREiEEBmEFIjFBcYGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGhEAAgMBAQAAAAAAAAAAAAAAAQIAESEDE//aAAwDAQACEQMRAD8AQO45xpfLQ04gjuPUgYlqPyJItQBgpGLrq5+o1dSjAsalj5A8k8mE3NSdEnq1ZKB3Dqzm1fnMKzer6uaDdMenBpAsyiXQMS3s+hwIBXsFZktHBz3CNQtDIC5M/9k=",
-    "variants": {
-      "avif": [
-        {
-          "w": 320,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w320.avif"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w480.avif"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w640.avif"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w768.avif"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w960.avif"
-        },
-        {
-          "w": 1000,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w1000.avif"
-        }
-      ],
-      "webp": [],
-      "jpeg": [
-        {
-          "w": 320,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w320.jpg"
-        },
-        {
-          "w": 480,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w480.jpg"
-        },
-        {
-          "w": 640,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w640.jpg"
-        },
-        {
-          "w": 768,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w768.jpg"
-        },
-        {
-          "w": 960,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w960.jpg"
-        },
-        {
-          "w": 1000,
-          "url": "/media-deriv/freelance-website-design-services-small-businesses-utah__w1000.jpg"
-        }
-      ]
-    }
-  },
   "/media/freelance-website-design-services-utah.jpg": {
     "width": 1280,
     "height": 853,
@@ -6555,6 +6433,128 @@
         {
           "w": 1915,
           "url": "/media-deriv/website-design-cedar-city-strength__w1915.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-local-seo-services-utah-county-salt-lake-county.jpg": {
+    "width": 1000,
+    "height": 481,
+    "aspect": 2.079002079002079,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFAf/EACQQAAIABQMEAwAAAAAAAAAAAAECAAMREiEEBmEFIjFBcYGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGhEAAgMBAQAAAAAAAAAAAAAAAQIAESEDE//aAAwDAQACEQMRAD8AQO45xpfLQ04gjuPUgYlqPyJItQBgpGLrq5+o1dSjAsalj5A8k8mE3NSdEnq1ZKB3Dqzm1fnMKzer6uaDdMenBpAsyiXQMS3s+hwIBXsFZktHBz3CNQtDIC5M/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w1000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-local-seo-services-utah-county-salt-lake-county.avif": {
+    "width": 1000,
+    "height": 481,
+    "aspect": 2.079002079002079,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAPACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFAf/EACQQAAIABQMEAwAAAAAAAAAAAAECAAMREiEEBmEFIjFBcYGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGhEAAgMBAQAAAAAAAAAAAAAAAQIAESEDE//aAAwDAQACEQMRAD8AQO45xpfLQ04gjuPUgYlqPyJItQBgpGLrq5+o1dSjAsalj5A8k8mE3NSdEnq1ZKB3Dqzm1fnMKzer6uaDdMenBpAsyiXQMS3s+hwIBXsFZktHBz3CNQtDIC5M/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w1000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/website-design-local-seo-services-utah-county-salt-lake-county__w1000.jpg"
         }
       ]
     }
