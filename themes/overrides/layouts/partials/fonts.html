@@ -26,7 +26,20 @@
 
 {{/* If a site declares fonts.load, prefer the vendored local CSS produced by scripts/vendor-google-fonts.mjs */}}
 {{- if $load }}
-  {{- $ver := printf "%d" (now.Unix) -}}
+  {{- /*
+    Cache-bust deterministically based on file contents.
+    This keeps URLs stable across rebuilds when fonts are unchanged, while still
+    safely allowing long-lived caching.
+  */ -}}
+  {{- $ver := "" -}}
+  {{- $vendoredPath := "static/fonts/google/fonts.css" -}}
+  {{- if fileExists $vendoredPath -}}
+    {{- $css := readFile $vendoredPath -}}
+    {{- $ver = substr (sha1 $css) 0 12 -}}
+  {{- else -}}
+    {{- /* Fallback: keep existing behavior if the vendored file doesn't exist. */ -}}
+    {{- $ver = printf "%d" (now.Unix) -}}
+  {{- end -}}
   <link rel="preload" as="style" href="/fonts/google/fonts.css?v={{ $ver }}">
   <link rel="stylesheet" href="/fonts/google/fonts.css?v={{ $ver }}">
 {{- end }}

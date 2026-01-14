@@ -119,11 +119,6 @@
       try { window.addEventListener('storage', function(e){ if (e && e.key === storageKey) apply(); }); } catch(e){}
     })();
   </script>
-  {{- $useFlowbite := or (eq .Params.useFlowbiteJS true) (eq site.Params.useFlowbiteJS true) -}}
-  {{- if $useFlowbite -}}
-    {{- $flowbite := resources.Get "js/flowbite.min.js" | minify | fingerprint -}}
-    <script src='{{ $flowbite.RelPermalink }}' defer onload="try{window.initCarousels&&window.initCarousels()}catch(e){}"></script>
-  {{- end -}}
   {{- $css := resources.Get "css/main.css" | postCSS | minify | fingerprint "sha384" }}
   <link rel="preload" as="style" href="{{ absURL $css.RelPermalink }}">
   <link rel="stylesheet" href="{{ absURL $css.RelPermalink }}">
