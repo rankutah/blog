@@ -95,7 +95,7 @@ Local SEO Packages Include:
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Pricing
-- Local SEO (no website) — $150/mo: Keyword research + content alignment, Google Business Profile management, Apple Maps and Bing Places, 100+ directory listings, plus clear monthly reporting.
+- Local SEO — $150/mo: Keyword research + content alignment, Google Business Profile management, Apple Maps and Bing Places, 100+ directory listings, plus clear monthly reporting.
 - Website + Local SEO — $199/mo: A fast, secure custom website plus everything in Local SEO.
 
 Month‑to‑month. No long‑term contract.

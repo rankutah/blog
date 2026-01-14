@@ -71,13 +71,12 @@ No contracts. No setup fees. Cancel anytime.
 
 *Get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.*
 
-- Continuous Keyword research, testing, and content alignment
+- Keyword research + content alignment for business listings
 - Google Business Profile management and optimization
 - Apple Maps and Bing Places management and optimization
-- Business listings on 100+ sites (via data aggregators)
+- Business listings on 100+ sites (via aggregators)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
-
 
 This package does not include a business website.
 
@@ -85,7 +84,7 @@ This package does not include a business website.
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="between" >}}
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ## Business Website + Local SEO
 
@@ -98,23 +97,9 @@ No contracts. No setup fees. Cancel anytime.
 
 *Maximize leads by bundling your website with local SEO and **save $50/month***
 
+Everything in Business Website + Local SEO, plus continuous keyword research and optimization—so your website stays aligned with real search behavior and keeps improving over time.
 
 
-- Custom design tailored to your brand
-- Automatic adjustment to any screen size
-- High-speed on phones and computers
-- Premium hosting with advanced security
-- Automatic backups with every change
-- Domain name and annual renewals
-- Contact forms with spam protection
-- Site-wide search for easy navigation
-- Foundational technical + on-page SEO (search-ready setup)
-- Continuous Keyword research, testing, and content alignment
-- Google Business Profile management and optimization
-- Apple Maps and Bing Places management and optimization
-- Business listings on 100+ sites (via data aggregators)
-- Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
 
 
 
