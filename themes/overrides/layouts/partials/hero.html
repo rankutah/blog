@@ -65,6 +65,18 @@
   {{- end -}}
 {{- end -}}
 
+{{- /* Accessibility: if overlay is enabled but no shade was provided, default to a dark scrim. */ -}}
+{{- if and $overlay (eq $overlayShade "") -}}
+  {{- $overlayShade = "bg-black/55" -}}
+{{- end -}}
+
+{{- /* If the overlay shade is light (e.g. brighten uses bg-white/..), keep dark text; otherwise invert text. */ -}}
+{{- $overlayIsLight := and $overlay (in $overlayShade "bg-white") -}}
+{{- $overlayProse := "prose prose-zinc max-w-none dark:prose-invert" -}}
+{{- if and $overlay (not $overlayIsLight) -}}
+  {{- $overlayProse = "prose max-w-none prose-invert text-white prose-headings:text-white prose-a:text-white" -}}
+{{- end -}}
+
 {{- /* If author provided a vh-based inline height, append svh so it wins on mobile */ -}}
 {{- $hasVhInStyle := and (ne $imgStyle "") (gt (len (findRE `\b[0-9.]+vh\b` $imgStyle)) 0) -}}
 {{- if and (ne $img "") $hasVhInStyle -}}
@@ -158,7 +170,7 @@
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
           <div class="relative z-10 w-full {{ $container }}">
             <div class="{{ $vWrap }}">
-              <div class="prose prose-zinc max-w-none dark:prose-invert {{ (index $alMap $align | default "text-left") }}">
+              <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
                 {{- $page.Scratch.Get "heroInner" -}}
               </div>
             </div>
@@ -180,7 +192,7 @@
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
             <div class="relative z-10 w-full">
               <div class="{{ $vWrap }}">
-                <div class="prose prose-zinc max-w-none dark:prose-invert {{ (index $alMap $align | default "text-left") }}">
+                <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
                   {{- $page.Scratch.Get "heroInner" -}}
                 </div>
               </div>

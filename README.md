@@ -23,6 +23,8 @@ Notes:
 
 - All sites act in unison: shared behavior + shared UI.
 - Styling/layout/UI changes belong in `themes/overrides/`.
+- Any new first-party JS/CSS you add must be fingerprinted (Hugo Pipes) so it can be cached immutably without going stale.
+	- Pattern: `resources.Get` → `minify` → `fingerprint`, then reference via `.RelPermalink`.
 - Avoid site-specific template/CSS edits. If a true exception is required, gate it behind a param and document it.
 - Content convention: avoid `index.md` page bundles except the site homepage (`content/_index.md`). Prefer single-file pages under `content/`.
 - Customer-facing copy: use plain language and avoid tech jargon (e.g., “sprints”, “lean builds”, “workflow”).

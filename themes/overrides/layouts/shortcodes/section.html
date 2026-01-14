@@ -121,6 +121,11 @@
   {{- end -}}
 {{- end -}}
 
+{{- /* Accessibility: if overlay is enabled but no shade was provided, default to a dark scrim for contrast. */ -}}
+{{- if and $overlay (eq $overlayShade "") -}}
+  {{- $overlayShade = "bg-black/55" -}}
+{{- end -}}
+
 {{/* Spacer control (only relevant for bleed+overlay) */}}
 {{- $spacerParam := lower (.Get "spacer" | default "true") -}}
 
