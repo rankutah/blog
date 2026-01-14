@@ -131,8 +131,8 @@ schema:
 
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape with text overlaid that says Website Design and Local SEO to Grow your Utah Business" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design & Local SEO Services in Utah {.text-white}
-Digital marketing services for small businesses in Utah. Professional business websites and local search engine optimization (SEO). Starting at $150/month.
+# Website Design & Local SEO Services in Utah County & Salt Lake County {.text-white}
+Professional business websites and local search engine optimization (SEO) services for small businesses in Utah. Starting at $150/month.
 
 {{< button url="/pricing" text="Start Service" >}} {{< button url="#main-content" text="Learn More" >}}
 
