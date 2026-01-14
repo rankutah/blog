@@ -147,7 +147,7 @@ Professional business websites and local search engine optimization (SEO) servic
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Website Design & Local SEO in Pleasant Grove, Utah
-- Serving Small Businesses in Utah & Salt Lake County
+- Serving Small Businesses in Utah County & Salt Lake County
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
