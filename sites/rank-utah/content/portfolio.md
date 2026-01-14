@@ -15,9 +15,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Quartz Worx
 
-<a href="https://quartzworx.com/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/website-design-quartz-worx.avif" alt="Website Design & Local SEO Portfolio | Small Business Projects">
-</a>
+[![Website Design & Local SEO Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
 
 
 **Darin Hinton** <br>
@@ -33,9 +31,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Cedar City Strength & Conditioning
 
-<a href="https://cedarcitystrength.pages.dev/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/website-design-cedar-city-strength.avif" alt="Cedar City Strength & Conditioning website">
-</a>
+[![Cedar City Strength & Conditioning website](/media/website-design-cedar-city-strength.avif)](https://cedarcitystrength.pages.dev/)
 
 
 {{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}}{{<badge text="Website In Progress">}}
@@ -54,9 +50,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Blue Ridge Abbey
 
-<a href="https://blueridgeabbey.com/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/website-design-blue-ridge-abbey.jpg" alt="Blue Ridge Abbey website">
-</a>
+[![Blue Ridge Abbey website](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
 
 **Daniel De Souza** <br>
 {{<stars>}}<br>
@@ -71,9 +65,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## BlueridgeTech
 
-<a href="https://blueridgetech.pro/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/website-design-blueridge-tech.avif" alt="BlueridgeTech website">
-</a>
+[![BlueridgeTech website](/media/website-design-blueridge-tech.avif)](https://blueridgetech.pro/)
 
 **Gabriel Antigua** <br>
 {{<stars>}}<br>
@@ -92,9 +84,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Nova Gutter
 
-<a href="https://novagutter.com/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/nova-gutter-hero.avif" alt="Nova Gutter website">
-</a>
+[![Nova Gutter website](/media/nova-gutter-hero.avif)](https://novagutter.com/)
 
 **Davi Souza** <br>
 {{< stars >}} <br>
@@ -109,9 +99,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Villa Valencia
 
-<a href="https://villavalenciaojai.com/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/website-villa-valencia.avif" alt="Villa Valencia website">
-</a>
+[![Villa Valencia website](/media/website-villa-valencia.avif)](https://villavalenciaojai.com/)
 
 **Michelle Larsen**<br>
 {{<stars>}}<br>
@@ -130,9 +118,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Suggls
 
-<a href="https://suggls.com/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/website-suggls.avif" alt="Suggls website">
-</a>
+[![Suggls website](/media/website-suggls.avif)](https://suggls.com/)
 
 {{< button url="https://suggls.com/" text="Visit Suggls" newtab="true" >}}
 
@@ -143,9 +129,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 ## Dentistry
 
-<a href="https://rodmaxfielddds.pages.dev/" target="_blank" rel="noopener noreferrer">
-	<img src="/media/rodmaxfieddds-hero.avif" alt="Rod Maxfield DDS website">
-</a>
+[![Rod Maxfield DDS website](/media/rodmaxfieddds-hero.avif)](https://rodmaxfielddds.pages.dev/)
 
 **Liz Maxfield**<br>
 {{<stars>}}<br>

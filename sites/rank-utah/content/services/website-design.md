@@ -46,9 +46,7 @@ Grow your small business with a fast, custom website that looks great on phones 
 
 ### Quartz Worx – Countertops
 
-<a href="https://quartzworx.com/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-quartz-worx.avif" alt="Website Design for Small Businesses">
-</a>
+[![Website Design for Small Businesses](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
 
 {{< /col >}}
 
@@ -56,9 +54,7 @@ Grow your small business with a fast, custom website that looks great on phones 
 
 ### Cedar City Strength – Fitness
 
-<a href="https://cedarcitystrength.pages.dev/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-cedar-city-strength.avif" alt="Cedar City Strength website">
-</a>
+[![Cedar City Strength website](/media/website-design-cedar-city-strength.avif)](https://cedarcitystrength.pages.dev/)
 
 {{< /col >}}
 
@@ -70,9 +66,7 @@ Grow your small business with a fast, custom website that looks great on phones 
 
 ### Blue Ridge Abbey – Hospitality
 
-<a href="https://blueridgeabbey.com/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-blue-ridge-abbey.jpg" alt="Blue Ridge Abbey website">
-</a>
+[![Blue Ridge Abbey website](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
 
 {{< /col >}}
 
@@ -80,9 +74,7 @@ Grow your small business with a fast, custom website that looks great on phones 
 
 ### BlueridgeTech – IT Services
 
-<a href="https://blueridgetech.pro/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-blueridge-tech.avif" alt="BlueridgeTech website">
-</a>
+[![BlueridgeTech website](/media/website-design-blueridge-tech.avif)](https://blueridgetech.pro/)
 
 {{< /col >}}
 

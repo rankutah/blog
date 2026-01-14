@@ -109,11 +109,11 @@ Month‑to‑month. No long‑term contract.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 #### Visibility & Clicks
-<img src="/media/local-marketing-analytics-report.avif" alt="Local SEO analytics report" />
+![Local SEO analytics report](/media/local-marketing-analytics-report.avif)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 #### Small Business Growth
-<img src="/media/google-analytics-results.avif" alt="Analytics results demonstrating growth" />
+![Analytics results demonstrating growth](/media/google-analytics-results.avif)
 {{< /col >}}
 {{< /cols >}}
 
@@ -121,7 +121,7 @@ Month‑to‑month. No long‑term contract.
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Ready To Get Started
-<img src="/media/benjamin-awerkamp-profile.jpg" alt="Benjamin Awerkamp" class="w-40 mb-4" />
+![Benjamin Awerkamp](/media/benjamin-awerkamp-profile.jpg){ class="w-40 mb-4" }
 Partnering with small businesses to improve local visibility and turn nearby searches into calls and bookings.
 
 ### Share a bit about your business and goals.

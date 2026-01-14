@@ -18,4 +18,7 @@
   {{- $href = $url -}}
 {{- end -}}
 
-<a href="{{ $href | safeURL }}" class="{{ $linkClasses }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* External links: open in new tab + noopener */ -}}
+{{- $isExternal := or (strings.HasPrefix $href "http://") (strings.HasPrefix $href "https://") -}}
+
+<a href="{{ $href | safeURL }}" class="{{ $linkClasses }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

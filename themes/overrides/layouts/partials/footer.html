@@ -71,10 +71,42 @@
 {{- /* Lazy loader for Cloudflare Turnstile widgets (only injects script when a widget nears viewport) */ -}}
 {{- partial "turnstile-loader.html" . }}
 
-{{/* Global click tracker (GA4). Safe to include always; no-ops if GA isn’t present. */}}
-<script defer src="{{ "js/click-tracker.js" | relURL }}"></script>
-{{/* Linkify plain-text phone numbers into tel: links (client-side, PII-safe) */}}
-<script defer src="{{ "js/linkify-phones.js" | relURL }}"></script>
+{{/*
+    Delay low-priority first-party scripts slightly to keep the main thread clear.
+    These are enhancements only:
+    - click-tracker: analytics event helpers
+    - linkify-phones: turns plain-text phone numbers into tel: links
+*/}}
+<script>
+    (function(){
+        var DELAY_MS = 4000;
+
+        function injectScript(src, id){
+            try {
+                if (id && document.getElementById(id)) return;
+                var s = document.createElement('script');
+                if (id) s.id = id;
+                s.src = src;
+                s.async = true;
+                document.head.appendChild(s);
+            } catch(e) {}
+        }
+
+        function injectAll(){
+            injectScript({{ ("js/click-tracker.js" | relURL) | jsonify | safeJS }}, 'cp-click-tracker');
+            injectScript({{ ("js/linkify-phones.js" | relURL) | jsonify | safeJS }}, 'cp-linkify-phones');
+        }
+
+        function schedule(){
+            try {
+                if ('requestIdleCallback' in window) requestIdleCallback(injectAll, { timeout: 2000 });
+                else setTimeout(injectAll, 1);
+            } catch(e) { setTimeout(injectAll, 1); }
+        }
+
+        try { setTimeout(schedule, DELAY_MS); } catch(e) { schedule(); }
+    })();
+</script>
 
 <script>
     let menu = document.getElementById('menu')

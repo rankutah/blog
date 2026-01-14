@@ -30,8 +30,36 @@
 
 {{- partial "extend_footer.html" . }}
 {{- partial "turnstile-loader.html" . }}
-<script defer src="{{ "js/click-tracker.js" | relURL }}"></script>
-<script defer src="{{ "js/linkify-phones.js" | relURL }}"></script>
+<script>
+  (function(){
+    var DELAY_MS = 4000;
+
+    function injectScript(src, id){
+      try {
+        if (id && document.getElementById(id)) return;
+        var s = document.createElement('script');
+        if (id) s.id = id;
+        s.src = src;
+        s.async = true;
+        document.head.appendChild(s);
+      } catch(e) {}
+    }
+
+    function injectAll(){
+      injectScript({{ ("js/click-tracker.js" | relURL) | jsonify | safeJS }}, 'cp-click-tracker');
+      injectScript({{ ("js/linkify-phones.js" | relURL) | jsonify | safeJS }}, 'cp-linkify-phones');
+    }
+
+    function schedule(){
+      try {
+        if ('requestIdleCallback' in window) requestIdleCallback(injectAll, { timeout: 2000 });
+        else setTimeout(injectAll, 1);
+      } catch(e) { setTimeout(injectAll, 1); }
+    }
+
+    try { setTimeout(schedule, DELAY_MS); } catch(e) { schedule(); }
+  })();
+</script>
 {{- if (not site.Params.disableScrollToTop) }}
 <script>
   var mybutton = document.getElementById("top-link");

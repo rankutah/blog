@@ -152,9 +152,7 @@ Professional business websites and local search engine optimization (SEO) servic
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-<a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener noreferrer">
-  <img src="/media/clearpresence-office-storefront-web-design-local-seo.avif" alt="Clear Presence — website design and local SEO for Utah small businesses">
-</a>
+[![Clear Presence — website design and local SEO for Utah small businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
 
 {{< /col >}}
@@ -342,30 +340,22 @@ No big upfront fees—just simple monthly pricing and direct support.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Quartz Worx – Countertops
-<a href="https://quartzworx.com/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-quartz-worx.avif" alt="Custom website design and development featuring a small business">
-</a>
+[![Custom website design and development featuring a small business](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### Cedar City Strength – Fitness
-<a href="https://cedarcitystrength.pages.dev/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-cedar-city-strength.avif" alt="Custom website design for a small business in Cedar City Utah">
-</a>
+[![Custom website design for a small business in Cedar City Utah](/media/website-design-cedar-city-strength.avif)](https://cedarcitystrength.pages.dev/)
 {{< /col >}}
 {{< /cols >}}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Blue Ridge Abbey – Hospitality
-<a href="https://blueridgeabbey.com/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-blue-ridge-abbey.jpg" alt="Small business website homepage built to load fast and show up in local search">
-</a>
+[![Small business website homepage built to load fast and show up in local search](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### BlueridgeTech – IT Services
-<a href="https://blueridgetech.pro/" target="_blank" rel="noopener noreferrer">
-  <img src="/media/website-design-blueridge-tech.avif" alt="Custom website design for a small shop business">
-</a>
+[![Custom website design for a small shop business](/media/website-design-blueridge-tech.avif)](https://blueridgetech.pro/)
 {{< /col >}}
 {{< /cols >}}
 
