@@ -1,5 +1,5 @@
 ---
-title: "Utah County Website Design & Local SEO Services"
+title: "Website Design & Local SEO Services in Utah County & Salt Lake County"
 description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"

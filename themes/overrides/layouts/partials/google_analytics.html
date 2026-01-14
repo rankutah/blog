@@ -60,178 +60,71 @@
   {{- /*
     Cloudflare Zaraz (manual / delayed loader).
 
-    Important: This only helps if Zaraz is NOT already being auto-injected by Cloudflare.
-    If Cloudflare is injecting zaraz/s.js early, disable/pause that in Cloudflare first,
-    then let this loader inject it after LCP.
-
-    We intentionally inline a tiny loader (as a module) so it can't 404/redirect and trigger ORB.
-    Module scripts are deferred by default.
+    Key: keep JS out of the LCP window.
+    So we inject our local Zaraz loader only after LCP settles (or a safe fallback).
   */ -}}
 
-  <script type="module">
-    const w = window;
-    if (w.__cpZarazLoaderInstalled) {
-      // Prevent double-install (e.g. if the partial is included twice).
-    } else {
-      w.__cpZarazLoaderInstalled = true;
+  <script id="cp-analytics-config" type="application/json">{{ $cfg | jsonify | safeJS }}</script>
 
-      // Dedupe /welcome conversions:
-      // If you're using Zaraz triggers like "path is /welcome" + "product equals X",
-      // this prevents repeated counting on refresh or repeated visits in the same browser.
-      // NOTE: This is best-effort (per browser/device). For true purchase dedupe across devices,
-      // use server-side tracking with a Stripe session/payment id.
-      const WELCOME_PATH = '/welcome';
-      let welcomeProduct = '';
-      let welcomeAlreadyCounted = false;
-      function isWelcomePath(pathname) {
+  {{- $zloader := resources.Get "js/zaraz-loader-advanced.js" | resources.Minify | resources.Fingerprint -}}
+  <script>
+    (function(){
+      var src = {{ $zloader.RelPermalink | jsonify | safeJS }};
+
+      // Use the same LCP gate settings as the main analytics config.
+      var cfgEl = document.getElementById('cp-analytics-config');
+      var cfg = {};
+      try { cfg = cfgEl ? JSON.parse(cfgEl.textContent || '{}') : {}; } catch(e) { cfg = {}; }
+
+      var LCP_GATE = cfg.lcpGate !== false;
+      var LCP_MAX_WAIT_MS = parseInt(cfg.lcpMaxWaitMs, 10);
+      if (!(LCP_MAX_WAIT_MS >= 0)) LCP_MAX_WAIT_MS = 6000;
+      var LCP_QUIET_WINDOW_MS = parseInt(cfg.lcpQuietWindowMs, 10);
+      if (!(LCP_QUIET_WINDOW_MS >= 0)) LCP_QUIET_WINDOW_MS = 350;
+
+      var injected = false;
+      function inject(){
+        if (injected) return;
+        injected = true;
         try {
-          const p = pathname || '';
-          return p === WELCOME_PATH || p === (WELCOME_PATH + '/') || p.startsWith(WELCOME_PATH + '/');
-        } catch {
-          return false;
-        }
-      }
-      function getWelcomeProduct() {
-        try {
-          if (!w.location || !isWelcomePath(w.location.pathname)) return '';
-          const sp = new URLSearchParams(w.location.search || '');
-          return (sp.get('product') || '').trim();
-        } catch {
-          return '';
-        }
-      }
-      function markWelcomeCounted(product) {
-        try {
-          if (!product) return;
-          localStorage.setItem('cp_welcome_conv_' + product, '1');
-        } catch {}
-      }
-      function wasWelcomeCounted(product) {
-        try {
-          if (!product) return false;
-          return localStorage.getItem('cp_welcome_conv_' + product) === '1';
-        } catch {
-          return false;
-        }
-      }
-      function stripWelcomeProductParam() {
-        try {
-          if (!w.location || !isWelcomePath(w.location.pathname)) return;
-          const u = new URL(w.location.href);
-          if (!u.searchParams.has('product')) return;
-          u.searchParams.delete('product');
-          const next = u.pathname + (u.searchParams.toString() ? ('?' + u.searchParams.toString()) : '') + (u.hash || '');
-          w.history.replaceState({}, '', next);
-        } catch {}
+          var s = document.createElement('script');
+          s.src = src;
+          s.async = true;
+          document.head.appendChild(s);
+        } catch(e) {}
       }
 
-      welcomeProduct = getWelcomeProduct();
-      welcomeAlreadyCounted = wasWelcomeCounted(welcomeProduct);
-      if (welcomeAlreadyCounted) {
-        // Strip before Zaraz loads so the trigger won't match again.
-        stripWelcomeProductParam();
-      }
-
-      // Cloudflare-recommended endpoint (same-origin). This is typically less likely to be blocked
-      // than the static.cloudflareinsights.com host.
-      const ZARAZ_SRC = '/cdn-cgi/zaraz/i.js';
-      let loaded = false;
-
-      function inject() {
-        if (loaded) return;
-        loaded = true;
-      // Local/dev: Cloudflare endpoints don't exist, so don't 404-spam.
-      try {
-        const host = (window.location && window.location.hostname) ? window.location.hostname : '';
-        const isLocal = (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0' || host.endsWith('.localhost'));
-        if (isLocal) return;
-      } catch {}
-      try {
-        if (document.querySelector('script[src*="cloudflareinsights.com/zaraz/"]')) return;
-      } catch {}
-      try {
-        if (document.querySelector('script[src^="/cdn-cgi/zaraz/"]')) return;
-      } catch {}
-      try {
-        if (document.getElementById('cp-zaraz-script')) return;
-      } catch {}
-
-      const s = document.createElement('script');
-      s.id = 'cp-zaraz-script';
-      s.src = ZARAZ_SRC;
-      s.referrerPolicy = 'origin';
-      s.async = true;
-      document.head.appendChild(s);
-
-      // After we inject (i.e. we've allowed the conversion to be seen once),
-      // strip the product param so refresh/back won't double-count.
-      // Only do this for first-time views.
-      try {
-        if (welcomeProduct && !welcomeAlreadyCounted) {
-          markWelcomeCounted(welcomeProduct);
-          setTimeout(stripWelcomeProductParam, 1500);
-        }
-      } catch {}
-      }
-
-      function injectSoon() {
+      function injectSoon(){
         try {
           if ('requestIdleCallback' in window) requestIdleCallback(inject, { timeout: 2000 });
           else setTimeout(inject, 1);
-        } catch {
-          setTimeout(inject, 1);
-        }
+        } catch(e) { setTimeout(inject, 1); }
       }
 
-    // Conversions-first: if the user is interacting (likely to click a CTA, call, submit a form),
-    // load Zaraz immediately rather than waiting for LCP.
-    // This still avoids hurting LCP for "no interaction" users.
-      function onConversionIntent() {
+      if (!LCP_GATE) {
         injectSoon();
-        try {
-          window.removeEventListener('pointerdown', onConversionIntent, true);
-          window.removeEventListener('touchstart', onConversionIntent, true);
-          window.removeEventListener('click', onConversionIntent, true);
-          window.removeEventListener('submit', onConversionIntent, true);
-          window.removeEventListener('keydown', onConversionIntent, true);
-        } catch {}
-      }
-      try {
-        window.addEventListener('pointerdown', onConversionIntent, { capture: true, passive: true });
-        window.addEventListener('touchstart', onConversionIntent, { capture: true, passive: true });
-        window.addEventListener('click', onConversionIntent, { capture: true, passive: true });
-        window.addEventListener('submit', onConversionIntent, { capture: true, passive: true });
-        window.addEventListener('keydown', (e) => {
-          const k = e && (e.key || e.code);
-          if (k === 'Enter' || k === ' ') onConversionIntent();
-        }, { capture: true, passive: true });
-      } catch {
-        // noop
+        return;
       }
 
-    // Hard fallback (never wait forever)
-      setTimeout(injectSoon, 6000);
+      var quietTimer = null;
+      function scheduleQuiet(){
+        try { if (quietTimer) clearTimeout(quietTimer); } catch(e) {}
+        quietTimer = setTimeout(injectSoon, LCP_QUIET_WINDOW_MS);
+      }
 
-    // Prefer: wait for LCP to settle, then inject on idle.
-      let quietTimer = null;
+      setTimeout(injectSoon, Math.max(0, LCP_MAX_WAIT_MS | 0));
+      try { window.addEventListener('load', function(){ setTimeout(injectSoon, 1500); }, { once: true }); } catch(e) {}
+
       try {
         if ('PerformanceObserver' in window) {
-          const po = new PerformanceObserver((list) => {
-            // Any LCP update restarts the quiet window.
-            for (const _ of list.getEntries()) {
-              if (quietTimer) clearTimeout(quietTimer);
-              quietTimer = setTimeout(injectSoon, 350);
-            }
+          var po = new PerformanceObserver(function(list){
+            var entries = list.getEntries();
+            if (entries && entries.length) scheduleQuiet();
           });
           po.observe({ type: 'largest-contentful-paint', buffered: true });
         }
-      } catch {
-        // noop
-      }
-
-    // If LCP observer is blocked/restricted, load after window load.
-      window.addEventListener('load', () => setTimeout(injectSoon, 1500), { once: true });
-    }
+      } catch(e) {}
+    })();
   </script>
 
 {{- else -}}
@@ -244,8 +137,73 @@
   window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
 </script>
 
-{{- /* Defer loader JS so it doesn't block first paint / LCP */ -}}
+{{- /*
+  Load the local analytics loader AFTER LCP settles.
+
+  NOTE: `defer` prevents blocking, but the loader can still execute before LCP on
+  some pages/browsers (especially when LCP is late or LCP entries aren't exposed).
+*/ -}}
 {{- $loader := resources.Get "js/analytics-loader.js" | resources.Minify | resources.Fingerprint -}}
-<script src="{{ $loader.RelPermalink }}" defer></script>
+<script>
+  (function(){
+    var src = {{ $loader.RelPermalink | jsonify | safeJS }};
+    var cfgEl = document.getElementById('cp-analytics-config');
+    var cfg = {};
+    try { cfg = cfgEl ? JSON.parse(cfgEl.textContent || '{}') : {}; } catch(e) { cfg = {}; }
+
+    var LCP_GATE = cfg.lcpGate !== false;
+    var LCP_MAX_WAIT_MS = parseInt(cfg.lcpMaxWaitMs, 10);
+    if (!(LCP_MAX_WAIT_MS >= 0)) LCP_MAX_WAIT_MS = 6000;
+    var LCP_QUIET_WINDOW_MS = parseInt(cfg.lcpQuietWindowMs, 10);
+    if (!(LCP_QUIET_WINDOW_MS >= 0)) LCP_QUIET_WINDOW_MS = 350;
+
+    var injected = false;
+    function inject(){
+      if (injected) return;
+      injected = true;
+      try {
+        var s = document.createElement('script');
+        s.src = src;
+        s.async = true;
+        document.head.appendChild(s);
+      } catch(e) {}
+    }
+
+    function injectSoon(){
+      try {
+        if ('requestIdleCallback' in window) requestIdleCallback(inject, { timeout: 2000 });
+        else setTimeout(inject, 1);
+      } catch(e) { setTimeout(inject, 1); }
+    }
+
+    if (!LCP_GATE) {
+      injectSoon();
+      return;
+    }
+
+    var quietTimer = null;
+    function scheduleQuiet(){
+      try { if (quietTimer) clearTimeout(quietTimer); } catch(e) {}
+      quietTimer = setTimeout(injectSoon, LCP_QUIET_WINDOW_MS);
+    }
+
+    // Hard fallback: never wait forever.
+    setTimeout(injectSoon, Math.max(0, LCP_MAX_WAIT_MS | 0));
+
+    // If LCP entries are blocked/unavailable, wait until after window load.
+    // (This is intentionally conservative to avoid pre-LCP loading on Safari-like engines.)
+    try { window.addEventListener('load', function(){ setTimeout(injectSoon, 1500); }, { once: true }); } catch(e) {}
+
+    try {
+      if ('PerformanceObserver' in window) {
+        var po = new PerformanceObserver(function(list){
+          var entries = list.getEntries();
+          if (entries && entries.length) scheduleQuiet();
+        });
+        po.observe({ type: 'largest-contentful-paint', buffered: true });
+      }
+    } catch(e) {}
+  })();
+</script>
 
 {{- end -}}
