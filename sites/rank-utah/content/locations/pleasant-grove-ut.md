@@ -442,7 +442,7 @@ Yes. Plans can be changed at any time. The next invoice adjusts and services con
 ### What happens if I cancel?
 No further charges after cancellation. The website stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
 
-### What makes your business different from others?
+### What makes your Clear Presence different from others businesses?
 
 1. Your site is designed with a focus on helping you get leads.
 2. Your site will perform better than your competitors. Most developers use a template builder like Wordpress, Wix, or Squarespace. My sites are custom-coded so they load faster and perform better. This can be verified by using [Google's evaluation tool for websites](https://pagespeed.web.dev/) and comparing this website to other businesses web design agency websites.
@@ -456,7 +456,7 @@ No further charges after cancellation. The website stays online through the curr
 - Which buttons and links were clicked on your website (ordered by most frequent)
 - What did users search for on your website
 
-### What is your experience?
+### What experience do you have?
 I started building websites for small‑businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, performance, and flexibility. Every change we make is backed-up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a new website take?
