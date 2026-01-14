@@ -295,15 +295,6 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 
 {{< /cols >}}
 
-## Website Design & Local SEO
-
-Grow your small business across Utah County and Salt Lake County with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings. Clear Presence serves Pleasant Grove and nearby cities like Orem, Provo, Lehi, American Fork, and Salt Lake City.
-
-Local SEO helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
-
-{{< button url="/portfolio" text="Portfolio" >}}
-{{< button url="/contact" text="Contact" >}}
-
 ## Custom Websites designed for Growth — Not Just Looks
 
 A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO to get in front of your ideal customers. Monthly plans keep things simple and affordable.
@@ -428,16 +419,20 @@ Yes. You own the website from day one. If service is canceled, help is provided 
 ### What does website design cost?
 See the [pricing](/pricing) page for the most up to date pricing on business website packages.
 
+### What is local SEO?
+Local SEO stands for Local Search Engine Optimization. Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+
+Unlike social media posts and ads, local SEO doesn't stop working the moment you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
+
+Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
+
 ### What does local SEO cost?
 See the [pricing](/pricing) page for the most up to date pricing on local SEO packages
-
-### What does local SEO mean?
-Local SEO is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
 
 ### What results should I expect from local SEO?
 Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
 
-Social media posts and ads can help, but they stop the moment you stop posting or paying. Local SEO establishes a strong foundation so you show up when nearby customers search.
+Social media posts and ads can do very well, but they stop the moment you stop posting or paying. Local SEO establishes a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and your competition.
 
