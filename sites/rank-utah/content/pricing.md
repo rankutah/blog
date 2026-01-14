@@ -50,7 +50,7 @@ No contracts. No setup fees. Cancel anytime.
 - Domain name and annual renewals
 - Contact forms with spam protection
 - Site-wide search for easy navigation
-- Foundational technical + on-page SEO (search-ready setup)
+- Foundational technical + on-page SEO
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
