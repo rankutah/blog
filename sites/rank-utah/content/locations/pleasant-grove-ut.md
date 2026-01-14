@@ -258,16 +258,19 @@ Professional business websites and local search engine optimization (SEO) servic
 
 ### Business Website Package
 
-- Custom design and development (no templates)
-- Mobile‑friendly and accessible layout
-- Fast load times with optimized images
-- Secure hosting with an encrypted connection (HTTPS)
+Fast, professional websites built to convert visitors into customers.
+
+- Custom design tailored to your brand
+- Automatic adjustment to any screen size
+- High-speed on phones and computers
+- Premium hosting with advanced security
 - Automatic backups with every change
-- Domain name and annual renewals included
+- Domain name and annual renewals
 - Contact forms with spam protection
-- Site‑wide search for easy navigation
+- Site-wide search for easy navigation
+- Foundational technical + on-page SEO
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and website activity
+- Monthly report on calls, messages, and site activity
 
 {{< button url="/pricing" text="Visit Pricing" >}}
 
@@ -278,14 +281,14 @@ Professional business websites and local search engine optimization (SEO) servic
 
 ### Local SEO Package
 
-Local SEO is the work that helps nearby customers find and choose your business. It includes keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, 100+ listings, and clear monthly progress reports.
+Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” searches.
 
-- Google Business Profile improvements (categories, services, photos)
-- Apple Maps and Bing Places setup and cleanup
-- Business info kept consistent across major directories (100+)
-- Figure out what people search for and update your profile/pages to match
+- Keyword research + content alignment
+- Google Business Profile management and optimization
+- Apple Maps and Bing Places management and optimization
+- Business listings on 100+ sites (via aggregators)
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and website activity
+- Monthly report on calls, messages, and site activity
 
 
 {{< /col >}}
