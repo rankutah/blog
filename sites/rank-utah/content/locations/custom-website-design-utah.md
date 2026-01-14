@@ -24,7 +24,7 @@ schema:
     enabled: true
     items:
       - question: "How long does a custom site take?"
-        answer: "Typical turnaround is 3–4 weeks once content is ready. Smaller sites can be done faster."
+        answer: "Typical turnaround is 2–3 weeks once content is ready. Smaller sites can be done faster."
       - question: "Do you handle hosting?"
         answer: "Yes. Managed hosting, CDN, security, and ongoing updates are included."
       - question: "Is there a big upfront fee?"

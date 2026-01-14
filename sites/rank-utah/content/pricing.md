@@ -20,7 +20,7 @@ schema:
       - question: "What does ‘unlimited content updates’ include?"
         answer: "Requests typical of a small-business website: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
       - question: "How long does a new website take?"
-        answer: "Websites can be built in 3–4 weeks with regular coordination."
+        answer: "Websites can be built in 2–3 weeks with regular coordination."
 ---
 # Simple, Transparent Pricing
 {.center}
@@ -162,7 +162,7 @@ Fair use and scope:
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, Bing Places, and directory listings. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
 ### How long does a new website take?
-Websites can be built in 3–4 weeks with regular coordination.
+Websites can be built in 2–3 weeks with regular coordination.
 
 {{< /faqs >}}
 

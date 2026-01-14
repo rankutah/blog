@@ -462,7 +462,7 @@ No further charges after cancellation. The website stays online through the curr
 I started building websites for small‑businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, performance, and flexibility. Every change we make is backed-up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a new website take?
-Websites can be built in 3–4 weeks with regular coordination.
+Websites can be built in 2–3 weeks with regular coordination.
 
 ### Are content updates really unlimited?
 Yes. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
