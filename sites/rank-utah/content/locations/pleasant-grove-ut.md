@@ -167,7 +167,7 @@ Professional business websites and local search engine optimization (SEO) servic
 
 <br>
 
-## Office Location {{< button url="https://cal.com/clearpresence/30min" text="Make an Appointment" >}}
+## Office Location {{< button url="https://cal.com/clearpresence/30min" text="Schedule a Meeting" >}}
 
 <div class="map-placeholder" id="pg-map-placeholder" style="position:relative;width:100%;max-width:640px;aspect-ratio:4/3;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;margin-bottom:1rem">
   <button type="button" style="all:unset;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.5rem;font-family:inherit;color:#0f172a">
@@ -225,6 +225,7 @@ Professional business websites and local search engine optimization (SEO) servic
 
 
 ## Website Design & Local SEO Reviews from Small Businesses
+{.center}
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
@@ -252,6 +253,7 @@ Professional business websites and local search engine optimization (SEO) servic
 
 
 ## What’s included?
+{.center}
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
@@ -339,8 +341,7 @@ No big upfront fees—just simple monthly pricing and direct support.
 {{< button url="/pricing" text="See Pricing" >}}
 
 ## Featured Work
-
-{{< button url="/portfolio" text="See Website Portfolio" >}}
+{.center}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}

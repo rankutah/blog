@@ -26,6 +26,7 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 ## One-on-one Specialist vs. Big Agency
+{.center}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -72,11 +73,13 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 {{< /cols >}}
 
 ## What Clients Are Saying
+{.center}
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 ## Quick Links
+{.center}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -150,6 +153,7 @@ Reach out with questions or to start your project.
 
 
 ## FAQs
+{.center}
 
 {{< faqs >}}
 ### What is your experience?
@@ -167,11 +171,14 @@ Web design services are available to clients across the United States.
 {{< /faqs >}}
 
 ## Ready for the Next Step?
+{.center}
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
+{.center}
 
 {{<button text="Contact" url="/contact" >}}
 {{<button text="Pricing" url="/pricing" >}}
 {{<button text="Web Design" url="/services/website-design" >}}
 {{<button text="Local SEO" url="/services/local-seo" >}}
+{.center}
 
 

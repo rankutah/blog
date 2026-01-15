@@ -39,6 +39,7 @@ Grow your small business with a fast, custom website that looks great on phones 
 
 
 ## Featured work
+{.center}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -81,6 +82,7 @@ Grow your small business with a fast, custom website that looks great on phones 
 {{< /cols >}}
 
 {{< button url="/portfolio" text="See Portfolio" >}}
+
 
 ## What clients are saying
 
