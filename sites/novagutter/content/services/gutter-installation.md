@@ -9,11 +9,11 @@ layout: flowbite
 ![Gutter Installation project](/media/seamless-gutters-boca-raton-fl-5.avif)
 {.w-64}
 
-At NOVA Gutter Corporation, our gutter company is here to provide the local community with the highest quality gutter installation services possible. For the last ten years, local residents and families have trusted our gutter installation experts with all their gutter related needs. In every service that we provide, our team works its hardest in order to achieve the highest levels of customer satisfaction.
+At NOVA Gutter Corporation, our gutter company is here to provide the local community with the highest quality gutter installation services possible. For the last ten years, local residents and families have trusted our gutter installation experts with all their gutter-related needs. In every service that we provide, our team works its hardest in order to achieve the highest levels of customer satisfaction.
 
 Having properly designed and installed gutters on your residence is vitally important. Your gutters protect every portion of your property's exterior whenever it is raining in the local area. Without gutters in Boca Raton and the surrounding areas of South Florida, water would cascade off the surface of roofs, damaging siding, windows, doors, landscaping, and driveways. In the worst possible circumstance, water that collects near your property can cause substantial damage to your foundation.
 
-If you need to install new gutters on your home, call NOVA Gutter Corporation today. Our gutter installation professionals specialize in custom designing and installing high quality seamless gutters for our customers. With our assistance, you can rest assured knowing your property is properly protected at all times. Our courteous staff would be happy to answer any of your questions and to schedule your appointment today.
+If you need to install new gutters on your home, call NOVA Gutter Corporation today. Our gutter installation professionals specialize in custom designing and installing high-quality seamless gutters for our customers. With our assistance, you can rest assured knowing your property is properly protected at all times. Our courteous staff would be happy to answer any of your questions and to schedule your appointment today.
 
 ## Installing Seamless Gutters in Boca Raton & Beyond
 
@@ -39,8 +39,8 @@ Why use copper for your gutters? Copper is used in high-end gutter applications.
 ![copper rain gutters on a house](/media/f13c1b38.avif)
 
 ## Local Gutter Installation & Service Pros
-NOVA Gutter Corporation offers more services than just installing gutters. We also provide gutter cleaning as well as gutter related services such as repairing fascia, installing soffit and siding. The least expensive and best way to keep your gutters in great shape is to periodically clean them. Your car needs a tune-up once in a while, so do your gutters. You will save hundreds, if not thousands, in repairs by periodically checking your gutters and have a professional come and do a total cleaning. Our gutter cleaning prices start at $149 with installation. Call to learn more.
+NOVA Gutter Corporation offers more services than just installing gutters. We also provide gutter cleaning as well as gutter-related services such as repairing fascia, installing soffit and siding. The least expensive and best way to keep your gutters in great shape is to periodically clean them. Your car needs a tune-up once in a while, so do your gutters. You will save hundreds, if not thousands, in repairs by periodically checking your gutters and have a professional come and do a total cleaning. Our gutter cleaning prices start at $149 with installation. Call to learn more.
 
-You can rest assured our gutter company will always treat you and your property with respect, too. So whatever your gutter related needs are, from routine gutter cleaning to having brand new gutters installed, remember to call NOVA Gutter Corporation. We're happy to help!
+You can rest assured our gutter company will always treat you and your property with respect, too. So whatever your gutter-related needs are, from routine gutter cleaning to having brand new gutters installed, remember to call NOVA Gutter Corporation. We're happy to help!
 *** End Patch
 

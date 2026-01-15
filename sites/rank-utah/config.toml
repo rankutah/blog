@@ -132,7 +132,7 @@ sameAs = []
 [params.turnstile]
   # Enable Cloudflare Turnstile on forms rendered via the contact-form shortcode
   enable  = true
-  # Reuse Blue Ridge Abbey site key (make sure blueridgetech.com and rankutah domains are allowed in CF)
+  # Reuse Blue Ridge Abbey site key (make sure site domains are allowed in CF)
   sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
 
 [params.section.defaults]

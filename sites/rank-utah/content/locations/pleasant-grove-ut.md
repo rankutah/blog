@@ -132,7 +132,7 @@ schema:
 
 {{< hero img="/media/website-design-local-seo-services-utah-county-salt-lake-county.avif" alt="Utah landscape with text overlaid that says Website Design and Local Services in Utah County & Salt Lake County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Website Design & Local SEO Services in Utah County & Salt Lake County {.text-white}
-Professional business websites and local search engine optimization (SEO) services for small businesses in Utah. Starting at $99/month.
+Professional business websites and local search engine optimization (SEO) services for small businesses in Utah. Plans from $99/month.
 
 {{< button url="/pricing" text="Start Service" >}} {{< button url="#main-content" text="Learn More" >}}
 
@@ -147,7 +147,7 @@ Professional business websites and local search engine optimization (SEO) servic
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Website Design & Local SEO in Pleasant Grove, Utah
-- Serving Small Businesses in Utah County & Salt Lake County
+- Serving small businesses in Utah County & Salt Lake County
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
@@ -226,7 +226,7 @@ Professional business websites and local search engine optimization (SEO) servic
 
 ## Website Design & Local SEO Reviews from Small Businesses
 
-<!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
+<!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 ## 7 Reasons to Choose Clear Presence
@@ -235,17 +235,17 @@ Professional business websites and local search engine optimization (SEO) servic
 2. Your site is custom-coded so it loads faster and performs better
   - Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 3. You get long-term personal support via text, calls, emails, or meetings
-4. You get awesome monthly reports that improve your marketing
+4. You get clear monthly reports that improve your marketing
     - <a href="/reports/website-and-local-seo-analytics-report.pdf" target="_blank" rel="noopener" download type="application/pdf">Download a sample report (PDF)</a>
       - How many key events happened on your website (calls, forms, bookings, purchases)
       - How many new and returning visitors did you have
-      - Which platforms brought your visitors (social, search, AI, ect)
+      - Which platforms brought your visitors (social, search, AI, etc.)
       - Which pages performed the best
       - Where were your visitors located (by city)
       - Which buttons and links were clicked on the most
       - What did visitors search for on your site?
-5. There are no fees for updates and you have a low-risk affordable flat rate cost (no high upfront costs)
-6. You own your website from day one and can change plans or cancel at anytime
+5. There are no fees for updates and you have a low-risk flat monthly rate (no high upfront costs)
+6. You own your website from day one and can change plans or cancel at any time
 7. You work one-on-one with me instead of with a faceless agency
 
 {{< button url="#FAQs" text="Read FAQs" >}}
@@ -296,7 +296,7 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 
 {{< /cols >}}
 
-## Custom Websites designed for Growth — Not Just Looks
+## Custom Websites Designed for Growth — Not Just Looks
 
 A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO to get in front of your ideal customers. Monthly plans keep things simple and affordable.
 
@@ -411,7 +411,7 @@ Bachelor's in Business Management
 Yes. You own the website from day one. If service is canceled, help is provided to transfer the website to a new developer.
 
 ### What does website design cost?
-See the [pricing](/pricing) page for the most up to date pricing on business website packages.
+See the [pricing](/pricing) page for the most up-to-date pricing on business website packages.
 
 ### What is local SEO?
 Local SEO stands for Local Search Engine Optimization. Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
@@ -421,7 +421,7 @@ Unlike social media posts and ads, local SEO doesn't stop working the moment you
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
 ### What does local SEO cost?
-See the [pricing](/pricing) page for the most up to date pricing on local SEO packages
+See the [pricing](/pricing) page for the most up-to-date pricing on local SEO packages.
 
 ### What results should I expect from local SEO?
 Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
@@ -436,22 +436,22 @@ Yes. Plans can be changed at any time. The next invoice adjusts and services con
 ### What happens if I cancel?
 No further charges after cancellation. The website stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
 
-### What makes your Clear Presence different from others businesses?
+### What makes Clear Presence different from other businesses?
 
 1. Your site is designed with a focus on helping you get leads.
-2. Your site will perform better than your competitors. Most developers use a template builder like Wordpress, Wix, or Squarespace. My sites are custom-coded so they load faster and perform better. If you want to verify it yourself, take the [Website Speed Challenge](/speed-challenge/).
+2. Your site will perform better than your competitors. Most developers use a template builder like WordPress, Wix, or Squarespace. My sites are custom-coded so they load faster and perform better. If you want to verify it yourself, take the [Website Speed Challenge](/speed-challenge/).
 3. You will receive long-term personal support. I continue to maintain, update, and improve your website year after year.
 4. You will receive better reports. My monthly reports give you valuable information to help you improve your marketing. Reports include:
 - How many users performed key events on your website (calls, form-fills, bookings, or purchases)
 - How many new users or returning users visited your site
-- Which platforms brought the most key events on your website (social media, Google search, ect)
-- Which pages brought the most key events (contact page, about page, home page, services pages, ect)
+- Which platforms brought the most key events on your website (social media, Google search, etc.)
+- Which pages brought the most key events (contact page, about page, home page, services pages, etc.)
 - Which cities brought you the most key events
 - Which buttons and links were clicked on your website (ordered by most frequent)
 - What did users search for on your website
 
 ### What experience do you have?
-I started building websites for small‑businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, performance, and flexibility. Every change we make is backed-up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I started building websites for small businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a new website take?
 Websites can be built in 2–3 weeks with regular coordination.

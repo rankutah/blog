@@ -6,7 +6,7 @@ schema:
   localBusiness:
     enabled: true
     type: ProfessionalService
-    name: "Rank Utah"
+    name: "Clear Presence"
     telephone: "+13853238130"
     areaServed:
       - "United States"
@@ -15,7 +15,7 @@ schema:
 
 {{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Custom Website Design & Local SEO to Grow Your Business {.text-white}
-Lead-generating websites and local search engine optimization (SEO) to help you get more customers. High-performance websites for $99/month.
+Lead-generating websites and local search engine optimization (SEO) to help you get more customers. Plans from $99/month.
 {.text-white}
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
@@ -25,12 +25,12 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
-## One‑On‑One Specialist vs. Big Agency
+## One-on-one Specialist vs. Big Agency
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-## One‑On‑One ✅
+## One-on-one ✅
 
 ### 1. Work directly with the builder
 No handoffs. You talk to the person doing the work, so communication stays simple and the website stays aligned with what gets you leads.
@@ -73,7 +73,7 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 
 ## What Clients Are Saying
 
-<!-- Elfsight Google Reviews | Rank Utah (lazy-loaded globally) -->
+<!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 ## Quick Links
@@ -149,17 +149,17 @@ Reach out with questions or to start your project.
 {{< /cols >}}
 
 
-## FAQS
+## FAQs
 
 {{< faqs >}}
 ### What is your experience?
-Professional projects launched in 2023, backed by a Master’s in Software Development and experience at companies like Arctic Wolf and Okta. Learn more on <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I started building websites for small businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### What is your web design process?
 Learn more about the process for designing and building a custom website on the [Website Design](/services/website-design) page.
 
 ### How do you compare to other website design companies?
-Direct one‑on‑one communication and responsive support without big‑agency overhead. No long‑term contracts, hidden fees, or strict limits on edits.
+Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
 
 ### Which locations do you serve?
 Web design services are available to clients across the United States.

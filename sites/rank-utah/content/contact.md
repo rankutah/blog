@@ -19,7 +19,6 @@ Call or text anytime (even after hours): [(385) 323-8130](tel:+13853238130)
 	action="https://submit-form.com/I4t2OG4uj"
 	name="true"
 	custom="Phone or Email"
-	email="true"
 	preferredContact="true"
 	preferredOptions="Text message,Phone call,Email"
 	email="false"

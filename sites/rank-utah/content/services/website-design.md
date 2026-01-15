@@ -1,6 +1,6 @@
 ---
 title: "Website Design for Small Businesses"
-description: "Affordable, custom website design for small businesses from a small agency. Your alternative to a big agency, with personal one-on-one service."
+description: "Affordable, custom website design for small businesses. A one-on-one alternative to a big agency, with personal service and fast, custom-coded pages."
 layout: "flowbite"
 hero: true
 url: "/services/website-design"
@@ -24,8 +24,8 @@ schema:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Custom Website Design to Grow Your Small Businesses {.text-white}
-Lead-generating websites to help you get mor customers. Skip the expensive agency. High-performance websites starting at $99/month.
+# Custom Website Design to Grow Your Small Business {.text-white}
+Lead-generating websites to help you get more customers. Skip the expensive agency. High-performance websites from $99/month.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 
@@ -129,7 +129,7 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 ### Are content updates really unlimited?
 Yes, you can request changes to your website at any time in the way that works best for you (call, text, or email).
 
-### Do you handle hosting & the website url name?
+### Do you handle hosting & the website URL?
 Yes. Hosting is included, and domain renewals are included in the monthly plan.
 
 ### Do I own the site?

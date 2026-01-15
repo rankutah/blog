@@ -27,7 +27,6 @@ Personally, I enjoy running, audiobooks, and all things tech.
 
 **Benjamin Awerkamp** <br>
 Website Design & Local SEO <br>
-Website Design & Local SEO <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management

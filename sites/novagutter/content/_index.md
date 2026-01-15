@@ -31,7 +31,7 @@ The Gold Standard in Gutters & Drainage. Expert Gutter Installation, Every Time.
 
 For more than 20 years, NOVA Gutter has proudly delivered reliable gutter solutions across South Florida. From West Palm Beach to Miami, we specialize in installing, repairing, cleaning, and maintaining gutters for both homes and businesses.
 
-At NOVA Gutter, we take pride in honest service and quality craftsmanship, ensuring your home or business has the dependable protection it needs year after year. Whether you need seamless aluminum gutter installation, elegant copper gutters, repairs or routine maintenance, we got you covered.
+At NOVA Gutter, we take pride in honest service and quality craftsmanship, ensuring your home or business has the dependable protection it needs year after year. Whether you need seamless aluminum gutter installation, elegant copper gutters, repairs or routine maintenance, we've got you covered.
 
 Call us today at 954-380-8242 and discover why homeowners and businesses throughout South Florida have trusted us since 2003.
 

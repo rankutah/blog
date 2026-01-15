@@ -125,18 +125,18 @@ Easy contact buttons, quick loading pages, and content that’s easy to scan.
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 #### Cedar City Strength – Fitness
-![](/media/website-design-cedar-city-strength.avif)
+![Cedar City Strength website design project](/media/website-design-cedar-city-strength.avif)
 {{< /col >}}
 {{< /cols >}}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 #### Blue Ridge Abbey – Hospitality
-![](/media/website-design-blue-ridge-abbey.jpg)
+![Blue Ridge Abbey website design project](/media/website-design-blue-ridge-abbey.jpg)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 #### BlueridgeTech – IT Services
-![](/media/website-design-blueridge-tech.avif)
+![BlueridgeTech website design project](/media/website-design-blueridge-tech.avif)
 {{< /col >}}
 {{< /cols >}}
 
@@ -205,7 +205,7 @@ Bachelor's in Business Management
 ## FAQ
 {{< faqs >}}
 
-### Do you handle hosting & the website url name?
+### Do you handle hosting & the website URL?
 Yes. Managed hosting and your website name is included.
 
 ### Do I own the site?

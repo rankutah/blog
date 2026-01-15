@@ -1,5 +1,6 @@
 ---
 title: "Reviews"
+description: "Real reviews from Clear Presence website design and local SEO clients — fast communication, clean design, and results-focused sites."
 layout: "flowbite"
 url: "/reviews"
 ---

@@ -21,7 +21,7 @@ When necessary we use 3D imaging to make decisions about more complicated dental
 
 {{< /col >}}
 {{< col >}}
-![website created by local business web designs](/media/imaging-image07.jpg)
+![Website created by a local business web designer](/media/imaging-image07.jpg)
 
 {{< /col >}}
 {{< /cols >}}

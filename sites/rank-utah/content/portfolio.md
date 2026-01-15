@@ -85,11 +85,6 @@ A selection of custom website design projects for small businesses. Fast website
 ## Nova Gutter
 
 [![Nova Gutter website](/media/nova-gutter-hero.avif)](https://novagutter.com/)
-
-**Davi Souza** <br>
-{{< stars >}} <br>
-
-
 {{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
 
 {{< /col >}}

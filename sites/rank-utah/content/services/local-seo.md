@@ -26,7 +26,7 @@ params:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for local SEO" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO to Grow Your Small Businesses
+# Local SEO to Grow Your Small Business
 Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO for $150/month.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
@@ -69,7 +69,7 @@ Get in front of your ideal customers and grow your business. Skip the expensive 
 
 ## Local SEO (search engine optimization)
 
-Local SEO helps your business get found everywhere it matters**: Google, Maps, Apple, AI, and "near me" searches.
+Local SEO helps your business get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.
 
 - Keyword research + content alignment
 - Google Business Profile management and optimization
@@ -139,13 +139,13 @@ Bachelor's in Business Management
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## How it Works
-You don’t have to manage anything. This is done for you.
+Local SEO is a long‑term foundation. Instead of quick hacks, the goal is steady improvements that keep working month after month.
 
-1. We review where you show up today (maps, listings, and your profiles)
-2. We choose the main searches to focus on (services + cities)
-3. We update and improve your Google Business Profile
-4. We update Apple Maps/Bing and clean up key listings so your info matches everywhere
-5. We send a simple monthly report (calls, clicks, visibility)
+1. Kickoff — a few quick questions about your business, service area, and goals
+2. Baseline — review where you show up today (Search, Maps, profiles, and key listings)
+3. Focus — choose the main searches to target (services + cities) and align your content
+4. Profiles — ongoing optimization for Google Business Profile, Apple Maps, and Bing Places
+5. Monthly report — a simple summary of calls, clicks, visibility, and what to improve next
 
 ## FAQ
 {{< faqs openFirst="false" >}}
