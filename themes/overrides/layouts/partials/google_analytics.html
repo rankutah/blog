@@ -66,6 +66,13 @@
 
   <script id="cp-analytics-config" type="application/json">{{ $cfg | jsonify | safeJS }}</script>
 
+  <script>
+    // Stubs: safe no-ops that collect calls before the real gtag library loads.
+    // This is especially important when using delayed loading (Zaraz post-LCP).
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  </script>
+
   {{- $zloader := resources.Get "js/zaraz-loader-advanced.js" | resources.Minify | resources.Fingerprint -}}
   <script>
     (function(){
