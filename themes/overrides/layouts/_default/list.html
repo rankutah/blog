@@ -22,11 +22,11 @@
     {{- if gt $paginator.TotalPages 1 }}
       <nav class="flex items-center justify-between mt-12 text-sm">
         {{- if $paginator.HasPrev }}
-          <a class="text-blue-600 dark:text-blue-400 hover:underline" href="{{ $paginator.Prev.URL | relURL }}">« Previous</a>
+          <a class="link-brand hover:underline {{ partial "theme/link-brand-classes.html" . }}" href="{{ $paginator.Prev.URL | relURL }}">« Previous</a>
         {{- else }}<span></span>{{- end }}
         <span class="text-gray-500 dark:text-gray-400">Page {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
         {{- if $paginator.HasNext }}
-          <a class="text-blue-600 dark:text-blue-400 hover:underline" href="{{ $paginator.Next.URL | relURL }}">Next »</a>
+          <a class="link-brand hover:underline {{ partial "theme/link-brand-classes.html" . }}" href="{{ $paginator.Next.URL | relURL }}">Next »</a>
         {{- else }}<span></span>{{- end }}
       </nav>
     {{- end }}

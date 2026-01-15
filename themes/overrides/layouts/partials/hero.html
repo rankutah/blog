@@ -109,62 +109,25 @@
   -}}
 {{- end -}}
 
-{{- /* Responsive image pipeline (AVIF + JPEG fallback) */ -}}
+{{- /* Image rendering: use the shared manifest pipeline so hero images also benefit from
+      prebuilt responsive derivatives (reduces bytes for mobile + helps Lighthouse “Improve image delivery”). */ -}}
 {{- $imgStr := $img | safeURL -}}
-{{- $srcset := slice -}}
-{{- $srcsetAvif := slice -}}
-{{- $fallbackSrc := $imgStr -}}
-{{- $isRaster := gt (len (findRE `\.(jpg|jpeg|png|webp|avif)$` (lower $imgStr))) 0 -}}
-{{- $isMedia := or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") (hasPrefix $imgStr "./media/") (hasPrefix $imgStr "../media/") -}}
-{{- if and $isRaster $isMedia -}}
-  {{- $noLead := replaceRE "^(/|\\./|\\.\\./)" "" $imgStr -}}
-  {{- $asset := resources.Get $noLead -}}
-  {{- $last := "" -}}
-  {{- if and $asset (eq ($asset.MediaType.MainType | default "") "image") -}}
-    {{- $sub := lower ($asset.MediaType.SubType | default "") -}}
-    {{- $processable := in (slice "jpeg" "jpg" "png") $sub -}}
-    {{- if $processable -}}
-      {{- /* Only processable image resources reliably support .Width/.Height in this Hugo build */ -}}
-      {{- with $asset.Width -}}{{- $imgW = . -}}{{- end -}}
-      {{- with $asset.Height -}}{{- $imgH = . -}}{{- end -}}
-      {{- $widths := slice 720 1080 1440 1920 -}}
-      {{- $last = "" -}}
-      {{- range $w := $widths -}}
-        {{- $r := $asset.Resize (printf "%dx" $w) -}}
-        {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $w) -}}
-        {{- $last = $r.RelPermalink -}}
-        {{- $ravif := $asset.Resize (printf "%dx avif" $w) -}}
-        {{- if (hasSuffix (lower $ravif.RelPermalink) ".avif") -}}
-          {{- $srcsetAvif = $srcsetAvif | append (printf "%s %dw" $ravif.RelPermalink $w) -}}
-        {{- end -}}
-      {{- end -}}
-      {{- if ne $last "" }}{{ $fallbackSrc = $last }}{{ end -}}
-    {{- else -}}
-      {{- $fallbackSrc = $asset.RelPermalink -}}
-      {{- if eq $sub "avif" -}}
-        {{- $srcsetAvif = (slice $asset.RelPermalink) -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-{{- else -}}
-  {{- if or (hasPrefix $imgStr "/media/") (hasPrefix $imgStr "media/") -}}
-    {{- $noLead := replaceRE "^/" "" $imgStr -}}
-    {{- $avifRel := replaceRE `\.(jpg|jpeg|png|webp)$` ".avif" $noLead -}}
-    {{- $staticPath := printf "static/%s" $avifRel -}}
-    {{- if fileExists $staticPath -}}
-      {{- $srcsetAvif = (slice (printf "/%s 1920w" $avifRel)) -}}
-    {{- end -}}
-    {{- $fallbackSrc = printf "/%s" $noLead -}}
-  {{- end -}}
-{{- end -}}
+{{- $heroImg := partial "img.manifest" (dict
+    "src" $imgStr
+    "alt" $alt
+    "class" (printf "not-prose %s" $imgClasses)
+    "loading" "eager"
+    "decoding" "async"
+    "sizes" "100vw"
+    "style" $imgStyle
+    "object" "cover"
+    "objectPosition" "center"
+  ) -}}
 
 {{- if $bleed -}}
   <div class="section hero bleed">
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
-      <picture>
-        {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
-        <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }}{{ if and (gt $imgW 0) (gt $imgH 0) }} width="{{ $imgW }}" height="{{ $imgH }}"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
-      </picture>
+      {{- $heroImg | safeHTML -}}
       {{- if $overlay -}}
         <div class="absolute inset-0 flex items-center">
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
@@ -183,10 +146,7 @@
   <div class="section hero">
     <div class="{{ $container }}">
       <div class="relative">
-        <picture>
-          {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
-          <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }}{{ if and (gt $imgW 0) (gt $imgH 0) }} width="{{ $imgW }}" height="{{ $imgH }}"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
-        </picture>
+        {{- $heroImg | safeHTML -}}
         {{- if $overlay -}}
           <div class="absolute inset-0 flex items-center">
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}

@@ -15,8 +15,8 @@
     {{- end }}
     {{- if .Param "ShowPostNavLinks" }}
       <nav class="mt-12 flex justify-between text-sm">
-        {{- with .PrevInSection }}<a class="text-blue-600 dark:text-blue-400 hover:underline" href="{{ .RelPermalink }}">« {{ .Title }}</a>{{- else }}<span></span>{{- end }}
-        {{- with .NextInSection }}<a class="text-blue-600 dark:text-blue-400 hover:underline" href="{{ .RelPermalink }}">{{ .Title }} »</a>{{- else }}<span></span>{{- end }}
+        {{- with .PrevInSection }}<a class="link-brand hover:underline {{ partial "theme/link-brand-classes.html" $ }}" href="{{ .RelPermalink }}">« {{ .Title }}</a>{{- else }}<span></span>{{- end }}
+        {{- with .NextInSection }}<a class="link-brand hover:underline {{ partial "theme/link-brand-classes.html" $ }}" href="{{ .RelPermalink }}">{{ .Title }} »</a>{{- else }}<span></span>{{- end }}
       </nav>
     {{- end }}
   </div>
