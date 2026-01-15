@@ -30,8 +30,12 @@ const INPUT_DIRS = args.filter(a => !a.startsWith('--'));
 const MAX_WIDTH = parseInt(argMap['max-width'] || '3200', 10);
 const WIDTHS = (argMap['widths'] || '320,480,640,768,960,1200,1600,2000,2400,3200').split(',').map(n => parseInt(n.trim(), 10)).filter(Boolean);
 const AVIF_Q = parseInt(argMap['avif-quality'] || '45', 10);
+// AVIF encoder effort: higher = slower encode, smaller output at similar quality.
+// Valid range is typically 0–9.
+const AVIF_EFFORT = Math.max(0, Math.min(9, parseInt(argMap['avif-effort'] || '8', 10)));
 // WebP quality no longer used (we don't generate WebP derivatives)
-// const WEBP_Q = parseInt(argMap['webp-quality'] || '82', 10);
+// Keep this defined to avoid runtime errors if someone opts into WebP.
+const WEBP_Q = parseInt(argMap['webp-quality'] || '82', 10);
 const JPEG_Q = parseInt(argMap['jpeg-quality'] || '82', 10);
 // Select output formats (comma-separated): avif, jpeg (WebP disabled by default)
 const FORMATS = new Set((argMap['formats'] || 'avif,jpeg')
@@ -153,7 +157,7 @@ async function processOneImage(fileAbs, mediaDirAbs) {
     if (!(await fileExists(outPath))) {
       if (!DRY_RUN) {
         const pipe = sharp(src).rotate().resize({ width, withoutEnlargement: true });
-        if (fmt === 'avif') await pipe.avif({ quality: AVIF_Q, effort: 4 }).toFile(outPath);
+        if (fmt === 'avif') await pipe.avif({ quality: AVIF_Q, effort: AVIF_EFFORT }).toFile(outPath);
         else if (fmt === 'webp') await pipe.webp({ quality: WEBP_Q }).toFile(outPath);
         else if (fmt === 'jpg' || fmt === 'jpeg') await pipe.jpeg({ quality: JPEG_Q, mozjpeg: true, progressive: true }).toFile(outPath);
       }
