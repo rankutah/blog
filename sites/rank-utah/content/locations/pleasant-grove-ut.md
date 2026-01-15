@@ -233,7 +233,7 @@ Professional business websites and local search engine optimization (SEO) servic
 
 1. Your site is designed to help you get leads
 2. Your site is custom-coded so it loads faster and performs better
-    - Compare this website with another website of your choice using <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">Google's PageSpeed tool</a> to see for yourself.
+  - Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 3. You get long-term personal support via text, calls, emails, or meetings
 4. You get awesome monthly reports that improve your marketing
     - <a href="/reports/website-and-local-seo-analytics-report.pdf" target="_blank" rel="noopener" download type="application/pdf">Download a sample report (PDF)</a>
@@ -299,6 +299,8 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 ## Custom Websites designed for Growth — Not Just Looks
 
 A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO to get in front of your ideal customers. Monthly plans keep things simple and affordable.
+
+Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 
 ## Website redesigns (when your current website isn’t working)
 
@@ -438,7 +440,7 @@ No further charges after cancellation. The website stays online through the curr
 ### What makes your Clear Presence different from others businesses?
 
 1. Your site is designed with a focus on helping you get leads.
-2. Your site will perform better than your competitors. Most developers use a template builder like Wordpress, Wix, or Squarespace. My sites are custom-coded so they load faster and perform better. This can be verified by using <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">Google's evaluation tool for websites</a> and comparing this website to other businesses web design agency websites.
+2. Your site will perform better than your competitors. Most developers use a template builder like Wordpress, Wix, or Squarespace. My sites are custom-coded so they load faster and perform better. If you want to verify it yourself, take the [Website Speed Challenge](/speed-challenge/).
 3. You will receive long-term personal support. I continue to maintain, update, and improve your website year after year.
 4. You will receive better reports. My monthly reports give you valuable information to help you improve your marketing. Reports include:
 - How many users performed key events on your website (calls, form-fills, bookings, or purchases)

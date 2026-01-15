@@ -41,6 +41,8 @@ Bachelor's in Business Management
 
 If you want a site that looks professional, loads fast, and helps customers find you, let’s chat. I’ll give you clear, honest recommendations and a simple plan.
 
+Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
+
 <div class="flex flex-wrap gap-3 items-center">
 	{{< button url="/pricing" text="See Pricing" >}}
 	{{< button url="/contact" text="Contact" >}}

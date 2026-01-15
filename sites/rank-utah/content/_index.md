@@ -25,24 +25,28 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
-## Small Team vs. Big Agency
+## One‑On‑One Specialist vs. Big Agency
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-## Small Team ✅
+## One‑On‑One ✅
 
-### 1. Talk to the person building the site
-Work directly with the person doing the work. That keeps communication simple and helps the website bring in more calls and messages.
+### 1. Work directly with the builder
+No handoffs. You talk to the person doing the work, so communication stays simple and the website stays aligned with what gets you leads.
 
-### 2. Built to load fast
-Pages are built to be quick and easy to use on phones and computers. No extra clutter that slows things down.
+### 2. Built to be fast (with proof)
+Custom-coded pages that stay lightweight — no extra clutter that slows things down.
 
-### 3. Dedicated Ongoing Support
-Need an update? Call, text, or email for direct support. Get responsive, ongoing help from the person who knows your project inside and out.
+Want to compare? [Take the Website Speed Challenge](/speed-challenge/).
 
-### 4. Affordable Monthly Pricing
-Skip big-agency overhead. Get clear monthly pricing with no long-term contract.
+### 3. Clear monthly reporting (with evidence)
+You get simple monthly reports so you can see calls, clicks, and what to improve next.
+
+See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
+
+### 4. Simple pricing + ownership
+Month‑to‑month plans with clear pricing. You own your website from day one without upfront risk.
 
 
 {{< /col >}}
@@ -52,16 +56,16 @@ Skip big-agency overhead. Get clear monthly pricing with no long-term contract.
 ## Agency ❌
 
 ### 1. More people, more delays
-Projects move between multiple people. That can slow things down and lead to a website that feels generic.
+Projects move between multiple people. That can slow things down and make communication harder.
 
-### 2. Bloated Templates
-Agencies rely on cookie-cutter templates that are slow, hard to customize, and full of security holes.
+### 2. Bloated templates
+Many agencies rely on cookie-cutter templates and heavy plugins that add bloat and slow down load times.
 
-### 3. Limited Support
-Post-launch, you're handed off to a support desk, facing slow response times and strict limits on what they'll update.
+### 3. Limited support
+After launch, you’re often handed off to a support desk with slower response times and stricter limits on updates.
 
-### 4. High Upfront & Hidden Fees
-Agencies charge huge upfront fees to cover their overhead, then surprise you with extra costs for basic maintenance and updates.
+### 4. High upfront + hidden fees
+Higher overhead often means higher upfront costs, then extra fees for maintenance and changes.
 
 {{< /col >}}
 
@@ -155,7 +159,7 @@ Professional projects launched in 2023, backed by a Master’s in Software Devel
 Learn more about the process for designing and building a custom website on the [Website Design](/services/website-design) page.
 
 ### How do you compare to other website design companies?
-Direct communication and responsive support without big‑agency overhead. No long‑term contracts, hidden fees, or strict limits on edits.
+Direct one‑on‑one communication and responsive support without big‑agency overhead. No long‑term contracts, hidden fees, or strict limits on edits.
 
 ### Which locations do you serve?
 Web design services are available to clients across the United States.

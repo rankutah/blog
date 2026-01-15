@@ -95,7 +95,7 @@ Fast, professional websites built to convert visitors into customers.
 - Custom design tailored to your brand
 - Automatic adjustment to any screen size
 - High-speed on phones and computers
-  - Compare this website with another website of your choice using <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">Google's PageSpeed tool</a> to see for yourself.
+  - Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 - Premium hosting with advanced security
 - Automatic backups with every change
 - Domain name and annual renewals
