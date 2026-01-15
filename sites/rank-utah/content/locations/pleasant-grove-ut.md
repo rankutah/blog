@@ -236,16 +236,14 @@ Professional business websites and local search engine optimization (SEO) servic
     - Compare this website with another website of your choice using <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">Google's PageSpeed tool</a> to see for yourself.
 3. You get long-term personal support via text, calls, emails, or meetings
 4. You get awesome monthly reports that improve your marketing
-
-  - <a href="/reports/website-and-local-seo-analytics-report.pdf" target="_blank" rel="noopener" download type="application/pdf">Download a sample report (PDF)</a>
-
-    - How many key events happened on your website (calls, forms, bookings, purchases)
-    - How many new and returning visitors did you have
-    - Which platforms brought your visitors (social, search, AI, ect)
-    - Which pages performed the best
-    - Where were your visitors located (by city)
-    - Which buttons and links were clicked on the most
-    - What did visitors search for on your site?
+    - <a href="/reports/website-and-local-seo-analytics-report.pdf" target="_blank" rel="noopener" download type="application/pdf">Download a sample report (PDF)</a>
+      - How many key events happened on your website (calls, forms, bookings, purchases)
+      - How many new and returning visitors did you have
+      - Which platforms brought your visitors (social, search, AI, ect)
+      - Which pages performed the best
+      - Where were your visitors located (by city)
+      - Which buttons and links were clicked on the most
+      - What did visitors search for on your site?
 5. There are no fees for updates and you have a low-risk affordable flat rate cost (no high upfront costs)
 6. You own your website from day one and can change plans or cancel at anytime
 7. You work one-on-one with me instead of with a faceless agency
@@ -319,7 +317,7 @@ What a redesign includes:
 - Utah County: Pleasant Grove, Lindon, Orem, Provo, Lehi, American Fork, Saratoga Springs, Eagle Mountain, Spanish Fork, Springville
 - Salt Lake County: Salt Lake City, West Valley City, Sandy, Draper, South Jordan, West Jordan, Taylorsville, Midvale, Holladay, Cottonwood Heights, Murray, Riverton, Herriman
 
-Services are available remotely, with local meetings as needed, so businesses can get a high‑performing website across Utah County and Salt Lake County.
+Services are [available remotely](https://cal.com/clearpresence/30min), with local meetings as needed, so businesses can get a high‑performing website across Utah County and Salt Lake County.
 
 ## Simple Monthly Pricing for Small Businesses
 
