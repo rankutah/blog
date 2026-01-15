@@ -82,6 +82,8 @@ Local SEO Packages Include:
 - **100+ directory listings** (consistent business info across major directories)
 - **Clear monthly reports** (calls, clicks, and what to improve next)
 
+See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
+
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
@@ -91,6 +93,8 @@ Local SEO Packages Include:
 - Consistent business info across 100+ directories
 - Keyword research + content alignment (services + cities)
 - Clear monthly reporting (calls, clicks, visibility)
+
+See a [sample monthly report](/reports/sample-monthly-report/).
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
