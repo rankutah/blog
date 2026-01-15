@@ -67,20 +67,16 @@ Get in front of your ideal customers and grow your business. Skip the expensive 
 })();
 </script>
 
-## Local SEO
+## Local SEO (search engine optimization)
 
-Local SEO helps your business show up when nearby customers search online.
+Local SEO helps your business get found everywhere it matters**: Google, Maps, Apple, AI, and "near me" searches.
 
-That includes places like Google Search, Google Maps, Apple Maps, Bing, and AI assistants.
-
-Local SEO Packages Include:
-
-- **Search + Maps visibility** (Google, Apple Maps, Bing, and more)
-- **Keyword research + content alignment** (services + cities)
-- **Google Business Profile management** (categories, services, photos, descriptions)
-- **Apple Maps and Bing Places management**
-- **100+ directory listings** (consistent business info across major directories)
-- **Clear monthly reports** (calls, clicks, and what to improve next)
+- Keyword research + content alignment
+- Google Business Profile management and optimization
+- Apple Maps and Bing Places management and optimization
+- Business listings on 100+ sites (via data aggregators)
+- Ongoing support via phone, text, or email
+- Monthly report on calls, messages, and site activity
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
 
@@ -125,8 +121,14 @@ Month‑to‑month. No long‑term contract.
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ## Ready To Get Started
-![Benjamin Awerkamp](/media/benjamin-awerkamp-profile.jpg){ class="w-40 mb-4" }
-Partnering with small businesses to improve local visibility and turn nearby searches into calls and bookings.
+![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
+{.w-48}
+
+**Benjamin Awerkamp** <br>
+Website Design & Local SEO <br>
+Call or Text: [(385) 323-8130](tel:+13853238130) <br>
+Master's in Software Development <br>
+Bachelor's in Business Management
 
 ### Share a bit about your business and goals.
 

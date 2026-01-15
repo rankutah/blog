@@ -368,12 +368,11 @@ No big upfront fees—just simple monthly pricing and direct support.
 
 I love partnering with business owners and specialize in developing fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Provo, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
-![Benjamin Awerkamp Profile Picture – Website Designer & SEO Expert](/media/benjamin-awerkamp-profile.jpg)
-{.w-40 .mb-4}
-
+![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
+{.w-48}
 
 **Benjamin Awerkamp** <br>
-Website Designer & Local SEO Expert <br>
+Website Design & Local SEO <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
