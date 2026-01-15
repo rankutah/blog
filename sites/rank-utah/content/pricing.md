@@ -28,8 +28,6 @@ schema:
 High-performance plans with no contracts, no setup fees, and no surprises.
 {.center}
 
-Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
-
 {{< cols min="18rem" gap="1rem" v="stretch">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
