@@ -104,7 +104,8 @@
   {{- /* No WebP <source>; keep outputs to AVIF + JPEG */ -}}
     {{- /* Combine placeholder background style and any moved img styles */ -}}
     {{- $imgStyleAttr := $imgStyle -}}
-    {{- if $placeholder -}}
+    {{- /* Base64 placeholders bloat HTML and can hurt LCP/TBT; only include for eager images. */ -}}
+    {{- if and (eq $loading "eager") $placeholder -}}
       {{- $ph := printf "background-image:url('%s');background-size:cover;background-position:center;" $placeholder -}}
       {{- if ne $imgStyleAttr "" -}}
         {{- $imgStyleAttr = printf "%s %s" $ph $imgStyleAttr -}}
