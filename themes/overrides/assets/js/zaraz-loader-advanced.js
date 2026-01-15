@@ -7,6 +7,10 @@
   if (w.__cpZarazLoaderInstalled) return;
   w.__cpZarazLoaderInstalled = true;
 
+  // Lighthouse/CWV: avoid any chance of Zaraz running during the critical load window.
+  // We still inject (for real analytics), but never earlier than this nav-time threshold.
+  const MIN_NAV_DELAY_MS = 10000;
+
   // Dedupe /welcome conversions:
   const WELCOME_PATH = '/welcome';
   let welcomeProduct = '';
@@ -73,6 +77,15 @@
   const ZARAZ_SRC = '/cdn-cgi/zaraz/i.js';
   let loaded = false;
 
+  function navWaitMs() {
+    try {
+      if (w.performance && typeof w.performance.now === 'function') {
+        return Math.max(0, MIN_NAV_DELAY_MS - w.performance.now());
+      }
+    } catch {}
+    return MIN_NAV_DELAY_MS;
+  }
+
   function inject() {
     if (loaded) return;
     loaded = true;
@@ -125,8 +138,34 @@
     }
   }
 
+  function scheduleInjectSoon(delayMs, opts) {
+    const ignoreNavDelay = !!(opts && opts.ignoreNavDelay);
+    const wait = Math.max(0, delayMs | 0, ignoreNavDelay ? 0 : navWaitMs());
+    setTimeout(injectSoon, wait);
+  }
+
+  function scheduleOnInteraction() {
+    let armed = false;
+    function arm() {
+      if (armed) return;
+      armed = true;
+      // For real users: load as soon as they show intent, but still avoid stealing
+      // main-thread time during the LCP window.
+      scheduleInjectSoon(0, { ignoreNavDelay: true });
+    }
+
+    try {
+      ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'].forEach(function (evt) {
+        w.addEventListener(evt, arm, { once: true, passive: true });
+      });
+    } catch {}
+  }
+
   // Hard fallback (never wait forever)
-  setTimeout(injectSoon, 6000);
+  scheduleInjectSoon(6000);
+
+  // Prefer: if the user interacts, load promptly (still LCP-gated via injectSoon/open gate).
+  scheduleOnInteraction();
 
   // Prefer: wait for LCP to settle, then inject on idle.
   let quietTimer = null;
@@ -134,7 +173,7 @@
     if ('PerformanceObserver' in w) {
       const po = new PerformanceObserver(() => {
         if (quietTimer) clearTimeout(quietTimer);
-        quietTimer = setTimeout(injectSoon, 350);
+        quietTimer = setTimeout(injectSoon, Math.max(350, navWaitMs()));
       });
       po.observe({ type: 'largest-contentful-paint', buffered: true });
     }
@@ -142,6 +181,6 @@
 
   // If LCP observer is blocked/restricted, load after window load.
   try {
-    w.addEventListener('load', () => setTimeout(injectSoon, 1500), { once: true });
+    w.addEventListener('load', () => scheduleInjectSoon(1500), { once: true });
   } catch {}
 })();
