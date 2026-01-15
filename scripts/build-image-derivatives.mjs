@@ -33,6 +33,12 @@ const AVIF_Q = parseInt(argMap['avif-quality'] || '45', 10);
 // AVIF encoder effort: higher = slower encode, smaller output at similar quality.
 // Valid range is typically 0–9.
 const AVIF_EFFORT = Math.max(0, Math.min(9, parseInt(argMap['avif-effort'] || '8', 10)));
+// Optional per-image AVIF quality overrides (base filename without extension -> quality).
+// Use sparingly for high-visibility images where Lighthouse suggests extra savings.
+const AVIF_QUALITY_OVERRIDES = new Map([
+  // Hero image currently flagged by Lighthouse for additional compression savings.
+  ['website-design-local-seo-services-utah-county-salt-lake-county', 33],
+]);
 // WebP quality no longer used (we don't generate WebP derivatives)
 // Keep this defined to avoid runtime errors if someone opts into WebP.
 const WEBP_Q = parseInt(argMap['webp-quality'] || '82', 10);
@@ -157,7 +163,11 @@ async function processOneImage(fileAbs, mediaDirAbs) {
     if (!(await fileExists(outPath))) {
       if (!DRY_RUN) {
         const pipe = sharp(src).rotate().resize({ width, withoutEnlargement: true });
-        if (fmt === 'avif') await pipe.avif({ quality: AVIF_Q, effort: AVIF_EFFORT }).toFile(outPath);
+        if (fmt === 'avif') {
+          const baseName = path.basename(baseNoExt);
+          const quality = AVIF_QUALITY_OVERRIDES.get(baseName) ?? AVIF_Q;
+          await pipe.avif({ quality, effort: AVIF_EFFORT }).toFile(outPath);
+        }
         else if (fmt === 'webp') await pipe.webp({ quality: WEBP_Q }).toFile(outPath);
         else if (fmt === 'jpg' || fmt === 'jpeg') await pipe.jpeg({ quality: JPEG_Q, mozjpeg: true, progressive: true }).toFile(outPath);
       }
