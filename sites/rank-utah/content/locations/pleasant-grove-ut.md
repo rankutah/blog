@@ -134,7 +134,7 @@ schema:
 # Website Design & Local SEO for Small Businesses in Utah  {.text-white}
 Serving Utah County & Salt Lake County. Fast, custom websites + ongoing support. Plans starting at $99/month.
 
-{{< button url="/pricing" text="Start Service" >}} {{< button url="#main-content" text="Learn More" >}}
+{{< button url="/pricing" text="See Pricing" >}} {{< button url="#main-content" text="How it Works" >}}
 
 
 <div class="mt-6"></div>
