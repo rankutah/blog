@@ -39,6 +39,42 @@ When updating copy for the Rank Utah site, keep service names and inclusions con
 
 ## Recent changes (notes for future debugging)
 
+### Favicons (Google Search)
+
+Google Search uses (at most) **one favicon per hostname** (for example, `example.com` vs `www.example.com`). Even with everything correct, it can take **several days to several weeks** for Google to recrawl and update the favicon; you can speed this up by using Search Console → URL Inspection → **Request indexing** on the home page.
+
+Repo behavior:
+
+- Favicon tags are emitted by the shared partial: `themes/overrides/layouts/partials/favicons.html`.
+- If a site provides `sites/<site>/static/favicon.ico`, the theme emits a **stable** `<link rel="icon" href="/favicon.ico">` first (best for Google’s “stable URL” guideline), then also emits PNG sizes (48/32/16) derived from the site logo.
+
+Requirements checklist (matches Google’s current guidance):
+
+- Home page HTML contains a `<link rel="icon" ...>` tag.
+- Favicon is **square (1:1)** and at least **8×8** (we ship **48×48**).
+- Favicon URL is stable (avoid frequently changing URLs).
+- Googlebot can crawl the home page and Googlebot-Image can crawl the favicon file (not blocked by `robots.txt`).
+
+Quick verification commands:
+
+```zsh
+# Confirm the homepage emits icon links
+curl -sS https://example.com/ | grep -iE "rel=icon|apple-touch-icon|shortcut icon" | head
+
+# Confirm /favicon.ico is reachable (should be 200)
+curl -sSI https://example.com/favicon.ico | sed -n '1,12p'
+
+# Confirm www redirects cleanly to the canonical hostname (Google uses 1 favicon per hostname)
+curl -sSI https://www.example.com/ | sed -n '1,12p'
+
+# Confirm actual favicon dimensions (macOS)
+tmpdir=$(mktemp -d) && cd "$tmpdir" && curl -sSLO https://example.com/favicon.ico && file favicon.ico
+
+# Confirm Googlebot and Googlebot-Image are not blocked/challenged
+curl -sSI -A 'Googlebot/2.1 (+http://www.google.com/bot.html)' https://example.com/ | sed -n '1,12p'
+curl -sSI -A 'Googlebot-Image/1.0' https://example.com/favicon.ico | sed -n '1,12p'
+```
+
 ### Titles: brand first
 
 Page titles follow the brand-first pattern:

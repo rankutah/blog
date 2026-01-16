@@ -57,22 +57,25 @@
   {{- $p32 := $img.Fit "32x32 png" -}}
   {{- $p16 := $img.Fit "16x16 png" -}}
   {{- $apple := $img.Fit "180x180 png" -}}
+  {{- if $emitIco -}}
+  <link rel="icon" href="{{ $icoPath | absURL }}">
+  <link rel="shortcut icon" href="{{ $icoPath | absURL }}">
+  {{- end -}}
   <link rel="icon" type="image/png" sizes="48x48" href="{{ $p48.RelPermalink }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ $p32.RelPermalink }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ $p16.RelPermalink }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $apple.RelPermalink }}">
-  {{- if $emitIco -}}
-  <link rel="icon" href="{{ $icoPath | absURL }}">
-  {{- end -}}
 {{- else if and $img $isSVG -}}
   {{/* Vector source: link SVG directly, keep ICO fallback if present */}}
-  <link rel="icon" type="image/svg+xml" href="{{ $img.RelPermalink }}">
   {{- if $emitIco -}}
   <link rel="icon" href="{{ $icoPath | absURL }}">
+  <link rel="shortcut icon" href="{{ $icoPath | absURL }}">
   {{- end -}}
+  <link rel="icon" type="image/svg+xml" href="{{ $img.RelPermalink }}">
 {{- else -}}
   {{/* No source found: only emit ICO when it's known to exist (or explicitly external). */}}
   {{- if $emitIco -}}
   <link rel="icon" href="{{ $icoPath | absURL }}">
+  <link rel="shortcut icon" href="{{ $icoPath | absURL }}">
   {{- end -}}
 {{- end -}}
