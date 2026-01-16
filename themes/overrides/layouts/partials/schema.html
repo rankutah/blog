@@ -350,7 +350,32 @@
       {{- $offer = merge $offer (dict "shippingDetails" .) -}}
     {{- end -}}
     {{- with (index $o "hasMerchantReturnPolicy") -}}
-      {{- $offer = merge $offer (dict "hasMerchantReturnPolicy" .) -}}
+      {{- $mrp := . -}}
+      {{- $mrpOut := dict -}}
+
+      {{- with (or (index $mrp "@type") (index $mrp "@Type")) -}}
+        {{- $mrpOut = merge $mrpOut (dict "@type" .) -}}
+      {{- end -}}
+
+      {{- with (or (index $mrp "applicableCountry") (index $mrp "applicablecountry")) -}}
+        {{- $mrpOut = merge $mrpOut (dict "applicableCountry" .) -}}
+      {{- end -}}
+      {{- with (or (index $mrp "returnPolicyCategory") (index $mrp "returnpolicycategory")) -}}
+        {{- $mrpOut = merge $mrpOut (dict "returnPolicyCategory" .) -}}
+      {{- end -}}
+      {{- with (or (index $mrp "merchantReturnDays") (index $mrp "merchantreturndays")) -}}
+        {{- $mrpOut = merge $mrpOut (dict "merchantReturnDays" .) -}}
+      {{- end -}}
+      {{- with (or (index $mrp "returnMethod") (index $mrp "returnmethod")) -}}
+        {{- $mrpOut = merge $mrpOut (dict "returnMethod" .) -}}
+      {{- end -}}
+      {{- with (or (index $mrp "returnFees") (index $mrp "returnfees")) -}}
+        {{- $mrpOut = merge $mrpOut (dict "returnFees" .) -}}
+      {{- end -}}
+
+      {{- if gt (len $mrpOut) 0 -}}
+        {{- $offer = merge $offer (dict "hasMerchantReturnPolicy" $mrpOut) -}}
+      {{- end -}}
     {{- end -}}
 
     {{- /* seller: allow override; otherwise link to the site Organization when available */ -}}
