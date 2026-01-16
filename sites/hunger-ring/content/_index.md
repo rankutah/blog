@@ -2,6 +2,36 @@
 title: "A Wearable Hunger Scale for Intuitive Eating and Mindful Eating"
 description: "Hunger Ring is a wearable, screen-free hunger scale that helps you pause, notice hunger and fullness, and eat with greater awareness. Each purchase helps feed the hungry."
 hero: false
+schema:
+  product:
+    enabled: true
+    name: "Hunger Ring"
+    brand: "Hunger Ring"
+    images:
+      - "/media/lady-eating-with-hunger-ring.png"
+      - "/media/hunger-ring-3.jpg"
+      - "/media/hunger-ring.jpg"
+      - "/media/hunger-ring-2.jpg"
+    offers:
+      price: "49.98"
+      priceCurrency: "USD"
+      availability: "https://schema.org/PreOrder"
+			shippingDetails:
+				- "@type": "OfferShippingDetails"
+					shippingRate:
+						"@type": "MonetaryAmount"
+						value: "0.00"
+						currency: "USD"
+					shippingDestination:
+						"@type": "DefinedRegion"
+						addressCountry: "US"
+			hasMerchantReturnPolicy:
+				"@type": "MerchantReturnPolicy"
+				applicableCountry: "US"
+				returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow"
+				merchantReturnDays: 30
+				returnMethod: "https://schema.org/ReturnByMail"
+				returnFees: "https://schema.org/ReturnShippingFees"
 ---
 
 # Hunger Ring - Listen to Your Body
@@ -400,9 +430,7 @@ We’re committed to giving as a built‑in part of each purchase. Donation dest
 
 ### What is your return policy?
 
-Returns are accepted **within 30 days of delivery**. The buyer is responsible for return shipping. Items must be returned in good condition. Excessive wear or damage may not be eligible for a refund.
-
-To request a return, send us a message on our [contact page](/contact).
+See our [Return Policy](/return-policy/).
 
 ### How can I contact you?
 

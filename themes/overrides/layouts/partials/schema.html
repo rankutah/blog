@@ -237,6 +237,139 @@
 </script>
 {{- end -}}
 
+{{/* --------------- Product schema (per-page opt-in) ---------------- */}}
+{{- $product := false -}}
+{{- with .Params.schema.product -}}
+  {{- if or (and (isset . "enabled") (index . "enabled")) (not (isset . "enabled")) -}}
+    {{- $product = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $product -}}
+<script type="application/ld+json">
+{{- $p := dict "@context" "https://schema.org" "@type" "Product" "@id" (printf "%s#product" .Permalink) "url" .Permalink -}}
+
+{{- $pName := "" -}}
+{{- with (index $product "name") -}}
+  {{- $pName = . -}}
+{{- end -}}
+{{- if not $pName -}}
+  {{- $pName = .Title -}}
+{{- end -}}
+{{- $p = merge $p (dict "name" $pName) -}}
+
+{{- $pDesc := "" -}}
+{{- with (index $product "description") -}}
+  {{- $pDesc = . -}}
+{{- else -}}
+  {{- with .Params.description -}}
+    {{- $pDesc = . -}}
+  {{- else -}}
+    {{- $pDesc = (.Summary | default .Description | plainify) -}}
+  {{- end -}}
+{{- end -}}
+{{- if $pDesc -}}
+  {{- $p = merge $p (dict "description" $pDesc) -}}
+{{- end -}}
+
+{{- /* images: support image/images (string or array), or fall back to page image or first content img */ -}}
+{{- $imgs := slice -}}
+{{- $imgSrc := "" -}}
+{{- with (index $product "image") -}}
+  {{- $imgSrc = . -}}
+{{- else -}}
+  {{- with (index $product "images") -}}
+    {{- $imgSrc = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $imgSrc -}}
+  {{- if eq (printf "%T" $imgSrc) "string" -}}
+    {{- $img := $imgSrc -}}
+    {{- if not (findRE "^https?://" $img) -}}
+      {{- $img = $img | absURL -}}
+    {{- end -}}
+    {{- $imgs = $imgs | append $img -}}
+  {{- else -}}
+    {{- range $imgSrc -}}
+      {{- $img := . -}}
+      {{- if and (eq (printf "%T" $img) "string") (not (findRE "^https?://" $img)) -}}
+        {{- $img = $img | absURL -}}
+      {{- end -}}
+      {{- $imgs = $imgs | append $img -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if and (eq (len $imgs) 0) .Params.image -}}
+  {{- $imgs = $imgs | append (.Params.image | absURL) -}}
+{{- end -}}
+{{- if and (eq (len $imgs) 0) $firstImg -}}
+  {{- $img := $firstImg -}}
+  {{- if not (findRE "^https?://" $img) -}}
+    {{- $img = $img | absURL -}}
+  {{- end -}}
+  {{- $imgs = $imgs | append $img -}}
+{{- end -}}
+{{- if gt (len $imgs) 0 -}}
+  {{- $p = merge $p (dict "image" $imgs) -}}
+{{- end -}}
+
+{{- with (index $product "sku") -}}
+  {{- $p = merge $p (dict "sku" .) -}}
+{{- end -}}
+
+{{- /* brand: allow string or pass-through object */ -}}
+{{- with (index $product "brand") -}}
+  {{- if eq (printf "%T" .) "string" -}}
+    {{- $p = merge $p (dict "brand" (dict "@type" "Brand" "name" .)) -}}
+  {{- else -}}
+    {{- $p = merge $p (dict "brand" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* offers: include only if configured */ -}}
+{{- with (index $product "offers") -}}
+  {{- $o := . -}}
+  {{- if $o -}}
+    {{- $offer := dict "@type" "Offer" -}}
+    {{- with (index $o "url") -}}
+      {{- $url := . -}}
+      {{- if and (eq (printf "%T" $url) "string") (not (findRE "^https?://" $url)) -}}
+        {{- $url = $url | absURL -}}
+      {{- end -}}
+      {{- $offer = merge $offer (dict "url" $url) -}}
+    {{- else -}}
+      {{- $offer = merge $offer (dict "url" $.Permalink) -}}
+    {{- end -}}
+    {{- with (index $o "price") -}}{{- $offer = merge $offer (dict "price" .) -}}{{- end -}}
+    {{- with (index $o "priceCurrency") -}}{{- $offer = merge $offer (dict "priceCurrency" .) -}}{{- end -}}
+    {{- with (index $o "availability") -}}{{- $offer = merge $offer (dict "availability" .) -}}{{- end -}}
+    {{- with (index $o "itemCondition") -}}{{- $offer = merge $offer (dict "itemCondition" .) -}}{{- end -}}
+    {{- with (index $o "priceValidUntil") -}}{{- $offer = merge $offer (dict "priceValidUntil" .) -}}{{- end -}}
+
+    {{- /* shippingDetails / merchantReturnPolicy: optional pass-through objects */ -}}
+    {{- with (index $o "shippingDetails") -}}
+      {{- $offer = merge $offer (dict "shippingDetails" .) -}}
+    {{- end -}}
+    {{- with (index $o "hasMerchantReturnPolicy") -}}
+      {{- $offer = merge $offer (dict "hasMerchantReturnPolicy" .) -}}
+    {{- end -}}
+
+    {{- /* seller: allow override; otherwise link to the site Organization when available */ -}}
+    {{- with (index $o "seller") -}}
+      {{- $offer = merge $offer (dict "seller" .) -}}
+    {{- else -}}
+      {{- if $org -}}
+        {{- $offer = merge $offer (dict "seller" (dict "@id" (printf "%s#organization" site.BaseURL))) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $p = merge $p (dict "offers" $offer) -}}
+  {{- end -}}
+{{- end -}}
+
+{{ $p | jsonify | safeJS }}
+</script>
+{{- end -}}
+
 {{/* --------------- FAQPage schema (pricing or other pages) ---------------- */}}
 {{- $faq := false -}}
 {{- with .Params.schema.faq -}}

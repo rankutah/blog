@@ -34,7 +34,7 @@ A product by **Suggls**
 ### Legal
 {.center}
 
-[Privacy Policy](/privacy) • [Terms](/terms)
+[Privacy Policy](/privacy) • [Terms](/terms) • [Return Policy](/return-policy/)
 {.center}
 
 {{< /col >}}

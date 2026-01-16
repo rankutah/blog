@@ -41,6 +41,8 @@ url: "/contact"
 
 We read every message and will reply as soon as we can.
 
+Helpful links: [Return Policy](/return-policy/) • [Privacy Policy](/privacy/) • [Terms](/terms/)
+
 {{< /col >}}
 
 {{< /cols >}}
