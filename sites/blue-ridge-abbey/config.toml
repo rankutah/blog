@@ -57,6 +57,7 @@ uglyURLs = false
     alt  = "Facebook"
 
 [params.analytics]
+  provider = "zaraz"
   # Keep immediate load (site-specific override)
   delayMs = 0
   # Gate Microsoft Clarity only on interaction (ignores the immediate global load)
@@ -64,15 +65,15 @@ uglyURLs = false
 
   [params.analytics.google]
     id = "G-763E3FZE0G"
-    enabled = true
+    enabled = false
 
   [params.analytics.clarity]
     id = "ufj4qbu6lg"
-    enabled = true
+    enabled = false
 
   [params.analytics.googleAds]
     id = "AW-17719779491"
-    enabled = true
+    enabled = false
 
   [params.analytics.meta]
     id = ""
