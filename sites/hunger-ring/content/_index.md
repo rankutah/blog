@@ -27,7 +27,7 @@ A wearable hunger scale for intuitive eating — no paper, no screens
 
 {{< col card="false" >}}
 
-## Hunger Ring - $49.98
+## Hunger Ring - $49
 
 Ring Size
 
