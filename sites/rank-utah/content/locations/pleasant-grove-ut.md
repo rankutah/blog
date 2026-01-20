@@ -1,6 +1,6 @@
 ---
-title: "Website Design & Local SEO Services in Utah County & Salt Lake County"
-description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)."
+title: "Web Design & SEO Services in Pleasant Grove, UT"
+description: "Benjamin provides affordable web design and SEO services for small businesses in Utah County, from an office in Pleasant Grove, Utah."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -9,43 +9,10 @@ schema:
     enabled: true
     type: ProfessionalService
     name: "Clear Presence"
-    aggregateRating:
-      "@type": "AggregateRating"
-      ratingValue: 5
-      reviewCount: 10
-    review:
-      - "@type": "Review"
-        author:
-          "@type": "Person"
-          name: "Darin Hinton"
-        reviewRating:
-          "@type": "Rating"
-          ratingValue: 5
-          bestRating: 5
-        reviewBody: >-
-          Best and quickest customer service I have ever experienced with any website design company I have worked with over many years. They got our business's email and website servers switched over in a matter of minutes from our old one, and the website up and running in a few hours. Benjamin always answers my phone calls and gives a fast response to my texts and emails, and has helped us with a few technical difficulties that were beyond our skill set. A breath of fresh air compared to the tech companies I've worked with before.
-
-      - "@type": "Review"
-        author:
-          "@type": "Person"
-          name: "Gabriel Antigua"
-        reviewRating:
-          "@type": "Rating"
-          ratingValue: 5
-          bestRating: 5
-        reviewBody: >-
-          Benjamin with Clear Presence has been great to work with. He is doing website design for me and local SEO including running my Google Business Profile. I am continuing to get more customers from working with him.
-
-      - "@type": "Review"
-        author:
-          "@type": "Person"
-          name: "Daniel De Souza"
-        reviewRating:
-          "@type": "Rating"
-          ratingValue: 5
-          bestRating: 5
-        reviewBody: >-
-          Working with Ben has been easy. His pricing is fair and a good choice for any business who wants a professional website. Ben is one of the few professional who cares about their clients.
+    "@id": "https://clearpresence.io/#professionalservice"
+    url: "https://clearpresence.io/"
+    telephone: "+1-385-323-8130"
+    image: "/media/logo.png"
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
@@ -57,21 +24,7 @@ schema:
       - "Lehi, UT"
       - "Spanish Fork, UT"
       - "Springville, UT"
-      - "Draper, UT"
-      - "Sandy, UT"
-      - "Salt Lake City, UT"
-      - "West Valley City, UT"
-      - "Taylorsville, UT"
-      - "Holladay, UT"
-      - "Cottonwood Heights, UT"
-      - "Midvale, UT"
-      - "South Jordan, UT"
-      - "West Jordan, UT"
-      - "Riverton, UT"
-      - "Herriman, UT"
-      - "Murray, UT"
       - "Utah County, UT"
-      - "Salt Lake County, UT"
     address:
       streetAddress: "348 S 2000 W, Suite B206"
       addressLocality: "Pleasant Grove"
@@ -103,21 +56,7 @@ schema:
       - "Lehi, UT"
       - "Spanish Fork, UT"
       - "Springville, UT"
-      - "Draper, UT"
-      - "Sandy, UT"
-      - "Salt Lake City, UT"
-      - "West Valley City, UT"
-      - "Taylorsville, UT"
-      - "Holladay, UT"
-      - "Cottonwood Heights, UT"
-      - "Midvale, UT"
-      - "South Jordan, UT"
-      - "West Jordan, UT"
-      - "Riverton, UT"
-      - "Herriman, UT"
-      - "Murray, UT"
       - "Utah County, UT"
-      - "Salt Lake County, UT"
     offers:
       - "@type": Offer
         name: "Business Website"
@@ -130,9 +69,9 @@ schema:
 ---
 
 
-{{< hero img="/media/website-design-local-seo-services-utah-county-salt-lake-county.avif" alt="Utah landscape with text overlaid that says Website Design and Local Services in Utah County & Salt Lake County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design & Local SEO for Small Businesses in Utah  {.text-white}
-Serving Utah County & Salt Lake County. Fast, custom websites + ongoing support. Plans starting at $99/month.
+{{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape hero image for website design and local SEO services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Web Design & SEO for Utah County Businesses from Pleasant Grove, UT  {.text-white}
+Fast, custom websites + local marketing. Plans starting at $99/month.
 
 {{< button url="/pricing" text="See Pricing" >}} {{< button url="#main-content" text="How it Works" >}}
 
@@ -147,7 +86,7 @@ Serving Utah County & Salt Lake County. Fast, custom websites + ongoing support.
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Website Design & Local SEO in Pleasant Grove, Utah
-- Serving small businesses in Utah County & Salt Lake County
+- Serving small businesses in Utah County
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
@@ -319,9 +258,8 @@ What a redesign includes:
 ## Areas Served in Utah
 
 - Utah County: Pleasant Grove, Lindon, Orem, Provo, Lehi, American Fork, Saratoga Springs, Eagle Mountain, Spanish Fork, Springville
-- Salt Lake County: Salt Lake City, West Valley City, Sandy, Draper, South Jordan, West Jordan, Taylorsville, Midvale, Holladay, Cottonwood Heights, Murray, Riverton, Herriman
 
-Services are [available remotely](https://cal.com/clearpresence/30min), with local meetings as needed, so businesses can get a high‑performing website across Utah County and Salt Lake County.
+Services are [available remotely](https://cal.com/clearpresence/30min), with local meetings as needed, so businesses can get a high‑performing website across Utah County.
 
 ## Simple Monthly Pricing for Small Businesses
 

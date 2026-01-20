@@ -73,7 +73,33 @@
   {{- $name = cond (ne .Title "") .Title .Site.Title -}}
 {{- end -}}
 
-{{- $obj := dict "@context" "https://schema.org" "@type" $type "@id" .Permalink "url" .Permalink "name" $name -}}
+{{- /* Allow callers to provide a stable business @id / url; default to page permalink */ -}}
+{{- $id := .Permalink -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (or (isset $lb "@id") (isset $lb "id"))) -}}
+  {{- $rawId := cond (isset $lb "@id") (index $lb "@id") (index $lb "id") -}}
+  {{- if $rawId -}}
+    {{- $id = (printf "%v" $rawId) -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $id (not (findRE "^https?://" $id)) -}}
+  {{- if strings.HasPrefix $id "#" -}}
+    {{- $id = printf "%s%s" site.BaseURL $id -}}
+  {{- else -}}
+    {{- $id = $id | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $url := .Permalink -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "url")) -}}
+  {{- with (index $lb "url") -}}
+    {{- $url = (printf "%v" .) -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $url (not (findRE "^https?://" $url)) -}}
+  {{- $url = $url | absURL -}}
+{{- end -}}
+
+{{- $obj := dict "@context" "https://schema.org" "@type" $type "@id" $id "url" $url "name" $name -}}
 
 {{- /* image/logo fallbacks: prefer explicit, else page image, else first content image */ -}}
 {{- $image := "" -}}
@@ -85,6 +111,9 @@
   {{- $image = $firstImg -}}
 {{- end -}}
 {{- if $image -}}
+  {{- if and (eq (printf "%T" $image) "string") (not (findRE "^https?://" $image)) -}}
+    {{- $image = $image | absURL -}}
+  {{- end -}}
   {{- $obj = merge $obj (dict "image" (slice $image)) -}}
 {{- end -}}
 
