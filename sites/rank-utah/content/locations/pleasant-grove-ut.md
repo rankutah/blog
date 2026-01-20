@@ -86,7 +86,7 @@ Fast, custom websites + local marketing near you. Plans starting at $99/month.
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Website Design & Local SEO Near You
-- Serving small businesses in Utah County (remote or in-person)
+- Serving small businesses in Utah County ([remote or in-person](https://cal.com/clearpresence/30min))
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
