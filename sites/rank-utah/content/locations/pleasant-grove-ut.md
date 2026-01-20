@@ -161,11 +161,34 @@ My Pleasant Grove office is conveniently located in Grove Cove, just west of Gro
 
 {{< /cols >}}
 
+{{< section >}}
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
 ## 3 Simple Steps to Get Started
 
 1. Purchase a plan on the [pricing page](/pricing)
 2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
 3. Coordinate with me however you like (text, email, phone, video chat, or in-person)
+
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Areas Served in Utah
+
+- **Inside Utah County**: Pleasant Grove, Lindon, Orem, Provo, Lehi, American Fork, Saratoga Springs, Eagle Mountain, Spanish Fork, Springville
+- **Outside Utah County**: Services are [available remotely](https://cal.com/clearpresence/30min), with local meetings as needed, so businesses can get a high‑performing website across Utah.
+
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< /section >}}
+
 
 
 ## Reviews from Local Businesses using Digital Marketing Services
@@ -260,11 +283,7 @@ What a redesign includes:
 - Ongoing support so the website doesn’t fall behind again
 
 
-## Areas Served in Utah
 
-- Utah County: Pleasant Grove, Lindon, Orem, Provo, Lehi, American Fork, Saratoga Springs, Eagle Mountain, Spanish Fork, Springville
-
-Services are [available remotely](https://cal.com/clearpresence/30min), with local meetings as needed, so businesses can get a high‑performing website across Utah County.
 
 ## Simple Monthly Pricing for Small Businesses
 
