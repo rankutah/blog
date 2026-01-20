@@ -70,7 +70,7 @@ schema:
 
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape hero image for website design and local SEO services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design & SEO Services in Pleasant Grove, UT  {.text-white}
+# Web Design & SEO Services for Utah County from Pleasant Grove, UT  {.text-white}
 Fast, custom websites + local marketing near you. Plans starting at $99/month.
 
 {{< button url="/pricing" text="See Pricing" >}} {{< button url="#main-content" text="How it Works" >}}
