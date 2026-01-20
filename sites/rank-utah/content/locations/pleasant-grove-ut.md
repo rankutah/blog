@@ -1,5 +1,5 @@
 ---
-title: "Freelancer in Pleasant Grove, UT - Web Design & SEO Services | Digital Marketing in Utah County"
+title: "Freelancer in Pleasant Grove, UT - Web Design & SEO Services - Digital Marketing Agency Near You for Small Businesses in Utah County"
 description: "Benjamin provides affordable web design and SEO services for small businesses in Utah County, from an office in Pleasant Grove, Utah."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
@@ -70,7 +70,7 @@ schema:
 
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape hero image for website design and local SEO services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design & SEO Services for Utah County Businesses  {.text-white}
+# Web Design & SEO Services Near You  {.text-white}
 Fast, custom websites + local marketing. Plans starting at $99/month.
 
 {{< button url="/pricing" text="See Pricing" >}} {{< button url="#main-content" text="How it Works" >}}
