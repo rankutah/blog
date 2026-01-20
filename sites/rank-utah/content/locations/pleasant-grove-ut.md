@@ -98,13 +98,6 @@ Fast, custom websites + local marketing near you. Plans starting at $99/month.
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## 3 Simple Steps to Get Started
-
-1. Purchase a plan on the [pricing page](/pricing)
-2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
-3. Coordinate with me however you like (text, email, phone, video chat, or in-person)
-
-<br>
 
 ## Office Location in Pleasant Grove, UT
 
@@ -167,6 +160,12 @@ My Pleasant Grove office is conveniently located in Grove Cove, just west of Gro
 {{< /col >}}
 
 {{< /cols >}}
+
+## 3 Simple Steps to Get Started
+
+1. Purchase a plan on the [pricing page](/pricing)
+2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
+3. Coordinate with me however you like (text, email, phone, video chat, or in-person)
 
 
 ## Reviews from Local Businesses using Digital Marketing Services
