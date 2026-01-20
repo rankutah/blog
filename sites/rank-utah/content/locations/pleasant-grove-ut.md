@@ -106,7 +106,12 @@ Fast, custom websites + local marketing near you. Plans starting at $99/month.
 
 <br>
 
-## Office Location {{< button url="https://cal.com/clearpresence/30min" text="Schedule a Meeting" >}}
+## Office Location in Pleasant Grove, UT
+
+My Pleasant Grove office is conveniently located in Grove Cove, just west of Grove Station and across the street from Oliver's Place. I'm less than 3 minutes from the I-15 Pleasant Grove Blvd exit, making it easy to reach from anywhere in Utah County. Please schedule a meeting if you would like to visit.
+
+{{< button url="https://cal.com/clearpresence/30min" text="Schedule a Meeting" >}}
+
 
 <div class="map-placeholder" id="pg-map-placeholder" style="position:relative;width:100%;max-width:640px;aspect-ratio:4/3;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;margin-bottom:1rem">
   <button type="button" style="all:unset;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.5rem;font-family:inherit;color:#0f172a">
@@ -158,12 +163,13 @@ Fast, custom websites + local marketing near you. Plans starting at $99/month.
   </p>
 </noscript>
 
+
 {{< /col >}}
 
 {{< /cols >}}
 
 
-## Website Design & Local SEO Reviews from Small Businesses
+## Reviews from Local Businesses using Digital Marketing Services
 {.center}
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
@@ -278,27 +284,27 @@ No big upfront fees—just simple monthly pricing and direct support.
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{< button url="/pricing" text="See Pricing" >}}
 
-## Featured Work
+## Featured Websites
 {.center}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-### Quartz Worx – Countertops
+### Quartz Worx
 [![Custom website design and development featuring a small business](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-### Cedar City Strength – Fitness
+### Cedar City Strength
 [![Custom website design for a small business in Cedar City Utah](/media/website-design-cedar-city-strength.avif)](https://cedarcitystrength.pages.dev/)
 {{< /col >}}
 {{< /cols >}}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-### Blue Ridge Abbey – Hospitality
+### Blue Ridge Abbey
 [![Small business website homepage built to load fast and show up in local search](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-### BlueridgeTech – IT Services
+### BlueridgeTech
 [![Custom website design for a small shop business](/media/website-design-blueridge-tech.avif)](https://blueridgetech.pro/)
 {{< /col >}}
 {{< /cols >}}
