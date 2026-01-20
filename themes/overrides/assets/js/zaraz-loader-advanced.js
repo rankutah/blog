@@ -1,5 +1,5 @@
 // zaraz-loader-advanced.js
-// Delayed Cloudflare Zaraz injector with /welcome conversion de-dupe.
+// Delayed Cloudflare Zaraz injector.
 // Note: For this to be effective, Zaraz must NOT be auto-injected by Cloudflare.
 
 (function () {
@@ -10,67 +10,6 @@
   // Lighthouse/CWV: avoid any chance of Zaraz running during the critical load window.
   // We still inject (for real analytics), but never earlier than this nav-time threshold.
   const MIN_NAV_DELAY_MS = 10000;
-
-  // Dedupe /welcome conversions:
-  const WELCOME_PATH = '/welcome';
-  let welcomeProduct = '';
-  let welcomeAlreadyCounted = false;
-
-  function isWelcomePath(pathname) {
-    try {
-      const p = pathname || '';
-      return p === WELCOME_PATH || p === (WELCOME_PATH + '/') || p.startsWith(WELCOME_PATH + '/');
-    } catch {
-      return false;
-    }
-  }
-
-  function getWelcomeProduct() {
-    try {
-      if (!w.location || !isWelcomePath(w.location.pathname)) return '';
-      const sp = new URLSearchParams(w.location.search || '');
-      return (sp.get('product') || '').trim();
-    } catch {
-      return '';
-    }
-  }
-
-  function markWelcomeCounted(product) {
-    try {
-      if (!product) return;
-      localStorage.setItem('cp_welcome_conv_' + product, '1');
-    } catch {}
-  }
-
-  function wasWelcomeCounted(product) {
-    try {
-      if (!product) return false;
-      return localStorage.getItem('cp_welcome_conv_' + product) === '1';
-    } catch {
-      return false;
-    }
-  }
-
-  function stripWelcomeProductParam() {
-    try {
-      if (!w.location || !isWelcomePath(w.location.pathname)) return;
-      const u = new URL(w.location.href);
-      if (!u.searchParams.has('product')) return;
-      u.searchParams.delete('product');
-      const next =
-        u.pathname +
-        (u.searchParams.toString() ? '?' + u.searchParams.toString() : '') +
-        (u.hash || '');
-      w.history.replaceState({}, '', next);
-    } catch {}
-  }
-
-  welcomeProduct = getWelcomeProduct();
-  welcomeAlreadyCounted = wasWelcomeCounted(welcomeProduct);
-  if (welcomeAlreadyCounted) {
-    // Strip before Zaraz loads so the trigger won't match again.
-    stripWelcomeProductParam();
-  }
 
   // Cloudflare-recommended endpoint (same-origin). This is typically less likely to be blocked
   // than the static.cloudflareinsights.com host.
@@ -117,16 +56,6 @@
     s.referrerPolicy = 'origin';
     s.async = true;
     document.head.appendChild(s);
-
-    // After we inject (i.e. we've allowed the conversion to be seen once),
-    // strip the product param so refresh/back won't double-count.
-    // Only do this for first-time views.
-    try {
-      if (welcomeProduct && !welcomeAlreadyCounted) {
-        markWelcomeCounted(welcomeProduct);
-        setTimeout(stripWelcomeProductParam, 1500);
-      }
-    } catch {}
   }
 
   function injectSoon() {
