@@ -1,6 +1,6 @@
 ---
-title: "A Wearable Hunger Scale for Intuitive Eating and Mindful Eating"
-description: "Hunger Ring is a wearable, screen-free hunger scale that helps you pause, notice hunger and fullness, and eat with greater awareness. Each purchase helps feed the hungry."
+title: "A Wearable Hunger & Fullness Scale for Intuitive Eating and Mindful Eating"
+description: "Hunger Ring is a wearable hunger scale that helps you pause, notice hunger and fullness, and eat with greater awareness. Each purchase helps feed the hungry."
 hero: false
 schema:
   product:

@@ -1,6 +1,6 @@
 ---
-title: "Hunger Scale"
-description: "A quick-reference hunger and fullness scale to help you name what you’re feeling in the moment."
+title: "Hunger & Fulness Scale for intuitive eating and mindful eating"
+description: "A 7 state hunger and fullness scale to help you recognize and honor your body's satiety signals."
 ---
 
 # Hunger Scale
