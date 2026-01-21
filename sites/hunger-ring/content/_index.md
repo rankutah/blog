@@ -12,7 +12,7 @@ schema:
       - "/media/hunger-ring-3.jpg"
       - "/media/hunger-ring.jpg"
       - "/media/hunger-ring-2.jpg"
-    offers: { price: "49", priceCurrency: "USD", availability: "https://schema.org/PreOrder", shippingDetails: [ { "@type": "OfferShippingDetails", shippingRate: { "@type": "MonetaryAmount", value: "0.00", currency: "USD" }, shippingDestination: { "@type": "DefinedRegion", addressCountry: "US" } } ], hasMerchantReturnPolicy: { "@type": "MerchantReturnPolicy", applicableCountry: "US", returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow", merchantReturnDays: 30, returnMethod: "https://schema.org/ReturnByMail", returnFees: "https://schema.org/ReturnShippingFees" } }
+    offers: { price: "49.99", priceCurrency: "USD", availability: "https://schema.org/PreOrder", shippingDetails: [ { "@type": "OfferShippingDetails", shippingRate: { "@type": "MonetaryAmount", value: "0.00", currency: "USD" }, shippingDestination: { "@type": "DefinedRegion", addressCountry: "US" } } ], hasMerchantReturnPolicy: { "@type": "MerchantReturnPolicy", applicableCountry: "US", returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow", merchantReturnDays: 30, returnMethod: "https://schema.org/ReturnByMail", returnFees: "https://schema.org/ReturnShippingFees" } }
 ---
 
 # Hunger Ring - Listen to Your Body
@@ -27,7 +27,7 @@ A wearable hunger scale for intuitive eating — no paper, no screens
 
 {{< col card="false" >}}
 
-## Hunger Ring - $49
+## Hunger Ring - $49.99
 
 Ring Size
 
