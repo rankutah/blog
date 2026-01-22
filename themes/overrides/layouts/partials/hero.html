@@ -31,6 +31,7 @@
 {{- $bleed       := cond (ne $img "") (or ($p.bleed | default false) false) false -}}
 {{- $overlay     := $p.overlay | default false -}}
 {{- $overlayShade:= $p.overlayShade | default "" -}}
+{{- $overlayPos  := lower ($p.overlayPos | default "") -}}
 {{- $imgClasses  := $p.imgClasses | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
 {{- $imgStyle    := $p.imgStyle   | default "" -}}
 {{- $vhMode      := lower ($p.vh | default "") -}}
@@ -98,6 +99,19 @@
   {{- else if eq $vhMode "vh" -}}
     {{- $imgStyle = printf "height: 100vh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- end -}}
+{{- end -}}
+
+{{- /* Overlay positioning (defaults to vertically centered). */ -}}
+{{- $overlayWrapClass := "absolute inset-0 flex items-center" -}}
+{{- $overlayWrapStyle := "" -}}
+{{- if or (eq $overlayPos "bottom") (eq $overlayPos "stickbottom") (eq $overlayPos "stick-bottom") (eq $overlayPos "pinnedbottom") (eq $overlayPos "pinned-bottom") -}}
+  {{- $overlayWrapClass = "absolute inset-0 flex items-end" -}}
+  {{- /* Pin to bottom with a little breathing room + safe-area inset. */ -}}
+  {{- $overlayWrapStyle = "padding-bottom: max(env(safe-area-inset-bottom), 1.5rem);" -}}
+{{- else if or (eq $overlayPos "lowerthird") (eq $overlayPos "lower-third") (eq $overlayPos "lower_third") (eq $overlayPos "bottomthird") (eq $overlayPos "bottom-third") -}}
+  {{- $overlayWrapClass = "absolute inset-0 flex items-end" -}}
+  {{- /* Lift up from bottom so content sits in the lower third (optional). */ -}}
+  {{- $overlayWrapStyle = "padding-bottom: 33vh; padding-bottom: 33svh;" -}}
 {{- end -}}
 
 {{- $container := printf "%s mx-auto %s %s"
@@ -270,7 +284,7 @@
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
       {{- $heroImg | safeHTML -}}
       {{- if $overlay -}}
-        <div class="absolute inset-0 flex items-center">
+        <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
           <div class="relative z-10 w-full {{ $container }}">
             <div class="{{ $vWrap }}">
@@ -289,7 +303,7 @@
       <div class="relative">
         {{- $heroImg | safeHTML -}}
         {{- if $overlay -}}
-          <div class="absolute inset-0 flex items-center">
+          <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
             <div class="relative z-10 w-full">
               <div class="{{ $vWrap }}">

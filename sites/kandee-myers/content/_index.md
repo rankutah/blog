@@ -5,8 +5,8 @@ url: "/"
 image: "/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg"
 ---
 
-{{< hero img="/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg" imgDesktop="/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg" imgMobile="/media/kandee-myers-utah-state-senate-district-21-city-mobile.jpeg" alt="Kandee Myers" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" vh="svh" >}}
-<div class="mt-50 lg:mt-96 text-white">
+{{< hero img="/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg" imgDesktop="/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg" imgMobile="/media/kandee-myers-utah-state-senate-district-21-city-mobile.jpeg" alt="Kandee Myers" bleed="true" overlay="true" overlayShade="bg-black/45" overlayPos="bottom" align="center" vh="svh" >}}
+<div class="text-white">
 
 # Kandee Myers for Utah State Senate
 

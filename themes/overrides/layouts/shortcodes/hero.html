@@ -15,6 +15,7 @@
 {{- $bleed       := eq (lower (.Get "bleed" | default "false")) "true" -}}
 {{- $overlay     := eq (lower (.Get "overlay" | default "false")) "true" -}}
 {{- $overlayShade:= .Get "overlayShade" | default "" -}}
+{{- $overlayPos  := lower (.Get "overlayPos" | default "") -}}
 {{- $imgClasses  := .Get "imgClasses" | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
 {{- $imgStyle    := .Get "imgStyle" | default "" -}}
 {{- $vh          := lower (.Get "vh" | default "") -}}
@@ -40,6 +41,7 @@
   "bleed" $bleed
   "overlay" $overlay
   "overlayShade" $overlayShade
+  "overlayPos" $overlayPos
   "imgClasses" $imgClasses
   "imgStyle" $imgStyle
   "vh" $vh
