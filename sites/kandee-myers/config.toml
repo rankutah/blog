@@ -37,9 +37,9 @@ enableRobotsTXT = true
   lightBackground     = "slate-200"
   darkBackground      = "slate-950"
   cardBackground      = "slate-100"
-  cardBackgroundDark  = "slate-900"
+  cardBackgroundDark  = "slate-800"
   cardBorderLight     = "gray-200"
-  cardBorderDark      = "gray-900"
+  cardBorderDark      = "slate-800"
 
   clientName = "Kandee Myers"
   clientURL  = "https://kandeemyers.com"

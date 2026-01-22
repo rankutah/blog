@@ -71,6 +71,16 @@ function buildSafelist() {
     }
   }
 
+  // Ensure border utilities used by the theme palette are always emitted.
+  // The palette partial builds classes like: "border border-<light> dark:border-<dark>".
+  // Because <light>/<dark> are chosen from config.toml at runtime, Tailwind can't
+  // statically see these class names, so we safelist the full allowed set.
+  for (const fam of linkFamilies) {
+    for (const step of STEPS) {
+      out.push(`border-${fam}-${step}`, `dark:border-${fam}-${step}`);
+    }
+  }
+
 
   // Ensure height utilities used by carousels are always emitted
   out.push(
@@ -83,14 +93,17 @@ function buildSafelist() {
 
 module.exports = {
   darkMode: 'class',
-  // ... your existing content globs ...
-  content: [
-    `./sites/${SITE}/**/*.{html,md,js,ts,jsx,tsx,toml}`,
-    './themes/overrides/**/*.{html,md,js,ts,jsx,tsx}',
-    './layouts/**/*.{html,md,js,ts,jsx,tsx}',
-    './assets/**/*.{js,ts,jsx,tsx}',
-    './node_modules/flowbite/**/*.js',
-  ],
+  // Tailwind v4: safelist must be nested under `content` to be consistently applied.
+  content: {
+    files: [
+      `./sites/${SITE}/**/*.{html,md,js,ts,jsx,tsx,toml}`,
+      './themes/overrides/**/*.{html,md,js,ts,jsx,tsx}',
+      './layouts/**/*.{html,md,js,ts,jsx,tsx}',
+      './assets/**/*.{js,ts,jsx,tsx}',
+    ],
+  },
+  // Tailwind v4: keep `safelist` at top-level (supported across versions) so
+  // dynamically-generated classnames from Hugo config.toml reliably emit utilities.
   safelist: buildSafelist(),
   theme: {
     extend: {
@@ -130,7 +143,6 @@ module.exports = {
       addBase(baseVars);
     }),
 
-    require('flowbite/plugin'),
     require('@tailwindcss/typography'),
   ],
 };

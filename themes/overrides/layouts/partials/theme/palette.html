@@ -164,7 +164,10 @@ Usage:
 {{- $bdRaw := lower (or .Site.Params.cardBorderDark  "gray-700") -}}
 {{- if strings.HasPrefix $blRaw "border-" -}}{{ $blRaw = replace $blRaw "border-" "" -}}{{ end -}}
 {{- if strings.HasPrefix $bdRaw "border-" -}}{{ $bdRaw = replace $bdRaw "border-" "" -}}{{ end -}}
-{{- $cardBorder := printf "border border-%s dark:border-%s" $blRaw $bdRaw -}}
+{{- /* Use a stable utility that Tailwind can always generate, and drive the actual
+  color via CSS variables set in head.html. This avoids relying on safelisting
+  for dynamically-constructed border-* classes. */ -}}
+{{- $cardBorder := "border border-[color:var(--cp-card-border)]" -}}
 
 {{- $bodyText := "text-gray-900 dark:text-gray-100" -}}
 {{- $navBg := printf "%s %s border-b border-gray-200 dark:border-gray-700" $lightBg $darkBg -}}

@@ -83,6 +83,9 @@
   {{/* Config-driven brand color overrides (buttons/links) */}}
   {{ partial "brand-colors.html" . }}
 
+  {{/* Config-driven card border color (used by border-[color:var(--cp-card-border)]) */}}
+  {{ partial "theme/card-border-vars.html" . }}
+
   {{/* Colored tag badges CSS */}}
   {{ partial "taxonomy-badges.html" . }}
 

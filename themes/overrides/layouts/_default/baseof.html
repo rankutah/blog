@@ -14,6 +14,7 @@
 <html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
 	<head>
 		{{- partial "head.html" . -}}
+		{{- partial "theme/card-border-vars.html" . -}}
 	</head>
 	<body id="top" class="min-h-screen flex flex-col {{ if eq site.Params.defaultTheme `dark` }}dark{{ end }}">
 		{{ partial "header.html" . }}
