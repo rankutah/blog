@@ -11,7 +11,7 @@ This page is meant to help you quickly confirm whether you’re in **Utah State 
 
 If you’re close to a boundary, always double-check with the official lookup tool.
 
-## District 21 map (with city labels)
+## District 21 map
 
 Click the map to open the official Utah Legislature district lookup in a new tab:
 
