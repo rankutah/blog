@@ -27,6 +27,7 @@ Notes:
 	- Pattern: `resources.Get` → `minify` → `fingerprint`, then reference via `.RelPermalink`.
 - Avoid site-specific template/CSS edits. If a true exception is required, gate it behind a param and document it.
 - Content convention: avoid `index.md` page bundles except the site homepage (`content/_index.md`). Prefer single-file pages under `content/`.
+- Content styling: avoid raw HTML in Markdown pages when possible (especially Tailwind utility soup / arbitrary colors). Prefer Markdown + existing shortcodes (e.g., `button`, `cols`/`col`, `badge`).
 - Customer-facing copy: use plain language and avoid tech jargon (e.g., “sprints”, “lean builds”, “workflow”).
 
 ## Services naming (Rank Utah / Clear Presence)

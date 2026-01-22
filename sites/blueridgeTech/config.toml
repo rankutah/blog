@@ -85,14 +85,27 @@ uglyURLs = false
     # Home removed from menu (remain accessible via logo)
 
   [[menu.main]]
-    name   = "About"
-    url    = "/about"
-    weight = 40
+    name   = "Services"
+    identifier = "services"
+    url    = "/#"
+    weight = 20
 
   [[menu.main]]
     name   = "Services"
     url    = "/services"
-    weight = 20
+    parent = "services"
+    weight = 21
+
+  [[menu.main]]
+    name   = "How it works"
+    url    = "/how-it-works"
+    parent = "services"
+    weight = 22
+
+  [[menu.main]]
+    name   = "About"
+    url    = "/about"
+    weight = 40
 
   # Locations dropdown (after Services)
   [[menu.main]]

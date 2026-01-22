@@ -16,6 +16,11 @@ description: "Fast, honest computer repair. Call or book a time that works for y
 		{{< button url="https://calendly.com/support-blueridgetech" text="Schedule" >}}
 	</div>
 </div>
+
+{{< badge text="Quick heads-up" >}}
+
+> Most repairs are scheduled as a drop-off appointment, and I’ll evaluate your device before giving an estimate.
+> I don’t offer while-you-wait repairs—see [How it works](/how-it-works) for what to expect.
 Typical response time: same day during business hours.
 
 
