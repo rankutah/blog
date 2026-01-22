@@ -59,7 +59,7 @@
 <link rel="canonical" href="{{ if .Params.canonicalURL }}{{ trim .Params.canonicalURL " " }}{{ else }}{{ replaceRE `index\.html$` `` .Permalink }}{{ end }}">
 
 {{/* --- Open Graph & Twitter --- */}}
-{{- $title := cond (and .Title (ne .Title site.Title)) (printf "%s | %s" .Title site.Title) site.Title -}}
+{{- $title := cond (and .Title (ne .Title site.Title)) (printf "%s - %s" .Title site.Title) site.Title -}}
 {{- $ogtype := cond .IsHome "website" (cond .IsPage "article" "website") -}}
 
 {{/* Resolve OG image with fallbacks (prefer per-page; ensure homepage hero wins) */}}
