@@ -1,15 +1,15 @@
 ---
-title: "Bed and Breakfast in Buena Vista, VA | B&B Rooms & Lodging | Boutique Hotel Near Lexington, VA & the Blue Ridge Parkway"
+title: "Bed and Breakfast in Buena Vista, VA - B&B Rooms & Lodging - Boutique Hotel Near You - Best place for a quiet getaway in the Shenandoah Valley - Secluded Wedding Venue Location - Near Blue Ridge Mountains and Natural Bridge with Parkway Access - Near Lexington Virginia"
 
 description: "Bed and breakfast lodging in Buena Vista, VA. Cozy B&B rooms near Lexington, VA and the Blue Ridge Parkway with made-to-order breakfast and friendly service. Explore nearby hikes, scenic drives, Natural Bridge, and the Shenandoah Valley."
 layout: "flowbite"
 url: "/"
 ---
 
-{{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="80vh" caption="Press Play: Reconnect with Reality (36 seconds)" >}}
-# Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
-Cozy bed & breakfast near Lexington & the Blue Ridge Parkway <br>
-{.text-white}
+{{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="80vh" caption="Press Play" >}}
+# Blue Ridge Abbey Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
+A quiet getaway to help you reconnect with reality.
+<br>
 
 {{< /lazy-vimeo >}}
 
