@@ -6,14 +6,16 @@ image: "/media/kandee-myers-utah-state-senate-district-21-city.jpeg"
 ---
 
 {{< hero img="/media/kandee-myers-utah-state-senate-district-21-city.jpeg" alt="Kandee Myers" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" vh="svh" >}}
-# Kandee Myers for Utah State Senate {.text-white}
+<div class="mt-50 sm:mt-0 text-white">
+
+# Kandee Myers for Utah State Senate
+
 Utah Election • Nov 23, 2026 • District 21
-
-
-{.text-white}
 
 {{< button url="/volunteer" text="Volunteer" >}}
 {{< button url="/donate" text="Donate" >}}
+
+</div>
 
 
 {{< /hero >}}

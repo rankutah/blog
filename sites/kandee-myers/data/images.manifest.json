@@ -339,6 +339,160 @@
       ]
     }
   },
+  "/media/kandee-myers-utah-state-senate-district-21-city-new.jpg": {
+    "width": 1971,
+    "height": 2419,
+    "aspect": 0.8147995039272427,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAnACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQEC/8QAJxAAAgIBAwIFBQAAAAAAAAAAAQIAEQMEITESFQUUQWGRFkNRgZL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAcEQADAAIDAQAAAAAAAAAAAAAAAQIDERIhIjH/2gAMAwEAAhEDEQA/AHdyxgWci/M8nXpk1HRkchAuwHqTMDuWMMOrTYyeCLIHxLcucYUXKLFE2VO5BjmrpKRwSt7pGtl8QbR49lZ1ugWNRH1C4+yv9SDV67r0bZVpi7Cgxs0BzUg7ipVh5ZPY72JeGlw9Izzy+fn4ZyE9QB4uVrkNgH9GRKSCN9gY8tsIw9IplahTufXmZz2rEXxtKBkI29xEZd8hP53lW9roEULpFPLn4ibo0YQmMNltHSL4jfLh6PURYhCNvSCT/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1600.avif"
+        },
+        {
+          "w": 1971,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1971.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1600.jpg"
+        },
+        {
+          "w": 1971,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1971.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kandee-myers-utah-state-senate-district-21-city-new.avif": {
+    "width": 1971,
+    "height": 2419,
+    "aspect": 0.8147995039272427,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAnACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEBQEC/8QAJxAAAgIBAwIFBQAAAAAAAAAAAQIAEQMEITESFQUUQWGRFkNRgZL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAcEQADAAIDAQAAAAAAAAAAAAAAAQIDERIhIjH/2gAMAwEAAhEDEQA/AHdyxgWci/M8nXpk1HRkchAuwHqTMDuWMMOrTYyeCLIHxLcucYUXKLFE2VO5BjmrpKRwSt7pGtl8QbR49lZ1ugWNRH1C4+yv9SDV67r0bZVpi7Cgxs0BzUg7ipVh5ZPY72JeGlw9Izzy+fn4ZyE9QB4uVrkNgH9GRKSCN9gY8tsIw9IplahTufXmZz2rEXxtKBkI29xEZd8hP53lW9roEULpFPLn4ibo0YQmMNltHSL4jfLh6PURYhCNvSCT/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1600.avif"
+        },
+        {
+          "w": 1971,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1971.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1600.jpg"
+        },
+        {
+          "w": 1971,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city-new__w1971.jpg"
+        }
+      ]
+    }
+  },
   "/media/kandee-myers-utah-state-senate-district-21-city.jpg": {
     "width": 2337,
     "height": 3506,
