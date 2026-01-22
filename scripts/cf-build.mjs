@@ -27,7 +27,8 @@ const KNOWN_SITES = new Set([
   'cedarcitystrength',
   'quartz-worx',
   'rodmaxfielddds',
-  'rooftopterracebv'
+  'rooftopterracebv',
+  'kandee-myers'
 ])
 
 function resolveSite() {

@@ -1,0 +1,193 @@
+baseURL = "https://kandeemyers.com/"  # TODO: update when deploying
+title = "Kandee 4 Utah"
+languageCode = "en-us"
+themesDir = "../../themes"
+
+trailingSlash = "never"
+cleanDestinationDir = true
+uglyURLs = false
+
+enableRobotsTXT = true
+
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[params]
+  # Brand styling (shared theme consumes these)
+  # Primary accent = campaign blue; we’ll use Utah-flag red as a secondary accent in page content.
+  primaryColor = "blue"
+
+  # Optional; add a real logo later (this affects Organization schema auto-logo too).
+  logo = ""  # e.g. "media/logo.png"
+
+  # Clean, readable palette that also looks good in dark mode.
+  lightBackground     = "slate-200"
+  darkBackground      = "slate-950"
+  cardBackground      = "slate-100"
+  cardBackgroundDark  = "slate-900"
+  cardBorderLight     = "gray-200"
+  cardBorderDark      = "gray-900"
+
+  clientName = "Kandee Myers"
+  clientURL  = "https://kandeemyers.com"
+
+  author = "Kandee Myers"
+
+  # Search is off by default unless you mount a blog.
+  enableSearch = false
+
+  [params.schema.organization]
+    enabled = true
+    name    = "Kandee 4 Utah"
+
+[params.analytics]
+  delayMs = 5000
+
+  [params.analytics.google]
+    id = ""
+    enabled = false
+
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+
+  [params.analytics.meta]
+    id = ""
+    enabled = false
+
+[params.turnstile]
+  enable  = true
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
+[params.forms]
+  # Shared contact form shortcode will use this.
+  redirect = "https://kandeemyers.com/thank-you"
+
+[params.header]
+  stickyMobile  = true
+  stickyDesktop = true
+  CTAText       = "Volunteer"
+  CTAURL        = "/volunteer"
+  showPhoneOnMobile = false
+  logoHeightPx  = 40
+
+[menu]
+  [[menu.main]]
+    name       = "Voting"
+    identifier = "voter"
+    url        = "#"
+    weight     = 10
+
+    [[menu.main]]
+      name   = "Find Your District"
+      url    = "/district-map"
+      parent = "voter"
+      weight = 11
+
+    [[menu.main]]
+      name   = "Voter Info"
+      url    = "/voter-info"
+      parent = "voter"
+      weight = 12
+
+  [[menu.main]]
+    name       = "Issues"
+    identifier = "issues"
+    url        = "#"
+    weight     = 20
+
+    [[menu.main]]
+      name   = "Overview"
+      url    = "/issues"
+      parent = "issues"
+      weight = 21
+
+    [[menu.main]]
+      name   = "Housing & Homeownership"
+      url    = "/issues/housing-homeownership/"
+      parent = "issues"
+      weight = 22
+
+    [[menu.main]]
+      name   = "Education"
+      url    = "/issues/education/"
+      parent = "issues"
+      weight = 23
+
+    [[menu.main]]
+      name   = "Term Limits"
+      url    = "/issues/term-limits/"
+      parent = "issues"
+      weight = 24
+
+  [[menu.main]]
+    name       = "Support"
+    identifier = "get-involved"
+    url        = "/volunteer"
+    weight     = 30
+
+    [[menu.main]]
+      name   = "Volunteer"
+      url    = "/volunteer"
+      parent = "get-involved"
+      weight = 31
+
+    [[menu.main]]
+      name   = "Donate"
+      url    = "/donate"
+      parent = "get-involved"
+      weight = 32
+
+    [[menu.main]]
+      name   = "Yard Signs"
+      url    = "/yard-signs"
+      parent = "get-involved"
+      weight = 33
+
+    [[menu.main]]
+      name   = "Events"
+      url    = "/events"
+      parent = "get-involved"
+      weight = 34
+
+  [[menu.main]]
+    name       = "About"
+    identifier = "about"
+    url        = "#"
+    weight     = 40
+
+    [[menu.main]]
+      name   = "About Kandee"
+      url    = "/about"
+      parent = "about"
+      weight = 41
+
+  [[menu.main]]
+    name   = "Endorsements"
+    url    = "/endorsements"
+    parent = "about"
+    weight = 42
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact"
+    weight = 50
+
+

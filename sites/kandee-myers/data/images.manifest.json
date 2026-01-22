@@ -1,0 +1,820 @@
+{
+  "/media/district-21-map.jpg": {
+    "width": 1938,
+    "height": 2062,
+    "aspect": 0.9398642095053347,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAiACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIDBAEG/8QAIRAAAgIBBAIDAAAAAAAAAAAAAAECEQMSITFBUWEEMnH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREC/9oADAMBAAIRAxEAPwD1m4r3YzTFezozEnPQvfQkMjc0n3sLldzYYlc16CeTFZ5JRyV14JTept8DZM0JpVaa8hHG5xtGq82ZrsMcJRTrn2USUVSJY24z0c7lSwOmI0/F+s/1AAqMWaVN0rFYARa//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/district-21-map__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/district-21-map__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/district-21-map__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/district-21-map__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/district-21-map__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/district-21-map__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/district-21-map__w1600.avif"
+        },
+        {
+          "w": 1938,
+          "url": "/media-deriv/district-21-map__w1938.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/district-21-map__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/district-21-map__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/district-21-map__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/district-21-map__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/district-21-map__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/district-21-map__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/district-21-map__w1600.jpg"
+        },
+        {
+          "w": 1938,
+          "url": "/media-deriv/district-21-map__w1938.jpg"
+        }
+      ]
+    }
+  },
+  "/media/district-21-map.avif": {
+    "width": 1938,
+    "height": 2062,
+    "aspect": 0.9398642095053347,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAiACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIDBAEG/8QAIRAAAgIBBAIDAAAAAAAAAAAAAAECEQMSITFBUWEEMnH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREC/9oADAMBAAIRAxEAPwD1m4r3YzTFezozEnPQvfQkMjc0n3sLldzYYlc16CeTFZ5JRyV14JTept8DZM0JpVaa8hHG5xtGq82ZrsMcJRTrn2USUVSJY24z0c7lSwOmI0/F+s/1AAqMWaVN0rFYARa//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/district-21-map__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/district-21-map__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/district-21-map__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/district-21-map__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/district-21-map__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/district-21-map__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/district-21-map__w1600.avif"
+        },
+        {
+          "w": 1938,
+          "url": "/media-deriv/district-21-map__w1938.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/district-21-map__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/district-21-map__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/district-21-map__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/district-21-map__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/district-21-map__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/district-21-map__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/district-21-map__w1600.jpg"
+        },
+        {
+          "w": 1938,
+          "url": "/media-deriv/district-21-map__w1938.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kandee-myers-utah-state-senate-district-21-bridge.jpg": {
+    "width": 4920,
+    "height": 3280,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAJRAAAgICAgICAQUAAAAAAAAAAQIDEQAEBRIhMSJBE1JhgbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGxEBAAMBAAMAAAAAAAAAAAAAAQACESEiMTL/2gAMAwEAAhEDEQA/AKuZ5gSqE1ZH6OPmCK/i8X8Ugmld37BVHXqpqyf8yiSNGNBar7GQg2ZNNyAey2CRdXhKtvmVwfKdTx3Kx6OrPrHtaDtELv3f9EYo15ppNoKzEmRSAXPq/vMevvRvsu2xaIyV8BZBHr3jCHbh3mgSc9SBVfuPXnE1TjDx9RcrJKoLRgX+k1lY1Fl5COHsQr15+xhhkLIOTXBTYb2gNGRakL2TXiqrNPHIzSk/kYdfVeDhhiXaiwZihP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kandee-myers-utah-state-senate-district-21-bridge.avif": {
+    "width": 4920,
+    "height": 3280,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAJRAAAgICAgICAQUAAAAAAAAAAQIDEQAEBRIhMSJBE1JhgbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGxEBAAMBAAMAAAAAAAAAAAAAAQACESEiMTL/2gAMAwEAAhEDEQA/AKuZ5gSqE1ZH6OPmCK/i8X8Ugmld37BVHXqpqyf8yiSNGNBar7GQg2ZNNyAey2CRdXhKtvmVwfKdTx3Kx6OrPrHtaDtELv3f9EYo15ppNoKzEmRSAXPq/vMevvRvsu2xaIyV8BZBHr3jCHbh3mgSc9SBVfuPXnE1TjDx9RcrJKoLRgX+k1lY1Fl5COHsQr15+xhhkLIOTXBTYb2gNGRakL2TXiqrNPHIzSk/kYdfVeDhhiXaiwZihP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-bridge__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kandee-myers-utah-state-senate-district-21-city.jpg": {
+    "width": 2337,
+    "height": 3506,
+    "aspect": 0.6665715915573303,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgMEBQYA/8QAKRAAAgIBAgMHBQAAAAAAAAAAAQIAEQMEEiExUQUTFEFCYZEVIzNxof/EABgBAAMBAQAAAAAAAAAAAAAAAAACBAED/8QAGxEAAwEBAQEBAAAAAAAAAAAAAAECAxEhEjH/2gAMAwEAAhEDEQA/ANFcQ6Rq4hJxqlEHxveZ+7VwgC3fU+QlN6qV1k8Y1T4i0YhCGISJu0k06feO43VqOcD69ph6X+ITbtdRlT8PjOc8XpLG9ctcioIP9lbvjxbcrAc6JYWOXCc8rbmpqNnjLRnZ1COSR0vhONS9f1lObWbbRr67Vo2kOQrvQuAtcAeHGZx1ek2tSZN3kSRUAKGWieFVXkJnlmU9I0p5TwXTmldBUkEdAZQWoCeXSE+sfEXdGjFmjWhy5SKHuJNl/I37uMI5VDOnLnduAv2jW/PQSP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2000.avif"
+        },
+        {
+          "w": 2337,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2337.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2000.jpg"
+        },
+        {
+          "w": 2337,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2337.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kandee-myers-utah-state-senate-district-21-city.avif": {
+    "width": 2337,
+    "height": 3506,
+    "aspect": 0.6665715915573303,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgMEBQYA/8QAKRAAAgIBAgMHBQAAAAAAAAAAAQIAEQMEEiExUQUTFEFCYZEVIzNxof/EABgBAAMBAQAAAAAAAAAAAAAAAAACBAED/8QAGxEAAwEBAQEBAAAAAAAAAAAAAAECAxEhEjH/2gAMAwEAAhEDEQA/ANFcQ6Rq4hJxqlEHxveZ+7VwgC3fU+QlN6qV1k8Y1T4i0YhCGISJu0k06feO43VqOcD69ph6X+ITbtdRlT8PjOc8XpLG9ctcioIP9lbvjxbcrAc6JYWOXCc8rbmpqNnjLRnZ1COSR0vhONS9f1lObWbbRr67Vo2kOQrvQuAtcAeHGZx1ek2tSZN3kSRUAKGWieFVXkJnlmU9I0p5TwXTmldBUkEdAZQWoCeXSE+sfEXdGjFmjWhy5SKHuJNl/I37uMI5VDOnLnduAv2jW/PQSP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2000.avif"
+        },
+        {
+          "w": 2337,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2337.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2000.jpg"
+        },
+        {
+          "w": 2337,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-city__w2337.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kandee-myers-utah-state-senate-district-21-park.jpg": {
+    "width": 2997,
+    "height": 4495,
+    "aspect": 0.6667408231368187,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABQYAAgMBBP/EACYQAAEEAQMDBAMAAAAAAAAAAAEAAgMRBBIhMQUiQRMUUZEVQmH/xAAXAQEBAQEAAAAAAAAAAAAAAAACAQMA/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECAxEhEkEiMVH/2gAMAwEAAhEDEQA/AG1RDvyMVlusahyL4Wc/VGxN7aNjkmghzReDCqlgckBCI+oCVmuwDdHdc94HEt1ix4tB2CVf0XY4MiN167J52Vvcue1sWpskjHdxuqReXG0BzyOBaSy8FxJ5JW0KVLszVkkw8Zm9sRlqVxJAAulR+LITYkfv/B9oNFMI5GuH6kFOAx7AIJo7o2VKONlU3Js8mT1KVsDy8aiGGncchK2gvIDRqPwAj8rRIwtdek8j5Qn1DhZr3R3tYAvwnVLKa7BhZ2YnGlYA+SJ7W3VkULTr0zI9bBxXFjjqbTneARtv9JSflS5mRHroCxsOL+UcinyI9o3ih4B2VslpKSO9PxZ//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2400.avif"
+        },
+        {
+          "w": 2997,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2997.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2400.jpg"
+        },
+        {
+          "w": 2997,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2997.jpg"
+        }
+      ]
+    }
+  },
+  "/media/kandee-myers-utah-state-senate-district-21-park.avif": {
+    "width": 2997,
+    "height": 4495,
+    "aspect": 0.6667408231368187,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABQYAAgMBBP/EACYQAAEEAQMDBAMAAAAAAAAAAAEAAgMRBBIhMQUiQRMUUZEVQmH/xAAXAQEBAQEAAAAAAAAAAAAAAAACAQMA/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECAxEhEkEiMVH/2gAMAwEAAhEDEQA/AG1RDvyMVlusahyL4Wc/VGxN7aNjkmghzReDCqlgckBCI+oCVmuwDdHdc94HEt1ix4tB2CVf0XY4MiN167J52Vvcue1sWpskjHdxuqReXG0BzyOBaSy8FxJ5JW0KVLszVkkw8Zm9sRlqVxJAAulR+LITYkfv/B9oNFMI5GuH6kFOAx7AIJo7o2VKONlU3Js8mT1KVsDy8aiGGncchK2gvIDRqPwAj8rRIwtdek8j5Qn1DhZr3R3tYAvwnVLKa7BhZ2YnGlYA+SJ7W3VkULTr0zI9bBxXFjjqbTneARtv9JSflS5mRHroCxsOL+UcinyI9o3ih4B2VslpKSO9PxZ//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2400.avif"
+        },
+        {
+          "w": 2997,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2997.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2400.jpg"
+        },
+        {
+          "w": 2997,
+          "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2997.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-senate-district-21-map-2026.jpg": {
+    "width": 1028,
+    "height": 1080,
+    "aspect": 0.9518518518518518,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAiACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIDBAEG/8QAIBABAAICAgIDAQAAAAAAAAAAAQACAxESMSFhBEFRkf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABcRAQEBAQAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/APWRXuNqKmmSJkuUP1+iTpks3N9PjUXI7u/yGI3kPUJ5MVct65EUQepLI7W3SxsuSlkR0/eycrW198Tcq2Zmnpjrag+fPuPWpU0SWKyW4/rLPqbA61imn4y8LemEIhinELLo3AhCFtf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w960.avif"
+        },
+        {
+          "w": 1028,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w1028.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w960.jpg"
+        },
+        {
+          "w": 1028,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w1028.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-senate-district-21-map-2026.avif": {
+    "width": 1028,
+    "height": 1080,
+    "aspect": 0.9518518518518518,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAiACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIDBAEG/8QAIBABAAICAgIDAQAAAAAAAAAAAQACAxESMSFhBEFRkf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABcRAQEBAQAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/APWRXuNqKmmSJkuUP1+iTpks3N9PjUXI7u/yGI3kPUJ5MVct65EUQepLI7W3SxsuSlkR0/eycrW198Tcq2Zmnpjrag+fPuPWpU0SWKyW4/rLPqbA61imn4y8LemEIhinELLo3AhCFtf/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w960.avif"
+        },
+        {
+          "w": 1028,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w1028.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w960.jpg"
+        },
+        {
+          "w": 1028,
+          "url": "/media-deriv/utah-senate-district-21-map-2026__w1028.jpg"
+        }
+      ]
+    }
+  }
+}
