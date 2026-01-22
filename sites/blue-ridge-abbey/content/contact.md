@@ -6,8 +6,6 @@ url: "/contact"
 ---
 
 
-
-
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}

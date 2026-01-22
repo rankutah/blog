@@ -7,6 +7,10 @@
 {{- $img  := .Get "img" | default "" -}}
 {{- if eq $img "" -}}{{- return -}}{{- end -}}
 
+{{- /* Optional responsive sources */ -}}
+{{- $imgDesktop := .Get "imgDesktop" | default "" -}}
+{{- $imgMobile  := .Get "imgMobile"  | default "" -}}
+
 {{- $alt         := .Get "alt" | default "" -}}
 {{- $bleed       := eq (lower (.Get "bleed" | default "false")) "true" -}}
 {{- $overlay     := eq (lower (.Get "overlay" | default "false")) "true" -}}
@@ -30,6 +34,8 @@
 {{- partial "hero.html" (dict
   "page" $page
   "image" $img
+  "imageDesktop" $imgDesktop
+  "imageMobile" $imgMobile
   "alt" $alt
   "bleed" $bleed
   "overlay" $overlay

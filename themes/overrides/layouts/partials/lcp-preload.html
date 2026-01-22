@@ -10,33 +10,44 @@
 {{- $hasPriorityCarousel := gt (len (findRE `(?is)data-priority="1"` $ctx.Content)) 0 -}}
 {{- if or $isHeroPage $hasPriorityCarousel -}}
   {{- $html := $ctx.Content -}}
-  {{- $avifSrcset := "" -}}
-  {{- $avifSizes := "" -}}
-  {{- $url := "" -}}
-  {{- $avifSS := findRESubmatch `(?is)<source[^>]+type="image/avif"[^>]+srcset="([^"]+)"` $html -}}
-  {{- $avifSZ := findRESubmatch `(?is)<source[^>]+type="image/avif"[^>]+sizes="([^"]+)"` $html -}}
-  {{- $imgMatches  := findRESubmatch `(?is)<img[^>]+src="([^"]+)"` $html -}}
-  {{- if gt (len $avifSS) 0 -}}
-    {{- $avifSrcset = index (index $avifSS 0) 1 -}}
-    {{- if gt (len $avifSZ) 0 -}}
-      {{- $avifSizes = index (index $avifSZ 0) 1 -}}
-    {{- else -}}
-      {{- $avifSizes = "100vw" -}}
+  {{- $avifSourceTags := findRE `(?is)<source[^>]+type="image/avif"[^>]*>` $html -}}
+  {{- if gt (len $avifSourceTags) 0 -}}
+    {{- range $i, $tag := $avifSourceTags -}}
+      {{- $ssm := findRESubmatch `(?is)\bsrcset="([^"]+)"` $tag -}}
+      {{- $szm := findRESubmatch `(?is)\bsizes="([^"]+)"` $tag -}}
+      {{- $mdm := findRESubmatch `(?is)\bmedia="([^"]+)"` $tag -}}
+      {{- $avifSrcset := "" -}}
+      {{- $avifSizes := "100vw" -}}
+      {{- $media := "" -}}
+      {{- if gt (len $ssm) 0 -}}
+        {{- $avifSrcset = index (index $ssm 0) 1 -}}
+      {{- end -}}
+      {{- if gt (len $szm) 0 -}}
+        {{- $avifSizes = index (index $szm 0) 1 -}}
+      {{- end -}}
+      {{- if gt (len $mdm) 0 -}}
+        {{- $media = index (index $mdm 0) 1 -}}
+      {{- end -}}
+      {{- if ne $avifSrcset "" -}}
+        {{- $first := index (split $avifSrcset ",") 0 | default "" -}}
+        {{- $first = trim $first " \t\n\r" -}}
+        {{- $firstParts := split (trim $first " ") " " -}}
+        {{- $url := "" -}}
+        {{- if gt (len $firstParts) 0 -}}
+          {{- $url = trim (index $firstParts 0) " \t\n\r\"'" -}}
+        {{- end -}}
+        {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
+          <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" imagesrcset="{{ $avifSrcset | safeHTMLAttr }}" imagesizes="{{ $avifSizes | safeHTMLAttr }}"{{ with $media }} media="{{ . | safeHTMLAttr }}"{{ end }}>
+        {{- end -}}
+      {{- end -}}
     {{- end -}}
-    {{- /* Choose the first candidate URL as href for broader support */ -}}
-  {{- $first := index (split $avifSrcset ",") 0 | default "" -}}
-  {{- $first = trim $first " \t\n\r" -}}
-  {{- $firstParts := split (trim $first " ") " " -}}
-    {{- if gt (len $firstParts) 0 -}}
-      {{- $url = trim (index $firstParts 0) " \t\n\r\"'" -}}
+  {{- else -}}
+    {{- $imgMatches  := findRESubmatch `(?is)<img[^>]+src="([^"]+)"` $html -}}
+    {{- $url := "" -}}
+    {{- if gt (len $imgMatches) 0 -}}
+      {{- $url = trim (index (index $imgMatches 0) 1) " \t\n\r\"'" -}}
     {{- end -}}
-  {{- else if gt (len $imgMatches) 0 -}}
-    {{- $url = trim (index (index $imgMatches 0) 1) " \t\n\r\"'" -}}
-  {{- end -}}
-  {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
-    {{- if ne $avifSrcset "" -}}
-      <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" imagesrcset="{{ $avifSrcset | safeHTMLAttr }}" imagesizes="{{ $avifSizes | safeHTMLAttr }}">
-    {{- else -}}
+    {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
       <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high">
     {{- end -}}
   {{- end -}}

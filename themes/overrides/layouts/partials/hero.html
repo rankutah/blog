@@ -23,6 +23,10 @@
 {{- $img  := ($p.image | default "") -}}
 {{- if eq $img "" -}}{{- return -}}{{- end -}}
 
+{{- /* Optional responsive hero sources */ -}}
+{{- $imgDesktop := ($p.imageDesktop | default "") -}}
+{{- $imgMobile  := ($p.imageMobile  | default "") -}}
+
 {{- $alt         := $p.alt | default "" -}}
 {{- $bleed       := cond (ne $img "") (or ($p.bleed | default false) false) false -}}
 {{- $overlay     := $p.overlay | default false -}}
@@ -109,20 +113,157 @@
   -}}
 {{- end -}}
 
-{{- /* Image rendering: use the shared manifest pipeline so hero images also benefit from
-      prebuilt responsive derivatives (reduces bytes for mobile + helps Lighthouse “Improve image delivery”). */ -}}
+{{- /* Image rendering:
+      - default: shared manifest pipeline
+      - responsive: if imageDesktop+imageMobile are provided, emit a single <picture>
+        with media conditions so desktop picks desktop and mobile picks mobile.
+        This avoids relying on CSS show/hide (which can double-download). */ -}}
 {{- $imgStr := $img | safeURL -}}
-{{- $heroImg := partial "img.manifest" (dict
-    "src" $imgStr
-    "alt" $alt
-    "class" (printf "not-prose %s" $imgClasses)
-    "loading" "eager"
-    "decoding" "async"
-    "sizes" "100vw"
-    "style" $imgStyle
-    "object" "cover"
-    "objectPosition" "center"
-  ) -}}
+{{- $sizes := "100vw" -}}
+
+{{- $heroImg := "" -}}
+
+{{- $hasResponsive := and (ne $imgDesktop "") (ne $imgMobile "") -}}
+{{- if $hasResponsive -}}
+  {{- $m := index site.Data "images.manifest" -}}
+
+  {{- $thin := " " -}} {{/* U+202F NARROW NO-BREAK SPACE */}}
+  {{- $nbsp := " " -}} {{/* U+00A0 NO-BREAK SPACE */}}
+
+  {{- /* resolve desktop entry */ -}}
+  {{- $keyD := (replaceRE "^https?://[^/]+" "" $imgDesktop) -}}
+  {{- $keyD = (replace $keyD "../" "") -}}
+  {{- $keyD = (replace $keyD "./" "") -}}
+  {{- if not (hasPrefix $keyD "/") -}}{{- $keyD = (printf "/%s" $keyD) -}}{{- end -}}
+  {{- $entryD := (cond $m (index $m $keyD) nil) -}}
+  {{- if not $entryD -}}
+    {{- $alts := slice (replace $keyD " " $thin) (replace $keyD " " $nbsp) (replace $keyD $thin " ") (replace $keyD $nbsp " ") -}}
+    {{- range $i, $alt := $alts -}}
+      {{- if and (not $entryD) $m (isset $m $alt) -}}
+        {{- $entryD = index $m $alt -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $entryD -}}
+    {{- if (hasSuffix $keyD ".jpg") -}}
+      {{- $altKey := replace $keyD ".jpg" ".avif" -}}
+      {{- if and $m (isset $m $altKey) -}}{{- $entryD = index $m $altKey -}}{{- end -}}
+    {{- else if (hasSuffix $keyD ".jpeg") -}}
+      {{- $altKey := replace $keyD ".jpeg" ".avif" -}}
+      {{- if and $m (isset $m $altKey) -}}{{- $entryD = index $m $altKey -}}{{- end -}}
+    {{- else if (hasSuffix $keyD ".avif") -}}
+      {{- $altKey := replace $keyD ".avif" ".jpg" -}}
+      {{- if and $m (isset $m $altKey) -}}{{- $entryD = index $m $altKey -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* resolve mobile entry */ -}}
+  {{- $keyM := (replaceRE "^https?://[^/]+" "" $imgMobile) -}}
+  {{- $keyM = (replace $keyM "../" "") -}}
+  {{- $keyM = (replace $keyM "./" "") -}}
+  {{- if not (hasPrefix $keyM "/") -}}{{- $keyM = (printf "/%s" $keyM) -}}{{- end -}}
+  {{- $entryM := (cond $m (index $m $keyM) nil) -}}
+  {{- if not $entryM -}}
+    {{- $alts := slice (replace $keyM " " $thin) (replace $keyM " " $nbsp) (replace $keyM $thin " ") (replace $keyM $nbsp " ") -}}
+    {{- range $i, $alt := $alts -}}
+      {{- if and (not $entryM) $m (isset $m $alt) -}}
+        {{- $entryM = index $m $alt -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $entryM -}}
+    {{- if (hasSuffix $keyM ".jpg") -}}
+      {{- $altKey := replace $keyM ".jpg" ".avif" -}}
+      {{- if and $m (isset $m $altKey) -}}{{- $entryM = index $m $altKey -}}{{- end -}}
+    {{- else if (hasSuffix $keyM ".jpeg") -}}
+      {{- $altKey := replace $keyM ".jpeg" ".avif" -}}
+      {{- if and $m (isset $m $altKey) -}}{{- $entryM = index $m $altKey -}}{{- end -}}
+    {{- else if (hasSuffix $keyM ".avif") -}}
+      {{- $altKey := replace $keyM ".avif" ".jpg" -}}
+      {{- if and $m (isset $m $altKey) -}}{{- $entryM = index $m $altKey -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* If both entries are present, build a responsive <picture>. Otherwise, fall back to normal manifest rendering. */ -}}
+  {{- if and $entryD $entryM -}}
+    {{- $avifD := $entryD.variants.avif | default slice -}}
+    {{- $jpegD := $entryD.variants.jpeg | default slice -}}
+    {{- $avifM := $entryM.variants.avif | default slice -}}
+    {{- $jpegM := $entryM.variants.jpeg | default slice -}}
+
+    {{- $avifSrcsetD := "" -}}
+    {{- range $i, $v := $avifD -}}
+      {{- $avifSrcsetD = printf "%s%s%s %vw" $avifSrcsetD (cond (gt $i 0) ", " "") ($v.url | safeURL) $v.w -}}
+    {{- end -}}
+    {{- $jpegSrcsetD := "" -}}
+    {{- range $i, $v := $jpegD -}}
+      {{- $jpegSrcsetD = printf "%s%s%s %vw" $jpegSrcsetD (cond (gt $i 0) ", " "") ($v.url | safeURL) $v.w -}}
+    {{- end -}}
+    {{- $avifSrcsetM := "" -}}
+    {{- range $i, $v := $avifM -}}
+      {{- $avifSrcsetM = printf "%s%s%s %vw" $avifSrcsetM (cond (gt $i 0) ", " "") ($v.url | safeURL) $v.w -}}
+    {{- end -}}
+    {{- $jpegSrcsetM := "" -}}
+    {{- range $i, $v := $jpegM -}}
+      {{- $jpegSrcsetM = printf "%s%s%s %vw" $jpegSrcsetM (cond (gt $i 0) ", " "") ($v.url | safeURL) $v.w -}}
+    {{- end -}}
+
+    {{- $wM := $entryM.width | default 0 -}}
+    {{- $hM := $entryM.height | default 0 -}}
+    {{- $srcFallbackM := (cond (gt (len $jpegM) 0) (index $jpegM (sub (len $jpegM) 1)).url ($imgMobile | safeURL)) -}}
+
+    {{- $classes := (printf "object-cover object-center not-prose %s" $imgClasses) -}}
+    {{- $fetchpri := "high" -}}
+
+    {{- $hasHeightInStyle := and (ne $imgStyle "") (gt (len (findRE `\b[0-9.]+(?:vh|svh|dvh)\b` $imgStyle)) 0) -}}
+    {{- $pictureStyleAttr := "" -}}
+    {{- $imgStyleAttr := "" -}}
+    {{- if $hasHeightInStyle -}}
+      {{- $pictureStyleAttr = "display:block;" -}}
+      {{- $imgStyleAttr = $imgStyle -}}
+    {{- else -}}
+      {{- $pictureStyleAttr = (cond (ne $imgStyle "") (printf "display:block; %s" $imgStyle) "display:block;") -}}
+    {{- end -}}
+
+    {{- $mediaDesktop := "(min-width: 768px)" -}}
+    {{- $mediaMobile := "(max-width: 767.98px)" -}}
+
+    {{- $heroImg = "" -}}
+    {{- $heroImg = printf "%s<picture style=\"%s\">" $heroImg ($pictureStyleAttr | safeCSS) -}}
+    {{- if ne $avifSrcsetD "" -}}
+      {{- $heroImg = printf "%s<source media=\"%s\" type=\"image/avif\" srcset=\"%s\" sizes=\"%s\">" $heroImg $mediaDesktop ($avifSrcsetD | safeHTMLAttr) $sizes -}}
+    {{- end -}}
+    {{- if ne $jpegSrcsetD "" -}}
+      {{- $heroImg = printf "%s<source media=\"%s\" srcset=\"%s\" sizes=\"%s\">" $heroImg $mediaDesktop ($jpegSrcsetD | safeHTMLAttr) $sizes -}}
+    {{- end -}}
+    {{- if ne $avifSrcsetM "" -}}
+      {{- $heroImg = printf "%s<source media=\"%s\" type=\"image/avif\" srcset=\"%s\" sizes=\"%s\">" $heroImg $mediaMobile ($avifSrcsetM | safeHTMLAttr) $sizes -}}
+    {{- end -}}
+    {{- if ne $jpegSrcsetM "" -}}
+      {{- $heroImg = printf "%s<source media=\"%s\" srcset=\"%s\" sizes=\"%s\">" $heroImg $mediaMobile ($jpegSrcsetM | safeHTMLAttr) $sizes -}}
+    {{- end -}}
+
+    {{- $imgStyleFrag := cond (ne $imgStyleAttr "") (printf " style=\"%s\"" ($imgStyleAttr | safeCSS)) "" -}}
+    {{- $srcsetFrag := cond (ne $jpegSrcsetM "") (printf " srcset=\"%s\"" ($jpegSrcsetM | safeHTMLAttr)) "" -}}
+    {{- $dimFrag := cond (and $wM $hM) (printf " width=\"%v\" height=\"%v\"" $wM $hM) "" -}}
+    {{- $heroImg = printf "%s<img src=\"%s\" alt=\"%s\" loading=\"eager\" decoding=\"async\" fetchpriority=\"%s\" sizes=\"%s\"%s%s%s class=\"block %s\"></picture>" $heroImg ($srcFallbackM | safeURL) ($alt | htmlEscape) $fetchpri $sizes $srcsetFrag $dimFrag $imgStyleFrag $classes -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq $heroImg "" -}}
+  {{- /* default single-image manifest rendering */ -}}
+  {{- $heroImg = partial "img.manifest" (dict
+      "src" $imgStr
+      "alt" $alt
+      "class" (printf "not-prose %s" $imgClasses)
+      "loading" "eager"
+      "decoding" "async"
+      "sizes" $sizes
+      "style" $imgStyle
+      "object" "cover"
+      "objectPosition" "center"
+    ) -}}
+{{- end -}}
 
 {{- if $bleed -}}
   <div class="section hero bleed">
