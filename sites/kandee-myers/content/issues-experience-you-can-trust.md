@@ -42,9 +42,8 @@ Experience matters.
 
 As a Utah State Senator, I will approach housing policy with experience, humility, and long-term thinking—because I care deeply about homeownership and know Utah can do better.
 
-“Housing crash of 2007-2009 wasn’t driven by malice—it was the belief that housing prices
-would always rise, and that markets could self-correct without meaningful oversight”
-
-Kandee Myers
+{{< quote author="Kandee Myers" >}}
+Housing crash of 2007–2009 wasn’t driven by malice—it was the belief that housing prices would always rise, and that markets could self-correct without meaningful oversight.
+{{< /quote >}}
 
 Back to: [Utah Housing & Homeownership](/issues/housing-homeownership/) • [Issues](/issues)
