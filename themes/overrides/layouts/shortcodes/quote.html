@@ -15,8 +15,7 @@
 {{- $inner := .InnerDeindent | strings.TrimSpace -}}
 
 <figure class="not-prose my-8 rounded-xl border border-black/10 dark:border-white/10 bg-black/[0.03] dark:bg-white/[0.04] p-6 md:p-7 shadow-sm {{ $classes }}">
-  <div aria-hidden="true" class="select-none text-5xl leading-none text-black/25 dark:text-white/25">“</div>
-  <div class="prose prose-lg dark:prose-invert max-w-none italic -mt-2">
+  <div class="prose prose-lg dark:prose-invert max-w-none italic">
     {{- if $inner -}}
       {{- .Page.RenderString $inner -}}
     {{- end -}}

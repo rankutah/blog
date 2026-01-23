@@ -131,16 +131,22 @@ enableRobotsTXT = true
       weight = 22
 
     [[menu.main]]
+      name   = "Homeownership"
+      url    = "/issues/homeownership/"
+      parent = "issues-housing"
+      weight = 1
+
+    [[menu.main]]
       name   = "Housing & Homeownership"
       url    = "/issues/housing-homeownership/"
       parent = "issues-housing"
-      weight = 1
+      weight = 2
 
     [[menu.main]]
       name   = "Experience You Can Trust"
       url    = "/issues/housing-homeownership/experience-you-can-trust/"
       parent = "issues-housing"
-      weight = 2
+      weight = 3
 
     [[menu.main]]
       name   = "Education"
