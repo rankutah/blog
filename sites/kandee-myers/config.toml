@@ -54,7 +54,11 @@ enableRobotsTXT = true
     name    = "Kandee 4 Utah"
 
 [params.analytics]
-  delayMs = 5000
+  provider = "zaraz"
+  # Load analytics immediately (Zaraz itself is injected after LCP by the shared theme)
+  delayMs = 0
+  clarityOnlyOnInteraction = true
+  debugMode = false
 
   [params.analytics.google]
     id = "SBTCE62ZGX"
