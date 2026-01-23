@@ -197,22 +197,66 @@
                 <button id="menu-{{ .Identifier }}-r-button" type="button"
                         data-dropdown-toggle="menu-{{ .Identifier }}-r"
                         data-dropdown-placement="bottom-start"
+                        aria-expanded="false"
                         class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                   {{ .Name }}
-                  <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                   </svg>
                 </button>
                  <div id="menu-{{ .Identifier }}-r"
                    class="z-50 hidden absolute left-0 top-full mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
                   <ul class="py-2 text-sm">
-                    {{ range .Children }}
-                      <li>
-                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
-                          {{ .Name }}
-                        </a>
-                      </li>
-                    {{ end }}
+                      {{ range .Children }}
+                        {{ if .HasChildren }}
+                          {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
+                          {{- $submenuId := printf "submenu-%s-r" (or .Identifier (urlize .Name)) -}}
+                          <li class="relative group">
+                            {{ if $isNoNav }}
+                              <button type="button"
+                                      class="no-underline hover:underline brand-link flex items-center justify-between w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                      data-submenu-toggle="{{ $submenuId }}"
+                                      aria-controls="{{ $submenuId }}"
+                                      aria-expanded="false">
+                                <span>{{ .Name }}</span>
+                                <svg data-chevron-flyout class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                              </button>
+                            {{ else }}
+                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center justify-between px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                                <span>{{ .Name }}</span>
+                                <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                              </a>
+                            {{ end }}
+                            {{ if $isNoNav }}
+                              <div id="{{ $submenuId }}" data-submenu class="z-50 hidden absolute left-full top-0 ml-1">
+                            {{ else }}
+                              <div class="z-50 hidden group-hover:block group-focus-within:block absolute left-full top-0 ml-1">
+                            {{ end }}
+                              <div class="min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
+                                <ul class="py-2 text-sm">
+                                  {{ range .Children }}
+                                    <li>
+                                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                                        {{ .Name }}
+                                      </a>
+                                    </li>
+                                  {{ end }}
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        {{ else }}
+                          <li>
+                            <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                              {{ .Name }}
+                            </a>
+                          </li>
+                        {{ end }}
+                      {{ end }}
                   </ul>
                 </div>
               {{ else }}
@@ -306,9 +350,10 @@
         <button id="menu-{{ .Identifier }}-m-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}-m"
                       data-dropdown-placement="bottom-start"
+                      aria-expanded="false"
           class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
-                <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
               </button>
@@ -317,11 +362,46 @@
                     class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm {{ $dropBg }} backdrop-blur">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
-                    <li>
-                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
-                        {{ .Name }}
-                      </a>
-                    </li>
+                    {{ if .HasChildren }}
+                      {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
+                      {{- $submenuId := printf "submenu-%s-m" (or .Identifier (urlize .Name)) -}}
+                      <li>
+                        {{ if $isNoNav }}
+                          <button type="button"
+                                  class="no-underline hover:underline brand-link flex items-center justify-between w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                  data-submenu-toggle="{{ $submenuId }}"
+                                  aria-controls="{{ $submenuId }}"
+                                  aria-expanded="false">
+                            <span>{{ .Name }}</span>
+                            <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                          </button>
+                        {{ else }}
+                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center justify-between px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                            <span>{{ .Name }}</span>
+                            <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                          </a>
+                        {{ end }}
+                        <ul id="{{ $submenuId }}" data-submenu class="mt-1 ml-4 border-l border-black/10 dark:border-white/10 hidden">
+                          {{ range .Children }}
+                            <li>
+                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 pl-5 hover:bg-black/5 dark:hover:bg-white/10">
+                                {{ .Name }}
+                              </a>
+                            </li>
+                          {{ end }}
+                        </ul>
+                      </li>
+                    {{ else }}
+                      <li>
+                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                          {{ .Name }}
+                        </a>
+                      </li>
+                    {{ end }}
                   {{ end }}
                 </ul>
               </div>
@@ -366,9 +446,10 @@
         <button id="menu-{{ .Identifier }}-d-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}-d"
                       data-dropdown-placement="bottom-start"
+                      aria-expanded="false"
           class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
-                <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
               </button>
@@ -377,11 +458,54 @@
                     class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
-                    <li>
-                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
-                        {{ .Name }}
-                      </a>
-                    </li>
+                    {{ if .HasChildren }}
+                      {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
+                      {{- $submenuId := printf "submenu-%s-d" (or .Identifier (urlize .Name)) -}}
+                      <li class="relative group">
+                        {{ if $isNoNav }}
+                          <button type="button"
+                                  class="no-underline hover:underline brand-link flex items-center justify-between w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                  data-submenu-toggle="{{ $submenuId }}"
+                                  aria-controls="{{ $submenuId }}"
+                                  aria-expanded="false">
+                            <span>{{ .Name }}</span>
+                            <svg data-chevron-flyout class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                          </button>
+                        {{ else }}
+                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center justify-between px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                            <span>{{ .Name }}</span>
+                            <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                          </a>
+                        {{ end }}
+                        {{ if $isNoNav }}
+                          <div id="{{ $submenuId }}" data-submenu class="z-50 hidden absolute left-full top-0 ml-1">
+                        {{ else }}
+                          <div class="z-50 hidden group-hover:block group-focus-within:block absolute left-full top-0 ml-1">
+                        {{ end }}
+                          <div class="min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
+                            <ul class="py-2 text-sm">
+                              {{ range .Children }}
+                                <li>
+                                  <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                                    {{ .Name }}
+                                  </a>
+                                </li>
+                              {{ end }}
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    {{ else }}
+                      <li>
+                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                          {{ .Name }}
+                        </a>
+                      </li>
+                    {{ end }}
                   {{ end }}
                 </ul>
               </div>
@@ -416,4 +540,91 @@
     window.addEventListener('resize', setHeaderVar);
   })();
   </script>
+
+<style>
+  /* Chevron best-practice behavior:
+     - down chevron for menus that open downward
+     - rotate when expanded (aria-expanded="true")
+  */
+  button[aria-expanded="true"] svg[data-chevron] { transform: rotate(180deg); }
+
+  /* Flyout chevrons (2nd-level desktop click-toggles):
+     - default points right
+      - expanded points left
+  */
+  button svg[data-chevron-flyout] { transform: rotate(-90deg); }
+    button[aria-expanded="true"] svg[data-chevron-flyout] { transform: rotate(90deg); }
+</style>
+
+<script>
+  // Nested submenu toggles (2nd-level only)
+  (function(){
+    function toggleSubmenu(btn){
+      try {
+        var id = btn && btn.getAttribute('data-submenu-toggle');
+        if (!id) return;
+        var menu = document.getElementById(id);
+        if (!menu) return;
+        var isHidden = menu.classList.contains('hidden');
+        if (isHidden) menu.classList.remove('hidden');
+        else menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+      } catch(_e) {}
+    }
+
+    function closeSubmenu(btn){
+      try {
+        var id = btn && btn.getAttribute('data-submenu-toggle');
+        if (!id) return;
+        var menu = document.getElementById(id);
+        if (menu && !menu.classList.contains('hidden')) menu.classList.add('hidden');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      } catch(_e) {}
+    }
+
+    function closeAllSubmenus(){
+      try {
+        var buttons = document.querySelectorAll('[data-submenu-toggle][aria-expanded="true"]');
+        for (var i = 0; i < buttons.length; i++) closeSubmenu(buttons[i]);
+      } catch(_e) {}
+    }
+
+    function init(){
+      document.addEventListener('click', function(ev){
+        var t = ev && ev.target;
+        if (!t) return;
+
+        var btn = t.closest ? t.closest('[data-submenu-toggle]') : null;
+        if (btn) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          var id = btn.getAttribute('data-submenu-toggle');
+          var menu = id ? document.getElementById(id) : null;
+          var isOpen = (btn.getAttribute('aria-expanded') === 'true') && menu && !menu.classList.contains('hidden');
+
+          if (isOpen) {
+            closeSubmenu(btn);
+          } else {
+            closeAllSubmenus();
+            toggleSubmenu(btn);
+          }
+          return;
+        }
+
+        // Click outside any open submenu closes it.
+        if (t.closest && (t.closest('[data-submenu]') || t.closest('[data-submenu-toggle]'))) return;
+        closeAllSubmenus();
+      });
+
+      document.addEventListener('keydown', function(ev){
+        if (!ev) return;
+        var key = ev.key || ev.code;
+        if (key === 'Escape' || key === 'Esc') closeAllSubmenus();
+      });
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once:true });
+    else init();
+  })();
+</script>
 

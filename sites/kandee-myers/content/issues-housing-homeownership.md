@@ -6,6 +6,8 @@ url: "/issues/housing-homeownership/"
 
 # Utah Housing & Homeownership
 
+Related: [Experience You Can Trust](/issues/housing-homeownership/experience-you-can-trust/)
+
 I have professionally sold real estate since 1994 and bought my first rental property in 1985. In 2005, my husband and I owned 20 rental properties, and some of us, deep in the real estate market at the time, could feel the uncertainty slowly building as federal banking oversight weakened.
 
 I believe an important point is that both parties, driven by a shared belief that markets could largely self-regulate and that expanding homeownership was an unqualified good, caused “the housing bubble and crash” (2007–2009).
