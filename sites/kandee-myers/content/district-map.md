@@ -9,7 +9,7 @@ aliases: ["/district-21/"]
 
 This page is meant to help you quickly confirm whether you’re in **Utah State Senate District 21**.
 
-If you’re close to a boundary, always double-check with the official lookup tool.
+If you’re close to a boundary, always double-check with the [official lookup tool](https://le.utah.gov/GIS/findDistrict.jsp).
 
 ## District 21 map
 
