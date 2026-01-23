@@ -4,7 +4,7 @@ description: "Kandee Myers’ approach to the pro-life vs pro-choice discussion 
 url: "/issues/pro-life-pro-choice/"
 ---
 
-## Pro-life vs Pro-choice
+# Pro-life vs Pro-choice
 
 **Coming soon.**
 

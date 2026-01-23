@@ -4,6 +4,6 @@ description: "Kandee Myers’ views on marriage policy and family stability (com
 url: "/issues/marriage/"
 ---
 
-## Marriage
+# Marriage
 
 **Coming soon.**

@@ -4,7 +4,7 @@ description: "Kandee Myers’ health care priorities for Utah State Senate Distr
 url: "/issues/health-care/"
 ---
 
-## Health Care
+# Health Care
 
 **Coming soon.**
 

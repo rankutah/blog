@@ -9,7 +9,7 @@ description: "Kandee Myers is running for Utah State Senate District 21. Learn a
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## About Kandee
+# About Kandee
 
 Kandee Myers is running for **Utah State Senate — District 21**.
 

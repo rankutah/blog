@@ -7,7 +7,7 @@ Kandee Myers is focused on practical policy work and clear accountability.
 
 This page summarizes her current issue statements and links to deeper write-ups.
 
-## Featured priorities
+# Featured priorities
 
 ### Utah Housing & Homeownership
 

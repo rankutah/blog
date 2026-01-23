@@ -3,7 +3,7 @@ title: "Yard Signs"
 description: "Request a yard sign for Kandee Myers for Utah State Senate District 21."
 ---
 
-## Yard signs
+# Yard signs
 
 **Yard sign requests are coming soon.**
 

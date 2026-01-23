@@ -3,7 +3,7 @@ title: "Privacy Policy"
 description: "How this campaign website handles basic analytics and form submissions."
 ---
 
-## Privacy
+# Privacy
 
 This is a simple campaign website.
 

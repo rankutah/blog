@@ -4,6 +4,6 @@ description: "A focused-learning approach: less distraction, healthier developme
 url: "/issues/focused-learning-technology/"
 ---
 
-## Focused Learning & Classroom Technology
+# Focused Learning & Classroom Technology
 
 **Coming soon.**

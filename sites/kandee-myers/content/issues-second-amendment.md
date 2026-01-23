@@ -4,7 +4,7 @@ description: "Kandee Myers’ 2nd Amendment priorities for Utah State Senate Dis
 url: "/issues/second-amendment/"
 ---
 
-## 2nd Amendment
+# 2nd Amendment
 
 **Coming soon.**
 

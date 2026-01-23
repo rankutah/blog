@@ -3,7 +3,7 @@ title: "Volunteer"
 description: "Volunteer for Kandee Myers’ campaign for Utah State Senate District 21."
 ---
 
-## Volunteer
+# Volunteer
 
 Campaigns win when neighbors show up.
 

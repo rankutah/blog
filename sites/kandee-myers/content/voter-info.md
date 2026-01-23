@@ -3,7 +3,7 @@ title: "Voter Info"
 description: "How to vote in Utah State Senate District 21 — registration, deadlines, and official resources."
 ---
 
-## Voter Info
+# Voter Info
 
 Election details can change. This page prioritizes **official Utah election resources** so it stays accurate.
 

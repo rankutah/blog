@@ -4,7 +4,7 @@ description: "Kandee Myers’ education priorities for Utah State Senate Distric
 url: "/issues/education/"
 ---
 
-## Education
+# Education
 
 ## I believe in public education — and I trust Alpine School District
 

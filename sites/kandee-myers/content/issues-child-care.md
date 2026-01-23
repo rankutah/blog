@@ -4,7 +4,7 @@ description: "Kandee Myers’ child care priorities for Utah State Senate Distri
 url: "/issues/child-care/"
 ---
 
-## Child Care
+# Child Care
 
 **Coming soon.**
 

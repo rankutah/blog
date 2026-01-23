@@ -3,7 +3,7 @@ title: "Contact"
 description: "Contact Kandee Myers’ campaign for Utah State Senate District 21."
 ---
 
-## Contact
+# Contact
 
 **Contact options are coming soon.**
 

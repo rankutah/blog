@@ -4,7 +4,7 @@ description: "Kandee Myers’ approach to adult content policy and protecting th
 url: "/issues/adult-content/"
 ---
 
-## Adult Content — Protecting the Public
+# Adult Content — Protecting the Public
 
 **Coming soon.**
 

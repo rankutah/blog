@@ -3,7 +3,7 @@ title: "Events"
 description: "Campaign events for Kandee Myers for Utah State Senate District 21."
 ---
 
-## Events
+# Events
 
 No events are published yet.
 

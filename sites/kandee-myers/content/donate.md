@@ -3,7 +3,7 @@ title: "Donate"
 description: "Support Kandee Myers’ campaign for Utah State Senate District 21."
 ---
 
-## Donate
+# Donate
 
 Thank you for considering a contribution.
 

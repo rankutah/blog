@@ -4,7 +4,7 @@ description: "Kandee Myers supports reasonable term limits rooted in accountabil
 url: "/issues/term-limits/"
 ---
 
-## Term Limits
+# Term Limits
 
 I support reasonable term limits because public service should remain rooted in accountability, fresh perspective, and connection to the people being served.
 

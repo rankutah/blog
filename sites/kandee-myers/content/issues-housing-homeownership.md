@@ -4,7 +4,7 @@ description: "Kandee Myers’ housing priorities for Utah State Senate District 
 url: "/issues/housing-homeownership/"
 ---
 
-## Utah Housing & Homeownership
+# Utah Housing & Homeownership
 
 I have professionally sold real estate since 1994 and bought my first rental property in 1985. In 2005, my husband and I owned 20 rental properties, and some of us, deep in the real estate market at the time, could feel the uncertainty slowly building as federal banking oversight weakened.
 

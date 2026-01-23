@@ -4,7 +4,7 @@ description: "Kandee Myers’ perspective on journalism as a profession vs. cont
 url: "/issues/journalism-and-content-creators/"
 ---
 
-## Journalism vs. Content Creators
+# Journalism vs. Content Creators
 
 **Coming soon.**
 

@@ -4,7 +4,7 @@ description: "Understanding the role delegates play in Utah government (coming s
 url: "/issues/delegates/"
 ---
 
-## Understanding the Role Delegates Play In Utah Government
+# Understanding the Role Delegates Play In Utah Government
 
 **Coming soon.**
 

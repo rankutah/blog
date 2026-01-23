@@ -4,6 +4,6 @@ description: "Kandee Myers’ view that church and state are separate matters (c
 url: "/issues/church-and-state/"
 ---
 
-## Church and State Separate Matters
+# Church and State Separate Matters
 
 **Coming soon.**
