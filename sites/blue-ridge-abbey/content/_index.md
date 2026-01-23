@@ -1,5 +1,5 @@
 ---
-title: "Bed and Breakfast in Buena Vista, VA - B&B Rooms & Lodging - Boutique Hotel Near You - Best place for a quiet getaway in the Shenandoah Valley - Secluded Wedding Venue Location - Near Blue Ridge Mountains and Natural Bridge with Blue Ridge Parkway Access - Near Lexington Virginia"
+title: "Bed and Breakfast in Buena Vista, VA - Boutique Hotel Near You - Best place for a secluded getaway vacation in the Shenandoah Valley - Quiet Wedding Venue - Near Blue Ridge Mountains, Natural Bridge, Safari Park, and the Blue Ridge Parkway - Lodging Near Lexington Virginia - Great Place to Stay Near Southern Virginia University (SVU), Virginia Military Institute (VMI), and Washington and Lee (W&L)"
 
 description: "Bed and breakfast lodging in Buena Vista, VA. Cozy B&B rooms near Lexington, VA and the Blue Ridge Parkway with made-to-order breakfast and friendly service. Explore nearby hikes, scenic drives, Natural Bridge, and the Shenandoah Valley."
 layout: "flowbite"

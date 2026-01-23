@@ -191,7 +191,7 @@ My Pleasant Grove office is conveniently located in Grove Cove, just west of Gro
 
 
 
-## Reviews from Local Businesses using Digital Marketing Services
+## Reviews from Local Businesses using Web Design & SEO Services
 {.center}
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
