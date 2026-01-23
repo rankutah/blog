@@ -9,7 +9,7 @@ url: "/carriage-rooms"
 
 Welcome to the new Carriage House at Blue Ridge Abbey. Each room includes a private, comfortable stay with thoughtful amenities.
 
-{{< badge text="Pet-Friendly • Book now for stays starting Feb 9" >}}
+{{< badge text="Pet-Friendly • Book now for stays starting Feb 23" >}}
 
 Our rooms that are currently available for booking in the Main House can be found here: {{< button url="/rooms" text="Main House Rooms" >}}
 
@@ -21,7 +21,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 
 ![Maple Grove room at Blue Ridge Abbey Carriage House](/media/maple-grove.jpg)
 
-{{< badge text="Book now • Stays from Feb 9" >}}
+{{< badge text="Book now • Stays from Feb 23" >}}
 
 {{< amenity name="bed" text="Full-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}} {{< amenity name="pet" text="Pet-Friendly" >}}
 
@@ -34,7 +34,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 
 ![Morning Glory room at Blue Ridge Abbey Carriage House](/media/morning-glory.png)
 
-{{< badge text="Book now • Stays from Feb 9" >}}
+{{< badge text="Book now • Stays from Feb 23" >}}
 
 {{< amenity name="bed" text="Two Queen Beds" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}} {{< amenity name="pet" text="Pet-Friendly" >}}
 
@@ -47,7 +47,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 
 ![Daylily room at Blue Ridge Abbey Carriage House](/media/day-lily.png)
 
-{{< badge text="Book now • Stays from Feb 9" >}}
+{{< badge text="Book now • Stays from Feb 23" >}}
 
 {{< amenity name="bed" text="King-Size Bed" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}} {{< amenity name="pet" text="Pet-Friendly" >}}
 
@@ -60,7 +60,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 
 ![Edelweiss room at Blue Ridge Abbey Carriage House](/media/edelweiss.jpg)
 
-{{< badge text="Book now • Stays from Feb 9" >}}
+{{< badge text="Book now • Stays from Feb 23" >}}
 
 {{< amenity name="bed" text="Two Queen Beds" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}} {{< amenity name="pet" text="Pet-Friendly" >}}
 
@@ -73,7 +73,7 @@ Prefer to talk through options or have questions? {{< button url="tel:+154031938
 
 ![Dancing Willow room at Blue Ridge Abbey Carriage House](/media/dancing-willow.jpg)
 
-{{< badge text="Book now • Stays from Feb 9" >}}
+{{< badge text="Book now • Stays from Feb 23" >}}
 
 {{< amenity name="bed" text="Two Queen Beds" >}} {{< amenity name="fridge" text="Mini-Fridge" >}} {{< amenity name="tv" text="Smart TV" >}} {{< amenity name="pet" text="Pet-Friendly" >}}
 

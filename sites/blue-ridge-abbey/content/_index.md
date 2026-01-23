@@ -41,7 +41,7 @@ Hotel comfort with bed & breakfast warmth. Our B&B lodging offers cozy guest roo
 
 Blue Ridge Abbey is pleased to announce the opening of an additional building with 5 additional bedrooms.
 
-{{< badge text="Book now • Stays from Feb 9" >}}
+{{< badge text="Book now • Stays from Feb 23" >}}
 {{< button url="/carriage-rooms" text="Carriage Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
 
