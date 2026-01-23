@@ -57,7 +57,7 @@ enableRobotsTXT = true
   delayMs = 5000
 
   [params.analytics.google]
-    id = ""
+    id = "SBTCE62ZGX"
     enabled = false
 
   [params.analytics.clarity]
