@@ -3,13 +3,9 @@ title: "Issues"
 description: "Kandee Myers’ priorities for Utah State Senate District 21 — housing, education, term limits, and more."
 ---
 
-Kandee Myers is focused on practical policy work and clear accountability.
-
-This page summarizes her current issue statements and links to deeper write-ups.
-
 # Featured priorities
 
-### Utah Housing & Homeownership
+## Utah Housing & Homeownership
 
 Kandee’s background includes real estate (since 1994) and first-hand experience through the housing boom and crash.
 
@@ -21,7 +17,7 @@ Key points:
 
 Read more: [Utah Housing & Homeownership](/issues/housing-homeownership/)
 
-### Education — Public & Private Schools
+## Education — Public & Private Schools
 
 Kandee supports strong public schools and wants education policy to be research-guided and child-centered.
 
@@ -33,7 +29,7 @@ Key points:
 
 Read more: [Education](/issues/education/)
 
-### Term Limits
+## Term Limits
 
 Kandee supports reasonable term limits rooted in accountability, fresh perspective, and connection to constituents.
 
