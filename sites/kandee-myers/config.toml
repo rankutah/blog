@@ -149,6 +149,12 @@ enableRobotsTXT = true
       weight = 3
 
     [[menu.main]]
+      name   = "Property Taxes"
+      url    = "/issues/property-taxes/"
+      parent = "issues-housing"
+      weight = 4
+
+    [[menu.main]]
       name   = "Education"
       url    = "/issues/education/"
       parent = "issues"

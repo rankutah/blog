@@ -30,6 +30,23 @@ Notes:
 - Content styling: avoid raw HTML in Markdown pages when possible (especially Tailwind utility soup / arbitrary colors). Prefer Markdown + existing shortcodes (e.g., `button`, `cols`/`col`, `badge`).
 - Customer-facing copy: use plain language and avoid tech jargon (e.g., “sprints”, “lean builds”, “workflow”).
 
+## Client PDFs (notes → pages)
+
+Some clients send PDFs with embedded notes/annotations (e.g., “sticky note” / FreeText comments). You can extract both the annotation contents (instructions) and the page text with:
+
+```sh
+python3 scripts/extract-pdf-notes.py "/absolute/path/to/client.pdf" --format md
+```
+
+Workflow:
+
+1) Read the **Annotations** section (that’s the client’s instructions).
+2) Convert the **Extracted text** into a real Markdown page under `sites/<site>/content/` (add headings + bullet lists for readability).
+3) If the page should appear in the navbar, add it to that site’s menu in `sites/<site>/config.toml` under `[menu]`.
+4) Verify locally with `npm run build:<site>`.
+
+If the script fails with a missing dependency, install it with `pip3 install pypdf`.
+
 ## Services naming (Rank Utah / Clear Presence)
 
 When updating copy for the Rank Utah site, keep service names and inclusions consistent:

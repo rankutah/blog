@@ -71,3 +71,18 @@ layout: "flowbite"
 ```sh
 hugo new --source ./sites/<site> blog/my-new-post.md
 ```
+
+## Client PDFs with embedded notes
+
+Some clients send PDFs with feedback/notes embedded as annotations (e.g., FreeText notes). You can extract both the page text and the annotation contents with:
+
+```sh
+python3 scripts/extract-pdf-notes.py "/absolute/path/to/file.pdf" --format md
+```
+
+This prints:
+
+- **Annotations** (who wrote the note + what it says + page number)
+- **Extracted text** per page (best-effort)
+
+Use the **Annotations** section as “instructions”, and convert the extracted text into proper Markdown sections/bullets.
