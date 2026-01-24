@@ -107,6 +107,7 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
 - Must be willing to commit to **1 month**. Ideal commitment is **2 months**.
 - Must have a **promo video** and **photos**
 
+
 {{< button url="/contact" text="Talk About Google Ads" >}}
 
 {{< /col >}}

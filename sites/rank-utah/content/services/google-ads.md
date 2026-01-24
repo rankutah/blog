@@ -92,7 +92,7 @@ Google Ads is a **high‑risk / high‑reward** channel. It’s possible to spen
 
 I typically use **Performance Max (PMax)** as part of the campaign setup. PMax helps gather more data without investing everything into highly competitive (and often expensive) Search campaigns.
 
-It also takes better advantage of AI, remarketing, and a higher potential to scale ad spend if it works.
+It also takes better advantage of AI, remarketing, and a higher potential to scale ad spend.
 
 PMax relies heavily on creative assets—especially video—so a **promo video is required**, along with a set of solid photos.
 
@@ -108,7 +108,7 @@ Setup typically includes:
 
 ### Assigning values to conversions
 
-We work with you to define realistic conversion values—for example:
+I work with you to define realistic conversion values—for example:
 
 - A phone call from a qualified lead
 - A contact form submission
@@ -118,10 +118,13 @@ When possible, we also use **micro‑conversions** (smaller signals) to help gui
 
 ## What’s included
 
-- Conversion tracking + call tracking setup
-- Campaign build and setup
-- Keyword setup and management
-- Landing page optimization for ads
+- Keyword research & strategy
+- Campaign build & launch
+- Ad copy and asset creation
+- Conversion and call tracking
+- Landing page optimization
+- Ongoing optimization
+- Reporting and recommendations
 
 ## Ready to talk about Google Ads?
 
