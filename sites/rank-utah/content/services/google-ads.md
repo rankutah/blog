@@ -35,7 +35,7 @@ Google Ads is a good fit if you:
 - Want more leads now and are willing to pay for them
 - Can invest in monthly ad spend (separate from the management fee)
 - Are willing to give the ads time to perform
-- Understand that you may loose your money without the results you want
+- Understand results aren’t guaranteed and performance can vary (especially early on)
 
 **Important:** The $299/month is the management fee and does not include ad spend.
 
