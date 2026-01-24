@@ -1,6 +1,6 @@
 ---
-title: "Freelancer in Pleasant Grove, UT - Web Design & SEO Services  Near You - Local SEO Optimization Company in Utah County - Website Development for Small Business - Help for those who need a Website - Builder of Single Page Sites - Digital Marketing Agency - Google Business Profile Management - Affordable Website Hosting and Business Email Setup"
-description: "Benjamin provides affordable web design and SEO services for small businesses in Utah County, from an office in Pleasant Grove, Utah."
+title: "Website Design, Local SEO & Google Ads in Pleasant Grove, UT - Digital Marketing Agency Near You - Web Development Company in Utah County"
+description: "Clear Presence provides website design, local SEO, and Google Ads management for small businesses in Utah County, from an office in Pleasant Grove, Utah."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -40,11 +40,11 @@ schema:
     geo:
       latitude: "40.35949"
       longitude: "-111.77212"
-    priceRange: "$99–$199/mo"
+    priceRange: "$99–$299/mo"
   service:
     enabled: true
-    serviceType: "Website Design & Local SEO Services"
-    description: "Clear Presence is a Website Design & Local SEO company in Pleasant Grove, Utah. Offering small business websites at affordable rates with a focus on local search engine optimization (SEO)."
+    serviceType: "Website Design, Local SEO & Google Ads Services"
+    description: "Clear Presence provides website design, local SEO, and Google Ads management in Pleasant Grove, Utah. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
     areaServed:
       - "Pleasant Grove, UT"
       - "Lindon, UT"
@@ -66,14 +66,18 @@ schema:
         name: "Business Website + Local SEO"
         price: "199.00"
         priceCurrency: "USD"
+      - "@type": Offer
+        name: "Google Ads"
+        price: "299.00"
+        priceCurrency: "USD"
 ---
 
 
-{{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape hero image for website design and local SEO services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design & SEO Services for Utah County from Pleasant Grove, UT  {.text-white}
-Fast, custom websites + local marketing near you. Plans starting at $99/month.
+{{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape hero image for website design, local SEO, and Google Ads services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Website Design, Local SEO & Google Ads for Utah County (Pleasant Grove, UT) {.text-white}
+Fast, custom websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
-{{< button url="/pricing" text="See Pricing" >}} {{< button url="#main-content" text="How it Works" >}}
+{{< button url="/pricing" text="See Pricing" >}} {{< button url="/services/google-ads" text="Google Ads" >}} {{< button url="#main-content" text="How it Works" >}}
 
 
 <div class="mt-6"></div>
@@ -85,13 +89,13 @@ Fast, custom websites + local marketing near you. Plans starting at $99/month.
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Website Design & Local SEO Near You
+## Website Design, Local SEO & Google Ads Near You
 - Serving small businesses in Utah County ([remote or in-person](https://cal.com/clearpresence/30min))
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-[![Clear Presence — website design and local SEO for Utah small businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
+[![Clear Presence — website design, local SEO, and Google Ads for Utah small businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
 
 {{< /col >}}
@@ -191,7 +195,7 @@ My Pleasant Grove office is conveniently located in Grove Cove, just west of Gro
 
 
 
-## Reviews from Local Businesses using Web Design & SEO Services
+## Reviews from Local Businesses using Website Design, Local SEO & Google Ads
 {.center}
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
@@ -260,6 +264,21 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+### Google Ads Package
+
+Paid search management to generate more leads.
+
+- Campaign build (Search / PMax depending)
+- Conversion tracking + call tracking setup (or audit)
+- Keyword & negative keyword management
+- Landing page optimization for ads
+
+{{< button url="/services/google-ads" text="Learn About Google Ads" >}}
+
 
 {{< /col >}}
 
@@ -267,7 +286,7 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 
 ## Custom Websites Designed for Growth — Not Just Looks
 
-A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO to get in front of your ideal customers. Monthly plans keep things simple and affordable.
+A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
 
 Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 
@@ -289,6 +308,7 @@ What a redesign includes:
 
 - $99/mo Website — fast and mobile‑friendly website design with updates included
 - $199/mo Website + Local SEO — includes Google Business Profile help, listings, and reporting
+- $299/mo Google Ads — management fee (ad spend billed separately). See [Google Ads](/services/google-ads) for requirements.
 
 No hidden fees. No contracts. Unlimited updates.
 
@@ -335,7 +355,7 @@ I love partnering with business owners and specialize in developing fast custom 
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Website Design & Local SEO <br>
+Website Design, Local SEO & Google Ads <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management

@@ -179,6 +179,12 @@ sameAs = []
     weight = 12
 
   [[menu.main]]
+    name = "Google Ads"
+    url = "/services/google-ads"
+    parent = "services"
+    weight = 13
+
+  [[menu.main]]
     name   = "Portfolio"
     url    = "/portfolio"
     weight = 20

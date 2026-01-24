@@ -166,6 +166,7 @@ Pick the service you want to explore next or reach out with questions.
 
 {{< button url="/services/website-design" text="Website Design" >}}
 {{< button url="/services/local-seo" text="Local SEO" >}}
+{{< button url="/services/google-ads" text="Google Ads" >}}
 {{< button url="/contact" text="Contact" >}}
 
 
