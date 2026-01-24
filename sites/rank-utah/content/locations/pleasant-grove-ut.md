@@ -89,7 +89,7 @@ Fast, custom websites, local marketing, and Google Ads management. Plans startin
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Website Design, Local SEO & Google Ads Near You
+## Web Design, Local SEO, & Google Ads Near You
 - Serving small businesses in Utah County ([remote or in-person](https://cal.com/clearpresence/30min))
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
@@ -246,7 +246,7 @@ Fast, professional websites built to convert visitors into customers.
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
-{{< button url="/pricing" text="Visit Pricing" >}}
+{{< button url="/services/website-design" text="Learn About Web Design" >}}
 
 
 {{< /col >}}
@@ -264,6 +264,9 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
+{{< button url="/services/local-seo" text="Learn About Local SEO" >}}
+
+
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
@@ -272,10 +275,13 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 
 Paid search management to generate more leads.
 
-- Campaign build (Search / PMax depending)
-- Conversion tracking + call tracking setup (or audit)
-- Keyword & negative keyword management
-- Landing page optimization for ads
+- Keyword research & strategy
+- Campaign build & launch
+- Ad copy and asset creation
+- Conversion and call tracking
+- Landing page optimization
+- Ongoing optimization
+- Reporting and recommendations
 
 {{< button url="/services/google-ads" text="Learn About Google Ads" >}}
 
