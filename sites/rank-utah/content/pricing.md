@@ -60,44 +60,24 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Local SEO
+## Business Website + Local SEO
 
-{{< badge text="I need local marketing" >}}
+{{< badge text="I need a website and local marketing" >}}
 
-
-{{< plan_price price="150" per="mo" sr="$150 per month" >}}
+{{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
-***Get found everywhere it matters:*** Google, Maps, Apple, AI, and "near me" searches.
+***Get found everywhere it matters**: Google, Maps, Apple, AI, and “near me” searches.*
 
-- Keyword research + content alignment
+Includes everything in the **Business Website** package, plus:
+
+- Ongoing keyword research + website updates
 - Google Business Profile management and optimization
 - Apple Maps and Bing Places management and optimization
 - Business listings on 100+ sites (via data aggregators)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
-
-This package does not include a business website.
-
-{{< button id="checkout-local-marketing" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
-
-{{< /col >}}
-
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-## Business Website + Local SEO
-
-{{< badge text="I need a website and local marketing" >}}
-
-{{< plan_price old="$249" price="199" per="mo" sr="$199 per month bundle (was $249)" >}}
-
-No contracts. No setup fees. Cancel anytime.
-
-
-***Maximize leads by bundling** your website with local SEO and **save $50/month***
-
-Everything in Business Website + Local SEO, plus continuous keyword research and optimization—so your website stays aligned with real search behavior and **keeps improving over time.**
 
 
 
@@ -107,11 +87,31 @@ Everything in Business Website + Local SEO, plus continuous keyword research and
 
 {{< /col >}}
 
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Google Ads
+
+{{< badge text="I need more leads" >}}
+
+{{< plan_price price="299" per="mo" sr="$299 per month" >}}
+
+No contracts. No setup fees. Cancel anytime.
+
+*For businesses who want to bring in **more leads** and are ready to invest in paid search.*
+
+
+The monthly $299 management fee applies to ad spend up to $2,000/month. The fee switches to 15% of ad spend above that.
+
+- Must be on the **Business Website + Local SEO** plan to run Google Ads
+- Must be willing to budget **at least $750/month** in ad spend. Ideal starting budget is **$1500/month**.
+- Must be willing to commit to **1 month**. Ideal commitment is **2 months**.
+- Must have a **promo video** and **photos**
+
+{{< button url="/contact" text="Talk About Google Ads" >}}
+
+{{< /col >}}
+
 {{< /cols >}}
-
-
-
-
 
 ## Frequently asked questions
 
@@ -157,8 +157,6 @@ Monthly work includes actively managing your local visibility by monitoring your
 Websites can be built in 2–3 weeks with regular coordination.
 
 {{< /faqs >}}
-
-
 
 
 
