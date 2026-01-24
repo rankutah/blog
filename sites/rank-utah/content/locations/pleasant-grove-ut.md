@@ -77,7 +77,7 @@ schema:
 # Website Design, Local SEO, & Google Ads for Utah County {.text-white}
 Fast, custom websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
-{{< button url="/pricing" text="See Pricing" >}} {{< button url="/services/google-ads" text="Google Ads" >}} {{< button url="#main-content" text="How it Works" >}}
+{{< button url="/pricing" text="See Pricing" >}} {{< button url="#main-content" text="How it Works" >}}
 
 
 <div class="mt-6"></div>
