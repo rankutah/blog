@@ -74,7 +74,7 @@ schema:
 
 
 {{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape hero image for website design, local SEO, and Google Ads services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Website Design, Local SEO & Google Ads for Utah County (Pleasant Grove, UT) {.text-white}
+# Website Design, Local SEO, & Google Ads for Utah County {.text-white}
 Fast, custom websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
 {{< button url="/pricing" text="See Pricing" >}} {{< button url="/services/google-ads" text="Google Ads" >}} {{< button url="#main-content" text="How it Works" >}}
