@@ -1,6 +1,6 @@
 ---
 title: "Services"
-description: "Website design, local SEO, and Google Ads services for small businesses."
+description: "Website design, local SEO, Google Ads, and business email services for small businesses."
 layout: "flowbite"
 ---
 
@@ -29,6 +29,13 @@ Help local customers find you on Search + Maps with keyword research/content ali
 Paid search management to generate more leads with conversion tracking, campaign builds, and ongoing optimization.
 
 {{< button url="/services/google-ads" text="Google Ads" >}}
+{{< /col >}}
+
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+### Business Email
+Managed Google Workspace with custom email, Calendar, Meet, and Drive—so you don’t have to worry about setup or administration.
+
+{{< button url="/services/business-email" text="Business Email" >}}
 {{< /col >}}
 
 {{< /cols >}}
