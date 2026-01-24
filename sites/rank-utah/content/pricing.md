@@ -79,10 +79,6 @@ Includes everything in the **Business Website** package, plus:
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
-
-
-
-
 {{< button id="checkout-bundle" url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
 
 {{< /col >}}
@@ -108,7 +104,7 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
 - Must have a **promo video** and **photos**
 
 
-{{< button url="/contact" text="Talk About Google Ads" >}}
+{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}}
 
 {{< /col >}}
 
