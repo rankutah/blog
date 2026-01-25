@@ -117,7 +117,7 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
 ## Business Email (Google Workspace)
 {.center}
 
-Professional email + Calendar + Drive, managed for you.
+Professional Email + Calendar + Drive, managed for you.
 {.center}
 
 Pricing is **per user** and includes Google Workspace + ongoing management.
