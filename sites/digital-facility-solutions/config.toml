@@ -1,0 +1,117 @@
+baseURL       = "https://digitalfacilitysolutions.com/"
+title         = "Digital Facility Solutions"
+languageCode  = "en-us"
+themesDir     = "../../themes"
+
+trailingSlash = "never"
+cleanDestinationDir = true
+uglyURLs      = false
+
+disableKinds  = ["taxonomy", "term"]
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[params]
+  env = "production"
+
+  # Brand + theme
+  primaryColor        = "blue"
+  logo                = "media/logo.png" # drop your logo at sites/digital-facility-solutions/media/logo.png
+  lightBackground     = "gray-100"
+  darkBackground      = "slate-950"
+  cardBackground      = "white"
+  cardBackgroundDark  = "gray-900"
+  cardBorderLight     = "gray-200"
+  cardBorderDark      = "gray-700"
+
+  # Site identity
+  clientName          = "Digital Facility Solutions"
+  clientURL           = "https://digitalfacilitysolutions.com"
+  author              = "Digital Facility Solutions"
+  mainSections        = []
+  enableSearch        = true
+  showReadingTime     = false
+
+  ariaLabelCall       = "Call us"
+
+[params.schema.organization]
+  enabled   = true
+  name      = "Digital Facility Solutions"
+  legalName = "Digital Facility Solutions"
+  url       = "https://digitalfacilitysolutions.com/"
+  logo      = "/media/logo.png"
+  sameAs    = []
+
+[params.header]
+  stickyMobile      = true
+  stickyDesktop     = true
+  titleSize         = "2xl"
+  theme             = "blend"
+
+  showCTAOnMobile   = false
+  showCTAOnDesktop  = true
+  CTAText           = "Email Us"
+  CTAURL            = "mailto:info@digitalfacilitysolutions.com"
+
+  showPhoneOnMobile = true
+  phoneNumber       = "555-123-4567"
+
+  logoHeight        = "h-10"
+  logoWidth         = 0
+  logoHeightPx      = 40
+
+[params.forms]
+  # Optional: configure a real form endpoint later (SubmitForm / Formspark / etc.)
+  action         = "https://submit-form.com/CHANGE_ME"
+  honeypot       = ""
+  successMessage = "Thanks! Your message was sent."
+  errorMessage   = "Sorry, something went wrong. Please try again."
+  redirect       = ""
+
+[params.turnstile]
+  enable  = false
+  sitekey = ""
+
+[menu]
+  [[menu.main]]
+    name   = "Services"
+    url    = "/services/"
+    weight = 10
+
+  [[menu.main]]
+    name   = "Process"
+    url    = "/process/"
+    weight = 20
+
+  [[menu.main]]
+    name   = "Pricing"
+    url    = "/pricing/"
+    weight = 30
+
+  [[menu.main]]
+    name   = "About"
+    url    = "/about/"
+    weight = 40
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact/"
+    weight = 50

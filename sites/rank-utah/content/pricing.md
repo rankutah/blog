@@ -99,8 +99,11 @@ No contracts. No setup fees. Cancel anytime.
 The monthly $299 management fee applies to ad spend up to $2,000/month. The fee switches to 15% of ad spend above that.
 
 - Must be on the **Business Website + Local SEO** plan to run Google Ads
-- Must be willing to budget **at least $750/month** in ad spend. Ideal starting budget is **$1500/month**.
-- Must be willing to commit to **1 month**. Ideal commitment is **2 months**.
+- Must be willing to budget **at least $1,500/month** in ad spend in addition to the **$299/month** management fee.
+- Recommended minimum runway: **2 months** (this is when we can fairly evaluate performance):
+  - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
+  - **Month 2:** Focusing on profitability (tighten targeting, improve conversion rate, and reduce wasted spend).
+  - **End of month 2:** Review profitability and progress, then decide whether to continue or stop.
 - Must have a **promo video** and **photos**
 
 

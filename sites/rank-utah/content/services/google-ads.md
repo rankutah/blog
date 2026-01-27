@@ -48,8 +48,8 @@ Google Ads is a good fit if you:
 ### Requirements to run Google Ads
 
 - Must be on the **Business Website + Local SEO** plan
-- Must be willing to budget **at least $750/month** in ad spend (recommended starting budget is **$1,500/month**)
-- Must be willing to commit to **1 month** (recommended commitment is **2 months**)
+- Must be willing to budget **at least $1,500/month** in ad spend
+- Recommended minimum runway: **2 months** (so we can evaluate performance at the end of month 2)
 - Must have a **promo video** and **photos**
 
 {{< button url="/pricing" text="See Pricing" >}}
@@ -62,7 +62,7 @@ This requirement is about getting the fundamentals right so your ads can perform
 - **Fast, custom pages help lower costs and improve conversions.** Your site (and landing pages) are built from scratch and optimized for speed. Faster pages and clearer messaging typically convert better, which reduces wasted ad spend.
 - **Effective tracking requires site access and clean implementation.** Being on the Website + Local SEO plan ensures I can set up and maintain accurate tracking and landing-page improvements over time.
 
-## Requirement 2: Minimum $750/month ad spend (recommended $1,500/month)
+## Requirement 2: Minimum $1,500/month ad spend
 
 Google Ads improves as it collects data—especially conversion data.
 
@@ -72,27 +72,31 @@ A higher starting budget typically means:
 - **More conversion signals**, which helps the algorithm learn who converts and where to spend
 - **Faster iteration**, because changes get enough traffic to measure
 
-A $750/month budget can work, but it often means slower learning and a longer runway before trends are clear.
+Smaller budgets can work, but they often mean slower learning and a longer runway before trends are clear.
 
-## Requirement 3: One‑month commitment (two months recommended)
+## Requirement 3: Recommended minimum runway (2 months)
 
-During the first month, there is a lot of testing. A meaningful part of your early budget goes toward gathering data and learning what works (and what doesn’t).
+Google Ads takes time to learn. If you stop too early, you usually pay for the learning but don’t get the benefits.
 
-That’s why **2 months is recommended**: month two is typically where results become more consistent because you’re building on what the account learned in month one.
+Here’s how to think about a typical 2‑month ramp:
 
-After your chosen period, we evaluate results together:
+- **Month 1: Buy data + experiment.** This is where **Google’s AI** runs experiments across variations—different keywords/search terms, ad copy and assets, networks/placements, audiences, and landing-page options. Our job is to set up clean tracking, feed it strong creative, and make smart exclusions/adjustments so it learns what produces real leads (and stops spending on what doesn’t).
+- **Month 2: Establish a baseline + push efficiency.** We tighten targeting, improve conversion rates, and start moving toward profitability.
+- **End of month 2: Decision checkpoint.** We review whether the campaign is profitable. If it’s not profitable yet, we compare performance **from the start of month 2 to the end of month 2** (cost per lead, lead quality, conversion rate, and overall efficiency) and decide whether you want to keep going or stop.
 
-- Review lead quality, cost per lead, and conversion rates
-- Compare against your **break‑even point**
-- Decide whether to continue, make adjustments, or end the campaign
-
-Google Ads is a **high‑risk / high‑reward** channel. It’s possible to spend money without getting the results you want—especially early on—so expectations and evaluation criteria matter.
+Google Ads is a **high‑risk / high‑reward** channel. It’s possible to spend money without getting the results you want. Two months gives us a reasonable timeframe to assess performance.
 
 ## Requirement 4: Promo video + photos (for Performance Max)
 
-I typically use **Performance Max (PMax)** as part of the campaign setup. PMax helps gather more data without investing everything into highly competitive (and often expensive) Search campaigns.
+I use **Performance Max (PMax)** as part of the campaign setup because it has several advantages over a Search‑only campaign:
 
-It also takes better advantage of AI, remarketing, and a higher potential to scale ad spend.
+- **Gather more data for less** by using multiple channels, not just search clicks
+- **Google’s AI optimizes based on your landing page** (and other signals) to find the people most likely to convert
+- **Remarketing is built in**, so you can stay in front of people who already visited your site
+- **More platforms to find what works** (Search, YouTube, Display, Discover, Gmail, Maps)
+- **Higher potential audience for scaling over time** once we find what converts
+- **Faster learning** because it can test more combinations of headlines, descriptions, images, and video
+- **Intent + audience coverage** (it can capture both active searchers and high‑intent “in‑market” prospects)
 
 PMax relies heavily on creative assets—especially video—so a **promo video is required**, along with a set of solid photos.
 
