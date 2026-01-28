@@ -72,8 +72,6 @@ A higher starting budget typically means:
 - **More conversion signals**, which helps the algorithm learn who converts and where to spend
 - **Faster iteration**, because changes get enough traffic to measure
 
-Smaller budgets can work, but they often mean slower learning and a longer runway before trends are clear.
-
 ## Requirement 3: Recommended minimum runway (2 months)
 
 Google Ads takes time to learn. If you stop too early, you usually pay for the learning but don’t get the benefits.

@@ -13,6 +13,10 @@ description: "Services include PC desktop repair, laptop repair, IT support serv
 Supporting residents and businesses in and around Buena Vista, VA
 {.center}
 
+## Diagnostic Policy
+
+The diagnostic fee is $95. If you approve the repair, the diagnostic fee is credited toward the total repair cost.
+
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -37,7 +41,7 @@ Supporting residents and businesses in and around Buena Vista, VA
 		{{< icon name="laptop" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Laptop repair" >}}
 		<div>
 			<h2 class="mt-0">Laptop Repair</h2>
-			<p>Screen, keyboard, hinge, battery, and charging issues fixed. Thermal cleaning and tune‑ups extend the life of your laptop without the upsell.</p>
+			<p>Keyboard, battery, and charging issues fixed. Thermal cleaning and tune‑ups extend the life of your laptop without the upsell.</p>
 		</div>
 	</div>
 </a>
