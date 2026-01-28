@@ -1,0 +1,64 @@
+{{- /*
+  Feature card body (anchor + icon + heading + body).
+  Intended to be placed inside a `col` with `card="true"`.
+
+  Params:
+    url (required)        → href
+    title (required)      → heading text
+    icon (optional)       → icon name from assets/icons
+    iconClass (optional)  → classes applied to icon wrapper
+    titleTag (optional)   → h2|h3|h4 (default h3)
+
+  Body:
+    Use inner Markdown for the description (shortcodes supported).
+*/ -}}
+
+{{- $page := .Page -}}
+{{- $url := (.Get "url" | default "") | safeURL -}}
+{{- $title := .Get "title" | default "" -}}
+{{- $icon := .Get "icon" | default "" -}}
+{{- $iconClass := .Get "iconClass" | default "mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" -}}
+{{- $titleTag := lower (.Get "titleTag" | default "h3") -}}
+{{- if not (or (eq $titleTag "h2") (eq $titleTag "h3") (eq $titleTag "h4")) -}}
+  {{- $titleTag = "h3" -}}
+{{- end -}}
+
+{{- $inner := .InnerDeindent | strings.TrimSpace -}}
+{{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
+
+{{- if not $url -}}
+  {{- /* Fail safe: render non-linked version */ -}}
+  <div class="flex items-start gap-3">
+    {{- if $icon -}}
+      {{- partial "ui/icon.html" (dict "name" $icon "class" $iconClass "title" $title) -}}
+    {{- end -}}
+    <div>
+      {{- if $title -}}
+        {{- if eq $titleTag "h2" -}}<h2 class="mt-0">{{ $title }}</h2>{{- end -}}
+        {{- if eq $titleTag "h3" -}}<h3 class="mt-0">{{ $title }}</h3>{{- end -}}
+        {{- if eq $titleTag "h4" -}}<h4 class="mt-0">{{ $title }}</h4>{{- end -}}
+      {{- end -}}
+      {{- if $inner -}}
+        {{- $page.RenderString $opts $inner -}}
+      {{- end -}}
+    </div>
+  </div>
+{{- else -}}
+  <a href="{{ $url }}" class="block h-full no-underline hover:no-underline">
+    <div class="flex items-start gap-3">
+      {{- if $icon -}}
+        {{- partial "ui/icon.html" (dict "name" $icon "class" $iconClass "title" $title) -}}
+      {{- end -}}
+      <div>
+        {{- if $title -}}
+          {{- if eq $titleTag "h2" -}}<h2 class="mt-0">{{ $title }}</h2>{{- end -}}
+          {{- if eq $titleTag "h3" -}}<h3 class="mt-0">{{ $title }}</h3>{{- end -}}
+          {{- if eq $titleTag "h4" -}}<h4 class="mt-0">{{ $title }}</h4>{{- end -}}
+        {{- end -}}
+        {{- if $inner -}}
+          {{- $page.RenderString $opts $inner -}}
+        {{- end -}}
+      </div>
+    </div>
+  </a>
+{{- end -}}

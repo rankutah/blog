@@ -1,112 +1,31 @@
 {{/*
   galleryimg shortcode
   Usage: {{< galleryimg src="/media/filename.jpg" alt="Alt text" >}}
-  - Generates responsive <img> with srcset, sizes, width/height to avoid CLS
-  - Wraps in the standard gallery wrapper and anchor for lightbox
+
+  Uses the prebuilt `data/images.manifest.json` pipeline (via partial img.manifest.html)
+  so we get stable responsive srcsets without relying on Hugo Pipes image processing.
 */}}
+
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" | default "" -}}
 {{- if not $src -}}
   {{- errorf "galleryimg shortcode requires src parameter" -}}
 {{- end -}}
-{{- $clean := strings.TrimPrefix $src "/" -}}
-{{- if not (strings.HasPrefix $clean "media/") -}}
-  {{- $clean = (print "media/" $clean) -}}
-{{- end -}}
-{{- $clean = (path.Clean $clean) -}}
-{{- /* Prefer AVIF sibling if available */ -}}
-{{- $ext := (strings.ToLower (path.Ext $clean)) -}}
-{{- $basename := (strings.TrimSuffix (path.Base $clean) $ext) -}}
-{{- $dir := (path.Dir $clean) -}}
-{{- $avifClean := (path.Join $dir (print $basename ".avif")) -}}
-{{- $avifRes := resources.Get $avifClean -}}
-{{- if $avifRes -}}
-  {{- $clean = $avifClean -}}
-{{- end -}}
-{{- $img := resources.Get $clean -}}
-{{- if not $img -}}
-  {{- /* Try alternate lookups if the first fails */ -}}
-  {{- $try1 := (printf "/%s" $clean) -}}
-  {{- $img = resources.Get $try1 -}}
-{{- end -}}
-{{- if not $img -}}
-  {{- $try2 := (path.Join "assets" $clean) -}}
-  {{- $img = resources.Get $try2 -}}
-{{- end -}}
-{{- if not $img -}}
-  {{- warnf "galleryimg could not resolve resource for %q (tried: %q, %q, %q)" $src $clean (printf "/%s" $clean) (path.Join "assets" $clean) -}}
-{{- end -}}
-{{- if and $img (eq $img.MediaType.MainType "image") -}}
-  {{- /* Generate responsive set via Hugo Pipes */ -}}
-  {{- $widths := slice 480 768 1024 1440 -}}
-  {{- $variants := slice -}}
-  {{- range $w := $widths -}}
-    {{- $r := $img.Resize (printf "%dx" $w) -}}
-    {{- $variants = $variants | append $r -}}
-  {{- end -}}
-  {{- $srcset := slice -}}
-  {{- range $variants -}}
-    {{- $srcset = $srcset | append (printf "%s %dw" .RelPermalink .Width) -}}
-  {{- end -}}
-  {{- $srcset = delimit $srcset ", " -}}
-  {{- $preferred := index $variants 2 | default (index $variants 1) | default (index $variants 0) -}}
-  {{- $sizes := "(min-width:1280px) 25vw, (min-width:768px) 33vw, (min-width:640px) 50vw, 100vw" -}}
-  <div class="mb-4 p-0">
-    <a href="{{ $img.RelPermalink }}" class="group block" data-lightbox="gallery">
-      <img
-        src="{{ $preferred.RelPermalink }}"
-        srcset="{{ $srcset }}"
-        sizes="{{ $sizes }}"
-        width="{{ $preferred.Width }}" height="{{ $preferred.Height }}"
-        alt="{{ $alt }}"
-        loading="lazy" fetchpriority="low" decoding="async"
-        class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
-    </a>
-  </div>
-{{- else -}}
-  {{- /* Fallback: not an image resource (e.g., when shared mounts aren't loaded). Render a plain img without resizing to avoid build errors. */ -}}
-  {{- warnf "galleryimg fallback used for %q (resources.Get returned %v)" $clean (printf "%v" $img) -}}
-  <div class="mb-4 p-0">
-    {{- /* Prefer AVIF href if the file exists */ -}}
-    {{- $href := $src -}}
-    {{- $avifPath := (print "/" $avifClean) -}}
-    {{- if (fileExists $avifPath) -}}
-      {{- $href = $avifPath -}}
-    {{- end -}}
-    <a href="{{ $href }}" class="group block" data-lightbox="gallery">
-        {{- $ext := (strings.ToLower (path.Ext $clean)) -}}
-        {{- $canProbe := or (eq $ext ".jpg") (or (eq $ext ".jpeg") (or (eq $ext ".png") (or (eq $ext ".gif") (or (eq $ext ".webp") (eq $ext ".avif"))))) -}}
-        {{- if $canProbe -}}
-          {{- /* Prefer AVIF <picture> if probe succeeds and files exist */ -}}
-          {{- $filePath := (print "/" $clean) -}}
-          {{- if (fileExists $filePath) -}}
-            {{- $imgCfg := (imageConfig $filePath) -}}
-            <picture>
-              {{- if (fileExists $avifPath) -}}
-                <source srcset="{{ $avifPath }}" type="image/avif" />
-              {{- end -}}
-              <img
-                src="{{ $src }}"
-                sizes="(min-width:1280px) 25vw, (min-width:768px) 33vw, (min-width:640px) 50vw, 100vw"
-                width="{{ $imgCfg.Width }}" height="{{ $imgCfg.Height }}"
-                alt="{{ $alt }}"
-                loading="lazy" fetchpriority="low" decoding="async"
-                class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
-            </picture>
-          {{- else -}}
-            <img
-              src="{{ $src }}"
-              alt="{{ $alt }}"
-              loading="lazy" fetchpriority="low" decoding="async"
-              class="block w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700" />
-          {{- end -}}
-        {{- else -}}
-          <img
-            src="{{ $src }}"
-            alt="{{ $alt }}"
-            loading="lazy" fetchpriority="low" decoding="async"
-            class="block w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700" />
-        {{- end -}}
-    </a>
-  </div>
-{{- end -}}
+
+{{- $isAbs := or (hasPrefix $src "http://") (or (hasPrefix $src "https://") (or (hasPrefix $src "//") (hasPrefix $src "data:"))) -}}
+{{- $href := cond $isAbs $src ($src | relURL) -}}
+
+{{- $sizes := "(min-width:1280px) 25vw, (min-width:768px) 33vw, (min-width:640px) 50vw, 100vw" -}}
+
+<div class="mb-4 p-0">
+  <a href="{{ $href }}" class="group block" data-lightbox="gallery">
+    {{- partial "img.manifest.html" (dict
+      "src" $src
+      "alt" $alt
+      "loading" "lazy"
+      "decoding" "async"
+      "sizes" $sizes
+      "class" "w-full h-auto rounded-lg shadow border border-gray-200 dark:border-gray-700"
+    ) -}}
+  </a>
+</div>

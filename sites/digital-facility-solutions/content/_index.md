@@ -3,53 +3,47 @@ title: "Digital Facility Solutions"
 description: "We bring order and searchability to your existing building plans."
 ---
 
-{{< hero img="/media/dfs-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" >}}
-# Operate Your Old Building in the Digital World
-## Give Your Building a Digital Backbone
+{{< hero img="/media/building-blueprints-scan-digitized.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" >}}
+# Turn Old Building Plans Into an Operational Digital Facility Record
+{.center}
+Operate your old building in the digital world.
+{.center}
+Give your building a digital backbone.
+{.center}
+We convert paper drawings, PDFs, and scattered archives into a clean, organized system your maintenance team, contractors, and inspectors can search and use with confidence.
+{.center}
 
-We bring order and searchability to your existing building plans—turning static building plans into accessible digital facility resources.
+{{< button text="Request a Quote" url="/contact/" >}}
+{.center}
 
-<div class="not-prose mt-6 flex flex-wrap gap-3">
-  {{< button text="Request a Quote" url="/contact/" >}}
-  {{< button text="How the Process Works" url="/process/" classes="text-gray-900 bg-white/90 hover:bg-white focus:ring-4 focus:ring-white/40 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-white/10 dark:text-white dark:hover:bg-white/15" >}}
-</div>
+Serving: Schools • Healthcare • Data Centers • Government • Multi-Building Owners
+{.center}
 
-<p class="not-prose mt-6 text-white/90 text-sm">Drop your hero image at <code>sites/digital-facility-solutions/media/dfs-hero.jpg</code>.</p>
 {{< /hero >}}
 
 ## Transforming Your Building Plans
 
 Static plan sets are hard to use during real work. Digital Facility Solutions converts fragmented and disorganized building records into a reliable, operational asset that supports maintenance, capital planning, and day-to-day facility operations.
 
-<div class="not-prose mt-8">
-  {{< cols min="18rem" gap="1.5rem" row="sm" >}}
+{{< cols min="18rem" gap="1.5rem" row="sm" >}}
+  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< feature_card url="/services/digital-facility-binder/" icon="search" title="Your Building, Fully Searchable" >}}
+We transform legacy drawings into searchable digital facility binders—easy to navigate, easy to maintain, and ready for daily operations.
+{{< /feature_card >}}
+  {{< /col >}}
 
-  <div class="rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 p-6">
-    <div class="flex items-center gap-3">
-      {{< icon name="search" class="w-6 h-6" >}}
-      <h3 class="text-xl font-semibold m-0">Your Building, Fully Searchable</h3>
-    </div>
-    <p class="mt-3 text-gray-700 dark:text-gray-300">We transform legacy drawings into searchable digital facility binders—easy to navigate, easy to maintain, and ready for daily operations.</p>
-  </div>
+  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< feature_card url="/process/" icon="laptop" title="Make Plans Digitally Usable" >}}
+Search, navigate, and understand your facility documentation in seconds—without hunting through rolls, binders, or disconnected PDFs.
+{{< /feature_card >}}
+  {{< /col >}}
 
-  <div class="rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 p-6">
-    <div class="flex items-center gap-3">
-      {{< icon name="laptop" class="w-6 h-6" >}}
-      <h3 class="text-xl font-semibold m-0">Make Plans Digitally Usable</h3>
-    </div>
-    <p class="mt-3 text-gray-700 dark:text-gray-300">Search, navigate, and understand your facility documentation in seconds—without hunting through rolls, binders, or disconnected PDFs.</p>
-  </div>
-
-  <div class="rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 p-6">
-    <div class="flex items-center gap-3">
-      {{< icon name="hard-drive" class="w-6 h-6" >}}
-      <h3 class="text-xl font-semibold m-0">Usable Facility Intelligence</h3>
-    </div>
-    <p class="mt-3 text-gray-700 dark:text-gray-300">We bring order and structure to legacy records so teams can act faster—with fewer mistakes and fewer surprises.</p>
-  </div>
-
-  {{< /cols >}}
-</div>
+  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< feature_card url="/services/" icon="hard-drive" title="Usable Facility Intelligence" >}}
+We bring order and structure to legacy records so teams can act faster—with fewer mistakes and fewer surprises.
+{{< /feature_card >}}
+  {{< /col >}}
+{{< /cols >}}
 
 ## The Benefits
 
@@ -76,71 +70,60 @@ This approach delivers measurable savings by reducing:
 - Repeat site surveys and redundant field investigations
 - Unforeseen conditions
 
-<div class="not-prose mt-8">
-  {{< cols min="18rem" gap="1.5rem" row="sm" >}}
+{{< cols min="18rem" gap="1.5rem" row="sm" >}}
+  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+### How the Process Works
 
-  <div class="rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 p-6">
-    <h3 class="text-xl font-semibold m-0">How the Process Works</h3>
-    <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="circle-check" class="w-5 h-5" >}}</span><span>OCR text recognition (digitally created text)</span></li>
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="circle-check" class="w-5 h-5" >}}</span><span>Hyperlinked index / table of contents</span></li>
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="circle-check" class="w-5 h-5" >}}</span><span>Full searchability by discipline and content</span></li>
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="circle-check" class="w-5 h-5" >}}</span><span>Structured PDF files for easy operations use</span></li>
-    </ul>
-    <div class="mt-6">
-      {{< button text="See the full process" url="/process/" >}}
-    </div>
-  </div>
+- OCR text recognition (digitally created text)
+- Hyperlinked index / table of contents
+- Full searchability by discipline and content
+- Structured PDF files for easy operations use
 
-  <div class="rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 p-6">
-    <h3 class="text-xl font-semibold m-0">Additional Services</h3>
-    <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="badge-check" class="w-5 h-5" >}}</span><span>Document organization</span></li>
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="badge-check" class="w-5 h-5" >}}</span><span>Quantity take-offs</span></li>
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="badge-check" class="w-5 h-5" >}}</span><span>Redline conversions</span></li>
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="badge-check" class="w-5 h-5" >}}</span><span>Multi-project consolidation</span></li>
-      <li class="flex gap-2"><span class="mt-1">{{< icon name="badge-check" class="w-5 h-5" >}}</span><span>CMMS integration support</span></li>
-    </ul>
-    <div class="mt-6">
-      {{< button text="Explore services" url="/services/" >}}
-    </div>
-  </div>
+{{< button text="See the full process" url="/process/" >}}
+  {{< /col >}}
 
-  <div class="rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 p-6">
-    <h3 class="text-xl font-semibold m-0">Experience You Can Trust</h3>
-    <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-      <li>Over 15 years of facility management &amp; project expertise</li>
-      <li>Manufacturing • Healthcare</li>
-      <li>Government</li>
-    </ul>
+  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+### Additional Services
 
-    <div class="mt-6 rounded-lg border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-4">
-      <div class="font-semibold">Pricing</div>
-      <div class="mt-1 text-gray-700 dark:text-gray-300">$1,500 – $3,500 <span class="text-sm">per project</span></div>
-      <div class="mt-1 text-sm text-gray-600 dark:text-gray-400">Scan coordination available (billed hourly)</div>
-    </div>
+- Document organization
+- Quantity take-offs
+- Redline conversions
+- Multi-project consolidation
+- CMMS integration support
 
-    <div class="mt-6">
-      {{< button text="Contact us" url="/contact/" >}}
-    </div>
-  </div>
+{{< button text="Explore services" url="/services/" >}}
+  {{< /col >}}
 
-  {{< /cols >}}
-</div>
+  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+### Experience You Can Trust
+
+- Over 15 years of facility management & project expertise
+- Manufacturing • Healthcare
+- Government
+
+**Pricing**
+
+$1,500 – $3,500 *per project*
+Scan coordination available (billed hourly)
+
+{{< button text="Contact us" url="/contact/" >}}
+  {{< /col >}}
+{{< /cols >}}
 
 ---
 
-<div class="not-prose rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-  <div>
-    <h2 class="text-2xl font-semibold m-0">Contact Us Today</h2>
-    <p class="mt-2 text-gray-700 dark:text-gray-300">Archived documents can be retrieved in just a few clicks.</p>
-    <p class="mt-3 text-gray-700 dark:text-gray-300">
-      <strong>Email:</strong> <a class="underline" href="mailto:info@digitalfacilitysolutions.com">info@digitalfacilitysolutions.com</a><br/>
-      <strong>Phone:</strong> <a class="underline" href="tel:+15551234567">555-123-4567</a>
-    </p>
-  </div>
-  <div class="flex flex-wrap gap-3">
-    {{< button text="Email Us" url="mailto:info@digitalfacilitysolutions.com" >}}
-    {{< button text="Request a Quote" url="/contact/" >}}
-  </div>
-</div>
+{{< col card="true" classes="rounded-2xl p-8" >}}
+{{< cols min="18rem" gap="1.5rem" row="none" v="center" >}}
+  {{< col y="start" >}}
+
+
+## Contact Us Today
+
+Archived documents can be retrieved in just a few clicks.
+
+{{< button text="Email Us" url="mailto:ben@digitalfacilitysolutions.com" >}}
+{{< button text="Request a Quote" url="/contact/" >}}
+  {{< /col >}}
+
+{{< /cols >}}
+{{< /col >}}

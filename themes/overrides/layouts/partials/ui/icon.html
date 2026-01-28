@@ -5,7 +5,9 @@
 
 {{- with resources.Get (printf "icons/%s.svg" $name) -}}
   <span class="inline-block align-middle {{ $class }}" {{ if not $title }}aria-hidden="true"{{ end }}>
-    {{ .Content | safeHTML }}
+    {{- /* Inline-safe: SVG files often contain newlines/indentation which can break Markdown headings. */ -}}
+    {{- $svg := replaceRE `[\r\n]+` `` .Content -}}
+    {{- $svg | safeHTML -}}
     {{- if $title -}}<span class="sr-only">{{ $title }}</span>{{- end -}}
   </span>
 {{- else -}}

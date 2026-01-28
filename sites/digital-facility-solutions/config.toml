@@ -44,6 +44,7 @@ disableKinds  = ["taxonomy", "term"]
 
   # Site identity
   clientName          = "Digital Facility Solutions"
+  tagline             = "We give intelligence to old building plans"
   clientURL           = "https://digitalfacilitysolutions.com"
   author              = "Digital Facility Solutions"
   mainSections        = []
@@ -68,11 +69,14 @@ disableKinds  = ["taxonomy", "term"]
 
   showCTAOnMobile   = false
   showCTAOnDesktop  = true
-  CTAText           = "Email Us"
-  CTAURL            = "mailto:info@digitalfacilitysolutions.com"
+  CTAText           = "Call (385) 329-0586"
+  CTAURL            = "tel:+13853290586"
 
   showPhoneOnMobile = true
-  phoneNumber       = "555-123-4567"
+  phoneNumber       = "(385) 329-0586"
+
+  # Business hours (display-only; schema hours can be added later)
+  hours             = "Mon–Fri, 8:00am–5:00pm"
 
   logoHeight        = "h-10"
   logoWidth         = 0
