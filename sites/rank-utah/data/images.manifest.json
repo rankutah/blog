@@ -1967,6 +1967,48 @@
       ]
     }
   },
+  "/media/facebook.jpg": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgMFB//EACkQAAIBBAAEBQUBAAAAAAAAAAECAwAEBRESITFBBjJRcaETIkJhkcH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgUB/8QAHBEAAQUBAQEAAAAAAAAAAAAAAgABAxEhMUES/9oADAMBAAIRAxEAPwA3jMcbxi8hKwqdHXUn0FIILaGABYolX2HP+1K2QQW8ca/io37961MIBJkU4hvhUke9UhjaILrVLMymOrxRnw7zRFprPa62SQAR/tFsnjjZsHjJaFjyJ6qfQ09zGRmt5zbxheBk5kjZ57o5coJraSNuhX57Uvw8oW7b4nYmhOhfPVO3mEsCOD1ApPhckkoisxGwZE82xrlXPrK8NueFtmM9vSlPhm5ikyalZFO0bvQ5hLFvWTiBRyZx1s5vJLAslp9Mlnj82xobovcTCKCRyegNaPii5ijyP3SKNRjv+zRS9vTcHhXYjHzQJhFFnXWkBSSbxl//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.jpg"
+        }
+      ]
+    }
+  },
+  "/media/facebook.avif": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgMFB//EACkQAAIBBAAEBQUBAAAAAAAAAAECAwAEBRESITFBBjJRcaETIkJhkcH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgUB/8QAHBEAAQUBAQEAAAAAAAAAAAAAAgABAxEhMUES/9oADAMBAAIRAxEAPwA3jMcbxi8hKwqdHXUn0FIILaGABYolX2HP+1K2QQW8ca/io37961MIBJkU4hvhUke9UhjaILrVLMymOrxRnw7zRFprPa62SQAR/tFsnjjZsHjJaFjyJ6qfQ09zGRmt5zbxheBk5kjZ57o5coJraSNuhX57Uvw8oW7b4nYmhOhfPVO3mEsCOD1ApPhckkoisxGwZE82xrlXPrK8NueFtmM9vSlPhm5ikyalZFO0bvQ5hLFvWTiBRyZx1s5vJLAslp9Mlnj82xobovcTCKCRyegNaPii5ijyP3SKNRjv+zRS9vTcHhXYjHzQJhFFnXWkBSSbxl//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/facebook__w64.jpg"
+        }
+      ]
+    }
+  },
   "/media/freelance-website-design-services-utah.jpg": {
     "width": 1280,
     "height": 853,
@@ -2563,6 +2605,186 @@
         {
           "w": 1024,
           "url": "/media-deriv/google-business-profile-audit__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/instagram.jpg": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABgMAAgUE/8QAJBAAAgEEAgICAwEAAAAAAAAAAQIDAAQFESExEnEioRMVQZH/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUAAv/EACMRAAAFAgYDAAAAAAAAAAAAAAABAgMRIUEEEjFxgcETsdH/2gAMAwEAAhEDEQA/ADuHxE2Un8UGkHZPApHFhrCAeP7CFSO/GMn7rMMogxF8F4KxKN++6pBFbW9kl1eI0plJEcYOt67JNNoUlGhiq2wTe+nMTcaSYjHzDxN/CxPXkmvujmZxEuLuCr8oeiOaWI8C2st7YxBGQeEsUnyAB/oryZpBNiLENyWiZd+taobiswzjXloe1pmJsKYYCfE3ZU7MkSnXo81eKOGeyS1umaP8RJjkA3rfYIoxgc0+Kn022hbsd6pjb5DH3a+UKQvv+K+j/lSnVKbOTP30BpxBqrfXmIHPunhtLJ7W1LSGRgZZWXQ0OgBUsy4hxFgW4KxM2vZGq6N7fY+1UtLBACOgz7+qG5nLSZO5LMfgOFGtceqYYdzlP3sdqxBJKb1Pc4gf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.jpg"
+        }
+      ]
+    }
+  },
+  "/media/instagram.avif": {
+    "width": 64,
+    "height": 64,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABgMAAgUE/8QAJBAAAgEEAgICAwEAAAAAAAAAAQIDAAQFESExEnEioRMVQZH/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUAAv/EACMRAAAFAgYDAAAAAAAAAAAAAAABAgMRIUEEEjFxgcETsdH/2gAMAwEAAhEDEQA/ADuHxE2Un8UGkHZPApHFhrCAeP7CFSO/GMn7rMMogxF8F4KxKN++6pBFbW9kl1eI0plJEcYOt67JNNoUlGhiq2wTe+nMTcaSYjHzDxN/CxPXkmvujmZxEuLuCr8oeiOaWI8C2st7YxBGQeEsUnyAB/oryZpBNiLENyWiZd+taobiswzjXloe1pmJsKYYCfE3ZU7MkSnXo81eKOGeyS1umaP8RJjkA3rfYIoxgc0+Kn022hbsd6pjb5DH3a+UKQvv+K+j/lSnVKbOTP30BpxBqrfXmIHPunhtLJ7W1LSGRgZZWXQ0OgBUsy4hxFgW4KxM2vZGq6N7fY+1UtLBACOgz7+qG5nLSZO5LMfgOFGtceqYYdzlP3sdqxBJKb1Pc4gf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 64,
+          "url": "/media-deriv/instagram__w64.jpg"
+        }
+      ]
+    }
+  },
+  "/media/linkedin.jpg": {
+    "width": 1280,
+    "height": 1280,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAABQQGAQIH/8QAKxAAAgEDAgMHBQEAAAAAAAAAAQIDAAQRBRIhMVEGFDJBQoGhFiI2cXPB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQIABAX/xAAdEQEAAgIDAQEAAAAAAAAAAAABAhEAAxMhMUFh/9oADAMBAAIRAxEAPwCtabp73ki8CVJwAObHpTc2ntpziKSERkjIxg596xp0bRy20cTbHDKA2ORzzpm+srm61SK3nuFZmjJDBMADj5VciGusz5ydopgMkMcoxIit+xRF9Zd3O9MmM/FXZOzjEsr3Kqw8IC5yOvOhb+0aJpraUDcOHD4NGRDYUe4IOzSi+ZtpUglubRx6nQ/NWef8jt/4H/a53p1+1o4BJ2g5BHNT1p1NTlmlWdLpmkAwG3cQOlKPJ3fzHTh6Tq8XRm+qTxPjI9ttQu0sgi1Cdz6UB+KhSXxhm7w8+2XOd2eND6nqUl/J9zMw8y3Nqkkg3+VggOwqvt5//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/linkedin__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/linkedin__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/linkedin__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/linkedin__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/linkedin__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/linkedin__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/linkedin__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/linkedin__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/linkedin__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/linkedin__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/linkedin__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/linkedin__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/linkedin__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/linkedin__w1280.jpg"
+        }
+      ]
+    }
+  },
+  "/media/linkedin.avif": {
+    "width": 1280,
+    "height": 1280,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAABQQGAQIH/8QAKxAAAgEDAgMHBQEAAAAAAAAAAQIDAAQRBRIhMVEGFDJBQoGhFiI2cXPB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQIABAX/xAAdEQEAAgIDAQEAAAAAAAAAAAABAhEAAxMhMUFh/9oADAMBAAIRAxEAPwCtabp73ki8CVJwAObHpTc2ntpziKSERkjIxg596xp0bRy20cTbHDKA2ORzzpm+srm61SK3nuFZmjJDBMADj5VciGusz5ydopgMkMcoxIit+xRF9Zd3O9MmM/FXZOzjEsr3Kqw8IC5yOvOhb+0aJpraUDcOHD4NGRDYUe4IOzSi+ZtpUglubRx6nQ/NWef8jt/4H/a53p1+1o4BJ2g5BHNT1p1NTlmlWdLpmkAwG3cQOlKPJ3fzHTh6Tq8XRm+qTxPjI9ttQu0sgi1Cdz6UB+KhSXxhm7w8+2XOd2eND6nqUl/J9zMw8y3Nqkkg3+VggOwqvt5//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/linkedin__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/linkedin__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/linkedin__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/linkedin__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/linkedin__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/linkedin__w1200.avif"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/linkedin__w1280.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/linkedin__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/linkedin__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/linkedin__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/linkedin__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/linkedin__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/linkedin__w1200.jpg"
+        },
+        {
+          "w": 1280,
+          "url": "/media-deriv/linkedin__w1280.jpg"
         }
       ]
     }

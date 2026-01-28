@@ -76,6 +76,24 @@ sameAs = []
   size = "w-8 h-8"
   gap  = "gap-3"
 
+  [[params.social]]
+    name = "facebook"
+    url  = "https://www.facebook.com/people/Clear-Presence/61587216928684/"
+    icon = "media/facebook.avif"
+    alt  = "Facebook"
+
+  [[params.social]]
+    name = "instagram"
+    url  = "https://instagram.com/clearpresence"
+    icon = "media/instagram.avif"
+    alt  = "Instagram"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/benjamin-awerkamp/"
+    icon = "media/linkedin.png"
+    alt  = "LinkedIn"
+
 [params.analytics]
   provider = "zaraz"
   # Load analytics immediately (no delay/gating)

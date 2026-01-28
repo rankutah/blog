@@ -27,6 +27,8 @@ headless: true
 Website Design & Local SEO for Small Businesses
 {.center}
 
+{{< socials size="w-8 h-8" gap="gap-3" align="center" >}}
+
 ### Company
 {.center}
 [Portfolio](/portfolio) • [Reviews](/reviews) • [Pricing](/pricing) • [About](/about) • [Contact](/contact)
