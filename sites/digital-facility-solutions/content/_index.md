@@ -4,41 +4,40 @@ description: "We bring order and searchability to your existing building plans."
 ---
 
 {{< hero img="/media/building-blueprints-scan-digitized.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" >}}
-# Turn Old Building Plans Into an Operational Digital Facility Record
+# Turn Old Building Plans Into a Digital Facility Record
 {.center}
-Operate your old building in the digital world.
-{.center}
-Give your building a digital backbone.
-{.center}
-We convert paper drawings, PDFs, and scattered archives into a clean, organized system your maintenance team, contractors, and inspectors can search and use with confidence.
-{.center}
+
+
 
 {{< button text="Request a Quote" url="/contact/" >}}
 {.center}
 
-Serving: Schools • Healthcare • Data Centers • Government • Multi-Building Owners
 {.center}
 
 {{< /hero >}}
 
-## Transforming Your Building Plans
+Convert your paper drawings, PDFs, and scattered archives into a clean, organized system your maintenance team, contractors, and inspectors can search and use with confidence.
+
+## Transform Your Building Plans
+
+
 
 Static plan sets are hard to use during real work. Digital Facility Solutions converts fragmented and disorganized building records into a reliable, operational asset that supports maintenance, capital planning, and day-to-day facility operations.
 
 {{< cols min="18rem" gap="1.5rem" row="sm" >}}
-  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+  {{< col card="true" y="start" >}}
 {{< feature_card url="/services/digital-facility-binder/" icon="search" title="Your Building, Fully Searchable" >}}
 We transform legacy drawings into searchable digital facility binders—easy to navigate, easy to maintain, and ready for daily operations.
 {{< /feature_card >}}
   {{< /col >}}
 
-  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+  {{< col card="true"  y="start" >}}
 {{< feature_card url="/process/" icon="laptop" title="Make Plans Digitally Usable" >}}
 Search, navigate, and understand your facility documentation in seconds—without hunting through rolls, binders, or disconnected PDFs.
 {{< /feature_card >}}
   {{< /col >}}
 
-  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+  {{< col card="true" y="start" >}}
 {{< feature_card url="/services/" icon="hard-drive" title="Usable Facility Intelligence" >}}
 We bring order and structure to legacy records so teams can act faster—with fewer mistakes and fewer surprises.
 {{< /feature_card >}}
@@ -71,7 +70,7 @@ This approach delivers measurable savings by reducing:
 - Unforeseen conditions
 
 {{< cols min="18rem" gap="1.5rem" row="sm" >}}
-  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+  {{< col card="true"  y="start" >}}
 ### How the Process Works
 
 - OCR text recognition (digitally created text)
@@ -82,7 +81,7 @@ This approach delivers measurable savings by reducing:
 {{< button text="See the full process" url="/process/" >}}
   {{< /col >}}
 
-  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+  {{< col card="true"  y="start" >}}
 ### Additional Services
 
 - Document organization
@@ -94,7 +93,7 @@ This approach delivers measurable savings by reducing:
 {{< button text="Explore services" url="/services/" >}}
   {{< /col >}}
 
-  {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+  {{< col card="true" y="start" >}}
 ### Experience You Can Trust
 
 - Over 15 years of facility management & project expertise
@@ -112,18 +111,17 @@ Scan coordination available (billed hourly)
 
 ---
 
-{{< col card="true" classes="rounded-2xl p-8" >}}
-{{< cols min="18rem" gap="1.5rem" row="none" v="center" >}}
-  {{< col y="start" >}}
+{{< cols min="18rem" gap="2rem" v="start">}}
 
+{{< col card="true" y="start" >}}
 
 ## Contact Us Today
 
 Archived documents can be retrieved in just a few clicks.
 
-{{< button text="Email Us" url="mailto:ben@digitalfacilitysolutions.com" >}}
 {{< button text="Request a Quote" url="/contact/" >}}
-  {{< /col >}}
+
+{{< /col >}}
 
 {{< /cols >}}
-{{< /col >}}
+

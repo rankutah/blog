@@ -28,7 +28,7 @@ Files are organized to match the original project drawing index or sheet order w
 Here are a few examples of what the output looks like in practice.
 
 {{< gallery >}}
-  {{< galleryimg src="/media/Hyperlink-Page-Index.avif" alt="Example of a hyperlinked page index / table of contents" >}}
+  {{< galleryimg src="/media/facility-drawings-digital.avif" alt="Example of a hyperlinked page index / table of contents" >}}
   {{< galleryimg src="/media/OCR-Conversion-Image.avif" alt="Example of OCR-enabled text search in a drawing set" >}}
   {{< galleryimg src="/media/De-Scewed-Image.avif" alt="Example of image deskew/alignment correction" >}}
   {{< galleryimg src="/media/pdf-to-heirarchy.avif" alt="Example of a structured folder hierarchy for facility documents" >}}
