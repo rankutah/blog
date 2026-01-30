@@ -35,6 +35,8 @@
 {{- $imgClasses  := $p.imgClasses | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
 {{- $imgStyle    := $p.imgStyle   | default "" -}}
 {{- $vhMode      := lower ($p.vh | default "") -}}
+{{- $vhHeightRaw := printf "%v" ($p.vhHeight | default "100") -}}
+{{- $vhHeight    := cond (gt (len (findRE `^[0-9]+(?:\.[0-9]+)?$` $vhHeightRaw)) 0) $vhHeightRaw "100" -}}
 {{- $brighten    := lower ($p.brighten | default "") -}}
 
 {{- /* Optional explicit dimensions (reduces layout work; helps LCP stability) */ -}}
@@ -93,11 +95,11 @@
 {{- end -}}
 {{- if and (ne $vhMode "") (ne $img "") -}}
   {{- if eq $vhMode "svh" -}}
-    {{- $imgStyle = printf "height: 100vh; height: 100svh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+    {{- $imgStyle = printf "height: %svh; height: %ssvh;%s" $vhHeight $vhHeight (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- else if eq $vhMode "dvh" -}}
-    {{- $imgStyle = printf "height: 100vh; height: 100dvh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+    {{- $imgStyle = printf "height: %svh; height: %sdvh;%s" $vhHeight $vhHeight (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- else if eq $vhMode "vh" -}}
-    {{- $imgStyle = printf "height: 100vh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+    {{- $imgStyle = printf "height: %svh;%s" $vhHeight (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- end -}}
 {{- end -}}
 

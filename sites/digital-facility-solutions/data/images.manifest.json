@@ -705,6 +705,144 @@
       ]
     }
   },
+  "/media/digitized-building-plans.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMG/8QAIhAAAgEEAgIDAQAAAAAAAAAAAQIDAAQFERIhIjEUQZFR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGhEBAQACAwAAAAAAAAAAAAAAAAECETFBUf/aAAwDAQACEQMRAD8AZx9osrFVI5L7GqjKzz4+eOOERkMnI8hv71TmMlhW3SVVUM6gsfs9UhmL2IXUZChmCHRY7A7rWM3ymV8MRQ5OaJW+REiuAfGIbH7WZx1zCxma7k2nl0Nb/Kct8jbSwRlpkVuI2Ngaql5dQizmKyqx4HoMKlixzcDFVAFTd3Bji5cEY+vIboooydEHcy6PFU734jVbrFFIisynv+NRRSDf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/digitized-building-plans__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/digitized-building-plans__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/digitized-building-plans__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/digitized-building-plans__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/digitized-building-plans__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/digitized-building-plans__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/digitized-building-plans__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/digitized-building-plans__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/digitized-building-plans__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/digitized-building-plans__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/digitized-building-plans__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/digitized-building-plans__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/digitized-building-plans__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/digitized-building-plans__w1536.jpg"
+        }
+      ]
+    }
+  },
+  "/media/digitized-building-plans.avif": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMG/8QAIhAAAgEEAgIDAQAAAAAAAAAAAQIDAAQFERIhIjEUQZFR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGhEBAQACAwAAAAAAAAAAAAAAAAECETFBUf/aAAwDAQACEQMRAD8AZx9osrFVI5L7GqjKzz4+eOOERkMnI8hv71TmMlhW3SVVUM6gsfs9UhmL2IXUZChmCHRY7A7rWM3ymV8MRQ5OaJW+REiuAfGIbH7WZx1zCxma7k2nl0Nb/Kct8jbSwRlpkVuI2Ngaql5dQizmKyqx4HoMKlixzcDFVAFTd3Bji5cEY+vIboooydEHcy6PFU734jVbrFFIisynv+NRRSDf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/digitized-building-plans__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/digitized-building-plans__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/digitized-building-plans__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/digitized-building-plans__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/digitized-building-plans__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/digitized-building-plans__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/digitized-building-plans__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/digitized-building-plans__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/digitized-building-plans__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/digitized-building-plans__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/digitized-building-plans__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/digitized-building-plans__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/digitized-building-plans__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/digitized-building-plans__w1536.jpg"
+        }
+      ]
+    }
+  },
   "/media/facility-drawings-digital.jpg": {
     "width": 1536,
     "height": 1024,

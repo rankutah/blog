@@ -19,6 +19,7 @@
 {{- $imgClasses  := .Get "imgClasses" | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
 {{- $imgStyle    := .Get "imgStyle" | default "" -}}
 {{- $vh          := lower (.Get "vh" | default "") -}}
+{{- $vhHeight    := .Get "vhHeight" | default "" -}}
 {{- $brighten    := lower (.Get "brighten" | default "") -}}
 {{- $max         := .Get "max" | default "" -}}
 {{- $pad         := .Get "pad" | default "" -}}
@@ -45,6 +46,7 @@
   "imgClasses" $imgClasses
   "imgStyle" $imgStyle
   "vh" $vh
+  "vhHeight" $vhHeight
   "brighten" $brighten
   "max" $max
   "pad" $pad

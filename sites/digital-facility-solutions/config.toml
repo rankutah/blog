@@ -35,9 +35,9 @@ disableKinds  = ["taxonomy", "term"]
   # Brand + theme
   primaryColor        = "blue"
   logo                = "media/logo.png" # drop your logo at sites/digital-facility-solutions/media/logo.png
-  lightBackground     = "gray-200"
+  lightBackground     = "blue-200"
   darkBackground      = "slate-950"
-  cardBackground      = "gray-100"
+  cardBackground      = "blue-100"
   cardBackgroundDark  = "slate-800"
   cardBorderLight     = "gray-200"
   cardBorderDark      = "slate-800"

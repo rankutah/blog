@@ -3,8 +3,8 @@ title: "Digital Facility Solutions"
 description: "We bring order and searchability to your existing building plans."
 ---
 
-{{< hero img="/media/building-blueprints-scan-digitized.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" >}}
-# Turn Old Building Plans Into a Digital Facility Record
+{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="80" >}}
+## We bring **order**, **intelligence**, and **searchability** to your existing building plans.
 {.center}
 
 
