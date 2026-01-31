@@ -1,0 +1,33 @@
+{{/*
+  img shortcode
+  Usage: {{< img src="/media/example.avif" alt="..." class="..." sizes="..." loading="lazy" >}}
+
+  Renders responsive images via data/images.manifest.json (partial img.manifest.html)
+  without lightbox wrappers.
+*/}}
+
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  {{- errorf "img shortcode requires src parameter" -}}
+{{- end -}}
+
+{{- $alt := .Get "alt" | default "" -}}
+{{- $class := .Get "class" | default "w-full h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" -}}
+{{- $sizes := .Get "sizes" | default "(min-width: 1024px) 40vw, 100vw" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $decoding := .Get "decoding" | default "async" -}}
+{{- $style := .Get "style" | default "" -}}
+{{- $object := .Get "object" | default "contain" -}}
+{{- $objectPos := .Get "objectPosition" | default "center" -}}
+
+{{- partial "img.manifest.html" (dict
+  "src" $src
+  "alt" $alt
+  "loading" $loading
+  "decoding" $decoding
+  "sizes" $sizes
+  "class" $class
+  "style" $style
+  "object" $object
+  "objectPosition" $objectPos
+) -}}

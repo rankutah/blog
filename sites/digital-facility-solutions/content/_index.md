@@ -16,112 +16,137 @@ description: "We bring order and searchability to your existing building plans."
 
 {{< /hero >}}
 
-Convert your paper drawings, PDFs, and scattered archives into a clean, organized system your maintenance team, contractors, and inspectors can search and use with confidence.
+## What we do
+{.center}
 
-## Transform Your Building Plans
+{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+  {{< col card="false" y="start" >}}
+### From Disorganized Records to Facility Intelligence
 
+Digital Facility Solutions converts legacy drawings into a structured, searchable digital system that supports daily operations, capital planning, and maintenance
 
+This delivers measurable savings by reducing:
 
-Static plan sets are hard to use during real work. Digital Facility Solutions converts fragmented and disorganized building records into a reliable, operational asset that supports maintenance, capital planning, and day-to-day facility operations.
-
-{{< cols min="18rem" gap="1.5rem" row="sm" >}}
-  {{< col card="true" y="start" >}}
-{{< feature_card url="/services/digital-facility-binder/" icon="search" title="Your Building, Fully Searchable" >}}
-We transform legacy drawings into searchable digital facility binders—easy to navigate, easy to maintain, and ready for daily operations.
-{{< /feature_card >}}
+- Search time and document recreation
+- Change orders and re-surveys
+- Unforeseen conditions and project risk
+- Emergency delays and technician downtime
   {{< /col >}}
 
-  {{< col card="true"  y="start" >}}
-{{< feature_card url="/process/" icon="laptop" title="Make Plans Digitally Usable" >}}
-Search, navigate, and understand your facility documentation in seconds—without hunting through rolls, binders, or disconnected PDFs.
-{{< /feature_card >}}
-  {{< /col >}}
-
-  {{< col card="true" y="start" >}}
-{{< feature_card url="/services/" icon="hard-drive" title="Usable Facility Intelligence" >}}
-We bring order and structure to legacy records so teams can act faster—with fewer mistakes and fewer surprises.
-{{< /feature_card >}}
+  {{< col card="false" y="center" >}}
+{{< img src="/media/searching-online-building-records.avif" alt="Searchable facility records" object="contain" >}}
   {{< /col >}}
 {{< /cols >}}
 
-## The Benefits
+## How the process works
+{.center}
 
-Clients typically recover the cost of Digital Facility Solutions services by:
+{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+  {{< col card="false" y="start" >}}
+### From Paper to Searchable Facility Records
 
-- Avoiding contractor re-surveys
-- Reducing change orders
-- Speeding emergency repairs
-- Improving maintenance response
-- Preserving institutional knowledge
+- Hard-copy drawings are scanned into high-resolution PDFs by a qualified reprographics organization
+- All digital files are delivered to Digital Facility Solutions for enhancement and organization
 
-One avoided change order often exceeds the cost of the entire service.
+### From PDFs to Searchable Facility Records
 
-## What We Do
+- All files are delivered to Digital Facility Solutions for enhancement and organization
+  {{< /col >}}
 
-By converting legacy drawings into a structured, searchable, and navigable digital system, we help organizations reduce downtime, eliminate contractor guesswork, and preserve critical institutional knowledge.
+  {{< col card="false" y="center" >}}
+{{< img src="/media/scan-to-pdf-to-computer-screen.avif" alt="Scanning drawings to PDFs" object="contain" >}}
+  {{< /col >}}
+{{< /cols >}}
 
-This approach delivers measurable savings by reducing:
+## Digital enhancement & final deliverable
+{.center}
 
-- Owner time spent searching for or recreating drawings
-- Costly change orders caused by missing or inaccurate information
-- Emergency repair disruptions and response delays
-- Technician time lost hunting for documents
-- Repeat site surveys and redundant field investigations
-- Unforeseen conditions
+{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+  {{< col card="false" y="start" >}}
+### What We Add
 
-{{< cols min="18rem" gap="1.5rem" row="sm" >}}
-  {{< col card="true"  y="start" >}}
-### How the Process Works
+Each drawing set is processed to include:
 
-- OCR text recognition (digitally created text)
+- Optical Character Recognition for digitally created text
+- Correct Page labels by discipline and drawing number
 - Hyperlinked index / table of contents
-- Full searchability by discipline and content
-- Structured PDF files for easy operations use
+- Image alignment and skew correction (crooked images)
 
-{{< button text="See the full process" url="/process/" >}}
+Files are organized to match the original drawing index and returned in a structured, searchable format—ready for operations, maintenance, and future projects.
   {{< /col >}}
 
-  {{< col card="true"  y="start" >}}
-### Additional Services
-
-- Document organization
-- Quantity take-offs
-- Redline conversions
-- Multi-project consolidation
-- CMMS integration support
-
-{{< button text="Explore services" url="/services/" >}}
-  {{< /col >}}
-
-  {{< col card="true" y="start" >}}
-### Experience You Can Trust
-
-- Over 15 years of facility management & project expertise
-- Manufacturing • Healthcare
-- Government
-
-**Pricing**
-
-$1,500 – $3,500 *per project*
-Scan coordination available (billed hourly)
-
-{{< button text="Contact us" url="/contact/" >}}
+  {{< col card="false" y="center" >}}
+{{< img src="/media/Hyperlink-Page-Index.avif" alt="Hyperlinked index / table of contents" object="contain" >}}
   {{< /col >}}
 {{< /cols >}}
 
----
+## Proven results
+{.center}
 
-{{< cols min="18rem" gap="2rem" v="start">}}
+{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+  {{< col card="false" y="start" >}}
+### Real-World Impact
 
-{{< col card="true" y="start" >}}
+Delivered Digital Facility Solutions–style systems for:
 
-## Contact Us Today
+- Industrial manufacturing firms
+- The Federal Aviation Administration (FAA)
 
-Archived documents can be retrieved in just a few clicks.
+Helping facility teams:
 
-{{< button text="Request a Quote" url="/contact/" >}}
+- Dramatically improve access to building information
+- Reduce time spent searching for drawings and data
+- Increase operational efficiency by up to 90%
+  {{< /col >}}
 
-{{< /col >}}
+  {{< col card="false" y="center" >}}
+{{< img src="/media/pdf-to-screen.avif" alt="Access drawings faster" object="contain" >}}
+  {{< /col >}}
+{{< /cols >}}
 
+## Supplemental capabilities
+{.center}
+
+{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+  {{< col card="false" y="start" >}}
+### We Also Provide:
+
+- Document Organization & Recovery
+  - Sorting, renaming, and structuring large volumes of PDFs
+- Custom Drawing Intelligence Services
+  - Highlight:
+    - Spaces (e.g. Rooms Sqft)
+    - Components (e.g. valves, panels, ductwork, etc)
+- Other ad-hoc digital PDF enhancement requests
+  {{< /col >}}
+
+  {{< col card="false" y="center" >}}
+{{< img src="/media/pdf-to-heirarchy.avif" alt="Organized PDF system" object="contain" >}}
+  {{< /col >}}
+{{< /cols >}}
+
+## Experience & expertise
+{.center}
+
+{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+  {{< col card="false" y="start" >}}
+### Built by a Facility Professional
+
+Digital Facility Solutions draws from 15+ years of experience as a Facility Manager and Facility Project Professional across:
+
+- Manufacturing (medical devices & oil/gas equipment)
+- Healthcare facilities
+- Federal government contracting
+
+With hands-on expertise in:
+
+- Bluebeam
+- AutoCAD & Revit
+- CMMS & IWMS platforms (ServiceNow, Archibus)
+  {{< /col >}}
+
+  {{< col card="false" y="center" >}}
+{{< img src="/media/building-blueprints-to-digitize.avif" alt="Facility planning experience" object="contain" >}}
+  {{< /col >}}
 {{< /cols >}}
 
