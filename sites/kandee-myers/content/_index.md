@@ -5,7 +5,7 @@ url: "/"
 image: "/media/kandee-myers-utah-state-senate-district-21-city.jpeg"
 ---
 
-{{< hero img="/media/kandee-myers-utah-state-senate-district-21-city-new.jpeg" alt="Kandee Myers" bleed="false" max="xl" pad="2xl" overlay="true" overlayShade="bg-black/45" overlayPos="center" align="center" vh="none" imgClasses="block w-full h-auto object-contain" >}}
+{{< hero img="/media/kandee-myers-utah-state-senate-district-21-city-mobile.jpeg" alt="Kandee Myers" bleed="false" max="md" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/45" overlayPos="center" align="center" vh="none" imgStyle="width:100%;" imgClasses="block w-full h-auto object-contain" >}}
 <div class="text-white">
 
 

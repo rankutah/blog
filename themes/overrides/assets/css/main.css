@@ -208,7 +208,7 @@ main#content video {
 
 /* Compensate for the sticky header so the first page element isn't hidden/too close to the nav */
 /* Default top spacing to clear a sticky header */
-main#content { padding-top: 4rem; }
+main#content { padding-top: var(--site-content-pad-top, 4rem); }
 
 /* If the page starts with a full-bleed hero/section, remove the extra padding so the hero sits flush under the nav.
    Use :has() in supporting browsers for automatic detection; fallback is the manual `.no-top-pad` class on main. */
@@ -233,6 +233,17 @@ main#content.no-top-pad {
 /* Also ensure no top margin sneaks in from first children */
 main#content.no-top-pad > article { margin-top: 0 !important; }
 main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
+
+/* If a hero is marked as mobile-bleed, make it edge-to-edge on small screens even when nested in a padded/max-width wrapper. */
+@media (max-width: 767.98px) {
+  .section.hero.mobile-bleed {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: clip;
+  }
+}
 
 /* ========== Contact form placeholders & checkbox (unified) ========== */
 /* Scoped to .cp-contact so it only affects forms that use that class. */

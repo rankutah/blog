@@ -52,6 +52,7 @@
 
 {{- $max     := $p.max    | default $defMax -}}
 {{- $pad     := $p.pad    | default $defPad -}}
+{{- $padMobile := $p.padMobile | default "" -}}
 {{- $align   := $p.align  | default $defAlign -}}
 {{- $alignY  := $p.alignY | default $defAlignY -}}
 {{- $minh    := $p.minh   | default $defMinh -}}
@@ -117,9 +118,17 @@
   {{- $overlayWrapStyle = "padding-bottom: 33vh; padding-bottom: 33svh;" -}}
 {{- end -}}
 
+{{- $padClass := (index $padMap $pad | default "px-8") -}}
+{{- if ne $padMobile "" -}}
+  {{- $padM := (index $padMap $padMobile | default "px-0") -}}
+  {{- $padClass = printf "%s md:%s" $padM $padClass -}}
+{{- end -}}
+
+{{- $mobileBleed := eq (lower (printf "%v" $padMobile)) "none" -}}
+
 {{- $container := printf "%s mx-auto %s %s"
     (index $maxMap $max   | default "max-w-7xl")
-    (index $padMap $pad   | default "px-8")
+    $padClass
     (index $alMap  $align | default "text-left")
 -}}
 {{- $vWrap := "" -}}
@@ -283,7 +292,7 @@
 {{- end -}}
 
 {{- if $bleed -}}
-  <div class="section hero bleed">
+  <div class="section hero bleed{{ if $mobileBleed }} mobile-bleed{{ end }}">
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
       {{- $heroImg | safeHTML -}}
       {{- if $overlay -}}
@@ -301,7 +310,7 @@
     </div>
   </div>
 {{- else -}}
-  <div class="section hero">
+  <div class="section hero{{ if $mobileBleed }} mobile-bleed{{ end }}">
     <div class="{{ $container }}">
       <div class="relative">
         {{- $heroImg | safeHTML -}}

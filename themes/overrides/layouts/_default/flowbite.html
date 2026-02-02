@@ -176,7 +176,8 @@
 {{- /* Get shared palette once; use for body + navbar */ -}}
 {{- $pal := partial "theme/palette.html" . -}}
 
-<body id="top" class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg">
+{{- $contentPadTop := .Site.Params.header.contentPadTop | default "" -}}
+<body id="top" class="flowbite-landing {{ $pal.bodyBg }} {{ $pal.bodyText }} transition-colors duration-200 twinkle-bg"{{ with $contentPadTop }} style="--site-content-pad-top: {{ . }};"{{ end }}>
   {{ partial "navbar.html" . }}
 
   {{- /* Determine if page should flush against navbar.
@@ -190,7 +191,8 @@
   {{- $hasHeroDict := and (isset .Params "hero") $heroIsMap -}}
   {{- $hasHeroImage := or (and $hasHeroDict (isset .Params.hero "image")) (isset .Params "heroImage") -}}
   {{- $isHeroPage := or (and .IsHome (not .Params.plainHome) (not $heroDisabled)) (and (isset .Params "hero") (ne $heroVal nil) (not $heroDisabled)) $hasHeroImage (eq .Params.layout "landing") -}}
-  <main id="content" class="min-h-screen{{ if $isHeroPage }} no-top-pad{{ end }}" data-bg-sync{{ if $isHeroPage }} style="padding-top:0;margin-top:0"{{ end }}>
+  {{- $flushHero := default true .Site.Params.header.flushHero -}}
+  <main id="content" class="min-h-screen{{ if and $isHeroPage $flushHero }} no-top-pad{{ end }}" data-bg-sync{{ if and $isHeroPage $flushHero }} style="padding-top:0;margin-top:0"{{ end }}>
         {{- /* Render list pages (sections/taxonomies). Some Hugo setups emit tags pages as Kind "page";
           broaden detection to also catch Type "tags" or URL starting with /tags/. */ -}}
         {{- $isTagsPath := (hasPrefix .RelPermalink "/tags/") -}}

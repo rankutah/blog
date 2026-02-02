@@ -23,6 +23,7 @@
 {{- $brighten    := lower (.Get "brighten" | default "") -}}
 {{- $max         := .Get "max" | default "" -}}
 {{- $pad         := .Get "pad" | default "" -}}
+{{- $padMobile   := .Get "padMobile" | default "" -}}
 {{- $align       := .Get "align" | default "" -}}
 {{- $alignY      := .Get "alignY" | default "" -}}
 {{- $minh        := .Get "minh" | default "" -}}
@@ -50,6 +51,7 @@
   "brighten" $brighten
   "max" $max
   "pad" $pad
+  "padMobile" $padMobile
   "align" $align
   "alignY" $alignY
   "minh" $minh
