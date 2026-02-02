@@ -108,7 +108,10 @@
 {{- /* Overlay positioning (defaults to vertically centered). */ -}}
 {{- $overlayWrapClass := "absolute inset-0 flex items-center" -}}
 {{- $overlayWrapStyle := "" -}}
-{{- if or (eq $overlayPos "bottom") (eq $overlayPos "stickbottom") (eq $overlayPos "stick-bottom") (eq $overlayPos "pinnedbottom") (eq $overlayPos "pinned-bottom") -}}
+{{- if or (eq $overlayPos "mobilebottom") (eq $overlayPos "mobile-bottom") (eq $overlayPos "mobile_bottom") (eq $overlayPos "bottommobile") (eq $overlayPos "bottom-mobile") (eq $overlayPos "bottom_mobile") -}}
+  {{- /* Mobile: bottom align; Desktop: keep centered. */ -}}
+  {{- $overlayWrapClass = "absolute inset-0 flex items-end md:items-center pb-6 md:pb-0" -}}
+{{- else if or (eq $overlayPos "bottom") (eq $overlayPos "stickbottom") (eq $overlayPos "stick-bottom") (eq $overlayPos "pinnedbottom") (eq $overlayPos "pinned-bottom") -}}
   {{- $overlayWrapClass = "absolute inset-0 flex items-end" -}}
   {{- /* Pin to bottom with a little breathing room + safe-area inset. */ -}}
   {{- $overlayWrapStyle = "padding-bottom: max(env(safe-area-inset-bottom), 1.5rem);" -}}
@@ -125,6 +128,17 @@
 {{- end -}}
 
 {{- $mobileBleed := eq (lower (printf "%v" $padMobile)) "none" -}}
+
+{{- /* Overlay content padding: keep image edge-to-edge on mobile, but give overlay text site-like margins. */ -}}
+{{- $overlayPadClass := $padClass -}}
+{{- if and $overlay $mobileBleed -}}
+  {{- $overlayPadClass = replaceRE `^px-0\b` `px-4` $overlayPadClass -}}
+{{- end -}}
+
+{{- $overlayContainer := printf "%s mx-auto %s"
+    (index $maxMap $max | default "max-w-7xl")
+    $overlayPadClass
+-}}
 
 {{- $container := printf "%s mx-auto %s %s"
     (index $maxMap $max   | default "max-w-7xl")
@@ -294,11 +308,11 @@
 {{- if $bleed -}}
   <div class="section hero bleed{{ if $mobileBleed }} mobile-bleed{{ end }}">
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
-      {{- $heroImg | safeHTML -}}
+      <div class="not-prose">{{- $heroImg | safeHTML -}}</div>
       {{- if $overlay -}}
         <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
-          <div class="relative z-10 w-full {{ $container }}">
+          <div class="relative z-10 w-full {{ $overlayContainer }}">
             <div class="{{ $vWrap }}">
               <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
                 {{- $page.Scratch.Get "heroInner" -}}
@@ -313,11 +327,11 @@
   <div class="section hero{{ if $mobileBleed }} mobile-bleed{{ end }}">
     <div class="{{ $container }}">
       <div class="relative">
-        {{- $heroImg | safeHTML -}}
+        <div class="not-prose">{{- $heroImg | safeHTML -}}</div>
         {{- if $overlay -}}
           <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
-            <div class="relative z-10 w-full">
+            <div class="relative z-10 w-full {{ $overlayContainer }}">
               <div class="{{ $vWrap }}">
                 <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
                   {{- $page.Scratch.Get "heroInner" -}}

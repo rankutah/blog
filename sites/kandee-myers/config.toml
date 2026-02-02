@@ -93,7 +93,7 @@ enableRobotsTXT = true
   showBrandTitle = false
   flushHero = false
   contentPadTop = "0px"
-  logoHeightPx  = 80
+  logoHeightPx  = 60
 
 [menu]
   [[menu.main]]
