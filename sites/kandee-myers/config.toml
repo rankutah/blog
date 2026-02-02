@@ -31,7 +31,7 @@ enableRobotsTXT = true
   primaryColor = "blue"
 
   # Optional; add a real logo later (this affects Organization schema auto-logo too).
-  logo = ""  # e.g. "media/logo.png"
+  logo = "media/logo.png"
 
   # Clean, readable palette that also looks good in dark mode.
   lightBackground     = "slate-200"
@@ -90,7 +90,7 @@ enableRobotsTXT = true
   CTAText       = "Volunteer"
   CTAURL        = "/volunteer"
   showPhoneOnMobile = false
-  logoHeightPx  = 40
+  logoHeightPx  = 120
 
 [menu]
   [[menu.main]]

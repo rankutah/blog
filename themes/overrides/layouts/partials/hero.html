@@ -57,7 +57,7 @@
 {{- $minh    := $p.minh   | default $defMinh -}}
 
 {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
-{{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
+{{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" "xl" "px-12" "2xl" "px-16" -}}
 {{- $alMap  := dict "start" "text-left" "center" "text-center" -}}
 {{- $alignYMap := dict "" "" "start" "justify-start" "center" "justify-center" "end" "justify-end" "between" "justify-between" -}}
 
@@ -90,10 +90,11 @@
   {{- $svhStyle := replaceRE `([0-9.]+)vh` `${1}svh` $imgStyle -}}
   {{- $imgStyle = printf "%s; %s" $imgStyle $svhStyle -}}
 {{- end -}}
+{{- $vhDisabled := or (eq $vhMode "none") (or (eq $vhMode "off") (eq $vhMode "auto")) -}}
 {{- if and (eq $vhMode "") (ne $img "") -}}
   {{- $vhMode = "svh" -}}
 {{- end -}}
-{{- if and (ne $vhMode "") (ne $img "") -}}
+{{- if and (ne $vhMode "") (not $vhDisabled) (ne $img "") -}}
   {{- if eq $vhMode "svh" -}}
     {{- $imgStyle = printf "height: %svh; height: %ssvh;%s" $vhHeight $vhHeight (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- else if eq $vhMode "dvh" -}}

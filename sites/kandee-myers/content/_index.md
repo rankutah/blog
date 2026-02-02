@@ -2,15 +2,14 @@
 title: "Kandee Myers for Utah State Senate — District 21"
 description: "Meet Kandee Myers, candidate for Utah State Senate District 21. Learn where she stands on housing, education, and term limits — and how to get involved."
 url: "/"
-image: "/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg"
+image: "/media/kandee-myers-utah-state-senate-district-21-city.jpeg"
 ---
 
-{{< hero img="/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg" imgDesktop="/media/kandee-myers-utah-state-senate-district-21-city-desktop.jpeg" imgMobile="/media/kandee-myers-utah-state-senate-district-21-city-mobile.jpeg" alt="Kandee Myers" bleed="true" overlay="true" overlayShade="bg-black/45" overlayPos="bottom" align="center" vh="svh" >}}
+{{< hero img="/media/kandee-myers-utah-state-senate-district-21-city-new.jpeg" alt="Kandee Myers" bleed="false" max="xl" pad="2xl" overlay="true" overlayShade="bg-black/45" overlayPos="center" align="center" vh="none" imgClasses="block w-full h-auto object-contain" >}}
 <div class="text-white">
 
-# Kandee Myers for Utah State Senate
 
-Utah Election • Nov 23, 2026 • District 21
+# Kandee Myers for Utah State Senate
 
 {{< button url="/volunteer" text="Volunteer" >}}
 {{< button url="/donate" text="Donate" >}}
@@ -19,6 +18,8 @@ Utah Election • Nov 23, 2026 • District 21
 
 
 {{< /hero >}}
+
+
 
 ## Quick links
 {.center}
