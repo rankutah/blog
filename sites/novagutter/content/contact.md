@@ -20,14 +20,13 @@ Tell us about your property and we’ll get back with options and an estimate.
 {{< button submit="true" form="contact1" text="Request a Quote" >}}
 
 <script>
-// Submission with external counter producing zero-padded number (e.g. 000039). Fallback: localStorage.
 (function() {
   const form = document.getElementById('contact1');
   if (!form) return;
 
   const counterEndpoint = 'https://script.google.com/macros/s/AKfycbwLrCsm00OW-5rtyCHNWwQA8O9q-tMIKA9QP_QEaNsjsXaTnas-_qO4MAyP4NowCY8d/exec';
   const PAD = 6;
-  const FETCH_TIMEOUT_MS = 10000; // 10 seconds to account for "Cold Starts"
+  const FETCH_TIMEOUT_MS = 10000; // Increased to 10s to handle Google's cold starts
 
   function pad(n) { return String(n).padStart(PAD, '0'); }
 
@@ -55,15 +54,13 @@ Tell us about your property and we’ll get back with options and an estimate.
     if (submitBtn) {
       submitBtn.disabled = true;
       submitBtn.dataset.originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Sending...';
+      submitBtn.textContent = 'Sending...'; // Keeps the user from clicking again or refreshing
     }
 
-    // Attempt to get the number
     const serverVal = await fetchCounter();
-
     const fd = new FormData(form);
 
-    // If we got a number, pad it. If not, it remains an empty string.
+    // Set the reference: Padded number if successful, empty string if timed out
     const referenceValue = serverVal ? pad(serverVal) : "";
     fd.set('reference', referenceValue);
 
@@ -82,7 +79,7 @@ Tell us about your property and we’ll get back with options and an estimate.
 
       if (!resp.ok) throw new Error('Submit failed');
 
-      // Success UI
+      // Success Message
       const success = document.createElement('div');
       success.className = 'p-4 mt-4 rounded bg-green-50 text-green-700 text-sm';
       success.innerHTML = 'Quote request sent. We will contact you soon.';
@@ -94,10 +91,11 @@ Tell us about your property and we’ll get back with options and an estimate.
         submitBtn.disabled = false;
         submitBtn.textContent = submitBtn.dataset.originalText || 'Request a Quote';
       }
-      alert('Sorry, submission failed. Please check your connection and try again.');
+      alert('Submission failed. Please check your internet connection and try again.');
     }
   });
 })();
+</script>
 
 {{< /col >}}
 
