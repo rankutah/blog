@@ -179,7 +179,7 @@ Learn more about the process for designing and building a custom website on the 
 Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
 
 ### Which locations do you serve?
-Web design services are available to clients across the United States.
+Web design services are available to clients across the United States with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 
 {{< /faqs >}}
 
