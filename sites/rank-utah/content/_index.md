@@ -170,7 +170,7 @@ Reach out with questions or to start your project.
 
 {{< faqs >}}
 ### What is your experience?
-I started building websites for small businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I started building websites for small businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### What is your web design process?
 Learn more about the process for designing and building a custom website on the [Website Design](/services/website-design) page.

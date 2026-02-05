@@ -16,7 +16,7 @@ Call or text anytime with questions: [(385) 323-8130](tel:+13853238130)
 
 ## Meet Your Web Designer
 
-I specialize in building fast, custom‑coded websites that help turn visits into calls, texts, and bookings. Unlike many builders who rely on templates, I build for performance and clean code from the start. Every change is versioned, so it’s easy to restore a previous version if needed.
+I specialize in building fast, custom‑coded websites that help turn visits into calls, texts, and bookings. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed.
 
 I also understand both sides of the work: I earned a Bachelor’s degree in Business and a Master’s degree in Software Development, and I’ve worked in cybersecurity at companies like Arctic Wolf and Okta.
 
