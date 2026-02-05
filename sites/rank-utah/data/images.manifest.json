@@ -6935,6 +6935,160 @@
       ]
     }
   },
+  "/media/website-design-seo-google-ads.jpg": {
+    "width": 1920,
+    "height": 1280,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQG/8QAJxAAAQMDAwEJAAAAAAAAAAAAAQACEQMhMQQSQQUiMlFhcYGRofD/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwH/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIxUf/aAAwDAQACEQMRAD8A5NrzG2k3bNi7krRQ0nLhPrwp01IATEra0CwETNmxnzKeZ6NJdRAAAFv10p1M/OFqdMGZImCZyUqpiSe0fpPVCRfqGlGgIfRcSwnuHj3VRU3NEhCEatqILoHiBgJQJe4A8mEIWa4m/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-seo-google-ads__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-seo-google-ads__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-seo-google-ads__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-seo-google-ads__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-seo-google-ads__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-seo-google-ads__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-seo-google-ads__w1600.avif"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/website-design-seo-google-ads__w1920.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-seo-google-ads__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-seo-google-ads__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-seo-google-ads__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-seo-google-ads__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-seo-google-ads__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-seo-google-ads__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-seo-google-ads__w1600.jpg"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/website-design-seo-google-ads__w1920.jpg"
+        }
+      ]
+    }
+  },
+  "/media/website-design-seo-google-ads.avif": {
+    "width": 1920,
+    "height": 1280,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQG/8QAJxAAAQMDAwEJAAAAAAAAAAAAAQACEQMhMQQSQQUiMlFhcYGRofD/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwH/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIxUf/aAAwDAQACEQMRAD8A5NrzG2k3bNi7krRQ0nLhPrwp01IATEra0CwETNmxnzKeZ6NJdRAAAFv10p1M/OFqdMGZImCZyUqpiSe0fpPVCRfqGlGgIfRcSwnuHj3VRU3NEhCEatqILoHiBgJQJe4A8mEIWa4m/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-seo-google-ads__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-seo-google-ads__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-seo-google-ads__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-seo-google-ads__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-seo-google-ads__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-seo-google-ads__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-seo-google-ads__w1600.avif"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/website-design-seo-google-ads__w1920.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/website-design-seo-google-ads__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/website-design-seo-google-ads__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/website-design-seo-google-ads__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/website-design-seo-google-ads__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/website-design-seo-google-ads__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/website-design-seo-google-ads__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/website-design-seo-google-ads__w1600.jpg"
+        },
+        {
+          "w": 1920,
+          "url": "/media-deriv/website-design-seo-google-ads__w1920.jpg"
+        }
+      ]
+    }
+  },
   "/media/website-nova-gutter.jpg": {
     "width": 2069,
     "height": 1636,

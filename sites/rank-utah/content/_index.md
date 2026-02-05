@@ -1,6 +1,6 @@
 ---
-title: "Website Design & Local SEO Services"
-description: "Website design and local search engine optimization (SEO) for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out."
+title: "Website Design, Local SEO & Google Ads Services"
+description: "Website design, local search engine optimization (SEO), and Google Ads management for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:
   localBusiness:
@@ -13,9 +13,12 @@ schema:
     priceRange: "$99–$199/mo"
 ---
 
-{{< hero img="../media/clear-presence-image-of-small-business.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Custom Website Design & Local SEO to Grow Your Business {.text-white}
-Lead-generating websites and local search engine optimization (SEO) to help you get more customers. Plans from $99/month.
+{{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
+# Website Design, Local SEO, & Google Ads to Grow Your Business {.text-white}
+Lead-generating websites, local marketing, and Google Ads management. Plans starting at $99/month.
+
+
+
 {.text-white}
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
@@ -102,6 +105,16 @@ See the process for building a custom site designed to bring you more customers.
 Help local customers find you on search and maps. Local SEO includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting.
 
 {{<button text="Local SEO" url="/services/local-seo">}}
+
+{{< /col >}}
+
+{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+## Google Ads
+
+Paid search management to generate more leads.
+
+{{<button text="Google Ads" url="/services/google-ads">}}
 
 {{< /col >}}
 
