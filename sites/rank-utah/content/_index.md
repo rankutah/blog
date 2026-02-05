@@ -112,7 +112,7 @@ Help local customers find you on search and maps. Local SEO includes keyword res
 
 ## Google Ads
 
-Paid search management to generate more leads.
+Paid Google Ads management to generate more leads.
 
 {{<button text="Google Ads" url="/services/google-ads">}}
 
