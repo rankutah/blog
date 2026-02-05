@@ -218,6 +218,12 @@ enableRobotsTXT = true
     weight = 42
 
   [[menu.main]]
+    name   = "Why I Am Running"
+    url    = "/why-i-am-running"
+    parent = "about"
+    weight = 43
+
+  [[menu.main]]
     name   = "Contact"
     url    = "/contact"
     weight = 50
