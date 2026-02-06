@@ -17,6 +17,8 @@
 {{- $extra  := .Get "classes" | default "" -}}
 {{- $render := lower (.Get "render" | default "md") -}}
 
+{{- $motionEnabled := $page.Site.Params.motion.enabled | default false -}}
+
 {{- /* Mobile-only order: apply `order-*` at base and reset to DOM order on md+ with `md:order-none` */ -}}
 {{- $orderRaw := lower (.Get "order" | default "") -}}
 {{- $orderCls := "" -}}
@@ -176,13 +178,13 @@
 {{- end -}}
 
 {{- if $isCard -}}
-  <div class="{{ $card }}">
+  <div class="{{ $card }}"{{ if $motionEnabled }} data-motion="reveal"{{ end }}>
     {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end }}
       {{- $html -}}
     {{- if $vWrap }}</div>{{ end }}
   </div>
 {{- else -}}
-  <div class="h-full{{ if ne $orderCls "" }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}">
+  <div class="h-full{{ if ne $orderCls "" }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"{{ if $motionEnabled }} data-motion="reveal"{{ end }}>
     {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end }}
       {{- $html -}}
     {{- if $vWrap }}</div>{{ end }}

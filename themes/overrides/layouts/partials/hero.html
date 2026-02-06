@@ -82,7 +82,8 @@
 {{- $overlayIsLight := and $overlay (in $overlayShade "bg-white") -}}
 {{- $overlayProse := "prose prose-zinc max-w-none dark:prose-invert" -}}
 {{- if and $overlay (not $overlayIsLight) -}}
-  {{- $overlayProse = "prose max-w-none prose-invert text-white prose-headings:text-white prose-a:text-white" -}}
+  {{- /* Avoid forcing headings to white via utilities; allow per-heading overrides like {.text-black}. */ -}}
+  {{- $overlayProse = "prose max-w-none prose-invert text-white prose-a:text-white" -}}
 {{- end -}}
 
 {{- /* If author provided a vh-based inline height, append svh so it wins on mobile */ -}}
@@ -139,6 +140,8 @@
     (index $maxMap $max | default "max-w-7xl")
     $overlayPadClass
 -}}
+
+{{- $motionEnabled := $page.Site.Params.motion.enabled | default false -}}
 
 {{- $container := printf "%s mx-auto %s %s"
     (index $maxMap $max   | default "max-w-7xl")
@@ -252,7 +255,10 @@
     {{- $hM := $entryM.height | default 0 -}}
     {{- $srcFallbackM := (cond (gt (len $jpegM) 0) (index $jpegM (sub (len $jpegM) 1)).url ($imgMobile | safeURL)) -}}
 
-    {{- $classes := (printf "object-cover object-center not-prose %s" $imgClasses) -}}
+    {{- /* Only include a default object-position if author didn't provide one (e.g. object-[75%_50%]). */ -}}
+    {{- $hasObjPos := gt (len (findRE `\bobject-(?:left|right|center|top|bottom|\[[^\]]+\])\b` $imgClasses)) 0 -}}
+    {{- $objPosClass := cond $hasObjPos "" " object-center" -}}
+    {{- $classes := (printf "object-cover%s not-prose %s" $objPosClass $imgClasses) -}}
     {{- $fetchpri := "high" -}}
 
     {{- $hasHeightInStyle := and (ne $imgStyle "") (gt (len (findRE `\b[0-9.]+(?:vh|svh|dvh)\b` $imgStyle)) 0) -}}
@@ -312,7 +318,7 @@
       {{- if $overlay -}}
         <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
-          <div class="relative z-10 w-full {{ $overlayContainer }}">
+          <div class="relative z-10 w-full {{ $overlayContainer }}"{{ if $motionEnabled }} data-motion="hero"{{ end }}>
             <div class="{{ $vWrap }}">
               <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
                 {{- $page.Scratch.Get "heroInner" -}}
@@ -331,7 +337,7 @@
         {{- if $overlay -}}
           <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
-            <div class="relative z-10 w-full {{ $overlayContainer }}">
+            <div class="relative z-10 w-full {{ $overlayContainer }}"{{ if $motionEnabled }} data-motion="hero"{{ end }}>
               <div class="{{ $vWrap }}">
                 <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
                   {{- $page.Scratch.Get "heroInner" -}}

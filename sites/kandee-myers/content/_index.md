@@ -5,17 +5,12 @@ url: "/"
 image: "/media/kandee-myers-utah-state-senate-district-21-city.jpeg"
 ---
 
-{{< hero img="/media/hero-image.png" alt="Kandee Myers" bleed="true" max="md" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/45" overlayPos="mobile-bottom" align="center" vh="svh" vhHeight="100" imgClasses="block w-full object-cover" >}}
-<div class="text-white">
+{{< hero img="/media/hero-image.png" alt="Kandee Myers" bleed="true" max="md" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" overlayPos="mobile-bottom" align="center" vh="svh" vhHeight="100" imgClasses="block w-full object-cover object-[75%_50%] md:object-center" >}}
 
-
-# Kandee Myers for Utah State Senate
+# Kandee Myers for Utah State Senate {.text-white}
 
 {{< button url="/volunteer" text="Volunteer" >}}
 {{< button url="/donate" text="Donate" >}}
-
-</div>
-
 
 {{< /hero >}}
 

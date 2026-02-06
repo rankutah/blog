@@ -1,0 +1,191 @@
+/* Motion helpers (opt-in per site).
+   - Scroll reveal via IntersectionObserver
+   - Stagger support for grids via [data-motion-group="stagger"]
+   - Respects prefers-reduced-motion
+*/
+
+(function () {
+  const root = document.documentElement;
+
+  // Only run when the site enables motion (template-gated, but keep this defensive).
+  const enabledAttr = root.getAttribute('data-motion-enabled');
+  const enabled = enabledAttr === 'true' || enabledAttr === '1' || enabledAttr === 'on';
+  if (!enabled) return;
+
+  // Run entrance/reveal animations only the first time a visitor loads a page.
+  // Subsequent navigations should render everything immediately (no repeats).
+  const seenKey = 'cp:motion:seen';
+  let alreadySeen = false;
+  try {
+    alreadySeen = localStorage.getItem(seenKey) === '1';
+  } catch (e) {
+    alreadySeen = false;
+  }
+
+  // Debug helper: allow forcing a “first view” from the URL.
+  // Example: `?motion=reset`
+  try {
+    const params = new URLSearchParams(window.location && window.location.search ? window.location.search : '');
+    const motionParam = (params.get('motion') || '').toLowerCase();
+    if (motionParam === 'reset' || motionParam === '1' || motionParam === 'true') {
+      try { localStorage.removeItem(seenKey); } catch (e) {}
+      alreadySeen = false;
+    }
+  } catch (e) {
+    // ignore
+  }
+
+  let reduce = false;
+  try {
+    reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  } catch (e) {
+    reduce = false;
+  }
+  if (reduce) {
+    root.setAttribute('data-motion', 'reduced');
+    // Ensure we don't keep the pre-paint pending gate on.
+    root.removeAttribute('data-motion-pending');
+    root.setAttribute('data-motion-ready', 'true');
+    return;
+  }
+
+  const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
+
+  // Auto-mark common content elements for reveal to increase overall motion.
+  // Skip anything already inside an animated region to avoid nested/janky transforms.
+  const autoSelectors = [
+    'main#content article .prose h2',
+    'main#content article .prose h3',
+    // Some pages put the `prose` class directly on the <article>.
+    'main#content article.prose h2',
+    'main#content article.prose h3',
+    'main#content article.prose p',
+    'main#content article.prose ul',
+    'main#content article.prose ol',
+    'main#content article.prose blockquote',
+    'main#content article .prose p',
+    'main#content article .prose ul',
+    'main#content article .prose ol',
+    'main#content article .prose blockquote',
+    'main#content article .ui-btn',
+  ];
+  const autoEls = Array.from(document.querySelectorAll(autoSelectors.join(',')));
+  for (const el of autoEls) {
+    if (!(el instanceof HTMLElement)) continue;
+    if (el.closest('.section.hero')) continue;
+    if (el.closest('[data-motion]')) continue;
+    el.setAttribute('data-motion', 'reveal');
+  }
+
+  // Hero image container entrance (adds motion even when hero content is short).
+  const heroImgWraps = Array.from(document.querySelectorAll('.section.hero .relative > .not-prose'));
+  for (const el of heroImgWraps) {
+    if (!(el instanceof HTMLElement)) continue;
+    // Only mark when it's the direct image wrapper (avoid other nested not-prose blocks).
+    if (el.querySelector('img, picture, video')) {
+      el.setAttribute('data-motion', 'hero-img');
+    }
+  }
+
+  // Apply stagger delays to children in motion groups.
+  const staggerGroups = Array.from(document.querySelectorAll('[data-motion-group="stagger"]'));
+  for (const group of staggerGroups) {
+    const children = Array.from(group.children).filter((n) => n && n.nodeType === 1);
+    children.forEach((child, index) => {
+      if (!(child instanceof HTMLElement)) return;
+      if (!child.hasAttribute('data-motion')) child.setAttribute('data-motion', 'reveal');
+      // Cap delay so large grids don't feel sluggish.
+      const ms = clamp(index * 320, 0, 1800);
+      child.style.setProperty('--motion-delay', `${ms}ms`);
+    });
+  }
+
+  if (alreadySeen) {
+    root.setAttribute('data-motion-skip', 'true');
+    root.removeAttribute('data-motion-pending');
+    root.setAttribute('data-motion-ready', 'true');
+
+    const all = Array.from(document.querySelectorAll('[data-motion]')).filter((el) => el instanceof HTMLElement);
+    for (const el of all) el.classList.add('is-visible');
+    return;
+  }
+
+  try {
+    localStorage.setItem(seenKey, '1');
+  } catch (e) {
+    // ignore
+  }
+
+  const revealEls = Array.from(document.querySelectorAll('[data-motion="reveal"]'))
+    .filter((el) => el instanceof HTMLElement);
+
+  const heroEls = Array.from(document.querySelectorAll('[data-motion="hero"]'))
+    .filter((el) => el instanceof HTMLElement);
+
+  const heroImgEls = Array.from(document.querySelectorAll('[data-motion="hero-img"]'))
+    .filter((el) => el instanceof HTMLElement);
+
+  // Mark elements already in view so we don't hide them when motion becomes "ready".
+  const inViewNow = (el) => {
+    const r = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight || 0;
+    // Consider "in view" if it intersects the top ~92% of viewport.
+    return r.bottom > 0 && r.top < vh * 0.92;
+  };
+
+  // Enable CSS-driven initial hidden states only after the above sync pass.
+  // Clear the pre-paint pending gate first to prevent any flash.
+  root.removeAttribute('data-motion-pending');
+  root.setAttribute('data-motion-ready', 'true');
+
+  // Make already-in-view content animate in (including H2s near the top).
+  // Do this after `data-motion-ready` so transitions run.
+  requestAnimationFrame(() => {
+    for (const el of revealEls) {
+      if (inViewNow(el)) el.classList.add('is-visible');
+    }
+  });
+
+  // Hero entrance: trigger after paint for smooth transition.
+  if (heroEls.length) {
+    requestAnimationFrame(() => {
+      for (const el of heroEls) el.classList.add('is-visible');
+    });
+  }
+
+  // Hero image entrance.
+  if (heroImgEls.length) {
+    requestAnimationFrame(() => {
+      for (const el of heroImgEls) el.classList.add('is-visible');
+    });
+  }
+
+  // Scroll reveal.
+  if (!('IntersectionObserver' in window) || revealEls.length === 0) {
+    // Fallback: just show everything.
+    for (const el of revealEls) el.classList.add('is-visible');
+    return;
+  }
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const target = entry.target;
+        if (target instanceof HTMLElement) target.classList.add('is-visible');
+        io.unobserve(target);
+      }
+    },
+    {
+      root: null,
+      threshold: 0.12,
+      // Trigger slightly before the element is fully visible.
+      rootMargin: '0px 0px -10% 0px',
+    },
+  );
+
+  for (const el of revealEls) {
+    if (el.classList.contains('is-visible')) continue;
+    io.observe(el);
+  }
+})();

@@ -49,6 +49,9 @@ enableRobotsTXT = true
   # Search is off by default unless you mount a blog.
   enableSearch = false
 
+  [params.motion]
+    enabled = true
+
   [params.schema.organization]
     enabled = true
     name    = "Kandee 4 Utah"

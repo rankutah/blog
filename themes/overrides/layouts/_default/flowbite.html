@@ -32,7 +32,13 @@
 {{- $themeStorageKey := cond $themeSiteKey (printf "pref-theme:%s" $themeSiteKey) "pref-theme" -}}
 {{- $themeRecoveredKey := cond $themeSiteKey (printf "pref-theme:recovered:%s" $themeSiteKey) "pref-theme:recovered" -}}
 
-<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-default-theme="{{ $defaultTheme }}" data-theme-storage-key="{{ $themeStorageKey }}" data-theme-recovered-key="{{ $themeRecoveredKey }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
+{{- /* Optional site id for targeted CSS tweaks */ -}}
+{{- $siteId := os.Getenv "HUGO_SITE" -}}
+{{- if not $siteId -}}
+  {{- $siteId = urlize site.Title -}}
+{{- end -}}
+
+<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-site="{{ $siteId }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-default-theme="{{ $defaultTheme }}" data-theme-storage-key="{{ $themeStorageKey }}" data-theme-recovered-key="{{ $themeRecoveredKey }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,6 +77,35 @@
   {{- /* Deferred theme runtime: observers, body sync, and brand recolor */ -}}
   {{- $themeRuntime := resources.Get "js/theme-runtime.js" | resources.Minify | resources.Fingerprint -}}
   <script src="{{ $themeRuntime.RelPermalink }}" defer></script>
+
+  {{- /* Optional motion (scroll reveals, hero entrance). Opt-in per site. */ -}}
+  {{- $motionEnabled := site.Params.motion.enabled | default false -}}
+  {{- if $motionEnabled -}}
+    {{- $motion := resources.Get "js/motion.js" | resources.Minify | resources.Fingerprint -}}
+    <script>
+      // Expose the opt-in for the motion bundle (keeps behavior explicit and debuggable).
+      document.documentElement.setAttribute('data-motion-enabled', 'true');
+      // Prevent FOUC: keep motion elements hidden until motion.js flips them visible.
+      document.documentElement.setAttribute('data-motion-pending', 'true');
+    </script>
+    <noscript>
+      <style>
+        html[data-motion-pending="true"] [data-motion="reveal"],
+        html[data-motion-pending="true"] [data-motion="hero"],
+        html[data-motion-pending="true"] .section.hero [data-motion="hero"] h1,
+        html[data-motion-pending="true"] .section.hero [data-motion="hero"] .ui-btn {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+
+        html[data-motion-pending="true"] [data-motion="hero-img"] {
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+    <script src="{{ $motion.RelPermalink }}" defer></script>
+  {{- end -}}
 
   <!-- Flowbite JS removed: no sites enable it, and baseline avoids extra JS. -->
 

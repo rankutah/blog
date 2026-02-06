@@ -21,6 +21,8 @@
 {{- $order  := lower (.Get "order" | default "") -}}
 {{- $extra  := .Get "classes"| default "" -}}
 
+{{- $motionEnabled := .Page.Site.Params.motion.enabled | default false -}}
+
 {{- $vMap := dict
   "start"   "items-start"
   "center"  "items-center"
@@ -45,7 +47,7 @@
   {{- $orderCls = "cols-reverse-mobile" -}}
 {{- end -}}
 
-<div class="cols-auto {{ $vCls }}{{ if $orderCls }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"
+<div class="cols-auto {{ $vCls }}{{ if $orderCls }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"{{ if $motionEnabled }} data-motion-group="stagger"{{ end }}
      style="--min: {{ $min }}; --gap: {{ $gap }};{{ if $row }} --row: {{ $row }};{{ end }}">
   {{ .Inner }}
 </div>
