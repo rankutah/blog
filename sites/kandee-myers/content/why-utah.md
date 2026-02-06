@@ -4,13 +4,27 @@ description: "Why Utah matters to Kandee Myers — its history, landscapes, and 
 url: "/why-i-am-running"
 aliases:
   - "/why-utah/"
-image: "/media/why-Kandee-is-running.jpg"
+hero: true
+image: "/media/hero-image.png"
 ---
 
-{{< hero img="/media/why-Kandee-is-running.jpg" alt="Kandee Myers" bleed="true" overlay="false" vh="none" imgClasses="block w-full h-[52svh] min-h-[22rem] object-cover object-center" >}}
+{{< hero img="/media/hero-image.png" alt="Kandee Myers" bleed="true" max="md" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" align="center" vh="svh" vhHeight="100" imgClasses="block w-full object-cover object-[75%_50%] md:object-center" >}}
+
+<h1 class="sr-only">Why I Am Running</h1>
+
+<div class="not-prose mx-auto w-full max-w-4xl">
+  <div class="flex flex-col gap-2 md:gap-3">
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0">I Love Utah</h2>
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="240">I Know Utah</h2>
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="480">I Believe in Utah</h2>
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="720">I Trust Utah</h2>
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="960">Utah Can Be Better</h2>
+  </div>
+</div>
+
 {{< /hero >}}
 
-# Why I Am Running
+## Why I Am Running
 
 I love Utah because it is home to my Mother’s roots and to my hopes for the future. My ancestors immigrated from Denmark in 1847 and settled in Sanpete County, long before Utah became a state. That pioneer spirit still inspires me today.
 

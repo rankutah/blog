@@ -331,12 +331,30 @@ html[data-motion-ready="true"] [data-motion="reveal"] {
   will-change: opacity, transform;
 }
 
+/* Fade-only helper: no slide (useful for hero text lines). */
+html[data-motion-ready="true"] .section.hero .motion-fade[data-motion="reveal"],
+html[data-motion-pending="true"] .section.hero .motion-fade[data-motion="reveal"] {
+  transform: none;
+}
+
 /* Kandee Myers: H2s slide in from left/right instead of up */
 html[data-site="kandee-myers"][data-motion-ready="true"] main#content h2[data-motion="reveal"] {
   transform: translate3d(-64px, 0, 0);
 }
 html[data-site="kandee-myers"][data-motion-ready="true"] main#content h2[data-motion="reveal"]:nth-of-type(even) {
   transform: translate3d(64px, 0, 0);
+}
+
+/* Kandee Myers: hero text lines should fade only (no left/right slide). */
+html[data-site="kandee-myers"][data-motion-ready="true"] main#content .section.hero h2.motion-fade[data-motion="reveal"],
+html[data-site="kandee-myers"][data-motion-pending="true"] main#content .section.hero h2.motion-fade[data-motion="reveal"] {
+  transform: none;
+}
+
+/* Ensure H2s always settle back to aligned position when revealed */
+html[data-site="kandee-myers"][data-motion-ready="true"] main#content h2[data-motion="reveal"].is-visible,
+html[data-site="kandee-myers"][data-motion-ready="true"] main#content h2[data-motion="reveal"].is-visible:nth-of-type(even) {
+  transform: none;
 }
 
 /* Pending state: prevent initial flash before motion.js runs */
@@ -447,12 +465,24 @@ html[data-motion-skip-hero="true"] [data-motion="hero-img"] {
 /* Cards & tiles: lift on hover for extra motion */
 @media (hover: hover) {
   /* Only apply hover-lift to card-like blocks (not headings like H2/H3). */
-  html[data-motion-enabled="true"] :where([data-motion-group="stagger"], .cols-auto) > [data-motion="reveal"].is-visible {
+  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto) > [data-motion="reveal"].is-visible {
     transition-property: opacity, transform, filter, box-shadow;
     transition-duration: 2200ms, 2200ms, 2200ms, 180ms;
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   }
-  html[data-motion-enabled="true"] :where([data-motion-group="stagger"], .cols-auto) > [data-motion="reveal"].is-visible:hover {
+  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto) > [data-motion="reveal"].is-visible:hover {
+    transition-duration: 2200ms, 180ms, 2200ms, 180ms;
+    transform: translate3d(0, -8px, 0);
+    box-shadow: 0 16px 38px rgba(0,0,0,0.18);
+  }
+
+  /* Cols: only card="true" columns get hover lift/highlight. */
+  html[data-motion-enabled="true"] .cols-auto > [data-motion="reveal"][data-card="true"].is-visible {
+    transition-property: opacity, transform, filter, box-shadow;
+    transition-duration: 2200ms, 2200ms, 2200ms, 180ms;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  html[data-motion-enabled="true"] .cols-auto > [data-motion="reveal"][data-card="true"].is-visible:hover {
     transition-duration: 2200ms, 180ms, 2200ms, 180ms;
     transform: translate3d(0, -8px, 0);
     box-shadow: 0 16px 38px rgba(0,0,0,0.18);

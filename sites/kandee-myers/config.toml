@@ -94,8 +94,8 @@ enableRobotsTXT = true
   CTAURL        = "/volunteer"
   showPhoneOnMobile = false
   showBrandTitle = false
-  flushHero = false
-  contentPadTop = "0px"
+  flushHero = true
+  contentPadTop = "5rem"
   logoHeightPx  = 60
 
 [menu]

@@ -178,7 +178,7 @@
 {{- end -}}
 
 {{- if $isCard -}}
-  <div class="{{ $card }}"{{ if $motionEnabled }} data-motion="reveal"{{ end }}>
+  <div class="{{ $card }}" data-card="true"{{ if $motionEnabled }} data-motion="reveal"{{ end }}>
     {{- if $vWrap }}<div class="{{ $vWrap }}">{{ end }}
       {{- $html -}}
     {{- if $vWrap }}</div>{{ end }}
