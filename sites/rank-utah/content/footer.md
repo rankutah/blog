@@ -24,7 +24,7 @@ headless: true
 
 ### Clear Presence
 {.center}
-Website Design & Local SEO for Small Businesses
+Web Design & Local SEO for Small Businesses
 {.center}
 
 {{< socials size="w-8 h-8" gap="gap-3" align="center" >}}
