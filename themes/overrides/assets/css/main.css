@@ -154,6 +154,25 @@ html[data-site="kandee-myers"] main#content h3 {
   line-height: 1.18;
 }
 
+/* Rank Utah: larger headings (preview, roughly ~2x) */
+html[data-site="rank-utah"] main#content .prose h1,
+html[data-site="rank-utah"] main#content h1 {
+  font-size: clamp(2.75rem, 6vw, 4.75rem);
+  line-height: 1.05;
+}
+
+html[data-site="rank-utah"] main#content .prose h2,
+html[data-site="rank-utah"] main#content h2 {
+  font-size: clamp(2.1rem, 4.4vw, 3.6rem);
+  line-height: 1.12;
+}
+
+html[data-site="rank-utah"] main#content .prose h3,
+html[data-site="rank-utah"] main#content h3 {
+  font-size: clamp(1.65rem, 3.6vw, 2.9rem);
+  line-height: 1.18;
+}
+
 /* ========== 4) Typography touch-ups ========== */
 /* .prose a { text-decoration: none; } */
 .prose img { max-width: 100%; height: auto; }
@@ -345,6 +364,14 @@ html[data-site="kandee-myers"][data-motion-ready="true"] main#content h2[data-mo
   transform: translate3d(64px, 0, 0);
 }
 
+/* Rank Utah: H2s slide in from left/right instead of up */
+html[data-site="rank-utah"][data-motion-ready="true"] main#content h2[data-motion="reveal"] {
+  transform: translate3d(-64px, 0, 0);
+}
+html[data-site="rank-utah"][data-motion-ready="true"] main#content h2[data-motion="reveal"]:nth-of-type(even) {
+  transform: translate3d(64px, 0, 0);
+}
+
 /* Kandee Myers: hero text lines should fade only (no left/right slide). */
 html[data-site="kandee-myers"][data-motion-ready="true"] main#content .section.hero h2.motion-fade[data-motion="reveal"],
 html[data-site="kandee-myers"][data-motion-pending="true"] main#content .section.hero h2.motion-fade[data-motion="reveal"] {
@@ -354,6 +381,12 @@ html[data-site="kandee-myers"][data-motion-pending="true"] main#content .section
 /* Ensure H2s always settle back to aligned position when revealed */
 html[data-site="kandee-myers"][data-motion-ready="true"] main#content h2[data-motion="reveal"].is-visible,
 html[data-site="kandee-myers"][data-motion-ready="true"] main#content h2[data-motion="reveal"].is-visible:nth-of-type(even) {
+  transform: none;
+}
+
+/* Ensure Rank Utah H2s always settle back aligned when revealed */
+html[data-site="rank-utah"][data-motion-ready="true"] main#content h2[data-motion="reveal"].is-visible,
+html[data-site="rank-utah"][data-motion-ready="true"] main#content h2[data-motion="reveal"].is-visible:nth-of-type(even) {
   transform: none;
 }
 
@@ -368,6 +401,13 @@ html[data-site="kandee-myers"][data-motion-pending="true"] main#content h2[data-
   transform: translate3d(-64px, 0, 0);
 }
 html[data-site="kandee-myers"][data-motion-pending="true"] main#content h2[data-motion="reveal"]:nth-of-type(even) {
+  transform: translate3d(64px, 0, 0);
+}
+
+html[data-site="rank-utah"][data-motion-pending="true"] main#content h2[data-motion="reveal"] {
+  transform: translate3d(-64px, 0, 0);
+}
+html[data-site="rank-utah"][data-motion-pending="true"] main#content h2[data-motion="reveal"]:nth-of-type(even) {
   transform: translate3d(64px, 0, 0);
 }
 
@@ -496,15 +536,18 @@ html[data-motion-enabled="true"] .ui-btn {
 }
 
 /* Hero: larger CTA buttons (hero only) */
-.section.hero .ui-btn {
-  font-size: 1.05rem;
-  padding: 0.95rem 1.35rem;
+.section.hero a.ui-btn,
+.section.hero button.ui-btn {
+  font-size: 1.2rem !important;
+  padding: 1.05rem 1.75rem !important;
+  line-height: 1.15 !important;
 }
 
 @media (min-width: 768px) {
-  .section.hero .ui-btn {
-    font-size: 1.1rem;
-    padding: 1.05rem 1.6rem;
+  .section.hero a.ui-btn,
+  .section.hero button.ui-btn {
+    font-size: 1.25rem !important;
+    padding: 1.1rem 2rem !important;
   }
 }
 

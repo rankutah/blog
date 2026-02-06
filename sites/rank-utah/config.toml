@@ -57,6 +57,9 @@ disableKinds  = ["taxonomy", "term"]
   hideMeta            = false
   ariaLabelCall       = "Call me"
 
+  [params.motion]
+    enabled = true
+
 [params.messageModal]
   enable = false
 
