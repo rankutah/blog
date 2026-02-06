@@ -2,6 +2,7 @@ baseURL = "https://kandeemyers.com/"  # TODO: update when deploying
 title = "Kandee 4 Utah"
 languageCode = "en-us"
 themesDir = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 
 trailingSlash = "never"
 cleanDestinationDir = true

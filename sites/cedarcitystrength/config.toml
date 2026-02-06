@@ -3,6 +3,7 @@ baseURL       = "https://cedarcitystrength.com/"  # Update when deploying
 title         = "Cedar City Strength  |  & Conditioning"
 languageCode  = "en-us"
 themesDir     = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 # ─────────────────────────────────────────────────────────────────────────────
 
  [module]

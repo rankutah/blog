@@ -3,6 +3,7 @@ baseURL       = "https://quartzworx.com/" # TODO: update to live domain
 title         = "Quartz Worx"
 languageCode  = "en-us"
 themesDir     = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 # ─────────────────────────────────────────────────────────────────────────────
 
  [module]

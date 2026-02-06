@@ -2,6 +2,7 @@ baseURL = "https://novagutter.com/"
 languageCode = "en-us"
 title = "NOVA Gutter"
 themesDir = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 ignoreFiles = ["^content/articles/"]
 enableRobotsTXT = true
 

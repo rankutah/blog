@@ -4,6 +4,7 @@ baseURL       = "https://hungerring.com/"
 title         = "Hunger Ring"
 languageCode  = "en-us"
 themesDir     = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 # ─────────────────────────────────────────────────────────────────────────────
 
 [module]

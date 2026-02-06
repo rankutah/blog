@@ -2,6 +2,7 @@ baseURL = "https://rooftopterracebv.com/"
 languageCode = "en-us"
 title = "Rooftop Terrace BV"
 themesDir = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 
 # Match other single page simplifications but allow sitemap/robots later; keep minimal for now.
 disableKinds = ["taxonomy", "term"]

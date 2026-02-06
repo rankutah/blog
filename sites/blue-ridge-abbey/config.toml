@@ -3,6 +3,7 @@ baseURL = "https://blueridgeabbey.com/"
 title = "Blue Ridge Abbey"
 languageCode = "en-us"
 themesDir = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 
 # Remove trailing slashes from generated URLs
 trailingSlash = "never"

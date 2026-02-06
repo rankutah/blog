@@ -4,6 +4,7 @@ title         = "Clear Presence"
 languageCode  = "en-us"
 themesDir     = "../../themes"
  # noop: 2025-11-25 ensure shared robots.txt in use
+# touched: 2026-02-06 (force rebuild)
 
 trailingSlash = "never"
 cleanDestinationDir = true

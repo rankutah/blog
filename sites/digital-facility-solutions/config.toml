@@ -2,6 +2,7 @@ baseURL       = "https://digitalfacilitysolutions.com/"
 title         = "Digital Facility Solutions"
 languageCode  = "en-us"
 themesDir     = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 
 trailingSlash = "never"
 cleanDestinationDir = true

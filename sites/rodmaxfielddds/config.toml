@@ -2,6 +2,7 @@ baseURL = "https://rodmaxfielddds.com/"
 languageCode = "en-us"
 title = "Rod Maxfield, DDS"
 themesDir = "../../themes"
+# touched: 2026-02-06 (force rebuild)
 
 [module]
   [[module.mounts]]
