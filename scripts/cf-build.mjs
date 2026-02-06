@@ -61,13 +61,19 @@ function build(site) {
     '--config', `${sharedConfig},${siteConfig}`,
     '--gc',
     '--minify',
+    '--cleanDestinationDir',
     '--logLevel', 'info',
     '--ignoreCache'
   ]
 
   return spawn('hugo', args, {
     stdio: 'inherit',
-    env: { ...env }
+    env: {
+      ...env,
+      SITE: env.SITE || site,
+      HUGO_SITE: site,
+      HUGO_POSTCSS_CONFIG_DIR: process.cwd(),
+    }
   })
 }
 
