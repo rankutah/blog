@@ -495,6 +495,19 @@ html[data-motion-enabled="true"] .ui-btn {
   will-change: transform;
 }
 
+/* Hero: larger CTA buttons (hero only) */
+.section.hero .ui-btn {
+  font-size: 1.05rem;
+  padding: 0.95rem 1.35rem;
+}
+
+@media (min-width: 768px) {
+  .section.hero .ui-btn {
+    font-size: 1.1rem;
+    padding: 1.05rem 1.6rem;
+  }
+}
+
 @media (hover: hover) {
   html[data-motion-enabled="true"] .ui-btn:hover {
     transform: translate3d(0, -2px, 0);
