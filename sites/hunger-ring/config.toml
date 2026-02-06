@@ -82,9 +82,6 @@ themesDir     = "../../themes"
   CTAURL            = "/contact"
   showPhoneOnMobile = false
   rightMenu         = false
-  logoHeight        = "h-14"
-  logoWidth         = 0
-  logoHeightPx      = 56
 
 [params.turnstile]
   enable  = true

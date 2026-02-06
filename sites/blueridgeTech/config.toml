@@ -78,7 +78,6 @@ uglyURLs = false
   CTAText           = "Contact"
   CTAURL            = "/contact"
   showPhoneOnMobile = false
-  logoHeightPx      = 56
   rightMenu         = false
 
 [menu]

@@ -104,7 +104,6 @@ uglyURLs = false
   CTAURL  = "https://secure.thinkreservations.com/blueridgeabbey/reservations"
   showPhoneOnMobile = false
   phoneNumber = "385-323-8130"
-  logoHeightPx = 56
 
 [params.section.defaults]
   # Container width:

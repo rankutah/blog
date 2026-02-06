@@ -89,7 +89,6 @@ uglyURLs = false
   CTAURL            = "/contact"
   showPhoneOnMobile = false
   phoneNumber       = "209-534-0270"
-  logoHeightPx      = 56
 
 
 [menu]

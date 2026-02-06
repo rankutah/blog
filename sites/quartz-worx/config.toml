@@ -82,7 +82,6 @@ disableKinds = ["taxonomy", "term"]
   CTAURL            = "/contact"
   showPhoneOnMobile = true
   phoneNumber       = "(970) 628-1508"
-  logoHeightPx      = 56
 
 [menu]
   [[menu.main]]

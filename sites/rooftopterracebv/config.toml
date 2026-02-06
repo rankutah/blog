@@ -32,7 +32,6 @@ disableKinds = ["taxonomy", "term"]
 
   # Header minimal: hide default menu / set compact logo logic if needed later
   [params.header]
-    titleSize = "2xl"
     showTitle = true
     hideNav = true
     stickyMobile = true

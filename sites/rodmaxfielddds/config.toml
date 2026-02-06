@@ -57,8 +57,6 @@ disableKinds = ["taxonomy", "term"]
 [params.header]
   stickyMobile     = true
   stickyDesktop    = true
-  # one of: sm | base | lg | xl | 2xl | 3xl | 4xl
-  titleSize = "2xl"
   showCTAOnMobile  = false
   showCTAOnDesktop = true
   CTAText          = "Contact"
@@ -66,11 +64,6 @@ disableKinds = ["taxonomy", "term"]
   # CTAClasses       = "text-white bg-rose-600 hover:bg-rose-700 focus:ring-rose-300"
   showPhoneOnMobile = false
   phoneNumber       = "801-785-2631"
-  logoHeight        = "h-10"
-  # Optional: explicit pixel dimensions to avoid layout shift on logo
-  # Set these to your actual logo intrinsic size
-  logoWidth         = 0
-  logoHeightPx      = 56
   # theme = "blend" #blend (default), invert, glass
 
   [params.turnstile]

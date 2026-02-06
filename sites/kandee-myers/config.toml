@@ -97,7 +97,6 @@ enableRobotsTXT = true
   showBrandTitle = false
   flushHero = true
   contentPadTop = "5rem"
-  logoHeightPx  = 60
 
 [menu]
   [[menu.main]]

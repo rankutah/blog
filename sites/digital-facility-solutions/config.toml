@@ -65,7 +65,6 @@ disableKinds  = ["taxonomy", "term"]
 [params.header]
   stickyMobile      = true
   stickyDesktop     = true
-  titleSize         = "2xl"
   theme             = "blend"
 
   showCTAOnMobile   = false
@@ -78,10 +77,6 @@ disableKinds  = ["taxonomy", "term"]
 
   # Business hours (display-only; schema hours can be added later)
   hours             = "Mon–Fri, 8:00am–5:00pm"
-
-  logoHeight        = "h-10"
-  logoWidth         = 0
-  logoHeightPx      = 56
 
 [params.forms]
   # Optional: configure a real form endpoint later (SubmitForm / Formspark / etc.)

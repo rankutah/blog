@@ -165,8 +165,9 @@
         {{ end }}
       </span>
       {{/* --- Title size map (literal classes; no dynamic strings) --- */}}
-      {{- $sizeOpt  := lower (or .Site.Params.header.titleSize "4xl") -}}
+      {{- $sizeOpt  := lower (or .Site.Params.header.titleSize "auto") -}}
       {{- $sizeMap  := dict
+        "auto" "text-[clamp(1.5rem,1.1rem+1.8vw,2.25rem)]"
         "sm"   "text-sm"
         "base" "text-base"
         "lg"   "text-lg"
@@ -182,7 +183,7 @@
       {{- $titleHTML := replace (replace $rawTitle "|" "<br/>") (printf "\n") "<br/>" | safeHTML -}}
 
       {{- if $showBrandTitle -}}
-        <span class="self-center {{ $titleSizeClass }} font-semibold leading-tight whitespace-normal break-words">
+        <span class="self-center nav-site-title {{ $titleSizeClass }} font-semibold leading-tight whitespace-normal break-words">
           {{ $titleHTML }}
         </span>
       {{- end -}}
@@ -274,9 +275,23 @@
         </ul>
       </div>
       {{ end }}
-      <!-- Search (desktop): compact search bar linking to dedicated page -->
+      <!-- Search (desktop)
+           - md: show an icon button to reduce crowding
+           - lg+: show the full search input
+      -->
+      <a href="{{ "/search/" | relURL }}"
+         class="hidden md:inline-flex lg:hidden items-center justify-center p-2 rounded-lg
+                hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2
+                focus:ring-black/10 dark:focus:ring-white/10 no-underline"
+         aria-label="Search">
+        <svg class="h-5 w-5 {{ $navText }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M20 20l-3.5-3.5"></path>
+        </svg>
+      </a>
+
       <form action="{{ "/search/" | relURL }}" method="get" role="search"
-            class="hidden md:inline-flex items-center no-underline" aria-label="Site search">
+            class="hidden lg:inline-flex items-center no-underline" aria-label="Site search">
         <label for="nav-search" class="sr-only">Search</label>
         <div class="relative">
           <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">

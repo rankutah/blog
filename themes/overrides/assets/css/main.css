@@ -127,11 +127,6 @@ body {
   }
 }
 
-/* Full-bleed hero sections can still cause subtle horizontal overflow due to viewport rounding. */
-.section.hero.bleed {
-  overflow-x: clip;
-}
-
 /* Floating message button sizing (sitewide) */
 .cp-fab {
   font-size: 1rem !important;
@@ -155,7 +150,7 @@ body {
 
 /* Larger nav menu links */
 nav .brand-link {
-  font-size: 1.35em;
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.35rem);
   line-height: 1.25;
 }
 
@@ -174,11 +169,22 @@ nav > div:not(.max-w-none) {
 }
 
 nav #nav-search {
-  width: clamp(11rem, 14vw, 18rem) !important;
+  width: clamp(10rem, 12vw, 16rem) !important;
   font-size: 1.05rem !important;
   padding-top: 0.65rem !important;
   padding-bottom: 0.65rem !important;
   padding-right: 0.85rem !important;
+}
+
+/* Nav CTA should give up space on smaller desktops */
+nav .ui-btn {
+  padding: 0.75rem 1.1rem !important;
+}
+
+@media (min-width: 1024px) {
+  nav .ui-btn {
+    padding: 0.9rem 1.35rem !important;
+  }
 }
 
 #search-input {
