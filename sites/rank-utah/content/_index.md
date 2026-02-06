@@ -34,22 +34,22 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-## One-on-one ✅
+### One-on-one ✅
 
-### 1. Work directly with the builder
+#### 1. Work directly with the builder
 No handoffs. You talk to the person doing the work, so communication stays simple and the website stays aligned with what gets you leads.
 
-### 2. Built to be fast (with proof)
+#### 2. Built to be fast (with proof)
 Custom-coded pages that stay lightweight — no extra clutter that slows things down.
 
 Want to compare? [Take the Website Speed Challenge](/speed-challenge/).
 
-### 3. Clear monthly reporting (with evidence)
+#### 3. Clear monthly reporting (with evidence)
 You get simple monthly reports so you can see calls, clicks, and what to improve next.
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
 
-### 4. Simple pricing + ownership
+#### 4. Simple pricing + ownership
 Month‑to‑month plans with clear pricing. You own your website from day one without upfront risk.
 
 
@@ -57,18 +57,18 @@ Month‑to‑month plans with clear pricing. You own your website from day one w
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Agency ❌
+### Agency ❌
 
-### 1. More people, more delays
+#### 1. More people, more delays
 Projects move between multiple people. That can slow things down and make communication harder.
 
-### 2. Bloated templates
+#### 2. Bloated templates
 Many agencies rely on cookie-cutter templates and heavy plugins that add bloat and slow down load times.
 
-### 3. Limited support
+#### 3. Limited support
 After launch, you’re often handed off to a support desk with slower response times and stricter limits on updates.
 
-### 4. High upfront + hidden fees
+#### 4. High upfront + hidden fees
 Higher overhead often means higher upfront costs, then extra fees for maintenance and changes.
 
 {{< /col >}}
@@ -88,7 +88,7 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Website Design
+### Website Design
 
 See the process for building a custom site designed to bring you more customers.
 
@@ -100,7 +100,7 @@ See the process for building a custom site designed to bring you more customers.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Local SEO
+### Local SEO
 
 Help local customers find you on search and maps. Local SEO includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting.
 
@@ -110,7 +110,7 @@ Help local customers find you on search and maps. Local SEO includes keyword res
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Google Ads
+### Google Ads
 
 Paid Google Ads management to generate more leads.
 
@@ -120,7 +120,7 @@ Paid Google Ads management to generate more leads.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Portfolio
+### Portfolio
 
 Browse examples of recent work for small businesses.
 
@@ -130,7 +130,7 @@ Browse examples of recent work for small businesses.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Pricing
+### Pricing
 
 See affordable, transparent monthly plans.
 
@@ -141,7 +141,7 @@ See affordable, transparent monthly plans.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## About
+### About
 
 Learn more about the story and approach.
 
@@ -153,7 +153,7 @@ Learn more about the story and approach.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Contact
+### Contact
 
 Reach out with questions or to start your project.
 
@@ -184,7 +184,7 @@ Web design services are available to clients across the United States with an of
 
 {{< /faqs >}}
 
-### Ready for the Next Step?
+## Ready for the Next Step?
 {.center}
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 {.center}
