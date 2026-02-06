@@ -57,7 +57,7 @@ Month‑to‑month plans with clear pricing. You own your website from day one w
 
 {{< col card="true"  y="start" >}}
 
-### Agency ❌
+### Big Agency ❌
 
 #### 1. More people, more delays
 Projects move between multiple people. That can slow things down and make communication harder.

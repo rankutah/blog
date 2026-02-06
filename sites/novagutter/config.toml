@@ -103,7 +103,7 @@ enableRobotsTXT = true
   showCTAOnDesktop = true
   CTAText          = "Get a Free Quote"
   CTAURL           = "/contact"
-  showPhoneOnMobile = true
+  showPhoneOnMobile = false
   phoneNumber       = "954-380-8242"
   theme             = "blend"
 

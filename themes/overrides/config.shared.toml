@@ -85,9 +85,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [params.header]
   # Standardized logo size across sites; navbar uses this height class and intrinsic pixel height
-  logoHeight   = "h-14"   # Tailwind height class for layout sizing
+  logoHeight   = "h-12"   # Tailwind height class for layout sizing
   logoWidth    = 0         # Let height drive intrinsic dimensions; 2x DPR handled in partial
-  logoHeightPx = 56        # Intrinsic height attribute for CLS prevention (matches h-14)
+  logoHeightPx = 48        # Intrinsic height attribute for CLS prevention (matches h-12)
 
   # Global navbar layout defaults (Blue Ridge Abbey pattern)
   # - Brand (logo/title) stays on the far left
