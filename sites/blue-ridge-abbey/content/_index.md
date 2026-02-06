@@ -8,8 +8,6 @@ url: "/"
 
 {{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="80vh" caption="Press Play" >}}
 # Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
-Your quiet getaway in the Shenandoah Valley to reconnect with reality.
-<br>
 
 {{< /lazy-vimeo >}}
 
@@ -23,11 +21,6 @@ Your quiet getaway in the Shenandoah Valley to reconnect with reality.
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Photo Gallery
-
-Take a visual tour of our guest rooms and shared spaces and get a feel for the warmth, character, and comfort waiting for you.
-
-{{< button url="/gallery" text="Photo Gallery" >}}
 
 ## Cozy Main House Rooms
 
@@ -49,9 +42,11 @@ Blue Ridge Abbey is pleased to announce the opening of an additional building wi
 
 {{< /cols >}}
 
-## Boutique Hotel Lodging Near Lexington, VA
+## Photo Gallery
 
-Stay at a charming boutique hotel and bed & breakfast in Buena Vista, VA — minutes from Lexington and a short drive to the Blue Ridge Parkway. Enjoy peaceful lodging, welcoming service, and cozy rooms designed for comfort.
+Take a visual tour of our guest rooms and shared spaces and get a feel for the warmth, character, and comfort waiting for you.
+
+{{< button url="/gallery" text="Photo Gallery" >}}
 
 ## A 5-Star Guest Experience
 

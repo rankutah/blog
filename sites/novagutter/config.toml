@@ -107,7 +107,7 @@ enableRobotsTXT = true
   phoneNumber       = "954-380-8242"
   logoHeight        = "h-10"
   logoWidth         = 0
-  logoHeightPx      = 40
+  logoHeightPx      = 56
   theme             = "blend"
 
 [params.forms]
@@ -190,5 +190,3 @@ enableRobotsTXT = true
     name = "Contact"
     url = "/contact"
     weight = 50
-
-# noop: rebuild trigger 2026-02-06

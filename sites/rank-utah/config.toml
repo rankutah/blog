@@ -142,7 +142,7 @@ sameAs = []
   # Optional: explicit pixel dimensions to avoid layout shift on logo
   # Set these to your actual logo intrinsic size
   logoWidth         = 0
-  logoHeightPx      = 40
+  logoHeightPx      = 56
   theme = "blend" #blend (default), invert, glass
 
 [params.forms]
@@ -239,6 +239,4 @@ sameAs = []
     name = "Contact"
     url = "/contact"
     weight = 50
-
-# noop: rebuild trigger 2026-02-06
 

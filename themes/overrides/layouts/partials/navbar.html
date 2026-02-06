@@ -26,7 +26,7 @@
 {{ $showBrandTitle := default true .Site.Params.header.showBrandTitle }}
 
 {{ $logoFile        := .Site.Params.logo }}
-{{ $logoHeightClass := default "h-8"      .Site.Params.header.logoHeight }}
+{{ $logoHeightClass := default "h-14"      .Site.Params.header.logoHeight }}
 {{/* Optional explicit dimensions for the logo (PSI: set width/height to avoid CLS) */}}
 {{ $logoW := .Site.Params.header.logoWidth | default 0 }}
 {{ $logoH := .Site.Params.header.logoHeightPx | default 0 }}
@@ -123,63 +123,59 @@
 {{/* Detect hero/landing/home to allow a seamless, flush hero */}}
 {{ $isHeroPage := or .IsHome (or .Params.hero (eq .Params.layout "landing")) }}
 
-<nav class="{{ $navClasses }} h-auto min-h-[4rem]
+<nav class="{{ $navClasses }} h-auto min-h-[5rem]
             {{ if $stickyMobile }}sticky top-0 z-50{{ end }}
             {{ if $stickyDesktop }} md:sticky md:top-0 md:z-50{{ end }}
             relative
             after:content-[''] after:absolute after:inset-x-0 after:bottom-0 after:h-px
             after:bg-black/15 dark:after:bg-white/15 after:pointer-events-none">
-  <div class="max-w-screen-xl flex flex-nowrap items-center justify-between mx-auto h-full p-4 {{ if and $centerNav (not $rightMenu) }}lg:grid lg:grid-cols-[1fr_auto_1fr] lg:gap-4{{ else if $rightMenu }}lg:grid lg:grid-cols-[auto_1fr_auto_auto] lg:gap-4{{ end }}">
+  <div class="w-full max-w-none flex flex-nowrap items-center justify-between mx-auto h-full py-4 px-2 sm:px-3 lg:px-4 {{ if and $centerNav (not $rightMenu) }}lg:grid lg:grid-cols-[1fr_auto_1fr] lg:gap-4{{ else if $rightMenu }}lg:grid lg:grid-cols-[auto_1fr_auto_auto] lg:gap-4{{ end }}">
     <!-- Logo / Site Title -->
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline {{ if and $centerNav (not $rightMenu) }}lg:col-start-1 lg:justify-self-start{{ else if $rightMenu }}lg:col-start-1 lg:justify-self-start{{ end }}">
-      {{ with $logoFile }}
-        {{ $raw := strings.TrimPrefix "/" $.Site.Params.logo }}
-  {{ $base := path.Base $raw }}
-  {{ $ext  := path.Ext $base }}
-  {{ $name := replace $base $ext "" }}
-        {{ $avifRes := resources.Get (printf "media/%s.avif" $name) }}
-  {{ if $avifRes }}
-          {{ $widthAttr := 0 }}
-          {{ if gt (int $logoW) 0 }}
-            {{ $widthAttr = int $logoW }}
-          {{ else if gt (int $logoH) 0 }}
-            {{ $widthAttr = int $logoH }}
+      <span class="shrink-0">
+        {{ with $logoFile }}
+          {{ $raw := strings.TrimPrefix "/" $.Site.Params.logo }}
+    {{ $base := path.Base $raw }}
+    {{ $ext  := path.Ext $base }}
+    {{ $name := replace $base $ext "" }}
+          {{ $avifRes := resources.Get (printf "media/%s.avif" $name) }}
+    {{ if $avifRes }}
+            <picture>
+              {{- with $avifRes -}}<source srcset="{{ .RelPermalink }}" type="image/avif" />{{- end -}}
+              {{- /* No WebP source; only AVIF + fallback <img> */ -}}
+              <img src="{{ . | relURL }}"
+                   alt="{{ printf "%s logo" $.Site.Title }}"
+                   class="{{ printf "%s w-auto max-w-none shrink-0" $logoHeightClass }}"
+                   {{ if gt (int $logoW) 0 }}width="{{ int $logoW }}"{{ end }}
+                   {{ with $logoH }}{{ if gt (int .) 0 }}height="{{ . }}"{{ end }}{{ end }}
+                   {{ with $logoStyle }}style="{{ . | safeCSS }}"{{ end }}
+                   loading="eager" fetchpriority="high" decoding="async" />
+            </picture>
+          {{ else }}
+            {{ partial "optimized-logo.html" (dict
+                "Site" $.Site
+                "Logo" .
+                "Class" (printf "%s w-auto max-w-none shrink-0" $logoHeightClass)
+                "Alt" (printf "%s logo" $.Site.Title)
+                "Width" $logoW
+                "Height" $logoH
+                "Style" $logoStyle
+              ) }}
           {{ end }}
-          <picture>
-            {{- with $avifRes -}}<source srcset="{{ .RelPermalink }}" type="image/avif" />{{- end -}}
-            {{- /* No WebP source; only AVIF + fallback <img> */ -}}
-            <img src="{{ . | relURL }}"
-                 alt="{{ printf "%s logo" $.Site.Title }}"
-                 class="{{ printf "%s w-auto flex-shrink-0" $logoHeightClass }}"
-                 {{ if gt $widthAttr 0 }}width="{{ $widthAttr }}"{{ end }}
-                 {{ with $logoH }}{{ if gt (int .) 0 }}height="{{ . }}"{{ end }}{{ end }}
-                 {{ with $logoStyle }}style="{{ . | safeCSS }}"{{ end }}
-                 loading="eager" fetchpriority="high" decoding="async" />
-          </picture>
-        {{ else }}
-          {{ partial "optimized-logo.html" (dict
-              "Site" $.Site
-              "Logo" .
-              "Class" (printf "%s w-auto flex-shrink-0" $logoHeightClass)
-              "Alt" (printf "%s logo" $.Site.Title)
-              "Width" $logoW
-              "Height" $logoH
-              "Style" $logoStyle
-            ) }}
         {{ end }}
-      {{ end }}
+      </span>
       {{/* --- Title size map (literal classes; no dynamic strings) --- */}}
-      {{- $sizeOpt  := lower (or .Site.Params.header.titleSize "2xl") -}}
+      {{- $sizeOpt  := lower (or .Site.Params.header.titleSize "4xl") -}}
       {{- $sizeMap  := dict
-            "sm"   "text-sm"
-            "base" "text-base"
-            "lg"   "text-lg"
-            "xl"   "text-xl"
-            "2xl"  "text-2xl"
-            "3xl"  "text-3xl"
-            "4xl"  "text-4xl"
+        "sm"   "text-sm"
+        "base" "text-base"
+        "lg"   "text-lg"
+        "xl"   "text-xl"
+        "2xl"  "text-xl sm:text-2xl"
+        "3xl"  "text-2xl sm:text-3xl"
+        "4xl"  "text-3xl sm:text-4xl"
         -}}
-      {{- $titleSizeClass := index $sizeMap $sizeOpt | default "text-2xl" -}}
+      {{- $titleSizeClass := index $sizeMap $sizeOpt | default "text-2xl sm:text-3xl" -}}
 
       {{/* Manual line break support from earlier (use "|" or newline in config) */}}
       {{- $rawTitle := or .Site.Params.header.title .Site.Title -}}
@@ -290,12 +286,12 @@
             </svg>
           </div>
              <input id="nav-search" name="q" type="search" placeholder="Search…" autocomplete="off"
-               class="block w-28 md:w-36 rounded-lg {{ $pal.cardBorder }} {{ $pal.cardBg }} py-2 pl-8 pr-3 text-sm shadow-sm transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 {{ $navText }} font-medium placeholder-gray-600 dark:placeholder-gray-400" />
+               class="block w-24 md:w-28 lg:w-36 rounded-lg {{ $pal.cardBorder }} {{ $pal.cardBg }} py-2 pl-8 pr-3 text-sm shadow-sm transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 {{ $navText }} font-medium placeholder-gray-600 dark:placeholder-gray-400" />
         </div>
       </form>
       {{ if or $showCTAOnMobile $showCTAOnDesktop }}
       <a href="{{ $ctaHref }}"
-         class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none ui-btn
+        class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none ui-btn whitespace-nowrap flex-shrink-0
                 {{ if $showCTAOnMobile }}inline-flex{{ else }}hidden{{ end }}
                 {{ if $showCTAOnDesktop }} md:inline-flex{{ else }} md:hidden{{ end }}
                 text-center {{ $ctaClasses }}">

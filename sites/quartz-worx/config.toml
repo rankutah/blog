@@ -81,7 +81,7 @@ disableKinds = ["taxonomy", "term"]
   CTAURL            = "/contact"
   showPhoneOnMobile = true
   phoneNumber       = "(970) 628-1508"
-  logoHeightPx      = 40
+  logoHeightPx      = 56
 
 [menu]
   [[menu.main]]
@@ -139,5 +139,3 @@ disableKinds = ["taxonomy", "term"]
     name   = "Contact"
     url    = "/contact"
     weight = 50
-
-# noop: rebuild trigger 2026-02-06

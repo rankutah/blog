@@ -103,7 +103,7 @@ uglyURLs = false
   CTAURL  = "https://secure.thinkreservations.com/blueridgeabbey/reservations"
   showPhoneOnMobile = false
   phoneNumber = "385-323-8130"
-  logoHeightPx = 40
+  logoHeightPx = 56
 
 [params.section.defaults]
   # Container width:
@@ -201,4 +201,3 @@ uglyURLs = false
     weight = 60
 
 # noop: trigger CF build within watch paths (fonts vendoring check) k
-# noop: rebuild trigger 2026-02-06

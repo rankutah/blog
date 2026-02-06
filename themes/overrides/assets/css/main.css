@@ -112,13 +112,24 @@ html[data-motion-skip="true"] [data-motion] {
   line-height: 1.15 !important;
 }
 
-/* Prevent accidental horizontal scroll on mobile (sitewide) */
-@media (max-width: 767.98px) {
+/* Prevent accidental horizontal scroll (sitewide)
+   Some full-bleed patterns use 100vw + negative margins and can create a 1–2px horizontal overflow.
+*/
+html,
+body {
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
   html,
   body {
     overflow-x: hidden;
-    overflow-x: clip;
   }
+}
+
+/* Full-bleed hero sections can still cause subtle horizontal overflow due to viewport rounding. */
+.section.hero.bleed {
+  overflow-x: clip;
 }
 
 /* Floating message button sizing (sitewide) */
@@ -144,12 +155,15 @@ html[data-motion-skip="true"] [data-motion] {
 
 /* Larger nav menu links */
 nav .brand-link {
-  font-size: 1.25em;
-  line-height: 1.2;
+  font-size: 1.35em;
+  line-height: 1.25;
 }
 
-/* Wider navbar container */
-nav > div {
+/* Wider navbar container
+   Note: only apply the legacy 90rem cap when the navbar wrapper does NOT explicitly opt into full width.
+   The navbar partial uses `max-w-none` when we want true edge-to-edge spreading on wide screens.
+*/
+nav > div:not(.max-w-none) {
   max-width: min(100%, 90rem) !important;
 }
 

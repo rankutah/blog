@@ -88,7 +88,7 @@ uglyURLs = false
   CTAURL            = "/contact"
   showPhoneOnMobile = false
   phoneNumber       = "209-534-0270"
-  logoHeightPx      = 40
+  logoHeightPx      = 56
 
 
 [menu]
@@ -127,5 +127,3 @@ uglyURLs = false
     name   = "Contact"
     url    = "/contact"
     weight = 70
-
-# noop: rebuild trigger 2026-02-06

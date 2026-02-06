@@ -69,7 +69,7 @@ disableKinds = ["taxonomy", "term"]
   # Optional: explicit pixel dimensions to avoid layout shift on logo
   # Set these to your actual logo intrinsic size
   logoWidth         = 0
-  logoHeightPx      = 40
+  logoHeightPx      = 56
   # theme = "blend" #blend (default), invert, glass
 
   [params.turnstile]
@@ -129,5 +129,3 @@ disableKinds = ["taxonomy", "term"]
     name = "Contact"
     url = "/contact/"
     weight = 5
-
-# noop: rebuild trigger 2026-02-06

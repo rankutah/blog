@@ -80,7 +80,7 @@ disableKinds  = ["taxonomy", "term"]
 
   logoHeight        = "h-10"
   logoWidth         = 0
-  logoHeightPx      = 40
+  logoHeightPx      = 56
 
 [params.forms]
   # Optional: configure a real form endpoint later (SubmitForm / Formspark / etc.)
@@ -119,5 +119,3 @@ disableKinds  = ["taxonomy", "term"]
     name   = "Contact"
     url    = "/contact/"
     weight = 50
-
-# noop: rebuild trigger 2026-02-06
