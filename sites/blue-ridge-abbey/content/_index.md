@@ -23,7 +23,7 @@ Your quiet getaway in the Shenandoah Valley to reconnect with reality.
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Blue Ridge Abbey Photo Gallery
+## Photo Gallery
 
 Take a visual tour of our guest rooms and shared spaces and get a feel for the warmth, character, and comfort waiting for you.
 

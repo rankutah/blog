@@ -53,8 +53,6 @@
 
   const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
 
-  const siteId = document.documentElement.getAttribute('data-site') || '';
-
   const revealWithDelay = (el) => {
     if (!(el instanceof HTMLElement)) return;
     if (el.classList.contains('is-visible')) return;
@@ -132,8 +130,8 @@
 
     // Tune for readability: side-by-side cards should start close together.
     // Keep a tiny per-row bump so the grid still feels like it's cascading.
-    const perCol = siteId === 'rank-utah' ? 165 : 185;
-    const perRow = siteId === 'rank-utah' ? 70 : 80;
+    const perCol = 165;
+    const perRow = 70;
     const base = 0;
     const maxDelay = 900;
 
