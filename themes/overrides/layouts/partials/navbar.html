@@ -276,7 +276,7 @@
       {{ end }}
       <!-- Search (desktop): compact search bar linking to dedicated page -->
       <form action="{{ "/search/" | relURL }}" method="get" role="search"
-            class="hidden md:inline-flex items-center no-underline" aria-label="Site search">
+        class="hidden lg:inline-flex items-center no-underline" aria-label="Site search">
         <label for="nav-search" class="sr-only">Search</label>
         <div class="relative">
           <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -293,7 +293,7 @@
       <a href="{{ $ctaHref }}"
         class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none ui-btn whitespace-nowrap flex-shrink-0
                 {{ if $showCTAOnMobile }}inline-flex{{ else }}hidden{{ end }}
-                {{ if $showCTAOnDesktop }} md:inline-flex{{ else }} md:hidden{{ end }}
+                {{ if $showCTAOnDesktop }} lg:inline-flex{{ else }} lg:hidden{{ end }}
                 text-center {{ $ctaClasses }}">
         {{ $CTAText }}
       </a>
