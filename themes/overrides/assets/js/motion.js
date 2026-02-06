@@ -114,20 +114,8 @@
   for (const group of staggerGroups) {
     const children = Array.from(group.children).filter((n) => n && n.nodeType === 1);
 
-    // Default (non Rank Utah): classic index-based stagger.
-    if (siteId !== 'rank-utah') {
-      children.forEach((child, index) => {
-        if (!(child instanceof HTMLElement)) return;
-        if (!child.hasAttribute('data-motion')) child.setAttribute('data-motion', 'reveal');
-        // Cap delay so large grids don't feel sluggish.
-        const ms = clamp(index * 320, 0, 1800);
-        child.dataset.motionDelay = String(ms);
-      });
-      continue;
-    }
-
-    // Heuristic: estimate column count so stagger resets per row.
-    // This prevents later rows from feeling increasingly delayed.
+    // Heuristic: estimate column count so stagger feels fluid across a row and doesn't
+    // get increasingly delayed for later rows.
     let columns = 3;
     try {
       const first = children.find((c) => c instanceof HTMLElement);
@@ -142,14 +130,19 @@
       // ignore
     }
 
+    // Tune for readability: side-by-side cards should start close together.
+    // Keep a tiny per-row bump so the grid still feels like it's cascading.
+    const perCol = siteId === 'rank-utah' ? 165 : 185;
+    const perRow = siteId === 'rank-utah' ? 70 : 80;
+    const base = 0;
+    const maxDelay = 900;
+
     children.forEach((child, index) => {
       if (!(child instanceof HTMLElement)) return;
       if (!child.hasAttribute('data-motion')) child.setAttribute('data-motion', 'reveal');
-      // Keep delays snappy: stagger across columns, with a very small per-row bump.
       const col = columns > 0 ? index % columns : 0;
       const row = columns > 0 ? Math.floor(index / columns) : 0;
-      // Goal: still *feel* animated (slower), but don't get slower with more rows.
-      const ms = clamp(160 + col * 250 + row * 90, 0, 1450);
+      const ms = clamp(base + col * perCol + row * perRow, 0, maxDelay);
       child.dataset.motionDelay = String(ms);
     });
   }
@@ -224,19 +217,16 @@
     return;
   }
 
-  const revealObserverOptions =
-    siteId === 'rank-utah'
-      ? {
-          threshold: 0.01,
-          // Trigger earlier so cards/sections animate in sooner.
-          // Positive bottom margin expands the viewport “downward” for intersection checks.
-          rootMargin: '0px 0px 25% 0px',
-        }
-      : {
-          threshold: 0.12,
-          // Trigger slightly before the element is fully visible.
-          rootMargin: '0px 0px -10% 0px',
-        };
+  // Scroll reveal trigger tuning:
+  // If we trigger too early (e.g., with a positive bottom rootMargin), elements can
+  // finish animating *before* the user scrolls to them, which makes animations feel
+  // “too fast” or invisible. Use a slightly *shrunk* root box so reveals start when
+  // content is nearer to the viewport.
+  const revealObserverOptions = {
+    threshold: 0.1,
+    // Slightly earlier than before, while still avoiding "finishes offscreen".
+    rootMargin: '0px 0px -6% 0px',
+  };
 
   const io = new IntersectionObserver(
     (entries) => {

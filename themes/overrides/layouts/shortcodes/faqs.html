@@ -74,10 +74,11 @@
   {{- end -}}
 {{- end -}}
 
-<div id="accordion-collapse" data-accordion="collapse" class="{{ $alClass }}">
+<div id="accordion-collapse" data-accordion="collapse" data-motion-group="stagger" class="{{ $alClass }}">
   {{- $count := len $faqBlocks -}}
   {{- $schemaItems := slice -}}
   {{- range $i, $blk := $faqBlocks }}
+  <div data-motion="reveal">
     {{- $qid := printf "accordion-collapse-heading-%d" (add $i 1) -}}
     {{- $bid := printf "accordion-collapse-body-%d" (add $i 1) -}}
     {{- $lines := split $blk "\n" -}}
@@ -153,6 +154,7 @@
         {{- $page.RenderString $opts $bodyRaw -}}
       </div>
     </div>
+  </div>
   {{- end }}
 </div>
 
