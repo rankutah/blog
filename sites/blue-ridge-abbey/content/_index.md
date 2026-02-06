@@ -15,7 +15,7 @@ url: "/"
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-{{< carousel id="bkg-hero" images="/media/new-photos/BRA-28.jpg,/media/new-photos/BRA-54.jpg,/media/new-photos/BRA-76.jpg,/media/new-photos/BRA-31.jpg,/media/new-photos/BRA-33.jpg,/media/new-photos/BRA-35.jpg,/media/new-photos/BRA-36.jpg,/media/new-photos/BRA-77.jpg,/media/new-photos/BRA-48.jpg,/media/new-photos/BRA-25.jpg,/media/new-photos/BRA-56.jpg,/media/new-photos/BRA-50.jpg" mobilepxheight="500" mdpxheight="900" duration="800" interval="3000" autostart="interact" radius="none" >}}
+{{< carousel id="bkg-hero" images="/media/new-photos/BRA-28.jpg,/media/new-photos/BRA-54.jpg,/media/new-photos/BRA-76.jpg,/media/new-photos/BRA-31.jpg,/media/new-photos/BRA-33.jpg,/media/new-photos/BRA-35.jpg,/media/new-photos/BRA-36.jpg,/media/new-photos/BRA-77.jpg,/media/new-photos/BRA-48.jpg,/media/new-photos/BRA-25.jpg,/media/new-photos/BRA-56.jpg,/media/new-photos/BRA-50.jpg" mobilepxheight="500" mdpxheight="1300" duration="800" interval="3000" autostart="interact" radius="none" >}}
 
 {{< /col >}}
 
@@ -38,15 +38,15 @@ Blue Ridge Abbey is pleased to announce the opening of an additional building wi
 {{< button url="/carriage-rooms" text="Carriage Rooms" >}} {{< button url="https://secure.thinkreservations.com/blueridgeabbey/reservations" text="Availability" >}}
 
 
-{{< /col >}}
-
-{{< /cols >}}
-
 ## Photo Gallery
 
 Take a visual tour of our guest rooms and shared spaces and get a feel for the warmth, character, and comfort waiting for you.
 
 {{< button url="/gallery" text="Photo Gallery" >}}
+
+{{< /col >}}
+
+{{< /cols >}}
 
 ## A 5-Star Guest Experience
 
