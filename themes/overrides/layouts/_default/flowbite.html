@@ -259,7 +259,7 @@
             <div style="display:flex;flex-wrap:wrap;gap:0.3rem 0.3rem;margin-top:1rem;">
               {{- range $t := $sorted -}}
                 {{- $slug := $t | urlize -}}
-                <a href="{{ (printf "/tags/%s/" $slug) | relURL }}" class="badge badge-{{ $slug }}" style="font-size:0.875rem;padding:0.25rem 0.75rem;">
+                <a href="{{ (printf "/tags/%s/" $slug) | relURL }}" class="badge badge-{{ $slug }}">
                   {{ $t }} ({{ len (index $all $t) }})
                 </a>
               {{- end -}}

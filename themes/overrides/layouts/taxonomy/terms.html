@@ -10,7 +10,7 @@
       <div class="flex flex-wrap gap-2">
         {{- range $t := $sorted -}}
           {{- $slug := $t | urlize -}}
-          <a href="{{ (printf "/tags/%s/" $slug) | relURL }}" class="badge badge-{{ $slug }} text-sm px-3 py-1">{{ $t }} ({{ len (index $all $t) }})</a>
+          <a href="{{ (printf "/tags/%s/" $slug) | relURL }}" class="badge badge-{{ $slug }}">{{ $t }} ({{ len (index $all $t) }})</a>
         {{- end -}}
       </div>
     {{- else -}}

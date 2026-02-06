@@ -110,9 +110,9 @@ html[data-site="kandee-myers"] .ui-btn {
 /* Rank Utah: pill buttons (match the floating message button vibe) */
 html[data-site="rank-utah"] .ui-btn {
   border-radius: 9999px !important;
-  /* Match hero button sizing sitewide (navbar overrides below) */
-  font-size: 1.15rem !important;
-  padding: 0.86rem 1.6rem !important;
+  /* Match Kandee Myers button sizing */
+  font-size: 1rem !important;
+  padding: 0.9rem 1.35rem !important;
   line-height: 1.15 !important;
 }
 
@@ -123,41 +123,18 @@ html[data-site="rank-utah"] body {
   overflow-x: clip;
 }
 
-/* Rank Utah: floating message button should match navbar CTA sizing */
+/* Rank Utah: floating message button should match Kandee-style sizing */
 html[data-site="rank-utah"] .cp-fab {
-  font-size: 1.05rem !important;
+  font-size: 1rem !important;
   line-height: 1.15 !important;
 }
 
 @media (min-width: 768px) {
   html[data-site="rank-utah"] .cp-fab {
-    padding-left: 1.15rem !important;
-    padding-right: 1.15rem !important;
-    padding-top: 0.72rem !important;
-    padding-bottom: 0.72rem !important;
-  }
-}
-
-@media (min-width: 768px) {
-  html[data-site="rank-utah"] .ui-btn {
-    font-size: 1.2rem !important;
-    padding: 0.92rem 1.85rem !important;
-  }
-}
-
-/* Rank Utah: hero buttons should follow the same slightly-smaller scale */
-html[data-site="rank-utah"] .section.hero a.ui-btn,
-html[data-site="rank-utah"] .section.hero button.ui-btn {
-  font-size: 1.15rem !important;
-  padding: 0.86rem 1.6rem !important;
-  line-height: 1.15 !important;
-}
-
-@media (min-width: 768px) {
-  html[data-site="rank-utah"] .section.hero a.ui-btn,
-  html[data-site="rank-utah"] .section.hero button.ui-btn {
-    font-size: 1.2rem !important;
-    padding: 0.92rem 1.85rem !important;
+    padding-left: 1.35rem !important;
+    padding-right: 1.35rem !important;
+    padding-top: 0.9rem !important;
+    padding-bottom: 0.9rem !important;
   }
 }
 
@@ -178,20 +155,10 @@ html[data-site="rank-utah"] nav > div {
   max-width: min(100%, 90rem) !important;
 }
 
-/* Rank Utah: header CTA button slightly taller */
-html[data-site="rank-utah"] nav a.ui-btn {
-  font-size: 1.05rem !important;
-  line-height: 1.15 !important;
-  padding-left: 1.15rem !important;
-  padding-right: 1.15rem !important;
-  padding-top: 0.72rem !important;
-  padding-bottom: 0.72rem !important;
-}
-
 /* Rank Utah: footer should match main text size (not prose-sm) */
 html[data-site="rank-utah"] .footer .prose {
-  font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 html[data-site="rank-utah"] nav #nav-search {
@@ -260,12 +227,6 @@ html[data-site="rank-utah"] main#content .prose h1,
 html[data-site="rank-utah"] main#content h1 {
   font-size: clamp(2.75rem, 6vw, 4.75rem);
   line-height: 1.05;
-}
-
-/* Rank Utah: slightly larger body text to match the scaled headings */
-html[data-site="rank-utah"] main#content .prose {
-	font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
-	line-height: 1.7;
 }
 
 html[data-site="rank-utah"] main#content .prose h2,
