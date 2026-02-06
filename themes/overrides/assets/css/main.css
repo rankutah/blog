@@ -169,7 +169,7 @@ nav > div:not(.max-w-none) {
 }
 
 nav #nav-search {
-  width: clamp(10rem, 12vw, 16rem) !important;
+  width: clamp(7.75rem, 9vw, 13rem) !important;
   font-size: 1.05rem !important;
   padding-top: 0.65rem !important;
   padding-bottom: 0.65rem !important;
