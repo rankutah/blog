@@ -31,14 +31,14 @@ enableRobotsTXT = true
   primaryColor = "blue"
 
   # Optional; add a real logo later (this affects Organization schema auto-logo too).
-  logo = "media/logo.png"
+  logo = "media/logo.jpg"
 
   # Clean, readable palette that also looks good in dark mode.
-  lightBackground     = "slate-200"
+  lightBackground     = "orange-50"
   darkBackground      = "slate-950"
-  cardBackground      = "slate-100"
+  cardBackground      = "orange-100"
   cardBackgroundDark  = "slate-800"
-  cardBorderLight     = "gray-200"
+  cardBorderLight     = "orange-200"
   cardBorderDark      = "slate-800"
 
   clientName = "Kandee Myers"

@@ -2373,6 +2373,144 @@
       ]
     }
   },
+  "/media/hero-image.jpg": {
+    "width": 1344,
+    "height": 768,
+    "aspect": 1.75,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUB/8QAJxAAAgECBAUFAQAAAAAAAAAAAQIDABEEBSExEhRBYZETFSJSccH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAwUBAv/EAB0RAAICAQUAAAAAAAAAAAAAAAABAxESAiExMjT/2gAMAwEAAhEDEQA/ANcZevU+Kf26LYtrWYuInJFnPftUi46dY7lyCdBcbGhSvVwzcUi9LglgiaTjFlF7X3ruTYrm1kUFSEOhBrBzzFTSQxReorRs12OwB6UmQF8FjpyXUHhCixuDfX+Uxwpx5t7hm7qiSQBSxUAE72/abeR7/cUUVLOirmgBjkBFwHW3iocnVeYPxHjsaKKrx+Vin2P/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hero-image__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hero-image__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hero-image__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hero-image__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hero-image__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/hero-image__w1200.avif"
+        },
+        {
+          "w": 1344,
+          "url": "/media-deriv/hero-image__w1344.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hero-image__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hero-image__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hero-image__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hero-image__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hero-image__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/hero-image__w1200.jpg"
+        },
+        {
+          "w": 1344,
+          "url": "/media-deriv/hero-image__w1344.jpg"
+        }
+      ]
+    }
+  },
+  "/media/hero-image.avif": {
+    "width": 1344,
+    "height": 768,
+    "aspect": 1.75,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUB/8QAJxAAAgECBAUFAQAAAAAAAAAAAQIDABEEBSExEhRBYZETFSJSccH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAwUBAv/EAB0RAAICAQUAAAAAAAAAAAAAAAABAxESAiExMjT/2gAMAwEAAhEDEQA/ANcZevU+Kf26LYtrWYuInJFnPftUi46dY7lyCdBcbGhSvVwzcUi9LglgiaTjFlF7X3ruTYrm1kUFSEOhBrBzzFTSQxReorRs12OwB6UmQF8FjpyXUHhCixuDfX+Uxwpx5t7hm7qiSQBSxUAE72/abeR7/cUUVLOirmgBjkBFwHW3iocnVeYPxHjsaKKrx+Vin2P/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hero-image__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hero-image__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hero-image__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hero-image__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hero-image__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/hero-image__w1200.avif"
+        },
+        {
+          "w": 1344,
+          "url": "/media-deriv/hero-image__w1344.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/hero-image__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/hero-image__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/hero-image__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/hero-image__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/hero-image__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/hero-image__w1200.jpg"
+        },
+        {
+          "w": 1344,
+          "url": "/media-deriv/hero-image__w1344.jpg"
+        }
+      ]
+    }
+  },
   "/media/kandee-myers-utah-state-senate-district-21-bridge.jpg": {
     "width": 4920,
     "height": 3280,
@@ -3410,10 +3548,10 @@
     }
   },
   "/media/logo.jpg": {
-    "width": 1415,
-    "height": 882,
-    "aspect": 1.6043083900226758,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEFBAL/xAAsEAACAQIEAwYHAAAAAAAAAAABAgMAEQQSITEUktETFSJRYYEFQlJikaHB/8QAGAEBAAMBAAAAAAAAAAAAAAAAAQIDBAX/xAAfEQACAgEEAwAAAAAAAAAAAAABAwACkRMhIlISMaH/2gAMAwEAAhEDEQA/AMGHETypGy6swBd20HrYda3rgY7G2IwqgE6lb3GljvsTU2OAyEgsqWBPiO9Uxj8a0KqsAyhbAqu/hsP4fausxiyeNhmQqtg28fk67vjLZWng3HyAXud9Dtr+qmz9ksjp2ZBUkZlbQ+x61U7wxlweD0vm2Plb8VIkjYO10yanTy9KFMoDysMxsptvVTiPipfs5F6UxjJhsy8ooorXoq6jEp1WdjmPjJ/qHKKb/EJ3RUbJZdjkFFFBSvbiMRDb9jP/2Q==",
+    "width": 2000,
+    "height": 1333,
+    "aspect": 1.5003750937734435,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAIDAQQF/8QAJhAAAgEEAQIGAwAAAAAAAAAAAQIRAAMEIRIxcQUTFDJRkSKB0f/EABcBAQEBAQAAAAAAAAAAAAAAAAIFAQP/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIREhMxIv/aAAwDAQACEQMRAD8AiMa75a3OH4tHEz1kxHfVP6HILMvlyVcIdjRPSs282+iIiwVt+0FZ4mSZ77pl8QylZSDBESePXUb/AFVD0laJ1wbxYgwchioCqeUdGGpEifjVK+JdS2bjceIMTyG+33XQXLspcQq7QCAW8uOQGhPYVK9k2XxXth9kcog+7X8pKUr4c3CFdNBLjpPBis/FN6i8DIut90UU8EDZIDkXj1uN91Kiitqgttn/2Q==",
     "variants": {
       "avif": [
         {
@@ -3441,8 +3579,12 @@
           "url": "/media-deriv/logo__w1200.avif"
         },
         {
-          "w": 1415,
-          "url": "/media-deriv/logo__w1415.avif"
+          "w": 1600,
+          "url": "/media-deriv/logo__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/logo__w2000.avif"
         }
       ],
       "webp": [],
@@ -3472,17 +3614,21 @@
           "url": "/media-deriv/logo__w1200.jpg"
         },
         {
-          "w": 1415,
-          "url": "/media-deriv/logo__w1415.jpg"
+          "w": 1600,
+          "url": "/media-deriv/logo__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/logo__w2000.jpg"
         }
       ]
     }
   },
   "/media/logo.avif": {
-    "width": 1415,
-    "height": 882,
-    "aspect": 1.6043083900226758,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEFBAL/xAAsEAACAQIEAwYHAAAAAAAAAAABAgMAEQQSITEUktETFSJRYYEFQlJikaHB/8QAGAEBAAMBAAAAAAAAAAAAAAAAAQIDBAX/xAAfEQACAgEEAwAAAAAAAAAAAAABAwACkRMhIlISMaH/2gAMAwEAAhEDEQA/AMGHETypGy6swBd20HrYda3rgY7G2IwqgE6lb3GljvsTU2OAyEgsqWBPiO9Uxj8a0KqsAyhbAqu/hsP4fausxiyeNhmQqtg28fk67vjLZWng3HyAXud9Dtr+qmz9ksjp2ZBUkZlbQ+x61U7wxlweD0vm2Plb8VIkjYO10yanTy9KFMoDysMxsptvVTiPipfs5F6UxjJhsy8ooorXoq6jEp1WdjmPjJ/qHKKb/EJ3RUbJZdjkFFFBSvbiMRDb9jP/2Q==",
+    "width": 2000,
+    "height": 1333,
+    "aspect": 1.5003750937734435,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAIDAQQF/8QAJhAAAgEEAQIGAwAAAAAAAAAAAQIRAAMEIRIxcQUTFDJRkSKB0f/EABcBAQEBAQAAAAAAAAAAAAAAAAIFAQP/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIREhMxIv/aAAwDAQACEQMRAD8AiMa75a3OH4tHEz1kxHfVP6HILMvlyVcIdjRPSs282+iIiwVt+0FZ4mSZ77pl8QylZSDBESePXUb/AFVD0laJ1wbxYgwchioCqeUdGGpEifjVK+JdS2bjceIMTyG+33XQXLspcQq7QCAW8uOQGhPYVK9k2XxXth9kcog+7X8pKUr4c3CFdNBLjpPBis/FN6i8DIut90UU8EDZIDkXj1uN91Kiitqgttn/2Q==",
     "variants": {
       "avif": [
         {
@@ -3510,8 +3656,12 @@
           "url": "/media-deriv/logo__w1200.avif"
         },
         {
-          "w": 1415,
-          "url": "/media-deriv/logo__w1415.avif"
+          "w": 1600,
+          "url": "/media-deriv/logo__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/logo__w2000.avif"
         }
       ],
       "webp": [],
@@ -3541,8 +3691,12 @@
           "url": "/media-deriv/logo__w1200.jpg"
         },
         {
-          "w": 1415,
-          "url": "/media-deriv/logo__w1415.jpg"
+          "w": 1600,
+          "url": "/media-deriv/logo__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/logo__w2000.jpg"
         }
       ]
     }

@@ -11,9 +11,16 @@
   // We still inject (for real analytics), but never earlier than this nav-time threshold.
   const MIN_NAV_DELAY_MS = 10000;
 
-  // Cloudflare-recommended endpoint (same-origin). This is typically less likely to be blocked
-  // than the static.cloudflareinsights.com host.
-  const ZARAZ_SRC = '/cdn-cgi/zaraz/i.js';
+  // Default endpoint (same-origin). Note: some Cloudflare Zaraz setups require a zone-specific
+  // script URL (e.g. static.cloudflareinsights.com/zaraz/s.js?z=...) and will 404/400 without it.
+  let ZARAZ_SRC = '/cdn-cgi/zaraz/i.js';
+  try {
+    const cfgEl = document.getElementById('cp-analytics-config');
+    const cfg = cfgEl ? JSON.parse(cfgEl.textContent || '{}') : {};
+    if (cfg && typeof cfg.zarazSrc === 'string' && cfg.zarazSrc.trim().length) {
+      ZARAZ_SRC = cfg.zarazSrc.trim();
+    }
+  } catch {}
   let loaded = false;
 
   function navWaitMs() {

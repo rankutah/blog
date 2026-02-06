@@ -28,6 +28,8 @@
 {{- $lcpGate := (index $analytics "lcpGate") | default true -}}
 {{- $lcpMaxWaitMs := (index $analytics "lcpMaxWaitMs") | default 6000 -}}
 {{- $lcpQuietWindowMs := (index $analytics "lcpQuietWindowMs") | default 350 -}}
+{{- /* Optional: explicit Zaraz script URL (e.g. static.cloudflareinsights.com/zaraz/s.js?z=...) */ -}}
+{{- $zarazSrc := (index $analytics "zarazSrc") | default "" -}}
 {{- /* Optional per-platform overrides: clarity can be delayed even when global is 0 */ -}}
 {{- $clarityDelayMs := (index $analytics "clarityDelayMs") | default nil -}}
 {{- $clarityOnlyOnInteraction := (index $analytics "clarityOnlyOnInteraction") | default nil -}}
@@ -43,6 +45,7 @@
   "googleAdsId" (cond $adsEnabled $adsId "")
   "googleAdsCombinedId" (cond $adsEnabled $adsCombined "")
   "metaPixelId" (cond $metaEnabled $metaId "")
+  "zarazSrc"    $zarazSrc
   "delayMs"     $delayMs
   "loadEvents"  $events
   "onlyOnInteraction" $onlyOnInteraction
