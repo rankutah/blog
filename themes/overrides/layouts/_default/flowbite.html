@@ -42,6 +42,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{- /* Build stamp (useful when prod isn't picking up changes).
+      Note: Hugo security only allows getenv for ^HUGO_ and ^CI$ by default in this repo. */ -}}
+    {{- $sha := os.Getenv "HUGO_BUILD_SHA" | default "" -}}
+    {{- $branch := os.Getenv "HUGO_BUILD_BRANCH" | default "" -}}
+    {{- $ci := os.Getenv "CI" | default "" -}}
+    <meta name="cp-build" content="site={{ $siteId }}; sha={{ $sha }}; branch={{ $branch }}; ci={{ $ci }}; built={{ now.UTC.Format "2006-01-02T15:04:05Z07:00" }}">
   <title>{{ if and .Title (ne .Title .Site.Title) (gt (len (trim .Title " \n\r\t")) 0) }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
   {{ partial "seo-meta.html" . }}

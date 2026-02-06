@@ -15,6 +15,8 @@
  */
 
 import { spawn } from 'node:child_process'
+import { readFileSync, existsSync } from 'node:fs'
+import { join } from 'node:path'
 
 const env = process.env
 
@@ -73,6 +75,9 @@ function build(site) {
       SITE: env.SITE || site,
       HUGO_SITE: site,
       HUGO_POSTCSS_CONFIG_DIR: process.cwd(),
+      // Copy CF Pages vars into whitelisted HUGO_* vars for template/debug visibility.
+      HUGO_BUILD_SHA: env.CF_PAGES_COMMIT_SHA || env.HUGO_BUILD_SHA || '',
+      HUGO_BUILD_BRANCH: env.CF_PAGES_BRANCH || env.HUGO_BUILD_BRANCH || '',
     }
   })
 }
@@ -88,6 +93,20 @@ async function main() {
       })
       child.on('error', reject)
     })
+
+    // Post-build sanity check: the built HTML should carry the site id.
+    // If Cloudflare Pages is publishing the wrong directory, this catches it.
+    const indexPath = join('sites', site, 'public', 'index.html')
+    if (!existsSync(indexPath)) {
+      throw new Error(`[cf-build] Missing output file: ${indexPath}. Check Pages publish directory.`)
+    }
+    const html = readFileSync(indexPath, 'utf8')
+    if (!html.includes(`data-site=${site}`) && !html.includes(`data-site=\"${site}\"`) && !html.includes(`data-site='${site}'`)) {
+      throw new Error(
+        `[cf-build] Built index.html does not appear to be for site "${site}". ` +
+        `Expected to find data-site=${site}. Check HUGO_SITE/SITE env and publish directory.`
+      )
+    }
   } catch (err) {
     console.error(err.message || err)
     process.exit(1)
