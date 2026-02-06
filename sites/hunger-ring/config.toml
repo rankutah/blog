@@ -114,3 +114,5 @@ themesDir     = "../../themes"
     name   = "Contact"
     url    = "/contact"
     weight = 30
+
+# noop: rebuild trigger 2026-02-06

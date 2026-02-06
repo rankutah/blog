@@ -240,3 +240,5 @@ sameAs = []
     url = "/contact"
     weight = 50
 
+# noop: rebuild trigger 2026-02-06
+

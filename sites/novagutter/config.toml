@@ -190,3 +190,5 @@ enableRobotsTXT = true
     name = "Contact"
     url = "/contact"
     weight = 50
+
+# noop: rebuild trigger 2026-02-06

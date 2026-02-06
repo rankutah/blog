@@ -66,4 +66,6 @@ disableKinds = ["taxonomy", "term"]
 [permalinks]
   posts = "/:slug/"
 
+# noop: rebuild trigger 2026-02-06
+
 
