@@ -53,6 +53,8 @@
 
   const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
 
+  const siteId = document.documentElement.getAttribute('data-site') || '';
+
   const revealWithDelay = (el) => {
     if (!(el instanceof HTMLElement)) return;
     if (el.classList.contains('is-visible')) return;
@@ -111,11 +113,43 @@
   const staggerGroups = Array.from(document.querySelectorAll('[data-motion-group="stagger"]'));
   for (const group of staggerGroups) {
     const children = Array.from(group.children).filter((n) => n && n.nodeType === 1);
+
+    // Default (non Rank Utah): classic index-based stagger.
+    if (siteId !== 'rank-utah') {
+      children.forEach((child, index) => {
+        if (!(child instanceof HTMLElement)) return;
+        if (!child.hasAttribute('data-motion')) child.setAttribute('data-motion', 'reveal');
+        // Cap delay so large grids don't feel sluggish.
+        const ms = clamp(index * 320, 0, 1800);
+        child.dataset.motionDelay = String(ms);
+      });
+      continue;
+    }
+
+    // Heuristic: estimate column count so stagger resets per row.
+    // This prevents later rows from feeling increasingly delayed.
+    let columns = 3;
+    try {
+      const first = children.find((c) => c instanceof HTMLElement);
+      if (first instanceof HTMLElement) {
+        const childW = first.getBoundingClientRect().width || 0;
+        const groupW = group.getBoundingClientRect().width || 0;
+        if (childW > 0 && groupW > 0) {
+          columns = clamp(Math.round(groupW / childW), 1, 6);
+        }
+      }
+    } catch (e) {
+      // ignore
+    }
+
     children.forEach((child, index) => {
       if (!(child instanceof HTMLElement)) return;
       if (!child.hasAttribute('data-motion')) child.setAttribute('data-motion', 'reveal');
-      // Cap delay so large grids don't feel sluggish.
-      const ms = clamp(index * 320, 0, 1800);
+      // Keep delays snappy: stagger across columns, with a very small per-row bump.
+      const col = columns > 0 ? index % columns : 0;
+      const row = columns > 0 ? Math.floor(index / columns) : 0;
+      // Goal: still *feel* animated (slower), but don't get slower with more rows.
+      const ms = clamp(160 + col * 250 + row * 90, 0, 1450);
       child.dataset.motionDelay = String(ms);
     });
   }
@@ -158,10 +192,15 @@
 
   // Make already-in-view content animate in (including H2s near the top).
   // Do this after `data-motion-ready` so transitions run.
+  // Double rAF so at least one paint occurs before we flip elements to visible.
+  // Otherwise the browser may apply "hidden" and "visible" in the same frame,
+  // resulting in no perceptible transition.
   requestAnimationFrame(() => {
-    for (const el of revealEls) {
-      if (inViewNow(el)) revealWithDelay(el);
-    }
+    requestAnimationFrame(() => {
+      for (const el of revealEls) {
+        if (inViewNow(el)) revealWithDelay(el);
+      }
+    });
   });
 
   // Hero entrance: trigger after paint for smooth transition.
@@ -185,14 +224,13 @@
     return;
   }
 
-  const siteId = document.documentElement.getAttribute('data-site') || '';
   const revealObserverOptions =
     siteId === 'rank-utah'
       ? {
-          threshold: 0.08,
+          threshold: 0.01,
           // Trigger earlier so cards/sections animate in sooner.
           // Positive bottom margin expands the viewport “downward” for intersection checks.
-          rootMargin: '0px 0px 20% 0px',
+          rootMargin: '0px 0px 25% 0px',
         }
       : {
           threshold: 0.12,

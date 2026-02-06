@@ -14,7 +14,7 @@ schema:
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Website Design, Local SEO, & Google Ads to Grow Your Business {.text-white}
+# Web Design, Local SEO, & Google Ads to Grow Your Business {.text-white}
 Lead-generating websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
 

@@ -116,6 +116,13 @@ html[data-site="rank-utah"] .ui-btn {
   line-height: 1.15 !important;
 }
 
+/* Rank Utah: prevent accidental horizontal scroll on mobile */
+html[data-site="rank-utah"],
+html[data-site="rank-utah"] body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 /* Rank Utah: floating message button should match navbar CTA sizing */
 html[data-site="rank-utah"] .cp-fab {
   font-size: 1.05rem !important;

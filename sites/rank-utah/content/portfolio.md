@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/portfolio"
 ---
 
-# Website Design Portfolio
+# Website Portfolio
 
 A selection of custom website design projects for small businesses. Fast websites that help customers find the business and then call, text, or send a message.
 
