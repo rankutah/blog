@@ -193,7 +193,6 @@ Whether you have a quick question or are ready to launch a project, reach out no
 {{<button text="Pricing" url="/pricing" >}}
 {{<button text="Web Design" url="/services/website-design" >}}
 {{<button text="Local SEO" url="/services/local-seo" >}}
-{{<button text="Google Ads" url="/services/google-ads" >}}
 {.center}
 
 
