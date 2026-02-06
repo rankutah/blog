@@ -111,8 +111,8 @@ html[data-site="kandee-myers"] .ui-btn {
 html[data-site="rank-utah"] .ui-btn {
   border-radius: 9999px !important;
   /* Match hero button sizing sitewide (navbar overrides below) */
-  font-size: 1.2rem !important;
-  padding: 0.92rem 1.75rem !important;
+  font-size: 1.15rem !important;
+  padding: 0.86rem 1.6rem !important;
   line-height: 1.15 !important;
 }
 
@@ -140,8 +140,24 @@ html[data-site="rank-utah"] .cp-fab {
 
 @media (min-width: 768px) {
   html[data-site="rank-utah"] .ui-btn {
-    font-size: 1.25rem !important;
-    padding: 1.0rem 2rem !important;
+    font-size: 1.2rem !important;
+    padding: 0.92rem 1.85rem !important;
+  }
+}
+
+/* Rank Utah: hero buttons should follow the same slightly-smaller scale */
+html[data-site="rank-utah"] .section.hero a.ui-btn,
+html[data-site="rank-utah"] .section.hero button.ui-btn {
+  font-size: 1.15rem !important;
+  padding: 0.86rem 1.6rem !important;
+  line-height: 1.15 !important;
+}
+
+@media (min-width: 768px) {
+  html[data-site="rank-utah"] .section.hero a.ui-btn,
+  html[data-site="rank-utah"] .section.hero button.ui-btn {
+    font-size: 1.2rem !important;
+    padding: 0.92rem 1.85rem !important;
   }
 }
 

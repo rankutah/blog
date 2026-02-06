@@ -1,6 +1,7 @@
 {{- /* Tailwind badge with light/dark tones, defaulting to site primaryColor */ -}}
 {{- $text := .Get "text" | default "Badge" -}}
 {{- $classes := .Get "classes" | default "" -}}
+{{- $sizeParam := lower (.Get "size" | default "xs") -}}
 {{- $colorParam := lower (.Get "color" | default "") -}}
 {{- $siteColor := lower (.Page.Site.Params.primaryColor | default "blue") -}}
 {{- $color := cond (ne $colorParam "") $colorParam $siteColor -}}
@@ -31,4 +32,16 @@
 }}
 
 {{- $colorClasses := index $map $color | default (index $map "blue") -}}
-<span class="inline-block rounded-sm px-2.5 py-0.5 text-xs font-medium me-2 {{ $colorClasses }} {{ $classes }}">{{ $text }}</span>
+{{- $sizeClass := "" -}}
+{{- if or (eq $sizeParam "inherit") (eq $sizeParam "body") -}}
+  {{- $sizeClass = "" -}}
+{{- else if or (eq $sizeParam "base") (eq $sizeParam "md") -}}
+  {{- $sizeClass = "text-base" -}}
+{{- else if or (eq $sizeParam "sm") (eq $sizeParam "small") -}}
+  {{- $sizeClass = "text-sm" -}}
+{{- else if or (eq $sizeParam "lg") (eq $sizeParam "large") -}}
+  {{- $sizeClass = "text-lg" -}}
+{{- else -}}
+  {{- $sizeClass = "text-xs" -}}
+{{- end -}}
+<span class="inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 {{ $colorClasses }} {{ $classes }}">{{ $text }}</span>

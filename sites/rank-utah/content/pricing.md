@@ -32,7 +32,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Business Website <br>
+## Business Website <br>
 
 {{< badge text="I need a website" >}}
 
@@ -60,7 +60,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Business Website + Local SEO
+## Business Website + Local SEO
 
 {{< badge text="I need a website and local marketing" >}}
 
@@ -85,7 +85,7 @@ Includes everything in the **Business Website** package, plus:
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Google Ads
+## Google Ads
 
 {{< badge text="I need more leads" >}}
 
@@ -130,7 +130,7 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Starter
+## Starter
 
 {{< badge text="30GB storage" >}}
 
@@ -147,7 +147,7 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Standard
+## Standard
 
 {{< badge text="2TB + Gemini Pro" >}}
 
@@ -165,7 +165,7 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Plus
+## Plus
 
 {{< badge text="5TB + Gemini Pro" >}}
 
