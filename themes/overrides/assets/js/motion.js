@@ -13,7 +13,7 @@
   if (!enabled) return;
 
   // Run entrance/reveal animations only the first time a visitor loads a page.
-  // Subsequent navigations should render everything immediately (no repeats).
+  // Subsequent visits should skip the hero entrance, but still allow scroll reveals.
   const seenKey = 'cp:motion:seen';
   let alreadySeen = false;
   try {
@@ -35,6 +35,8 @@
     // ignore
   }
 
+  const skipHero = alreadySeen;
+
   let reduce = false;
   try {
     reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -50,6 +52,24 @@
   }
 
   const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
+
+  const revealWithDelay = (el) => {
+    if (!(el instanceof HTMLElement)) return;
+    if (el.classList.contains('is-visible')) return;
+    if (el.dataset.motionRevealing === '1') return;
+    el.dataset.motionRevealing = '1';
+
+    const ms = parseInt(el.dataset.motionDelay || '0', 10);
+    if (ms > 0) {
+      setTimeout(() => {
+        el.classList.add('is-visible');
+        delete el.dataset.motionRevealing;
+      }, ms);
+    } else {
+      el.classList.add('is-visible');
+      delete el.dataset.motionRevealing;
+    }
+  };
 
   // Auto-mark common content elements for reveal to increase overall motion.
   // Skip anything already inside an animated region to avoid nested/janky transforms.
@@ -96,24 +116,16 @@
       if (!child.hasAttribute('data-motion')) child.setAttribute('data-motion', 'reveal');
       // Cap delay so large grids don't feel sluggish.
       const ms = clamp(index * 320, 0, 1800);
-      child.style.setProperty('--motion-delay', `${ms}ms`);
+      child.dataset.motionDelay = String(ms);
     });
   }
 
-  if (alreadySeen) {
-    root.setAttribute('data-motion-skip', 'true');
-    root.removeAttribute('data-motion-pending');
-    root.setAttribute('data-motion-ready', 'true');
-
-    const all = Array.from(document.querySelectorAll('[data-motion]')).filter((el) => el instanceof HTMLElement);
-    for (const el of all) el.classList.add('is-visible');
-    return;
-  }
-
-  try {
-    localStorage.setItem(seenKey, '1');
-  } catch (e) {
-    // ignore
+  if (!alreadySeen) {
+    try {
+      localStorage.setItem(seenKey, '1');
+    } catch (e) {
+      // ignore
+    }
   }
 
   const revealEls = Array.from(document.querySelectorAll('[data-motion="reveal"]'))
@@ -124,6 +136,12 @@
 
   const heroImgEls = Array.from(document.querySelectorAll('[data-motion="hero-img"]'))
     .filter((el) => el instanceof HTMLElement);
+
+  if (skipHero) {
+    root.setAttribute('data-motion-skip-hero', 'true');
+    for (const el of heroEls) el.classList.add('is-visible');
+    for (const el of heroImgEls) el.classList.add('is-visible');
+  }
 
   // Mark elements already in view so we don't hide them when motion becomes "ready".
   const inViewNow = (el) => {
@@ -142,7 +160,7 @@
   // Do this after `data-motion-ready` so transitions run.
   requestAnimationFrame(() => {
     for (const el of revealEls) {
-      if (inViewNow(el)) el.classList.add('is-visible');
+      if (inViewNow(el)) revealWithDelay(el);
     }
   });
 
@@ -172,7 +190,7 @@
       for (const entry of entries) {
         if (!entry.isIntersecting) continue;
         const target = entry.target;
-        if (target instanceof HTMLElement) target.classList.add('is-visible');
+        if (target instanceof HTMLElement) revealWithDelay(target);
         io.unobserve(target);
       }
     },

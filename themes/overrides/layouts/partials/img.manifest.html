@@ -8,8 +8,9 @@
 {{- $fetchpri := cond (eq $loading "eager") "high" "low" -}}
 {{- $style := .style | default .Style | default "" -}}
 {{- $object := .object | default .Object | default "cover" -}}
-{{- $objectPos := .objectPosition | default .object_position | default .objectposition | default "center" -}}
-{{- $classes := (printf "object-%s object-%s %s" $object $objectPos $class) -}}
+{{- $objectPos := lower (.objectPosition | default .object_position | default .objectposition | default "center") -}}
+{{- $objPosClass := cond (or (eq $objectPos "") (eq $objectPos "custom") (eq $objectPos "none")) "" (printf " object-%s" $objectPos) -}}
+{{- $classes := (printf "object-%s%s %s" $object $objPosClass $class) -}}
 
 {{- /* Access site data via the global 'site' (since '.' is a dict when called from partials/shortcodes).
   The manifest filename includes a dot, so use index() with the full basename. */ -}}

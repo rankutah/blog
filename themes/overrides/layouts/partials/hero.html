@@ -298,6 +298,8 @@
 
 {{- if eq $heroImg "" -}}
   {{- /* default single-image manifest rendering */ -}}
+  {{- $hasObjPos := gt (len (findRE `\bobject-(?:left|right|center|top|bottom|\[[^\]]+\])\b` $imgClasses)) 0 -}}
+  {{- $objPosParam := cond $hasObjPos "custom" "center" -}}
   {{- $heroImg = partial "img.manifest" (dict
       "src" $imgStr
       "alt" $alt
@@ -307,7 +309,7 @@
       "sizes" $sizes
       "style" $imgStyle
       "object" "cover"
-      "objectPosition" "center"
+      "objectPosition" $objPosParam
     ) -}}
 {{- end -}}
 
