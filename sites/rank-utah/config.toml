@@ -42,9 +42,9 @@ disableKinds  = ["taxonomy", "term"]
   logo = "media/logo.png"
   lightBackground  = "gray-200"  # any color @ 50|100|200
   darkBackground   = "slate-950" # neutral @ 800|900|950
-  cardBackground     = "gray-100"     # or "slate-100", "rose-50", etc.
+  cardBackground     = "gray-50"     # or "slate-100", "rose-50", etc.
   cardBackgroundDark = "slate-800"  # or "slate-800", "black", etc.
-  cardBorderLight    = "gray-200"  # no "border-" prefix
+  cardBorderLight    = "gray-50"  # no "border-" prefix
   cardBorderDark     = "slate-800"  # no "border-" prefix
 
   showReadingTime     = true

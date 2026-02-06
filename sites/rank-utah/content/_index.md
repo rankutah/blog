@@ -33,7 +33,7 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 ### One-on-one ✅
 
 #### 1. Work directly with the builder
@@ -55,7 +55,7 @@ Month‑to‑month plans with clear pricing. You own your website from day one w
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 
 ### Agency ❌
 
@@ -86,7 +86,7 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ### Website Design
 
@@ -98,7 +98,7 @@ See the process for building a custom site designed to bring you more customers.
 {{< /col >}}
 
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ### Local SEO
 
@@ -108,7 +108,7 @@ Help local customers find you on search and maps. Local SEO includes keyword res
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ### Google Ads
 
@@ -118,7 +118,7 @@ Paid Google Ads management to generate more leads.
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 
 ### Portfolio
 
@@ -128,7 +128,7 @@ Browse examples of recent work for small businesses.
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 
 ### Pricing
 
@@ -139,7 +139,7 @@ See affordable, transparent monthly plans.
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 
 ### About
 
@@ -151,7 +151,7 @@ Learn more about the story and approach.
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 
 ### Contact
 
