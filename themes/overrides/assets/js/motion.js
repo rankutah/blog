@@ -185,6 +185,21 @@
     return;
   }
 
+  const siteId = document.documentElement.getAttribute('data-site') || '';
+  const revealObserverOptions =
+    siteId === 'rank-utah'
+      ? {
+          threshold: 0.08,
+          // Trigger earlier so cards/sections animate in sooner.
+          // Positive bottom margin expands the viewport “downward” for intersection checks.
+          rootMargin: '0px 0px 20% 0px',
+        }
+      : {
+          threshold: 0.12,
+          // Trigger slightly before the element is fully visible.
+          rootMargin: '0px 0px -10% 0px',
+        };
+
   const io = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
@@ -196,9 +211,7 @@
     },
     {
       root: null,
-      threshold: 0.12,
-      // Trigger slightly before the element is fully visible.
-      rootMargin: '0px 0px -10% 0px',
+      ...revealObserverOptions,
     },
   );
 

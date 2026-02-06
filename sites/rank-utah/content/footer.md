@@ -9,7 +9,7 @@ headless: true
 
 ### Services
 {.center}
-[Website Design](/services/website-design) • [Local SEO](/services/local-seo)
+[Website Design](/services/website-design) • [Local SEO](/services/local-seo) • [Google Ads](/services/google-ads)
 {.center}
 
 ### Legal

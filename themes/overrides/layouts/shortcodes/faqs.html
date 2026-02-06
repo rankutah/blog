@@ -49,9 +49,20 @@
 {{- /* Optional site-level styling overrides
       [params.faqs]
         borderClasses = "border border-black/10 dark:border-white/10"
+  headingLevel = 4
 */ -}}
-{{- $faqParams := $page.Site.Params.faqs | default (dict) -}}
-{{- $borderClasses := (index $faqParams "borderClasses") | default "border border-black/10 dark:border-white/10" -}}
+{{- $faqParams := (index $page.Site.Params "faqs") | default (dict) -}}
+{{- $borderClasses := (index $faqParams "borderClasses" | default (index $faqParams "borderclasses")) | default "border border-black/10 dark:border-white/10" -}}
+{{- $siteHeadingLevel := (index $faqParams "headingLevel" | default (index $faqParams "headinglevel")) | default "" -}}
+
+{{- /* Optional force: choose a single heading level for all questions */ -}}
+{{- $forceParam := (.Get "headingLevel" | default (.Get "level")) -}}
+{{- /* cond uses the first branch if the condition is truthy; .Get can be nil, not "" */ -}}
+{{- $forceRaw := cond $forceParam $forceParam $siteHeadingLevel -}}
+{{- $force := 0 -}}
+{{- if $forceRaw -}}
+  {{- $force = int $forceRaw -}}
+{{- end -}}
 
 {{- /* Match expanded/highlighted item background to card surface */ -}}
 {{- $pal := partial "theme/palette.html" $page -}}
@@ -106,8 +117,13 @@
     {{- if $isFirst }}{{ $btnClasses = $btnClasses | append "rounded-t-xl" }}{{ end -}}
     {{- if not $isLast }}{{ $btnClasses = $btnClasses | append "border-b-0" }}{{ end -}}
 
-  {{- /* Choose heading tag based on the level parsed (default h3). Clamp between 2 and 6. */ -}}
-  {{- $h := cond (lt $level 2) 3 (cond (gt $level 6) 3 $level) -}}
+    {{- /* Heading tag selection:
+      - Default behavior: honor the Markdown heading level parsed from the inner content.
+      - Optional: force a consistent heading level using site/shortcode param.
+      Clamp between 2 and 6.
+    */ -}}
+    {{- $parsed := cond (lt $level 2) 3 (cond (gt $level 6) 3 $level) -}}
+    {{- $h := cond (and (ge $force 2) (le $force 6)) $force $parsed -}}
   {{- /* not-prose prevents Typography plugin heading rules (like center) from applying; add text-left explicitly */ -}}
   {{- printf "<h%d id=\"%s\" class=\"mt-0 mb-0 not-prose text-left\">" $h $qid | safeHTML -}}
       <button type="button"

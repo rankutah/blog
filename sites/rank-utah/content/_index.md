@@ -169,21 +169,22 @@ Reach out with questions or to start your project.
 {.center}
 
 {{< faqs >}}
-### What is your experience?
+
+#### What is your experience?
 I started building websites for small businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
-### What is your web design process?
+#### What is your web design process?
 Learn more about the process for designing and building a custom website on the [Website Design](/services/website-design) page.
 
-### How do you compare to other website design companies?
+#### How do you compare to other website design companies?
 Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
 
-### Which locations do you serve?
+#### Which locations do you serve?
 Web design services are available to clients across the United States with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 
 {{< /faqs >}}
 
-## Ready for the Next Step?
+### Ready for the Next Step?
 {.center}
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 {.center}

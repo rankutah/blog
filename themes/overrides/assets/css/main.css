@@ -107,6 +107,84 @@ html[data-site="kandee-myers"] .ui-btn {
   border-radius: 9999px !important;
 }
 
+/* Rank Utah: pill buttons (match the floating message button vibe) */
+html[data-site="rank-utah"] .ui-btn {
+  border-radius: 9999px !important;
+  /* Match hero button sizing sitewide (navbar overrides below) */
+  font-size: 1.2rem !important;
+  padding: 0.92rem 1.75rem !important;
+  line-height: 1.15 !important;
+}
+
+/* Rank Utah: floating message button should match navbar CTA sizing */
+html[data-site="rank-utah"] .cp-fab {
+  font-size: 1.05rem !important;
+  line-height: 1.15 !important;
+}
+
+@media (min-width: 768px) {
+  html[data-site="rank-utah"] .cp-fab {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+    padding-top: 0.72rem !important;
+    padding-bottom: 0.72rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  html[data-site="rank-utah"] .ui-btn {
+    font-size: 1.25rem !important;
+    padding: 1.0rem 2rem !important;
+  }
+}
+
+/* Rank Utah: pill search bar (navbar + search page) */
+html[data-site="rank-utah"] #nav-search,
+html[data-site="rank-utah"] #search-input {
+  border-radius: 9999px !important;
+}
+
+/* Rank Utah: match Kandee-style larger nav menu links */
+html[data-site="rank-utah"] nav .brand-link {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+/* Rank Utah: full-width navbar (override max-w-screen-xl wrapper) */
+html[data-site="rank-utah"] nav > div {
+  max-width: min(100%, 90rem) !important;
+}
+
+/* Rank Utah: header CTA button slightly taller */
+html[data-site="rank-utah"] nav a.ui-btn {
+  font-size: 1.05rem !important;
+  line-height: 1.15 !important;
+  padding-left: 1.15rem !important;
+  padding-right: 1.15rem !important;
+  padding-top: 0.72rem !important;
+  padding-bottom: 0.72rem !important;
+}
+
+/* Rank Utah: footer should match main text size (not prose-sm) */
+html[data-site="rank-utah"] .footer .prose {
+  font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
+  line-height: 1.7;
+}
+
+html[data-site="rank-utah"] nav #nav-search {
+  width: clamp(11rem, 14vw, 18rem) !important;
+  font-size: 1.05rem !important;
+  padding-top: 0.65rem !important;
+  padding-bottom: 0.65rem !important;
+  padding-right: 0.85rem !important;
+}
+
+html[data-site="rank-utah"] #search-input {
+  font-size: 1.05rem !important;
+  padding-top: 0.65rem !important;
+  padding-bottom: 0.65rem !important;
+}
+
 html[data-site="kandee-myers"] .ui-btn {
   /* Bigger, more tappable buttons (override utility classes emitted by shortcode) */
   font-size: 1rem !important;
@@ -161,6 +239,12 @@ html[data-site="rank-utah"] main#content h1 {
   line-height: 1.05;
 }
 
+/* Rank Utah: slightly larger body text to match the scaled headings */
+html[data-site="rank-utah"] main#content .prose {
+	font-size: clamp(1.0625rem, 0.6vw + 0.95rem, 1.1875rem);
+	line-height: 1.7;
+}
+
 html[data-site="rank-utah"] main#content .prose h2,
 html[data-site="rank-utah"] main#content h2 {
   font-size: clamp(2.1rem, 4.4vw, 3.6rem);
@@ -171,6 +255,18 @@ html[data-site="rank-utah"] main#content .prose h3,
 html[data-site="rank-utah"] main#content h3 {
   font-size: clamp(1.65rem, 3.6vw, 2.9rem);
   line-height: 1.18;
+}
+
+html[data-site="rank-utah"] main#content .prose h4,
+html[data-site="rank-utah"] main#content h4 {
+	font-size: clamp(1.25rem, 1.1vw + 1.05rem, 1.65rem);
+	line-height: 1.25;
+}
+
+/* Rank Utah: FAQs use heading tags for accordion titles; keep them readable (not huge). */
+html[data-site="rank-utah"] main#content [data-accordion] :where(h2, h3, h4, h5, h6) {
+	font-size: clamp(1.05rem, 0.35vw + 0.98rem, 1.25rem);
+	line-height: 1.3;
 }
 
 /* ========== 4) Typography touch-ups ========== */
@@ -539,7 +635,7 @@ html[data-motion-enabled="true"] .ui-btn {
 .section.hero a.ui-btn,
 .section.hero button.ui-btn {
   font-size: 1.2rem !important;
-  padding: 1.05rem 1.75rem !important;
+  padding: 0.92rem 1.75rem !important;
   line-height: 1.15 !important;
 }
 
@@ -547,7 +643,7 @@ html[data-motion-enabled="true"] .ui-btn {
   .section.hero a.ui-btn,
   .section.hero button.ui-btn {
     font-size: 1.25rem !important;
-    padding: 1.1rem 2rem !important;
+    padding: 1.0rem 2rem !important;
   }
 }
 

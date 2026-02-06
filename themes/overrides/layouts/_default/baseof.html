@@ -30,11 +30,15 @@
 		   No BaseURL fallback to avoid surprises. */}}
 		{{ $mm := .Site.Params.messageModal }}
 		{{ $fab := .Site.Params.messageFab }}
-		{{ if and $mm ($mm.enable) }}
-			{{ partial "text-fab.html" . }}
-			{{ partial "message-modal.html" . }}
-		{{ else if and $fab ($fab.enable) }}
-			{{ partial "text-fab.html" . }}
+		{{ $contactURL := "/contact/" | relURL }}
+		{{ $hideMessageFab := or (eq .RelPermalink $contactURL) (.Param "hideMessageFab") }}
+		{{ if not $hideMessageFab }}
+			{{ if and $mm ($mm.enable) }}
+				{{ partial "text-fab.html" . }}
+				{{ partial "message-modal.html" . }}
+			{{ else if and $fab ($fab.enable) }}
+				{{ partial "text-fab.html" . }}
+			{{ end }}
 		{{ end }}
 	</body>
 </html>

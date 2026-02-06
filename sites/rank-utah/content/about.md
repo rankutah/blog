@@ -4,7 +4,8 @@ description: "Clear Presence builds fast, custom websites and local search engin
 layout: "flowbite"
 url: "/about"
 ---
-# Your Website Design & Local SEO Expert
+
+## Clear Presence
 
 Clear Presence provides website design and local SEO services for small businesses across the U.S., from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
 
@@ -14,7 +15,7 @@ You’ll work directly with me from planning to launch. Monthly service keeps th
 
 Call or text anytime with questions: [(385) 323-8130](tel:+13853238130)
 
-## Meet Your Web Designer
+## Your Web Design Expert
 
 I specialize in building fast, custom‑coded websites that help turn visits into calls, texts, and bookings. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed.
 
