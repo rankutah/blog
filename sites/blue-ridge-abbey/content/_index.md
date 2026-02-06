@@ -7,7 +7,7 @@ url: "/"
 ---
 
 {{< lazy-vimeo id="1143211723" img="/media/blue-ridge-abbey-bed-and-breakfast-hotel.avif" alt="Blue Ridge Abbey Bed and Breakfast exterior" muted="false" lighter="true" lightenOpacity=".2" minh="80vh" caption="Press Play" >}}
-# Blue Ridge Abbey Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
+# Bed & Breakfast in Buena Vista, VA {.text-white .font-cinzel}
 Your quiet getaway in the Shenandoah Valley to reconnect with reality.
 <br>
 
