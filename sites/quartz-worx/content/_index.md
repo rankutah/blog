@@ -13,6 +13,7 @@ Fabricated in our state of the art shop in Grand Junction, CO. Serving Western C
 
 {{<button url="/contact" text="Contact">}}
 
+
 {{< /hero >}}
 
 <!-- removed site-only safelist helper; background utilities are now emitted via tailwind.config.cjs safelist -->
