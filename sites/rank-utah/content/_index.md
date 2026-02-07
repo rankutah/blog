@@ -36,8 +36,8 @@ _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving bus
 {{< col card="true"  y="start" >}}
 ### One-on-one ✅
 
-#### 1. Work directly with the builder
-No handoffs. You talk to the person doing the work, so communication stays simple and the website stays aligned with what gets you leads.
+#### 1. Work directly with me
+No handoffs. You work directly with me (see [about page](/about)), so communication stays simple and the website stays aligned with what gets you leads.
 
 #### 2. Built to be fast (with proof)
 Custom-coded pages that stay lightweight — no extra clutter that slows things down.
@@ -59,7 +59,7 @@ Month‑to‑month plans with clear pricing. You own your website from day one w
 
 ### Big Agency ❌
 
-#### 1. More people, more delays
+#### 1. More people, more delays, no ownership
 Projects move between multiple people. That can slow things down and make communication harder.
 
 #### 2. Bloated templates
