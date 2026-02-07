@@ -99,6 +99,10 @@ enableRobotsTXT = true
   stickyMobile     = true
   stickyDesktop    = true
   showBrandTitle   = false
+  # Mobile: shrink logo so it doesn't cover the hamburger/nav.
+  # Note: disable logoHeightPx so responsive Tailwind classes can take effect.
+  logoHeight       = "h-8 sm:h-12"
+  logoHeightPx     = 0
   showCTAOnMobile  = false
   showCTAOnDesktop = true
   CTAText          = "Get a Free Quote"
