@@ -1,0 +1,27 @@
+{{- /*
+  Expose a stable brand color via CSS variables.
+
+  - Tailwind family → uses Tailwind v4 color vars (e.g. --color-blue-600)
+  - CSS color (hex/rgb/var(...)) → uses the literal value from config
+
+  Used by CSS-only classes:
+    .cp-brand-link / .cp-brand-hover / .cp-brand-btn / .cp-focus-brand
+*/ -}}
+
+{{- $brand := partial "theme/brand.html" . | transform.Unmarshal -}}
+{{- $kind := index $brand "kind" -}}
+{{- $fam  := index $brand "tailwind" -}}
+{{- $css  := index $brand "css" -}}
+
+<style id="cp-brand-vars">
+  :root{
+    {{- if eq $kind "tailwind" -}}
+      --cp-brand: var(--color-{{ $fam }}-600);
+      --cp-brand-hover: var(--color-{{ $fam }}-700);
+    {{- else -}}
+      --cp-brand: {{ $css }};
+      --cp-brand-hover: color-mix(in oklab, var(--cp-brand), black 12%);
+    {{- end -}}
+    --cp-brand-ring: color-mix(in oklab, var(--cp-brand), transparent 70%);
+  }
+</style>

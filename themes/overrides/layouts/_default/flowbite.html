@@ -1,8 +1,8 @@
 {{/* themes/overrides/layouts/_default/flowbite.html */}}
 <!DOCTYPE html>
 {{/* Compute lightweight bg class hints for <html> so we can mirror color-picker behavior without JS maps */}}
-{{- $lightParam := lower (or .Site.Params.lightBackground "gray-200") -}}
-{{- $darkParam  := lower (or .Site.Params.darkBackground  "zinc-900") -}}
+{{- $lightParam := strings.TrimSpace (lower (or .Site.Params.lightBackground "gray-200")) -}}
+{{- $darkParam  := strings.TrimSpace (lower (or .Site.Params.darkBackground  "zinc-900")) -}}
 {{- /* strip any prefixes */ -}}
 {{- if strings.HasPrefix $lightParam "dark:bg-" -}}{{- $lightParam = replace $lightParam "dark:bg-" "" -}}{{- end -}}
 {{- if strings.HasPrefix $lightParam "bg-" -}}{{- $lightParam = replace $lightParam "bg-" "" -}}{{- end -}}
@@ -11,6 +11,14 @@
 {{- /* normalize to plain bg-* classes usable on <html> itself */ -}}
 {{- $htmlLight := cond (eq $lightParam "white") "bg-white" (printf "bg-%s" $lightParam) -}}
 {{- $htmlDark  := cond (eq $darkParam  "black") "bg-black" (printf "bg-%s"  $darkParam)  -}}
+
+{{- /* If light/dark background isn't a Tailwind token, fall back to palette vars */ -}}
+{{- $lightLooksTailwind := or (eq $lightParam "white") (eq $lightParam "black") (findRE "^[a-z]+-[0-9]{2,3}$" $lightParam) -}}
+{{- $darkLooksTailwind  := or (eq $darkParam  "white") (eq $darkParam  "black") (findRE "^[a-z]+-[0-9]{2,3}$" $darkParam) -}}
+{{- if or (not $lightLooksTailwind) (not $darkLooksTailwind) -}}
+  {{- $htmlLight = "bg-[color:var(--cp-body-bg)]" -}}
+  {{- $htmlDark  = $htmlLight -}}
+{{- end -}}
 
 {{- /* Theme storage keys are per-site to avoid cross-site bleeding when using the same browser */ -}}
 {{- $defaultTheme := (site.Params.defaultTheme | default "auto") -}}
@@ -38,7 +46,12 @@
   {{- $siteId = urlize site.Title -}}
 {{- end -}}
 
-<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-site="{{ $siteId }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-default-theme="{{ $defaultTheme }}" data-theme-storage-key="{{ $themeStorageKey }}" data-theme-recovered-key="{{ $themeRecoveredKey }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
+{{- $brand := partial "theme/brand.html" . | transform.Unmarshal -}}
+{{- $htmlBrandClass := "" -}}
+{{- if eq (index $brand "kind") "tailwind" -}}
+  {{- $htmlBrandClass = index $brand "tailwind" -}}
+{{- end -}}
+<html class="{{ $htmlBrandClass | default "" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-site="{{ $siteId }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-default-theme="{{ $defaultTheme }}" data-theme-storage-key="{{ $themeStorageKey }}" data-theme-recovered-key="{{ $themeRecoveredKey }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -124,7 +137,9 @@
   {{/* Config-driven brand color overrides (buttons/links) */}}
   {{ partial "brand-colors.html" . }}
 
-  {{/* Config-driven card border color (used by border-[color:var(--cp-card-border)]) */}}
+  {{/* Config-driven palette + brand + card border vars */}}
+  {{ partial "theme/palette-vars.html" . }}
+  {{ partial "theme/brand-vars.html" . }}
   {{ partial "theme/card-border-vars.html" . }}
 
   {{/* Colored tag badges CSS */}}

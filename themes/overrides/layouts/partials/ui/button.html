@@ -11,8 +11,10 @@
 {{- $text    := .text    | default "Button" -}}
 {{- $href    := .href    | default "" -}}
 {{- $site    := .Site | default .Page.Site -}}
-{{- $brand   := lower (or $site.Params.primaryColor "blue") -}}
-{{- $defaultClass := printf "bg-%s-600 hover:bg-%s-700 focus:ring-%s-300 text-white" $brand $brand $brand -}}
+{{- $brandInfo := partial "theme/brand.html" $site | transform.Unmarshal -}}
+{{- $isCSS := eq (index $brandInfo "kind") "css" -}}
+{{- $brand   := index $brandInfo "tailwind" | default (lower (or $site.Params.primaryColor "blue")) -}}
+{{- $defaultClass := cond $isCSS "cp-brand-btn" (printf "bg-%s-600 hover:bg-%s-700 focus:ring-%s-300 text-white" $brand $brand $brand) -}}
 {{- $classes := .classes | default $defaultClass -}}
 {{- $isSubmit:= .isSubmit | default false -}}
 {{- $form    := .form    | default "" -}}
@@ -22,5 +24,5 @@
           class="not-prose no-underline inline-flex items-center {{ $classes }}">{{ $text }}</button>
 {{- else -}}
   <a href="{{ cond (ne $href "") $href "#" }}"
-     class="not-prose no-underline inline-flex items-center {{ $classes }}">{{ $text }}</a>
+    class="not-prose no-underline inline-flex items-center {{ $classes }}">{{ $text }}</a>
 {{- end -}}

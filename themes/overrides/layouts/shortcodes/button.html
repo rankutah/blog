@@ -29,7 +29,9 @@
 {{- /* classes + color map (unchanged) */ -}}
 {{- $pageClasses := .Get "classes" | default "" -}}
 {{- $siteClasses := $page.Site.Params.button.classes | default "" -}}
-{{- $siteColor   := lower ($page.Site.Params.primaryColor | default "blue") -}}
+{{- $brandInfo := partial "theme/brand.html" $page | transform.Unmarshal -}}
+{{- $isCSS := eq (index $brandInfo "kind") "css" -}}
+{{- $siteColor   := index $brandInfo "tailwind" | default (lower ($page.Site.Params.primaryColor | default "blue")) -}}
 
 {{- $solid := dict
   "red"      "text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
@@ -56,7 +58,10 @@
   "stone"    "text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
 -}}
 
-{{- $fallback := index $solid $siteColor | default (index $solid "blue") -}}
+{{- $fallback := cond $isCSS
+  "cp-brand-btn focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+  (index $solid $siteColor | default (index $solid "blue"))
+-}}
 {{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
 {{- $classes = printf "%s inline-flex items-center" $classes -}} {{/* align icon + text */}}
 

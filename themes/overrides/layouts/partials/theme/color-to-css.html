@@ -1,0 +1,51 @@
+{{- /*
+  Convert a theme config value into a CSS color expression.
+
+  Input (dict):
+    value: string
+
+  Behavior:
+    - CSS colors passthrough: #..., rgb(), hsl(), oklch(), var(), etc.
+    - "white"/"black" → hex for consistency
+    - Tailwind token like "orange-50" → var(--color-orange-50) (Tailwind v4)
+    - Strips prefixes: dark:, dark:bg-, bg-, text-, border-
+*/ -}}
+
+{{- $v := trim (printf "%v" .value) " \n\r\t" -}}
+{{- $l := lower $v -}}
+
+{{- if or
+  (strings.HasPrefix $l "#")
+  (strings.HasPrefix $l "rgb(")
+  (strings.HasPrefix $l "rgba(")
+  (strings.HasPrefix $l "hsl(")
+  (strings.HasPrefix $l "hsla(")
+  (strings.HasPrefix $l "oklch(")
+  (strings.HasPrefix $l "oklab(")
+  (strings.HasPrefix $l "lab(")
+  (strings.HasPrefix $l "lch(")
+  (strings.HasPrefix $l "color(")
+  (strings.HasPrefix $l "var(")
+  (eq $l "transparent")
+  (eq $l "currentcolor")
+-}}
+{{- $v -}}
+{{- else -}}
+  {{- $norm := $l -}}
+  {{- if strings.HasPrefix $norm "dark:" -}}{{- $norm = replace $norm "dark:" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "dark:bg-" -}}{{- $norm = replace $norm "dark:bg-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "bg-" -}}{{- $norm = replace $norm "bg-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "text-" -}}{{- $norm = replace $norm "text-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "border-" -}}{{- $norm = replace $norm "border-" "" -}}{{- end -}}
+
+  {{- if eq $norm "white" -}}
+    #ffffff
+  {{- else if eq $norm "black" -}}
+    #000000
+  {{- else if findRE "^[a-z]+-[0-9]{2,3}$" $norm -}}
+    {{- printf "var(--color-%s)" $norm -}}
+  {{- else -}}
+    {{- /* Fallback: allow named CSS colors and other expressions */ -}}
+    {{- $v -}}
+  {{- end -}}
+{{- end -}}

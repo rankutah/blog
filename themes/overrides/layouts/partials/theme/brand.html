@@ -1,0 +1,77 @@
+{{/*
+  Resolve site brand color from config.
+
+  Supports:
+    [params]
+      primaryColor = "blue"       # Tailwind color family (current behavior)
+      primaryColor = "blue-600"   # Tailwind token w/ shade (family inferred)
+      primaryColor = "bg-blue-600" / "text-blue-600" / "dark:bg-blue-600" (prefixes stripped)
+      primaryColor = "#1d4ed8"    # CSS color (hex)
+      primaryColor = "rgb(29 78 216)" / "hsl(...)" / "oklch(...)" / "var(--my-brand)" (CSS color)
+
+  Returns dict:
+    kind     : "tailwind" | "css"
+    tailwind : normalized Tailwind color family (e.g. "blue") when kind=tailwind
+    css      : original CSS color string when kind=css
+*/}}
+
+{{- $raw := or .Site.Params.primaryColor "blue" -}}
+{{- $val := trim (printf "%v" $raw) " \n\r\t" -}}
+{{- $lower := lower $val -}}
+
+{{- $colors := slice
+  "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky"
+  "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray"
+  "zinc" "neutral" "stone"
+-}}
+
+{{- $isCSS := false -}}
+{{- if or
+  (strings.HasPrefix $lower "#")
+  (strings.HasPrefix $lower "rgb(")
+  (strings.HasPrefix $lower "rgba(")
+  (strings.HasPrefix $lower "hsl(")
+  (strings.HasPrefix $lower "hsla(")
+  (strings.HasPrefix $lower "oklch(")
+  (strings.HasPrefix $lower "oklab(")
+  (strings.HasPrefix $lower "lab(")
+  (strings.HasPrefix $lower "lch(")
+  (strings.HasPrefix $lower "color(")
+  (strings.HasPrefix $lower "var(")
+  (strings.HasPrefix $lower "currentcolor")
+  (strings.HasPrefix $lower "transparent")
+-}}
+  {{- $isCSS = true -}}
+{{- end -}}
+
+{{- $norm := $lower -}}
+{{- if not $isCSS -}}
+  {{- /* strip common Tailwind prefixes */ -}}
+  {{- if strings.HasPrefix $norm "dark:" -}}{{- $norm = replace $norm "dark:" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "dark:bg-" -}}{{- $norm = replace $norm "dark:bg-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "bg-" -}}{{- $norm = replace $norm "bg-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "text-" -}}{{- $norm = replace $norm "text-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "border-" -}}{{- $norm = replace $norm "border-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "ring-" -}}{{- $norm = replace $norm "ring-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "fill-" -}}{{- $norm = replace $norm "fill-" "" -}}{{- end -}}
+  {{- if strings.HasPrefix $norm "stroke-" -}}{{- $norm = replace $norm "stroke-" "" -}}{{- end -}}
+{{- end -}}
+
+{{- $family := $norm -}}
+{{- if and (not $isCSS) (in $family "-") -}}
+  {{- $family = index (split $family "-") 0 -}}
+{{- end -}}
+
+{{- if not $isCSS -}}
+  {{- $valid := false -}}
+  {{- range $colors }}{{- if eq . $family }}{{- $valid = true -}}{{- end -}}{{- end -}}
+  {{- if not $valid -}}
+    {{- $isCSS = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $out := cond $isCSS
+  (dict "kind" "css" "tailwind" "" "css" $val)
+  (dict "kind" "tailwind" "tailwind" $family "css" "")
+-}}
+{{- $out | jsonify -}}

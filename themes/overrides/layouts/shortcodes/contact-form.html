@@ -77,7 +77,9 @@
 {{- $consentText := .Get "consentText" | default "I agree to receive emails and SMS from Clear Presence about my request. Message & data rates may apply. Reply STOP to opt out of SMS, HELP for help. See" -}}
 {{- $privacyURL := or .Page.Site.Params.privacyURL "/privacy" -}}
 
-{{- $brand := lower (or $page.Site.Params.primaryColor "blue") -}}
+{{- $brandInfo := partial "theme/brand.html" $page | transform.Unmarshal -}}
+{{- $isCSS := eq (index $brandInfo "kind") "css" -}}
+{{- $brand := index $brandInfo "tailwind" | default (lower (or $page.Site.Params.primaryColor "blue")) -}}
 {{- $focus := dict
   "red"      "focus:ring-red-500 focus:border-red-500 dark:focus:ring-red-500 dark:focus:border-red-500"
   "orange"   "focus:ring-orange-500 focus:border-orange-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
@@ -102,7 +104,7 @@
   "neutral"  "focus:ring-neutral-500 focus:border-neutral-500 dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
   "stone"    "focus:ring-stone-500 focus:border-stone-500 dark:focus:ring-stone-500 dark:focus:border-stone-500"
 -}}
-{{- $focusCls := index $focus $brand | default (index $focus "blue") -}}
+{{- $focusCls := cond $isCSS "cp-focus-brand" (index $focus $brand | default (index $focus "blue")) -}}
 {{/*
   Base input classes.
   Removed Tailwind text/placeholder utility colors (text-gray-900, dark:text-gray-100, placeholder-*, etc.)

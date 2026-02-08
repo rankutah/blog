@@ -24,7 +24,9 @@
 
 {{- if (not site.Params.disableScrollToTop) }}
 {{- /* Map primaryColor to purge-safe Tailwind classes for the scroll-to-top button */ -}}
-{{- $brand := lower (or .Site.Params.primaryColor "blue") -}}
+{{- $brandInfo := partial "theme/brand.html" . | transform.Unmarshal -}}
+{{- $isCSS := eq (index $brandInfo "kind") "css" -}}
+{{- $brand := index $brandInfo "tailwind" | default (lower (or .Site.Params.primaryColor "blue")) -}}
 {{- $bg := dict
     "red"      "bg-red-600"
     "orange"   "bg-orange-600"
@@ -58,7 +60,7 @@
     "neutral"  "text-white"
     "stone"    "text-white"
  -}}
-{{- $bgCls := (index $bg $brand) | default "bg-blue-600" -}}
+{{- $bgCls := cond $isCSS "cp-brand-btn" ((index $bg $brand) | default "bg-blue-600") -}}
 {{- $textCls := (index $text $brand) | default "text-white" -}}
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link {{ $bgCls }} {{ $textCls }}" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -112,6 +112,36 @@ html[data-motion-skip="true"] [data-motion] {
   line-height: 1.15 !important;
 }
 
+/* Brand color helpers (supports config-driven hex/CSS colors) */
+.cp-brand-link {
+  color: var(--cp-brand);
+}
+.cp-brand-link:hover {
+  color: var(--cp-brand-hover);
+}
+.cp-brand-hover:hover {
+  color: var(--cp-brand);
+}
+
+.cp-brand-btn {
+  background-color: var(--cp-brand);
+  color: #ffffff;
+}
+.cp-brand-btn:hover {
+  background-color: var(--cp-brand-hover);
+}
+.cp-brand-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--cp-brand-ring);
+}
+
+.cp-focus-brand:focus,
+.cp-focus-brand:focus-visible {
+  outline: none;
+  border-color: var(--cp-brand);
+  box-shadow: 0 0 0 4px var(--cp-brand-ring);
+}
+
 /* Prevent accidental horizontal scroll (sitewide)
    Some full-bleed patterns use 100vw + negative margins and can create a 1–2px horizontal overflow.
 */
@@ -152,6 +182,11 @@ body {
 nav .brand-link {
   font-size: clamp(1rem, 0.95rem + 0.4vw, 1.35rem);
   line-height: 1.25;
+}
+
+/* Ensure navbar hover brand class wins over inherited colors */
+nav .cp-brand-hover:hover {
+  color: var(--cp-brand);
 }
 
 /* Wider navbar container

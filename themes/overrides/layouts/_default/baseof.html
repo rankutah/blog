@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {{/* Compute lightweight bg class hints for <html> so theme bootstrap can mirror color-picker behavior */}}
-{{- $lightParam := lower (or .Site.Params.lightBackground "gray-200") -}}
-{{- $darkParam  := lower (or .Site.Params.darkBackground  "zinc-900") -}}
+{{- $lightParam := strings.TrimSpace (lower (or .Site.Params.lightBackground "gray-200")) -}}
+{{- $darkParam  := strings.TrimSpace (lower (or .Site.Params.darkBackground  "zinc-900")) -}}
 {{- /* strip any prefixes */ -}}
 {{- if strings.HasPrefix $lightParam "dark:bg-" -}}{{- $lightParam = replace $lightParam "dark:bg-" "" -}}{{- end -}}
 {{- if strings.HasPrefix $lightParam "bg-" -}}{{- $lightParam = replace $lightParam "bg-" "" -}}{{- end -}}
@@ -11,9 +11,24 @@
 {{- $htmlLight := cond (eq $lightParam "white") "bg-white" (printf "bg-%s" $lightParam) -}}
 {{- $htmlDark  := cond (eq $darkParam  "black") "bg-black" (printf "bg-%s"  $darkParam)  -}}
 
-<html class="{{ .Site.Params.primaryColor | default "rose" }}" lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
+{{- /* If light/dark background isn't a Tailwind token, fall back to palette vars */ -}}
+{{- $lightLooksTailwind := or (eq $lightParam "white") (eq $lightParam "black") (findRE "^[a-z]+-[0-9]{2,3}$" $lightParam) -}}
+{{- $darkLooksTailwind  := or (eq $darkParam  "white") (eq $darkParam  "black") (findRE "^[a-z]+-[0-9]{2,3}$" $darkParam) -}}
+{{- if or (not $lightLooksTailwind) (not $darkLooksTailwind) -}}
+	{{- $htmlLight = "bg-[color:var(--cp-body-bg)]" -}}
+	{{- $htmlDark  = $htmlLight -}}
+{{- end -}}
+
+{{- $brand := partial "theme/brand.html" . | transform.Unmarshal -}}
+{{- $htmlBrandClass := "" -}}
+{{- if eq (index $brand "kind") "tailwind" -}}
+  {{- $htmlBrandClass = index $brand "tailwind" -}}
+{{- end -}}
+<html class="{{ $htmlBrandClass | default "" }}" lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
 	<head>
 		{{- partial "head.html" . -}}
+		{{- partial "theme/palette-vars.html" . -}}
+		{{- partial "theme/brand-vars.html" . -}}
 		{{- partial "theme/card-border-vars.html" . -}}
 	</head>
 	<body id="top" class="min-h-screen flex flex-col {{ if eq site.Params.defaultTheme `dark` }}dark{{ end }}">

@@ -1,0 +1,54 @@
+{{- /*
+  Palette CSS variables (supports Tailwind tokens OR CSS colors).
+
+  Params supported:
+    lightBackground     = "orange-50" | "white" | "#fff" | "rgb(...)" | "var(--x)"
+    darkBackground      = "slate-950" | "black" | "#000" | ...
+    cardBackground      = "orange-100" | "white" | "#fff" | ...
+    cardBackgroundDark  = "slate-800" | "black" | "#000" | ...
+
+  Exposes:
+    --cp-body-bg
+    --cp-card-bg
+*/ -}}
+
+{{- $primaryRaw := strings.TrimSpace (lower (or .Site.Params.primaryColor "blue")) -}}
+
+{{- $colors := slice
+  "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky"
+  "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray"
+  "zinc" "neutral" "stone"
+-}}
+
+{{- /* Only use primaryColor for default light bg if it looks like a Tailwind family/token. */ -}}
+{{- $primaryNorm := $primaryRaw -}}
+{{- if strings.HasPrefix $primaryNorm "bg-" -}}{{- $primaryNorm = replace $primaryNorm "bg-" "" -}}{{- end -}}
+{{- if strings.HasPrefix $primaryNorm "text-" -}}{{- $primaryNorm = replace $primaryNorm "text-" "" -}}{{- end -}}
+{{- if strings.HasPrefix $primaryNorm "border-" -}}{{- $primaryNorm = replace $primaryNorm "border-" "" -}}{{- end -}}
+{{- $primaryFamily := $primaryNorm -}}
+{{- if findRE "^[a-z]+-[0-9]{2,3}$" $primaryNorm -}}
+  {{- $primaryFamily = replaceRE "-[0-9]{2,3}$" "" $primaryNorm -}}
+{{- end -}}
+
+{{- $primaryFamilyValid := false -}}
+{{- range $colors -}}
+  {{- if eq . $primaryFamily -}}{{- $primaryFamilyValid = true -}}{{- end -}}
+{{- end -}}
+{{- $primaryLooksTailwind := $primaryFamilyValid -}}
+
+{{- $defaultLight := cond $primaryLooksTailwind (print $primaryFamily "-100") "blue-100" -}}
+
+{{- $lightRaw := strings.TrimSpace (lower (or .Site.Params.lightBackground $defaultLight)) -}}
+{{- $darkRaw  := strings.TrimSpace (lower (or .Site.Params.darkBackground  "zinc-900")) -}}
+{{- $cardLightRaw := strings.TrimSpace (lower (or .Site.Params.cardBackground "white")) -}}
+{{- $cardDarkRaw  := strings.TrimSpace (lower (or .Site.Params.cardBackgroundDark "zinc-900")) -}}
+
+{{- $lightCSS := partial "theme/color-to-css.html" (dict "value" $lightRaw) -}}
+{{- $darkCSS  := partial "theme/color-to-css.html" (dict "value" $darkRaw) -}}
+{{- $cardLightCSS := partial "theme/color-to-css.html" (dict "value" $cardLightRaw) -}}
+{{- $cardDarkCSS  := partial "theme/color-to-css.html" (dict "value" $cardDarkRaw) -}}
+
+<style id="cp-palette-vars">
+  :root{--cp-body-bg:{{ $lightCSS }};--cp-card-bg:{{ $cardLightCSS }};}
+  :where(.dark,[data-theme=dark]){--cp-body-bg:{{ $darkCSS }};--cp-card-bg:{{ $cardDarkCSS }};}
+</style>

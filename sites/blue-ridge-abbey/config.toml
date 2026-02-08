@@ -100,7 +100,7 @@ uglyURLs = false
 [params.header]
   stickyMobile = true
   stickyDesktop = true
-  CTAText = "Book Today"
+  CTAText = "Book Now"
   CTAURL  = "https://secure.thinkreservations.com/blueridgeabbey/reservations"
   showPhoneOnMobile = false
   phoneNumber = "385-323-8130"
@@ -133,11 +133,6 @@ uglyURLs = false
   # minh   = "screen"
 
 [menu]
-
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 5
 
   [[menu.main]]
     name = "Rooms"

@@ -19,14 +19,36 @@ Usage:
 */}}
 
 {{- $primary  := lower (or .Site.Params.primaryColor "blue") -}}
-{{- $lightRaw := lower (or .Site.Params.lightBackground (print $primary "-100")) -}}
-{{- $darkRaw  := lower (or .Site.Params.darkBackground  "zinc-900") -}}
+{{- $lightRaw := strings.TrimSpace (lower (or .Site.Params.lightBackground (print $primary "-100"))) -}}
+{{- $darkRaw  := strings.TrimSpace (lower (or .Site.Params.darkBackground  "zinc-900")) -}}
 
 {{- $colors := slice
   "red" "orange" "amber" "yellow" "lime" "green" "emerald" "teal" "cyan" "sky"
   "blue" "indigo" "violet" "purple" "fuchsia" "pink" "rose" "slate" "gray"
   "zinc" "neutral" "stone"
 -}}
+
+{{/* Decide whether to use palette vars for body backgrounds (for CSS/hex/named colors). */}}
+{{- $scr := newScratch -}}
+{{- $scr.Set "checkL" $lightRaw -}}
+{{- if strings.HasPrefix ($scr.Get "checkL") "dark:bg-" -}}{{- $scr.Set "checkL" (replace ($scr.Get "checkL") "dark:bg-" "") -}}{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "checkL") "bg-" -}}{{- $scr.Set "checkL" (replace ($scr.Get "checkL") "bg-" "") -}}{{- end -}}
+{{- $scr.Set "checkD" $darkRaw -}}
+{{- if strings.HasPrefix ($scr.Get "checkD") "dark:bg-" -}}{{- $scr.Set "checkD" (replace ($scr.Get "checkD") "dark:bg-" "") -}}{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "checkD") "bg-" -}}{{- $scr.Set "checkD" (replace ($scr.Get "checkD") "bg-" "") -}}{{- end -}}
+{{- $checkL := $scr.Get "checkL" -}}
+{{- $checkD := $scr.Get "checkD" -}}
+{{- $famL := index (split $checkL "-") 0 -}}
+{{- $famD := index (split $checkD "-") 0 -}}
+{{- $famValidL := false -}}
+{{- $famValidD := false -}}
+{{- range $colors -}}
+  {{- if eq . $famL -}}{{- $famValidL = true -}}{{- end -}}
+  {{- if eq . $famD -}}{{- $famValidD = true -}}{{- end -}}
+{{- end -}}
+{{- $isTailwindBgL := or (eq $checkL "white") (eq $checkL "black") $famValidL -}}
+{{- $isTailwindBgD := or (eq $checkD "white") (eq $checkD "black") $famValidD -}}
+{{- $useBodyVars := or (not $isTailwindBgL) (not $isTailwindBgD) -}}
 
 {{/* ---------- LIGHT MAP: shades 50|100|200 for ALL colors (literal classes → purge-safe) ---------- */}}
 {{- $L := dict
@@ -81,7 +103,6 @@ Usage:
 -}}
 
 {{/* --- Normalization helpers */}}
-{{- $scr := newScratch -}}
 
 {{/* normalize light */}}
 {{- $scr.Set "normL" $lightRaw -}}
@@ -119,9 +140,35 @@ Usage:
 {{- if not (or (eq $ds "800") (eq $ds "900") (eq $ds "950")) }}{{ $ds = "900" }}{{ end -}}
 {{- $darkBg := cond $isBlack "dark:bg-black" (index (index $D $dc) $ds | default "dark:bg-zinc-900") -}}
 
+{{- if $useBodyVars -}}
+  {{- $lightBg = "bg-[color:var(--cp-body-bg)]" -}}
+  {{- $darkBg = "" -}}
+{{- end -}}
+
 {{/* ---------- CARD SURFACE (NEW) ---------- */}}
-{{- $cardLightRaw := lower (or .Site.Params.cardBackground "white") -}}
-{{- $cardDarkRaw  := lower (or .Site.Params.cardBackgroundDark "zinc-900") -}}
+{{- $cardLightRaw := strings.TrimSpace (lower (or .Site.Params.cardBackground "white")) -}}
+{{- $cardDarkRaw  := strings.TrimSpace (lower (or .Site.Params.cardBackgroundDark "zinc-900")) -}}
+
+{{/* Decide whether to use palette vars for card backgrounds */}}
+{{- $scr.Set "checkCL" $cardLightRaw -}}
+{{- if strings.HasPrefix ($scr.Get "checkCL") "dark:bg-" -}}{{- $scr.Set "checkCL" (replace ($scr.Get "checkCL") "dark:bg-" "") -}}{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "checkCL") "bg-" -}}{{- $scr.Set "checkCL" (replace ($scr.Get "checkCL") "bg-" "") -}}{{- end -}}
+{{- $scr.Set "checkCD" $cardDarkRaw -}}
+{{- if strings.HasPrefix ($scr.Get "checkCD") "dark:bg-" -}}{{- $scr.Set "checkCD" (replace ($scr.Get "checkCD") "dark:bg-" "") -}}{{- end -}}
+{{- if strings.HasPrefix ($scr.Get "checkCD") "bg-" -}}{{- $scr.Set "checkCD" (replace ($scr.Get "checkCD") "bg-" "") -}}{{- end -}}
+{{- $checkCL := $scr.Get "checkCL" -}}
+{{- $checkCD := $scr.Get "checkCD" -}}
+{{- $famCL := index (split $checkCL "-") 0 -}}
+{{- $famCD := index (split $checkCD "-") 0 -}}
+{{- $famValidCL := false -}}
+{{- $famValidCD := false -}}
+{{- range $colors -}}
+  {{- if eq . $famCL -}}{{- $famValidCL = true -}}{{- end -}}
+  {{- if eq . $famCD -}}{{- $famValidCD = true -}}{{- end -}}
+{{- end -}}
+{{- $isTailwindCardL := or (eq $checkCL "white") (eq $checkCL "black") $famValidCL -}}
+{{- $isTailwindCardD := or (eq $checkCD "white") (eq $checkCD "black") $famValidCD -}}
+{{- $useCardVars := or (not $isTailwindCardL) (not $isTailwindCardD) -}}
 
 {{/* card light normalize */}}
 {{- $scr.Set "normCL" $cardLightRaw -}}
@@ -158,6 +205,11 @@ Usage:
 {{- if not $cdValid }}{{ $cdc = "zinc" }}{{ end -}}
 {{- if not (or (eq $cds "800") (eq $cds "900") (eq $cds "950")) }}{{ $cds = "900" }}{{ end -}}
 {{- $cardDarkBg := cond $cdIsBlack "dark:bg-black" (index (index $D $cdc) $cds | default "dark:bg-zinc-900") -}}
+
+{{- if $useCardVars -}}
+  {{- $cardLightBg = "bg-[color:var(--cp-card-bg)]" -}}
+  {{- $cardDarkBg = "" -}}
+{{- end -}}
 
 {{/* card border colors (normalize without "border-" prefix) */}}
 {{- $blRaw := lower (or .Site.Params.cardBorderLight "gray-200") -}}

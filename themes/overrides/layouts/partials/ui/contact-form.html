@@ -36,7 +36,9 @@
 {{- $honeypot := .honeypot | default "" -}}
 
 {{/* Brand → purge-safe focus classes */}}
-{{- $brand := lower (or $page.Site.Params.primaryColor "blue") -}}
+{{- $brandInfo := partial "theme/brand.html" $page | transform.Unmarshal -}}
+{{- $isCSS := eq (index $brandInfo "kind") "css" -}}
+{{- $brand := index $brandInfo "tailwind" | default (lower (or $page.Site.Params.primaryColor "blue")) -}}
 {{- $focus := dict
   "red"      "focus:ring-red-500 focus:border-red-500 dark:focus:ring-red-500 dark:focus:border-red-500"
   "orange"   "focus:ring-orange-500 focus:border-orange-500 dark:focus:ring-orange-500 dark:focus:border-orange-500"
@@ -61,7 +63,7 @@
   "neutral"  "focus:ring-neutral-500 focus:border-neutral-500 dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
   "stone"    "focus:ring-stone-500 focus:border-stone-500 dark:focus:ring-stone-500 dark:focus:border-stone-500"
 -}}
-{{- $focusCls := index $focus $brand | default (index $focus "blue") -}}
+{{- $focusCls := cond $isCSS "cp-focus-brand" (index $focus $brand | default (index $focus "blue")) -}}
 
 {{- /* Palette-driven field styling (inputs only) */ -}}
 {{- $pal := partial "theme/palette.html" $page -}}

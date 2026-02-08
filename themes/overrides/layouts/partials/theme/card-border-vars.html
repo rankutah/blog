@@ -1,11 +1,13 @@
 {{- /* Card border color variables (driven by site params).
       Used by the stable utility class: border-[color:var(--cp-card-border)].
-      Tailwind colors are exposed as CSS variables in v4 (e.g. --color-gray-900). */ -}}
-{{- $cbLight := lower (or site.Params.cardBorderLight "gray-200") -}}
-{{- $cbDark  := lower (or site.Params.cardBorderDark  "gray-700") -}}
-{{- if strings.HasPrefix $cbLight "border-" -}}{{- $cbLight = replace $cbLight "border-" "" -}}{{- end -}}
-{{- if strings.HasPrefix $cbDark  "border-" -}}{{- $cbDark  = replace $cbDark  "border-" "" -}}{{- end -}}
+      Supports Tailwind tokens OR literal CSS colors (hex/rgb/hsl/var). */ -}}
+
+{{- $cbLightRaw := strings.TrimSpace (lower (or site.Params.cardBorderLight "gray-200")) -}}
+{{- $cbDarkRaw  := strings.TrimSpace (lower (or site.Params.cardBorderDark  "gray-700")) -}}
+{{- $cbLightCSS := partial "theme/color-to-css.html" (dict "value" $cbLightRaw) -}}
+{{- $cbDarkCSS  := partial "theme/color-to-css.html" (dict "value" $cbDarkRaw) -}}
+
 <style id="cp-card-border-vars">
-  :root{--cp-card-border:var(--color-{{ $cbLight }});}
-  :where(.dark,[data-theme=dark]){--cp-card-border:var(--color-{{ $cbDark }});}
+  :root{--cp-card-border:{{ $cbLightCSS }};}
+  :where(.dark,[data-theme=dark]){--cp-card-border:{{ $cbDarkCSS }};}
 </style>
