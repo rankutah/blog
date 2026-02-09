@@ -47,12 +47,11 @@ Usage:
       [data-lazy-vimeo-wrapper]{left:calc(50% - 50svw);width:100svw;max-width:100svw;}
     }
     [data-lazy-vimeo-target]{position:relative!important;}
+    /* Override Tailwind Typography (.prose) media margins that create a visible top gap */
+    [data-lazy-vimeo-target] picture{margin:0!important;}
     [data-lazy-vimeo-target] picture,[data-lazy-vimeo-target] picture img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;}
     [data-lazy-vimeo-overlay]{position:absolute!important;inset:0!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;}
-    /* Prevent navbar from overlapping hero text (let video tuck slightly under) */
-    @media (max-width:640px){
-      [data-lazy-vimeo-overlay]{padding-top:var(--nav-h);} /* keep headings below nav */
-    }
+    /* Navbar is `position: sticky` (in-flow), so extra top padding reads as a gap. */
     /* Responsive hero heights: use defaults only when no explicit minh provided */
     {{ if not $minh }}
     @media (max-width: 640px){

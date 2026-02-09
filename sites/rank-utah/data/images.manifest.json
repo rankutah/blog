@@ -5523,6 +5523,96 @@
       ]
     }
   },
+  "/media/utah-outline.jpg": {
+    "width": 650,
+    "height": 359,
+    "aspect": 1.8105849582172702,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAH/xAApEAABBAEDAwEJAAAAAAAAAAABAAIDEQQFMUESISJxFBUjMlFhkaHB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQUAAgP/xAAeEQACAgEFAQAAAAAAAAAAAAAAAQISAxETIjEyNP/aAAwDAQACEQMRAD8ArDTwSAKspjdMaexIB9VNZky7l7jXDeE9ue9gsySURQukVlv0yVSNvuwtPi/8puBOyfrjZvH9eVJ1DUsmPFldBJ1U3uRQLfup2g5GRj50hdL4vjv5r6r5/SO05xu2WvpxCXxLi3sTvXqugkvdZJ+IP4hCWBM+e5wZLTiPIDfitlk0gD2p446ChCbYfmkZP0f/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-outline__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-outline__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-outline__w640.avif"
+        },
+        {
+          "w": 650,
+          "url": "/media-deriv/utah-outline__w650.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-outline__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-outline__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-outline__w640.jpg"
+        },
+        {
+          "w": 650,
+          "url": "/media-deriv/utah-outline__w650.jpg"
+        }
+      ]
+    }
+  },
+  "/media/utah-outline.avif": {
+    "width": 650,
+    "height": 359,
+    "aspect": 1.8105849582172702,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAH/xAApEAABBAEDAwEJAAAAAAAAAAABAAIDEQQFMUESISJxFBUjMlFhkaHB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQUAAgP/xAAeEQACAgEFAQAAAAAAAAAAAAAAAQISAxETIjEyNP/aAAwDAQACEQMRAD8ArDTwSAKspjdMaexIB9VNZky7l7jXDeE9ue9gsySURQukVlv0yVSNvuwtPi/8puBOyfrjZvH9eVJ1DUsmPFldBJ1U3uRQLfup2g5GRj50hdL4vjv5r6r5/SO05xu2WvpxCXxLi3sTvXqugkvdZJ+IP4hCWBM+e5wZLTiPIDfitlk0gD2p446ChCbYfmkZP0f/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-outline__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-outline__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-outline__w640.avif"
+        },
+        {
+          "w": 650,
+          "url": "/media-deriv/utah-outline__w650.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/utah-outline__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/utah-outline__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/utah-outline__w640.jpg"
+        },
+        {
+          "w": 650,
+          "url": "/media-deriv/utah-outline__w650.jpg"
+        }
+      ]
+    }
+  },
   "/media/utah-seo-specialist-web-design-expert-profile-picture.jpg": {
     "width": 400,
     "height": 400,
