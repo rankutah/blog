@@ -37,9 +37,9 @@ enableRobotsTXT = true
   # Clean, readable palette that also looks good in dark mode.
   lightBackground     = "#f5f4eb"
   darkBackground      = "slate-950"
-  cardBackground      = "orange-100"
+  cardBackground      = "#e0ddcf"
   cardBackgroundDark  = "slate-800"
-  cardBorderLight     = "orange-200"
+  cardBorderLight     = "#e0ddcf"
   cardBorderDark      = "slate-800"
 
   clientName = "Kandee Myers"
