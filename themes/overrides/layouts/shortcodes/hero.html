@@ -17,6 +17,7 @@
 {{- $overlayShade:= .Get "overlayShade" | default "" -}}
 {{- $overlayPos  := lower (.Get "overlayPos" | default "") -}}
 {{- $imgClasses  := .Get "imgClasses" | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
+{{- $fit         := lower (.Get "fit" | default "") -}}
 {{- $imgStyle    := .Get "imgStyle" | default "" -}}
 {{- $vh          := lower (.Get "vh" | default "") -}}
 {{- $vhHeight    := .Get "vhHeight" | default "" -}}
@@ -45,6 +46,7 @@
   "overlayShade" $overlayShade
   "overlayPos" $overlayPos
   "imgClasses" $imgClasses
+  "fit" $fit
   "imgStyle" $imgStyle
   "vh" $vh
   "vhHeight" $vhHeight

@@ -369,28 +369,15 @@ main#content video {
 /* (Removed) Typography rhythm controls: deleted due to conflicts with FAQs/tables */
 
 /* Compensate for the sticky header so the first page element isn't hidden/too close to the nav */
-/* Default top spacing to clear a sticky header */
+/* Default top spacing. Since the navbar is `position: sticky` (in-flow), content does not need
+   header-height padding to avoid being hidden under it. */
 main#content { padding-top: var(--site-content-pad-top, 4rem); }
 
-/* If the page starts with a full-bleed hero/section, remove the extra padding so the hero sits flush under the nav.
-   Use :has() in supporting browsers for automatic detection; fallback is the manual `.no-top-pad` class on main. */
-@supports selector(:has) {
-  /* If any hero/bleed section exists inside main (even nested in article), remove extra top pad */
-  main#content:has(.hero),
-  main#content:has(.relative > img),
-  main#content:has(.relative > picture) {
-    padding-top: 0 !important;
-    /* Prevent margin-collapsing from first child creating a visible gap */
-    display: flow-root;
-  }
-}
-
-/* Manual override for pages that should start flush under the navbar */
+/* Hero pages: remove extra top padding so the hero starts immediately after the navbar. */
 main#content.no-top-pad {
   padding-top: 0 !important;
+  margin-top: 0 !important;
   display: flow-root; /* stop margin collapse */
-  /* Pull the hero up under the sticky header (header height dynamic via --site-header-h) */
-  margin-top: calc(var(--site-header-h, 64px) * -1) !important;
 }
 /* Also ensure no top margin sneaks in from first children */
 main#content.no-top-pad > article { margin-top: 0 !important; }
@@ -407,12 +394,10 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
   }
 
   /* Hero overlay safety:
-     On flush-hero pages, long hero text can exceed the hero height and overflow upward.
-     Since the navbar is sticky and has higher z-index, that overflow gets hidden "under" the header.
-     Fix: on mobile, top-align the centered overlay and offset it by the measured header height. */
-  main#content.no-top-pad .section.hero .hero-overlay-center {
-    align-items: flex-start !important;
-    padding-top: calc(var(--site-header-h, 64px) + 1rem) !important;
+     If the overlay is tall on mobile, top-align it and keep a safe top padding. */
+  .section.hero .hero-overlay-center {
+    align-items: flex-start;
+    padding-top: 1rem;
     padding-bottom: 1rem;
   }
 }

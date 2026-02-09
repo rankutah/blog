@@ -33,6 +33,23 @@
 {{- $overlayShade:= $p.overlayShade | default "" -}}
 {{- $overlayPos  := lower ($p.overlayPos | default "") -}}
 {{- $imgClasses  := $p.imgClasses | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
+{{- $fitRaw      := lower ($p.fit | default "") -}}
+{{- $fit         := cond (or (eq $fitRaw "contain") (eq $fitRaw "full")) "contain" "cover" -}}
+
+{{- /* Remove any object-fit classes from author-provided classes; `fit` controls cover vs contain. */ -}}
+{{- $imgClassesNoFit := $imgClasses -}}
+{{- $imgTokens := split $imgClassesNoFit " " -}}
+{{- $imgFiltered := slice -}}
+{{- range $imgTokens -}}
+  {{- $tok := . -}}
+  {{- if ne $tok "" -}}
+    {{- $isObjFit := gt (len (findRE `(^|.*:)object-(cover|contain)$` $tok)) 0 -}}
+    {{- if not $isObjFit -}}
+      {{- $imgFiltered = $imgFiltered | append $tok -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $imgClassesNoFit = delimit $imgFiltered " " -}}
 {{- $imgStyle    := $p.imgStyle   | default "" -}}
 {{- $vhMode      := lower ($p.vh | default "") -}}
 {{- $vhHeightRaw := printf "%v" ($p.vhHeight | default "100") -}}
@@ -93,7 +110,7 @@
   {{- $imgStyle = printf "%s; %s" $imgStyle $svhStyle -}}
 {{- end -}}
 {{- $vhDisabled := or (eq $vhMode "none") (or (eq $vhMode "off") (eq $vhMode "auto")) -}}
-{{- if and (eq $vhMode "") (ne $img "") -}}
+{{- if and (eq $vhMode "") (ne $img "") (ne $fit "contain") -}}
   {{- $vhMode = "svh" -}}
 {{- end -}}
 {{- if and (ne $vhMode "") (not $vhDisabled) (ne $img "") -}}
@@ -258,9 +275,10 @@
     {{- $srcFallbackM := (cond (gt (len $jpegM) 0) (index $jpegM (sub (len $jpegM) 1)).url ($imgMobile | safeURL)) -}}
 
     {{- /* Only include a default object-position if author didn't provide one (e.g. object-[75%_50%]). */ -}}
-    {{- $hasObjPos := gt (len (findRE `\bobject-(?:left|right|center|top|bottom|\[[^\]]+\])\b` $imgClasses)) 0 -}}
+    {{- $hasObjPos := gt (len (findRE `\bobject-(?:left|right|center|top|bottom|\[[^\]]+\])\b` $imgClassesNoFit)) 0 -}}
     {{- $objPosClass := cond $hasObjPos "" " object-center" -}}
-    {{- $classes := (printf "object-cover%s not-prose %s" $objPosClass $imgClasses) -}}
+    {{- /* Avoid duplicating object-cover/object-contain in classes; hero object-fit is controlled by `fit`. */ -}}
+    {{- $classes := (printf "object-%s%s not-prose %s" $fit $objPosClass $imgClassesNoFit) -}}
     {{- $fetchpri := "high" -}}
 
     {{- $hasHeightInStyle := and (ne $imgStyle "") (gt (len (findRE `\b[0-9.]+(?:vh|svh|dvh)\b` $imgStyle)) 0) -}}
@@ -300,17 +318,17 @@
 
 {{- if eq $heroImg "" -}}
   {{- /* default single-image manifest rendering */ -}}
-  {{- $hasObjPos := gt (len (findRE `\bobject-(?:left|right|center|top|bottom|\[[^\]]+\])\b` $imgClasses)) 0 -}}
+  {{- $hasObjPos := gt (len (findRE `\bobject-(?:left|right|center|top|bottom|\[[^\]]+\])\b` $imgClassesNoFit)) 0 -}}
   {{- $objPosParam := cond $hasObjPos "custom" "center" -}}
   {{- $heroImg = partial "img.manifest" (dict
       "src" $imgStr
       "alt" $alt
-      "class" (printf "not-prose %s" $imgClasses)
+      "class" (printf "not-prose %s" $imgClassesNoFit)
       "loading" "eager"
       "decoding" "async"
       "sizes" $sizes
       "style" $imgStyle
-      "object" "cover"
+      "object" $fit
       "objectPosition" $objPosParam
     ) -}}
 {{- end -}}

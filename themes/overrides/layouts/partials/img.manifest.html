@@ -77,22 +77,27 @@
   {{- $imgStyle := "" -}}
   {{- /* If used in hero context (absolute inset, w-full h-full), skip aspect-ratio to allow full viewport fill */ -}}
   {{- $isHero := in $class "absolute" | and (in $class "inset-0") | and (in $class "w-full") | and (in $class "h-full") -}}
+  {{- /* For contain + w-full, prefer full-width block layout with natural aspect ratio (no forced viewport height, no shrink-to-fit wrapper). */ -}}
+  {{- $forceBlock := and (eq $object "contain") (in $class "w-full") -}}
   {{- /* Detect explicit height in the provided style (50vh, 100svh, 100dvh, etc.). If present, skip aspect-ratio to avoid the browser computing an oversized width from height. */ -}}
   {{- $hasHeightInStyle := and (ne $style "") (gt (len (findRE `\b[0-9.]+(?:vh|svh|dvh)\b` $style)) 0) -}}
   {{- /* If we have an explicit viewport height or this is a hero, make the picture a block so height applies. */ -}}
-  {{- if or $hasHeightInStyle $isHero -}}
+  {{- if or $hasHeightInStyle $isHero $forceBlock -}}
     {{- /* If the style contains a viewport-height token, move that style to the inner <img> so object-cover crops correctly (matches upstream). */ -}}
     {{- if $hasHeightInStyle -}}
       {{- $imgStyle = $style -}}
       {{- /* ensure picture is still display:block but don't duplicate the height on the picture */ -}}
       {{- $styleAttr = "display:block;" -}}
+    {{- else if $forceBlock -}}
+      {{- /* contain + full width: ensure picture spans container; keep any non-height styles on picture */ -}}
+      {{- $styleAttr = (cond (ne $styleAttr "") (printf "display:block; %s" $styleAttr) "display:block;") -}}
     {{- else -}}
       {{- /* hero without explicit viewport token: keep display:block on picture and any other styles */ -}}
       {{- $styleAttr = (printf "display:block; %s" $styleAttr) -}}
     {{- end -}}
   {{- end -}}
   {{- /* Only add aspect-ratio if we don't have a hero or an explicit height in style (we already prefixed display:block above when needed). */ -}}
-  {{- if and (not $isHero) (not $hasHeightInStyle) $w $h -}}
+  {{- if and (not $isHero) (not $hasHeightInStyle) (not $forceBlock) $w $h -}}
     {{- /* Shrink wrapper to intrinsic width so AR height doesn't use full container width */ -}}
     {{- if eq $styleAttr "" -}}
       {{- $styleAttr = (printf "display:inline-block; aspect-ratio:%v/%v;" $w $h) -}}
@@ -107,7 +112,7 @@
     {{- $imgStyleAttr := $imgStyle -}}
     {{- /* Base64 placeholders bloat HTML and can hurt LCP/TBT; only include for eager images. */ -}}
     {{- if and (eq $loading "eager") $placeholder -}}
-      {{- $ph := printf "background-image:url('%s');background-size:cover;background-position:center;" $placeholder -}}
+      {{- $ph := printf "background-image:url('%s');background-size:%s;background-position:center;" $placeholder $object -}}
       {{- if ne $imgStyleAttr "" -}}
         {{- $imgStyleAttr = printf "%s %s" $ph $imgStyleAttr -}}
       {{- else -}}

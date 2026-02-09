@@ -77,6 +77,22 @@
 {{- $bleedStr   := .Get "bleed" | default "" -}}
 {{- $bleed      := cond (ne $img "") (ne (lower $bleedStr) "false") false -}}
 {{- $imgClasses := .Get "imgClasses" | default "block w-full h-64 md:h-80 lg:h-96 object-cover" -}}
+{{- $fitRaw     := lower (.Get "fit" | default "") -}}
+{{- $fit        := cond (or (eq $fitRaw "contain") (eq $fitRaw "full")) "contain" "cover" -}}
+{{- $imgClassesNoFit := $imgClasses -}}
+{{- $imgTokens := split $imgClassesNoFit " " -}}
+{{- $imgFiltered := slice -}}
+{{- range $imgTokens -}}
+  {{- $tok := . -}}
+  {{- if ne $tok "" -}}
+    {{- $isObjFit := gt (len (findRE `(^|.*:)object-(cover|contain)$` $tok)) 0 -}}
+    {{- if not $isObjFit -}}
+      {{- $imgFiltered = $imgFiltered | append $tok -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $imgClassesNoFit = delimit $imgFiltered " " -}}
+{{- $imgClassesFinal := strings.TrimSpace (printf "%s object-%s" $imgClassesNoFit $fit) -}}
 {{- $imgStyle   := .Get "imgStyle"   | default "" -}}
 {{- $vhMode     := lower (.Get "vh" | default "") -}} {{/* "vh" | "svh" | "dvh" or empty */}}
 {{- /* If author provided a vh-based inline height, append an svh duplicate so it wins on mobile. */ -}}
@@ -244,7 +260,7 @@
   <picture>
     {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
   {{- /* No WebP <source> */ -}}
-  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClassesFinal }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
   </picture>
       {{- if $overlay -}}
         <div class="{{ $overlayWrap }}">
@@ -322,7 +338,7 @@
   <picture>
     {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
   {{- /* No WebP <source> */ -}}
-  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClasses }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClassesFinal }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
   </picture>
         {{- if $overlay -}}
           <div class="{{ $overlayWrap }}">

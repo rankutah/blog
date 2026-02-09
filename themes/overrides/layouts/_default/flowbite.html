@@ -248,7 +248,7 @@
   {{- $hasHeroImage := or (and $hasHeroDict (isset .Params.hero "image")) (isset .Params "heroImage") -}}
   {{- $isHeroPage := or (and .IsHome (not .Params.plainHome) (not $heroDisabled)) (and (isset .Params "hero") (ne $heroVal nil) (not $heroDisabled)) $hasHeroImage (eq .Params.layout "landing") -}}
   {{- $flushHero := default true .Site.Params.header.flushHero -}}
-  <main id="content" class="min-h-screen{{ if and $isHeroPage $flushHero }} no-top-pad{{ end }}" data-bg-sync{{ if and $isHeroPage $flushHero }} style="padding-top:0;margin-top:0"{{ end }}>
+  <main id="content" class="min-h-screen{{ if and $isHeroPage $flushHero }} no-top-pad{{ end }}" data-bg-sync>
         {{- /* Render list pages (sections/taxonomies). Some Hugo setups emit tags pages as Kind "page";
           broaden detection to also catch Type "tags" or URL starting with /tags/. */ -}}
         {{- $isTagsPath := (hasPrefix .RelPermalink "/tags/") -}}
@@ -328,6 +328,7 @@
               "overlay" (or (eq (lower (printf "%v" (index $hero "overlay"))) "true") false)
               "overlayShade" (index $hero "overlayShade")
               "imgClasses" (index $hero "imgClasses")
+              "fit" (index $hero "fit")
               "imgStyle" (index $hero "imgStyle")
               "vh" (index $hero "vh")
               "brighten" (index $hero "brighten")

@@ -26,13 +26,15 @@ image: "/media/hero-image.png"
 
 ## Why I Am Running
 
-I love Utah because it is home to my Mother’s roots and to my hopes for the future. My ancestors immigrated from Denmark in 1847 and settled in Sanpete County, long before Utah became a state. That pioneer spirit still inspires me today.
+My family’s roots reach back to Denmark in 1847, when my ancestors settled in Sanpete County. Their pioneer spirit inspires me. From mountain peaks to red rock canyons, Utah’s beauty is unmatched, with five national parks and over 40 state parks that welcome visitors from across our country. I love Utah — its people, its history, and its promise.
+
+Long before statehood, Utah was strengthening local economies and practicing self-governance. In 1891, local leaders organized communities so both political parties would be represented — not to control outcomes, but to foster civic maturity. That commitment to a two-party system earned Utah statehood in 1896. I know Utah is ready. Ready for leaders to put the people of Utah first. Ready for leaders to be guided by principle, not party. Ready for respectful debate and balanced representation.
 
 From mountain peaks and world-class skiing to red rock canyons nestled in warm southern deserts, alpine lakes including our beloved Great Salt Lake, Utah’s landscapes are unmatched. We are proud stewards of five national parks and more than 40 state parks, offering an extraordinary range of beauty reflecting both natural richness and resilience.
 
 I’m running because I love this state deeply — its people, its history, and its promise.
 
-I believe in the people of Utah — their goodness, their resilience, and their ability to come together when it matters. Utah knows what it means to start over, to build community, and to look out for one another. Utah’s history teaches compassion. It reminds us to welcome newcomers and care for our neighbors — not because it’s easy, but because people matter. As Abraham Lincoln said,
+I believe in the people of Utah — their goodness, resilience, and ability to come together when it matters. Utah knows how to start over, build community, and care for neighbors. As Abraham Lincoln said, “When I do good, I feel good. When I do bad, I feel bad.” That simple truth is lived and practiced here.
 
 > “When I do good, I feel good. When I do bad, I feel bad.”
 
