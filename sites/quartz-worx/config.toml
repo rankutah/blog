@@ -78,8 +78,8 @@ disableKinds = ["taxonomy", "term"]
   title            = "QUARTZ WORX"
   stickyMobile      = true
   stickyDesktop     = true
-  CTAText           = "Contact"
-  CTAURL            = "/contact"
+  CTAText           = "Call (970) 629-1508"
+  CTAURL            = "tel:+19706281508"
   showPhoneOnMobile = true
   phoneNumber       = "(970) 628-1508"
 
