@@ -519,6 +519,7 @@
       document.querySelectorAll('[data-accordion]').forEach(acc=>{
         const mode = (acc.getAttribute('data-accordion')||'').toLowerCase();
         const alwaysOpen = mode === 'open'; // Flowbite: "open" allows multiple; others collapse
+        const isFaqAccordion = acc && acc.id === 'accordion-collapse';
         const buttons = Array.from(acc.querySelectorAll('[data-accordion-target]'));
         const isMobile = ()=> (window.matchMedia ? window.matchMedia('(max-width: 767px)').matches : false);
         // Helper to update one item
@@ -532,8 +533,13 @@
           if(icon) icon.classList.toggle('rotate-180', !expanded);
 
           // Visual affordance: highlight the active item
-          btn.classList.toggle('bg-gray-100', !!expanded);
-          btn.classList.toggle('dark:bg-gray-800', !!expanded);
+          if (isFaqAccordion) {
+            // Match the active FAQ item to the card surface color (config-driven).
+            btn.classList.toggle('bg-[color:var(--cp-card-bg)]', !!expanded);
+          } else {
+            btn.classList.toggle('bg-gray-100', !!expanded);
+            btn.classList.toggle('dark:bg-gray-800', !!expanded);
+          }
           btn.classList.toggle('font-semibold', !!expanded);
         }
         // Initial state sync (respect server-rendered aria-expanded/hidden)
