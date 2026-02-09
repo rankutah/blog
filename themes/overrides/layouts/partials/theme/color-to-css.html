@@ -29,7 +29,7 @@
   (eq $l "transparent")
   (eq $l "currentcolor")
 -}}
-{{- $v -}}
+{{- $v | safeCSS -}}
 {{- else -}}
   {{- $norm := $l -}}
   {{- if strings.HasPrefix $norm "dark:" -}}{{- $norm = replace $norm "dark:" "" -}}{{- end -}}
@@ -39,13 +39,15 @@
   {{- if strings.HasPrefix $norm "border-" -}}{{- $norm = replace $norm "border-" "" -}}{{- end -}}
 
   {{- if eq $norm "white" -}}
-    #ffffff
+    {{- "#ffffff" | safeCSS -}}
   {{- else if eq $norm "black" -}}
-    #000000
+    {{- "#000000" | safeCSS -}}
   {{- else if findRE "^[a-z]+-[0-9]{2,3}$" $norm -}}
-    {{- printf "var(--color-%s)" $norm -}}
+    {{- (printf "var(--color-%s)" $norm) | safeCSS -}}
+  {{- else if findRE "^[a-z]+$" $norm -}}
+    {{- $norm | safeCSS -}}
   {{- else -}}
-    {{- /* Fallback: allow named CSS colors and other expressions */ -}}
-    {{- $v -}}
+    {{- /* Unknown/untrusted: return a safe fallback (avoid injecting raw into CSS). */ -}}
+    {{- "transparent" | safeCSS -}}
   {{- end -}}
 {{- end -}}

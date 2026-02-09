@@ -8,6 +8,6 @@
 {{- $cbDarkCSS  := partial "theme/color-to-css.html" (dict "value" $cbDarkRaw) -}}
 
 <style id="cp-card-border-vars">
-  :root{--cp-card-border:{{ $cbLightCSS }};}
-  :where(.dark,[data-theme=dark]){--cp-card-border:{{ $cbDarkCSS }};}
+  :root{--cp-card-border:{{ $cbLightCSS | safeCSS }};}
+  :root.dark,:root[data-theme=dark]{--cp-card-border:{{ $cbDarkCSS | safeCSS }};}
 </style>

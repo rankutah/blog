@@ -35,7 +35,7 @@ enableRobotsTXT = true
   logo = "media/logo.jpg"
 
   # Clean, readable palette that also looks good in dark mode.
-  lightBackground     = "orange-50"
+  lightBackground     = "#f5f4eb"
   darkBackground      = "slate-950"
   cardBackground      = "orange-100"
   cardBackgroundDark  = "slate-800"
