@@ -982,10 +982,10 @@
     }
   },
   "/media/logo.jpg": {
-    "width": 750,
-    "height": 750,
+    "width": 680,
+    "height": 680,
     "aspect": 1,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUBAgQG/8QAKxAAAgIABAUDAwUAAAAAAAAAAQIDEQAEEiEFEzFBUSJxgQYUQmGRobHw/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAD/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQAhAhH/2gAMAwEAAhEDEQA/AOh4rxT7FdKRlpCBuei3/ftjHDLxGF53ecTkH0roIBrsB2+LwH6icc4qSLpa6ecMo50RdJssSaUdTvjUPAsl9WtHxNMwsbRrIitvuvq61RHb3xsifmRhtrI30mx8HvhTk4BmMxmopCCUkJbwNQ/m679Kw4RdKBSbodcHoDJcq7J+J5fIPnDJmo5GdVUag1KLuhXwcU5XDWlAEkzavyDN+p3/AGw0liLTa+RFJsBZAut7wCHKCMFDloyrG7J1V18/7fENJRwnL5OJZXyQbSzAMWYnVQvv74YYzxrJGpCQRpfjbfBFaWxaADv6sF2Rl//Z",
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAUGBwH/xAAuEAACAAQCBwcFAAAAAAAAAAABAgADBBESMQUGEyEiQVEUMkJhcYGRIzNSg7L/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGREBAQEBAQEAAAAAAAAAAAAAAQIAERIx/9oADAMBAAIRAxEAPwCNVSxsoJPQQzlaGndn7RMlu0vmVFwPI9IP1dlK9FOYpLYq/jNh3ecO9CDFRYcbp9bNGse4IrMgddJpXmQV+gVFMKmmxKu+4O9b3O6/KEEanNoUnSjLmMcJN7rwm/tuPxEZpWjk09SlEEQlA67Z9xY5gm3TKCFfMFn7u6uOq0s7FsrYx9z06Q90G1qT9x/hYiqerMiUUAO83NjaDJen6mTK2UlERb35k3sBn7Q9HAzy9XaA9UMWyk8c78R4fM9IkdZpYkVRxnaIpGNMsXv63hfK1jrZQwqVVDmq8N/iBKqvarS0zEXObE3jSpB3LNKb/9k=",
     "variants": {
       "avif": [
         {
@@ -1001,8 +1001,8 @@
           "url": "/media-deriv/logo__w640.avif"
         },
         {
-          "w": 750,
-          "url": "/media-deriv/logo__w750.avif"
+          "w": 680,
+          "url": "/media-deriv/logo__w680.avif"
         }
       ],
       "webp": [],
@@ -1020,17 +1020,17 @@
           "url": "/media-deriv/logo__w640.jpg"
         },
         {
-          "w": 750,
-          "url": "/media-deriv/logo__w750.jpg"
+          "w": 680,
+          "url": "/media-deriv/logo__w680.jpg"
         }
       ]
     }
   },
   "/media/logo.avif": {
-    "width": 750,
-    "height": 750,
+    "width": 680,
+    "height": 680,
     "aspect": 1,
-    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUBAgQG/8QAKxAAAgIABAUDAwUAAAAAAAAAAQIDEQAEEiEFEzFBUSJxgQYUQmGRobHw/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAD/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQAhAhH/2gAMAwEAAhEDEQA/AOh4rxT7FdKRlpCBuei3/ftjHDLxGF53ecTkH0roIBrsB2+LwH6icc4qSLpa6ecMo50RdJssSaUdTvjUPAsl9WtHxNMwsbRrIitvuvq61RHb3xsifmRhtrI30mx8HvhTk4BmMxmopCCUkJbwNQ/m679Kw4RdKBSbodcHoDJcq7J+J5fIPnDJmo5GdVUag1KLuhXwcU5XDWlAEkzavyDN+p3/AGw0liLTa+RFJsBZAut7wCHKCMFDloyrG7J1V18/7fENJRwnL5OJZXyQbSzAMWYnVQvv74YYzxrJGpCQRpfjbfBFaWxaADv6sF2Rl//Z",
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAUGBwH/xAAuEAACAAQCBwcFAAAAAAAAAAABAgADBBESMQUGEyEiQVEUMkJhcYGRIzNSg7L/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGREBAQEBAQEAAAAAAAAAAAAAAQIAERIx/9oADAMBAAIRAxEAPwCNVSxsoJPQQzlaGndn7RMlu0vmVFwPI9IP1dlK9FOYpLYq/jNh3ecO9CDFRYcbp9bNGse4IrMgddJpXmQV+gVFMKmmxKu+4O9b3O6/KEEanNoUnSjLmMcJN7rwm/tuPxEZpWjk09SlEEQlA67Z9xY5gm3TKCFfMFn7u6uOq0s7FsrYx9z06Q90G1qT9x/hYiqerMiUUAO83NjaDJen6mTK2UlERb35k3sBn7Q9HAzy9XaA9UMWyk8c78R4fM9IkdZpYkVRxnaIpGNMsXv63hfK1jrZQwqVVDmq8N/iBKqvarS0zEXObE3jSpB3LNKb/9k=",
     "variants": {
       "avif": [
         {
@@ -1046,8 +1046,8 @@
           "url": "/media-deriv/logo__w640.avif"
         },
         {
-          "w": 750,
-          "url": "/media-deriv/logo__w750.avif"
+          "w": 680,
+          "url": "/media-deriv/logo__w680.avif"
         }
       ],
       "webp": [],
@@ -1065,8 +1065,162 @@
           "url": "/media-deriv/logo__w640.jpg"
         },
         {
-          "w": 750,
-          "url": "/media-deriv/logo__w750.jpg"
+          "w": 680,
+          "url": "/media-deriv/logo__w680.jpg"
+        }
+      ]
+    }
+  },
+  "/media/old-building-plans.jpg": {
+    "width": 1988,
+    "height": 1114,
+    "aspect": 1.784560143626571,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAkEAACAQMEAgIDAAAAAAAAAAABAgMAESEEBRIxQWETJIGRsf/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJtn0MssLSAKoboGq22RtQ4+SZQFFiFHf5NammxhQb2wDgUxkJClLO/lARYCoUxX27UIv1dZKWAwLDifVRTw7lCrcpDJcY4qK6iQhTZE5n01s+xU+oS6hpByNuhbFAyFQ0dmAI9itCJQAMD9UUUCIcoSe8/00hxflfx1RRWj/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/old-building-plans__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/old-building-plans__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/old-building-plans__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/old-building-plans__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/old-building-plans__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/old-building-plans__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/old-building-plans__w1600.avif"
+        },
+        {
+          "w": 1988,
+          "url": "/media-deriv/old-building-plans__w1988.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/old-building-plans__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/old-building-plans__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/old-building-plans__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/old-building-plans__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/old-building-plans__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/old-building-plans__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/old-building-plans__w1600.jpg"
+        },
+        {
+          "w": 1988,
+          "url": "/media-deriv/old-building-plans__w1988.jpg"
+        }
+      ]
+    }
+  },
+  "/media/old-building-plans.avif": {
+    "width": 1988,
+    "height": 1114,
+    "aspect": 1.784560143626571,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQb/xAAkEAACAQMEAgIDAAAAAAAAAAABAgMAESEEBRIxQWETJIGRsf/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJtn0MssLSAKoboGq22RtQ4+SZQFFiFHf5NammxhQb2wDgUxkJClLO/lARYCoUxX27UIv1dZKWAwLDifVRTw7lCrcpDJcY4qK6iQhTZE5n01s+xU+oS6hpByNuhbFAyFQ0dmAI9itCJQAMD9UUUCIcoSe8/00hxflfx1RRWj/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/old-building-plans__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/old-building-plans__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/old-building-plans__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/old-building-plans__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/old-building-plans__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/old-building-plans__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/old-building-plans__w1600.avif"
+        },
+        {
+          "w": 1988,
+          "url": "/media-deriv/old-building-plans__w1988.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/old-building-plans__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/old-building-plans__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/old-building-plans__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/old-building-plans__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/old-building-plans__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/old-building-plans__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/old-building-plans__w1600.jpg"
+        },
+        {
+          "w": 1988,
+          "url": "/media-deriv/old-building-plans__w1988.jpg"
         }
       ]
     }

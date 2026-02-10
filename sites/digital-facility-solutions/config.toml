@@ -67,6 +67,8 @@ disableKinds  = ["taxonomy", "term"]
   stickyDesktop     = true
   theme             = "blend"
 
+  subtitle          = "Old Buildings. New Intelligence."
+
   showCTAOnMobile   = false
   showCTAOnDesktop  = true
   CTAText           = "Call (385) 329-0586"

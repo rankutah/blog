@@ -4,7 +4,7 @@ description: "We bring order and searchability to your existing building plans."
 ---
 
 {{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="80" >}}
-## We bring **order**, **intelligence**, and **searchability** to your existing building plans.
+## Achieve order, intelligence, and searchability with digitized building plans
 {.center}
 
 
@@ -16,93 +16,160 @@ description: "We bring order and searchability to your existing building plans."
 
 {{< /hero >}}
 
-## What we do
+## Why invest in digital building plans?
 {.center}
 
-{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+{{< cols min="22rem" gap="2.5rem" row="md" v="middle" >}}
   {{< col card="false" y="start" >}}
 ### From Disorganized Records to Facility Intelligence
 
-Digital Facility Solutions converts legacy drawings into a structured, searchable digital system that supports daily operations, capital planning, and maintenance
+Physical legacy drawings are often hard to keep organized, so it’s difficult to find what you need when you need it. Plans get damaged or lost, so you’re left in the dark when it’s time to make decisions. Even if you have scanned files, they’re rarely named or saved in a way that makes them accessible.
 
-This delivers measurable savings by reducing:
+With organized, digitized building plans, you can retrieve archived building plans and information in just a few clicks.
 
-- Search time and document recreation
-- Change orders and re-surveys
-- Unforeseen conditions and project risk
-- Emergency delays and technician downtime
+Plan rooms are hard to keep organized. Digitizing building plans keeps them accessible and safe
+
   {{< /col >}}
 
-  {{< col card="false" y="center" >}}
-{{< img src="/media/searching-online-building-records.avif" alt="Searchable facility records" object="contain" >}}
+  {{< col card="false" y="end" >}}
+
+
+{{< img src="/media/old-building-plans.avif" alt="Searchable facility records" object="contain" >}}
+
   {{< /col >}}
 {{< /cols >}}
 
-## How the process works
+## Benefits of digital facility diagrams
 {.center}
 
 {{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
-  {{< col card="false" y="start" >}}
-### From Paper to Searchable Facility Records
+  {{< col card="true" y="start" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Find information instantly" >}}
+  <div>
+    <h3 class="mt-0">Find information instantly</h3>
+    <p class="mt-1 text-sm opacity-80">Optical character recognition — for digitally created text</p>
+    <p>Search across drawings for room names, notes, and sheet content. No more manual scrolling or guessing where to find what you need.</p>
+  </div>
+</div>
 
-- Hard-copy drawings are scanned into high-resolution PDFs by a qualified reprographics organization
-- All digital files are delivered to Digital Facility Solutions for enhancement and organization
-
-### From PDFs to Searchable Facility Records
-
-- All files are delivered to Digital Facility Solutions for enhancement and organization
   {{< /col >}}
 
-  {{< col card="false" y="center" >}}
-{{< img src="/media/scan-to-pdf-to-computer-screen.avif" alt="Scanning drawings to PDFs" object="contain" >}}
+  {{< col card="true" y="center" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="map-pin" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Navigate large plan sets with confidence" >}}
+  <div>
+    <h3 class="mt-0">Navigate large plan sets with confidence</h3>
+    <p class="mt-1 text-sm opacity-80">Correct page labels — by discipline and drawing number</p>
+    <p>Clear, consistent page labels mean anyone can jump to the right drawing the first time, every time.</p>
+  </div>
+</div>
+
   {{< /col >}}
 {{< /cols >}}
-
-## Digital enhancement & final deliverable
-{.center}
 
 {{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
-  {{< col card="false" y="start" >}}
-### What We Add
+  {{< col card="true" y="start" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="monitor" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Move through documents faster" >}}
+  <div>
+    <h3 class="mt-0">Move through documents faster</h3>
+    <p class="mt-1 text-sm opacity-80">Hyperlinked index / table of contents — for easy navigation</p>
+    <p>A hyperlinked index lets teams click directly to the sheets they need, cutting review and reference time.</p>
+  </div>
+</div>
 
-Each drawing set is processed to include:
-
-- Optical Character Recognition for digitally created text
-- Correct Page labels by discipline and drawing number
-- Hyperlinked index / table of contents
-- Image alignment and skew correction (crooked images)
-
-Files are organized to match the original drawing index and returned in a structured, searchable format—ready for operations, maintenance, and future projects.
   {{< /col >}}
 
-  {{< col card="false" y="center" >}}
-{{< img src="/media/Hyperlink-Page-Index.avif" alt="Hyperlinked index / table of contents" object="contain" >}}
+  {{< col card="true" y="center" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="badge-check" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Work with clean, accurate drawings" >}}
+  <div>
+    <h3 class="mt-0">Work with clean, accurate drawings</h3>
+    <p class="mt-1 text-sm opacity-80">Image alignment and skew correction — for crooked images</p>
+    <p>Straightened, aligned images improve readability and measurements—especially for older or scanned plans.</p>
+  </div>
+</div>
+
+
   {{< /col >}}
 {{< /cols >}}
 
-## Proven results
+
+## Real-world results of digitized building plans
 {.center}
 
+
 {{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
-  {{< col card="false" y="start" >}}
-### Real-World Impact
+  {{< col card="true" y="start" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="folder" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Faster access, less time recreating documents" >}}
+  <div>
+    <h3 class="mt-0">Faster access, less time recreating documents</h3>
+    <p class="mt-1 text-sm opacity-80">Optical character recognition — for digitally created text</p>
+    <p>Searchable, well-organized plans help teams find the right information and eliminate manual rebuilding.</p>
+  </div>
+</div>
 
-Delivered Digital Facility Solutions–style systems for:
-
-- Industrial manufacturing firms
-- The Federal Aviation Administration (FAA)
-
-Helping facility teams:
-
-- Dramatically improve access to building information
-- Reduce time spent searching for drawings and data
-- Increase operational efficiency by up to 90%
   {{< /col >}}
 
-  {{< col card="false" y="center" >}}
-{{< img src="/media/pdf-to-screen.avif" alt="Access drawings faster" object="contain" >}}
+  {{< col card="true" y="center" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Better visibility into existing conditions" >}}
+  <div>
+    <h3 class="mt-0">Navigate large plan sets with confidence</h3>
+    <p class="mt-1 text-sm opacity-80">Correct page labels — by discipline and drawing number</p>
+    <p>Digitized, searchable drawings give teams clearer visibility into existing spaces before work begins.</p>
+  </div>
+</div>
+
+  {{< /col >}}
+
+  {{< col card="true" y="center" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="arrows-left-right" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Fewer change orders and re-surveys" >}}
+  <div>
+    <h3 class="mt-0">Navigate large plan sets with confidence</h3>
+    <p class="mt-1 text-sm opacity-80">Correct page labels — by discipline and drawing number</p>
+    <p>Accurate, accessible drawings reduce mistakes, rework, and the need to revisit sites.</p>
+  </div>
+</div>
+
+  {{< /col >}}
+
+
+{{< /cols >}}
+
+{{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
+  {{< col card="true" y="start" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="triangle-alert" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Avoid unforeseen conditions" >}}
+  <div>
+    <h3 class="mt-0">Avoid unforeseen conditions</h3>
+    <p class="mt-1 text-sm opacity-80">Better information up front — for more accurate planning</p>
+    <p>Better information up front leads to more accurate planning, fewer surprises, and smoother execution.</p>
+  </div>
+</div>
+
+  {{< /col >}}
+
+  {{< col card="true" y="center" >}}
+<div class="flex items-start gap-3">
+  {{< icon name="hourglass" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Fewer emergency delays, less technician downtime" >}}
+  <div>
+    <h3 class="mt-0">Fewer emergency delays, less technician downtime</h3>
+    <p class="mt-1 text-sm opacity-80">Quick access to the right drawings — when time matters</p>
+    <p>Quick access to the right drawings helps teams respond faster and keep systems running.</p>
+  </div>
+</div>
+
   {{< /col >}}
 {{< /cols >}}
+<br>
+
+{{< button url="/process" text="Explore Our Process" >}}
+{.center}
+
 
 ## Supplemental capabilities
 {.center}
