@@ -580,6 +580,11 @@
       const carousels = Array.from(document.querySelectorAll('[data-lite-carousel]'));
       if(!carousels.length) return;
       carousels.forEach(root=>{
+        // Make initialization idempotent so we can safely call initLiteCarousels()
+        // from other interactions (e.g., "jump to slide" links).
+        if (root.getAttribute('data-lite-carousel-init') === '1') return;
+        root.setAttribute('data-lite-carousel-init', '1');
+
         const slides = Array.from(root.querySelectorAll('.lite-slide'));
         const dots = Array.from(root.querySelectorAll('.lite-dot'));
         const prev = root.querySelector('.lite-prev');
@@ -671,6 +676,30 @@
       });
     }
 
+    // Allow external links/buttons to jump a lite carousel to a specific slide.
+    // Usage:
+    //   <a data-lite-carousel-jump data-carousel-target="#my-carousel" data-carousel-index="2" href="#my-carousel">...</a>
+    // This stays inert unless the attributes are present.
+    function initLiteCarouselJumps(){
+      document.addEventListener('click', (e)=>{
+        const el = e.target && e.target.closest ? e.target.closest('[data-lite-carousel-jump]') : null;
+        if(!el) return;
+
+        const targetSel = el.getAttribute('data-carousel-target') || '';
+        const idxRaw = el.getAttribute('data-carousel-index') || '';
+        const index = parseInt(idxRaw, 10);
+        if(!targetSel || isNaN(index)) return;
+
+        const root = document.querySelector(targetSel);
+        if(!root) return;
+
+        // Ensure carousel behavior is initialized, then switch slides.
+        initLiteCarousels();
+        const dot = root.querySelector(`.lite-dot[data-go-to="${index}"]`);
+        if(dot) dot.click();
+      });
+    }
+
     // Defer carousel initialization until user scroll/interaction or when near-viewport
     function setupCarouselLoader(){
       const roots = Array.from(document.querySelectorAll('[data-lite-carousel]'));
@@ -704,6 +733,8 @@
         } catch { /* noop */ }
       }
     }
+
+    initLiteCarouselJumps();
 
     // Minimal Lightbox for gallery anchors (data-lightbox="gallery")
     function initLightbox(){

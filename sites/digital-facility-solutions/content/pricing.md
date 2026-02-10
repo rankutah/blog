@@ -3,17 +3,10 @@ title: "Pricing"
 description: "Typical project pricing and what affects cost."
 ---
 
-## Typical pricing
+## How much does it cost to have building plans digitized?
 
-- **$1,500 – $3,500 per project**
-- Scan coordination available (billed hourly)
+### Typical Investment
+- $1,500-$3,500 per building
 
-## What affects cost
-
-- Total sheet count and drawing set complexity
-- Quality/condition of originals and existing scans
-- Whether an index exists (or must be reconstructed)
-- Requested labeling conventions and disciplines
-- Consolidation across multiple projects
-
-{{< button text="Request a Quote" url="/contact/" >}}
+### Typical Volume
+- 50-300 sheets

@@ -94,9 +94,9 @@ disableKinds  = ["taxonomy", "term"]
 
 [menu]
   [[menu.main]]
-    name   = "Services"
-    url    = "/services/"
-    weight = 10
+    name   = "Supplemental"
+    url    = "/supplemental-capabilities/"
+    weight = 35
 
   [[menu.main]]
     name   = "Process"
