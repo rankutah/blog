@@ -100,135 +100,85 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    name       = "Voting"
-    identifier = "voter"
-    url        = "#"
-    weight     = 10
-
-    [[menu.main]]
-      name   = "Find Your District"
-      url    = "/district-map"
-      parent = "voter"
-      weight = 11
-
-    [[menu.main]]
-      name   = "Voter Info"
-      url    = "/voter-info"
-      parent = "voter"
-      weight = 12
-
-  [[menu.main]]
-    name       = "Issues"
-    identifier = "issues"
-    url        = "#"
-    weight     = 20
-
-    [[menu.main]]
-      name   = "Overview"
-      url    = "/issues"
-      parent = "issues"
-      weight = 21
-
-    [[menu.main]]
-      name   = "Housing"
-      identifier = "issues-housing"
-      url    = "#"
-      parent = "issues"
-      weight = 22
-
-    [[menu.main]]
-      name   = "Homeownership"
-      url    = "/issues/homeownership/"
-      parent = "issues-housing"
-      weight = 1
-
-    [[menu.main]]
-      name   = "Housing & Homeownership"
-      url    = "/issues/housing-homeownership/"
-      parent = "issues-housing"
-      weight = 2
-
-    [[menu.main]]
-      name   = "Experience You Can Trust"
-      url    = "/issues/housing-homeownership/experience-you-can-trust/"
-      parent = "issues-housing"
-      weight = 3
-
-    [[menu.main]]
-      name   = "Property Taxes"
-      url    = "/issues/property-taxes/"
-      parent = "issues-housing"
-      weight = 4
-
-    [[menu.main]]
-      name   = "Education"
-      url    = "/issues/education/"
-      parent = "issues"
-      weight = 23
-
-    [[menu.main]]
-      name   = "Term Limits"
-      url    = "/issues/term-limits/"
-      parent = "issues"
-      weight = 24
-
-  [[menu.main]]
-    name       = "Support"
-    identifier = "get-involved"
-    url        = "/volunteer"
-    weight     = 30
-
-    [[menu.main]]
-      name   = "Volunteer"
-      url    = "/volunteer"
-      parent = "get-involved"
-      weight = 31
-
-    [[menu.main]]
-      name   = "Donate"
-      url    = "/donate"
-      parent = "get-involved"
-      weight = 32
-
-    [[menu.main]]
-      name   = "Yard Signs"
-      url    = "/yard-signs"
-      parent = "get-involved"
-      weight = 33
-
-    [[menu.main]]
-      name   = "Events"
-      url    = "/events"
-      parent = "get-involved"
-      weight = 34
+    name   = "Why I Am Running"
+    url    = "/why-i-am-running"
+    weight = 10
 
   [[menu.main]]
     name       = "About"
     identifier = "about"
     url        = "#"
-    weight     = 40
+    weight     = 20
 
-    [[menu.main]]
-      name   = "About Kandee"
-      url    = "/about"
-      parent = "about"
-      weight = 41
+  [[menu.main]]
+    name   = "About Kandee"
+    url    = "/about"
+    parent = "about"
+    weight = 21
 
   [[menu.main]]
     name   = "Endorsements"
     url    = "/endorsements"
     parent = "about"
-    weight = 42
+    weight = 22
 
   [[menu.main]]
-    name   = "Why I Am Running"
-    url    = "/why-i-am-running"
-    parent = "about"
-    weight = 43
+    name       = "Events"
+    identifier = "events"
+    url        = "#"
+    weight     = 30
+
+  [[menu.main]]
+    name   = "All Events"
+    url    = "/events"
+    parent = "events"
+    weight = 31
 
   [[menu.main]]
     name   = "Contact"
     url    = "/contact"
-    weight = 50
+    weight = 40
+
+  [[menu.main]]
+    name       = "Voting"
+    identifier = "voter"
+    url        = "#"
+    weight     = 50
+
+  [[menu.main]]
+    name   = "Find Your District"
+    url    = "/district-map"
+    parent = "voter"
+    weight = 51
+
+  [[menu.main]]
+    name   = "Voter Info"
+    url    = "/voter-info"
+    parent = "voter"
+    weight = 52
+
+  [[menu.main]]
+    name       = "Support"
+    identifier = "get-involved"
+    url        = "#"
+    weight     = 60
+
+  [[menu.main]]
+    name   = "Volunteer"
+    url    = "/volunteer"
+    parent = "get-involved"
+    weight = 61
+
+  [[menu.main]]
+    name   = "Donate"
+    url    = "/donate"
+    parent = "get-involved"
+    weight = 62
+
+  [[menu.main]]
+    name   = "Yard Signs"
+    url    = "/yard-signs"
+    parent = "get-involved"
+    weight = 63
 
 

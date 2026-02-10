@@ -1,5 +1,5 @@
 ---
-title: "Issues"
+title: "Priorities"
 description: "Kandee Myers’ priorities for Utah State Senate District 21 — housing, education, term limits, and more."
 ---
 
