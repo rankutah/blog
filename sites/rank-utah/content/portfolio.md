@@ -13,6 +13,28 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
+## Digital Facility Solutions
+
+<a href="https://digitalfacilitysolutions.com/" target="_blank" rel="noopener">
+	{{< img src="/media/new-local-business-utah-county.avif" alt="Digital Facility Solutions website" >}}
+</a>
+
+{{< stars >}} <br>
+"Ben has been and continues to be GREAT to work with! His business model and approach are great for emerging businesses who are looking to gain a web presence. He has been very patient with me and my needs to develop the website I want for my business. He went even as far as starting completely over with creating a new look over a previous version of the website. He did it all in a very timely manner and completely met my expectations. Looking for to continuing to work with him and his business now and in the future."
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+{{< /col >}}
+
+{{< /cols >}}
+
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
 ## Quartz Worx
 
 [![Website Design & Local SEO Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)

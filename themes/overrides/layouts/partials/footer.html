@@ -6,7 +6,14 @@
         {{- if and $footerPage (gt (len (trim $footerPage.Content " \n\r\t")) 0) -}}
             {{- $footerWide := or (.Param "footerWide") (.Site.Params.footerWide) -}}
             <div class="prose prose-sm dark:prose-invert{{ if $footerWide }} max-w-none{{ end }}">
-                {{ $footerPage.Content }}
+                    {{- /* Ensure Clear Presence attribution links in footers are nofollow (even when written as Markdown) */ -}}
+                    {{- $footerHTML := $footerPage.Content -}}
+                    {{- /* RE2 (Hugo) doesn't support lookaheads; do this in two passes:
+                        1) remove any existing rel="..." from Clear Presence links
+                        2) add rel="nofollow noopener" */ -}}
+                    {{- $footerHTML = replaceRE `(<a[^>]*href="https?://(www\.)?clearpresence\.io[^"]*"[^>]*?)\srel="[^"]*"` `$1` $footerHTML -}}
+                    {{- $footerHTML = replaceRE `(<a[^>]*href="https?://(www\.)?clearpresence\.io[^"]*"[^>]*?)>` `$1 rel="nofollow noopener">` $footerHTML -}}
+                    {{ $footerHTML | safeHTML }}
             </div>
         {{- else -}}
             <!-- Default footer (shown when no custom Markdown footer is provided) -->
@@ -16,7 +23,7 @@
                     •
             </span>
             <span>
-                    <a href="https://clearpresence.io" rel="noopener" target="_blank">Clear Presence</a>
+                    <a href="https://clearpresence.io" rel="nofollow noopener" target="_blank">Clear Presence</a>
             </span>
         {{- end }}
 </footer>
