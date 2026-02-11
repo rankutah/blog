@@ -10,7 +10,7 @@ headless: true
 ### Contact
 {.center}
 
-[Services](/services/) • [Process](/process/) • [Pricing](/pricing/) • [About](/about/) • [Contact](/contact/)
+[Call: (385) 329-0586](tel:+13853290586)
 {.center}
 
 {{< /col >}}
@@ -19,9 +19,9 @@ headless: true
 
 ### Digital Facility Solutions
 {.center}
-Mon–Fri, 8:00am–5:00pm <br>
-[Call: (385) 329-0586](tel:+13853290586)
+Old Buildings. New Intelligence.
 {.center}
+
 
 
 {{< /col >}}

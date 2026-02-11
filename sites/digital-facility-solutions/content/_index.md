@@ -117,7 +117,7 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
 <div class="flex items-start gap-3">
   {{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Better visibility into existing conditions" >}}
   <div>
-    <h3 class="mt-0">Navigate large plan sets with confidence</h3>
+    <h3 class="mt-0">Better visibility into existing conditions</h3>
     <p class="mt-1 text-sm opacity-80">Correct page labels — by discipline and drawing number</p>
     <p>Digitized, searchable drawings give teams clearer visibility into existing spaces before work begins.</p>
   </div>
