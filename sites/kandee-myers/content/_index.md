@@ -7,14 +7,8 @@ image: "/media/kandee-myers-utah-state-senate-district-21-city.jpeg"
 
 {{< hero img="/media/hero-kandee-myers.avif" alt="Kandee Myers" bleed="true" max="md" fit="contain" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" overlayPos="bottom" align="center" imgClasses="block w-full h-auto object-[75%_50%] md:object-center" >}}
 
-<div class="not-prose flex w-full justify-center gap-3 sm:gap-4">
-	{{< button url="/donate" text="Donate" >}}
-	{{< button url="/volunteer" text="Volunteer" >}}
-</div>
 
 {{< /hero >}}
-
-
 
 
 ## Quick links

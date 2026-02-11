@@ -26,6 +26,16 @@ Per-site override:
 enable = true
 ```
 
+## Floating button (FAB) label / icon
+
+You can control what the floating button says, and whether the icon is shown:
+
+```toml
+[params.messageFab]
+text = "Message"      # default
+showIcon = true       # set false to hide the icon
+```
+
 ## Submission
 
 - Endpoint: Formspark (configured per site)
