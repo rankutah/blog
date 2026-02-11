@@ -91,6 +91,7 @@ enableRobotsTXT = true
 [params.header]
   stickyMobile  = true
   stickyDesktop = true
+  showCTAOnMobile  = true
   CTAText       = "Donate"
   CTAURL        = "/donate"
   showPhoneOnMobile = false
@@ -102,6 +103,7 @@ enableRobotsTXT = true
   # Floating message button (FAB) label + icon
   text = "Volunteer"
   showIcon = true
+  showTextMobile = true
 
 [menu]
   [[menu.main]]

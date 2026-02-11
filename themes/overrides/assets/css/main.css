@@ -278,7 +278,7 @@ main#content [data-accordion] :where(h2, h3, h4, h5, h6) {
   .cp-fab { right: calc(1rem + env(safe-area-inset-right)); bottom: calc(1rem + env(safe-area-inset-bottom)); }
 }
 @media (max-width: 767.98px) {
-  .cp-fab { width: 3rem; height: 3rem; padding: 0; }
+  .cp-fab.cp-fab--icon-only-mobile { width: 3rem; height: 3rem; padding: 0; }
 }
 
 /* Scoped safety: constrain media within main content only (avoid navbar/logo) */

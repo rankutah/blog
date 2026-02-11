@@ -34,6 +34,7 @@ You can control what the floating button says, and whether the icon is shown:
 [params.messageFab]
 text = "Message"      # default
 showIcon = true       # set false to hide the icon
+showTextMobile = false # set true to show the label on mobile too
 ```
 
 ## Submission

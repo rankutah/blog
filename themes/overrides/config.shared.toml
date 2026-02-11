@@ -75,6 +75,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   enable = true
   text = "Message"
   showIcon = true
+  showTextMobile = false
 
 [taxonomies]
   tag = "tags"
