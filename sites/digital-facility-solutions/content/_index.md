@@ -45,10 +45,10 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
 {{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
   {{< col card="true" y="start" >}}
 <div class="flex items-start gap-3">
-  {{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Find information instantly" >}}
+  {{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Optical character recognition — for digitally created text" >}}
   <div>
-    <h3 class="mt-0">Find information instantly</h3>
-    <p class="mt-1 text-sm opacity-80">Optical character recognition — for digitally created text</p>
+    <h3 class="mt-0">Optical character recognition — for digitally created text</h3>
+    <p class="mt-1 text-sm opacity-80">Find information instantly</p>
     <p>Search across drawings for room names, notes, and sheet content. No more manual scrolling or guessing where to find what you need.</p>
   </div>
 </div>
@@ -57,10 +57,10 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
 
   {{< col card="true" y="center" >}}
 <div class="flex items-start gap-3">
-  {{< icon name="map-pin" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Navigate large plan sets with confidence" >}}
+  {{< icon name="map-pin" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Correct page labels — by discipline and drawing number" >}}
   <div>
-    <h3 class="mt-0">Navigate large plan sets with confidence</h3>
-    <p class="mt-1 text-sm opacity-80">Correct page labels — by discipline and drawing number</p>
+    <h3 class="mt-0">Correct page labels — by discipline and drawing number</h3>
+    <p class="mt-1 text-sm opacity-80">Navigate large plan sets with confidence</p>
     <p>Clear, consistent page labels mean anyone can jump to the right drawing the first time, every time.</p>
   </div>
 </div>
@@ -71,10 +71,10 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
 {{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
   {{< col card="true" y="start" >}}
 <div class="flex items-start gap-3">
-  {{< icon name="monitor" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Move through documents faster" >}}
+  {{< icon name="monitor" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Hyperlinked index / table of contents — for easy navigation" >}}
   <div>
-    <h3 class="mt-0">Move through documents faster</h3>
-    <p class="mt-1 text-sm opacity-80">Hyperlinked index / table of contents — for easy navigation</p>
+    <h3 class="mt-0">Hyperlinked index / table of contents — for easy navigation</h3>
+    <p class="mt-1 text-sm opacity-80">Move through documents faster</p>
     <p>A hyperlinked index lets teams click directly to the sheets they need, cutting review and reference time.</p>
   </div>
 </div>
@@ -83,10 +83,10 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
 
   {{< col card="true" y="center" >}}
 <div class="flex items-start gap-3">
-  {{< icon name="badge-check" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Work with clean, accurate drawings" >}}
+  {{< icon name="badge-check" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Image alignment and skew correction — for crooked images" >}}
   <div>
-    <h3 class="mt-0">Work with clean, accurate drawings</h3>
-    <p class="mt-1 text-sm opacity-80">Image alignment and skew correction — for crooked images</p>
+    <h3 class="mt-0">Image alignment and skew correction — for crooked images</h3>
+    <p class="mt-1 text-sm opacity-80">Work with clean, accurate drawings</p>
     <p>Straightened, aligned images improve readability and measurements—especially for older or scanned plans.</p>
   </div>
 </div>
@@ -106,7 +106,6 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
   {{< icon name="folder" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Faster access, less time recreating documents" >}}
   <div>
     <h3 class="mt-0">Faster access, less time recreating documents</h3>
-    <p class="mt-1 text-sm opacity-80">Optical character recognition — for digitally created text</p>
     <p>Searchable, well-organized plans help teams find the right information and eliminate manual rebuilding.</p>
   </div>
 </div>
@@ -118,7 +117,6 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
   {{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Better visibility into existing conditions" >}}
   <div>
     <h3 class="mt-0">Better visibility into existing conditions</h3>
-    <p class="mt-1 text-sm opacity-80">Correct page labels — by discipline and drawing number</p>
     <p>Digitized, searchable drawings give teams clearer visibility into existing spaces before work begins.</p>
   </div>
 </div>
@@ -129,8 +127,7 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
 <div class="flex items-start gap-3">
   {{< icon name="arrows-left-right" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Fewer change orders and re-surveys" >}}
   <div>
-    <h3 class="mt-0">Navigate large plan sets with confidence</h3>
-    <p class="mt-1 text-sm opacity-80">Correct page labels — by discipline and drawing number</p>
+    <h3 class="mt-0">Fewer change orders and re-surveys</h3>
     <p>Accurate, accessible drawings reduce mistakes, rework, and the need to revisit sites.</p>
   </div>
 </div>
@@ -146,7 +143,6 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
   {{< icon name="triangle-alert" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Avoid unforeseen conditions" >}}
   <div>
     <h3 class="mt-0">Avoid unforeseen conditions</h3>
-    <p class="mt-1 text-sm opacity-80">Better information up front — for more accurate planning</p>
     <p>Better information up front leads to more accurate planning, fewer surprises, and smoother execution.</p>
   </div>
 </div>
@@ -158,7 +154,6 @@ Plan rooms are hard to keep organized. Digitizing building plans keeps them acce
   {{< icon name="hourglass" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Fewer emergency delays, less technician downtime" >}}
   <div>
     <h3 class="mt-0">Fewer emergency delays, less technician downtime</h3>
-    <p class="mt-1 text-sm opacity-80">Quick access to the right drawings — when time matters</p>
     <p>Quick access to the right drawings helps teams respond faster and keep systems running.</p>
   </div>
 </div>
