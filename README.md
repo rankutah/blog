@@ -32,6 +32,24 @@ Notes:
 	- If you find yourself writing `<div class="...">` in content, stop and either (a) use a shortcode, or (b) add/extend a shortcode in `themes/overrides/layouts/shortcodes/`.
 - Customer-facing copy: use plain language and avoid tech jargon (e.g., “sprints”, “lean builds”, “workflow”).
 
+## New site checklist (do this every time)
+
+- Add a **Thank You** page at `sites/<site>/content/thank-you.md`:
+	- Must render at `/thank-you` (`url: "/thank-you"` in front matter)
+	- Must be `robotsNoIndex: true` and `sitemap.disable: true`
+- Configure form redirect so submissions land on the thank-you page:
+	- In `sites/<site>/config.toml` set:
+		- `[params.forms] redirect = "https://<domain>/thank-you"`
+	- Ensure contact pages use the shared `contact-form` shortcode (it injects the hidden `_redirect` input when `params.forms.redirect` is set).
+- Include a footer for every site (preferred: Markdown footer content):
+	- Add `sites/<site>/content/footer.md` with `headless: true`
+	- Include links to `/privacy/` and `/terms/` in that footer content
+	- If you omit `content/footer.md`, the theme falls back to a minimal default footer
+- Generate legal pages for every site:
+	- Add `sites/<site>/content/privacy.md` (published at `/privacy`)
+	- Add `sites/<site>/content/terms.md` (published at `/terms`)
+	- Keep them linked from the footer and referenced by forms (defaults to `/privacy` unless `params.privacyURL` overrides it)
+
 ## Client PDFs (notes → pages)
 
 Some clients send PDFs with embedded notes/annotations (e.g., “sticky note” / FreeText comments). You can extract both the annotation contents (instructions) and the page text with:

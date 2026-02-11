@@ -94,7 +94,7 @@ disableKinds  = ["taxonomy", "term"]
   honeypot       = ""
   successMessage = "Thanks! Your message was sent."
   errorMessage   = "Sorry, something went wrong. Please try again."
-  redirect       = ""
+  redirect       = "https://digitalfacilitysolutions.com/thank-you"
 
 [params.turnstile]
   # Enable Cloudflare Turnstile on forms rendered via the contact-form shortcode
