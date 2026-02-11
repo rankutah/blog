@@ -54,6 +54,14 @@ disableKinds  = ["taxonomy", "term"]
 
   ariaLabelCall       = "Call us"
 
+[params.analytics]
+  provider = "zaraz"
+  # Load analytics immediately (no delay/gating)
+  delayMs = 0
+  clarityOnlyOnInteraction = true
+  # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
+  debugMode = false
+
 [params.schema.organization]
   enabled   = true
   name      = "Digital Facility Solutions"
@@ -89,8 +97,9 @@ disableKinds  = ["taxonomy", "term"]
   redirect       = ""
 
 [params.turnstile]
-  enable  = false
-  sitekey = ""
+  # Enable Cloudflare Turnstile on forms rendered via the contact-form shortcode
+  enable  = true
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
 
 [menu]
   [[menu.main]]

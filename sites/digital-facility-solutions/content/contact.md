@@ -13,7 +13,7 @@ description: "Request a quote or ask a question."
 
 {{< contact-form
 	id="contact1"
-	action="https://submit-form.com/I4t2OG4uj"
+	action="https://submit-form.com/YvpK4GpF2"
 	name="true"
 	custom="Phone or Email"
 	preferredContact="true"
