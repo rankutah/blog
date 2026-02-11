@@ -6,8 +6,8 @@ layout: "flowbite"
 plainHome: true
 ---
 
-
-{{< hero img="/media/rooftop-terrace.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+![](/media/rooftop-terrace.jpg)
+{.w-100}
 
 # Join the Movement {.text-white}
 
@@ -24,5 +24,3 @@ We’d love to connect. Share your interest and we’ll reach out with next step
 
 {{< button submit="true" form="interest" text="Send Message" >}}
 
-
-{{< /hero >}}
