@@ -5,5 +5,4 @@ This file exists to trigger rebuilds across all sites.
 - No runtime effect.
 
 
-test trigger 2
-test 3
+update all
