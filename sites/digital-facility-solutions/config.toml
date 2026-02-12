@@ -104,7 +104,7 @@ disableKinds  = ["taxonomy", "term"]
 [menu]
   [[menu.main]]
     name   = "Other Services"
-    url    = "/other-services/"
+    url    = "/supplemental-capabilities/"
     weight = 35
 
   [[menu.main]]
