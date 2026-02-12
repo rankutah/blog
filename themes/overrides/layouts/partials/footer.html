@@ -80,6 +80,10 @@
 {{- /* Lazy loader for Cloudflare Turnstile widgets (only injects script when a widget nears viewport) */ -}}
 {{- partial "turnstile-loader.html" . }}
 
+{{- /* Hero overlay fitter: scales overlay content on small screens to avoid overflow */ -}}
+{{- $heroFit := resources.Get "js/hero-fit.js" | minify | fingerprint -}}
+<script src="{{ $heroFit.RelPermalink }}" defer></script>
+
 {{- $clickTracker := resources.Get "js/click-tracker.js" | minify | fingerprint -}}
 {{- $linkifyPhones := resources.Get "js/linkify-phones.js" | minify | fingerprint -}}
 

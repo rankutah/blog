@@ -21,7 +21,7 @@ Click the map to open the official Utah Legislature district lookup in a new tab
 
 ## Official district lookup
 
-- Utah Legislature GIS tool: https://le.utah.gov/GIS/findDistrict.jsp
+- Utah Legislature [GIS tool](https://le.utah.gov/GIS/findDistrict.jsp)
 
 ## Next step
 

@@ -128,6 +128,7 @@
       We add stable marker classes so CSS can offset/top-align it only when needed (see assets/css/main.css). */ -}}
 {{- $overlayWrapClass := "hero-overlay-wrap hero-overlay-center absolute inset-0 flex items-center" -}}
 {{- $overlayWrapStyle := "" -}}
+
 {{- if or (eq $overlayPos "mobilebottom") (eq $overlayPos "mobile-bottom") (eq $overlayPos "mobile_bottom") (eq $overlayPos "bottommobile") (eq $overlayPos "bottom-mobile") (eq $overlayPos "bottom_mobile") -}}
   {{- /* Mobile: bottom align; Desktop: keep centered. */ -}}
   {{- $overlayWrapClass = "hero-overlay-wrap hero-overlay-mobilebottom absolute inset-0 flex items-end md:items-center pb-6 md:pb-0" -}}
@@ -338,12 +339,14 @@
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
       <div class="not-prose">{{- $heroImg | safeHTML -}}</div>
       {{- if $overlay -}}
-        <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
+        <div class="{{ $overlayWrapClass }}" data-hero-overlay="wrap"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
           <div class="relative z-10 w-full {{ $overlayContainer }}"{{ if $motionEnabled }} data-motion="hero"{{ end }}>
-            <div class="{{ $vWrap }}">
-              <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
-                {{- $page.Scratch.Get "heroInner" -}}
+            <div class="hero-overlay-fit" data-hero-overlay="fit">
+              <div class="{{ $vWrap }}">
+                <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
+                  {{- $page.Scratch.Get "heroInner" -}}
+                </div>
               </div>
             </div>
           </div>
@@ -357,12 +360,14 @@
       <div class="relative">
         <div class="not-prose">{{- $heroImg | safeHTML -}}</div>
         {{- if $overlay -}}
-          <div class="{{ $overlayWrapClass }}"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
+          <div class="{{ $overlayWrapClass }}" data-hero-overlay="wrap"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
             <div class="relative z-10 w-full {{ $overlayContainer }}"{{ if $motionEnabled }} data-motion="hero"{{ end }}>
-              <div class="{{ $vWrap }}">
-                <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
-                  {{- $page.Scratch.Get "heroInner" -}}
+              <div class="hero-overlay-fit" data-hero-overlay="fit">
+                <div class="{{ $vWrap }}">
+                  <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
+                    {{- $page.Scratch.Get "heroInner" -}}
+                  </div>
                 </div>
               </div>
             </div>
