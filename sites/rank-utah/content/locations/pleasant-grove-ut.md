@@ -1,6 +1,6 @@
 ---
-title: "Web Design, Local SEO & Google Ads in Pleasant Grove, UT - Digital Marketing Agency Near You - Website Development Company, Google Adwords Management & Search Engine Optimization in Utah County"
-description: "Clear Presence provides website design, local SEO, and Google Ads management for small businesses in Utah County, from an office in Pleasant Grove, Utah."
+title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization, & Google Adwords Management Near You in Utah County"
+description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for small businesses in Utah County, from an office in Pleasant Grove, Utah."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -73,8 +73,8 @@ schema:
 ---
 
 
-{{< hero img="/media/utah-website-design-hero.avif" alt="Utah landscape hero image for website design, local SEO, and Google Ads services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design, SEO, & Google Ads for Utah County {.text-white}
+{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah website design, local SEO, and Google Ads services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Web Design, SEO, & Google Ads in Utah County {.text-white}
 Fast, custom websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
 {{< button url="#main-content" text="How it Works" >}} {{< button url="/pricing" text="Pricing" >}}
@@ -195,7 +195,7 @@ My Pleasant Grove office is conveniently located in Grove Cove, just west of Gro
 
 
 
-## Reviews from Local Businesses using Website Design, Local SEO & Google Ads
+## Reviews from Local Businesses
 {.center}
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
