@@ -66,7 +66,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Hospitality Website Design & Performance Results for Blue Ridge Abbey
+## Hospitality Website Design & SEO for Blue Ridge Abbey
 
 [![Blue Ridge Abbey website](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
 
