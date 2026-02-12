@@ -205,7 +205,7 @@ My Pleasant Grove office is conveniently located in Grove Cove, just west of Gro
 
 1. Your site is designed to help you get leads
 2. Your site is custom-coded so it loads faster and performs better
-  - Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
+    - Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 3. You get long-term personal support via text, calls, emails, or meetings
 4. You get clear monthly reports that improve your marketing
     - <a href="/reports/website-and-local-seo-analytics-report.pdf" target="_blank" rel="noopener" download type="application/pdf">Download a sample report (PDF)</a>
