@@ -7,8 +7,8 @@
   Cross-Origin-Resource-Policy: same-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
-  # Modern permissions policy: disable sensitive features and ad-tech topics
-  Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=(), interest-cohort=()
+  # Modern permissions policy: disable sensitive features
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
 
   # Content Security Policy: pragmatic defaults plus GA + Cloudflare Turnstile
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https: wss:; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' data: https:; frame-src https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
