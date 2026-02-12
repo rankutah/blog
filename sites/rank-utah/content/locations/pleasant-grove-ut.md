@@ -1,5 +1,5 @@
 ---
-title: "Website Design, Local SEO & Google Ads in Pleasant Grove, UT - Digital Marketing Agency Near You - Web Development Company in Utah County"
+title: "Web Design, Local SEO & Google Ads in Pleasant Grove, UT - Digital Marketing Agency Near You - Website Development Company, Google Adwords Management & Search Engine Optimization in Utah County"
 description: "Clear Presence provides website design, local SEO, and Google Ads management for small businesses in Utah County, from an office in Pleasant Grove, Utah."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"

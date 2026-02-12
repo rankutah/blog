@@ -13,7 +13,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Digital Facility Solutions
+## B2B Website Design for Digital Facility Solutions
 
 <a href="https://digitalfacilitysolutions.com/" target="_blank" rel="noopener">
 	{{< img src="/media/new-local-business-utah-county.avif" alt="Digital Facility Solutions website" >}}
@@ -35,7 +35,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Quartz Worx
+## Website Design for Quartz Worx
 
 [![Website Design & Local SEO Portfolio | Small Business Projects](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
 
@@ -51,26 +51,22 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Cedar City Strength & Conditioning
+## Fitness Website Design for Cedar City Strength & Conditioning
 
 [![Cedar City Strength & Conditioning website](/media/website-design-cedar-city-strength.avif)](https://cedarcitystrength.pages.dev/)
 
 
 {{< button url="https://cedarcitystrength.pages.dev/" text="Visit Cedar City Strength" newtab="true" >}}{{<badge text="Website In Progress">}}
 
-
-
-
 {{< /col >}}
 
 {{< /cols >}}
-
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Blue Ridge Abbey
+## Hospitality Website Design & Performance Results for Blue Ridge Abbey
 
 [![Blue Ridge Abbey website](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
 
@@ -85,7 +81,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## BlueridgeTech
+## Service Business Website Design & Local SEO for BlueridgeTech
 
 [![BlueridgeTech website](/media/website-design-blueridge-tech.avif)](https://blueridgetech.pro/)
 
@@ -104,7 +100,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Nova Gutter
+## Home Services Website Design for Nova Gutter
 
 [![Nova Gutter website](/media/nova-gutter-hero.avif)](https://novagutter.com/)
 {{< button url="https://novagutter.com/" text="Visit Nova Gutter" newtab="true" >}}
@@ -114,7 +110,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Villa Valencia
+## Boutique Hospitality Website Redesign for Villa Valencia
 
 [![Villa Valencia website](/media/website-villa-valencia.avif)](https://villavalenciaojai.com/)
 
@@ -133,7 +129,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Suggls
+## Ecommerce Website Design for Suggls
 
 [![Suggls website](/media/website-suggls.avif)](https://suggls.com/)
 
@@ -144,7 +140,7 @@ A selection of custom website design projects for small businesses. Fast website
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Dentistry
+## Dental Practice Website Design for Rod Maxfield DDS
 
 [![Rod Maxfield DDS website](/media/rodmaxfieddds-hero.avif)](https://rodmaxfielddds.pages.dev/)
 
