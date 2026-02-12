@@ -13,11 +13,11 @@ image: "/media/hero-image.png"
 <h1 class="sr-only">Why I Am Running</h1>
 
 <div class="not-prose mx-auto w-full max-w-4xl">
-  <div class="flex flex-col gap-2 md:gap-3">
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0"><a href="#i-love-utah" class="block underline underline-offset-4">I Love Utah</a></h2>
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="240"><a href="#i-know-utah" class="block underline underline-offset-4">I Know Utah</a></h2>
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="480"><a href="#i-trust-utah" class="block underline underline-offset-4">I Trust Utah</a></h2>
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="720"><a href="#i-believe-in-utah" class="block underline underline-offset-4">I Believe in Utah</a></h2>
+  <div class="km-why-running-hero flex flex-col gap-4 md:gap-4">
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0"><a href="#i-love-utah" class="cp-hero-link block">I Love Utah</a></h2>
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="240"><a href="#i-know-utah" class="cp-hero-link block">I Know Utah</a></h2>
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="480"><a href="#i-trust-utah" class="cp-hero-link block">I Trust Utah</a></h2>
+    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="720"><a href="#i-believe-in-utah" class="cp-hero-link block">I Believe in Utah</a></h2>
 
 
   </div>

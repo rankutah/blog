@@ -95,6 +95,21 @@
   --tw-prose-links: #ffffff;
 }
 .section.hero .prose a { color: inherit; }
+.section.hero .prose a.cp-hero-link,
+.section.hero .prose a.cp-hero-link:hover {
+  text-decoration: none;
+}
+
+/* Kandee Myers: "Why I Am Running" hero links */
+.section.hero .km-why-running-hero a.cp-hero-link,
+.section.hero .km-why-running-hero a.cp-hero-link:hover {
+  color: #f5f4eb;
+}
+
+.section.hero .km-why-running-hero a.cp-hero-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
 
 /* Motion: allow skipping all animations after first view */
 html[data-motion-skip="true"] [data-motion] {

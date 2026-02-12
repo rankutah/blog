@@ -7,51 +7,40 @@ description: "Kandee Myers is running for Utah State Senate District 21. Learn a
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+{{< col card="false" y="start" order="first" >}}
 
-# About Kandee
+## Utah Roots
 
-Kandee Myers is running for **Utah State Senate — District 21**.
-
-### A little bit of her story
-
-- **Camino de Santiago:** Kandee loves walking the Camino through northern Spain. She has walked it **four** times and hopes to keep returning as long as she can.
-- **Education:**
-	- **B.S.** — University of Arizona, *Family Studies and Human Development* (graduated with honors, **Magna Cum Laude**)
-	- **MAPP** — Master’s in Applied Positive Psychology, University of Pennsylvania
-- **Small business:** Owned an LDS bookstore, **Latter Day Cottage** (2005–2010).
-- **Real estate:** Licensed real estate agent in 1994 (Rookie of Arizona 1995), became a licensed broker in 1998, and is Branch Broker at **RE/MAX Lighthouse** in American Fork.
-- **Family:** 3 children and 5 grandchildren.
+My story begins in Utah. My mother grew up in Mount Pleasant, Utah, where she met my dad at Wasatch Academy. I was raised in the suburbs of Chicago and moved to Tucson, Arizona as a teenager. My early experiences came with multiple challenges which have shaped my sincere interest in people and what makes life worth living.
 
 {{< /col >}}
 
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="false" y="start" order="last" >}}
 
-![Photo of Kandee Myers](/media/kandee-myers-utah-state-senate-district-21-bridge.jpeg)
-
+{{< img src="/media/1.jpg" alt="Kandee Myers" class="w-full h-auto rounded-xl" style="max-width: 16rem; margin-left: auto; margin-right: auto;" sizes="256px" object="cover" >}}
 
 {{< /col >}}
 
 {{< /cols >}}
 
 {{< /section >}}
-
-
 
 
 {{< section >}}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+{{< col card="false" y="start" order="last" >}}
 
-
+{{< img src="/media/2.jpg" alt="Kandee Myers" class="w-full h-auto rounded-xl" style="max-width: 16rem; margin-left: auto; margin-right: auto;" sizes="256px" object="cover" >}}
 
 {{< /col >}}
 
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="false" y="start" order="first" >}}
 
+## Faith & Family
 
+At 18, I made faith a central part of my life — a decision that continues to guide how I see and serve others. I married young, raised three children, and — like many Utah families — balanced church, education, and work. Of four businesses my husband and I owned, our independent bookstore was my favorite. It confirmed what I believe deeply: people are good, books make the world better, and stories have the power to heal.
 
 {{< /col >}}
 
@@ -60,7 +49,73 @@ Kandee Myers is running for **Utah State Senate — District 21**.
 {{< /section >}}
 
 
+{{< section >}}
 
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" y="start" order="first" >}}
+
+## Lifelong Learning
+
+I am a lifelong learner with a BS degree in Family Studies and Human Development and a Master’s in Applied Positive Psychology from the University of Pennsylvania, the academic study of happiness and human flourishing. A guiding principle from my graduate work comes from Chris Peterson: “Other people matter.” That simple truth has shaped both my professional and personal life.
+
+{{< /col >}}
+
+{{< col card="false" y="start" order="last" >}}
+
+{{< img src="/media/3.jpg" alt="Kandee Myers" class="w-full h-auto rounded-xl" style="max-width: 16rem; margin-left: auto; margin-right: auto;" sizes="256px" object="cover" >}}
+
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< /section >}}
+
+
+{{< section >}}
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" y="start" order="last" >}}
+
+{{< img src="/media/4.jpg" alt="Kandee Myers" class="w-full h-auto rounded-xl" style="max-width: 16rem; margin-left: auto; margin-right: auto;" sizes="256px" object="cover" >}}
+
+{{< /col >}}
+
+{{< col card="false" y="start" order="first" >}}
+
+## Housing & Trust
+
+Since 1994 I have worked in real estate and I love it! As a licensed Broker, I built my career on trust, results, and meaningful relationships. Alongside my work with clients, I invested in rental properties, navigating market cycles, interest rates, and housing shortages firsthand. Few issues matter more to families than housing, and it has brought me great joy to spend my life’s work helping people find a place to call home.
+
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< /section >}}
+
+
+{{< section >}}
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" y="start" order="first" >}}
+
+## Outdoors & Faith
+
+I love the outdoors. Running, cycling, hiking the Grand Canyon Rim-to-Rim, and walking the Camino de Santiago have shaped my determination and fueled my zest for life. My faith is deep.
+
+{{< /col >}}
+
+{{< col card="false" y="start" order="last" >}}
+
+{{< img src="/media/5.JPG" alt="Kandee Myers" class="w-full h-auto rounded-xl" style="max-width: 16rem; margin-left: auto; margin-right: auto;" sizes="256px" object="cover" >}}
+
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< /section >}}
 
 
 Next:
