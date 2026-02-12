@@ -6,6 +6,18 @@ url: "/issues/homeownership/"
 
 # Homeownership
 
+Housing affordability is one of the most pressing issues facing our state. Inventory is tight. Prices are high. First-time buyers are getting squeezed out. When housing costs rise faster than wages, it doesn’t just hurt buyers — it strains our entire workforce.
+
+I have spent decades in real estate — not studying the housing market from afar but living it. I understand the complicated dynamics behind housing shortages, interest rates, regulation, and supply constraints.
+There are forces outside a state’s control — including federal monetary policy — but Utah still has meaningful tools. We can reduce barriers, encourage smart growth, and protect property rights while expanding opportunity. I will bring practical, market-informed solutions to the legislature. Utah deserves solutions grounded in reality, not slogans.
+
+Homeownership creates belonging, and belonging strengthens Utah
+
+
+(Old)
+
+# Homeownership
+
 {{< quote author="Kandee Myers" >}}
 As a State Senator, protecting and preserving homeownership will be a core priority of my work
 {{< /quote >}}

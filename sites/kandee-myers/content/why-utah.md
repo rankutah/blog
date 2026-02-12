@@ -27,11 +27,11 @@ image: "/media/hero-image.png"
 
 ### I Love Utah {#i-love-utah .scroll-mt-24}
 
-My family’s roots reach back to Denmark in 1847, when my ancestors settled in Sanpete County. Their pioneer spirit inspires me.
+My roots run deep in Utah. My family came from Denmark in 1847 and settled in Sanpete County. That pioneer courage-faith, sacrifice, hard work-still shapes how I see this state and my responsibility living here.
 
-From mountain peaks to red rock canyons, Utah’s beauty is unmatched, with five national parks, over 40 state parks, and many lakes, including our Great Salt Lake, that welcome visitors from across our country.
+Utah's beauty is undeniable-from mountain peaks to red rock canyons, from our five national parks to the Great Salt Lake. But what makes Utah extraordinary isn't just the landscape - it's the people who build lives here.
 
-I love Utah — its people, its history, and its promise.
+I love Utah-its people, its history, and its promised
 
 ### I Know Utah {#i-know-utah .scroll-mt-24}
 

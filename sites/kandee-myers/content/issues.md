@@ -40,14 +40,6 @@ Read more: [Term Limits](/issues/term-limits/)
 These pages are created now for clarity and search, and will be expanded over time:
 
 - [Health Care](/issues/health-care/)
-- [Journalism vs. Content Creators](/issues/journalism-and-content-creators/)
 - [Child Care](/issues/child-care/)
-- [Pro-life vs Pro-choice](/issues/pro-life-pro-choice/)
-- [Marriage](/issues/marriage/)
-- [Delegates in Utah Government](/issues/delegates/)
-- [Adult Content — Protecting the Public](/issues/adult-content/)
-- [Church and State](/issues/church-and-state/)
-- [2nd Amendment](/issues/second-amendment/)
-- [Property Taxes](/issues/property-taxes/)
-- [Focused Learning & Classroom Technology](/issues/focused-learning-technology/)
+- [Protecting Attention, Learning & Childhood](/issues/learning/)
 
