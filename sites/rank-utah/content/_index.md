@@ -1,5 +1,5 @@
 ---
-title: "Website Design, Local SEO & Google Ads Services"
+title: "#1 Most Affordable Websites, SEO, & Google Ads"
 description: "Website design, local search engine optimization (SEO), and Google Ads management for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:

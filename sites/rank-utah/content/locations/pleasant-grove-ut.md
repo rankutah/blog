@@ -1,5 +1,5 @@
 ---
-title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization, & Google Adwords Management Near You in Utah County"
+title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization Services, & Google Adwords Management Near You in Utah County"
 description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for small businesses in Utah County, from an office in Pleasant Grove, Utah."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
