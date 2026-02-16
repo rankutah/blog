@@ -208,7 +208,7 @@ Photos of the office and signs so you know you’re in the right place.
 
 Entrance on 22nd Street.
 
-{{< carousel_lite id="location" images="/media/office.jpg,/media/fence-sign.jpg,/media/street-sign.jpg" pxheight="400" mobilepxheight="400" radius="xl" >}}
+{{< carousel_lite id="location" images="/media/office-location.jpg,/media/suite-office-door.jpg,/media/office-front-night-with-suite.jpg" pxheight="800" mobilepxheight="400" radius="xl" >}}
 
 {{< /col >}}
 

@@ -981,6 +981,186 @@
       ]
     }
   },
+  "/media/office-front-night-with-suite.jpg": {
+    "width": 599,
+    "height": 799,
+    "aspect": 0.7496871088861077,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwQFAQb/xAAoEAACAQQABQMFAQAAAAAAAAABAgMABBESBRMhMUEyYXEUMzRRgZH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAaEQADAAMBAAAAAAAAAAAAAAAAARECIUFR/9oADAMBAAIRAxEAPwDmo1PvTcKnPpP+US2RcjNVUnkjWNbZELs+oDdKL4VBO5haFELgDdcip0vU10M91epoLiCHVm0yGzUq+eDmFegb4rV9CLgkZmAxGQD+6esJpGuLQMctzganoAD1rZ5mTRoyQ6tkEdxQhZa4hIVhiJI+94+DUS4k2nYnPfHas+snnZFmkdwGyNvBomQWyQKrJ7pOK1BmMWJIzbSk+z4oz28GqvBAynzu+RigwAdKYyaBByWraZeNQpPfeqMXCbMRK+m+wz6sj+UsSeUfin+FfiA+Qxx7VkgZ/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-front-night-with-suite__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-front-night-with-suite__w480.avif"
+        },
+        {
+          "w": 599,
+          "url": "/media-deriv/office-front-night-with-suite__w599.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-front-night-with-suite__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-front-night-with-suite__w480.jpg"
+        },
+        {
+          "w": 599,
+          "url": "/media-deriv/office-front-night-with-suite__w599.jpg"
+        }
+      ]
+    }
+  },
+  "/media/office-front-night-with-suite.avif": {
+    "width": 599,
+    "height": 799,
+    "aspect": 0.7496871088861077,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwQFAQb/xAAoEAACAQQABQMFAQAAAAAAAAABAgMABBESBRMhMUEyYXEUMzRRgZH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAaEQADAAMBAAAAAAAAAAAAAAAAARECIUFR/9oADAMBAAIRAxEAPwDmo1PvTcKnPpP+US2RcjNVUnkjWNbZELs+oDdKL4VBO5haFELgDdcip0vU10M91epoLiCHVm0yGzUq+eDmFegb4rV9CLgkZmAxGQD+6esJpGuLQMctzganoAD1rZ5mTRoyQ6tkEdxQhZa4hIVhiJI+94+DUS4k2nYnPfHas+snnZFmkdwGyNvBomQWyQKrJ7pOK1BmMWJIzbSk+z4oz28GqvBAynzu+RigwAdKYyaBByWraZeNQpPfeqMXCbMRK+m+wz6sj+UsSeUfin+FfiA+Qxx7VkgZ/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-front-night-with-suite__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-front-night-with-suite__w480.avif"
+        },
+        {
+          "w": 599,
+          "url": "/media-deriv/office-front-night-with-suite__w599.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-front-night-with-suite__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-front-night-with-suite__w480.jpg"
+        },
+        {
+          "w": 599,
+          "url": "/media-deriv/office-front-night-with-suite__w599.jpg"
+        }
+      ]
+    }
+  },
+  "/media/office-location.jpg": {
+    "width": 848,
+    "height": 1131,
+    "aspect": 0.7497789566755084,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAwECBAUGAP/EACQQAAICAQQDAAIDAAAAAAAAAAECAxEABBIhMRNBUQUiccHx/8QAFwEBAQEBAAAAAAAAAAAAAAAAAwACAf/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAhEhA//aAAwDAQACEQMRAD8AJV4hABJOOuu+B9yPLqIgxR1Y+iNtjC1MsYD2MXnAxaqJm2ICCBdVXGHBB6N53Vbo0+qiQlGLbhRoLeIk6RzSh93IBFLePeKN7YopYjsjK7Vagw6lgPajN4g8jyUpXlST8tIwBKlBwVo9/Ms5FhWFBEtG+eADmf0svm10jN0Y/wC8soNqg7VAJ+DJA5WO3TcJP1J7A7yDq9G0kxkmZolH68r2RmjSJIYQI1CgWBxjhFHMjeVQ9UefuOeQQvotm9Do0bUr4pKUqQxY3/mX2m0UcW1uZHHO+/f8YJaTftAA8m2gOKx2okZFtTRv1mzEO2HJb//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-location__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-location__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office-location__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office-location__w768.avif"
+        },
+        {
+          "w": 848,
+          "url": "/media-deriv/office-location__w848.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-location__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-location__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office-location__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office-location__w768.jpg"
+        },
+        {
+          "w": 848,
+          "url": "/media-deriv/office-location__w848.jpg"
+        }
+      ]
+    }
+  },
+  "/media/office-location.avif": {
+    "width": 848,
+    "height": 1131,
+    "aspect": 0.7497789566755084,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAwECBAUGAP/EACQQAAICAQQDAAIDAAAAAAAAAAECAxEABBIhMRNBUQUiccHx/8QAFwEBAQEBAAAAAAAAAAAAAAAAAwACAf/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAhEhA//aAAwDAQACEQMRAD8AJV4hABJOOuu+B9yPLqIgxR1Y+iNtjC1MsYD2MXnAxaqJm2ICCBdVXGHBB6N53Vbo0+qiQlGLbhRoLeIk6RzSh93IBFLePeKN7YopYjsjK7Vagw6lgPajN4g8jyUpXlST8tIwBKlBwVo9/Ms5FhWFBEtG+eADmf0svm10jN0Y/wC8soNqg7VAJ+DJA5WO3TcJP1J7A7yDq9G0kxkmZolH68r2RmjSJIYQI1CgWBxjhFHMjeVQ9UefuOeQQvotm9Do0bUr4pKUqQxY3/mX2m0UcW1uZHHO+/f8YJaTftAA8m2gOKx2okZFtTRv1mzEO2HJb//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-location__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-location__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office-location__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office-location__w768.avif"
+        },
+        {
+          "w": 848,
+          "url": "/media-deriv/office-location__w848.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/office-location__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/office-location__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/office-location__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/office-location__w768.jpg"
+        },
+        {
+          "w": 848,
+          "url": "/media-deriv/office-location__w848.jpg"
+        }
+      ]
+    }
+  },
   "/media/office.jpg": {
     "width": 2048,
     "height": 1542,
@@ -1407,6 +1587,128 @@
         {
           "w": 1205,
           "url": "/media-deriv/street-sign__w1205.jpg"
+        }
+      ]
+    }
+  },
+  "/media/suite-office-door.jpg": {
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAABAUGAQID/8QAKxAAAQMDAgMHBQAAAAAAAAAAAQACEQMEIQUSExRxJEFRYpGhsTFCQ1Jy/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERAv/aAAwDAQACEQMRAD8AqGVAAEJV1azktNwyRgiVofhTT+VbfVuahrNzs7tuZVgc1NQs3fnp+q4Y+nWG6k4PbMSEmuW2HAPCcDWxA3zPjhM9IaG2FKBEyfdQFwJ3SZ64U3qDovqw8yf78Kc1J3b6uO8fXonJXiXKl0zFjR/hSpOO5VFgYs6I8gTojA9INTPbn9B8I5txV/f2Ql0A+s5zgCcZhSXGs0A44VRbO229MeDR8KfNNh+0eiObc1W02gPIwl60nOP/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/suite-office-door__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/suite-office-door__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/suite-office-door__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/suite-office-door__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/suite-office-door__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/suite-office-door__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/suite-office-door__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/suite-office-door__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/suite-office-door__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/suite-office-door__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/suite-office-door__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/suite-office-door__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/suite-office-door.avif": {
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAArACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAABAUGAQID/8QAKxAAAQMDAgMHBQAAAAAAAAAAAQACEQMEIQUSExRxJEFRYpGhsTFCQ1Jy/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERAv/aAAwDAQACEQMRAD8AqGVAAEJV1azktNwyRgiVofhTT+VbfVuahrNzs7tuZVgc1NQs3fnp+q4Y+nWG6k4PbMSEmuW2HAPCcDWxA3zPjhM9IaG2FKBEyfdQFwJ3SZ64U3qDovqw8yf78Kc1J3b6uO8fXonJXiXKl0zFjR/hSpOO5VFgYs6I8gTojA9INTPbn9B8I5txV/f2Ql0A+s5zgCcZhSXGs0A44VRbO229MeDR8KfNNh+0eiObc1W02gPIwl60nOP/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/suite-office-door__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/suite-office-door__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/suite-office-door__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/suite-office-door__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/suite-office-door__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/suite-office-door__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/suite-office-door__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/suite-office-door__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/suite-office-door__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/suite-office-door__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/suite-office-door__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/suite-office-door__w1200.jpg"
         }
       ]
     }
