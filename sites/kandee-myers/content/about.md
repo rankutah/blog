@@ -101,9 +101,17 @@ Since 1994 I have worked in real estate and I love it! As a licensed Broker, I b
 
 {{< col card="false" y="start" order="first" >}}
 
-## Outdoors & Faith
+## People & Outdoors
 
-I love the outdoors. Running, cycling, hiking the Grand Canyon Rim-to-Rim, and walking the Camino de Santiago have shaped my determination and fueled my zest for life. My faith is deep.
+I love people. I love the outdoors.
+
+Research on well-being reminds us that walking is good — and walking with a friend is even better. Walking is not only good for our bodies, but it is also good for our brains. Walking with a friend creates space for meaningful connection, which is missing today.
+
+Over the years, I’ve been a runner and cyclist, and I’ve hiked the Grand Canyon Rim-to-Rim twice. My current passion is walking the Camino de Santiago in northern Spain — a path people have traveled for more than a thousand years.
+
+The Camino is a powerful blend of travel, friendship, solitude, and reflection. Along its nearly 500-mile journey to the Cathedral of Santiago de Compostela, where the remains of Saint James are traditionally believed to rest, you encounter people from around the world, rural communities, breathtaking landscapes, and moments of quiet clarity.
+
+Our planet is sacred, and we have been given a world worth exploring. Learning from people, cultures, and the goodness that emerges outdoors is one of my greatest joys — and it keeps me curious, grounded, and grateful.
 
 {{< /col >}}
 
