@@ -1,11 +1,27 @@
 ---
 title: "Priorities"
-description: "Kandee Myers’ priorities for Utah State Senate District 21 — housing, education, term limits, and more."
+description: "Kandee Myers’ priorities for Utah State Senate District 21 — homeownership, education, health care, and social media."
+url: "/priorities"
+aliases:
+  - "/issues"
+  - "/issues/"
 ---
 
-# Featured priorities
+{{< hero img="/media/My%20Priorities%20For%20Utah-4.avif" alt="My Priorities for Utah" bleed="true" max="md" fit="contain" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" align="center" >}}
 
-## Utah Housing & Homeownership
+<div class="not-prose mx-auto w-full max-w-4xl text-center">
+	<h1 class="text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">Put Me to Work</h1>
+	<div class="mt-6 km-why-running-hero flex flex-col items-center gap-4 md:gap-4">
+		<h2 class="text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight"><a href="#housing" class="cp-hero-link block">Homeownership</a></h2>
+		<h2 class="text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight"><a href="#education" class="cp-hero-link block">Education</a></h2>
+		<h2 class="text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight"><a href="#health-care" class="cp-hero-link block">Health Care</a></h2>
+		<h2 class="text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight"><a href="#social-media" class="cp-hero-link block">Social Media</a></h2>
+	</div>
+</div>
+
+{{< /hero >}}
+
+## Utah Housing & Homeownership {#housing .scroll-mt-24}
 
 Kandee’s background includes real estate (since 1994) and first-hand experience through the housing boom and crash.
 
@@ -17,7 +33,7 @@ Key points:
 
 Read more: [Utah Housing & Homeownership](/issues/housing-homeownership/)
 
-## Education — Public & Private Schools
+## Education — Public & Private Schools {#education .scroll-mt-24}
 
 Kandee supports strong public schools and wants education policy to be research-guided and child-centered.
 
@@ -29,17 +45,8 @@ Key points:
 
 Read more: [Education](/issues/education/)
 
-## Term Limits
+## Health Care {#health-care .scroll-mt-24}
 
-Kandee supports reasonable term limits rooted in accountability, fresh perspective, and connection to constituents.
+## Social Media {#social-media .scroll-mt-24}
 
-Read more: [Term Limits](/issues/term-limits/)
-
-## Additional issue pages (coming soon)
-
-These pages are created now for clarity and search, and will be expanded over time:
-
-- [Health Care](/issues/health-care/)
-- [Child Care](/issues/child-care/)
-- [Protecting Attention, Learning & Childhood](/issues/learning/)
 

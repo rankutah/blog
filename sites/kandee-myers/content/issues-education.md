@@ -8,75 +8,34 @@ url: "/issues/education/"
 
 Utah believes in investing in people. Our economic future depends on thriving public schools and policies that support the well-being of teachers, students, and the working families that schools aim to serve.
 
-## Early Child Care
+## Public Schools First
 
-I want Utah to seriously explore state-supported childcare beginning at age three — responsibly, fiscally, and thoughtfully. When parents can work, small businesses grow, tax revenue increases, and children benefit from early learning environments.
+Education is personal to me.
 
-This is not about expanding government. It is about strengthening families. When childcare is available, parents will work, businesses will hire, and our economy will grow. Growth strengthens our tax base. This is how we can support families and address Utah housing without sacrificing fiscal discipline.
+In my twenties, I was admitted to the College of Education at the University of Arizona, majoring in mathematics with a minor in Deaf Studies. My dream was to become a high school math and American Sign Language teacher.
 
-As of 2026, twelve states offer some form of state-supported early childcare. In 2025, New Mexico became the first in the nation to guarantee universal, no-cost childcare for all families.
+That early path shaped how I view public education—not as a policy debate, but as a calling. Public school teachers shape lives every day. They deserve respect, meaningful support, and compensation that reflects the time, skill, and dedication they give to Utah’s children.
 
-Utah should not sit on the sidelines. Utah has the fiscal strength and innovative spirit to explore what’s possible. Let’s examine the data, learn from those leading the way, and determine whether we can responsibly become the next state to lead.
+I believe property tax dollars should prioritize public schools. Alpine School District deserves steady, reliable support from both elected leaders and the communities it serves. Public schools welcome every child—regardless of background, belief, or ability. That commitment matters deeply to me.
 
-(Old Version)
+I will examine how property taxes are allocated, ask practical, data-driven questions, and pursue solutions grounded in collaboration. This is not about slogans—it is about getting the details right while welcoming thoughtful debate.
 
-## I believe in public education — and I trust Alpine School District
 
-I am not in favor of using public property tax dollars to fund private schools. This may be hard to swallow, but hear me out. Historically, public education is a shared investment in our communities, our workforce, and our democracy. Alpine School District covers all of my Senate District, and they deserve strong, consistent support.
+{{< cols min="16rem" gap="1.5rem" row="1.5rem" v="start" >}}
 
-I have seen the studies on what happens when tax dollars are funneled to private schools. Public schools serve all children, regardless of background or belief, and I want my position to reflect that commitment clearly and transparently. I welcome the debate and promise to keep an open mind to alternative options.
+	{{< col card="false" y="start" >}}
+	{{< img src="/media/Students%20sharing%20a%20friendly%20moment.avif" alt="Students sharing a friendly moment" class="w-full h-auto rounded-xl" object="cover" >}}
+	{{< /col >}}
 
-## Education is personal to me.
+	{{< col card="false" y="start" >}}
+	{{< img src="/media/Math%20lesson%20in%20progress.avif" alt="Math lesson in progress" class="w-full h-auto rounded-xl" object="cover" >}}
+	{{< /col >}}
 
-Teachers shape lives. They deserve respect, support, and fair compensation.
+	{{< col card="false" y="start" >}}
+	{{< img src="/media/ChatGPT%20Image%20Feb%2014%2C%202026%2C%2010_11_35%20PM.avif" alt="Education-related photo" class="w-full h-auto rounded-xl" object="cover" >}}
+	{{< /col >}}
 
-Smart funding: Support teachers without hurting students.
-
-- Examine how property taxes are currently allocated to the Alpine School District.
-- Ask hard, practical questions about how we can increase teacher pay responsibly.
-- Look for solutions that strengthen classrooms without increasing financial pressure on families or reducing student resources.
-
-This is not about slogans — it’s about careful analysis, collaboration, and accountability.
-
-## Focused learning matters — kids need childhood.
-
-I believe it’s time to re-evaluate how much technology we place in front of children during the school day.
-
-I have studied the growing body of research that shows that:
-
-- Excessive screen use can interfere with brain development
-- Constant digital stimulation affects emotional regulation
-- Social media and device dependence reduce real-world social skills and resilience
-- Increase recess — outdoor play and less supervised social settings
-
-Technology has a place — but it should support learning, not replace it.
-
-## Books over screens. Learning over distraction.
-
-I support learning environments that prioritize attention, comprehension, and human connection.
-
-### Public schools should be phone-free learning spaces.
-
-No phones during the school day — not because we don’t trust students, but because their developing brains deserve protection.
-
-Children need time to:
-
-- Learn how to focus
-- Learn how to interact face-to-face
-- Learn how to play, create, and problem-solve together
-
-## Our children deserve our full attention.
-
-Education is not just about test scores — it’s about healthy development, curiosity, confidence, and connection.
-
-I will always approach education policy with:
-
-- Respect for teachers
-- Trust in public schools
-- Curiosity guided by research
-- A commitment to what helps children truly thrive
-
-Strong public schools build strong communities. That’s a value I’ll carry with me to the Utah State Senate.
+{{< /cols >}}
 
 Back to: [Issues](/issues)
 

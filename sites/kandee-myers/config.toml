@@ -107,9 +107,14 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    name   = "Why I Am Running"
+    name   = "Why"
     url    = "/why-i-am-running"
     weight = 10
+
+  [[menu.main]]
+    name   = "Priorities"
+    url    = "/priorities"
+    weight = 15
 
   [[menu.main]]
     name       = "About"
@@ -147,7 +152,7 @@ enableRobotsTXT = true
     weight = 40
 
   [[menu.main]]
-    name       = "Voting"
+    name       = "Vote"
     identifier = "voter"
     url        = "#"
     weight     = 50

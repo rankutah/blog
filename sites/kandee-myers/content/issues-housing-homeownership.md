@@ -6,40 +6,23 @@ url: "/issues/housing-homeownership/"
 
 ## Utah Housing & Homeownership
 
-I have professionally sold real estate since 1994 and bought my first rental property in 1985. In 2005, my husband and I owned 20 rental properties, and some of us, deep in the real estate market at the time, could feel the uncertainty slowly building as federal banking oversight weakened.
+Housing affordability is one of the most pressing issues facing our state.
 
-I believe an important point is that both parties, driven by a shared belief that markets could largely self-regulate and that expanding homeownership was an unqualified good, caused “the housing bubble and crash” (2007–2009).
+Inventory is tight. Prices are high. First-time buyers are getting squeezed out. When housing costs rise faster than wages, it doesn’t just hurt buyers—it strains our entire workforce.
 
-### Who removed the key guardrails?
+I have spent decades in real estate, not studying the housing market but living it. I understand the complicated dynamics behind housing shortages, interest rates, regulation, and supply constraints.
 
-- Lawmakers who deregulated finance
-- Regulators who chose restraint over enforcement
-- Financial institutions that exploited incentives
-- Rating agencies that underestimated risk
-- A culture that equated credit expansion with prosperity
+There are forces outside a state’s control—including federal monetary policy—but Utah still has meaningful tools. We can reduce barriers, encourage smart growth, and protect property rights while expanding opportunity.
 
-My perspective is that it wasn’t malice — it was overconfidence, misaligned incentives, and a belief that housing prices would keep rising.
-
-### 1. Protecting homeownership and property rights
-
-- Modernize Utah’s Homestead Exemption, which currently protects only $42,000 of equity per individual homeowner — an amount that no longer reflects today’s housing market.
-- Explore stronger property-ownership protections, including whether Utah should adopt community property principles or offer homeowners the option to hold property as community property.
-- Examine whether homeowners should be exempt from state income tax on mortgage debt forgiven through a short sale, so individuals are not taxed on a financial loss while trying to recover and remain stable.
-
-### 2. Expanding access to homeownership in a changing housing market
-
-- Homeownership matters to our health, stability, and sense of belonging while strengthening communities and our state.
-- Address the realities of rising home prices and rental costs by evaluating housing and property laws.
-- Stay focused on practical, responsible ways to make the dream of homeownership achievable for more Utahns.
-
-### 3. Property taxes
-
-More to come.
+I will bring practical, market-informed solutions to the legislature. Utah deserves solutions grounded in reality, not slogans.
 
 ## Related
 
 - [Homeownership](/issues/homeownership/)
 - [Experience You Can Trust](/issues/housing-homeownership/experience-you-can-trust/)
+
+
+{{< img src="/media/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e.avif" alt="Housing and homeownership" class="w-full h-auto rounded-xl" object="cover" >}}
 
 Back to: [Issues](/issues)
 

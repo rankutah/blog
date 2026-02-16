@@ -259,6 +259,128 @@
       ]
     }
   },
+  "/media/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e.jpg": {
+    "width": 1057,
+    "height": 953,
+    "aspect": 1.1091290661070303,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAlEAACAQMDBAIDAAAAAAAAAAABAgMAESESMVEEIkFhE6EUMoH/xAAWAQEBAQAAAAAAAAAAAAAAAAACBAP/xAAdEQACAQQDAAAAAAAAAAAAAAAAARETITFBAgNh/9oADAMBAAIRAxEAPwCxo4FQhpDpHLClxQLK9oOp0gbBsGp9IGdBP1WrDFkPqrqsbIaU6OgIFPbM7MQbgrgUZJemj7V1jwQnHuoC9gS1wCfJohwu2P5QfZOzVcPDSaY4kkZWAYn9U25HFKM8aWQoFdb3ByAfANJAeFrJI1sEg5B81QIU6hFdkCuDgri1R2WTdXwB+rIjNtQU4XtsPug35IVZdLFWFsrYfW9OjcR/JFpDEXBdsm21hxUk3USR2SMlQnbvfHriimm7CacSz//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w960.avif"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w1057.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w960.jpg"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w1057.jpg"
+        }
+      ]
+    }
+  },
+  "/media/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e.avif": {
+    "width": 1057,
+    "height": 953,
+    "aspect": 1.1091290661070303,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAlEAACAQMDBAIDAAAAAAAAAAABAgMAESESMVEEIkFhE6EUMoH/xAAWAQEBAQAAAAAAAAAAAAAAAAACBAP/xAAdEQACAQQDAAAAAAAAAAAAAAAAARETITFBAgNh/9oADAMBAAIRAxEAPwCxo4FQhpDpHLClxQLK9oOp0gbBsGp9IGdBP1WrDFkPqrqsbIaU6OgIFPbM7MQbgrgUZJemj7V1jwQnHuoC9gS1wCfJohwu2P5QfZOzVcPDSaY4kkZWAYn9U25HFKM8aWQoFdb3ByAfANJAeFrJI1sEg5B81QIU6hFdkCuDgri1R2WTdXwB+rIjNtQU4XtsPug35IVZdLFWFsrYfW9OjcR/JFpDEXBdsm21hxUk3USR2SMlQnbvfHriimm7CacSz//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w960.avif"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w1057.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w960.jpg"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e__w1057.jpg"
+        }
+      ]
+    }
+  },
   "/media/3.jpg": {
     "width": 559,
     "height": 955,
@@ -1009,6 +1131,144 @@
         {
           "w": 2448,
           "url": "/media-deriv/5__w2448.jpg"
+        }
+      ]
+    }
+  },
+  "/media/ChatGPT Image Feb 14, 2026, 10_11_35 PM.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAJBAAAgEDAwQDAQAAAAAAAAAAAQIDABESBBMhBSIxQSRhccH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIyQRES/9oADAMBAAIRAxEAPwDS1Wui6ZBEs183HC24+6Vm6tG0CbruBjnwtrj7rHkj2gonbNlIYc3pyKGDWR4vlmVtYHwKjcmWPlHR1OnlkZIiVfHLJjxzVEjzRkFXZGYWazVEsUcUm2q7bntDk3H4f0AUo41LSYagOCzWBP8AKxwXC3Vt8ggi4Ki9OdIN95/HhbeqKKV1BVirr7nbhX1cmktFlqyEmcskXcAfdFFYFw//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1536.jpg"
+        }
+      ]
+    }
+  },
+  "/media/ChatGPT Image Feb 14, 2026, 10_11_35 PM.avif": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAJBAAAgEDAwQDAQAAAAAAAAAAAQIDABESBBMhBSIxQSRhccH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIyQRES/9oADAMBAAIRAxEAPwDS1Wui6ZBEs183HC24+6Vm6tG0CbruBjnwtrj7rHkj2gonbNlIYc3pyKGDWR4vlmVtYHwKjcmWPlHR1OnlkZIiVfHLJjxzVEjzRkFXZGYWazVEsUcUm2q7bntDk3H4f0AUo41LSYagOCzWBP8AKxwXC3Vt8ggi4Ki9OdIN95/HhbeqKKV1BVirr7nbhX1cmktFlqyEmcskXcAfdFFYFw//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/ChatGPT Image Feb 14, 2026, 10_11_35 PM__w1536.jpg"
         }
       ]
     }
@@ -2771,6 +3031,282 @@
       ]
     }
   },
+  "/media/Math lesson in progress.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAQFAQMG/8QAKBAAAgEDAwIFBQAAAAAAAAAAAQIDAAQRBRIxEyEUIkFRcTJSYZHx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgMB/8QAGhEBAAMBAQEAAAAAAAAAAAAAAQACERIxA//aAAwDAQACEQMRAD8Ad0rUDdxx7yQwbaMDmrCbmjJYYOfeuIE9yqT29upijGEDYwTkgZzV9JpLDSOgk3UkjwOpnPJqRYJVq+SjdSCK3kOcMo7e9K6fcG4tAXOXUlW+f5WFkkv9Oj6yBWx9ROPNxx+aiNPc6RCgt0Eglk75BI9sCnp7ClhzJHlunBZhwTx6UyNWbwgi6KKMhjt7An4/VFFLg6yK31u1FY/a3fiI7dX6io4YFUk28celbroMY0KsQNoYDv8AdRRW0M2G6ubP/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Math lesson in progress__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Math lesson in progress__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Math lesson in progress__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Math lesson in progress__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Math lesson in progress__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Math lesson in progress__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Math lesson in progress__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Math lesson in progress__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Math lesson in progress__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Math lesson in progress__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Math lesson in progress__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Math lesson in progress__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Math lesson in progress__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Math lesson in progress__w1536.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Math lesson in progress.avif": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAQFAQMG/8QAKBAAAgEDAwIFBQAAAAAAAAAAAQIDAAQRBRIxEyEUIkFRcTJSYZHx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgMB/8QAGhEBAAMBAQEAAAAAAAAAAAAAAQACERIxA//aAAwDAQACEQMRAD8Ad0rUDdxx7yQwbaMDmrCbmjJYYOfeuIE9yqT29upijGEDYwTkgZzV9JpLDSOgk3UkjwOpnPJqRYJVq+SjdSCK3kOcMo7e9K6fcG4tAXOXUlW+f5WFkkv9Oj6yBWx9ROPNxx+aiNPc6RCgt0Eglk75BI9sCnp7ClhzJHlunBZhwTx6UyNWbwgi6KKMhjt7An4/VFFLg6yK31u1FY/a3fiI7dX6io4YFUk28celbroMY0KsQNoYDv8AdRRW0M2G6ubP/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Math lesson in progress__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Math lesson in progress__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Math lesson in progress__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Math lesson in progress__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Math lesson in progress__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Math lesson in progress__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Math lesson in progress__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Math lesson in progress__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Math lesson in progress__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Math lesson in progress__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Math lesson in progress__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Math lesson in progress__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Math lesson in progress__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Math lesson in progress__w1536.jpg"
+        }
+      ]
+    }
+  },
+  "/media/My Priorities For Utah-4.jpg": {
+    "width": 1366,
+    "height": 768,
+    "aspect": 1.7786458333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQGBf/EACoQAAEDAQUGBwAAAAAAAAAAAAEAAhEDBAUSITEGEzVBYXMyM1FxkbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQA/8QAGhEBAQACAwAAAAAAAAAAAAAAAQACERIxMv/aAAwDAQACEQMRAD8A1HiGfyErG4AZ5lU21wMs2nSPVTCoIgkmOmS3K2p76kGAASqlG1G0lzROSS9q5pXZaHMkEM1bqOq4Wz1orVbw891Ru6OIQRGYj3TGLrZGpaKBi05/pU1EDChClJmp3twu19pyz2y3EKnaP2EIV2Phpnu//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/My Priorities For Utah-4__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/My Priorities For Utah-4__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/My Priorities For Utah-4__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/My Priorities For Utah-4__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/My Priorities For Utah-4__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/My Priorities For Utah-4__w1200.avif"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/My Priorities For Utah-4__w1366.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/My Priorities For Utah-4__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/My Priorities For Utah-4__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/My Priorities For Utah-4__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/My Priorities For Utah-4__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/My Priorities For Utah-4__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/My Priorities For Utah-4__w1200.jpg"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/My Priorities For Utah-4__w1366.jpg"
+        }
+      ]
+    }
+  },
+  "/media/My Priorities For Utah-4.avif": {
+    "width": 1366,
+    "height": 768,
+    "aspect": 1.7786458333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQGBf/EACoQAAEDAQUGBwAAAAAAAAAAAAEAAhEDBAUSITEGEzVBYXMyM1FxkbHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQA/8QAGhEBAQACAwAAAAAAAAAAAAAAAQACERIxMv/aAAwDAQACEQMRAD8A1HiGfyErG4AZ5lU21wMs2nSPVTCoIgkmOmS3K2p76kGAASqlG1G0lzROSS9q5pXZaHMkEM1bqOq4Wz1orVbw891Ru6OIQRGYj3TGLrZGpaKBi05/pU1EDChClJmp3twu19pyz2y3EKnaP2EIV2Phpnu//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/My Priorities For Utah-4__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/My Priorities For Utah-4__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/My Priorities For Utah-4__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/My Priorities For Utah-4__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/My Priorities For Utah-4__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/My Priorities For Utah-4__w1200.avif"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/My Priorities For Utah-4__w1366.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/My Priorities For Utah-4__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/My Priorities For Utah-4__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/My Priorities For Utah-4__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/My Priorities For Utah-4__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/My Priorities For Utah-4__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/My Priorities For Utah-4__w1200.jpg"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/My Priorities For Utah-4__w1366.jpg"
+        }
+      ]
+    }
+  },
   "/media/Screenshot 2026-01-16 at 8.23.10 PM.jpg": {
     "width": 1415,
     "height": 882,
@@ -2905,6 +3441,266 @@
         {
           "w": 1415,
           "url": "/media-deriv/Screenshot 2026-01-16 at 8.23.10 PM__w1415.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Students sharing a friendly moment.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAlEAACAgEEAQMFAAAAAAAAAAABAgMRAAQFEiFRMUGBIjJhcaH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIREiFBMv/aAAwDAQACEQMRAD8A4TdtZrYlWF0h+slnC2a9hgN1fTs7GSV2sK3Qok+Mn7bE7TJMwqHj0LyjFHFO8kE0bQwhrDgA8h5wyrpeOho3ifkiHkC7V6KazFqdw1RZnLuvHzXR+M1T7XCirLpppZHukUpxF+bzMEh1HKOTosQOXqBXv85nJ8JSVCdCOGijFk3Z/uWtJJHDAjmESO19sfTvxhhlUmgsTuOukmMLEUo5AKD+MnRrTKb+03+8MMGMfR//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Students sharing a friendly moment__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Students sharing a friendly moment__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Students sharing a friendly moment__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Students sharing a friendly moment__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Students sharing a friendly moment__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Students sharing a friendly moment__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Students sharing a friendly moment__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Students sharing a friendly moment__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Students sharing a friendly moment__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Students sharing a friendly moment__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Students sharing a friendly moment__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Students sharing a friendly moment__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Students sharing a friendly moment__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Students sharing a friendly moment__w1536.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Students sharing a friendly moment.avif": {
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAlEAACAgEEAQMFAAAAAAAAAAABAgMRAAQFEiFRMUGBIjJhcaH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIREiFBMv/aAAwDAQACEQMRAD8A4TdtZrYlWF0h+slnC2a9hgN1fTs7GSV2sK3Qok+Mn7bE7TJMwqHj0LyjFHFO8kE0bQwhrDgA8h5wyrpeOho3ifkiHkC7V6KazFqdw1RZnLuvHzXR+M1T7XCirLpppZHukUpxF+bzMEh1HKOTosQOXqBXv85nJ8JSVCdCOGijFk3Z/uWtJJHDAjmESO19sfTvxhhlUmgsTuOukmMLEUo5AKD+MnRrTKb+03+8MMGMfR//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Students sharing a friendly moment__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Students sharing a friendly moment__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Students sharing a friendly moment__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Students sharing a friendly moment__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Students sharing a friendly moment__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Students sharing a friendly moment__w1200.avif"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Students sharing a friendly moment__w1536.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Students sharing a friendly moment__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Students sharing a friendly moment__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Students sharing a friendly moment__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Students sharing a friendly moment__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Students sharing a friendly moment__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Students sharing a friendly moment__w1200.jpg"
+        },
+        {
+          "w": 1536,
+          "url": "/media-deriv/Students sharing a friendly moment__w1536.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Young graduates celebrating their achievement.jpg": {
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUAAgQG/8QAJBAAAgEEAgIBBQAAAAAAAAAAAQIDAAQRIRIxE1EiFEFhcYH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECEQMTBCEUQVH/2gAMAwEAAhEDEQA/AA2cAErmZeYUhQq7P71Woyx2qYRXUHI2MqD1WeRXH1U8M8MUijUSAAa9n3Q4hOsaKskXwU7kXPIa131WTQmrZVUXScnjznUqudKCSP5iml4PJZBgrcUxgNrkPfukfDCoY7tcufnkA8Ts6A+2qYJ55pYykscilUXwsuQ2RknvujLHJKrFX056dGSWVW2yk8vwR3QyxycHBIp1LDBI8hWHj5BsjOakFpCi5a1Mh75Gt65kVHtENfYlaRyE5NywMAUWyMhuohCcvzBXeN02jsw6EG2V95yFxirx29vFIJRalGBBBB0DS+ZGmqC8fuz/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w1024.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Young graduates celebrating their achievement.avif": {
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUAAgQG/8QAJBAAAgEEAgIBBQAAAAAAAAAAAQIDAAQRIRIxE1EiFEFhcYH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECEQMTBCEUQVH/2gAMAwEAAhEDEQA/AA2cAErmZeYUhQq7P71Woyx2qYRXUHI2MqD1WeRXH1U8M8MUijUSAAa9n3Q4hOsaKskXwU7kXPIa131WTQmrZVUXScnjznUqudKCSP5iml4PJZBgrcUxgNrkPfukfDCoY7tcufnkA8Ts6A+2qYJ55pYykscilUXwsuQ2RknvujLHJKrFX056dGSWVW2yk8vwR3QyxycHBIp1LDBI8hWHj5BsjOakFpCi5a1Mh75Gt65kVHtENfYlaRyE5NywMAUWyMhuohCcvzBXeN02jsw6EG2V95yFxirx29vFIJRalGBBBB0DS+ZGmqC8fuz/2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w1024.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/Young graduates celebrating their achievement__w1024.jpg"
         }
       ]
     }
