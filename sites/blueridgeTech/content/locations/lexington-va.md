@@ -10,7 +10,7 @@ hero: true
 # Computer Repair near Lexington, VA (13-min drive) {.text-white}
 Fast, affordable, honest repairs — just a short drive to our Buena Vista shop.
 {.text-white}
-{{<button url="https://www.google.com/maps/dir/?api=1&destination=1412+Magnolia+Ave,+Buena+Vista,+VA+24416" text="Get Directions" >}}{{<button url="tel:+15404581021" text="Call (540) 458-1021" >}}{{<button url="https://calendly.com/support-blueridgetech" text="Book Service" >}}
+{{<button url="https://www.google.com/maps/dir/?api=1&destination=2175+Magnolia+Avenue%2C+Suite+201%2C+Buena+Vista%2C+VA+24416" text="Get Directions" >}}{{<button url="tel:+15404581021" text="Call (540) 458-1021" >}}{{<button url="https://calendly.com/support-blueridgetech" text="Book Service" >}}
 {{< /hero >}}
 
 <script type="application/ld+json">
@@ -107,7 +107,7 @@ Serving students from Washington and Lee University with computer repair, upgrad
 
 ## Get directions
 
-{{< button url="https://www.google.com/maps/dir/?api=1&destination=1412+Magnolia+Ave,+Buena+Vista,+VA+24416" text="Open in Google Maps" >}}
+{{< button url="https://www.google.com/maps/dir/?api=1&destination=2175+Magnolia+Avenue%2C+Suite+201%2C+Buena+Vista%2C+VA+24416" text="Open in Google Maps" >}}
 
 Or call: [(540) 458-1021](tel:+15404581021)
 

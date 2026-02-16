@@ -52,7 +52,7 @@ Reviews help neighbors find trusted local help. If I’ve earned your 5‑stars,
 	"image": "https://blueridgetech.pages.dev/media/logo.png",
 	"address": {
 		"@type": "PostalAddress",
-		"streetAddress": "1412 Magnolia Ave",
+		"streetAddress": "2175 Magnolia Avenue, Suite 201",
 		"addressLocality": "Buena Vista",
 		"addressRegion": "VA",
 		"postalCode": "24416",
@@ -60,11 +60,11 @@ Reviews help neighbors find trusted local help. If I’ve earned your 5‑stars,
 	},
 	"geo": {
 		"@type": "GeoCoordinates",
-		"latitude": 37.7269065,
-		"longitude": -79.3583516
+		"latitude": 37.7353129,
+		"longitude": -79.3540077
 	},
 	"sameAs": [
-		"https://www.google.com/maps/place/BlueridgeTech/@37.7269065,-79.3609265,17z/data=!4m8!3m7!1s0x89b333ba64768395:0xcb4826ba71e5dd57!8m2!3d37.7269065!4d-79.3583516!9m1!1b1!16s%2Fg%2F11y9rmz6zg"
+		"https://www.google.com/maps/search/?api=1&query=2175+Magnolia+Avenue%2C+Suite+201%2C+Buena+Vista%2C+VA+24416"
 	]
 }
 </script>

@@ -8,7 +8,7 @@ schema:
     type: LocalBusiness
     name: "BlueridgeTech"
     address:
-      streetAddress: "1412 Magnolia Ave"
+      streetAddress: "2175 Magnolia Avenue, Suite 201"
       addressLocality: "Buena Vista"
       addressRegion: "VA"
       postalCode: "24416"
@@ -17,13 +17,13 @@ schema:
     openingHoursSpecification:
       - "@type": OpeningHoursSpecification
         dayOfWeek: [Monday, Tuesday, Wednesday, Thursday, Friday]
-        opens: "11:00"
-        closes: "16:30"
+        opens: "10:00"
+        closes: "18:00"
       - "@type": OpeningHoursSpecification
         dayOfWeek: [Saturday]
-        opens: "11:00"
-        closes: "13:00"
-    hasMap: "https://www.google.com/maps/place/1412+Magnolia+Ave,+Buena+Vista,+VA+24416"
+        opens: "10:00"
+        closes: "16:00"
+    hasMap: "https://www.google.com/maps/search/?api=1&query=2175+Magnolia+Avenue%2C+Suite+201%2C+Buena+Vista%2C+VA+24416"
     areaServed: "Buena Vista, VA; Lexington, VA; Glasgow, VA; Natural Bridge, VA"
 ---
 
@@ -205,6 +205,8 @@ Call now or schedule a time that works for you.
 
 ## Find us in Buena Vista
 Photos of the office and signs so you know you’re in the right place.
+
+Entrance on 22nd Street.
 
 {{< carousel_lite id="location" images="/media/office.jpg,/media/fence-sign.jpg,/media/street-sign.jpg" pxheight="400" mobilepxheight="400" radius="xl" >}}
 
