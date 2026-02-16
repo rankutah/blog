@@ -107,7 +107,7 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    name   = "Why"
+    name   = "Why I Am Running"
     url    = "/why-i-am-running"
     weight = 10
 
@@ -152,7 +152,7 @@ enableRobotsTXT = true
     weight = 40
 
   [[menu.main]]
-    name       = "Vote"
+    name       = "Voting"
     identifier = "voter"
     url        = "#"
     weight     = 50
