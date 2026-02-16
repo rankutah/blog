@@ -55,7 +55,6 @@ Outside of work, Mason enjoys spending time in nature, whether hiking local trai
 ## Brooklynn Ludgate
 
 <img src="/media/new-photos/BRA-8.avif" alt="Blue Ridge Abbey founder" class="w-full aspect-[3/4] object-cover rounded-xl mb-4" loading="lazy" decoding="async" />
-Bio coming soon
 Brook is originally from Queen Creek, Arizona and moved to the area four years ago to study biochemistry. Since then, she has grown to love the community and the slower pace of life that Buena Vista offers compared to the busy city environment she grew up in. Over the years, she has built meaningful friendships and an amazing relationship with her husband Mason. She truly enjoys being part of the small-town atmosphere and the people she has been able to encounter along the way!Brook has a passion for health and wellness and hopes to pursue a career in physical therapy. In her free time, she enjoys crafting and creative projects, while always finding ways to make spaces feel warm and welcoming wherever she goes. She looks forward to sharing her love for the area with her talents and helping guests feel right at home in this wonderful town.
 
 
