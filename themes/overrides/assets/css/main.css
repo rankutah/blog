@@ -349,7 +349,7 @@ main#content video {
 /* Auto-fit columns with independent column/row gaps */
 .cols-auto{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--min, 16rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min, 16rem)), 1fr));
   column-gap: var(--gap, 1.5rem);             /* X gap */
   row-gap: var(--row, var(--gap, 1.5rem));    /* Y gap defaults to X gap */
   align-items: var(--v, start);               /* start | center | end | stretch */
