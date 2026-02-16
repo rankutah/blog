@@ -49,15 +49,30 @@
 {{- if eq (len $imgs) 0 -}}
   <p class="text-sm text-red-600 dark:text-red-400">carousel_lite: no images found</p>
 {{- else -}}
-{{- $hasResp := or (ne (printf "%v" $mobilepx) "") (or (ne (printf "%v" $mdpx) "") (ne (printf "%v" $lgpx) "")) -}}
+{{- /* Height rules:
+      - mobile: mobilepxheight if set, else pxheight
+      - md+:    mdpxheight if set, else pxheight (falls back to mobile)
+   */ -}}
 {{- $mobileOrPx := cond (ne (printf "%v" $mobilepx) "") $mobilepx $pxheight -}}
-{{- $mdOrPx := cond (ne (printf "%v" $mdpx) "") $mdpx $mobileOrPx -}}
+{{- $mdOrPx := "" -}}
+{{- if ne (printf "%v" $mdpx) "" -}}
+  {{- $mdOrPx = $mdpx -}}
+{{- else if ne (printf "%v" $pxheight) "" -}}
+  {{- $mdOrPx = $pxheight -}}
+{{- else -}}
+  {{- $mdOrPx = $mobileOrPx -}}
+{{- end -}}
 {{- /* Build a safe style attribute with CSS variables on the ROOT (wrapper) */ -}}
 {{- $rootStyle := "" -}}
-{{- if or (ne (printf "%v" $mobileOrPx) "") (ne (printf "%v" $mdOrPx) "") -}}
-  {{- $mob := cond (ne (printf "%v" $mobileOrPx) "") $mobileOrPx 640 -}}
-  {{- $md  := cond (ne (printf "%v" $mdOrPx) "") $mdOrPx 520 -}}
-  {{- $rootStyle = (printf " style=\"--lc-h-mobile:%vpx;--lc-h-md:%vpx;\"" $mob $md) | safeHTMLAttr -}}
+{{- $rootVars := slice -}}
+{{- if ne (printf "%v" $mobileOrPx) "" -}}
+  {{- $rootVars = $rootVars | append (printf "--lc-h-mobile:%vpx;" $mobileOrPx) -}}
+{{- end -}}
+{{- if ne (printf "%v" $mdOrPx) "" -}}
+  {{- $rootVars = $rootVars | append (printf "--lc-h-md:%vpx;" $mdOrPx) -}}
+{{- end -}}
+{{- if gt (len $rootVars) 0 -}}
+  {{- $rootStyle = (printf " style=\"%s\"" (delimit $rootVars "")) | safeHTMLAttr -}}
 {{- end -}}
 
 <div id="{{ $id }}" class="relative w-full not-prose my-0 [&+p]:mt-3" data-lite-carousel data-carousel-ver="lite-1"{{ $rootStyle }}>

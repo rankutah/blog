@@ -35,6 +35,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /hero >}}
 
+<br>
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -178,7 +179,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ## Fast Honest Computer Repair Near You
 
@@ -186,7 +187,7 @@ One‑person, local support for desktops and laptops. Quick diagnostics, clear p
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ## Book today
 
@@ -201,18 +202,19 @@ Call now or schedule a time that works for you.
 
 {{< cols min="20rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ## Find us in Buena Vista
 Photos of the office and signs so you know you’re in the right place.
 
-Entrance on 22nd Street.
+2175 Magnolia Avenue, Suite 201, Buena Vista, VA 24416 <br>
+Entrance on 22nd Street
 
 {{< carousel_lite id="location" images="/media/office-location.jpg,/media/suite-office-door.jpg,/media/office-front-night-with-suite.jpg" pxheight="800" mobilepxheight="400" radius="xl" >}}
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 ## What I fix most
 
