@@ -126,7 +126,7 @@
     {{- $parsed := cond (lt $level 2) 3 (cond (gt $level 6) 3 $level) -}}
     {{- $h := cond (and (ge $force 2) (le $force 6)) $force $parsed -}}
   {{- /* not-prose prevents Typography plugin heading rules (like center) from applying; add text-left explicitly */ -}}
-  {{- printf "<h%d id=\"%s\" class=\"mt-0 mb-0 not-prose text-left\">" $h $qid | safeHTML -}}
+  {{- printf "<h%d id=\"%s\" class=\"mt-0 mb-0 not-prose text-left cp-faq-q\">" $h $qid | safeHTML -}}
       <button type="button"
         class="{{ delimit $btnClasses " " }}"
         data-accordion-target="#{{ $bid }}"

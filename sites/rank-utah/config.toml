@@ -68,7 +68,7 @@ disableKinds  = ["taxonomy", "term"]
   enable = true
 
 [params.faqs]
-  headingLevel = 4
+  headingLevel = 3
 
 [params.schema.organization]
 enabled = true

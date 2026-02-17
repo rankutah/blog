@@ -315,6 +315,12 @@ main#content [data-accordion] :where(h2, h3, h4, h5, h6) {
 	line-height: 1.3;
 }
 
+/* FAQ questions are semantic headings (usually h3 under an h2 "FAQ"), but should *look* like H4. */
+main#content #accordion-collapse .cp-faq-q {
+  font-size: clamp(1.25rem, 1.1vw + 1.05rem, 1.65rem);
+  line-height: 1.25;
+}
+
 /* ========== 4) Typography touch-ups ========== */
 /* .prose a { text-decoration: none; } */
 .prose img { max-width: 100%; height: auto; }
