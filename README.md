@@ -27,8 +27,9 @@ Notes:
 	- Pattern: `resources.Get` → `minify` → `fingerprint`, then reference via `.RelPermalink`.
 - Avoid site-specific template/CSS edits. If a true exception is required, gate it behind a param and document it.
 - Content convention: avoid `index.md` page bundles except the site homepage (`content/_index.md`). Prefer single-file pages under `content/`.
-- Content styling: do not write raw HTML in Markdown content files (`sites/<site>/content/**/*.md`) unless there is no shortcode that fits.
-	- Prefer Markdown + existing shortcodes (common ones: `hero`, `section`, `cols`/`col`, `button`, `badge`, `video`, `map-embed`, `contact-form`).
+- Content styling: prefer shared shortcodes over inline HTML in Markdown content files (`sites/<site>/content/**/*.md`). Only use raw HTML as a last resort when no shortcode fits.
+	- Prefer Markdown + existing shortcodes (common ones: `hero`, `cols`/`col`, `button`, `badge`, `video`, `map-embed`, `contact-form`).
+	- Do not use the `section` shortcode (unnecessary for normal content; keep only for legacy/edge cases).
 	- If you find yourself writing `<div class="...">` in content, stop and either (a) use a shortcode, or (b) add/extend a shortcode in `themes/overrides/layouts/shortcodes/`.
 - Customer-facing copy: use plain language and avoid tech jargon (e.g., “sprints”, “lean builds”, “workflow”).
 

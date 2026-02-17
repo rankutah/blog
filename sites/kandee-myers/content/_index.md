@@ -1,6 +1,6 @@
 ---
 title: "Kandee Myers for Utah State Senate — District 21"
-description: "Meet Kandee Myers, candidate for Utah State Senate District 21. Learn where she stands on housing, education, and term limits — and how to get involved."
+description: "Meet Kandee Myers, candidate for Utah State Senate District 21. Learn where she stands on housing, education, healthcare — and how to get involved."
 url: "/"
 image: "/media/kandee-myers-utah-state-senate-district-21-city.jpeg"
 ---
@@ -33,7 +33,7 @@ Learn why Kandee Myers is running for State Senate
 
 {{< col card="true" y="start" >}}
 ### Priorities
-Housing, education, term limits — and more.
+Housing, education, healthcare — and more.
 
 {{< button url="/priorities" text="Read the priorities" >}}
 {{< /col >}}
