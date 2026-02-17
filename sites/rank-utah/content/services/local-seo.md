@@ -153,7 +153,7 @@ Local SEO is a long‑term foundation. Instead of quick hacks, the goal is stead
 ### What is Local SEO?
 Local SEO stands for Local Search Engine Optimization. Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
 
-Unlike social media posts and ads, local SEO doesn't stop working the moment you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
+Unlike social media posts and ads, local SEO doesn't stop working when you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
