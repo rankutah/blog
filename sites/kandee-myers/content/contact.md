@@ -12,15 +12,11 @@ The best ideas come from neighbors.
 - What keeps you up at night?
 - Where can we do better right now - together?
 
-{{< cols min="18rem" gap="2rem" v="start" width="40 60">}}
+{{< cols  v="start" width="60 33">}}
 
 {{< col card="false" y="start" >}}
 
-{{< img src="/media/KandeeOnPhone.avif" alt="Kandee Myers on the phone" class="w-full h-auto rounded-xl" object="cover" >}}
-
-{{< /col >}}
-
-{{< col card="false" y="start" >}}
+## Message Me
 
 {{< contact-form
 	id="contact1"
@@ -40,6 +36,12 @@ The best ideas come from neighbors.
 If you’re looking for ways to help right now, start here: [Volunteer](/volunteer)
 
 For policy statements and priorities, see: [Priorities](/priorities)
+
+{{< /col >}}
+
+{{< col card="false" y="start" >}}
+
+{{< img src="/media/KandeeOnPhone.avif" alt="Kandee Myers on the phone" class="w-full h-auto rounded-xl" object="cover" >}}
 
 {{< /col >}}
 
