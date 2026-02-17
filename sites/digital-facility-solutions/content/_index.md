@@ -3,21 +3,18 @@ title: "Digital Facility Solutions"
 description: "We bring order and searchability to your existing building plans."
 ---
 
-{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="80" >}}
+{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="40" >}}
 ## Achieve order, intelligence, and searchability with digitized building plans
 {.center}
 
 
 
-{{< button text="Request a Quote" url="/contact/" >}}
-{.center}
+
 
 {.center}
 
 {{< /hero >}}
 
-## Why invest in digital building plans?
-{.center}
 
 {{< cols min="22rem" gap="2.5rem" row="md" v="middle" >}}
   {{< col card="false" y="start" >}}
@@ -161,5 +158,7 @@ With organized, digitized building plans, you can retrieve archived building pla
 <br>
 
 {{< button url="/process" text="Explore Our Process" >}}
+{{< button text="Request a Quote" url="/contact/" >}}
 {.center}
+
 
