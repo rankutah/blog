@@ -8,7 +8,9 @@
 
 (function () {
   const MOBILE_MQ = '(max-width: 767.98px)';
-  const MIN_SCALE = 0.72; // safety floor; below this, readability suffers
+  // Minimum scale floor. Some pages intentionally use very large multi-line hero headings;
+  // on small screens we prefer scaling further down over forcing the hero overlay to scroll.
+  const MIN_SCALE = 0.45;
   const EPS_PX = 2; // small fudge to avoid subpixel oscillation
 
   function clamp(n, lo, hi) {
