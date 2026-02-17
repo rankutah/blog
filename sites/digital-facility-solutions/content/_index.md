@@ -15,8 +15,10 @@ schema:
         name: "Salt Lake County, UT"
 ---
 
-{{< hero img="/media/digitized-building-plans.avif" alt="blue print scanning and digitized building plans" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="40" >}}
-## Blueprint scanning that helps you digitize blueprints into searchable building plans
+{{< hero img="/media/digitized-building-plans.avif" alt="blue print scanning and digitized building plans" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="60" >}}
+## Blueprint Scanning in Utah
+{.center}
+Large format scanning for building plans and other documents in Utah County and Salt Lake County
 {.center}
 
 

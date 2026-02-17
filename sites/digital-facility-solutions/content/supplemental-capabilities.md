@@ -1,6 +1,6 @@
 ---
 title: "Supplemental Capabilities"
-description: "Support services that complement blueprint scanning: PDF sorting, space/room data, and component organization for easier facility documentation." 
+description: "Support services that complement blueprint scanning: PDF sorting, space/room data, and component organization for easier facility documentation."
 ---
 
 # Supplemental capabilities
