@@ -11,6 +11,13 @@ This page is meant to help you quickly confirm whether you’re in **Utah State 
 
 If you’re close to a boundary, always double-check with the [official lookup tool](https://le.utah.gov/GIS/findDistrict.jsp).
 
+{{< section >}}
+
+{{< cols min="18rem" gap="2rem" v="start">}}
+
+{{< col card="false" y="start" >}}
+
+
 ## District 21 map
 
 Click the map to open the official Utah Legislature district lookup in a new tab:
@@ -19,6 +26,11 @@ Click the map to open the official Utah Legislature district lookup in a new tab
   <img src="/media/utah-senate-district-21-map-2026.avif" alt="Utah State Senate District 21 map (2026)" />
 </a>
 
+{{< /col >}}
+
+{{< col card="false"  y="start" >}}
+
+
 ## Official district lookup
 
 - Utah Legislature [GIS tool](https://le.utah.gov/GIS/findDistrict.jsp)
@@ -26,3 +38,13 @@ Click the map to open the official Utah Legislature district lookup in a new tab
 ## Next step
 
 Once you’ve confirmed your district, go to [Voter Info](/voter-info) for registration links, deadlines, and how to vote.
+
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< /section >}}
+
+
+
+
