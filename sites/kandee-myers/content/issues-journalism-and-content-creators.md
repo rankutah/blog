@@ -1,7 +1,10 @@
 ---
 title: "Journalism vs. Content Creators"
 description: "Kandee Myers’ perspective on journalism as a profession vs. content creators and influencers (coming soon)."
-url: "/issues/journalism-and-content-creators/"
+url: "/priorities/journalism-and-content-creators/"
+aliases:
+  - "/issues/journalism-and-content-creators"
+  - "/issues/journalism-and-content-creators/"
 ---
 
 # Journalism vs. Content Creators

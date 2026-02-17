@@ -1,7 +1,10 @@
 ---
 title: "Health Care"
 description: "Kandee Myers’ health care priorities for Utah State Senate District 21 (coming soon)."
-url: "/issues/health-care/"
+url: "/priorities/health-care/"
+aliases:
+  - "/issues/health-care"
+  - "/issues/health-care/"
 ---
 
 # Health Care

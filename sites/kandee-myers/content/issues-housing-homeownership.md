@@ -1,10 +1,26 @@
 ---
 title: "Utah Housing & Homeownership"
 description: "Kandee Myers’ housing priorities for Utah State Senate District 21: homeownership, property rights, and practical reforms."
-url: "/issues/housing-homeownership/"
+url: "/priorities/housing-homeownership/"
+aliases:
+  - "/issues/housing-homeownership"
+  - "/issues/housing-homeownership/"
 ---
 
-## Utah Housing & Homeownership
+# Homeownership
+{.center}
+
+{{< section >}}
+
+{{< cols min="18rem" gap="2rem" v="start" mdtemplate="33% 67%">}}
+
+{{< col card="false" y="start" >}}
+
+{{< img src="/media/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e.avif" alt="Housing and homeownership" class="w-full h-auto rounded-xl" object="cover" >}}
+
+{{< /col >}}
+
+{{< col card="false"  y="start" >}}
 
 Housing affordability is one of the most pressing issues facing our state.
 
@@ -16,13 +32,14 @@ There are forces outside a state’s control—including federal monetary policy
 
 I will bring practical, market-informed solutions to the legislature. Utah deserves solutions grounded in reality, not slogans.
 
-## Related
+{{< /col >}}
 
-- [Homeownership](/issues/homeownership/)
-- [Experience You Can Trust](/issues/housing-homeownership/experience-you-can-trust/)
+{{< /cols >}}
+
+{{< /section >}}
 
 
-{{< img src="/media/2134080_2e388d5ab7df9d73044be430ed9baa1f_697d24efe2a5e.avif" alt="Housing and homeownership" class="w-full h-auto rounded-xl" object="cover" >}}
 
-Back to: [Issues](/issues)
+
+Back to: [Priorities](/priorities)
 

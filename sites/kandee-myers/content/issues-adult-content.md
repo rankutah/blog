@@ -1,7 +1,10 @@
 ---
 title: "Adult Content — Protecting the Public"
 description: "Kandee Myers’ approach to adult content policy and protecting the public (coming soon)."
-url: "/issues/adult-content/"
+url: "/priorities/adult-content/"
+aliases:
+  - "/issues/adult-content"
+  - "/issues/adult-content/"
 ---
 
 # Adult Content — Protecting the Public

@@ -1,7 +1,10 @@
 ---
 title: "Delegates in Utah Government"
 description: "Understanding the role delegates play in Utah government (coming soon)."
-url: "/issues/delegates/"
+url: "/priorities/delegates/"
+aliases:
+  - "/issues/delegates"
+  - "/issues/delegates/"
 ---
 
 # Understanding the Role Delegates Play In Utah Government

@@ -17,17 +17,32 @@ image: "/media/kandee-myers-utah-state-senate-district-21-city.jpeg"
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 
 {{< col card="true" y="start" >}}
-### Priorities
-Housing, education, term limits — and more.
+### Meet Kandee
+Background, education, work, and family.
 
-{{< button url="/issues" text="Read the priorities" >}}
+{{< button url="/about" text="About Kandee" >}}
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
-### Voter info
-Election date, district map, and official voting links.
+### Why I am Running
+Learn why Kandee Myers is running for State Senate
 
-{{< button url="/voter-info" text="Voter info" >}}
+{{< button url="/why-i-am-running" text="Why I am Running" >}}
+{{< /col >}}
+
+
+{{< col card="true" y="start" >}}
+### Priorities
+Housing, education, term limits — and more.
+
+{{< button url="/priorities" text="Read the priorities" >}}
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+### Events
+Find out about the latest events.
+
+{{< button url="/events" text="Events" >}}
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
@@ -38,10 +53,10 @@ Volunteer opportunities, events, and ways to help.
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
-### Meet Kandee
-Background, education, work, and family.
+### Voter info
+Election date, district map, and official voting links.
 
-{{< button url="/about" text="About Kandee" >}}
+{{< button url="/voter-info" text="Voter info" >}}
 {{< /col >}}
 
 {{< /cols >}}
@@ -52,35 +67,34 @@ Background, education, work, and family.
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 
 {{< col card="true" y="start" >}}
-### Utah Housing & Homeownership
+### Housing & Homeownership
 Protect homeownership and property rights, and keep policy grounded in real-world incentives.
 
-{{< button url="/issues/housing-homeownership/" text="Housing" >}}
+{{< button url="/priorities/housing-homeownership/" text="Housing" >}}
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
 ### Education
 Strong public schools, teacher support, and focused learning.
 
-{{< button url="/issues/education/" text="Education" >}}
+{{< button url="/priorities/education/" text="Education" >}}
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
-### Term limits
-Accountability, responsiveness, and fresh perspective.
+### Health Care
+Affordability, access, and practical health outcomes.
 
-{{< button url="/issues/term-limits/" text="Term limits" >}}
+{{< button url="/priorities/health-care/" text="Health Care" >}}
 {{< /col >}}
 
 {{< /cols >}}
 
 ## Stay up to date
 {.center}
-Events, endorsements, and voter info will be posted here as soon as they’re available.
+Events and voter info will be posted here as soon as they’re available.
 {.center}
 
 {{< button url="/events" text="See events" >}}
-{{< button url="/endorsements" text="Endorsements" >}}
 {{< button url="/voter-info" text="Voter info" >}}
 {.center}
 

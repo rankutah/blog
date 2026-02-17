@@ -10,7 +10,7 @@ image: "/media/hero-image.png"
 
 {{< hero img="/media/why-running.avif" alt="Kandee Myers" bleed="true" max="md" fit="contain" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" align="center" imgClasses="block w-full h-auto object-[75%_50%] md:object-center" >}}
 
-<h1 class="sr-only">Why I Am Running</h1>
+# Why I am Running
 
 <div class="not-prose mx-auto w-full max-w-4xl text-center">
   <div class="km-why-running-hero flex flex-col items-center gap-4 md:gap-4">

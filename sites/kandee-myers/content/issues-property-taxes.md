@@ -1,7 +1,10 @@
 ---
 title: "Property Taxes"
 description: "Kandee Myers’ approach to property taxes in Utah County: transparency, stewardship, and long-term affordability."
-url: "/issues/property-taxes/"
+url: "/priorities/property-taxes/"
+aliases:
+  - "/issues/property-taxes"
+  - "/issues/property-taxes/"
 ---
 
 # Property Taxes
@@ -41,4 +44,4 @@ Good public policy asks careful questions:
 
 I believe we can support strong schools, safe neighborhoods, and responsive local services while also protecting people’s ability to remain in the homes and communities they love.
 
-Back to: [Issues](/issues)
+Back to: [Priorities](/priorities)

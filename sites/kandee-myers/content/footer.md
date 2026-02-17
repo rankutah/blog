@@ -10,7 +10,7 @@ headless: true
 ### Navigate
 {.center}
 
-[Home](/) • [Issues](/issues) • [About](/about) • [Endorsements](/endorsements) • [Events](/events) • [Contact](/contact)
+[Home](/) • [Priorities](/priorities) • [About](/about) • [Events](/events) • [Contact](/contact)
 {.center}
 
 {{< /col >}}

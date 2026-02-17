@@ -1,7 +1,10 @@
 ---
 title: "Term Limits"
 description: "Kandee Myers supports reasonable term limits rooted in accountability and responsiveness."
-url: "/issues/term-limits/"
+url: "/priorities/term-limits/"
+aliases:
+  - "/issues/term-limits"
+  - "/issues/term-limits/"
 ---
 
 # Term Limits
@@ -12,5 +15,5 @@ Thoughtful term limits help keep leadership responsive, prevent the concentratio
 
 Elected office is a responsibility, not an entitlement, and term limits help ensure public servants can do meaningful, focused work during their time in office.
 
-Back to: [Issues](/issues)
+Back to: [Priorities](/priorities)
 

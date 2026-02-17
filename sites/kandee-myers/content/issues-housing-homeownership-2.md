@@ -1,7 +1,10 @@
 ---
 title: "Utah Homeownership"
 description: "Kandee Myers’ views on homeownership."
-url: "/issues/homeownership/"
+url: "/priorities/homeownership/"
+aliases:
+  - "/issues/homeownership"
+  - "/issues/homeownership/"
 ---
 
 # Homeownership
@@ -25,8 +28,7 @@ These differences aren’t obvious to most homeowners. In fact, many people don�
 
 ## Related
 
-- [Utah Housing & Homeownership](/issues/housing-homeownership/)
-- [Experience You Can Trust](/issues/housing-homeownership/experience-you-can-trust/)
+- [Utah Housing & Homeownership](/priorities/housing-homeownership/)
 
-Back to: [Issues](/issues)
+Back to: [Priorities](/priorities)
 

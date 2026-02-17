@@ -128,6 +128,6 @@ Our planet is sacred, and we have been given a world worth exploring. Learning f
 
 Next:
 
-- Read the [Issues](/issues)
+- Read the [Priorities](/priorities)
 - [Volunteer](/volunteer)
 - [Donate](/donate)

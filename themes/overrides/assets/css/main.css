@@ -328,6 +328,15 @@ main#content [data-accordion] :where(h2, h3, h4, h5, h6) {
   height: auto;
 }
 
+/* Same safety for fixed-template columns */
+.cols-fixed img,
+.cols-fixed picture,
+.cols-fixed picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Floating action button safe-area positioning and mobile sizing */
 .cp-fab { position: fixed; right: 1rem; bottom: 1rem; z-index: 50; transform: translateZ(0); backface-visibility: hidden; will-change: transform; }
 @supports (right: env(safe-area-inset-right)) {
@@ -361,11 +370,37 @@ main#content video {
 .cols-auto.v-end     { --v: end; }
 .cols-auto.v-stretch { --v: stretch; }
 
+/* Fixed template columns (mobile stacks, md+ uses explicit template) */
+.cols-fixed{
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: var(--gap, 1.5rem);
+  row-gap: var(--row, var(--gap, 1.5rem));
+  align-items: var(--v, start);
+}
+@media (min-width: 768px) {
+  .cols-fixed{
+    grid-template-columns: var(--tpl-md, var(--tpl, 1fr));
+  }
+}
+.prose .cols-fixed + .cols-fixed {
+  margin-top: var(--gap, 1.5rem);
+}
+.cols-fixed.v-center  { --v: center; }
+.cols-fixed.v-end     { --v: end; }
+.cols-fixed.v-stretch { --v: stretch; }
+
 /* Mobile-only reverse order for two-column stacks: move last child to top on mobile, restore order on md+ */
 .cols-auto.cols-reverse-mobile > * { order: 2; }
 .cols-auto.cols-reverse-mobile > *:last-child { order: 1; }
 @media (min-width: 768px) {
   .cols-auto.cols-reverse-mobile > * { order: 0; }
+}
+
+.cols-fixed.cols-reverse-mobile > * { order: 2; }
+.cols-fixed.cols-reverse-mobile > *:last-child { order: 1; }
+@media (min-width: 768px) {
+  .cols-fixed.cols-reverse-mobile > * { order: 0; }
 }
 
 
@@ -631,12 +666,12 @@ html[data-motion-skip-hero="true"] [data-motion="hero-img"] {
 /* Cards & tiles: lift on hover for extra motion */
 @media (hover: hover) {
   /* Only apply hover-lift to card-like blocks (not headings like H2/H3). */
-  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto) > [data-motion="reveal"].is-visible {
+  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto):not(.cols-fixed) > [data-motion="reveal"].is-visible {
     transition-property: opacity, transform, filter, box-shadow;
     transition-duration: 2200ms, 2200ms, 2200ms, 180ms;
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   }
-  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto) > [data-motion="reveal"].is-visible:hover {
+  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto):not(.cols-fixed) > [data-motion="reveal"].is-visible:hover {
     transition-duration: 2200ms, 180ms, 2200ms, 180ms;
     transform: translate3d(0, -8px, 0);
     box-shadow: 0 16px 38px rgba(0,0,0,0.18);
@@ -649,6 +684,17 @@ html[data-motion-skip-hero="true"] [data-motion="hero-img"] {
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   }
   html[data-motion-enabled="true"] .cols-auto > [data-motion="reveal"][data-card="true"].is-visible:hover {
+    transition-duration: 2200ms, 180ms, 2200ms, 180ms;
+    transform: translate3d(0, -8px, 0);
+    box-shadow: 0 16px 38px rgba(0,0,0,0.18);
+  }
+
+  html[data-motion-enabled="true"] .cols-fixed > [data-motion="reveal"][data-card="true"].is-visible {
+    transition-property: opacity, transform, filter, box-shadow;
+    transition-duration: 2200ms, 2200ms, 2200ms, 180ms;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  html[data-motion-enabled="true"] .cols-fixed > [data-motion="reveal"][data-card="true"].is-visible:hover {
     transition-duration: 2200ms, 180ms, 2200ms, 180ms;
     transform: translate3d(0, -8px, 0);
     box-shadow: 0 16px 38px rgba(0,0,0,0.18);

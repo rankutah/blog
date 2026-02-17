@@ -4,6 +4,9 @@
        min="16rem"       → minimum tile width
        gap="1.5rem"      → column gap
        row="md"          → row gap: none|sm|md|lg|xl or any CSS length (e.g. 2rem)
+       width="…"         → FIXED columns (applied at md+). Example: "33% 67%" or shorthand "33 67" (auto-adds %)
+       template="…"      → FIXED columns (applied at md+). Example: "33% 67%" or "1fr 2fr"
+       mdtemplate="…"    → FIXED columns at md+ (override for template/width)
        v="start|center|end|stretch" → per-row vertical alignment (default stretch)
        classes="…"       → extra classes on the grid wrapper
 
@@ -17,6 +20,9 @@
 {{- $min    := .Get "min"    | default "16rem" -}}
 {{- $gap    := .Get "gap"    | default "1.5rem" -}}
 {{- $rowArg := lower (.Get "row" | default "") -}}
+{{- $widthRaw := .Get "width" | default "" -}}
+{{- $tplRaw := .Get "template" | default "" -}}
+{{- $mdTplRaw := .Get "mdtemplate" | default "" -}}
 {{- $v      := lower (.Get "v"   | default "stretch") -}}
 {{- $order  := lower (.Get "order" | default "") -}}
 {{- $extra  := .Get "classes"| default "" -}}
@@ -47,7 +53,35 @@
   {{- $orderCls = "cols-reverse-mobile" -}}
 {{- end -}}
 
-<div class="cols-auto {{ $vCls }}{{ if $orderCls }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"{{ if $motionEnabled }} data-motion-group="stagger"{{ end }}
-     style="--min: {{ $min }}; --gap: {{ $gap }};{{ if $row }} --row: {{ $row }};{{ end }}">
+{{- /* width="33 67" shorthand: if each token is a plain number, auto-append % */ -}}
+{{- $widthNormParts := slice -}}
+{{- range (split $widthRaw " ") -}}
+  {{- $t := trim . " \n\r\t" -}}
+  {{- if ne $t "" -}}
+    {{- if (findRE `^[0-9]+(\.[0-9]+)?$` $t) -}}
+      {{- $widthNormParts = $widthNormParts | append (printf "%s%%" $t) -}}
+    {{- else -}}
+      {{- $widthNormParts = $widthNormParts | append $t -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $widthNorm := delimit $widthNormParts " " -}}
+
+{{- /* Resolve precedence: mdtemplate > template > width */ -}}
+{{- if and (eq $tplRaw "") (ne $widthNorm "") -}}
+  {{- $tplRaw = $widthNorm -}}
+{{- end -}}
+
+{{- /* Fixed template support: sanitize to a safe CSS token set (letters, numbers, whitespace, %, ., commas, parentheses, +-, /). */ -}}
+{{- $tpl := replaceRE `[^0-9a-zA-Z\s\.%\(\),\+\-\/\*]+` "" $tplRaw -}}
+{{- $mdTpl := replaceRE `[^0-9a-zA-Z\s\.%\(\),\+\-\/\*]+` "" $mdTplRaw -}}
+{{- if and (eq $mdTpl "") (ne $tpl "") -}}
+  {{- $mdTpl = $tpl -}}
+{{- end -}}
+{{- $useFixed := or (ne $tpl "") (ne $mdTpl "") -}}
+{{- $colsClass := cond $useFixed "cols-fixed" "cols-auto" -}}
+
+<div class="{{ $colsClass }} {{ $vCls }}{{ if $orderCls }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"{{ if $motionEnabled }} data-motion-group="stagger"{{ end }}
+     style="--min: {{ $min }}; --gap: {{ $gap }};{{ if $row }} --row: {{ $row }};{{ end }}{{ if $tpl }} --tpl: {{ $tpl }};{{ end }}{{ if $mdTpl }} --tpl-md: {{ $mdTpl }};{{ end }}">
   {{ .Inner }}
 </div>

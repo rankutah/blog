@@ -3031,6 +3031,128 @@
       ]
     }
   },
+  "/media/KandeeOnPhone.jpg": {
+    "width": 1024,
+    "height": 1536,
+    "aspect": 0.6666666666666666,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAwQBAgUABv/EACgQAAIBAwIFAwUAAAAAAAAAAAECAwAEERIhBRMxQVEUImEjMkKB4f/EABkBAAIDAQAAAAAAAAAAAAAAAAABAgMEBf/EABwRAAMBAQADAQAAAAAAAAAAAAECEQAhAwQxEv/aAAwDAQACEQMRAD8AGRsAKA1m1wzKHKau+AaaRQ22dqlTFA4YnSPk1WWmtl1bSwFjayxcwSM5DDbBpOTS+pRuafnuoIyJFCscgZ8A0BkGskdCc4p29yk5jKPaSdq4Y5iDK6sEYYZFY8vEpmf6TaU7DApm2voCreqDaz3UZFTf13+zJPKth1uJ3Ollj5SEcxc464G+P3inJgFbYFRsdPj4pW2vLWG9GgZSQ4JZeh7U9MpF1Ij76veh8j+VEIw4RmzL93l1IzRBWxxW2X0SvGoBi6YHasPWa6KPRdjIxSBT8nFzJHbLoIeL7mP5dqy9Z8VKxyOpkVCyg4JAzvQ/5MJwtHBv/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/KandeeOnPhone__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/KandeeOnPhone__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/KandeeOnPhone__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/KandeeOnPhone__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/KandeeOnPhone__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/KandeeOnPhone__w1024.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/KandeeOnPhone__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/KandeeOnPhone__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/KandeeOnPhone__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/KandeeOnPhone__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/KandeeOnPhone__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/KandeeOnPhone__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/KandeeOnPhone.avif": {
+    "width": 1024,
+    "height": 1536,
+    "aspect": 0.6666666666666666,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAwQBAgUABv/EACgQAAIBAwIFAwUAAAAAAAAAAAECAwAEERIhBRMxQVEUImEjMkKB4f/EABkBAAIDAQAAAAAAAAAAAAAAAAABAgMEBf/EABwRAAMBAQADAQAAAAAAAAAAAAECEQAhAwQxEv/aAAwDAQACEQMRAD8AGRsAKA1m1wzKHKau+AaaRQ22dqlTFA4YnSPk1WWmtl1bSwFjayxcwSM5DDbBpOTS+pRuafnuoIyJFCscgZ8A0BkGskdCc4p29yk5jKPaSdq4Y5iDK6sEYYZFY8vEpmf6TaU7DApm2voCreqDaz3UZFTf13+zJPKth1uJ3Ollj5SEcxc464G+P3inJgFbYFRsdPj4pW2vLWG9GgZSQ4JZeh7U9MpF1Ij76veh8j+VEIw4RmzL93l1IzRBWxxW2X0SvGoBi6YHasPWa6KPRdjIxSBT8nFzJHbLoIeL7mP5dqy9Z8VKxyOpkVCyg4JAzvQ/5MJwtHBv/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/KandeeOnPhone__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/KandeeOnPhone__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/KandeeOnPhone__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/KandeeOnPhone__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/KandeeOnPhone__w960.avif"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/KandeeOnPhone__w1024.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/KandeeOnPhone__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/KandeeOnPhone__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/KandeeOnPhone__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/KandeeOnPhone__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/KandeeOnPhone__w960.jpg"
+        },
+        {
+          "w": 1024,
+          "url": "/media-deriv/KandeeOnPhone__w1024.jpg"
+        }
+      ]
+    }
+  },
   "/media/Math lesson in progress.jpg": {
     "width": 1536,
     "height": 1024,
@@ -3701,6 +3823,64 @@
         {
           "w": 1024,
           "url": "/media-deriv/Young graduates celebrating their achievement__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/colorful-stationery-supplies-stockcake.jpg": {
+    "width": 408,
+    "height": 728,
+    "aspect": 0.5604395604395604,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA5ACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwQFAgH/xAAwEAACAQMCBAMGBwEAAAAAAAABAgMABBESIQUTIjFRcYEyQWGRsdEjMzQ1QnLwwf/EABgBAQEBAQEAAAAAAAAAAAAAAAMBAgAE/8QAIhEAAQQCAQQDAAAAAAAAAAAAAQACAxESQSEEEzHwImGx/9oADAMBAAIRAxEAPwDs3Dollk1wjGCMZ6tOMfX31m0t2t+Gyq2MGUEHxGKzcXrS3MYJw2kZ07ZODv5GmUDiOSOaF2DMGBjIPuxiujkLzelrrYQGcCiQgcLtxqTiPM1BJCjoBuPjVJuJyR2jqC8k4YlSwyMZFSjBJbpJHbxT6Xw2HX+QP2zXYZzbWyyThuYmQVcd13opXY+QrBEHMFe6U9lU2ZMgLHSPlntQeggv0kq3sg5yPOmedm1I1lRKAcjstYnCjG6tuACq4yQKrWfHymfJk+iLKCrME5qPMQBhhk9PhvVV3WS0tFYksYxnJyf9vSUksAijWHMQI0ygbasf7vTjvFFFC7ntFk5OasgttBSI04X9qPKGWFMEA43xQ3uC84kmIYndtsAn0+tW5OGWojDq0nUcA9hQpOD6C51oxU7KRg/MbUnaoInSXTj7+Kel7ptpYGRW19SnVnHrVo8Pa7gjXmrGnLUHI+A7UlDZQSRsGjK43L5DKPPGKtWGubTHD0wBcFmHU47YHgKMDE0NpxWORU+LizRSlWhAYdLahkevhTsujQZpyI4m3CpsX+wqBcfrX/tVBvZs/WjkJa/HZ2kwDAtvDcuSUsXW1Zc/hEAgeOKrcLTlRpJzLh1YaYzIvY/H30S0/Ih8qLP+1R+Z/wC1rp+WWvLI4k8r/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w320.avif"
+        },
+        {
+          "w": 408,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w408.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w320.jpg"
+        },
+        {
+          "w": 408,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w408.jpg"
+        }
+      ]
+    }
+  },
+  "/media/colorful-stationery-supplies-stockcake.avif": {
+    "width": 408,
+    "height": 728,
+    "aspect": 0.5604395604395604,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA5ACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwQFAgH/xAAwEAACAQMCBAMGBwEAAAAAAAABAgMABBESIQUTIjFRcYEyQWGRsdEjMzQ1QnLwwf/EABgBAQEBAQEAAAAAAAAAAAAAAAMBAgAE/8QAIhEAAQQCAQQDAAAAAAAAAAAAAQACAxESQSEEEzHwImGx/9oADAMBAAIRAxEAPwDs3Dollk1wjGCMZ6tOMfX31m0t2t+Gyq2MGUEHxGKzcXrS3MYJw2kZ07ZODv5GmUDiOSOaF2DMGBjIPuxiujkLzelrrYQGcCiQgcLtxqTiPM1BJCjoBuPjVJuJyR2jqC8k4YlSwyMZFSjBJbpJHbxT6Xw2HX+QP2zXYZzbWyyThuYmQVcd13opXY+QrBEHMFe6U9lU2ZMgLHSPlntQeggv0kq3sg5yPOmedm1I1lRKAcjstYnCjG6tuACq4yQKrWfHymfJk+iLKCrME5qPMQBhhk9PhvVV3WS0tFYksYxnJyf9vSUksAijWHMQI0ygbasf7vTjvFFFC7ntFk5OasgttBSI04X9qPKGWFMEA43xQ3uC84kmIYndtsAn0+tW5OGWojDq0nUcA9hQpOD6C51oxU7KRg/MbUnaoInSXTj7+Kel7ptpYGRW19SnVnHrVo8Pa7gjXmrGnLUHI+A7UlDZQSRsGjK43L5DKPPGKtWGubTHD0wBcFmHU47YHgKMDE0NpxWORU+LizRSlWhAYdLahkevhTsujQZpyI4m3CpsX+wqBcfrX/tVBvZs/WjkJa/HZ2kwDAtvDcuSUsXW1Zc/hEAgeOKrcLTlRpJzLh1YaYzIvY/H30S0/Ih8qLP+1R+Z/wC1rp+WWvLI4k8r/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w320.avif"
+        },
+        {
+          "w": 408,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w408.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w320.jpg"
+        },
+        {
+          "w": 408,
+          "url": "/media-deriv/colorful-stationery-supplies-stockcake__w408.jpg"
         }
       ]
     }
@@ -5539,6 +5719,128 @@
         {
           "w": 2997,
           "url": "/media-deriv/kandee-myers-utah-state-senate-district-21-park__w2997.jpg"
+        }
+      ]
+    }
+  },
+  "/media/listening.jpg": {
+    "width": 1018,
+    "height": 1524,
+    "aspect": 0.6679790026246719,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAwQFAQIG/8QAKBAAAgAFAwMDBQAAAAAAAAAAAQIAAwQREiExQQUTURRhoSIjMkKR/8QAGQEAAwADAAAAAAAAAAAAAAAAAQIDAAQF/8QAGxEAAwEAAwEAAAAAAAAAAAAAAQIRAAMhMRL/2gAMAwEAAhEDEQA/ABkaC0ANGahmUOyZc2B+IaRQ3OkaplSHDE4j3MTLTVl3NJQLQ0s6UJgmM5DDSxhN8XLKNSIfn1UiWRNUKxuBfwDAHQZEjYm9oNuEnWKo+knaNFu4guuViLMLiI83qU5n+02KcCwhmmrpBVvVBszyBcQ78D+zBOVbN11SpxKy+0ls1vbew1+bQ3OsG0UroDiePaFaespJNaMAGSYbEsu3iH5y2q5iPswzQ+Rz/IUIw6IzFl93l1IvBBFfqtKvo1eWoHa2AHEQ8zHRR6LtErikCKEzq5eTTIEOcr8mP7cRLzPiNCTGUuqEqDYkC+sY/wAmE4rRQN//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/listening__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/listening__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/listening__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/listening__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/listening__w960.avif"
+        },
+        {
+          "w": 1018,
+          "url": "/media-deriv/listening__w1018.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/listening__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/listening__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/listening__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/listening__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/listening__w960.jpg"
+        },
+        {
+          "w": 1018,
+          "url": "/media-deriv/listening__w1018.jpg"
+        }
+      ]
+    }
+  },
+  "/media/listening.avif": {
+    "width": 1018,
+    "height": 1524,
+    "aspect": 0.6679790026246719,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAwQFAQIG/8QAKBAAAgAFAwMDBQAAAAAAAAAAAQIAAwQREiExQQUTURRhoSIjMkKR/8QAGQEAAwADAAAAAAAAAAAAAAAAAQIDAAQF/8QAGxEAAwEAAwEAAAAAAAAAAAAAAQIRAAMhMRL/2gAMAwEAAhEDEQA/ABkaC0ANGahmUOyZc2B+IaRQ3OkaplSHDE4j3MTLTVl3NJQLQ0s6UJgmM5DDSxhN8XLKNSIfn1UiWRNUKxuBfwDAHQZEjYm9oNuEnWKo+knaNFu4guuViLMLiI83qU5n+02KcCwhmmrpBVvVBszyBcQ78D+zBOVbN11SpxKy+0ls1vbew1+bQ3OsG0UroDiePaFaespJNaMAGSYbEsu3iH5y2q5iPswzQ+Rz/IUIw6IzFl93l1IvBBFfqtKvo1eWoHa2AHEQ8zHRR6LtErikCKEzq5eTTIEOcr8mP7cRLzPiNCTGUuqEqDYkC+sY/wAmE4rRQN//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/listening__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/listening__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/listening__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/listening__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/listening__w960.avif"
+        },
+        {
+          "w": 1018,
+          "url": "/media-deriv/listening__w1018.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/listening__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/listening__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/listening__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/listening__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/listening__w960.jpg"
+        },
+        {
+          "w": 1018,
+          "url": "/media-deriv/listening__w1018.jpg"
         }
       ]
     }
