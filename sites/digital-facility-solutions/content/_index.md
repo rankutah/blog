@@ -1,17 +1,24 @@
 ---
-title: "Digital Facility Solutions"
-description: "We bring order and searchability to your existing building plans."
+title: "Blueprint Scanning in Utah County & Salt Lake County"
+description: "Blueprint scanning to digitize blueprints into organized, searchable plan sets for facilities teams in Utah County and Salt Lake County. Large format scanning available when needed."
+schema:
+  localBusiness:
+    enabled: true
+    type: "ProfessionalService"
+    name: "Digital Facility Solutions"
+    url: "https://digitalfacilitysolutions.com/"
+    '@id': "#digital-facility-solutions"
+    areaServed:
+      - '@type': "AdministrativeArea"
+        name: "Utah County, UT"
+      - '@type': "AdministrativeArea"
+        name: "Salt Lake County, UT"
 ---
 
-{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="40" >}}
-## Achieve order, intelligence, and searchability with digitized building plans
+{{< hero img="/media/digitized-building-plans.avif" alt="blue print scanning and digitized building plans" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="40" >}}
+## Blueprint scanning that helps you digitize blueprints into searchable building plans
 {.center}
 
-
-
-
-
-{.center}
 
 {{< /hero >}}
 
@@ -22,20 +29,22 @@ description: "We bring order and searchability to your existing building plans."
 
 Physical legacy drawings are often hard to keep organized, so it’s difficult to find what you need when you need it. Plans get damaged or lost, so you’re left in the dark when it’s time to make decisions. Even if you have scanned files, they’re rarely named or saved in a way that makes them accessible.
 
-With organized, digitized building plans, you can retrieve archived building plans and information in just a few clicks.
+With blueprint scanning and careful organization, you can retrieve archived building plans and information in just a few clicks.
 
   {{< /col >}}
 
   {{< col card="false" y="end" >}}
 
 
-{{< img src="/media/old-building-plans.avif" alt="Searchable facility records" object="contain" >}}
+{{< img src="/media/old-building-plans.avif" alt="Old blue print drawings ready for blueprint scanning" object="contain" >}}
 
   {{< /col >}}
 {{< /cols >}}
 
-## Benefits of digital facility diagrams
+## Benefits of blueprint scanning and digitized facility diagrams
 {.center}
+
+Serving Utah County and Salt Lake County, we can also support large format scanning and large document scanning when your plan sets include oversized sheets.
 
 {{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
   {{< col card="true" y="start" >}}

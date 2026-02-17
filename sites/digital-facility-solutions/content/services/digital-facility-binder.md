@@ -5,7 +5,7 @@ description: "A structured, searchable drawing set your team can use for operati
 
 ## What you get
 
-Digital Facility Solutions converts fragmented and disorganized building records into a reliable, operational asset that supports maintenance, capital planning, and day-to-day facility operations.
+Digital Facility Solutions uses blueprint scanning to digitize blueprints and convert fragmented, disorganized building records into a reliable operational asset that supports maintenance, capital planning, and day-to-day facility operations.
 
 Each drawing set is processed to include:
 
@@ -21,10 +21,10 @@ Files are organized to match the original project drawing index or sheet order w
 ## Examples
 
 {{< gallery >}}
-  {{< galleryimg src="/media/Hyperlink-Page-Index.avif" alt="Hyperlinked index / table of contents example" >}}
-  {{< galleryimg src="/media/OCR-Conversion-Image.avif" alt="OCR search example" >}}
-  {{< galleryimg src="/media/pdf-to-screen.avif" alt="Example of viewing organized PDFs on screen" >}}
-  {{< galleryimg src="/media/searching-online-building-records.avif" alt="Example of fast searching across facility records" >}}
+  {{< galleryimg src="/media/Hyperlink-Page-Index.avif" alt="blue print plan set with a hyperlinked index" >}}
+  {{< galleryimg src="/media/OCR-Conversion-Image.avif" alt="blue print drawings with OCR search enabled" >}}
+  {{< galleryimg src="/media/pdf-to-screen.avif" alt="digitized blue print PDFs viewed on screen" >}}
+  {{< galleryimg src="/media/searching-online-building-records.avif" alt="searching across digitized blue print records" >}}
 {{< /gallery >}}
 
 ## Why it matters

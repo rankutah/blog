@@ -5,6 +5,8 @@ description: "Request a quote or ask a question."
 
 ## Get in touch
 
+Serving Utah County and Salt Lake County.
+
 - **Phone:** [(385) 329-0586](tel:+13853290586)
 - **Business hours:** Monday–Friday, 8:00am–5:00pm
 

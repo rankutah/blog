@@ -17,7 +17,7 @@ With more than a decade of experience using platforms such as Bluebeam, Archibus
 
 {{< col card="false" y="end" >}}
 
-![](/media/owner-headshot-ben.avif)
+![Ben, owner of Digital Facility Solutions](/media/owner-headshot-ben.avif)
 
 
 {{< /col >}}
@@ -84,7 +84,7 @@ With hands-on expertise in:
 
   {{< col card="true" y="center" >}}
 
-{{< img src="/media/facility-drawings-digital.avif" alt="Facility documentation in a digital workflow" object="cover" >}}
+{{< img src="/media/facility-drawings-digital.avif" alt="blue print facility drawings in a digital workflow" object="cover" >}}
 
 <div class="not-prose mt-6 grid grid-cols-2 gap-3">
   <div class="flex items-start gap-3 rounded-lg border border-[color:var(--cp-card-border)] bg-[color:var(--cp-card-bg)] p-3">

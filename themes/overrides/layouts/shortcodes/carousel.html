@@ -31,15 +31,39 @@
 {{- /* Responsive sizes hint: allow override; default assumes 2-col on md+, single-col on mobile */ -}}
 {{- $sizes     := .Get "sizes" | default "(min-width:1280px) 40vw, (min-width:1024px) 45vw, (min-width:768px) 50vw, 100vw" -}}
 
+{{/* Optional: comma- or pipe-separated alt list matching images order.
+    Prefer `|` if your alt text might contain commas. */}}
+{{- $altsRaw := .Get "alts" | default "" -}}
+{{- $altTokens := slice -}}
+{{- if ne (printf "%v" $altsRaw) "" -}}
+  {{- $altsStr := (printf "%v" $altsRaw) -}}
+  {{- $sep := "," -}}
+  {{- if strings.Contains $altsStr "|" -}}
+    {{- $sep = "|" -}}
+  {{- end -}}
+  {{- range (split $altsStr $sep) -}}
+    {{- $t := trim . " \n\r\t" -}}
+    {{- if ne $t "" -}}
+      {{- $altTokens = $altTokens | append $t -}}
+    {{- else -}}
+      {{- $altTokens = $altTokens | append "" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 {{/* Build list of image URLs */}}
 {{- $imgs := slice -}}
 {{- with .Get "images" -}}
-  {{- range (split . ",") -}}
-    {{- $src := trim . " " -}}
+  {{- range $i, $raw := (split . ",") -}}
+    {{- $src := trim $raw " " -}}
     {{- if $src -}}
       {{- $isAbs := or (hasPrefix $src "http://") (hasPrefix $src "https://") (hasPrefix $src "//") (hasPrefix $src "data:") -}}
       {{- $final := cond $isAbs $src ($src | relURL) -}}
-      {{- $imgs = $imgs | append (dict "src" $final "alt" "") -}}
+      {{- $alt := "" -}}
+      {{- if lt $i (len $altTokens) -}}
+        {{- $alt = (index $altTokens $i) -}}
+      {{- end -}}
+      {{- $imgs = $imgs | append (dict "src" $final "alt" $alt) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}

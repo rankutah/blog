@@ -1,6 +1,6 @@
 ---
 title: "Supplemental Capabilities"
-description: ""
+description: "Support services that complement blueprint scanning: PDF sorting, space/room data, and component organization for easier facility documentation." 
 ---
 
 # Supplemental capabilities
@@ -16,6 +16,6 @@ description: ""
   {{< /col >}}
 
   {{< col card="false" y="center" >}}
-{{< carousel id="dfs-suppcap-carousel" images="/media/sorting-and-renaming-pdfs.jpg,/media/spaces.jpg,/media/components.jpg" pxheight="420" mobilepxheight="340" mdpxheight="460" radius="xl" pos="center" >}}
+{{< carousel id="dfs-suppcap-carousel" images="/media/sorting-and-renaming-pdfs.jpg,/media/spaces.jpg,/media/components.jpg" alts="sorted blue print PDF plan sets|blue print with spaces and room areas|blue print with equipment and components marked" pxheight="420" mobilepxheight="340" mdpxheight="460" radius="xl" pos="center" >}}
   {{< /col >}}
 {{< /cols >}}
