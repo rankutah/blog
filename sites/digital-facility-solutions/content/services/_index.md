@@ -4,7 +4,7 @@ description: "Turning static building plans into accessible digital facility res
 layout: "flowbite"
 ---
 
-Digital Facility Solutions helps you **operate your old building in the digital world** with blueprint scanning and organization that digitizes blueprints into structured, searchable, and navigable digital resources.
+Digital Facility Solutions helps you **operate your old building in the digital world** by converting fragmented plan sets into structured, searchable, and navigable digital resources.
 
 In other words: **give your building a digital backbone**.
 
@@ -12,7 +12,7 @@ In other words: **give your building a digital backbone**.
 
 ## Digital Facility Binder
 
-We transform legacy building plans (including large format sheets) into searchable, navigable digital facility binders—so your team can find the right information fast.
+We transform legacy building plans into searchable, navigable digital facility binders—so your team can find the right information fast.
 
 {{< button text="What’s included" url="/services/digital-facility-binder/" >}}
 

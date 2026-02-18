@@ -1,13 +1,13 @@
 ---
 title: "How the Process Works"
-description: "From blueprint scanning to a structured, searchable drawing set—ready for daily operations."
+description: "From scanning to a structured, searchable drawing set—ready for daily operations."
 ---
 
-## What’s the process for blueprint scanning and digitizing blueprints?
+## What’s the process for digitizing building plans?
 
 ### 1. You send your pdf files to us
 
-If you only have physical formats, don’t worry. We can help with those, too. We’ll work with a qualified third-party reprographics provider for large format scanning so your oversized sheets become high-resolution PDFs.
+If you only have physical formats, don’t worry. We can help with those, too. We’ll work with a qualified third-party reprographics provider to scan them into high-resolution PDFs.
 
 If you’ve shared original paper documents with us, we return them to you immediately after scanning.
 
