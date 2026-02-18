@@ -108,6 +108,8 @@ Fast, custom websites, local marketing, and Google Ads management. Plans startin
 My Pleasant Grove office is conveniently located in Grove Cove, just west of Grove Station and across the street from Oliver's Place. I'm less than 3 minutes from the I-15 Pleasant Grove Blvd exit, making it easy to reach from anywhere in Utah County. Please schedule a meeting if you would like to visit.
 
 {{< button url="https://cal.com/clearpresence/30min" text="Schedule a Meeting" >}}
+{{< button url="https://cal.com/clearpresence/30min" text="Meet Remotely" >}}
+
 
 
 <div class="map-placeholder" id="pg-map-placeholder" style="position:relative;width:100%;max-width:640px;aspect-ratio:4/3;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;margin-bottom:1rem">

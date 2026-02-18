@@ -12819,6 +12819,144 @@
       ]
     }
   },
+  "/media/coach-hanna-maxfield.jpg": {
+    "width": 1334,
+    "height": 750,
+    "aspect": 1.7786666666666666,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwYF/8QAJxAAAgIBAgUDBQAAAAAAAAAAAQIDEQAEIQUSEyIxFEFRJFJhceH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/EABgRAQEBAQEAAAAAAAAAAAAAAAABAhEh/9oADAMBAAIRAxEAPwDqcL4pNJoIGkZSeX3G/nGZ+JyqjdEIzrWx+Myhnl0UaRwSOq1ftWTBqJNXLIsjFrS6Bq/F+P1ku10THjTx8Vd4pG1HTjVB3VuQMtbiTdISKycp8Gsxzq5JO3LIB2qLofbnRTWfRyL6smhspC7bfzDtLMLYUVk7lB3vcY5Gixi0UKfwKwwxKmh4owWIjUH5oYnPGi+EUXsaGGGZA//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/coach-hanna-maxfield__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/coach-hanna-maxfield__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/coach-hanna-maxfield__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/coach-hanna-maxfield__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/coach-hanna-maxfield__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/coach-hanna-maxfield__w1200.avif"
+        },
+        {
+          "w": 1334,
+          "url": "/media-deriv/coach-hanna-maxfield__w1334.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/coach-hanna-maxfield__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/coach-hanna-maxfield__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/coach-hanna-maxfield__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/coach-hanna-maxfield__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/coach-hanna-maxfield__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/coach-hanna-maxfield__w1200.jpg"
+        },
+        {
+          "w": 1334,
+          "url": "/media-deriv/coach-hanna-maxfield__w1334.jpg"
+        }
+      ]
+    }
+  },
+  "/media/coach-hanna-maxfield.avif": {
+    "width": 1334,
+    "height": 750,
+    "aspect": 1.7786666666666666,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwYF/8QAJxAAAgIBAgUDBQAAAAAAAAAAAQIDEQAEIQUSEyIxFEFRJFJhceH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/EABgRAQEBAQEAAAAAAAAAAAAAAAABAhEh/9oADAMBAAIRAxEAPwDqcL4pNJoIGkZSeX3G/nGZ+JyqjdEIzrWx+Myhnl0UaRwSOq1ftWTBqJNXLIsjFrS6Bq/F+P1ku10THjTx8Vd4pG1HTjVB3VuQMtbiTdISKycp8Gsxzq5JO3LIB2qLofbnRTWfRyL6smhspC7bfzDtLMLYUVk7lB3vcY5Gixi0UKfwKwwxKmh4owWIjUH5oYnPGi+EUXsaGGGZA//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/coach-hanna-maxfield__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/coach-hanna-maxfield__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/coach-hanna-maxfield__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/coach-hanna-maxfield__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/coach-hanna-maxfield__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/coach-hanna-maxfield__w1200.avif"
+        },
+        {
+          "w": 1334,
+          "url": "/media-deriv/coach-hanna-maxfield__w1334.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/coach-hanna-maxfield__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/coach-hanna-maxfield__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/coach-hanna-maxfield__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/coach-hanna-maxfield__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/coach-hanna-maxfield__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/coach-hanna-maxfield__w1200.jpg"
+        },
+        {
+          "w": 1334,
+          "url": "/media-deriv/coach-hanna-maxfield__w1334.jpg"
+        }
+      ]
+    }
+  },
   "/media/facebook.jpg": {
     "width": 64,
     "height": 64,
