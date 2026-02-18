@@ -7,9 +7,11 @@ summary: "Our philosophy and coaches"
 
 ## Coaches
 
+### Hanna
+
+
 {{< cols min="18rem" gap="2.5rem" row="md" v="start" >}}
 	{{< col card="false" y="start" order="last" >}}
-### Hanna
 
 Hanna is hungry for fitness and brings that energy into every class she coaches. Her fitness journey began when falling short of making a team motivated her to find new ways to improve, and she found herself in a high school gym competing in Olympic lifting and powerlifting. This sparked her lifelong passion for strength training.
 
