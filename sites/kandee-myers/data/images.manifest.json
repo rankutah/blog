@@ -1,4 +1,126 @@
 {
+  "/media/04e718cb1f95cf8db46c70db6547735b-1200x788.jpg": {
+    "width": 1200,
+    "height": 788,
+    "aspect": 1.5228426395939085,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EACQQAAICAQMEAgMAAAAAAAAAAAECABEDBBIhBRMiQRUyUVJh/8QAFwEBAAMAAAAAAAAAAAAAAAAAAwABAv/EABoRAAICAwAAAAAAAAAAAAAAAAABAhEDEjH/2gAMAwEAAhEDEQA/AGpqs+NgQ4NfsLEt/NalSAwTgehVzPc7V+j2Oa23Kz5GHkysv9YQoTZGjdTrjAW5C+iGk2LruN7A2sQaNTmcWfuIXJBPoVZhzkJ8DRF0BXMR5afDOpqBmQ8GS483eQ7kQ2PYuEIMGIPXSYSQe2vA5oVcR9Bp2FbWF/hjCEalRR//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/04e718cb1f95cf8db46c70db6547735b-1200x788.avif": {
+    "width": 1200,
+    "height": 788,
+    "aspect": 1.5228426395939085,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQFBv/EACQQAAICAQMEAgMAAAAAAAAAAAECABEDBBIhBRMiQRUyUVJh/8QAFwEBAAMAAAAAAAAAAAAAAAAAAwABAv/EABoRAAICAwAAAAAAAAAAAAAAAAABAhEDEjH/2gAMAwEAAhEDEQA/AGpqs+NgQ4NfsLEt/NalSAwTgehVzPc7V+j2Oa23Kz5GHkysv9YQoTZGjdTrjAW5C+iGk2LruN7A2sQaNTmcWfuIXJBPoVZhzkJ8DRF0BXMR5afDOpqBmQ8GS483eQ7kQ2PYuEIMGIPXSYSQe2vA5oVcR9Bp2FbWF/hjCEalRR//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/04e718cb1f95cf8db46c70db6547735b-1200x788__w1200.jpg"
+        }
+      ]
+    }
+  },
   "/media/1.jpg": {
     "width": 600,
     "height": 720,
@@ -1131,6 +1253,144 @@
         {
           "w": 2448,
           "url": "/media-deriv/5__w2448.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Campaign conversation on cobblestone street.jpg": {
+    "width": 1207,
+    "height": 959,
+    "aspect": 1.2586027111574556,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUBBAYC/8QALRAAAgECBAIIBwAAAAAAAAAAAQIDABEEBRIhEzEUIjRBUWFywTVCcXOBkbH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAZEQEBAQEBAQAAAAAAAAAAAAABABEhAkH/2gAMAwEAAhEDEQA/ALmqQ59PYKQqIBfzprPiI4MK0r3KBflF7/qs/jMQYc8xAF7sqch5VObTqMHDAuqONTfXci7WPV96g9yec2swZSMVbXidOwJVN2A7r3prGzxYpYFY8NYhYHxBtWayGch+IZivWEV77EaSf6Kf9LYW0tHJt47kUwIejGzOdO0edNIpIssZPmNwaY52sb5HEpa+lkKtzJ7qWZ/8Qf7Se9GzrsGF9K1QirVMOqjAljc8NrhRyJOxJ/FD6ZLHyUcuW9BXsq+r3rqTk30NFzba/b//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1200.avif"
+        },
+        {
+          "w": 1207,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1207.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1200.jpg"
+        },
+        {
+          "w": 1207,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1207.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Campaign conversation on cobblestone street.avif": {
+    "width": 1207,
+    "height": 959,
+    "aspect": 1.2586027111574556,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAwUBBAYC/8QALRAAAgECBAIIBwAAAAAAAAAAAQIDABEEBRIhEzEUIjRBUWFywTVCcXOBkbH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAZEQEBAQEBAQAAAAAAAAAAAAABABEhAkH/2gAMAwEAAhEDEQA/ALmqQ59PYKQqIBfzprPiI4MK0r3KBflF7/qs/jMQYc8xAF7sqch5VObTqMHDAuqONTfXci7WPV96g9yec2swZSMVbXidOwJVN2A7r3prGzxYpYFY8NYhYHxBtWayGch+IZivWEV77EaSf6Kf9LYW0tHJt47kUwIejGzOdO0edNIpIssZPmNwaY52sb5HEpa+lkKtzJ7qWZ/8Qf7Se9GzrsGF9K1QirVMOqjAljc8NrhRyJOxJ/FD6ZLHyUcuW9BXsq+r3rqTk30NFzba/b//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1200.avif"
+        },
+        {
+          "w": 1207,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1207.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1200.jpg"
+        },
+        {
+          "w": 1207,
+          "url": "/media-deriv/Campaign conversation on cobblestone street__w1207.jpg"
         }
       ]
     }
@@ -3153,6 +3413,144 @@
       ]
     }
   },
+  "/media/Knocking on doors for Kandee Myers.jpg": {
+    "width": 1327,
+    "height": 1024,
+    "aspect": 1.2958984375,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgQABf/EAC4QAAEEAAQDBAsAAAAAAAAAAAEAAgMRBRIhMQQisTNBcnMTFDI0NVNicYGRwf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAaEQACAwEBAAAAAAAAAAAAAAABAgADERIT/9oADAMBAAIRAxEAPwDv4mL9Jfyz0RWMNsDKbP06ftKMTPM/yz3oxHNGba4uZl00RWvuUW3zEqDGtY000g7UbStlVHqRy934QmOZ4zRh1x5i4WNbTFkkohz8mg0FGyEgGEiVtPSqZHjDspft2Z6FHeMhcOLe2EEWGmmg1sEixn2JfLPQrcP2Mn3b0CdX4OzOy9LkLhjo7a8FrhuHbpvFXq7LrVqJ4r8Sn8X8CWRe7N8KQHWJl7RiLP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1200.avif"
+        },
+        {
+          "w": 1327,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1327.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1200.jpg"
+        },
+        {
+          "w": 1327,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1327.jpg"
+        }
+      ]
+    }
+  },
+  "/media/Knocking on doors for Kandee Myers.avif": {
+    "width": 1327,
+    "height": 1024,
+    "aspect": 1.2958984375,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgQABf/EAC4QAAEEAAQDBAsAAAAAAAAAAAEAAgMRBRIhMQQisTNBcnMTFDI0NVNicYGRwf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAaEQACAwEBAAAAAAAAAAAAAAABAgADERIT/9oADAMBAAIRAxEAPwDv4mL9Jfyz0RWMNsDKbP06ftKMTPM/yz3oxHNGba4uZl00RWvuUW3zEqDGtY000g7UbStlVHqRy934QmOZ4zRh1x5i4WNbTFkkohz8mg0FGyEgGEiVtPSqZHjDspft2Z6FHeMhcOLe2EEWGmmg1sEixn2JfLPQrcP2Mn3b0CdX4OzOy9LkLhjo7a8FrhuHbpvFXq7LrVqJ4r8Sn8X8CWRe7N8KQHWJl7RiLP/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1200.avif"
+        },
+        {
+          "w": 1327,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1327.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1200.jpg"
+        },
+        {
+          "w": 1327,
+          "url": "/media-deriv/Knocking on doors for Kandee Myers__w1327.jpg"
+        }
+      ]
+    }
+  },
   "/media/Math lesson in progress.jpg": {
     "width": 1536,
     "height": 1024,
@@ -3823,6 +4221,128 @@
         {
           "w": 1024,
           "url": "/media-deriv/Young graduates celebrating their achievement__w1024.jpg"
+        }
+      ]
+    }
+  },
+  "/media/celebrating-a-new-home-purchase.jpg": {
+    "width": 1057,
+    "height": 945,
+    "aspect": 1.1185185185185185,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAnEAACAQMDAwQDAQAAAAAAAAABAgMABBEFEiEiQZETFDFxIzJRYf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABoRAQADAQEBAAAAAAAAAAAAAAEAESExAkH/2gAMAwEAAhEDEQA/AOpKqW20t6hXaSMNgM3YZ7UkXcZYgxzHqwArk4+zVF5Ps06QvzwOB9ikBIZ4opAN6lQ4G7lTjnPPFCZcs1qMFxb9H5J1LjIBbGPvxTPTkkhWRJ5AGGR1dqlufaxQIjLGJnyVCruYjuaNzdjTtPhiLK8m3blOAP8AfqoFvZXqgnHvLhbgiOSb0RHx8Hcw48Vm0aOB2f3yhpBlug+PFUT6QrTgmd+oZOBQstGS4Dbp5Rj+Gs1s7NDHkDyxPMHN8MhcAhCPNLvLqPY4Gy5B+AFKlcnkVubSooTzLM3Vt/bFW22i26qHLyPgZwxyDQFfYrd5P//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w960.avif"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w1057.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w960.jpg"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w1057.jpg"
+        }
+      ]
+    }
+  },
+  "/media/celebrating-a-new-home-purchase.avif": {
+    "width": 1057,
+    "height": 945,
+    "aspect": 1.1185185185185185,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAdACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAnEAACAQMDAwQDAQAAAAAAAAABAgMABBEFEiEiQZETFDFxIzJRYf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABoRAQADAQEBAAAAAAAAAAAAAAEAESExAkH/2gAMAwEAAhEDEQA/AOpKqW20t6hXaSMNgM3YZ7UkXcZYgxzHqwArk4+zVF5Ps06QvzwOB9ikBIZ4opAN6lQ4G7lTjnPPFCZcs1qMFxb9H5J1LjIBbGPvxTPTkkhWRJ5AGGR1dqlufaxQIjLGJnyVCruYjuaNzdjTtPhiLK8m3blOAP8AfqoFvZXqgnHvLhbgiOSb0RHx8Hcw48Vm0aOB2f3yhpBlug+PFUT6QrTgmd+oZOBQstGS4Dbp5Rj+Gs1s7NDHkDyxPMHN8MhcAhCPNLvLqPY4Gy5B+AFKlcnkVubSooTzLM3Vt/bFW22i26qHLyPgZwxyDQFfYrd5P//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w960.avif"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w1057.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w960.jpg"
+        },
+        {
+          "w": 1057,
+          "url": "/media-deriv/celebrating-a-new-home-purchase__w1057.jpg"
         }
       ]
     }
@@ -5723,6 +6243,128 @@
       ]
     }
   },
+  "/media/large_c0f78128-c8ac-4f78-b008-53003f84b8b8.jpg": {
+    "width": 1000,
+    "height": 646,
+    "aspect": 1.5479876160990713,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUDBAYC/8QAKxAAAgIBAgIIBwAAAAAAAAAAAQIDEQAEEhMhBQYUMTJBYXEVIiNRgbHx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//EABkRAQEAAwEAAAAAAAAAAAAAAAABESFBMf/aAAwDAQACEQMRAD8Ak+G6ipi0qi5N9g91LQGUNNqRHxXjZmSw1k1vJq8cdOTTwad9hZIilb0IBVrFX6e2ItPLqG4YhYySCxGsZAawPMeY5ZF2uXBr2vURlqb6d1QPMHF2ombXIeKjsC3ypffVj8kZzq4dTp4oDMlGc2wbltYcz/Mnn0UnZVmiPEZOUoXlv5eIetfrCHVjrIDI0EbMdlO1D7iqzKJPLEN0cjI3kQaIwwyp4z6uxameSEGWaSS78bbq9rzVdGAGCZaoBgBXthhhw4//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w1000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w1000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/large_c0f78128-c8ac-4f78-b008-53003f84b8b8.avif": {
+    "width": 1000,
+    "height": 646,
+    "aspect": 1.5479876160990713,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUDBAYC/8QAKxAAAgIBAgIIBwAAAAAAAAAAAQIDEQAEEhMhBQYUMTJBYXEVIiNRgbHx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//EABkRAQEAAwEAAAAAAAAAAAAAAAABESFBMf/aAAwDAQACEQMRAD8Ak+G6ipi0qi5N9g91LQGUNNqRHxXjZmSw1k1vJq8cdOTTwad9hZIilb0IBVrFX6e2ItPLqG4YhYySCxGsZAawPMeY5ZF2uXBr2vURlqb6d1QPMHF2ombXIeKjsC3ypffVj8kZzq4dTp4oDMlGc2wbltYcz/Mnn0UnZVmiPEZOUoXlv5eIetfrCHVjrIDI0EbMdlO1D7iqzKJPLEN0cjI3kQaIwwyp4z6uxameSEGWaSS78bbq9rzVdGAGCZaoBgBXthhhw4//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w960.avif"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w1000.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w960.jpg"
+        },
+        {
+          "w": 1000,
+          "url": "/media-deriv/large_c0f78128-c8ac-4f78-b008-53003f84b8b8__w1000.jpg"
+        }
+      ]
+    }
+  },
   "/media/listening.jpg": {
     "width": 1018,
     "height": 1524,
@@ -6117,6 +6759,192 @@
         {
           "w": 1088,
           "url": "/media-deriv/new-hero-kandee-myers-state-senate__w1088.jpg"
+        }
+      ]
+    }
+  },
+  "/media/outdoors.jpg": {
+    "width": 4032,
+    "height": 3024,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAmEAACAgIBAwMFAQAAAAAAAAABAgMRAAQhEjFBBRNRBiNxkaGx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAGxEBAAICAwAAAAAAAAAAAAAAAAERITECQWH/2gAMAwEAAhEDEQA/AGeo+owHWm1+pg1d6rsbydr/AFBtSK1a0MoRbJClT8eDnW7GRtzcHlSefisy68yQ6yo8TMT3II5Pk/5mOOSqp65UZDQujXQRJTf6INZ3s7XubCSwmSP214Zj3ORdhGXfMiow6qJABsE83jkkZqEquhvgMvThPi2uz6jybQf7dChbDmvOZtvVstJH0gx2RVcmv7hhjWTcsWo42W9qZkRyB0ykkEUOO3nHybUulevvg7aSGw4N8fg4YYak9P/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoors__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoors__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoors__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoors__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoors__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoors__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoors__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoors__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoors__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoors__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoors__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoors__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoors__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoors__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoors__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoors__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoors__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoors__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoors__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoors__w3200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/outdoors.avif": {
+    "width": 4032,
+    "height": 3024,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAL/xAAmEAACAgIBAwMFAQAAAAAAAAABAgMRAAQhEjFBBRNRBiNxkaGx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAGxEBAAICAwAAAAAAAAAAAAAAAAERITECQWH/2gAMAwEAAhEDEQA/AGeo+owHWm1+pg1d6rsbydr/AFBtSK1a0MoRbJClT8eDnW7GRtzcHlSefisy68yQ6yo8TMT3II5Pk/5mOOSqp65UZDQujXQRJTf6INZ3s7XubCSwmSP214Zj3ORdhGXfMiow6qJABsE83jkkZqEquhvgMvThPi2uz6jybQf7dChbDmvOZtvVstJH0gx2RVcmv7hhjWTcsWo42W9qZkRyB0ykkEUOO3nHybUulevvg7aSGw4N8fg4YYak9P/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoors__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoors__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoors__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoors__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoors__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoors__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoors__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoors__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoors__w2400.avif"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoors__w3200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/outdoors__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/outdoors__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/outdoors__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/outdoors__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/outdoors__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/outdoors__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/outdoors__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/outdoors__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/outdoors__w2400.jpg"
+        },
+        {
+          "w": 3200,
+          "url": "/media-deriv/outdoors__w3200.jpg"
         }
       ]
     }

@@ -1,6 +1,6 @@
 ---
 title: "Property Taxes"
-description: "Kandee Myers’ approach to property taxes in Utah County: transparency, stewardship, and long-term affordability."
+description: "Property taxes are an investment—accountability, smart spending, and long-term investment in Utah County schools and infrastructure."
 url: "/priorities/property-taxes/"
 aliases:
   - "/issues/property-taxes"
@@ -9,39 +9,24 @@ aliases:
 
 # Property Taxes
 
-Property taxes support the services that make daily life work—our schools, roads, fire protection, police, and local government. These services matter deeply, and I believe they deserve careful stewardship and thoughtful investment.
+{{< cols min="18rem" gap="2.5rem" row="md" v="start" width="33 60" >}}
+  {{< col card="false" y="start" >}}
+{{< img src="/media/04e718cb1f95cf8db46c70db6547735b-1200x788.avif" alt="Kandee Myers speaking with residents about property taxes" object="cover" class="w-full h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" >}}
 
-At the same time, property taxes are often one of the most confusing and emotionally felt parts of local government. Homeowners experience them directly, yet many are unsure how rates are set, how dollars are allocated, or how rising home values affect long-term affordability.
+{{< img src="/media/large_c0f78128-c8ac-4f78-b008-53003f84b8b8.avif" alt="Utah County neighborhood homes and families" object="cover" class="w-full h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700 mt-4" >}}
+  {{< /col >}}
 
-## Our district
+  {{< col card="false" y="start" >}}
+**Property taxes are an investment.**
 
-Utah State Senate District 21 spans communities along the east bench of northern Utah County, including Cedar Hills, Alpine, Highland, Pleasant Grove, American Fork, and portions of Lehi and Lindon. While each city has its own character, our communities share common priorities: strong schools, safe neighborhoods, access to homeownership, and a deep connection to where we live.
+Utah ranks near the bottom nationally in per-student school funding. For a state that values families and invests in the future, that reality deserves honest conversation. As a real estate professional, I have seen what happens when communities focus only on keeping taxes low without also investing wisely in schools and infrastructure.
 
-## Why it feels confusing
+Utah is fortunate. We have engaged parents, dedicated teachers, and communities willing to step in when funding falls short. But relying too heavily on personal sacrifice, I believe, asks too much of families.
 
-In Utah County, property taxes are local and layered. County and school taxes are shared, but each city sets its own rate based on its budget and services. That’s why homeowners in Cedar Hills and Highland can pay different property taxes—even with similar homes.
+I will use a careful, data-driven approach to evaluate how Utah County invests property tax dollars—from roads and parks to public safety and, especially, our schools. Utah’s “magic sauce” has always been strong parent involvement and volunteerism. That spirit is a strength — but we should also ask whether it is fair or sustainable.
 
-Understanding those differences is essential when working with the Utah State Legislature.
-
-## My approach
-
-As a State Senator, I am committed to approaching property taxes with curiosity, care, research-driven thinking, and respect for the people who pay them.
-
-I will take a thoughtful, data-informed look at:
-
-- How property taxes are assessed and adjusted over time
-- How tax burdens differ across cities and neighborhoods within the same district
-- Where property tax dollars are spent—and how clearly that information is communicated
-- How rising home values affect fixed-income households and long-term homeowners
-
-My goal is not to weaken essential services, but to ensure the system is transparent and aligned with today’s realities.
-
-Good public policy asks careful questions:
-
-- Are we funding what matters most?
-- Are we balancing community needs with household affordability?
-- Are there opportunities to improve clarity, equity, or efficiency?
-
-I believe we can support strong schools, safe neighborhoods, and responsive local services while also protecting people’s ability to remain in the homes and communities they love.
+Utah has learned to do a lot with less because our families and educators care deeply. The next step isn’t simply spending more — it’s investing smarter, so every child can thrive. I believe in accountability, smart spending, and long-term investment; however, strong communities don’t happen by accident. I trust Utah is ready to invest better.
+  {{< /col >}}
+{{< /cols >}}
 
 Back to: [Priorities](/priorities)
