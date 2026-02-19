@@ -181,14 +181,14 @@
 {{- end -}}
 
 {{- /* openingHoursSpecification: pass-through array of objects if provided */ -}}
-{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "openingHoursSpecification")) -}}
-  {{- $oh := (index $lb "openingHoursSpecification") -}}
-  {{- if $oh -}}
-    {{- $obj = merge $obj (dict "openingHoursSpecification" $oh) -}}
-  {{- end -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "openingHoursSpecification")) -}}
+  {{- $obj = merge $obj (dict "openingHoursSpecification" .) -}}
 {{- end -}}
 
 {{- /* sameAs, areaServed, hasMap, aggregateRating (optional pass-throughs) */ -}}
+{{- with (and (ne (printf "%T" $lb) "bool") (index $lb "knowsAbout")) -}}
+  {{- $obj = merge $obj (dict "knowsAbout" .) -}}
+{{- end -}}
 {{- with (and (ne (printf "%T" $lb) "bool") (index $lb "sameAs")) -}}
   {{- $obj = merge $obj (dict "sameAs" .) -}}
 {{- end -}}

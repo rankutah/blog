@@ -1,6 +1,38 @@
 ---
 title: "Blueprint Scanning in Utah | Large format scanning | Blueprint digitization"
 description: "We bring order and searchability to your existing building plans."
+
+schema:
+  localBusiness:
+    enabled: true
+    type: "ProfessionalService"
+    name: "Digital Facility Solutions"
+    url: "https://digitalfacilitysolutions.com/"
+    "@id": "#localbusiness"
+    telephone: "+1-385-329-0586"
+    logo: "/media/logo.png"
+    areaServed:
+      - "@type": "AdministrativeArea"
+        name: "Utah County, UT"
+      - "@type": "AdministrativeArea"
+        name: "Salt Lake County, UT"
+    sameAs:
+      - "https://share.google/GK34os9eYefZrIzAS"
+    hasMap: "https://share.google/GK34os9eYefZrIzAS"
+    knowsAbout:
+      - "Blueprint scanning"
+      - "Blueprint digitization"
+      - "Large format scanning"
+    openingHoursSpecification:
+      - "@type": "OpeningHoursSpecification"
+        dayOfWeek:
+          - "https://schema.org/Monday"
+          - "https://schema.org/Tuesday"
+          - "https://schema.org/Wednesday"
+          - "https://schema.org/Thursday"
+          - "https://schema.org/Friday"
+        opens: "08:00"
+        closes: "17:00"
 ---
 
 {{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="60" alt="blueprint scanning to digitize large format facility records">}}
