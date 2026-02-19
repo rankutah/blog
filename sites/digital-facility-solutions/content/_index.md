@@ -1,14 +1,11 @@
 ---
-title: "Digital Facility Solutions"
+title: "Blueprint Scanning in Utah | Large format scanning | Blueprint digitization"
 description: "We bring order and searchability to your existing building plans."
 ---
 
-{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="60" >}}
+{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="60" alt="blueprint scanning to digitize large format facility records">}}
 ## Achieve order, intelligence, and searchability with digitized building plans
 {.center}
-
-
-
 
 
 {.center}
@@ -29,7 +26,7 @@ With organized, digitized building plans, you can retrieve archived building pla
   {{< col card="false" y="end" >}}
 
 
-{{< img src="/media/old-building-plans.avif" alt="Searchable facility records" object="contain" >}}
+{{< img src="/media/old-building-plans.avif" alt="blue print records in need of digitization" object="contain" >}}
 
   {{< /col >}}
 {{< /cols >}}
@@ -106,7 +103,6 @@ With organized, digitized building plans, you can retrieve archived building pla
     <p>Searchable, well-organized plans help teams find the right information and eliminate manual rebuilding.</p>
   </div>
 </div>
-
   {{< /col >}}
 
   {{< col card="true" y="center" >}}
@@ -162,5 +158,27 @@ With organized, digitized building plans, you can retrieve archived building pla
 {{< button url="/process" text="Explore Our Process" >}}
 {{< button text="Request a Quote" url="/contact/" >}}
 {.center}
+
+## We also help with:
+{.center}
+
+
+{{< cols min="18rem" gap="2rem" v="start" >}}
+
+{{< col card="true" y="start" >}}
+
+- Blueprint Scanning
+- Blueprint Digitization
+
+{{< /col >}}
+
+{{< col card="true"  y="start" >}}
+
+- Large Format Scanning
+- Large (oversized) Document Scanning
+
+{{< /col >}}
+
+{{< /cols >}}
 
 
