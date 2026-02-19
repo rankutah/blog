@@ -1257,6 +1257,128 @@
       ]
     }
   },
+  "/media/5272.jpg": {
+    "width": 1200,
+    "height": 900,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABQADAgT/xAAqEAACAQMDAgMJAAAAAAAAAAABAgMABBESEyEUMQVBcUJRYnKRobHB0f/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AcSytIgNu3jPzZP8Aa9GsIOEUAfFj9UfI5jYCSSTsWwvA+1ZMy9AsrOrEnke0eT5/SnQS6lA+H0L6tWFw8d223tiUIcjDEH8Ub1iW0upVBygJ1nt76St7yOeKKfAXWRgZ8u1G6csXTzOhViFBGDjniuG8Pi2wHY4XkYHaqqtZAM8QtoY4ZXLMxVDySRSdjEieGWwZRnbXPriqqqSJ/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/5272__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/5272__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/5272__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/5272__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/5272__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/5272__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/5272__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/5272__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/5272__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/5272__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/5272__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/5272__w1200.jpg"
+        }
+      ]
+    }
+  },
+  "/media/5272.avif": {
+    "width": 1200,
+    "height": 900,
+    "aspect": 1.3333333333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABQADAgT/xAAqEAACAQMDAgMJAAAAAAAAAAABAgMABBESEyEUMQVBcUJRYnKRobHB0f/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AcSytIgNu3jPzZP8Aa9GsIOEUAfFj9UfI5jYCSSTsWwvA+1ZMy9AsrOrEnke0eT5/SnQS6lA+H0L6tWFw8d223tiUIcjDEH8Ub1iW0upVBygJ1nt76St7yOeKKfAXWRgZ8u1G6csXTzOhViFBGDjniuG8Pi2wHY4XkYHaqqtZAM8QtoY4ZXLMxVDySRSdjEieGWwZRnbXPriqqqSJ/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/5272__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/5272__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/5272__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/5272__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/5272__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/5272__w1200.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/5272__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/5272__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/5272__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/5272__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/5272__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/5272__w1200.jpg"
+        }
+      ]
+    }
+  },
   "/media/Campaign conversation on cobblestone street.jpg": {
     "width": 1207,
     "height": 959,
@@ -5207,6 +5329,160 @@
       ]
     }
   },
+  "/media/intermountain-health-american-fork-hospital.jpg": {
+    "width": 1670,
+    "height": 1015,
+    "aspect": 1.645320197044335,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAATACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAQBBQIDBv/EACkQAAIBAwMDAQkAAAAAAAAAAAECAwAEEQUSIRMxUXEUFSIyQWGBkbH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAYEQADAQEAAAAAAAAAAAAAAAAAARExQf/aAAwDAQACEQMRAD8ApfZmLQiPDb9qjn645yKt7qye3iSVSnUwFwVymAM9vNSbfTYWx7wjRs54U9/WtiwW05IgmguGC/ISwLDvwM0YyqCenaibRbl3Tpz7dqBGUKPUE+axh1a6eNmMrSS7iCokxgUwugRszPJF0s8jBJyf3xRc6Ra2Vl1mDSM0gAKnBUYPmmpCxS0QljVY5MDsi0qOw/H9ooo8CzooXZLCB1Y55Xk5GPSrhPitFyAcnx9qKKywp//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1600.avif"
+        },
+        {
+          "w": 1670,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1670.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1600.jpg"
+        },
+        {
+          "w": 1670,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1670.jpg"
+        }
+      ]
+    }
+  },
+  "/media/intermountain-health-american-fork-hospital.avif": {
+    "width": 1670,
+    "height": 1015,
+    "aspect": 1.645320197044335,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAATACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAQBBQIDBv/EACkQAAIBAwMDAQkAAAAAAAAAAAECAwAEEQUSIRMxUXEUFSIyQWGBkbH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAYEQADAQEAAAAAAAAAAAAAAAAAARExQf/aAAwDAQACEQMRAD8ApfZmLQiPDb9qjn645yKt7qye3iSVSnUwFwVymAM9vNSbfTYWx7wjRs54U9/WtiwW05IgmguGC/ISwLDvwM0YyqCenaibRbl3Tpz7dqBGUKPUE+axh1a6eNmMrSS7iCokxgUwugRszPJF0s8jBJyf3xRc6Ra2Vl1mDSM0gAKnBUYPmmpCxS0QljVY5MDsi0qOw/H9ooo8CzooXZLCB1Y55Xk5GPSrhPitFyAcnx9qKKywp//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1600.avif"
+        },
+        {
+          "w": 1670,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1670.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1600.jpg"
+        },
+        {
+          "w": 1670,
+          "url": "/media-deriv/intermountain-health-american-fork-hospital__w1670.jpg"
+        }
+      ]
+    }
+  },
   "/media/kandee-myers-utah-state-senate-district-21-bridge.jpg": {
     "width": 4920,
     "height": 3280,
@@ -6637,6 +6913,192 @@
         {
           "w": 2000,
           "url": "/media-deriv/logo__w2000.jpg"
+        }
+      ]
+    }
+  },
+  "/media/medical.jpg": {
+    "width": 2736,
+    "height": 1824,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYB/8QAJxAAAgMAAQIDCQAAAAAAAAAAAQIAAxESBCEFQYEGExQVIjEycZH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/xAAYEQEBAQEBAAAAAAAAAAAAAAABAAIRQf/aAAwDAQACEQMRAD8A0nPKyQcOSdROMCxYg/cyj1Dv8K5r/IDf4ZGnrLXZ2SkkNjKC2YudvU94kAzXZzZnH9oLU8R9ytRdCAAufVvnH4fRMj2TWXIL7LkclZVau3p7AabsUjAGXcHkPSEIkMfL1vNbc+DIQeSr3b9mNAxyEJK9v//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/medical__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/medical__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/medical__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/medical__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/medical__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/medical__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/medical__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/medical__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/medical__w2400.avif"
+        },
+        {
+          "w": 2736,
+          "url": "/media-deriv/medical__w2736.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/medical__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/medical__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/medical__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/medical__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/medical__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/medical__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/medical__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/medical__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/medical__w2400.jpg"
+        },
+        {
+          "w": 2736,
+          "url": "/media-deriv/medical__w2736.jpg"
+        }
+      ]
+    }
+  },
+  "/media/medical.avif": {
+    "width": 2736,
+    "height": 1824,
+    "aspect": 1.5,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYB/8QAJxAAAgMAAQIDCQAAAAAAAAAAAQIAAxESBCEFQYEGExQVIjEycZH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQL/xAAYEQEBAQEBAAAAAAAAAAAAAAABAAIRQf/aAAwDAQACEQMRAD8A0nPKyQcOSdROMCxYg/cyj1Dv8K5r/IDf4ZGnrLXZ2SkkNjKC2YudvU94kAzXZzZnH9oLU8R9ytRdCAAufVvnH4fRMj2TWXIL7LkclZVau3p7AabsUjAGXcHkPSEIkMfL1vNbc+DIQeSr3b9mNAxyEJK9v//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/medical__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/medical__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/medical__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/medical__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/medical__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/medical__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/medical__w1600.avif"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/medical__w2000.avif"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/medical__w2400.avif"
+        },
+        {
+          "w": 2736,
+          "url": "/media-deriv/medical__w2736.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/medical__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/medical__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/medical__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/medical__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/medical__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/medical__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/medical__w1600.jpg"
+        },
+        {
+          "w": 2000,
+          "url": "/media-deriv/medical__w2000.jpg"
+        },
+        {
+          "w": 2400,
+          "url": "/media-deriv/medical__w2400.jpg"
+        },
+        {
+          "w": 2736,
+          "url": "/media-deriv/medical__w2736.jpg"
         }
       ]
     }
