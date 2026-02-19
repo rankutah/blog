@@ -8,7 +8,7 @@ schema:
     enabled: true
     items:
       - question: "What does Local SEO mean?"
-        answer: "Local Search Engine Optimization (SEO) helps you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, 100+ directory listings, and reporting."
+        answer: "Local Search Engine Optimization (SEO) helps you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and reporting."
       - question: "Is SEO included in Website Design?"
         answer: "Yes. Website Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local SEO is the monthly service for Google Business Profile work, Maps visibility, listings, and reporting."
       - question: "Can I change plans later?"
@@ -75,7 +75,6 @@ Includes everything in the **Business Website** package, plus:
 - Ongoing keyword research + website updates
 - Google Business Profile management and optimization
 - Apple Maps and Bing Places management and optimization
-- Business listings on 100+ sites (via data aggregators)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
@@ -221,7 +220,7 @@ Fair use and scope:
 
 ### What do you do each month for local SEO?
 
-Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, Bing Places, and directory listings. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
+Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, and Bing Places. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
 ### How long does a new website take?
 Websites can be built in 2–3 weeks with regular coordination.
