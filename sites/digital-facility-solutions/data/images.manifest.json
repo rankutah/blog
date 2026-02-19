@@ -413,6 +413,160 @@
       ]
     }
   },
+  "/media/blueprint-scanning.jpg": {
+    "width": 1854,
+    "height": 1228,
+    "aspect": 1.509771986970684,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQDBQYC/8QAJxAAAQQBAwMDBQAAAAAAAAAAAQACAxEEBSExEhNBBrHRMkJykfD/xAAXAQEBAQEAAAAAAAAAAAAAAAACAQME/8QAGhEBAQACAwAAAAAAAAAAAAAAAAECERIhMf/aAAwDAQACEQMRAD8AUxsFpcL4I2va09Boz5ow/qjaDwCSphNjvi6wy3t+m/H8VYYryMZgNXv7rotsgdVXHQJT98f6KXn9OShjnd2PYE8FaVsgpQ5Mo7Mn4H2R5ZLqMpHK4tA8KePJmjYQyRwHNbIQtvQLP1jMEgqZ3TXFD4XT9Ry3xm53URuKHwhCEV//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blueprint-scanning__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blueprint-scanning__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blueprint-scanning__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blueprint-scanning__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blueprint-scanning__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blueprint-scanning__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blueprint-scanning__w1600.avif"
+        },
+        {
+          "w": 1854,
+          "url": "/media-deriv/blueprint-scanning__w1854.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blueprint-scanning__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blueprint-scanning__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blueprint-scanning__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blueprint-scanning__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blueprint-scanning__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blueprint-scanning__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blueprint-scanning__w1600.jpg"
+        },
+        {
+          "w": 1854,
+          "url": "/media-deriv/blueprint-scanning__w1854.jpg"
+        }
+      ]
+    }
+  },
+  "/media/blueprint-scanning.avif": {
+    "width": 1854,
+    "height": 1228,
+    "aspect": 1.509771986970684,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQDBQYC/8QAJxAAAQQBAwMDBQAAAAAAAAAAAQACAxEEBSExEhNBBrHRMkJykfD/xAAXAQEBAQEAAAAAAAAAAAAAAAACAQME/8QAGhEBAQACAwAAAAAAAAAAAAAAAAECERIhMf/aAAwDAQACEQMRAD8AUxsFpcL4I2va09Boz5ow/qjaDwCSphNjvi6wy3t+m/H8VYYryMZgNXv7rotsgdVXHQJT98f6KXn9OShjnd2PYE8FaVsgpQ5Mo7Mn4H2R5ZLqMpHK4tA8KePJmjYQyRwHNbIQtvQLP1jMEgqZ3TXFD4XT9Ry3xm53URuKHwhCEV//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blueprint-scanning__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blueprint-scanning__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blueprint-scanning__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blueprint-scanning__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blueprint-scanning__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blueprint-scanning__w1200.avif"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blueprint-scanning__w1600.avif"
+        },
+        {
+          "w": 1854,
+          "url": "/media-deriv/blueprint-scanning__w1854.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/blueprint-scanning__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/blueprint-scanning__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/blueprint-scanning__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/blueprint-scanning__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/blueprint-scanning__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/blueprint-scanning__w1200.jpg"
+        },
+        {
+          "w": 1600,
+          "url": "/media-deriv/blueprint-scanning__w1600.jpg"
+        },
+        {
+          "w": 1854,
+          "url": "/media-deriv/blueprint-scanning__w1854.jpg"
+        }
+      ]
+    }
+  },
   "/media/building-blueprints-scan-digitized.jpg": {
     "width": 1536,
     "height": 1024,

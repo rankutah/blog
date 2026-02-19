@@ -3,7 +3,7 @@ title: "Digital Facility Solutions"
 description: "We bring order and searchability to your existing building plans."
 ---
 
-{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="40" >}}
+{{< hero img="/media/digitized-building-plans.avif" bleed="true" overlay="true" overlayShade="bg-black/55" vh="svh" vhHeight="60" >}}
 ## Achieve order, intelligence, and searchability with digitized building plans
 {.center}
 
@@ -34,15 +34,17 @@ With organized, digitized building plans, you can retrieve archived building pla
   {{< /col >}}
 {{< /cols >}}
 
-## Benefits of digital facility diagrams
-{.center}
+
+![Blue print scanning](/media/blueprint-scanning.avif)
+{.w-128 .center}
+
 
 {{< cols min="22rem" gap="2.5rem" row="md" v="start" >}}
   {{< col card="true" y="start" >}}
 <div class="flex items-start gap-3">
   {{< icon name="search" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="Optical character recognition — for digitally created text" >}}
   <div>
-    <h4 class="mt-0">Find information instantly</h4>
+    <h4 class="mt-0">Find drawing information instantly</h4>
     <p class="mt-1 text-sm opacity-80">Optical character recognition — for digitally created text</p>
     <p>Search across drawings for room names, notes, and sheet content. No more manual scrolling or guessing where to find what you need.</p>
   </div>
@@ -91,7 +93,7 @@ With organized, digitized building plans, you can retrieve archived building pla
 {{< /cols >}}
 
 
-## Real-world results of digitized building plans
+## Results
 {.center}
 
 
