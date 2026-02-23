@@ -11,7 +11,7 @@ This adds a site-wide “Message” floating action button (FAB) that opens a mo
 
 - Modal + behavior: `themes/overrides/layouts/partials/message-modal.html`
 - FAB button: `themes/overrides/layouts/partials/text-fab.html`
-- Gated in base layout: `themes/overrides/layouts/_default/flowbite.html`
+- Gated in base layout: `themes/overrides/layouts/_default/flowbite.html` and `themes/overrides/layouts/_default/baseof.html`
 
 ## Enable / disable
 
@@ -35,6 +35,14 @@ You can control what the floating button says, and whether the icon is shown:
 text = "Message"      # default
 showIcon = true       # set false to hide the icon
 showTextMobile = false # set true to show the label on mobile too
+
+# Optional: if the FAB is in "link" mode, override the destination.
+# Defaults to /contact/.
+url = "https://example.com"
+
+# Optional: by default the FAB is hidden on /contact/ to avoid redundancy.
+# Set false to keep it visible on the contact page.
+hideOnContact = true
 ```
 
 ## Submission

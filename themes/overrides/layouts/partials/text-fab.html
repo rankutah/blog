@@ -8,6 +8,7 @@
 
 {{- /* Configurable label + icon */ -}}
 {{- $fabCfg := .Site.Params.messageFab | default dict -}}
+{{- $fabURL := (index $fabCfg "url") | default $contactURL -}}
 {{- $label := (index $fabCfg "text") | default "Message" -}}
 {{- $showIconVal := (index $fabCfg "showIcon") | default true -}}
 {{- $showIcon := not (eq (lower (printf "%v" $showIconVal)) "false") -}}
@@ -48,7 +49,7 @@
   }}
   {{ $cta := cond $isCSS "cp-brand-btn" (index $solid $siteColor | default (index $solid "blue")) }}
 
-        <a {{ if eq $mode "modal" }}href="#message"{{ else }}href="{{ $contactURL }}"{{ end }}
+    		<a {{ if eq $mode "modal" }}href="#message"{{ else }}href="{{ $fabURL }}"{{ end }}
           class="cp-fab{{ if $isIconOnlyMobile }} cp-fab--icon-only-mobile{{ end }} inline-flex items-center justify-center {{ $gapCls }} rounded-full shadow-lg no-underline {{ $cta }} {{ $sizeCls }}"
           aria-label="{{ $aria }}"
           style="position: fixed; z-index: 10001; bottom: calc(1rem + env(safe-area-inset-bottom)); right: calc(1rem + env(safe-area-inset-right)); transform: translateZ(0); backface-visibility: hidden; will-change: transform;"

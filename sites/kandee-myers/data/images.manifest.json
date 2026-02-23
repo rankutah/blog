@@ -7411,6 +7411,48 @@
       ]
     }
   },
+  "/media/social-media.jpg": {
+    "width": 233,
+    "height": 326,
+    "aspect": 0.7147239263803681,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAtACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAUDAv/EACwQAAIABAQGAQMFAAAAAAAAAAECAAMEEQUSITEGE0FRYXEiFJHBMjNyoaL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwH/xAAaEQADAQEBAQAAAAAAAAAAAAAAAQIRAxIi/9oADAMBAAIRAxEAPwCnxPX1lG9ItJN5avmL2AJNrW39wE4tiiKWl1Mqcqi5BQAmNOM82ejynSz3/wAxN/dkIZlMjEaak6W7AQKeClaUjjeMSWytJppvkXFv78wjDsfrKitlU9TRLLDtlzqxsNL/AIiKArXC0yAjYByBb7RrhAC4xSKqOhzm92JGxjFQnI/jIXNHsP1C56bRFlopVFUmWp0LgaA36mL3Fou9Hpc/LT7RMpSHRWOZCDa1rqR1Nol2eMfJajNkBUJMnCZMB0yy9beu/iNcHAGK0SqzWDG6t63jOXLDnMOYCpYnPf4jp6vDMMa+MU6fG6kk2O2kTl/SQ6XyxHFzZZlF7c7X7QGQ/Ll/Iy5fcFht5i7i2ApiZln6iZKKE9MwN/EHlcLSVN5lXObwoCiL9OfslF+UBapUrdZqm+5FzHOGOi4vTrzA7seieO8WRw7QbTFmzP5zD+ITIwmhppomyaZFmDZtyIEcFL02uurD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 233,
+          "url": "/media-deriv/social-media__w233.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 233,
+          "url": "/media-deriv/social-media__w233.jpg"
+        }
+      ]
+    }
+  },
+  "/media/social-media.avif": {
+    "width": 233,
+    "height": 326,
+    "aspect": 0.7147239263803681,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAtACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAUDAv/EACwQAAIABAQGAQMFAAAAAAAAAAECAAMEEQUSITEGE0FRYXEiFJHBMjNyoaL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwH/xAAaEQADAQEBAQAAAAAAAAAAAAAAAQIRAxIi/9oADAMBAAIRAxEAPwCnxPX1lG9ItJN5avmL2AJNrW39wE4tiiKWl1Mqcqi5BQAmNOM82ejynSz3/wAxN/dkIZlMjEaak6W7AQKeClaUjjeMSWytJppvkXFv78wjDsfrKitlU9TRLLDtlzqxsNL/AIiKArXC0yAjYByBb7RrhAC4xSKqOhzm92JGxjFQnI/jIXNHsP1C56bRFlopVFUmWp0LgaA36mL3Fou9Hpc/LT7RMpSHRWOZCDa1rqR1Nol2eMfJajNkBUJMnCZMB0yy9beu/iNcHAGK0SqzWDG6t63jOXLDnMOYCpYnPf4jp6vDMMa+MU6fG6kk2O2kTl/SQ6XyxHFzZZlF7c7X7QGQ/Ll/Iy5fcFht5i7i2ApiZln6iZKKE9MwN/EHlcLSVN5lXObwoCiL9OfslF+UBapUrdZqm+5FzHOGOi4vTrzA7seieO8WRw7QbTFmzP5zD+ITIwmhppomyaZFmDZtyIEcFL02uurD/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 233,
+          "url": "/media-deriv/social-media__w233.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 233,
+          "url": "/media-deriv/social-media__w233.jpg"
+        }
+      ]
+    }
+  },
   "/media/utah-senate-district-21-map-2026.jpg": {
     "width": 1028,
     "height": 1080,

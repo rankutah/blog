@@ -23,7 +23,7 @@ Ways to help (coming online in phases):
 - Helping with signs and visibility
 - Sharing official campaign updates
 
-**Volunteer sign-up is coming soon.**
+{{< button url="https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers&formId=undefined" text="Volunteer" >}}
 
 In the meantime, check back here for the sign-up form and the next volunteer opportunities.
 	{{< /col >}}

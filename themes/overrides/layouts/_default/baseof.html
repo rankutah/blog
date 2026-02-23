@@ -45,8 +45,11 @@
 		   No BaseURL fallback to avoid surprises. */}}
 		{{ $mm := .Site.Params.messageModal }}
 		{{ $fab := .Site.Params.messageFab }}
+		{{ $fabCfg := .Site.Params.messageFab | default dict }}
 		{{ $contactURL := "/contact/" | relURL }}
-		{{ $hideMessageFab := or (eq .RelPermalink $contactURL) (.Param "hideMessageFab") }}
+		{{ $hideOnContactVal := (index $fabCfg "hideOnContact") | default true }}
+		{{ $hideOnContact := not (eq (lower (printf "%v" $hideOnContactVal)) "false") }}
+		{{ $hideMessageFab := or (and $hideOnContact (eq .RelPermalink $contactURL)) (.Param "hideMessageFab") }}
 		{{ if not $hideMessageFab }}
 			{{ if and $mm ($mm.enable) }}
 				{{ partial "text-fab.html" . }}

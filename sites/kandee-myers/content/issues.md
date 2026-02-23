@@ -22,32 +22,54 @@ hero: true
 
 {{< /hero >}}
 
-## Utah Housing & Homeownership {#housing .scroll-mt-24}
+## Homeownership {#housing .scroll-mt-24}
 
-Kandee’s background includes real estate (since 1994) and first-hand experience through the housing boom and crash.
+Housing affordability is one of the most pressing issues facing our state.
+
+Kandee has spent decades in real estate and has lived through the housing boom and crash—she brings practical, market-informed perspective to what is driving prices, supply, and barriers for first-time buyers.
 
 Key points:
 
-- Modernize Utah’s **homestead exemption** to reflect today’s home values.
-- Strengthen **property-ownership protections** (including exploring optional community property approaches).
-- Review whether homeowners should be exempt from **state income tax on forgiven mortgage debt** in short-sale scenarios.
+- Reduce barriers and encourage **smart growth** that expands supply.
+- Protect **property rights** while expanding opportunity.
+- Focus on solutions grounded in reality—not slogans.
 
 Read more: [Utah Housing & Homeownership](/priorities/housing-homeownership/)
 
 ## Education — Public & Private Schools {#education .scroll-mt-24}
 
-Kandee supports strong public schools and wants education policy to be research-guided and child-centered.
+Kandee supports strong public schools and wants education policy to be child-centered, data-driven, and grounded in respect for teachers.
 
 Key points:
 
-- Supports **public education** and continued support for **Alpine School District**.
-- Not in favor of using public **property tax dollars** to fund private schools.
-- Re-evaluate **technology/screen time** during the school day; support phone-free learning spaces.
+- Prioritize **public schools first**.
+- Support teachers with meaningful respect, compensation, and practical resources.
+- Ensure **property tax dollars** prioritize public education; examine allocation and get the details right.
 
 Read more: [Education](/priorities/education/)
 
 ## Health Care {#health-care .scroll-mt-24}
 
+Health care costs and coverage are becoming a growing worry for families, seniors on fixed incomes, and young households building stability.
+
+Key points:
+
+- Improve **access and affordability** so costs don’t simply shift to crisis care.
+- Reward **prevention and early care**, not just treatment.
+- Study what works and pursue **practical, bipartisan** solutions that fit Utah’s values.
+
+Read more: [Health Care](/priorities/health-care/)
+
 ## Social Media {#social-media .scroll-mt-24}
+
+Social media is an attention industry that profits from addiction — and the costs are showing up in our kids, our families, and our communities.
+
+Key points:
+
+- Protect children from **harmful content** and shorten the pipeline to addiction.
+- Put **guardrails** in place based on research and what’s working elsewhere.
+- Make technology **serve people**, not the other way around.
+
+Read more: [Social Media](/priorities/social-media/)
 
 

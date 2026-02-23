@@ -93,7 +93,7 @@ enableRobotsTXT = true
   stickyDesktop = true
   showCTAOnMobile  = true
   CTAText       = "Donate"
-  CTAURL        = "/donate"
+  CTAURL        = "https://app.proximityimpact.com/payment-donation/link/119/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers"
   showPhoneOnMobile = false
   showBrandTitle = true
   flushHero = true
@@ -104,6 +104,8 @@ enableRobotsTXT = true
   text = "Volunteer"
   showIcon = true
   showTextMobile = true
+  hideOnContact = false
+  url = "https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers&formId=undefined"
 
 [menu]
   [[menu.main]]
@@ -196,13 +198,13 @@ enableRobotsTXT = true
 
   [[menu.main]]
     name   = "Volunteer"
-    url    = "/volunteer"
+    url    = "https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers&formId=undefined"
     parent = "get-involved"
     weight = 41
 
   [[menu.main]]
     name   = "Donate"
-    url    = "/donate"
+    url    = "https://app.proximityimpact.com/payment-donation/link/119/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers"
     parent = "get-involved"
     weight = 42
 
