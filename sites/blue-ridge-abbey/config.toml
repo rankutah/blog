@@ -25,7 +25,7 @@ uglyURLs = false
   home = ["HTML", "RSS", "JSON", "FORMS"]
 
 [params]
-  primaryColor = "emerald"
+  primaryColor = "#6a8d6f"
   logo = "media/logo.png"
   lightBackground = "neutral-100"
   darkBackground  = "emerald-950"
