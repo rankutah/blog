@@ -74,10 +74,10 @@ Election date, district map, and official voting links.
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 
 {{< col card="true" y="start" >}}
-### Housing & Homeownership
+### Homeownership
 Protect homeownership and property rights, and keep policy grounded in real-world incentives.
 
-{{< button url="/priorities/housing-homeownership/" text="Housing" >}}
+{{< button url="/priorities/housing-homeownership/" text="Homeownership" >}}
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
