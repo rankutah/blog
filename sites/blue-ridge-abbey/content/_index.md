@@ -140,6 +140,9 @@ A guide to the top scenic drives, hikes, orchards, and photo spots for peak colo
 Holiday magic near Buena Vista, VA: drive-thru lights at Glen Maury, Natural Bridge trees, parades, concerts & shop-small fun. Plan a Blue Ridge getaway. <br><br>
 {{< button url="/blog/holiday-magic-in-the-blue-ridge" text="Blue Ridge Holiday Magic" >}}
 
+Plan a relaxing spring getaway in Buena Vista, VA with wildflower hikes, river walks, historic Lexington visits, and scenic drives in Virginia’s Blue Ridge Mountains. <br><br>
+{{< button url="/blog/easy-spring-getaway-in-the-blue-ridge" text="Easy Spring Getaway" >}}
+
 
 ## FAQs
 

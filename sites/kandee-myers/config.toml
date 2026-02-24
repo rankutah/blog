@@ -105,7 +105,7 @@ enableRobotsTXT = true
   showIcon = true
   showTextMobile = true
   hideOnContact = false
-  url = "https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers&formId=undefined"
+  url = "https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a"
 
 [menu]
   [[menu.main]]
@@ -198,7 +198,7 @@ enableRobotsTXT = true
 
   [[menu.main]]
     name   = "Volunteer"
-    url    = "https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers&formId=undefined"
+    url    = "https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a"
     parent = "get-involved"
     weight = 41
 
@@ -209,8 +209,8 @@ enableRobotsTXT = true
     weight = 42
 
   [[menu.main]]
-    name   = "Yard Signs"
-    url    = "/yard-signs"
+    name   = "Free Yard Sign"
+    url    = "https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers&formId=29"
     parent = "get-involved"
     weight = 43
 

@@ -20,7 +20,7 @@ headless: true
 ### Get involved
 {.center}
 
-[Volunteer](/volunteer) • [Donate](/donate) • [Yard Signs](/yard-signs) • [Voter Info](/voter-info)
+[Volunteer](https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a) • [Donate](/donate) • [Free Yard Sign](https://app.proximityimpact.com/web-volunteer-form/4d6227e0-b480-47cf-93ad-82c85a855a1a?name=Kandee-Myers&formId=29) • [Voter Info](/voter-info)
 {.center}
 
 {{< /col >}}

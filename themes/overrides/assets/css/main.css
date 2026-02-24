@@ -100,10 +100,10 @@
   text-decoration: none;
 }
 
-/* Kandee Myers: "Why I Am Running" hero links */
+/* Kandee Myers: hero headline links should match surrounding headline color */
 .section.hero .km-why-running-hero a.cp-hero-link,
 .section.hero .km-why-running-hero a.cp-hero-link:hover {
-  color: #f5f4eb;
+  color: inherit;
 }
 
 /* On very small screens, reduce type size so the hero overlay doesn't overflow/scroll. */

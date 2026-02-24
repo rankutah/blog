@@ -34,9 +34,9 @@ Key points:
 - Protect **property rights** while expanding opportunity.
 - Focus on solutions grounded in reality—not slogans.
 
-Read more: [Utah Housing & Homeownership](/priorities/housing-homeownership/)
+Read more: [Homeownership](/priorities/housing-homeownership/)
 
-## Education — Public & Private Schools {#education .scroll-mt-24}
+## Education {#education .scroll-mt-24}
 
 Kandee supports strong public schools and wants education policy to be child-centered, data-driven, and grounded in respect for teachers.
 
