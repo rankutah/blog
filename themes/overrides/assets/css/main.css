@@ -191,6 +191,26 @@ html[data-motion-skip="true"] [data-motion] {
   box-shadow: 0 0 0 4px var(--cp-brand-ring);
 }
 
+/* Brand-colored badges (supports Tailwind family or config-driven CSS color) */
+.cp-brand-badge {
+  --cp-badge-color: var(--cp-brand);
+  background-color: var(--cp-badge-color);
+  color: #ffffff;
+}
+
+@supports (background-color: color-mix(in oklab, black, white)) {
+  .cp-brand-badge {
+    /* Approximate Tailwind's *-100 background + *-800 text, but driven by brand color */
+    background-color: color-mix(in oklab, var(--cp-badge-color) 16%, white);
+    color: color-mix(in oklab, var(--cp-badge-color), black 35%);
+  }
+
+  .dark .cp-brand-badge {
+    background-color: color-mix(in oklab, var(--cp-badge-color), black 70%);
+    color: color-mix(in oklab, var(--cp-badge-color), white 78%);
+  }
+}
+
 .cp-focus-brand:focus,
 .cp-focus-brand:focus-visible {
   outline: none;

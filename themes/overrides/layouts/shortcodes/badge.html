@@ -2,9 +2,60 @@
 {{- $text := .Get "text" | default "Badge" -}}
 {{- $classes := .Get "classes" | default "" -}}
 {{- $sizeParam := lower (.Get "size" | default "xs") -}}
-{{- $colorParam := lower (.Get "color" | default "") -}}
-{{- $siteColor := lower (.Page.Site.Params.primaryColor | default "blue") -}}
-{{- $color := cond (ne $colorParam "") $colorParam $siteColor -}}
+{{- $colorParamRaw := .Get "color" | default "" -}}
+{{- $colorParam := lower (trim (printf "%v" $colorParamRaw) " \n\r\t") -}}
+
+{{- $brand := partial "theme/brand.html" .Page | transform.Unmarshal -}}
+{{- $siteKind := index $brand "kind" -}}
+{{- $siteFam := index $brand "tailwind" -}}
+
+{{- $useBrandCSS := false -}}
+{{- $badgeStyle := "" -}}
+{{- $color := "" -}}
+
+{{- /* If color= is a CSS color, render a CSS-driven badge and allow per-badge override. */ -}}
+{{- if ne $colorParam "" -}}
+  {{- $isCSS := false -}}
+  {{- if or
+    (strings.HasPrefix $colorParam "#")
+    (strings.HasPrefix $colorParam "rgb(")
+    (strings.HasPrefix $colorParam "rgba(")
+    (strings.HasPrefix $colorParam "hsl(")
+    (strings.HasPrefix $colorParam "hsla(")
+    (strings.HasPrefix $colorParam "oklch(")
+    (strings.HasPrefix $colorParam "oklab(")
+    (strings.HasPrefix $colorParam "lab(")
+    (strings.HasPrefix $colorParam "lch(")
+    (strings.HasPrefix $colorParam "color(")
+    (strings.HasPrefix $colorParam "var(")
+    (strings.HasPrefix $colorParam "currentcolor")
+    (strings.HasPrefix $colorParam "transparent")
+  -}}
+    {{- $isCSS = true -}}
+  {{- end -}}
+
+  {{- if $isCSS -}}
+    {{- $useBrandCSS = true -}}
+    {{- $badgeStyle = printf "--cp-badge-color: %s;" (printf "%v" $colorParamRaw) -}}
+  {{- else -}}
+    {{- $color = $colorParam -}}
+    {{- /* Accept 'emerald-600' / 'bg-emerald-600' etc by reducing to family. */ -}}
+    {{- if strings.HasPrefix $color "dark:" -}}{{- $color = replace $color "dark:" "" -}}{{- end -}}
+    {{- if strings.HasPrefix $color "dark:bg-" -}}{{- $color = replace $color "dark:bg-" "" -}}{{- end -}}
+    {{- if strings.HasPrefix $color "bg-" -}}{{- $color = replace $color "bg-" "" -}}{{- end -}}
+    {{- if strings.HasPrefix $color "text-" -}}{{- $color = replace $color "text-" "" -}}{{- end -}}
+    {{- if in $color "-" -}}
+      {{- $color = index (split $color "-") 0 -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- /* No color= param: follow site brand system. */ -}}
+  {{- if eq $siteKind "css" -}}
+    {{- $useBrandCSS = true -}}
+  {{- else -}}
+    {{- $color = lower ($siteFam | default "blue") -}}
+  {{- end -}}
+{{- end -}}
 
 {{- $map := dict
   "red"      "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300"
@@ -44,4 +95,8 @@
 {{- else -}}
   {{- $sizeClass = "text-xs" -}}
 {{- end -}}
-<span class="inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 {{ $colorClasses }} {{ $classes }}">{{ $text }}</span>
+{{- if $useBrandCSS -}}
+  <span class="inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 cp-brand-badge {{ $classes }}" {{ if ne $badgeStyle "" }}style="{{ $badgeStyle }}"{{ end }}>{{ $text }}</span>
+{{- else -}}
+  <span class="inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 {{ $colorClasses }} {{ $classes }}">{{ $text }}</span>
+{{- end -}}

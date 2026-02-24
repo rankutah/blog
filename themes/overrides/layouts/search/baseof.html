@@ -135,7 +135,6 @@
   <link rel="preload" as="style" href="{{ absURL $css.RelPermalink }}">
   <link rel="stylesheet" href="{{ absURL $css.RelPermalink }}">
   {{ partial "fonts.html" . }}
-  {{ partial "brand-colors.html" . }}
   {{ partial "taxonomy-badges.html" . }}
   {{- if or (hugo.IsProduction) (eq site.Params.env "production") -}}
     {{ partial "google_analytics.html" . }}

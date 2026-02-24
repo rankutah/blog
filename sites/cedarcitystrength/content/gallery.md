@@ -1,15 +1,13 @@
 ---
-title:   "Gallery"
-layout:  "flowbite"
-url:     "/gallery"
-summary: "Inside the gym"
+title: "Gallery"
+description: "Photos of Cedar City Strength & Conditioning."
+layout: "flowbite"
+url: "/gallery"
 ---
 
-# Gallery
-Workouts and training at Cedar City Strength & Conditioning.
+# Photo Gallery
 
 {{< gallery class="not-prose columns-2 sm:columns-3 md:columns-4 gap-3" >}}
-  <!-- moved first two photos later in the list -->
   {{< galleryimg src="/media/CCFittest1-149.jpg" alt="CCFittest1-149" >}}
   {{< galleryimg src="/media/CCFittest1-185.jpg" alt="CCFittest1-185" >}}
   {{< galleryimg src="/media/CCFittest1-219.jpg" alt="CCFittest1-219" >}}
@@ -39,7 +37,6 @@ Workouts and training at Cedar City Strength & Conditioning.
   {{< galleryimg src="/media/CCFittest4-19.jpg" alt="CCFittest4-19" >}}
   {{< galleryimg src="/media/CCFittest4-23.jpg" alt="CCFittest4-23" >}}
 
-  <!-- Added recent photos -->
   {{< galleryimg src="/media/1000010713.jpg" alt="1000010713" >}}
   {{< galleryimg src="/media/1000010768.jpg" alt="1000010768" >}}
   {{< galleryimg src="/media/1000010772.jpg" alt="1000010772" >}}
@@ -91,13 +88,10 @@ Workouts and training at Cedar City Strength & Conditioning.
   {{< galleryimg src="/media/1000028088.jpg" alt="1000028088" >}}
   {{< galleryimg src="/media/1000028100.jpg" alt="1000028100" >}}
 
-  <!-- Additional non-numeric photos -->
   {{< galleryimg src="/media/outdoor-gym-cedar-city-workout.jpg" alt="outdoor-gym-cedar-city-workout" >}}
-  <!-- removed per request: after-workout, carry-cement-ball, carry-medicine-ball -->
   {{< galleryimg src="/media/carry-weighted-sacks.jpeg" alt="carry-weighted-sacks" >}}
   {{< galleryimg src="/media/powerlifting bar.jpeg" alt="powerlifting bar" >}}
   {{< galleryimg src="/media/working-out.jpeg" alt="working-out" >}}
-  <!-- reinsert the first two photos here -->
   {{< galleryimg src="/media/CCFittest1-20.jpg" alt="CCFittest1-20" >}}
   {{< galleryimg src="/media/CCFittest1-38.jpg" alt="CCFittest1-38" >}}
 {{< /gallery >}}

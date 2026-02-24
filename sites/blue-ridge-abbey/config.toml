@@ -33,8 +33,6 @@ uglyURLs = false
   cardBackgroundDark = "emerald-900"  # or "slate-800", "black", etc.
   cardBorderLight    = "neutral-200"  # no "border-" prefix
   cardBorderDark     = "emerald-700"  # no "border-" prefix
-  # Custom brand color for buttons/links
-  brandHex = "#6a8d6f"
 
   [params.fonts]
     # Load Cinzel only for headings/brand; system fonts for body
