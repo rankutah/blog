@@ -138,26 +138,26 @@ enableRobotsTXT = true
     weight = 18
 
   [[menu.main]]
+    name   = "Child Care"
+    url    = "/priorities/child-care/"
+    parent = "priorities"
+    weight = 19
+
+  [[menu.main]]
     name   = "Health Care"
     url    = "/priorities/health-care/"
     parent = "priorities"
-    weight = 19
+    weight = 20
 
   [[menu.main]]
     name   = "Social Media"
     url    = "/priorities/social-media/"
     parent = "priorities"
-    weight = 20
+    weight = 21
 
   [[menu.main]]
     name   = "Property Taxes"
     url    = "/priorities/property-taxes/"
-    parent = "priorities"
-    weight = 21
-
-  [[menu.main]]
-    name   = "Child Care"
-    url    = "/priorities/child-care/"
     parent = "priorities"
     weight = 22
 

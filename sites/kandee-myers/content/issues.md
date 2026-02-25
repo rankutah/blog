@@ -1,6 +1,6 @@
 ---
 title: "Priorities"
-description: "Kandee Myers’ priorities for Utah State Senate District 21 — homeownership, education, health care, and social media."
+description: "Kandee Myers’ priorities for Utah State Senate District 21 — homeownership, education, child care, health care, social media, and property taxes."
 url: "/priorities"
 aliases:
   - "/issues"
@@ -15,8 +15,10 @@ hero: true
 	<div class="mt-6 km-why-running-hero flex flex-col items-center gap-4 md:gap-4">
 		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0"><a href="#housing" class="cp-hero-link block">Homeownership</a></h2>
 		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="240"><a href="#education" class="cp-hero-link block">Education</a></h2>
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="480"><a href="#health-care" class="cp-hero-link block">Health Care</a></h2>
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="720"><a href="#social-media" class="cp-hero-link block">Social Media</a></h2>
+		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="480"><a href="#child-care" class="cp-hero-link block">Child Care</a></h2>
+		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="720"><a href="#health-care" class="cp-hero-link block">Health Care</a></h2>
+		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="960"><a href="#social-media" class="cp-hero-link block">Social Media</a></h2>
+		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="1200"><a href="#property-taxes" class="cp-hero-link block">Property Taxes</a></h2>
 	</div>
 </div>
 
@@ -48,6 +50,18 @@ Key points:
 
 Read more: [Education](/priorities/education/)
 
+## Child Care {#child-care .scroll-mt-24}
+
+Utah’s working families need practical support — and child care is a key part of the equation.
+
+Key points:
+
+- Explore **state-supported early childcare education** beginning at age three.
+- Strengthen families so parents can **work, build stability**, and support local businesses.
+- Keep it **responsible and data-driven** — learn from what’s working in other states.
+
+Read more: [Child Care](/priorities/child-care/)
+
 ## Health Care {#health-care .scroll-mt-24}
 
 Health care costs and coverage are becoming a growing worry for families, seniors on fixed incomes, and young households building stability.
@@ -71,5 +85,17 @@ Key points:
 - Make technology **serve people**, not the other way around.
 
 Read more: [Social Media](/priorities/social-media/)
+
+## Property Taxes {#property-taxes .scroll-mt-24}
+
+Property taxes are an investment — and Utah should expect accountability, smart spending, and long-term planning in how those dollars are used.
+
+Key points:
+
+- Focus on **accountability and transparency** in how property tax dollars are spent.
+- Invest smarter in **schools and infrastructure** that strengthen communities.
+- Use a **careful, data-driven approach** so spending aligns with real needs.
+
+Read more: [Property Taxes](/priorities/property-taxes/)
 
 

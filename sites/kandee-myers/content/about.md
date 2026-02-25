@@ -84,7 +84,7 @@ I am a lifelong learner with a BS degree in Family Studies and Human Development
 
 {{< col card="false" y="start" order="first" >}}
 
-## Read Estate Broker
+## Real Estate Broker
 
 Since 1994, I’ve worked in real estate and I truly love it. Early in my career, I was honored as Rookie of the Year in Arizona and for several years now I’ve been recognized among the Top 250 REALTORS® by the Utah County Association of REALTORS®. Awards are encouraging, but it’s the people I’ve worked with that I’ve genuinely treasured.
 
