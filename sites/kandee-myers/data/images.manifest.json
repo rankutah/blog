@@ -4347,6 +4347,144 @@
       ]
     }
   },
+  "/media/books.jpg": {
+    "width": 1366,
+    "height": 768,
+    "aspect": 1.7786458333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgUD/8QAKhAAAgEDAgQFBQEAAAAAAAAAAQIEAAMREiEFE0FxFDFRYaEGIiQygdH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAeEQACAQQDAQAAAAAAAAAAAAAAAQIREiExIjJRQf/aAAwDAQACEQMRAD8A2rk9L6OkO6vObddRBGPM9fSl4nFElMbZyHtMA5I2J33G/tSpkeHs6AhZ2P23eWFHb4+ahb/DYS3Moy3n3OBk6sdfTc0E64E44uNCzPSW8i2punk5GSAFftiiBxHnTbsPl6BaX9s5zuP9pBpViLAuskZkkuAjto05J6k/2usOO/g4si0oF28AWcnDEH1NS1KSdM6K+MW3rwodoVgjYhruMd6yZzMTqLHUyksc7nvRRTXwPo/FYn6ebJJ/IHX3FRwQlrspGJZQgwD5DeiitHaHPrI//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/books__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/books__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/books__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/books__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/books__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/books__w1200.avif"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/books__w1366.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/books__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/books__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/books__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/books__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/books__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/books__w1200.jpg"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/books__w1366.jpg"
+        }
+      ]
+    }
+  },
+  "/media/books.avif": {
+    "width": 1366,
+    "height": 768,
+    "aspect": 1.7786458333333333,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgUD/8QAKhAAAgEDAgQFBQEAAAAAAAAAAQIEAAMREiEFE0FxFDFRYaEGIiQygdH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAeEQACAQQDAQAAAAAAAAAAAAAAAQIREiExIjJRQf/aAAwDAQACEQMRAD8A2rk9L6OkO6vObddRBGPM9fSl4nFElMbZyHtMA5I2J33G/tSpkeHs6AhZ2P23eWFHb4+ahb/DYS3Moy3n3OBk6sdfTc0E64E44uNCzPSW8i2punk5GSAFftiiBxHnTbsPl6BaX9s5zuP9pBpViLAuskZkkuAjto05J6k/2usOO/g4si0oF28AWcnDEH1NS1KSdM6K+MW3rwodoVgjYhruMd6yZzMTqLHUyksc7nvRRTXwPo/FYn6ebJJ/IHX3FRwQlrspGJZQgwD5DeiitHaHPrI//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/books__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/books__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/books__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/books__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/books__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/books__w1200.avif"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/books__w1366.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/books__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/books__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/books__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/books__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/books__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/books__w1200.jpg"
+        },
+        {
+          "w": 1366,
+          "url": "/media-deriv/books__w1366.jpg"
+        }
+      ]
+    }
+  },
   "/media/celebrating-a-new-home-purchase.jpg": {
     "width": 1057,
     "height": 945,

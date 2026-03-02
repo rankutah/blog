@@ -20,7 +20,7 @@ The best ideas come from neighbors.
 
 {{< contact-form
 	id="contact1"
-	action="https://submit-form.com/I4t2OG4uj"
+	action="https://submit-form.com/BOTZhnYLm"
 	name="true"
 	email="true"
     phone="optional"

@@ -163,9 +163,22 @@ enableRobotsTXT = true
 
 
   [[menu.main]]
+    name       = "About"
+    identifier = "about"
+    url        = "#"
+    weight     = 5
+
+  [[menu.main]]
     name   = "About"
     url    = "/about"
-    weight = 5
+    parent = "about"
+    weight = 6
+
+  [[menu.main]]
+    name   = "Reading"
+    url    = "/about/reading"
+    parent = "about"
+    weight = 7
 
   [[menu.main]]
     name       = "Events"
