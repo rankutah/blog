@@ -23,7 +23,7 @@ Lead-generating websites, local marketing, and Google Ads management. Plans star
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
 
-_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+_Serving businesses across the U.S._
 {.center}
 
 

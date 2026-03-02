@@ -1,6 +1,6 @@
 ---
-title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization Services, & Google Adwords Management Near You in Utah County"
-description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for small businesses in Utah County, from an office in Pleasant Grove, Utah."
+title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization Services, & Google Adwords Management Near You in Utah"
+description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for small businesses across Utah, with an office in Pleasant Grove, Utah."
 layout: "flowbite"
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -14,17 +14,35 @@ schema:
     telephone: "+1-385-323-8130"
     image: "/media/logo.png"
     areaServed:
-      - "Pleasant Grove, UT"
-      - "Lindon, UT"
-      - "Saratoga Springs, UT"
-      - "Eagle Mountain, UT"
-      - "Orem, UT"
-      - "Provo, UT"
-      - "American Fork, UT"
-      - "Lehi, UT"
-      - "Spanish Fork, UT"
-      - "Springville, UT"
+      - "Beaver County, UT"
+      - "Box Elder County, UT"
+      - "Cache County, UT"
+      - "Carbon County, UT"
+      - "Daggett County, UT"
+      - "Davis County, UT"
+      - "Duchesne County, UT"
+      - "Emery County, UT"
+      - "Garfield County, UT"
+      - "Grand County, UT"
+      - "Iron County, UT"
+      - "Juab County, UT"
+      - "Kane County, UT"
+      - "Millard County, UT"
+      - "Morgan County, UT"
+      - "Piute County, UT"
+      - "Rich County, UT"
+      - "Salt Lake County, UT"
+      - "San Juan County, UT"
+      - "Sanpete County, UT"
+      - "Sevier County, UT"
+      - "Summit County, UT"
+      - "Tooele County, UT"
+      - "Uintah County, UT"
       - "Utah County, UT"
+      - "Wasatch County, UT"
+      - "Washington County, UT"
+      - "Wayne County, UT"
+      - "Weber County, UT"
     address:
       streetAddress: "348 S 2000 W, Suite B206"
       addressLocality: "Pleasant Grove"
@@ -44,19 +62,37 @@ schema:
   service:
     enabled: true
     serviceType: "Website Design, Local SEO & Google Ads Services"
-    description: "Clear Presence provides website design, local SEO, and Google Ads management in Pleasant Grove, Utah. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
+    description: "Clear Presence provides website design, local SEO, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
     areaServed:
-      - "Pleasant Grove, UT"
-      - "Lindon, UT"
-      - "Saratoga Springs, UT"
-      - "Eagle Mountain, UT"
-      - "Orem, UT"
-      - "Provo, UT"
-      - "American Fork, UT"
-      - "Lehi, UT"
-      - "Spanish Fork, UT"
-      - "Springville, UT"
+      - "Beaver County, UT"
+      - "Box Elder County, UT"
+      - "Cache County, UT"
+      - "Carbon County, UT"
+      - "Daggett County, UT"
+      - "Davis County, UT"
+      - "Duchesne County, UT"
+      - "Emery County, UT"
+      - "Garfield County, UT"
+      - "Grand County, UT"
+      - "Iron County, UT"
+      - "Juab County, UT"
+      - "Kane County, UT"
+      - "Millard County, UT"
+      - "Morgan County, UT"
+      - "Piute County, UT"
+      - "Rich County, UT"
+      - "Salt Lake County, UT"
+      - "San Juan County, UT"
+      - "Sanpete County, UT"
+      - "Sevier County, UT"
+      - "Summit County, UT"
+      - "Tooele County, UT"
+      - "Uintah County, UT"
       - "Utah County, UT"
+      - "Wasatch County, UT"
+      - "Washington County, UT"
+      - "Wayne County, UT"
+      - "Weber County, UT"
     offers:
       - "@type": Offer
         name: "Business Website"
@@ -73,8 +109,8 @@ schema:
 ---
 
 
-{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah website design, local SEO, and Google Ads services in Utah County" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design, SEO, & Google Ads in Utah County {.text-white}
+{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah website design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Web Design, SEO, & Google Ads in Utah {.text-white}
 Fast, custom websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
 {{< button url="#main-content" text="How it Works" >}} {{< button url="/pricing" text="Pricing" >}}
@@ -90,7 +126,8 @@ Fast, custom websites, local marketing, and Google Ads management. Plans startin
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Web Design, Local SEO, & Google Ads Near You
-- Serving small businesses in Utah County ([remote or in-person](https://cal.com/clearpresence/30min))
+- Meet [remotely](https://cal.com/clearpresence/30min) statewide (video chat)
+- In-person meetings available in Pleasant Grove by appointment
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
@@ -105,7 +142,9 @@ Fast, custom websites, local marketing, and Google Ads management. Plans startin
 
 ## Office Location in Pleasant Grove, UT
 
-My Pleasant Grove office is conveniently located in Grove Cove, just west of Grove Station and across the street from Oliver's Place. I'm less than 3 minutes from the I-15 Pleasant Grove Blvd exit, making it easy to reach from anywhere in Utah County. Please schedule a meeting if you would like to visit.
+I meet [remotely](https://cal.com/clearpresence/30min) statewide, and I offer in‑person meetings at my Pleasant Grove office by appointment.
+
+The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, making it easy to reach from anywhere along the Wasatch Front.
 
 {{< button url="https://cal.com/clearpresence/30min" text="Schedule a Meeting" >}}
 {{< button url="https://cal.com/clearpresence/30min" text="Meet Remotely" >}}
@@ -186,8 +225,41 @@ My Pleasant Grove office is conveniently located in Grove Cove, just west of Gro
 
 ## Areas Served in Utah
 
-- **Inside Utah County**: Pleasant Grove, Lindon, Orem, Provo, Lehi, American Fork, Saratoga Springs, Eagle Mountain, Spanish Fork, Springville
-- **Outside Utah County**: Services are [available remotely](https://cal.com/clearpresence/30min), with local meetings as needed, so businesses can get a high‑performing website across Utah.
+Services are available statewide (remote or in-person).
+
+**Major cities:** Salt Lake City, Provo/Orem, Ogden, Logan, Park City, St. George
+
+<ul class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-1 list-disc pl-5">
+  <li>Beaver County</li>
+  <li>Box Elder County</li>
+  <li>Cache County</li>
+  <li>Carbon County</li>
+  <li>Daggett County</li>
+  <li>Davis County</li>
+  <li>Duchesne County</li>
+  <li>Emery County</li>
+  <li>Garfield County</li>
+  <li>Grand County</li>
+  <li>Iron County</li>
+  <li>Juab County</li>
+  <li>Kane County</li>
+  <li>Millard County</li>
+  <li>Morgan County</li>
+  <li>Piute County</li>
+  <li>Rich County</li>
+  <li>Salt Lake County</li>
+  <li>San Juan County</li>
+  <li>Sanpete County</li>
+  <li>Sevier County</li>
+  <li>Summit County</li>
+  <li>Tooele County</li>
+  <li>Uintah County</li>
+  <li>Utah County</li>
+  <li>Wasatch County</li>
+  <li>Washington County</li>
+  <li>Wayne County</li>
+  <li>Weber County</li>
+</ul>
 
 {{< /col >}}
 
@@ -356,7 +428,7 @@ No big upfront fees—just simple monthly pricing and direct support.
 
 ## Ready To Get Started
 
-I love partnering with business owners and specialize in developing fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Provo, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
+I love partnering with business owners and specialize in developing fast custom websites that turn visits into calls, bookings, and messages. Personally, I enjoy running, audiobooks, and all things tech. After growing up in St. George and living in Logan and Provo, I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
 ![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
 {.w-48}
