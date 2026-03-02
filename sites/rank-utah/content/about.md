@@ -7,7 +7,7 @@ url: "/about"
 
 ## Clear Presence
 
-Clear Presence provides website design and local SEO services for small businesses across the U.S., from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
+Clear Presence provides website design and local SEO services for small businesses across the U.S., from an office in [Utah](/locations/pleasant-grove-ut).
 
 The goal is simple: a fast, professional website that encourages visitors to call, text, or send a message.
 
