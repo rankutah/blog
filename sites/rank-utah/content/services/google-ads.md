@@ -78,8 +78,8 @@ Google Ads takes time to learn. If you stop too early, you usually pay for the l
 
 Here’s how to think about a typical 2‑month ramp:
 
-- **Month 1: Buy data + experiment.** This is where **Google’s AI** runs experiments across variations—different keywords/search terms, ad copy and assets, networks/placements, audiences, and landing-page options. Our job is to set up clean tracking, feed it strong creative, and make smart exclusions/adjustments so it learns what produces real leads (and stops spending on what doesn’t).
-- **Month 2: Establish a baseline + push efficiency.** We tighten targeting, improve conversion rates, and start moving toward profitability.
+- **Month 1: Buy data + experiment (Maximize Conversion Value + micro‑conversions).** We start with the **Maximize Conversion Value** bid strategy, using **conversion values** and (when appropriate) **micro‑conversions** to give the system more signal while we validate what “real lead” quality looks like. This aligns with how different bidding strategies impact learning and performance as accounts gather data (see: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/).
+- **Month 2: Establish a baseline + push efficiency (stay on MCV or move to Target ROAS).** If we have enough stable conversion value data, we either continue on **Maximize Conversion Value** or shift to **Target ROAS** to tighten efficiency around a clearer return target.
 - **End of month 2: Decision checkpoint.** We review whether the campaign is profitable. If it’s not profitable yet, we compare performance **from the start of month 2 to the end of month 2** (cost per lead, lead quality, conversion rate, and overall efficiency) and decide whether you want to keep going or stop.
 
 Google Ads is a **high‑risk / high‑reward** channel. It’s possible to spend money without getting the results you want. Two months gives us a reasonable timeframe to assess performance.
