@@ -10,6 +10,25 @@ url: "/contact"
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
+## Call or text
+
+Call or text anytime, even after hours. If I miss you, I'll get back to you by the the next business day:
+
+{{< button url="tel:+13853238130" text="Call (385) 323-8130" >}}
+{{< button url="sms:+13853238130" text="Send a Text Message" >}}
+
+
+## Schedule a meeting
+
+Schedule a phone call, video call, or office visit
+
+{{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment" text="Schedule a Meeting" >}}
+
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
 ## Send a message
 
 Call or text anytime (even after hours): [(385) 323-8130](tel:+13853238130)
@@ -31,23 +50,6 @@ Call or text anytime (even after hours): [(385) 323-8130](tel:+13853238130)
 
 {{< button submit="true" form="contact1" text="Submit Message" >}}
 
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-## Schedule a meeting
-
-Schedule a phone call, video call, or office visit
-
-{{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment" text="Schedule" >}}
-
-## After Hours?
-
-Leave a text or voicemail and expect a reply the next business day: [(385) 323-8130](sms:+13853238130)
-
-## Business Hours
-
-Mon–Sat 8am – 8pm (MT)
 
 
 {{< /col >}}
