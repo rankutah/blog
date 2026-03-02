@@ -86,7 +86,7 @@ enableRobotsTXT = true
 
 [params.forms]
   # Shared contact form shortcode will use this.
-  redirect = "https://kandeemyers.com/thank-you"
+  redirect = "https://kandee4utah.com/thank-you"
 
 [params.header]
   stickyMobile  = true

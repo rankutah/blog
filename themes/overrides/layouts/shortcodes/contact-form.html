@@ -128,7 +128,8 @@
     {{- /* Hidden context field: capture page URL for lead source attribution */ -}}
     <input type="hidden" name="page_url" value="{{ $page.Permalink }}">
     {{- /* Optional redirect: Formspark supports `_redirect` input to send users to a thank-you page */ -}}
-    {{- if and (isset $page.Site.Params "forms") (isset $page.Site.Params.forms "redirect") (gt (len $page.Site.Params.forms.redirect) 0) -}}
+    {{- /* During `hugo server`, omit redirects so local testing doesn't jump to the production hostname. */ -}}
+    {{- if and (not hugo.IsServer) (isset $page.Site.Params "forms") (isset $page.Site.Params.forms "redirect") (gt (len $page.Site.Params.forms.redirect) 0) -}}
     <input type="hidden" name="_redirect" value="{{ $page.Site.Params.forms.redirect }}">
     {{- end -}}
     {{- /* Honeypot (optional): render only if site param `forms.honeypot` is set to a non-empty string. */ -}}
