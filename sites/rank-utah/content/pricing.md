@@ -92,17 +92,16 @@ Includes everything in the **Business Website** package, plus:
 
 No contracts. No setup fees. Cancel anytime.
 
-*For businesses who want to bring in **more leads** and are ready to invest in paid search.*
+*For businesses who want to bring in **more leads** and are ready to pay for advertising.*
 
 
 The monthly $299 management fee applies to ad spend up to $2,000/month. The fee switches to 15% of ad spend above that.
 
 - Must be on the **Business Website + Local SEO** plan to run Google Ads
 - Must be willing to budget **at least $1,500/month** in ad spend in addition to the **$299/month** management fee.
-- Recommended minimum commitment: **2 months** (this is when we can fairly evaluate performance):
+- Must be willing to commit to at least **2 months** (this is when we can fairly evaluate performance):
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
-  - **Month 2:** Focusing on profitability (negative keywords are in place and algorithm optimizes based on past conversions).
-  - **End of Month 2:** Review profitability and progress, then decide whether to continue or stop.
+  - **Month 2:** Focusing on profitability (the account optimizes based on a past successes and failures).
 
 
 {{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}}
