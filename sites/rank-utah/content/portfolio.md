@@ -6,8 +6,8 @@ url: "/portfolio"
 ---
 
 # Website Portfolio
-
 {.center}
+
 {{< cols min="18rem" gap="2rem" v="center" >}}
 {{< col card="false" y="center" order="last" >}}
 <a href="https://kandee4utah.com/" target="_blank" rel="noopener">
