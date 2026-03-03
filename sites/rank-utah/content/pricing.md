@@ -103,7 +103,6 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
   - **Month 2:** Focusing on profitability (tighten targeting, improve conversion rate, and reduce wasted spend).
   - **End of month 2:** Review profitability and progress, then decide whether to continue or stop.
-- Must have a **promo video** and **photos**
 
 
 {{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}}

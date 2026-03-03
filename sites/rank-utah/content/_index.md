@@ -23,8 +23,6 @@ Lead-generating websites, local marketing, and Google Ads management. Plans star
 {{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
 {{< /hero >}}
 
-_Serving businesses across the U.S._
-{.center}
 
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
