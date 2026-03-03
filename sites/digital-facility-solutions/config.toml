@@ -62,6 +62,24 @@ disableKinds  = ["taxonomy", "term"]
   # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
   debugMode = false
 
+  [params.analytics.google]
+    id = ""
+    enabled = false
+
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+
+  [params.analytics.googleAds]
+    id = ""
+    conversionLabel = ""
+    enabled = false
+    phoneReplace = false
+
+  [params.analytics.meta]
+    id = ""               # e.g., 123456789012345 (Meta Pixel)
+    enabled = false        # set true when ready
+
 [params.schema.organization]
   enabled   = true
   name      = "Digital Facility Solutions"

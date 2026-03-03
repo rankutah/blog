@@ -37,21 +37,14 @@ Google Ads is a good fit if you:
 - Are willing to give the ads time to perform
 - Understand results aren’t guaranteed and performance can vary
 
-**Important:** The $299/month is the management fee and does not include ad spend.
-
 ## Pricing and requirements
 
-- Management fee: **$299/month**
-- Ad spend: billed separately (you pay Google directly)
-- The monthly management fee applies to ad spend up to **$2,000/month** (above that, management is **15% of ad spend**)
-
-### Requirements to run Google Ads
-
-- Must be on the **Business Website + Local SEO** plan
-- Must be willing to budget **at least $1,500/month** in ad spend
-- Recommended minimum runway: **2 months** (so we can evaluate performance at the end of month 2)
+1. Must be on the **Business Website + Local SEO** plan
+2. Must be willing to budget at least **$1,500/month** in ad spend (you pay Google directly) and **$299/month** for the management fee
+3. Must be willing to commit to at least **2 months** (so we have sufficient time to evaluate performance)
 
 {{< button url="/pricing" text="See Pricing" >}}
+
 
 ## Requirement 1: Business Website + Local SEO plan
 
@@ -61,7 +54,7 @@ This requirement is about getting the fundamentals right so your ads can perform
 - **Fast, custom pages help lower costs and improve conversions.** Your site (and landing pages) are built from scratch and optimized for speed. Faster pages and clearer messaging typically convert better, which reduces wasted ad spend.
 - **Effective tracking requires site access and clean implementation.** Being on the Website + Local SEO plan ensures I can set up and maintain accurate tracking and landing-page improvements over time.
 
-## Requirement 2: Minimum $1,500/month ad spend
+## Requirement 2: Minimum $1,500/month ad spend + $299/month management fee
 
 Google Ads improves as it collects data—especially conversion data.
 
@@ -71,17 +64,18 @@ A higher starting budget typically means:
 - **More conversion signals**, which helps the algorithm learn who converts and where to spend
 - **Faster iteration**, because changes get enough traffic to measure
 
-## Recommendation: Minimum 2‑month runway
+
+## Requirement 3: 2‑month commitment
 
 Google Ads takes time to learn. If you stop too early, you usually pay for the learning but don’t get the benefits.
 
-Here’s how to think about a typical 2‑month ramp:
+Here’s how to think about the 2‑month timeline:
 
-- **Month 1: Buy data + experiment (Maximize Conversion Value + micro‑conversions).** We start with the **Maximize Conversion Value** bid strategy, using **conversion values** and (when appropriate) **micro‑conversions** to give the system more signal while we validate what “real lead” quality looks like. This aligns with how different bidding strategies impact learning and performance as accounts gather data (see: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/).
-- **Month 2: Establish a baseline + push efficiency (continue Maximize Conversion Value).** We continue optimizing toward **Maximize Conversion Value**, tightening targeting, improving conversion rates, and pushing efficiency based on what we learned in month 1.
-- **End of month 2: Decision checkpoint.** We review whether the campaign is profitable. If it’s not profitable yet, we compare performance **from the start of month 2 to the end of month 2** (cost per lead, lead quality, conversion rate, and overall efficiency) and decide whether you want to keep going or stop.
+- **Month 1: Buy data + algorithm learns**. We start with the **Maximize Conversion Value** bid strategy, using **conversion values** and (when appropriate) **micro‑conversions** to give the system more signal while we validate what “real lead” quality looks like. This aligns with how different bidding strategies impact learning and performance as accounts gather data (see: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/).
+- **Month 2: Establish a baseline + improve efficiency.** We continue optimizing toward **Maximize Conversion Value** and focusing on profitability. The algorithm improves return on ad spend based on past conversions.
+- **End of month 2: Decision checkpoint.** We review whether the campaign is profitable. If it’s not profitable yet, we compare performance **from the start of month 2 to the end of month 2** (cost per lead, lead quality, conversion rate, and overall efficiency) and decide whether you want to keep going.
 
-Google Ads is a **high‑risk / high‑reward** channel. It’s possible to spend money without getting the results you want. Two months gives us a reasonable timeframe to assess performance.
+Google Ads is a **high‑risk / high‑reward** channel. It’s possible to spend money without getting the results you want. Two months gives us a reasonable timeframe to evaluate performance.
 
 ## Conversion tracking and how we measure results
 

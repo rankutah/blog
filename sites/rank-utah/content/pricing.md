@@ -99,10 +99,10 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
 
 - Must be on the **Business Website + Local SEO** plan to run Google Ads
 - Must be willing to budget **at least $1,500/month** in ad spend in addition to the **$299/month** management fee.
-- Recommended minimum runway: **2 months** (this is when we can fairly evaluate performance):
+- Recommended minimum commitment: **2 months** (this is when we can fairly evaluate performance):
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
-  - **Month 2:** Focusing on profitability (tighten targeting, improve conversion rate, and reduce wasted spend).
-  - **End of month 2:** Review profitability and progress, then decide whether to continue or stop.
+  - **Month 2:** Focusing on profitability (negative keywords are in place and algorithm optimizes based on past conversions).
+  - **End of Month 2:** Review profitability and progress, then decide whether to continue or stop.
 
 
 {{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}}
