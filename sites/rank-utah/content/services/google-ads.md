@@ -86,8 +86,6 @@ Here’s how to think about the 2‑month timeline:
 - **Month 2: Focus on profitability.** The account continues to optimize based on past successes and failures and we focus on profitability.
 - **End of month 2: Decision checkpoint.** We review results and see if your account is profitable or close to profitability. We’ll look at lead volume, lead quality, and your cost per lead. We then decide if you want to continue.
 
-For those interested in more of the technical details. I use the optimize for conversion value bidding strategy due to its effectiveness in maximizing profitability. See: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/.
-
 Google Ads can work extremely well — but it’s not guaranteed. It’s possible to spend money and still not get the results you want. Two months gives us a fair window to evaluate performance.
 
 ## Conversion tracking and how we measure results
@@ -110,6 +108,8 @@ Examples:
 - A scheduled booking slot
 
 When helpful, we also track smaller steps (like clicking a call button or starting a form) so we can spot problems early.
+
+For those interested in the technical details. I use the optimize for conversion value bidding strategy to maximizing profitability.  See: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/.
 
 ## What’s included
 
