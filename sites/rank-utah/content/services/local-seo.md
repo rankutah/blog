@@ -89,7 +89,7 @@ Local SEO is a long‑term foundation. Instead of quick hacks, the goal is stead
 2. Baseline — review where you show up today (Search, Maps, profiles, and key listings)
 3. Focus — choose the main searches to target (services + cities) and align your content
 4. Profiles — ongoing optimization for Google Business Profile, Apple Maps, and Bing Places
-5. Monthly report — a simple summary of calls, clicks, visibility, and what to improve next
+5. Monthly report — a simple summary of calls, clicks, visibility, and what's working
 
 ## FAQ
 {{< faqs openFirst="false" >}}

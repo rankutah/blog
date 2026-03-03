@@ -57,7 +57,7 @@ Google Ads is a good fit if you:
 {{< button url="/pricing" text="See Pricing" >}}
 
 
-## Requirement 1: Business Website + Local SEO plan
+## Requirement 1: Must be on the Business Website + Local SEO plan
 
 This requirement is about getting the fundamentals right so your ads can perform.
 

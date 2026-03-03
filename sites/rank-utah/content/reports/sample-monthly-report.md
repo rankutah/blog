@@ -7,7 +7,7 @@ description: "See an example of the monthly website + local SEO analytics report
 
 # Sample Monthly Website & Local SEO Report
 
-Clear Presence includes a simple monthly report so you can see what’s working and what to improve — without needing to dig through analytics tools.
+Clear Presence includes a simple monthly report so you can see what’s working and what's working — without needing to dig through analytics tools.
 
 ## What’s included
 

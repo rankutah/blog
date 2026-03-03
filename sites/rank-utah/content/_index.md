@@ -43,7 +43,7 @@ Custom-coded pages that stay lightweight — no extra clutter that slows things 
 Want to compare? [Take the Website Speed Challenge](/speed-challenge/).
 
 #### 3. Clear monthly reporting (with evidence)
-You get simple monthly reports so you can see calls, clicks, and what to improve next.
+You get simple monthly reports so you can see calls, clicks, and what's working.
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
 
