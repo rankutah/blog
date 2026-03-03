@@ -6,6 +6,7 @@ url: "/portfolio"
 ---
 
 # Website Portfolio
+
 {.center}
 {{< cols min="18rem" gap="2rem" v="center" >}}
 {{< col card="false" y="center" order="last" >}}
