@@ -6,8 +6,17 @@ url: "/portfolio"
 ---
 
 # Website Portfolio
-
-Custom websites that help small businesses get leads.
+{.center}
+{{< cols min="18rem" gap="2rem" v="center" >}}
+{{< col card="false" y="center" order="last" >}}
+<a href="https://kandee4utah.com/" target="_blank" rel="noopener">
+	{{< img src="/media/kandee-myers-politics-website-state-senate.avif" alt="Kandee 4 Utah website" >}}
+</a>
+{{< /col >}}
+{{< col card="false" y="center" order="first" >}}
+## Web Design & SEO for Political Campaign
+{{< /col >}}
+{{< /cols >}}
 
 {{< cols min="18rem" gap="2rem" v="center" >}}
 {{< col card="false" y="center" order="first" >}}
