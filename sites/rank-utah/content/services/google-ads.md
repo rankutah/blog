@@ -109,7 +109,7 @@ Examples:
 
 When helpful, we also track smaller steps (like clicking a call button or starting a form) so we can spot problems early.
 
-For those interested in the technical details. I use the optimize for conversion value bidding strategy to maximizing profitability.  See: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/.
+For those interested in the technical details. I use the optimize for conversion value bidding strategy to maximizing profitability. This is based in part on the results of studies evaluating profitability for various Google Ad strategies. See: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/.
 
 ## What’s included
 
