@@ -204,9 +204,9 @@
                         data-dropdown-toggle="menu-{{ .Identifier }}-r"
                         data-dropdown-placement="bottom-start"
                         aria-expanded="false"
-                        class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+                        class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                   {{ .Name }}
-                  <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                  <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                   </svg>
                 </button>
@@ -220,19 +220,19 @@
                           <li class="relative group">
                             {{ if $isNoNav }}
                               <button type="button"
-                                      class="no-underline hover:underline brand-link flex items-center justify-between w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                      class="no-underline hover:underline brand-link flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
                                       data-submenu-toggle="{{ $submenuId }}"
                                       aria-controls="{{ $submenuId }}"
                                       aria-expanded="false">
                                 <span>{{ .Name }}</span>
-                                <svg data-chevron-flyout class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                                <svg data-chevron-flyout class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                                 </svg>
                               </button>
                             {{ else }}
-                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center justify-between px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
                                 <span>{{ .Name }}</span>
-                                <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                                 </svg>
                               </a>
@@ -277,21 +277,17 @@
         </ul>
       </div>
       {{ end }}
-      <!-- Search (tablet+): keep full input (links collapse so there's room) -->
-      <form action="{{ "/search/" | relURL }}" method="get" role="search"
-            class="hidden md:inline-flex items-center no-underline" aria-label="Site search">
-        <label for="nav-search" class="sr-only">Search</label>
-        <div class="relative">
-          <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-            <svg class="h-4 w-4 {{ $navText }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="11" cy="11" r="7"></circle>
-              <path d="M20 20l-3.5-3.5"></path>
-            </svg>
-          </div>
-             <input id="nav-search" name="q" type="search" placeholder="Search…" autocomplete="off"
-               class="block w-24 md:w-28 lg:w-36 rounded-lg {{ $pal.cardBorder }} {{ $pal.cardBg }} py-2 pl-8 pr-3 text-sm shadow-sm transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 {{ $navText }} font-medium placeholder-gray-600 dark:placeholder-gray-400" />
-        </div>
-      </form>
+      <!-- Search (tablet+): icon-only link to the search page (saves horizontal space) -->
+      <a href="{{ "/search/" | relURL }}"
+         class="hidden md:inline-flex items-center justify-center no-underline group"
+         aria-label="Search">
+        <span class="inline-flex items-center justify-center rounded-full {{ $pal.cardBorder }} {{ $pal.cardBg }} shadow-sm transition-colors duration-150 h-10 w-10 hover:bg-black/5 dark:hover:bg-white/10 focus-within:outline-none">
+          <svg class="h-5 w-5 {{ $navText }} transition-transform duration-150 group-hover:scale-[1.03]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M20 20l-3.5-3.5"></path>
+          </svg>
+        </span>
+      </a>
       {{ if or $showCTAOnMobile $showCTAOnDesktop }}
       <a href="{{ $ctaHref }}"
         class="no-underline font-medium rounded-lg text-sm px-4 py-2 focus:ring-4 focus:outline-none ui-btn whitespace-nowrap flex-shrink-0
@@ -358,9 +354,9 @@
                       data-dropdown-toggle="menu-{{ .Identifier }}-m"
                       data-dropdown-placement="bottom-start"
                       aria-expanded="false"
-          class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+          class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
-                <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
               </button>
@@ -375,19 +371,19 @@
                       <li>
                         {{ if $isNoNav }}
                           <button type="button"
-                                  class="no-underline hover:underline brand-link flex items-center justify-between w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                  class="no-underline hover:underline brand-link flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
                                   data-submenu-toggle="{{ $submenuId }}"
                                   aria-controls="{{ $submenuId }}"
                                   aria-expanded="false">
                             <span>{{ .Name }}</span>
-                            <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                            <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                           </button>
                         {{ else }}
-                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center justify-between px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
                             <span>{{ .Name }}</span>
-                            <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                            <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                           </a>
@@ -447,7 +443,7 @@
           xl:border-0
           xl:bg-transparent xl:dark:bg-transparent">
 
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-6 rtl:space-x-reverse xl:flex-row md:mt-0 whitespace-nowrap">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-4.5 rtl:space-x-reverse xl:flex-row md:mt-0 whitespace-nowrap">
         {{ range .Site.Menus.main }}
           <li class="relative">
             {{ if .HasChildren }}
@@ -455,9 +451,9 @@
                       data-dropdown-toggle="menu-{{ .Identifier }}-d"
                       data-dropdown-placement="bottom-start"
                       aria-expanded="false"
-          class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+          class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
-                <svg data-chevron class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
               </button>
@@ -472,19 +468,19 @@
                       <li class="relative group">
                         {{ if $isNoNav }}
                           <button type="button"
-                                  class="no-underline hover:underline brand-link flex items-center justify-between w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                  class="no-underline hover:underline brand-link flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
                                   data-submenu-toggle="{{ $submenuId }}"
                                   aria-controls="{{ $submenuId }}"
                                   aria-expanded="false">
                             <span>{{ .Name }}</span>
-                            <svg data-chevron-flyout class="w-2.5 h-2.5 ms-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                            <svg data-chevron-flyout class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                           </button>
                         {{ else }}
-                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center justify-between px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
                             <span>{{ .Name }}</span>
-                            <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                           </a>

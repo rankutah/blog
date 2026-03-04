@@ -1,7 +1,6 @@
 ---
-title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization Services, & Google Adwords Management Near You in Utah"
-description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for small businesses across Utah, with an office in Utah."
-layout: "flowbite"
+title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization Services, & Google Adwords Management Near You"
+description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for small businesses across Utah, with an office in Pleasant Grove, Utah."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
@@ -110,7 +109,7 @@ schema:
 
 
 {{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah website design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design, SEO, & Google Ads in Utah {.text-white}
+# Web Design, SEO, & Google Ads for Utah Businesses {.text-white}
 Fast, custom websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
 {{< button url="#main-content" text="How it Works" >}} {{< button url="/pricing" text="Pricing" >}}

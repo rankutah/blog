@@ -1,5 +1,5 @@
 ---
-title: "#1 Most Affordable Websites, SEO, & Google Ads"
+title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads"
 description: "Website design, local search engine optimization (SEO), and Google Ads management for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:
@@ -14,7 +14,7 @@ schema:
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Web Design, Local SEO, & Google Ads to Grow Your Business {.text-white}
+# Web Design, Local SEO, & Google Ads in Utah {.text-white}
 Lead-generating websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
 

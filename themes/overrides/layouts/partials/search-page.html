@@ -1,19 +1,19 @@
 {{- $pal := partial "theme/palette.html" . -}}
 <section class="{{ $pal.bodyText }} px-4 md:px-8 py-10">
   <div class="max-w-3xl mx-auto">
-    <h1 class="text-3xl font-semibold mb-6 text-center">Search</h1>
+    <h1 class="text-xl font-semibold mb-6 text-center">Search</h1>
     <form id="search-form" class="mb-5">
       <label for="search-input" class="sr-only">Search</label>
-      <div class="relative max-w-xl mx-auto">
+      <div class="relative w-full">
         <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
           <svg class="h-5 w-5 text-gray-700 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </div>
-         <input id="search-input" type="search" placeholder="Type to search..." autocomplete="off"
-           class="block w-full rounded-lg {{ $pal.cardBorder }} {{ $pal.cardBg }} py-3 pl-10 pr-4 text-base shadow-sm focus:ring-0 text-gray-900 placeholder-gray-600 dark:text-gray-100 dark:placeholder-gray-400" />
+         <input id="search-input" type="search" placeholder="Type to search..." autocomplete="off" autofocus
+           class="block w-full rounded-lg {{ $pal.cardBorder }} {{ $pal.cardBg }} py-3 pl-10 pr-4 text-base shadow-sm focus:outline-none focus:ring-0 text-gray-900 placeholder-gray-600 dark:text-gray-100 dark:placeholder-gray-400" />
       </div>
     </form>
-    <p id="search-count" class="text-sm text-gray-600 dark:text-gray-400 mb-3 max-w-xl mx-auto"></p>
-    <ul id="search-results" class="space-y-4 max-w-xl mx-auto list-none pl-0"
+    <p id="search-count" class="text-sm text-gray-600 dark:text-gray-400 mb-3"></p>
+    <ul id="search-results" class="space-y-4 list-none pl-0"
       data-card-border="{{ $pal.cardBorder }}" data-card-bg="{{ $pal.cardBg }}">
     </ul>
   </div>
@@ -21,10 +21,64 @@
 
 {{/* Make index URL respect baseURL/subpaths */}}
 <script>window.SEARCH_INDEX_URL = {{ (relURL "index.json") | printf "%q" }};</script>
+
+<script>
+  (function () {
+    function focusSearchInput() {
+      var input = document.getElementById('search-input');
+      if (!input) return;
+      var active = document.activeElement;
+      if (active && active !== document.body && active !== document.documentElement) return;
+      try {
+        input.focus({ preventScroll: true });
+      } catch (e) {
+        try { input.focus(); } catch (e2) {}
+      }
+      // Don't auto-select (blue highlight); just place the caret.
+      function placeCaret() {
+        try {
+          var v = String(input.value || '');
+          if (typeof input.setSelectionRange === 'function') {
+            input.setSelectionRange(v.length, v.length);
+          }
+        } catch (e3) {}
+      }
+
+      placeCaret();
+      // If the field value is populated asynchronously (e.g. from ?q=), place caret shortly after.
+      try {
+        setTimeout(function(){ if (document.activeElement === input) placeCaret(); }, 75);
+        setTimeout(function(){ if (document.activeElement === input) placeCaret(); }, 300);
+      } catch (e4) {}
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', focusSearchInput, { once: true });
+    } else {
+      focusSearchInput();
+    }
+  })();
+</script>
 {{- $js := resources.Get "js/search.js" | resources.Minify | resources.Fingerprint -}}
 <script src="{{ $js.RelPermalink }}" defer></script>
 
 <style>
 /* Keep result snippets visually consistent: clamp to 2 lines */
 .clamp-2{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+
+/* Restyle the native search cancel (X) so it isn't the default blue */
+#search-input::-webkit-search-cancel-button{
+  -webkit-appearance:none;
+  appearance:none;
+  height:1rem;
+  width:1rem;
+  cursor:pointer;
+  opacity:.75;
+  background-color:currentColor;
+  -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='black' d='M4.3 4.3a1 1 0 0 1 1.4 0L10 8.6l4.3-4.3a1 1 0 1 1 1.4 1.4L11.4 10l4.3 4.3a1 1 0 0 1-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 0 1-1.4-1.4L8.6 10 4.3 5.7a1 1 0 0 1 0-1.4Z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat:no-repeat;
+  -webkit-mask-position:center;
+  -webkit-mask-size:1rem 1rem;
+}
+#search-input::-webkit-search-cancel-button:hover{opacity:1}
 </style>
