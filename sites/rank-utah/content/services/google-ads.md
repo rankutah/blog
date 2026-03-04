@@ -75,18 +75,17 @@ Google Ads is a good fit if you:
 
 {{< button url="/pricing" text="See Pricing" >}}
 
-
 ## Requirement 1: Must be on the Business Website + Local SEO plan
 
 This requirement is about getting the fundamentals right so your ads can perform.
 
-- **We build ads around real search terms.** The Website + Local SEO plan includes ongoing research into what people actually type into Google.
-- **Better pages = better leads.** Fast, clear pages turn more clicks into real inquiries.
-- **Good measurement requires site access.** I need to be able to install and maintain tracking, and improve pages over time.
+- **I build your ads to align with what people are searching.** The Website + Local SEO plan includes ongoing research into what people actually type into Google.
+- **I build fast landing pages.** Fast landing pages allow you to pay less per click and help prevent people from dropping-off your website.
+- **I setup tracking on the website.** Tracking is the most important factor in a successful Google Ads campaign.
 
 ## Requirement 2: Minimum $1,500/month ad spend + $299/month management fee
 
-Google Ads usually gets better after it has enough real-world data.
+Google Ads improve as the number of tracked leads increase.
 
 A higher starting budget typically means:
 
@@ -102,8 +101,7 @@ Google Ads takes time. If you stop too early, you often pay for the setup and te
 Here’s how to think about the 2‑month timeline:
 
 - **Month 1: Figuring out what works** We launch, collect data, and learn what brings in the best leads.
-- **Month 2: Focus on profitability.** The account continues to optimize based on past successes and failures and we focus on profitability.
-- **End of month 2: Decision checkpoint.** We review results and see if your account is profitable or close to profitability. We’ll look at lead volume, lead quality, and your cost per lead. We then decide if you want to continue.
+- **Month 2: Focus on profitability.** The account continues to optimize based on past successes and we focus on profitability.
 
 Google Ads can work extremely well — but it’s not guaranteed. It’s possible to spend money and still not get the results you want. Two months gives us a fair window to evaluate performance.
 
@@ -128,17 +126,17 @@ Examples:
 
 When helpful, we also track smaller steps (like clicking a call button or starting a form) so we can spot problems early.
 
-For those interested in the technical details. I use the optimize for conversion value bidding strategy to maximizing profitability. This is based in part on the results of studies evaluating profitability for various Google Ad strategies. See: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/.
+For those interested in the technical details. I use the optimize for conversion value bidding strategy to maximizing profitability. This is based in part on the results of studies evaluating profitability across Google Ad strategies for a significant number of accounts. See: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/.
 
-## What’s included
+## What’s included with Google Ads
 
 - Keyword research
 - Campaign setup & launch
 - Ad copy and asset creation
 - Tracking setup
-- Landing page optimization
+- Landing page setup and optimization
 - Ongoing improvement
-- Simple reporting and next steps
+- Reporting showing profitability
 
 ## Ready to talk about Google Ads?
 
