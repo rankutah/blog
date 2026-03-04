@@ -49,7 +49,7 @@ schema:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for Google Ads" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Google Ads Management to Generate More Leads {.text-white}
+# Google Ads Management for Utah Businesses {.text-white}
 For businesses who want more leads and are ready to pay for advertising.
 {.text-white}
 
@@ -65,18 +65,16 @@ Google Ads is a good fit if you:
 - Want more leads now and are willing to pay for them
 - Can invest in monthly ad spend (this is separate from the management fee)
 - Are willing to give the ads time to perform
-- Understand results aren’t guaranteed and performance can vary based on many factors including:
+- Understand results take time, and the best-performing accounts are a partnership (you handle the business side; I handle the ads + tracking side):
 
-| Factor | How it affects performance |
-|---|---|
-| Competition | If lots of businesses are paying for the same clicks, costs go up. |
-| Your offer | Pricing, trust, and what makes you different affects who clicks and who becomes a lead. |
-| Your follow-up | How fast you respond and how you handle calls/texts can make the same ad budget perform very differently. |
-| Tracking setup | If we can’t accurately tell what happened after the click, we can’t improve the ads confidently. |
-| The ads themselves | Clear, specific ads usually get better results than vague ads. |
-| The page people land on | Slow or confusing pages waste ad spend; clear pages turn more clicks into leads. |
-| The choices we make in the account | Who we target, what we show, and what we block can help or hurt performance. |
-| The area targeted | Different cities/areas have different demand and different competition. |
+| What drives success | Your part | My part |
+|---|---|---|
+| Offer + trust | Provide clear pricing/starting points, strong proof (reviews/photos), and a simple next step for customers. | Turn your strengths into clear messaging, ad angles, and landing-page sections that match real searches. |
+| Follow-up | Reply quickly, answer the phone, and have a consistent process for turning leads into booked jobs. | Set up tracking and reporting so you can see which calls/forms are coming from ads and what to prioritize. |
+| Conversion tracking | Tell me what a “good lead” is (calls, forms, bookings) and what matters most. | Install and maintain clean tracking (calls, forms, key button clicks) so we can optimize based on real outcomes. |
+| Ads + structure | Confirm service areas, top services, and any “don’t want” jobs (so we can filter). | Write clear, specific ads and build campaigns around search intent so you attract the right clicks, not just more clicks. |
+| Landing page quality | Approve improvements quickly (copy, photos, FAQs) so we can keep improving conversion rate. | Improve page speed, clarity, and calls-to-action so more visitors turn into calls and messages. |
+| Account decisions + optimization | Share seasonality, busy times, margins, and capacity so we can pace spend responsibly. | Make the ongoing choices that steadily improve results: keywords and match types, negative keywords, location targeting, bid strategy, assets, schedules, and budget pacing. |
 
 ## Pricing and requirements
 
