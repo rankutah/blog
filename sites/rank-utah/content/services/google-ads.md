@@ -65,16 +65,7 @@ Google Ads is a good fit if you:
 - Want more leads now and are willing to pay for them
 - Can invest in monthly ad spend (this is separate from the management fee)
 - Are willing to give the ads time to perform
-- Understand results take time, and the best-performing accounts are a partnership (you handle the business side; I handle the ads + tracking side):
 
-| What drives success | Your part | My part |
-|---|---|---|
-| Offer + trust | Provide clear pricing/starting points, strong proof (reviews/photos), and a simple next step for customers. | Turn your strengths into clear messaging, ad angles, and landing-page sections that match real searches. |
-| Follow-up | Reply quickly, answer the phone, and have a consistent process for turning leads into booked jobs. | Set up tracking and reporting so you can see which calls/forms are coming from ads and what to prioritize. |
-| Conversion tracking | Tell me what a “good lead” is (calls, forms, bookings) and what matters most. | Install and maintain clean tracking (calls, forms, key button clicks) so we can optimize based on real outcomes. |
-| Ads + structure | Confirm service areas, top services, and any “don’t want” jobs (so we can filter). | Write clear, specific ads and build campaigns around search intent so you attract the right clicks, not just more clicks. |
-| Landing page quality | Approve improvements quickly (copy, photos, FAQs) so we can keep improving conversion rate. | Improve page speed, clarity, and calls-to-action so more visitors turn into calls and messages. |
-| Account decisions + optimization | Share seasonality, busy times, margins, and capacity so we can pace spend responsibly. | Make the ongoing choices that steadily improve results: keywords and match types, negative keywords, location targeting, bid strategy, assets, schedules, and budget pacing. |
 
 ## Pricing and requirements
 
