@@ -1,15 +1,45 @@
 ---
-title: "Local SEO to Grow Your Small Business"
-description: "Local SEO for small businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
+title: "Utah Local SEO to Grow Your Local Business"
+description: "Local SEO for local businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
 layout: "flowbite"
 url: "/services/local-seo"
 hero: true
 schema:
   service:
     enabled: true
-    serviceType: "Local SEO to Grow Your Small Business"
+    serviceType: "Local SEO to Grow Your Local Business"
     description: "Local SEO to increase visibility in Google Search and Maps using keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and consistent business info across directories, with clear monthly reporting."
-    areaServed: "United States"
+    provider: "https://clearpresence.io/#professionalservice"
+    areaServed:
+      - "Beaver County, UT"
+      - "Box Elder County, UT"
+      - "Cache County, UT"
+      - "Carbon County, UT"
+      - "Daggett County, UT"
+      - "Davis County, UT"
+      - "Duchesne County, UT"
+      - "Emery County, UT"
+      - "Garfield County, UT"
+      - "Grand County, UT"
+      - "Iron County, UT"
+      - "Juab County, UT"
+      - "Kane County, UT"
+      - "Millard County, UT"
+      - "Morgan County, UT"
+      - "Piute County, UT"
+      - "Rich County, UT"
+      - "Salt Lake County, UT"
+      - "San Juan County, UT"
+      - "Sanpete County, UT"
+      - "Sevier County, UT"
+      - "Summit County, UT"
+      - "Tooele County, UT"
+      - "Uintah County, UT"
+      - "Utah County, UT"
+      - "Wasatch County, UT"
+      - "Washington County, UT"
+      - "Wayne County, UT"
+      - "Weber County, UT"
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
@@ -26,7 +56,7 @@ params:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for local SEO" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO to Grow Your Small Business
+# Local SEO to Grow Your Business
 Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO for $150/month.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
@@ -56,7 +86,7 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 ![Local SEO analytics report](/media/local-marketing-analytics-report.avif)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-#### Small Business Growth
+#### Local Business Growth
 ![Analytics results demonstrating growth](/media/google-analytics-results.avif)
 {{< /col >}}
 {{< /cols >}}

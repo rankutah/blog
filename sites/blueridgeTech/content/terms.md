@@ -15,7 +15,7 @@ Please read these terms before using BlueridgeTech’s services. By scheduling o
 
 ## Services and appointments
 
-- We provide computer repair and IT support for individuals and small businesses.
+- We provide computer repair and IT support for individuals and local businesses.
 - Appointments may be in‑shop, on‑site, or remote, as agreed.
 - You are responsible for providing accurate contact details and timely access for on‑site visits.
 

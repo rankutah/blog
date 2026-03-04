@@ -7,7 +7,7 @@ url: "/portfolio/blue-ridge-abbey"
 
 # Website Performance - Blue Ridge Abbey
 
-_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across Utah._
 
 These screenshots and results can be verified here: [Website Speed Challenge](/speed-challenge/).
 

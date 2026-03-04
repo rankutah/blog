@@ -1,5 +1,5 @@
 ---
-title: "Contact"
+title: "Contact Clear Presence in Utah"
 description: "Contact Clear Presence"
 layout: "flowbite"
 url: "/contact"
@@ -67,6 +67,6 @@ Pleasant Grove, UT 84062
 - Learn more about the Utah office: [Pleasant Grove, Utah](/locations/pleasant-grove-ut)
 - Get directions on [Google Maps](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
-Serving customers across the U.S.
+Serving customers across Utah.
 
 

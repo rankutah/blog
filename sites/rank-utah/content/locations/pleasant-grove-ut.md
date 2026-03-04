@@ -1,6 +1,6 @@
 ---
 title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads - Web Development, Search Engine Optimization Services, & Google Adwords Management Near You"
-description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for small businesses across Utah, with an office in Pleasant Grove, Utah."
+description: "Clear Presence provides affordable web design, local SEO, and Google Ads management for local businesses across Utah, with an office in Pleasant Grove, Utah."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
@@ -131,7 +131,7 @@ Fast, custom websites, local marketing, and Google Ads management. Plans startin
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-[![Clear Presence — website design, local SEO, and Google Ads for Utah small businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
+[![Clear Presence — website design, local SEO, and Google Ads for Utah local businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
 
 {{< /col >}}
@@ -364,7 +364,7 @@ Paid search management to generate more leads.
 
 ## Custom Websites Designed for Growth — Not Just Looks
 
-A lot of small business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
+A lot of local business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
 
 Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 
@@ -382,7 +382,7 @@ What a redesign includes:
 
 
 
-## Simple Monthly Pricing for Small Businesses
+## Simple Monthly Pricing for Local Businesses
 
 - $99/mo Website — fast and mobile‑friendly website design with updates included
 - $199/mo Website + Local SEO — includes Google Business Profile help, listings, and reporting
@@ -406,18 +406,18 @@ No big upfront fees—just simple monthly pricing and direct support.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Quartz Worx
-[![Custom website design and development featuring a small business](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
+[![Custom website design and development featuring a local business](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### Cedar City Strength
-[![Custom website design for a small business in Cedar City Utah](/media/website-design-cedar-city-strength.avif)](https://cedarcitystrength.pages.dev/)
+[![Custom website design for a local business in Cedar City Utah](/media/website-design-cedar-city-strength.avif)](https://cedarcitystrength.pages.dev/)
 {{< /col >}}
 {{< /cols >}}
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Blue Ridge Abbey
-[![Small business website homepage built to load fast and show up in local search](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
+[![Local business website homepage built to load fast and show up in local search](/media/website-design-blue-ridge-abbey.jpg)](https://blueridgeabbey.com/)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ### BlueridgeTech
@@ -512,7 +512,7 @@ No further charges after cancellation. The website stays online through the curr
 - What did users search for on your website
 
 ### What experience do you have?
-I started building websites for small businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike many web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How long does a new website take?
 Websites can be built in 2–3 weeks with regular coordination.
@@ -521,7 +521,7 @@ Websites can be built in 2–3 weeks with regular coordination.
 Yes. Managed hosting and your domain name are included. If you want to purchase your own domain you can do that too.
 
 ### Are content updates really unlimited?
-Yes. All normal small business requests (new pages, updates, changes) are unlimited. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
+Yes. All normal local business requests (new pages, updates, changes) are unlimited. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
 
 {{< /faqs >}}
 

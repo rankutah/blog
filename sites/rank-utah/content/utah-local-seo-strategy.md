@@ -1,19 +1,19 @@
 ---
 title: "The Complete 2025 Guide to Local SEO for Utah Businesses"
-description: "A simple local SEO plan for Utah small businesses: what to do on your website (keywords, mobile, speed) plus Google Business Profile, directory listings, and local links."
+description: "A simple local SEO plan for Utah local businesses: what to do on your website (keywords, mobile, speed) plus Google Business Profile, directory listings, and local links."
 url: "/utah-local-seo-strategy"
 ---
 
-# Local SEO Strategy for Small Businesses in Utah
+# Local SEO Strategy for Local Businesses in Utah
 
-_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across the U.S._
+_Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across Utah._
 
 Local SEO helps a business show up when people search for services online. A good strategy has two parts:
 
 - **On-page SEO**: what you do on your website (your pages, titles, speed, and content).
 - **Off-page SEO**: what happens off your website (your Google Business Profile, directory listings, and links from other sites).
 
-Below is a simple approach you can use for your small business in Utah.
+Below is a simple approach you can use for your local business in Utah.
 
 ## On-Page SEO
 
@@ -302,7 +302,7 @@ Keep these consistent across platforms.
 
 Links are still one of the strongest trust signals. For local results, quality matters much more than volume.
 
-Ideas that work for Utah small businesses:
+Ideas that work for Utah local businesses:
 
 - Chamber of Commerce listings
 - Local sponsorships (events, teams, nonprofits)

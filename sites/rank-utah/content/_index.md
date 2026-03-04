@@ -1,20 +1,49 @@
 ---
 title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads"
-description: "Website design, local search engine optimization (SEO), and Google Ads management for small businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
+description: "Website design, local search engine optimization (SEO), and Google Ads management for local businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:
   localBusiness:
     enabled: true
     type: ProfessionalService
+    "@id": "https://clearpresence.io/#professionalservice"
     name: "Clear Presence"
     telephone: "+13853238130"
     areaServed:
-      - "United States"
+      - "Beaver County, UT"
+      - "Box Elder County, UT"
+      - "Cache County, UT"
+      - "Carbon County, UT"
+      - "Daggett County, UT"
+      - "Davis County, UT"
+      - "Duchesne County, UT"
+      - "Emery County, UT"
+      - "Garfield County, UT"
+      - "Grand County, UT"
+      - "Iron County, UT"
+      - "Juab County, UT"
+      - "Kane County, UT"
+      - "Millard County, UT"
+      - "Morgan County, UT"
+      - "Piute County, UT"
+      - "Rich County, UT"
+      - "Salt Lake County, UT"
+      - "San Juan County, UT"
+      - "Sanpete County, UT"
+      - "Sevier County, UT"
+      - "Summit County, UT"
+      - "Tooele County, UT"
+      - "Uintah County, UT"
+      - "Utah County, UT"
+      - "Wasatch County, UT"
+      - "Washington County, UT"
+      - "Wayne County, UT"
+      - "Weber County, UT"
     priceRange: "$99–$199/mo"
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Web Design, Local SEO, & Google Ads in Utah {.text-white}
+# Web Design, Local SEO, & Google Ads for Utah Businesses {.text-white}
 Lead-generating websites, local marketing, and Google Ads management. Plans starting at $99/month.
 
 
@@ -120,9 +149,19 @@ Paid Google Ads management to generate more leads.
 
 ### Portfolio
 
-Browse examples of recent work for small businesses.
+Browse examples of recent work for local businesses.
 
 {{<button text="Portfolio" url="/portfolio">}}
+
+{{< /col >}}
+
+{{< col card="true"  y="start" >}}
+
+### Reviews
+
+See what customers are saying.
+
+{{<button text="Reviews" url="/reviews">}}
 
 {{< /col >}}
 
@@ -169,7 +208,7 @@ Reach out with questions or to start your project.
 {{< faqs >}}
 
 #### What is your experience?
-I started building websites for small businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 #### What is your web design process?
 Learn more about the process for designing and building a custom website on the [Website Design](/services/website-design) page.
@@ -178,7 +217,7 @@ Learn more about the process for designing and building a custom website on the 
 Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
 
 #### Which locations do you serve?
-Web design services are available to clients across the United States with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
+Web design services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 
 {{< /faqs >}}
 

@@ -25,7 +25,7 @@ Utah believes in investing in people. Our economic future depends on thriving pu
 {{< col card="false"  y="start" >}}
 
 
-**I want Utah to seriously explore state-supported early childcare education** beginning at age three — responsibly, fiscally, and thoughtfully. When parents can work, small businesses grow, tax revenue increases, and children benefit from early learning environments.
+**I want Utah to seriously explore state-supported early childcare education** beginning at age three — responsibly, fiscally, and thoughtfully. When parents can work, local businesses grow, tax revenue increases, and children benefit from early learning environments.
 
 This is not about expanding government. **It is about strengthening families.** When childcare is available, parents will work, businesses will hire, and our economy will grow. Growth strengthens our tax base. **This is how we can support families and address Utah housing without sacrificing fiscal discipline.**
 

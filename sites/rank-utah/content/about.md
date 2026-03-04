@@ -1,13 +1,13 @@
 ---
-title: "About"
-description: "Clear Presence builds fast, custom websites and local search engine optimization (SEO) to help small businesses get more calls and bookings."
+title: "About Clear Presence in Utah"
+description: "Clear Presence builds fast, custom websites and local search engine optimization (SEO) to help local businesses get more calls and bookings."
 layout: "flowbite"
 url: "/about"
 ---
 
-## Clear Presence
+## About Clear Presence in Utah
 
-Clear Presence provides website design and local SEO services for small businesses across the U.S., from an office in [Utah](/locations/pleasant-grove-ut).
+Clear Presence provides website design and local SEO services for local businesses across Utah, from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
 
 The goal is simple: a fast, professional website that encourages visitors to call, text, or send a message.
 

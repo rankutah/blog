@@ -1,6 +1,6 @@
 ---
-title: "Website Design for Small Businesses"
-description: "Affordable, custom website design for small businesses. A one-on-one alternative to a big agency, with personal service and fast, custom-coded pages."
+title: "Utah Website Design for Local Businesses"
+description: "Affordable, custom website design for local businesses. A one-on-one alternative to a big agency, with personal service and fast, custom-coded pages."
 layout: "flowbite"
 hero: true
 url: "/services/website-design"
@@ -9,7 +9,37 @@ schema:
     enabled: true
     serviceType: "Website Design & Local SEO Services"
     description: "Custom, fast business websites built to help customers call, text, or book."
-    areaServed: "United States"
+    provider: "https://clearpresence.io/#professionalservice"
+    areaServed:
+      - "Beaver County, UT"
+      - "Box Elder County, UT"
+      - "Cache County, UT"
+      - "Carbon County, UT"
+      - "Daggett County, UT"
+      - "Davis County, UT"
+      - "Duchesne County, UT"
+      - "Emery County, UT"
+      - "Garfield County, UT"
+      - "Grand County, UT"
+      - "Iron County, UT"
+      - "Juab County, UT"
+      - "Kane County, UT"
+      - "Millard County, UT"
+      - "Morgan County, UT"
+      - "Piute County, UT"
+      - "Rich County, UT"
+      - "Salt Lake County, UT"
+      - "San Juan County, UT"
+      - "Sanpete County, UT"
+      - "Sevier County, UT"
+      - "Summit County, UT"
+      - "Tooele County, UT"
+      - "Uintah County, UT"
+      - "Utah County, UT"
+      - "Wasatch County, UT"
+      - "Washington County, UT"
+      - "Wayne County, UT"
+      - "Weber County, UT"
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
@@ -24,7 +54,7 @@ schema:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Custom Website Design to Grow Your Small Business {.text-white}
+# Custom Website Design to Grow Your Local Business {.text-white}
 Lead-generating websites to help you get more customers. Skip the expensive agency. High-performance websites from $99/month.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
@@ -35,7 +65,7 @@ Lead-generating websites to help you get more customers. Skip the expensive agen
 
 ## Website Design
 
-Grow your small business with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings
+Grow your local business with a fast, custom website that looks great on phones and helps turn visits into calls, messages, and bookings
 
 
 ## Featured work
@@ -47,7 +77,7 @@ Grow your small business with a fast, custom website that looks great on phones 
 
 ### Quartz Worx – Countertops
 
-[![Website Design for Small Businesses](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
+[![Website Design for Local Businesses](/media/website-design-quartz-worx.avif)](https://quartzworx.com/)
 
 {{< /col >}}
 

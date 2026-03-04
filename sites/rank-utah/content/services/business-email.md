@@ -1,5 +1,5 @@
 ---
-title: "Business Email (Google Workspace) Managed for You"
+title: "Utah Business Email (Google Workspace) Managed for You"
 description: "Managed Google Workspace with custom email @your-company.com plus Calendar, video meetings, and Drive storage—so you don’t have to worry about setup, security, or ongoing administration."
 layout: "flowbite"
 url: "/services/business-email"
@@ -8,8 +8,38 @@ schema:
   service:
     enabled: true
     serviceType: "Business Email (Google Workspace)"
-    description: "Managed Google Workspace for small businesses: custom email @your-company.com, Google Calendar, video meetings, and Drive storage with ongoing admin and support."
-    areaServed: "United States"
+    description: "Managed Google Workspace for local businesses: custom email @your-company.com, Google Calendar, video meetings, and Drive storage with ongoing admin and support."
+    provider: "https://clearpresence.io/#professionalservice"
+    areaServed:
+      - "Beaver County, UT"
+      - "Box Elder County, UT"
+      - "Cache County, UT"
+      - "Carbon County, UT"
+      - "Daggett County, UT"
+      - "Davis County, UT"
+      - "Duchesne County, UT"
+      - "Emery County, UT"
+      - "Garfield County, UT"
+      - "Grand County, UT"
+      - "Iron County, UT"
+      - "Juab County, UT"
+      - "Kane County, UT"
+      - "Millard County, UT"
+      - "Morgan County, UT"
+      - "Piute County, UT"
+      - "Rich County, UT"
+      - "Salt Lake County, UT"
+      - "San Juan County, UT"
+      - "Sanpete County, UT"
+      - "Sevier County, UT"
+      - "Summit County, UT"
+      - "Tooele County, UT"
+      - "Uintah County, UT"
+      - "Utah County, UT"
+      - "Wasatch County, UT"
+      - "Washington County, UT"
+      - "Wayne County, UT"
+      - "Weber County, UT"
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for business email and Google Workspace" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
@@ -24,7 +54,7 @@ Google Workspace managed for you: custom email, Calendar, video meetings, and Dr
 
 ## Who this is for
 
-This is for small business owners who want professional email (like `you@your-company.com`) but don’t want to worry about setup, security, deliverability, or managing users.
+This is for local business owners who want professional email (like `you@your-company.com`) but don’t want to worry about setup, security, deliverability, or managing users.
 
 Think of it as **Google Workspace + a personal IT support person** focused on your company email and collaboration tools.
 
@@ -70,7 +100,7 @@ Yes. If you want, I can manage the DNS records needed for reliable email deliver
 Yes. Migration is common (and usually painless) when it’s planned correctly.
 
 ### Is my email secure?
-Google Workspace is a very strong baseline, and I’ll help you implement practical security like MFA and good account hygiene. No system is perfect, but this is one of the best setups available for small businesses.
+Google Workspace is a very strong baseline, and I’ll help you implement practical security like MFA and good account hygiene. No system is perfect, but this is one of the best setups available for local businesses.
 
 ### What if I need help fast?
 You can reach me by text, call, or email. Most Workspace issues can be fixed quickly.

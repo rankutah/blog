@@ -24,7 +24,7 @@ headless: true
 
 ### Clear Presence
 {.center}
-Web Design & Local SEO for Small Businesses
+Web Design & Local SEO for Local Businesses
 {.center}
 
 {{< socials size="w-8 h-8" gap="gap-3" align="center" >}}
@@ -42,7 +42,7 @@ Web Design & Local SEO for Small Businesses
 ### Contact
 {.center}
 
-[(385) 323-8130](tel:+13853238130)  <br> Mon–Sat 8am–8pm (MT) <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](/locations/pleasant-grove-ut) <br> Serving clients across the U.S.
+[(385) 323-8130](tel:+13853238130)  <br> Mon–Sat 8am–8pm (MT) <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](/locations/pleasant-grove-ut) <br> Serving clients across Utah.
 {.center}
 
 

@@ -55,7 +55,7 @@ The diagnostic fee is $95. If you approve the repair, the diagnostic fee is cred
 		{{< icon name="message" class="mt-1 shrink-0 [&_svg]:w-6 [&_svg]:h-6" title="IT support services" >}}
 		<div>
 			<h2 class="mt-0">IT Support Services</h2>
-			<p>Your friendly one‑person helpdesk for home and small business. Software installs, email/accounts, updates, and routine maintenance—on‑site or remote.</p>
+			<p>Your friendly one‑person helpdesk for home and local business. Software installs, email/accounts, updates, and routine maintenance—on‑site or remote.</p>
 		</div>
 	</div>
 </a>

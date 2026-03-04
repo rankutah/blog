@@ -7,7 +7,7 @@ url: "/reviews"
 
 # Reviews
 
-Clear Presence helps small businesses feel proud of their online presence — professional, fast, and thoughtfully built. Here’s what clients say.
+Clear Presence helps local businesses feel proud of their online presence — professional, fast, and thoughtfully built. Here’s what clients say.
 
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 

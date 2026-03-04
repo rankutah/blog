@@ -1,6 +1,6 @@
 ---
 title: "Portfolio"
-description: "A portfolio of custom website design projects for small businesses"
+description: "A portfolio of custom website design projects for local businesses"
 layout: "flowbite"
 url: "/portfolio"
 ---
