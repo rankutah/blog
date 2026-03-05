@@ -1,12 +1,12 @@
 ---
-title: "Utah Business Services: Web Design, SEO, and Google Ads"
-description: "Website design, local SEO, Google Ads, and business email services for local businesses."
+title: "Utah Digital Marketing Services: Web Design, Local SEO, & Google Ads"
+description: "Digital marketing services for local businesses: website design, local SEO, and Google Ads — plus managed business email."
 layout: "flowbite"
 ---
 
-## Services for local businesses
+## Digital marketing services for local businesses
 
-Clear Presence offers services designed to help local businesses get more calls, messages, and bookings.
+Clear Presence offers digital marketing services designed to help local businesses get more calls, messages, and bookings.
 
 {{< cols min="18rem" gap="2rem" v="start" >}}
 

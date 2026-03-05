@@ -1,13 +1,13 @@
 ---
 title: "Reviews"
-description: "Real reviews from Clear Presence website design and local SEO clients — fast communication, clean design, and results-focused sites."
+description: "Real reviews from Clear Presence digital marketing clients — website design, local SEO, and Google Ads — plus fast communication and results-focused work."
 layout: "flowbite"
 url: "/reviews"
 ---
 
 # Reviews
 
-Clear Presence helps local businesses feel proud of their online presence — professional, fast, and thoughtfully built. Here’s what clients say.
+Clear Presence helps local businesses feel proud of their online presence with digital marketing services like website design, local SEO, and Google Ads. Here’s what clients say.
 
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 

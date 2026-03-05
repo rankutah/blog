@@ -1,6 +1,6 @@
 ---
-title: "Utah's #1 Most Affordable Websites, SEO, & Google Ads"
-description: "Website design, local search engine optimization (SEO), and Google Ads management for local businesses. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
+title: "Utah's #1 Most Affordable Digital Marketing Agency — Websites, SEO, & Google Ads"
+description: "Digital marketing services for local businesses: website design, local search engine optimization (SEO), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:
   localBusiness:
@@ -9,6 +9,11 @@ schema:
     "@id": "https://clearpresence.io/#professionalservice"
     name: "Clear Presence"
     telephone: "+13853238130"
+    knowsAbout:
+      - "Digital marketing"
+      - "Website design"
+      - "Local SEO"
+      - "Google Ads"
     areaServed:
       - "Beaver County, UT"
       - "Box Elder County, UT"
@@ -44,7 +49,7 @@ schema:
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Web Design, Local SEO, & Google Ads for Utah Businesses {.text-white}
-Lead-generating websites, local marketing, and Google Ads management. Plans starting at $99/month.
+Digital marketing services built around lead-generating websites, local SEO, and Google Ads management. Plans starting at $99/month.
 
 
 

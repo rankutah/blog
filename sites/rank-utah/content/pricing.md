@@ -1,6 +1,6 @@
 ---
 title: "Utah Pricing for Web Design, SEO, & Google Ads"
-description: "Simple, affordable monthly pricing. No setup fees or long-term contracts."
+description: "Simple, affordable monthly pricing for digital marketing services. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
 schema:

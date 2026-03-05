@@ -1,6 +1,6 @@
 ---
 title: "Utah Local SEO to Grow Your Local Business"
-description: "Local SEO for local businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
+description: "Local SEO (a core digital marketing service) for local businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
 layout: "flowbite"
 url: "/services/local-seo"
 hero: true
@@ -68,7 +68,9 @@ Get in front of your ideal customers and grow your business. Skip the expensive 
 
 ## Local SEO (search engine optimization)
 
-Local SEO helps your business get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.
+Local SEO is one of the most effective digital marketing services for getting found in Google Search and Maps.
+
+It helps your business get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.
 
 - Keyword research + content alignment
 - Google Business Profile management and optimization

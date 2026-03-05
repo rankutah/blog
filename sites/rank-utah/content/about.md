@@ -1,13 +1,13 @@
 ---
 title: "About Clear Presence in Utah"
-description: "Clear Presence builds fast, custom websites and local search engine optimization (SEO) to help local businesses get more calls and bookings."
+description: "Clear Presence is a Utah digital marketing agency providing fast, custom websites and local search engine optimization (SEO) to help local businesses get more calls and bookings."
 layout: "flowbite"
 url: "/about"
 ---
 
 ## About Clear Presence in Utah
 
-Clear Presence provides website design and local SEO services for local businesses across Utah, from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
+Clear Presence is a Utah digital marketing agency providing website design, local SEO, and Google Ads management for local businesses across Utah, from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
 
 The goal is simple: a fast, professional website that encourages visitors to call, text, or send a message.
 
@@ -15,7 +15,7 @@ You’ll work directly with me from planning to launch. Monthly service keeps th
 
 Call or text anytime with questions: [(385) 323-8130](tel:+13853238130)
 
-## Your Web Design Expert
+## Your Digital Marketing Specialist
 
 I specialize in building fast, custom‑coded websites that help turn visits into calls, texts, and bookings. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed.
 
@@ -27,7 +27,7 @@ Personally, I enjoy running, audiobooks, and all things tech.
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Website Design & Local SEO <br>
+Website Design, Local SEO, & Google Ads <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management

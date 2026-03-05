@@ -24,7 +24,7 @@ headless: true
 
 ### Clear Presence
 {.center}
-Web Design & Local SEO for Local Businesses
+Digital Marketing Services for Local Businesses
 {.center}
 
 {{< socials size="w-8 h-8" gap="gap-3" align="center" >}}

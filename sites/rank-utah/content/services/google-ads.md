@@ -1,6 +1,6 @@
 ---
 title: "Utah Google Ads Management for Local Businesses"
-description: "Google Ads management to help local businesses generate more leads, track what’s working, and steadily improve results over time."
+description: "Google Ads management (paid digital marketing) to help local businesses generate more leads, track what’s working, and steadily improve results over time."
 layout: "flowbite"
 url: "/services/google-ads"
 hero: true
