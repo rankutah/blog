@@ -75,9 +75,9 @@ SEO services are one of the most effective digital marketing services for gettin
 It helps your business get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.
 
 - Ongoing keyword review + website updates (based on performance trends)
-- Google Business Profile optimization (accuracy + categories/services + photo updates)
-- Apple Maps optimization (accuracy + description + photos updates)
-- Bing Places optimization (accuracy + description + photos updates)
+- Google Business Profile optimization (accuracy + categories/services + photos)
+- Apple Maps optimization (accuracy + description + photos)
+- Bing Places optimization (accuracy + description + photos)
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, site activity, and updates
 

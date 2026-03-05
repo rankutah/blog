@@ -72,11 +72,11 @@ No contracts. No setup fees. Cancel anytime.
 
 Includes everything in the **Business Website** package, plus:
 - Ongoing keyword review + website updates (based on performance trends)
-- Google Business Profile optimization (accuracy + categories/services + photo updates)
-- Apple Maps optimization (accuracy + description + photos updates)
-- Bing Places optimization (accuracy + description + photos updates)
+- Google Business Profile optimization (accuracy + categories/services + photos)
+- Apple Maps optimization (accuracy + description + photos)
+- Bing Places optimization (accuracy + description + photos)
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity + recommendations
+- Monthly report on calls, messages, site activity, and updates
 
 {{< button id="checkout-bundle" url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
 
