@@ -62,7 +62,7 @@ No contracts. No setup fees. Cancel anytime.
 
 ## Business Website + SEO Services
 
-{{< badge text="I need a website + local marketing" >}}
+{{< badge text="I need a website + local visibility" >}}
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
