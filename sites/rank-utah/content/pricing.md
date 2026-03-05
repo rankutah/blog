@@ -71,7 +71,7 @@ No contracts. No setup fees. Cancel anytime.
 
 ***Get local visibility**: Google, Apple, Bing, AI search, and "near me" searches.*
 
-- Local keyword research (based on your services + the areas you serve)
+- Local keyword research (based on your services + the area you serve)
 - Ongoing optimization to align your website + profiles with keyword research and performance trends
 - Google Business Profile optimization (accuracy + categories/services + photos)
 - Apple Maps optimization (accuracy + description + photos)
@@ -98,7 +98,7 @@ No contracts. No setup fees. Cancel anytime.
 
 The monthly $299 management fee applies to ad spend up to $2,000/month. The fee switches to 15% of ad spend above that.
 
-- Must be willing to budget **at least $1,500/month** in ad spend in addition to the **$299/month** management fee.
+- Must be willing to budget **at least $1,500/month** in ad spend and the **$299/month** management fee.
 - Must be willing to informally commit to at least **2 months** (this is when we can fairly evaluate performance):
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
   - **Month 2:** Focusing on profitability (the account optimizes based on past successes).

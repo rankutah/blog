@@ -332,7 +332,7 @@ Fast, professional websites built to convert visitors into customers.
 
 Get local visibility: Google, Apple, Bing, AI search, and "near me" searches.
 
-- Local keyword research (based on your services + the areas you serve)
+- Local keyword research (based on your services + the area you serve)
 - Ongoing optimization to align your website + profiles with keyword research and performance trends
 - Google Business Profile optimization (accuracy + categories/services + photos)
 - Apple Maps optimization (accuracy + description + photos)
