@@ -60,7 +60,7 @@ schema:
     priceRange: "$99–$299/mo"
   service:
     enabled: true
-    serviceType: "Website Design, Local SEO, Google Ads Services, Digital Marketing"
+    serviceType: "Digital Marketing Services: Website Design, Local SEO, Google Ads Management"
     description: "Clear Presence provides website design, local SEO, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
     areaServed:
       - "Beaver County, UT"
@@ -110,7 +110,8 @@ schema:
 
 {{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah website design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Web Design, SEO, & Google Ads for Utah Businesses {.text-white}
-Fast, custom websites, local marketing, and Google Ads management. Plans starting at $99/month.
+Boost your online presence with the help of a digital marketing expert
+
 
 {{< button url="#main-content" text="How it Works" >}} {{< button url="/pricing" text="Pricing" >}}
 
