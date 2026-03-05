@@ -149,7 +149,7 @@
       li.className = `rounded-lg shadow-sm overflow-hidden ${cardBorder} ${cardBg}`.trim();
       li.innerHTML = `
         <a href="${it.permalink}" class="no-underline block p-4">
-          <h3 class="text-[0.7rem] md:text-xs font-semibold leading-tight text-gray-900 dark:text-white truncate">${highlight(it.title||'Untitled', term)}</h3>
+          <h3 class="text-[0.6rem] md:text-[0.65rem] font-semibold leading-tight text-gray-900 dark:text-white truncate">${highlight(it.title||'Untitled', term)}</h3>
           <p class="mt-1 text-sm text-gray-700 dark:text-gray-300 clamp-2">${highlight(base||'', term)}</p>
         </a>`;
       frag.appendChild(li);
