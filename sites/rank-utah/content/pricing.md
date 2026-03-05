@@ -36,23 +36,24 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< badge text="I need a website" >}}
 
-{{< plan_price price="99" per="mo" sr="$99 per month" >}}
+{{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
 *Fast, professional **websites built to convert** visitors into customers.*
 
-- Custom design tailored to your brand
-- Automatic adjustment to any screen size
-- High-speed on phones and computers
-- Premium hosting with advanced security
-- Automatic backups with every change
-- Domain name and annual renewals
-- Contact forms with spam protection
+- You own your website from day 1
+- Premium hosting + security included
+- Domain + annual renewals included
+- Custom design for your brand
+- Mobile-friendly on every screen
+- Fast load times on any device
+- Automatic backups on every change
+- Contact forms + spam protection
 - Site-wide search for easy navigation
 - Foundational technical + on-page SEO
-- Ongoing support via phone, text, or email
-- Monthly report on calls, messages, site activity, and updates
+- Ongoing support (phone, text, email)
+- Monthly report on calls + site activity
 
 
 {{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
@@ -64,7 +65,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< badge text="I need local visibility" >}}
 
-{{< plan_price price="99" per="mo" sr="$99 per month" >}}
+{{< plan_price price="199" per="mo per location" sr="$199 per month per location" >}}
 
 No contracts. No setup fees. Cancel anytime.
 

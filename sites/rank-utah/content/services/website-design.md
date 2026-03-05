@@ -43,14 +43,14 @@ schema:
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "99"
+        price: "149"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Custom Website Design to Grow Your Local Business {.text-white}
-Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites from $99/month.
+Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites for $149/month.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 
@@ -119,18 +119,18 @@ Grow your local business with a fast, custom website that looks great on phones 
 
 Fast, professional websites built to convert visitors into customers.
 
-- Custom design tailored to your brand
-- Automatic adjustment to any screen size
-- High-speed on phones and computers
-  - Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
-- Premium hosting with advanced security
-- Automatic backups with every change
-- Domain name and annual renewals
-- Contact forms with spam protection
+- You own your website from day 1
+- Premium hosting + security included
+- Domain + annual renewals included
+- Custom design for your brand
+- Mobile-friendly on every screen
+- Fast load times on any device
+- Automatic backups on every change
+- Contact forms + spam protection
 - Site-wide search for easy navigation
 - Foundational technical + on-page SEO
-- Ongoing support via phone, text, or email
-- Monthly report on calls, messages, site activity, and updates
+- Ongoing support (phone, text, email)
+- Monthly report on calls + site activity
 
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).

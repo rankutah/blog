@@ -57,7 +57,7 @@ schema:
     geo:
       latitude: "40.35949"
       longitude: "-111.77212"
-    priceRange: "$99–$299/mo"
+    priceRange: "$149–$299/mo"
   service:
     enabled: true
     serviceType: "Digital Marketing Services: Business Websites, Local SEO, Google Ads Management"
@@ -95,11 +95,11 @@ schema:
     offers:
       - "@type": Offer
         name: "Business Website"
-        price: "99.00"
+        price: "149.00"
         priceCurrency: "USD"
       - "@type": Offer
         name: "Local SEO"
-        price: "99.00"
+        price: "199.00"
         priceCurrency: "USD"
       - "@type": Offer
         name: "Google Ads"
@@ -308,17 +308,18 @@ Services are available statewide (remote or in-person).
 
 Fast, professional websites built to convert visitors into customers.
 
-- Custom design tailored to your brand
-- Automatic adjustment to any screen size
-- High-speed on phones and computers
-- Premium hosting with advanced security
-- Automatic backups with every change
-- Domain name and annual renewals
-- Contact forms with spam protection
+- You own your website from day 1
+- Premium hosting + security included
+- Domain + annual renewals included
+- Custom design for your brand
+- Mobile-friendly on every screen
+- Fast load times on any device
+- Automatic backups on every change
+- Contact forms + spam protection
 - Site-wide search for easy navigation
 - Foundational technical + on-page SEO
-- Ongoing support via phone, text, or email
-- Monthly report on calls, messages, site activity, and updates
+- Ongoing support (phone, text, email)
+- Monthly report on calls + site activity
 
 {{< button url="/services/website-design" text="Learn About Web Design" >}}
 
