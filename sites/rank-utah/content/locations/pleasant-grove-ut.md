@@ -329,7 +329,7 @@ Fast, professional websites built to convert visitors into customers.
 
 ### SEO Services Package
 
-Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” searches.
+Get found everywhere that matters: Google, Apple, Bing, AI search, and "near me" searches.
 
 - Keyword research + content alignment
 - Google Business Profile management and optimization
