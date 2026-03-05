@@ -383,21 +383,7 @@ What a redesign includes:
 
 
 
-
-## Simple Monthly Pricing for Local Businesses
-
-- $149/mo Web Design — fast and mobile‑friendly website design with updates included
-- $199/mo SEO Services — includes Google Business Profile help, listings, and reporting
-- $299/mo Google Ads — management fee (ad spend billed separately). See [Google Ads](/services/google-ads) for details.
-
-No hidden fees. No contracts. Unlimited updates.
-
-## Affordable Results at a Fraction of Big Agency or Company Costs
-
-You’ll get what actually matters: a fast, mobile‑friendly website with clear call and text buttons.
-No big upfront fees—just simple monthly pricing and direct support.
-
-## Let’s Design Something Great for Your Business
+## Let’s Grow Your Online Presence
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
 {{< button url="/pricing" text="See Pricing" >}}
