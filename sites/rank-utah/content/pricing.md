@@ -131,7 +131,7 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< badge text="30GB storage" >}}
 
-{{< plan_price price="29" per="user/mo" sr="$29 per user per month" >}}
+{{< plan_price price="39" per="user/mo" sr="$39 per user per month" >}}
 
 - Custom email @your-company.com
 - Google Calendar + video meetings
@@ -148,7 +148,7 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< badge text="2TB + Gemini Pro" >}}
 
-{{< plan_price price="39" per="user/mo" sr="$39 per user per month" >}}
+{{< plan_price price="49" per="user/mo" sr="$49 per user per month" >}}
 
 - Custom email @your-company.com
 - Google Calendar + video meetings
@@ -166,7 +166,7 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< badge text="5TB + Gemini Pro" >}}
 
-{{< plan_price price="49" per="user/mo" sr="$49 per user per month" >}}
+{{< plan_price price="59" per="user/mo" sr="$59 per user per month" >}}
 
 - Custom email @your-company.com
 - Google Calendar + video meetings
