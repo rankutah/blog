@@ -163,10 +163,63 @@
     if (!term) return [];
     const t = normalizeForMatch(term).trim();
     if (!t) return [];
-    return data.filter(d => {
-      const hay = normalizeForMatch(((d.title||'') + ' ' + (d.summary||'') + ' ' + (d.content||'')));
-      return hay.includes(t);
-    }).slice(0, 100);
+
+    function escapeRegExp(s){
+      return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function scoreItem(d){
+      const title = normalizeForMatch(d.title || '');
+      const summary = normalizeForMatch(d.summary || '');
+      const content = normalizeForMatch(d.content || '');
+
+      const titleIdx = title.indexOf(t);
+      const summaryIdx = summary.indexOf(t);
+      const contentIdx = content.indexOf(t);
+      if (titleIdx < 0 && summaryIdx < 0 && contentIdx < 0) return null;
+
+      // Primary ranking: title match first, then summary, then body.
+      let bucket = 2;
+      let pos = contentIdx;
+      if (summaryIdx >= 0) {
+        bucket = 1;
+        pos = summaryIdx;
+      }
+      if (titleIdx >= 0) {
+        bucket = 0;
+        pos = titleIdx;
+      }
+
+      // Secondary boosts: phrase at start of title; whole-word title match.
+      const titleStarts = (titleIdx === 0) ? 0 : 1;
+      let titleWholeWord = 1;
+      try {
+        const re = new RegExp('\\b' + escapeRegExp(t) + '\\b');
+        if (titleIdx >= 0 && re.test(title)) titleWholeWord = 0;
+      } catch (_) {}
+
+      // Tie-breaker: shorter titles feel more specific.
+      const titleLen = (d.title || '').length;
+
+      return { bucket, titleStarts, titleWholeWord, pos: (pos < 0 ? 1e9 : pos), titleLen };
+    }
+
+    const scored = [];
+    for (const d of data) {
+      const s = scoreItem(d);
+      if (s) scored.push({ d, s });
+    }
+
+    scored.sort((a, b) => {
+      if (a.s.bucket !== b.s.bucket) return a.s.bucket - b.s.bucket;
+      if (a.s.titleStarts !== b.s.titleStarts) return a.s.titleStarts - b.s.titleStarts;
+      if (a.s.titleWholeWord !== b.s.titleWholeWord) return a.s.titleWholeWord - b.s.titleWholeWord;
+      if (a.s.pos !== b.s.pos) return a.s.pos - b.s.pos;
+      if (a.s.titleLen !== b.s.titleLen) return a.s.titleLen - b.s.titleLen;
+      return String(a.d.title || '').localeCompare(String(b.d.title || ''));
+    });
+
+    return scored.slice(0, 100).map(x => x.d);
   }
 
   async function main(){
