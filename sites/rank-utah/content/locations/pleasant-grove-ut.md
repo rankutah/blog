@@ -331,11 +331,12 @@ Fast, professional websites built to convert visitors into customers.
 
 Get found everywhere that matters: Google, Apple, Bing, AI search, and "near me" searches.
 
-- Keyword research + content alignment
-- Google Business Profile management and optimization
-- Apple Maps and Bing Places management and optimization
+- Ongoing keyword review + website updates (based on performance trends)
+- Google Business Profile optimization (accuracy + categories/services + photos)
+- Apple Maps optimization (accuracy + description + photos)
+- Bing Places optimization (accuracy + description + photos)
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
+- Monthly report on calls, messages, site activity, and updates
 
 {{< button url="/services/seo-services" text="Learn About SEO Services" >}}
 
