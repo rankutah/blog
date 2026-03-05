@@ -330,7 +330,7 @@ Fast, professional websites built to convert visitors into customers.
 
 ### Local SEO Package
 
-Get found everywhere that matters: Google, Apple, Bing, AI search, and "near me" searches.
+Get local visibility: Google, Apple, Bing, AI search, and "near me" searches.
 
 - Local keyword research (based on your services + the areas you serve)
 - Ongoing optimization to align your website + profiles with search demand and performance trends

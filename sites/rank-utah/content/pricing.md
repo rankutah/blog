@@ -30,9 +30,9 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< cols min="18rem" gap="1rem" v="stretch">}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
-## Business Website <br>
+<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Business Website<br></h2>
 
 {{< badge text="I need a website" >}}
 
@@ -59,9 +59,9 @@ No contracts. No setup fees. Cancel anytime.
 {{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 
-## Local SEO
+<h2 id="local-seo" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Local SEO</h2>
 
 {{< badge text="I need local visibility" >}}
 
@@ -69,7 +69,7 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-***Get found everywhere that matters**: Google, Apple, Bing, AI search, and "near me" searches.*
+***Get local visibility**: Google, Apple, Bing, AI search, and "near me" searches.*
 
 - Local keyword research (based on your services + the areas you serve)
 - Ongoing optimization to align your website + profiles with search demand and performance trends
@@ -83,9 +83,9 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
-## Google Ads
+<h2 id="google-ads" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Google Ads</h2>
 
 {{< badge text="I need more leads" >}}
 
