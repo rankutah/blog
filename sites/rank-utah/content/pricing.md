@@ -101,7 +101,7 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
 - Must be willing to budget **at least $1,500/month** in ad spend in addition to the **$299/month** management fee.
 - Must be willing to commit to at least **2 months** (this is when we can fairly evaluate performance):
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
-  - **Month 2:** Focusing on profitability (the account optimizes based on a past successes and failures).
+  - **Month 2:** Focusing on profitability (the account optimizes based on past successes).
 
 
 {{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}}
