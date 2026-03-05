@@ -71,12 +71,12 @@ No contracts. No setup fees. Cancel anytime.
 ***Get found everywhere it matters**: Google, Maps, Apple, AI, and “near me” searches.*
 
 Includes everything in the **Business Website** package, plus:
-
-- Ongoing keyword research + website updates
-- Google Business Profile management and optimization
-- Apple Maps and Bing Places management and optimization
+- Ongoing keyword review + periodic website updates (based on performance trends)
+- Google Business Profile optimization (accuracy + categories/services + photo updates)
+- Apple Maps optimization (accuracy + description + photos updates)
+- Bing Places optimization (accuracy + description + photos updates)
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
+- Monthly report on calls, messages, and site activity + recommendations
 
 {{< button id="checkout-bundle" url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
 
