@@ -11,15 +11,15 @@ Clear Presence offers digital marketing services designed to help local business
 {{< cols min="18rem" gap="2rem" v="start" >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-### Website Design
+### Business Website
 Fast, mobile-friendly websites built to convert.
 
-{{< button url="/services/website-design" text="Website Design" >}}
+{{< button url="/services/website-design" text="Business Website" >}}
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Local SEO
-Help local customers find you on Search + Maps with keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, listings, and reporting.
+Help local customers find you on Search + Maps with local keyword research, ongoing optimization for your website + profiles, and clear monthly reporting.
 
 {{< button url="/services/seo-services" text="Local SEO" >}}
 {{< /col >}}

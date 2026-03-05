@@ -132,7 +132,7 @@ Boost your online presence with the help of a digital marketing expert
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-[![Clear Presence — website design, SEO services, and Google Ads for Utah local businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
+[![Clear Presence — website design, local SEO, and Google Ads for Utah local businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
 
 {{< /col >}}
@@ -331,7 +331,8 @@ Fast, professional websites built to convert visitors into customers.
 
 Get found everywhere that matters: Google, Apple, Bing, AI search, and "near me" searches.
 
-- Ongoing keyword review + website updates (based on performance trends)
+- Local keyword research (based on your services + the areas you serve)
+- Ongoing optimization to align your website + profiles with search demand and performance trends
 - Google Business Profile optimization (accuracy + categories/services + photos)
 - Apple Maps optimization (accuracy + description + photos)
 - Bing Places optimization (accuracy + description + photos)

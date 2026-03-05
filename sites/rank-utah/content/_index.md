@@ -120,11 +120,11 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 
 {{< col card="true" y="start" >}}
 
-### Website Design
+### Business Website
 
 See the process for building a custom site designed to bring you more customers.
 
-{{<button text="Website Design" url="/services/website-design" >}}
+{{<button text="Business Website" url="/services/website-design" >}}
 
 
 {{< /col >}}
@@ -134,7 +134,7 @@ See the process for building a custom site designed to bring you more customers.
 
 ### Local SEO
 
-Help local customers find you on search and maps. Local SEO includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting.
+Help local customers find you on search and maps. Local SEO includes local keyword research, ongoing optimization for your website + profiles, and clear monthly reporting.
 
 {{<button text="Local SEO" url="/services/seo-services">}}
 
@@ -216,7 +216,7 @@ Reach out with questions or to start your project.
 I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 #### What is your web design process?
-Learn more about the process for designing and building a custom website on the [Website Design](/services/website-design) page.
+Learn more about the process for designing and building a custom website on the [Business Website](/services/website-design) page.
 
 #### How do you compare to other website design companies?
 Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.

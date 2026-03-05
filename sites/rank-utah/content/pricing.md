@@ -70,7 +70,8 @@ No contracts. No setup fees. Cancel anytime.
 
 ***Get found everywhere that matters**: Google, Apple, Bing, AI search, and "near me" searches.*
 
-- Ongoing keyword review + website updates (based on performance trends)
+- Local keyword research (based on your services + the areas you serve)
+- Ongoing optimization to align your website + profiles with search demand and performance trends
 - Google Business Profile optimization (accuracy + categories/services + photos)
 - Apple Maps optimization (accuracy + description + photos)
 - Bing Places optimization (accuracy + description + photos)
@@ -182,7 +183,7 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< faqs >}}
 
-### What are SEO services?
+### What is local SEO?
 
 Local SEO (local search engine optimization) helps your business show up in Google Search and Maps.
 
@@ -231,7 +232,7 @@ Websites can be built in 2–3 weeks with regular coordination.
 
 Pick the service you want to explore next or reach out with questions.
 
-{{< button url="/services/website-design" text="Website Design" >}}
+{{< button url="/services/website-design" text="Business Website" >}}
 {{< button url="/services/seo-services" text="Local SEO" >}}
 {{< button url="/services/google-ads" text="Google Ads" >}}
 {{< button url="/contact" text="Contact" >}}
