@@ -1,5 +1,5 @@
 ---
-title: "Utah's #1 Most Affordable Digital Marketing Agency - Websites, SEO, & Google Ads Near You"
+title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency Near You"
 description: "Call Benjamin for web design, local SEO, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
 url: "/locations/pleasant-grove-ut"
 hero: true
