@@ -114,13 +114,12 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
 
 <div id="business-email" class="scroll-mt-24"></div>
 
-## Business Email (Google Workspace)
+## Managed Business Email
 {.center}
 
-Professional Email + Calendar + Drive, managed for you.
-{.center}
 
-Pricing is **per user** and includes Google Workspace + ongoing management.
+
+Pricing is **per user** and includes business email, Google Drive storage, and ongoing management.
 {.center}
 
 {{< cols min="18rem" gap="1rem" v="stretch">}}
@@ -134,9 +133,9 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 {{< plan_price price="39" per="user/mo" sr="$39 per user per month" >}}
 
 - Custom email @your-company.com
+- Everything setup & managed for you
 - Google Calendar + video meetings
 - 30GB Google Drive storage
-- Workspace setup + ongoing admin/support
 
 {{< button url="/services/business-email" text="Learn More" >}}
 
@@ -151,10 +150,10 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 {{< plan_price price="49" per="user/mo" sr="$49 per user per month" >}}
 
 - Custom email @your-company.com
+- Everything setup & managed for you
 - Google Calendar + video meetings
 - 2TB Google Drive storage
 - Google Gemini Pro
-- Workspace setup + ongoing admin/support
 
 {{< button url="/services/business-email" text="Learn More" >}}
 
@@ -169,10 +168,10 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 {{< plan_price price="59" per="user/mo" sr="$59 per user per month" >}}
 
 - Custom email @your-company.com
+- Everything setup & managed for you
 - Google Calendar + video meetings
 - 5TB Google Drive storage
 - Google Gemini Pro
-- Workspace setup + ongoing admin/support
 
 {{< button url="/services/business-email" text="Learn More" >}}
 
