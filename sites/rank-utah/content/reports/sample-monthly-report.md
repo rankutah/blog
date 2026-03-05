@@ -1,11 +1,11 @@
 ---
-title: "Sample Monthly Website & SEO Services Report"
+title: "Sample Monthly Website & Local SEO Report"
 layout: "flowbite"
 url: "/reports/sample-monthly-report/"
-description: "See an example of the monthly website + SEO services analytics report Clear Presence provides, including the metrics and insights you’ll receive each month."
+description: "See an example of the monthly website + local SEO analytics report Clear Presence provides, including the metrics and insights you’ll receive each month."
 ---
 
-# Sample Monthly Website & SEO Services Report
+# Sample Monthly Website & Local SEO Report
 
 Clear Presence includes a simple monthly report so you can see what’s working and what's working — without needing to dig through analytics tools.
 

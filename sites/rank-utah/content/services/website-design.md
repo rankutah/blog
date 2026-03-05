@@ -7,7 +7,7 @@ url: "/services/website-design"
 schema:
   service:
     enabled: true
-    serviceType: "Website Design & SEO Services"
+    serviceType: "Business Website"
     description: "Custom, fast business websites built to help customers call, text, or book."
     provider: "https://clearpresence.io/#professionalservice"
     areaServed:
@@ -43,19 +43,14 @@ schema:
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "149"
-        url: "https://clearpresence.io/pricing"
-        availability: "https://schema.org/InStock"
-      - "@type": "Offer"
-        priceCurrency: "USD"
-        price: "199"
+        price: "99"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Custom Website Design to Grow Your Local Business {.text-white}
-Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites from $149/month.
+Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites from $99/month.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 

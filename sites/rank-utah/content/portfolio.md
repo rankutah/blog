@@ -15,13 +15,13 @@ url: "/portfolio"
 </a>
 {{< /col >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design & SEO Services for Political Campaign
+## Web Design & Local SEO for Political Campaign
 {{< /col >}}
 {{< /cols >}}
 
 {{< cols min="18rem" gap="2rem" v="center" >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design & SEO Services for Business Services
+## Web Design & Local SEO for Business Services
 {{< /col >}}
 {{< col card="false" y="center" order="last" >}}
 <a href="https://digitalfacilitysolutions.com/" target="_blank" rel="noopener">
@@ -60,13 +60,13 @@ url: "/portfolio"
 </a>
 {{< /col >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design & SEO Services for Hospitality
+## Web Design & Local SEO for Hospitality
 {{< /col >}}
 {{< /cols >}}
 
 {{< cols min="18rem" gap="2rem" v="center" >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design & SEO Services for IT Services
+## Web Design & Local SEO for IT Services
 {{< /col >}}
 {{< col card="false" y="center" order="last" >}}
 <a href="https://blueridgetech.pro/" target="_blank" rel="noopener">

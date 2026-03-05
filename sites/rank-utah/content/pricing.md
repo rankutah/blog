@@ -1,5 +1,5 @@
 ---
-title: "Pricing for Web Design, SEO Services, & Google Ads in Utah - Digital Marketing Pricing"
+title: "Pricing for Business Websites, Local SEO, & Google Ads in Utah - Digital Marketing Pricing"
 description: "Simple, affordable monthly pricing for digital marketing services. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
@@ -7,10 +7,10 @@ schema:
   faq:
     enabled: true
     items:
-      - question: "What do SEO services mean?"
-        answer: "SEO services (search engine optimization services) help you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and reporting."
-      - question: "Is SEO included in Website Design?"
-        answer: "Yes. Website Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). SEO services are the monthly service for Google Business Profile work, Maps visibility, listings, and reporting."
+      - question: "What does Local SEO mean?"
+        answer: "Local SEO (local search engine optimization) helps you get more calls and messages from nearby customers. It includes keyword review/content updates (based on performance), Google Business Profile work, Apple Maps/Bing Places, and reporting."
+      - question: "Is SEO included in a Business Website?"
+        answer: "Yes. A Business Website includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local SEO is the monthly service for Maps visibility work, listings, and reporting."
       - question: "Can I change plans later?"
         answer: "Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption."
       - question: "What happens if I cancel?"
@@ -32,11 +32,11 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Web Design <br>
+## Business Website <br>
 
 {{< badge text="I need a website" >}}
 
-{{< plan_price price="149" per="mo" sr="$149 per month" >}}
+{{< plan_price price="99" per="mo" sr="$99 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -60,17 +60,16 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## SEO Services
+## Local SEO
 
 {{< badge text="I need local visibility" >}}
 
-{{< plan_price price="199" per="mo" sr="$199 per month" >}}
+{{< plan_price price="99" per="mo" sr="$99 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
 ***Get found everywhere that matters**: Google, Apple, Bing, AI search, and "near me" searches.*
 
-Includes everything in the **Business Website** package, plus:
 - Ongoing keyword review + website updates (based on performance trends)
 - Google Business Profile optimization (accuracy + categories/services + photos)
 - Apple Maps optimization (accuracy + description + photos)
@@ -78,7 +77,7 @@ Includes everything in the **Business Website** package, plus:
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, site activity, and updates
 
-{{< button id="checkout-seo-services" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
+{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
 
 {{< /col >}}
 
@@ -185,11 +184,11 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 ### What are SEO services?
 
-SEO services (search engine optimization services) help your business show up in Google Search and Maps.
+Local SEO (local search engine optimization) helps your business show up in Google Search and Maps.
 
-SEO services are one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
 
-Unlike social media posts and ads, SEO services don't stop working when you stop posting or paying. SEO services build a strong foundation so you show up when nearby customers search.
+Unlike social media posts and ads, local SEO doesn't stop working when you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
@@ -217,7 +216,7 @@ Fair use and scope:
 - Majorly customized or out‑of‑the‑ordinary work (e.g., complex tools, custom integrations, web apps, or bulk content migrations) is quoted separately
 - Heavy request bursts may be queued to maintain quality
 
-### What do you do each month for SEO services?
+### What do you do each month for local SEO?
 
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, and Bing Places. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
@@ -233,7 +232,7 @@ Websites can be built in 2–3 weeks with regular coordination.
 Pick the service you want to explore next or reach out with questions.
 
 {{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/services/seo-services" text="SEO Services" >}}
+{{< button url="/services/seo-services" text="Local SEO" >}}
 {{< button url="/services/google-ads" text="Google Ads" >}}
 {{< button url="/contact" text="Contact" >}}
 

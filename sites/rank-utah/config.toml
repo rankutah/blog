@@ -191,7 +191,7 @@ sameAs = []
     weight = 11
 
   [[menu.main]]
-    name = "SEO Services"
+    name = "Local SEO"
     url = "/services/seo-services"
     parent = "services"
     weight = 12
