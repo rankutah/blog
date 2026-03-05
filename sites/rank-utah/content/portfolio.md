@@ -15,7 +15,7 @@ url: "/portfolio"
 </a>
 {{< /col >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design & SEO Services for Political Campaigns
+## Web Design & SEO Services for Political Campaign
 {{< /col >}}
 {{< /cols >}}
 
@@ -104,7 +104,7 @@ url: "/portfolio"
 </a>
 {{< /col >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design for Dental Practices
+## Web Design for Dental Practice
 {{< badge text="Website In Progress">}}
 
 {{< /col >}}
