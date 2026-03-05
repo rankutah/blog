@@ -69,17 +69,17 @@ Google Ads is a good fit if you:
 
 ## Pricing and requirements
 
-1. Must be on the **Business Website + Local SEO** plan
+1. Must be on the **Business Website + SEO Services** plan
 2. Must be willing to budget at least **$1,500/month** in ad spend (you pay Google directly) and **$299/month** for the management fee
 3. Must be willing to commit to at least **2 months** (so we have sufficient time to evaluate performance)
 
 {{< button url="/pricing" text="See Pricing" >}}
 
-## Requirement 1: Must be on the Business Website + Local SEO plan
+## Requirement 1: Must be on the Business Website + SEO Services plan
 
 This requirement is about getting the fundamentals right so your ads can perform.
 
-- **I build your ads to align with what people are searching.** The Website + Local SEO plan includes ongoing research into what people actually type into Google.
+- **I build your ads to align with what people are searching.** The Website + SEO Services plan includes ongoing research into what people actually type into Google.
 - **I build fast landing pages.** Fast landing pages allow you to pay less per click and help prevent people from dropping-off your website.
 - **I setup tracking on the website.** Tracking is the most important factor in a successful Google Ads campaign.
 

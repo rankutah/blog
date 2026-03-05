@@ -1,6 +1,6 @@
 ---
-title: "Utah Digital Marketing Services: Web Design, Local SEO, & Google Ads"
-description: "Digital marketing services for local businesses: website design, local SEO, and Google Ads — plus managed business email."
+title: "Utah Digital Marketing Services: Web Design, SEO Services, & Google Ads"
+description: "Digital marketing services for local businesses: website design, SEO services, and Google Ads — plus managed business email."
 layout: "flowbite"
 ---
 
@@ -18,10 +18,10 @@ Fast, mobile-friendly websites built to convert.
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-### Local SEO
+### SEO Services
 Help local customers find you on Search + Maps with keyword research/content alignment, Google Business Profile work, Apple Maps/Bing, listings, and reporting.
 
-{{< button url="/services/local-seo" text="Local SEO" >}}
+{{< button url="/services/seo-services" text="SEO Services" >}}
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}

@@ -19,7 +19,7 @@ Welcome to Clear Presence. By accessing or using Clear Presence websites, produc
 
 ## 1. About Clear Presence
 
-“Clear Presence” provides web design, SEO, and related services. The primary website is clearpresence.io (including subdomains and related properties).
+"Clear Presence" provides web design, SEO services, and related services. The primary website is clearpresence.io (including subdomains and related properties).
 
 
 

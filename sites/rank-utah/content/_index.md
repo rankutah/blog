@@ -1,6 +1,6 @@
 ---
-title: "Utah's #1 Affordable Digital Marketing Agency — Websites, SEO, & Google Ads"
-description: "Digital marketing services for local businesses: website design, local search engine optimization (SEO), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
+title: "Utah's #1 Affordable Digital Marketing Agency — Websites, SEO Services, & Google Ads"
+description: "Digital marketing services for local businesses: website design, SEO services (search engine optimization), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:
   localBusiness:
@@ -12,7 +12,7 @@ schema:
     knowsAbout:
       - "Digital marketing"
       - "Website design"
-      - "Local SEO"
+      - "SEO services"
       - "Google Ads"
     areaServed:
       - "Beaver County, UT"
@@ -48,8 +48,8 @@ schema:
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Web Design, Local SEO, & Google Ads for Utah Businesses {.text-white}
-Digital marketing services built around lead-generating websites, local SEO, and Google Ads management. Plans starting at $99/month.
+# Web Design, SEO Services, & Google Ads for Utah Businesses {.text-white}
+Digital marketing services built around lead-generating websites, SEO services, and Google Ads management. Plans starting at $99/month.
 
 
 
@@ -132,11 +132,11 @@ See the process for building a custom site designed to bring you more customers.
 
 {{< col card="true" y="start" >}}
 
-### Local SEO
+### SEO Services
 
-Help local customers find you on search and maps. Local SEO includes keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting.
+Help local customers find you on search and maps. SEO services include keyword research/content alignment, your Google Business Profile, Apple Maps/Bing, 100+ listings, and clear reporting.
 
-{{<button text="Local SEO" url="/services/local-seo">}}
+{{<button text="SEO Services" url="/services/seo-services">}}
 
 {{< /col >}}
 
@@ -234,7 +234,7 @@ Whether you have a quick question or are ready to launch a project, reach out no
 {{<button text="Contact" url="/contact" >}}
 {{<button text="Pricing" url="/pricing" >}}
 {{<button text="Web Design" url="/services/website-design" >}}
-{{<button text="Local SEO" url="/services/local-seo" >}}
+{{<button text="SEO Services" url="/services/seo-services" >}}
 {.center}
 
 

@@ -1,14 +1,14 @@
 ---
-title: "Utah Local SEO to Grow Your Local Business"
-description: "Local SEO (a core digital marketing service) for local businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
+title: "Utah SEO Services to Grow Your Local Business"
+description: "SEO services for local businesses: keyword research/content alignment, Google Business Profile management, Apple Maps/Bing, 100+ directory listings, and clear monthly reporting."
 layout: "flowbite"
-url: "/services/local-seo"
+url: "/services/seo-services"
 hero: true
 schema:
   service:
     enabled: true
-    serviceType: "Local SEO to Grow Your Local Business"
-    description: "Local SEO to increase visibility in Google Search and Maps using keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and consistent business info across directories, with clear monthly reporting."
+    serviceType: "SEO Services to Grow Your Local Business"
+    description: "SEO services to increase visibility in Google Search and Maps using keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and consistent business info across directories, with clear monthly reporting."
     provider: "https://clearpresence.io/#professionalservice"
     areaServed:
       - "Beaver County, UT"
@@ -55,20 +55,22 @@ params:
   ppc: true
 ---
 
-{{< hero img="/media/utah-landscape.avif" alt="Landscape image for local SEO" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Local SEO to Grow Your Business
-Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO for $150/month.
+{{< hero img="/media/utah-landscape.avif" alt="Landscape image for SEO services" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+# SEO Services to Grow Your Business
+Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance SEO services for $150/month.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
 {{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
-{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20local%20SEO." text="Text Now" >}}
+{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20SEO%20services." text="Text Now" >}}
 
 <div class="mt-6"></div>
 {{< /hero >}}
 
-## Local SEO (search engine optimization)
+## SEO Services
 
-Local SEO is one of the most effective digital marketing services for getting found in Google Search and Maps.
+SEO stands for search engine optimization.
+
+SEO services are one of the most effective digital marketing services for getting found in Google Search and Maps.
 
 It helps your business get found everywhere it matters: Google, Maps, Apple, AI, and "near me" searches.
 
@@ -85,7 +87,7 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 #### Visibility & Clicks
-![Local SEO analytics report](/media/local-marketing-analytics-report.avif)
+![SEO services analytics report](/media/local-marketing-analytics-report.avif)
 {{< /col >}}
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 #### Local Business Growth
@@ -101,7 +103,7 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Website Design & Local SEO <br>
+Website Design & SEO Services <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
@@ -115,7 +117,7 @@ Bachelor's in Business Management
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 ## How it Works
-Local SEO is a long‑term foundation. Instead of quick hacks, the goal is steady improvements that keep working month after month.
+SEO services are a long‑term foundation. Instead of quick hacks, the goal is steady improvements that keep working month after month.
 
 1. Kickoff — a few quick questions about your business, service area, and goals
 2. Baseline — review where you show up today (Search, Maps, profiles, and key listings)
@@ -126,14 +128,16 @@ Local SEO is a long‑term foundation. Instead of quick hacks, the goal is stead
 ## FAQ
 {{< faqs openFirst="false" >}}
 
-### What is Local SEO?
-Local SEO stands for Local Search Engine Optimization. Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+### What are SEO services?
+SEO services (search engine optimization services) help your business show up in Google Search and Maps.
 
-Unlike social media posts and ads, local SEO doesn't stop working when you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
+SEO services are one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+
+Unlike social media posts and ads, SEO services don't stop working when you stop posting or paying. SEO services build a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
-### What do you do each month for local SEO?
+### What do you do each month for SEO services?
 
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, and Bing Places. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 

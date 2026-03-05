@@ -7,7 +7,7 @@ url: "/services/website-design"
 schema:
   service:
     enabled: true
-    serviceType: "Website Design & Local SEO Services"
+    serviceType: "Website Design & SEO Services"
     description: "Custom, fast business websites built to help customers call, text, or book."
     provider: "https://clearpresence.io/#professionalservice"
     areaServed:

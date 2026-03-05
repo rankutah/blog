@@ -1,5 +1,5 @@
 ---
-title: "Utah Pricing for Web Design, SEO, & Google Ads"
+title: "Pricing for Web Design, SEO Services, & Google Ads in Utah - Digital Marketing Pricing"
 description: "Simple, affordable monthly pricing for digital marketing services. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
@@ -7,10 +7,10 @@ schema:
   faq:
     enabled: true
     items:
-      - question: "What does Local SEO mean?"
-        answer: "Local Search Engine Optimization (SEO) helps you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and reporting."
+      - question: "What do SEO services mean?"
+        answer: "SEO services (search engine optimization services) help you get more calls and messages from nearby customers. It includes keyword research and content alignment, Google Business Profile work, Apple Maps/Bing Places, and reporting."
       - question: "Is SEO included in Website Design?"
-        answer: "Yes. Website Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local SEO is the monthly service for Google Business Profile work, Maps visibility, listings, and reporting."
+        answer: "Yes. Website Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). SEO services are the monthly service for Google Business Profile work, Maps visibility, listings, and reporting."
       - question: "Can I change plans later?"
         answer: "Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption."
       - question: "What happens if I cancel?"
@@ -60,7 +60,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Business Website + Local SEO
+## Business Website + SEO Services
 
 {{< badge text="I need a website + local marketing" >}}
 
@@ -97,7 +97,7 @@ No contracts. No setup fees. Cancel anytime.
 
 The monthly $299 management fee applies to ad spend up to $2,000/month. The fee switches to 15% of ad spend above that.
 
-- Must be on the **Business Website + Local SEO** plan to run Google Ads
+- Must be on the **Business Website + SEO Services** plan to run Google Ads
 - Must be willing to budget **at least $1,500/month** in ad spend in addition to the **$299/month** management fee.
 - Must be willing to commit to at least **2 months** (this is when we can fairly evaluate performance):
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
@@ -184,11 +184,13 @@ Pricing is **per user** and includes Google Workspace + ongoing management.
 
 {{< faqs >}}
 
-### What is Local SEO?
+### What are SEO services?
 
-Local SEO stands for Local Search Engine Optimization. Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+SEO services (search engine optimization services) help your business show up in Google Search and Maps.
 
-Unlike social media posts and ads, local SEO doesn't stop working when you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
+SEO services are one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+
+Unlike social media posts and ads, SEO services don't stop working when you stop posting or paying. SEO services build a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
@@ -216,7 +218,7 @@ Fair use and scope:
 - Majorly customized or out‑of‑the‑ordinary work (e.g., complex tools, custom integrations, web apps, or bulk content migrations) is quoted separately
 - Heavy request bursts may be queued to maintain quality
 
-### What do you do each month for local SEO?
+### What do you do each month for SEO services?
 
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, and Bing Places. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
@@ -232,7 +234,7 @@ Websites can be built in 2–3 weeks with regular coordination.
 Pick the service you want to explore next or reach out with questions.
 
 {{< button url="/services/website-design" text="Website Design" >}}
-{{< button url="/services/local-seo" text="Local SEO" >}}
+{{< button url="/services/seo-services" text="SEO Services" >}}
 {{< button url="/services/google-ads" text="Google Ads" >}}
 {{< button url="/contact" text="Contact" >}}
 

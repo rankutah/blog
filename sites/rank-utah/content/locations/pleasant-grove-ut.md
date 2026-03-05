@@ -1,6 +1,6 @@
 ---
-title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency Near You"
-description: "Call Benjamin for web design, local SEO, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
+title: "Call Benjamin for Utah Web Design, SEO Services & Google Ads - Digital Marketing Agency - Search Engine Marketing Near You"
+description: "Call Benjamin for Utah web design, SEO services, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
@@ -60,8 +60,8 @@ schema:
     priceRange: "$99–$299/mo"
   service:
     enabled: true
-    serviceType: "Digital Marketing Services: Website Design, Local SEO, Google Ads Management"
-    description: "Clear Presence provides website design, local SEO, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
+    serviceType: "Digital Marketing Services: Website Design, SEO Services, Google Ads Management"
+    description: "Clear Presence provides website design, SEO services, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
     areaServed:
       - "Beaver County, UT"
       - "Box Elder County, UT"
@@ -98,7 +98,7 @@ schema:
         price: "99.00"
         priceCurrency: "USD"
       - "@type": Offer
-        name: "Business Website + Local SEO"
+        name: "Business Website + SEO Services"
         price: "199.00"
         priceCurrency: "USD"
       - "@type": Offer
@@ -108,8 +108,8 @@ schema:
 ---
 
 
-{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah website design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design, SEO, & Google Ads for Utah Businesses {.text-white}
+{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah website design, SEO services, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Web Design, SEO Services, & Google Ads for Utah Businesses {.text-white}
 Boost your online presence with the help of a digital marketing expert
 
 
@@ -125,14 +125,14 @@ Boost your online presence with the help of a digital marketing expert
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Web Design, Local SEO, & Google Ads Near You
+## Web Design, SEO Services, & Google Ads Near You
 - Meet [remotely](https://cal.com/clearpresence/30min) statewide (phone call or video chat)
 - In-person meetings available in Pleasant Grove by appointment
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
 - Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
 
-[![Clear Presence — website design, local SEO, and Google Ads for Utah local businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
+[![Clear Presence — website design, SEO services, and Google Ads for Utah local businesses](/media/clearpresence-office-storefront-web-design-local-seo.avif)](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
 
 {{< /col >}}
@@ -327,7 +327,7 @@ Fast, professional websites built to convert visitors into customers.
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-### Local SEO Package
+### SEO Services Package
 
 Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” searches.
 
@@ -337,7 +337,7 @@ Get found everywhere it matters: Google, Maps, Apple, AI, and “near me” sear
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, and site activity
 
-{{< button url="/services/local-seo" text="Learn About Local SEO" >}}
+{{< button url="/services/seo-services" text="Learn About SEO Services" >}}
 
 
 {{< /col >}}
@@ -365,7 +365,7 @@ Paid search management to generate more leads.
 
 ## Custom Websites Designed for Growth — Not Just Looks
 
-A lot of local business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
+A lot of local business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add SEO services for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
 
 Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 
@@ -386,7 +386,7 @@ What a redesign includes:
 ## Simple Monthly Pricing for Local Businesses
 
 - $99/mo Website — fast and mobile‑friendly website design with updates included
-- $199/mo Website + Local SEO — includes Google Business Profile help, listings, and reporting
+- $199/mo Website + SEO Services — includes Google Business Profile help, listings, and reporting
 - $299/mo Google Ads — management fee (ad spend billed separately). See [Google Ads](/services/google-ads) for requirements.
 
 No hidden fees. No contracts. Unlimited updates.
@@ -434,7 +434,7 @@ I love partnering with business owners and specialize in developing fast custom 
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Website Design, Local SEO & Google Ads <br>
+Website Design, SEO Services & Google Ads <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
@@ -475,20 +475,22 @@ Yes. You own the website from day one. If service is canceled, help is provided 
 ### What does website design cost?
 See the [pricing](/pricing) page for the most up-to-date pricing on business website packages.
 
-### What is local SEO?
-Local SEO stands for Local Search Engine Optimization. Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+### What are SEO services?
+SEO services (search engine optimization services) help your business show up in Google Search and Maps.
 
-Unlike social media posts and ads, local SEO doesn't stop working when you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
+SEO services are one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+
+Unlike social media posts and ads, SEO services don't stop working when you stop posting or paying. SEO services build a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
-### What does local SEO cost?
-See the [pricing](/pricing) page for the most up-to-date pricing on local SEO packages.
+### What do SEO services cost?
+See the [pricing](/pricing) page for the most up-to-date pricing on SEO services packages.
 
-### What results should I expect from local SEO?
-Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
+### What results should I expect from SEO services?
+SEO services are one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.
 
-Social media posts and ads can do very well, but they stop the moment you stop posting or paying. Local SEO establishes a strong foundation so you show up when nearby customers search.
+Social media posts and ads can do very well, but they stop the moment you stop posting or paying. SEO services establish a strong foundation so you show up when nearby customers search.
 
 Results depend on what you have to offer, the level of search interest in your area, and your competition.
 
