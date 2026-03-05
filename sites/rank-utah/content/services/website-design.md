@@ -43,7 +43,7 @@ schema:
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "99"
+        price: "149"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
       - "@type": "Offer"
@@ -55,7 +55,7 @@ schema:
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Custom Website Design to Grow Your Local Business {.text-white}
-Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites from $99/month.
+Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites from $149/month.
 {.text-white}
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
 

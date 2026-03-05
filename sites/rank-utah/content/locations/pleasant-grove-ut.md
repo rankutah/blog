@@ -57,7 +57,7 @@ schema:
     geo:
       latitude: "40.35949"
       longitude: "-111.77212"
-    priceRange: "$99–$299/mo"
+    priceRange: "$149–$299/mo"
   service:
     enabled: true
     serviceType: "Digital Marketing Services: Website Design, SEO Services, Google Ads Management"
@@ -94,11 +94,11 @@ schema:
       - "Weber County, UT"
     offers:
       - "@type": Offer
-        name: "Business Website"
-        price: "99.00"
+        name: "Web Design"
+        price: "149.00"
         priceCurrency: "USD"
       - "@type": Offer
-        name: "Business Website + SEO Services"
+        name: "SEO Services"
         price: "199.00"
         priceCurrency: "USD"
       - "@type": Offer
@@ -386,9 +386,9 @@ What a redesign includes:
 
 ## Simple Monthly Pricing for Local Businesses
 
-- $99/mo Website — fast and mobile‑friendly website design with updates included
-- $199/mo Website + SEO Services — includes Google Business Profile help, listings, and reporting
-- $299/mo Google Ads — management fee (ad spend billed separately). See [Google Ads](/services/google-ads) for requirements.
+- $149/mo Web Design — fast and mobile‑friendly website design with updates included
+- $199/mo SEO Services — includes Google Business Profile help, listings, and reporting
+- $299/mo Google Ads — management fee (ad spend billed separately). See [Google Ads](/services/google-ads) for details.
 
 No hidden fees. No contracts. Unlimited updates.
 

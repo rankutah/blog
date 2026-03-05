@@ -32,11 +32,11 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Business Website <br>
+## Web Design <br>
 
 {{< badge text="I need a website" >}}
 
-{{< plan_price price="99" per="mo" sr="$99 per month" >}}
+{{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -60,9 +60,9 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Business Website + SEO Services
+## SEO Services
 
-{{< badge text="I need a website + local visibility" >}}
+{{< badge text="I need local visibility" >}}
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
@@ -78,7 +78,7 @@ Includes everything in the **Business Website** package, plus:
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, site activity, and updates
 
-{{< button id="checkout-bundle" url="https://buy.stripe.com/dRm3cpgod63Z7hle8v1sQ03" text="Get Started" >}}
+{{< button id="checkout-seo-services" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
 
 {{< /col >}}
 
@@ -97,9 +97,8 @@ No contracts. No setup fees. Cancel anytime.
 
 The monthly $299 management fee applies to ad spend up to $2,000/month. The fee switches to 15% of ad spend above that.
 
-- Must be on the **Business Website + SEO Services** plan to run Google Ads
 - Must be willing to budget **at least $1,500/month** in ad spend in addition to the **$299/month** management fee.
-- Must be willing to commit to at least **2 months** (this is when we can fairly evaluate performance):
+- Must be willing to informally commit to at least **2 months** (this is when we can fairly evaluate performance):
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
   - **Month 2:** Focusing on profitability (the account optimizes based on past successes).
 

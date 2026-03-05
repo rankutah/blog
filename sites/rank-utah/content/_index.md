@@ -44,12 +44,12 @@ schema:
       - "Washington County, UT"
       - "Wayne County, UT"
       - "Weber County, UT"
-    priceRange: "$99–$199/mo"
+    priceRange: "$149–$299/mo"
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
 # Web Design, SEO Services, & Google Ads for Utah Businesses {.text-white}
-Digital marketing services built around lead-generating websites, SEO services, and Google Ads management. Plans starting at $99/month.
+Digital marketing services built around lead-generating websites, SEO services, and Google Ads management. Plans starting at $149/month.
 
 
 
