@@ -79,11 +79,9 @@ It helps your business get found everywhere it matters: Google, Maps, Apple, AI,
 - Apple Maps optimization (accuracy + description + photos updates)
 - Bing Places optimization (accuracy + description + photos updates)
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity + recommendations
+- Monthly report on calls, messages, site activity, and updates
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
-
-
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
