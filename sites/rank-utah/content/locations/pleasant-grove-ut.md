@@ -126,7 +126,7 @@ Boost your online presence with the help of a digital marketing expert
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Web Design, Local SEO, & Google Ads Near You
-- Meet [remotely](https://cal.com/clearpresence/30min) statewide (video chat)
+- Meet [remotely](https://cal.com/clearpresence/30min) statewide (phone call or video chat)
 - In-person meetings available in Pleasant Grove by appointment
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
