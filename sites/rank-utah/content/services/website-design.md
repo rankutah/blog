@@ -135,7 +135,7 @@ Fast, professional websites built to convert visitors into customers.
 - Site-wide search for easy navigation
 - Foundational technical + on-page SEO
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
+- Monthly report on calls, messages, site activity, and updates
 
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).

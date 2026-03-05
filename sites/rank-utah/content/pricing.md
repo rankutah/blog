@@ -52,7 +52,7 @@ No contracts. No setup fees. Cancel anytime.
 - Site-wide search for easy navigation
 - Foundational technical + on-page SEO
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
+- Monthly report on calls, messages, site activity, and updates
 
 
 {{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}

@@ -318,7 +318,7 @@ Fast, professional websites built to convert visitors into customers.
 - Site-wide search for easy navigation
 - Foundational technical + on-page SEO
 - Ongoing support via phone, text, or email
-- Monthly report on calls, messages, and site activity
+- Monthly report on calls, messages, site activity, and updates
 
 {{< button url="/services/website-design" text="Learn About Web Design" >}}
 

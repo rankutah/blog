@@ -1,5 +1,5 @@
 ---
-title: "Portfolio"
+title: "Website Portfolio"
 description: "A portfolio of custom website design projects for local businesses"
 layout: "flowbite"
 url: "/portfolio"
