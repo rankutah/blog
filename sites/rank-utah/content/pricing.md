@@ -36,7 +36,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< badge text="I need a website" >}}
 
-{{< plan_price price="99" per="mo" sr="$99 per month" >}}
+{{< plan_price price="149" per="mo" sr="$149 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -45,7 +45,7 @@ No contracts. No setup fees. Cancel anytime.
 - You own your website from day one
 - Premium hosting + security included
 - Domain + annual renewals included
-- Custom design for your brand
+- Custom coded to match your brand
 - Mobile-friendly on every screen
 - Fast load times on any device
 - Automatic backups on every change
@@ -65,7 +65,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< badge text="I need local visibility" >}}
 
-{{< plan_price price="99" per="mo per location" sr="$99 per month per location" >}}
+{{< plan_price price="199" per="mo per location" sr="$199 per month per location" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -89,7 +89,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< badge text="I need more leads" >}}
 
-{{< plan_price price="199" per="mo" sr="$199 per month" >}}
+{{< plan_price price="299" per="mo" sr="$299 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -102,7 +102,6 @@ The monthly $299 management fee applies to ad spend up to $2,000/month. The fee 
 - Must be willing to informally commit to at least **2 months** (this is when we can fairly evaluate performance):
   - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
   - **Month 2:** Focusing on profitability (the account optimizes based on past successes).
-
 
 {{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}}
 

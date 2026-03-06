@@ -308,7 +308,7 @@ Services are available statewide (remote or in-person).
 
 Fast, professional websites built to convert visitors into customers.
 
-- You own your website from day 1
+- You own your website from day one
 - Premium hosting + security included
 - Domain + annual renewals included
 - Custom design for your brand

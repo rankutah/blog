@@ -119,7 +119,7 @@ Grow your local business with a fast, custom website that looks great on phones 
 
 Fast, professional websites built to convert visitors into customers.
 
-- You own your website from day 1
+- You own your website from day one
 - Premium hosting + security included
 - Domain + annual renewals included
 - Custom design for your brand
