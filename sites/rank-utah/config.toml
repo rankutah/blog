@@ -203,12 +203,6 @@ sameAs = []
     weight = 13
 
   [[menu.main]]
-    name = "Business Email"
-    url = "/services/business-email"
-    parent = "services"
-    weight = 14
-
-  [[menu.main]]
     name = "Location"
     identifier = "location"
     url = "#"
