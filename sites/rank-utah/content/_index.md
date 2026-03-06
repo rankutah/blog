@@ -134,7 +134,7 @@ See the process for building a custom site designed to bring you more customers.
 
 ### Local SEO
 
-Help local customers find you on search and maps. Local SEO includes local keyword research, ongoing optimization for your website + profiles, and clear monthly reporting.
+Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
 {{<button text="Local SEO" url="/services/local-seo">}}
 
@@ -144,7 +144,7 @@ Help local customers find you on search and maps. Local SEO includes local keywo
 
 ### Google Ads
 
-Paid Google Ads management to generate more leads.
+Google Ads management to generate more leads with keyword research, campaign setup, tracking, and clear monthly reporting.
 
 {{<button text="Google Ads" url="/services/google-ads">}}
 

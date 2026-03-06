@@ -69,17 +69,16 @@ Get in front of your ideal customers and grow your business. Skip the expensive 
 
 Local SEO stands for local search engine optimization.
 
-Local SEO is one of the most effective digital marketing services for getting found in Google Search and Maps.
+Local SEO is one of the most effective digital marketing services for getting found in search and maps.
 
-It helps your business get local visibility: Google, Apple, Bing, AI search, and "near me" searches.
+Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
-- Local keyword research (based on your services + the area you serve)
-- Ongoing optimization to align your website + profiles with keyword research and performance trends
-- Google Business Profile optimization (accuracy + categories/services + photos)
-- Apple Maps optimization (accuracy + description + photos)
-- Bing Places optimization (accuracy + description + photos)
-- Ongoing support via phone, text, or email
-- Monthly report on calls, messages, site activity, and updates
+- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
+- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
+- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
+- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
+- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
+- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
 

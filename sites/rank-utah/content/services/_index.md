@@ -19,14 +19,14 @@ Fast, mobile-friendly websites built to convert.
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Local SEO
-Help local customers find you on Search + Maps with local keyword research, ongoing optimization for your website + profiles, and clear monthly reporting.
+Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
 {{< button url="/services/local-seo" text="Local SEO" >}}
 {{< /col >}}
 
 {{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
 ### Google Ads
-Paid search management to generate more leads with conversion tracking, campaign builds, and ongoing optimization.
+Google Ads management to generate more leads with keyword research, campaign setup, tracking, ongoing optimization, and clear monthly reporting.
 
 {{< button url="/services/google-ads" text="Google Ads" >}}
 {{< /col >}}

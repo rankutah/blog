@@ -119,18 +119,17 @@ Grow your local business with a fast, custom website that looks great on phones 
 
 Fast, professional websites built to convert visitors into customers.
 
-- You own your website from day one
-- Premium hosting + security included
-- Domain + annual renewals included
-- Custom design for your brand
-- Mobile-friendly on every screen
-- Fast load times on any device
-- Automatic backups on every change
-- Contact forms + spam protection
-- Site-wide search for easy navigation
-- Foundational technical + on-page SEO
-- Ongoing support (phone, text, email)
-- Monthly report on calls + site activity
+- **Website Ownership**: You own your website from day one.
+- **Managed Hosting + Security**: Reliable hosting and built-in security are included.
+- **Domain Included**: Your domain and annual renewals are covered.
+- **Custom Website Design**: Your site is built to match your brand.
+- **Mobile-Friendly Design**: Your website looks great on every screen.
+- **Fast Load Times**: Built to load quickly across devices.
+- **Automatic Backups**: Every change is backed up automatically.
+- **Contact Forms + Spam Protection**: Make it easy for customers to reach out without the junk.
+- **Foundational SEO**: Technical and on-page SEO built in from the start.
+- **Ongoing Support**: Reach out anytime by phone, text, or email.
+- **Monthly Reporting**: Track calls and website activity each month.
 
 
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).

@@ -50,7 +50,7 @@ schema:
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for Google Ads" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Google Ads Management for Utah Businesses {.text-white}
-For businesses who want more leads and are ready to pay for advertising.
+For businesses that want more leads and are ready to invest in advertising.
 {.text-white}
 
 {{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
@@ -69,12 +69,12 @@ Google Ads is a good fit if you:
 
 ## Pricing and requirements
 
-1. Ad spend is separate (you pay Google directly) plus **$299/month** for the management fee
+1. Ad spend is separate (you pay Google directly). Google Ads management is **$299/month** for ad spend up to **$2,000/month**. For ad spend above **$2,000/month**, management is **15% of ad spend**.
 2. Must be willing to informally commit to at least **2 months** (so we have sufficient time to evaluate performance)
 
 {{< button url="/pricing" text="See Pricing" >}}
 
-## Requirement 1: Ad spend + $299/month management fee
+## Requirement 1: Ad spend + management fee
 
 Google Ads improve as the number of tracked leads increase.
 
@@ -107,12 +107,12 @@ Setup typically includes:
 
 ## What’s included with Google Ads
 
-- Keyword research
-- Campaign setup & launch
-- Ad copy and asset creation
-- Tracking setup
-- Ongoing improvement
-- Reporting showing profitability
+- **Keyword Research**: Research focused on the searches most likely to bring in leads.
+- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
+- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
+- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
+- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
+- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
 ## Ready to talk about Google Ads?
 

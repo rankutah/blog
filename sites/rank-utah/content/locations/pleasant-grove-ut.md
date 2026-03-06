@@ -308,18 +308,17 @@ Services are available statewide (remote or in-person).
 
 Fast, professional websites built to convert visitors into customers.
 
-- You own your website from day one
-- Premium hosting + security included
-- Domain + annual renewals included
-- Custom design for your brand
-- Mobile-friendly on every screen
-- Fast load times on any device
-- Automatic backups on every change
-- Contact forms + spam protection
-- Site-wide search for easy navigation
-- Foundational technical + on-page SEO
-- Ongoing support (phone, text, email)
-- Monthly report on calls + site activity
+- **Website Ownership**: You own your website from day one.
+- **Managed Hosting + Security**: Reliable hosting and built-in security are included.
+- **Domain Included**: Your domain and annual renewals are covered.
+- **Custom Website Design**: Your site is built to match your brand.
+- **Mobile-Friendly Design**: Your website looks great on every screen.
+- **Fast Load Times**: Built to load quickly across devices.
+- **Automatic Backups**: Every change is backed up automatically.
+- **Contact Forms + Spam Protection**: Make it easy for customers to reach out without the junk.
+- **Foundational SEO**: Technical and on-page SEO built in from the start.
+- **Ongoing Support**: Reach out anytime by phone, text, or email.
+- **Monthly Reporting**: Track calls and website activity each month.
 
 {{< button url="/services/website-design" text="Learn About Web Design" >}}
 
@@ -330,15 +329,14 @@ Fast, professional websites built to convert visitors into customers.
 
 ### Local SEO Package
 
-Get local visibility: Google, Apple, Bing, AI search, and "near me" searches.
+Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
-- Local keyword research (based on your services + the area you serve)
-- Ongoing optimization to align your website + profiles with keyword research and performance trends
-- Google Business Profile optimization (accuracy + categories/services + photos)
-- Apple Maps optimization (accuracy + description + photos)
-- Bing Places optimization (accuracy + description + photos)
-- Ongoing support via phone, text, or email
-- Monthly report on calls, messages, site activity, and updates
+- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
+- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
+- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
+- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
+- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
+- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
 {{< button url="/services/local-seo" text="Learn About Local SEO" >}}
 
@@ -351,13 +349,12 @@ Get local visibility: Google, Apple, Bing, AI search, and "near me" searches.
 
 Paid search management to generate more leads.
 
-- Keyword research & strategy
-- Campaign build & launch
-- Ad copy and asset creation
-- Conversion and call tracking
-- Landing page optimization
-- Ongoing optimization
-- Reporting and recommendations
+- **Keyword Research**: Research focused on the searches most likely to bring in leads.
+- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
+- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
+- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
+- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
+- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
 {{< button url="/services/google-ads" text="Learn About Google Ads" >}}
 
