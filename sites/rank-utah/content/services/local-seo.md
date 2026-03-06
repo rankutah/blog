@@ -57,11 +57,13 @@ params:
 Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO for $199/month per location.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
-{{< button id="ppc-call" url="tel:+13853238130" text="Call (385) 323-8130" >}}
-{{< button id="ppc-text" url="sms:+13853238130?&body=Hi%20Benjamin%2C%20I%E2%80%99m%20interested%20in%20local%20SEO." text="Text Now" >}}
+{{< button url="#learn-more" text="Learn More" >}}
+{{< button url="/contact" text="Contact" >}}
 
 <div class="mt-6"></div>
 {{< /hero >}}
+
+<span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
 ## Local SEO
 

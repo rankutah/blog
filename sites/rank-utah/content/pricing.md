@@ -42,21 +42,20 @@ No contracts. No setup fees. Cancel anytime.
 
 *Fast, professional **websites built to convert** visitors into customers.*
 
-- You own your website from day one
-- Premium hosting + security included
-- Domain + annual renewals included
-- Custom coded to match your brand
-- Mobile-friendly on every screen
-- Fast load times on any device
-- Automatic backups on every change
-- Contact forms + spam protection
-- Site-wide search for easy navigation
-- Foundational technical + on-page SEO
-- Ongoing support (phone, text, email)
-- Monthly report on calls + site activity
+- **Website Ownership**: You own your website from day one.
+- **Managed Hosting + Security**: Reliable hosting and built-in security are included.
+- **Domain Included**: Your domain and annual renewals are covered.
+- **Custom Website Design**: Your site is built to match your brand.
+- **Mobile-Friendly Design**: Your website looks great on every screen.
+- **Fast Load Times**: Built to load quickly across devices.
+- **Automatic Backups**: Every change is backed up automatically.
+- **Contact Forms + Spam Protection**: Make it easy for customers to reach out without the junk.
+- **Foundational SEO**: Technical and on-page SEO built in from the start.
+- **Ongoing Support**: Reach out anytime by phone, text, or email.
+- **Monthly Reporting**: Track calls and website activity each month.
 
 
-{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}} {{< button url="/services/website-design" text="Learn More" >}}
+{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}} {{< button url="/services/website-design/#learn-more" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -70,17 +69,16 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-***Get local visibility**: Google, Apple, Bing, AI search, and "near me" searches.*
+Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
-- Local keyword research (based on your services + the area you serve)
-- Ongoing optimization to align your website + profiles with keyword research and performance trends
-- Google Business Profile optimization (accuracy + categories/services + photos)
-- Apple Maps optimization (accuracy + description + photos)
-- Bing Places optimization (accuracy + description + photos)
-- Ongoing support via phone, text, or email
-- Monthly report on calls, messages, site activity, and updates
+- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
+- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
+- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
+- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
+- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
+- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
-{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}} {{< button url="/services/local-seo" text="Learn More" >}}
+{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}} {{< button url="/services/local-seo/#learn-more" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -94,85 +92,18 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-*For businesses who want to bring in **more leads** and are ready to pay for advertising.*
+For businesses that want more leads and are ready to invest in advertising.
 
+Google Ads management is $299/month for ad spend up to $2,000/month. For ad spend above $2,000/month, management is 15% of ad spend.
 
-The monthly $299 management fee applies to ad spend up to $2,000/month. The fee switches to 15% of ad spend above that.
+- **Keyword Research**: Research focused on the searches most likely to bring in leads.
+- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
+- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
+- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
+- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
+- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
-Must be willing to informally commit to at least **2 months** (this is when we can fairly evaluate performance):
-- **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
-- **Month 2:** Focusing on profitability (the account optimizes based on past successes).
-
-{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}} {{< button url="/services/google-ads" text="Learn More" >}}
-
-{{< /col >}}
-
-{{< /cols >}}
-
----
-
-<div id="business-email" class="scroll-mt-24"></div>
-
-## Managed Business Email
-{.center}
-
-
-
-Pricing is **per user** and includes business email, Google Drive storage, and ongoing management.
-{.center}
-
-{{< cols min="18rem" gap="1rem" v="stretch">}}
-
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-## Starter
-
-{{< badge text="30GB storage" >}}
-
-{{< plan_price price="29" per="user/mo" sr="$29 per user per month" >}}
-
-- Custom email @your-company.com
-- Everything setup & managed for you
-- Google Calendar + video meetings
-- 30GB Google Drive storage
-
-{{< button url="/services/business-email" text="Learn More" >}}
-
-{{< /col >}}
-
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-## Standard
-
-{{< badge text="2TB + Gemini Pro" >}}
-
-{{< plan_price price="39" per="user/mo" sr="$39 per user per month" >}}
-
-- Custom email @your-company.com
-- Everything setup & managed for you
-- Google Calendar + video meetings
-- 2TB Google Drive storage
-- Google Gemini Pro
-
-{{< button url="/services/business-email" text="Learn More" >}}
-
-{{< /col >}}
-
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-## Plus
-
-{{< badge text="5TB + Gemini Pro" >}}
-
-{{< plan_price price="49" per="user/mo" sr="$49 per user per month" >}}
-
-- Custom email @your-company.com
-- Everything setup & managed for you
-- Google Calendar + video meetings
-- 5TB Google Drive storage
-- Google Gemini Pro
-
-{{< button url="/services/business-email" text="Learn More" >}}
+{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}} {{< button url="/services/google-ads/#learn-more" text="Learn More" >}}
 
 {{< /col >}}
 
