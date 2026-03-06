@@ -69,12 +69,12 @@ Google Ads is a good fit if you:
 
 ## Pricing and requirements
 
-1. Must be willing to budget at least **$1,500/month** in ad spend (you pay Google directly) and **$299/month** for the management fee
+1. Ad spend is separate (you pay Google directly) plus **$299/month** for the management fee
 2. Must be willing to informally commit to at least **2 months** (so we have sufficient time to evaluate performance)
 
 {{< button url="/pricing" text="See Pricing" >}}
 
-## Requirement 1: Minimum $1,500/month ad spend + $299/month management fee
+## Requirement 1: Ad spend + $299/month management fee
 
 Google Ads improve as the number of tracked leads increase.
 
@@ -103,21 +103,7 @@ Tracking is what turns Google Ads from “guessing” into something we can meas
 Setup typically includes:
 
 - Tracking the actions that matter (like form submissions and phone calls)
-- Optionally assigning “importance” to different actions (so we can focus on the best leads, not just the most leads)
-
-### Assigning values to conversions
-
-Some leads are worth more than others. When it makes sense, we’ll map that in the tracking.
-
-Examples:
-
-- A phone call from a qualified lead
-- A contact form submission
-- A scheduled booking slot
-
-When helpful, we also track smaller steps (like clicking a call button or starting a form) so we can spot problems early.
-
-For those interested in the technical details. I use the optimize for conversion value bidding strategy to maximizing profitability. This is based in part on the results of studies evaluating profitability across Google Ad strategies for a significant number of accounts. See: https://www.optmyzr.com/blog/impact-of-ppc-bidding-strategies/.
+- Assigning values to those actions (so we can prioritize the best leads)
 
 ## What’s included with Google Ads
 
@@ -125,7 +111,6 @@ For those interested in the technical details. I use the optimize for conversion
 - Campaign setup & launch
 - Ad copy and asset creation
 - Tracking setup
-- Landing page setup and optimization
 - Ongoing improvement
 - Reporting showing profitability
 
