@@ -11,7 +11,7 @@ url: "/"
 Professional coaching and programs for real-world strength and conditioning.
 {.text-white}
 
-{{<button url="/contact" text="Get Started">}}
+{{<button url="/contact" text="Let's Talk">}}
 {{< /hero >}}
 
 
@@ -24,7 +24,7 @@ Professional coaching and programs for real-world strength and conditioning.
 {{< col card="true" bg="neutral-50" darkbg="neutral-900" y="start" >}}
 ### Small Group Training
 Coached small-group classes available Monday through Saturday.
-{{< button url="/contact" text="Get Started" >}}
+{{< button url="/contact" text="Let's Talk" >}}
 {{< /col >}}
 
 {{< col card="true" bg="neutral-50" darkbg="neutral-900" y="start" >}}
@@ -51,6 +51,6 @@ Open gym access available Monday through Sunday.
 ## Ready to Start?
 Book a free consultation—we'll map a plan to your goals.
 
-{{< button url="/contact" text="Contact" >}}
+{{< button url="/contact" text="Let's Talk" >}}
 
 

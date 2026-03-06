@@ -102,8 +102,18 @@
 
 /* Hero images: make the outline variant read like a solid light button (not see-through). */
 .section.hero .cp-brand-btn-outline {
-  background-color: var(--cp-body-bg);
+  /* Slight dark + blur so the photo doesn't clash with the outline CTA */
+  background-color: rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
   border: 0;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.section.hero .cp-brand-btn-outline:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 1px #ffffff;
 }
 
 /* Kandee Myers: hero headline links should match surrounding headline color */
@@ -201,7 +211,8 @@ html[data-motion-skip="true"] [data-motion] {
   background-color: transparent;
   /* Keep the outline in the brand color, but keep text consistent with site text */
   color: #111827;
-  border: 1px solid currentColor;
+  border: 0;
+  box-shadow: inset 0 0 0 1px currentColor;
 }
 .dark .cp-brand-btn-outline,
 [data-theme="dark"] .cp-brand-btn-outline {
@@ -209,11 +220,11 @@ html[data-motion-skip="true"] [data-motion] {
 }
 .cp-brand-btn-outline:hover {
   background-color: var(--cp-card-bg, var(--cp-body-bg));
-  border-color: var(--cp-brand);
+  box-shadow: inset 0 0 0 1px var(--cp-brand);
 }
 .cp-brand-btn-outline:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px var(--cp-brand-ring);
+  box-shadow: inset 0 0 0 1px currentColor, 0 0 0 4px var(--cp-brand-ring);
 }
 
 /* Brand-colored badges (supports Tailwind family or config-driven CSS color) */

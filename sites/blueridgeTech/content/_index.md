@@ -31,7 +31,7 @@ schema:
 # Computer Repair Shop in Buena Vista, VA {.text-white}
 Computer repair services and IT support for individuals and businesses near Buena Vista, Virginia
 {.text-white}
-{{<button url="https://calendly.com/support-blueridgetech" text="Schedule">}}{{<button url="/contact" text="Contact">}}
+{{<button url="https://calendly.com/support-blueridgetech" text="Schedule">}}{{<button url="/contact" text="Let's Talk">}}
 
 {{< /hero >}}
 

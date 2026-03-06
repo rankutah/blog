@@ -54,8 +54,8 @@ Digital marketing services built around lead-generating websites, local SEO, and
 
 
 {.text-white}
-{{< button url="/contact" text="Contact" >}}
-{{< button url="/pricing" variant="outline" text="Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}}
+{{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{< /hero >}}
 
 
@@ -178,7 +178,7 @@ See what customers are saying.
 See affordable, transparent monthly plans.
 
 
-{{<button text="Pricing" url="/pricing">}}
+{{<button text="See Pricing" url="/pricing">}}
 
 {{< /col >}}
 
@@ -200,7 +200,7 @@ Learn more about the story and approach.
 
 Reach out with questions or to start your project.
 
-{{<button text="Contact" url="/contact">}}
+{{<button text="Let's Talk" url="/contact">}}
 
 
 {{< /col >}}
@@ -232,8 +232,8 @@ Web design services are available statewide across Utah, with an office in [Plea
 Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
 {.center}
 
-{{<button text="Contact" url="/contact" >}}
-{{<button text="Pricing" url="/pricing" >}}
+{{<button text="Let's Talk" url="/contact" >}}
+{{<button text="See Pricing" url="/pricing" >}}
 {{<button text="Web Design" url="/services/website-design" >}}
 {{<button text="Local SEO" url="/services/local-seo" >}}
 {.center}

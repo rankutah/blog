@@ -44,8 +44,8 @@ If you want a site that looks professional, loads fast, and helps customers find
 Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 
 <div class="flex flex-wrap gap-3 items-center">
-	{{< button url="/pricing" text="See Pricing" >}}
-	{{< button url="/contact" text="Contact" >}}
+	{{< button url="/contact" text="Let's Talk" >}}
+	{{< button url="/pricing" variant="outline" text="See Pricing" >}}
 </div>
 
 {{< /col >}}

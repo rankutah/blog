@@ -160,12 +160,12 @@ Websites can be built in 2–3 weeks with regular coordination.
 
 ## Ready to grow your visibility?
 
-Pick the service you want to explore next or reach out with questions.
+Reach out with questions or pick the service you want to explore next.
 
-{{< button url="/services/website-design" text="Business Website" >}}
-{{< button url="/services/local-seo" text="Local SEO" >}}
-{{< button url="/services/google-ads" text="Google Ads" >}}
-{{< button url="/contact" text="Contact" >}}
+{{< button url="/contact" text="Let's Talk"  >}}
+{{< button url="/services/website-design" text="Business Website" variant="outline">}}
+{{< button url="/services/local-seo" text="Local SEO" variant="outline">}}
+{{< button url="/services/google-ads" text="Google Ads" variant="outline">}}
 
 
 

@@ -53,7 +53,7 @@ schema:
 For businesses that want more leads and are ready to invest in advertising.
 {.text-white}
 
-{{< button url="/contact" text="Contact" >}} {{< button url="/pricing" variant="outline" text="Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{< /hero >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
@@ -116,5 +116,5 @@ Setup typically includes:
 
 ## Ready to talk about Google Ads?
 
-{{< button url="/contact" text="Contact" >}}
-{{< button url="/pricing" text="See Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}}
+{{< button url="/pricing" variant="outline" text="See Pricing" >}}

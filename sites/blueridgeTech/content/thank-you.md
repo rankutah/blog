@@ -11,5 +11,5 @@ Your message was sent. We’ll reach out soon.
 {.center}
 
 <div class="text-center">
-	{{<button url="/" text="Back to Home" >}} {{<button url="/contact" text="Contact" >}}
+	{{<button url="/" text="Back to Home" >}} {{<button url="/contact" text="Let's Talk" >}}
 </div>

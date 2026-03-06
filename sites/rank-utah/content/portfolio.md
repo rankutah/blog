@@ -114,4 +114,5 @@ url: "/portfolio"
 
 Get a fast, effective website that helps your business grow.
 
-{{< button url="/services/website-design" text="Business Website" >}} {{< button url="/contact" text="Contact" >}}
+{{< button url="/contact" text="Let's Talk" >}} {{< button url="/services/website-design" variant="outline" text="Business Website" >}}
+

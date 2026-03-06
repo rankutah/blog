@@ -11,5 +11,5 @@ We’re grateful for every review. Here are a few highlights from recent trainin
 {{< elfsight-widget id="e5e1836b-e649-43fe-bd19-5d7792c2c087" >}}
 
 <div class="text-center mt-8">
-  {{< button url="/contact" text="Get Started" >}}
+  {{< button url="/contact" text="Let's Talk" >}}
 </div>

@@ -47,7 +47,7 @@ schema:
 Google Workspace managed for you: custom email, Calendar, video meetings, and Drive storage—without the IT headache.
 {.text-white}
 
-{{< button url="/contact" text="Contact" >}} {{< button url="/pricing" variant="outline" text="Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{< /hero >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
@@ -87,7 +87,7 @@ If you’re switching from another provider, I can also help plan (and usually p
 Business Email is priced per user.
 
 {{< button url="/pricing#business-email" text="See Business Email Pricing" >}}
-{{< button url="/contact" text="Contact" >}}
+{{< button url="/contact" text="Let's Talk" >}}
 
 ## Common questions
 
@@ -109,5 +109,5 @@ You can reach me by text, call, or email. Most Workspace issues can be fixed qui
 
 ## Ready to set up business email?
 
-{{< button url="/contact" text="Contact" >}}
-{{< button url="/pricing" text="See Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}}
+{{< button url="/pricing" variant="outline" text="See Pricing" >}}

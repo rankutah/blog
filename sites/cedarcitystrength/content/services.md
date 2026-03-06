@@ -13,7 +13,7 @@ summary: "Programs and coaching"
 ### Small Group Training
 Coached small-group classes available Monday through Saturday.
 
-{{< button url="/contact" text="Start Training" >}} {{< button url="/schedule" text="Schedule" >}} {{< button url="/pricing" text="Pricing" >}}
+{{< button url="/contact" text="Start Training" >}} {{< button url="/schedule" text="Schedule" >}} {{< button url="/pricing" text="See Pricing" >}}
 
 {{< /col >}}
 
@@ -24,7 +24,7 @@ Coached small-group classes available Monday through Saturday.
 ### Open Gym Membership
 Open gym access available Monday through Sunday.
 
-{{< button url="/contact" text="Join Open Gym" >}} {{< button url="/schedule" text="Schedule" >}} {{< button url="/pricing" text="Pricing" >}}
+{{< button url="/contact" text="Join Open Gym" >}} {{< button url="/schedule" text="Schedule" >}} {{< button url="/pricing" text="See Pricing" >}}
 {{< /col >}}
 
 {{< /cols >}}

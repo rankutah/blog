@@ -11,7 +11,7 @@ url: "/"
 ### Quartz • Granite • Quartzite • Marble
 Fabricated in our state of the art shop in Grand Junction, CO. Serving Western Colorado and Eastern Utah.
 
-{{<button url="/contact" text="Contact">}}
+{{<button url="/contact" text="Let's Talk">}}
 
 
 {{< /hero >}}

@@ -33,8 +33,8 @@ Clear Presence helps local businesses feel proud of their online presence with d
 Take a quick look at pricing, then reach out for a friendly, no‑pressure chat.
 
 <div class="flex flex-wrap gap-3 items-center">
-	{{< button url="/pricing" text="Pricing" >}}
-	{{< button url="/contact" text="Contact" >}}
+	{{< button url="/contact" text="Let's Talk" >}}
+	{{< button url="/pricing" variant="outline" text="See Pricing" >}}
 </div>
 
 {{< /col >}}

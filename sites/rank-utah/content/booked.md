@@ -13,5 +13,5 @@ Your appointment is booked. I look forward to talking with you!
 {.center}
 
 <div class="text-center">
-	{{<button url="/" text="Back to Home" >}} {{<button url="/contact" text="Contact" >}}
+	{{<button url="/contact" text="Let's Talk" >}} {{<button url="/" variant="outline" text="Back to Home" >}}
 </div>

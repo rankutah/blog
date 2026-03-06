@@ -52,7 +52,7 @@ schema:
 # Custom Website Design to Grow Your Local Business {.text-white}
 Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites for $149/month.
 {.text-white}
-{{< button url="/contact" text="Contact" >}} {{< button url="/pricing" variant="outline" text="Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 {{< /hero >}}
 
@@ -145,8 +145,8 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 
 ## Ready to talk about a business website?
 
-{{< button url="/contact" text="Contact" >}}
-{{< button url="/pricing" text="See Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}}
+{{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 ## FAQ
 

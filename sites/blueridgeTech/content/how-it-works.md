@@ -18,6 +18,6 @@ This process helps ensure each device receives proper attention and an accurate 
   <p class="mb-4">Have questions or ready to schedule?</p>
   <div class="flex flex-wrap items-center justify-center gap-3">
     {{< button url="https://calendly.com/support-blueridgetech" text="Schedule" >}}
-    {{< button url="/contact" text="Contact" >}}
+    {{< button url="/contact" text="Let's Talk" >}}
   </div>
 </div>

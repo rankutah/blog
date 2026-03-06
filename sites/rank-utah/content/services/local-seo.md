@@ -57,8 +57,8 @@ params:
 Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO for $199/month per location.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
-{{< button url="/contact" text="Contact" >}}
-{{< button url="/pricing" variant="outline" text="Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}}
+{{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 <div class="mt-6"></div>
 {{< /hero >}}
@@ -130,5 +130,5 @@ Local SEO is a long‑term foundation. Instead of quick hacks, the goal is stead
 
 ## Ready to talk about local seo?
 
-{{< button url="/contact" text="Contact" >}}
-{{< button url="/pricing" text="See Pricing" >}}
+{{< button url="/contact" text="Let's Talk" >}}
+{{< button url="/pricing" variant="outline" text="See Pricing" >}}

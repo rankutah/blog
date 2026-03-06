@@ -113,7 +113,7 @@ schema:
 Boost your online presence with the help of a digital marketing expert
 
 
-{{< button url="#main-content" text="How it Works" >}} {{< button url="/pricing" text="Pricing" >}}
+{{< button url="#main-content" text="How it Works" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 
 <div class="mt-6"></div>
@@ -385,7 +385,7 @@ What a redesign includes:
 ## Let’s Grow Your Online Presence
 
 {{<button id="cta-call" url="tel:+13853238130" text="Call (385) 323-8130">}}
-{{< button url="/pricing" text="See Pricing" >}}
+{{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 ## Featured Websites
 {.center}
