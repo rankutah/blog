@@ -36,13 +36,13 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< badge text="I need a website" >}}
 
-{{< plan_price price="149" per="mo" sr="$149 per month" >}}
+{{< plan_price price="99" per="mo" sr="$99 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
 *Fast, professional **websites built to convert** visitors into customers.*
 
-- You own your website from day 1
+- You own your website from day one
 - Premium hosting + security included
 - Domain + annual renewals included
 - Custom design for your brand
@@ -65,7 +65,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< badge text="I need local visibility" >}}
 
-{{< plan_price price="199" per="mo per location" sr="$199 per month per location" >}}
+{{< plan_price price="99" per="mo per location" sr="$99 per month per location" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -89,7 +89,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< badge text="I need more leads" >}}
 
-{{< plan_price price="299" per="mo" sr="$299 per month" >}}
+{{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -130,7 +130,7 @@ Pricing is **per user** and includes business email, Google Drive storage, and o
 
 {{< badge text="30GB storage" >}}
 
-{{< plan_price price="39" per="user/mo" sr="$39 per user per month" >}}
+{{< plan_price price="29" per="user/mo" sr="$29 per user per month" >}}
 
 - Custom email @your-company.com
 - Everything setup & managed for you
@@ -147,7 +147,7 @@ Pricing is **per user** and includes business email, Google Drive storage, and o
 
 {{< badge text="2TB + Gemini Pro" >}}
 
-{{< plan_price price="49" per="user/mo" sr="$49 per user per month" >}}
+{{< plan_price price="39" per="user/mo" sr="$39 per user per month" >}}
 
 - Custom email @your-company.com
 - Everything setup & managed for you
@@ -165,7 +165,7 @@ Pricing is **per user** and includes business email, Google Drive storage, and o
 
 {{< badge text="5TB + Gemini Pro" >}}
 
-{{< plan_price price="59" per="user/mo" sr="$59 per user per month" >}}
+{{< plan_price price="49" per="user/mo" sr="$49 per user per month" >}}
 
 - Custom email @your-company.com
 - Everything setup & managed for you
