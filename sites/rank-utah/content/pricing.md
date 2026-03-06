@@ -69,7 +69,7 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
+***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
 
 - **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
 - **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
@@ -92,7 +92,7 @@ Get found where local customers search: Google, Apple, Bing, AI search, and “n
 
 No contracts. No setup fees. Cancel anytime.
 
-For businesses that want more leads and are ready to invest in advertising.
+*For businesses that want **more leads** and are **ready to invest** in advertising.*
 
 Google Ads management is $299/month for ad spend up to $2,000/month. For ad spend above $2,000/month, management is 15% of ad spend.
 
