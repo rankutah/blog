@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< hero img="/media/granite-quartz-countertop-kitchen.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/granite-quartz-countertop-kitchen.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 92vh" yBottom="md" align="center" spacer="false" >}}
 # Beautiful Countertops, Expertly Installed
 {.text-white}
 ### Quartz • Granite • Quartzite • Marble

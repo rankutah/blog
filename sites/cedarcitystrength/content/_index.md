@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/"
 ---
 
-{{< hero img="/media/CCFittest4-23.jpg" alt="Outdoor gym workout in Cedar City" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh;object-position:center;object-fit:cover" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/CCFittest4-23.jpg" alt="Outdoor gym workout in Cedar City" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 92vh;object-position:center;object-fit:cover" yBottom="md" align="center" spacer="false" >}}
 # Get Stronger. Move Better. Feel Unstoppable.
 {.text-white}
 Professional coaching and programs for real-world strength and conditioning.

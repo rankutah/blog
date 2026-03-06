@@ -52,8 +52,8 @@
 {{- $imgClassesNoFit = delimit $imgFiltered " " -}}
 {{- $imgStyle    := $p.imgStyle   | default "" -}}
 {{- $vhMode      := lower ($p.vh | default "") -}}
-{{- $vhHeightRaw := printf "%v" ($p.vhHeight | default "100") -}}
-{{- $vhHeight    := cond (gt (len (findRE `^[0-9]+(?:\.[0-9]+)?$` $vhHeightRaw)) 0) $vhHeightRaw "100" -}}
+{{- $vhHeightRaw := printf "%v" ($p.vhHeight | default "92") -}}
+{{- $vhHeight    := cond (gt (len (findRE `^[0-9]+(?:\.[0-9]+)?$` $vhHeightRaw)) 0) $vhHeightRaw "92" -}}
 {{- $brighten    := lower ($p.brighten | default "") -}}
 
 {{- /* Optional explicit dimensions (reduces layout work; helps LCP stability) */ -}}
@@ -110,7 +110,7 @@
   {{- $imgStyle = printf "%s; %s" $imgStyle $svhStyle -}}
 {{- end -}}
 {{- $vhDisabled := or (eq $vhMode "none") (or (eq $vhMode "off") (eq $vhMode "auto")) -}}
-{{- if and (eq $vhMode "") (ne $img "") (ne $fit "contain") -}}
+{{- if and (eq $vhMode "") (ne $img "") (ne $fit "contain") (not $hasVhInStyle) -}}
   {{- $vhMode = "svh" -}}
 {{- end -}}
 {{- if and (ne $vhMode "") (not $vhDisabled) (ne $img "") -}}

@@ -57,8 +57,8 @@ params:
 Get in front of your ideal customers and grow your business. Skip the expensive agency. High-performance local SEO for $199/month per location.
 <span id="dynamic-city" class="block mt-2 hidden leading-tight text-xl sm:text-3xl not-prose text-white" style="font-family: var(--font-body)" aria-live="polite"></span>
 
-{{< button url="#learn-more" text="Learn More" >}}
 {{< button url="/contact" text="Contact" >}}
+{{< button url="/pricing" variant="outline" text="Pricing" >}}
 
 <div class="mt-6"></div>
 {{< /hero >}}

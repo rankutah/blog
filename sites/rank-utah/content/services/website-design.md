@@ -52,7 +52,7 @@ schema:
 # Custom Website Design to Grow Your Local Business {.text-white}
 Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites for $149/month.
 {.text-white}
-{{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
+{{< button url="/contact" text="Contact" >}} {{< button url="/pricing" variant="outline" text="Pricing" >}}
 
 {{< /hero >}}
 

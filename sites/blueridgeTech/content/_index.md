@@ -27,7 +27,7 @@ schema:
     areaServed: "Buena Vista, VA; Lexington, VA; Glasgow, VA; Natural Bridge, VA"
 ---
 
-{{< hero img="/media/computer-repair-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/computer-repair-hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 92vh" yBottom="md" align="center" spacer="false" >}}
 # Computer Repair Shop in Buena Vista, VA {.text-white}
 Computer repair services and IT support for individuals and businesses near Buena Vista, Virginia
 {.text-white}
@@ -39,7 +39,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
   <div class="flex items-start gap-3">
@@ -53,7 +53,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
   <div class="flex items-start gap-3">
@@ -95,7 +95,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
   <div class="flex items-start gap-3">
@@ -109,7 +109,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
   <div class="flex items-start gap-3">
@@ -123,7 +123,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
   <div class="flex items-start gap-3">
@@ -137,7 +137,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true"  y="start" >}}
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
   <div class="flex items-start gap-3">
@@ -151,7 +151,7 @@ Computer repair services and IT support for individuals and businesses near Buen
 
 {{< /col >}}
 
-{{< col card="true" bg="gray-100" darkbg="gray-800" y="start" >}}
+{{< col card="true" y="start" >}}
 
 <a href="https://calendly.com/support-blueridgetech" class="block h-full no-underline hover:no-underline">
   <div class="flex items-start gap-3">

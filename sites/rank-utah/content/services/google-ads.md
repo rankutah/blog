@@ -53,7 +53,7 @@ schema:
 For businesses that want more leads and are ready to invest in advertising.
 {.text-white}
 
-{{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
+{{< button url="/contact" text="Contact" >}} {{< button url="/pricing" variant="outline" text="Pricing" >}}
 {{< /hero >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>

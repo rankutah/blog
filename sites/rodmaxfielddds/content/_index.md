@@ -4,7 +4,7 @@ url: "/"
 description: "Family dentist in Pleasant Grove, UT offering comprehensive preventive, restorative, and implant dentistry with compassionate care."
 ---
 
-{{< hero img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 100vh" yBottom="md" align="center" spacer="false" >}}
+{{< hero img="/media/hero.jpg" bleed="true" overlay="true" overlayShade="bg-black/40" imgStyle="height: 92vh" yBottom="md" align="center" spacer="false" >}}
 # Dentistry Making a Difference {.text-white}
 Compassionate care, modern technology, and personalized treatment options.
 {.text-white}

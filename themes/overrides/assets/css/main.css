@@ -94,10 +94,16 @@
   --tw-prose-headings: #ffffff;
   --tw-prose-links: #ffffff;
 }
-.section.hero .prose a { color: inherit; }
+.section.hero .prose a:not(.ui-btn) { color: inherit; }
 .section.hero .prose a.cp-hero-link,
 .section.hero .prose a.cp-hero-link:hover {
   text-decoration: none;
+}
+
+/* Hero images: make the outline variant read like a solid light button (not see-through). */
+.section.hero .cp-brand-btn-outline {
+  background-color: var(--cp-body-bg);
+  border: 0;
 }
 
 /* Kandee Myers: hero headline links should match surrounding headline color */
@@ -187,6 +193,25 @@ html[data-motion-skip="true"] [data-motion] {
   background-color: var(--cp-brand-hover);
 }
 .cp-brand-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--cp-brand-ring);
+}
+
+.cp-brand-btn-outline {
+  background-color: transparent;
+  /* Keep the outline in the brand color, but keep text consistent with site text */
+  color: #111827;
+  border: 1px solid currentColor;
+}
+.dark .cp-brand-btn-outline,
+[data-theme="dark"] .cp-brand-btn-outline {
+  color: #ffffff;
+}
+.cp-brand-btn-outline:hover {
+  background-color: var(--cp-card-bg, var(--cp-body-bg));
+  border-color: var(--cp-brand);
+}
+.cp-brand-btn-outline:focus-visible {
   outline: none;
   box-shadow: 0 0 0 4px var(--cp-brand-ring);
 }

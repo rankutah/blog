@@ -54,7 +54,8 @@ Digital marketing services built around lead-generating websites, local SEO, and
 
 
 {.text-white}
-{{<button url="#learn-more" text="Learn More">}}{{<button url="/pricing" text="Pricing">}}
+{{< button url="/contact" text="Contact" >}}
+{{< button url="/pricing" variant="outline" text="Pricing" >}}
 {{< /hero >}}
 
 

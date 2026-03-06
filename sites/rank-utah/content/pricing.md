@@ -55,7 +55,7 @@ No contracts. No setup fees. Cancel anytime.
 - **Monthly Reporting**: Track calls and website activity each month.
 
 
-{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}} {{< button url="/services/website-design/#learn-more" text="Learn More" >}}
+{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}} {{< button url="/services/website-design/#learn-more" variant="outline" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -78,7 +78,7 @@ No contracts. No setup fees. Cancel anytime.
 - **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
 - **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
-{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}} {{< button url="/services/local-seo/#learn-more" text="Learn More" >}}
+{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}} {{< button url="/services/local-seo/#learn-more" variant="outline"  text="Learn More" >}}
 
 {{< /col >}}
 
@@ -103,7 +103,7 @@ Google Ads management is $299/month for ad spend up to $2,000/month. For ad spen
 - **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
 - **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
-{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}} {{< button url="/services/google-ads/#learn-more" text="Learn More" >}}
+{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}} {{< button url="/services/google-ads/#learn-more" variant="outline" text="Learn More" >}}
 
 {{< /col >}}
 

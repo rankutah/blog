@@ -4,6 +4,7 @@
        url="/contact/"             → anchor button (default)
        form="contact1" submit="true" → submit button bound to form id
        classes="…"                → extra utility classes
+       variant="solid|outline"    → default: solid
        icon="arrow-right"         → name of SVG in assets/icons/*.svg
        iconPos="left|right"       → default: left
        iconClass="w-4 h-4"        → override size/styling of icon wrapper
@@ -16,6 +17,7 @@
 {{- $url  := (.Get "url") | default "#" | safeURL -}}
 {{- $text := .Get "text" | default "Button" -}}
 {{- $id   := .Get "id" | default "" -}}
+{{- $variant := lower (.Get "variant" | default "solid") -}}
 
 {{- /* optional submit mode for external forms */ -}}
 {{- $form   := .Get "form"   | default "" -}}
@@ -58,10 +60,14 @@
   "stone"    "text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-stone-600 dark:hover:bg-stone-700 focus:outline-none dark:focus:ring-stone-800"
 -}}
 
-{{- $fallback := cond $isCSS
+{{- $fallbackSolid := cond $isCSS
   "cp-brand-btn focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
   (index $solid $siteColor | default (index $solid "blue"))
 -}}
+
+{{- $fallbackOutline := "cp-brand-btn-outline focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2" -}}
+
+{{- $fallback := cond (eq $variant "outline") $fallbackOutline $fallbackSolid -}}
 {{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}
 {{- $classes = printf "%s inline-flex items-center" $classes -}} {{/* align icon + text */}}
 

@@ -107,13 +107,13 @@
   {{- $vhMode = "svh" -}}
 {{- end -}}
 {{- if and (ne $vhMode "") (ne $img "") -}}
-  {{- /* Allow users to request viewport units without JS: we’ll prefer 100svh with 100vh fallback. */ -}}
+  {{- /* Allow users to request viewport units without JS: we’ll prefer 92svh with 92vh fallback. */ -}}
   {{- if eq $vhMode "svh" -}}
-    {{- $imgStyle = printf "height: 100vh; height: 100svh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+    {{- $imgStyle = printf "height: 92vh; height: 92svh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- else if eq $vhMode "dvh" -}}
-    {{- $imgStyle = printf "height: 100vh; height: 100dvh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+    {{- $imgStyle = printf "height: 92vh; height: 92dvh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- else if eq $vhMode "vh" -}}
-    {{- $imgStyle = printf "height: 100vh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
+    {{- $imgStyle = printf "height: 92vh;%s" (cond (ne $imgStyle "") (printf " %s" $imgStyle) "") -}}
   {{- end -}}
 {{- end -}}
 

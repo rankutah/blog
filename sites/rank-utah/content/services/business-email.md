@@ -47,7 +47,7 @@ schema:
 Google Workspace managed for you: custom email, Calendar, video meetings, and Drive storage—without the IT headache.
 {.text-white}
 
-{{< button url="#learn-more" text="Learn More" >}} {{< button url="/contact" text="Contact" >}}
+{{< button url="/contact" text="Contact" >}} {{< button url="/pricing" variant="outline" text="Pricing" >}}
 {{< /hero >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
