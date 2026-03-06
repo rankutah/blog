@@ -144,7 +144,7 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 5. Grow — updates, new pages, and simple reports
 
 
-## Ready to get started?
+## Ready to talk about a business website?
 
 {{< button url="/contact" text="Contact" >}}
 {{< button url="/pricing" text="See Pricing" >}}

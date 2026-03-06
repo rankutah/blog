@@ -56,7 +56,8 @@ No contracts. No setup fees. Cancel anytime.
 - Monthly report on calls + site activity
 
 
-{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}}
+{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}} {{< button url="/services/website-design" text="Learn More" >}}
+
 {{< /col >}}
 
 {{< col card="true"  y="start" >}}
@@ -79,7 +80,7 @@ No contracts. No setup fees. Cancel anytime.
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, site activity, and updates
 
-{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}}
+{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}} {{< button url="/services/local-seo" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -102,7 +103,7 @@ Must be willing to informally commit to at least **2 months** (this is when we c
 - **Month 1:** Figuring out what works (the account learns and we identify what produces real leads).
 - **Month 2:** Focusing on profitability (the account optimizes based on past successes).
 
-{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}}
+{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}} {{< button url="/services/google-ads" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -231,7 +232,7 @@ Websites can be built in 2–3 weeks with regular coordination.
 Pick the service you want to explore next or reach out with questions.
 
 {{< button url="/services/website-design" text="Business Website" >}}
-{{< button url="/services/seo-services" text="Local SEO" >}}
+{{< button url="/services/local-seo" text="Local SEO" >}}
 {{< button url="/services/google-ads" text="Google Ads" >}}
 {{< button url="/contact" text="Contact" >}}
 

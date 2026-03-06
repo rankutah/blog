@@ -340,7 +340,7 @@ Get local visibility: Google, Apple, Bing, AI search, and "near me" searches.
 - Ongoing support via phone, text, or email
 - Monthly report on calls, messages, site activity, and updates
 
-{{< button url="/services/seo-services" text="Learn About Local SEO" >}}
+{{< button url="/services/local-seo" text="Learn About Local SEO" >}}
 
 
 {{< /col >}}

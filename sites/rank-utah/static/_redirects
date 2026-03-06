@@ -43,13 +43,13 @@
 /blog/*                                          / 301
 
 # Services rename
-/services/local-marketing              /services/seo-services 301
-/services/local-marketing/             /services/seo-services 301
-/local-marketing                       /services/seo-services 301
-/local-marketing/                      /services/seo-services 301
+/services/seo-services                 /services/local-seo 301
+/services/seo-services/                /services/local-seo 301
 
-/services/local-seo                    /services/seo-services 301
-/services/local-seo/                   /services/seo-services 301
+/services/local-marketing              /services/local-seo 301
+/services/local-marketing/             /services/local-seo 301
+/local-marketing                       /services/local-seo 301
+/local-marketing/                      /services/local-seo 301
 
-/local-seo                             /services/seo-services 301
-/local-seo/                            /services/seo-services 301
+/local-seo                             /services/local-seo 301
+/local-seo/                            /services/local-seo 301

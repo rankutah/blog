@@ -2,8 +2,10 @@
 title: "Utah Local SEO to Grow Your Local Business"
 description: "Local SEO for local businesses: keyword review/content updates (based on performance), Google Business Profile management, Apple Maps/Bing, directory listings, and clear monthly reporting."
 layout: "flowbite"
-url: "/services/seo-services"
+url: "/services/local-seo"
 hero: true
+aliases:
+  - "/services/seo-services"
 schema:
   service:
     enabled: true
@@ -116,34 +118,16 @@ Local SEO is a long‑term foundation. Instead of quick hacks, the goal is stead
 
 1. Kickoff — a few quick questions about your business, service area, and goals
 2. Baseline — review where you show up today (Search, Maps, profiles, and key listings)
-3. Focus — choose the main searches to target (services + cities) and align your content
-4. Profiles — ongoing optimization for Google Business Profile, Apple Maps, and Bing Places
-5. Monthly report — a simple summary of calls, clicks, visibility, and what's working
+3. Keyword review — identify the terms your ideal customers use (and prioritize by impact)
+4. Content updates — improve key pages so they match what customers are searching for
+5. Profile optimization — Google Business Profile + Apple Maps + Bing Places
+6. Consistency — improve business info consistency across relevant directories
+7. Reporting — clear monthly report and action plan
 
-## FAQ
-{{< faqs openFirst="false" >}}
-
-### What is local SEO?
-Local SEO (local search engine optimization) helps your business show up in Google Search and Maps.
-
-Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
-
-Unlike social media posts and ads, local SEO doesn't stop working when you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
-
-Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
-
-### What do you do each month for local SEO?
-
-Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, and Bing Places. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
-
-### Do I need a long‑term contract?
-No. Plans are month‑to‑month.
-
-### How much does it cost?
-See the pricing details on the [Pricing](/pricing) page.
-{{< /faqs >}}
-
-{{< button url="/pricing" text="Pricing" >}}
-{{< button url="/contact" text="Contact" >}}
 {{< /col >}}
 {{< /cols >}}
+
+## Ready to talk about local seo?
+
+{{< button url="/contact" text="Contact" >}}
+{{< button url="/pricing" text="See Pricing" >}}
