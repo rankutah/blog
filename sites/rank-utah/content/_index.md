@@ -44,7 +44,7 @@ schema:
       - "Washington County, UT"
       - "Wayne County, UT"
       - "Weber County, UT"
-    priceRange: "$149–$299/mo"
+    priceRange: "$199–$499/mo"
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}

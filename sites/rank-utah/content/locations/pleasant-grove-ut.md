@@ -57,7 +57,7 @@ schema:
     geo:
       latitude: "40.35949"
       longitude: "-111.77212"
-    priceRange: "$149–$299/mo"
+    priceRange: "$199–$499/mo"
   service:
     enabled: true
     serviceType: "Digital Marketing Services: Web Design, Local SEO, Google Ads Management"
@@ -95,14 +95,26 @@ schema:
     offers:
       - "@type": Offer
         name: "Web Design"
-        price: "149.00"
-        priceCurrency: "USD"
-      - "@type": Offer
-        name: "Local SEO"
         price: "199.00"
         priceCurrency: "USD"
       - "@type": Offer
-        name: "Google Ads"
+        name: "Web Design + Local SEO"
+        price: "299.00"
+        priceCurrency: "USD"
+      - "@type": Offer
+        name: "Web Design + Local SEO + Google Ads"
+        price: "499.00"
+        priceCurrency: "USD"
+      - "@type": Offer
+        name: "Local SEO (without website)"
+        price: "199.00"
+        priceCurrency: "USD"
+      - "@type": Offer
+        name: "Local SEO + Google Ads (without website)"
+        price: "399.00"
+        priceCurrency: "USD"
+      - "@type": Offer
+        name: "Google Ads (management fee)"
         price: "299.00"
         priceCurrency: "USD"
 ---

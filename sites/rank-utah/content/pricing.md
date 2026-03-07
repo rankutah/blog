@@ -32,11 +32,11 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< col card="true" y="start" >}}
 
-<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Web Design<br></h2>
+<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Starter</h2>
 
-{{< badge text="I need a website" >}}
+{{< badge text="Business Website" >}}
 
-{{< plan_price price="149" per="mo" sr="$149 per month" >}}
+{{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
@@ -55,19 +55,24 @@ No contracts. No setup fees. Cancel anytime.
 - **Monthly Reporting**: Track calls and website activity each month.
 
 
-{{< button id="checkout-business-website" url="https://buy.stripe.com/7sY3cp0pfakfbxB7K71sQ00" text="Get Started" >}} {{< button url="/services/website-design/#learn-more" variant="outline" text="Learn More" >}}
+{{< button id="checkout-business-website" url="/contact" text="Let's Talk" >}} {{< button url="/services/website-design/#learn-more" variant="outline" text="Learn More" >}}
 
 {{< /col >}}
 
 {{< col card="true"  y="start" >}}
 
-<h2 id="local-seo" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Local SEO</h2>
+<h2 id="local-seo" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Growth</h2>
 
-{{< badge text="I need local visibility" >}}
+{{< badge text="Business Website + Local SEO" >}}
 
-{{< plan_price price="199" per="mo per location" sr="$199 per month per location" >}}
+{{< plan_price price="299" per="mo" old="$399" savings="Save $100/mo" sr="$299 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
+
+*Best for businesses that want to show up in Maps and local search.*
+
+- **Local SEO without a website**: $199/mo
+- **Additional locations** (Local SEO with or without a website): +$99/mo per additional location
 
 ***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
 
@@ -78,23 +83,28 @@ No contracts. No setup fees. Cancel anytime.
 - **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
 - **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
-{{< button id="checkout-local-seo" url="https://buy.stripe.com/6oUeV7b3T3VR8lp4xV1sQ01" text="Get Started" >}} {{< button url="/services/local-seo/#learn-more" variant="outline"  text="Learn More" >}}
+{{< button id="checkout-local-seo" url="/contact" text="Let's Talk" >}} {{< button url="/services/local-seo/#learn-more" variant="outline"  text="Learn More" >}}
 
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
 
-<h2 id="google-ads" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Google Ads</h2>
+<h2 id="google-ads" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Scale</h2>
 
-{{< badge text="I need more leads" >}}
+{{< badge text="Business Website + Local SEO + Google Ads" >}}
 
-{{< plan_price price="299" per="mo management fee" sr="$299 per month" >}}
+{{< plan_price price="499" per="mo" old="$699" savings="Save $200/mo" sr="$499 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
+*Best for businesses that want to invest to generate leads faster.*
+
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
 
-Google Ads management is $299/month for ad spend up to $2,000/month. For ad spend above $2,000/month, management is 15% of ad spend.
+Google Ads management is included (ad spend is separate; you pay Google directly).
+
+- **Local SEO + Google Ads (without a website)**: $399/mo
+- **Google Ads alone**: $299/mo management fee (ad spend is separate)
 
 - **Keyword Research**: Research focused on the searches most likely to bring in leads.
 - **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
@@ -103,7 +113,7 @@ Google Ads management is $299/month for ad spend up to $2,000/month. For ad spen
 - **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
 - **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
-{{< button id="checkout-google-ads" url="https://buy.stripe.com/5kQ14h8VLgID9pt1lJ1sQ09" text="Get Started" >}} {{< button url="/services/google-ads/#learn-more" variant="outline" text="Learn More" >}}
+{{< button id="checkout-google-ads" url="/contact" text="Let's Talk" >}} {{< button url="/services/google-ads/#learn-more" variant="outline" text="Learn More" >}}
 
 {{< /col >}}
 
