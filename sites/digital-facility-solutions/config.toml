@@ -91,7 +91,7 @@ disableKinds  = ["taxonomy", "term"]
 [params.header]
   stickyMobile      = true
   stickyDesktop     = true
-  theme             = "glass"
+  theme             = "blend"
 
   subtitle          = "Old Buildings. New Intelligence."
 

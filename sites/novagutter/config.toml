@@ -115,7 +115,7 @@ enableRobotsTXT = true
   CTAURL           = "tel:+19543808242"
   showPhoneOnMobile = false
   phoneNumber       = "954-380-8242"
-  theme             = "glass"
+  theme             = "blend"
 
 [params.forms]
   action         = "https://submit-form.com/1asOxsclY"
