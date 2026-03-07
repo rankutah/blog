@@ -336,6 +336,18 @@ nav .brand-link {
   line-height: 1.25;
 }
 
+/* Mobile off-canvas drawer should never look transparent.
+   Use :where() to keep specificity at 0 so normal Tailwind bg-* utilities still win.
+*/
+:where(#navbar-drawer) {
+  background-color: var(--cp-card-bg);
+}
+
+/* If something accidentally applies bg-transparent to the drawer, override it. */
+:where(#navbar-drawer).bg-transparent {
+  background-color: var(--cp-card-bg);
+}
+
 /* Ensure navbar hover brand class wins over inherited colors */
 nav .cp-brand-hover:hover {
   color: var(--cp-brand);

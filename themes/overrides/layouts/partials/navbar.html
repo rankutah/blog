@@ -52,7 +52,7 @@
 */}}
 {{ $navBlend  := printf "%s %s border-b border-gray-200/70 dark:border-white/10 md:border-b-0" $navBg $navText }}
 {{ $navInvert := "bg-white/95 dark:bg-gray-900/90 text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-700 md:border-b-0" }}
-{{ $navGlass  := "bg-white/98 dark:bg-gray-900/95 backdrop-blur-sm supports-[backdrop-filter]:bg-white/96 supports-[backdrop-filter]:dark:bg-gray-900/93 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100 md:border-b-0" }}
+{{ $navGlass  := "bg-white/95 dark:bg-gray-900/90 backdrop-blur-sm supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:dark:bg-gray-900/85 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100 md:border-b-0" }}
 
 {{ $navClasses := cond (eq $headerTheme "invert") $navInvert (cond (eq $headerTheme "glass") $navGlass $navBlend) }}
 
@@ -144,7 +144,7 @@
 
 {{/* Dropdown background */}}
 {{ $dropBgSolid := index $pal "cardBg" }}
-{{ $dropBgGlass := "bg-white/99 dark:bg-gray-900/97 supports-[backdrop-filter]:bg-white/97 supports-[backdrop-filter]:dark:bg-gray-900/95 border border-black/10 dark:border-white/10" }}
+{{ $dropBgGlass := "bg-white/95 dark:bg-gray-900/90 supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:dark:bg-gray-900/85 border border-black/10 dark:border-white/10" }}
 {{ $dropBg := cond (eq $headerTheme "glass") $dropBgGlass $dropBgSolid }}
 
 {{/* Detect hero/landing/home to allow a seamless, flush hero */}}
@@ -361,9 +361,10 @@
 
     <!-- Mobile off-canvas drawer -->
     <div id="navbar-drawer"
+      style="background-color: var(--cp-card-bg);"
       class="fixed inset-y-0 right-0 z-50 w-72 max-w-[85vw] xl:hidden
            translate-x-full transition-transform duration-200 ease-out pointer-events-none
-               {{ if eq $headerTheme "glass" }}bg-white/99 dark:bg-gray-900/97 backdrop-blur-sm supports-[backdrop-filter]:bg-white/97 supports-[backdrop-filter]:dark:bg-gray-900/95
+               {{ if eq $headerTheme "glass" }}bg-white dark:bg-gray-900
                {{ else if eq $headerTheme "invert" }}bg-white/95 dark:bg-gray-900/90
                {{ else }}{{ $navBg }}
                {{ end }} shadow-lg border-l border-black/10 dark:border-white/10"
