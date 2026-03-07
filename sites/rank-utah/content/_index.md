@@ -1,5 +1,5 @@
 ---
-title: "Utah's #1 Affordable Digital Marketing Agency — Business Websites, Local SEO, & Google Ads"
+title: "Utah's #1 Affordable Digital Marketing Agency — Web Design, Local SEO, & Google Ads"
 description: "Digital marketing services for local businesses: business websites (web design), local SEO (search engine optimization), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:
@@ -48,7 +48,7 @@ schema:
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Business Websites, Local SEO, & Google Ads for Utah Businesses {.text-white}
+# Web Design, Local SEO, & Google Ads for Utah Businesses {.text-white}
 Digital marketing services built around lead-generating websites, local SEO, and Google Ads management. Plans starting at $149/month.
 
 
@@ -121,11 +121,11 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 
 {{< col card="true" y="start" >}}
 
-### Business Website
+### Web Design
 
 See the process for building a custom site designed to bring you more customers.
 
-{{<button text="Business Website" url="/services/website-design" >}}
+{{<button text="Web Design" url="/services/website-design" >}}
 
 
 {{< /col >}}
@@ -220,7 +220,7 @@ I started working in website design and local marketing in 2023 after completing
 
 
 #### What is your web design process?
-Learn more about the process for designing and building a custom website on the [Business Website](/services/website-design) page.
+Learn more about the process for designing and building a custom website on the [Web Design](/services/website-design) page.
 
 #### How do you compare to other website design companies?
 Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
@@ -236,7 +236,7 @@ Whether you have a quick question or are ready to launch a project, reach out no
 {.center}
 
 {{<button text="Let's Talk" url="/contact" >}}
-{{<button url="/contact" text="See Pricing" variant="outline">}}
+{{<button url="/pricing" text="See Pricing" variant="outline">}}
 {.center}
 
 

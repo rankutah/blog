@@ -1,6 +1,6 @@
 ---
-title: "Call Benjamin for Utah Business Websites, Local SEO & Google Ads - Digital Marketing Agency - Search Engine Marketing Near You"
-description: "Call Benjamin for Utah business websites (web design), local SEO, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
+title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency - Search Engine Marketing Near You"
+description: "Call Benjamin for Utah web design (business websites), local SEO, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
@@ -60,7 +60,7 @@ schema:
     priceRange: "$149–$299/mo"
   service:
     enabled: true
-    serviceType: "Digital Marketing Services: Business Websites, Local SEO, Google Ads Management"
+    serviceType: "Digital Marketing Services: Web Design, Local SEO, Google Ads Management"
     description: "Clear Presence provides business websites (web design), local SEO, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
     areaServed:
       - "Beaver County, UT"
@@ -94,7 +94,7 @@ schema:
       - "Weber County, UT"
     offers:
       - "@type": Offer
-        name: "Business Website"
+        name: "Web Design"
         price: "149.00"
         priceCurrency: "USD"
       - "@type": Offer
@@ -108,8 +108,8 @@ schema:
 ---
 
 
-{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah business websites, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Business Websites, Local SEO, & Google Ads for Utah Businesses {.text-white}
+{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah web design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+# Web Design, Local SEO, & Google Ads for Utah Businesses {.text-white}
 Boost your online presence with the help of a digital marketing expert
 
 
@@ -132,7 +132,7 @@ Boost your online presence with the help of a digital marketing expert
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Business Websites, Local SEO, & Google Ads Near You
+## Web Design, Local SEO, & Google Ads Near You
 - Meet [remotely](https://cal.com/clearpresence/30min) statewide (phone call or video chat)
 - In-person meetings available in Pleasant Grove by appointment
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
@@ -222,7 +222,7 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Business Website Package
+### Web Design Package
 
 Fast, professional websites built to convert visitors into customers.
 

@@ -20,5 +20,5 @@ A lot of websites are built on bloated templates or heavy plugins that slow thin
 ## Quick links
 
 - {{< button url="/" text="Home" >}}
-- {{< button url="/services/website-design" text="Business Website" >}}
+- {{< button url="/services/website-design" text="Web Design" >}}
 - {{< button url="/services/local-seo" text="Local SEO" >}}

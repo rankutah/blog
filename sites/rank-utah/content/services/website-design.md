@@ -7,7 +7,7 @@ url: "/services/website-design"
 schema:
   service:
     enabled: true
-    serviceType: "Business Website"
+    serviceType: "Web Design"
     description: "Custom, fast business websites built to help customers call, text, or book."
     provider: "https://clearpresence.io/#professionalservice"
     areaServed:
@@ -139,7 +139,7 @@ Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 Yes. You own the website from day one. If service is canceled, help is provided to transfer the website to a new developer.
 
 ### How much does it cost?
-See the [pricing](/pricing) page for the most up-to-date pricing on business website packages.
+See the [pricing](/pricing) page for the most up-to-date pricing on web design packages.
 
 ### Do you handle hosting & the domain name?
 Yes. Hosting is included, and domain purchase and renewals are included in the monthly plan.
@@ -159,7 +159,7 @@ I started building websites for local businesses in 2023 after completing my Mas
 
 {{< /faqs >}}
 
-## Ready to talk about a business website?
+## Ready to talk about web design?
 {.center}
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {.center}

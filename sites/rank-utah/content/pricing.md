@@ -1,5 +1,5 @@
 ---
-title: "Pricing for Business Websites, Local SEO, & Google Ads in Utah - Digital Marketing Pricing"
+title: "Pricing for Web Design, Local SEO, & Google Ads in Utah - Digital Marketing Pricing"
 description: "Simple, affordable monthly pricing for digital marketing services. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
@@ -9,8 +9,8 @@ schema:
     items:
       - question: "What does Local SEO mean?"
         answer: "Local SEO (local search engine optimization) helps you get more calls and messages from nearby customers. It includes keyword review/content updates (based on performance), Google Business Profile work, Apple Maps/Bing Places, and reporting."
-      - question: "Is SEO included in a Business Website?"
-        answer: "Yes. A Business Website includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local SEO is the monthly service for Maps visibility work, listings, and reporting."
+      - question: "Is SEO included in Web Design?"
+        answer: "Yes. Web Design includes foundational technical SEO and on-page SEO so your site is search-ready (clean structure, titles/descriptions, headings, internal links, fast pages, and mobile-friendly layout). Local SEO is the monthly service for Maps visibility work, listings, and reporting."
       - question: "Can I change plans later?"
         answer: "Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption."
       - question: "What happens if I cancel?"
@@ -32,7 +32,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< col card="true" y="start" >}}
 
-<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Business Website<br></h2>
+<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Web Design<br></h2>
 
 {{< badge text="I need a website" >}}
 
@@ -163,7 +163,7 @@ Websites can be built in 2–3 weeks with regular coordination.
 Reach out with questions or pick the service you want to explore next.
 
 {{< button url="/contact" text="Let's Talk"  >}}
-{{< button url="/services/website-design" text="Business Website" variant="outline">}}
+{{< button url="/services/website-design" text="Web Design" variant="outline">}}
 {{< button url="/services/local-seo" text="Local SEO" variant="outline">}}
 {{< button url="/services/google-ads" text="Google Ads" variant="outline">}}
 

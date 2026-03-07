@@ -101,7 +101,7 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Business Website & Local SEO <br>
+Web Design & Local SEO <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
