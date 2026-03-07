@@ -213,11 +213,8 @@ Reach out with questions or to start your project.
 
 {{< faqs >}}
 
-
 ### What experience do you have?
 I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
-
-
 
 #### What is your web design process?
 Learn more about the process for designing and building a custom website on the [Web Design](/services/website-design) page.
@@ -236,5 +233,4 @@ Web design services are available statewide across Utah, with an office in [Plea
 {{<button text="Let's Talk" url="/contact" >}}
 {{<button url="/pricing" text="See Pricing" variant="outline">}}
 {.center}
-
 
