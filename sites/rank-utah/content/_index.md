@@ -58,7 +58,11 @@ Digital marketing services built around lead-generating websites, local SEO, and
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{< /hero >}}
 
+## What Clients Are Saying
+{.center}
 
+<!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
+{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 ## One-on-one Specialist vs. Big Agency
@@ -108,11 +112,7 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 
 {{< /cols >}}
 
-## What Clients Are Saying
-{.center}
 
-<!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
-{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 ## Quick Links
 {.center}
