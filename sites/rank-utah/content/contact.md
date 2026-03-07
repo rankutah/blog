@@ -62,7 +62,6 @@ Schedule a phone call, video call, or office visit
 348 S 2000 W, Suite B206
 Pleasant Grove, UT 84062
 
-- Learn more about the Utah office: [Pleasant Grove, Utah](/locations/pleasant-grove-ut)
 - Get directions on [Google Maps](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
 
 Serving customers across Utah.
