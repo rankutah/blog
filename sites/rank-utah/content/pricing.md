@@ -18,7 +18,7 @@ schema:
       - question: "Do you charge setup fees?"
         answer: "No. Setup is included in your monthly price."
       - question: "What does ‘unlimited content updates’ include?"
-        answer: "Requests typical of a local business website: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
+        answer: "Requests typical of a local business site: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
       - question: "How long does a new website take?"
         answer: "Websites can be built in 2–3 weeks with regular coordination."
 ---
@@ -109,7 +109,8 @@ Google Ads management is $299/month for ad spend up to $2,000/month. For ad spen
 
 {{< /cols >}}
 
-## Frequently asked questions
+## FAQs
+{.center}
 
 {{< faqs >}}
 
@@ -136,7 +137,7 @@ No further charges after cancellation. The site stays online through the current
 No. Setup is included in your monthly price.
 
 ### What does ongoing support include?
-Requests typical of a small‑business website are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Articles you provide can be published as site pages as well.
+Requests typical of a small‑business site are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Articles you provide can be published as site pages as well.
 
 Included examples:
 - Update text, photos, hours, services, menus, pricing, or FAQs
@@ -159,13 +160,15 @@ Websites can be built in 2–3 weeks with regular coordination.
 
 
 ## Ready to grow your visibility?
+{.center}
 
-Reach out with questions or pick the service you want to explore next.
+
 
 {{< button url="/contact" text="Let's Talk"  >}}
 {{< button url="/services/website-design" text="Web Design" variant="outline">}}
 {{< button url="/services/local-seo" text="Local SEO" variant="outline">}}
 {{< button url="/services/google-ads" text="Google Ads" variant="outline">}}
+{.center}
 
 
 

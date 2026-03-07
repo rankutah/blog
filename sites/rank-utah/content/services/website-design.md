@@ -8,7 +8,7 @@ schema:
   service:
     enabled: true
     serviceType: "Web Design"
-    description: "Custom, fast business websites built to help customers call, text, or book."
+    description: "Custom, fast web design built to help customers call, text, or book."
     provider: "https://clearpresence.io/#professionalservice"
     areaServed:
       - "Beaver County, UT"
@@ -125,7 +125,7 @@ See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [do
 ## Designed for Growth
 {.center}
 
-A lot of local business websites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
+A lot of local business sites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
 
 Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 

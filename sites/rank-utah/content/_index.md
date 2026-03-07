@@ -1,6 +1,6 @@
 ---
 title: "Utah's #1 Affordable Digital Marketing Agency — Web Design, Local SEO, & Google Ads"
-description: "Digital marketing services for local businesses: business websites (web design), local SEO (search engine optimization), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
+description: "Digital marketing services for local businesses: web design, local SEO (search engine optimization), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
 url: "/"
 schema:
   localBusiness:

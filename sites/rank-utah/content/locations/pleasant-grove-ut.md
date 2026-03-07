@@ -1,6 +1,6 @@
 ---
 title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency - Search Engine Marketing Near You"
-description: "Call Benjamin for Utah web design (business websites), local SEO, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
+description: "Call Benjamin for Utah web design, local SEO, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
@@ -61,7 +61,7 @@ schema:
   service:
     enabled: true
     serviceType: "Digital Marketing Services: Web Design, Local SEO, Google Ads Management"
-    description: "Clear Presence provides business websites (web design), local SEO, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
+    description: "Clear Presence provides web design, local SEO, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
     areaServed:
       - "Beaver County, UT"
       - "Box Elder County, UT"
@@ -324,7 +324,7 @@ I love partnering with business owners and specialize in digital marketing to he
 {.w-48}
 
 **Benjamin Awerkamp** <br>
-Business Website, Local SEO & Google Ads <br>
+Web Design, Local SEO & Google Ads <br>
 Call or Text: [(385) 323-8130](tel:+13853238130) <br>
 Master's in Software Development <br>
 Bachelor's in Business Management
