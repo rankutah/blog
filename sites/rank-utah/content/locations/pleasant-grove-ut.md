@@ -220,7 +220,7 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Web Design Package
+### Web Design
 
 Fast, professional websites built to convert visitors into customers.
 
@@ -243,7 +243,7 @@ Fast, professional websites built to convert visitors into customers.
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-### Local SEO Package
+### Local SEO
 
 Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
@@ -261,7 +261,7 @@ Get found where local customers search: Google, Apple, Bing, AI search, and “n
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-### Google Ads Package
+### Google Ads
 
 Paid search management to generate more leads.
 

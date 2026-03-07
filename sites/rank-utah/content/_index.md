@@ -211,19 +211,32 @@ Reach out with questions or to start your project.
 
 {{< /cols >}}
 
+{{< faqs schema="true" >}}
 
-## FAQs
-{.center}
+### How do I start?
 
-{{< faqs schema="true">}}
+1. Purchase a plan on the [pricing page](/pricing)
+2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
+3. Meet and coordinate with me via phone calls, text, email, or video calls
+
+
+### What is local SEO?
+Local SEO (local search engine optimization) helps your business show up in Google Search and Maps.
+
+Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month (better profiles, better listings, better pages).
+
+Unlike social media posts and ads, local SEO doesn't stop working when you stop posting or paying. Local SEO builds a strong foundation so you show up when nearby customers search.
+
+Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
+
 
 ### What experience do you have?
 I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
-#### How do you compare to other agencies?
+### How do you compare to other agencies?
 Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
 
-#### Which locations do you serve?
+### Which locations do you serve?
 Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 
 {{< /faqs >}}
