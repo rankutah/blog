@@ -45,8 +45,8 @@ disableKinds  = ["taxonomy", "term"]
   darkBackground   = "slate-950" # neutral @ 800|900|950
   cardBackground     = "gray-50"     # or "slate-100", "rose-50", etc.
   cardBackgroundDark = "slate-800"  # or "slate-800", "black", etc.
-  cardBorderLight    = "gray-50"  # no "border-" prefix
-  cardBorderDark     = "slate-800"  # no "border-" prefix
+  cardBorderLight    = "gray-200"  # no "border-" prefix
+  cardBorderDark     = "slate-700"  # no "border-" prefix
 
   showReadingTime     = true
   enableSearch        = true
@@ -60,6 +60,11 @@ disableKinds  = ["taxonomy", "term"]
 
   [params.motion]
     enabled = true
+
+[params.hero.parallax]
+  enabled = true
+  ratio = 0.22
+  max = 80
 
 [params.messageModal]
   enable = false
@@ -137,7 +142,7 @@ sameAs = []
   # CTAClasses       = "text-white bg-rose-600 hover:bg-rose-700 focus:ring-rose-300"
   showPhoneOnMobile = true
   phoneNumber       = "385-323-8130"
-  theme = "blend" #blend (default), invert, glass
+  theme = "glass" #blend (default), invert, glass
 
 [params.forms]
   action         = "https://submit-form.com/DOH188lWF"

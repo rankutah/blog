@@ -67,6 +67,11 @@
 {{- /* Match expanded/highlighted item background to card surface */ -}}
 {{- $pal := partial "theme/palette.html" $page -}}
 {{- $cardBg := (index $pal "cardBg") | default "bg-gray-100 dark:bg-gray-800" -}}
+
+{{- /* Hover should match the same background used when expanded/clicked.
+      The accordion JS toggles: bg-[color:var(--cp-card-bg)]
+      So use that exact token for hover to guarantee a visible, matching effect. */ -}}
+{{- $cardBgHoverClass := "hover:bg-[color:var(--cp-card-bg)]" -}}
 {{- range $i, $p := $parts }}
   {{- $trim := trim $p " \n" -}}
   {{- if ne $trim "" -}}
@@ -112,7 +117,7 @@
     {{- $expanded := and $isFirst $openFirst -}}
     {{- $isLast := eq $i (sub $count 1) -}}
   {{- /* Use text-left (not text-inherit) to defeat parent centering on mobile */ -}}
-  {{- $btnBase := printf "flex items-center justify-between w-full p-5 rtl:text-right text-left %s focus:outline-none focus:ring-0 gap-3 mb-0 transition-colors duration-150 hover:bg-black/5 dark:hover:bg-white/10" $borderClasses -}}
+  {{- $btnBase := printf "flex items-center justify-between w-full p-5 rtl:text-right text-left %s focus:outline-none focus:ring-0 gap-3 mb-0 transition-colors duration-150 %s" $borderClasses $cardBgHoverClass -}}
     {{- $btnClasses := slice $btnBase -}}
     {{- if $expanded }}{{ $btnClasses = $btnClasses | append $cardBg }}{{ end -}}
     {{- if $isFirst }}{{ $btnClasses = $btnClasses | append "rounded-t-xl" }}{{ end -}}

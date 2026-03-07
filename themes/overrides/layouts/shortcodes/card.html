@@ -14,7 +14,7 @@
 {{- $siteClasses := $page.Site.Params.card.classes | default "" -}}
 
 {{- /* 3) Fallback (your Flowbite example + no-underline + not-prose) */ -}}
-{{- $fallback := "not-prose no-underline block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" -}}
+{{- $fallback := "not-prose no-underline block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-none hover:shadow-sm transition-shadow duration-200 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" -}}
 
 {{- /* 4) Choose final */ -}}
 {{- $classes := cond (ne $pageClasses "") $pageClasses (cond (ne $siteClasses "") $siteClasses $fallback) -}}

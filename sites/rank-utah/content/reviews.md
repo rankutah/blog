@@ -20,7 +20,6 @@ url: "/reviews"
 ### Ready to grow your business?
 
 Take a quick look at pricing, then reach out for a friendly, no‑pressure chat.
-{.center}
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 

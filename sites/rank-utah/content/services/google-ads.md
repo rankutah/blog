@@ -74,7 +74,7 @@ Google Ads is a good fit if you:
 2. Must be willing to informally commit to at least **2 months** (so we have sufficient time to evaluate performance)
 
 {{< button url="/pricing" text="See Pricing" >}}
-{.center}
+
 
 ## What’s included
 

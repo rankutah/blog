@@ -65,6 +65,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [params.motion]
   enabled = true
 
+[params.hero.parallax]
+  enabled = true
+  ratio = 0.22
+  max = 80
+
 [params.faqs]
   headingLevel = 3
 
@@ -91,6 +96,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
   logoHeight   = "h-12"   # Tailwind height class for layout sizing
   logoWidth    = 0         # Let height drive intrinsic dimensions; 2x DPR handled in partial
   logoHeightPx = 48        # Intrinsic height attribute for CLS prevention (matches h-12)
+
+  # Visual style: blend (default), invert, glass
+  theme = "glass"
 
   # Global navbar layout defaults (Blue Ridge Abbey pattern)
   # - Brand (logo/title) stays on the far left

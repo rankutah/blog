@@ -369,11 +369,7 @@ You’ll work directly with me (not passed around to a sales rep or a rotating t
 
 ### Which locations do you serve?
 Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
-
 {{< /faqs >}}
-
-
-
 
 ## Ready to talk about your business?
 {.center}

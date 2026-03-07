@@ -337,7 +337,7 @@
 {{- if $bleed -}}
   <div class="section hero bleed{{ if $mobileBleed }} mobile-bleed{{ end }}">
     <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
-      <div class="not-prose">{{- $heroImg | safeHTML -}}</div>
+      <div class="not-prose cp-hero-media">{{- $heroImg | safeHTML -}}</div>
       {{- if $overlay -}}
         <div class="{{ $overlayWrapClass }}" data-hero-overlay="wrap"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
           {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
@@ -358,7 +358,7 @@
   <div class="section hero{{ if $mobileBleed }} mobile-bleed{{ end }}">
     <div class="{{ $container }}">
       <div class="relative">
-        <div class="not-prose">{{- $heroImg | safeHTML -}}</div>
+        <div class="not-prose cp-hero-media">{{- $heroImg | safeHTML -}}</div>
         {{- if $overlay -}}
           <div class="{{ $overlayWrapClass }}" data-hero-overlay="wrap"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
             {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}

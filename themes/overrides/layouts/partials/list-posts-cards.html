@@ -16,7 +16,7 @@ Expects dict with keys:
 
 <div class="space-y-5 not-prose">
   {{- range $p := $pages }}
-    <article class="rounded-lg shadow-sm overflow-hidden {{ $pal.cardBorder }} {{ $pal.cardBg }}">
+    <article class="rounded-lg shadow-none hover:shadow-sm transition-shadow duration-200 overflow-hidden {{ $pal.cardBorder }} {{ $pal.cardBg }}">
       <div class="p-5">
         <div class="entry-clickable relative">
           <header class="entry-header">

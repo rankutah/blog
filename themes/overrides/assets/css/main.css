@@ -68,10 +68,7 @@
 .shortcode-gallery { align-items: start; }
 .shortcode-gallery > div { padding: 0 !important; line-height: 0; }
 .shortcode-gallery a { display: block; line-height: 0; }
-.shortcode-gallery img { display: block; margin: 0 !important; vertical-align: top; }
-
-
-.dark .footer { }
+.shortcode-gallery img { display: block; margin: 0 !important; }
 .footer .prose {
   max-width: 72rem !important; /* ~1152px */
   margin-left: auto;
@@ -108,6 +105,31 @@
   color: #ffffff;
   border: 0;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+/* Hero parallax: image scrolls slightly slower than overlay content.
+   Opt-in per site with: <html data-hero-parallax="true"> (set by template).
+*/
+html[data-hero-parallax="true"] .section.hero .cp-hero-media {
+  overflow: hidden;
+}
+
+html[data-hero-parallax="true"] .section.hero .cp-hero-media > picture {
+  display: block;
+}
+
+html[data-hero-parallax="true"] .section.hero .cp-hero-media > picture,
+html[data-hero-parallax="true"] .section.hero .cp-hero-media > img {
+  transform: translate3d(0, var(--cp-hero-parallax-y, 0px), 0) scale(1.05);
+  transform-origin: center center;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-hero-parallax="true"] .section.hero .cp-hero-media > picture,
+  html[data-hero-parallax="true"] .section.hero .cp-hero-media > img {
+    transform: none;
+  }
 }
 
 .section.hero .cp-brand-btn-outline:hover {
@@ -183,6 +205,26 @@ html[data-motion-skip="true"] [data-motion] {
   font-size: 1rem !important;
   padding: 0.9rem 1.35rem !important;
   line-height: 1.15 !important;
+  transition: transform 160ms ease;
+  transform: translate3d(0, 0, 0);
+}
+
+.ui-btn:hover {
+  transform: translate3d(0, -1px, 0);
+}
+
+.ui-btn:active {
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-btn {
+    transition: none;
+  }
+  .ui-btn:hover,
+  .ui-btn:active {
+    transform: none;
+  }
 }
 
 /* Brand color helpers (supports config-driven hex/CSS colors) */
@@ -232,20 +274,16 @@ html[data-motion-skip="true"] [data-motion] {
 /* Brand-colored badges (supports Tailwind family or config-driven CSS color) */
 .cp-brand-badge {
   --cp-badge-color: var(--cp-brand);
-  background-color: var(--cp-badge-color);
-  color: #ffffff;
+  color: var(--cp-badge-color);
 }
 
 @supports (background-color: color-mix(in oklab, black, white)) {
   .cp-brand-badge {
-    /* Approximate Tailwind's *-100 background + *-800 text, but driven by brand color */
-    background-color: color-mix(in oklab, var(--cp-badge-color) 16%, white);
-    color: color-mix(in oklab, var(--cp-badge-color), black 35%);
+    color: color-mix(in oklab, var(--cp-badge-color), black 45%);
   }
 
   .dark .cp-brand-badge {
-    background-color: color-mix(in oklab, var(--cp-badge-color), black 70%);
-    color: color-mix(in oklab, var(--cp-badge-color), white 78%);
+    color: color-mix(in oklab, var(--cp-badge-color), white 82%);
   }
 }
 
@@ -473,50 +511,14 @@ main#content video {
 .center, .prose .center { text-align: center; display: block; margin-inline: auto; }
 .right, .prose .right   { text-align: right; display: block; margin-left: auto; margin-right: 0; }
 
-/* Default: center page headings.
-   Scope to top-level headings in the main prose article so we don't accidentally
-   re-align headings inside cards/components that intentionally use text-left.
-   Override per-heading with `{.left}` / `{.right}` / `{.center}`. */
-article.prose :where(h1, h2, h3, h4, h5, h6):not(:where([class~=not-prose], [class~=not-prose] *)):not(.left):not(.right):not(.center) {
-  text-align: center;
-}
+/* Alignment defaults are intentionally conservative:
+   - Left-aligned by default.
+   - Use `{.center}` / `{.left}` / `{.right}` explicitly when needed.
+*/
 
-/* Some list/taxonomy templates render a page title outside `article.prose`.
-   Center only page-level headings that are direct children near the top of <main>
-   so we don't accidentally re-align headings inside cards/components. */
-main#content > div > :is(h1, h2, h3, h4, h5, h6):not(.left):not(.right):not(.center),
-main.flex-1 > div > :is(h1, h2, h3, h4, h5, h6):not(.left):not(.right):not(.center) {
-  text-align: center;
-}
-
-/* Default: center CTA buttons inside prose.
-   Most buttons are emitted inside a <p> by Markdown/shortcodes; centering the
-   paragraph preserves multi-button rows while centering single CTAs. */
-article.prose p:has(> :is(a.ui-btn, button.ui-btn)):not(.left):not(.right):not(.center) {
-  text-align: center;
-}
-
-/* Fallback (no :has support): if a paragraph contains exactly one ui-btn,
-   center the button itself without changing paragraph text alignment. */
-article.prose p > :is(a.ui-btn, button.ui-btn):first-child:last-child {
-  display: table;
-  margin-inline: auto;
-}
-
-/* Default: center badges inside prose.
-   Use the shared `.cp-badge` class emitted by the badge shortcode.
-   Avoid shifting centered rows by removing the trailing `me-2` on the last badge. */
-article.prose p:has(> .cp-badge):not(.left):not(.right):not(.center):not(:where([class~=not-prose] *)) {
-  text-align: center;
-}
-article.prose p:has(> .cp-badge):not(:where([class~=not-prose] *)) > .cp-badge:last-child {
-  margin-inline-end: 0;
-}
-
-/* Fallback (no :has support): center a single badge on its own line. */
-article.prose p:not(:where([class~=not-prose] *)) > .cp-badge:first-child:last-child {
-  display: table;
-  margin-inline: auto;
+/* Also remove the trailing `me-2` margin when badges are direct children,
+   even if `:has()` isn't supported or doesn't match for some reason. */
+article.prose :is(p, div):not(:where([class~=not-prose] *)) > .cp-badge:last-child {
   margin-inline-end: 0;
 }
 
@@ -533,6 +535,18 @@ article.prose {
 article.prose :where(p, li) {
   hanging-punctuation: allow-end;
 }
+
+/* Tag “labels” row (tags/categories pills): center by default.
+   Use `.left` / `.right` on a parent wrapper to override. */
+.cp-tag-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.3rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.left .cp-tag-badges { justify-content: flex-start; }
+.right .cp-tag-badges { justify-content: flex-end; }
 
 /* ========== 7) Vertical alignment inside a box (section/stack use these) ========== */
 .vtop    { display: flex; flex-direction: column; justify-content: flex-start; min-height: 100%; }

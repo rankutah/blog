@@ -46,12 +46,18 @@
   {{- $siteId = urlize site.Title -}}
 {{- end -}}
 
+{{- /* Optional hero parallax (scroll offset) */ -}}
+{{- $heroParallax := site.Params.hero.parallax | default (dict) -}}
+{{- $heroParallaxEnabled := (index $heroParallax "enabled") | default false -}}
+{{- $heroParallaxRatio := (index $heroParallax "ratio") | default 0.22 -}}
+{{- $heroParallaxMax := (index $heroParallax "max") | default 80 -}}
+
 {{- $brand := partial "theme/brand.html" . | transform.Unmarshal -}}
 {{- $htmlBrandClass := "" -}}
 {{- if eq (index $brand "kind") "tailwind" -}}
   {{- $htmlBrandClass = index $brand "tailwind" -}}
 {{- end -}}
-<html class="{{ $htmlBrandClass | default "" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-site="{{ $siteId }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-default-theme="{{ $defaultTheme }}" data-theme-storage-key="{{ $themeStorageKey }}" data-theme-recovered-key="{{ $themeRecoveredKey }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}">
+<html class="{{ $htmlBrandClass | default "" }}" lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "auto" }}" data-site="{{ $siteId }}" data-force-theme="{{ .Site.Params.forceTheme }}" data-default-theme="{{ $defaultTheme }}" data-theme-storage-key="{{ $themeStorageKey }}" data-theme-recovered-key="{{ $themeRecoveredKey }}" data-bg-light="{{ $htmlLight }}" data-bg-dark="{{ $htmlDark }}"{{ if $heroParallaxEnabled }} data-hero-parallax="true" data-hero-parallax-ratio="{{ $heroParallaxRatio }}" data-hero-parallax-max="{{ $heroParallaxMax }}"{{ end }}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -124,6 +130,12 @@
       </style>
     </noscript>
     <script src="{{ $motion.RelPermalink }}" defer></script>
+  {{- end -}}
+
+  {{- /* Optional hero parallax JS (only when enabled for the site) */ -}}
+  {{- if $heroParallaxEnabled -}}
+    {{- $heroParallaxJs := resources.Get "js/hero-parallax.js" | resources.Minify | resources.Fingerprint -}}
+    <script src="{{ $heroParallaxJs.RelPermalink }}" defer></script>
   {{- end -}}
 
   <!-- Flowbite JS removed: no sites enable it, and baseline avoids extra JS. -->

@@ -2,7 +2,7 @@
 {{- with .Params.tags }}
   {{- $sortedTags := sort . }}
   {{- if gt (len $sortedTags) 0 }}
-    <div style="display: flex; flex-wrap: wrap; gap: 0.3rem 0.3rem; margin-top: 1rem;">
+    <div class="cp-tag-badges">
       {{- range $tag := $sortedTags }}
         {{- $tagSlug := $tag | urlize }}
         <a

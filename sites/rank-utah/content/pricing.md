@@ -88,7 +88,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< badge text="I need more leads" >}}
 
-{{< plan_price price="299" per="mo" sr="$299 per month" >}}
+{{< plan_price price="299" per="mo management fee" sr="$299 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 

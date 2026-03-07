@@ -69,7 +69,7 @@ schema:
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
-## One-on-one Specialist vs. Big Agency
+## One-on-one Expert vs. Big Agency
 {.center}
 
 {{< cols min="18rem" gap="2rem" v="start">}}
