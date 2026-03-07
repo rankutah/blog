@@ -124,7 +124,7 @@
 {{- else -}}
   <!-- Placeholder styles centralized in themes/overrides/assets/css/main.css (scoped to .cp-contact) -->
 
-  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact rounded-xl p-4 shadow-none {{ $pal.cardBg }} {{ $pal.cardBorder }} {{ $extra }}">
+  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="space-y-6 cp-contact rounded-xl p-4 {{ $extra }}">
     {{- /* Hidden context field: capture page URL for lead source attribution */ -}}
     <input type="hidden" name="page_url" value="{{ $page.Permalink }}">
     {{- /* Optional redirect: Formspark supports `_redirect` input to send users to a thank-you page */ -}}
