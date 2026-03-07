@@ -232,8 +232,6 @@ Web design services are available statewide across Utah, with an office in [Plea
 
 ## Ready for the Next Step?
 {.center}
-Whether you have a quick question or are ready to launch a project, reach out now via call, text, or email.
-{.center}
 
 {{<button text="Let's Talk" url="/contact" >}}
 {{<button url="/pricing" text="See Pricing" variant="outline">}}
