@@ -220,7 +220,8 @@ html[data-motion-skip="true"] [data-motion] {
 }
 .cp-brand-btn-outline:hover {
   background-color: var(--cp-card-bg, var(--cp-body-bg));
-  box-shadow: inset 0 0 0 1px var(--cp-brand);
+  /* Keep the outline on hover (use current text color for max contrast in both modes). */
+  box-shadow: inset 0 0 0 1px currentColor;
 }
 .cp-brand-btn-outline:focus-visible {
   outline: none;
@@ -789,6 +790,11 @@ html[data-motion-enabled="true"] .ui-btn {
   html[data-motion-enabled="true"] .ui-btn:hover {
     transform: translate3d(0, -2px, 0);
     box-shadow: 0 14px 26px rgba(0,0,0,0.22);
+  }
+
+  /* Keep the outline stroke visible on hover (global .ui-btn:hover shadow would otherwise override it). */
+  html[data-motion-enabled="true"] .ui-btn.cp-brand-btn-outline:hover {
+    box-shadow: inset 0 0 0 1px currentColor, 0 14px 26px rgba(0,0,0,0.22);
   }
 }
 

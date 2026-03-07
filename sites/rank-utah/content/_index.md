@@ -213,8 +213,11 @@ Reach out with questions or to start your project.
 
 {{< faqs >}}
 
-#### What is your experience?
-I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+
+### What experience do you have?
+I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+
+
 
 #### What is your web design process?
 Learn more about the process for designing and building a custom website on the [Business Website](/services/website-design) page.
@@ -233,9 +236,7 @@ Whether you have a quick question or are ready to launch a project, reach out no
 {.center}
 
 {{<button text="Let's Talk" url="/contact" >}}
-{{<button text="See Pricing" url="/pricing" >}}
-{{<button text="Web Design" url="/services/website-design" >}}
-{{<button text="Local SEO" url="/services/local-seo" >}}
+{{<button url="/contact" text="See Pricing" variant="outline">}}
 {.center}
 
 

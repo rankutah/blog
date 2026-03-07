@@ -11,9 +11,6 @@ Clear Presence helps local businesses feel proud of their online presence with d
 
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-{{< cols min="18rem" gap="2rem" v="start">}}
-
-{{< col card="false" y="start" >}}
 
 ### What clients appreciate most
 
@@ -21,12 +18,6 @@ Clear Presence helps local businesses feel proud of their online presence with d
 - Fast turnaround and responsive communication
 - Clean, modern design focused on real business needs
 - Local SEO basics done right
-
-{{< button url="/portfolio" text="See the Portfolio" >}}
-
-{{< /col >}}
-
-{{< col card="false" y="start" >}}
 
 ### Ready to grow your business?
 
@@ -36,7 +27,3 @@ Take a quick look at pricing, then reach out for a friendly, no‑pressure chat.
 	{{< button url="/contact" text="Let's Talk" >}}
 	{{< button url="/pricing" variant="outline" text="See Pricing" >}}
 </div>
-
-{{< /col >}}
-
-{{< /cols >}}

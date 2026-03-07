@@ -49,7 +49,7 @@ schema:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for Google Ads" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Google Ads Management for Utah Businesses {.text-white}
+# Google Ads for Utah Businesses {.text-white}
 For businesses that want more leads and are ready to invest in advertising.
 {.text-white}
 
@@ -62,10 +62,11 @@ For businesses that want more leads and are ready to invest in advertising.
 
 Google Ads is a good fit if you:
 
-- Want more leads now and are willing to pay for them
-- Can invest in monthly ad spend (this is separate from the management fee)
+- Can invest in monthly ad spend (in additional to the management fee)
+- Have a reliable system in place to quickly follow-up and convert leads
+- Have a website that loads fast or are willing to [have a new one built](/services/website-design)
+  - Test your website speed [here](https://pagespeed.web.dev/) and feel free to compare it to my website
 - Are willing to give the ads time to perform
-
 
 ## Pricing and requirements
 
@@ -74,36 +75,6 @@ Google Ads is a good fit if you:
 
 {{< button url="/pricing" text="See Pricing" >}}
 
-## Requirement 1: Ad spend + management fee
-
-Google Ads improve as the number of tracked leads increase.
-
-A higher starting budget typically means:
-
-- **More visits sooner**, so we can learn what works faster
-- **More leads to learn from**, so we can make better decisions
-- **Faster improvements**, because we have enough volume to see patterns
-
-
-## Requirement 2: 2‑month commitment
-
-Google Ads takes time. If you stop too early, you often pay for the setup and testing but don’t give it enough time to improve.
-
-Here’s how to think about the 2‑month timeline:
-
-- **Month 1: Figuring out what works** We launch, collect data, and learn what brings in the best leads.
-- **Month 2: Focus on profitability.** The account continues to optimize based on past successes and we focus on profitability.
-
-Google Ads can work extremely well — but it’s not guaranteed. It’s possible to spend money and still not get the results you want. Two months gives us a fair window to evaluate performance.
-
-## Conversion tracking and how we measure results
-
-Tracking is what turns Google Ads from “guessing” into something we can measure and improve.
-
-Setup typically includes:
-
-- Tracking the actions that matter (like form submissions and phone calls)
-- Assigning values to those actions (so we can prioritize the best leads)
 
 ## What’s included with Google Ads
 
