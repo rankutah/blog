@@ -32,7 +32,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< col card="true" y="start" >}}
 
-<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Starter</h2>
+<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Launch</h2>
 
 {{< badge text="Business Website" >}}
 
@@ -61,7 +61,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true"  y="start" >}}
 
-<h2 id="local-seo" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Growth</h2>
+<h2 id="local-seo" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Grow</h2>
 
 {{< badge text="Business Website + Local SEO" >}}
 
