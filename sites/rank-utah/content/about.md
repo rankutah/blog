@@ -1,27 +1,15 @@
 ---
 title: "About Clear Presence in Utah"
-description: "Clear Presence is a Utah digital marketing agency providing fast, custom web design and local SEO (search engine optimization) to help local businesses get more calls and bookings."
+description: "Clear Presence is a Utah digital marketing agency providing web design, local SEO (search engine optimization), and Google Ads to help local businesses get more calls and bookings."
 layout: "flowbite"
 url: "/about"
 ---
 
 ## About Clear Presence in Utah
 
-Clear Presence is a Utah digital marketing agency providing web design, local SEO, and Google Ads management for local businesses across Utah, from an office in [Pleasant Grove, Utah](/locations/pleasant-grove-ut).
+Clear Presence is a digital marketing agency providing web design, local SEO, and Google Ads for local businesses across Utah, from an office in [Pleasant Grove, UT](/locations/pleasant-grove-ut).
 
-The goal is simple: a fast, professional website that encourages visitors to call, text, or send a message.
-
-You’ll work directly with me from planning to launch. Monthly service keeps things simple and covers your website, managed hosting, and updates.
-
-Call or text anytime with questions: [(385) 323-8130](tel:+13853238130)
-
-## Your Digital Marketing Specialist
-
-I specialize in building fast, custom‑coded websites that help turn visits into calls, texts, and bookings. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed.
-
-I also understand both sides of the work: I earned a Bachelor’s degree in Business and a Master’s degree in Software Development, and I’ve worked in cybersecurity at companies like Arctic Wolf and Okta.
-
-Personally, I enjoy running, audiobooks, and all things tech.
+I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals.
 
 ![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
 {.w-48}
@@ -39,7 +27,7 @@ Bachelor's in Business Management
 
 ## Ready to get started?
 
-If you want a site that looks professional, loads fast, and helps customers find you, let’s chat. I’ll give you clear, honest recommendations and a simple plan.
+If you want more consistent calls and messages (and clear reporting on what’s driving them), let’s chat. I’ll give you honest recommendations and a simple plan.
 
 Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 

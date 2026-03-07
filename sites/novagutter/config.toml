@@ -27,6 +27,12 @@ enableRobotsTXT = true
 [outputs]
   home = ["HTML", "RSS", "JSON", "FORMS"]
 
+[outputFormats.FORMS]
+  mediaType   = "application/json"
+  baseName    = "forms"
+  isPlainText = true
+  path        = ".well-known"
+
 [params]
   env = "production"
   # Match Rank Utah backgrounds; brand is Tailwind red for buttons/links

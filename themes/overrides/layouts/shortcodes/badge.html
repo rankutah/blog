@@ -96,7 +96,7 @@
   {{- $sizeClass = "text-xs" -}}
 {{- end -}}
 {{- if $useBrandCSS -}}
-  <span class="inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 cp-brand-badge {{ $classes }}" {{ if ne $badgeStyle "" }}style="{{ $badgeStyle }}"{{ end }}>{{ $text }}</span>
+  <span class="cp-badge inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 cp-brand-badge {{ $classes }}" {{ if ne $badgeStyle "" }}style="{{ $badgeStyle }}"{{ end }}>{{ $text }}</span>
 {{- else -}}
-  <span class="inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 {{ $colorClasses }} {{ $classes }}">{{ $text }}</span>
+  <span class="cp-badge inline-block rounded-sm px-2.5 py-0.5 {{ $sizeClass }} font-medium me-2 {{ $colorClasses }} {{ $classes }}">{{ $text }}</span>
 {{- end -}}

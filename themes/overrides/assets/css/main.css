@@ -503,6 +503,37 @@ article.prose p > :is(a.ui-btn, button.ui-btn):first-child:last-child {
   margin-inline: auto;
 }
 
+/* Default: center badges inside prose.
+   Use the shared `.cp-badge` class emitted by the badge shortcode.
+   Avoid shifting centered rows by removing the trailing `me-2` on the last badge. */
+article.prose p:has(> .cp-badge):not(.left):not(.right):not(.center):not(:where([class~=not-prose] *)) {
+  text-align: center;
+}
+article.prose p:has(> .cp-badge):not(:where([class~=not-prose] *)) > .cp-badge:last-child {
+  margin-inline-end: 0;
+}
+
+/* Fallback (no :has support): center a single badge on its own line. */
+article.prose p:not(:where([class~=not-prose] *)) > .cp-badge:first-child:last-child {
+  display: table;
+  margin-inline: auto;
+  margin-inline-end: 0;
+}
+
+/* Prevent “orphaned” punctuation after inline Markdown links.
+   Some browsers can wrap a trailing period/comma onto its own line when the
+   preceding inline element is a link. Keep prose links inline (not inline-block)
+   and opt into improved line breaking where supported. */
+article.prose a:not(.ui-btn) {
+  display: inline;
+}
+article.prose {
+  text-wrap: pretty;
+}
+article.prose :where(p, li) {
+  hanging-punctuation: allow-end;
+}
+
 /* ========== 7) Vertical alignment inside a box (section/stack use these) ========== */
 .vtop    { display: flex; flex-direction: column; justify-content: flex-start; min-height: 100%; }
 .vcenter { display: flex; flex-direction: column; justify-content: center;      min-height: 100%; }
@@ -592,8 +623,8 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
   /* Make hero overlay content use more horizontal space on mobile.
      Targets the inner overlay container that currently uses `px-8`. */
   .section.hero [data-motion="hero"] {
-    padding-left: calc(env(safe-area-inset-left) + 0.5rem);
-    padding-right: calc(env(safe-area-inset-right) + 0.5rem);
+    padding-left: calc(env(safe-area-inset-left) + 0.75rem);
+    padding-right: calc(env(safe-area-inset-right) + 0.75rem);
   }
 }
 

@@ -157,16 +157,6 @@ Google Ads management to generate more leads with keyword research, campaign set
 
 {{< col card="true"  y="start" >}}
 
-### Portfolio
-
-Browse examples of recent work for local businesses.
-
-{{<button text="Portfolio" url="/portfolio">}}
-
-{{< /col >}}
-
-{{< col card="true"  y="start" >}}
-
 ### Reviews
 
 See what customers are saying.
@@ -186,17 +176,6 @@ See affordable, transparent monthly plans.
 
 {{< /col >}}
 
-{{< col card="true"  y="start" >}}
-
-### About
-
-Learn more about the story and approach.
-
-{{<button text="About" url="/about">}}
-
-
-
-{{< /col >}}
 
 {{< col card="true"  y="start" >}}
 
