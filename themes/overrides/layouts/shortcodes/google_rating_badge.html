@@ -1,0 +1,71 @@
+{{/*
+  Shortcode: google_rating_badge
+
+  Purpose:
+    Renders a small Google rating badge (logo + two lines + stars) without having to
+    write inline HTML in Markdown.
+
+  Usage:
+    {{< google_rating_badge >}}
+
+  Optional params:
+    - label:     Top line text (default: "Excellent on Google")
+    - score:     Numeric score text (default: "5.0")
+    - stars:     Star count (default: 5)
+    - class:     Extra classes for the outer wrapper
+
+    - logoAvif:  AVIF logo path (default: /media/google-reviews-logo.avif)
+    - logoPng:   PNG fallback logo path (default: /media/google-reviews-logo.png)
+    - logoAlt:   Alt text (default: "Google")
+    - logoSize:  Logo size in px (default: 32)
+
+    - starSize:  Star icon size in px (default: 20)
+    - starColor: Star color (default: #fbbc04)
+    - starGap:   Gap between stars (default: 0.0em)
+    - starRaise: Vertical nudge up for star row (default: 0em)
+*/}}
+
+{{- $label := .Get "label" | default "Excellent on Google" -}}
+{{- $score := .Get "score" | default "5.0" -}}
+{{- $extraClass := .Get "class" | default "" -}}
+
+{{- $logoAvif := .Get "logoAvif" | default "/media/google-reviews-logo.avif" -}}
+{{- $logoPng := .Get "logoPng" | default "/media/google-reviews-logo.png" -}}
+{{- $logoAlt := .Get "logoAlt" | default "Google" -}}
+{{- $logoSize := cond (gt (int (.Get "logoSize" | default "32")) 0) (int (.Get "logoSize" | default "32")) 32 -}}
+
+{{- $starsCount := cond (gt (int (.Get "stars" | default "5")) 0) (int (.Get "stars" | default "5")) 5 -}}
+{{- $starSize := cond (gt (int (.Get "starSize" | default "20")) 0) (int (.Get "starSize" | default "20")) 20 -}}
+{{- $starColor := .Get "starColor" | default "#fbbc04" -}}
+{{- $starGap := .Get "starGap" | default "0.0em" -}}
+{{- $starRaise := .Get "starRaise" | default "0em" -}}
+
+<div class="not-prose mt-6 flex items-center justify-center gap-3 {{ $extraClass }}">
+  <picture class="shrink-0">
+    <source srcset="{{ $logoAvif }}" type="image/avif">
+    <img
+      src="{{ $logoPng }}"
+      alt="{{ $logoAlt }}"
+      width="{{ $logoSize }}"
+      height="{{ $logoSize }}"
+      class="block object-contain"
+      style="width: {{ $logoSize }}px; height: {{ $logoSize }}px;"
+      loading="lazy"
+      decoding="async"
+    >
+  </picture>
+
+  <div class="text-left leading-tight">
+    <div class="font-semibold">{{ $label }}</div>
+    <div class="mt-0 flex items-center gap-2">
+      <span class="font-semibold">{{ $score }}</span>
+      <span class="stars-google" aria-label="{{ printf `%d star rating` $starsCount }}" style="display:inline-flex;align-items:center;gap:{{ $starGap }};vertical-align:middle;line-height:1;transform:translateY(calc(-1 * {{ $starRaise }}));">
+        {{- range seq 1 $starsCount -}}
+          <svg xmlns="http://www.w3.org/2000/svg" width="{{ $starSize }}" height="{{ $starSize }}" viewBox="0 0 24 24" aria-hidden="true" role="img" style="display:inline-block;color:{{ $starColor }};flex:none;">
+            <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+          </svg>
+        {{- end -}}
+      </span>
+    </div>
+  </div>
+</div>

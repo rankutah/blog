@@ -109,11 +109,9 @@ schema:
 
 
 {{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah web design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design, Local SEO, & Google Ads for Utah Businesses {.text-white}
-Boost your online presence with the help of a digital marketing expert
-
-
+# Web Design, Local SEO, & Google Ads
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
+{{<google_rating_badge>}}
 
 
 <div class="mt-6"></div>
@@ -132,7 +130,7 @@ Boost your online presence with the help of a digital marketing expert
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Web Design, Local SEO, & Google Ads Near You
+## Let's Talk
 - Meet [remotely](https://cal.com/clearpresence/30min) statewide (phone call or video chat)
 - In-person meetings available in Pleasant Grove by appointment
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
@@ -147,7 +145,7 @@ Boost your online presence with the help of a digital marketing expert
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 
-## Office Location in Pleasant Grove, UT
+## Utah Office
 
 I meet [remotely](https://cal.com/clearpresence/30min) statewide, and I offer in‑person meetings at my Pleasant Grove office by appointment.
 
@@ -346,7 +344,7 @@ Bachelor's in Business Management
 
 {{< faqs schema="true" >}}
 
-### What is the process? How do I start?
+### How do I start?
 
 1. Purchase a plan on the [pricing page](/pricing)
 2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
@@ -363,14 +361,17 @@ Unlike social media posts and ads, local SEO doesn't stop working when you stop 
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
 
-### Can I change plans later?
-Yes. Plans can be changed at any time. The next invoice adjusts and services continue without interruption.
+### What experience do you have?
+I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
-### What happens if I cancel?
-No further charges after cancellation. The website stays online through the current billing period. On request, a content export is provided and the domain can be transferred.
+### How do you compare to other agencies?
+Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
 
+### Which locations do you serve?
+Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 
 {{< /faqs >}}
+
 
 
 

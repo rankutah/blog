@@ -100,9 +100,8 @@
   text-decoration: none;
 }
 
-/* Hero images: make the outline variant read like a solid light button (not see-through). */
+/* Hero images: outline CTA needs a blurred backdrop so it reads on photos. */
 .section.hero .cp-brand-btn-outline {
-  /* Slight dark + blur so the photo doesn't clash with the outline CTA */
   background-color: rgba(0, 0, 0, 0.22);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
@@ -115,6 +114,8 @@
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 0 1px #ffffff;
 }
+
+
 
 /* Kandee Myers: hero headline links should match surrounding headline color */
 .section.hero .km-why-running-hero a.cp-hero-link,
@@ -472,6 +473,36 @@ main#content video {
 .center, .prose .center { text-align: center; display: block; margin-inline: auto; }
 .right, .prose .right   { text-align: right; display: block; margin-left: auto; margin-right: 0; }
 
+/* Default: center page headings.
+   Scope to top-level headings in the main prose article so we don't accidentally
+   re-align headings inside cards/components that intentionally use text-left.
+   Override per-heading with `{.left}` / `{.right}` / `{.center}`. */
+article.prose :where(h1, h2, h3, h4, h5, h6):not(:where([class~=not-prose], [class~=not-prose] *)):not(.left):not(.right):not(.center) {
+  text-align: center;
+}
+
+/* Some list/taxonomy templates render a page title outside `article.prose`.
+   Center only page-level headings that are direct children near the top of <main>
+   so we don't accidentally re-align headings inside cards/components. */
+main#content > div > :is(h1, h2, h3, h4, h5, h6):not(.left):not(.right):not(.center),
+main.flex-1 > div > :is(h1, h2, h3, h4, h5, h6):not(.left):not(.right):not(.center) {
+  text-align: center;
+}
+
+/* Default: center CTA buttons inside prose.
+   Most buttons are emitted inside a <p> by Markdown/shortcodes; centering the
+   paragraph preserves multi-button rows while centering single CTAs. */
+article.prose p:has(> :is(a.ui-btn, button.ui-btn)):not(.left):not(.right):not(.center) {
+  text-align: center;
+}
+
+/* Fallback (no :has support): if a paragraph contains exactly one ui-btn,
+   center the button itself without changing paragraph text alignment. */
+article.prose p > :is(a.ui-btn, button.ui-btn):first-child:last-child {
+  display: table;
+  margin-inline: auto;
+}
+
 /* ========== 7) Vertical alignment inside a box (section/stack use these) ========== */
 .vtop    { display: flex; flex-direction: column; justify-content: flex-start; min-height: 100%; }
 .vcenter { display: flex; flex-direction: column; justify-content: center;      min-height: 100%; }
@@ -547,15 +578,22 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
     overflow-x: clip;
   }
 
-  /* Hero overlay safety:
-     If the overlay is tall on mobile, top-align it and keep a safe top padding. */
+  /* Hero overlay (mobile):
+     Vertically center the overlay content on the image.
+     Keep light safe-area padding and allow scrolling if content overflows. */
   .section.hero .hero-overlay-center {
-    align-items: flex-start;
-    /* Give a pleasant "upper third" gap, but shrink it on short viewports. */
-    padding-top: calc(env(safe-area-inset-top) + clamp(1rem, 6vh, 4rem));
-    padding-bottom: 1rem;
+    align-items: center;
+    padding-top: calc(env(safe-area-inset-top) + 1rem);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+  }
+
+  /* Make hero overlay content use more horizontal space on mobile.
+     Targets the inner overlay container that currently uses `px-8`. */
+  .section.hero [data-motion="hero"] {
+    padding-left: calc(env(safe-area-inset-left) + 0.5rem);
+    padding-right: calc(env(safe-area-inset-right) + 0.5rem);
   }
 }
 

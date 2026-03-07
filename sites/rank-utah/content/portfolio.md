@@ -112,7 +112,5 @@ url: "/portfolio"
 
 ## Ready to start your website?
 
-Get a fast, effective website that helps your business grow.
-
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/services/website-design" variant="outline" text="Web Design" >}}
 

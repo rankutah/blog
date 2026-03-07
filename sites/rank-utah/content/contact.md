@@ -10,26 +10,26 @@ url: "/contact"
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-## Call or text
+## Call or Text
 
-Call or text anytime, even after hours. If I miss you, I'll get back to you by the the next business day:
+Call or text anytime, even after hours. If I miss you, I'll get back to you by the the next business day.
 
-{{< button url="tel:+13853238130" text="Call (385) 323-8130" >}}
-{{< button url="sms:+13853238130" text="Send a Text Message" >}}
+{{< button url="tel:+13853238130" text="Call Benjamin" >}}
+{{< button url="sms:+13853238130" text="Text Benjamin" variant="outline" >}}
 
+## Book a Meeting
 
-## Schedule a meeting
+Schedule a phone call, video call, or in-person meeting.
+{.center}
 
-Schedule a phone call, video call, or office visit
-
-{{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment" text="Schedule a Meeting" >}}
+{{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment" text="Book Meeting" >}}
 
 
 {{< /col >}}
 
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
-## Send a message
+## Leave a Message
 
 {{< contact-form
 	id="contact1"
@@ -46,7 +46,7 @@ Schedule a phone call, video call, or office visit
 	classes="max-w-xl"
 >}}
 
-{{< button submit="true" form="contact1" text="Submit Message" >}}
+{{<button submit="true" form="contact1" text="Submit Message" >}}
 
 
 
@@ -54,16 +54,5 @@ Schedule a phone call, video call, or office visit
 
 {{< /cols >}}
 
-
----
-
-### Office Address
-
-348 S 2000 W, Suite B206
-Pleasant Grove, UT 84062
-
-- Get directions on [Google Maps](https://maps.app.goo.gl/uPi6ijNoRyDvUA738)
-
-Serving customers across Utah.
 
 

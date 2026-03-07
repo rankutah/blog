@@ -49,42 +49,20 @@ schema:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Custom Website Design to Grow Your Utah Business {.text-white}
-Lead-generating websites to help you get more customers. Skip the expensive big-agency overhead. High-performance websites for $149/month.
-{.text-white}
-{{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
+# Web Design for Utah Businesses
 
+{{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
+{{<google_rating_badge>}}
 {{< /hero >}}
 
+
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
-
-## Websites that Convert
-{.center}
-
-Fast, professional websites built to convert visitors into customers.
-{.center}
-
-{{< table headers="Included|Details" delim="|" >}}
-Website Ownership|You own your website from day one.
-Managed Hosting + Security|Reliable hosting and built-in security are included.
-Domain Included|Your domain and annual renewals are covered.
-Custom Website Design|Your site is built to match your brand.
-Mobile-Friendly Design|Your website looks great on every screen.
-Fast Load Times|Built to load quickly across devices.
-Automatic Backups|Every change is backed up automatically.
-Contact Forms + Spam Protection|Make it easy for customers to reach out without the junk.
-Foundational SEO|Technical and on-page SEO built in from the start.
-Ongoing Support|Reach out anytime by phone, text, or email.
-Monthly Reporting|Track calls and website activity each month.
-{{< /table >}}
-
-See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
-
 
 ## What clients are saying
 {.center}
 
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
+
 
 ## Featured Websites
 {.center}
@@ -133,7 +111,13 @@ Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
 
 ## FAQs
 {.center}
-{{< faqs >}}
+{{< faqs schema="true">}}
+
+### How do I start?
+
+1. Purchase a plan on the [pricing page](/pricing)
+2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
+3. Meet and coordinate with me via phone calls, text, email, or video calls
 
 ### Do I own the website?
 Yes. You own the website from day one. If service is canceled, help is provided to transfer the website to a new developer.

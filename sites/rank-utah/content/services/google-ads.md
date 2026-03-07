@@ -50,10 +50,11 @@ schema:
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for Google Ads" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
 # Google Ads for Utah Businesses {.text-white}
-For businesses that want more leads and are ready to invest in advertising.
-{.text-white}
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
+
+{{<google_rating_badge>}}
+
 {{< /hero >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
@@ -62,11 +63,10 @@ For businesses that want more leads and are ready to invest in advertising.
 
 Google Ads is a good fit if you:
 
-- Can invest in monthly ad spend (in additional to the management fee)
-- Have a reliable system in place to quickly follow-up and convert leads
-- Have a website that loads fast or are willing to [have a new one built](/services/website-design)
-  - Test your website speed [here](https://pagespeed.web.dev/) and feel free to compare it to my website
+- Can invest in monthly ad spend and the management fee
 - Are willing to give the ads time to perform
+- Have a good system in place for quickly responding to leads
+
 
 ## Pricing and requirements
 
@@ -74,9 +74,9 @@ Google Ads is a good fit if you:
 2. Must be willing to informally commit to at least **2 months** (so we have sufficient time to evaluate performance)
 
 {{< button url="/pricing" text="See Pricing" >}}
+{.center}
 
-
-## What’s included with Google Ads
+## What’s included
 
 - **Keyword Research**: Research focused on the searches most likely to bring in leads.
 - **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
@@ -85,7 +85,29 @@ Google Ads is a good fit if you:
 - **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
 - **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
+
+{{< faqs schema="true" >}}
+
+### How do I start?
+
+1. Purchase a plan on the [pricing page](/pricing)
+2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
+3. Meet and coordinate with me via phone calls, text, email, or video calls
+
+### What experience do you have?
+I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+
+### How do you compare to other agencies?
+Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
+
+### Which locations do you serve?
+Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
+
+{{< /faqs >}}
+
 ## Ready to talk about Google Ads?
 
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
+
+

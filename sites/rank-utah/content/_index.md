@@ -48,15 +48,19 @@ schema:
 ---
 
 {{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
-# Web Design, Local SEO, & Google Ads for Utah Businesses {.text-white}
-Digital marketing services built around lead-generating websites, local SEO, and Google Ads management. Plans starting at $149/month.
+# Web Design, Local SEO, Google Ads
 
 
 
 {.text-white}
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
-{{< /hero >}}
+
+{{<google_rating_badge>}}
+
+{{</hero>}}
+
+
 
 ## What Clients Are Saying
 {.center}
@@ -211,19 +215,16 @@ Reach out with questions or to start your project.
 ## FAQs
 {.center}
 
-{{< faqs >}}
+{{< faqs schema="true">}}
 
 ### What experience do you have?
 I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
-#### What is your web design process?
-Learn more about the process for designing and building a custom website on the [Web Design](/services/website-design) page.
-
-#### How do you compare to other website design companies?
+#### How do you compare to other agencies?
 Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
 
 #### Which locations do you serve?
-Web design services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
+Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 
 {{< /faqs >}}
 
