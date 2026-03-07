@@ -211,6 +211,8 @@ Reach out with questions or to start your project.
 
 {{< /cols >}}
 
+## FAQs
+
 {{< faqs schema="true" >}}
 
 ### How do I start?

@@ -109,7 +109,7 @@ schema:
 
 
 {{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah web design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design, Local SEO, & Google Ads
+# Web Design, Local SEO, Google Ads
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
 

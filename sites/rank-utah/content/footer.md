@@ -7,16 +7,11 @@ headless: true
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
-### Services
-{.center}
-[Web Design](/services/website-design) • [Local SEO](/services/local-seo) • [Google Ads](/services/google-ads)
+### Contact
 {.center}
 
-### Legal
+[(385) 323-8130](tel:+13853238130)  <br> Mon–Sat 8am–8pm (MT) <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](/locations/pleasant-grove-ut) <br> Serving clients across Utah
 {.center}
-[Privacy Policy](/privacy) • [Terms of Service](/terms)
-{.center}
-
 
 {{< /col >}}
 
@@ -39,10 +34,15 @@ Web Design • Local SEO • Google Ads
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 
-### Contact
+
+### Services
+{.center}
+[Web Design](/services/website-design) • [Local SEO](/services/local-seo) • [Google Ads](/services/google-ads)
 {.center}
 
-[(385) 323-8130](tel:+13853238130)  <br> Mon–Sat 8am–8pm (MT) <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](/locations/pleasant-grove-ut) <br> Serving clients across Utah
+### Legal
+{.center}
+[Privacy Policy](/privacy) • [Terms of Service](/terms)
 {.center}
 
 
