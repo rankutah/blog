@@ -365,7 +365,7 @@ Results depend on what you have to offer, the level of search interest in your a
 I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### How do you compare to other agencies?
-Direct one-on-one communication and responsive support without big-agency overhead. No long-term contracts, hidden fees, or strict limits on edits.
+You’ll work directly with me (not passed around to a sales rep or a rotating team). I keep communication simple, explain what I’m doing and why, and you can reach me by call or text when you need help. It’s month-to-month with clear pricing — no long contracts or surprises.
 
 ### Which locations do you serve?
 Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
