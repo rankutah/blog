@@ -536,15 +536,16 @@ article.prose :where(p, li) {
   hanging-punctuation: allow-end;
 }
 
-/* Tag “labels” row (tags/categories pills): center by default.
-   Use `.left` / `.right` on a parent wrapper to override. */
+/* Tag “labels” row (tags/categories pills): left by default.
+   Use `.center` / `.right` on a parent wrapper to override. */
 .cp-tag-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem 0.3rem;
   margin-top: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
+.center .cp-tag-badges { justify-content: center; }
 .left .cp-tag-badges { justify-content: flex-start; }
 .right .cp-tag-badges { justify-content: flex-end; }
 

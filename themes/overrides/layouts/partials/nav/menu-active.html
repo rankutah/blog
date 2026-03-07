@@ -1,0 +1,44 @@
+{{- /*
+  Determine whether a menu entry should be considered "active" for the current page.
+
+  We can't rely on Hugo's IsMenuCurrent/HasMenuCurrent in all setups (especially when
+  menu entries are URL-only, not tied to content pages), so we match by URL:
+  - exact match on normalized paths
+  - OR current page is under the menu path (prefix match), for section links
+  - OR any descendant is active (works for dropdown parents and "#" non-nav nodes)
+
+  Call:
+    {{ partial "nav/menu-active.html" (dict "Page" $ "Entry" .) }}
+*/ -}}
+
+{{- $page := .Page -}}
+{{- $entry := .Entry -}}
+
+{{- $cur := $page.RelPermalink | default "/" -}}
+{{- $cur = replaceRE "/+$" "" $cur -}}
+{{- if eq $cur "" -}}{{- $cur = "/" -}}{{- end -}}
+
+{{- $active := false -}}
+
+{{- $raw := trim (printf "%v" $entry.URL) " \n\r\t" -}}
+{{- if and (ne $raw "") (ne $raw "#") (ne $raw "/#") -}}
+  {{- $href := $raw | relURL -}}
+  {{- $href = replaceRE "/+$" "" $href -}}
+  {{- if eq $href "" -}}{{- $href = "/" -}}{{- end -}}
+
+  {{- if eq $href $cur -}}
+    {{- $active = true -}}
+  {{- else if and (ne $href "/") (strings.HasPrefix $cur (printf "%s/" $href)) -}}
+    {{- $active = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and (not $active) ($entry.HasChildren) -}}
+  {{- range $entry.Children -}}
+    {{- if partial "nav/menu-active.html" (dict "Page" $page "Entry" .) -}}
+      {{- $active = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $active -}}

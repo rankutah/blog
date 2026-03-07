@@ -114,6 +114,34 @@
 }}
 {{ $navHoverClasses := cond $isCSS "cp-brand-hover" (index $navHover $siteColor | default (index $navHover "blue")) }}
 
+{{/* Active menu state should look like hover, but persist on the current page. */}}
+{{- $navActive := dict
+  "red" "text-red-700 md:text-red-700 dark:text-red-500 md:dark:text-red-500"
+  "orange" "text-orange-700 md:text-orange-700 dark:text-orange-500 md:dark:text-orange-500"
+  "amber" "text-amber-700 md:text-amber-700 dark:text-amber-500 md:dark:text-amber-500"
+  "yellow" "text-yellow-700 md:text-yellow-700 dark:text-yellow-500 md:dark:text-yellow-500"
+  "lime" "text-lime-700 md:text-lime-700 dark:text-lime-500 md:dark:text-lime-500"
+  "green" "text-green-700 md:text-green-700 dark:text-green-500 md:dark:text-green-500"
+  "emerald" "text-emerald-700 md:text-emerald-700 dark:text-emerald-500 md:dark:text-emerald-500"
+  "teal" "text-teal-700 md:text-teal-700 dark:text-teal-500 md:dark:text-teal-500"
+  "cyan" "text-cyan-700 md:text-cyan-700 dark:text-cyan-500 md:dark:text-cyan-500"
+  "sky" "text-sky-700 md:text-sky-700 dark:text-sky-500 md:dark:text-sky-500"
+  "blue" "text-blue-700 md:text-blue-700 dark:text-blue-500 md:dark:text-blue-500"
+  "indigo" "text-indigo-700 md:text-indigo-700 dark:text-indigo-500 md:dark:text-indigo-500"
+  "violet" "text-violet-700 md:text-violet-700 dark:text-violet-500 md:dark:text-violet-500"
+  "purple" "text-purple-700 md:text-purple-700 dark:text-purple-500 md:dark:text-purple-500"
+  "fuchsia" "text-fuchsia-700 md:text-fuchsia-700 dark:text-fuchsia-500 md:dark:text-fuchsia-500"
+  "pink" "text-pink-700 md:text-pink-700 dark:text-pink-500 md:dark:text-pink-500"
+  "rose" "text-rose-700 md:text-rose-700 dark:text-rose-500 md:dark:text-rose-500"
+  "slate" "text-slate-700 md:text-slate-700 dark:text-slate-500 md:dark:text-slate-500"
+  "gray" "text-gray-700 md:text-gray-700 dark:text-gray-500 md:dark:text-gray-500"
+  "zinc" "text-zinc-700 md:text-zinc-700 dark:text-zinc-500 md:dark:text-zinc-500"
+  "neutral" "text-neutral-700 md:text-neutral-700 dark:text-neutral-500 md:dark:text-neutral-500"
+  "stone" "text-stone-700 md:text-stone-700 dark:text-stone-500 md:dark:text-stone-500"
+-}}
+
+{{- $navActiveClasses := cond $isCSS "cp-brand-link" (index $navActive $siteColor | default (index $navActive "blue")) -}}
+
 {{/* Dropdown background */}}
 {{ $dropBgSolid := index $pal "cardBg" }}
 {{ $dropBgGlass := "bg-white/99 dark:bg-gray-900/97 supports-[backdrop-filter]:bg-white/97 supports-[backdrop-filter]:dark:bg-gray-900/95 border border-black/10 dark:border-white/10" }}
@@ -201,12 +229,13 @@
         <ul class="flex flex-row font-medium space-x-3 xl:space-x-4 rtl:space-x-reverse whitespace-nowrap">
           {{ range .Site.Menus.main }}
             <li class="relative">
+              {{- $isActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
               {{ if .HasChildren }}
                 <button id="menu-{{ .Identifier }}-r-button" type="button"
                         data-dropdown-toggle="menu-{{ .Identifier }}-r"
                         data-dropdown-placement="bottom-start"
                         aria-expanded="false"
-                        class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+                        class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                   {{ .Name }}
                   <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -216,13 +245,14 @@
                    class="z-50 hidden absolute left-0 top-full mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
                   <ul class="py-2 text-sm">
                       {{ range .Children }}
+                        {{- $isChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
                         {{ if .HasChildren }}
                           {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
                           {{- $submenuId := printf "submenu-%s-r" (or .Identifier (urlize .Name)) -}}
                           <li class="relative group">
                             {{ if $isNoNav }}
                               <button type="button"
-                                      class="no-underline hover:underline brand-link flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                      class="no-underline hover:underline brand-link {{ if $isChildActive }}underline{{ end }} flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
                                       data-submenu-toggle="{{ $submenuId }}"
                                       aria-controls="{{ $submenuId }}"
                                       aria-expanded="false">
@@ -232,7 +262,7 @@
                                 </svg>
                               </button>
                             {{ else }}
-                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
                                 <span>{{ .Name }}</span>
                                 <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -247,8 +277,9 @@
                               <div class="min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
                                 <ul class="py-2 text-sm">
                                   {{ range .Children }}
+                                    {{- $isGrandChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
                                     <li>
-                                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isGrandChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isGrandChildActive }}aria-current="page"{{ end }}>
                                         {{ .Name }}
                                       </a>
                                     </li>
@@ -259,7 +290,7 @@
                           </li>
                         {{ else }}
                           <li>
-                            <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                            <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
                               {{ .Name }}
                             </a>
                           </li>
@@ -269,8 +300,8 @@
                 </div>
               {{ else }}
                 <a href="{{ .URL | relURL }}"
-                   class="no-underline hover:underline brand-link {{ $navHoverClasses }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
-                   {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}>
+                   class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
+                   {{ if $isActive }}aria-current="page"{{ end }}>
                   {{ .Name }}
                 </a>
               {{ end }}
@@ -351,12 +382,13 @@
       <ul class="flex flex-col p-4 mt-2 font-medium rounded-lg space-y-1.5">
         {{ range .Site.Menus.main }}
           <li class="relative">
+            {{- $isActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
             {{ if .HasChildren }}
         <button id="menu-{{ .Identifier }}-m-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}-m"
                       data-dropdown-placement="bottom-start"
                       aria-expanded="false"
-          class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+          class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
                 <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -367,13 +399,14 @@
                     class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm {{ $dropBg }} backdrop-blur">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
+                    {{- $isChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
                     {{ if .HasChildren }}
                       {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
                       {{- $submenuId := printf "submenu-%s-m" (or .Identifier (urlize .Name)) -}}
                       <li>
                         {{ if $isNoNav }}
                           <button type="button"
-                                  class="no-underline hover:underline brand-link flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                  class="no-underline hover:underline brand-link {{ if $isChildActive }}underline{{ end }} flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
                                   data-submenu-toggle="{{ $submenuId }}"
                                   aria-controls="{{ $submenuId }}"
                                   aria-expanded="false">
@@ -383,7 +416,7 @@
                             </svg>
                           </button>
                         {{ else }}
-                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
                             <span>{{ .Name }}</span>
                             <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -392,8 +425,9 @@
                         {{ end }}
                         <ul id="{{ $submenuId }}" data-submenu class="mt-1 ml-4 border-l border-black/10 dark:border-white/10 hidden">
                           {{ range .Children }}
+                            {{- $isGrandChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
                             <li>
-                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 pl-5 hover:bg-black/5 dark:hover:bg-white/10">
+                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isGrandChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 pl-5 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isGrandChildActive }}aria-current="page"{{ end }}>
                                 {{ .Name }}
                               </a>
                             </li>
@@ -402,7 +436,7 @@
                       </li>
                     {{ else }}
                       <li>
-                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
                           {{ .Name }}
                         </a>
                       </li>
@@ -412,8 +446,8 @@
               </div>
             {{ else }}
           <a href="{{ .URL | relURL }}"
-            class="no-underline hover:underline brand-link {{ $navHoverClasses }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
-                 {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}>
+            class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
+                 {{ if $isActive }}aria-current="page"{{ end }}>
                 {{ .Name }}
               </a>
             {{ end }}
@@ -448,12 +482,13 @@
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-5 rtl:space-x-reverse xl:flex-row md:mt-0 whitespace-nowrap">
         {{ range .Site.Menus.main }}
           <li class="relative">
+            {{- $isActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
             {{ if .HasChildren }}
         <button id="menu-{{ .Identifier }}-d-button" type="button"
                       data-dropdown-toggle="menu-{{ .Identifier }}-d"
                       data-dropdown-placement="bottom-start"
                       aria-expanded="false"
-          class="no-underline hover:underline brand-link {{ $navHoverClasses }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+          class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
                 {{ .Name }}
                 <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -464,13 +499,14 @@
                     class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
                 <ul class="py-2 text-sm">
                   {{ range .Children }}
+                    {{- $isChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
                     {{ if .HasChildren }}
                       {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
                       {{- $submenuId := printf "submenu-%s-d" (or .Identifier (urlize .Name)) -}}
                       <li class="relative group">
                         {{ if $isNoNav }}
                           <button type="button"
-                                  class="no-underline hover:underline brand-link flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                                  class="no-underline hover:underline brand-link {{ if $isChildActive }}underline{{ end }} flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
                                   data-submenu-toggle="{{ $submenuId }}"
                                   aria-controls="{{ $submenuId }}"
                                   aria-expanded="false">
@@ -480,7 +516,7 @@
                             </svg>
                           </button>
                         {{ else }}
-                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
                             <span>{{ .Name }}</span>
                             <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -495,8 +531,9 @@
                           <div class="min-w-[14rem] w-fit max-w-[28rem] rounded-lg shadow-sm {{ $dropBg }} backdrop-blur whitespace-normal break-words">
                             <ul class="py-2 text-sm">
                               {{ range .Children }}
+                                {{- $isGrandChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
                                 <li>
-                                  <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                                  <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isGrandChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isGrandChildActive }}aria-current="page"{{ end }}>
                                     {{ .Name }}
                                   </a>
                                 </li>
@@ -507,7 +544,7 @@
                       </li>
                     {{ else }}
                       <li>
-                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10">
+                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
                           {{ .Name }}
                         </a>
                       </li>
@@ -517,8 +554,8 @@
               </div>
             {{ else }}
           <a href="{{ .URL | relURL }}"
-            class="no-underline hover:underline brand-link {{ $navHoverClasses }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
-                 {{ if eq .URL $.Permalink }}aria-current="page"{{ end }}>
+            class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
+                 {{ if $isActive }}aria-current="page"{{ end }}>
                 {{ .Name }}
               </a>
             {{ end }}

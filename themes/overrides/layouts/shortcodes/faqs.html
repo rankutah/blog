@@ -117,7 +117,7 @@
     {{- $expanded := and $isFirst $openFirst -}}
     {{- $isLast := eq $i (sub $count 1) -}}
   {{- /* Use text-left (not text-inherit) to defeat parent centering on mobile */ -}}
-  {{- $btnBase := printf "flex items-center justify-between w-full p-5 rtl:text-right text-left %s focus:outline-none focus:ring-0 gap-3 mb-0 transition-colors duration-150 %s" $borderClasses $cardBgHoverClass -}}
+  {{- $btnBase := printf "group flex items-center justify-between w-full p-5 rtl:text-right text-left %s focus:outline-none focus:ring-0 gap-3 mb-0 transition-colors duration-150 %s" $borderClasses $cardBgHoverClass -}}
     {{- $btnClasses := slice $btnBase -}}
     {{- if $expanded }}{{ $btnClasses = $btnClasses | append $cardBg }}{{ end -}}
     {{- if $isFirst }}{{ $btnClasses = $btnClasses | append "rounded-t-xl" }}{{ end -}}
@@ -139,7 +139,7 @@
         aria-controls="{{ $bid }}">
         <span>{{ $title }}</span>
         <span class="cp-faq-toggle shrink-0 inline-flex items-center justify-center h-8 w-8 rounded-full {{ $cardBg }} border border-[color:var(--cp-card-border)]">
-          <svg class="cp-faq-toggle-icon h-4 w-4 text-black dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <svg class="cp-faq-toggle-icon h-6 w-6 text-black dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/>
           </svg>
         </span>
