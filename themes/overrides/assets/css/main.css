@@ -812,12 +812,12 @@ html[data-motion-skip-hero="true"] [data-motion="hero-img"] {
 /* Cards & tiles: lift on hover for extra motion */
 @media (hover: hover) {
   /* Only apply hover-lift to card-like blocks (not headings like H2/H3). */
-  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto):not(.cols-fixed) > [data-motion="reveal"].is-visible {
+  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto):not(.cols-fixed):not(.cp-no-hover-lift) > [data-motion="reveal"].is-visible {
     transition-property: opacity, transform, filter, box-shadow;
     transition-duration: 2200ms, 2200ms, 2200ms, 180ms;
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   }
-  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto):not(.cols-fixed) > [data-motion="reveal"].is-visible:hover {
+  html[data-motion-enabled="true"] [data-motion-group="stagger"]:not(.cols-auto):not(.cols-fixed):not(.cp-no-hover-lift) > [data-motion="reveal"].is-visible:hover {
     transition-duration: 2200ms, 180ms, 2200ms, 180ms;
     transform: translate3d(0, -8px, 0);
     box-shadow: 0 16px 38px rgba(0,0,0,0.18);
