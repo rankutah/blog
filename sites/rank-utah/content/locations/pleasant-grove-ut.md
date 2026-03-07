@@ -121,6 +121,13 @@ Boost your online presence with the help of a digital marketing expert
 
 <div id="main-content" class="scroll-mt-24"></div>
 
+## Reviews from Local Businesses
+{.center}
+
+<!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
+{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
+
+
 {{< cols min="18rem" gap="2rem" v="start">}}
 
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
@@ -206,74 +213,6 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 
 {{< /cols >}}
 
-{{< section >}}
-
-{{< cols min="18rem" gap="2rem" v="start">}}
-
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-
-## 3 Simple Steps to Get Started
-
-1. Purchase a plan on the [pricing page](/pricing)
-2. Fill out your [business info](https://docs.google.com/forms/d/e/1FAIpQLScSqrYkNw8VnusGhGGlTUD81rhMEprJlakFWR45zbSOBWplMQ/viewform?usp=sharing&ouid=112359216062622911898)
-3. Coordinate with me however you like (text, email, phone, video chat, or in-person)
-
-
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-## Areas Served in Utah
-
-Services are available statewide (remote or in-person).
-
-**Major cities:** Salt Lake City, Provo/Orem, Ogden, Logan, Park City, St. George
-
-<ul class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-1 list-disc pl-5">
-  <li>Beaver County</li>
-  <li>Box Elder County</li>
-  <li>Cache County</li>
-  <li>Carbon County</li>
-  <li>Daggett County</li>
-  <li>Davis County</li>
-  <li>Duchesne County</li>
-  <li>Emery County</li>
-  <li>Garfield County</li>
-  <li>Grand County</li>
-  <li>Iron County</li>
-  <li>Juab County</li>
-  <li>Kane County</li>
-  <li>Millard County</li>
-  <li>Morgan County</li>
-  <li>Piute County</li>
-  <li>Rich County</li>
-  <li>Salt Lake County</li>
-  <li>San Juan County</li>
-  <li>Sanpete County</li>
-  <li>Sevier County</li>
-  <li>Summit County</li>
-  <li>Tooele County</li>
-  <li>Uintah County</li>
-  <li>Utah County</li>
-  <li>Wasatch County</li>
-  <li>Washington County</li>
-  <li>Wayne County</li>
-  <li>Weber County</li>
-</ul>
-
-{{< /col >}}
-
-{{< /cols >}}
-
-{{< /section >}}
-
-
-
-## Reviews from Local Businesses
-{.center}
-
-<!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
-{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
 
 ## What’s included?
@@ -343,18 +282,18 @@ Paid search management to generate more leads.
 {{< /cols >}}
 
 
+
+
+
 ## Ready To Get Started
+{.center}
 
-I love partnering with business owners and specialize in digital marketing to help businesses get calls, bookings, and messages. After growing up in St. George I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
 
-![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
-{.w-48}
+{{< cols min="18rem" gap="2rem" v="start">}}
 
-**Benjamin Awerkamp** <br>
-Business Website, Local SEO & Google Ads <br>
-Call or Text: [(385) 323-8130](tel:+13853238130) <br>
-Master's in Software Development <br>
-Bachelor's in Business Management
+{{< col card="false" y="start" >}}
+
+
 
 ### Share a bit about your business and goals.
 
@@ -373,8 +312,35 @@ Bachelor's in Business Management
 
 {{< button submit="true" form="contact-pg" text="Submit Message" >}}
 
-## FAQ
+{{< /col >}}
 
+{{< col card="false"  y="start" >}}
+
+### About the Owner
+
+I love partnering with business owners and specialize in digital marketing to help businesses get calls, bookings, and messages. After growing up in St. George I now live in Orem with my wife and three daughters. I graduated from Southern Virginia University in Business and completed my Master’s degree at the University of Utah in Software Development.
+
+![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
+{.w-48}
+
+**Benjamin Awerkamp** <br>
+Business Website, Local SEO & Google Ads <br>
+Call or Text: [(385) 323-8130](tel:+13853238130) <br>
+Master's in Software Development <br>
+Bachelor's in Business Management
+
+{{< /col >}}
+
+{{< /cols >}}
+
+
+
+
+
+
+
+## FAQs
+{.center}
 <div id="FAQs" class="scroll-mt-24"></div>
 
 
@@ -408,8 +374,8 @@ No further charges after cancellation. The website stays online through the curr
 
 
 
-
-
-
-
+## Ready to talk about your business?
+{.center}
+{{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
+{.center}
 

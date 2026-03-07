@@ -81,8 +81,6 @@ Monthly Reporting|Track calls and website activity each month.
 See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
 
 
-{{<button url="/pricing" text="See Pricing" >}}
-
 ## What clients are saying
 {.center}
 
