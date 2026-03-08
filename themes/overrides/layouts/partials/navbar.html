@@ -52,7 +52,16 @@
 */}}
 {{ $navBlend  := printf "%s %s border-b border-gray-200/70 dark:border-white/10 md:border-b-0" $navBg $navText }}
 {{ $navInvert := "bg-white/95 dark:bg-gray-900/90 text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-700 md:border-b-0" }}
-{{ $navGlass  := "bg-white/95 dark:bg-gray-900/90 backdrop-blur-sm supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:dark:bg-gray-900/85 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100 md:border-b-0" }}
+{{/*
+  GLASS THEME NOTE:
+  Tailwind's opacity bg utilities (e.g. bg-white/95) rely on color-mix().
+  In browsers that don't support color-mix(), those declarations are dropped,
+  leaving the header effectively transparent.
+
+  We include solid fallbacks first so the header/drawer never becomes fully
+  transparent, while still allowing the translucent look where supported.
+*/}}
+{{ $navGlass  := "bg-white dark:bg-gray-900 bg-white/95 dark:bg-gray-900/90 backdrop-blur-sm supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:dark:bg-gray-900/85 border-b border-black/10 dark:border-white/10 text-gray-900 dark:text-gray-100 md:border-b-0" }}
 
 {{ $navClasses := cond (eq $headerTheme "invert") $navInvert (cond (eq $headerTheme "glass") $navGlass $navBlend) }}
 
@@ -144,7 +153,7 @@
 
 {{/* Dropdown background */}}
 {{ $dropBgSolid := index $pal "cardBg" }}
-{{ $dropBgGlass := "bg-white/95 dark:bg-gray-900/90 supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:dark:bg-gray-900/85 border border-black/10 dark:border-white/10" }}
+{{ $dropBgGlass := "bg-white dark:bg-gray-900 bg-white/95 dark:bg-gray-900/90 supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:dark:bg-gray-900/85 border border-black/10 dark:border-white/10" }}
 {{ $dropBg := cond (eq $headerTheme "glass") $dropBgGlass $dropBgSolid }}
 
 {{/* Detect hero/landing/home to allow a seamless, flush hero */}}
@@ -356,119 +365,6 @@
       </button>
     </div>
 
-    <!-- Mobile drawer overlay -->
-    <div id="nav-drawer-overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-200 xl:hidden z-40" aria-hidden="true"></div>
-
-    <!-- Mobile off-canvas drawer -->
-    <div id="navbar-drawer"
-      style="background-color: var(--cp-card-bg);"
-      class="fixed inset-y-0 right-0 z-50 w-72 max-w-[85vw] xl:hidden
-           translate-x-full transition-transform duration-200 ease-out pointer-events-none
-               {{ if eq $headerTheme "glass" }}bg-white dark:bg-gray-900
-               {{ else if eq $headerTheme "invert" }}bg-white/95 dark:bg-gray-900/90
-               {{ else }}{{ $navBg }}
-               {{ end }} shadow-lg border-l border-black/10 dark:border-white/10"
-        data-drawer="right" aria-hidden="true" role="dialog" aria-label="Main menu">
-
-      <!-- Drawer header (mobile only) -->
-      <div class="flex items-center justify-between p-4 border-b border-black/10 dark:border-white/10">
-        <span class="font-semibold">Menu</span>
-        <button type="button" class="p-2 rounded hover:bg-black/5 dark:hover:bg-white/10" data-drawer-close aria-label="Close menu">
-          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-
-      <ul class="flex flex-col p-4 mt-2 font-medium rounded-lg space-y-1.5">
-        {{ range .Site.Menus.main }}
-          <li class="relative">
-            {{- $isActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
-            {{ if .HasChildren }}
-        <button id="menu-{{ .Identifier }}-m-button" type="button"
-                      data-dropdown-toggle="menu-{{ .Identifier }}-m"
-                      data-dropdown-placement="bottom-start"
-                      aria-expanded="false"
-          class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
-                {{ .Name }}
-                <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg>
-              </button>
-
-                  <div id="menu-{{ .Identifier }}-m"
-                    class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm {{ $dropBg }} backdrop-blur">
-                <ul class="py-2 text-sm">
-                  {{ range .Children }}
-                    {{- $isChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
-                    {{ if .HasChildren }}
-                      {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
-                      {{- $submenuId := printf "submenu-%s-m" (or .Identifier (urlize .Name)) -}}
-                      <li>
-                        {{ if $isNoNav }}
-                          <button type="button"
-                                  class="no-underline hover:underline brand-link {{ if $isChildActive }}underline{{ end }} flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
-                                  data-submenu-toggle="{{ $submenuId }}"
-                                  aria-controls="{{ $submenuId }}"
-                                  aria-expanded="false">
-                            <span>{{ .Name }}</span>
-                            <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                            </svg>
-                          </button>
-                        {{ else }}
-                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
-                            <span>{{ .Name }}</span>
-                            <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                            </svg>
-                          </a>
-                        {{ end }}
-                        <ul id="{{ $submenuId }}" data-submenu class="mt-1 ml-4 border-l border-black/10 dark:border-white/10 hidden">
-                          {{ range .Children }}
-                            {{- $isGrandChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
-                            <li>
-                              <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isGrandChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 pl-5 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isGrandChildActive }}aria-current="page"{{ end }}>
-                                {{ .Name }}
-                              </a>
-                            </li>
-                          {{ end }}
-                        </ul>
-                      </li>
-                    {{ else }}
-                      <li>
-                        <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
-                          {{ .Name }}
-                        </a>
-                      </li>
-                    {{ end }}
-                  {{ end }}
-                </ul>
-              </div>
-            {{ else }}
-          <a href="{{ .URL | relURL }}"
-            class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
-                 {{ if $isActive }}aria-current="page"{{ end }}>
-                {{ .Name }}
-              </a>
-            {{ end }}
-          </li>
-        {{ end }}
-        <!-- Mobile: search link at bottom of menu -->
-        <li class="pt-2 mt-2 border-t border-black/10 dark:border-white/10">
-          <a href="/search/" class="no-underline hover:underline brand-link block px-4 py-2">
-            <span class="inline-flex items-center gap-2">
-              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="7"/>
-                <path d="M20 20l-3.5-3.5"/>
-              </svg>
-              Search
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
     <!-- Desktop inline menu (unchanged from original) -->
     <div id="navbar-sticky"
       class="items-center justify-between hidden w-full {{ if $rightMenu }}xl:hidden{{ else }}xl:flex{{ end }} xl:w-auto xl:order-1 xl:mx-2 {{ if and $centerNav (not $rightMenu) }}xl:col-start-2 xl:justify-self-center xl:order-none{{ else if $rightMenu }}xl:col-start-3 xl:justify-self-end xl:order-none xl:mr-2{{ end }}
@@ -566,6 +462,119 @@
     </div>
   </div>
 </nav>
+
+<!-- Mobile drawer overlay (outside nav to avoid backdrop-filter/fixed bugs) -->
+<div id="nav-drawer-overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-200 xl:hidden z-40" aria-hidden="true"></div>
+
+<!-- Mobile off-canvas drawer (outside nav to avoid backdrop-filter/fixed bugs) -->
+<div id="navbar-drawer"
+  style="background-color: var(--cp-card-bg);"
+  class="fixed inset-y-0 right-0 z-50 w-72 max-w-[85vw] xl:hidden
+       translate-x-full transition-transform duration-200 ease-out pointer-events-none
+           {{ if eq $headerTheme "glass" }}bg-white dark:bg-gray-900
+           {{ else if eq $headerTheme "invert" }}bg-white/95 dark:bg-gray-900/90
+           {{ else }}{{ $navBg }}
+           {{ end }} shadow-lg border-l border-black/10 dark:border-white/10"
+    data-drawer="right" aria-hidden="true" role="dialog" aria-label="Main menu">
+
+  <!-- Drawer header (mobile only) -->
+  <div class="flex items-center justify-between p-4 border-b border-black/10 dark:border-white/10">
+    <span class="font-semibold">Menu</span>
+    <button type="button" class="p-2 rounded hover:bg-black/5 dark:hover:bg-white/10" data-drawer-close aria-label="Close menu">
+      <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <ul class="flex flex-col p-4 mt-2 font-medium rounded-lg space-y-1.5">
+    {{ range .Site.Menus.main }}
+      <li class="relative">
+        {{- $isActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
+        {{ if .HasChildren }}
+          <button id="menu-{{ .Identifier }}-m-button" type="button"
+                  data-dropdown-toggle="menu-{{ .Identifier }}-m"
+                  data-dropdown-placement="bottom-start"
+                  aria-expanded="false"
+                  class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} flex items-center gap-1 w-full py-2 px-3 md:border-0 md:p-0 md:w-auto">
+            {{ .Name }}
+            <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+
+          <div id="menu-{{ .Identifier }}-m"
+               class="z-50 hidden md:absolute md:left-0 md:top-full md:mt-2 w-44 rounded-lg shadow-sm {{ $dropBgSolid }} border border-black/10 dark:border-white/10">
+            <ul class="py-2 text-sm">
+              {{ range .Children }}
+                {{- $isChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
+                {{ if .HasChildren }}
+                  {{- $isNoNav := or (eq .URL "#") (eq .URL "/#") -}}
+                  {{- $submenuId := printf "submenu-%s-m" (or .Identifier (urlize .Name)) -}}
+                  <li>
+                    {{ if $isNoNav }}
+                      <button type="button"
+                              class="no-underline hover:underline brand-link {{ if $isChildActive }}underline{{ end }} flex items-center gap-1 w-full px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10"
+                              data-submenu-toggle="{{ $submenuId }}"
+                              aria-controls="{{ $submenuId }}"
+                              aria-expanded="false">
+                        <span>{{ .Name }}</span>
+                        <svg data-chevron class="w-2.5 h-2.5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                      </button>
+                    {{ else }}
+                      <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} flex items-center gap-1 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
+                        <span>{{ .Name }}</span>
+                        <svg class="w-2.5 h-2.5 -rotate-90" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                      </a>
+                    {{ end }}
+                    <ul id="{{ $submenuId }}" data-submenu class="mt-1 ml-4 border-l border-black/10 dark:border-white/10 hidden">
+                      {{ range .Children }}
+                        {{- $isGrandChildActive := partial "nav/menu-active.html" (dict "Page" $ "Entry" .) -}}
+                        <li>
+                          <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isGrandChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 pl-5 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isGrandChildActive }}aria-current="page"{{ end }}>
+                            {{ .Name }}
+                          </a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </li>
+                {{ else }}
+                  <li>
+                    <a href="{{ .URL | relURL }}" class="no-underline hover:underline brand-link {{ if $isChildActive }}underline {{ $navActiveClasses }} bg-black/5 dark:bg-white/10{{ end }} block px-4 py-2 hover:bg-black/5 dark:hover:bg-white/10" {{ if $isChildActive }}aria-current="page"{{ end }}>
+                      {{ .Name }}
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </div>
+        {{ else }}
+          <a href="{{ .URL | relURL }}"
+             class="no-underline hover:underline brand-link {{ $navHoverClasses }} {{ if $isActive }}underline {{ $navActiveClasses }}{{ end }} block py-2 px-3 rounded-sm md:border-0 md:p-0"
+             {{ if $isActive }}aria-current="page"{{ end }}>
+            {{ .Name }}
+          </a>
+        {{ end }}
+      </li>
+    {{ end }}
+    <!-- Mobile: search link at bottom of menu -->
+    <li class="pt-2 mt-2 border-t border-black/10 dark:border-white/10">
+      <a href="/search/" class="no-underline hover:underline brand-link block px-4 py-2">
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="M20 20l-3.5-3.5"/>
+          </svg>
+          Search
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
 
 <script>
   // Dynamically measure the sticky header height and expose it as a CSS var

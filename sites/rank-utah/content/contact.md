@@ -5,6 +5,7 @@ layout: "flowbite"
 url: "/contact"
 
 ---
+# Contact
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
