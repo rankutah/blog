@@ -5,7 +5,6 @@ layout: "flowbite"
 url: "/contact"
 
 ---
-# Contact
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -37,7 +36,7 @@ Schedule a phone call, video call, or in-person meeting.
 	name="true"
 	custom="Phone or Email"
 	preferredContact="true"
-	preferredOptions="Text message,Phone call,Email"
+	preferredOptions="Phone call, Text message, Email"
 	email="false"
 	business="false"
 	subject="false"
