@@ -32,15 +32,15 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< col card="true" y="start" >}}
 
-<h2 id="business-website" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Launch</h2>
+<h2 id="web-design" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Launch</h2>
 
-{{< badge text="Business Website" >}}
+{{< badge text="Web Design" >}}
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
 
-*Fast, professional **websites built to convert** visitors into customers.*
+*Fast, professional **website built to convert** visitors into customers.*
 
 - **Website Ownership**: You own your website from day one.
 - **Managed Hosting + Security**: Reliable hosting and built-in security are included.
@@ -63,7 +63,7 @@ No contracts. No setup fees. Cancel anytime.
 
 <h2 id="local-seo" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Grow</h2>
 
-{{< badge text="Business Website + Local SEO" >}}
+{{< badge text="Web Design + Local SEO" >}}
 
 {{< plan_price price="299" per="mo" old="$399" savings="Save $100/mo" sr="$299 per month" >}}
 
@@ -86,7 +86,7 @@ No contracts. No setup fees. Cancel anytime.
 
 <h2 id="google-ads" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Scale</h2>
 
-{{< badge text="Business Website + Local SEO + Google Ads" >}}
+{{< badge text="Web Design + Local SEO + Google Ads" >}}
 
 {{< plan_price price="499" per="mo" old="$699" savings="Save $200/mo" sr="$499 per month" >}}
 
