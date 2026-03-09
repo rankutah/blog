@@ -69,11 +69,6 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-*Best for businesses that want to show up in Maps and local search.*
-
-- **Local SEO without a website**: $199/mo
-- **Additional locations** (Local SEO with or without a website): +$99/mo per additional location
-
 ***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
 
 - **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
@@ -97,11 +92,7 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-*Best for businesses that want to invest to generate leads faster.*
-
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
-
-Google Ads management is included (ad spend is separate; you pay Google directly).
 
 - **Local SEO + Google Ads (without a website)**: $399/mo
 - **Google Ads alone**: $299/mo management fee (ad spend is separate)
