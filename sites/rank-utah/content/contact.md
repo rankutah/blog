@@ -15,8 +15,8 @@ url: "/contact"
 
 Call or text anytime, even after hours. If I miss you, I'll get back to you by the the next business day.
 
-{{< button url="tel:+13853238130" text="Call Me" >}}
-{{< button url="sms:+13853238130" text="Text Me" variant="outline" >}}
+{{< button url="tel:+13853238130" text="Call Benjamin" >}}
+{{< button url="sms:+13853238130" text="Text Benjamin" variant="outline" >}}
 
 ## Book a Meeting
 
