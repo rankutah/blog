@@ -504,6 +504,13 @@ main#content video {
 .cols-fixed.v-end     { --v: end; }
 .cols-fixed.v-stretch { --v: stretch; }
 
+/* If a page begins with a columns grid, typography adds a large top-margin to the
+   first heading (often an H2) inside each column, which can look like a big gap.
+   Remove that margin so the grid starts where a normal H1/H2 would. */
+.prose > :where(.cols-auto, .cols-fixed):first-child :where(h1, h2, h3, h4, h5, h6):first-child {
+  margin-top: 0;
+}
+
 /* Mobile-only reverse order for two-column stacks: move last child to top on mobile, restore order on md+ */
 .cols-auto.cols-reverse-mobile > * { order: 2; }
 .cols-auto.cols-reverse-mobile > *:last-child { order: 1; }
