@@ -97,8 +97,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
   logoWidth    = 0         # Let height drive intrinsic dimensions; 2x DPR handled in partial
   logoHeightPx = 48        # Intrinsic height attribute for CLS prevention (matches h-12)
 
-  # Visual style: blend (default), invert, glass
-  theme = "glass"
+  # Visual style is site-controlled.
+  # If not set, templates default to "blend".
+  # To enable glass on a specific site, set:
+  #   [params.header]
+  #   theme = "glass"
 
   # Global navbar layout defaults (Blue Ridge Abbey pattern)
   # - Brand (logo/title) stays on the far left
