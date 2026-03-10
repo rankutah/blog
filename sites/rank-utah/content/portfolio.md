@@ -21,11 +21,11 @@ url: "/portfolio"
 
 {{< cols min="18rem" gap="2rem" v="center" >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design & Local SEO for Business Services
+## Web Design & Local SEO for IT Services
 {{< /col >}}
 {{< col card="false" y="center" order="last" >}}
-<a href="https://digitalfacilitysolutions.com/" target="_blank" rel="noopener">
-	{{< img src="/media/new-local-business-utah-county.avif" alt="Digital Facility Solutions website" >}}
+<a href="https://blueridgetech.pro/" target="_blank" rel="noopener">
+	{{< img src="/media/website-design-blueridge-tech.avif" alt="BlueridgeTech website" >}}
 </a>
 {{< /col >}}
 {{< /cols >}}
@@ -66,11 +66,11 @@ url: "/portfolio"
 
 {{< cols min="18rem" gap="2rem" v="center" >}}
 {{< col card="false" y="center" order="first" >}}
-## Web Design & Local SEO for IT Services
+## Web Design & Local SEO for Digitization Service
 {{< /col >}}
 {{< col card="false" y="center" order="last" >}}
-<a href="https://blueridgetech.pro/" target="_blank" rel="noopener">
-	{{< img src="/media/website-design-blueridge-tech.avif" alt="BlueridgeTech website" >}}
+<a href="https://digitalfacilitysolutions.com/" target="_blank" rel="noopener">
+	{{< img src="/media/new-local-business-utah-county.avif" alt="Digital Facility Solutions website" >}}
 </a>
 {{< /col >}}
 {{< /cols >}}
