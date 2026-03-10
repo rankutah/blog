@@ -234,9 +234,6 @@ Websites are typically built in under a month with regular coordination.
 ## Ready to grow your visibility?
 {.center}
 
-Not sure where to start? Take the [Speed Challenge](/speed-challenge).
-{.center}
-
 
 
 {{< button url="/contact" text="Let's Talk"  >}}
