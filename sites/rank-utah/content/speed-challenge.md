@@ -26,7 +26,7 @@ Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/#shar
 3. Test a Clear Presence page next: paste in <a href="/" rel="nofollow">clearpresence.io</a> (or any Clear Presence page) and run the report.
 4. Compare the results side-by-side.
 
-A lot of websites are built on bloated templates or heavy plugins that slow things down. Clear Presence sites are custom‑coded to stay fast and lightweight. This brings you more leads and real money.
+A lot of websites are built on bloated templates or heavy plugins that slow things down. Clear Presence sites are custom-coded to stay fast and lightweight. That helps more people find your business, stay on your site, and turn into real leads.
 
 ## Ready to talk about web design?
 {.center}

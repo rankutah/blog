@@ -25,9 +25,6 @@ schema:
 # Simple, Transparent Pricing
 {.center}
 
-High-performance plans with no contracts, no setup fees, and no surprises.
-{.center}
-
 {{< pricing_toggle id="pricingHasWebsite" left="I need a website" right="I have a website" >}}
 
 {{< pricing_toggle_set state="need" >}}
