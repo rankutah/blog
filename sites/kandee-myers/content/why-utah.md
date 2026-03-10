@@ -10,17 +10,11 @@ image: "/media/hero-image.png"
 
 {{< hero img="/media/why-running.avif" alt="Kandee Myers" bleed="true" max="md" fit="contain" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" align="center" imgClasses="block w-full h-auto object-[75%_50%] md:object-center" >}}
 
-<div class="not-prose mx-auto w-full max-w-4xl text-center">
-  <h1 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0">Why I am Running</h1>
-  <div class="mt-6 km-why-running-hero flex flex-col items-center gap-4 md:gap-4">
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0"><a href="#i-love-utah" class="cp-hero-link block">I Love Utah</a></h2>
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="240"><a href="#i-know-utah" class="cp-hero-link block">I Know Utah</a></h2>
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="480"><a href="#i-trust-utah" class="cp-hero-link block">I Trust Utah</a></h2>
-    <h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="720"><a href="#i-believe-in-utah" class="cp-hero-link block">I Believe in Utah</a></h2>
+### Why I am Running
 
+[I love Utah](#i-love-utah) • [I know Utah](#i-know-utah) <br>
+[I trust Utah](#i-trust-utah) • [I believe in Utah](#i-believe-in-utah)
 
-  </div>
-</div>
 
 {{< /hero >}}
 

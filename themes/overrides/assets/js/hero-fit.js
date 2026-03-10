@@ -9,8 +9,8 @@
 (function () {
   const MOBILE_MQ = '(max-width: 767.98px)';
   // Minimum scale floor. Some pages intentionally use very large multi-line hero headings;
-  // on small screens we prefer scaling further down over forcing the hero overlay to scroll.
-  const MIN_SCALE = 0.45;
+  // on small screens we prefer scaling down over forcing the hero overlay to scroll.
+  const MIN_SCALE = 0.35;
   const EPS_PX = 2; // small fudge to avoid subpixel oscillation
 
   function clamp(n, lo, hi) {
@@ -41,7 +41,10 @@
     fitEl.style.removeProperty('--cp-hero-fit-scale');
     fitEl.style.transform = '';
     fitEl.removeAttribute('data-hero-fit');
-    if (wrapEl) wrapEl.style.overflowY = '';
+    if (wrapEl) {
+      wrapEl.style.overflowY = '';
+      wrapEl.style.overflowX = '';
+    }
   }
 
   function applyFitToWrap(wrapEl) {
@@ -76,7 +79,14 @@
     fitEl.setAttribute('data-hero-fit', willFit ? 'scaled' : 'scaled-min');
 
     if (willFit) {
+      // Prevent any visual spill outside the hero media.
       wrapEl.style.overflowY = 'hidden';
+      wrapEl.style.overflowX = 'hidden';
+    } else {
+      // Still contain within the hero media; allow scrolling inside the image as a last resort
+      // rather than letting text paint outside the hero.
+      wrapEl.style.overflowY = 'auto';
+      wrapEl.style.overflowX = 'hidden';
     }
   }
 

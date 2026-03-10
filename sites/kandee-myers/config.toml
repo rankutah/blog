@@ -89,6 +89,7 @@ enableRobotsTXT = true
   redirect = "https://kandee4utah.com/thank-you"
 
 [params.header]
+  theme         = "blend"
   stickyMobile  = true
   stickyDesktop = true
   showCTAOnMobile  = true

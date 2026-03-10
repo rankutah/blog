@@ -55,7 +55,31 @@
         continue;
       }
 
-      const y = clamp(-rect.top * ratio, -maxPx, maxPx);
+      // Clamp translation to the available overflow of the media itself.
+      // This prevents "blank gaps" on contain-fit heroes (or any hero where the
+      // image/picture doesn't have enough extra pixels after scaling).
+      let available = maxPx;
+      try {
+        const target = wrap.firstElementChild;
+        if (target instanceof HTMLElement) {
+          const mediaRect = target.getBoundingClientRect();
+          const overflow = Math.max(0, mediaRect.height - rect.height);
+          // With transform-origin centered, you can translate at most half the overflow
+          // before exposing empty space.
+          const half = overflow / 2;
+          // Give ourselves a 1px safety buffer for subpixel rounding.
+          available = Math.min(maxPx, Math.max(0, half - 1));
+        }
+      } catch (_e) {
+        available = maxPx;
+      }
+
+      if (available <= 0) {
+        wrap.style.setProperty('--cp-hero-parallax-y', '0px');
+        continue;
+      }
+
+      const y = clamp(-rect.top * ratio, -available, available);
       wrap.style.setProperty('--cp-hero-parallax-y', `${y.toFixed(2)}px`);
     }
   };

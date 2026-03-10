@@ -8,19 +8,13 @@ aliases:
 hero: true
 ---
 
-{{< hero img="/media/My%20Priorities%20For%20Utah-4.avif" alt="My Priorities for Utah" bleed="true" max="md" fit="contain" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" align="center" >}}
+{{< hero img="/media/My%20Priorities%20For%20Utah-4.avif" alt="My Priorities for Utah" bleed="true" max="md" fit="contain" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" align="center" imgClasses="block w-full h-auto" >}}
 
-<div class="not-prose mx-auto w-full max-w-4xl text-center">
-	<h1 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0">Put Me to Work</h1>
-	<div class="mt-6 km-why-running-hero flex flex-col items-center gap-4 md:gap-4">
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="0"><a href="#housing" class="cp-hero-link block">Homeownership</a></h2>
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="240"><a href="#education" class="cp-hero-link block">Education</a></h2>
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="480"><a href="#child-care" class="cp-hero-link block">Child Care</a></h2>
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="720"><a href="#health-care" class="cp-hero-link block">Health Care</a></h2>
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="960"><a href="#social-media" class="cp-hero-link block">Social Media</a></h2>
-		<h2 class="motion-fade text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-motion="reveal" data-motion-delay="1200"><a href="#property-taxes" class="cp-hero-link block">Property Taxes</a></h2>
-	</div>
-</div>
+### Put me to work
+
+[Homeownership](#housing) <br>
+[Education](#education) • [Child Care](#child-care) <br>
+[Health Care](#health-care) • [Social Media](#social-media)
 
 {{< /hero >}}
 

@@ -669,6 +669,14 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
   will-change: transform;
 }
 
+/* When a hero overlay is bottom-aligned, shrink from the bottom so the CTA/text stays anchored
+   to the image bottom edge on mobile. */
+.section.hero .hero-overlay-wrap.hero-overlay-bottom .hero-overlay-fit,
+.section.hero .hero-overlay-wrap.hero-overlay-mobilebottom .hero-overlay-fit,
+.section.hero .hero-overlay-wrap.hero-overlay-lowerthird .hero-overlay-fit {
+  transform-origin: bottom center;
+}
+
 /* ========== Contact form placeholders & checkbox (unified) ========== */
 /* Scoped to .cp-contact so it only affects forms that use that class. */
 .cp-contact input[type="text"]::placeholder,
