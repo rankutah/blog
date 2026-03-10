@@ -41,9 +41,22 @@
       Clear Presence websites are built to load quickly on mobile, turn visitors into leads, and work seamlessly with Local SEO and Google Ads. When your website, SEO, and ads work together, it’s much easier for customers to find you and contact you.
     </p>
 
-    <p class="hidden group-has-[input:checked]:block mt-3 text-center text-sm md:text-base text-gray-700 dark:text-gray-200">
-      Local SEO and Google Ads work best when your website is fast on mobile. Check your site with the <a href="/speed-challenge" class="underline">Speed Challenge</a>. If your site takes longer than 5 seconds to load, rebuilding it first is the best long-term solution because a faster site helps prevent visitors from leaving before the page fully loads.
-    </p>
+    <div class="hidden group-has-[input:checked]:block mt-4">
+      <div class="mx-auto max-w-3xl rounded-xl border border-[color:var(--cp-card-border)] bg-[color:var(--cp-card-bg)] px-4 py-4 md:px-6 md:py-5 shadow-sm">
+        <div class="flex items-center justify-center gap-2">
+          <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-white bg-[color:var(--cp-brand)]">
+            Important
+          </span>
+          <span class="text-sm md:text-base font-semibold text-gray-900 dark:text-gray-100">
+            These plans assume your current website is already fast on mobile.
+          </span>
+        </div>
+
+        <p class="mt-2 text-center text-sm md:text-base text-gray-700 dark:text-gray-200">
+          Run the <a href="/speed-challenge" class="underline font-semibold">Speed Challenge</a>. If your site takes longer than <strong>5 seconds</strong> to load, rebuilding it first is usually the best long-term move (a faster site keeps visitors from leaving before the page fully loads).
+        </p>
+      </div>
+    </div>
 
     {{- with $help -}}
       <p class="mt-4 text-center text-base text-gray-600 dark:text-gray-300">{{ . }}</p>

@@ -179,7 +179,7 @@ sameAs = []
 
 # [params.button_outline]
 
-#[build]  # uses shared build settings from theme; uncomment to override
+#[build]  # uses shared build settings from theme; uncomment to override this
 
 [menu]
 
