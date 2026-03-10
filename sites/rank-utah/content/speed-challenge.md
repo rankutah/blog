@@ -1,5 +1,5 @@
 ---
-title: "Website Speed Challenge"
+title: "How to test and Improve Page Speed Load Times for Utah Business Websites"
 description: "Compare Clear Presence with any other website using Google PageSpeed Insights — a quick, transparent way to see real performance."
 layout: "flowbite"
 url: "/speed-challenge/"
