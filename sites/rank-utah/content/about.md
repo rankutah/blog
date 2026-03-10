@@ -27,10 +27,6 @@ Bachelor's in Business Management
 
 ## Ready to get started?
 
-If you want more consistent calls and messages (and clear reporting on what’s driving them), let’s chat. I’ll give you honest recommendations and a simple plan.
-
-Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
-
 <div class="flex flex-wrap gap-3 items-center">
 	{{< button url="/contact" text="Let's Talk" >}}
 	{{< button url="/pricing" variant="outline" text="See Pricing" >}}
