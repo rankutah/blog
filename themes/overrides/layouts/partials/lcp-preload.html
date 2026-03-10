@@ -37,7 +37,9 @@
         {{- $url = trim (index $firstParts 0) " \t\n\r\"'" -}}
       {{- end -}}
       {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
-        <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" imagesrcset="{{ $avifSrcset | safeHTMLAttr }}" imagesizes="{{ $avifSizes | safeHTMLAttr }}"{{ with $media }} media="{{ . | safeHTMLAttr }}"{{ end }}>
+        {{- /* Hugo's HTML minifier can rewrite `imagesrcset` (non-standard attribute) in ways that break srcset parsing.
+              Safer: preload the first AVIF candidate via href only. */ -}}
+        <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" type="image/avif">
       {{- end -}}
     {{- end -}}
   {{- else -}}
