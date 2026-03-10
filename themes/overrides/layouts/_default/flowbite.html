@@ -105,6 +105,10 @@
 
   {{- /* Optional motion (scroll reveals, hero entrance). Opt-in per site. */ -}}
   {{- $motionEnabled := site.Params.motion.enabled | default false -}}
+  {{- /* Per-page override: set `motion: false` in frontmatter to disable on that page. */ -}}
+  {{- if isset .Params "motion" -}}
+    {{- $motionEnabled = .Params.motion -}}
+  {{- end -}}
   {{- if $motionEnabled -}}
     {{- $motion := resources.Get "js/motion.js" | resources.Minify | resources.Fingerprint -}}
     <script>

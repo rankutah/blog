@@ -3,6 +3,7 @@ title: "Pricing for Web Design, Local SEO, & Google Ads in Utah - Digital Market
 description: "Simple, affordable monthly pricing for digital marketing services. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"
+motion: false
 schema:
   faq:
     enabled: true
@@ -17,6 +18,8 @@ schema:
         answer: "No further charges after cancellation. The site stays online through the current billing period. On request, a content export is provided and the domain can be transferred."
       - question: "Do you charge setup fees?"
         answer: "No. Setup is included in your monthly price."
+      - question: "How do you compare to other agencies?"
+        answer: "Visit the Speed Challenge page to run a side-by-side PageSpeed comparison and see why site speed matters for SEO, ads, and conversions."
       - question: "What does ‘unlimited content updates’ include?"
         answer: "Requests typical of a local business site: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
       - question: "How long does a new website take?"
@@ -201,6 +204,10 @@ No further charges after cancellation. The site stays online through the current
 ### Do you charge setup fees?
 No. Setup is included in your monthly price.
 
+### How do you compare to other agencies?
+
+Take the [Speed Challenge](/speed-challenge) to run a side-by-side PageSpeed comparison and see why site speed matters for SEO, ads, and conversions.
+
 ### What does ongoing support include?
 Requests typical of a small‑business site are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Articles you provide can be published as site pages as well.
 
@@ -225,6 +232,9 @@ Websites are typically built in under a month with regular coordination.
 
 
 ## Ready to grow your visibility?
+{.center}
+
+Not sure where to start? Take the [Speed Challenge](/speed-challenge).
 {.center}
 
 
