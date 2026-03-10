@@ -29,6 +29,9 @@
 
 {{- $motionEnabled := .Page.Site.Params.motion.enabled | default false -}}
 
+{{- $staggerRaw := lower (.Get "stagger" | default "true") -}}
+{{- $staggerEnabled := not (or (eq $staggerRaw "false") (eq $staggerRaw "0") (eq $staggerRaw "off") (eq $staggerRaw "no")) -}}
+
 {{- $vMap := dict
   "start"   "items-start"
   "center"  "items-center"
@@ -81,7 +84,7 @@
 {{- $useFixed := or (ne $tpl "") (ne $mdTpl "") -}}
 {{- $colsClass := cond $useFixed "cols-fixed" "cols-auto" -}}
 
-<div class="{{ $colsClass }} {{ $vCls }}{{ if $orderCls }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"{{ if $motionEnabled }} data-motion-group="stagger"{{ end }}
+<div class="{{ $colsClass }} {{ $vCls }}{{ if $orderCls }} {{ $orderCls }}{{ end }}{{ with $extra }} {{ . }}{{ end }}"{{ if and $motionEnabled $staggerEnabled }} data-motion-group="stagger"{{ end }}
      style="--min: {{ $min }}; --gap: {{ $gap }};{{ if $row }} --row: {{ $row }};{{ end }}{{ if $tpl }} --tpl: {{ $tpl }};{{ end }}{{ if $mdTpl }} --tpl-md: {{ $mdTpl }};{{ end }}">
   {{ .Inner }}
 </div>

@@ -9,7 +9,10 @@
 {{- else -}}
 <meta name="color-scheme" content="light dark">
 {{- end -}}
-{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
+{{- /* Robots: never index the 404 page; otherwise follow normal production rules. */ -}}
+{{- if or (eq .Kind "404") (eq .RelPermalink "/404.html") -}}
+<meta name="robots" content="noindex, nofollow">
+{{- else if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}
 <meta name="robots" content="noindex, nofollow">

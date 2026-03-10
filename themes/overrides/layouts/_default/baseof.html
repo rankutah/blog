@@ -32,6 +32,7 @@
 		{{- partial "theme/card-border-vars.html" . -}}
 	</head>
 	<body id="top" class="min-h-screen flex flex-col {{ if eq site.Params.defaultTheme `dark` }}dark{{ end }}">
+		{{- $is404 := or (eq .Kind "404") (eq .RelPermalink "/404.html") -}}
 		{{ partial "header.html" . }}
 		<main class="flex-1">
 			{{- block "main" . }}{{ end }}
@@ -50,7 +51,7 @@
 		{{ $hideOnContactVal := (index $fabCfg "hideOnContact") | default true }}
 		{{ $hideOnContact := not (eq (lower (printf "%v" $hideOnContactVal)) "false") }}
 		{{ $hideMessageFab := or (and $hideOnContact (eq .RelPermalink $contactURL)) (.Param "hideMessageFab") }}
-		{{ if not $hideMessageFab }}
+		{{ if and (not $is404) (not $hideMessageFab) }}
 			{{ if and $mm ($mm.enable) }}
 				{{ partial "text-fab.html" . }}
 				{{ partial "message-modal.html" . }}

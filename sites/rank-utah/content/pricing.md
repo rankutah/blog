@@ -32,7 +32,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 {{< pricing_toggle_set state="need" >}}
 
-{{< cols min="18rem" gap="1rem" v="stretch">}}
+{{< cols min="18rem" gap="1rem" v="stretch" stagger="false">}}
 
 {{< col card="true" y="start" >}}
 
@@ -115,7 +115,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< pricing_toggle_set state="have" >}}
 
-{{< cols min="18rem" gap="1rem" v="stretch">}}
+{{< cols min="18rem" gap="1rem" v="stretch" stagger="false">}}
 
 {{< col card="true"  y="start" >}}
 

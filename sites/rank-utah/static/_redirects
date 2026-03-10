@@ -53,3 +53,6 @@
 
 /local-seo                             /services/local-seo 301
 /local-seo/                            /services/local-seo 301
+
+# Fallback: return the real 404 page for unknown paths (prevents "soft 404" homepage responses)
+/* /404.html 404
