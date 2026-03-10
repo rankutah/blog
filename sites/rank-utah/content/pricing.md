@@ -38,7 +38,7 @@ High-performance plans with no contracts, no setup fees, and no surprises.
 
 ## Launch {#web-design}
 
-{{< badge text="Web Design" >}}
+{{< badge text="Business Website" >}}
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
@@ -67,7 +67,7 @@ No contracts. No setup fees. Cancel anytime.
 
 ## Grow {#local-seo}
 
-{{< badge text="Web Design + Local SEO" >}}
+{{< badge text="Business Website + Local SEO" >}}
 
 {{< plan_price price="299" per="mo" old="$399" savings="Save $100/mo" sr="$299 per month" >}}
 
@@ -90,7 +90,7 @@ No contracts. No setup fees. Cancel anytime.
 
 ## Scale {#google-ads}
 
-{{< badge text="Web Design + Local SEO + Google Ads" >}}
+{{< badge text="Business Website + Local SEO + Google Ads" >}}
 
 {{< plan_price price="499" per="mo" old="$699" savings="Save $200/mo" sr="$499 per month" >}}
 
