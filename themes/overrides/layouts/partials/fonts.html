@@ -6,8 +6,12 @@
     # Optional: raw Google Fonts CSS2 query string (everything after `css2?`)
     # Example: "family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;700&display=swap"
     load   = ""
-    body   = "ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
-    heading= "ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+    # body/heading can be:
+    # - "sans"  (preset)
+    # - "serif" (preset)
+    # - a full font-family stack string (recommended for custom fonts)
+    body   = "sans"
+    heading= "sans"
     navBrand = "inherit"  # falls back to heading if set to "inherit"
     navLink  = "inherit"  # falls back to body if set to "inherit"
     button   = "inherit"  # falls back to body if set to "inherit"
@@ -16,12 +20,23 @@
 */}}
 
 {{- $fonts := .Site.Params.fonts | default dict -}}
+
+{{- $sansStack := `ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` -}}
+{{- $serifStack := `ui-serif,Georgia,"Times New Roman",Times,serif` -}}
+
 {{- $load  := (index $fonts "load") | default "" -}}
-{{- $body  := (index $fonts "body") | default `ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` -}}
-{{- $heading := (index $fonts "heading") | default `ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` -}}
-{{- $navBrand := (index $fonts "navBrand") | default "inherit" -}}
-{{- $navLink  := (index $fonts "navLink")  | default "inherit" -}}
-{{- $button   := (index $fonts "button")   | default "inherit" -}}
+
+{{- $bodyRaw := (index $fonts "body") | default $sansStack -}}
+{{- $headingRaw := (index $fonts "heading") | default $sansStack -}}
+{{- $body := cond (eq $bodyRaw "sans") $sansStack (cond (eq $bodyRaw "serif") $serifStack $bodyRaw) -}}
+{{- $heading := cond (eq $headingRaw "sans") $sansStack (cond (eq $headingRaw "serif") $serifStack $headingRaw) -}}
+
+{{- $navBrandRaw := (index $fonts "navBrand") | default "inherit" -}}
+{{- $navLinkRaw  := (index $fonts "navLink")  | default "inherit" -}}
+{{- $buttonRaw   := (index $fonts "button")   | default "inherit" -}}
+{{- $navBrand := cond (eq $navBrandRaw "sans") $sansStack (cond (eq $navBrandRaw "serif") $serifStack $navBrandRaw) -}}
+{{- $navLink  := cond (eq $navLinkRaw "sans")  $sansStack (cond (eq $navLinkRaw "serif")  $serifStack $navLinkRaw) -}}
+{{- $button   := cond (eq $buttonRaw "sans")   $sansStack (cond (eq $buttonRaw "serif")   $serifStack $buttonRaw) -}}
 {{- $useLocalCinzel := (index $fonts "localCinzel") | default false -}}
 
 {{/* If a site declares fonts.load, prefer the vendored local CSS produced by scripts/vendor-google-fonts.mjs */}}

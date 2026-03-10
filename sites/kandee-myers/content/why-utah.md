@@ -12,8 +12,8 @@ image: "/media/hero-image.png"
 
 ### Why I am Running
 
-[I love Utah](#i-love-utah) • [I know Utah](#i-know-utah) <br>
-[I trust Utah](#i-trust-utah) • [I believe in Utah](#i-believe-in-utah)
+#### [I love Utah](#i-love-utah) • [I know Utah](#i-know-utah) <br>
+#### [I trust Utah](#i-trust-utah) • [I believe in Utah](#i-believe-in-utah)
 
 
 {{< /hero >}}

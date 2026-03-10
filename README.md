@@ -146,6 +146,10 @@ load = ""
 body    = "ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif"
 heading = "ui-serif,Georgia,Times New Roman,Times,serif"
 
+# Shorthand presets are also supported:
+# body = "sans"
+# heading = "serif"
+
 # Optional overrides ("inherit" means: fall back to the defaults above)
 navBrand = "inherit"  # falls back to heading
 navLink  = "inherit"  # falls back to body

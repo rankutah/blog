@@ -11,10 +11,9 @@ hero: true
 {{< hero img="/media/My%20Priorities%20For%20Utah-4.avif" alt="My Priorities for Utah" bleed="true" max="md" fit="contain" pad="2xl" padMobile="none" overlay="true" overlayShade="bg-black/30" align="center" imgClasses="block w-full h-auto" >}}
 
 ### Put me to work
-
-[Homeownership](#housing) <br>
-[Education](#education) • [Child Care](#child-care) <br>
-[Health Care](#health-care) • [Social Media](#social-media)
+#### [Homeownership](#housing)
+#### [Education](#education) • [Child Care](#child-care) <br>
+#### [Health Care](#health-care) • [Social Media](#social-media)
 
 {{< /hero >}}
 

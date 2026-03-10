@@ -31,6 +31,22 @@ enableRobotsTXT = true
   # Primary accent = campaign blue; we’ll use Utah-flag red as a secondary accent in page content.
   primaryColor = "blue"
 
+  # Fonts (optional): override body/headings globally.
+  # Supported presets: "sans" | "serif"; you can also provide a full font-family stack.
+  #
+  # Example (serif headings, sans body):
+  # [params.fonts]
+  #   body = "sans"
+  #   heading = "serif"
+  #
+  # Example (custom fonts + self-hosted Google Fonts):
+  # [params.fonts]
+  #   load = "family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;700&display=swap"
+  #   body = "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif"
+  #   heading = "Playfair Display, ui-serif, Georgia, Times New Roman, Times, serif"
+  #
+  # Then run: SITE=kandee-myers node scripts/vendor-google-fonts.mjs
+
   # Optional; add a real logo later (this affects Organization schema auto-logo too).
   logo = ""
 
@@ -89,7 +105,7 @@ enableRobotsTXT = true
   redirect = "https://kandee4utah.com/thank-you"
 
 [params.header]
-  theme         = "blend"
+  theme             = "blend"
   stickyMobile  = true
   stickyDesktop = true
   showCTAOnMobile  = true
