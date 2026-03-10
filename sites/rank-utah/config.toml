@@ -112,7 +112,9 @@ sameAs = []
   delayMs = 0
   clarityOnlyOnInteraction = true
   # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
-  debugMode = false
+  debugMode = true
+  # Local audit helper: when debugMode=true, allow localhost to load Zaraz via this absolute URL
+  zarazSrc = "https://clearpresence.io/cdn-cgi/zaraz/i.js"
 
   [params.analytics.google]
     id = "G-7240SPB67L"

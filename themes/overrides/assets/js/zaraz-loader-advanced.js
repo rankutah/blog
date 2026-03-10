@@ -14,12 +14,14 @@
   // Default endpoint (same-origin). Note: some Cloudflare Zaraz setups require a zone-specific
   // script URL (e.g. static.cloudflareinsights.com/zaraz/s.js?z=...) and will 404/400 without it.
   let ZARAZ_SRC = '/cdn-cgi/zaraz/i.js';
+  let DEBUG_MODE = false;
   try {
     const cfgEl = document.getElementById('cp-analytics-config');
     const cfg = cfgEl ? JSON.parse(cfgEl.textContent || '{}') : {};
     if (cfg && typeof cfg.zarazSrc === 'string' && cfg.zarazSrc.trim().length) {
       ZARAZ_SRC = cfg.zarazSrc.trim();
     }
+    DEBUG_MODE = !!(cfg && cfg.debugMode);
   } catch {}
   let loaded = false;
 
@@ -44,7 +46,9 @@
         host === '127.0.0.1' ||
         host === '0.0.0.0' ||
         host.endsWith('.localhost');
-      if (isLocal) return;
+      // Allow local Lighthouse audits when explicitly opted-in.
+      // Typical use: set analytics `debugMode=true` and `zarazSrc` to a full https URL.
+      if (isLocal && !DEBUG_MODE) return;
     } catch {}
 
     try {
@@ -91,7 +95,9 @@
     }
 
     try {
-      ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'].forEach(function (evt) {
+      // Avoid `mousemove`: it triggers constantly and causes analytics to load
+      // during Lighthouse runs / passive pointer drift.
+      ['pointerdown', 'scroll', 'touchstart', 'keydown'].forEach(function (evt) {
         w.addEventListener(evt, arm, { once: true, passive: true });
       });
     } catch {}
