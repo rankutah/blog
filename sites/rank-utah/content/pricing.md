@@ -20,7 +20,7 @@ schema:
       - question: "What does ‘unlimited content updates’ include?"
         answer: "Requests typical of a local business site: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
       - question: "How long does a new website take?"
-        answer: "Websites can be built in 2–3 weeks with regular coordination."
+        answer: "Websites are typically built in under a month with regular coordination."
 ---
 # Simple, Transparent Pricing
 {.center}
@@ -70,6 +70,8 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
+Price includes <strong>1 location</strong>. Additional locations are <strong>$99/mo</strong>.
+
 ***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
 
 - **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
@@ -92,6 +94,8 @@ No contracts. No setup fees. Cancel anytime.
 {{< plan_price price="499" per="mo" old="$699" savings="Save $200/mo" sr="$499 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
+
+Price includes <strong>1 Google Ads campaign</strong> focused on <strong>one business location</strong>. Additional campaigns are <strong>$99/mo</strong>.
 
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
 
@@ -124,6 +128,8 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
+Price includes <strong>1 location</strong>. Additional locations are <strong>$99/mo</strong>.
+
 ***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
 
 - **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
@@ -146,6 +152,8 @@ No contracts. No setup fees. Cancel anytime.
 {{< plan_price price="399" per="mo" old="$499" savings="Save $100/mo" sr="$399 per month" >}}
 
 No contracts. No setup fees. Cancel anytime.
+
+Price includes <strong>1 Google Ads campaign</strong> focused on <strong>one business location</strong>. Additional campaigns are <strong>$99/mo</strong>.
 
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
 
@@ -210,7 +218,7 @@ Fair use and scope:
 Monthly work includes actively managing your local visibility by monitoring your search performance, analyzing ranking trends, and making ongoing improvements to your website, Google Business Profile, Apple Maps, and Bing Places. These updates ensure your business stays aligned with what customers are searching for and reflect the latest changes in how your keywords are ranking. You’ll also receive a transparent monthly performance report so you can clearly see how your visibility, traffic, and leads are improving over time.
 
 ### How long does a new website take?
-Websites can be built in 2–3 weeks with regular coordination.
+Websites are typically built in under a month with regular coordination.
 
 {{< /faqs >}}
 
