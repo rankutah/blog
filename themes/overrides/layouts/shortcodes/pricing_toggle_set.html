@@ -1,0 +1,24 @@
+{{- /* Child wrapper for pricing_toggle.
+
+  Params:
+    state="need" (default visible)
+    state="have" (visible when checkbox checked)
+*/ -}}
+
+{{- $page := .Page -}}
+{{- $state := lower (.Get "state" | default "need") -}}
+{{- $inner := .InnerDeindent | strings.TrimSpace -}}
+{{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
+
+{{- $classes := "" -}}
+{{- if eq $state "have" -}}
+  {{- $classes = "hidden group-has-[input:checked]:block" -}}
+{{- else -}}
+  {{- $classes = "group-has-[input:checked]:hidden" -}}
+{{- end -}}
+
+<div class="{{ $classes }}">
+  {{- if $inner -}}
+    {{- $page.RenderString $opts $inner -}}
+  {{- end -}}
+</div>

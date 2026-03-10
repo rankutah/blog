@@ -28,11 +28,15 @@ schema:
 High-performance plans with no contracts, no setup fees, and no surprises.
 {.center}
 
+{{< pricing_toggle id="pricingHasWebsite" left="I need a website" right="I have a website" >}}
+
+{{< pricing_toggle_set state="need" >}}
+
 {{< cols min="18rem" gap="1rem" v="stretch">}}
 
 {{< col card="true" y="start" >}}
 
-<h2 id="web-design" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Launch</h2>
+## Launch {#web-design}
 
 {{< badge text="Web Design" >}}
 
@@ -61,7 +65,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true"  y="start" >}}
 
-<h2 id="local-seo" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Grow</h2>
+## Grow {#local-seo}
 
 {{< badge text="Web Design + Local SEO" >}}
 
@@ -84,7 +88,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true" y="start" >}}
 
-<h2 id="google-ads" class="mt-0 mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">Scale</h2>
+## Scale {#google-ads}
 
 {{< badge text="Web Design + Local SEO + Google Ads" >}}
 
@@ -93,9 +97,6 @@ No contracts. No setup fees. Cancel anytime.
 No contracts. No setup fees. Cancel anytime.
 
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
-
-- **Local SEO + Google Ads (without a website)**: $399/mo
-- **Google Ads alone**: $299/mo management fee (ad spend is separate)
 
 - **Keyword Research**: Research focused on the searches most likely to bring in leads.
 - **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
@@ -109,6 +110,64 @@ No contracts. No setup fees. Cancel anytime.
 {{< /col >}}
 
 {{< /cols >}}
+
+{{< /pricing_toggle_set >}}
+
+{{< pricing_toggle_set state="have" >}}
+
+{{< cols min="18rem" gap="1rem" v="stretch">}}
+
+{{< col card="true"  y="start" >}}
+
+## Grow {#local-seo-existing}
+
+{{< badge text="Local SEO" >}}
+
+{{< plan_price price="199" per="mo" sr="$199 per month" >}}
+
+No contracts. No setup fees. Cancel anytime.
+
+***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
+
+- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
+- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
+- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
+- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
+- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
+- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
+
+{{< button id="checkout-local-seo-existing" url="/contact" text="Let's Talk" >}} {{< button url="/services/local-seo/#learn-more" variant="outline"  text="Learn More" >}}
+
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+
+## Scale {#google-ads-existing}
+
+{{< badge text="Local SEO + Google Ads" >}}
+
+{{< plan_price price="399" per="mo" old="$499" savings="Save $100/mo" sr="$399 per month" >}}
+
+No contracts. No setup fees. Cancel anytime.
+
+*For businesses that want **more leads** and are **ready to invest** in advertising.*
+
+- **Keyword Research**: Research focused on the searches most likely to bring in leads.
+- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
+- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
+- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
+- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
+- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
+
+{{< button id="checkout-google-ads-existing" url="/contact" text="Let's Talk" >}} {{< button url="/services/google-ads/#learn-more" variant="outline" text="Learn More" >}}
+
+{{< /col >}}
+
+{{< /cols >}}
+
+{{< /pricing_toggle_set >}}
+
+{{< /pricing_toggle >}}
 
 ## FAQs
 {.center}
