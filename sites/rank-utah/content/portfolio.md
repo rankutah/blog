@@ -111,6 +111,7 @@ url: "/portfolio"
 {{< /cols >}}
 
 ## Ready to start your website?
+{.center}
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/services/website-design" variant="outline" text="Web Design" >}}
-
+{.center}

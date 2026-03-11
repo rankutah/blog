@@ -132,6 +132,8 @@ Results depend on what you have to offer, the level of search interest in your a
 {{< /faqs >}}
 
 ## Ready to talk about local SEO?
+{.center}
 
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
+{.center}

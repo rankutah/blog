@@ -106,8 +106,9 @@ Services are available statewide across Utah, with an office in [Pleasant Grove]
 {{< /faqs >}}
 
 ## Ready to talk about Google Ads?
+{.center}
 
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
-
+{.center}
 

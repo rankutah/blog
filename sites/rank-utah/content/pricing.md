@@ -44,7 +44,7 @@ schema:
 
 No contracts. No setup fees. Cancel anytime.
 
-*Fast, professional **website built to convert** visitors into customers.*
+*Fast, professional **custom website built to convert** visitors into customers.*
 
 - **Website Ownership**: You own your website from day one.
 - **Managed Hosting + Security**: Reliable hosting and built-in security are included.
