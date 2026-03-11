@@ -180,12 +180,23 @@
   }
 
   // Mark elements already in view so we don't hide them when motion becomes "ready".
+  // This avoids delaying paint/LCP on pages where above-the-fold content gets auto-marked.
   const inViewNow = (el) => {
     const r = el.getBoundingClientRect();
     const vh = window.innerHeight || document.documentElement.clientHeight || 0;
     // Consider "in view" if it intersects the top ~92% of viewport.
     return r.bottom > 0 && r.top < vh * 0.92;
   };
+
+  // Make already-in-view reveal elements visible *before* enabling `data-motion-ready`.
+  // Otherwise they can briefly flip to opacity:0 (CSS hidden state) until the rAF reveal.
+  for (const el of revealEls) {
+    try {
+      if (inViewNow(el)) el.classList.add('is-visible');
+    } catch (e) {
+      // ignore
+    }
+  }
 
   // Enable CSS-driven initial hidden states only after the above sync pass.
   // Clear the pre-paint pending gate first to prevent any flash.
