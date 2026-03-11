@@ -1,5 +1,5 @@
 ---
-title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency - Google Adwords Managmenent in Pleasant Grove, UT - Serving Utah County (Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain), Salt Lake County (Salt Lake City, West Valley City, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville), Davis County (Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse), Weber County (Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View)"
+title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency - Google Adwords Managmenent in Pleasant Grove, UT - Serving Utah County (Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain), Salt Lake County (Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville), Davis County (Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse), Weber County (Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View)"
 description: "Pleasant Grove-based web design, local SEO, and Google Ads management serving Utah County plus Salt Lake, Davis, and Weber County (Wasatch Front / Northern Utah)."
 url: "/locations/pleasant-grove-ut"
 hero: true
@@ -27,6 +27,7 @@ schema:
       - "Salt Lake County, UT"
       - "Salt Lake City, UT"
       - "West Valley City, UT"
+      - "Kearns, UT"
       - "West Jordan, UT"
       - "Sandy, UT"
       - "South Jordan, UT"
@@ -86,6 +87,7 @@ schema:
       - "Salt Lake County, UT"
       - "Salt Lake City, UT"
       - "West Valley City, UT"
+      - "Kearns, UT"
       - "West Jordan, UT"
       - "Sandy, UT"
       - "South Jordan, UT"
@@ -247,7 +249,7 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 Here are some of the areas I serve in Northern Utah:
 
 - **Utah County**: Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain
-- **Salt Lake County**: Salt Lake City, West Valley City, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, Murray, Riverton, Herriman
+- **Salt Lake County**: Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, Murray, Riverton, Herriman
 - **Davis County**: Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse, Centerville
 - **Weber County**: Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View
 
