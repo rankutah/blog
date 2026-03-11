@@ -789,14 +789,14 @@ html[data-motion-ready="true"] .section.hero [data-motion="hero"].is-visible h1 
   opacity: 1;
   transform: none;
   transition-duration: 2400ms;
-  transition-delay: 300ms;
+  transition-delay: 0ms;
 }
 
 html[data-motion-ready="true"] .section.hero [data-motion="hero"].is-visible .ui-btn {
   opacity: 1;
   transform: none;
   transition-duration: 2200ms;
-  transition-delay: 900ms;
+  transition-delay: 200ms;
 }
 
 /* CTAs enter together (no per-button stagger) */
