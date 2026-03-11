@@ -92,8 +92,10 @@
           fab.style.pointerEvents = 'auto';
           // Ensure positioning sticks
           fab.style.position = 'fixed';
-          var cs = window.getComputedStyle ? getComputedStyle(fab) : { display:'', visibility:'', opacity:'', position:'' };
-          log('normalize', { display: cs.display, visibility: cs.visibility, opacity: cs.opacity, position: cs.position });
+          if (DBG) {
+            var cs = window.getComputedStyle ? getComputedStyle(fab) : { display:'', visibility:'', opacity:'', position:'' };
+            log('normalize', { display: cs.display, visibility: cs.visibility, opacity: cs.opacity, position: cs.position });
+          }
         } catch(_){ /* no-op */ }
       }
       normalize();

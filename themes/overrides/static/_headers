@@ -48,6 +48,11 @@
   Cache-Control: public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400
   Access-Control-Allow-Origin: *
   Cross-Origin-Resource-Policy: cross-origin
+/assets/css/*
+  # Hugo Pipes CSS is content-hashed (e.g. site.min.<hash>.css), so it's safe to cache long.
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
 /assets/*
   # Hugo Pipes outputs content-hashed files under /assets/*, but old hashes may disappear on deploy.
   # Avoid year-long caching here to prevent “cached 404 CSS = unstyled site until hard refresh”.
