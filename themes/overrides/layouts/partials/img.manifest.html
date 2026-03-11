@@ -110,8 +110,11 @@
   {{- /* No WebP <source>; keep outputs to AVIF + JPEG */ -}}
     {{- /* Combine placeholder background style and any moved img styles */ -}}
     {{- $imgStyleAttr := $imgStyle -}}
-    {{- /* Base64 placeholders bloat HTML and can hurt LCP/TBT; only include for eager images. */ -}}
-    {{- if and (eq $loading "eager") $placeholder -}}
+    {{- /* Base64 placeholders bloat HTML and can hurt LCP/TBT.
+         For LCP candidates (typically loading=eager), skip inlining placeholders to reduce HTML parse/render delays.
+         If a page ever needs an inline placeholder, pass `inlinePlaceholder=true` to this partial call site. */ -}}
+    {{- $inlinePlaceholder := .inlinePlaceholder | default .InlinePlaceholder | default false -}}
+    {{- if and $inlinePlaceholder $placeholder -}}
       {{- $ph := printf "background-image:url('%s');background-size:%s;background-position:center;" $placeholder $object -}}
       {{- if ne $imgStyleAttr "" -}}
         {{- $imgStyleAttr = printf "%s %s" $ph $imgStyleAttr -}}

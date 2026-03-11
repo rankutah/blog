@@ -29,17 +29,48 @@
       {{- $media = index (index $mdm 0) 1 -}}
     {{- end -}}
     {{- if ne $avifSrcset "" -}}
-      {{- $first := index (split $avifSrcset ",") 0 | default "" -}}
-      {{- $first = trim $first " \t\n\r" -}}
-      {{- $firstParts := split (trim $first " ") " " -}}
-      {{- $url := "" -}}
-      {{- if gt (len $firstParts) 0 -}}
-        {{- $url = trim (index $firstParts 0) " \t\n\r\"'" -}}
+      {{- /* Choose a better preload candidate than the first (often smallest) srcset entry.
+            We pick the smallest width >= target, falling back to the largest available. */ -}}
+      {{- $targetW := 960 -}}
+      {{- $bestUrl := "" -}}
+      {{- $bestW := 0 -}}
+      {{- $largestUrl := "" -}}
+      {{- $largestW := 0 -}}
+
+      {{- range $i, $raw := split $avifSrcset "," -}}
+        {{- $item := trim $raw " \t\n\r" -}}
+        {{- if ne $item "" -}}
+          {{- $parts := split $item " " -}}
+          {{- $u := "" -}}
+          {{- $wstr := "" -}}
+          {{- if ge (len $parts) 1 -}}
+            {{- $u = trim (index $parts 0) " \t\n\r\"'" -}}
+          {{- end -}}
+          {{- if ge (len $parts) 2 -}}
+            {{- $wstr = trim (index $parts 1) " \t\n\r" -}}
+          {{- end -}}
+
+          {{- $w := 0 -}}
+          {{- if and $wstr (hasSuffix $wstr "w") -}}
+            {{- $w = int (trim (strings.TrimSuffix "w" $wstr) " ") -}}
+          {{- end -}}
+
+          {{- if and $u (not (hasPrefix $u "data:")) -}}
+            {{- if gt $w $largestW -}}
+              {{- $largestW = $w -}}
+              {{- $largestUrl = $u -}}
+            {{- end -}}
+            {{- if and (ge $w $targetW) (or (eq $bestW 0) (lt $w $bestW)) -}}
+              {{- $bestW = $w -}}
+              {{- $bestUrl = $u -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
       {{- end -}}
+
+      {{- $url := cond (ne $bestUrl "") $bestUrl $largestUrl -}}
       {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
-        {{- /* Hugo's HTML minifier can rewrite `imagesrcset` (non-standard attribute) in ways that break srcset parsing.
-              Safer: preload the first AVIF candidate via href only. */ -}}
-        <link rel="preload" as="image" href="{{ $url | absURL }}" fetchpriority="high" type="image/avif">
+        <link rel="preload" as="image" href="{{ $url | absURL }}" imagesrcset="{{ $avifSrcset }}" imagesizes="{{ $avifSizes }}" fetchpriority="high" type="image/avif"{{ with $media }} media="{{ . }}"{{ end }}>
       {{- end -}}
     {{- end -}}
   {{- else -}}
