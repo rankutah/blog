@@ -14,7 +14,9 @@
   {{- with $res }}{{ $img = (index . 0).RelPermalink }}{{ end -}}
 {{- end -}}
 {{- if $img -}}
+  {{- $loading := cond $isSingle "eager" "lazy" -}}
+  {{- $fetchpri := cond (eq $loading "eager") "high" "low" -}}
   <figure class="mb-6">
-    <img src="{{ $img }}" alt="{{ $cxt.Title }}" class="w-full h-auto rounded-md shadow-sm" loading="lazy" decoding="async" />
+    <img src="{{ $img }}" alt="{{ $cxt.Title }}" class="w-full h-auto rounded-md shadow-sm" loading="{{ $loading }}" fetchpriority="{{ $fetchpri }}" decoding="async" />
   </figure>
 {{- end -}}{{/* No-op cover renderer for list/single pages. */}}
