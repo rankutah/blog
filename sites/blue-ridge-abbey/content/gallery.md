@@ -9,6 +9,7 @@ url: "/gallery"
 
 {{< gallery class="not-prose columns-2 sm:columns-3 md:columns-4 gap-3" >}}
   {{< galleryimg src="/media/new-photos/Blueridge.avif" alt="Blue Ridge Abbey" >}}
+  {{< galleryimg src="/media/rainbow-over-blueridge-abbey.jpg" alt="Rainbow over Blue Ridge Abbey" >}}
   {{< galleryimg src="/media/new-photos/BRA-22.avif" alt="Blue Ridge Abbey photo BRA-22" >}}
   {{< galleryimg src="/media/new-photos/BRA-25.avif" alt="Blue Ridge Abbey photo BRA-25" >}}
   {{< galleryimg src="/media/new-photos/BRA-27.avif" alt="Blue Ridge Abbey photo BRA-27" >}}

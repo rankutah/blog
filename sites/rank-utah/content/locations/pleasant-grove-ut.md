@@ -247,7 +247,6 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 Here are some of the areas I serve in Northern Utah:
 
 - **Utah County**: Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain
-- **Salt Lake County**: Salt Lake City, West Valley City, West Jordan, Sandy, South Jordan, Draper, Murray, Riverton, Herriman
 - **Salt Lake County**: Salt Lake City, West Valley City, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, Murray, Riverton, Herriman
 - **Davis County**: Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse, Centerville
 - **Weber County**: Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View
