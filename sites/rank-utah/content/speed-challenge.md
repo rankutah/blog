@@ -9,7 +9,7 @@ url: "/speed-challenge/"
 
 A slow website costs your business real money.
 
-The average mobile webpage takes around **14 seconds** to load on on a 4G network. Clear Presence websites typically load around **2 seconds** on a 4G network.
+The average mobile webpage takes around **14 seconds** to load on on a 4G network. Clear Presence websites typically load in under **3 seconds** on a 4G network.
 
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 {{< col card="false" >}}
@@ -20,7 +20,7 @@ The average mobile webpage takes around **14 seconds** to load on on a 4G networ
 Source: <a href="https://www.thinkwithgoogle.com/_qs/documents/2340/bc22e_The_Need_for_Mobile_Speed_-_FINAL_1.pdf" target="_blank" rel="nofollow noopener noreferrer">The Need for Mobile Speed (Think with Google PDF)</a>.
 {{< /col >}}
 {{< col card="false" >}}
-#### Clear Presence Page Speed - 2 seconds
+#### Clear Presence Speed - under 3 seconds
 
 {{< img src="/media/clear-presence-page-load-speed-performance-score.jpg" alt="Clear Presence page load speed performance score" sizes="(min-width: 1024px) 48vw, 100vw" >}}
 {{< /col >}}
