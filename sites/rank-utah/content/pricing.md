@@ -65,7 +65,7 @@ No contracts. No setup fees. Cancel anytime.
 
 {{< col card="true"  y="start" >}}
 
-## Grow {#local-seo}
+## Rank {#local-seo}
 
 {{< badge text="Business Website + Local SEO" >}}
 
@@ -123,7 +123,7 @@ Price includes <strong>1 Google Ads campaign</strong> focused on <strong>one bus
 
 {{< col card="true"  y="start" >}}
 
-## Grow {#local-seo-existing}
+## Rank {#local-seo-existing}
 
 {{< badge text="Local SEO" >}}
 

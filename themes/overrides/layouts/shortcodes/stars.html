@@ -14,9 +14,9 @@
 {{- $color := .Get "color" | default "#fbbc04" -}}
 {{- $gap   := .Get "gap" | default "0.05em" -}}
 {{- $raise := .Get "raise" | default "0" -}}
-<span class="stars-google" aria-label="{{ printf `%d star rating` $count }}" style="display:inline-flex;align-items:center;gap:{{ $gap }};vertical-align:middle;line-height:1;transform:translateY(calc(-1 * {{ $raise }}));">
+<span class="stars-google" role="img" aria-label="{{ printf `%d star rating` $count }}" style="display:inline-flex;align-items:center;gap:{{ $gap }};vertical-align:middle;line-height:1;transform:translateY(calc(-1 * {{ $raise }}));">
   {{- range seq 1 $count -}}
-    <svg xmlns="http://www.w3.org/2000/svg" width="{{ $size }}" height="{{ $size }}" viewBox="0 0 24 24" aria-hidden="true" role="img" style="display:inline-block;color:{{ $color }};flex:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="{{ $size }}" height="{{ $size }}" viewBox="0 0 24 24" aria-hidden="true" style="display:inline-block;color:{{ $color }};flex:none;">
       <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
     </svg>
   {{- end -}}

@@ -9,7 +9,7 @@ url: "/speed-challenge/"
 
 A slow website costs your business real money.
 
-The average mobile webpage takes around **14 seconds** to load, according to Google research. Clear Presence websites typically load in **under 3 seconds**.
+The average mobile webpage takes around **14 seconds** to load on 4G, according to Google research. Clear Presence websites typically load in **under 3 seconds** on 4G.
 
 Source: <a href="https://www.thinkwithgoogle.com/_qs/documents/2340/bc22e_The_Need_for_Mobile_Speed_-_FINAL_1.pdf" target="_blank" rel="nofollow noopener noreferrer">The Need for Mobile Speed (Think with Google PDF)</a>.
 
