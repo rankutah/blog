@@ -1,6 +1,6 @@
 ---
-title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency - Search Engine Marketing Near You"
-description: "Call Benjamin for Utah web design, local SEO, and Google Ads management. Utah-based, remote-friendly, and focused on measurable growth."
+title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency - Google Adwords Managmenent in Pleasant Grove, UT - Serving Utah County (Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain), Salt Lake County (Salt Lake City, West Valley City, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville), Davis County (Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse), Weber County (Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View)"
+description: "Pleasant Grove-based web design, local SEO, and Google Ads management serving Utah County plus Salt Lake, Davis, and Weber County (Wasatch Front / Northern Utah)."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
@@ -13,35 +13,44 @@ schema:
     telephone: "+1-385-323-8130"
     image: "/media/logo.png"
     areaServed:
-      - "Beaver County, UT"
-      - "Box Elder County, UT"
-      - "Cache County, UT"
-      - "Carbon County, UT"
-      - "Daggett County, UT"
-      - "Davis County, UT"
-      - "Duchesne County, UT"
-      - "Emery County, UT"
-      - "Garfield County, UT"
-      - "Grand County, UT"
-      - "Iron County, UT"
-      - "Juab County, UT"
-      - "Kane County, UT"
-      - "Millard County, UT"
-      - "Morgan County, UT"
-      - "Piute County, UT"
-      - "Rich County, UT"
-      - "Salt Lake County, UT"
-      - "San Juan County, UT"
-      - "Sanpete County, UT"
-      - "Sevier County, UT"
-      - "Summit County, UT"
-      - "Tooele County, UT"
-      - "Uintah County, UT"
       - "Utah County, UT"
-      - "Wasatch County, UT"
-      - "Washington County, UT"
-      - "Wayne County, UT"
+      - "Pleasant Grove, UT"
+      - "Provo, UT"
+      - "Orem, UT"
+      - "Lehi, UT"
+      - "American Fork, UT"
+      - "Lindon, UT"
+      - "Spanish Fork, UT"
+      - "Springville, UT"
+      - "Saratoga Springs, UT"
+      - "Eagle Mountain, UT"
+      - "Salt Lake County, UT"
+      - "Salt Lake City, UT"
+      - "West Valley City, UT"
+      - "West Jordan, UT"
+      - "Sandy, UT"
+      - "South Jordan, UT"
+      - "Draper, UT"
+      - "Millcreek, UT"
+      - "Taylorsville, UT"
+      - "Murray, UT"
+      - "Riverton, UT"
+      - "Herriman, UT"
+      - "Davis County, UT"
+      - "Layton, UT"
+      - "Bountiful, UT"
+      - "Farmington, UT"
+      - "Kaysville, UT"
+      - "Clearfield, UT"
+      - "Syracuse, UT"
+      - "Centerville, UT"
       - "Weber County, UT"
+      - "Ogden, UT"
+      - "Roy, UT"
+      - "South Ogden, UT"
+      - "North Ogden, UT"
+      - "West Haven, UT"
+      - "Pleasant View, UT"
     address:
       streetAddress: "348 S 2000 W, Suite B206"
       addressLocality: "Pleasant Grove"
@@ -60,38 +69,47 @@ schema:
     priceRange: "$199–$499/mo"
   service:
     enabled: true
-    serviceType: "Digital Marketing Services: Web Design, Local SEO, Google Ads Management"
-    description: "Clear Presence provides web design, local SEO, and Google Ads management across Utah, with an office in Pleasant Grove. Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
+    serviceType: "Digital Marketing Services: Web Design, Local SEO, Google Ads Management, Google Adwords Management"
+    description: "Clear Presence provides web design, local SEO, and Google Ads management from Pleasant Grove, UT—serving Utah County and the Wasatch Front (Salt Lake, Davis, and Weber County). Fast custom websites, ongoing local marketing, and paid search for businesses who want more leads."
     areaServed:
-      - "Beaver County, UT"
-      - "Box Elder County, UT"
-      - "Cache County, UT"
-      - "Carbon County, UT"
-      - "Daggett County, UT"
-      - "Davis County, UT"
-      - "Duchesne County, UT"
-      - "Emery County, UT"
-      - "Garfield County, UT"
-      - "Grand County, UT"
-      - "Iron County, UT"
-      - "Juab County, UT"
-      - "Kane County, UT"
-      - "Millard County, UT"
-      - "Morgan County, UT"
-      - "Piute County, UT"
-      - "Rich County, UT"
-      - "Salt Lake County, UT"
-      - "San Juan County, UT"
-      - "Sanpete County, UT"
-      - "Sevier County, UT"
-      - "Summit County, UT"
-      - "Tooele County, UT"
-      - "Uintah County, UT"
       - "Utah County, UT"
-      - "Wasatch County, UT"
-      - "Washington County, UT"
-      - "Wayne County, UT"
+      - "Pleasant Grove, UT"
+      - "Provo, UT"
+      - "Orem, UT"
+      - "Lehi, UT"
+      - "American Fork, UT"
+      - "Lindon, UT"
+      - "Spanish Fork, UT"
+      - "Springville, UT"
+      - "Saratoga Springs, UT"
+      - "Eagle Mountain, UT"
+      - "Salt Lake County, UT"
+      - "Salt Lake City, UT"
+      - "West Valley City, UT"
+      - "West Jordan, UT"
+      - "Sandy, UT"
+      - "South Jordan, UT"
+      - "Draper, UT"
+      - "Millcreek, UT"
+      - "Taylorsville, UT"
+      - "Murray, UT"
+      - "Riverton, UT"
+      - "Herriman, UT"
+      - "Davis County, UT"
+      - "Layton, UT"
+      - "Bountiful, UT"
+      - "Farmington, UT"
+      - "Kaysville, UT"
+      - "Clearfield, UT"
+      - "Syracuse, UT"
+      - "Centerville, UT"
       - "Weber County, UT"
+      - "Ogden, UT"
+      - "Roy, UT"
+      - "South Ogden, UT"
+      - "North Ogden, UT"
+      - "West Haven, UT"
+      - "Pleasant View, UT"
     offers:
       - "@type": Offer
         name: "Web Design"
@@ -120,7 +138,7 @@ schema:
 ---
 
 
-{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing Utah web design, local SEO, and Google Ads services across Utah" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
+{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing web design, local SEO, and Google Ads management for businesses in Utah County and the Wasatch Front (Salt Lake, Davis, and Weber County)" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
 # Web Design, Local SEO, Google Ads
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
@@ -143,7 +161,7 @@ schema:
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ## Let's Talk
-- Meet [remotely](https://cal.com/clearpresence/30min) statewide (phone call or video chat)
+- Meet [remotely](https://cal.com/clearpresence/30min) across Utah County and the Wasatch Front (phone call or video chat)
 - In-person meetings available in Pleasant Grove by appointment
 - Call or Text: <a href="tel:+13853238130">(385) 323-8130</a>
 - Business Hours: Mon–Sat, 8am–8pm (MT)
@@ -159,9 +177,9 @@ schema:
 
 ## Utah Office
 
-I meet [remotely](https://cal.com/clearpresence/30min) statewide, and I offer in‑person meetings at my Pleasant Grove office by appointment.
+I meet [remotely](https://cal.com/clearpresence/30min) across Utah County and the Wasatch Front, and I offer in‑person meetings at my office in Pleasant Grove by appointment.
 
-The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, making it easy to reach from anywhere along the Wasatch Front.
+The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, making it easy to reach from anywhere along Utah County.
 
 {{< button url="https://cal.com/clearpresence/30min" text="Schedule a Meeting" >}}
 {{< button url="https://cal.com/clearpresence/30min" text="Meet Remotely" >}}
@@ -171,7 +189,7 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 <div class="map-placeholder" id="pg-map-placeholder" style="position:relative;width:100%;max-width:640px;aspect-ratio:4/3;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;margin-bottom:1rem">
   <button type="button" style="all:unset;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.5rem;font-family:inherit;color:#0f172a">
     <strong>Load Interactive Map</strong>
-    <span style="font-size:.8rem;color:#475569">Click or scroll to load Google Maps for Pleasant Grove</span>
+    <span style="font-size:.8rem;color:#475569">Click or scroll to load Google Maps for Pleasant Grove in Utah County</span>
   </button>
 </div>
 <script>
@@ -224,6 +242,15 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 {{< /cols >}}
 
 
+## Service Areas (Northern Utah)
+
+Here are some of the areas I serve in Northern Utah:
+
+- **Utah County**: Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain
+- **Salt Lake County**: Salt Lake City, West Valley City, West Jordan, Sandy, South Jordan, Draper, Murray, Riverton, Herriman
+- **Salt Lake County**: Salt Lake City, West Valley City, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, Murray, Riverton, Herriman
+- **Davis County**: Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse, Centerville
+- **Weber County**: Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View
 
 ## What’s included?
 {.center}
@@ -380,7 +407,7 @@ I started working in website design and local marketing in 2023 after completing
 You’ll work directly with me (not passed around to a sales rep or a rotating team). I keep communication simple, explain what I’m doing and why, and you can reach me by call or text when you need help. It’s month-to-month with clear pricing — no long contracts or surprises.
 
 ### Which locations do you serve?
-Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
+Services are available across Utah County and the Wasatch Front (Salt Lake, Davis, and Weber County), with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 {{< /faqs >}}
 
 ## Ready to talk about your business?
