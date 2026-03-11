@@ -38,7 +38,7 @@ schema:
 
 ## Launch {#web-design}
 
-{{< badge text="Business Website" >}}
+{{< badge text="Custom Website" >}}
 
 {{< plan_price price="199" per="mo" sr="$199 per month" >}}
 
@@ -67,7 +67,7 @@ No contracts. No setup fees. Cancel anytime.
 
 ## Rank {#local-seo}
 
-{{< badge text="Business Website + Local SEO" >}}
+{{< badge text="Custom Website + Local SEO" >}}
 
 {{< plan_price price="299" per="mo" old="$399" savings="Save $100/mo" sr="$299 per month" >}}
 
@@ -92,7 +92,7 @@ Price includes <strong>1 location</strong>. Additional locations are <strong>$99
 
 ## Scale {#google-ads}
 
-{{< badge text="Business Website + Local SEO + Google Ads" >}}
+{{< badge text="Custom Website + Local SEO + Google Ads" >}}
 
 {{< plan_price price="499" per="mo" old="$699" savings="Save $200/mo" sr="$499 per month" >}}
 

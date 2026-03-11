@@ -1,6 +1,6 @@
 ---
-title: "Call Benjamin for Utah Web Design, Local SEO & Google Ads - Digital Marketing Agency - Google Adwords Managmenent in Pleasant Grove, UT - Serving Utah County (Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain), Salt Lake County (Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville), Davis County (Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse), Weber County (Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View)"
-description: "Pleasant Grove-based web design, local SEO, and Google Ads management serving Utah County plus Salt Lake, Davis, and Weber County (Wasatch Front / Northern Utah)."
+title: "Call Benjamin for Utah Web Design, Local SEO, & Google Ads in Pleasant Grove, UT - Digital Marketing Agency - Google Adwords Managmenent  - Serving Utah County (Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain, Payson), Salt Lake County (Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, SLC), Davis County (Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse), Weber County (Ogden, Roy, West Haven, Pleasant View)"
+description: "Call Benjamin for Web Design, Local SEO, & Google Ads in Utah. Pleasant Grove-based web design, local SEO, and Google Ads management serving Utah County plus Salt Lake, Davis, and Weber County (Wasatch Front / Northern Utah)."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
@@ -48,8 +48,6 @@ schema:
       - "Weber County, UT"
       - "Ogden, UT"
       - "Roy, UT"
-      - "South Ogden, UT"
-      - "North Ogden, UT"
       - "West Haven, UT"
       - "Pleasant View, UT"
     address:
@@ -108,8 +106,6 @@ schema:
       - "Weber County, UT"
       - "Ogden, UT"
       - "Roy, UT"
-      - "South Ogden, UT"
-      - "North Ogden, UT"
       - "West Haven, UT"
       - "Pleasant View, UT"
     offers:
@@ -248,10 +244,10 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 
 Here are some of the areas I serve in Northern Utah:
 
-- **Utah County**: Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain
+- **Utah County**: Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain, Payson
 - **Salt Lake County**: Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, Murray, Riverton, Herriman
 - **Davis County**: Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse, Centerville
-- **Weber County**: Ogden, Roy, South Ogden, North Ogden, West Haven, Pleasant View
+- **Weber County**: Ogden, Roy, West Haven, Pleasant View
 
 ## What’s included?
 {.center}

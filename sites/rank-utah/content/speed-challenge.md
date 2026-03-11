@@ -22,7 +22,7 @@ Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/#shar
 ## How to run the Speed Challenge
 
 1. Open <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">Google PageSpeed Insights</a> (opens in a new tab).
-2. Test your site or another website: paste in your website URL and run the report (wait about 5 seconds for the report to load).
+2. Test your site or another website: paste in your website URL and run the report (wait about 20 seconds for the report to load).
 3. Test a Clear Presence page next: paste in <a href="/" rel="nofollow">clearpresence.io</a> (or any Clear Presence page) and run the report.
 4. Compare the results side-by-side.
 
