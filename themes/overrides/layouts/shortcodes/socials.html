@@ -26,25 +26,41 @@ Optional defaults:
 {{- $align := lower (.Get "align" | default "center") -}}
 {{- $justify := cond (eq $align "start") "justify-start" (cond (eq $align "end") "justify-end" "justify-center") -}}
 
+{{- /* Derive explicit pixel dimensions from Tailwind size classes (e.g. w-8 h-8 => 32x32). */ -}}
+{{- $pxW := 32 -}}
+{{- $pxH := 32 -}}
+{{- $wMatches := findRE `w-(\d+)` $size -1 -}}
+{{- if gt (len $wMatches) 0 -}}
+  {{- $wNum := int (replaceRE `^w-` `` (index $wMatches 0)) -}}
+  {{- $pxW = mul $wNum 4 -}}
+{{- end -}}
+{{- $hMatches := findRE `h-(\d+)` $size -1 -}}
+{{- if gt (len $hMatches) 0 -}}
+  {{- $hNum := int (replaceRE `^h-` `` (index $hMatches 0)) -}}
+  {{- $pxH = mul $hNum 4 -}}
+{{- end -}}
+
 <div class="not-prose flex items-center {{ $justify }} {{ $gap }}">
   {{- range $i, $it := $items -}}
     {{- $url  := (index $it "url")  | default "#" -}}
     {{- $name := (index $it "name") | default (printf "social-%d" $i) -}}
     {{- $alt  := (index $it "alt")  | default (title $name) -}}
     {{- $icon := (index $it "icon") | default "" -}}
-    {{- /* Normalize icon path to root-relative so it works on subpages */ -}}
-    {{- $iconSrc := $icon -}}
-    {{- if not (or (hasPrefix $icon "http://") (hasPrefix $icon "https://") (hasPrefix $icon "/")) -}}
-      {{- $iconSrc = printf "/%s" (strings.TrimPrefix "/" $icon) -}}
-    {{- end -}}
-    {{- if eq (substr $url 0 4) "http" -}}
-      <a href="{{ $url }}" target="_blank" rel="noopener" aria-label="{{ $alt }}" class="inline-flex">
-        <img src="{{ $iconSrc | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
-      </a>
-    {{- else -}}
-      <a href="{{ $url }}" aria-label="{{ $alt }}" class="inline-flex">
-        <img src="{{ $iconSrc | safeURL }}" alt="{{ $alt }}" class="block {{ $size }}" loading="lazy" decoding="async">
-      </a>
+    {{- if $icon -}}
+      {{- /* Normalize icon path to root-relative so it works on subpages */ -}}
+      {{- $iconSrc := $icon -}}
+      {{- if not (or (hasPrefix $icon "http://") (hasPrefix $icon "https://") (hasPrefix $icon "/")) -}}
+        {{- $iconSrc = printf "/%s" (strings.TrimPrefix "/" $icon) -}}
+      {{- end -}}
+      {{- if eq (substr $url 0 4) "http" -}}
+        <a href="{{ $url }}" target="_blank" rel="noopener" aria-label="{{ $alt }}" class="inline-flex">
+          <img src="{{ $iconSrc | safeURL }}" alt="{{ $alt }}" width="{{ $pxW }}" height="{{ $pxH }}" class="block {{ $size }}" loading="lazy" decoding="async">
+        </a>
+      {{- else -}}
+        <a href="{{ $url }}" aria-label="{{ $alt }}" class="inline-flex">
+          <img src="{{ $iconSrc | safeURL }}" alt="{{ $alt }}" width="{{ $pxW }}" height="{{ $pxH }}" class="block {{ $size }}" loading="lazy" decoding="async">
+        </a>
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 </div>
