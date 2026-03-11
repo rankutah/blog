@@ -73,7 +73,7 @@ No contracts. No setup fees. Cancel anytime.
 
 No contracts. No setup fees. Cancel anytime.
 
-Price includes <strong>1 location</strong>. Additional locations are <strong>$99/mo</strong>.
+Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
 
 ***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
 
@@ -98,7 +98,9 @@ Price includes <strong>1 location</strong>. Additional locations are <strong>$99
 
 No contracts. No setup fees. Cancel anytime.
 
-Price includes <strong>1 Google Ads campaign</strong> focused on <strong>one business location</strong>. Additional campaigns are <strong>$99/mo</strong>.
+Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
+
+Price includes <strong>1 Google Ads campaign</strong>. Additional campaigns are <strong>$99/mo</strong>.
 
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
 
@@ -131,7 +133,7 @@ Price includes <strong>1 Google Ads campaign</strong> focused on <strong>one bus
 
 No contracts. No setup fees. Cancel anytime.
 
-Price includes <strong>1 location</strong>. Additional locations are <strong>$99/mo</strong>.
+Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
 
 ***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
 
@@ -156,7 +158,9 @@ Price includes <strong>1 location</strong>. Additional locations are <strong>$99
 
 No contracts. No setup fees. Cancel anytime.
 
-Price includes <strong>1 Google Ads campaign</strong> focused on <strong>one business location</strong>. Additional campaigns are <strong>$99/mo</strong>.
+Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
+
+Price includes <strong>1 Google Ads campaign</strong>. Additional campaigns are <strong>$99/mo</strong>.
 
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
 

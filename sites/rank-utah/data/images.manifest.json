@@ -1341,6 +1341,144 @@
       ]
     }
   },
+  "/media/average-page-speed-load-times-on-4g-network.jpg": {
+    "width": 1220,
+    "height": 632,
+    "aspect": 1.9303797468354431,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAARACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAECBAYDBf/EACMQAAIBAwQBBQAAAAAAAAAAAAECAAMEERIhMUEFQlFScYH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A2BVveQZtLKrVFDOcKD3Opme8pRv7q5qtSpVhTCgINQGDvkjf6haz11k8e9pf5CSVSOTvKVtd3OCtzZ1AR6lwQfzMvKdSg4Iz0ZS6ZdORPEIRJjiOEJJ//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1200.avif"
+        },
+        {
+          "w": 1220,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1220.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1200.jpg"
+        },
+        {
+          "w": 1220,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1220.jpg"
+        }
+      ]
+    }
+  },
+  "/media/average-page-speed-load-times-on-4g-network.avif": {
+    "width": 1220,
+    "height": 632,
+    "aspect": 1.9303797468354431,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAARACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAECBAYDBf/EACMQAAIBAwQBBQAAAAAAAAAAAAECAAMEERIhMUEFQlFScYH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A2BVveQZtLKrVFDOcKD3Opme8pRv7q5qtSpVhTCgINQGDvkjf6haz11k8e9pf5CSVSOTvKVtd3OCtzZ1AR6lwQfzMvKdSg4Iz0ZS6ZdORPEIRJjiOEJJ//9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1200.avif"
+        },
+        {
+          "w": 1220,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1220.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1200.jpg"
+        },
+        {
+          "w": 1220,
+          "url": "/media-deriv/average-page-speed-load-times-on-4g-network__w1220.jpg"
+        }
+      ]
+    }
+  },
   "/media/benjamin-awerkamp-profile.jpg": {
     "width": 400,
     "height": 400,
@@ -1655,6 +1793,144 @@
         {
           "w": 1021,
           "url": "/media-deriv/clear-presence-image-of-small-business__w1021.jpg"
+        }
+      ]
+    }
+  },
+  "/media/clear-presence-page-load-speed-performance-score.jpg": {
+    "width": 1484,
+    "height": 1296,
+    "aspect": 1.1450617283950617,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAcACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECBQb/xAAjEAACAgEDBAMBAAAAAAAAAAABAgADERIhMQUiQZEGMmFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsuOYtOeGPOYrN1xgwr2XTvtCE7LUuqywKoOcscCUjrYupGVlPkHImb8iqa7o9yJU1pJXsUZJ7hD45U9PR6ksqaptTdjDBHcYGiPsR4EuRp35PuGnPk+4UwDn8/scjT+n3GFx5MD//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1200.avif"
+        },
+        {
+          "w": 1484,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1484.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1200.jpg"
+        },
+        {
+          "w": 1484,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1484.jpg"
+        }
+      ]
+    }
+  },
+  "/media/clear-presence-page-load-speed-performance-score.avif": {
+    "width": 1484,
+    "height": 1296,
+    "aspect": 1.1450617283950617,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAcACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECBQb/xAAjEAACAgEDBAMBAAAAAAAAAAABAgADERIhMQUiQZEGMmFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsuOYtOeGPOYrN1xgwr2XTvtCE7LUuqywKoOcscCUjrYupGVlPkHImb8iqa7o9yJU1pJXsUZJ7hD45U9PR6ksqaptTdjDBHcYGiPsR4EuRp35PuGnPk+4UwDn8/scjT+n3GFx5MD//2Q==",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w960.avif"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1200.avif"
+        },
+        {
+          "w": 1484,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1484.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w960.jpg"
+        },
+        {
+          "w": 1200,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1200.jpg"
+        },
+        {
+          "w": 1484,
+          "url": "/media-deriv/clear-presence-page-load-speed-performance-score__w1484.jpg"
         }
       ]
     }
@@ -3873,6 +4149,128 @@
         {
           "w": 150,
           "url": "/media-deriv/logo__w150.jpg"
+        }
+      ]
+    }
+  },
+  "/media/mobile-page-load-times-impact-site-conversions.jpg": {
+    "width": 1010,
+    "height": 418,
+    "aspect": 2.416267942583732,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAANACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAQMAAgb/xAAlEAAABAQFBQAAAAAAAAAAAAAAAQMREyIxMgIUJEFRQ3KBkcH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQACAwAAAAAAAAAAAAAAAAAAARIhUf/aAAwDAQACEQMRAD8A0kFBzt9BcJHLvK7cA74gt9P4EXppBDjRQltrwIaSMUilo9AD2FesXb9C9EEf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w960.avif"
+        },
+        {
+          "w": 1010,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w1010.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w960.jpg"
+        },
+        {
+          "w": 1010,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w1010.jpg"
+        }
+      ]
+    }
+  },
+  "/media/mobile-page-load-times-impact-site-conversions.avif": {
+    "width": 1010,
+    "height": 418,
+    "aspect": 2.416267942583732,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAANACADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAQMAAgb/xAAlEAAABAQFBQAAAAAAAAAAAAAAAQMREyIxMgIUJEFRQ3KBkcH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQACAwAAAAAAAAAAAAAAAAAAARIhUf/aAAwDAQACEQMRAD8A0kFBzt9BcJHLvK7cA74gt9P4EXppBDjRQltrwIaSMUilo9AD2FesXb9C9EEf/9k=",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w768.avif"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w960.avif"
+        },
+        {
+          "w": 1010,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w1010.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w768.jpg"
+        },
+        {
+          "w": 960,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w960.jpg"
+        },
+        {
+          "w": 1010,
+          "url": "/media-deriv/mobile-page-load-times-impact-site-conversions__w1010.jpg"
         }
       ]
     }
