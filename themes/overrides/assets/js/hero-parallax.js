@@ -44,14 +44,16 @@
     ticking = false;
 
     const vh = window.innerHeight || document.documentElement.clientHeight || 0;
+
+    // Read phase (all geometry reads first)
+    const pending = [];
     for (const wrap of wraps) {
       if (!(wrap instanceof HTMLElement)) continue;
 
       const rect = wrap.getBoundingClientRect();
       const inView = rect.bottom > 0 && rect.top < vh;
-
       if (!inView) {
-        wrap.style.setProperty('--cp-hero-parallax-y', '0px');
+        pending.push([wrap, '0px']);
         continue;
       }
 
@@ -75,12 +77,17 @@
       }
 
       if (available <= 0) {
-        wrap.style.setProperty('--cp-hero-parallax-y', '0px');
+        pending.push([wrap, '0px']);
         continue;
       }
 
       const y = clamp(-rect.top * ratio, -available, available);
-      wrap.style.setProperty('--cp-hero-parallax-y', `${y.toFixed(2)}px`);
+      pending.push([wrap, `${y.toFixed(2)}px`]);
+    }
+
+    // Write phase (apply style changes after reads)
+    for (const [wrap, y] of pending) {
+      wrap.style.setProperty('--cp-hero-parallax-y', y);
     }
   };
 

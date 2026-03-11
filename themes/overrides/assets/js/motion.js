@@ -53,6 +53,32 @@
 
   const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
 
+  // Stagger groups may require geometry reads to estimate columns. Do those reads
+  // up-front (before we start adding motion attributes) to reduce the chance of
+  // a "forced reflow" (write->read) showing up in audits.
+  const staggerGroups = Array.from(document.querySelectorAll('[data-motion-group="stagger"]'));
+  const staggerColumns = new Map();
+  for (const group of staggerGroups) {
+    const children = Array.from(group.children).filter((n) => n && n.nodeType === 1);
+
+    // Heuristic: estimate column count so stagger feels fluid across a row and doesn't
+    // get increasingly delayed for later rows.
+    let columns = 3;
+    try {
+      const first = children.find((c) => c instanceof HTMLElement);
+      if (first instanceof HTMLElement) {
+        const childW = first.getBoundingClientRect().width || 0;
+        const groupW = group.getBoundingClientRect().width || 0;
+        if (childW > 0 && groupW > 0) {
+          columns = clamp(Math.round(groupW / childW), 1, 6);
+        }
+      }
+    } catch (e) {
+      // ignore
+    }
+    staggerColumns.set(group, columns);
+  }
+
   const revealWithDelay = (el) => {
     if (!(el instanceof HTMLElement)) return;
     if (el.classList.contains('is-visible')) return;
@@ -108,25 +134,10 @@
   }
 
   // Apply stagger delays to children in motion groups.
-  const staggerGroups = Array.from(document.querySelectorAll('[data-motion-group="stagger"]'));
   for (const group of staggerGroups) {
     const children = Array.from(group.children).filter((n) => n && n.nodeType === 1);
 
-    // Heuristic: estimate column count so stagger feels fluid across a row and doesn't
-    // get increasingly delayed for later rows.
-    let columns = 3;
-    try {
-      const first = children.find((c) => c instanceof HTMLElement);
-      if (first instanceof HTMLElement) {
-        const childW = first.getBoundingClientRect().width || 0;
-        const groupW = group.getBoundingClientRect().width || 0;
-        if (childW > 0 && groupW > 0) {
-          columns = clamp(Math.round(groupW / childW), 1, 6);
-        }
-      }
-    } catch (e) {
-      // ignore
-    }
+    const columns = staggerColumns.get(group) || 3;
 
     // Tune for readability: side-by-side cards should start close together.
     // Keep a tiny per-row bump so the grid still feels like it's cascading.

@@ -51,21 +51,23 @@
     const fitEl = wrapEl.querySelector('[data-hero-overlay="fit"]');
     if (!fitEl) return;
 
-    // Always start from a clean baseline before measuring.
-    resetFit(fitEl, wrapEl);
+    // Measure first, then write. Avoid a write->read sequence in the same frame,
+    // which can show up as a "forced reflow" in Lighthouse.
+    const mobile = isMobile();
+    const availableH = mobile ? getInnerHeight(wrapEl) : 0;
+    const contentH = mobile ? Math.max(fitEl.scrollHeight || 0, fitEl.offsetHeight || 0) : 0;
 
-    if (!isMobile()) return;
-
-    const availableH = getInnerHeight(wrapEl);
-    if (availableH <= 0) return;
-
-    // Measure content height at scale=1.
-    // scrollHeight is robust for content even when it would overflow.
-    const contentH = Math.max(fitEl.scrollHeight, fitEl.getBoundingClientRect().height);
-    if (!contentH) return;
+    // No fit behavior when not on mobile or when we can't measure safely.
+    if (!mobile || availableH <= 0 || contentH <= 0) {
+      resetFit(fitEl, wrapEl);
+      return;
+    }
 
     // If it already fits, keep it at 1.
-    if (contentH <= availableH + EPS_PX) return;
+    if (contentH <= availableH + EPS_PX) {
+      resetFit(fitEl, wrapEl);
+      return;
+    }
 
     const raw = (availableH - EPS_PX) / contentH;
     const scale = clamp(raw, MIN_SCALE, 1);
