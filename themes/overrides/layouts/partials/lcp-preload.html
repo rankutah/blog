@@ -29,6 +29,16 @@
       {{- $media = index (index $mdm 0) 1 -}}
     {{- end -}}
     {{- if ne $avifSrcset "" -}}
+      {{- /* Hugo's HTML minifier may percent-encode spaces in nonstandard attributes like `imagesrcset`.
+        That breaks srcset parsing (browser may request the entire string as a URL).
+        Workaround: replace literal spaces with the entity `&#32;` and emit via safeHTMLAttr. */ -}}
+      {{- $srcsetForAttr := replaceRE `\s+` " " $avifSrcset -}}
+      {{- $sizesForAttr := replaceRE `\s+` " " $avifSizes -}}
+      {{- $srcsetForAttr = replace $srcsetForAttr " " "&#32;" -}}
+      {{- $sizesForAttr = replace $sizesForAttr " " "&#32;" -}}
+      {{- $imagesrcsetAttr := (printf `imagesrcset="%s"` $srcsetForAttr) | safeHTMLAttr -}}
+      {{- $imagesizesAttr := (printf `imagesizes="%s"` $sizesForAttr) | safeHTMLAttr -}}
+
       {{- /* Choose a better preload candidate than the first (often smallest) srcset entry.
             We pick the smallest width >= target, falling back to the largest available. */ -}}
       {{- $targetW := 960 -}}
@@ -70,7 +80,7 @@
 
       {{- $url := cond (ne $bestUrl "") $bestUrl $largestUrl -}}
       {{- if and (ne $url "") (not (hasPrefix $url "data:")) -}}
-        <link rel="preload" as="image" href="{{ $url | absURL }}" imagesrcset="{{ $avifSrcset }}" imagesizes="{{ $avifSizes }}" fetchpriority="high" type="image/avif"{{ with $media }} media="{{ . }}"{{ end }}>
+        <link rel="preload" as="image" href="{{ $url | absURL }}" {{ $imagesrcsetAttr }} {{ $imagesizesAttr }} fetchpriority="high" type="image/avif"{{ with $media }} media="{{ . }}"{{ end }}>
       {{- end -}}
     {{- end -}}
   {{- else -}}
