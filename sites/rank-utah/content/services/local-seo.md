@@ -53,7 +53,9 @@ params:
 ---
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
-# Local SEO for Utah Businesses
+# Get Found. Know What Drives Leads.
+We track calls, forms, and key actions so you know what your local SEO is worth and which efforts drive the most value.
+
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}

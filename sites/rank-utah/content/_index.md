@@ -48,7 +48,8 @@ schema:
 ---
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
-# Web Design, Local SEO, Google Ads
+# Get Found. Stop Losing Leads.
+Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to help you Scale.
 
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}

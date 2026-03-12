@@ -148,8 +148,19 @@ Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to he
 
 <div id="main-content" class="scroll-mt-24"></div>
 
-## Reviews from Local Businesses
-{.center}
+## Stop Losing Leads
+
+Websites that take longer than 5 seconds lose over 50% of their mobile leads.
+
+{{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
+
+Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" target="_blank" rel="nofollow noopener noreferrer">The value of site speed (Simon Hearne)</a>. Conversion calculations are based on 1,000 visitors.
+
+## Get Found in Utah
+
+
+
+## What others are saying
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}

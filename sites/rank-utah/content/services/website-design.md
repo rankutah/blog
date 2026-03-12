@@ -50,6 +50,7 @@ schema:
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
 # Join the Top 5% of Fast Websites. Stop Losing Leads.
+Custom websites that help you double your leads with the same amount of traffic
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
@@ -61,7 +62,7 @@ schema:
 
 ## Stop Losing Leads
 
-Websites that take longer than 5 seconds to load lose over 50% of their mobile leads.
+Websites that take longer than 5 seconds lose over 50% of their mobile leads.
 
 {{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
 
@@ -69,7 +70,7 @@ Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" tar
 
 ## 7x Faster Than Other Websites
 
-The average mobile website takes around **14 seconds** to load. Clear Presence websites take around **2 seconds** to load.
+The average website takes **14 seconds** to load. Clear Presence websites take **2 seconds** to load.
 
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 {{< col card="false" >}}
@@ -167,7 +168,9 @@ Websites are typically built in under a month with regular coordination.
 
 {{< /faqs >}}
 
-## Ready to talk about web design?
+## Join the Top 5% of Fast Websites. Stop Losing Leads.
+{.center}
+Custom websites that help you double your leads with the same amount of traffic
 {.center}
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {.center}
