@@ -47,18 +47,15 @@ schema:
     priceRange: "$199–$499/mo"
 ---
 
-{{< hero img="../media/website-design-seo-google-ads.avif" bleed="true" overlay="true" overlayShade="bg-black/40" align="center" vh="svh" >}}
+{{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
 # Web Design, Local SEO, Google Ads
 
-
-
-{.text-white}
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 {{<google_rating_badge>}}
 
-{{</hero>}}
+{{< /hero_coded >}}
 
 
 

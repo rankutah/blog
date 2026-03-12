@@ -136,14 +136,13 @@ schema:
 ---
 
 
-{{< hero img="/media/website-design-seo-google-ads.avif" alt="keyboard representing web design, local SEO, and Google Ads management for businesses in Utah County and the Wasatch Front (Salt Lake, Davis, and Weber County)" bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" yBottom="none" align="center" spacer="false">}}
-# Web Design, Local SEO, Google Ads
+{{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
+# Web Design, Local SEO, Google Ads in Pleasant Grove, UT
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
 
-
 <div class="mt-6"></div>
-{{< /hero >}}
+{{< /hero_coded >}}
 
 <div id="main-content" class="scroll-mt-24"></div>
 

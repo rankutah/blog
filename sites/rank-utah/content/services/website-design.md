@@ -163,9 +163,7 @@ No. Pricing is a flat monthly cost that includes domain renewal, hosting, a simp
 Yes. All normal local business requests (new pages, updates, changes) are unlimited. You can request changes or updates to your website at any time in the way that works best for you (call, text, or email).
 
 ### How long does a new website take?
-Websites can be built in 2–3 weeks with regular coordination.
-
-
+Websites are typically built in under a month with regular coordination.
 
 {{< /faqs >}}
 

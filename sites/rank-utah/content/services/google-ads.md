@@ -48,14 +48,14 @@ schema:
         availability: "https://schema.org/InStock"
 ---
 
-{{< hero img="/media/utah-landscape.avif" alt="Landscape image for Google Ads" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Google Ads for Utah Businesses {.text-white}
+{{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
+# Google Ads for Utah Businesses
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 {{<google_rating_badge>}}
 
-{{< /hero >}}
+{{< /hero_coded >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 

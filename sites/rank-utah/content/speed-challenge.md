@@ -18,7 +18,7 @@ Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" tar
 
 ## Is 2 seconds even possible?
 
-The average mobile website takes around **14 seconds** to load. Clear Presence websites take around **2 seconds** to load.
+The average mobile website takes around **14 seconds** to load. Clear Presence websites take around **2 seconds**.
 
 {{< cols min="18rem" gap="1.5rem" v="start" >}}
 {{< col card="false" >}}
