@@ -56,17 +56,17 @@ Receive a powerful monthly report that helps you understand how your marketing i
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="true" y="start" >}}
 #### Analytics Report
-![Analytics report](/media/analytics-report.jpg)
+{{< galleryimg src="/media/analytics-report.jpg" alt="Analytics report" >}}
 Get an overview of the overall performance of your website and Google Business Profiles.
 {{< /col >}}
 {{< col card="true" y="start" >}}
 #### Platform Report
-![Platform report](/media/platform-report.jpg)
+{{< galleryimg src="/media/platform-report.jpg" alt="Platform report" >}}
 Discover your most valuable sources of traffic to help you double down on what is working.
 {{< /col >}}
 {{< col card="true" y="start" >}}
 #### Page Report
-![Page report](/media/page-report.jpg)
+{{< galleryimg src="/media/page-report.jpg" alt="Page report" >}}
 See which pages on your website are the most valuable in brining conversions.
 {{< /col >}}
 {{< /cols >}}
@@ -76,17 +76,17 @@ See which pages on your website are the most valuable in brining conversions.
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
 {{< col card="true" y="start" >}}
 #### Location Report
-![Location report](/media/location-report.jpg)
+{{< galleryimg src="/media/location-report.jpg" alt="Location report" >}}
 Discover which cities are the most valuable in bringing you conversions.
 {{< /col >}}
 {{< col card="true" y="start" >}}
 #### Click Report
-![Click report](/media/click-report.jpg)
+{{< galleryimg src="/media/click-report.jpg" alt="Click report" >}}
 See what people are the most interested in. Get marketing ideas.
 {{< /col >}}
 {{< col card="true" y="start" >}}
 #### Search Report
-![Search report](/media/search-report.jpg)
+{{< galleryimg src="/media/search-report.jpg" alt="Search report" >}}
 See what people are searching for on your website and finding or not finding.
 {{< /col >}}
 {{< /cols >}}
@@ -129,7 +129,9 @@ Results depend on what you have to offer, the level of search interest in your a
 
 {{< /faqs >}}
 
-## Ready to talk about local SEO?
+## Get Found. Know What Drives Leads.
+{.center}
+We track calls, forms, and key actions so you know what your local SEO is worth and which efforts drive the most value.
 {.center}
 
 {{< button url="/contact" text="Let's Talk" >}}
