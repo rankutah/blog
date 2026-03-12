@@ -69,14 +69,6 @@ Google Ads is a good fit if you:
 - Have a good system in place for quickly responding to leads
 
 
-## Pricing and requirements
-
-1. Ad spend is separate (you pay Google directly) from the management cost
-2. You must be willing to informally commit to at least **2 months** (so we have sufficient time to evaluate performance)
-
-{{< button url="/pricing" text="See Pricing" >}}
-
-
 ## What’s included
 
 - **Keyword Research**: Research focused on the searches most likely to bring in leads.
