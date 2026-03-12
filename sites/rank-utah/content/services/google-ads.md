@@ -71,8 +71,8 @@ Google Ads is a good fit if you:
 
 ## Pricing and requirements
 
-1. Ad spend is separate (you pay Google directly). Google Ads management is **$299/month** for ad spend up to **$2,000/month**. For ad spend above **$2,000/month**, management is **15% of ad spend**.
-2. Must be willing to informally commit to at least **2 months** (so we have sufficient time to evaluate performance)
+1. Ad spend is separate (you pay Google directly) from the management cost
+2. You must be willing to informally commit to at least **2 months** (so we have sufficient time to evaluate performance)
 
 {{< button url="/pricing" text="See Pricing" >}}
 
