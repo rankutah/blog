@@ -158,7 +158,119 @@ Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" tar
 
 ## Get Found in Utah
 
+{{< cols min="18rem" gap="1rem" v="stretch" stagger="false" >}}
 
+{{< col card="true" y="start" >}}
+### Launch
+
+{{< badge text="Custom Websites" >}}
+
+**Join the Top 5% of Fast Websites. Stop Losing Leads.**
+Custom websites that help you double your leads with the same amount of traffic.
+
+
+<div class="mt-auto pt-4">
+{{< button url="/services/website-design" variant="outline" text="Web Design" >}}
+</div>
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+### Rank
+
+{{< badge text="Local SEO" >}}
+
+**Get found. Know what drives leads.**
+We track calls, forms, and key actions so you know what your local SEO is worth and which efforts drive the most value.
+
+
+<div class="mt-auto pt-4">
+{{< button url="/services/local-seo" variant="outline" text="Local SEO" >}}
+</div>
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+### Scale
+
+{{< badge text="Google Ads" >}}
+
+**Stop paying for clicks. Start optimizing for value.**
+We build your campaign to target high-value conversions, ensuring every dollar spent works toward your bottom line.
+
+
+<div class="mt-auto pt-4">
+{{< button url="/services/google-ads" variant="outline" text="Google Ads" >}}
+</div>
+{{< /col >}}
+
+{{< /cols >}}
+
+
+## What’s included?
+{.center}
+
+{{< cols min="18rem" gap="2rem" v="start" >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+### Web Design
+
+
+Fast, professional websites built to convert visitors into customers.
+
+- **Website Ownership**: You own your website from day one.
+- **Managed Hosting + Security**: Reliable hosting and built-in security are included.
+- **Domain Included**: Your domain and annual renewals are covered.
+- **Custom Website Design**: Your site is built to match your brand.
+- **Mobile-Friendly Design**: Your website looks great on every screen.
+- **Fast Load Times**: Built to load quickly across devices.
+- **Automatic Backups**: Every change is backed up automatically.
+- **Contact Forms + Spam Protection**: Make it easy for customers to reach out without the junk.
+- **Foundational SEO**: Technical and on-page SEO built in from the start.
+- **Ongoing Support**: Reach out anytime by phone, text, or email.
+- **Monthly Reporting**: Track calls and website activity each month.
+
+{{< button url="/services/website-design" text="Learn About Web Design" >}}
+
+
+{{< /col >}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+### Local SEO
+
+Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
+
+- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
+- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
+- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
+- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
+- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
+- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
+
+{{< button url="/services/local-seo" text="Learn About Local SEO" >}}
+
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+### Google Ads
+
+Paid search management to generate more leads.
+
+- **Keyword Research**: Research focused on the searches most likely to bring in leads.
+- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
+- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
+- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
+- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
+- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
+
+{{< button url="/services/google-ads" text="Learn About Google Ads" >}}
+
+
+{{< /col >}}
+
+{{< /cols >}}
 
 ## What others are saying
 
@@ -252,88 +364,6 @@ The office is less than 3 minutes from the I‑15 Pleasant Grove Blvd exit, maki
 {{< /cols >}}
 
 
-## Service Areas (Northern Utah)
-
-Here are some of the areas I serve in Northern Utah:
-
-- **Utah County**: Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain, Payson
-- **Salt Lake County**: Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, Murray, Riverton, Herriman
-- **Davis County**: Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse, Centerville
-- **Weber County**: Ogden, Roy, West Haven, Pleasant View
-
-## What’s included?
-{.center}
-
-{{< cols min="18rem" gap="2rem" v="start" >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-### Web Design
-
-Fast, professional websites built to convert visitors into customers.
-
-- **Website Ownership**: You own your website from day one.
-- **Managed Hosting + Security**: Reliable hosting and built-in security are included.
-- **Domain Included**: Your domain and annual renewals are covered.
-- **Custom Website Design**: Your site is built to match your brand.
-- **Mobile-Friendly Design**: Your website looks great on every screen.
-- **Fast Load Times**: Built to load quickly across devices.
-- **Automatic Backups**: Every change is backed up automatically.
-- **Contact Forms + Spam Protection**: Make it easy for customers to reach out without the junk.
-- **Foundational SEO**: Technical and on-page SEO built in from the start.
-- **Ongoing Support**: Reach out anytime by phone, text, or email.
-- **Monthly Reporting**: Track calls and website activity each month.
-
-{{< button url="/services/website-design" text="Learn About Web Design" >}}
-
-
-{{< /col >}}
-
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-
-### Local SEO
-
-Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
-
-- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
-- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
-- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
-- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
-- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
-- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
-
-{{< button url="/services/local-seo" text="Learn About Local SEO" >}}
-
-
-{{< /col >}}
-
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-
-### Google Ads
-
-Paid search management to generate more leads.
-
-- **Keyword Research**: Research focused on the searches most likely to bring in leads.
-- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
-- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
-- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
-- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
-- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
-
-{{< button url="/services/google-ads" text="Learn About Google Ads" >}}
-
-
-{{< /col >}}
-
-{{< /cols >}}
-
-
-
-
-
-## Ready To Get Started
-{.center}
-
 
 {{< cols min="18rem" gap="2rem" v="start">}}
 
@@ -379,14 +409,20 @@ Bachelor's in Business Management
 
 {{< /cols >}}
 
+## Service Areas
 
+Here are some of the areas I serve in Northern Utah:
 
+- **Utah County**: Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain, Payson
+- **Salt Lake County**: Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, Murray, Riverton, Herriman
+- **Davis County**: Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse, Centerville
+- **Weber County**: Ogden, Roy, West Haven, Pleasant View
 
 
 
 
 ## FAQs
-{.center}
+
 <div id="FAQs" class="scroll-mt-24"></div>
 
 
@@ -419,7 +455,8 @@ You’ll work directly with me (not passed around to a sales rep or a rotating t
 Services are available across Utah County and the Wasatch Front (Salt Lake, Davis, and Weber County), with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
 {{< /faqs >}}
 
-## Ready to talk about your business?
+## Get Found in Utah. Stop Losing Leads.
+Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to help you Scale.
 {.center}
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {.center}

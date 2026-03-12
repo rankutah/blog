@@ -50,7 +50,9 @@ schema:
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
 # Stop Paying for Clicks. Start Optimizing for Value.
-Google Ads does exactly what you tell it to. If you optimize for clicks, you get traffic. If you optimize for value, you get sales. We build your campaign architecture to target high-value conversions, ensuring every dollar spent works toward your bottom line.
+We build your campaign architecture to target high-value conversions, ensuring every dollar spent works toward your bottom line.
+
+Scale plan: Google Ads.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
@@ -86,7 +88,7 @@ Google Ads is a good fit if you:
 - **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
 - **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
-
+## FAQs
 {{< faqs schema="true" >}}
 
 ### How do I start?
