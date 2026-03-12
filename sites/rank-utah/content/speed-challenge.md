@@ -40,7 +40,7 @@ Source: <a href="https://www.thinkwithgoogle.com/_qs/documents/2340/bc22e_The_Ne
 ## Run the Speed Challenge
 
 1. Open <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">Google PageSpeed Insights</a>
-2. Enter your site or another website (wait about 20 seconds for the report to load)
+2. Enter your site or another website (wait about 30 seconds for the report to load)
 3. Test the Clear Presence site
 4. Compare the results
 
