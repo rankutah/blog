@@ -52,8 +52,6 @@ schema:
 # Join the Top 5% of Fast Websites. Stop Losing Leads.
 Custom websites that help you double your leads with the same amount of traffic.
 
-Launch plan: Custom Websites.
-
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
 {{< /hero_coded >}}

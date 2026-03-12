@@ -213,7 +213,7 @@ We build your campaign to target high-value conversions, ensuring every dollar s
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ### Web Design
-
+{.center}
 
 Fast, professional websites built to convert visitors into customers.
 
@@ -230,6 +230,7 @@ Fast, professional websites built to convert visitors into customers.
 - **Monthly Reporting**: Track calls and website activity each month.
 
 {{< button url="/services/website-design" text="Learn About Web Design" >}}
+{.center}
 
 
 {{< /col >}}
@@ -237,6 +238,7 @@ Fast, professional websites built to convert visitors into customers.
 {{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
 
 ### Local SEO
+{.center}
 
 Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
@@ -248,6 +250,7 @@ Get found where local customers search: Google, Apple, Bing, AI search, and “n
 - **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
 {{< button url="/services/local-seo" text="Learn About Local SEO" >}}
+{.center}
 
 
 {{< /col >}}
@@ -255,6 +258,7 @@ Get found where local customers search: Google, Apple, Bing, AI search, and “n
 {{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
 
 ### Google Ads
+{.center}
 
 Paid search management to generate more leads.
 
@@ -266,6 +270,7 @@ Paid search management to generate more leads.
 - **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
 {{< button url="/services/google-ads" text="Learn About Google Ads" >}}
+{.center}
 
 
 {{< /col >}}

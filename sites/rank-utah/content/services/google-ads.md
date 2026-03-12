@@ -52,8 +52,6 @@ schema:
 # Stop Paying for Clicks. Start Optimizing for Value.
 We build your campaign architecture to target high-value conversions, ensuring every dollar spent works toward your bottom line.
 
-Scale plan: Google Ads.
-
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
 {{<google_rating_badge>}}
