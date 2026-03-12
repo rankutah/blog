@@ -37,7 +37,7 @@ Source: <a href="https://www.thinkwithgoogle.com/_qs/documents/2340/bc22e_The_Ne
 
 
 
-## Run the Speed Challenge
+## Check Your Speed
 
 1. Open <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">Google PageSpeed Insights</a>
 2. Enter your site or another website (wait about 30 seconds for the report to load)
