@@ -137,7 +137,9 @@ schema:
 
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
-# Web Design, Local SEO, Google Ads in Pleasant Grove, UT
+# Get Found in Utah. Stop Losing Leads.
+Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to help you Scale.
+
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
 
