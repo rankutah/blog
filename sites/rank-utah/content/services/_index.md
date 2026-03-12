@@ -1,5 +1,5 @@
 ---
-title: "Utah Digital Marketing Services: Web Design, Local SEO, & Google Ads"
+title: "Digital Marketing Services: Web Design, Local SEO, & Google Ads"
 description: "Digital marketing services for local businesses: web design, local SEO, and Google Ads — plus managed business email."
 layout: "flowbite"
 ---

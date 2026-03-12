@@ -10,7 +10,7 @@ headless: true
 ### Contact
 {.center}
 
-[(385) 323-8130](tel:+13853238130)  <br> Mon–Sat 8am–8pm (MT) <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](/locations/pleasant-grove-ut) <br> Serving clients across Utah
+[(385) 323-8130](tel:+13853238130)  <br> Mon–Sat 8am–8pm (MT) <br> [348 S 2000 W, Suite B206 <br> Pleasant Grove, UT 84062](/locations/pleasant-grove-ut) <br> Serving clients across the US from an office in Pleasant Grove, UT
 {.center}
 
 {{< /col >}}

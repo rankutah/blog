@@ -1,13 +1,13 @@
 ---
-title: "About Clear Presence in Utah"
-description: "Clear Presence is a Utah digital marketing agency providing web design, local SEO (search engine optimization), and Google Ads to help local businesses get more calls and bookings."
+title: "About Clear Presence"
+description: "Clear Presence provides web design, local SEO (search engine optimization), and Google Ads to help local businesses get more calls and bookings — serving clients across the US from an office in Pleasant Grove, UT."
 layout: "flowbite"
 url: "/about"
 ---
 
-## About Clear Presence in Utah
+## About Clear Presence
 
-Clear Presence is a digital marketing agency providing web design, local SEO, and Google Ads for local businesses across Utah, from an office in [Pleasant Grove, UT](/locations/pleasant-grove-ut).
+Clear Presence is a digital marketing agency providing web design, local SEO, and Google Ads for local businesses—serving clients across the US from an office in Pleasant Grove, UT.
 
 I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals.
 

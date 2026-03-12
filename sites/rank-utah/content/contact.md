@@ -1,5 +1,5 @@
 ---
-title: "Contact Clear Presence in Utah"
+title: "Contact Clear Presence"
 description: "Contact Clear Presence"
 layout: "flowbite"
 url: "/contact"
@@ -22,6 +22,16 @@ Call or text anytime, even after hours. If I miss you, I'll get back to you by t
 Schedule a phone call, video call, or in-person meeting.
 
 {{< button url="https://cal.com/clearpresence/30min?utm_source=website&utm_content=appointment" text="Book Meeting" >}}
+
+## Office + Hours
+
+Business Hours: Mon–Sat, 8am–8pm (MT)
+
+Office: <a href="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" target="_blank" rel="noopener">348 S 2000 W, Suite B206, Pleasant Grove, UT 84062</a>
+
+Serving clients across the US from an office in Pleasant Grove, UT.
+
+{{< button url="https://maps.app.goo.gl/uPi6ijNoRyDvUA738" text="View on Google Maps" >}}
 
 
 {{< /col >}}

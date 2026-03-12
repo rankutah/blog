@@ -1,5 +1,5 @@
 ---
-title: "Pricing for Web Design, Local SEO, & Google Ads in Utah - Digital Marketing Pricing"
+title: "Pricing for Web Design, Local SEO, & Google Ads"
 description: "Simple, affordable monthly pricing for digital marketing services. No setup fees or long-term contracts."
 layout: "flowbite"
 url: "/pricing"

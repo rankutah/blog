@@ -1,6 +1,6 @@
 ---
-title: "Utah's #1 Affordable Digital Marketing Agency — Web Design, Local SEO, & Google Ads"
-description: "Digital marketing services for local businesses: web design, local SEO (search engine optimization), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster."
+title: "Affordable Digital Marketing Agency — Web Design, Local SEO, & Google Ads"
+description: "Digital marketing services for local businesses: web design, local SEO (search engine optimization), and Google Ads management. Fast, mobile‑friendly websites plus Google Business Profile help so more customers find you and reach out — with paid search when you want leads faster. Serving clients across the US from an office in Pleasant Grove, UT."
 url: "/"
 schema:
   localBusiness:
@@ -14,36 +14,7 @@ schema:
       - "Website design"
       - "Local SEO"
       - "Google Ads"
-    areaServed:
-      - "Beaver County, UT"
-      - "Box Elder County, UT"
-      - "Cache County, UT"
-      - "Carbon County, UT"
-      - "Daggett County, UT"
-      - "Davis County, UT"
-      - "Duchesne County, UT"
-      - "Emery County, UT"
-      - "Garfield County, UT"
-      - "Grand County, UT"
-      - "Iron County, UT"
-      - "Juab County, UT"
-      - "Kane County, UT"
-      - "Millard County, UT"
-      - "Morgan County, UT"
-      - "Piute County, UT"
-      - "Rich County, UT"
-      - "Salt Lake County, UT"
-      - "San Juan County, UT"
-      - "Sanpete County, UT"
-      - "Sevier County, UT"
-      - "Summit County, UT"
-      - "Tooele County, UT"
-      - "Uintah County, UT"
-      - "Utah County, UT"
-      - "Wasatch County, UT"
-      - "Washington County, UT"
-      - "Wayne County, UT"
-      - "Weber County, UT"
+    areaServed: "United States"
     priceRange: "$199–$499/mo"
 ---
 
@@ -216,7 +187,7 @@ I started working in website design and local marketing in 2023 after completing
 You’ll work directly with me (not passed around to a sales rep or a rotating team). I keep communication simple, explain what I’m doing and why, and you can reach me by call or text when you need help. It’s month-to-month with clear pricing — no long contracts or surprises.
 
 ### Which locations do you serve?
-Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
+Serving clients across the US from an office in Pleasant Grove, UT.
 
 {{< /faqs >}}
 

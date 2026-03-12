@@ -1,6 +1,6 @@
 ---
-title: "Utah Google Ads Management for Local Businesses"
-description: "Google Ads management (paid digital marketing) to help local businesses generate more leads, track what’s working, and steadily improve results over time."
+title: "Google Ads Management for Local Businesses"
+description: "Google Ads management (paid digital marketing) to help local businesses generate more leads, track what’s working, and steadily improve results over time. Serving clients across the US from an office in Pleasant Grove, UT."
 layout: "flowbite"
 url: "/services/google-ads"
 hero: true
@@ -10,36 +10,7 @@ schema:
     serviceType: "Google Ads Management"
     description: "Google Ads management to help local businesses generate more leads, track what’s working, and steadily improve results over time."
     provider: "https://clearpresence.io/#professionalservice"
-    areaServed:
-      - "Beaver County, UT"
-      - "Box Elder County, UT"
-      - "Cache County, UT"
-      - "Carbon County, UT"
-      - "Daggett County, UT"
-      - "Davis County, UT"
-      - "Duchesne County, UT"
-      - "Emery County, UT"
-      - "Garfield County, UT"
-      - "Grand County, UT"
-      - "Iron County, UT"
-      - "Juab County, UT"
-      - "Kane County, UT"
-      - "Millard County, UT"
-      - "Morgan County, UT"
-      - "Piute County, UT"
-      - "Rich County, UT"
-      - "Salt Lake County, UT"
-      - "San Juan County, UT"
-      - "Sanpete County, UT"
-      - "Sevier County, UT"
-      - "Summit County, UT"
-      - "Tooele County, UT"
-      - "Uintah County, UT"
-      - "Utah County, UT"
-      - "Wasatch County, UT"
-      - "Washington County, UT"
-      - "Wayne County, UT"
-      - "Weber County, UT"
+    areaServed: "United States"
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
@@ -94,7 +65,7 @@ I started working in website design and local marketing in 2023 after completing
 You’ll work directly with me (not passed around to a sales rep or a rotating team). I keep communication simple, explain what I’m doing and why, and you can reach me by call or text when you need help. It’s month-to-month with clear pricing — no long contracts or surprises.
 
 ### Which locations do you serve?
-Services are available statewide across Utah, with an office in [Pleasant Grove](/locations/pleasant-grove-ut)
+Serving clients across the US from an office in Pleasant Grove, UT.
 
 {{< /faqs >}}
 
