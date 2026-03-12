@@ -50,7 +50,7 @@ schema:
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
 # Stop Paying for Clicks. Start Optimizing for Value.
-We build your campaign architecture to target high-value conversions, ensuring every dollar spent works toward your bottom line.
+We build your Google Ads campaign to target high-value conversions, ensuring every dollar spent works toward your bottom line.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
