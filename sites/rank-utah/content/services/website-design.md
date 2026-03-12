@@ -48,12 +48,12 @@ schema:
         availability: "https://schema.org/InStock"
 ---
 
-{{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
+{{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
 # Join the Top 5% of Fast Websites. Stop Losing Leads.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
-{{< /hero >}}
+{{< /hero_coded >}}
 
 
 

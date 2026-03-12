@@ -1,0 +1,52 @@
+{{- /* Shortcode: hero_coded
+   Hero with a CSS-generated background (no image).
+
+   Usage:
+     {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" vhHeight="92" >}}
+       # Heading
+     {{< /hero_coded >}}
+*/ -}}
+
+{{- $page := .Page -}}
+
+{{- $bleed       := eq (lower (.Get "bleed" | default "false")) "true" -}}
+{{- $overlay     := eq (lower (.Get "overlay" | default "true")) "true" -}}
+{{- $overlayShade:= .Get "overlayShade" | default "" -}}
+{{- $overlayPos  := lower (.Get "overlayPos" | default "" ) -}}
+{{- $vh          := lower (.Get "vh" | default "" ) -}}
+{{- $vhHeight    := .Get "vhHeight" | default "" -}}
+{{- $max         := .Get "max" | default "" -}}
+{{- $pad         := .Get "pad" | default "" -}}
+{{- $padMobile   := .Get "padMobile" | default "" -}}
+{{- $align       := .Get "align" | default "" -}}
+{{- $alignY      := .Get "alignY" | default "" -}}
+{{- $minh        := .Get "minh" | default "" -}}
+
+{{- /* Optional override: inline CSS background. */ -}}
+{{- $bgStyle := .Get "bgStyle" | default "" -}}
+
+{{- /* Render inner markdown for overlay content if present */ -}}
+{{- $inner := .Inner -}}
+{{- $opts := dict "markup" "goldmark" "renderShortcodes" true -}}
+{{- $rendered := $page.RenderString $opts $inner -}}
+{{- $page.Scratch.Set "heroInner" $rendered -}}
+
+{{- partial "hero-coded.html" (dict
+  "page" $page
+  "bleed" $bleed
+  "overlay" $overlay
+  "overlayShade" $overlayShade
+  "overlayPos" $overlayPos
+  "vh" $vh
+  "vhHeight" $vhHeight
+  "max" $max
+  "pad" $pad
+  "padMobile" $padMobile
+  "align" $align
+  "alignY" $alignY
+  "minh" $minh
+  "bgStyle" $bgStyle
+) -}}
+
+{{- /* cleanup */ -}}
+{{- $page.Scratch.Delete "heroInner" -}}

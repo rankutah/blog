@@ -1,0 +1,214 @@
+{{/*
+  Partial: hero-coded.html
+  Renders a hero with a CSS-generated background (no image).
+
+  Accepts a dict with keys:
+    - page        : . (Hugo page context) [required]
+    - bleed       : bool (full-bleed when true)
+    - overlay     : bool
+    - overlayShade: string (e.g., "bg-black/40")
+    - overlayPos  : string ("bottom" | "mobilebottom" | "lowerthird" | "")
+    - vh          : string ("vh" | "svh" | "dvh" | "none" | "")
+    - vhHeight    : string/number (defaults to 92)
+    - max         : string (sm|md|lg|xl|2xl|full)
+    - pad         : string (none|sm|md|lg)
+    - padMobile   : string (none|sm|md|lg)
+    - align       : string (start|center)
+    - alignY      : string (start|center|end|between)
+    - minh        : string (screen|full|"")
+    - bgStyle     : string (inline CSS background override)
+*/}}
+
+{{- $p := . -}}
+{{- $page := $p.page -}}
+
+{{- $bleed       := $p.bleed | default false -}}
+{{- $overlay     := $p.overlay | default true -}}
+{{- $overlayShade:= $p.overlayShade | default "" -}}
+{{- $overlayPos  := lower ($p.overlayPos | default "") -}}
+
+{{- $vhMode      := lower ($p.vh | default "") -}}
+{{- $vhHeightRaw := printf "%v" ($p.vhHeight | default "92") -}}
+{{- $vhHeight    := cond (gt (len (findRE `^[0-9]+(?:\.[0-9]+)?$` $vhHeightRaw)) 0) $vhHeightRaw "92" -}}
+
+{{- $defs := $page.Site.Params.section.defaults | default (dict) -}}
+{{- $defMax   := (index $defs "max")   | default "xl" -}}
+{{- $defPad   := (index $defs "pad")   | default "lg" -}}
+{{- $defAlign := (index $defs "align") | default "start" -}}
+{{- $defAlignY:= (index $defs "alignY")| default "" -}}
+{{- $defMinh  := (index $defs "minh")  | default "" -}}
+
+{{- $max     := $p.max    | default $defMax -}}
+{{- $pad     := $p.pad    | default $defPad -}}
+{{- $padMobile := $p.padMobile | default "" -}}
+{{- $align   := $p.align  | default $defAlign -}}
+{{- $alignY  := $p.alignY | default $defAlignY -}}
+{{- $minh    := $p.minh   | default $defMinh -}}
+
+{{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
+{{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" "xl" "px-12" "2xl" "px-16" -}}
+{{- $alMap  := dict "start" "text-left" "center" "text-center" -}}
+{{- $alignYMap := dict "" "" "start" "justify-start" "center" "justify-center" "end" "justify-end" "between" "justify-between" -}}
+
+{{- $padClass := (index $padMap $pad | default "px-8") -}}
+{{- if ne $padMobile "" -}}
+  {{- $padM := (index $padMap $padMobile | default "px-0") -}}
+  {{- $padClass = printf "%s md:%s" $padM $padClass -}}
+{{- end -}}
+
+{{- $mobileBleed := eq (lower (printf "%v" $padMobile)) "none" -}}
+
+{{- /* Overlay content padding: keep background edge-to-edge on mobile, but give overlay text site-like margins. */ -}}
+{{- $overlayPadClass := $padClass -}}
+{{- if and $overlay $mobileBleed -}}
+  {{- $overlayPadClass = replaceRE `^px-0\b` `px-4` $overlayPadClass -}}
+{{- end -}}
+
+{{- $overlayContainer := printf "%s mx-auto %s"
+    (index $maxMap $max | default "max-w-7xl")
+    $overlayPadClass
+-}}
+
+{{- $container := printf "%s mx-auto %s %s"
+    (index $maxMap $max   | default "max-w-7xl")
+    $padClass
+    (index $alMap  $align | default "text-left")
+-}}
+
+{{- $vWrap := "" -}}
+{{- if or (ne $alignY "") (ne $minh "") -}}
+  {{- $vWrap = printf "flex flex-col w-full %s %s"
+        (cond (eq $minh "screen") "min-h-screen" (cond (eq $minh "full") "min-h-full" ""))
+        (index $alignYMap $alignY | default "")
+  -}}
+{{- end -}}
+
+{{- /* Accessibility: if overlay is enabled but no shade was provided, default to a dark scrim. */ -}}
+{{- if and $overlay (eq $overlayShade "") -}}
+  {{- $overlayShade = "bg-black/55" -}}
+{{- end -}}
+
+{{- /* Overlay prose: coded hero is dark → invert prose. */ -}}
+{{- $overlayProse := "prose max-w-none prose-invert text-white prose-a:text-white" -}}
+
+{{- /* Overlay positioning (defaults to vertically centered). */ -}}
+{{- $overlayWrapClass := "hero-overlay-wrap hero-overlay-center absolute inset-0 flex items-center" -}}
+{{- $overlayWrapStyle := "" -}}
+
+{{- if or (eq $overlayPos "mobilebottom") (eq $overlayPos "mobile-bottom") (eq $overlayPos "mobile_bottom") (eq $overlayPos "bottommobile") (eq $overlayPos "bottom-mobile") (eq $overlayPos "bottom_mobile") -}}
+  {{- $overlayWrapClass = "hero-overlay-wrap hero-overlay-mobilebottom absolute inset-0 flex items-end md:items-center pb-6 md:pb-0" -}}
+{{- else if or (eq $overlayPos "bottom") (eq $overlayPos "stickbottom") (eq $overlayPos "stick-bottom") (eq $overlayPos "pinnedbottom") (eq $overlayPos "pinned-bottom") -}}
+  {{- $overlayWrapClass = "hero-overlay-wrap hero-overlay-bottom absolute inset-0 flex items-end" -}}
+  {{- $overlayWrapStyle = "padding-bottom: max(env(safe-area-inset-bottom), 1.5rem);" -}}
+{{- else if or (eq $overlayPos "lowerthird") (eq $overlayPos "lower-third") (eq $overlayPos "lower_third") (eq $overlayPos "bottomthird") (eq $overlayPos "bottom-third") -}}
+  {{- $overlayWrapClass = "hero-overlay-wrap hero-overlay-lowerthird absolute inset-0 flex items-end" -}}
+  {{- $overlayWrapStyle = "padding-bottom: 33vh; padding-bottom: 33svh;" -}}
+{{- end -}}
+
+{{- /* Background style: brand-tinted dark gradient with subtle glow.
+      Uses theme primitives:
+        - --cp-brand (primary)
+        - --cp-body-bg (palette)
+*/ -}}
+{{- $bgStyle := $p.bgStyle | default "" -}}
+{{- if eq $bgStyle "" -}}
+  {{- /*
+    "Designed" coded background:
+      - strong brand glow (radials)
+      - subtle grid + diagonal sheen (repeat gradients)
+      - deep base gradient keyed off palette
+    All colors derive from --cp-brand / --cp-body-bg.
+  */ -}}
+  {{- $bgStyle = `background:
+    radial-gradient(1100px circle at 18% 20%, color-mix(in oklab, var(--cp-brand), transparent 70%), transparent 58%),
+    radial-gradient(850px circle at 78% 16%, color-mix(in oklab, var(--cp-brand), transparent 80%), transparent 56%),
+    radial-gradient(650px circle at 55% 85%, color-mix(in oklab, var(--cp-brand), transparent 88%), transparent 60%),
+    conic-gradient(from 210deg at 22% 42%, color-mix(in oklab, var(--cp-brand), transparent 86%), transparent 28%, color-mix(in oklab, var(--cp-brand), transparent 92%) 62%, transparent 100%),
+    repeating-linear-gradient(0deg,
+      transparent 0px,
+      transparent 34px,
+      color-mix(in oklab, var(--cp-brand), transparent 96%) 35px,
+      transparent 36px
+    ),
+    repeating-linear-gradient(90deg,
+      transparent 0px,
+      transparent 34px,
+      color-mix(in oklab, var(--cp-brand), transparent 97%) 35px,
+      transparent 36px
+    ),
+    linear-gradient(120deg,
+      transparent 0%,
+      color-mix(in oklab, var(--cp-brand), transparent 96%) 38%,
+      transparent 62%
+    ),
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--cp-body-bg), black 86%) 0%,
+      color-mix(in oklab, var(--cp-body-bg), black 94%) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1.08) contrast(1.04);` -}}
+{{- end -}}
+
+{{- /* Height via vh modes (defaults to svh). */ -}}
+{{- $vhDisabled := or (eq $vhMode "none") (or (eq $vhMode "off") (eq $vhMode "auto")) -}}
+{{- if and (eq $vhMode "") (not $vhDisabled) -}}{{- $vhMode = "svh" -}}{{- end -}}
+
+{{- $heightStyle := "" -}}
+{{- if and (ne $vhMode "") (not $vhDisabled) -}}
+  {{- if eq $vhMode "svh" -}}
+    {{- $heightStyle = printf "height: %svh; height: %ssvh;" $vhHeight $vhHeight -}}
+  {{- else if eq $vhMode "dvh" -}}
+    {{- $heightStyle = printf "height: %svh; height: %sdvh;" $vhHeight $vhHeight -}}
+  {{- else if eq $vhMode "vh" -}}
+    {{- $heightStyle = printf "height: %svh;" $vhHeight -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $mediaStyle := strings.TrimSpace (printf "%s %s" $heightStyle $bgStyle) -}}
+
+{{- $motionEnabled := $page.Site.Params.motion.enabled | default false -}}
+
+{{- if $bleed -}}
+  <div class="section hero bleed{{ if $mobileBleed }} mobile-bleed{{ end }}">
+    <div class="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
+      <div class="not-prose cp-hero-media"><div class="block w-full" style="{{ $mediaStyle | safeCSS }}"></div></div>
+      {{- if $overlay -}}
+        <div class="{{ $overlayWrapClass }}" data-hero-overlay="wrap"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
+          {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
+          <div class="relative z-10 w-full {{ $overlayContainer }}"{{ if $motionEnabled }} data-motion="hero"{{ end }}>
+            <div class="hero-overlay-fit" data-hero-overlay="fit">
+              <div class="{{ $vWrap }}">
+                <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
+                  {{- $page.Scratch.Get "heroInner" -}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{- end }}
+    </div>
+  </div>
+{{- else -}}
+  <div class="section hero{{ if $mobileBleed }} mobile-bleed{{ end }}">
+    <div class="{{ $container }}">
+      <div class="relative">
+        <div class="not-prose cp-hero-media"><div class="block w-full" style="{{ $mediaStyle | safeCSS }}"></div></div>
+        {{- if $overlay -}}
+          <div class="{{ $overlayWrapClass }}" data-hero-overlay="wrap"{{ with $overlayWrapStyle }} style="{{ . | safeCSS }}"{{ end }}>
+            {{- if $overlayShade }}<div class="absolute inset-0 {{ $overlayShade }}"></div>{{- end }}
+            <div class="relative z-10 w-full {{ $overlayContainer }}"{{ if $motionEnabled }} data-motion="hero"{{ end }}>
+              <div class="hero-overlay-fit" data-hero-overlay="fit">
+                <div class="{{ $vWrap }}">
+                  <div class="{{ $overlayProse }} {{ (index $alMap $align | default "text-left") }}">
+                    {{- $page.Scratch.Get "heroInner" -}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+{{- end -}}
