@@ -61,6 +61,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # Centralized default theme behavior; sites may override locally.
   defaultTheme = "auto"
   disableThemeToggle = false
+  # We already have a floating Message/Chat button; keep UI uncluttered.
+  disableScrollToTop = true
 
 [params.motion]
   enabled = true

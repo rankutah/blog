@@ -49,17 +49,47 @@ schema:
 ---
 
 {{< hero img="/media/utah-landscape.avif" alt="Landscape image for website design" bleed="true" overlay="true" overlayShade="bg-black/50" vh="svh" align="center" spacer="false" >}}
-# Web Design for Utah Businesses
+# Join the Top 5% of Fast Websites. Stop Losing Leads.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 {{<google_rating_badge>}}
 {{< /hero >}}
 
 
+
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
+## Stop Losing Leads
+
+Websites that take longer than 5 seconds to load lose over 50% of their mobile leads.
+
+{{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
+
+Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" target="_blank" rel="nofollow noopener noreferrer">The value of site speed (Simon Hearne)</a>. Conversion calculations are based on 1,000 visitors.
+
+## 7x Faster Than Other Websites
+
+The average mobile website takes around **14 seconds** to load. Clear Presence websites take around **2 seconds** to load.
+
+{{< cols min="18rem" gap="1.5rem" v="start" >}}
+{{< col card="false" >}}
+#### Average Website - 14 seconds
+
+{{< img src="/media/average-page-speed-load-times-on-4g-network.jpg" alt="Chart showing average mobile page load times on a 4G network" sizes="(min-width: 1024px) 48vw, 100vw" >}}
+
+Source: <a href="https://www.thinkwithgoogle.com/_qs/documents/2340/bc22e_The_Need_for_Mobile_Speed_-_FINAL_1.pdf" target="_blank" rel="nofollow noopener noreferrer">The Need for Mobile Speed (Think with Google PDF)</a>.
+{{< /col >}}
+{{< col card="false" >}}
+#### Clear Presence - 2 seconds
+
+{{< img src="/media/clear-presence-page-load-speed-performance-score.jpg" alt="Clear Presence page load speed performance score" sizes="(min-width: 1024px) 48vw, 100vw" >}}
+Performance tested with Google PageSpeed Insights on March 11, 2026.
+
+{{< /col >}}
+{{< /cols >}}
+
+
 ## What clients are saying
-{.center}
 
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
@@ -100,14 +130,9 @@ schema:
 {{< /cols >}}
 
 
-## Designed for Growth
-{.center}
+## Zero Templates. Pure Code.
 
-A lot of local business sites look fine, but they don’t bring in many calls or messages. Clean, modern sites load fast, work great on phones, and make it obvious what to do next (call, text, or send a message). Add local SEO for long‑term growth and visibility, and use Google Ads when you want to invest to bring in more leads faster. Monthly plans keep things simple and affordable.
-
-Want to compare speed? Take the [Website Speed Challenge](/speed-challenge/).
-
-
+A lot of websites are built on bloated templates or heavy plugins that slow things down. Clear Presence websites are custom-coded to stay fast and lightweight. That helps more people find your business, stay on your site, and turn into real leads.
 
 ## FAQs
 {.center}
@@ -125,6 +150,9 @@ Yes. You own the website from day one. If service is canceled, help is provided 
 ### How much does it cost?
 See the [pricing](/pricing) page for the most up-to-date pricing on web design packages.
 
+### What is your experience?
+I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+
 ### Do you handle hosting & the domain name?
 Yes. Hosting is included, and domain purchase and renewals are included in the monthly plan.
 
@@ -137,8 +165,6 @@ Yes. All normal local business requests (new pages, updates, changes) are unlimi
 ### How long does a new website take?
 Websites can be built in 2–3 weeks with regular coordination.
 
-#### What is your experience?
-I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 
 {{< /faqs >}}

@@ -53,11 +53,29 @@
 [data-theme="dark"] .cp-contact input[type="password"],
 [data-theme="dark"] .cp-contact textarea { color: #ffffff !important; }
 
-/* Scroll-to-top link (PaperMod default) — ensure sane size/position/hidden initial state */
+/* Scroll-to-top link — floating button, hidden until scroll */
 .top-link {
-  display: none !important; /* replaced by floating Text button */
+  position: fixed;
+  z-index: 10000;
+  right: calc(1rem + env(safe-area-inset-right));
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: opacity, transform;
 }
-/* legacy styles removed */
+
+.top-link svg {
+  width: 1rem;
+  height: 1rem;
+}
 
 /* Footer styling: subtle divider + spacing + centered width */
 .footer {

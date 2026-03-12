@@ -103,15 +103,18 @@
   try {
     var topLink = document.getElementById('top-link');
     if (topLink) {
+      var SHOW_AFTER_Y = 400;
       var onScroll = function () {
         try {
           var y = document.body.scrollTop || document.documentElement.scrollTop || 0;
-          if (y > 800) {
+          if (y > SHOW_AFTER_Y) {
             topLink.style.visibility = 'visible';
             topLink.style.opacity = '1';
+            topLink.style.pointerEvents = 'auto';
           } else {
             topLink.style.visibility = 'hidden';
             topLink.style.opacity = '0';
+            topLink.style.pointerEvents = 'none';
           }
         } catch (_e2) {}
       };

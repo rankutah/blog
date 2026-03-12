@@ -5,6 +5,9 @@
   var fab = document.querySelector('.cp-fab');
   if (!fab) return;
 
+  var topLink = document.getElementById('top-link');
+  var STACK_GAP = 12;
+
   var DBG = false;
   try {
     DBG = window.localStorage && localStorage.getItem('cp-debug-fab') === '1';
@@ -18,16 +21,53 @@
     }
   }
 
+  function reparentToBody(el) {
+    try {
+      if (el && el.parentNode && el.parentNode.tagName && el.parentNode.tagName.toLowerCase() !== 'body') {
+        document.body.appendChild(el);
+        return true;
+      }
+    } catch (_e) {}
+    return false;
+  }
+
   try {
-    if (
-      fab.parentNode &&
-      fab.parentNode.tagName &&
-      fab.parentNode.tagName.toLowerCase() !== 'body'
-    ) {
-      document.body.appendChild(fab);
-      log('reparented-to-body');
-    }
+    if (reparentToBody(fab)) log('reparented-to-body');
+    reparentToBody(topLink);
   } catch (_e) {}
+
+  function normalizeTopLink() {
+    if (!topLink) return;
+    try {
+      topLink.removeAttribute('hidden');
+      topLink.removeAttribute('aria-hidden');
+      if (topLink.classList.contains('hidden')) topLink.classList.remove('hidden');
+
+      topLink.style.display = 'inline-flex';
+      topLink.style.position = 'fixed';
+      topLink.style.transform = 'translateZ(0)';
+      topLink.style.backfaceVisibility = 'hidden';
+      topLink.style.willChange = 'opacity, transform';
+    } catch (_e) {}
+  }
+
+  function pinTopLinkLeftOfFab() {
+    if (!topLink) return;
+    try {
+      var fabRect = fab.getBoundingClientRect();
+      var tlRect = topLink.getBoundingClientRect();
+
+      // Place the scroll-to-top button to the LEFT of the FAB.
+      // Align bottoms so it looks intentional next to a pill-shaped FAB.
+      var left = fabRect.left - STACK_GAP - tlRect.width;
+      var top = fabRect.bottom - tlRect.height;
+
+      topLink.style.left = Math.max(0, Math.round(left)) + 'px';
+      topLink.style.top = Math.max(0, Math.round(top)) + 'px';
+      topLink.style.right = 'auto';
+      topLink.style.bottom = 'auto';
+    } catch (_e) {}
+  }
 
   function normalize() {
     try {
@@ -56,9 +96,18 @@
   }
 
   normalize();
-  window.addEventListener('scroll', normalize, { passive: true });
-  document.addEventListener('visibilitychange', normalize);
-  window.addEventListener('resize', normalize, { passive: true });
+  normalizeTopLink();
+  pinTopLinkLeftOfFab();
+
+  function onAnyUpdate() {
+    normalize();
+    normalizeTopLink();
+    pinTopLinkLeftOfFab();
+  }
+
+  window.addEventListener('scroll', onAnyUpdate, { passive: true });
+  document.addEventListener('visibilitychange', onAnyUpdate);
+  window.addEventListener('resize', onAnyUpdate, { passive: true });
 
   try {
     if (window.visualViewport) {
@@ -75,6 +124,12 @@
           fab.style.bottom = 'auto';
           fab.style.right = 'auto';
         } catch (_e) {}
+
+        // Keep the scroll-to-top button stacked above the FAB.
+        try {
+          normalizeTopLink();
+          pinTopLinkLeftOfFab();
+        } catch (_e2) {}
       }
 
       pinToViewport();
@@ -86,7 +141,7 @@
   try {
     var mo1 = new MutationObserver(function (muts) {
       log('fab-attributes-mutated', muts && muts.length);
-      normalize();
+      onAnyUpdate();
     });
     mo1.observe(fab, {
       attributes: true,
@@ -98,7 +153,7 @@
         if (!fab.isConnected || !document.querySelector('.cp-fab')) {
           log('fab-removed-or-missing', muts);
           document.body.appendChild(fab);
-          normalize();
+          onAnyUpdate();
         }
       } catch (_e2) {}
     });
