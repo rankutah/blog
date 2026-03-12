@@ -37,14 +37,7 @@ We track calls, forms, and key actions so you know what your local SEO is worth 
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
-## What Clients Say
-
-{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
-
-
-## Local SEO
-
-Local search engine optimization (SEO) is one of the most effective digital marketing services for getting found in search and maps.
+## Get Found
 
 Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
@@ -55,22 +48,54 @@ Get found where local customers search: Google, Apple, Bing, AI search, and “n
 - **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
 - **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
-See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
+## Know what Drives Leads
+
+Receive a powerful monthly report that helps you understand how your marketing is working for you. [Download the sample report (PDF)](/media/Analytics-Report.pdf).
+
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
-{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
-#### Visibility & Clicks
-![Local SEO analytics report](/media/local-marketing-analytics-report.avif)
+{{< col card="true" y="start" >}}
+#### Analytics Report
+![Analytics report](/media/analytics-report.jpg)
+Get an overview of the overall performance of your website and Google Business Profiles.
 {{< /col >}}
-{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
-#### Local Business Growth
-![Analytics results demonstrating growth](/media/google-analytics-results.avif)
+{{< col card="true" y="start" >}}
+#### Platform Report
+![Platform report](/media/platform-report.jpg)
+Discover your most valuable sources of traffic to help you double down on what is working.
+{{< /col >}}
+{{< col card="true" y="start" >}}
+#### Page Report
+![Page report](/media/page-report.jpg)
+See which pages on your website are the most valuable in brining conversions.
 {{< /col >}}
 {{< /cols >}}
 
-{{< cols min="18rem" gap="2rem" v="start" >}}
+<div class="mt-6"></div>
 
+{{< cols min="16rem" gap="1.5rem" v="start" >}}
+{{< col card="true" y="start" >}}
+#### Location Report
+![Location report](/media/location-report.jpg)
+Discover which cities are the most valuable in bringing you conversions.
+{{< /col >}}
+{{< col card="true" y="start" >}}
+#### Click Report
+![Click report](/media/click-report.jpg)
+See what people are the most interested in. Get marketing ideas.
+{{< /col >}}
+{{< col card="true" y="start" >}}
+#### Search Report
+![Search report](/media/search-report.jpg)
+See what people are searching for on your website and finding or not finding.
+{{< /col >}}
 {{< /cols >}}
+
+
+## What Clients Say
+
+{{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
+
 
 
 ## FAQs

@@ -57,7 +57,7 @@ Want to compare? [Take the Website Speed Challenge](/speed-challenge/).
 #### 3. Clear monthly reporting (with evidence)
 You get simple monthly reports so you can see calls, clicks, and what's working.
 
-See an example: [Sample monthly report](/reports/sample-monthly-report/) (or [download the PDF](/reports/website-and-local-seo-analytics-report.pdf)).
+See an example: [Download the sample report (PDF)](/media/Analytics-Report.pdf).
 
 #### 4. Simple pricing + ownership
 Month‑to‑month plans with clear pricing. You own your website from day one without upfront risk.

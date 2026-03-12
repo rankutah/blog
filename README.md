@@ -29,6 +29,7 @@ Notes:
 - Content convention: avoid `index.md` page bundles except the site homepage (`content/_index.md`). Prefer single-file pages under `content/`.
 - Content styling: prefer shared shortcodes over inline HTML in Markdown content files (`sites/<site>/content/**/*.md`). Only use raw HTML as a last resort when no shortcode fits.
 	- Prefer Markdown + existing shortcodes (common ones: `hero`, `cols`/`col`, `button`, `badge`, `video`, `map-embed`, `contact-form`).
+	- When creating "card" tiles with `col card="true"`, do **not** set `bg`/`darkbg` per card. Card surfaces inherit from the site palette/config (see `params.cardBackground*` / `params.col.cardClasses`).
 	- Do not use the `section` shortcode (unnecessary for normal content; keep only for legacy/edge cases).
 	- If you find yourself writing `<div class="...">` in content, stop and either (a) use a shortcode, or (b) add/extend a shortcode in `themes/overrides/layouts/shortcodes/`.
 - Customer-facing copy: use plain language and avoid tech jargon (e.g., “sprints”, “lean builds”, “workflow”).
