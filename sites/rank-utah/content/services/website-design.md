@@ -31,13 +31,6 @@ Custom websites that help you double your leads with the same amount of traffic.
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
-## Stop Losing Leads
-
-Websites that take longer than 5 seconds lose over 50% of their mobile leads.
-
-{{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
-
-Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" target="_blank" rel="nofollow noopener noreferrer">The value of site speed (Simon Hearne)</a>. Conversion calculations are based on 1,000 visitors.
 
 ## 7x Faster Than Other Websites
 
@@ -60,6 +53,13 @@ Performance tested with Google PageSpeed Insights on March 11, 2026.
 {{< /col >}}
 {{< /cols >}}
 
+## Stop Losing Leads
+
+Websites that take longer than 5 seconds lose over 50% of their mobile leads.
+
+{{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
+
+Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" target="_blank" rel="nofollow noopener noreferrer">The value of site speed (Simon Hearne)</a>. Conversion calculations are based on 1,000 visitors.
 
 ## What clients are saying
 
