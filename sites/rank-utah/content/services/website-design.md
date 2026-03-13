@@ -56,7 +56,7 @@ Performance tested with Google PageSpeed Insights on March 11, 2026.
 
 ## Stop Losing Leads
 
-Websites that take longer than **5 seconds** to load **lose over 50% of their mobile leads**.
+{{< badge text="⚠️ CRITICAL STAT">}} Websites that take longer than **5 seconds** to load **lose over 50% of their mobile leads**.
 
 {{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
 
@@ -70,6 +70,7 @@ Want to quickly see how your site performs on mobile? Use Google’s free PageSp
 
 1. Open <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">PageSpeed Insights</a>
 2. Paste your website URL and run the test
+3. Wait 20-30 seconds for your report to load
 
 What to look at:
 

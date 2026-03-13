@@ -200,7 +200,7 @@ Most agencies treat every lead the same. We assign dollar values to your convers
 
 ## Stop Losing Leads
 
-Websites that take longer than **5 seconds** to load **lose over 50% of their mobile leads**.
+{{< badge text="⚠️ CRITICAL STAT">}} Websites that take longer than **5 seconds** to load **lose over 50% of their mobile leads**.
 
 {{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
 

@@ -5,7 +5,7 @@ layout: "flowbite"
 url: "/about"
 ---
 
-## About Clear Presence
+# About Clear Presence
 
 Clear Presence helps local businesses grow through custom web design, local SEO, and Google Ads. From an office in Pleasant Grove, Utah, I work with clients locally and across the U.S.
 
