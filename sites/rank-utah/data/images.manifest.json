@@ -1,4 +1,62 @@
 {
+  "/media/ROAS-for-bidding-strategies.jpg": {
+    "width": 400,
+    "height": 286,
+    "aspect": 1.3986013986013985,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAXACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEFAv/EACoQAAEDAQUHBQEAAAAAAAAAAAEAAhESAwQhUbEFEzFBQsHRFVJxcoGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGREBAAIDAAAAAAAAAAAAAAAAAAECERJR/9oADAMBAAIRAxEAPwC07ZFzYaW2j55hzh4Tbse52nXaSPa4eFQeaTg4zPCoCE2Y9RJyqBVzLOleJ42NdKiyu0gDMTos+j3Suit8fYToqgneHDCM+yzJ3sfyoaJmTSvDtWmREzmAO6dm0048cyANEIUaOHVnExH4s0u3nOPgR5QhB//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w320.avif"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w400.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w320.jpg"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w400.jpg"
+        }
+      ]
+    }
+  },
+  "/media/ROAS-for-bidding-strategies.avif": {
+    "width": 400,
+    "height": 286,
+    "aspect": 1.3986013986013985,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAXACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEFAv/EACoQAAEDAQUHBQEAAAAAAAAAAAEAAhESAwQhUbEFEzFBQsHRFVJxcoGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGREBAAIDAAAAAAAAAAAAAAAAAAECERJR/9oADAMBAAIRAxEAPwC07ZFzYaW2j55hzh4Tbse52nXaSPa4eFQeaTg4zPCoCE2Y9RJyqBVzLOleJ42NdKiyu0gDMTos+j3Suit8fYToqgneHDCM+yzJ3sfyoaJmTSvDtWmREzmAO6dm0048cyANEIUaOHVnExH4s0u3nOPgR5QhB//Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w320.avif"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w400.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w320.jpg"
+        },
+        {
+          "w": 400,
+          "url": "/media-deriv/ROAS-for-bidding-strategies__w400.jpg"
+        }
+      ]
+    }
+  },
   "/media/Screenshot-2025-10-21-at-5.14.59-PM.jpg": {
     "width": 1142,
     "height": 880,
@@ -2727,6 +2785,112 @@
         {
           "w": 1280,
           "url": "/media-deriv/freelance-website-design-services-utah__w1280.jpg"
+        }
+      ]
+    }
+  },
+  "/media/google-ads-best-campaign-strategy.jpg": {
+    "width": 952,
+    "height": 552,
+    "aspect": 1.7246376811594204,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAATACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBAX/xAAmEAABBAAFAwUBAAAAAAAAAAABAAIRIQMEBRIxQWFxExUyYoGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEBAAMBAAAAAAAAAAAAAAAAAAIRElH/2gAMAwEAAhEDEQA/AO6dJyrTDWYkeZU+z5OC4MxJ5+S2YkA3A71f8V62HhtdFbZzHjAdIygE7cSfKHR8oHRtxIP2W98bBdUodHqtu0szHizhJ5P4YU9I7IijQeIQi5tEQf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w768.avif"
+        },
+        {
+          "w": 952,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w952.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w768.jpg"
+        },
+        {
+          "w": 952,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w952.jpg"
+        }
+      ]
+    }
+  },
+  "/media/google-ads-best-campaign-strategy.avif": {
+    "width": 952,
+    "height": 552,
+    "aspect": 1.7246376811594204,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAATACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBAX/xAAmEAABBAAFAwUBAAAAAAAAAAABAAIRIQMEBRIxQWFxExUyYoGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEBAAMBAAAAAAAAAAAAAAAAAAIRElH/2gAMAwEAAhEDEQA/AO6dJyrTDWYkeZU+z5OC4MxJ5+S2YkA3A71f8V62HhtdFbZzHjAdIygE7cSfKHR8oHRtxIP2W98bBdUodHqtu0szHizhJ5P4YU9I7IijQeIQi5tEQf/Z",
+    "variants": {
+      "avif": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w320.avif"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w480.avif"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w640.avif"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w768.avif"
+        },
+        {
+          "w": 952,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w952.avif"
+        }
+      ],
+      "webp": [],
+      "jpeg": [
+        {
+          "w": 320,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w320.jpg"
+        },
+        {
+          "w": 480,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w480.jpg"
+        },
+        {
+          "w": 640,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w640.jpg"
+        },
+        {
+          "w": 768,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w768.jpg"
+        },
+        {
+          "w": 952,
+          "url": "/media-deriv/google-ads-best-campaign-strategy__w952.jpg"
         }
       ]
     }

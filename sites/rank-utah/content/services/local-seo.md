@@ -67,7 +67,7 @@ Discover your most valuable sources of traffic to help you double down on what i
 {{< col card="true" y="start" >}}
 #### Page Report
 {{< galleryimg src="/media/page-report.jpg" alt="Page report" >}}
-See which pages on your website are the most valuable in brining conversions.
+See which pages on your website are the most valuable in bringing conversions.
 {{< /col >}}
 {{< /cols >}}
 

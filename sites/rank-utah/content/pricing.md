@@ -100,7 +100,7 @@ No contracts. No setup fees. Cancel anytime.
 
 Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
 
-Price includes <strong>1 Google Ads campaign</strong>. Additional campaigns are <strong>$99/mo</strong>.
+Ad spend above <strong>$3,000/mo</strong> is billed at <strong>10%</strong> (only on the amount above $3,000).
 
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
 
@@ -160,7 +160,7 @@ No contracts. No setup fees. Cancel anytime.
 
 Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
 
-Price includes <strong>1 Google Ads campaign</strong>. Additional campaigns are <strong>$99/mo</strong>.
+Ad spend above <strong>$3,000/mo</strong> is billed at <strong>10%</strong> (only on the amount above $3,000).
 
 *For businesses that want **more leads** and are **ready to invest** in advertising.*
 
