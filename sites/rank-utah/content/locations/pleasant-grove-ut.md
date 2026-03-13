@@ -185,8 +185,8 @@ We track calls, forms, and key actions so you know what your local SEO is worth 
 
 {{< badge text="Google Ads" >}}
 
-**Stop paying for clicks. Start optimizing for value.**
-We build your Google Ads campaign to target high-value conversions, ensuring every dollar spent works toward your bottom line.
+**Stop Counting Leads. Start Tracking Lead Value.**
+Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
 
 
 <div class="mt-auto pt-4">

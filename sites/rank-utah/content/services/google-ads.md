@@ -21,7 +21,7 @@ schema:
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
 # Stop Counting Leads. Start Tracking Lead Value.
-Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that matter most.
+Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
@@ -35,7 +35,7 @@ Most agencies treat every lead the same. We assign dollar values to your convers
 
 By assigning real-world values to your conversions, we move beyond simple lead counting and start optimizing for the value each action brings to your business. That gives us the data needed to use Maximize Conversion Value and Target ROAS—two of Google Ads’ most advanced bidding strategies for maximizing return on ad spend.
 
-In a study of 14,584 Google Ads accounts, Optmyzr found that these two strategies delivered the highest overall ROAS (return on ad spend).
+In a study of 14,584 Google Ads accounts, Optmyzr found that Maximize Conversion Value and Target ROAS delivered the highest overall ROAS (return on ad spend).
 
 ![ROAS for bidding strategies](/media/ROAS-for-bidding-strategies.png)
 
@@ -87,7 +87,7 @@ Serving clients across the US from an office in Pleasant Grove, UT.
 
 ## Stop Counting Leads. Start Tracking Lead Value.
 {.center}
-Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that matter most.
+Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
 {.center}
 
 {{< button url="/contact" text="Let's Talk" >}}
