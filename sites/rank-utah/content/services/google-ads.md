@@ -20,18 +20,18 @@ schema:
 ---
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
-# Stop Counting Leads. Start Tracking Lead Value.
+# Stop Counting Leads. Start Tracking Value.
 Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
-{{<google_rating_badge>}}
+{{< google_rating_badge >}}
 
 {{< /hero_coded >}}
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
-## Why Lead Value Matters
+## Why Value Matters
 
 By assigning real-world values to your conversions, we move beyond simple lead counting and start optimizing for the value each action brings to your business. That gives us the data needed to use Maximize Conversion Value and Target ROAS—two of Google Ads’ most advanced bidding strategies for maximizing return on ad spend.
 
@@ -85,7 +85,7 @@ Serving clients across the US from an office in Pleasant Grove, UT.
 
 {{< /faqs >}}
 
-## Stop Counting Leads. Start Tracking Lead Value.
+## Stop Counting Leads. Start Tracking Value.
 {.center}
 Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
 {.center}

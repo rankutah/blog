@@ -133,7 +133,7 @@ A mobile-friendly website has:
 
 ### 5) Use PageSpeed Insights to find the biggest wins
 
-Google’s free tool PageSpeed Insights is one of the fastest ways to spot problems — here’s the invite + link: [Website Speed Challenge](/speed-challenge/).
+Google’s free tool PageSpeed Insights is one of the fastest ways to spot problems — here’s how to run it: [Test your site speed with PageSpeed Insights](/services/website-design/#test-your-website-speed).
 
 What to look at:
 

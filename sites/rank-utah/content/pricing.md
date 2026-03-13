@@ -210,7 +210,7 @@ No. Setup is included in your monthly price.
 
 ### How do you compare to other agencies?
 
-Take the [Speed Challenge](/speed-challenge) to run a side-by-side PageSpeed comparison and see why site speed matters for SEO, ads, and conversions.
+See [how to test your site speed](/services/website-design/#test-your-website-speed) with PageSpeed Insights and why speed matters for SEO, ads, and conversions.
 
 ### What does ongoing support include?
 Requests typical of a small‑business site are included. Make requests via email, text, or phone. Send images via email or uploading to your Google Drive folder. Articles you provide can be published as site pages as well.

@@ -29,7 +29,7 @@ We track calls, forms, and key actions so you know what your local SEO is worth 
 
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
-{{<google_rating_badge>}}
+{{< google_rating_badge >}}
 
 <div class="mt-6"></div>
 

@@ -25,7 +25,7 @@ schema:
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
 
-{{<google_rating_badge>}}
+{{< google_rating_badge >}}
 
 {{< /hero_coded >}}
 
@@ -70,7 +70,7 @@ We track calls, forms, and key actions so you know what your local SEO is worth 
 
 {{< badge text="Google Ads" >}}
 
-**Stop Counting Leads. Start Tracking Lead Value.**
+**Stop Counting Leads. Start Tracking Value.**
 Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
 
 
@@ -83,7 +83,7 @@ Most agencies treat every lead the same. We assign dollar values to your convers
 
 ## Stop Losing Leads
 
-Websites that take longer than 5 seconds lose over 50% of their mobile leads.
+Websites that take longer than **5 seconds** to load **lose over 50% of their mobile leads**.
 
 {{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
 
@@ -186,7 +186,7 @@ No handoffs. You work directly with me (see [about page](/about)), so communicat
 #### 2. Built to be fast (with proof)
 Custom-coded pages that stay lightweight — no extra clutter that slows things down.
 
-Want to compare? [Take the Website Speed Challenge](/speed-challenge/).
+Want to compare? [Test your site speed with PageSpeed Insights](/services/website-design/#test-your-website-speed).
 
 #### 3. Clear monthly reporting (with evidence)
 You get simple monthly reports so you can see calls, clicks, and what's working.
@@ -232,7 +232,7 @@ Higher overhead often means higher upfront costs, then extra fees for maintenanc
 
 See the process for building a custom site designed to bring you more customers.
 
-{{<button text="Web Design" url="/services/website-design" >}}
+{{< button text="Web Design" url="/services/website-design" >}}
 
 
 {{< /col >}}
@@ -244,7 +244,7 @@ See the process for building a custom site designed to bring you more customers.
 
 Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
-{{<button text="Local SEO" url="/services/local-seo">}}
+{{< button text="Local SEO" url="/services/local-seo" >}}
 
 {{< /col >}}
 
@@ -254,7 +254,7 @@ Get found where local customers search: Google, Apple, Bing, AI search, and “n
 
 Google Ads management to generate more leads with keyword research, campaign setup, tracking, and clear monthly reporting.
 
-{{<button text="Google Ads" url="/services/google-ads">}}
+{{< button text="Google Ads" url="/services/google-ads" >}}
 
 {{< /col >}}
 
@@ -264,7 +264,7 @@ Google Ads management to generate more leads with keyword research, campaign set
 
 See what customers are saying.
 
-{{<button text="Reviews" url="/reviews">}}
+{{< button text="Reviews" url="/reviews" >}}
 
 {{< /col >}}
 
@@ -275,7 +275,7 @@ See what customers are saying.
 See affordable, transparent monthly plans.
 
 
-{{<button text="See Pricing" url="/pricing">}}
+{{< button text="See Pricing" url="/pricing" >}}
 
 {{< /col >}}
 
@@ -286,7 +286,7 @@ See affordable, transparent monthly plans.
 
 Reach out with questions or to start your project.
 
-{{<button text="Let's Talk" url="/contact">}}
+{{< button text="Let's Talk" url="/contact" >}}
 
 
 {{< /col >}}
@@ -328,7 +328,7 @@ Serving clients across the US from an office in Pleasant Grove, UT.
 ## Ready for the Next Step?
 {.center}
 
-{{<button text="Let's Talk" url="/contact" >}}
-{{<button url="/pricing" text="See Pricing" variant="outline">}}
+{{< button text="Let's Talk" url="/contact" >}}
+{{< button url="/pricing" text="See Pricing" variant="outline" >}}
 {.center}
 

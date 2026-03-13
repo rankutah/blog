@@ -4,6 +4,9 @@ description: "Affordable, custom website design for local businesses — foundat
 layout: "flowbite"
 hero: true
 url: "/services/website-design"
+aliases:
+  - "/speed-challenge"
+  - "/speed-challenge/"
 schema:
   service:
     enabled: true
@@ -24,10 +27,8 @@ schema:
 Custom websites that help you double your leads with the same amount of traffic.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
-{{<google_rating_badge>}}
+{{< google_rating_badge >}}
 {{< /hero_coded >}}
-
-
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
@@ -55,11 +56,26 @@ Performance tested with Google PageSpeed Insights on March 11, 2026.
 
 ## Stop Losing Leads
 
-Websites that take longer than 5 seconds lose over 50% of their mobile leads.
+Websites that take longer than **5 seconds** to load **lose over 50% of their mobile leads**.
 
 {{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
 
 Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" target="_blank" rel="nofollow noopener noreferrer">The value of site speed (Simon Hearne)</a>. Conversion calculations are based on 1,000 visitors.
+
+<span id="test-your-website-speed" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
+
+## Test Your Website Speed
+
+Want to quickly see how your site performs on mobile? Use Google’s free PageSpeed Insights tool.
+
+1. Open <a href="https://pagespeed.web.dev/" target="_blank" rel="nofollow noopener noreferrer">PageSpeed Insights</a>
+2. Paste your website URL and run the test
+
+What to look at:
+
+- **Performance score** (high-level snapshot)
+- **Largest Contentful Paint** (how fast the main content loads)
+- **Total Blocking Time** (scrips that slow down your site)
 
 ## What clients are saying
 
@@ -123,7 +139,7 @@ Yes. You own the website from day one. If service is canceled, help is provided 
 See the [pricing](/pricing) page for the most up-to-date pricing on web design packages.
 
 ### What is your experience?
-I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](/speed-challenge/), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
+I started building websites for local businesses in 2023 after completing my Master’s in Software Development. Unlike most web designers who use templates, I custom‑code websites for speed, [performance](#test-your-website-speed), and flexibility. Every change I make is backed up, so it’s easy to restore a previous version if needed. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals. You can see more on my <a href="https://www.linkedin.com/in/benjamin-awerkamp/details/experience/" target="_blank" rel="noopener">LinkedIn</a> or the <a href="/about">About page</a>.
 
 ### Do you handle hosting & the domain name?
 Yes. Hosting is included, and domain purchase and renewals are included in the monthly plan.

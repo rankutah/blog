@@ -55,7 +55,7 @@ Serving clients across the US from an office in Pleasant Grove, UT.
 	classes="max-w-xl"
 >}}
 
-{{<button submit="true" form="contact1" text="Submit Message" >}}
+{{< button submit="true" form="contact1" text="Submit Message" >}}
 
 
 

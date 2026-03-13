@@ -141,7 +141,7 @@ schema:
 Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to help you Scale.
 
 {{< button url="/contact" text="Let's Talk" >}} {{< button url="/pricing" variant="outline" text="See Pricing" >}}
-{{<google_rating_badge>}}
+{{< google_rating_badge >}}
 
 <div class="mt-6"></div>
 {{< /hero_coded >}}
@@ -162,7 +162,7 @@ Custom websites that help you double your leads with the same amount of traffic.
 
 
 <div class="mt-auto pt-4">
-{{< button url="/services/website-design" variant="outline" text="Web Design" >}}
+{{< button url="/services/website-design" text="Web Design" >}}
 </div>
 {{< /col >}}
 
@@ -178,7 +178,7 @@ We track calls, forms, and key actions so you know what your local SEO is worth 
 
 
 <div class="mt-auto pt-4">
-{{< button url="/services/local-seo" variant="outline" text="Local SEO" >}}
+{{< button url="/services/local-seo"  text="Local SEO" >}}
 </div>
 {{< /col >}}
 
@@ -187,12 +187,12 @@ We track calls, forms, and key actions so you know what your local SEO is worth 
 
 {{< badge text="Google Ads" >}}
 
-**Stop Counting Leads. Start Tracking Lead Value.**
+**Stop Counting Leads. Start Tracking Value.**
 Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
 
 
 <div class="mt-auto pt-4">
-{{< button url="/services/google-ads" variant="outline" text="Google Ads" >}}
+{{< button url="/services/google-ads" text="Google Ads" >}}
 </div>
 {{< /col >}}
 
@@ -200,7 +200,7 @@ Most agencies treat every lead the same. We assign dollar values to your convers
 
 ## Stop Losing Leads
 
-Websites that take longer than 5 seconds lose over 50% of their mobile leads.
+Websites that take longer than **5 seconds** to load **lose over 50% of their mobile leads**.
 
 {{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
 

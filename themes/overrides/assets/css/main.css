@@ -83,6 +83,14 @@
   padding: 1rem 1rem; /* tighter top/bottom */
   /* Border comes from Tailwind classes on the element (matches navbar) */
 }
+
+/* Slightly larger default body text across sites.
+   - Keeps spacing/layout stable (we don't change the root html font-size).
+   - Only bumps default Typography blocks ("prose"), leaving explicit variants
+     like "prose-sm" / "prose-lg" as-is. */
+body { font-size: 1.25rem; }
+.prose:not(.prose-sm):not(.prose-lg):not(.prose-xl):not(.prose-2xl) { font-size: 1.25rem; }
+
 .shortcode-gallery { align-items: start; }
 .shortcode-gallery > div { padding: 0 !important; line-height: 0; }
 .shortcode-gallery a { display: block; line-height: 0; }

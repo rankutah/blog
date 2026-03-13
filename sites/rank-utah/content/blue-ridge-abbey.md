@@ -9,7 +9,7 @@ url: "/portfolio/blue-ridge-abbey"
 
 _Utah office: [Pleasant Grove, UT](/locations/pleasant-grove-ut) — serving businesses across Utah._
 
-These screenshots and results can be verified here: [Website Speed Challenge](/speed-challenge/).
+These screenshots and results can be verified here: [Test your site speed with PageSpeed Insights](/services/website-design/#test-your-website-speed).
 
 Competitors were found by searching Google Maps for nearby “Bed & Breakfast” results.
 
