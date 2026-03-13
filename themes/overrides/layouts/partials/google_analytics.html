@@ -181,6 +181,7 @@
 
     function injectSoon(){
       try {
+        if (!LCP_GATE) { setTimeout(inject, 0); return; }
         if ('requestIdleCallback' in window) requestIdleCallback(inject, { timeout: 2000 });
         else setTimeout(inject, 1);
       } catch(e) { setTimeout(inject, 1); }

@@ -107,9 +107,12 @@ sameAs = []
     alt  = "LinkedIn"
 
 [params.analytics]
-  provider = "zaraz"
+  # Use direct gtag-based loader (not Zaraz) so Ads can load immediately.
+  provider = ""
   # Load analytics immediately (no delay/gating)
   delayMs = 0
+  # Do not wait for LCP/idle; load as soon as possible.
+  lcpGate = false
   clarityOnlyOnInteraction = true
   # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
   debugMode = false
@@ -125,7 +128,7 @@ sameAs = []
   [params.analytics.googleAds]
     id = "AW-17704568736"
     conversionLabel = "uKziCM6p7tQbEKCPmfpB"
-    enabled = false
+    enabled = true
     phoneReplace = true
 
   [params.analytics.meta]
