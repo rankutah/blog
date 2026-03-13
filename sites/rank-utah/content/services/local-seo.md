@@ -24,7 +24,7 @@ params:
 ---
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
-# Get Found. Know What Drives Leads.
+# Get Found. Measure What Actually Matters.
 We track calls, forms, and key actions so you know what your local SEO is worth and which efforts drive the most value.
 
 {{< button url="/contact" text="Let's Talk" >}}
@@ -48,9 +48,9 @@ Get found where local customers search: Google, Apple, Bing, AI search, and “n
 - **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
 - **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
-## Know what Drives Leads
+## Measure What Actually Matters
 
-Receive a powerful monthly report that helps you understand how your marketing is working for you. [Download the sample report (PDF)](/media/Analytics-Report.pdf).
+We track calls, forms, and lead value so you can see which marketing efforts are actually driving results. [Download the sample report (PDF)](/media/Analytics-Report.pdf).
 
 
 {{< cols min="16rem" gap="1.5rem" v="start" >}}
@@ -129,7 +129,7 @@ Results depend on what you have to offer, the level of search interest in your a
 
 {{< /faqs >}}
 
-## Get Found. Know What Drives Leads.
+## Get Found. Measure What Actually Matters.
 {.center}
 We track calls, forms, and key actions so you know what your local SEO is worth and which efforts drive the most value.
 {.center}

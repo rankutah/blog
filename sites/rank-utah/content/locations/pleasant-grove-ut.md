@@ -171,8 +171,10 @@ Custom websites that help you double your leads with the same amount of traffic.
 
 {{< badge text="Local SEO" >}}
 
-**Get found. Know what drives leads.**
+**Get Found. Measure What Actually Matters.**
 We track calls, forms, and key actions so you know what your local SEO is worth and which efforts drive the most value.
+
+
 
 
 <div class="mt-auto pt-4">
