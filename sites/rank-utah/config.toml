@@ -109,9 +109,13 @@ sameAs = []
 [params.analytics]
   # Use the standard analytics loader (delayed by interaction/time).
   provider = ""
-  # Normal delayed load.
-  delayMs = 5000
-  clarityOnlyOnInteraction = true
+  # Load gtag immediately.
+  delayMs = 0
+  lcpGate = false
+
+  # Keep Clarity delayed (separately from gtag).
+  clarityDelayMs = 5000
+  clarityOnlyOnInteraction = false
   # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
   debugMode = false
 
@@ -121,7 +125,7 @@ sameAs = []
 
   [params.analytics.clarity]
     id = "u9tbqd2kqk"
-    enabled = false
+    enabled = true
 
   [params.analytics.googleAds]
     id = "AW-17704568736"
