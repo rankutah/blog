@@ -59,7 +59,7 @@ No contracts. No setup fees. Cancel anytime.
 - **Monthly Reporting**: Track calls and website activity each month.
 
 
-{{< button id="checkout-business-website" url="https://buy.stripe.com/14AfZbeg5dwr9pt7K71sQ0a" text="Get Started" >}} {{< button url="/services/website-design/" variant="outline" text="Learn More" >}}
+{{< button id="checkout-custom-website" url="https://buy.stripe.com/14AfZbeg5dwr9pt7K71sQ0a" text="Get Started" >}} {{< button url="/services/website-design/" variant="outline" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -84,7 +84,7 @@ Price includes <strong>1 business location</strong>. Additional business locatio
 - **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
 - **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
-{{< button id="checkout-local-seo" url="https://buy.stripe.com/4gM9ANeg5gIDfNRd4r1sQ0b" text="Get Started" >}} {{< button url="/services/local-seo/" variant="outline"  text="Learn More" >}}
+{{< button id="checkout-custom-website-local-seo" url="https://buy.stripe.com/4gM9ANeg5gIDfNRd4r1sQ0b" text="Get Started" >}} {{< button url="/services/local-seo/" variant="outline"  text="Learn More" >}}
 
 {{< /col >}}
 
@@ -111,7 +111,7 @@ Ad spend above <strong>$3,000/mo</strong> is billed at <strong>10%</strong> (onl
 - **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
 - **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
-{{< button id="checkout-google-ads" url="https://buy.stripe.com/4gM8wJ0pfeAv9pt4xV1sQ0c" text="Get Started" >}} {{< button url="/services/google-ads/" variant="outline" text="Learn More" >}}
+{{< button id="checkout-custom-website-local-seo-google-ads" url="https://buy.stripe.com/4gM8wJ0pfeAv9pt4xV1sQ0c" text="Get Started" >}} {{< button url="/services/google-ads/" variant="outline" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -144,7 +144,7 @@ Price includes <strong>1 business location</strong>. Additional business locatio
 - **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
 - **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
 
-{{< button id="checkout-local-seo-existing" url="https://buy.stripe.com/dRmaER0pf1NJ1X17K71sQ0d" text="Get Started" >}} {{< button url="/services/local-seo/#learn-more" variant="outline"  text="Learn More" >}}
+{{< button id="checkout-local-seo" url="https://buy.stripe.com/dRmaER0pf1NJ1X17K71sQ0d" text="Get Started" >}} {{< button url="/services/local-seo/#learn-more" variant="outline"  text="Learn More" >}}
 
 {{< /col >}}
 
@@ -171,7 +171,7 @@ Ad spend above <strong>$3,000/mo</strong> is billed at <strong>10%</strong> (onl
 - **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
 - **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
 
-{{< button id="checkout-google-ads-existing" url="https://buy.stripe.com/aFa3cp2xn4ZVdFJd4r1sQ0e" text="Get Started" >}} {{< button url="/services/google-ads/#learn-more" variant="outline" text="Learn More" >}}
+{{< button id="checkout-local-seo-google-ads" url="https://buy.stripe.com/aFa3cp2xn4ZVdFJd4r1sQ0e" text="Get Started" >}} {{< button url="/services/google-ads/#learn-more" variant="outline" text="Learn More" >}}
 
 {{< /col >}}
 
@@ -237,8 +237,6 @@ Websites are typically built in under a month with regular coordination.
 
 ## Ready to grow your visibility?
 {.center}
-
-
 
 {{< button url="/contact" text="Let's Talk"  >}}
 {{< button url="/services/website-design" text="Web Design" variant="outline">}}

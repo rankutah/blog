@@ -450,7 +450,9 @@
       const overlay = document.getElementById('nav-drawer-overlay');
       if(!btn || !drawer || !overlay) return;
       if (!drawer.hasAttribute('data-drawer')) return; // only if configured as drawer
-      const isMobile = () => window.matchMedia('(max-width: 1023.98px)').matches; // below lg: include tablet
+      // Navbar switches to the hamburger/drawer below `xl` (see navbar.html: xl:hidden / xl:flex).
+      // Match that breakpoint so the drawer opens as soon as the hamburger appears.
+      const isMobile = () => window.matchMedia('(max-width: 1279.98px)').matches; // below xl
       let lastFocus = null;
       const focusableSel = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
