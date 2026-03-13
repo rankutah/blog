@@ -31,9 +31,9 @@ Most agencies treat every lead the same. We assign dollar values to your convers
 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
-## Why Tracking Lead Value Matters
+## Why Lead Value Matters
 
-We don’t treat every lead as equal. By assigning real-world values to your conversions, we move beyond simple lead counting and start optimizing for the value each action brings to your business. That gives us the data needed to use Maximize Conversion Value and Target ROAS—two of Google Ads’ most advanced bidding strategies for maximizing return on ad spend.
+By assigning real-world values to your conversions, we move beyond simple lead counting and start optimizing for the value each action brings to your business. That gives us the data needed to use Maximize Conversion Value and Target ROAS—two of Google Ads’ most advanced bidding strategies for maximizing return on ad spend.
 
 In a study of 14,584 Google Ads accounts, Optmyzr found that these two strategies delivered the highest overall ROAS (return on ad spend).
 
