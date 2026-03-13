@@ -7,9 +7,9 @@ url: "/about"
 
 ## About Clear Presence
 
-Clear Presence is a digital marketing agency providing web design, local SEO, and Google Ads for local businesses—serving clients across the US from an office in Pleasant Grove, UT.
+Clear Presence helps local businesses grow through custom web design, local SEO, and Google Ads. Based in Pleasant Grove, Utah, we work with clients locally and across the U.S.
 
-I started working in website design and local marketing in 2023 after completing my Master’s in Software Development. With degrees in both Business and Software Development (and a background in cybersecurity), you get someone who understands the technical details and your business goals.
+I started Clear Presence after completing my Master’s in Software Development in 2023. With degrees in both Business and Software Development, plus a background in cybersecurity, I combine technical skill with a practical understanding of what businesses need from their marketing: visibility, speed, and more leads.
 
 ![Benjamin Awerkamp headshot](/media/profile-headshot-website-design-expert-benjamin-awerkamp.avif)
 {.w-48}

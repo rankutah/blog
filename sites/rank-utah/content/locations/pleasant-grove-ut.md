@@ -155,7 +155,7 @@ Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to he
 {{< col card="true" y="start" >}}
 ### Launch
 
-{{< badge text="Custom Websites" >}}
+{{< badge text="Custom Website" >}}
 
 **Join the Top 5% of Fast Websites. Stop Losing Leads.**
 Custom websites that help you double your leads with the same amount of traffic.

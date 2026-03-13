@@ -20,7 +20,7 @@ schema:
 
 {{< hero_coded bleed="true" overlay="true" overlayShade="bg-black/40" vh="svh" align="center" >}}
 # Get Found. Stop Losing Leads.
-Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to help you Scale.
+**Web Design** to help you Launch. **Local SEO** to help you Rank. **Google Ads** to help you Scale.
 
 {{< button url="/contact" text="Let's Talk" >}}
 {{< button url="/pricing" variant="outline" text="See Pricing" >}}
@@ -29,15 +29,149 @@ Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to he
 
 {{< /hero_coded >}}
 
+<span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
+
+## Get Found
+
+{{< cols min="18rem" gap="1rem" v="stretch" stagger="false" >}}
+
+{{< col card="true" y="start" >}}
+### Launch
+
+{{< badge text="Custom Website" >}}
+
+**Join the Top 5% of Fast Websites. Stop Losing Leads.**
+Custom websites that help you double your leads with the same amount of traffic.
 
 
-## What Clients Are Saying
-{.center}
+<div class="mt-auto pt-4">
+{{< button url="/services/website-design" text="Web Design" >}}
+</div>
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+### Rank
+
+{{< badge text="Local SEO" >}}
+
+**Get Found. Measure What Actually Matters.**
+We track calls, forms, and key actions so you know what your local SEO is worth and which efforts drive the most value.
+
+
+
+
+<div class="mt-auto pt-4">
+{{< button url="/services/local-seo"  text="Local SEO" >}}
+</div>
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+### Scale
+
+{{< badge text="Google Ads" >}}
+
+**Stop Counting Leads. Start Tracking Lead Value.**
+Most agencies treat every lead the same. We assign dollar values to your conversions so you can focus your budget on the leads that bring the most value.
+
+
+<div class="mt-auto pt-4">
+{{< button url="/services/google-ads"  text="Google Ads" >}}
+</div>
+{{< /col >}}
+
+{{< /cols >}}
+
+## Stop Losing Leads
+
+Websites that take longer than 5 seconds lose over 50% of their mobile leads.
+
+{{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
+
+Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" target="_blank" rel="nofollow noopener noreferrer">The value of site speed (Simon Hearne)</a>. Conversion calculations are based on 1,000 visitors.
+
+
+## What others are saying
 
 <!-- Elfsight Google Reviews | Clear Presence (lazy-loaded globally) -->
 {{< elfsight id="34cbde4c-9d31-432c-8bcb-9e123ab873fa" >}}
 
-<span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
+
+
+## What’s included?
+{.center}
+
+{{< cols min="18rem" gap="2rem" v="start" >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+### Web Design
+{.center}
+
+Fast, professional websites built to convert visitors into customers.
+
+- **Website Ownership**: You own your website from day one.
+- **Managed Hosting + Security**: Reliable hosting and built-in security are included.
+- **Domain Included**: Your domain and annual renewals are covered.
+- **Custom Website Design**: Your site is built to match your brand.
+- **Mobile-Friendly Design**: Your website looks great on every screen.
+- **Fast Load Times**: Built to load quickly across devices.
+- **Automatic Backups**: Every change is backed up automatically.
+- **Contact Forms + Spam Protection**: Make it easy for customers to reach out without the junk.
+- **Foundational SEO**: Technical and on-page SEO built in from the start.
+- **Ongoing Support**: Reach out anytime by phone, text, or email.
+- **Monthly Reporting**: Track calls and website activity each month.
+
+{{< button url="/services/website-design" text="Learn About Web Design" >}}
+{.center}
+
+
+{{< /col >}}
+
+{{< col card="false" bg="blue-100" darkbg="gray-800" y="start" >}}
+
+### Local SEO
+{.center}
+
+Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
+
+- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
+- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
+- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
+- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
+- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
+- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
+
+{{< button url="/services/local-seo" text="Learn About Local SEO" >}}
+{.center}
+
+
+{{< /col >}}
+
+{{< col card="false" bg="gray-100" darkbg="gray-800" y="start" >}}
+
+### Google Ads
+{.center}
+
+Paid search management to generate more leads.
+
+- **Keyword Research**: Research focused on the searches most likely to bring in leads.
+- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
+- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
+- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
+- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
+- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
+
+{{< button url="/services/google-ads" text="Learn About Google Ads" >}}
+{.center}
+
+
+{{< /col >}}
+
+{{< /cols >}}
+
+
+
+
 ## One-on-one Expert vs. Big Agency
 {.center}
 
