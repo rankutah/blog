@@ -1,6 +1,6 @@
 ---
-title: "Call Benjamin for Utah Web Design, Local SEO, & Google Ads in Pleasant Grove, UT - Digital Marketing Agency - Google Adwords Managmenent  - Serving Utah County (Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain, Payson), Salt Lake County (Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, SLC), Davis County (Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse), Weber County (Ogden, Roy, West Haven, Pleasant View)"
-description: "Call Benjamin for Web Design, Local SEO, & Google Ads in Utah. Pleasant Grove-based web design, local SEO, and Google Ads management serving Utah County plus Salt Lake, Davis, and Weber County (Wasatch Front / Northern Utah)."
+title: "Call Benjamin for Utah Web Design, Local SEO, & Google Ads in Utah - Digital Marketing Agency - Google Adwords Managmenent  - Serving Utah County (Pleasant Grove, Provo, Orem, Lehi, American Fork, Lindon, Spanish Fork, Springville, Saratoga Springs, Eagle Mountain, Payson), Salt Lake County (Salt Lake City, West Valley City, Kearns, West Jordan, Sandy, South Jordan, Draper, Millcreek, Taylorsville, SLC), Davis County (Layton, Bountiful, Farmington, Kaysville, Clearfield, Syracuse), Weber County (Ogden, Roy, West Haven, Pleasant View)"
+description: "Call Benjamin for Web Design, Local SEO, & Google Ads in Utah. Get Found in Utah. Stop Losing Leads. Custom Websites to help you Launch. Local SEO to help you Rank. Google Ads to help you Scale."
 url: "/locations/pleasant-grove-ut"
 hero: true
 schema:
