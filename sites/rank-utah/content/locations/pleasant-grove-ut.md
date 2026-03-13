@@ -204,6 +204,8 @@ Most agencies treat every lead the same. We assign dollar values to your convers
 
 {{< img src="/media/mobile-page-load-times-impact-site-conversions.jpg" alt="Chart showing how mobile page load time impacts conversions" sizes="(min-width: 1024px) 60vw, 100vw" >}}
 
+Want to see how your site compares? [Test your website speed with PageSpeed Insights](/services/website-design/#test-your-website-speed).
+
 Chart reference: <a href="https://simonhearne.com/2020/value-of-site-speed/" target="_blank" rel="nofollow noopener noreferrer">The value of site speed (Simon Hearne)</a>. Conversion calculations are based on 1,000 visitors.
 
 
