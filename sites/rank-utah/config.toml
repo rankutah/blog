@@ -107,12 +107,10 @@ sameAs = []
     alt  = "LinkedIn"
 
 [params.analytics]
-  # Use direct gtag-based loader (not Zaraz) so Ads can load immediately.
+  # Use the standard analytics loader (delayed by interaction/time).
   provider = ""
-  # Load analytics immediately (no delay/gating)
-  delayMs = 0
-  # Do not wait for LCP/idle; load as soon as possible.
-  lcpGate = false
+  # Normal delayed load.
+  delayMs = 5000
   clarityOnlyOnInteraction = true
   # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
   debugMode = false
