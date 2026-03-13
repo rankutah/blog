@@ -14,7 +14,7 @@ schema:
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "299"
+        price: "499"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
 ---
@@ -32,6 +32,8 @@ Most agencies treat every lead the same. We assign dollar values to your convers
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
 ## Why Value Matters
+
+Google Ads management is offered as part of the **Scale** plan, which includes a custom website + local SEO (see [pricing](/pricing)).
 
 By assigning real-world values to your conversions, we move beyond simple lead counting and start optimizing for the value each action brings to your business. That gives us the data needed to use Maximize Conversion Value and Target ROAS—two of Google Ads’ most advanced bidding strategies for maximizing return on ad spend.
 

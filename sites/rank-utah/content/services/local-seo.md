@@ -16,7 +16,7 @@ schema:
     offers:
       - "@type": "Offer"
         priceCurrency: "USD"
-        price: "199"
+        price: "299"
         url: "https://clearpresence.io/pricing"
         availability: "https://schema.org/InStock"
 params:
@@ -38,6 +38,8 @@ We track calls, forms, and key actions so you know what your local SEO is worth 
 <span id="learn-more" class="block" style="scroll-margin-top: calc(var(--site-header-h, 64px) + 8px)" aria-hidden="true"></span>
 
 ## Get Found
+
+Local SEO is offered as part of the **Rank** and **Scale** plans, which include a custom website (see [pricing](/pricing)).
 
 Get found where local customers search: Google, Apple, Bing, AI search, and “near me” searches.
 
@@ -118,7 +120,7 @@ Unlike social media posts and ads, local SEO doesn't stop working when you stop 
 Results depend on what you have to offer, the level of search interest in your area, and the level of competition.
 
 ### What does local SEO cost?
-See the [pricing](/pricing) page for the most up-to-date pricing on local SEO packages.
+See the [pricing](/pricing) page for the most up-to-date pricing on the Rank and Scale plans.
 
 ### What results should I expect from local SEO?
 Local SEO is one of the most effective long‑term ways for a local business to get steady calls and messages because each improvement keeps working month after month.

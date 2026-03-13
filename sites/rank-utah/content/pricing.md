@@ -19,7 +19,7 @@ schema:
       - question: "Do you charge setup fees?"
         answer: "No. Setup is included in your monthly price."
       - question: "How do you compare to other agencies?"
-        answer: "Visit the Speed Challenge page to run a side-by-side PageSpeed comparison and see why site speed matters for SEO, ads, and conversions."
+        answer: "See how to test your site speed with PageSpeed Insights (and why speed matters for SEO, ads, and conversions) on the Web Design page."
       - question: "What does ‘unlimited content updates’ include?"
         answer: "Requests typical of a local business site: update text, photos, hours, services, pricing, add pages (About, Services, Reviews, Gallery, Locations, Contact), and publish articles you provide (as site pages). Large custom app-like features are quoted separately."
       - question: "How long does a new website take?"
@@ -27,10 +27,6 @@ schema:
 ---
 # Simple, Transparent Pricing
 {.center}
-
-{{< pricing_toggle id="pricingHasWebsite" left="I need a website" right="I have a website" >}}
-
-{{< pricing_toggle_set state="need" >}}
 
 {{< cols min="18rem" gap="1rem" v="stretch" stagger="false">}}
 
@@ -116,70 +112,6 @@ Ad spend above <strong>$3,000/mo</strong> is billed at <strong>10%</strong> (onl
 {{< /col >}}
 
 {{< /cols >}}
-
-{{< /pricing_toggle_set >}}
-
-{{< pricing_toggle_set state="have" >}}
-
-{{< cols min="18rem" gap="1rem" v="stretch" stagger="false">}}
-
-{{< col card="true"  y="start" >}}
-
-## Rank {#local-seo-existing}
-
-{{< badge text="Local SEO" >}}
-
-{{< plan_price price="199" per="mo" sr="$199 per month" >}}
-
-No contracts. No setup fees. Cancel anytime.
-
-Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
-
-***Get found** where local customers search: Google, Apple, Bing, AI search, and “near me” searches.*
-
-- **Local Keyword Research**: Targeted research based on your services and service area to help you show up for the searches that matter most.
-- **Website SEO Optimization**: Technical, on-page, and content updates to improve visibility in search and create a better experience for visitors.
-- **Google Business Profile Optimization**: Ongoing improvements to your profile, categories, services, photos, and content to help you stand out in local search and on Google Maps.
-- **Apple Maps + Bing Places Optimization**: Accurate, optimized business listings across Apple Maps and Bing so you can be found beyond Google too.
-- **Ongoing Support**: Direct support by phone, text, or email whenever you need help, updates, or answers.
-- **Monthly Performance Report**: A clear monthly summary of calls, messages, website activity, and updates so you can see what’s improving.
-
-{{< button id="checkout-local-seo" url="https://buy.stripe.com/dRmaER0pf1NJ1X17K71sQ0d" text="Get Started" >}} {{< button url="/services/local-seo/#learn-more" variant="outline"  text="Learn More" >}}
-
-{{< /col >}}
-
-{{< col card="true" y="start" >}}
-
-## Scale {#google-ads-existing}
-
-{{< badge text="Local SEO + Google Ads" >}}
-
-{{< plan_price price="399" per="mo" old="$499" savings="Save $100/mo" sr="$399 per month" >}}
-
-No contracts. No setup fees. Cancel anytime.
-
-Price includes <strong>1 business location</strong>. Additional business locations are <strong>$99/mo</strong>.
-
-Ad spend above <strong>$3,000/mo</strong> is billed at <strong>10%</strong> (only on the amount above $3,000).
-
-*For businesses that want **more leads** and are **ready to invest** in advertising.*
-
-- **Keyword Research**: Research focused on the searches most likely to bring in leads.
-- **Campaign Setup + Launch**: Full campaign setup built around your services, goals, and service area.
-- **Ad Copy + Assets**: Ads and supporting assets created to improve click-through rate and lead quality.
-- **Tracking Setup**: Conversion tracking configured so performance can be measured clearly.
-- **Ongoing Optimization**: Regular improvements based on search terms, conversion data, and performance trends.
-- **Performance Reporting**: Clear monthly reporting on leads, calls, and ad performance so you can see what’s improving.
-
-{{< button id="checkout-local-seo-google-ads" url="https://buy.stripe.com/aFa3cp2xn4ZVdFJd4r1sQ0e" text="Get Started" >}} {{< button url="/services/google-ads/#learn-more" variant="outline" text="Learn More" >}}
-
-{{< /col >}}
-
-{{< /cols >}}
-
-{{< /pricing_toggle_set >}}
-
-{{< /pricing_toggle >}}
 
 ## FAQs
 {.center}
