@@ -7,7 +7,7 @@ url: "/about"
 
 ## About Clear Presence
 
-Clear Presence helps local businesses grow through custom web design, local SEO, and Google Ads. Based in Pleasant Grove, Utah, we work with clients locally and across the U.S.
+Clear Presence helps local businesses grow through custom web design, local SEO, and Google Ads. From my office in Pleasant Grove, Utah, I work with clients locally and across the U.S.
 
 I started Clear Presence after completing my Master’s in Software Development in 2023. With degrees in both Business and Software Development, plus a background in cybersecurity, I combine technical skill with a practical understanding of what businesses need from their marketing: visibility, speed, and more leads.
 
