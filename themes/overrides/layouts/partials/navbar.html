@@ -170,75 +170,15 @@
     <a href="{{ "/" | relURL }}" class="flex items-center space-x-3 rtl:space-x-reverse no-underline {{ if and $centerNav (not $rightMenu) }}xl:col-start-1 xl:justify-self-start{{ else if $rightMenu }}xl:col-start-1 xl:justify-self-start{{ end }}">
       <span class="shrink-0">
         {{ with $logoFile }}
-          {{ $raw := strings.TrimPrefix "/" $.Site.Params.logo }}
-    {{ $base := path.Base $raw }}
-    {{ $ext  := path.Ext $base }}
-    {{ $name := replace $base $ext "" }}
-          {{ $avifRes := resources.Get (printf "media/%s.avif" $name) }}
-    {{ if $avifRes }}
-            {{- /* Always emit width+height to prevent CLS.
-                 Some repos mount /media as static files, so resource Width/Height may be unavailable.
-                 Use imageConfig (guarded by fileExists) to read pixel dims from a sibling raster. */ -}}
-            {{- $dimW := 0 -}}
-            {{- $dimH := 0 -}}
-            {{- $cfgPath := "" -}}
-            {{- $pPng := printf "media/%s.png" $name -}}
-            {{- $pJpg := printf "media/%s.jpg" $name -}}
-            {{- $pJpeg := printf "media/%s.jpeg" $name -}}
-            {{- if fileExists $pPng -}}
-              {{- $cfgPath = $pPng -}}
-            {{- else if fileExists $pJpg -}}
-              {{- $cfgPath = $pJpg -}}
-            {{- else if fileExists $pJpeg -}}
-              {{- $cfgPath = $pJpeg -}}
-            {{- end -}}
-            {{- if ne $cfgPath "" -}}
-              {{- with imageConfig $cfgPath -}}
-                {{- $dimW = .Width -}}
-                {{- $dimH = .Height -}}
-              {{- end -}}
-            {{- end -}}
-
-            {{- $wAttr := 0 -}}
-            {{- $hAttr := 0 -}}
-            {{- if gt (int $logoW) 0 -}}
-              {{- $wAttr = int $logoW -}}
-              {{- if gt (int $logoH) 0 -}}
-                {{- $hAttr = int $logoH -}}
-              {{- else if and (gt (int $dimW) 0) (gt (int $dimH) 0) -}}
-                {{- $hAttr = div (mul $dimH $wAttr) $dimW -}}
-              {{- end -}}
-            {{- else if gt (int $logoH) 0 -}}
-              {{- $hAttr = int $logoH -}}
-              {{- if and (gt (int $dimW) 0) (gt (int $dimH) 0) -}}
-                {{- $wAttr = div (mul $dimW $hAttr) $dimH -}}
-              {{- end -}}
-            {{- else if and (gt (int $dimW) 0) (gt (int $dimH) 0) -}}
-              {{- $wAttr = $dimW -}}
-              {{- $hAttr = $dimH -}}
-            {{- end -}}
-            <picture>
-              {{- with $avifRes -}}<source srcset="{{ .RelPermalink }}" type="image/avif" />{{- end -}}
-              {{- /* No WebP source; only AVIF + fallback <img> */ -}}
-              <img src="{{ . | relURL }}"
-                   alt="{{ printf "%s logo" $.Site.Title }}"
-                   class="{{ printf "%s w-auto max-w-none shrink-0" $logoHeightClass }}"
-                   {{ if gt (int $wAttr) 0 }}width="{{ $wAttr }}"{{ end }}
-                   {{ if gt (int $hAttr) 0 }}height="{{ $hAttr }}"{{ end }}
-                   {{ with $logoStyle }}style="{{ . | safeCSS }}"{{ end }}
-                   loading="eager" fetchpriority="high" decoding="async" />
-            </picture>
-          {{ else }}
-            {{ partial "optimized-logo.html" (dict
-                "Site" $.Site
-                "Logo" .
-                "Class" (printf "%s w-auto max-w-none shrink-0" $logoHeightClass)
-                "Alt" (printf "%s logo" $.Site.Title)
-                "Width" $logoW
-                "Height" $logoH
-                "Style" $logoStyle
-              ) }}
-          {{ end }}
+          {{ partial "optimized-logo.html" (dict
+              "Site" $.Site
+              "Logo" .
+              "Class" (printf "%s w-auto max-w-none shrink-0" $logoHeightClass)
+              "Alt" (printf "%s logo" $.Site.Title)
+              "Width" $logoW
+              "Height" $logoH
+              "Style" $logoStyle
+            ) }}
         {{ end }}
       </span>
       {{/* --- Title size map (literal classes; no dynamic strings) --- */}}

@@ -41,7 +41,7 @@
   {{- end -}}
 {{- end -}}
 {{- if not $entry -}}
-  {{- /* Try swapping between .jpg and .avif keys if manifest was keyed by the other */ -}}
+  {{- /* Try swapping between common source extensions when manifest was keyed differently. */ -}}
   {{- if (hasSuffix $key ".jpg") -}}
     {{- $altKey := replace $key ".jpg" ".avif" -}}
     {{- if and $m (isset $m $altKey) -}}
@@ -51,6 +51,21 @@
     {{- $altKey := replace $key ".jpeg" ".avif" -}}
     {{- if and $m (isset $m $altKey) -}}
       {{- $entry = index $m $altKey -}}
+    {{- end -}}
+  {{- else if (hasSuffix $key ".webp") -}}
+    {{- $altKey := replace $key ".webp" ".avif" -}}
+    {{- if and $m (isset $m $altKey) -}}
+      {{- $entry = index $m $altKey -}}
+    {{- else -}}
+      {{- $altKey = replace $key ".webp" ".jpg" -}}
+      {{- if and $m (isset $m $altKey) -}}
+        {{- $entry = index $m $altKey -}}
+      {{- else -}}
+        {{- $altKey = replace $key ".webp" ".jpeg" -}}
+        {{- if and $m (isset $m $altKey) -}}
+          {{- $entry = index $m $altKey -}}
+        {{- end -}}
+      {{- end -}}
     {{- end -}}
   {{- else if (hasSuffix $key ".avif") -}}
     {{- $altKey := replace $key ".avif" ".jpg" -}}
