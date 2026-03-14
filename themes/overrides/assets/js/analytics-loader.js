@@ -92,7 +92,7 @@
     setTimeout(openLcpGate, Math.max(0, LCP_MAX_WAIT_MS | 0));
   })();
 
-  var GA_ID = (cfg.gaId || '').trim();
+  var GOOGLE_TAG_ID = (cfg.googleTagId || cfg.gaId || '').trim();
   var CLARITY_ID = (cfg.clarityId || '').trim();
   var ADS_ID = (cfg.googleAdsId || '').trim();
   var ADS_COMBINED = (cfg.googleAdsCombinedId || '').trim();
@@ -129,23 +129,23 @@
     document.head.appendChild(s);
   }
 
-  function initGA4() {
-    if (!GA_ID) return;
-    ensureGtagLoaded(GA_ID);
+  function initGoogleTag() {
+    if (!GOOGLE_TAG_ID) return;
+    ensureGtagLoaded(GOOGLE_TAG_ID);
     try {
       window.gtag('js', new Date());
-      if (cfg.debugMode) window.gtag('config', GA_ID, { debug_mode: true });
-      else window.gtag('config', GA_ID);
+      if (cfg.debugMode) window.gtag('config', GOOGLE_TAG_ID, { debug_mode: true });
+      else window.gtag('config', GOOGLE_TAG_ID);
     } catch (e) {}
   }
 
-  function initGoogleAds() {
+  function initGoogleAdsDestination() {
     if (!ADS_ID) return;
 
-    ensureGtagLoaded(ADS_ID);
-
     try {
-      window.gtag('config', ADS_ID);
+      if (ADS_ID !== GOOGLE_TAG_ID) {
+        window.gtag('config', ADS_ID);
+      }
 
       if (ADS_PHONE_REPLACE && SITE_PHONE) {
         var idForReplace = ADS_COMBINED || ADS_ID;
@@ -200,8 +200,8 @@
     if (window.__trackingLoaded) return;
     window.__trackingLoaded = true;
 
-    initGA4();
-    initGoogleAds();
+    initGoogleTag();
+    initGoogleAdsDestination();
 
     var clarityDelay = CLARITY_DELAY_MS == null ? DELAY_MS : CLARITY_DELAY_MS;
     var clarityOnlyInteract =

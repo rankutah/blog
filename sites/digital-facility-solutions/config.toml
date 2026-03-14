@@ -72,9 +72,11 @@ disableKinds  = ["taxonomy", "term"]
 
   [params.analytics.googleAds]
     id = ""
-    conversionLabel = ""
     enabled = false
-    phoneReplace = false
+
+  [params.analytics.phoneReplace]
+    enabled = false
+    conversionLabel = ""
 
   [params.analytics.meta]
     id = ""               # e.g., 123456789012345 (Meta Pixel)

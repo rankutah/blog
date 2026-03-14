@@ -5,15 +5,26 @@
 {{- $gaConf := (index $analytics "google") | default (dict) -}}
 {{- $clarityConf := (index $analytics "clarity") | default (dict) -}}
 {{- $adsConf := (index $analytics "googleAds") | default (dict) -}}
+{{- $tagConf := (index $analytics "googleTag") | default (dict) -}}
+{{- $phoneReplaceConf := (index $analytics "phoneReplace") | default (dict) -}}
 {{- $metaConf := (index $analytics "meta") | default (dict) -}}
 {{- $gaId := cond (and (isset $gaConf "id") (gt (len (index $gaConf "id")) 0)) (index $gaConf "id") (site.Params.googleAnalyticsID) -}}
 {{- $gaEnabled := not (eq (index $gaConf "enabled") false) -}}
 {{- $clarityId := (index $clarityConf "id") | default "" -}}
 {{- $clarityEnabled := not (eq (index $clarityConf "enabled") false) -}}
 {{- $adsId := (index $adsConf "id") | default "" -}}
-{{- $adsLabel := (index $adsConf "conversionLabel") | default "" -}}
+{{- $adsLabel := (index $phoneReplaceConf "conversionLabel") | default ((index $adsConf "conversionLabel") | default "") -}}
 {{- $adsCombined := (cond (and (ne $adsId "") (ne $adsLabel "")) (printf "%s/%s" $adsId $adsLabel) $adsId) -}}
 {{- $adsEnabled := not (eq (index $adsConf "enabled") false) -}}
+{{- $tagId := (index $tagConf "id") | default "" -}}
+{{- if and (eq $tagId "") $gaEnabled (ne $gaId "") -}}
+  {{- $tagId = $gaId -}}
+{{- end -}}
+{{- if and (eq $tagId "") $adsEnabled (ne $adsId "") -}}
+  {{- $tagId = $adsId -}}
+{{- end -}}
+{{- $tagEnabled := cond (isset $tagConf "enabled") (not (eq (index $tagConf "enabled") false)) (ne $tagId "") -}}
+{{- $analyticsEventPrefix := (index $tagConf "analyticsEventPrefix") | default ((index $gaConf "analyticsEventPrefix") | default ((index $adsConf "analyticsEventPrefix") | default "")) -}}
 {{- $metaId := (index $metaConf "id") | default "" -}}
 {{- $metaEnabled := not (eq (index $metaConf "enabled") false) -}}
 {{- /* NOTE: Hugo's `default`/`with` treat 0 as "empty". Respect explicit 0 values. */ -}}
@@ -35,12 +46,16 @@
 {{- $clarityOnlyOnInteraction := (index $analytics "clarityOnlyOnInteraction") | default nil -}}
 {{- $debugMode := (index $analytics "debugMode") | default false -}}
 {{- /* Optional: enable Google Ads website call conversions (forwarding numbers) */ -}}
-{{- $adsPhoneReplace := (index $adsConf "phoneReplace") | default false -}}
+{{- $adsPhoneReplace := (index $phoneReplaceConf "enabled") | default ((index $adsConf "phoneReplace") | default false) -}}
+{{- $adsConversions := (index $adsConf "conversions") | default (dict) -}}
 {{- $header := site.Params.header | default (dict) -}}
 {{- $sitePhone := (index $header "phoneNumber") | default "" -}}
+{{- $adsBootstrap := resources.Get "js/ads-conversion-bootstrap.js" | resources.Minify -}}
 
 {{- $cfg := dict
+  "googleTagId" (cond $tagEnabled $tagId "")
   "gaId"        (cond $gaEnabled $gaId "")
+  "analyticsEventPrefix" $analyticsEventPrefix
   "clarityId"   (cond $clarityEnabled $clarityId "")
   "googleAdsId" (cond $adsEnabled $adsId "")
   "googleAdsCombinedId" (cond $adsEnabled $adsCombined "")
@@ -57,6 +72,15 @@
   "debugMode" $debugMode
   "enableAdsPhoneReplace" (and $adsEnabled $adsPhoneReplace)
   "sitePhoneNumber" $sitePhone
+  "phoneReplace" (dict
+    "enabled" (and $adsEnabled $adsPhoneReplace)
+    "conversionLabel" $adsLabel
+  )
+  "googleAds" (dict
+    "enabled" $adsEnabled
+    "id" (cond $adsEnabled $adsId "")
+    "conversions" (cond $adsEnabled $adsConversions (dict))
+  )
 -}}
 
 {{- if $useZaraz -}}
@@ -75,6 +99,7 @@
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   </script>
+  <script>{{ $adsBootstrap.Content | safeJS }}</script>
 
   {{- $zloader := resources.Get "js/zaraz-loader-advanced.js" | resources.Minify | resources.Fingerprint -}}
   <script>
@@ -146,6 +171,7 @@
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
 </script>
+<script>{{ $adsBootstrap.Content | safeJS }}</script>
 
 {{- /*
   Load the local analytics loader AFTER LCP settles.

@@ -53,7 +53,7 @@
           class="cp-fab{{ if $isIconOnlyMobile }} cp-fab--icon-only-mobile{{ end }} inline-flex items-center justify-center {{ $gapCls }} rounded-full shadow-lg no-underline {{ $cta }} {{ $sizeCls }}"
           aria-label="{{ $aria }}"
           style="position: fixed; z-index: 10001; bottom: calc(1rem + env(safe-area-inset-bottom)); right: calc(1rem + env(safe-area-inset-right)); transform: translateZ(0); backface-visibility: hidden; will-change: transform;"
-         {{ if eq $mode "modal" }}onclick="try{ if(window.cpOpenMessageModal){ window.cpOpenMessageModal(); } gtag('event','contact_text_click',{method:'modal'}); }catch(e){} return false;"{{ else }}onclick="try{ if(window.gtag){ gtag('event','contact_text_click',{method:'contact_page'}); } }catch(e){}"{{ end }}>
+          {{ if eq $mode "modal" }}onclick="try{ if(window.cpOpenMessageModal){ window.cpOpenMessageModal(); } gtag('event','contact_text_click',{method:'modal'}); }catch(e){} return false;"{{ else }}onclick="try{ if(window.gtag){ gtag('event','contact_text_click',{method:'contact_page'}); } if(window.cpTrackAdsConversion){ window.cpTrackAdsConversion('textClick'); } }catch(e){}"{{ end }}>
           {{- if $showIcon -}}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="w-5 h-5 md:w-4 md:h-4">
             <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z"/>

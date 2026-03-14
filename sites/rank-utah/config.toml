@@ -119,9 +119,11 @@ sameAs = []
   # Temporary: enable GA4 debug_mode for Tag Assistant / DebugView visibility
   debugMode = false
 
-  [params.analytics.google]
-    id = "G-7240SPB67L"
-    enabled = false
+  [params.analytics.googleTag]
+    # Single routed Google tag. Connect this tag to GA4 and Ads in Google.
+    id = "AW-17704568736"
+    enabled = true
+    analyticsEventPrefix = "key_"
 
   [params.analytics.clarity]
     id = "u9tbqd2kqk"
@@ -129,9 +131,79 @@ sameAs = []
 
   [params.analytics.googleAds]
     id = "AW-17704568736"
-    conversionLabel = "uKziCM6p7tQbEKCPmfpB"
+
+  [params.analytics.phoneReplace]
     enabled = true
-    phoneReplace = true
+    # Google Ads website call conversion label used for forwarding-number replacement.
+    conversionLabel = "uKziCM6p7tQbEKCPmfpB"
+
+  [params.analytics.googleAds.conversions.callClick]
+    enabled = false
+    sendTo = ""
+    value = 40
+    currency = "USD"
+    once = true
+    onceKey = "call_click"
+
+  [params.analytics.googleAds.conversions.textClick]
+    enabled = false
+    sendTo = ""
+    value = 30
+    currency = "USD"
+    once = true
+    onceKey = "text_click"
+
+  [params.analytics.googleAds.conversions.pricingPageView]
+    enabled = false
+    path = "/pricing"
+    sendTo = ""
+    value = 10
+    currency = "USD"
+    once = true
+    onceKey = "pricing_page_view"
+
+  [params.analytics.googleAds.conversions.contactPageView]
+    enabled = false
+    path = "/contact"
+    sendTo = ""
+    value = 15
+    currency = "USD"
+    once = true
+    onceKey = "contact_page_view"
+
+  [params.analytics.googleAds.conversions.thankYouPageView]
+    enabled = true
+    path = "/thank-you"
+    sendTo = ""
+    value = 100
+    currency = "USD"
+    once = true
+    onceKey = "thank_you_page_view"
+
+  [params.analytics.googleAds.conversions.welcomePageView]
+    enabled = false
+    path = "/welcome"
+    sendTo = ""
+    # Leave `value` unset here. Pass the purchase amount in the redirect URL as:
+    #   /welcome?value=299
+    # The shared tracker will read that query param and send it as the conversion value.
+    # This uses the existing content page at `content/welcome.md`.
+    valueQueryParam = "value"
+    currency = "USD"
+    # Purchases can happen more than once, so do not dedupe this conversion.
+    once = false
+    onceKey = "welcome_page_view"
+
+  [params.analytics.googleAds.conversions.engagedUser]
+    enabled = false
+    sendTo = ""
+    value = 5
+    currency = "USD"
+    once = true
+    onceKey = "engaged_user"
+    minSessionSeconds = 10
+    minPages = 2
+    scrollPercent = 60
 
   [params.analytics.meta]
     id = ""               # e.g., 123456789012345 (Meta Pixel)

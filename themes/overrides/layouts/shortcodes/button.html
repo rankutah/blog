@@ -8,6 +8,11 @@
        icon="arrow-right"         → name of SVG in assets/icons/*.svg
        iconPos="left|right"       → default: left
        iconClass="w-4 h-4"        → override size/styling of icon wrapper
+       adsConversion="quoteCta"   → optional Google Ads conversion config key
+       adsSendTo="AW-.../label"   → optional direct Google Ads send_to override
+       adsValue="25"              → optional conversion value override
+       adsCurrency="USD"          → optional currency override
+       adsOnceKey="quote_cta"     → optional once-per-browser storage key override
   newtab="true|false"        → if true, opens link in a new tab (adds target="_blank" rel="noopener noreferrer")
   target="_blank|_self|…"    → optional explicit target; overrides newtab
   rel="…"                    → optional explicit rel; overrides default rel when target is set
@@ -27,6 +32,17 @@
 {{- $newtab := eq (lower (.Get "newtab" | default "false")) "true" -}}
 {{- $target := .Get "target" | default "" -}}
 {{- $rel    := .Get "rel"    | default "" -}}
+{{- $adsConversion := .Get "adsConversion" | default "" -}}
+{{- $adsSendTo := .Get "adsSendTo" | default "" -}}
+{{- $adsValue := .Get "adsValue" | default "" -}}
+{{- $adsCurrency := .Get "adsCurrency" | default "" -}}
+{{- $adsOnceKey := .Get "adsOnceKey" | default "" -}}
+{{- $adsAttrs := "" -}}
+{{- with $adsConversion }}{{- $adsAttrs = printf "%s data-ads-conversion=%q" $adsAttrs . -}}{{- end -}}
+{{- with $adsSendTo }}{{- $adsAttrs = printf "%s data-ads-send-to=%q" $adsAttrs . -}}{{- end -}}
+{{- with $adsValue }}{{- $adsAttrs = printf "%s data-ads-value=%q" $adsAttrs . -}}{{- end -}}
+{{- with $adsCurrency }}{{- $adsAttrs = printf "%s data-ads-currency=%q" $adsAttrs . -}}{{- end -}}
+{{- with $adsOnceKey }}{{- $adsAttrs = printf "%s data-ads-once-key=%q" $adsAttrs . -}}{{- end -}}
 
 {{- /* classes + color map (unchanged) */ -}}
 {{- $pageClasses := .Get "classes" | default "" -}}
@@ -96,7 +112,7 @@
 {{- end -}}
 
 {{- if or $submit $form -}}
-  <button type="submit"{{ with $id }} id="{{ . }}"{{ end }} {{ with $form }}form="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}">{{ $inner | safeHTML }}</button>
+  <button type="submit"{{ with $id }} id="{{ . }}"{{ end }} {{ with $form }}form="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}"{{ $adsAttrs | safeHTMLAttr }}>{{ $inner | safeHTML }}</button>
 {{- else -}}
   {{- /* Compute target/rel attributes */ -}}
   {{- $finalTarget := "" -}}
@@ -113,5 +129,5 @@
     {{- $finalRel = "noopener noreferrer" -}}
   {{- end -}}
 
-  <a href="{{ $url }}"{{ with $id }} id="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}"{{ with $finalTarget }} target="{{ . }}"{{ end }}{{ with $finalRel }} rel="{{ . }}"{{ end }}>{{ $inner | safeHTML }}</a>
+  <a href="{{ $url }}"{{ with $id }} id="{{ . }}"{{ end }} class="ui-btn not-prose no-underline {{ $classes }}"{{ with $finalTarget }} target="{{ . }}"{{ end }}{{ with $finalRel }} rel="{{ . }}"{{ end }}{{ $adsAttrs | safeHTMLAttr }}>{{ $inner | safeHTML }}</a>
 {{- end -}}

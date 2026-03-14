@@ -118,7 +118,7 @@
 <script>
 (function(){
   function $(sel, root){ return (root||document).querySelector(sel); }
-  function show(){ var m = $('#cp-message-modal'); if(!m) return; m.classList.remove('hidden'); m.classList.remove('flex'); try{ if(window.gtag){ window.gtag('event','contact_text_click',{method:'desktop_modal'}); } }catch(e){} }
+  function show(){ var m = $('#cp-message-modal'); if(!m) return; m.classList.remove('hidden'); m.classList.remove('flex'); try{ if(window.gtag){ window.gtag('event','contact_text_click',{method:'desktop_modal'}); } }catch(e){} try{ if(window.cpTrackAdsConversion){ window.cpTrackAdsConversion('textClick'); } }catch(e){} }
   function hide(){ var m = $('#cp-message-modal'); if(!m) return; m.classList.add('hidden'); }
   window.cpOpenMessageModal = show;
   window.cpCloseMessageModal = hide;
