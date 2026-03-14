@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="locationPinTitle">
+  <title id="locationPinTitle">Location pin</title>
+  <path d="M32 59C32 59 50 42.74 50 27C50 17.06 41.94 9 32 9C22.06 9 14 17.06 14 27C14 42.74 32 59 32 59Z" fill="#00B5EF"/>
+  <path d="M32 59C32 59 50 42.74 50 27C50 17.06 41.94 9 32 9C22.06 9 14 17.06 14 27C14 42.74 32 59 32 59Z" stroke="#0F3B57" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="32" cy="27" r="8" fill="#FCFBF7" stroke="#0F3B57" stroke-width="2.5"/>
+</svg>

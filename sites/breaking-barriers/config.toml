@@ -1,0 +1,148 @@
+baseURL = "https://www.breakingbarrierstherapy.com/"
+languageCode = "en-us"
+title = "Breaking Barriers Therapy"
+themesDir = "../../themes"
+enableRobotsTXT = true
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "media"
+    target = "assets/media"
+  [[module.mounts]]
+    source = "media"
+    target = "static/media"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "FORMS"]
+
+[outputFormats.FORMS]
+  mediaType   = "application/json"
+  baseName    = "forms"
+  isPlainText = true
+  path        = ".well-known"
+
+[params]
+  env = "production"
+  # Use the live site's CTA/button blue and a warmer off-white page background.
+  primaryColor        = "#00b5ef"
+  logo                = "/media/logo.png"
+  lightBackground     = "#fcfbf7"
+  darkBackground      = "slate-950"
+  cardBackground      = "white"
+  cardBackgroundDark  = "slate-900"
+  cardBorderLight     = "#e7e1d4"
+  cardBorderDark      = "slate-800"
+
+  # Match Novagutter behavior: no dark mode and no theme toggle.
+  forceTheme          = "light"
+  disableThemeToggle  = true
+
+  author              = "Breaking Barriers Therapy"
+  hideMeta            = true
+
+[params.analytics]
+  delayMs = 0
+  [params.analytics.google]
+    id = ""
+    enabled = false
+  [params.analytics.clarity]
+    id = ""
+    enabled = false
+  [params.analytics.googleAds]
+    id = ""
+    enabled = false
+  [params.analytics.meta]
+    id = ""
+    enabled = false
+
+[params.turnstile]
+  enable  = true
+  sitekey = "0x4AAAAAAB8Xlhe4_-six2GL"
+
+[params.header]
+  stickyMobile     = true
+  stickyDesktop    = true
+  showBrandTitle   = true
+  title            = "Breaking Barriers"
+  titleSize        = "auto"
+  logoHeight       = "h-8 sm:h-9"
+  logoHeightPx     = 0
+  showCTAOnMobile  = false
+  showCTAOnDesktop = true
+  CTAText          = "FREE CONSULTATION"
+  CTAURL           = "/contact"
+  theme            = "blend"
+
+[params.forms]
+  action         = "https://submit-form.com/DOH188lWF"
+  honeypot       = ""
+  successMessage = "Thanks! Your message was sent."
+  errorMessage   = "Sorry, something went wrong. Please try again."
+  redirect       = ""
+
+[params.section.defaults]
+  max   = "xl"
+  pad   = "lg"
+  y     = "md"
+  align = "start"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 10
+
+  [[menu.main]]
+    name = "Services"
+    url = "/services"
+    identifier = "services"
+    weight = 20
+
+  [[menu.main]]
+    name = "ABA Therapy"
+    url = "/aba-therapy"
+    parent = "services"
+    weight = 21
+
+  [[menu.main]]
+    name = "Occupational Therapy"
+    url = "/occupational-therapy"
+    parent = "services"
+    weight = 22
+
+  [[menu.main]]
+    name = "Speech-Language Pathology"
+    url = "/speech-language-pathology"
+    parent = "services"
+    weight = 23
+
+  [[menu.main]]
+    name = "Insurance & Grants"
+    url = "/insurance"
+    weight = 30
+
+  [[menu.main]]
+    name = "Special Classes"
+    url = "/specialclasses"
+    weight = 40
+
+  [[menu.main]]
+    name = "Employment"
+    url = "/apply"
+    weight = 50
+
+  [[menu.main]]
+    name = "Donate"
+    url = "/donate"
+    weight = 60
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 70

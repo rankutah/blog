@@ -14,7 +14,7 @@
 {{- $page   := .Page -}}
 {{- $inner  := .InnerDeindent | strings.TrimSpace -}}
 {{- $isCard := eq (lower (.Get "card" | default "false")) "true" -}}
-{{- $extra  := .Get "classes" | default "" -}}
+{{- $extra  := .Get "classes" | default (.Get "class" | default "") -}}
 {{- $render := lower (.Get "render" | default "md") -}}
 
 {{- $motionEnabled := $page.Site.Params.motion.enabled | default false -}}
