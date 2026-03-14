@@ -17,44 +17,19 @@
 {{- $style := $ctx.Style | default "" -}}
 
 {{- /* Prefer a concrete raster source via resources.Get (safe checks) */ -}}
-{{- $logoRes := "" -}}
+{{- $logoRes := false -}}
 {{- $raw := strings.TrimPrefix "/" $logo -}}
-{{- if eq $logoRes "" -}}
-  {{- with resources.Get (printf "media/%s" $raw) -}}
-    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
-  {{- end -}}
-{{- end -}}
-{{- if eq $logoRes "" -}}
-  {{- with resources.Get $raw -}}
-    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
-  {{- end -}}
-{{- end -}}
-{{- if eq $logoRes "" -}}
-  {{- with resources.Get "media/logo.png" -}}
-    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
-  {{- end -}}
-{{- end -}}
-{{- if eq $logoRes "" -}}
-  {{- with resources.Get "media/logo.jpg" -}}
-    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
-  {{- end -}}
-{{- end -}}
-{{- if eq $logoRes "" -}}
-  {{- with resources.Get "media/logo.jpeg" -}}
-    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
-  {{- end -}}
-{{- end -}}
-{{- if eq $logoRes "" -}}
-  {{- /* Do not prefer .webp explicitly; AVIF or raster are preferred */ -}}
-{{- end -}}
-{{- if eq $logoRes "" -}}
-  {{- with resources.Get "media/logo.avif" -}}
-    {{- if eq .MediaType.Type "image" -}}{{- $logoRes = . -}}{{- end -}}
+{{- $rawMedia := strings.TrimPrefix "media/" $raw -}}
+{{- $candidates := slice $raw (printf "media/%s" $rawMedia) "media/logo.png" "media/logo.jpg" "media/logo.jpeg" "media/logo.avif" -}}
+{{- range $candidates -}}
+  {{- if not $logoRes -}}
+    {{- with resources.Get . -}}
+      {{- $logoRes = . -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- if ne $logoRes "" -}}
-  {{- if eq $logoRes.MediaType.Type "image" -}}
+{{- if $logoRes -}}
   {{- /* Build density-aware variants based on provided Height or Width */ -}}
   {{- $avif1x := "" -}}
   {{- $avif2x := "" -}}
@@ -65,25 +40,25 @@
   {{- if gt (int $h) 0 -}}
     {{- $h1 := int $h -}}
     {{- $h2 := mul $h1 2 -}}
-    {{- $avif1x = $logoRes.Fit (printf "x%v avif" $h1) -}}
-    {{- $avif2x = $logoRes.Fit (printf "x%v avif" $h2) -}}
-    {{- $jpeg1x = $logoRes.Fit (printf "x%v jpg" $h1) -}}
-    {{- $jpeg2x = $logoRes.Fit (printf "x%v jpg" $h2) -}}
+    {{- $avif1x = $logoRes.Resize (printf "x%v avif" $h1) -}}
+    {{- $avif2x = $logoRes.Resize (printf "x%v avif" $h2) -}}
+    {{- $jpeg1x = $logoRes.Resize (printf "x%v jpg" $h1) -}}
+    {{- $jpeg2x = $logoRes.Resize (printf "x%v jpg" $h2) -}}
     {{- $outW = $jpeg1x.Width -}}
     {{- $outH = $h1 -}}
   {{- else if gt (int $w) 0 -}}
     {{- $w1 := int $w -}}
     {{- $w2 := mul $w1 2 -}}
-    {{- $avif1x = $logoRes.Fit (printf "%vx avif" $w1) -}}
-    {{- $avif2x = $logoRes.Fit (printf "%vx avif" $w2) -}}
-    {{- $jpeg1x = $logoRes.Fit (printf "%vx jpg" $w1) -}}
-    {{- $jpeg2x = $logoRes.Fit (printf "%vx jpg" $w2) -}}
+    {{- $avif1x = $logoRes.Resize (printf "%vx avif" $w1) -}}
+    {{- $avif2x = $logoRes.Resize (printf "%vx avif" $w2) -}}
+    {{- $jpeg1x = $logoRes.Resize (printf "%vx jpg" $w1) -}}
+    {{- $jpeg2x = $logoRes.Resize (printf "%vx jpg" $w2) -}}
     {{- $outW = $w1 -}}
     {{- $outH = $jpeg1x.Height -}}
   {{- else -}}
     {{- /* Default single variant, width 256px */ -}}
-    {{- $avif1x = $logoRes.Fit "256x avif" -}}
-    {{- $jpeg1x = $logoRes.Fit "256x jpg" -}}
+    {{- $avif1x = $logoRes.Resize "256x avif" -}}
+    {{- $jpeg1x = $logoRes.Resize "256x jpg" -}}
     {{- $outW = $jpeg1x.Width -}}
     {{- $outH = $jpeg1x.Height -}}
   {{- end -}}
@@ -110,48 +85,6 @@
          fetchpriority="high"
          decoding="async" />
   </picture>
-  {{- else -}}
-  {{- /* Not an image resource: fallback to static path */ -}}
-  {{- $raw := strings.TrimPrefix "/" $logo -}}
-  {{- $ext := path.Ext $raw -}}
-  {{- $stem := strings.TrimSuffix $raw $ext -}}
-  {{- $stemMedia := strings.TrimPrefix "media/" $stem -}}
-  {{- $avifRes := resources.Get (printf "media/%s.avif" $stemMedia) -}}
-  {{- /* No WebP preferred here */ -}}
-  {{- $staticAvif := "" -}}
-  {{- $staticJpeg := "" -}}
-  {{- with $avifRes -}}{{- $staticAvif = .RelPermalink -}}{{- end -}}
-  {{- /* Try to find a JPEG sibling for fallback */ -}}
-  {{- with resources.Get (printf "media/%s.jpg" $stemMedia) -}}{{- $staticJpeg = .RelPermalink -}}{{- end -}}
-  {{- if and (eq $staticJpeg "") (resources.Get (printf "media/%s.jpeg" $stemMedia)) -}}
-    {{- $staticJpeg = (resources.Get (printf "media/%s.jpeg" $stemMedia)).RelPermalink -}}
-  {{- end -}}
-  {{- $outW := 0 -}}
-  {{- if gt (int $w) 0 -}}{{- $outW = int $w -}}{{- else if gt (int $h) 0 -}}{{- $outW = int $h -}}{{- end -}}
-  {{- if or $staticAvif $staticJpeg -}}
-    <picture>
-      {{- if $staticAvif -}}<source srcset="{{ $staticAvif }}" type="image/avif" />{{- end -}}
-      {{- if $staticJpeg -}}<source srcset="{{ $staticJpeg }}" type="image/jpeg" />{{- end -}}
-      <img src="{{ $logo | relURL }}"
-           alt="{{ $alt }}"
-           class="{{ $class }}"
-           {{- if gt $outW 0 }} width="{{ $outW }}"{{- end -}}
-           {{- with $h }}{{ if gt (int .) 0 }} height="{{ . }}"{{ end }}{{ end }}
-           loading="eager"
-           fetchpriority="high"
-           decoding="async" />
-    </picture>
-  {{- else -}}
-    <img src="{{ $logo | relURL }}"
-         alt="{{ $alt }}"
-         class="{{ $class }}"
-         {{- if gt $outW 0 }} width="{{ $outW }}"{{- end -}}
-         {{ with $h }}{{ if gt (int .) 0 }} height="{{ . }}"{{ end }}{{ end }}
-         loading="eager"
-         fetchpriority="high"
-         decoding="async" />
-  {{- end -}}
-  {{- end -}}
 {{- else -}}
   {{- /* Fallback: static files. Try to serve AVIF/WebP if present alongside the provided Logo path. */ -}}
   {{- $raw := strings.TrimPrefix "/" $logo -}}

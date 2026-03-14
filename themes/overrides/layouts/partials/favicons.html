@@ -19,6 +19,7 @@
 {{- $icoIsExternal := gt (len (findRE "^https?://" (printf "%v" $icoPath))) 0 -}}
 {{- $favSrc := site.Params.assets.faviconSource | default "" -}}
 {{- $emitIco := or $icoExists $icoIsExternal -}}
+{{- $icoHref := cond $icoIsExternal (printf "%v" $icoPath) ($icoPath | relURL) -}}
 
 {{- $img := (resources.Get "media/__none__") -}}
 {{- /* 1) Explicit favicon source override */ -}}
@@ -58,8 +59,8 @@
   {{- $p16 := $img.Fit "16x16 png" -}}
   {{- $apple := $img.Fit "180x180 png" -}}
   {{- if $emitIco -}}
-  <link rel="icon" href="{{ $icoPath | absURL }}">
-  <link rel="shortcut icon" href="{{ $icoPath | absURL }}">
+  <link rel="icon" href="{{ $icoHref }}">
+  <link rel="shortcut icon" href="{{ $icoHref }}">
   {{- end -}}
   <link rel="icon" type="image/png" sizes="48x48" href="{{ $p48.RelPermalink }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ $p32.RelPermalink }}">
@@ -68,14 +69,14 @@
 {{- else if and $img $isSVG -}}
   {{/* Vector source: link SVG directly, keep ICO fallback if present */}}
   {{- if $emitIco -}}
-  <link rel="icon" href="{{ $icoPath | absURL }}">
-  <link rel="shortcut icon" href="{{ $icoPath | absURL }}">
+  <link rel="icon" href="{{ $icoHref }}">
+  <link rel="shortcut icon" href="{{ $icoHref }}">
   {{- end -}}
   <link rel="icon" type="image/svg+xml" href="{{ $img.RelPermalink }}">
 {{- else -}}
   {{/* No source found: only emit ICO when it's known to exist (or explicitly external). */}}
   {{- if $emitIco -}}
-  <link rel="icon" href="{{ $icoPath | absURL }}">
-  <link rel="shortcut icon" href="{{ $icoPath | absURL }}">
+  <link rel="icon" href="{{ $icoHref }}">
+  <link rel="shortcut icon" href="{{ $icoHref }}">
   {{- end -}}
 {{- end -}}
