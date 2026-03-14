@@ -1,30 +1,40 @@
 ---
-title: "ABA Therapy Services in Utah County — Breaking Barriers Therapy"
-description: "Explore our ABA therapy services in Utah designed to support individuals with autism spectrum disorder (ASD) and other developmental disabilities. Discover evidence-based interventions, compassionate care, and a collaborative approach focused on achieving meaningful progress for every individual."
+title: "ABA Therapy Overview in Utah County | Applied Behavior Analysis Support — Breaking Barriers Therapy"
+description: "Learn how our ABA therapy process works in Utah County, from assessment and treatment planning to skill development, family support, and long-term progress."
 layout: flowbite
 url: "/services"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-6224b3e4.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-6224b3e4.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
 # ABA Therapy in Utah County
 
 #### Break barriers and make potential _possible_
 
-{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US (801) 987-6333" >}}
+{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US (801) 987-6333" variant="outline" >}}
 
 {{< /hero >}}
 
-#### COMMUNICATION
+{{< cols min="11rem" gap="1rem" classes="cp-feature-band" v="start" stagger="false" >}}
 
-#### SOCIAL SKILLS
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Communication
+{{< /col >}}
 
-#### BEHAVIOR MANAGEMENT
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Social Skills
+{{< /col >}}
 
-#### DAILY LIVING SKILLS
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Behavior Management
+{{< /col >}}
+
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Daily Living Skills
+{{< /col >}}
+
+{{< /cols >}}
 
 ####  What is Applied Behavior Analysis (ABA), and how does it work?
 
@@ -68,6 +78,10 @@ We collaborate with parents, caregivers, educators, and associated therapists, s
 
 Naturalistic, neuro-affirming, and assent-based approach to long-lasting change.
 
+{{< cols gap="2rem" template="0.95fr 1.25fr" v="start" stagger="false" >}}
+
+{{< col card="false" y="start" >}}
+
 {{< cols min="12rem" gap="1rem" v="start" stagger="false" >}}
 
 {{< col card="false" y="start" >}}
@@ -79,6 +93,10 @@ Naturalistic, neuro-affirming, and assent-based approach to long-lasting change.
 {{< /col >}}
 
 {{< /cols >}}
+
+{{< /col >}}
+
+{{< col card="false" y="start" >}}
 
 *   We offer both in-home and in-clinic sessions, supported by dedicated practitioners who are highly trained and up-to-date with the latest trends in therapeutic care.
 
@@ -102,13 +120,17 @@ Naturalistic, neuro-affirming, and assent-based approach to long-lasting change.
 
 *   Progress is continually monitored through data collection and analysis, and as needed, we adjust our programs based on the individual's progress and changing needs.
 
+{{< /col >}}
+
+{{< /cols >}}
+
 #### We are your child’s and family's village of support.
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
 ## 4 Key Benefits of ABA Therapy
 
-{{< cols min="16rem" gap="1.5rem" v="start" stagger="false" >}}
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### 1. Behavior Improvement
@@ -162,9 +184,7 @@ Follow the guidance and plan we create together.  Start seeing positive changes 
 
 {{< button submit="true" form="services-consultation" text="Request Consultation" >}}
 
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" >}}
+{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" variant="outline" >}}
 
 {{< section img="/media/import/bg-9-70699e60.png" bleed="false" overlay="true" overlayShade="bg-black/40" >}}
 

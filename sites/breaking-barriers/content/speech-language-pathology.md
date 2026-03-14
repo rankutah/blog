@@ -6,15 +6,13 @@ url: "/speech-language-pathology"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-e17ce73a.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-e17ce73a.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
 ## Speech Therapy in Utah County
 
-#### Break barriers and make potential _possible_.
-
-{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US (801) 987-6333" >}}
+#### Break barriers and make **<span class="bb-accent">potential</span>** _**possible**_.
+<br>
+{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US (801) 987-6333" variant="outline" >}}
 
 {{< /hero >}}
 
@@ -27,21 +25,21 @@ greater independence in daily activities.
 Reduce limitations. Improve confidence to more easily engage socially, academically, professionally, or
 with peers.
 
-{{< cols min="9rem" gap="1rem" v="start" stagger="false" >}}
+{{< cols min="9rem" gap="1rem" v="start" classes="cp-icon-grid" stagger="false" >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/23-bd6205e0.png" alt="Autism" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Autism
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/27-4b91cb20.png" alt="Brain Injury and Concussions" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Brain Injury & Concussions
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/30-58778a42.png" alt="Pre-school Language" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Pre-school Language
@@ -51,55 +49,55 @@ with peers.
 
 ####  What is Speech Therapy, and how does it work?
 
-## Creative, engaging, and life-changing
+## **Creative**, **engaging**, and <span class="bb-accent"><u>life-changing</u></span>
 
 Speech Therapy, also known as Speech-Language Pathology, focuses on helping individuals of all ages who experience communication, eating, drinking, voice, fluency, cognition, and swallowing challenges. As an evidence-based approach, exercises and strategies are extensively utilized and customized to the individual's needs to improve their overall quality of life and participation in social, academic, and professional settings.
 
-{{< cols min="9rem" gap="1rem" v="start" stagger="false" >}}
+{{< cols min="9rem" gap="1rem" v="start" classes="cp-icon-grid" stagger="false" >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/21-17739b11.png" alt="Social Language" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Social Language
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/25-33ba0792.png" alt="Tongue Thrust Therapy" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Tongue Thrust Therapy
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/31-03b95a98.png" alt="Apraxia" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Apraxia
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/22-3396ec6b.png" alt="Fluency" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Fluency
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/28-4acf8d3d.png" alt="Dysphagia Swallowing Therapy" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Dysphagia (Swallowing Therapy)
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/24-44aaeeca.png" alt="Orofacial Myologist" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Orofacial Myologist
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/26-36d0330e.png" alt="Information Processing" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Information Processing
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/29-86572d35.png" alt="Articulation Phonology" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Articulation (Phonology)
@@ -107,30 +105,30 @@ Speech Therapy, also known as Speech-Language Pathology, focuses on helping indi
 
 {{< /cols >}}
 
-Through carefully structured sessions,
+<span class="bb-accent">Through carefully structured sessions,</span>
 SLP can help with:
 
-*   Articulation – producing certain sounds or words correctly
+*   **Articulation** – producing certain sounds or words correctly
 
-*   Language delays – receptive and expressive language understanding or using language appropriately. Telling stories, asking/answering questions, following directions, sequencing, writing, and reading (dyslexia), auditory processing,
+*   **Language delays** – receptive and expressive language understanding or using language appropriately. Telling stories, asking/answering questions, following directions, sequencing, writing, and reading (dyslexia), auditory processing,
 
-*   Fluency – stuttering or cluttering,
+*   **Fluency** – stuttering or cluttering,
 
-*   Voice – hoarseness or vocal nodules, unusual vocal production/sound, puberphonia, aphonia, vocal fold paralysis, coal chord spasm, psychogenic voice disorders, and vocal hygiene for public speaking, cheer, coaching, etc.
+*   **Voice** – hoarseness or vocal nodules, unusual vocal production/sound, puberphonia, aphonia, vocal fold paralysis, coal chord spasm, psychogenic voice disorders, and vocal hygiene for public speaking, cheer, coaching, etc.
 
-*   Resonance  — hyper or hyponasal speech
+*   **Resonance**  — hyper or hyponasal speech
 
-*   Pragmatic language — navigating social interactions with peers and adults ( social skills, communicating emotions, self-regulation, selective mutism)
+*   **Pragmatic language** — navigating social interactions with peers and adults ( social skills, communicating emotions, self-regulation, selective mutism)
 
-*   Executive function – planning, organization, attention, time management, task initiation, self-regulation, flexibility, perseverance, self-control, metacognition (thinking about thinking), working memory
+*   **Executive function** – planning, organization, attention, time management, task initiation, self-regulation, flexibility, perseverance, self-control, metacognition (thinking about thinking), working memory
 
-*   Swallow and orofacial myology \- The treatment of swallowing disorders prevents aspiration pneumonia, gagging, and increases the tolerance for variation of food textures. Tongue Thrust therapy helps dentition alignment and proper tongue placement during rest and swallowing
+*   **Swallow and orofacial myology** \- The treatment of swallowing disorders prevents aspiration pneumonia, gagging, and increases the tolerance for variation of food textures. Tongue Thrust therapy helps dentition alignment and proper tongue placement during rest and swallowing
 
 *   And so much more
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## How We Help
+## How We <u>Help</u>
 
 {{< img src="/media/import/146471345_1015990862259283_7248438834423793560_n-c4db9b31.jpg" alt="" class="mx-auto w-full max-w-4xl h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" sizes="(min-width: 1280px) 960px, (min-width: 768px) 80vw, 100vw" >}}
 
@@ -152,9 +150,13 @@ We collaborate with parents, caregivers, educators, and other professional disci
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## We are here to support and guide you every step of the way.
+## We are here to **<span class="bb-accent">support</span>** and <span class="bb-accent"><u>guide</u></span> you every step of the way.
 
-## Our Approach
+## Our <span class="bb-accent"><u>Approach</u></span>
+
+{{< cols gap="2rem" template="0.95fr 1.25fr" v="start" stagger="false" >}}
+
+{{< col card="false" y="start" >}}
 
 {{< cols min="12rem" gap="1rem" v="start" stagger="false" >}}
 
@@ -167,6 +169,10 @@ We collaborate with parents, caregivers, educators, and other professional disci
 {{< /col >}}
 
 {{< /cols >}}
+
+{{< /col >}}
+
+{{< col card="false" y="start" >}}
 
 *   We offer in-clinic sessions supported by dedicated therapists who are highly trained and up-to-date with the latest evidence-based practices in therapeutic care.
 
@@ -190,11 +196,15 @@ We collaborate with parents, caregivers, educators, and other professional disci
 
     *   As an individual approaches goal mastery, the frequency of services may be reduced. The ultimate goal is independence. We support this transition on an individual basis, slowly weaning the individual out of services and into independence.  The Speech-language pathologist assists in this transition and provides recommendations for maintaining progress.
 
+{{< /col >}}
+
+{{< /cols >}}
+
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## 3 Key Benefits of Speech Therapy
+## 3 Key <u>Benefits</u> of Speech Therapy
 
-{{< cols min="16rem" gap="1.5rem" v="start" stagger="false" >}}
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### 1. Empower Communication & Independence
@@ -219,7 +229,7 @@ Pragmatic language and social communication skills help individuals build confid
 <br>
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## Ready to join our village?
+## Ready to join our <u>village</u>?
 3 simple steps to get started:
 
 #### STEP 1
@@ -242,9 +252,7 @@ Follow the guidance and plan we create together.  Start seeing positive changes 
 
 {{< button submit="true" form="slp-consultation" text="Request Consultation" >}}
 
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" >}}
+{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" variant="outline" >}}
 
 {{< section img="/media/import/bg-9-03b06a66.jpg" bleed="false" overlay="true" overlayShade="bg-black/40" >}}
 
@@ -287,6 +295,4 @@ Let’s find out how we can help.
 <br>
 {{< contact-form id="slp-started" phone="optional" preferredContact="optional" message="optional" >}}
 
-{{< button submit="true" form="slp-started" text="Request Consultation" >}}
-
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
+{{< button submit="true" form="slp-started" text="Request Consultation" >}} {{< button url="/contact" text="SCHEDULE FREE CONSULTATION" variant="outline" >}}

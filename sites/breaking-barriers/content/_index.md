@@ -5,26 +5,25 @@ layout: flowbite
 url: "/"
 ---
 
-{{< hero img="/media/import/bg-1-1066221c.jpeg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" vh="svh" vhHeight="74" >}}
+{{< hero img="/media/import/bg-1-1066221c.jpeg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" vh="svh" vhHeight="100" >}}
 
-BREAKING BARRIERS THERAPY SERVICES IN UTAH COUNTY
+**<span class="bb-accent">BREAKING BARRIERS THERAPY SERVICES IN UTAH COUNTY</span>**
 
-# Where families find their village of support and peace of mind
+# Where families find their <span class="bb-accent"><u>village</u></span> of support and <u>peace of mind</u>
 
-From infants to adults, our therapy services encompass assessment, treatment, and skill enhancement. With care, compassion, and expertise, we make potential possible.
+From infants to adults, our therapy services encompass assessment, treatment, and skill enhancement. With care, compassion, and expertise, we make <u>potential</u> possible.
 
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
-{{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" >}}
+{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" variant="outline" >}}
 
 {{< /hero >}}
 
 ## Diagnostic Testing for Autism and More...
 
-{{< button url="/contact" text="SCHEDULE NOW!" >}}
 
-{{< cols min="16rem" gap="1.5rem" v="start" stagger="false" >}}
 
-{{< col card="true" y="start" classes="h-auto rounded-2xl border border-[#d9d2c2] bg-white/95 p-4 md:p-5 shadow-[0_18px_40px_-28px_rgba(15,59,87,0.32)] [&_img]:my-0 [&_h3]:mt-2 [&_h3]:mb-2 [&_p]:my-1 [&_p:last-child]:mb-0" >}}
+{{< cols min="16rem" gap="1.5rem" v="stretch" stagger="false" >}}
+
+{{< col card="true" y="between" classes="cp-home-location-card" >}}
 
 {{< img src="/media/location-pin.svg" alt="Location pin" class="mx-auto w-12 h-auto rounded-none shadow-none border-0" sizes="48px" >}}
 
@@ -36,7 +35,7 @@ From infants to adults, our therapy services encompass assessment, treatment, an
 
 {{< /col >}}
 
-{{< col card="true" y="start" classes="h-auto rounded-2xl border border-[#d9d2c2] bg-white/95 p-4 md:p-5 shadow-[0_18px_40px_-28px_rgba(15,59,87,0.32)] [&_img]:my-0 [&_h3]:mt-2 [&_h3]:mb-2 [&_p]:my-1 [&_p:last-child]:mb-0" >}}
+{{< col card="true" y="between" classes="cp-home-location-card" >}}
 
 {{< img src="/media/location-pin.svg" alt="Location pin" class="mx-auto w-12 h-auto rounded-none shadow-none border-0" sizes="48px" >}}
 
@@ -48,7 +47,7 @@ From infants to adults, our therapy services encompass assessment, treatment, an
 
 {{< /col >}}
 
-{{< col card="true" y="start" classes="h-auto rounded-2xl border border-[#d9d2c2] bg-white/95 p-4 md:p-5 shadow-[0_18px_40px_-28px_rgba(15,59,87,0.32)] [&_img]:my-0 [&_h3]:mt-2 [&_h3]:mb-2 [&_p]:my-1 [&_p:last-child]:mb-0" >}}
+{{< col card="true" y="between" classes="cp-home-location-card" >}}
 
 {{< img src="/media/location-pin.svg" alt="Location pin" class="mx-auto w-12 h-auto rounded-none shadow-none border-0" sizes="48px" >}}
 
@@ -64,6 +63,7 @@ More support for Utah families is on the way.
 
 {{< section y="sm" align="center" >}}
 
+<br>
 All of our therapists collaborate closely, resulting in expedited progress and results, bringing peace of mind and success to you and your family.
 
 {{< /section >}}
@@ -88,12 +88,12 @@ Rehabilitation services such as speech-language pathology, occupational therapy,
 
 {{< /cols >}}
 
-### Explore how we help make potential possible.
+### Explore how we help make **potential possible**.
 Our specialized therapy services:
 
-{{< cols min="18rem" gap="2rem" v="start" >}}
+{{< cols min="18rem" gap="1rem" v="start" >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="between" >}}
 
 {{< img src="/media/import/mother-helping-daughter-play-therapy--281-29-6acb3e4b.webp" alt="ABA therapy" class="w-full h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" sizes="(min-width: 1024px) 30vw, 100vw" >}}
 
@@ -113,7 +113,7 @@ Our naturalistic, neuro-affirming, assent-based Applied Behavior Analysis Therap
 
 {{< /col >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="between" >}}
 
 {{< img src="/media/import/ocupational-therapy-75bb9204.webp" alt="Occupational therapy" class="w-full h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" sizes="(min-width: 1024px) 30vw, 100vw" >}}
 
@@ -133,7 +133,7 @@ Have you been looking for ways to develop, regain, or improve skills needed to p
 
 {{< /col >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="between" >}}
 
 {{< img src="/media/import/therapist-helping-child-speech-therapy-818a1e28.webp" alt="Speech therapy" class="w-full h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" sizes="(min-width: 1024px) 30vw, 100vw" >}}
 
@@ -141,13 +141,15 @@ Have you been looking for ways to develop, regain, or improve skills needed to p
 
 How can our speech-language pathologists help make a difference? From toddlers to adults, we help with challenges related to speech, language, social skills, memory/executive function, voice, tongue thrust, or swallowing disorders. Speech-language therapy helps overcome barriers and empowers individuals to communicate, process information, articulate words, communicate, and listen effectively.
 
+Need a more collaborative autism-focused model? Learn more about [ICBT Therapy](/icbt-therapy-1).
+
 * Speech and language delays/disorders
 * Social pragmatic skills
 * Voice pitch, volume, and overall vocal conditions
 * Difficulty swallowing/tongue thrust
 * Memory or problem-solving difficulties
 
-{{< button url="/speech-language-pathology" text="Speech Therapy Services" >}}
+{{< button url="/speech-therapy" text="Speech Therapy Services" >}}
 
 {{< /col >}}
 
@@ -158,16 +160,13 @@ _at all Breaking Barriers Therapy Services locations_
 
 ### Clinical Psychology | Physical Therapy | Comprehensive Assessments
 
-<div class="mt-8 flex flex-wrap gap-2">
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
-{{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" >}}
-</div>
+{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" variant="outline" >}}
 
 {{< cols min="20rem" gap="2rem" v="start" >}}
 
 {{< col card="false" y="start" >}}
 
-## Have you been searching for support with communication, development, and behavior for your child?
+## Have you been searching for support with **communication**, **<span class="bb-accent">development</span>**, and **behavior** for your child?
 
 Wondering if anyone has answers and solutions that can lead to consistent progress?
 
@@ -177,7 +176,7 @@ We understand how advocating for your child requires unwavering determination an
 
 We're here to help you move forward and make reaching potential possible. We believe it takes a village to raise a child. There is power in a united village dedicated to your child and family's best interests, all in one place.
 
-## We are that village. Your circle of care and support.
+## We are that <span class="bb-accent"><u>village</u></span>. Your circle of care and support.
 
 {{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
 
@@ -197,13 +196,13 @@ We're here to help you move forward and make reaching potential possible. We bel
 
 {{< /cols >}}
 
-## You want the best for your child, And so do we.
+## You want the best for your child, <u>And so do we</u>.
 
 {{< cols min="18rem" gap="2rem" v="start" stagger="false" >}}
 
 {{< col card="true" y="center" class="text-center" >}}
 
-## OUR MISSION
+## OUR <u>MISSION</u>
 
 We empower children and families to thrive, making reaching potential possible.
 
@@ -211,7 +210,7 @@ We empower children and families to thrive, making reaching potential possible.
 
 {{< col card="true" y="center" class="text-center" >}}
 
-## OUR VISION
+## OUR <u>VISION</u>
 
 Our vision at Breaking Barriers Therapy Services is to be a beacon of exceptional care, expanding our reach to multiple facilities and guiding children and families toward transformative growth through our outstanding collaborative services.
 
@@ -223,7 +222,7 @@ Our vision at Breaking Barriers Therapy Services is to be a beacon of exceptiona
 
 {{< col card="true" y="start" class="text-center" >}}
 
-## OUR VALUES
+## OUR <u>VALUES</u>
 
 Our values are E.P.I.C.C.C
 
@@ -241,11 +240,11 @@ Our values are E.P.I.C.C.C
 <br>
 {{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
 
-## "Coming together is a beginning, keeping together is progress and working together is success."
+## "Coming together is a beginning, <span class="bb-accent">keeping together</span> is progress and working together is success."
 
 #### - Edward Everett Hale
 
-## Who We Help
+## Who We <u>Help</u>
 
 {{< cols min="16rem" gap="2rem" v="start" stagger="false" >}}
 
@@ -298,7 +297,7 @@ Our values are E.P.I.C.C.C
 {{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
 </div>
 
-## What We Provide
+## What We <u>Provide</u>
 
 Wonderful life-changing moments are possible. Our key to ongoing success allows children to make progress faster.
 
@@ -324,15 +323,15 @@ Wonderful life-changing moments are possible. Our key to ongoing success allows 
 
 {{< /cols >}}
 
-{{< section img="/media/import/bg-17-cd5ed693.png" bleed="false" overlay="true" overlayShade="bg-black/40" overlayClasses="absolute inset-0 flex items-center px-8 md:px-14 lg:px-20" align="center" >}}
+{{< section img="/media/import/bg-17-cd5ed693.png" bleed="false" overlay="true" overlayShade="bg-black/40" overlayClasses="absolute inset-0 flex items-center px-4 md:px-6 lg:px-8" align="center" >}}
 
-## You are not alone.
+## You are <u>not</u> alone.
 You've come to the right place.
-We can help make potential possible.
+We can help make <u>potential</u> possible.
 
 {{< /section >}}
 
-## Ready to join our village?
+## Ready to join our <span class="bb-accent"><u>village</u></span>?
 3 simple steps to get started:
 
 {{< cols min="16rem" gap="2rem" v="start" stagger="false" >}}
@@ -371,12 +370,7 @@ Follow the guidance and plan we create together. Start seeing positive changes a
 
 {{< button submit="true" form="home-consultation" text="Request Consultation" >}}
 
-<div class="mt-8 flex flex-wrap gap-2">
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
-{{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" >}}
-</div>
-
-{{< cols min="7rem" gap="0.75rem" v="center" stagger="false" >}}
+{{< cols min="7rem" gap="0.75rem" v="center" classes="cp-logo-row" stagger="false" >}}
 
 {{< col card="false" y="center" >}}
 {{< img src="/media/import/ASHA_Certified_Logo_Black-2-2930679a.png" alt="ASHA certified logo" class="mx-auto w-auto max-w-[5.5rem] sm:max-w-[6.5rem] md:max-w-[8rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 128px, 88px" >}}
@@ -394,16 +388,13 @@ Follow the guidance and plan we create together. Start seeing positive changes a
 {{< img src="/media/import/usha_LOGO_2019apr24-c921aae4.png" alt="USHA logo" class="mx-auto w-auto max-w-[5.5rem] sm:max-w-[6.5rem] md:max-w-[8rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 128px, 88px" >}}
 {{< /col >}}
 
-{{< col card="false" y="center" >}}
-{{< /col >}}
-
 {{< /cols >}}
 
 {{< section y="sm" align="center" >}}
 
-## Every child deserves to learn the unique skills to perform successfully at home and in the world.
+## Every child deserves to learn the unique skills to <span class="bb-accent"><u>perform successfully</u></span> at home and in the world.
 
-## Every parent deserves to find peace and confidence to be the guide their child needs.
+## Every parent deserves to find peace and confidence to be <span class="bb-accent"><u>the guide</u></span> their child needs.
 
 _Let's discuss how we can help._
 

@@ -6,16 +6,14 @@ url: "/insurance"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-3979ee58.jpeg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-3979ee58.jpeg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
-## Insurance & Grants
+# Insurance & Grants
 
-#### There are options to make therapy affordable
+#### There are options to make therapy <span class="bb-accent"><u>affordable</u></span>
 We can help you get the most out of your insurance and benefits.
 
-{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US (801) 987-6333" >}}
+{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US (801) 987-6333" >}}
 
 {{< /hero >}}
 
@@ -64,16 +62,18 @@ Our Insurance specialist is here to help along the way.
 
 {{< /cols >}}
 
-{{< cols min="18rem" gap="1.5rem" v="start" stagger="false" >}}
+<br>
+
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### Need help verifying coverage?
 
 If we do not participate with your particular insurance company, [contact us](/contact)
 
-Affordable private pay options are available.
+<span class="bb-accent">Affordable</span> private pay options are available.
 
-#### Let’s discover how we can help.
+#### Let’s discover how we can <span class="bb-accent">help</span>.
 
 {{< button url="/contact" text="Schedule a Free Consultation" >}}
 {{< /col >}}
@@ -95,12 +95,12 @@ non-profit organizations for available grant programs.
 
 ## Grants
 
-{{< cols min="18rem" gap="1.5rem" v="start" stagger="false" >}}
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### United Healthcare Children's Foundation
 
-[https://www.Uhccf.org](https://www.Uhccf.org)
+[Visit UHCCF.org](https://www.uhccf.org)
 
 The mission of United Health Care Children’s Foundation is to provide medical grants to enhance the quality of life of children across the United States. Through these grants, kids can get the care they need. Up to $10,000 for Speech, Occupational, and ABA therapy.
 {{< /col >}}
@@ -108,7 +108,7 @@ The mission of United Health Care Children’s Foundation is to provide medical 
 {{< col card="true" y="start" >}}
 ### Ezra B. Smith Foundation
 
-[https://www.ebsmithfoundation.org](https://www.ebsmithfoundation.org)
+[Visit Ezra B. Smith Foundation](https://www.ebsmithfoundation.org)
 
 The Ezra B. Smith Foundation Grant is a tuition/therapy grant for financially disadvantaged children with a diagnosis of autism spectrum disorder who live in the state of Utah
 {{< /col >}}
@@ -116,7 +116,7 @@ The Ezra B. Smith Foundation Grant is a tuition/therapy grant for financially di
 {{< col card="true" y="start" >}}
 ### Act Today
 
-[https://www.act-today.org/apply-for-grant/](https://www.act-today.org/apply-for-grant/)
+[Apply with ACT Today](https://www.act-today.org/apply-for-grant/)
 
 Autism Care Today provides funding assistance to families throughout the United States on a quarterly basis. These grants are designed to provide access to individuals and families affected by Autism Spectrum Disorders. Up to $5,000
 {{< /col >}}
@@ -124,7 +124,7 @@ Autism Care Today provides funding assistance to families throughout the United 
 {{< col card="true" y="start" >}}
 ### Care Autism Foundation
 
-[https://careautismfoundation.com/family-funds/](https://careautismfoundation.com/family-funds/)
+[View CARE Grant Program](https://careautismfoundation.com/family-funds/)
 
 CARE Grant Program is for helping families with medication, autism diagnosis/evaluation, and therapy sessions, including speech, OT, and ABA.
 {{< /col >}}
@@ -132,7 +132,7 @@ CARE Grant Program is for helping families with medication, autism diagnosis/eva
 {{< col card="true" y="start" >}}
 ### Autism Grants For Families - Autism Speaks
 
-[https://www.autismspeaks.org/autism-grants-families](https://www.autismspeaks.org/autism-grants-families)
+[View Autism Speaks Grant Resources](https://www.autismspeaks.org/autism-grants-families)
 
 Resource for additional information on grants and resources
 {{< /col >}}
@@ -140,7 +140,7 @@ Resource for additional information on grants and resources
 {{< col card="true" y="start" >}}
 ### Apraxia Kids
 
-[https://www.apraxia-kids.org](https://www.apraxia-kids.org)
+[Visit Apraxia Kids](https://www.apraxia-kids.org)
 
 Parent resource and support group regarding Apraxia
 {{< /col >}}
@@ -148,7 +148,7 @@ Parent resource and support group regarding Apraxia
 {{< col card="true" y="start" >}}
 ### Small Steps in Speech
 
-[https://www.smallstepsinspeech.org/](https://www.smallstepsinspeech.org/)
+[Visit Small Steps in Speech](https://www.smallstepsinspeech.org/)
 
 The mission of Small Steps in Speech is to help children with speech and/or language disorders take the steps needed to be better communicators.
 {{< /col >}}
@@ -158,13 +158,17 @@ The mission of Small Steps in Speech is to help children with speech and/or lang
 
 The 2024 Utah State Legislature passed a bill merging the Special Needs Opportunity Scholarship program with the Carson Smith Scholarship program. Children First Education Fund will administer the new combined program. This bill allows students who were enrolled in a private school and who were awarded the legacy Carson Smith scholarship to stay in that program if they choose.
 
-[https://cfe-fund.org/parent/](https://cfe-fund.org/parent/)
+[Learn about the Carson Smith Scholarship](https://cfe-fund.org/parent/)
 
+Discover how families can use CFE Fund Scholarship support to cover therapy and rehabilitation services.
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
 ### Apply for CFE Funding
 
-[https://scholarship.cfe-fund.org/scholarship/](https://scholarship.cfe-fund.org/scholarship/)
+[Apply for CFE Funding Online](https://scholarship.cfe-fund.org/scholarship/)
 
-Discover how families can apply and use CFE Fund Scholarship support to cover therapy and rehabilitation services.
+Review the CFE application portal and start the scholarship process for therapy and rehabilitation funding.
 {{< /col >}}
 
 {{< /cols >}}
@@ -182,9 +186,15 @@ We accept cash, debit, credit cards, HSA, FSA, and grants.
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
-## Cancellation Policy
+## Late Cancellation Fee
 
-We understand that things come up and sometimes you need to cancel your appointment. 24-hour notice of cancellation is required to avoid a late cancellation fee. If you cancel your appointment less than 24 hours before it is scheduled, you will be charged a $50 late cancellation fee. If you do not show up or fail to notify us before your appointment, you will be charged the full session fee. These charges are billed directly to you and will not go to your insurance company.
+We understand that things come up and sometimes you need to cancel your appointment. A 24-hour notice of cancellation is required to avoid a late cancellation fee. If you cancel your appointment less than 24 hours before it is scheduled, you will be charged a $50 late cancellation fee.
+{{< /col >}}
+
+{{< col card="true" y="start" >}}
+## Missed Visit Policy
+
+If you do not show up or fail to notify us before your appointment, you will be charged the full session fee. These charges are billed directly to you and will not go to your insurance company.
 {{< /col >}}
 
 {{< /cols >}}

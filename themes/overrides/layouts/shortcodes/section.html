@@ -23,6 +23,7 @@
 {{- $defs := $page.Site.Params.section.defaults | default (dict) -}}
 {{- $defMax   := (index $defs "max")   | default "xl" -}}
 {{- $defPad   := (index $defs "pad")   | default "lg" -}}
+{{- $defPadMobile := (index $defs "padMobile") | default "" -}}
 {{- $defY     := (index $defs "y")     | default "md" -}}
 {{- $defAlign := (index $defs "align") | default "start" -}}
 {{- $defAlignY:= (index $defs "alignY")| default "" -}}
@@ -35,7 +36,9 @@
 {{- $max     := .Get "max"     | default $defMax -}}
 {{- $outerPx := $page.Scratch.Get "outer_px_container" | default false -}}
 {{- $padParam := .Get "pad" -}}
+{{- $padMobileParam := .Get "padMobile" -}}
 {{- $pad     := cond (ne $padParam nil) $padParam $defPad -}}
+{{- $padMobile := cond (ne $padMobileParam nil) $padMobileParam $defPadMobile -}}
 {{- $y       := .Get "y"       | default $defY -}}
 {{- $yBottom := .Get "yBottom" | default "" -}}
 {{- $align   := .Get "align"   | default $defAlign -}}
@@ -49,8 +52,9 @@
   {{- $page.Scratch.Set "outer_px_container" true -}}
 {{- end -}}
 {{- /* Suppress horizontal padding for nested (non-root) sections inside an outer container */ -}}
-{{- if and $outerPx (not $isRoot) (eq $padParam nil) -}}
+{{- if and $outerPx (not $isRoot) (eq $padParam nil) (eq $padMobileParam nil) -}}
   {{- $pad = "none" -}}
+  {{- $padMobile = "" -}}
 {{- end -}}
 
 {{/* ---------- First section detection (skip root wrapper) ---------- */}}
@@ -64,6 +68,11 @@
 {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
 {{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
 {{- $alMap  := dict "start" "text-left" "center" "text-center" -}}
+
+{{- $padClass := (index $padMap $pad | default "px-8") -}}
+{{- if ne $padMobile "" -}}
+  {{- $padClass = printf "%s md:%s" (index $padMap $padMobile | default "px-0") $padClass -}}
+{{- end -}}
 
 {{- $ptMap := dict "none" "pt-0" "sm" "pt-6" "md" "pt-12" "lg" "pt-16" "xl" "pt-24" -}}
 {{- $pbMap := dict "none" "pb-0" "sm" "pb-6" "md" "pb-12" "lg" "pb-16" "xl" "pb-24" -}}
@@ -155,7 +164,7 @@
 {{/* ---------- Container class ---------- */}}
 {{- $container := printf "%s mx-auto %s %s %s"
     (index $maxMap $max   | default "max-w-7xl")
-    (index $padMap $pad   | default "px-8")
+  $padClass
     $pt
     (index $alMap  $align | default "text-left")
 -}}
@@ -279,7 +288,7 @@
     {{- /* Spacer only if bottom padding is non-zero AND not explicitly disabled */ -}}
     {{- $addSpacer := and (ne $pb "pb-0") (ne $spacerParam "false") -}}
     {{- if $addSpacer -}}
-      <div class="{{ (printf "%s mx-auto %s" (index $maxMap $max | default "max-w-7xl") (index $padMap $pad | default "px-8")) }} {{ $pb }}"></div>
+      <div class="{{ (printf "%s mx-auto %s" (index $maxMap $max | default "max-w-7xl") $padClass) }} {{ $pb }}"></div>
     {{- end }}
 
   {{- else if $img -}}

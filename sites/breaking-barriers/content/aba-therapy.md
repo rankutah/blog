@@ -6,29 +6,39 @@ url: "/aba-therapy"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-6224b3e4.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-6224b3e4.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
 # ABA Therapy in Utah County
 
-#### Break barriers and make potential _possible_
+#### Break barriers and make **<span class="bb-accent">potential</span>** _**possible**_
 
-{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US (801) 987-6333" >}}
+{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US (801) 987-6333" variant="outline" >}}
 
 {{< /hero >}}
 
-#### COMMUNICATION
+{{< cols min="11rem" gap="1rem" classes="cp-feature-band" v="start" stagger="false" >}}
 
-#### SOCIAL SKILLS
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Communication
+{{< /col >}}
 
-#### BEHAVIOR MANAGEMENT
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Social Skills
+{{< /col >}}
 
-#### DAILY LIVING SKILLS
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Behavior Management
+{{< /col >}}
+
+{{< col card="false" class="cp-feature-band__item" >}}
+#### Daily Living Skills
+{{< /col >}}
+
+{{< /cols >}}
 
 ####  What is Applied Behavior Analysis (ABA), and how does it work?
 
-## Bring Forth Meaningful Change
+## Bring Forth **Meaningful** <span class="bb-accent"><u>Change</u></span>
 
 Applied Behavior Analysis (ABA) is a revolutionary therapy that holds the power to make a profound impact on a child's life. It is a science-backed, evidence-based approach to understanding behavior and making lasting change.
 
@@ -48,7 +58,7 @@ Through our carefully structured neuro-affirming, accent-based approach, we teac
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## How We Help
+## How We <u>Help</u>
 
 {{< img src="/media/import/252726747_1192881641236870_5651681272703306617_n-fbcb5582.jpg" alt="" class="mx-auto w-full max-w-4xl h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" sizes="(min-width: 1280px) 960px, (min-width: 768px) 80vw, 100vw" >}}
 
@@ -62,11 +72,15 @@ We collaborate with parents, caregivers, educators, and associated therapists, s
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## With the power of positive reinforcement, we celebrate every milestone, fostering a sense of accomplishment, confidence, and joy.
+## With the power of **<span class="bb-accent">positive reinforcement</span>**, we celebrate **every milestone**, fostering a sense of accomplishment, confidence, and joy.
 
-## Our Approach
+## Our <span class="bb-accent"><u>Approach</u></span>
 
 Naturalistic, neuro-affirming, and assent-based approach to long-lasting change.
+
+{{< cols gap="2rem" template="0.95fr 1.25fr" v="start" stagger="false" >}}
+
+{{< col card="false" y="start" >}}
 
 {{< cols min="12rem" gap="1rem" v="start" stagger="false" >}}
 
@@ -79,6 +93,10 @@ Naturalistic, neuro-affirming, and assent-based approach to long-lasting change.
 {{< /col >}}
 
 {{< /cols >}}
+
+{{< /col >}}
+
+{{< col card="false" y="start" >}}
 
 *   We offer both in-home and in-clinic sessions, supported by dedicated practitioners who are highly trained and up-to-date with the latest trends in therapeutic care.
 
@@ -102,13 +120,17 @@ Naturalistic, neuro-affirming, and assent-based approach to long-lasting change.
 
 *   Progress is continually monitored through data collection and analysis, and as needed, we adjust our programs based on the individual's progress and changing needs.
 
-#### We are your child’s and family's village of support.
+{{< /col >}}
+
+{{< /cols >}}
+
+#### We are your child’s and family's <span class="bb-accent"><u>village</u></span> of support.
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## 4 Key Benefits of ABA Therapy
+## 4 Key <u>Benefits</u> of ABA Therapy
 
-{{< cols min="16rem" gap="1.5rem" v="start" stagger="false" >}}
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### 1. Behavior Improvement
@@ -139,7 +161,7 @@ Parents receive supportive, individualized guidance and tools so progress contin
 <br>
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## Ready to join our village?
+## Ready to join our <u>village</u>?
 3 simple steps to get started:
 
 #### STEP 1
@@ -162,9 +184,7 @@ Follow the guidance and plan we create together.  Start seeing positive changes 
 
 {{< button submit="true" form="aba-consultation" text="Request Consultation" >}}
 
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
 
-{{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" >}}
 
 {{< section img="/media/import/bg-9-70699e60.png" bleed="false" overlay="true" overlayShade="bg-black/40" >}}
 
@@ -180,7 +200,9 @@ Heather H.
 
 {{< /section >}}
 
-## FAQs about ABA Therapy
+{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" variant="outline" >}}
+
+## FAQs about <span class="bb-accent"><u>ABA Therapy</u></span>
 
 {{< faqs openFirst="true" >}}
 ### Do you accept insurance?

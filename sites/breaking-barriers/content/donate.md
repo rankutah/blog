@@ -6,7 +6,7 @@ url: "/donate"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-070b8205.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-070b8205.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
 # Help Make Potential Possible: Donate to Our Scholarship Fund
 
@@ -21,7 +21,7 @@ Every dollar supports children who need access to life-changing services and sup
 
 {{< /hero >}}
 
-# Why Give?
+## Why Give?
 
 ### Behind Every Breakthrough Is a Village.
 
@@ -29,7 +29,7 @@ At Breaking Barriers, we believe _every_ child deserves the chance to thrive—r
 
 Whether you’re a grateful parent who wants to give back, or a community member who believes in every child’s potential—this is your chance to create impact that lasts a lifetime.
 
-# Two Ways To Give.
+## Two Ways To Give.
 
 {{< cols min="18rem" gap="1.5rem" v="start" stagger="false" >}}
 
@@ -60,17 +60,17 @@ Has your child been helped by Breaking Barriers? Pay it forward so another famil
 
 {{< section img="/media/import/bg-4-52efc573.jpg" bleed="false" overlay="true" overlayShade="bg-black/40" >}}
 
-# Meet the families.
+## Meet the families.
 
 {{< /section >}}
 
 ### _We’re committed to transparency. Your generosity directly funds therapy sessions, preschool tuition, assessments, and materials needed for success._
 
-# Honor the Loved One.
+## Honor the <span class="bb-accent">Loved One</span>.
 
 #### Make a donation in the name of a loved one. We'll send a personalized card or email to the person or family you're honoring.
 
-# Become a Legacy Giver.
+## Become a <span class="bb-accent">Legacy Giver</span>.
 
 ####  Leave a Legacy of Hope
 

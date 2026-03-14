@@ -6,15 +6,13 @@ url: "/specialclasses"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-378a37da.jpeg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-378a37da.jpeg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
 # Take a Look at our Special Classes
 
 ## A World of Discovery Awaits – Sign Up for Our Special Classes!
 
-{{< button url="tel:+18019876333" text="Call Us Now" >}}
-
-{{< button url="#request-a-special-class" text="Request a Class" variant="outline" >}}
+{{< button url="tel:+18019876333" text="Call Us Now" >}} {{< button url="#request-a-special-class" text="Request a Class" variant="outline" >}}
 
 {{< /hero >}}
 
@@ -25,7 +23,7 @@ hero: true
 {{< col card="true" y="start" >}}
 ### Tell Us What You Need
 
-Don’t see a class that fits your needs? Fill out the form below to request a new special class! This helps us gauge interest before launching new groups.
+<span class="bb-accent">Don’t see a class that fits your needs? Fill out the form below to request a new special class! This helps us gauge interest before launching new groups.</span>
 
 You can also call us at [(801) 987-6333](tel:+18019876333) to ask about current availability.
 {{< /col >}}

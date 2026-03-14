@@ -690,13 +690,6 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
     padding-right: calc(env(safe-area-inset-right) + 0.75rem);
   }
 
-  html[data-site="breaking-barriers"] main#content > .max-w-7xl.mx-auto.px-8,
-  html[data-site="breaking-barriers"] .section.hero-nonbleed > .max-w-7xl.mx-auto.px-8,
-  html[data-site="breaking-barriers"] .section:not(.bleed):not(.hero) > .max-w-7xl.mx-auto.px-8 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
   html[data-site="breaking-barriers"] .cols-auto > [data-card="true"],
   html[data-site="breaking-barriers"] .cols-fixed > [data-card="true"] {
     width: 100%;
@@ -713,10 +706,15 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
   html[data-site="breaking-barriers"] .section.hero [data-motion="hero"] .prose {
     max-width: 42rem;
     margin-inline: auto;
-    padding: 1rem 1rem 1.25rem;
-    border-radius: 1.25rem;
-    background: linear-gradient(180deg, rgba(17, 24, 39, 0.72), rgba(17, 24, 39, 0.52));
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.22);
+    padding: 1rem 0 1.25rem;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  html[data-site="breaking-barriers"] .section.hero [data-motion="hero"] {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
 
   html[data-site="breaking-barriers"] .section.hero [data-motion="hero"] .prose h1 {
@@ -749,11 +747,11 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
     --tw-prose-body: #111827;
     --tw-prose-headings: #111827;
     --tw-prose-links: var(--cp-brand);
-    background: rgba(252, 251, 247, 0.98);
-    border: 1px solid rgba(231, 225, 212, 0.95);
-    border-radius: 1.25rem;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
     padding: 1rem 1rem 1.25rem;
-    box-shadow: 0 18px 42px -28px rgba(15, 23, 42, 0.3);
+    box-shadow: none;
   }
 
   html[data-site="breaking-barriers"] .section.hero-nonbleed > div > .relative > .absolute .prose :where(h1, h2, h3, h4, h5, h6),
@@ -777,11 +775,6 @@ main#content.no-top-pad > article > :first-child { margin-top: 0 !important; }
   transform-origin: bottom center;
 }
 
-html[data-site="breaking-barriers"] .section.hero-nonbleed > div > .relative > .absolute {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 html[data-site="breaking-barriers"] .section.hero-nonbleed > div > .relative > .absolute > .relative {
   max-width: 54rem;
   margin-left: auto;
@@ -796,8 +789,41 @@ html[data-site="breaking-barriers"] .section.hero-nonbleed > div > .relative > .
 
 html[data-site="breaking-barriers"] .cols-auto > [data-card="true"],
 html[data-site="breaking-barriers"] .cols-fixed > [data-card="true"] {
-  align-self: start;
-  height: auto;
+  align-self: stretch;
+  height: 100%;
+  min-width: 0;
+}
+
+html[data-site="breaking-barriers"] {
+  --cp-brand-soft: color-mix(in srgb, var(--cp-brand) 14%, white);
+  --cp-brand-mist: color-mix(in srgb, var(--cp-brand) 7%, white);
+  --cp-brand-deep: color-mix(in srgb, var(--cp-brand) 68%, #0f172a);
+  --cp-brand-strong: #22b8f3;
+}
+
+html[data-site="breaking-barriers"] .section.hero [data-motion="hero"] .prose {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html[data-site="breaking-barriers"] .section.hero-nonbleed > div > .relative > .absolute .prose {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html[data-site="breaking-barriers"] article.prose :where(h2, h3):not(.cp-home-location-card h3):not(.cp-feature-band__item h4):not(.cp-icon-grid__item h4) {
+  color: inherit;
+}
+
+html[data-site="breaking-barriers"] .cols-auto > [data-card="true"],
+html[data-site="breaking-barriers"] .cols-fixed > [data-card="true"] {
+  border-color: color-mix(in srgb, var(--cp-brand) 14%, var(--cp-card-border));
+  background:
+    linear-gradient(180deg, var(--cp-brand-mist), rgba(255, 255, 255, 0) 5rem),
+    var(--cp-card-bg);
+  box-shadow: 0 18px 40px -30px color-mix(in srgb, var(--cp-brand) 22%, rgba(15, 23, 42, 0.24));
 }
 
 html[data-site="breaking-barriers"] .cols-auto + .ui-btn,
@@ -805,6 +831,305 @@ html[data-site="breaking-barriers"] .cols-fixed + .ui-btn,
 html[data-site="breaking-barriers"] .cols-auto + br + .ui-btn,
 html[data-site="breaking-barriers"] .cols-fixed + br + .ui-btn {
   margin-top: 1rem;
+}
+
+html[data-site="breaking-barriers"] form.cp-contact {
+  width: min(100%, 42rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html[data-site="breaking-barriers"] form.cp-contact + script + .ui-btn[form] {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin: 1rem auto 0 !important;
+}
+
+html[data-site="breaking-barriers"] article.prose :where(strong, b),
+html[data-site="breaking-barriers"] .section.hero .prose :where(strong, b),
+html[data-site="breaking-barriers"] .section.hero-nonbleed .prose :where(strong, b) {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+html[data-site="breaking-barriers"] :where(article.prose, .section.hero .prose, .section.hero-nonbleed .prose) :where(u) {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 58' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='underline' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%232ac7ff'/%3E%3Cstop offset='55%25' stop-color='%231db9f3'/%3E%3Cstop offset='100%25' stop-color='%2300a8ef'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M18 43 C77 41 135 38 193 37 C231 36 264 38 292 41 C299 42 304 42 307 43 C308 43 308 44 307 44 C306 44 305 44 304 43' fill='none' stroke='url(%23underline)' stroke-width='5.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% calc(100% + 0.06em);
+  background-size: calc(100% + 0.16em) 0.76em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding-bottom: 0.16em;
+}
+
+html[data-site="breaking-barriers"] :where(article.prose, .section.hero .prose, .section.hero-nonbleed .prose) :where(.bb-accent) {
+  color: var(--cp-brand-strong);
+}
+
+html[data-site="breaking-barriers"] .cp-apply-values-card {
+  overflow-wrap: normal;
+}
+
+html[data-site="breaking-barriers"] .cp-apply-values-card h3,
+html[data-site="breaking-barriers"] .cp-apply-values-card p {
+  overflow-wrap: normal;
+}
+
+html[data-site="breaking-barriers"] .cp-brand-btn-outline {
+  color: var(--cp-brand);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cp-brand) 78%, white);
+}
+
+html[data-site="breaking-barriers"] .cp-brand-btn-outline:hover {
+  background-color: var(--cp-brand-soft);
+  box-shadow: inset 0 0 0 1px var(--cp-brand);
+}
+
+html[data-site="breaking-barriers"] .cp-feature-band {
+  margin: 1.5rem 0 2rem;
+}
+
+html[data-site="breaking-barriers"] .cp-feature-band__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+html[data-site="breaking-barriers"] .cp-feature-band__item::before {
+  content: "\2713";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--cp-brand) 16%, white);
+  color: var(--cp-brand);
+  font-size: 1.15rem;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cp-brand) 26%, white);
+}
+
+html[data-site="breaking-barriers"] .cp-feature-band__item > div {
+  width: 100%;
+}
+
+html[data-site="breaking-barriers"] .cp-feature-band__item h4 {
+  margin: 0 !important;
+  font-size: 0.98rem;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid {
+  justify-items: center;
+  row-gap: 1.5rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0.85rem;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--cp-brand) 8%, white), rgba(255, 255, 255, 0));
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid--plain .cp-icon-grid__item {
+  background: transparent;
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid__item > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid__item .not-prose,
+html[data-site="breaking-barriers"] .cp-icon-grid__item picture,
+html[data-site="breaking-barriers"] .cp-icon-grid__item figure {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid__item img,
+html[data-site="breaking-barriers"] .cp-icon-grid__item picture,
+html[data-site="breaking-barriers"] .cp-icon-grid__item picture img {
+  width: 3.25rem !important;
+  max-width: 3.25rem !important;
+  height: 3.25rem !important;
+  object-fit: contain;
+  margin: 0 auto 0.75rem !important;
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid__item h4 {
+  margin: 0 !important;
+  width: 100%;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  max-width: 14ch;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+}
+
+html[data-site="breaking-barriers"] .cp-icon-grid__item :where(p, h4) {
+  text-align: center !important;
+}
+
+@media (min-width: 640px) {
+  html[data-site="breaking-barriers"] .cp-icon-grid__item img,
+  html[data-site="breaking-barriers"] .cp-icon-grid__item picture,
+  html[data-site="breaking-barriers"] .cp-icon-grid__item picture img {
+    width: 4rem !important;
+    max-width: 4rem !important;
+    height: 4rem !important;
+  }
+
+  html[data-site="breaking-barriers"] .cp-icon-grid__item h4 {
+    font-size: 1rem;
+  }
+}
+
+html[data-site="breaking-barriers"] article.prose :where(ul, ol) {
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+html[data-site="breaking-barriers"] article.prose :where(ul, ol) > li {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+html[data-site="breaking-barriers"] article.prose li > p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+html[data-site="breaking-barriers"] .footer .cols-fixed {
+  align-items: start;
+}
+
+html[data-site="breaking-barriers"] .footer .cols-fixed > * {
+  min-width: 0;
+}
+
+html[data-site="breaking-barriers"] .footer .cols-fixed h3 {
+  margin-bottom: 0.75rem;
+}
+
+html[data-site="breaking-barriers"] .footer .cp-footer-links p {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--cp-brand) 16%, #d9d2c2);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--cp-brand) 10%, white), rgba(255, 255, 255, 0.96) 4.25rem);
+  padding: 1rem;
+  box-shadow: 0 18px 40px -28px color-mix(in srgb, var(--cp-brand) 24%, rgba(15, 59, 87, 0.32));
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card,
+html[data-site="breaking-barriers"] .cp-home-location-card > div {
+  text-align: center;
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card > div {
+  flex: 1 1 auto;
+  width: 100%;
+  align-items: center;
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card img {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card h3 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card p {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card p:last-child {
+  margin-bottom: 0 !important;
+}
+
+html[data-site="breaking-barriers"] .cp-home-location-card .ui-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+html[data-site="breaking-barriers"] .cp-logo-row {
+  justify-items: center;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+html[data-site="breaking-barriers"] .cp-logo-row > * {
+  width: 100%;
+}
+
+html[data-site="breaking-barriers"] .cp-logo-row img,
+html[data-site="breaking-barriers"] .cp-logo-row picture,
+html[data-site="breaking-barriers"] .cp-logo-row picture img {
+  width: auto !important;
+  max-width: 4.25rem !important;
+  max-height: 2.75rem;
+  height: auto !important;
+}
+
+@media (min-width: 640px) {
+  html[data-site="breaking-barriers"] .cp-logo-row img,
+  html[data-site="breaking-barriers"] .cp-logo-row picture,
+  html[data-site="breaking-barriers"] .cp-logo-row picture img {
+    max-width: 5rem !important;
+    max-height: 3.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html[data-site="breaking-barriers"] .cp-logo-row img,
+  html[data-site="breaking-barriers"] .cp-logo-row picture,
+  html[data-site="breaking-barriers"] .cp-logo-row picture img {
+    max-width: 5.75rem !important;
+    max-height: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html[data-site="breaking-barriers"] .cp-home-location-card {
+    padding: 1.25rem;
+  }
 }
 
 /* ========== Contact form placeholders & checkbox (unified) ========== */

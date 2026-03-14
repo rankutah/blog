@@ -6,15 +6,13 @@ url: "/occupational-therapy"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-3cd5e515.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-3cd5e515.jpg" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
 # Occupational Therapy in Utah County
 
-#### Break barriers and make potential _possible_.
+#### Break barriers and make **<span class="bb-accent">potential</span>** _**possible**_.
 
-{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US (801) 987-6333" >}}
+{{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US (801) 987-6333" variant="outline" >}}
 
 {{< /hero >}}
 
@@ -24,27 +22,27 @@ hero: true
 
 #### Improve daily function and activity
 
-{{< cols min="9rem" gap="1rem" v="start" stagger="false" >}}
+{{< cols min="9rem" gap="1rem" v="start" classes="cp-icon-grid cp-icon-grid--plain" stagger="false" >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/23-6634ea00.png" alt="Autism" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Autism
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/9-b989bb95.png" alt="Fine Motor" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Fine Motor
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/14-1d5099b5.png" alt="Pre-Writing Shapes" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Pre-Writing Shapes
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/19-7dfb143f.png" alt="Primitive Reflexes" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Primitive Reflexes
@@ -54,57 +52,61 @@ hero: true
 
 ####  What is Occupational Therapy (OT), and how does it work?
 
-## Fun, imaginative, and transformational
+## **Fun**, **imaginative**, and <span class="bb-accent"><u>transformational</u></span>
 
 Occupational Therapy focuses on helping individuals of all ages develop, recover, or maintain the skills and abilities necessary for daily life activities. Occupational therapists use evidence-based approaches and techniques to address specific challenges and goals.
 
 Whether individuals may have physical, cognitive, emotional, or developmental challenges, OT practitioners use an individualized approach, tailoring interventions to each person's unique needs and goals to develop greater independence so they can more easily participate in daily life activities.
 
-{{< cols min="9rem" gap="1rem" v="start" stagger="false" >}}
+{{< cols gap="1rem" template="1fr 1fr 1fr 1fr" v="start" classes="cp-icon-grid cp-icon-grid--plain" stagger="false" >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/13-78de0db6.png" alt="Visual Perception" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Visual Perception
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/18-97afb467.png" alt="Handwriting" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Handwriting
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/17-4b790f0c.png" alt="Splinting and Range of Motion" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Splinting & Range of Motion
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/11-30c4ae9d.png" alt="Sensory" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Sensory
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< /cols >}}
+
+{{< cols gap="1rem" template="1fr 1fr 1fr 1fr" v="start" classes="cp-icon-grid cp-icon-grid--plain" stagger="false" >}}
+
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/16-05d5fb51.png" alt="Concussions and Traumatic Brain Injuries" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Concussions & Traumatic Brain Injuries
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/10-b7abff72.png" alt="Cutting" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Cutting
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/15-261122e1.png" alt="Activities of Daily Living" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### ADL's
 {{< /col >}}
 
-{{< col card="false" y="start" >}}
+{{< col card="false" y="start" class="cp-icon-grid__item" >}}
 {{< img src="/media/import/20-6e0aa760.png" alt="Picky Eaters" class="mx-auto w-full max-w-[5.25rem] sm:max-w-[6rem] h-auto rounded-none shadow-none border-0" sizes="96px" >}}
 
 #### Picky Eaters
@@ -112,7 +114,7 @@ Whether individuals may have physical, cognitive, emotional, or developmental ch
 
 {{< /cols >}}
 
-Through carefully structured sessions,
+<span class="bb-accent">Through carefully structured sessions,</span>
 OT can help with:
 
 *   Tasks such as dressing, bathing, grooming, feeding, and toileting - also known as - activities of daily living (ADLs)
@@ -128,11 +130,11 @@ OT can help with:
 *   And so much more
 
 ## "Anything that occupies your time that you may struggle with,
-occupational therapy can help with."
+<span class="bb-accent"><u>occupational therapy</u></span> can help with."
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## How We Help
+## How We <u>Help</u>
 
 {{< img src="/media/import/79162393_699673680557671_977682118760988672_n-3aa95ea6.jpg" alt="" class="mx-auto w-full max-w-4xl h-auto rounded-xl shadow border border-gray-200 dark:border-gray-700" sizes="(min-width: 1280px) 960px, (min-width: 768px) 80vw, 100vw" >}}
 
@@ -140,15 +142,19 @@ occupational therapy can help with."
 
 Through engaging and interactive sessions, we focus on developing essential skills for daily life tasks and meaningful participation in school, at home, at work, or in social environments.
 
-Our strategies are designed for real-world interactions.
+Our strategies are designed for **real-world interactions**.
 
 We collaborate with parents, caregivers, educators, and other professional disciplines. We offer in-house collaboration with [ABA Therapy](/aba-therapy) and [Speech-Language Pathology](/speech-language-pathology). Together, we break down the walls that limit potential, creating a supportive network of compassion, understanding, and growth. Allow yourself to take a deep breath, embrace hope, and trust in the transformative power of Occupational Therapy.
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## We celebrate every milestone, fostering a sense of accomplishment, confidence, and joy.
+## We celebrate every milestone, fostering a sense of **<span class="bb-accent">accomplishment</span>**, **confidence**, and **<span class="bb-accent">joy</span>**.
 
-## Our Approach
+## Our <span class="bb-accent"><u>Approach</u></span>
+
+{{< cols gap="2rem" template="0.95fr 1.25fr" v="start" stagger="false" >}}
+
+{{< col card="false" y="start" >}}
 
 {{< cols min="12rem" gap="1rem" v="start" stagger="false" >}}
 
@@ -161,6 +167,10 @@ We collaborate with parents, caregivers, educators, and other professional disci
 {{< /col >}}
 
 {{< /cols >}}
+
+{{< /col >}}
+
+{{< col card="false" y="start" >}}
 
 *   We offer in-clinic sessions supported by dedicated therapists who are highly trained and up-to-date with the latest evidence-based practices in therapeutic care.
 
@@ -184,11 +194,15 @@ We collaborate with parents, caregivers, educators, and other professional disci
 
     *   As an individual approaches goal mastery, the frequency of services may be reduced. The ultimate goal is independence. We support this transition on an individual basis, slowly weaning the individual out of services and into independence. The occupational therapist assists in the transition and provides recommendations for maintaining progress.
 
+{{< /col >}}
+
+{{< /cols >}}
+
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## 3 Key Benefits of Occupational Therapy
+## 3 Key <u>Benefits</u> of Occupational Therapy
 
-{{< cols min="16rem" gap="1.5rem" v="start" stagger="false" >}}
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### 1. Improve Independence & Quality of Life
@@ -213,7 +227,7 @@ By addressing risk factors early and promoting healthy development, occupational
 <br>
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
-## Ready to join our village?
+## Ready to join our <u>village</u>?
 3 simple steps to get started:
 
 #### STEP 1
@@ -236,9 +250,7 @@ Follow the guidance and plan we create together.  Start seeing positive changes 
 
 {{< button submit="true" form="ot-consultation" text="Request Consultation" >}}
 
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
-
-{{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" >}}
+{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}} {{< button url="tel:+18019876333" text="CALL US AT 801-987-6333" variant="outline" >}}
 
 {{< section img="/media/import/bg-10-03b06a66.jpg" bleed="false" overlay="true" overlayShade="bg-black/40" >}}
 
@@ -280,6 +292,4 @@ Let’s find out how we can help.
 <br>
 {{< contact-form id="ot-started" phone="optional" preferredContact="optional" message="optional" >}}
 
-{{< button submit="true" form="ot-started" text="Request Consultation" >}}
-
-{{< button url="/contact" text="SCHEDULE FREE CONSULTATION" >}}
+{{< button submit="true" form="ot-started" text="Request Consultation" >}} {{< button url="/contact" text="SCHEDULE FREE CONSULTATION" variant="outline" >}}

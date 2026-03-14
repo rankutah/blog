@@ -29,8 +29,8 @@ enableRobotsTXT = true
 
 [params]
   env = "production"
-  # Use the live site's CTA/button blue and a warmer off-white page background.
-  primaryColor        = "#00b5ef"
+  # Use the live site's stronger blue and a warmer off-white page background.
+  primaryColor        = "#008aff"
   logo                = "/media/logo.png"
   lightBackground     = "#fcfbf7"
   darkBackground      = "slate-950"
@@ -88,7 +88,8 @@ enableRobotsTXT = true
 
 [params.section.defaults]
   max   = "xl"
-  pad   = "lg"
+  pad   = "none"
+  padMobile = "sm"
   y     = "md"
   align = "start"
 

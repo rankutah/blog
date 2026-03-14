@@ -6,15 +6,15 @@ url: "/contact"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-69fb5be4.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 52vh" >}}
+{{< hero img="/media/import/bg-1-69fb5be4.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
-## Contact Us
+## <span class="bb-accent"><u>Contact</u></span> Us
 
 #### Our village of support is ready to help you and your family live a happy, successful life.
 
 {{< /hero >}}
 
-## Need to get in touch with us?
+## <span class="bb-accent">Need to get in touch with us?</span>
 
 Fill out the form below, and we'll promptly get back to you by email or phone Monday-Friday.
 
@@ -54,9 +54,7 @@ Office Hours: Mon - Fri 8:00 am - 7:00 pm, Sat - Sun Closed
 
 Reception Hours: Mon - Fri 8:00 am - 5:00 pm, Sat - Sun Closed
 
-{{< button url="/insurance" text="Insurance & Grants" variant="outline" >}}
-
-{{< button url="/apply" text="Join Our Team!" >}}
+{{< button url="/insurance" text="Insurance & Grants" variant="outline" >}} {{< button url="/apply" text="Join Our Team!" >}}
 
 {{< /col >}}
 
@@ -64,7 +62,7 @@ Reception Hours: Mon - Fri 8:00 am - 5:00 pm, Sat - Sun Closed
 
 ## Frequently Asked Questions
 
-{{< cols min="18rem" gap="2rem" v="start" >}}
+{{< cols gap="2rem" template="1fr 1fr 1fr" v="start" >}}
 
 {{< col card="true" y="start" >}}
 

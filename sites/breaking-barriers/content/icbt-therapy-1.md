@@ -6,15 +6,13 @@ url: "/icbt-therapy-1"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-0a38c74a.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-0a38c74a.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
 # ICBT Therapy at Breaking Barriers
 
 ### _You’ve tried everything, but nothing feels like it’s working. The meltdowns, the silence, the worry—it’s exhausting. At Breaking Barriers, we help your child find their voice, their joy, and their place in the world through ICBT:_ _Intensive Collaborative Behavior Therapy™__._
 
-{{< button url="#what-is-icbt" text="Learn About ICBT" >}}
-
-{{< button url="#take-the-next-step" text="Schedule a Consultation" variant="outline" >}}
+{{< button url="#what-is-icbt" text="Learn About ICBT" >}} {{< button url="#take-the-next-step" text="Schedule a Consultation" variant="outline" >}}
 
 {{< /hero >}}
 
@@ -84,7 +82,7 @@ We are one of the first ICBT Certified Facilities in the nation. That means your
 
 #### Here’s what sets us apart:
 
-{{< cols min="16rem" gap="1.5rem" v="start" stagger="false" >}}
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### Therapy Rooms Designed for Growth and Play

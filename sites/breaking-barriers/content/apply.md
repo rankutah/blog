@@ -6,19 +6,17 @@ url: "/apply"
 hero: true
 ---
 
-{{< hero img="/media/import/bg-1-e17ce73a.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 58vh" >}}
+{{< hero img="/media/import/bg-1-e17ce73a.png" bleed="true" overlay="true" overlayShade="bg-black/45" align="center" imgStyle="height: 100vh" >}}
 
-## Start your career at one of Utah's fastest-growing therapy centers
+## Start your career at one of Utah's <span class="bb-accent"><u>fastest-growing</u></span> therapy centers
 
 #### Breaking Barriers Therapy Services
 
-{{< button url="#current-openings" text="View Openings" >}}
-
-{{< button url="#join-our-team" text="Send Message" variant="outline" >}}
+{{< button url="#current-openings" text="View Openings" >}} {{< button url="#join-our-team" text="Send Message" variant="outline" >}}
 
 {{< /hero >}}
 
-## Why Work With Us?
+## Why <u>Work</u> With Us?
 
 {{< cols min="16rem" gap="1.5rem" v="start" stagger="false" >}}
 
@@ -29,54 +27,54 @@ With locations throughout Utah County, we’ve created a therapy center where fa
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
-### Our Mission
+### Our <u>Mission</u>
 
 We empower children and families to thrive, making reaching potential possible.
 {{< /col >}}
 
 {{< col card="true" y="start" >}}
-### Our Vision
+### Our <u>Vision</u>
 
 Our vision at BBTS is to be a beacon of exceptional care, expanding our reach to multiple facilities and guiding children and families toward transformative growth through our outstanding collaborative services.
 {{< /col >}}
 
 {{< /cols >}}
 
-## Our values are E.P.I.C.C.C
+## Our values are <span class="bb-accent">E.P.I.C.C.C</span>
 
-{{< cols min="14rem" gap="1rem" v="start" stagger="false" >}}
+{{< cols gap="1rem" template="1fr 1fr 1fr" v="start" classes="cp-apply-values-grid" stagger="false" >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="start" class="cp-apply-values-card" >}}
 ### Excellence
 
 Highest standards of assessment, treatment, and service.
 {{< /col >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="start" class="cp-apply-values-card" >}}
 ### Positivity
 
 Joyful, playful, and optimistic therapy interactions.
 {{< /col >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="start" class="cp-apply-values-card" >}}
 ### Integrity
 
 Transparency, honesty, and ethical decision-making and processes.
 {{< /col >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="start" class="cp-apply-values-card" >}}
 ### Compassion
 
 Empathy, understanding, and genuine care for children and parents.
 {{< /col >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="start" class="cp-apply-values-card" >}}
 ### Collaboration
 
 Cooperation among therapists, caregivers, and other professionals.
 {{< /col >}}
 
-{{< col card="true" y="start" >}}
+{{< col card="true" y="start" class="cp-apply-values-card" >}}
 ### Creativity
 
 Inspire innovative approaches, adapt to changing needs, and drive positive change.
@@ -84,11 +82,11 @@ Inspire innovative approaches, adapt to changing needs, and drive positive chang
 
 {{< /cols >}}
 
-## Ready to Join Our Team?
+## Ready to Join <u>Our Team</u>?
 
-## Current Openings {#current-openings}
+## Current <u>Openings</u> {#current-openings}
 
-{{< cols min="18rem" gap="1.5rem" v="start" stagger="false" >}}
+{{< cols gap="1.5rem" template="1fr 1fr 1fr" v="start" stagger="false" >}}
 
 {{< col card="true" y="start" >}}
 ### ABA Therapy
@@ -101,14 +99,14 @@ Inspire innovative approaches, adapt to changing needs, and drive positive chang
 {{< col card="true" y="start" >}}
 ### Rehabilitation Therapy
 
-* [Speech-Language Pathologist](https://docs.google.com/document/d/1WsKksesaOTeujLPTl_Blh3452gP0KzBRR1RwWeSSB2s/edit?usp=sharing)
+* [<u>Speech-Language Pathologist</u>](https://docs.google.com/document/d/1WsKksesaOTeujLPTl_Blh3452gP0KzBRR1RwWeSSB2s/edit?usp=sharing)
 * [Certified Occupational Therapy Assistant (COTA)](https://docs.google.com/document/d/1FLpk_SmM98Szgbk6Qk54-lqsgvggIpP948RwSDge_VE/edit?usp=sharing)
 * [Occupational Therapist](https://docs.google.com/document/d/1cDYDPx4fY3cuv_MDGoY6ZS-0yg2yFpdvotTxz0LsbHc/edit?usp=sharing)
 {{< /col >}}
 
 {{< /cols >}}
 
-## Let’s Discover How You Can Help! {#join-our-team}
+## Let’s Discover How <span class="bb-accent">You</span> Can <u>Help</u>! {#join-our-team}
 
 {{< cols min="20rem" gap="1.5rem" v="start" stagger="false" >}}
 

@@ -30,17 +30,19 @@
 {{- $vhMode      := lower ($p.vh | default "") -}}
 {{- $vhHeightRaw := printf "%v" ($p.vhHeight | default "92") -}}
 {{- $vhHeight    := cond (gt (len (findRE `^[0-9]+(?:\.[0-9]+)?$` $vhHeightRaw)) 0) $vhHeightRaw "92" -}}
+{{- $headerHeightVar := "var(--site-header-h, 0px)" -}}
 
 {{- $defs := $page.Site.Params.section.defaults | default (dict) -}}
 {{- $defMax   := (index $defs "max")   | default "xl" -}}
 {{- $defPad   := (index $defs "pad")   | default "lg" -}}
+{{- $defPadMobile := (index $defs "padMobile") | default "" -}}
 {{- $defAlign := (index $defs "align") | default "start" -}}
 {{- $defAlignY:= (index $defs "alignY")| default "" -}}
 {{- $defMinh  := (index $defs "minh")  | default "" -}}
 
 {{- $max     := $p.max    | default $defMax -}}
 {{- $pad     := $p.pad    | default $defPad -}}
-{{- $padMobile := $p.padMobile | default "" -}}
+{{- $padMobile := $p.padMobile | default $defPadMobile -}}
 {{- $align   := $p.align  | default $defAlign -}}
 {{- $alignY  := $p.alignY | default $defAlignY -}}
 {{- $minh    := $p.minh   | default $defMinh -}}
@@ -157,11 +159,11 @@
 {{- $heightStyle := "" -}}
 {{- if and (ne $vhMode "") (not $vhDisabled) -}}
   {{- if eq $vhMode "svh" -}}
-    {{- $heightStyle = printf "height: %svh; height: %ssvh;" $vhHeight $vhHeight -}}
+    {{- $heightStyle = printf "height: calc(%svh - %s); height: calc(%ssvh - %s);" $vhHeight $headerHeightVar $vhHeight $headerHeightVar -}}
   {{- else if eq $vhMode "dvh" -}}
-    {{- $heightStyle = printf "height: %svh; height: %sdvh;" $vhHeight $vhHeight -}}
+    {{- $heightStyle = printf "height: calc(%svh - %s); height: calc(%sdvh - %s);" $vhHeight $headerHeightVar $vhHeight $headerHeightVar -}}
   {{- else if eq $vhMode "vh" -}}
-    {{- $heightStyle = printf "height: %svh;" $vhHeight -}}
+    {{- $heightStyle = printf "height: calc(%svh - %s);" $vhHeight $headerHeightVar -}}
   {{- end -}}
 {{- end -}}
 

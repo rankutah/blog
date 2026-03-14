@@ -24,7 +24,7 @@ const root = process.cwd();
 const contentDir = path.join(root, 'sites', SITE, 'content');
 const IGNORE_FILES = new Set(['footer.md']);
 const IGNORE_INTERNAL_LINKS = new Set(['blog.md', 'privacy.md', 'terms.md']);
-const IGNORE_ORPHAN_CHECK = new Set(['index.md', '_index.md', 'footer.md', 'thank-you.md', 'search.md', 'privacy.md', 'terms.md']);
+const IGNORE_ORPHAN_CHECK = new Set(['index.md', '_index.md', 'footer.md', 'thank-you.md', 'search.md', 'privacy.md', 'terms.md', 'cart.md']);
 
 function* walk(dir){
   const entries = fs.existsSync(dir) ? fs.readdirSync(dir, { withFileTypes:true }) : [];

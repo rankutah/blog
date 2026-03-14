@@ -151,9 +151,14 @@
     {{- $defs := .Site.Params.section.defaults | default (dict) -}}
     {{- $defMax := (index $defs "max") | default "xl" -}}
     {{- $defPad := (index $defs "pad") | default "lg" -}}
+    {{- $defPadMobile := (index $defs "padMobile") | default "" -}}
     {{- $maxMap := dict "sm" "max-w-screen-sm" "md" "max-w-3xl" "lg" "max-w-5xl" "xl" "max-w-7xl" "2xl" "max-w-screen-2xl" "full" "max-w-none" -}}
     {{- $padMap := dict "none" "px-0" "sm" "px-4" "md" "px-6" "lg" "px-8" -}}
-    {{- $container := printf "%s mx-auto %s" (index $maxMap $defMax | default "max-w-7xl") (index $padMap $defPad | default "px-8") -}}
+    {{- $padClass := (index $padMap $defPad | default "px-8") -}}
+    {{- if ne $defPadMobile "" -}}
+      {{- $padClass = printf "%s md:%s" (index $padMap $defPadMobile | default "px-0") $padClass -}}
+    {{- end -}}
+    {{- $container := printf "%s mx-auto %s" (index $maxMap $defMax | default "max-w-7xl") $padClass -}}
     <div class="{{ $container }}">
       {{- block "main" . }}{{ end }}
     </div>
