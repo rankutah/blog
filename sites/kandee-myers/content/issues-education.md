@@ -32,7 +32,7 @@ In my twenties, I was admitted to the College of Education at the University of 
 
 That early path shaped how **I view public education—not as a policy debate, but as a calling**. Public school teachers shape lives every day. They deserve respect, meaningful support, and compensation that reflects the time, skill, and dedication they give to Utah’s children.
 
-**I believe property tax dollars should prioritize public schools.** School Districts deserves steady, reliable support from both elected leaders and the communities it serves. Public schools welcome every child—regardless of background, belief, or ability. That commitment matters deeply to me.
+**I believe property tax dollars should prioritize public schools.** School Districts deserve steady, reliable support from both elected leaders and the communities it serves. Public schools welcome every child—regardless of background, belief, or ability. That commitment matters deeply to me.
 
 I will examine how property taxes are allocated, ask practical, data-driven questions, and pursue solutions grounded in collaboration. **This is not about slogans—it is about getting the details right while welcoming thoughtful debate.**
 
