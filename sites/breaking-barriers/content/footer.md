@@ -63,6 +63,8 @@ Sat - Sun Closed
 [Insurance & Grants](/insurance) • [Employment](/apply) • [Donate](/donate) • [Contact](/contact)
 {.center}
 
+{{< socials size="w-8 h-8" gap="gap-3" align="center" >}}
+
 The content of this website does not serve as medical advice nor does it substitute for a thorough medical evaluation by a health care practitioner. It also does not represent the opinions of any of the mentioned medical institutions or practitioners. Consult a physician or local health care provider before changing your health care regimen.
 {.center}
 

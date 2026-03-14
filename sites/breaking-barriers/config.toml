@@ -86,6 +86,65 @@ enableRobotsTXT = true
   errorMessage   = "Sorry, something went wrong. Please try again."
   redirect       = ""
 
+[params.socialDefaults]
+  size = "w-8 h-8"
+  gap  = "gap-3"
+
+  [[params.social]]
+    name = "facebook"
+    url  = "https://www.facebook.com/breakingbarrierstherapyservices/"
+    icon = "media/facebook.png"
+    alt  = "Facebook"
+
+  [[params.social]]
+    name = "instagram"
+    url  = "https://www.instagram.com/breakingbarrierstherapy/"
+    icon = "media/instagram.png"
+    alt  = "Instagram"
+
+[params.schema.organization]
+  enabled   = true
+  name      = "Breaking Barriers Therapy"
+  legalName = "Breaking Barriers Therapy"
+  logo      = "/media/logo.png"
+  sameAs = [
+    "https://www.facebook.com/breakingbarrierstherapyservices/",
+    "https://www.instagram.com/breakingbarrierstherapy/"
+  ]
+
+[params.schema.localBusiness]
+  enabled   = true
+  type      = "MedicalBusiness"
+  name      = "Breaking Barriers Therapy"
+  id        = "#localbusiness"
+  url       = "/"
+  image     = "/media/logo.png"
+  logo      = "/media/logo.png"
+  telephone = "+1-801-987-6333"
+  sameAs = [
+    "https://www.facebook.com/breakingbarrierstherapyservices/",
+    "https://www.instagram.com/breakingbarrierstherapy/"
+  ]
+  areaServed = ["Utah County, UT"]
+
+  [[params.schema.localBusiness.locations]]
+    name            = "Breaking Barriers Therapy - Saratoga Springs"
+    hasMap          = "https://share.google/35Ezw6E8v5p2I2fJ0"
+    streetAddress   = "24 W Sergeant Court Drive, Suite 204"
+    addressLocality = "Saratoga Springs"
+    addressRegion   = "UT"
+    postalCode      = "84045"
+    addressCountry  = "US"
+
+  [[params.schema.localBusiness.locations]]
+    name            = "Breaking Barriers Therapy - Lehi"
+    hasMap          = "https://share.google/7pqDiIXDFuvFuKQ55"
+    streetAddress   = "400 Millpond Dr #E"
+    addressLocality = "Lehi"
+    addressRegion   = "UT"
+    postalCode      = "84043"
+    addressCountry  = "US"
+
 [params.section.defaults]
   max   = "xl"
   pad   = "none"

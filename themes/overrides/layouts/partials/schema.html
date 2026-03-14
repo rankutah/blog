@@ -14,6 +14,16 @@
     {{- $lb = . -}}
   {{- end -}}
 {{- end -}}
+{{- if not $lb -}}
+  {{- with .Site.Params.schema.localBusiness -}}
+    {{- $lb = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $lb -}}
+  {{- with .Site.Params.localBusiness -}}
+    {{- $lb = . -}}
+  {{- end -}}
+{{- end -}}
 
 {{- /* Helper: get value from a map key safely */ -}}
 {{- $lbEnabled := false -}}
@@ -183,6 +193,50 @@
 {{- /* openingHoursSpecification: pass-through array of objects if provided */ -}}
 {{- with (and (ne (printf "%T" $lb) "bool") (index $lb "openingHoursSpecification")) -}}
   {{- $obj = merge $obj (dict "openingHoursSpecification" .) -}}
+{{- end -}}
+
+{{- /* location: expand a simplified site config into Place objects when provided */ -}}
+{{- if (and (ne (printf "%T" $lb) "bool") (isset $lb "locations")) -}}
+  {{- $locations := slice -}}
+  {{- range (index $lb "locations") -}}
+    {{- $loc := dict "@type" "Place" -}}
+    {{- with (index . "name") -}}
+      {{- $loc = merge $loc (dict "name" .) -}}
+    {{- end -}}
+    {{- with (index . "url") -}}
+      {{- $locUrl := (printf "%v" .) -}}
+      {{- if not (findRE "^https?://" $locUrl) -}}
+        {{- $locUrl = $locUrl | absURL -}}
+      {{- end -}}
+      {{- $loc = merge $loc (dict "url" $locUrl) -}}
+    {{- end -}}
+    {{- with (index . "hasMap") -}}
+      {{- $loc = merge $loc (dict "hasMap" .) -}}
+    {{- end -}}
+    {{- $addr := dict "@type" "PostalAddress" -}}
+    {{- with (index . "streetAddress") -}}
+      {{- $addr = merge $addr (dict "streetAddress" .) -}}
+    {{- end -}}
+    {{- with (index . "addressLocality") -}}
+      {{- $addr = merge $addr (dict "addressLocality" .) -}}
+    {{- end -}}
+    {{- with (index . "addressRegion") -}}
+      {{- $addr = merge $addr (dict "addressRegion" .) -}}
+    {{- end -}}
+    {{- with (index . "postalCode") -}}
+      {{- $addr = merge $addr (dict "postalCode" .) -}}
+    {{- end -}}
+    {{- with (index . "addressCountry") -}}
+      {{- $addr = merge $addr (dict "addressCountry" .) -}}
+    {{- end -}}
+    {{- if gt (len $addr) 1 -}}
+      {{- $loc = merge $loc (dict "address" $addr) -}}
+    {{- end -}}
+    {{- $locations = $locations | append $loc -}}
+  {{- end -}}
+  {{- if gt (len $locations) 0 -}}
+    {{- $obj = merge $obj (dict "location" $locations) -}}
+  {{- end -}}
 {{- end -}}
 
 {{- /* sameAs, areaServed, hasMap, aggregateRating (optional pass-throughs) */ -}}
