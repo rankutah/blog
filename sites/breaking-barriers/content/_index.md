@@ -370,25 +370,20 @@ Follow the guidance and plan we create together. Start seeing positive changes a
 
 {{< button submit="true" form="home-consultation" text="Request Consultation" >}}
 
-{{< cols min="7rem" gap="0.75rem" v="center" classes="cp-logo-row" stagger="false" >}}
-
-{{< col card="false" y="center" >}}
-{{< img src="/media/import/ASHA_Certified_Logo_Black-2-2930679a.png" alt="ASHA certified logo" class="mx-auto w-auto max-w-[5.5rem] sm:max-w-[6.5rem] md:max-w-[8rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 128px, 88px" >}}
-{{< /col >}}
-
-{{< col card="false" y="center" >}}
-{{< img src="/media/import/BACB_Logo_200-b12a2bd7.png" alt="BACB logo" class="mx-auto w-auto max-w-[5.5rem] sm:max-w-[6.5rem] md:max-w-[8rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 128px, 88px" >}}
-{{< /col >}}
-
-{{< col card="false" y="center" >}}
-{{< img src="/media/import/Member_Logo_CASP-5f306bf6.png" alt="CASP member logo" class="mx-auto w-auto max-w-[5.5rem] sm:max-w-[6.5rem] md:max-w-[8rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 128px, 88px" >}}
-{{< /col >}}
-
-{{< col card="false" y="center" >}}
-{{< img src="/media/import/usha_LOGO_2019apr24-c921aae4.png" alt="USHA logo" class="mx-auto w-auto max-w-[5.5rem] sm:max-w-[6.5rem] md:max-w-[8rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 128px, 88px" >}}
-{{< /col >}}
-
-{{< /cols >}}
+<div class="cp-logo-row not-prose mx-auto grid w-fit max-w-full grid-flow-col auto-cols-max items-center justify-center gap-2 sm:gap-3 md:gap-4">
+	<div class="flex items-center justify-center">
+		{{< img src="/media/import/ASHA_Certified_Logo_Black-2-2930679a.png" alt="ASHA certified logo" class="mx-auto w-auto max-w-[4rem] sm:max-w-[5rem] md:max-w-[6.5rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 104px, 64px" >}}
+	</div>
+	<div class="flex items-center justify-center">
+		{{< img src="/media/import/BACB_Logo_200-b12a2bd7.png" alt="BACB logo" class="mx-auto w-auto max-w-[4rem] sm:max-w-[5rem] md:max-w-[6.5rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 104px, 64px" >}}
+	</div>
+	<div class="flex items-center justify-center">
+		{{< img src="/media/import/Member_Logo_CASP-5f306bf6.png" alt="CASP member logo" class="mx-auto w-auto max-w-[4rem] sm:max-w-[5rem] md:max-w-[6.5rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 104px, 64px" >}}
+	</div>
+	<div class="flex items-center justify-center">
+		{{< img src="/media/import/usha_LOGO_2019apr24-c921aae4.png" alt="USHA logo" class="mx-auto w-auto max-w-[4rem] sm:max-w-[5rem] md:max-w-[6.5rem] h-auto rounded-none shadow-none border-0" sizes="(min-width: 768px) 104px, 64px" >}}
+	</div>
+</div>
 
 {{< section y="sm" align="center" >}}
 
