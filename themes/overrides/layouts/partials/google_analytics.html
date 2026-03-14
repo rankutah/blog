@@ -14,15 +14,19 @@
 {{- $clarityEnabled := not (eq (index $clarityConf "enabled") false) -}}
 {{- $adsId := (index $adsConf "id") | default "" -}}
 {{- $adsLabel := (index $phoneReplaceConf "conversionLabel") | default ((index $adsConf "conversionLabel") | default "") -}}
-{{- $adsCombined := (cond (and (ne $adsId "") (ne $adsLabel "")) (printf "%s/%s" $adsId $adsLabel) $adsId) -}}
-{{- $adsEnabled := not (eq (index $adsConf "enabled") false) -}}
 {{- $tagId := (index $tagConf "id") | default "" -}}
 {{- if and (eq $tagId "") $gaEnabled (ne $gaId "") -}}
   {{- $tagId = $gaId -}}
 {{- end -}}
-{{- if and (eq $tagId "") $adsEnabled (ne $adsId "") -}}
+{{- $legacyAdsEnabled := not (eq (index $adsConf "enabled") false) -}}
+{{- if and (eq $tagId "") $legacyAdsEnabled (ne $adsId "") -}}
   {{- $tagId = $adsId -}}
 {{- end -}}
+{{- if and (eq $adsId "") (hasPrefix $tagId "AW-") -}}
+  {{- $adsId = $tagId -}}
+{{- end -}}
+{{- $adsCombined := (cond (and (ne $adsId "") (ne $adsLabel "")) (printf "%s/%s" $adsId $adsLabel) $adsId) -}}
+{{- $adsEnabled := and (ne $adsId "") (not (eq (index $adsConf "enabled") false)) -}}
 {{- $tagEnabled := cond (isset $tagConf "enabled") (not (eq (index $tagConf "enabled") false)) (ne $tagId "") -}}
 {{- $analyticsEventPrefix := (index $tagConf "analyticsEventPrefix") | default ((index $gaConf "analyticsEventPrefix") | default ((index $adsConf "analyticsEventPrefix") | default "")) -}}
 {{- $metaId := (index $metaConf "id") | default "" -}}
@@ -39,6 +43,7 @@
 {{- $lcpGate := (index $analytics "lcpGate") | default true -}}
 {{- $lcpMaxWaitMs := (index $analytics "lcpMaxWaitMs") | default 6000 -}}
 {{- $lcpQuietWindowMs := (index $analytics "lcpQuietWindowMs") | default 350 -}}
+{{- $immediateGoogleTag := and (not $useZaraz) $tagEnabled (not $onlyOnInteraction) (eq $delayMs 0) (eq $lcpGate false) -}}
 {{- /* Optional: explicit Zaraz script URL (e.g. static.cloudflareinsights.com/zaraz/s.js?z=...) */ -}}
 {{- $zarazSrc := (index $analytics "zarazSrc") | default "" -}}
 {{- /* Optional per-platform overrides: clarity can be delayed even when global is 0 */ -}}
@@ -47,7 +52,7 @@
 {{- $debugMode := (index $analytics "debugMode") | default false -}}
 {{- /* Optional: enable Google Ads website call conversions (forwarding numbers) */ -}}
 {{- $adsPhoneReplace := (index $phoneReplaceConf "enabled") | default ((index $adsConf "phoneReplace") | default false) -}}
-{{- $adsConversions := (index $adsConf "conversions") | default (dict) -}}
+{{- $conversionRules := (index $tagConf "conversions") | default ((index $adsConf "conversions") | default (dict)) -}}
 {{- $header := site.Params.header | default (dict) -}}
 {{- $sitePhone := (index $header "phoneNumber") | default "" -}}
 {{- $adsBootstrap := resources.Get "js/ads-conversion-bootstrap.js" | resources.Minify -}}
@@ -79,7 +84,7 @@
   "googleAds" (dict
     "enabled" $adsEnabled
     "id" (cond $adsEnabled $adsId "")
-    "conversions" (cond $adsEnabled $adsConversions (dict))
+    "conversions" $conversionRules
   )
 -}}
 
@@ -166,11 +171,26 @@
 
 
 <script id="cp-analytics-config" type="application/json">{{ $cfg | jsonify | safeJS }}</script>
+{{- if $immediateGoogleTag -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $tagId | urlquery }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  {{- if $debugMode -}}
+  window.gtag('config', {{ $tagId | jsonify | safeJS }}, { debug_mode: true });
+  {{- else -}}
+  window.gtag('config', {{ $tagId | jsonify | safeJS }});
+  {{- end -}}
+  window.__cpGoogleTagInitialized = true;
+</script>
+{{- else -}}
 <script>
   // Stubs: safe no-ops that collect calls before real libs load
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
 </script>
+{{- end -}}
 <script>{{ $adsBootstrap.Content | safeJS }}</script>
 
 {{- /*

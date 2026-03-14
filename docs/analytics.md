@@ -18,6 +18,49 @@ Patterned after `sites/rank-utah/config.toml`:
     enabled = true
     analyticsEventPrefix = "key_"
 
+    [params.analytics.googleTag.conversions.callClick]
+      enabled = false
+      sendTo = ""
+      value = 30
+      currency = "USD"
+      once = true
+
+    [params.analytics.googleTag.conversions.textClick]
+      enabled = false
+      sendTo = ""
+      value = 20
+      currency = "USD"
+      once = true
+
+    [params.analytics.googleTag.conversions.pricingPageView]
+      enabled = false
+      path = "/pricing"
+      sendTo = ""
+
+    [params.analytics.googleTag.conversions.contactPageView]
+      enabled = false
+      path = "/contact"
+      sendTo = ""
+
+    [params.analytics.googleTag.conversions.thankYouPageView]
+      enabled = false
+      path = "/thank-you"
+      sendTo = ""
+
+    [params.analytics.googleTag.conversions.welcomePageView]
+      enabled = false
+      path = "/welcome"
+      sendTo = ""
+      valueQueryParam = "value"
+
+    [params.analytics.googleTag.conversions.engagedUser]
+      enabled = false
+      sendTo = ""
+      minSessionSeconds = 10
+      minPages = 2
+      scrollPercent = 60
+      once = true
+
   [params.analytics.clarity]
     id = ""
     enabled = false
@@ -27,50 +70,9 @@ Patterned after `sites/rank-utah/config.toml`:
     conversionLabel = ""
 
   [params.analytics.googleAds]
+    # Optional Ads account override for phone replacement or when your routed
+    # googleTag id is not itself an Ads tag.
     id = ""
-
-    [params.analytics.googleAds.conversions.callClick]
-      enabled = false
-      sendTo = ""
-      value = 30
-      currency = "USD"
-      once = true
-
-    [params.analytics.googleAds.conversions.textClick]
-      enabled = false
-      sendTo = ""
-      value = 20
-      currency = "USD"
-      once = true
-
-    [params.analytics.googleAds.conversions.pricingPageView]
-      enabled = false
-      path = "/pricing"
-      sendTo = ""
-
-    [params.analytics.googleAds.conversions.contactPageView]
-      enabled = false
-      path = "/contact"
-      sendTo = ""
-
-    [params.analytics.googleAds.conversions.thankYouPageView]
-      enabled = false
-      path = "/thank-you"
-      sendTo = ""
-
-    [params.analytics.googleAds.conversions.welcomePageView]
-      enabled = false
-      path = "/welcome"
-      sendTo = ""
-      valueQueryParam = "value"
-
-    [params.analytics.googleAds.conversions.engagedUser]
-      enabled = false
-      sendTo = ""
-      minSessionSeconds = 10
-      minPages = 2
-      scrollPercent = 60
-      once = true
 
   [params.analytics.meta]
     id = ""
@@ -90,7 +92,7 @@ The shared loader treats `[params.analytics.googleTag]` as the single client-sid
 
 ## Google Ads conversions
 
-The shared theme now supports native Google Ads conversion events with per-site config under `[params.analytics.googleAds.conversions]`.
+The shared theme now supports native conversion events with per-site config under `[params.analytics.googleTag.conversions]`.
 
 Supported standard conversion keys:
 
@@ -104,8 +106,8 @@ Supported standard conversion keys:
 
 Behavior:
 
-- All configured conversions fire through `gtag('event', 'conversion', { send_to: ... })`
-- If `analyticsEventPrefix` is set, each Ads conversion also emits a companion analytics event named `<prefix><conversionKey>`.
+- If `sendTo` is set, the conversion also fires through `gtag('event', 'conversion', { send_to: ... })`
+- If `analyticsEventPrefix` is set, each matching conversion rule emits a companion analytics event named `<prefix><conversionKey>`, even when `sendTo` is still blank.
 - They are deduped with `localStorage`, so they fire only once per browser/user for that site hostname
 - Page-view conversions match the configured `path`
 - The recommended lead conversion is `thankYouPageView`; shared forms no longer auto-fire a Google Ads form-submit conversion
@@ -123,7 +125,7 @@ For purchase-complete redirects, use `welcomePageView` and pass the amount in th
 Example config:
 
 ```toml
-[params.analytics.googleAds.conversions.welcomePageView]
+[params.analytics.googleTag.conversions.welcomePageView]
   enabled = true
   path = "/welcome"
   sendTo = "AW-123456789/AbCdEfGhIjKlMnOp"
@@ -162,9 +164,12 @@ That will emit companion analytics events like:
 
 This is the recommended way to keep Ads conversion tracking intact while making GA4 key events easy to identify and mark.
 
+You can leave `sendTo = ""` temporarily while setting up Google Ads conversion actions. In that state, the rule will still emit the `key_...` analytics event to your routed Google tag, but it will not send an Ads conversion until a real `sendTo` label is configured.
+
 Backward compatibility:
 
 - The theme still accepts the old `params.analytics.google.analyticsEventPrefix` and `params.analytics.googleAds.analyticsEventPrefix`, but the preferred location is `params.analytics.googleTag.analyticsEventPrefix`
+- The theme still accepts the old `[params.analytics.googleAds.conversions]` path, but the preferred location is `[params.analytics.googleTag.conversions]`
 
 ## Phone Replacement
 
@@ -179,6 +184,7 @@ Google Ads website call conversion number replacement is configured separately f
 Behavior:
 
 - This uses the site's `params.analytics.googleAds.id` plus `params.analytics.phoneReplace.conversionLabel`
+- If `params.analytics.googleAds.id` is omitted and `params.analytics.googleTag.id` is an Ads tag like `AW-...`, the shared loader reuses that tag id automatically.
 - The shared loader configures Google Ads with `phone_conversion_number` using the site header phone number
 - This is only for Google forwarding-number replacement on phone calls, not for thank-you/welcome/page conversions
 
@@ -216,7 +222,7 @@ Direct override example:
 
 Supported data attributes:
 
-- `data-ads-conversion`: lookup key inside `[params.analytics.googleAds.conversions]`
+- `data-ads-conversion`: lookup key inside `[params.analytics.googleTag.conversions]`
 - `data-ads-send-to`: direct `send_to` override
 - `data-ads-value`: direct value override
 - `data-ads-currency`: direct currency override
@@ -243,6 +249,7 @@ Practical options:
 ## Migration notes
 
 - Preferred transport config is `[params.analytics.googleTag]`.
+- Preferred conversion config is `[params.analytics.googleTag.conversions]`.
 - Legacy `[params.analytics.google]` is still accepted as a fallback source for the single tag ID.
 - Legacy `[params.analytics.googleAds].enabled` is still accepted, but new configs should treat `[params.analytics.googleAds]` as an Ads feature block, not a second transport toggle.
 - Legacy `googleAnalyticsID` flat param is removed. Use `[params.analytics.googleTag].id` for new configs.

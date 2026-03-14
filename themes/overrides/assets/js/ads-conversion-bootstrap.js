@@ -107,27 +107,39 @@
     var base = entry && typeof entry === 'object' ? entry : {};
     var extra = overrides && typeof overrides === 'object' ? overrides : {};
     var sendTo = String(extra.sendTo || base.sendTo || '').trim();
-    if (!sendTo) return false;
 
     var once = parseBool(extra.once, parseBool(base.once, true));
     var overrideOnceKey = String(extra.onceKey || '').trim();
     if (once && hasFired(key, base, overrideOnceKey)) return false;
-    if (once) markFired(key, base, overrideOnceKey);
 
-    var payload = { send_to: sendTo };
     var value = toNumber(extra.value != null ? extra.value : base.value);
-    if (value != null) payload.value = value;
-
     var currency = String(extra.currency || base.currency || '').trim();
-    if (currency) payload.currency = currency;
-
     var eventName = String(extra.eventName || base.eventName || 'conversion').trim() || 'conversion';
+    var analyticsPayload = {};
+    if (value != null) analyticsPayload.value = value;
+    if (currency) analyticsPayload.currency = currency;
 
     try {
       if (typeof window.gtag === 'function') {
-        window.gtag('event', eventName, payload);
-        emitAnalyticsCompanionEvent(key, base, payload);
-        return true;
+        var fired = false;
+
+        if (sendTo) {
+          var adsPayload = { send_to: sendTo };
+          if (value != null) adsPayload.value = value;
+          if (currency) adsPayload.currency = currency;
+          window.gtag('event', eventName, adsPayload);
+          fired = true;
+        }
+
+        if (emitAnalyticsCompanionEvent(key, base, analyticsPayload)) {
+          fired = true;
+        }
+
+        if (fired && once) {
+          markFired(key, base, overrideOnceKey);
+        }
+
+        return fired;
       }
     } catch (e) {}
 
@@ -136,8 +148,8 @@
 
   function emitAnalyticsCompanionEvent(key, entry, conversionPayload) {
     var normalizedKey = normalizeEventKey((entry && entry.analyticsEventName) || key);
-    if (!analyticsEventPrefix || !normalizedKey) return;
-    if (typeof window.gtag !== 'function') return;
+    if (!analyticsEventPrefix || !normalizedKey) return false;
+    if (typeof window.gtag !== 'function') return false;
 
     var eventName = analyticsEventPrefix + normalizedKey;
     var payload = {
@@ -150,7 +162,10 @@
 
     try {
       window.gtag('event', eventName, payload);
+      return true;
     } catch (e) {}
+
+    return false;
   }
 
   function trackConfiguredConversion(key, overrides) {

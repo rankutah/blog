@@ -125,19 +125,7 @@ sameAs = []
     enabled = true
     analyticsEventPrefix = "key_"
 
-  [params.analytics.clarity]
-    id = "u9tbqd2kqk"
-    enabled = true
-
-  [params.analytics.googleAds]
-    id = "AW-17704568736"
-
-  [params.analytics.phoneReplace]
-    enabled = true
-    # Google Ads website call conversion label used for forwarding-number replacement.
-    conversionLabel = "uKziCM6p7tQbEKCPmfpB"
-
-  [params.analytics.googleAds.conversions.callClick]
+  [params.analytics.googleTag.conversions.callClick]
     enabled = false
     sendTo = ""
     value = 40
@@ -145,7 +133,7 @@ sameAs = []
     once = true
     onceKey = "call_click"
 
-  [params.analytics.googleAds.conversions.textClick]
+  [params.analytics.googleTag.conversions.textClick]
     enabled = false
     sendTo = ""
     value = 30
@@ -153,7 +141,7 @@ sameAs = []
     once = true
     onceKey = "text_click"
 
-  [params.analytics.googleAds.conversions.pricingPageView]
+  [params.analytics.googleTag.conversions.pricingPageView]
     enabled = false
     path = "/pricing"
     sendTo = ""
@@ -162,7 +150,7 @@ sameAs = []
     once = true
     onceKey = "pricing_page_view"
 
-  [params.analytics.googleAds.conversions.contactPageView]
+  [params.analytics.googleTag.conversions.contactPageView]
     enabled = false
     path = "/contact"
     sendTo = ""
@@ -171,7 +159,7 @@ sameAs = []
     once = true
     onceKey = "contact_page_view"
 
-  [params.analytics.googleAds.conversions.thankYouPageView]
+  [params.analytics.googleTag.conversions.thankYouPageView]
     enabled = true
     path = "/thank-you"
     sendTo = ""
@@ -180,7 +168,7 @@ sameAs = []
     once = true
     onceKey = "thank_you_page_view"
 
-  [params.analytics.googleAds.conversions.welcomePageView]
+  [params.analytics.googleTag.conversions.welcomePageView]
     enabled = false
     path = "/welcome"
     sendTo = ""
@@ -194,7 +182,7 @@ sameAs = []
     once = false
     onceKey = "welcome_page_view"
 
-  [params.analytics.googleAds.conversions.engagedUser]
+  [params.analytics.googleTag.conversions.engagedUser]
     enabled = false
     sendTo = ""
     value = 5
@@ -204,6 +192,18 @@ sameAs = []
     minSessionSeconds = 10
     minPages = 2
     scrollPercent = 60
+
+  [params.analytics.clarity]
+    id = "u9tbqd2kqk"
+    enabled = true
+
+  [params.analytics.googleAds]
+    id = "AW-17704568736"
+
+  [params.analytics.phoneReplace]
+    enabled = true
+    # Google Ads website call conversion label used for forwarding-number replacement.
+    conversionLabel = "uKziCM6p7tQbEKCPmfpB"
 
   [params.analytics.meta]
     id = ""               # e.g., 123456789012345 (Meta Pixel)

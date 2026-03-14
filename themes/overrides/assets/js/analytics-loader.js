@@ -98,7 +98,8 @@
   var ADS_COMBINED = (cfg.googleAdsCombinedId || '').trim();
   var META_ID = (cfg.metaPixelId || '').trim();
 
-  var DELAY_MS = parseInt(cfg.delayMs, 10) || 4000;
+  var DELAY_MS = cfg.delayMs == null ? 4000 : parseInt(cfg.delayMs, 10);
+  if (!(DELAY_MS >= 0)) DELAY_MS = 4000;
   var LOAD_EVENTS = Array.isArray(cfg.loadEvents) ? cfg.loadEvents : [];
   var ONLY_ON_INTERACTION = !!cfg.onlyOnInteraction;
 
@@ -131,11 +132,13 @@
 
   function initGoogleTag() {
     if (!GOOGLE_TAG_ID) return;
+    if (window.__cpGoogleTagInitialized) return;
     ensureGtagLoaded(GOOGLE_TAG_ID);
     try {
       window.gtag('js', new Date());
       if (cfg.debugMode) window.gtag('config', GOOGLE_TAG_ID, { debug_mode: true });
       else window.gtag('config', GOOGLE_TAG_ID);
+      window.__cpGoogleTagInitialized = true;
     } catch (e) {}
   }
 
