@@ -129,8 +129,7 @@ OT can help with:
 
 *   And so much more
 
-## "Anything that occupies your time that you may struggle with,
-<span class="bb-accent"><u>occupational therapy</u></span> can help with."
+## "Anything that occupies your time that you may struggle with, <span class="bb-accent"><u>occupational therapy</u></span> can help with."
 
 {{< button url="/contact" text="SCHEDULE A FREE CONSULTATION" >}}
 
