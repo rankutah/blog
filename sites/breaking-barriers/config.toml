@@ -148,4 +148,4 @@ enableRobotsTXT = true
     url = "/contact"
     weight = 70
 
-  # trigger to launch rebuild
+  # trigger to launch rebuild new
