@@ -103,6 +103,9 @@
 {{- $imgClassesNoFit = delimit $imgFiltered " " -}}
 {{- $imgClassesFinal := strings.TrimSpace (printf "%s object-%s" $imgClassesNoFit $fit) -}}
 {{- $imgStyle   := .Get "imgStyle"   | default "" -}}
+{{- $loadingParam := lower (.Get "loading" | default "") -}}
+{{- $loading := cond (ne $loadingParam "") $loadingParam "lazy" -}}
+{{- $fetchpriority := cond (eq $loading "eager") "high" "low" -}}
 {{- $vhMode     := lower (.Get "vh" | default "") -}} {{/* "vh" | "svh" | "dvh" or empty */}}
 {{- /* If author provided a vh-based inline height, append an svh duplicate so it wins on mobile. */ -}}
 {{- $hasVhInStyle := and (ne $imgStyle "") (gt (len (findRE `\b[0-9.]+vh\b` $imgStyle)) 0) -}}
@@ -269,7 +272,7 @@
   <picture>
     {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
   {{- /* No WebP <source> */ -}}
-  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClassesFinal }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose {{ $imgClassesFinal }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="{{ $loading }}" fetchpriority="{{ $fetchpriority }}" decoding="async">
   </picture>
       {{- if $overlay -}}
         <div class="{{ $overlayWrap }}">
@@ -347,7 +350,7 @@
   <picture>
     {{- if gt (len $srcsetAvif) 0 -}}<source type="image/avif" srcset="{{ delimit $srcsetAvif ", " }}" sizes="100vw">{{- end -}}
   {{- /* No WebP <source> */ -}}
-  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClassesFinal }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="eager" fetchpriority="high" decoding="async">
+  <img src="{{ $fallbackSrc }}"{{ if gt (len $srcset) 0 }} srcset="{{ delimit $srcset ", " }}" sizes="100vw"{{ end }} alt="{{ $alt }}" class="not-prose block w-full {{ $imgClassesFinal }}"{{ if $imgStyle }} style="{{ $imgStyle | safeCSS }}"{{ end }} loading="{{ $loading }}" fetchpriority="{{ $fetchpriority }}" decoding="async">
   </picture>
         {{- if $overlay -}}
           <div class="{{ $overlayWrap }}">
