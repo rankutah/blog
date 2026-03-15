@@ -92,15 +92,44 @@
     return raw.toLowerCase();
   }
 
+  function normalizeLookupKey(value) {
+    return String(value || '')
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '');
+  }
+
+  function hasOwn(obj, key) {
+    return !!obj && Object.prototype.hasOwnProperty.call(obj, key);
+  }
+
+  function getObjectValue(obj, key, fallback) {
+    var normalizedKey;
+    var keys;
+    var i;
+    if (!obj || typeof obj !== 'object') return fallback;
+    if (hasOwn(obj, key)) return obj[key];
+
+    normalizedKey = normalizeLookupKey(key);
+    keys = Object.keys(obj);
+    for (i = 0; i < keys.length; i += 1) {
+      if (normalizeLookupKey(keys[i]) === normalizedKey) {
+        return obj[keys[i]];
+      }
+    }
+
+    return fallback;
+  }
+
   function getConversion(key) {
     if (!key || typeof conversions !== 'object') return null;
-    var entry = conversions[key];
+    var entry = getObjectValue(conversions, key, null);
     if (!entry || typeof entry !== 'object') return null;
     return entry;
   }
 
   function onceStorageKey(key, entry, overrideKey) {
-    var raw = overrideKey || (entry && entry.onceKey) || key || (entry && entry.sendTo) || 'conversion';
+    var raw = overrideKey || getObjectValue(entry, 'onceKey', '') || key || getObjectValue(entry, 'sendTo', '') || 'conversion';
     return storagePrefix + String(raw);
   }
 
@@ -123,17 +152,17 @@
   function fireConversion(key, entry, overrides) {
     var base = entry && typeof entry === 'object' ? entry : {};
     var extra = overrides && typeof overrides === 'object' ? overrides : {};
-    var sendTo = String(extra.sendTo || base.sendTo || '').trim();
-    var transportType = String(extra.transportType || base.transportType || '').trim();
+    var sendTo = String(extra.sendTo || getObjectValue(base, 'sendTo', '') || '').trim();
+    var transportType = String(extra.transportType || getObjectValue(base, 'transportType', '') || '').trim();
 
-    var once = parseBool(extra.once, parseBool(base.once, true));
+    var once = parseBool(extra.once, parseBool(getObjectValue(base, 'once', undefined), true));
     var overrideOnceKey = String(extra.onceKey || '').trim();
     if (once && hasFired(key, base, overrideOnceKey)) return false;
 
-    var value = toNumber(extra.value != null ? extra.value : base.value);
-    var currency = String(extra.currency || base.currency || '').trim();
+    var value = toNumber(extra.value != null ? extra.value : getObjectValue(base, 'value', null));
+    var currency = String(extra.currency || getObjectValue(base, 'currency', '') || '').trim();
     if (!currency && value != null) currency = 'USD';
-    var eventName = String(extra.eventName || base.eventName || 'conversion').trim() || 'conversion';
+    var eventName = String(extra.eventName || getObjectValue(base, 'eventName', 'conversion') || 'conversion').trim() || 'conversion';
     var analyticsPayload = {};
     if (value != null) analyticsPayload.value = value;
     if (currency) analyticsPayload.currency = currency;
@@ -171,7 +200,7 @@
   }
 
   function emitAnalyticsCompanionEvent(key, entry, conversionPayload, transportType) {
-    var normalizedKey = normalizeEventKey((entry && entry.analyticsEventName) || key);
+    var normalizedKey = normalizeEventKey(getObjectValue(entry, 'analyticsEventName', '') || key);
     if (!analyticsEventPrefix || !normalizedKey) return false;
     if (typeof window.gtag !== 'function') return false;
 
@@ -198,8 +227,8 @@
   }
 
   function shouldEmitPageAttribution(entry, value) {
-    if (!entry || entry.enabled === false) return false;
-    if (parseBool(entry.includeInPageAttribution, false) !== true) return false;
+    if (!entry || getObjectValue(entry, 'enabled', true) === false) return false;
+    if (parseBool(getObjectValue(entry, 'includeInPageAttribution', false), false) !== true) return false;
     if (value == null) return false;
     if (typeof window.gtag !== 'function') return false;
     return true;
@@ -306,13 +335,13 @@
 
   function maybeTrackPageView(key) {
     var entry = getConversion(key);
-    if (!entry || entry.enabled === false) return;
-    var targetPath = normalizePath(entry.path);
+    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
+    var targetPath = normalizePath(getObjectValue(entry, 'path', ''));
     if (!targetPath) return;
     if (targetPath !== currentPath()) return;
 
     var overrides = {};
-    var valueQueryParam = String(entry.valueQueryParam || '').trim();
+    var valueQueryParam = String(getObjectValue(entry, 'valueQueryParam', '') || '').trim();
     if (valueQueryParam) {
       var params = currentSearchParams();
       var queryValue = params ? params.get(valueQueryParam) : null;
@@ -325,8 +354,8 @@
 
   function maybeTrackEngagedUserByPages(pageCount) {
     var entry = getConversion('engagedUser');
-    if (!entry || entry.enabled === false) return;
-    var minPages = parseInt(entry.minPages, 10);
+    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
+    var minPages = parseInt(getObjectValue(entry, 'minPages', null), 10);
     if (!(minPages >= 1)) minPages = 2;
     if (pageCount >= minPages) markEngagedPageEligible();
   }
@@ -339,12 +368,12 @@
   };
 
   function engagedScrollFallbackEnabled(entry) {
-    return parseBool(entry && entry.allowScrollFallback, false) === true;
+    return parseBool(getObjectValue(entry, 'allowScrollFallback', false), false) === true;
   }
 
   function maybeFireEngagedUser() {
     var entry = getConversion('engagedUser');
-    if (!entry || entry.enabled === false) return;
+    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
     if (engagedState.fired) return;
     if (hasFired('engagedUser', entry)) {
       engagedState.fired = true;
@@ -352,7 +381,7 @@
     }
     var eligible = engagedState.pageEligible || (engagedScrollFallbackEnabled(entry) && engagedState.scrollEligible);
     if (!engagedState.timerDone || !eligible) return;
-    if (fireConversion('engagedUser', entry, { onceKey: entry.onceKey || 'engaged_user' })) {
+    if (fireConversion('engagedUser', entry, { onceKey: getObjectValue(entry, 'onceKey', '') || 'engaged_user' })) {
       engagedState.fired = true;
     }
   }
@@ -369,8 +398,8 @@
 
   function setupEngagedTimer() {
     var entry = getConversion('engagedUser');
-    if (!entry || entry.enabled === false) return;
-    var minSessionSeconds = toNumber(entry.minSessionSeconds);
+    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
+    var minSessionSeconds = toNumber(getObjectValue(entry, 'minSessionSeconds', null));
     if (minSessionSeconds == null) minSessionSeconds = 10;
     minSessionSeconds = Math.max(0, minSessionSeconds);
 
@@ -382,9 +411,9 @@
 
   function setupEngagedScrollTracking() {
     var entry = getConversion('engagedUser');
-    if (!entry || entry.enabled === false) return;
+    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
     if (!engagedScrollFallbackEnabled(entry)) return;
-    var threshold = toNumber(entry.scrollPercent);
+    var threshold = toNumber(getObjectValue(entry, 'scrollPercent', null));
     if (threshold == null) threshold = 60;
     threshold = Math.max(1, Math.min(100, threshold));
 
@@ -460,9 +489,9 @@
   }
 
   function matchesOutboundRule(link, entry, url) {
-    if (!entry || entry.enabled === false || !link || !url || !isOutboundUrl(url)) return false;
+    if (!entry || getObjectValue(entry, 'enabled', true) === false || !link || !url || !isOutboundUrl(url)) return false;
 
-    var selector = String(entry.selector || '').trim();
+    var selector = String(getObjectValue(entry, 'selector', '') || '').trim();
     if (selector) {
       try {
         if (!link.matches || !link.matches(selector)) return false;
@@ -471,9 +500,10 @@
       }
     }
 
-    var mode = String(entry.matchMode || 'hrefContains').trim() || 'hrefContains';
-    var matchValues = normalizeMatchList(entry.matchValues);
-    if (entry.matchValue != null && entry.matchValue !== '') matchValues.push(entry.matchValue);
+    var mode = String(getObjectValue(entry, 'matchMode', 'hrefContains') || 'hrefContains').trim() || 'hrefContains';
+    var matchValues = normalizeMatchList(getObjectValue(entry, 'matchValues', null));
+    var singleMatchValue = getObjectValue(entry, 'matchValue', null);
+    if (singleMatchValue != null && singleMatchValue !== '') matchValues.push(singleMatchValue);
     if (!matchValues.length) return true;
 
     var absoluteHref = String(url.href || '');
