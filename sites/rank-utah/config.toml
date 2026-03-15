@@ -118,18 +118,23 @@ sameAs = []
     analyticsEventPrefix = "key_"
 
   [params.analytics.googleTag.conversions.callClick]
+    type = "linkClick"
+    protocol = "tel"
     enabled = true
     sendTo = ""
     value = 20
     includeInPageAttribution = true
 
   [params.analytics.googleTag.conversions.textClick]
+    type = "linkClick"
+    protocol = "sms"
     enabled = true
     sendTo = ""
     value = 10
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.pricingPageView]
+    type = "pageView"
     enabled = true
     path = "/pricing"
     sendTo = ""
@@ -137,6 +142,7 @@ sameAs = []
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.contactPageView]
+    type = "pageView"
     enabled = true
     path = "/contact"
     sendTo = ""
@@ -144,6 +150,7 @@ sameAs = []
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.thankYouPageView]
+    type = "pageView"
     enabled = true
     path = "/thank-you"
     sendTo = ""
@@ -151,7 +158,17 @@ sameAs = []
     includeInPageAttribution = true
     includeLastPageInAttribution = false
 
+  [params.analytics.googleTag.conversions.bookedPageView]
+    type = "pageView"
+    enabled = true
+    path = "/booked"
+    sendTo = ""
+    value = 20
+    includeInPageAttribution = true
+    includeLastPageInAttribution = false
+
   [params.analytics.googleTag.conversions.welcomePageView]
+    type = "pageView"
     enabled = true
     path = "/welcome"
     sendTo = ""
@@ -163,12 +180,24 @@ sameAs = []
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.engagedUser]
+    type = "engagement"
     enabled = true
     sendTo = ""
     value = 0.1
     minSessionSeconds = 10
     minPages = 2
     includeInPageAttribution = false
+
+  [params.analytics.googleTag.conversions.outboundLinkClick]
+    type = "linkClick"
+    enabled = false
+    sendTo = ""
+    value = 5
+    outboundOnly = true
+    matchMode = "hostEquals"
+    matchValues = ["cal.com", "buy.stripe.com", "forms.gle", "docs.google.com"]
+    includeInPageAttribution = true
+    includeLastPageInAttribution = true
 
   [params.analytics.clarity]
     id = "u9tbqd2kqk"

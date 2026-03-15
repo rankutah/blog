@@ -128,6 +128,58 @@
     return entry;
   }
 
+  function canonicalConversionType(value) {
+    var normalized = normalizeLookupKey(value);
+    if (normalized === 'pageview') return 'pageView';
+    if (normalized === 'linkclick') return 'linkClick';
+    if (normalized === 'engagement') return 'engagement';
+    return '';
+  }
+
+  function inferLegacyConversionType(key) {
+    var normalized = normalizeLookupKey(key);
+    if (
+      normalized === 'pricingpageview' ||
+      normalized === 'contactpageview' ||
+      normalized === 'thankyoupageview' ||
+      normalized === 'welcomepageview'
+    ) {
+      return 'pageView';
+    }
+    if (normalized === 'callclick' || normalized === 'textclick' || normalized === 'outboundlinkclick') {
+      return 'linkClick';
+    }
+    if (normalized === 'engageduser') return 'engagement';
+    return '';
+  }
+
+  function getConversionType(key, entry) {
+    return canonicalConversionType(getObjectValue(entry, 'type', '')) || inferLegacyConversionType(key);
+  }
+
+  function getConversionEntries() {
+    var keys;
+    var list = [];
+    var i;
+    var key;
+    var entry;
+    if (!conversions || typeof conversions !== 'object') return list;
+    keys = Object.keys(conversions);
+    for (i = 0; i < keys.length; i += 1) {
+      key = keys[i];
+      entry = conversions[key];
+      if (!entry || typeof entry !== 'object') continue;
+      list.push({ key: key, entry: entry, type: getConversionType(key, entry) });
+    }
+    return list;
+  }
+
+  function getConversionEntriesByType(type) {
+    return getConversionEntries().filter(function (item) {
+      return item.type === type;
+    });
+  }
+
   function onceStorageKey(key, entry, overrideKey) {
     var raw = overrideKey || getObjectValue(entry, 'onceKey', '') || key || getObjectValue(entry, 'sendTo', '') || 'conversion';
     return storagePrefix + String(raw);
@@ -344,131 +396,6 @@
     return paths.length;
   }
 
-  function maybeTrackPageView(key) {
-    var entry = getConversion(key);
-    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
-    var targetPath = normalizePath(getObjectValue(entry, 'path', ''));
-    if (!targetPath) return;
-    if (targetPath !== currentPath()) return;
-
-    var overrides = {};
-    var valueQueryParam = String(getObjectValue(entry, 'valueQueryParam', '') || '').trim();
-    if (valueQueryParam) {
-      var params = currentSearchParams();
-      var queryValue = params ? params.get(valueQueryParam) : null;
-      var parsedValue = toNumber(queryValue);
-      if (parsedValue != null) overrides.value = parsedValue;
-    }
-
-    fireConversion(key, entry, overrides);
-  }
-
-  function maybeTrackEngagedUserByPages(pageCount) {
-    var entry = getConversion('engagedUser');
-    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
-    var minPages = parseInt(getObjectValue(entry, 'minPages', null), 10);
-    if (!(minPages >= 1)) minPages = 2;
-    if (pageCount >= minPages) markEngagedPageEligible();
-  }
-
-  var engagedState = {
-    timerDone: false,
-    pageEligible: false,
-    scrollEligible: false,
-    fired: false
-  };
-
-  function engagedScrollFallbackEnabled(entry) {
-    return parseBool(getObjectValue(entry, 'allowScrollFallback', false), false) === true;
-  }
-
-  function maybeFireEngagedUser() {
-    var entry = getConversion('engagedUser');
-    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
-    if (engagedState.fired) return;
-    if (hasFired('engagedUser', entry)) {
-      engagedState.fired = true;
-      return;
-    }
-    var eligible = engagedState.pageEligible || (engagedScrollFallbackEnabled(entry) && engagedState.scrollEligible);
-    if (!engagedState.timerDone || !eligible) return;
-    if (fireConversion('engagedUser', entry, { onceKey: getObjectValue(entry, 'onceKey', '') || 'engaged_user' })) {
-      engagedState.fired = true;
-    }
-  }
-
-  function markEngagedPageEligible() {
-    engagedState.pageEligible = true;
-    maybeFireEngagedUser();
-  }
-
-  function markEngagedScrollEligible() {
-    engagedState.scrollEligible = true;
-    maybeFireEngagedUser();
-  }
-
-  function setupEngagedTimer() {
-    var entry = getConversion('engagedUser');
-    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
-    var minSessionSeconds = toNumber(getObjectValue(entry, 'minSessionSeconds', null));
-    if (minSessionSeconds == null) minSessionSeconds = 10;
-    minSessionSeconds = Math.max(0, minSessionSeconds);
-
-    window.setTimeout(function () {
-      engagedState.timerDone = true;
-      maybeFireEngagedUser();
-    }, Math.round(minSessionSeconds * 1000));
-  }
-
-  function setupEngagedScrollTracking() {
-    var entry = getConversion('engagedUser');
-    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
-    if (!engagedScrollFallbackEnabled(entry)) return;
-    var threshold = toNumber(getObjectValue(entry, 'scrollPercent', null));
-    if (threshold == null) threshold = 60;
-    threshold = Math.max(1, Math.min(100, threshold));
-
-    function percentScrolled() {
-      var doc = document.documentElement;
-      var body = document.body;
-      var scrollTop = window.pageYOffset || doc.scrollTop || body.scrollTop || 0;
-      var viewport = window.innerHeight || doc.clientHeight || 0;
-      var height = Math.max(
-        body.scrollHeight || 0,
-        doc.scrollHeight || 0,
-        body.offsetHeight || 0,
-        doc.offsetHeight || 0,
-        body.clientHeight || 0,
-        doc.clientHeight || 0
-      );
-      var denom = height - viewport;
-      if (denom <= 0) return 100;
-      return (scrollTop / denom) * 100;
-    }
-
-    function onScroll() {
-      if (hasFired('engagedUser', entry) || engagedState.fired) {
-        window.removeEventListener('scroll', onScroll, true);
-        return;
-      }
-      if (percentScrolled() >= threshold) {
-        markEngagedScrollEligible();
-        window.removeEventListener('scroll', onScroll, true);
-      }
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true, capture: true });
-    onScroll();
-  }
-
-  function hrefType(el) {
-    if (!el || !el.getAttribute) return '';
-    var href = String(el.getAttribute('href') || '').trim().toLowerCase();
-    if (href.indexOf('tel:') === 0) return 'tel';
-    if (href.indexOf('sms:') === 0) return 'sms';
-    return '';
-  }
-
   function linkUrl(el) {
     if (!el || !el.getAttribute) return null;
     var href = String(el.getAttribute('href') || '').trim();
@@ -493,16 +420,87 @@
     return [value];
   }
 
+  function rawHref(el) {
+    if (!el || !el.getAttribute) return '';
+    return String(el.getAttribute('href') || '').trim();
+  }
+
+  function linkProtocol(el, url) {
+    var href = rawHref(el).toLowerCase();
+    if (href.indexOf('tel:') === 0) return 'tel';
+    if (href.indexOf('sms:') === 0) return 'sms';
+    if (href.indexOf('mailto:') === 0) return 'mailto';
+    if (!url) return '';
+    return String(url.protocol || '').toLowerCase().replace(/:$/, '');
+  }
+
+  function inferLegacyProtocol(key) {
+    var normalized = normalizeLookupKey(key);
+    if (normalized === 'callclick') return 'tel';
+    if (normalized === 'textclick') return 'sms';
+    return '';
+  }
+
+  function inferLegacyOutboundOnly(key) {
+    return normalizeLookupKey(key) === 'outboundlinkclick';
+  }
+
+  function matchesPagePathPrefix(path, prefix) {
+    var normalizedPrefix = normalizePath(prefix);
+    if (!normalizedPrefix) return false;
+    if (normalizedPrefix === '/') return true;
+    return path === normalizedPrefix || path.indexOf(normalizedPrefix + '/') === 0;
+  }
+
+  function matchesPageViewRule(entry) {
+    var path = currentPath();
+    var targetPath = normalizePath(getObjectValue(entry, 'path', ''));
+    var pathPrefix = getObjectValue(entry, 'pathPrefix', '');
+
+    if (targetPath && targetPath === path) return true;
+    if (pathPrefix && matchesPagePathPrefix(path, pathPrefix)) return true;
+    return false;
+  }
+
+  function pageViewOverrides(entry) {
+    var overrides = {};
+    var valueQueryParam = String(getObjectValue(entry, 'valueQueryParam', '') || '').trim();
+    var params;
+    var queryValue;
+    var parsedValue;
+    if (!valueQueryParam) return overrides;
+
+    params = currentSearchParams();
+    queryValue = params ? params.get(valueQueryParam) : null;
+    parsedValue = toNumber(queryValue);
+    if (parsedValue != null) overrides.value = parsedValue;
+    return overrides;
+  }
+
   function matchesString(mode, candidate, expected) {
     if (!candidate || !expected) return false;
     if (mode === 'hrefEquals') return candidate === expected;
     return candidate.indexOf(expected) !== -1;
   }
 
-  function matchesOutboundRule(link, entry, url) {
-    if (!entry || getObjectValue(entry, 'enabled', true) === false || !link || !url || !isOutboundUrl(url)) return false;
+  function matchesLinkRule(key, entry, link, url) {
+    var selector;
+    var protocol;
+    var actualProtocol;
+    var outboundOnly;
+    var mode;
+    var hostEquals;
+    var matchValues;
+    var singleMatchValue;
+    var absoluteHref;
+    var raw;
+    var hostname;
+    var i;
+    var expected;
 
-    var selector = String(getObjectValue(entry, 'selector', '') || '').trim();
+    if (!entry || getObjectValue(entry, 'enabled', true) === false || !link) return false;
+
+    selector = String(getObjectValue(entry, 'selector', '') || '').trim();
     if (selector) {
       try {
         if (!link.matches || !link.matches(selector)) return false;
@@ -511,27 +509,187 @@
       }
     }
 
-    var mode = String(getObjectValue(entry, 'matchMode', 'hrefContains') || 'hrefContains').trim() || 'hrefContains';
-    var matchValues = normalizeMatchList(getObjectValue(entry, 'matchValues', null));
-    var singleMatchValue = getObjectValue(entry, 'matchValue', null);
+    protocol = String(getObjectValue(entry, 'protocol', inferLegacyProtocol(key)) || '').trim().toLowerCase().replace(/:$/, '');
+    actualProtocol = linkProtocol(link, url);
+    if (protocol && protocol !== actualProtocol) return false;
+
+    outboundOnly = parseBool(getObjectValue(entry, 'outboundOnly', inferLegacyOutboundOnly(key)), inferLegacyOutboundOnly(key));
+    if (outboundOnly && !isOutboundUrl(url)) return false;
+
+    mode = String(getObjectValue(entry, 'matchMode', 'hrefContains') || 'hrefContains').trim() || 'hrefContains';
+    matchValues = normalizeMatchList(getObjectValue(entry, 'matchValues', null));
+    singleMatchValue = getObjectValue(entry, 'matchValue', null);
+    hostEquals = String(getObjectValue(entry, 'hostEquals', '') || '').trim();
     if (singleMatchValue != null && singleMatchValue !== '') matchValues.push(singleMatchValue);
-    if (!matchValues.length) return true;
+    if (hostEquals) {
+      matchValues.push(hostEquals);
+      if (!getObjectValue(entry, 'matchMode', '')) mode = 'hostEquals';
+    }
 
-    var absoluteHref = String(url.href || '');
-    var rawHref = String(link.getAttribute('href') || '');
-    var hostname = String(url.hostname || '').replace(/^www\./, '');
+    if (!matchValues.length) {
+      return !!selector || !!protocol || outboundOnly;
+    }
 
-    for (var i = 0; i < matchValues.length; i += 1) {
-      var expected = String(matchValues[i] || '').trim();
+    absoluteHref = String((url && url.href) || '');
+    raw = rawHref(link);
+    hostname = String((url && url.hostname) || '').replace(/^www\./, '');
+
+    for (i = 0; i < matchValues.length; i += 1) {
+      expected = String(matchValues[i] || '').trim();
       if (!expected) continue;
       if (mode === 'hostEquals') {
         if (hostname === expected.replace(/^www\./, '')) return true;
         continue;
       }
-      if (matchesString(mode, absoluteHref, expected) || matchesString(mode, rawHref, expected)) return true;
+      if (matchesString(mode, absoluteHref, expected) || matchesString(mode, raw, expected)) return true;
     }
 
     return false;
+  }
+
+  function getMatchingLinkConversionEntries(link, url) {
+    return getConversionEntriesByType('linkClick').filter(function (item) {
+      return matchesLinkRule(item.key, item.entry, link, url);
+    });
+  }
+
+  function maybeTrackPageViewConversions() {
+    var entries = getConversionEntriesByType('pageView');
+    var i;
+    var item;
+    for (i = 0; i < entries.length; i += 1) {
+      item = entries[i];
+      if (!item.entry || getObjectValue(item.entry, 'enabled', true) === false) continue;
+      if (!matchesPageViewRule(item.entry)) continue;
+      fireConversion(item.key, item.entry, pageViewOverrides(item.entry));
+    }
+  }
+
+  var engagementStates = {};
+
+  function getEngagementState(key) {
+    if (!engagementStates[key]) {
+      engagementStates[key] = {
+        timerDone: false,
+        pageEligible: false,
+        scrollEligible: false,
+        fired: false
+      };
+    }
+    return engagementStates[key];
+  }
+
+  function engagementScrollFallbackEnabled(entry) {
+    return parseBool(getObjectValue(entry, 'allowScrollFallback', false), false) === true;
+  }
+
+  function maybeFireEngagementConversion(key, entry) {
+    var state = getEngagementState(key);
+    var eligible;
+    if (!entry || getObjectValue(entry, 'enabled', true) === false) return;
+    if (state.fired) return;
+    if (hasFired(key, entry)) {
+      state.fired = true;
+      return;
+    }
+    eligible = state.pageEligible || (engagementScrollFallbackEnabled(entry) && state.scrollEligible);
+    if (!state.timerDone || !eligible) return;
+    if (fireConversion(key, entry, { onceKey: getObjectValue(entry, 'onceKey', '') || normalizeEventKey(key) || key })) {
+      state.fired = true;
+    }
+  }
+
+  function markEngagementPageEligible(key, entry) {
+    getEngagementState(key).pageEligible = true;
+    maybeFireEngagementConversion(key, entry);
+  }
+
+  function markEngagementScrollEligible(key, entry) {
+    getEngagementState(key).scrollEligible = true;
+    maybeFireEngagementConversion(key, entry);
+  }
+
+  function maybeTrackEngagementByPages(pageCount) {
+    var entries = getConversionEntriesByType('engagement');
+    var i;
+    var item;
+    var minPages;
+    for (i = 0; i < entries.length; i += 1) {
+      item = entries[i];
+      if (!item.entry || getObjectValue(item.entry, 'enabled', true) === false) continue;
+      minPages = parseInt(getObjectValue(item.entry, 'minPages', null), 10);
+      if (!(minPages >= 1)) minPages = 2;
+      if (pageCount >= minPages) markEngagementPageEligible(item.key, item.entry);
+    }
+  }
+
+  function setupEngagementTimers() {
+    var entries = getConversionEntriesByType('engagement');
+    var i;
+    var item;
+    var minSessionSeconds;
+    for (i = 0; i < entries.length; i += 1) {
+      item = entries[i];
+      if (!item.entry || getObjectValue(item.entry, 'enabled', true) === false) continue;
+      minSessionSeconds = toNumber(getObjectValue(item.entry, 'minSessionSeconds', null));
+      if (minSessionSeconds == null) minSessionSeconds = 10;
+      minSessionSeconds = Math.max(0, minSessionSeconds);
+      (function (key, entry, waitMs) {
+        window.setTimeout(function () {
+          getEngagementState(key).timerDone = true;
+          maybeFireEngagementConversion(key, entry);
+        }, waitMs);
+      })(item.key, item.entry, Math.round(minSessionSeconds * 1000));
+    }
+  }
+
+  function setupEngagementScrollTracking() {
+    var entries = getConversionEntriesByType('engagement');
+    var i;
+    var item;
+    var threshold;
+    for (i = 0; i < entries.length; i += 1) {
+      item = entries[i];
+      if (!item.entry || getObjectValue(item.entry, 'enabled', true) === false) continue;
+      if (!engagementScrollFallbackEnabled(item.entry)) continue;
+      threshold = toNumber(getObjectValue(item.entry, 'scrollPercent', null));
+      if (threshold == null) threshold = 60;
+      threshold = Math.max(1, Math.min(100, threshold));
+      (function (key, entry, ruleThreshold) {
+        function percentScrolled() {
+          var doc = document.documentElement;
+          var body = document.body;
+          var scrollTop = window.pageYOffset || doc.scrollTop || body.scrollTop || 0;
+          var viewport = window.innerHeight || doc.clientHeight || 0;
+          var height = Math.max(
+            body.scrollHeight || 0,
+            doc.scrollHeight || 0,
+            body.offsetHeight || 0,
+            doc.offsetHeight || 0,
+            body.clientHeight || 0,
+            doc.clientHeight || 0
+          );
+          var denom = height - viewport;
+          if (denom <= 0) return 100;
+          return (scrollTop / denom) * 100;
+        }
+
+        function onScroll() {
+          var state = getEngagementState(key);
+          if (hasFired(key, entry) || state.fired) {
+            window.removeEventListener('scroll', onScroll, true);
+            return;
+          }
+          if (percentScrolled() >= ruleThreshold) {
+            markEngagementScrollEligible(key, entry);
+            window.removeEventListener('scroll', onScroll, true);
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true, capture: true });
+        onScroll();
+      })(item.key, item.entry, threshold);
+    }
   }
 
   function shouldDelayNavigation(ev, link) {
@@ -554,15 +712,28 @@
     }
   }
 
-  function trackOutboundLinkClick(link, ev) {
-    var entry = getConversion('outboundLinkClick');
+  function trackLinkClickConversions(link, ev) {
     var url = linkUrl(link);
-    if (!matchesOutboundRule(link, entry, url)) return false;
+    var matches = getMatchingLinkConversionEntries(link, url);
+    var protocol;
+    var shouldDelay;
+    var transportType;
+    var fired = false;
+    var i;
 
-    var shouldDelay = shouldDelayNavigation(ev, link);
+    if (!matches.length) return false;
+
+    protocol = linkProtocol(link, url);
+    shouldDelay = (protocol === 'http' || protocol === 'https') && shouldDelayNavigation(ev, link);
     if (shouldDelay) ev.preventDefault();
 
-    var fired = fireConversion('outboundLinkClick', entry, { transportType: 'beacon' });
+    transportType = shouldDelay || protocol === 'tel' || protocol === 'sms' ? 'beacon' : '';
+    for (i = 0; i < matches.length; i += 1) {
+      if (fireConversion(matches[i].key, matches[i].entry, transportType ? { transportType: transportType } : null)) {
+        fired = true;
+      }
+    }
+
     if (shouldDelay) {
       if (!fired) {
         navigateToTrackedUrl(url);
@@ -593,22 +764,16 @@
       if (customEl) trackElementConversion(customEl);
 
       var link = closestLink(ev.target);
-      var type = hrefType(link);
-      if (type === 'tel') trackConfiguredConversion('callClick');
-      if (type === 'sms') trackConfiguredConversion('textClick');
-      if (!type) trackOutboundLinkClick(link, ev);
+      if (link) trackLinkClickConversions(link, ev);
     },
     true
   );
 
   var uniquePages = rememberCurrentPath();
-  maybeTrackPageView('pricingPageView');
-  maybeTrackPageView('contactPageView');
-  maybeTrackPageView('thankYouPageView');
-  maybeTrackPageView('welcomePageView');
-  setupEngagedTimer();
-  maybeTrackEngagedUserByPages(uniquePages);
-  setupEngagedScrollTracking();
+  maybeTrackPageViewConversions();
+  setupEngagementTimers();
+  maybeTrackEngagementByPages(uniquePages);
+  setupEngagementScrollTracking();
 
   window.cpTrackAdsConversion = function (key, overrides) {
     return trackConfiguredConversion(key, overrides);

@@ -20,6 +20,8 @@ Patterned after `sites/rank-utah/config.toml`:
     analyticsEventPrefix = "key_"
 
     [params.analytics.googleTag.conversions.callClick]
+      type = "linkClick"
+      protocol = "tel"
       enabled = false
       sendTo = ""
       value = 30
@@ -27,24 +29,29 @@ Patterned after `sites/rank-utah/config.toml`:
       includeLastPageInAttribution = true
 
     [params.analytics.googleTag.conversions.textClick]
+      type = "linkClick"
+      protocol = "sms"
       enabled = false
       sendTo = ""
       value = 20
       includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.pricingPageView]
+      type = "pageView"
       enabled = false
       path = "/pricing"
       sendTo = ""
       includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.contactPageView]
+      type = "pageView"
       enabled = false
       path = "/contact"
       sendTo = ""
       includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.thankYouPageView]
+      type = "pageView"
       enabled = false
       path = "/thank-you"
       sendTo = ""
@@ -53,6 +60,7 @@ Patterned after `sites/rank-utah/config.toml`:
       includeLastPageInAttribution = false
 
     [params.analytics.googleTag.conversions.welcomePageView]
+      type = "pageView"
       enabled = false
       path = "/welcome"
       sendTo = ""
@@ -60,6 +68,7 @@ Patterned after `sites/rank-utah/config.toml`:
       includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.engagedUser]
+      type = "engagement"
       enabled = false
       sendTo = ""
       value = 5
@@ -149,7 +158,15 @@ This does not replace Google Ads attribution or enhanced conversions. It gives y
 
 The shared theme now supports native conversion events with per-site config under `[params.analytics.googleTag.conversions]`.
 
-Supported standard conversion keys:
+Each conversion entry can declare a reusable behavior with `type`.
+
+Currently implemented types:
+
+- `pageView`
+- `linkClick`
+- `engagement`
+
+Legacy built-in conversion keys still work without `type`, and the runtime infers the behavior for these names:
 
 - `callClick`
 - `textClick`
@@ -159,6 +176,8 @@ Supported standard conversion keys:
 - `welcomePageView`
 - `engagedUser`
 - `outboundLinkClick`
+
+For new config, prefer adding your own named entries under `conversions` with an explicit `type` rather than inventing more built-in keys.
 
 Every conversion rule can also include `includeInPageAttribution = true|false` so site configs explicitly declare which conversions should count in the shared page-attribution model.
 
@@ -171,14 +190,35 @@ Behavior:
 - They are deduped with `localStorage`, so they fire only once per browser/user for that site hostname
 - `once` defaults to `true`; only set `once = false` when you explicitly want a conversion to be repeatable
 - `currency` defaults to `USD` whenever a numeric `value` is sent
-- Page-view conversions match the configured `path`
-- `outboundLinkClick` matches outbound `http(s)` links using `matchMode`, `matchValues`, and optional `selector`
+- `pageView` conversions match the configured `path` or `pathPrefix`
+- `linkClick` conversions can match by `protocol`, `selector`, `matchMode`, `matchValue`, `matchValues`, `hostEquals`, and `outboundOnly`
 - The recommended lead conversion is `thankYouPageView`; shared forms no longer auto-fire a Google Ads form-submit conversion
 - `welcomePageView` can read a dynamic conversion value from the query string via `valueQueryParam`.
-- `engagedUser` uses a simpler default across sites:
+- `engagement` conversions use a simpler default across sites:
   - user must stay on the site at least `minSessionSeconds` seconds
   - user must visit at least `minPages` unique paths on that site
   - scroll only counts when `allowScrollFallback = true` and `scrollPercent` is also configured
+
+Example typed page-view conversion:
+
+```toml
+[params.analytics.googleTag.conversions.contact]
+  type = "pageView"
+  enabled = true
+  path = "/contact"
+  value = 1
+```
+
+Example typed click conversion:
+
+```toml
+[params.analytics.googleTag.conversions.primaryCall]
+  type = "linkClick"
+  enabled = true
+  protocol = "tel"
+  value = 20
+  includeInPageAttribution = true
+```
 
 ### Outbound link click conversion
 
@@ -188,11 +228,13 @@ Example config:
 
 ```toml
 [params.analytics.googleTag.conversions.outboundLinkClick]
+  type = "linkClick"
   enabled = true
   sendTo = "AW-123456789/AbCdEfGhIjKlMnOp"
   value = 60
   includeInPageAttribution = true
   includeLastPageInAttribution = true
+  outboundOnly = true
   matchMode = "hrefContains"
   matchValues = ["secure.thinkreservations.com/blueridgeabbey"]
 ```
@@ -208,7 +250,7 @@ Recommended defaults:
 - `textClick`: site-specific
 - `outboundLinkClick`: site-specific, usually `true` for booking or scheduling handoffs
 - `welcomePageView`: usually `false` for lead-gen sites where sales close after an offline conversation
-- `engagedUser`, `pricingPageView`, `contactPageView`: usually `false`
+- `engagement`, `pricingPageView`, `contactPageView`: usually `false`
 
 For conversions that stay on an intermediate confirmation URL such as `/thank-you`, set `includeLastPageInAttribution = false` when you want attribution to stay on the pages that led into that confirmation page. For call clicks and similar direct-response actions, leave `includeLastPageInAttribution = true` so the current page keeps credit.
 
@@ -241,7 +283,7 @@ Notes:
 
 - the event `value` is the attributed split value, not the original full conversion value
 - `page_location` is set explicitly for each visited page receiving attributed value
-- `conversion_type` uses the normalized conversion key such as `thank_you_page_view` or `call_click`
+- `conversion_type` uses the normalized conversion key such as `thank_you_page_view`, `contact`, or `primary_call`
 - `attribution_model` is currently always `equal_split`
 
 ### Defaulted fields
@@ -322,29 +364,20 @@ Backward compatibility:
 - The theme still accepts the old `[params.analytics.googleAds.conversions]` path, but the preferred location is `[params.analytics.googleTag.conversions]`
 - The theme still accepts legacy root-level `params.analytics.clarityDelayMs` and `params.analytics.clarityOnlyOnInteraction`, but the preferred location is `[params.analytics.clarity]`
 
-## Proposed generic rule schema (draft)
+## Typed conversion model
 
-This section is a proposed future config shape only. It is not implemented by the shared runtime yet.
+The shared runtime now supports generic typed entries under the existing `[params.analytics.googleTag.conversions]` container.
 
-The goal is to stop adding one-off conversion names and instead support a small set of generic rule types that cover most tracking needs from config alone.
+This means you can add more tracked pages or click targets by config alone, as long as you use a supported `type` and supported fields for that type.
 
-Recommended generic types:
-
-- `pageView`
-- `linkClick`
-- `selectorClick`
-- `elementView`
-- `formLifecycle`
-- `engagement`
-
-Draft example:
+Example:
 
 ```toml
 [params.analytics.googleTag]
   id = "AW-123456789"
   analyticsEventPrefix = "key_"
 
-  [params.analytics.googleTag.rules.leadThankYou]
+  [params.analytics.googleTag.conversions.leadThankYou]
     type = "pageView"
     enabled = true
     path = "/thank-you"
@@ -352,7 +385,7 @@ Draft example:
     value = 100
     includeInPageAttribution = true
 
-  [params.analytics.googleTag.rules.primaryCall]
+  [params.analytics.googleTag.conversions.primaryCall]
     type = "linkClick"
     enabled = true
     protocol = "tel"
@@ -360,42 +393,23 @@ Draft example:
     value = 40
     includeInPageAttribution = true
 
-  [params.analytics.googleTag.rules.primaryText]
+  [params.analytics.googleTag.conversions.primaryText]
     type = "linkClick"
     enabled = true
     protocol = "sms"
     selector = "a[href^='sms:']"
     value = 30
 
-  [params.analytics.googleTag.rules.externalBooking]
+  [params.analytics.googleTag.conversions.externalBooking]
     type = "linkClick"
     enabled = true
+    outboundOnly = true
     matchMode = "hrefContains"
     matchValues = ["secure.thinkreservations.com/blueridgeabbey"]
     value = 60
     includeInPageAttribution = true
 
-  [params.analytics.googleTag.rules.quoteButton]
-    type = "selectorClick"
-    enabled = true
-    selector = "[data-track='quote-cta']"
-    value = 20
-
-  [params.analytics.googleTag.rules.pricingSectionSeen]
-    type = "elementView"
-    enabled = true
-    selector = "#pricing"
-    threshold = 0.5
-    value = 10
-
-  [params.analytics.googleTag.rules.contactFormStarted]
-    type = "formLifecycle"
-    enabled = true
-    selector = "form[data-form-role='contact']"
-    stage = "start"
-    value = 15
-
-  [params.analytics.googleTag.rules.qualifiedVisit]
+  [params.analytics.googleTag.conversions.qualifiedVisit]
     type = "engagement"
     enabled = true
     minSessionSeconds = 10
@@ -420,14 +434,11 @@ Recommended shared fields across all rule types:
 
 Type-specific fields:
 
-- `pageView`: `path`, `pathPrefix`, optional pattern matching
-- `linkClick`: `selector`, `protocol`, `matchMode`, `matchValue`, `matchValues`, `hostEquals`
-- `selectorClick`: `selector`
-- `elementView`: `selector`, `threshold`, optional `minTimeVisibleMs`
-- `formLifecycle`: `selector`, `stage = start|submit|success|error`
+- `pageView`: `path`, `pathPrefix`
+- `linkClick`: `selector`, `protocol`, `matchMode`, `matchValue`, `matchValues`, `hostEquals`, optional `outboundOnly = true`
 - `engagement`: `minSessionSeconds`, `minPages`, `allowScrollFallback`, `scrollPercent`
 
-Suggested mapping from the current schema:
+Fields outside the supported set for a given `type` are ignored by the runtime until that type explicitly supports them.
 
 - `thankYouPageView` -> `type = "pageView"`, `path = "/thank-you"`
 - `welcomePageView` -> `type = "pageView"`, `path = "/welcome"`, `valueQueryParam = "value"`
