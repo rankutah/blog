@@ -133,7 +133,7 @@ sameAs = []
     enabled = true
     path = "/pricing"
     sendTo = ""
-    value = .5
+    value = 0.5
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.contactPageView]
@@ -165,7 +165,7 @@ sameAs = []
   [params.analytics.googleTag.conversions.engagedUser]
     enabled = true
     sendTo = ""
-    value = .1
+    value = 0.1
     minSessionSeconds = 10
     minPages = 2
     includeInPageAttribution = false
