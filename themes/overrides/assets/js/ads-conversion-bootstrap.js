@@ -238,6 +238,17 @@
     if (!shouldEmitPageAttribution(entry, value)) return false;
 
     var visitedPaths = readVisitedPaths();
+    var includeLastPage = parseBool(
+      getObjectValue(entry, 'includeLastPageInAttribution', getObjectValue(entry, 'includeLastPage', true)),
+      true
+    );
+    var currentPage = currentPath();
+    if (!includeLastPage) {
+      visitedPaths = visitedPaths.filter(function (path) {
+        return normalizePath(path) !== currentPage;
+      });
+    }
+
     if (!visitedPaths.length) return false;
 
     var splitValue = value / visitedPaths.length;

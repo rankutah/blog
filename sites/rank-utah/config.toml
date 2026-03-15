@@ -130,28 +130,29 @@ sameAs = []
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.pricingPageView]
-    enabled = false
+    enabled = true
     path = "/pricing"
     sendTo = ""
-    value = 10
+    value = .5
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.contactPageView]
-    enabled = false
+    enabled = true
     path = "/contact"
     sendTo = ""
-    value = 15
+    value = 1
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.thankYouPageView]
     enabled = true
     path = "/thank-you"
     sendTo = ""
-    value = 100
+    value = 10
     includeInPageAttribution = true
+    includeLastPageInAttribution = false
 
   [params.analytics.googleTag.conversions.welcomePageView]
-    enabled = false
+    enabled = true
     path = "/welcome"
     sendTo = ""
     # Leave `value` unset here. Pass the purchase amount in the redirect URL as:
@@ -162,9 +163,9 @@ sameAs = []
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.engagedUser]
-    enabled = false
+    enabled = true
     sendTo = ""
-    value = 5
+    value = .1
     minSessionSeconds = 10
     minPages = 2
     includeInPageAttribution = false

@@ -24,6 +24,7 @@ Patterned after `sites/rank-utah/config.toml`:
       sendTo = ""
       value = 30
       includeInPageAttribution = true
+      includeLastPageInAttribution = true
 
     [params.analytics.googleTag.conversions.textClick]
       enabled = false
@@ -49,6 +50,7 @@ Patterned after `sites/rank-utah/config.toml`:
       sendTo = ""
       value = 100
       includeInPageAttribution = true
+      includeLastPageInAttribution = false
 
     [params.analytics.googleTag.conversions.welcomePageView]
       enabled = false
@@ -160,6 +162,8 @@ Supported standard conversion keys:
 
 Every conversion rule can also include `includeInPageAttribution = true|false` so site configs explicitly declare which conversions should count in the shared page-attribution model.
 
+When a conversion is included in page attribution, `includeLastPageInAttribution = true|false` controls whether the current conversion page is part of the equal split. It defaults to `true`.
+
 Behavior:
 
 - If `sendTo` is set, the conversion also fires through `gtag('event', 'conversion', { send_to: ... })`
@@ -188,6 +192,7 @@ Example config:
   sendTo = "AW-123456789/AbCdEfGhIjKlMnOp"
   value = 60
   includeInPageAttribution = true
+  includeLastPageInAttribution = true
   matchMode = "hrefContains"
   matchValues = ["secure.thinkreservations.com/blueridgeabbey"]
 ```
@@ -205,6 +210,8 @@ Recommended defaults:
 - `welcomePageView`: usually `false` for lead-gen sites where sales close after an offline conversation
 - `engagedUser`, `pricingPageView`, `contactPageView`: usually `false`
 
+For conversions that stay on an intermediate confirmation URL such as `/thank-you`, set `includeLastPageInAttribution = false` when you want attribution to stay on the pages that led into that confirmation page. For call clicks and similar direct-response actions, leave `includeLastPageInAttribution = true` so the current page keeps credit.
+
 This flag is schema-level today so site configs can stay explicit and consistent before the shared page-attribution runtime is added.
 
 ### Page attribution event
@@ -215,6 +222,7 @@ Current model:
 
 - unique visited pages are tracked for the current browser session only
 - the conversion value is split evenly across those visited pages
+- the current conversion page is included unless that conversion sets `includeLastPageInAttribution = false`
 - one `attribution_value` event is emitted per visited page
 
 Example payload for a $100 conversion across 4 visited pages:
@@ -407,6 +415,7 @@ Recommended shared fields across all rule types:
 - `once`
 - `onceKey`
 - `includeInPageAttribution`
+- `includeLastPageInAttribution`
 - `analyticsEventName`
 
 Type-specific fields:
