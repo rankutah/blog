@@ -118,15 +118,15 @@ sameAs = []
     analyticsEventPrefix = "key_"
 
   [params.analytics.googleTag.conversions.callClick]
-    enabled = false
+    enabled = true
     sendTo = ""
-    value = 40
+    value = 20
     includeInPageAttribution = true
 
   [params.analytics.googleTag.conversions.textClick]
-    enabled = false
+    enabled = true
     sendTo = ""
-    value = 30
+    value = 10
     includeInPageAttribution = false
 
   [params.analytics.googleTag.conversions.pricingPageView]
@@ -179,12 +179,6 @@ sameAs = []
     enabled = true
     # Google Ads website call conversion label used for forwarding-number replacement.
     conversionLabel = "uKziCM6p7tQbEKCPmfpB"
-
-  [params.analytics.attribution]
-    enabled = true
-    persistDays = 90
-    fieldPrefix = "attribution_"
-    captureParams = ["gclid", "gbraid", "wbraid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
 
   [params.analytics.meta]
     id = ""               # e.g., 123456789012345 (Meta Pixel)
@@ -291,4 +285,4 @@ sameAs = []
     url = "/contact"
     weight = 50
 
-# Trigger rebuilds again 
+# Trigger rebuilds again
