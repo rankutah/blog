@@ -103,9 +103,13 @@
   var LOAD_EVENTS = Array.isArray(cfg.loadEvents) ? cfg.loadEvents : [];
   var ONLY_ON_INTERACTION = !!cfg.onlyOnInteraction;
 
-  var CLARITY_DELAY_MS = cfg.clarityDelayMs == null ? null : parseInt(cfg.clarityDelayMs, 10) || 0;
+  var CLARITY_CFG = cfg.clarity && typeof cfg.clarity === 'object' ? cfg.clarity : {};
+  var CLARITY_DELAY_SOURCE = CLARITY_CFG.delayMs != null ? CLARITY_CFG.delayMs : cfg.clarityDelayMs;
+  var CLARITY_DELAY_MS = CLARITY_DELAY_SOURCE == null ? null : parseInt(CLARITY_DELAY_SOURCE, 10) || 0;
+  var CLARITY_ONLY_ON_INTERACTION_SOURCE =
+    CLARITY_CFG.onlyOnInteraction != null ? CLARITY_CFG.onlyOnInteraction : cfg.clarityOnlyOnInteraction;
   var CLARITY_ONLY_ON_INTERACTION =
-    cfg.clarityOnlyOnInteraction == null ? null : !!cfg.clarityOnlyOnInteraction;
+    CLARITY_ONLY_ON_INTERACTION_SOURCE == null ? null : !!CLARITY_ONLY_ON_INTERACTION_SOURCE;
 
   var ADS_PHONE_REPLACE = !!cfg.enableAdsPhoneReplace;
   var SITE_PHONE = (cfg.sitePhoneNumber || '').trim();

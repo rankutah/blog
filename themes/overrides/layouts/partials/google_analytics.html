@@ -1,17 +1,20 @@
 {{- /* Build config object from site params (with back-compat) */ -}}
 {{- $analytics := site.Params.analytics | default (dict) -}}
-{{- $provider := (index $analytics "provider") | default "" -}}
-{{- $useZaraz := eq (lower $provider) "zaraz" -}}
 {{- $gaConf := (index $analytics "google") | default (dict) -}}
 {{- $clarityConf := (index $analytics "clarity") | default (dict) -}}
 {{- $adsConf := (index $analytics "googleAds") | default (dict) -}}
 {{- $tagConf := (index $analytics "googleTag") | default (dict) -}}
+{{- $provider := (index $tagConf "provider") | default ((index $analytics "provider") | default "") -}}
+{{- $useZaraz := eq (lower $provider) "zaraz" -}}
 {{- $phoneReplaceConf := (index $analytics "phoneReplace") | default (dict) -}}
+{{- $attributionConf := (index $analytics "attribution") | default (dict) -}}
 {{- $metaConf := (index $analytics "meta") | default (dict) -}}
 {{- $gaId := cond (and (isset $gaConf "id") (gt (len (index $gaConf "id")) 0)) (index $gaConf "id") (site.Params.googleAnalyticsID) -}}
 {{- $gaEnabled := not (eq (index $gaConf "enabled") false) -}}
 {{- $clarityId := (index $clarityConf "id") | default "" -}}
 {{- $clarityEnabled := not (eq (index $clarityConf "enabled") false) -}}
+{{- $clarityDelayMs := (index $clarityConf "delayMs") | default ((index $analytics "clarityDelayMs") | default nil) -}}
+{{- $clarityOnlyOnInteraction := (index $clarityConf "onlyOnInteraction") | default ((index $analytics "clarityOnlyOnInteraction") | default nil) -}}
 {{- $adsId := (index $adsConf "id") | default "" -}}
 {{- $adsLabel := (index $phoneReplaceConf "conversionLabel") | default ((index $adsConf "conversionLabel") | default "") -}}
 {{- $tagId := (index $tagConf "id") | default "" -}}
@@ -33,29 +36,30 @@
 {{- $metaEnabled := not (eq (index $metaConf "enabled") false) -}}
 {{- /* NOTE: Hugo's `default`/`with` treat 0 as "empty". Respect explicit 0 values. */ -}}
 {{- $delayMs := 4000 -}}
-{{- $delayMsRaw := (index $analytics "delayMs") -}}
+{{- $delayMsRaw := (index $tagConf "delayMs") -}}
+{{- if eq $delayMsRaw nil -}}
+  {{- $delayMsRaw = (index $analytics "delayMs") -}}
+{{- end -}}
 {{- if ne $delayMsRaw nil -}}
   {{- $delayMs = $delayMsRaw -}}
 {{- end -}}
-{{- $events := (index $analytics "loadEvents") | default (slice "scroll" "mousemove" "touchstart") -}}
-{{- $onlyOnInteraction := (index $analytics "onlyOnInteraction") | default false -}}
+{{- $events := (index $tagConf "loadEvents") | default ((index $analytics "loadEvents") | default (slice "scroll" "mousemove" "touchstart")) -}}
+{{- $onlyOnInteraction := (index $tagConf "onlyOnInteraction") | default ((index $analytics "onlyOnInteraction") | default false) -}}
 {{- /* LCP-first gating (prioritize CWV over maximum analytics coverage) */ -}}
-{{- $lcpGate := (index $analytics "lcpGate") | default true -}}
-{{- $lcpMaxWaitMs := (index $analytics "lcpMaxWaitMs") | default 6000 -}}
-{{- $lcpQuietWindowMs := (index $analytics "lcpQuietWindowMs") | default 350 -}}
+{{- $lcpGate := (index $tagConf "lcpGate") | default ((index $analytics "lcpGate") | default true) -}}
+{{- $lcpMaxWaitMs := (index $tagConf "lcpMaxWaitMs") | default ((index $analytics "lcpMaxWaitMs") | default 6000) -}}
+{{- $lcpQuietWindowMs := (index $tagConf "lcpQuietWindowMs") | default ((index $analytics "lcpQuietWindowMs") | default 350) -}}
 {{- $immediateGoogleTag := and (not $useZaraz) $tagEnabled (not $onlyOnInteraction) (eq $delayMs 0) (eq $lcpGate false) -}}
 {{- /* Optional: explicit Zaraz script URL (e.g. static.cloudflareinsights.com/zaraz/s.js?z=...) */ -}}
 {{- $zarazSrc := (index $analytics "zarazSrc") | default "" -}}
-{{- /* Optional per-platform overrides: clarity can be delayed even when global is 0 */ -}}
-{{- $clarityDelayMs := (index $analytics "clarityDelayMs") | default nil -}}
-{{- $clarityOnlyOnInteraction := (index $analytics "clarityOnlyOnInteraction") | default nil -}}
-{{- $debugMode := (index $analytics "debugMode") | default false -}}
+{{- $debugMode := (index $tagConf "debugMode") | default ((index $analytics "debugMode") | default false) -}}
 {{- /* Optional: enable Google Ads website call conversions (forwarding numbers) */ -}}
 {{- $adsPhoneReplace := (index $phoneReplaceConf "enabled") | default ((index $adsConf "phoneReplace") | default false) -}}
 {{- $conversionRules := (index $tagConf "conversions") | default ((index $adsConf "conversions") | default (dict)) -}}
 {{- $header := site.Params.header | default (dict) -}}
 {{- $sitePhone := (index $header "phoneNumber") | default "" -}}
 {{- $adsBootstrap := resources.Get "js/ads-conversion-bootstrap.js" | resources.Minify -}}
+{{- $attributionBootstrap := resources.Get "js/attribution-persistence.js" | resources.Minify -}}
 
 {{- $cfg := dict
   "googleTagId" (cond $tagEnabled $tagId "")
@@ -72,6 +76,12 @@
   "lcpGate" $lcpGate
   "lcpMaxWaitMs" $lcpMaxWaitMs
   "lcpQuietWindowMs" $lcpQuietWindowMs
+  "clarity" (dict
+    "id" (cond $clarityEnabled $clarityId "")
+    "enabled" $clarityEnabled
+    "delayMs" $clarityDelayMs
+    "onlyOnInteraction" $clarityOnlyOnInteraction
+  )
   "clarityDelayMs" $clarityDelayMs
   "clarityOnlyOnInteraction" $clarityOnlyOnInteraction
   "debugMode" $debugMode
@@ -80,6 +90,14 @@
   "phoneReplace" (dict
     "enabled" (and $adsEnabled $adsPhoneReplace)
     "conversionLabel" $adsLabel
+  )
+  "attribution" (dict
+    "enabled" (eq (index $attributionConf "enabled") true)
+    "persistDays" ((index $attributionConf "persistDays") | default 90)
+    "fieldPrefix" ((index $attributionConf "fieldPrefix") | default "attribution_")
+    "includeLandingPage" (not (eq (index $attributionConf "includeLandingPage") false))
+    "includeReferrer" (not (eq (index $attributionConf "includeReferrer") false))
+    "captureParams" ((index $attributionConf "captureParams") | default (slice "gclid" "gbraid" "wbraid" "utm_source" "utm_medium" "utm_campaign" "utm_term" "utm_content"))
   )
   "googleAds" (dict
     "enabled" $adsEnabled
@@ -104,6 +122,8 @@
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   </script>
+  <script>{{ $attributionBootstrap.Content | safeJS }}</script>
+  <script>{{ $attributionBootstrap.Content | safeJS }}</script>
   <script>{{ $adsBootstrap.Content | safeJS }}</script>
 
   {{- $zloader := resources.Get "js/zaraz-loader-advanced.js" | resources.Minify | resources.Fingerprint -}}

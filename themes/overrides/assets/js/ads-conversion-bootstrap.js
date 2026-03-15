@@ -107,6 +107,7 @@
     var base = entry && typeof entry === 'object' ? entry : {};
     var extra = overrides && typeof overrides === 'object' ? overrides : {};
     var sendTo = String(extra.sendTo || base.sendTo || '').trim();
+    var transportType = String(extra.transportType || base.transportType || '').trim();
 
     var once = parseBool(extra.once, parseBool(base.once, true));
     var overrideOnceKey = String(extra.onceKey || '').trim();
@@ -114,6 +115,7 @@
 
     var value = toNumber(extra.value != null ? extra.value : base.value);
     var currency = String(extra.currency || base.currency || '').trim();
+    if (!currency && value != null) currency = 'USD';
     var eventName = String(extra.eventName || base.eventName || 'conversion').trim() || 'conversion';
     var analyticsPayload = {};
     if (value != null) analyticsPayload.value = value;
@@ -127,11 +129,12 @@
           var adsPayload = { send_to: sendTo };
           if (value != null) adsPayload.value = value;
           if (currency) adsPayload.currency = currency;
+          if (transportType) adsPayload.transport_type = transportType;
           window.gtag('event', eventName, adsPayload);
           fired = true;
         }
 
-        if (emitAnalyticsCompanionEvent(key, base, analyticsPayload)) {
+        if (emitAnalyticsCompanionEvent(key, base, analyticsPayload, transportType)) {
           fired = true;
         }
 
@@ -146,7 +149,7 @@
     return false;
   }
 
-  function emitAnalyticsCompanionEvent(key, entry, conversionPayload) {
+  function emitAnalyticsCompanionEvent(key, entry, conversionPayload, transportType) {
     var normalizedKey = normalizeEventKey((entry && entry.analyticsEventName) || key);
     if (!analyticsEventPrefix || !normalizedKey) return false;
     if (typeof window.gtag !== 'function') return false;
@@ -159,6 +162,7 @@
 
     if (conversionPayload && conversionPayload.value != null) payload.value = conversionPayload.value;
     if (conversionPayload && conversionPayload.currency) payload.currency = conversionPayload.currency;
+    if (transportType) payload.transport_type = transportType;
 
     try {
       window.gtag('event', eventName, payload);
@@ -265,14 +269,19 @@
     if (!entry || entry.enabled === false) return;
     var minPages = parseInt(entry.minPages, 10);
     if (!(minPages >= 1)) minPages = 2;
-    if (pageCount >= minPages) markEngagedEligible('pages');
+    if (pageCount >= minPages) markEngagedPageEligible();
   }
 
   var engagedState = {
     timerDone: false,
-    eligible: false,
+    pageEligible: false,
+    scrollEligible: false,
     fired: false
   };
+
+  function engagedScrollFallbackEnabled(entry) {
+    return parseBool(entry && entry.allowScrollFallback, false) === true;
+  }
 
   function maybeFireEngagedUser() {
     var entry = getConversion('engagedUser');
@@ -282,14 +291,20 @@
       engagedState.fired = true;
       return;
     }
-    if (!engagedState.timerDone || !engagedState.eligible) return;
+    var eligible = engagedState.pageEligible || (engagedScrollFallbackEnabled(entry) && engagedState.scrollEligible);
+    if (!engagedState.timerDone || !eligible) return;
     if (fireConversion('engagedUser', entry, { onceKey: entry.onceKey || 'engaged_user' })) {
       engagedState.fired = true;
     }
   }
 
-  function markEngagedEligible() {
-    engagedState.eligible = true;
+  function markEngagedPageEligible() {
+    engagedState.pageEligible = true;
+    maybeFireEngagedUser();
+  }
+
+  function markEngagedScrollEligible() {
+    engagedState.scrollEligible = true;
     maybeFireEngagedUser();
   }
 
@@ -309,6 +324,7 @@
   function setupEngagedScrollTracking() {
     var entry = getConversion('engagedUser');
     if (!entry || entry.enabled === false) return;
+    if (!engagedScrollFallbackEnabled(entry)) return;
     var threshold = toNumber(entry.scrollPercent);
     if (threshold == null) threshold = 60;
     threshold = Math.max(1, Math.min(100, threshold));
@@ -337,7 +353,7 @@
         return;
       }
       if (percentScrolled() >= threshold) {
-        markEngagedEligible('scroll');
+        markEngagedScrollEligible();
         window.removeEventListener('scroll', onScroll, true);
       }
     }
@@ -352,6 +368,112 @@
     if (href.indexOf('tel:') === 0) return 'tel';
     if (href.indexOf('sms:') === 0) return 'sms';
     return '';
+  }
+
+  function linkUrl(el) {
+    if (!el || !el.getAttribute) return null;
+    var href = String(el.getAttribute('href') || '').trim();
+    if (!href) return null;
+    try {
+      return new URL(href, window.location && window.location.href ? window.location.href : document.baseURI || '/');
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function isOutboundUrl(url) {
+    if (!url) return false;
+    var protocol = String(url.protocol || '').toLowerCase();
+    if (protocol !== 'http:' && protocol !== 'https:') return false;
+    return url.origin !== ((window.location && window.location.origin) || '');
+  }
+
+  function normalizeMatchList(value) {
+    if (Array.isArray(value)) return value;
+    if (value == null || value === '') return [];
+    return [value];
+  }
+
+  function matchesString(mode, candidate, expected) {
+    if (!candidate || !expected) return false;
+    if (mode === 'hrefEquals') return candidate === expected;
+    return candidate.indexOf(expected) !== -1;
+  }
+
+  function matchesOutboundRule(link, entry, url) {
+    if (!entry || entry.enabled === false || !link || !url || !isOutboundUrl(url)) return false;
+
+    var selector = String(entry.selector || '').trim();
+    if (selector) {
+      try {
+        if (!link.matches || !link.matches(selector)) return false;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    var mode = String(entry.matchMode || 'hrefContains').trim() || 'hrefContains';
+    var matchValues = normalizeMatchList(entry.matchValues);
+    if (entry.matchValue != null && entry.matchValue !== '') matchValues.push(entry.matchValue);
+    if (!matchValues.length) return true;
+
+    var absoluteHref = String(url.href || '');
+    var rawHref = String(link.getAttribute('href') || '');
+    var hostname = String(url.hostname || '').replace(/^www\./, '');
+
+    for (var i = 0; i < matchValues.length; i += 1) {
+      var expected = String(matchValues[i] || '').trim();
+      if (!expected) continue;
+      if (mode === 'hostEquals') {
+        if (hostname === expected.replace(/^www\./, '')) return true;
+        continue;
+      }
+      if (matchesString(mode, absoluteHref, expected) || matchesString(mode, rawHref, expected)) return true;
+    }
+
+    return false;
+  }
+
+  function shouldDelayNavigation(ev, link) {
+    if (!ev || ev.defaultPrevented) return false;
+    if (ev.button !== 0) return false;
+    if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return false;
+    if (!link || (link.tagName || '').toLowerCase() !== 'a') return false;
+
+    var target = String(link.getAttribute('target') || '').trim().toLowerCase();
+    if (target && target !== '_self') return false;
+    if (link.hasAttribute('download')) return false;
+    return true;
+  }
+
+  function navigateToTrackedUrl(url) {
+    try {
+      window.location.assign(url.href);
+    } catch (e) {
+      window.location.href = url.href;
+    }
+  }
+
+  function trackOutboundLinkClick(link, ev) {
+    var entry = getConversion('outboundLinkClick');
+    var url = linkUrl(link);
+    if (!matchesOutboundRule(link, entry, url)) return false;
+
+    var shouldDelay = shouldDelayNavigation(ev, link);
+    if (shouldDelay) ev.preventDefault();
+
+    var fired = fireConversion('outboundLinkClick', entry, { transportType: 'beacon' });
+    if (shouldDelay) {
+      if (!fired) {
+        navigateToTrackedUrl(url);
+      } else {
+        window.setTimeout(function () {
+          navigateToTrackedUrl(url);
+        }, 150);
+      }
+    }
+
+    return fired;
   }
 
   function closestLink(start) {
@@ -374,6 +496,7 @@
       var type = hrefType(link);
       if (type === 'tel') trackConfiguredConversion('callClick');
       if (type === 'sms') trackConfiguredConversion('textClick');
+      if (!type) trackOutboundLinkClick(link, ev);
     },
     true
   );

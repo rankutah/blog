@@ -59,8 +59,6 @@ uglyURLs = false
   provider = "zaraz"
   # Keep immediate load (site-specific override)
   delayMs = 0
-  # Gate Microsoft Clarity only on interaction (ignores the immediate global load)
-  clarityOnlyOnInteraction = true
 
   [params.analytics.google]
     id = "G-763E3FZE0G"
@@ -69,6 +67,7 @@ uglyURLs = false
   [params.analytics.clarity]
     id = "ufj4qbu6lg"
     enabled = false
+    onlyOnInteraction = true
 
   [params.analytics.googleAds]
     id = "AW-17719779491"

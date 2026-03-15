@@ -27,7 +27,7 @@
 {{- if not $action -}}
   <div class="text-red-700 bg-red-50/80 p-4 rounded text-sm">Missing form action. Configure [params.formspark.action] or pass action="...".</div>
 {{- else -}}
-  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="cp-contact space-y-3 text-left backdrop-blur-sm bg-white/90 dark:bg-gray-900/80 p-4 rounded-lg shadow max-w-sm w-full mx-auto">
+  <form id="{{ $id }}" action="{{ $action | safeURL }}" method="POST" class="cp-contact space-y-3 text-left backdrop-blur-sm bg-white/90 dark:bg-gray-900/80 p-4 rounded-lg shadow max-w-sm w-full mx-auto" data-cp-attribution-form="true">
     <input type="hidden" name="page_url" value="{{ $page.Permalink }}">
     <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;">
       <label for="{{ $id }}-hp">Leave this field empty</label>

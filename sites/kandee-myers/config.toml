@@ -77,7 +77,6 @@ enableRobotsTXT = true
   provider = "zaraz"
   # Load analytics immediately (Zaraz itself is injected after LCP by the shared theme)
   delayMs = 0
-  clarityOnlyOnInteraction = true
   debugMode = false
 
   [params.analytics.google]
@@ -87,6 +86,7 @@ enableRobotsTXT = true
   [params.analytics.clarity]
     id = ""
     enabled = false
+    onlyOnInteraction = true
 
   [params.analytics.googleAds]
     id = ""

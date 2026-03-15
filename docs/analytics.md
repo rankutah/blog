@@ -8,66 +8,86 @@ Patterned after `sites/rank-utah/config.toml`:
 
 ```toml
 [params.analytics]
-  # Default deferred load. Set to 0 for immediate load on a specific site.
-  delayMs = 5000
-
   [params.analytics.googleTag]
     # The one Google tag loaded on the page. Route it to every needed
     # destination in Google Tag / Tag Gateway.
     id = "AW-123456789"
     enabled = true
+    delayMs = 5000
+    onlyOnInteraction = false
+    lcpGate = true
+    debugMode = false
     analyticsEventPrefix = "key_"
 
     [params.analytics.googleTag.conversions.callClick]
       enabled = false
       sendTo = ""
       value = 30
-      currency = "USD"
-      once = true
+      includeInPageAttribution = true
 
     [params.analytics.googleTag.conversions.textClick]
       enabled = false
       sendTo = ""
       value = 20
-      currency = "USD"
-      once = true
+      includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.pricingPageView]
       enabled = false
       path = "/pricing"
       sendTo = ""
+      includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.contactPageView]
       enabled = false
       path = "/contact"
       sendTo = ""
+      includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.thankYouPageView]
       enabled = false
       path = "/thank-you"
       sendTo = ""
+      value = 100
+      includeInPageAttribution = true
 
     [params.analytics.googleTag.conversions.welcomePageView]
       enabled = false
       path = "/welcome"
       sendTo = ""
       valueQueryParam = "value"
+      includeInPageAttribution = false
 
     [params.analytics.googleTag.conversions.engagedUser]
       enabled = false
       sendTo = ""
+      value = 5
       minSessionSeconds = 10
       minPages = 2
-      scrollPercent = 60
-      once = true
+      includeInPageAttribution = false
+
+    [params.analytics.googleTag.conversions.outboundLinkClick]
+      enabled = false
+      sendTo = ""
+      value = 60
+      matchMode = "hrefContains"
+      matchValues = ["book.example.com"]
+      includeInPageAttribution = true
 
   [params.analytics.clarity]
     id = ""
     enabled = false
+    delayMs = 5000
+    onlyOnInteraction = false
 
   [params.analytics.phoneReplace]
     enabled = false
     conversionLabel = ""
+
+  [params.analytics.attribution]
+    enabled = false
+    persistDays = 90
+    fieldPrefix = "attribution_"
+    captureParams = ["gclid", "gbraid", "wbraid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
 
   [params.analytics.googleAds]
     # Optional Ads account override for phone replacement or when your routed
@@ -86,9 +106,42 @@ Shared logic loads analytics scripts:
 - on first interaction (any configured `loadEvents`) OR
 - after `delayMs` (default 5000ms)
 
-Setting `delayMs = 0` forces immediate load.
+Set `[params.analytics.googleTag].delayMs = 0` and `lcpGate = false` to force immediate Google tag load.
 
 The shared loader treats `[params.analytics.googleTag]` as the single client-side Google transport. Google Analytics 4 and Google Ads should be connected to that tag in Google rather than loaded as separate transport tags from site config.
+
+Preferred location for Google tag loading/debug settings is also `[params.analytics.googleTag]`: `delayMs`, `loadEvents`, `onlyOnInteraction`, `lcpGate`, `lcpMaxWaitMs`, `lcpQuietWindowMs`, and `debugMode`.
+
+Clarity-specific delay and interaction settings should live under `[params.analytics.clarity]` so all Clarity settings stay in one block.
+
+## First-party attribution persistence
+
+Use `[params.analytics.attribution]` when you want the site to keep important click and campaign parameters after the landing-page URL changes.
+
+This is first-party persistence:
+
+- the site reads values like `gclid`, `gbraid`, `wbraid`, and `utm_*` from the landing-page URL
+- it stores them in the browser's own localStorage for that site
+- shared lead/contact forms automatically receive them as hidden inputs later, even after the visitor moves to other pages
+
+Example config:
+
+```toml
+[params.analytics.attribution]
+  enabled = true
+  persistDays = 90
+  fieldPrefix = "attribution_"
+  captureParams = ["gclid", "gbraid", "wbraid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
+```
+
+Behavior:
+
+- storage only updates when one of the configured query params is present in the current page URL
+- shared forms rendered by the theme receive hidden inputs like `attribution_gclid` and `attribution_utm_campaign`
+- the first landing page and first referrer are also included by default as `attribution_landing_page` and `attribution_referrer`
+- stored values expire after `persistDays`
+
+This does not replace Google Ads attribution or enhanced conversions. It gives your site and form endpoint a first-party copy of the original campaign data.
 
 ## Google Ads conversions
 
@@ -103,20 +156,81 @@ Supported standard conversion keys:
 - `thankYouPageView`
 - `welcomePageView`
 - `engagedUser`
+- `outboundLinkClick`
+
+Every conversion rule can also include `includeInPageAttribution = true|false` so site configs explicitly declare which conversions should count in the shared page-attribution model.
 
 Behavior:
 
 - If `sendTo` is set, the conversion also fires through `gtag('event', 'conversion', { send_to: ... })`
 - If `analyticsEventPrefix` is set, each matching conversion rule emits a companion analytics event named `<prefix><conversionKey>`, even when `sendTo` is still blank.
 - They are deduped with `localStorage`, so they fire only once per browser/user for that site hostname
+- `once` defaults to `true`; only set `once = false` when you explicitly want a conversion to be repeatable
+- `currency` defaults to `USD` whenever a numeric `value` is sent
 - Page-view conversions match the configured `path`
+- `outboundLinkClick` matches outbound `http(s)` links using `matchMode`, `matchValues`, and optional `selector`
 - The recommended lead conversion is `thankYouPageView`; shared forms no longer auto-fire a Google Ads form-submit conversion
 - `welcomePageView` can read a dynamic conversion value from the query string via `valueQueryParam`.
-- For purchase-complete redirects on `/welcome`, set `once = false` so repeat purchases continue to track.
-- `engagedUser` fires once when either condition is met:
-  - user has stayed on the site at least `minSessionSeconds` seconds
-  - user has visited at least `minPages` unique paths on that site
-  - user scrolls at least `scrollPercent` on any page
+- `engagedUser` uses a simpler default across sites:
+  - user must stay on the site at least `minSessionSeconds` seconds
+  - user must visit at least `minPages` unique paths on that site
+  - scroll only counts when `allowScrollFallback = true` and `scrollPercent` is also configured
+
+### Outbound link click conversion
+
+Use `outboundLinkClick` when a site hands the user off to an external booking, scheduling, checkout, or partner URL.
+
+Example config:
+
+```toml
+[params.analytics.googleTag.conversions.outboundLinkClick]
+  enabled = true
+  sendTo = "AW-123456789/AbCdEfGhIjKlMnOp"
+  value = 60
+  includeInPageAttribution = true
+  matchMode = "hrefContains"
+  matchValues = ["secure.thinkreservations.com/blueridgeabbey"]
+```
+
+### Page attribution inclusion flag
+
+Use `includeInPageAttribution = true` only on conversions that represent real lead outcomes for that site.
+
+Recommended defaults:
+
+- `thankYouPageView`: `true`
+- `callClick`: `true`
+- `textClick`: site-specific
+- `outboundLinkClick`: site-specific, usually `true` for booking or scheduling handoffs
+- `welcomePageView`: usually `false` for lead-gen sites where sales close after an offline conversation
+- `engagedUser`, `pricingPageView`, `contactPageView`: usually `false`
+
+This flag is schema-level today so site configs can stay explicit and consistent before the shared page-attribution runtime is added.
+
+### Defaulted fields
+
+To keep site configs smaller, the shared runtime applies these defaults:
+
+- `once = true`
+- `currency = "USD"` when a numeric `value` exists
+- the conversion rule name is used as the dedupe key unless `onceKey` is explicitly overridden
+
+In most site configs you should not need to set `currency`, `once = true`, or `onceKey`.
+
+Supported matching fields:
+
+- `matchMode = "hrefContains"` compares against the raw link and resolved absolute URL
+- `matchMode = "hrefEquals"` requires an exact href match
+- `matchMode = "hostEquals"` matches the outbound hostname
+- `matchValues` accepts a TOML array of strings; `matchValue` also works for a single string
+- `selector` optionally narrows matching to links that also match a CSS selector
+
+Runtime behavior:
+
+- Only outbound `http(s)` links are eligible
+- Links opened in a new tab/window are tracked without blocking navigation
+- Same-tab clicks use `transport_type = "beacon"` and a short fallback delay so the conversion can leave before the browser navigates away
+- `tel:` and `sms:` links continue to use `callClick` and `textClick`
 
 ### Dynamic purchase value on welcome page
 
@@ -130,8 +244,6 @@ Example config:
   path = "/welcome"
   sendTo = "AW-123456789/AbCdEfGhIjKlMnOp"
   valueQueryParam = "value"
-  currency = "USD"
-  once = false
 ```
 
 Example redirect URL:
@@ -168,8 +280,131 @@ You can leave `sendTo = ""` temporarily while setting up Google Ads conversion a
 
 Backward compatibility:
 
+- The theme still accepts legacy root-level loader fields like `params.analytics.delayMs`, `params.analytics.onlyOnInteraction`, `params.analytics.lcpGate`, and `params.analytics.debugMode`, but the preferred location is `[params.analytics.googleTag]`
 - The theme still accepts the old `params.analytics.google.analyticsEventPrefix` and `params.analytics.googleAds.analyticsEventPrefix`, but the preferred location is `params.analytics.googleTag.analyticsEventPrefix`
 - The theme still accepts the old `[params.analytics.googleAds.conversions]` path, but the preferred location is `[params.analytics.googleTag.conversions]`
+- The theme still accepts legacy root-level `params.analytics.clarityDelayMs` and `params.analytics.clarityOnlyOnInteraction`, but the preferred location is `[params.analytics.clarity]`
+
+## Proposed generic rule schema (draft)
+
+This section is a proposed future config shape only. It is not implemented by the shared runtime yet.
+
+The goal is to stop adding one-off conversion names and instead support a small set of generic rule types that cover most tracking needs from config alone.
+
+Recommended generic types:
+
+- `pageView`
+- `linkClick`
+- `selectorClick`
+- `elementView`
+- `formLifecycle`
+- `engagement`
+
+Draft example:
+
+```toml
+[params.analytics.googleTag]
+  id = "AW-123456789"
+  analyticsEventPrefix = "key_"
+
+  [params.analytics.googleTag.rules.leadThankYou]
+    type = "pageView"
+    enabled = true
+    path = "/thank-you"
+    sendTo = "AW-123456789/AbCdEfGhIjKlMnOp"
+    value = 100
+    includeInPageAttribution = true
+
+  [params.analytics.googleTag.rules.primaryCall]
+    type = "linkClick"
+    enabled = true
+    protocol = "tel"
+    selector = "a[href^='tel:']"
+    value = 40
+    includeInPageAttribution = true
+
+  [params.analytics.googleTag.rules.primaryText]
+    type = "linkClick"
+    enabled = true
+    protocol = "sms"
+    selector = "a[href^='sms:']"
+    value = 30
+
+  [params.analytics.googleTag.rules.externalBooking]
+    type = "linkClick"
+    enabled = true
+    matchMode = "hrefContains"
+    matchValues = ["secure.thinkreservations.com/blueridgeabbey"]
+    value = 60
+    includeInPageAttribution = true
+
+  [params.analytics.googleTag.rules.quoteButton]
+    type = "selectorClick"
+    enabled = true
+    selector = "[data-track='quote-cta']"
+    value = 20
+
+  [params.analytics.googleTag.rules.pricingSectionSeen]
+    type = "elementView"
+    enabled = true
+    selector = "#pricing"
+    threshold = 0.5
+    value = 10
+
+  [params.analytics.googleTag.rules.contactFormStarted]
+    type = "formLifecycle"
+    enabled = true
+    selector = "form[data-form-role='contact']"
+    stage = "start"
+    value = 15
+
+  [params.analytics.googleTag.rules.qualifiedVisit]
+    type = "engagement"
+    enabled = true
+    minSessionSeconds = 10
+    minPages = 2
+    allowScrollFallback = true
+    scrollPercent = 60
+    value = 5
+```
+
+Recommended shared fields across all rule types:
+
+- `enabled`
+- `type`
+- `sendTo`
+- `value`
+- `currency`
+- `once`
+- `onceKey`
+- `includeInPageAttribution`
+- `analyticsEventName`
+
+Type-specific fields:
+
+- `pageView`: `path`, `pathPrefix`, optional pattern matching
+- `linkClick`: `selector`, `protocol`, `matchMode`, `matchValue`, `matchValues`, `hostEquals`
+- `selectorClick`: `selector`
+- `elementView`: `selector`, `threshold`, optional `minTimeVisibleMs`
+- `formLifecycle`: `selector`, `stage = start|submit|success|error`
+- `engagement`: `minSessionSeconds`, `minPages`, `allowScrollFallback`, `scrollPercent`
+
+Suggested mapping from the current schema:
+
+- `thankYouPageView` -> `type = "pageView"`, `path = "/thank-you"`
+- `welcomePageView` -> `type = "pageView"`, `path = "/welcome"`, `valueQueryParam = "value"`
+- `callClick` -> `type = "linkClick"`, `protocol = "tel"`
+- `textClick` -> `type = "linkClick"`, `protocol = "sms"`
+- `outboundLinkClick` -> `type = "linkClick"`, outbound `http(s)` matching
+- `engagedUser` -> `type = "engagement"`
+- `pricingPageView` and `contactPageView` -> `type = "pageView"`
+
+Why this shape is recommended:
+
+- it keeps most future tracking requests inside config instead of shared JS changes
+- it removes special-case conversion names that only differ by path or click matcher
+- it lets sites use business-friendly rule names like `leadThankYou` or `externalBooking`
+- it preserves a small, stable runtime surface instead of growing a new bespoke event type for every site
 
 ## Phone Replacement
 

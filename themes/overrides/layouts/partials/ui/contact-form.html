@@ -80,7 +80,7 @@
     Missing form action. Pass action="https://submit-form.com/XXXX" or set .Site.Params.formspark.action
   </div>
 {{- else -}}
-  <form action="{{ $action | safeURL }}" method="POST" class="space-y-6 rounded-xl p-4 {{ $extra }}">
+  <form action="{{ $action | safeURL }}" method="POST" class="space-y-6 rounded-xl p-4 {{ $extra }}" data-cp-attribution-form="true">
     {{- if $honeypot }}
       <input type="text" name="{{ $honeypot }}" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
     {{- end }}
