@@ -207,6 +207,35 @@ Recommended defaults:
 
 This flag is schema-level today so site configs can stay explicit and consistent before the shared page-attribution runtime is added.
 
+### Page attribution event
+
+When a conversion fires with `includeInPageAttribution = true` and a numeric `value`, the shared runtime also emits `attribution_value` events.
+
+Current model:
+
+- unique visited pages are tracked for the current browser session only
+- the conversion value is split evenly across those visited pages
+- one `attribution_value` event is emitted per visited page
+
+Example payload for a $100 conversion across 4 visited pages:
+
+```js
+gtag('event', 'attribution_value', {
+  value: 25,
+  currency: 'USD',
+  page_location: 'https://clearpresence.io/pricing/',
+  conversion_type: 'thank_you_page_view',
+  attribution_model: 'equal_split'
+});
+```
+
+Notes:
+
+- the event `value` is the attributed split value, not the original full conversion value
+- `page_location` is set explicitly for each visited page receiving attributed value
+- `conversion_type` uses the normalized conversion key such as `thank_you_page_view` or `call_click`
+- `attribution_model` is currently always `equal_split`
+
 ### Defaulted fields
 
 To keep site configs smaller, the shared runtime applies these defaults:

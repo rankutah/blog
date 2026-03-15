@@ -14,6 +14,7 @@
   var conversions = adsCfg.conversions || {};
   var analyticsEventPrefix = String(cfg.analyticsEventPrefix || '').trim();
   var storagePrefix = 'cp_ads_conv:' + ((window.location && window.location.hostname) || 'site') + ':';
+  var sessionVisitedPaths = [];
 
   function canStore() {
     try {
@@ -40,6 +41,22 @@
 
   function currentPath() {
     return normalizePath((window.location && window.location.pathname) || '/');
+  }
+
+  function currentOrigin() {
+    try {
+      return String((window.location && window.location.origin) || '').replace(/\/+$/, '');
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function pathToPageLocation(path) {
+    var normalized = normalizePath(path);
+    var origin = currentOrigin();
+    if (!origin) return normalized;
+    if (normalized === '/') return origin + '/';
+    return origin + normalized + '/';
   }
 
   function currentSearchParams() {
@@ -138,6 +155,10 @@
           fired = true;
         }
 
+        if (emitPageAttributionEvents(key, base, value, currency)) {
+          fired = true;
+        }
+
         if (fired && once) {
           markFired(key, base, overrideOnceKey);
         }
@@ -174,6 +195,45 @@
 
   function trackConfiguredConversion(key, overrides) {
     return fireConversion(key, getConversion(key), overrides);
+  }
+
+  function shouldEmitPageAttribution(entry, value) {
+    if (!entry || entry.enabled === false) return false;
+    if (parseBool(entry.includeInPageAttribution, false) !== true) return false;
+    if (value == null) return false;
+    if (typeof window.gtag !== 'function') return false;
+    return true;
+  }
+
+  function emitPageAttributionEvents(key, entry, value, currency) {
+    if (!shouldEmitPageAttribution(entry, value)) return false;
+
+    var visitedPaths = readVisitedPaths();
+    if (!visitedPaths.length) return false;
+
+    var splitValue = value / visitedPaths.length;
+    if (!Number.isFinite(splitValue)) return false;
+
+    var fired = false;
+    var normalizedKey = normalizeEventKey(key);
+
+    for (var i = 0; i < visitedPaths.length; i += 1) {
+      var pagePath = normalizePath(visitedPaths[i]);
+      if (!pagePath) continue;
+
+      try {
+        window.gtag('event', 'attribution_value', {
+          value: splitValue,
+          currency: currency || 'USD',
+          page_location: pathToPageLocation(pagePath),
+          conversion_type: normalizedKey,
+          attribution_model: 'equal_split'
+        });
+        fired = true;
+      } catch (e) {}
+    }
+
+    return fired;
   }
 
   function nearestConversionElement(start) {
@@ -217,21 +277,20 @@
   }
 
   function readVisitedPaths() {
-    if (!storageEnabled) return [];
     try {
-      var raw = window.localStorage.getItem(storagePrefix + 'visited_paths');
+      var raw = window.sessionStorage.getItem(storagePrefix + 'visited_paths');
       if (!raw) return [];
       var parsed = JSON.parse(raw);
       return Array.isArray(parsed) ? parsed : [];
     } catch (e) {
-      return [];
+      return sessionVisitedPaths.slice();
     }
   }
 
   function writeVisitedPaths(paths) {
-    if (!storageEnabled) return;
+    sessionVisitedPaths = Array.isArray(paths) ? paths.slice(0, 50) : [];
     try {
-      window.localStorage.setItem(storagePrefix + 'visited_paths', JSON.stringify(paths.slice(0, 50)));
+      window.sessionStorage.setItem(storagePrefix + 'visited_paths', JSON.stringify(sessionVisitedPaths));
     } catch (e) {}
   }
 
